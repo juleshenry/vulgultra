@@ -2,7 +2,7 @@
 """
 Scrapes Greek morphemes (prefixes and suffixes) from Wiktionary.
 
-Output: data/greek_morphemes.json with structure:
+Output: data/morphemes/greek_morphemes.json with structure:
 {
   "prefixes": [{"form": "anti-", "meaning": "...", "etymology": "...", "examples": [...]}],
   "suffixes": [{"form": "-logy", "meaning": "...", "etymology": "...", "examples": [...]}]
@@ -185,7 +185,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="Scrape Greek morphemes from Wiktionary")
-    parser.add_argument('--output', default='data/greek_morphemes.json', 
+    parser.add_argument('--output', default='data/morphemes/greek_morphemes.json', 
                         help='Output JSON file path')
     parser.add_argument('--test', action='store_true',
                         help='Test mode: only scrape first 5 morphemes of each type')

@@ -3,7 +3,7 @@
 Scrapes modern Romance morphemes (prefixes and suffixes) from Wiktionary
 for the core languages Lacyo is built on: French, Spanish, Italian, and Portuguese.
 
-Output: data/romance_morphemes.json
+Output: data/morphemes/romance_morphemes.json
 """
 
 import requests
@@ -175,7 +175,7 @@ def scrape_all():
         logging.info(f"{lang.capitalize()} totals - Prefixes: {len(morpheme_database[lang]['prefixes'])}, Suffixes: {len(morpheme_database[lang]['suffixes'])}")
 
         # Save incremental progress
-        with open('data/romance_morphemes.json', 'w', encoding='utf-8') as f:
+        with open('data/morphemes/romance_morphemes.json', 'w', encoding='utf-8') as f:
             json.dump(morpheme_database, f, indent=2, ensure_ascii=False)
 
     return morpheme_database
@@ -183,7 +183,7 @@ def scrape_all():
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--output', default='data/romance_morphemes.json')
+    parser.add_argument('--output', default='data/morphemes/romance_morphemes.json')
     parser.add_argument('--test', action='store_true')
     args = parser.parse_args()
     

@@ -40,7 +40,7 @@ for i in range(start_idx, len(lines)):
 new_lines = []
 current_num = 20
 for code, name in INCUBATOR_LANGS:
-    json_file = f"data/{code}_words.json"
+    json_file = f"data/words/{code}_words.json"
     word_count = 0
     if os.path.exists(json_file):
         with open(json_file, 'r') as jf:

@@ -83,7 +83,8 @@ cyberlatin-cli/         Rust SA optimizer
 data/                   Pipeline I/O
   candidates.json       Python prep output → Rust input
   lacyo_lexicon.json    Optimizer output (roots + endings + inventory)
-  latin_morphemes.json  Canonical morpheme database
+  morphemes/            Morpheme databases (Latin, Greek, Romance)
+  words/                Parsed Wiktionary word lists (Incubator languages)
 
 docs/grammar/
   grammar.tex           Full language specification (~900 lines)

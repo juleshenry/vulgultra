@@ -3,7 +3,7 @@
 Scrapes Latin morphemes (prefixes and suffixes) from Wiktionary.
 Targets 65 prefixes and 264 suffixes (total: 329 morphemes).
 
-Output: data/latin_morphemes.json with structure:
+Output: data/morphemes/latin_morphemes.json with structure:
 {
   "prefixes": [{"form": "trans-", "meaning": "...", "etymology": "...", "examples": [...]}],
   "suffixes": [{"form": "-tion", "meaning": "...", "etymology": "...", "examples": [...]}]
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="Scrape Latin morphemes from Wiktionary")
-    parser.add_argument('--output', default='data/latin_morphemes.json', 
+    parser.add_argument('--output', default='data/morphemes/latin_morphemes.json', 
                         help='Output JSON file path')
     parser.add_argument('--test', action='store_true',
                         help='Test mode: only scrape first 5 morphemes of each type')

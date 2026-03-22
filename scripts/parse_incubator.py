@@ -79,7 +79,7 @@ if __name__ == "__main__":
         if os.path.exists(xml_path):
             data = parse_incubator_wiktionary(xml_path, lang)
             if data:
-                out_path = f"data/{lang}_words.json"
+                out_path = f"data/words/{lang}_words.json"
                 with open(out_path, 'w', encoding='utf-8') as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
                 

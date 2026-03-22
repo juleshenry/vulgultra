@@ -23,22 +23,22 @@ ALL_LANGS = {
     'vec': ('Venetian', 'vecwiktionary-latest-pages-articles.xml', False),
     'wa': ('Walloon', 'wawiktionary-latest-pages-articles.xml', False),
     
-    'pms': ('Piedmontese', 'data/pms_words.json', True),
-    'pcd': ('Picard', 'data/pcd_words.json', True),
-    'mwl': ('Mirandese', 'data/mwl_words.json', True),
-    'lij': ('Ligurian', 'data/lij_words.json', True),
-    'lad': ('Ladino', 'data/lad_words.json', True),
-    'frp': ('Franco-Provençal', 'data/frp_words.json', True),
-    'fur': ('Friulian', 'data/fur_words.json', True),
-    'nrm': ('Norman', 'data/nrm_words.json', True),
-    'ext': ('Extremaduran', 'data/ext_words.json', True),
-    'eml': ('Emiliano-Romagnolo', 'data/eml_words.json', True),
-    'lld': ('Ladin', 'data/lld_words.json', True),
-    'gsc': ('Gascon', 'data/gsc_words.json', True),
-    'dlm': ('Dalmatian', 'data/dlm_words.json', True),
-    'ist': ('Istriot', 'data/ist_words.json', True),
-    'ruo': ('Istro-Romanian', 'data/ruo_words.json', True),
-    'glw': ('Gallo', 'data/glw_words.json', True)
+    'pms': ('Piedmontese', 'data/words/pms_words.json', True),
+    'pcd': ('Picard', 'data/words/pcd_words.json', True),
+    'mwl': ('Mirandese', 'data/words/mwl_words.json', True),
+    'lij': ('Ligurian', 'data/words/lij_words.json', True),
+    'lad': ('Ladino', 'data/words/lad_words.json', True),
+    'frp': ('Franco-Provençal', 'data/words/frp_words.json', True),
+    'fur': ('Friulian', 'data/words/fur_words.json', True),
+    'nrm': ('Norman', 'data/words/nrm_words.json', True),
+    'ext': ('Extremaduran', 'data/words/ext_words.json', True),
+    'eml': ('Emiliano-Romagnolo', 'data/words/eml_words.json', True),
+    'lld': ('Ladin', 'data/words/lld_words.json', True),
+    'gsc': ('Gascon', 'data/words/gsc_words.json', True),
+    'dlm': ('Dalmatian', 'data/words/dlm_words.json', True),
+    'ist': ('Istriot', 'data/words/ist_words.json', True),
+    'ruo': ('Istro-Romanian', 'data/words/ruo_words.json', True),
+    'glw': ('Gallo', 'data/words/glw_words.json', True)
 }
 
 counts = {}
