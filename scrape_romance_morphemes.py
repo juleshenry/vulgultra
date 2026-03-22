@@ -161,7 +161,7 @@ def scrape_all():
             data = extract_morpheme_data(url, urls["keywords"])
             if data:
                 morpheme_database[lang]["prefixes"].append(data)
-            time.sleep(0.2)
+            time.sleep(0.05)
             
         # Suffixes
         logging.info(f"Fetching suffixes for {lang}...")
@@ -170,9 +170,13 @@ def scrape_all():
             data = extract_morpheme_data(url, urls["keywords"])
             if data:
                 morpheme_database[lang]["suffixes"].append(data)
-            time.sleep(0.2)
+            time.sleep(0.05)
             
         logging.info(f"{lang.capitalize()} totals - Prefixes: {len(morpheme_database[lang]['prefixes'])}, Suffixes: {len(morpheme_database[lang]['suffixes'])}")
+
+        # Save incremental progress
+        with open('data/romance_morphemes.json', 'w', encoding='utf-8') as f:
+            json.dump(morpheme_database, f, indent=2, ensure_ascii=False)
 
     return morpheme_database
 
