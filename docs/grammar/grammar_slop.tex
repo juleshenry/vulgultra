@@ -45,11 +45,15 @@ axioms prevail.
 \begin{enumerate}
   \item \textbf{Minimize syllable count.}
         Roots should be as short as possible, measured in phonemic syllables
-        (IPA), not orthographic characters.
-  \item \textbf{Minimize phoneme inventory.}
-        The total set of distinct phonemes used across the entire lexicon
-        should be as small as possible. Fewer sounds = faster acquisition,
-        cleaner aesthetic.
+        (IPA), not orthographic characters. This axiom outranks every other
+        preference, including source-language balance and phoneme inventory.
+  \item \textbf{One morpheme per meaning-family.}
+        Do not keep multiple allomorphs for the same word when a shorter or
+        equal-length \emph{attested} form exists (e.g.\ \texttt{gato}/\texttt{gatto}
+        collapse to one \texttt{gato}). Never invent a stem by clipping a
+        theme vowel: \texttt{gat} is Catalan, not a legal reduction of Spanish
+        \texttt{gato}. Ties in syllable count are broken by how many source
+        forms the surviving candidate covers.
   \item \textbf{Zero grammatical collision.}
         No two distinct morphological forms within the same paradigm may be
         homophonous. The fusional endings must be fully distinctive.
@@ -335,22 +339,19 @@ Every Lacyo word consists of:
 \subsection{Categories Encoded in Noun Endings}
 
 \begin{itemize}
+  \item \textbf{Gender}: masculine (M), feminine (F)
   \item \textbf{Number}: singular (SG), plural (PL)
-  \item \textbf{Case}: nominative (NOM), accusative (ACC), genitive (GEN)
 \end{itemize}
 
-\noindent This yields $2 \times 3 = 6$ paradigm slots per noun.
+\noindent This yields $2 \times 2 = 4$ paradigm slots per noun.
+Case is not marked (modern Ibero-Romance). Declension is gender $\times$ number.
 
-\subsection{Declension Classes}
+\subsection{Declension classes are whole-language templates}
 
-The optimizer may discover 1--3 declension classes (analogous to Latin's
-five declensions). Each class has a distinct set of 6 endings.
-The optimizer minimizes:
-\begin{itemize}
-  \item Total number of declension classes (fewer = simpler)
-  \item Total phoneme cost of all endings
-  \item Subject to: no two slots within a class share the same ending
-\end{itemize}
+Endings are not invented slot-by-slot. The optimizer picks \emph{one}
+Romance declension table (Spanish-like \texttt{-o/-a/-os/-as}, Italian-like
+\texttt{-o/-a/-i/-e}, \ldots) and applies it as a block. Mixing \texttt{-os}
+from Spanish with \texttt{-i} from Italian inside one class is illegal.
 
 \subsection{Paradigm Template}
 
@@ -362,25 +363,26 @@ The optimizer minimizes:
 \toprule
          & Singular  & Plural \\
 \midrule
-NOM      & $e_1$     & $e_2$  \\
-ACC      & $e_3$     & $e_4$  \\
-GEN      & $e_5$     & $e_6$  \\
+M        & $e_1$     & $e_2$  \\
+F        & $e_3$     & $e_4$  \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\noindent Each $e_i$ is a 1-syllable ending conforming to phonotactics
-(Section~\ref{sec:phonotactics}). The optimizer assigns phonemic content
-to each $e_i$.
+\subsection{Gendered stems may mix sources}
 
-\subsection{Gender}
+For animates with distinct masculine and feminine citation forms, the two
+\emph{stems} are chosen independently. Syllables still win, so Catalan
+\texttt{gat} (M, 1$\sigma$) may pair with French \texttt{chatte} (F, 1$\sigma$)
+even though they come from different languages. That is allowed for nouns.
 
-Lacyo has \textbf{no grammatical gender}. This is a deliberate optimization:
-gender doubles the paradigm size with no semantic benefit. Natural gender
-is expressed lexically (separate words for ``mother'' / ``father'').
+Inanimates have one stem and take gender from the declension table only.
 
+The definite article is closed-class Portuguese \texttt{o}/\texttt{a}/\texttt{os}/\texttt{as}
+(one vowel, gender-marked). It is \emph{not} chosen from Swadesh: \texttt{el}/\texttt{la}
+are longer and redundant next to the \texttt{-o/-a} declension.
 
-\section{Verb Morphology}
+\section{Verb Morphology --- no mixed-source paradigms}
 \label{sec:verbs}
 
 \subsection{Categories Encoded in Verb Endings}
@@ -396,8 +398,13 @@ is expressed lexically (separate words for ``mother'' / ``father'').
 
 \subsection{Conjugation Classes}
 
-The optimizer may discover 1--3 conjugation classes.
-Each class has 36 distinct endings.
+A verb has \textbf{one stem} and \textbf{one conjugation template}.
+Person/number/tense endings are a block from a single Romance source
+(Spanish-like, French-like, \ldots). Do \emph{not} take 1sg from Catalan
+and 2sg from French: that kind of mix is legal for noun gender, not for
+verbs --- it makes the paradigm unlearnable.
+
+The optimizer may pick among 1--3 conjugation classes, each a whole template.
 
 \subsection{Paradigm Template (Indicative)}
 
@@ -544,8 +551,11 @@ annealing engine minimizes this function.
 \section{Total Energy}
 
 \begin{equation}
-E_{\text{total}} = E_{\text{root}} + E_{\text{phon}} + E_{\text{end}} + E_{\text{coll}} + E_{\text{tact}} + E_{\text{dist}}
+E_{\text{total}} = E_{\text{root}} + E_{\text{norm}} + E_{\text{end}} + E_{\text{coll}} + E_{\text{tact}} + E_{\text{dist}}
 \end{equation}
+
+Phoneme-inventory size is \textbf{not} an objective ($w_{\text{phon}} = 0$).
+The 23-phoneme set is a ceiling, not a budget.
 
 \subsection{Root Syllable Cost}
 
@@ -556,14 +566,22 @@ E_{\text{root}} = w_{\text{syl}} \cdot \sum_{r \in \text{Roots}} \text{syl}(r)
 where $\text{syl}(r)$ counts phonemic syllables (IPA-based, not orthographic).
 $w_{\text{syl}} = 1000$.
 
-\subsection{Phoneme Inventory Cost}
+\subsection{Morpheme Normalization}
 
 \begin{equation}
-E_{\text{phon}} = w_{\text{phon}} \cdot |\Phi|
+E_{\text{norm}} = w_{\text{norm}} \cdot \sum_{r \in \text{Roots}} (N_{\text{src}} - \mathrm{support}(r))
 \end{equation}
 
-where $\Phi$ is the set of distinct phonemes used anywhere in the lexicon
-(roots + endings + affixes). $w_{\text{phon}} = 50$.
+$\mathrm{support}(r)$ is how many source-language forms of that concept have
+$r$ as a prefix or exact match after Lacyo adaptation. $N_{\text{src}} = 5$
+(fr, es, it, pt, ca). $w_{\text{norm}} = 10$ --- enough to break syllable ties
+(Catalan \texttt{gat} and French \texttt{xa} are both 1$\sigma$ attested forms)
+and far below one extra syllable ($w_{\text{syl}} = 1000$).
+
+Before search, candidates that are the same adapted string or edit-distance
+$\leq 1$ are collapsed to a single \emph{attested} representative (shortest,
+then highest support). Prefix clipping is not used: a 2$\sigma$ \texttt{gato}
+does not spawn a 1$\sigma$ \texttt{gat}.
 
 \subsection{Ending Cost}
 
@@ -617,7 +635,8 @@ that technically avoid collision but would be error-prone in natural use.
 Term              & Symbol             & Weight & Rationale \\
 \midrule
 Root syllables    & $w_{\text{syl}}$   & 1,000  & Primary objective \\
-Phoneme inventory & $w_{\text{phon}}$  & 50     & Secondary: fewer sounds \\
+Morpheme support  & $w_{\text{norm}}$  & 10     & Tie-break: one stem, not four \\
+Phoneme inventory & $w_{\text{phon}}$  & 0      & Not an objective \\
 Ending syllables  & $w_{\text{end}}$   & 200    & Keep endings short \\
 Collision         & $w_{\text{coll}}$  & 100,000 & Hard: no homophony \\
 Phonotactic viol. & $w_{\text{tact}}$  & 500,000 & Hard: must be legal \\

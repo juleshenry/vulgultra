@@ -23,19 +23,26 @@ from lacyo.phonology import (
     phonemic_edit_distance, is_phonotactically_legal,
     to_orthography, syllabify,
 )
+from lacyo.romance_swadesh import SOURCE_LANGS
+from lacyo.paradigms import (
+    ADJ_TEMPLATES, NOUN_TEMPLATES, VERB_TEMPLATES,
+    ADJ_SLOT_NAMES, NOUN_SLOT_NAMES,
+)
 
 
 # ---------------------------------------------------------------------------
 # Energy weights (grammar.tex Table 4.1)
 # ---------------------------------------------------------------------------
 
-W_SYL  = 1000      # root syllable cost
-W_PHON = 50        # phoneme inventory cost
+W_SYL  = 1000      # root syllable cost — primary objective
+W_PHON = 0         # inventory is not an objective
+W_NORM = 10        # prefer stems that cover more source forms (syllable ties)
 W_END  = 200       # ending syllable cost
 W_COLL = 100_000   # collision penalty
 W_TACT = 500_000   # phonotactic violation penalty
 W_DIST = 500       # distinctiveness penalty
 DIST_THRESHOLD = 2  # minimum phonemic edit distance between endings
+N_SOURCES = len(SOURCE_LANGS)  # fr, es, it, pt, ca
 
 
 # ---------------------------------------------------------------------------
@@ -53,6 +60,7 @@ class Candidate:
     orthography: str
     syllables: int
     violations: int
+    support: int = 1  # how many source forms this stem covers
 
     @property
     def is_legal(self) -> bool:
@@ -95,7 +103,7 @@ class Genome:
 # Ending paradigm slots (grammar.tex Ch.3)
 # ---------------------------------------------------------------------------
 
-NOUN_SLOTS = ["nom_sg", "nom_pl", "acc_sg", "acc_pl", "gen_sg", "gen_pl"]
+NOUN_SLOTS = list(NOUN_SLOT_NAMES)
 
 VERB_SLOTS_IND = [
     f"{tense}_{person}{number}"
@@ -115,7 +123,7 @@ VERB_NONFINITE = ["inf", "ptcp_act", "ptcp_pas", "imp_2sg", "imp_2pl"]
 
 VERB_SLOTS = VERB_SLOTS_IND + VERB_SLOTS_SUBJ + VERB_NONFINITE
 
-ADJ_SLOTS = ["sg", "pl"]
+ADJ_SLOTS = list(ADJ_SLOT_NAMES)
 
 
 # ---------------------------------------------------------------------------
@@ -196,6 +204,8 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
         all_phonemes.update(extract_phonemes(e))
     e_phon = W_PHON * len(all_phonemes)
 
+    e_norm = W_NORM * sum(max(0, N_SOURCES - getattr(r, "support", 1)) for r in roots)
+
     # E_end: sum of ending syllable counts
     e_end = W_END * sum(count_syllables(e) for e in all_endings)
 
@@ -250,9 +260,10 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
                     dist_penalty += DIST_THRESHOLD - d
     e_dist = W_DIST * dist_penalty
 
-    total = e_root + e_phon + e_end + e_coll + e_tact + e_dist
+    total = e_root + e_norm + e_phon + e_end + e_coll + e_tact + e_dist
     breakdown = {
         "E_root": e_root,
+        "E_norm": e_norm,
         "E_phon": e_phon,
         "E_end": e_end,
         "E_coll": e_coll,
@@ -276,24 +287,34 @@ def init_genome(candidates: dict[str, list[Candidate]]) -> Genome:
         # Prefer legal candidates, then shortest
         legal = [(i, c) for i, c in enumerate(cands) if c.is_legal]
         if legal:
-            best_idx = min(legal, key=lambda x: x[1].syllables)[0]
+            best_idx = min(
+                legal,
+                key=lambda x: (x[1].syllables, -x[1].support, len(x[1].lacyo_phonemes), x[1].source_lang),
+            )[0]
         else:
-            # Pick least-violating
-            best_idx = min(range(len(cands)), key=lambda i: (cands[i].violations, cands[i].syllables))
+            best_idx = min(
+                range(len(cands)),
+                key=lambda i: (
+                    cands[i].violations,
+                    cands[i].syllables,
+                    -cands[i].support,
+                    cands[i].source_lang,
+                ),
+            )
         selections[concept] = best_idx
 
-    # Generate noun endings (1 declension class)
+    noun_name = random.choice(list(NOUN_TEMPLATES))
     noun_endings = {
-        "class_1": {slot: random_ending() for slot in NOUN_SLOTS}
+        "class_1": {slot: seq[:] for slot, seq in zip(NOUN_SLOTS, NOUN_TEMPLATES[noun_name])}
     }
 
-    # Generate verb endings (1 conjugation class)
+    verb_name = random.choice(list(VERB_TEMPLATES))
     verb_endings = {
-        "class_1": {slot: random_ending() for slot in VERB_SLOTS}
+        "class_1": {slot: seq[:] for slot, seq in zip(VERB_SLOTS, VERB_TEMPLATES[verb_name])}
     }
 
-    # Adjective endings
-    adj_endings = {slot: random_ending() for slot in ADJ_SLOTS}
+    adj_name = random.choice(list(ADJ_TEMPLATES))
+    adj_endings = {slot: seq[:] for slot, seq in zip(ADJ_SLOTS, ADJ_TEMPLATES[adj_name])}
 
     return Genome(
         selections=selections,
@@ -324,24 +345,26 @@ def mutate_root(genome: Genome) -> Genome:
 
 
 def mutate_ending(genome: Genome) -> Genome:
-    """Swap one ending slot to a different legal ending."""
+    """Replace a whole declension/conjugation template (never mix slots)."""
     g = copy.deepcopy(genome)
-    # Pick which paradigm type to mutate
     r = random.random()
-    if r < 0.15:
-        # Noun ending
+    if r < 0.2:
+        name = random.choice(list(NOUN_TEMPLATES))
         cls = random.choice(list(g.noun_endings.keys()))
-        slot = random.choice(list(g.noun_endings[cls].keys()))
-        g.noun_endings[cls][slot] = random_ending()
-    elif r < 0.95:
-        # Verb ending (most slots, gets most mutations)
+        g.noun_endings[cls] = {
+            slot: seq[:] for slot, seq in zip(NOUN_SLOTS, NOUN_TEMPLATES[name])
+        }
+    elif r < 0.9:
+        name = random.choice(list(VERB_TEMPLATES))
         cls = random.choice(list(g.verb_endings.keys()))
-        slot = random.choice(list(g.verb_endings[cls].keys()))
-        g.verb_endings[cls][slot] = random_ending()
+        g.verb_endings[cls] = {
+            slot: seq[:] for slot, seq in zip(VERB_SLOTS, VERB_TEMPLATES[name])
+        }
     else:
-        # Adj ending
-        slot = random.choice(list(g.adj_endings.keys()))
-        g.adj_endings[slot] = random_ending()
+        name = random.choice(list(ADJ_TEMPLATES))
+        g.adj_endings = {
+            slot: seq[:] for slot, seq in zip(ADJ_SLOTS, ADJ_TEMPLATES[name])
+        }
     return g
 
 

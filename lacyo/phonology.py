@@ -77,8 +77,8 @@ PHONEME_MAP: dict[str, str] = {
     "y": "u", "ø": "o", "œ": "o",
     # Lax vowels → tense
     "ɛ": "e", "ɔ": "o", "ɪ": "i", "ʊ": "u",
-    # Schwa / near-open
-    "ə": "e", "ɐ": "a",
+    # Schwa / near-open / Romanian close central
+    "ə": "e", "ɐ": "a", "ɨ": "i", "î": "i",
     # Nasal vowels → V+n (handled in adapt_ipa)
     "ɑ̃": "an", "ɛ̃": "en", "ɔ̃": "on", "œ̃": "on",
     "ã": "an", "ẽ": "en", "ĩ": "in", "õ": "on", "ũ": "un",
@@ -117,6 +117,37 @@ LANG_CODES: dict[str, str] = {
     "es": "spa-Latn",
     "it": "ita-Latn",
     "pt": "por-Latn",
+    "ca": "cat-Latn",
+    "ro": "ron-Latn",
+    "gl": "glg-Latn",
+    "oc": "oci-Latn",
+    # Sister G2P for the rest of the README corpus (no native epitran map)
+    "an": "spa-Latn",
+    "ast": "spa-Latn",
+    "ext": "spa-Latn",
+    "lad": "spa-Latn",
+    "mwl": "por-Latn",
+    "sc": "sro-Latn",
+    "scn": "ita-Latn",
+    "vec": "ita-Latn",
+    "lmo": "ita-Latn",
+    "pms": "ita-Latn",
+    "lij": "lij-Latn",
+    "fur": "ita-Latn",
+    "eml": "ita-Latn",
+    "lld": "ita-Latn",
+    "ist": "ita-Latn",
+    "rm": "ita-Latn",
+    "la": "ita-Latn",
+    "wa": "fra-Latn",
+    "pcd": "fra-Latn",
+    "nrm": "fra-Latn",
+    "frp": "fra-Latn",
+    "glw": "fra-Latn",
+    "gsc": "oci-Latn",
+    "dlm": "ita-Latn",
+    "rup": "ron-Latn",
+    "ruo": "ron-Latn",
 }
 
 
@@ -218,6 +249,31 @@ def adapt_to_lacyo(ipa_tokens: list[str]) -> list[str]:
     return result
 
 
+def overlay_spelling_contrasts(word: str, phonemes: list[str]) -> list[str]:
+    """Keep /v/ when the source *spells* v.
+
+    Spanish and Catalan G2P merge v→b (Iberian phonology). Lacyo has both
+    /b/ and /v/; inventory is not being minimized. Trust the letter.
+    """
+    import unicodedata
+    letters = unicodedata.normalize("NFKD", word.lower())
+    letters = [c for c in letters if c.isalpha() and c not in "h"]
+    out = list(phonemes)
+    li = 0
+    for i, p in enumerate(out):
+        if p not in CONSONANTS:
+            continue
+        while li < len(letters) and letters[li] in "aeiou":
+            li += 1
+        if li >= len(letters):
+            break
+        letter = letters[li]
+        li += 1
+        if p == "b" and letter == "v":
+            out[i] = "v"
+    return out
+
+
 def ipa_to_lacyo(ipa: str) -> list[str]:
     """Full pipeline: raw IPA string → list of Lacyo phonemes."""
     tokens = tokenize_ipa(ipa)
@@ -227,7 +283,7 @@ def ipa_to_lacyo(ipa: str) -> list[str]:
 def word_to_lacyo(word: str, lang: str) -> list[str]:
     """Convert orthographic word → Lacyo phoneme sequence."""
     ipa = word_to_ipa(word, lang)
-    return ipa_to_lacyo(ipa)
+    return overlay_spelling_contrasts(word, ipa_to_lacyo(ipa))
 
 
 # ---------------------------------------------------------------------------

@@ -6,7 +6,8 @@ ALL_LANGS = {
     'an': ('Aragonese', 'anwiktionary-latest-pages-articles.xml', False),
     'ast': ('Asturian', 'astwiktionary-latest-stub-articles.xml', False),
     'ca': ('Catalan', 'cawiktionary-latest-pages-articles.xml', False),
-    'en': ('English', 'enwiktionary-latest-pages-articles.xml', False),
+    # Reserved: not a Lacyo source. Kept so the dump can be used later.
+    'en': ('English (reserved, not a source)', 'enwiktionary-latest-pages-articles.xml', False),
     'es': ('Spanish', 'eswiktionary-latest-pages-articles.xml', False),
     'fr': ('French', 'frwiktionary-latest-pages-articles.xml', False),
     'gl': ('Galician', 'glwiktionary-latest-pages-articles.xml', False),

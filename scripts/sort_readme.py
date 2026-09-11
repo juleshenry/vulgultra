@@ -5,7 +5,8 @@ ALL_LANGS = {
     'an': ('Aragonese', False),
     'ast': ('Asturian', False),
     'ca': ('Catalan', False),
-    'en': ('English', False),
+    # Reserved dump — not a Lacyo source.
+    'en': ('English (reserved)', False),
     'es': ('Spanish', False),
     'fr': ('French', False),
     'gl': ('Galician', False),

@@ -19,30 +19,32 @@ from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
-from wordfreq import top_n_list, zipf_frequency
-
 from lacyo.phonology import (
     word_to_ipa, ipa_to_lacyo, count_syllables, count_violations,
     to_orthography, extract_phonemes, PHONEME_INVENTORY,
+    phonemic_edit_distance, overlay_spelling_contrasts,
 )
 from lacyo.optimizer import (
     Candidate, Genome, SAResult, anneal,
     NOUN_SLOTS, VERB_SLOTS, ADJ_SLOTS,
     compute_energy,
 )
+from lacyo.romance_swadesh import SOURCE_LANGS
 
 
 # ---------------------------------------------------------------------------
 # Step 1: Get word lists from multiple Romance languages
 # ---------------------------------------------------------------------------
 
-LANGUAGES = ["fr", "es", "it", "pt"]
+LANGUAGES = list(SOURCE_LANGS)
 
 
-def get_top_words(n: int = 1000) -> dict[str, list[str]]:
+def get_top_words(n: int = 1000, langs: list[str] | None = None) -> dict[str, list[str]]:
     """Get top N words by frequency for each Romance language."""
+    from wordfreq import top_n_list
+
     result: dict[str, list[str]] = {}
-    for lang in LANGUAGES:
+    for lang in (langs or LANGUAGES):
         words = top_n_list(lang, n)
         # Filter: only alpha words, length >= 2 (skip single letters)
         words = [w for w in words if w.isalpha() and len(w) >= 2]
@@ -101,6 +103,32 @@ def find_shared_concepts(
     return concepts
 
 
+def gold_concepts(langs: list[str] | None = None) -> dict[str, dict[str, str]]:
+    """
+    Meaning-aligned concepts from the Romance Swadesh gold list.
+    English ids are keys only — never source forms.
+    """
+    from lacyo.romance_swadesh import SOURCE_LANGS, concepts as swadesh_concepts
+
+    wanted = tuple(langs or SOURCE_LANGS)
+    for lang in wanted:
+        if lang == "en":
+            raise ValueError("English is not a Lacyo source language")
+        if lang not in SOURCE_LANGS:
+            raise ValueError(f"Unsupported source language: {lang}")
+
+    out: dict[str, dict[str, str]] = {}
+    for row in swadesh_concepts():
+        forms: dict[str, str] = {}
+        for lang in wanted:
+            form = row[lang].strip()
+            if form:
+                forms[lang] = form
+        if forms:
+            out[row["id"]] = forms
+    return out
+
+
 def _normalize_for_matching(word: str) -> str:
     """Strip accents and normalize for cognate matching."""
     import unicodedata
@@ -127,7 +155,7 @@ def build_candidates(
         for lang, word in lang_words.items():
             try:
                 ipa = word_to_ipa(word, lang)
-                lacyo_phonemes = ipa_to_lacyo(ipa)
+                lacyo_phonemes = overlay_spelling_contrasts(word, ipa_to_lacyo(ipa))
 
                 if not lacyo_phonemes:
                     continue  # empty after adaptation
@@ -148,12 +176,81 @@ def build_candidates(
                 continue
 
         if cands:
-            all_candidates[concept_id] = cands
+            all_candidates[concept_id] = normalize_morphemes(cands)
 
     if errors:
         print(f"  Warning: {errors} G2P errors skipped")
 
     return all_candidates
+
+
+def _similar(a: list[str], b: list[str]) -> bool:
+    """Same adapted form, or near-allomorph of an attested form. No clipping."""
+    if a == b:
+        return True
+    return phonemic_edit_distance(a, b) <= 1
+
+
+def _support_of(seq: list[str], originals: list[Candidate]) -> int:
+    n = 0
+    for o in originals:
+        if o.lacyo_phonemes == seq or phonemic_edit_distance(o.lacyo_phonemes, seq) <= 1:
+            n += 1
+    return n
+
+
+def normalize_morphemes(cands: list[Candidate]) -> list[Candidate]:
+    """
+    Collapse attested allomorphs of the same word into one candidate.
+
+    gato/gatto → one gato. Does not invent gat by stripping -o.
+    A shorter unrelated form (xa ← chat) stays a separate candidate;
+    syllables still decide between them.
+    """
+    originals = list(cands)
+    pool = list(cands)
+
+    for c in pool:
+        c.support = max(1, _support_of(c.lacyo_phonemes, originals))
+
+    parent = list(range(len(pool)))
+
+    def find(i: int) -> int:
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    def union(i: int, j: int) -> None:
+        ri, rj = find(i), find(j)
+        if ri != rj:
+            parent[rj] = ri
+
+    for i in range(len(pool)):
+        for j in range(i + 1, len(pool)):
+            if _similar(pool[i].lacyo_phonemes, pool[j].lacyo_phonemes):
+                union(i, j)
+
+    clusters: dict[int, list[Candidate]] = {}
+    for i, c in enumerate(pool):
+        clusters.setdefault(find(i), []).append(c)
+
+    kept: list[Candidate] = []
+    for group in clusters.values():
+        best = min(
+            group,
+            key=lambda c: (
+                c.violations,
+                c.syllables,
+                -c.support,
+                len(c.lacyo_phonemes),
+                c.source_lang,
+            ),
+        )
+        kept.append(best)
+
+    kept.sort(key=lambda c: (c.violations, c.syllables, -c.support, c.source_lang))
+    return kept
 
 
 # ---------------------------------------------------------------------------
@@ -297,33 +394,56 @@ def print_summary(result: SAResult):
 # Main pipeline
 # ---------------------------------------------------------------------------
 
+def _load_concepts(
+    n_words: int,
+    langs: list[str],
+    concepts_source: str,
+) -> dict[str, dict[str, str]]:
+    if "en" in langs:
+        raise ValueError("English is not a Lacyo source language")
+
+    if concepts_source == "swadesh":
+        print(f"\n[1/3] Loading Swadesh gold concepts ({', '.join(langs)})...")
+        t0 = time.time()
+        concepts = gold_concepts(langs)
+        print(f"  {len(concepts)} meaning-aligned concepts")
+        print(f"  done in {time.time()-t0:.1f}s")
+        return concepts
+
+    if concepts_source != "wordfreq":
+        raise ValueError(f"Unknown concepts source: {concepts_source}")
+
+    print(f"\n[1/3] Getting top {n_words} words from {len(langs)} Romance languages...")
+    t0 = time.time()
+    word_lists = get_top_words(n_words, langs)
+    for lang, words in word_lists.items():
+        print(f"  {lang}: {len(words)} words")
+    print(f"  done in {time.time()-t0:.1f}s")
+
+    print(f"\n[2/3] Cross-referencing concepts...")
+    t0 = time.time()
+    concepts = find_shared_concepts(word_lists, min_languages=1)
+    return concepts
+
+
 def run_pipeline(
     n_words: int = 1000,
     sa_iterations: int = 200_000,
     output_path: str = "data/lacyo_lexicon.json",
     seed: int = 42,
+    langs: list[str] | None = None,
+    concepts_source: str = "wordfreq",
 ):
     """Run the complete Lacyo E2E pipeline."""
 
+    langs = langs or list(LANGUAGES)
     print("=" * 70)
     print("  LACYO E2E PIPELINE")
     print("=" * 70)
 
-    # Step 1: Get word lists
-    print(f"\n[1/5] Getting top {n_words} words from {len(LANGUAGES)} Romance languages...")
-    t0 = time.time()
-    word_lists = get_top_words(n_words)
-    for lang, words in word_lists.items():
-        print(f"  {lang}: {len(words)} words")
-    print(f"  done in {time.time()-t0:.1f}s")
-
-    # Step 2: Find shared concepts
-    print(f"\n[2/5] Cross-referencing concepts...")
-    t0 = time.time()
-    concepts = find_shared_concepts(word_lists, min_languages=1)
+    concepts = _load_concepts(n_words, langs, concepts_source)
     multi = sum(1 for v in concepts.values() if len(v) >= 2)
     print(f"  {len(concepts)} concepts ({multi} shared across 2+ languages)")
-    print(f"  done in {time.time()-t0:.1f}s")
 
     # Step 3+4: Build candidates
     print(f"\n[3/5] Building candidates (IPA → Lacyo adaptation)...")
@@ -361,48 +481,20 @@ def run_pipeline(
     return result, output
 
 
-def run_prep(
-    n_words: int = 1000,
-    output_path: str = "data/candidates.json",
-):
-    """
-    Python-only prep stage: get word lists, build candidates, export JSON
-    for the Rust SA optimizer.
-    """
-    print("=" * 70)
-    print("  LACYO PREP — Python G2P Pipeline")
-    print("=" * 70)
+def _parse_langs(langs: list[str] | str | None) -> list[str]:
+    if langs is None:
+        return list(LANGUAGES)
+    if isinstance(langs, str):
+        langs = [p.strip() for p in langs.split(",") if p.strip()]
+    if not langs:
+        raise ValueError("At least one source language is required")
+    if "en" in langs:
+        raise ValueError("English is not a Lacyo source language")
+    return langs
 
-    # Step 1: Get word lists
-    print(f"\n[1/3] Getting top {n_words} words from {len(LANGUAGES)} Romance languages...")
-    t0 = time.time()
-    word_lists = get_top_words(n_words)
-    for lang, words in word_lists.items():
-        print(f"  {lang}: {len(words)} words")
-    print(f"  done in {time.time()-t0:.1f}s")
 
-    # Step 2: Find shared concepts
-    print(f"\n[2/3] Cross-referencing concepts...")
-    t0 = time.time()
-    concepts = find_shared_concepts(word_lists, min_languages=1)
-    multi = sum(1 for v in concepts.values() if len(v) >= 2)
-    print(f"  {len(concepts)} concepts ({multi} shared across 2+ languages)")
-    print(f"  done in {time.time()-t0:.1f}s")
-
-    # Step 3: Build candidates and export
-    print(f"\n[3/3] Building candidates (IPA → Lacyo adaptation)...")
-    t0 = time.time()
-    candidates = build_candidates(concepts)
-    total_cands = sum(len(v) for v in candidates.values())
-    legal = sum(1 for cands in candidates.values() for c in cands if c.is_legal)
-    print(f"  {len(candidates)} concepts with {total_cands} total candidates")
-    print(f"  {legal}/{total_cands} candidates are phonotactically legal")
-    print(f"  done in {time.time()-t0:.1f}s")
-
-    # Export for Rust
-    export = {
-        "concepts": {}
-    }
+def candidates_to_export(candidates: dict[str, list[Candidate]]) -> dict:
+    export = {"concepts": {}}
     for concept_id, cands in candidates.items():
         export["concepts"][concept_id] = [
             {
@@ -414,10 +506,42 @@ def run_prep(
                 "orthography": c.orthography,
                 "syllables": c.syllables,
                 "violations": c.violations,
+                "support": c.support,
             }
             for c in cands
         ]
+    return export
 
+
+def run_prep(
+    n_words: int = 1000,
+    output_path: str = "data/candidates.json",
+    langs: list[str] | str | None = None,
+    concepts_source: str = "wordfreq",
+):
+    """
+    Python-only prep stage: get word lists, build candidates, export JSON
+    for the Rust SA optimizer.
+    """
+    langs = _parse_langs(langs)
+    print("=" * 70)
+    print("  LACYO PREP — Python G2P Pipeline")
+    print("=" * 70)
+
+    concepts = _load_concepts(n_words, langs, concepts_source)
+    multi = sum(1 for v in concepts.values() if len(v) >= 2)
+    print(f"  {len(concepts)} concepts ({multi} with 2+ language forms)")
+
+    print(f"\n[build] Building candidates (IPA → Lacyo adaptation)...")
+    t0 = time.time()
+    candidates = build_candidates(concepts)
+    total_cands = sum(len(v) for v in candidates.values())
+    legal = sum(1 for cands in candidates.values() for c in cands if c.is_legal)
+    print(f"  {len(candidates)} concepts with {total_cands} total candidates")
+    print(f"  {legal}/{total_cands} candidates are phonotactically legal")
+    print(f"  done in {time.time()-t0:.1f}s")
+
+    export = candidates_to_export(candidates)
     out_path = Path(output_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w") as f:
@@ -439,6 +563,11 @@ if __name__ == "__main__":
                         help="Number of top words per language")
     prep_p.add_argument("-o", "--output", type=str, default="data/candidates.json",
                         help="Output candidates JSON path")
+    prep_p.add_argument("--langs", type=str, default=",".join(LANGUAGES),
+                        help="Comma-separated source languages (no English)")
+    prep_p.add_argument("--concepts", type=str, default="wordfreq",
+                        choices=["wordfreq", "swadesh"],
+                        help="Concept source: wordfreq (orthographic) or swadesh (meaning-aligned)")
 
     # run subcommand — full Python pipeline (slower, for testing)
     run_p = sub.add_parser("run", help="Full Python pipeline (slow, for testing)")
@@ -450,17 +579,29 @@ if __name__ == "__main__":
                        help="Output JSON path")
     run_p.add_argument("-s", "--seed", type=int, default=42,
                        help="Random seed")
+    run_p.add_argument("--langs", type=str, default=",".join(LANGUAGES),
+                        help="Comma-separated source languages (no English)")
+    run_p.add_argument("--concepts", type=str, default="wordfreq",
+                        choices=["wordfreq", "swadesh"],
+                        help="Concept source: wordfreq (orthographic) or swadesh (meaning-aligned)")
 
     args = parser.parse_args()
 
     if args.command == "prep":
-        run_prep(n_words=args.num_words, output_path=args.output)
+        run_prep(
+            n_words=args.num_words,
+            output_path=args.output,
+            langs=args.langs,
+            concepts_source=args.concepts,
+        )
     elif args.command == "run":
         run_pipeline(
             n_words=args.num_words,
             sa_iterations=args.iterations,
             output_path=args.output,
             seed=args.seed,
+            langs=_parse_langs(args.langs),
+            concepts_source=args.concepts,
         )
     else:
         parser.print_help()

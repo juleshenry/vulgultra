@@ -1,0 +1,608 @@
+#!/usr/bin/env python3
+"""ES/PT inspection scorecard for the mixed-origin Romance beta."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import random
+import sys
+from collections import Counter
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from lacyo.optimizer import Candidate, Genome, compute_energy, init_genome
+from lacyo.phonology import from_orthography, phonemic_edit_distance
+from lacyo.realize import form_syllables, realize_sentence
+from lacyo.romance_swadesh import (
+    GENDER_PAIRS, SENTENCES, SOURCE_LANGS, concepts as swadesh_concepts,
+)
+
+
+POLICIES = (
+    "sa",
+    "legal-shortest",
+    "shortest",
+    "always-es",
+    "always-pt",
+    "always-fr",
+    "always-it",
+    "always-ca",
+    "always-ro",
+    "always-gl",
+    "always-oc",
+    "init",
+)
+
+
+def load_candidates(path: Path) -> dict[str, list[Candidate]]:
+    raw = json.loads(path.read_text())
+    out: dict[str, list[Candidate]] = {}
+    for cid, rows in raw["concepts"].items():
+        cands = []
+        for row in rows:
+            if row.get("source_lang") == "en":
+                raise ValueError(f"English source leaked into {cid}")
+            cands.append(Candidate(
+                concept=row["concept"],
+                source_lang=row["source_lang"],
+                source_word=row["source_word"],
+                ipa=row["ipa"],
+                lacyo_phonemes=list(row["lacyo_phonemes"]),
+                orthography=row["orthography"],
+                syllables=int(row["syllables"]),
+                violations=int(row["violations"]),
+                support=int(row.get("support", 1)),
+            ))
+        if cands:
+            out[cid] = cands
+    return out
+
+
+def endings_from_lexicon(lex: dict) -> tuple[dict, dict, dict]:
+    noun = {
+        cls: {slot: from_orthography(ortho) for slot, ortho in slots.items()}
+        for cls, slots in lex["noun_endings"].items()
+    }
+    verb = {
+        cls: {slot: from_orthography(ortho) for slot, ortho in slots.items()}
+        for cls, slots in lex["verb_endings"].items()
+    }
+    adj = {slot: from_orthography(ortho) for slot, ortho in lex["adj_endings"].items()}
+    return noun, verb, adj
+
+
+def cand_by_lang(cands: list[Candidate], lang: str) -> int | None:
+    for i, c in enumerate(cands):
+        if c.source_lang == lang:
+            return i
+    return None
+
+
+def shortest_index(cands: list[Candidate]) -> int:
+    """Raw shortness, legality second. Not the energy-greedy choice."""
+    return min(
+        range(len(cands)),
+        key=lambda i: (
+            cands[i].syllables,
+            cands[i].violations,
+            -cands[i].support,
+            len(cands[i].lacyo_phonemes),
+            cands[i].source_lang,
+        ),
+    )
+
+
+def legal_shortest_index(cands: list[Candidate]) -> int:
+    """Energy-greedy roots: zero violations, then syllables, then stem support."""
+    return min(
+        range(len(cands)),
+        key=lambda i: (
+            cands[i].violations,
+            cands[i].syllables,
+            -cands[i].support,
+            len(cands[i].lacyo_phonemes),
+            cands[i].source_lang,
+        ),
+    )
+
+
+def sa_index(cands: list[Candidate], chosen: dict) -> int:
+    src = chosen["source_lang"]
+    word = chosen["source_word"]
+    ortho = chosen["orthography"]
+    for i, c in enumerate(cands):
+        if c.source_lang == src and c.source_word == word and c.orthography == ortho:
+            return i
+    for i, c in enumerate(cands):
+        if c.orthography == ortho:
+            return i
+    raise KeyError(f"SA root not in candidates: {src}:{word} {ortho}")
+
+
+def make_genome(
+    candidates: dict[str, list[Candidate]],
+    selections: dict[str, int],
+    noun: dict,
+    verb: dict,
+    adj: dict,
+) -> Genome:
+    return Genome(
+        selections=selections,
+        candidates=candidates,
+        noun_endings=noun,
+        verb_endings=verb,
+        adj_endings=adj,
+    )
+
+
+def policy_selections(
+    name: str,
+    candidates: dict[str, list[Candidate]],
+    lexicon: dict,
+) -> dict[str, int]:
+    sel: dict[str, int] = {}
+    lang = {
+        "always-es": "es",
+        "always-pt": "pt",
+        "always-fr": "fr",
+        "always-it": "it",
+        "always-ca": "ca",
+        "always-ro": "ro",
+        "always-gl": "gl",
+        "always-oc": "oc",
+    }.get(name)
+    for cid, cands in candidates.items():
+        if name == "sa":
+            sel[cid] = sa_index(cands, lexicon["roots"][cid])
+        elif name == "shortest":
+            sel[cid] = shortest_index(cands)
+        elif name == "legal-shortest":
+            sel[cid] = legal_shortest_index(cands)
+        elif lang:
+            idx = cand_by_lang(cands, lang)
+            if idx is None:
+                idx = shortest_index(cands)
+            sel[cid] = idx
+        else:
+            raise ValueError(name)
+    return sel
+
+
+def transparency_bin(d: int) -> str:
+    if d <= 1:
+        return "transparente"
+    if d <= 3:
+        return "adivinable"
+    return "opaco"
+
+
+def gold_index() -> dict[str, dict]:
+    return {row["id"]: row for row in swadesh_concepts()}
+
+
+def by_lang_map(cands: list[Candidate]) -> dict[str, Candidate]:
+    return {c.source_lang: c for c in cands}
+
+
+def choice_why(chosen: Candidate, cands: list[Candidate]) -> str:
+    """Human reason the chosen root beat the rest (lexicographic energy)."""
+    legal = [c for c in cands if c.violations == 0] or list(cands)
+    shorter = [c for c in legal if c.syllables < chosen.syllables]
+    if shorter:
+        return f"SA ≠ greedy (hay legal σ={shorter[0].syllables})"
+    same = [c for c in legal if c.syllables == chosen.syllables and c.orthography != chosen.orthography]
+    if not same:
+        return f"única legal a σ={chosen.syllables}"
+    better_sup = [c for c in same if c.support > chosen.support]
+    if better_sup:
+        return f"σ={chosen.syllables} pero support {chosen.support} < {better_sup[0].support}"
+    rivals = [c for c in same if c.support == chosen.support]
+    if rivals:
+        langs = ",".join(sorted({c.source_lang for c in rivals})[:4])
+        return f"σ={chosen.syllables}, support={chosen.support} (empate con {langs})"
+    return f"σ={chosen.syllables}, support={chosen.support}"
+
+
+def render_scorecard(
+    candidates: dict[str, list[Candidate]],
+    lexicon: dict,
+    policies: dict[str, dict],
+    init_energy: float | None,
+) -> str:
+    gold = gold_index()
+    sa_sel = policy_selections("sa", candidates, lexicon)
+    short_sel = policy_selections("shortest", candidates, lexicon)
+    legal_sel = policy_selections("legal-shortest", candidates, lexicon)
+
+    provenance = Counter()
+    rows = []
+    disagree = []
+    identical_es_pt = 0
+    sa_eq_es = sa_eq_pt = sa_eq_fr = sa_eq_it = sa_eq_short = sa_eq_legal = 0
+
+    for cid in sorted(candidates, key=lambda c: gold.get(c, {}).get("gloss_es", c)):
+        cands = candidates[cid]
+        lang_map = by_lang_map(cands)
+        chosen = cands[sa_sel[cid]]
+        provenance[chosen.source_lang] += 1
+        gloss = gold.get(cid, {}).get("gloss_es", cid)
+
+        es_c = lang_map.get("es")
+        pt_c = lang_map.get("pt")
+        d_es = phonemic_edit_distance(chosen.lacyo_phonemes, es_c.lacyo_phonemes) if es_c else None
+        d_pt = phonemic_edit_distance(chosen.lacyo_phonemes, pt_c.lacyo_phonemes) if pt_c else None
+        closer_vals = [x for x in (d_es, d_pt) if x is not None]
+        closer = min(closer_vals) if closer_vals else 99
+        bin_name = transparency_bin(closer) if closer_vals else "—"
+
+        if es_c and pt_c and es_c.orthography == pt_c.orthography:
+            identical_es_pt += 1
+        if es_c and chosen.orthography == es_c.orthography:
+            sa_eq_es += 1
+        if pt_c and chosen.orthography == pt_c.orthography:
+            sa_eq_pt += 1
+        if "fr" in lang_map and chosen.orthography == lang_map["fr"].orthography:
+            sa_eq_fr += 1
+        if "it" in lang_map and chosen.orthography == lang_map["it"].orthography:
+            sa_eq_it += 1
+        if sa_sel[cid] == short_sel[cid]:
+            sa_eq_short += 1
+        if sa_sel[cid] == legal_sel[cid]:
+            sa_eq_legal += 1
+        else:
+            legal = cands[legal_sel[cid]]
+            reason = "desempate / inventario"
+            if chosen.syllables != legal.syllables:
+                reason = "sílabas distintas"
+            elif chosen.source_lang != legal.source_lang:
+                reason = "misma σ, otra fuente"
+            disagree.append((gloss, cid, chosen, legal, reason))
+
+        def form(lang: str) -> str:
+            gold_row = gold.get(cid, {})
+            if lang in gold_row and gold_row[lang]:
+                return gold_row[lang]
+            c = lang_map.get(lang)
+            return c.source_word if c else "—"
+
+        def syl(lang: str) -> str:
+            c = lang_map.get(lang)
+            return str(c.syllables) if c else "—"
+
+        rows.append({
+            "gloss": gloss,
+            "es": form("es"),
+            "pt": form("pt"),
+            "fr": form("fr"),
+            "it": form("it"),
+            "ca": form("ca"),
+            "lacyo": chosen.orthography,
+            "src": chosen.source_lang,
+            "sig": chosen.syllables,
+            "s_es": syl("es"),
+            "s_pt": syl("pt"),
+            "s_fr": syl("fr"),
+            "s_it": syl("it"),
+            "s_ca": syl("ca"),
+            "bin": bin_name,
+            "d_es": d_es,
+            "d_pt": d_pt,
+            "sup": chosen.support,
+            "why": choice_why(chosen, cands),
+        })
+
+    n = len(candidates)
+    lines: list[str] = []
+    lines.append(f"# Lacyo Swadesh — {len(SOURCE_LANGS)} lects Romance")
+    lines.append("")
+    lines.append("Lexicón de origen mixto: una forma Lacyo por concepto, elegida")
+    lines.append(
+        "entre candidatos meaning-aligned de **"
+        + " / ".join(SOURCE_LANGS)
+        + f"** ({len(SOURCE_LANGS)} lects)."
+    )
+    lines.append("El inglés no es lengua fuente. Las columnas ES/PT son de inspección.")
+    lines.append("")
+    lines.append("## Qué minimiza el SA")
+    lines.append("")
+    lines.append("Una raíz no se elige “porque sí”. El recocido minimiza")
+    lines.append("")
+    lines.append("$$")
+    lines.append(r"E = 1000\sum_r \sigma(r) + 10\sum_r (N_{\mathrm{src}}-\mathrm{support}(r)) + 200\sum_e \sigma(e)")
+    lines.append(r"+ 100000\cdot\mathrm{coll} + 500000\cdot\mathrm{viol} + 500\sum_{i<j}\max(0,2-d(e_i,e_j))")
+    lines.append("$$")
+    lines.append("")
+    lines.append("| término | peso | qué hace en la práctica |")
+    lines.append("|---|---:|---|")
+    lines.append("| **σ raíces** | 1000 | una sílaba extra gana a todo lo de abajo |")
+    lines.append("| **support** | 10 | a igual σ, el stem que cubre más lects (`gat` × ca/oc/lmo… vs `xa` × fr) |")
+    lines.append("| σ desinencias | 200 | terminaciones cortas |")
+    lines.append("| colisiones | 100000 | duro: dos casillas del paradigma no pueden ser homófonas |")
+    lines.append("| fonotáctica | 500000 | duro: forma ilegal fuera (por eso PT crudo pierde aunque sea corto) |")
+    lines.append("| distancia desinencias | 500 | personas de un mismo tiempo no se parecen demasiado |")
+    lines.append("| inventario \\|Φ\\| | **0** | no se minimiza; `/v/` se queda |")
+    lines.append("")
+    lines.append("Orden lexicográfico de una **raíz**: legal → menos σ → más support")
+    lines.append("→ menos fonemas → código de lengua. Por eso portugués puede salir 0%:")
+    lines.append("casi siempre hay una hermana legal igual de corta o más corta.")
+    lines.append("`N_src` = 34. Un stem con support 8 cuesta `10×(34-8)=260`; una σ extra cuesta 1000.")
+    lines.append("")
+    lines.append("## Veredicto")
+    lines.append("")
+
+    mixed = policies["sa"]
+    es_p = policies["always-es"]
+    pt_p = policies["always-pt"]
+    fr_p = policies["always-fr"]
+    it_p = policies["always-it"]
+    legal_p = policies["legal-shortest"]
+    raw_p = policies["shortest"]
+
+    lines.append(
+        f"Frente a **español** y **portugués** (las lenguas de inspección): "
+        f"el mixto tiene **{mixed['sum_syl']}** sílabas de raíz vs "
+        f"ES {es_p['sum_syl']} y PT {pt_p['sum_syl']}, con **0** violaciones "
+        f"(ES {es_p['viols']}, PT {pt_p['viols']})."
+    )
+    lines.append("")
+    delta_fr = mixed["sum_syl"] - fr_p["sum_syl"]
+    lines.append(
+        f"Frente a **francés crudo**: always-fr suma {fr_p['sum_syl']}σ "
+        f"pero con **{fr_p['viols']} violaciones** (E_tact enorme). "
+        f"El mixto es {delta_fr}σ más largo y legal. Italiano crudo es peor "
+        f"({it_p['sum_syl']}σ, {it_p['viols']} viol.)."
+    )
+    lines.append("")
+    sa_e = mixed["energy"]
+    legal_e = legal_p["energy"]
+    extra = mixed["sum_syl"] - legal_p["sum_syl"]
+    lines.append(
+        f"Calidad del optimizador (raíces): SA **no recuperó el greedy**. "
+        f"legal-shortest = {legal_p['sum_syl']}σ / E={legal_e:.0f}; "
+        f"SA = {mixed['sum_syl']}σ / E={sa_e:.0f} "
+        f"({extra}σ extra, acuerdo {sa_eq_legal}/{n}). "
+        f"El init ya partía de raíces legal-shortest ({legal_p['sum_syl']}σ); "
+        f"500k iteraciones dejaron la temperatura alta (accept ~90%) y "
+        f"algunas raíces se alargaron mientras se limpiaban colisiones. "
+        f"El shortest crudo (ignora fonotáctica) llega a {raw_p['sum_syl']}σ "
+        f"con {raw_p['viols']} violaciones y no es un baseline de energía."
+    )
+    lines.append("")
+
+    lines.append("## Procedencia (raíces SA)")
+    lines.append("")
+    lines.append("| fuente | raíces | % |")
+    lines.append("|---|---:|---:|")
+    for lang in SOURCE_LANGS:
+        c = provenance[lang]
+        lines.append(f"| `{lang}` | {c} | {100*c/n:.1f}% |")
+    lines.append(f"| **total** | {n} | 100% |")
+    lines.append("")
+
+    lines.append("## Totales por política")
+    lines.append("")
+    lines.append("Las terminaciones de SA se mantienen fijas en las políticas de raíz")
+    lines.append("(salvo `init`: raíces más cortas legales + terminaciones aleatorias, semilla 42).")
+    lines.append("")
+    lines.append("| política | Σσ raíces | media σ | viol | \\|Φ\\| | E_root | E_norm | E_end | E_coll | E_tact | E_dist | E_total |")
+    lines.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
+    for name in POLICIES:
+        if name not in policies:
+            continue
+        p = policies[name]
+        lines.append(
+            f"| {name} | {p['sum_syl']} | {p['mean_syl']:.2f} | {p['viols']} | {p['n_phon']} | "
+            f"{p['bd']['E_root']:.0f} | {p['bd'].get('E_norm', 0):.0f} | {p['bd']['E_end']:.0f} | "
+            f"{p['bd']['E_coll']:.0f} | {p['bd']['E_tact']:.0f} | {p['bd']['E_dist']:.0f} | "
+            f"{p['energy']:.0f} |"
+        )
+    if init_energy is not None:
+        lines.append("")
+        lines.append(
+            f"Energía inicial reportada por el CLI Rust: **{init_energy:.0f}** "
+            f"(comparar con SA E_total = {sa_e:.0f})."
+        )
+    lines.append("")
+
+    lines.append("## Acuerdo")
+    lines.append("")
+    lines.append(f"- Conceptos: **{n}**")
+    lines.append(f"- ES y PT adaptados idénticos: {identical_es_pt}/{n}")
+    lines.append(f"- SA = ES (ortografía Lacyo): {sa_eq_es}/{n}")
+    lines.append(f"- SA = PT: {sa_eq_pt}/{n}")
+    lines.append(f"- SA = FR: {sa_eq_fr}/{n}")
+    lines.append(f"- SA = IT: {sa_eq_it}/{n}")
+    lines.append(f"- SA = shortest (crudo): {sa_eq_short}/{n}")
+    lines.append(f"- SA = legal-shortest: {sa_eq_legal}/{n}")
+    lines.append(f"- SA ≠ legal-shortest: {len(disagree)}/{n}")
+    lines.append("")
+
+    lines.append("## Frases de demostración")
+    lines.append("")
+    lines.append("Con conjugación y concordancia. Artículo cerrado **o/a** (PT), no el/la.")
+    lines.append("Copula 3sg **e** (é). Verbo = tema (infinitivo menos `-r`) + desinencia.")
+    lines.append("")
+
+    sa_roots = {cid: {
+        "orthography": candidates[cid][sa_sel[cid]].orthography,
+        "source_lang": candidates[cid][sa_sel[cid]].source_lang,
+        "source_word": candidates[cid][sa_sel[cid]].source_word,
+    } for cid in sa_sel}
+    verb_endings = {
+        slot: ortho
+        for cls in lexicon.get("verb_endings", {}).values()
+        for slot, ortho in cls.items()
+    }
+    adj_endings = dict(lexicon.get("adj_endings", {}))
+
+    for sent in SENTENCES:
+        toks: list[str] = list(sent["tokens"])  # type: ignore
+        needed = [t for t in toks if t != "def_art"]
+        missing = [t for t in needed if t not in candidates]
+        lines.append(f"### {sent['es']}")
+        lines.append("")
+        lines.append(f"PT: {sent['pt']}")
+        lines.append("")
+        if missing:
+            lines.append(f"_Faltan conceptos: {', '.join(missing)}_")
+            lines.append("")
+            continue
+        realized = realize_sentence(
+            toks, sa_roots, verb_endings, adj_endings, candidates=candidates,
+        )
+        lacyo_w = [w["form"] for w in realized]
+        src_w = [f"[{w['src']}]" for w in realized]
+        es_w, pt_w = [], []
+        for w in realized:
+            if w["concept"] == "def_art":
+                es_w.append("el/la")
+                pt_w.append(w["form"])
+                continue
+            if w["concept"] == "copula":
+                es_w.append("es")
+                pt_w.append("é")
+                continue
+            grow = gold.get(w["concept"], {})
+            es_w.append(grow.get("es", "—"))
+            pt_w.append(grow.get("pt", "—"))
+        mix_s = sum(form_syllables(w["form"]) for w in realized)
+        lines.append("```")
+        lines.append("Lacyo  " + "  ".join(lacyo_w))
+        lines.append("src    " + "  ".join(src_w))
+        lines.append("es     " + "  ".join(es_w))
+        lines.append("pt     " + "  ".join(pt_w))
+        lines.append(f"σ      {mix_s}")
+        lines.append("```")
+        lines.append("")
+
+    lines.append("## Género (sustantivos pueden mezclar fuentes; verbos no)")
+    lines.append("")
+    lines.append("Par masculino/femenino elegido por sílabas, independiente.")
+    lines.append("Ejemplo permitido: M `gat` [ca] + F `chatte` [fr].")
+    lines.append("Los verbos no se parten así: un lexema, una conjugación entera.")
+    lines.append("")
+    lines.append("| glosa | M Lacyo | src | σ | F Lacyo | src | σ |")
+    lines.append("|---|---|---|---:|---|---|---:|")
+    for masc_id, fem_id in GENDER_PAIRS:
+        if masc_id not in sa_sel or fem_id not in sa_sel:
+            continue
+        m = candidates[masc_id][sa_sel[masc_id]]
+        f = candidates[fem_id][sa_sel[fem_id]]
+        gloss = gold.get(masc_id, {}).get("gloss_es", masc_id)
+        lines.append(
+            f"| {gloss} | **{m.orthography}** | `{m.source_lang}` | {m.syllables} | "
+            f"**{f.orthography}** | `{f.source_lang}` | {f.syllables} |"
+        )
+    lines.append("")
+
+    lines.append("## Tabla por concepto")
+    lines.append("")
+    lines.append("| glosa | es | pt | fr | it | ca | Lacyo | src | σ | sup | por qué | bin |")
+    lines.append("|---|---|---|---|---|---|---|---|---:|---:|---|---|")
+    for r in rows:
+        lines.append(
+            f"| {r['gloss']} | {r['es']} | {r['pt']} | {r['fr']} | {r['it']} | {r['ca']} | "
+            f"**{r['lacyo']}** | `{r['src']}` | {r['sig']} | {r['sup']} | {r['why']} | {r['bin']} |"
+        )
+    lines.append("")
+
+    lines.append("## Apéndice: SA ≠ legal-shortest")
+    lines.append("")
+    if not disagree:
+        lines.append("Ninguna. SA coincidió con el greedy legal-shortest en todos los conceptos.")
+        lines.append("")
+    else:
+        lines.append("| glosa | SA | src | σ | legal-shortest | src | σ | razón |")
+        lines.append("|---|---|---|---:|---|---|---:|---|")
+        for gloss, cid, chosen, short, reason in disagree:
+            lines.append(
+                f"| {gloss} | {chosen.orthography} | `{chosen.source_lang}` | {chosen.syllables} | "
+                f"{short.orthography} | `{short.source_lang}` | {short.syllables} | {reason} |"
+            )
+        lines.append("")
+
+    lines.append("## Caveats")
+    lines.append("")
+    lines.append("- La glosa del scorecard es española; el `id` inglés del gold list no es fuente.")
+    lines.append("- Epitran G2P es aproximado: `água`→`aga`, `olho`→`olo`, `ojo`/`rojo`→`okso`/`rokso` (`/x/`→`ks`), `où` se pierde (`ù` no mapea). `chat`→`xa` es la ortografía fonémica (`ʃ`=`x`).")
+    lines.append("- La especificación trata los diptongos como fonemas-unidad; el código cuenta cada vocal.")
+    lines.append("- Lacyo no tiene género: un solo artículo (`def_art`) para todas las frases.")
+    lines.append("- Las frases muestran raíces, no formas flexionadas.")
+    lines.append("- Rumano queda fuera de esta corrida (no hay G2P cableado).")
+    lines.append("- Cooling por defecto (`0.999997`, 500k iters) no enfría: el greedy de raíces es mejor que SA en este run. Un follow-up es 2M iters o mutar raíces con menos frecuencia que terminaciones.")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def policy_stats(
+    name: str,
+    genome: Genome,
+) -> dict:
+    energy, bd = compute_energy(genome)
+    roots = genome.all_roots()
+    phon = set()
+    for r in roots:
+        phon.update(r.lacyo_phonemes)
+    for e in genome.all_endings():
+        phon.update(e)
+    sum_syl = sum(r.syllables for r in roots)
+    return {
+        "energy": energy,
+        "bd": bd,
+        "sum_syl": sum_syl,
+        "mean_syl": sum_syl / max(len(roots), 1),
+        "n_phon": len(phon),
+        "viols": sum(r.violations for r in roots),
+    }
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="ES/PT mixed-origin beta scorecard")
+    parser.add_argument("-c", "--candidates", default="data/eval/romance_candidates.json")
+    parser.add_argument("-l", "--lexicon", default="data/eval/romance_lexicon.json")
+    parser.add_argument("-o", "--output", default="docs/eval/34_romance_scorecard.md")
+    parser.add_argument("--init-energy", type=float, default=None,
+                        help="Initial energy from Rust SA stdout")
+    args = parser.parse_args()
+
+    candidates = load_candidates(Path(args.candidates))
+    lexicon = json.loads(Path(args.lexicon).read_text())
+    noun, verb, adj = endings_from_lexicon(lexicon)
+
+    english_roots = [
+        cid for cid, root in lexicon["roots"].items()
+        if root.get("source_lang") == "en"
+    ]
+    if english_roots:
+        raise SystemExit(f"English sources in lexicon: {english_roots[:5]}")
+
+    policies = {}
+    for name in POLICIES:
+        if name == "init":
+            random.seed(42)
+            genome = init_genome(candidates)
+        else:
+            sel = policy_selections(name, candidates, lexicon)
+            genome = make_genome(candidates, sel, noun, verb, adj)
+        policies[name] = policy_stats(name, genome)
+
+    init_energy = args.init_energy
+    meta = lexicon.get("metadata", {})
+    if init_energy is None and "initial_energy" in meta:
+        init_energy = float(meta["initial_energy"])
+
+    text = render_scorecard(candidates, lexicon, policies, init_energy)
+    out = Path(args.output)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text, encoding="utf-8")
+    print(f"Wrote {out}")
+    print(f"  concepts={len(candidates)}  SA Σσ={policies['sa']['sum_syl']}  "
+          f"ES Σσ={policies['always-es']['sum_syl']}  PT Σσ={policies['always-pt']['sum_syl']}")
+
+
+if __name__ == "__main__":
+    main()

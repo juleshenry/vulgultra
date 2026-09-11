@@ -68,6 +68,7 @@ fn main() {
     let (mut genome, db) = init_genome(&input, &legal_endings, &mut rng);
     let mut cache = EnergyCache::from_genome(&genome, &db);
     let mut energy = cache.energy();
+    let initial_energy = energy;
 
     // Keep track of best state
     let mut best_genome = genome.clone();
@@ -132,7 +133,7 @@ fn main() {
     let breakdown = compute_energy(&best_genome, &db);
 
     // Output
-    let output = format_output(&best_genome, &db, &breakdown, iterations, accepted);
+    let output = format_output(&best_genome, &db, &breakdown, iterations, accepted, initial_energy);
     let json_out = serde_json::to_string_pretty(&output).expect("Failed to serialize output");
     fs::write(&cli.output, &json_out)
         .unwrap_or_else(|e| { eprintln!("Failed to write {}: {}", cli.output, e); std::process::exit(1); });
@@ -162,6 +163,7 @@ fn print_summary(
 
     println!("\n  Energy breakdown:");
     println!("    E_root       {:>12.0}", breakdown.e_root);
+    println!("    E_norm       {:>12.0}", breakdown.e_norm);
     println!("    E_phon       {:>12.0}", breakdown.e_phon);
     println!("    E_end        {:>12.0}", breakdown.e_end);
     println!("    E_coll       {:>12.0}", breakdown.e_coll);

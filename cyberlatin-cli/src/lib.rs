@@ -261,6 +261,12 @@ pub struct CandidateData {
     pub orthography: String,
     pub syllables: u32,
     pub violations: u32,
+    #[serde(default = "default_support")]
+    pub support: u32,
+}
+
+fn default_support() -> u32 {
+    1
 }
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -271,7 +277,7 @@ pub struct PipelineInput {
 // ── Ending paradigm slots ───────────────────────────────────────────────
 
 pub const NOUN_SLOTS: &[&str] = &[
-    "nom_sg", "nom_pl", "acc_sg", "acc_pl", "gen_sg", "gen_pl",
+    "m_sg", "f_sg", "m_pl", "f_pl",
 ];
 
 pub fn verb_slots() -> Vec<String> {
@@ -295,7 +301,70 @@ pub fn verb_slots() -> Vec<String> {
     slots
 }
 
-pub const ADJ_SLOTS: &[&str] = &["sg", "pl"];
+pub const ADJ_SLOTS: &[&str] = &["m_sg", "f_sg", "m_pl", "f_pl"];
+
+fn parse_ortho(s: &str) -> Vec<String> {
+    s.chars().map(|ch| match ch {
+        'x' => "ʃ".to_string(),
+        'c' => "t͡ʃ".to_string(),
+        'g' => "ɡ".to_string(),
+        other => other.to_string(),
+    }).collect()
+}
+
+fn fuse_cell(theme: &str, person: &str) -> Vec<String> {
+    if theme.is_empty() {
+        return parse_ortho(person);
+    }
+    let cell = if person.chars().count() > 1 {
+        format!("{}{}", theme, person.chars().last().unwrap())
+    } else {
+        format!("{}{}", theme, person)
+    };
+    parse_ortho(&cell)
+}
+
+fn verb_block(persons: &[&str], pst: &str, fut: &str, subj: &str) -> Vec<Vec<String>> {
+    let mut out = Vec::new();
+    for theme in ["", pst, fut] {
+        for p in persons {
+            out.push(fuse_cell(theme, p));
+        }
+    }
+    for p in persons { out.push(fuse_cell(subj, p)); }
+    for p in persons { out.push(fuse_cell("i", p)); }
+    for p in persons { out.push(fuse_cell("a", p)); }
+    for nf in ["r", "nt", "t", "a", "e"] {
+        out.push(parse_ortho(nf));
+    }
+    out
+}
+
+/// Whole-language conjugation tables. Never mix slots across sources.
+pub fn verb_templates() -> Vec<Vec<Vec<String>>> {
+    // person order: 1sg 1pl 2sg 2pl 3sg 3pl (matches verb_slots)
+    vec![
+        verb_block(&["o", "mos", "as", "is", "a", "an"], "i", "ra", "e"), // es
+        verb_block(&["o", "mos", "as", "is", "a", "am"], "i", "ra", "e"), // pt
+        verb_block(&["o", "am", "i", "at", "a", "an"], "e", "re", "i"),   // it
+        verb_block(&["o", "em", "es", "ew", "a", "en"], "i", "re", "i"),  // ca
+        verb_block(&["e", "on", "es", "e", "e", "et"], "e", "ra", "i"),   // fr
+    ]
+}
+
+/// Whole-language noun tables: m_sg f_sg m_pl f_pl
+pub fn noun_templates() -> Vec<Vec<Vec<String>>> {
+    vec![
+        vec![parse_ortho("o"), parse_ortho("a"), parse_ortho("os"), parse_ortho("as")], // es/pt
+        vec![parse_ortho("o"), parse_ortho("a"), parse_ortho("i"), parse_ortho("e")],   // it
+        vec![parse_ortho("e"), parse_ortho("a"), parse_ortho("s"), parse_ortho("es")],  // ca
+        vec![parse_ortho("e"), parse_ortho("e"), parse_ortho("s"), parse_ortho("s")],   // fr
+    ]
+}
+
+pub fn adj_templates() -> Vec<Vec<Vec<String>>> {
+    noun_templates()
+}
 
 // ── Legal endings pool ──────────────────────────────────────────────────
 
@@ -390,7 +459,9 @@ impl Genome {
 // ── Energy weights (grammar.tex Ch.4) ───────────────────────────────────
 
 pub const W_SYL: f64  = 1000.0;
-pub const W_PHON: f64 = 50.0;
+pub const W_PHON: f64 = 0.0;      // inventory is not an objective
+pub const W_NORM: f64 = 10.0;     // syllable-tie: prefer stems covering more sources
+pub const N_SOURCES: f64 = 34.0; // full README corpus minus English
 pub const W_END: f64  = 200.0;
 pub const W_COLL: f64 = 100_000.0;
 pub const W_TACT: f64 = 500_000.0;
@@ -400,6 +471,7 @@ pub const DIST_THRESHOLD: u32 = 2;
 #[derive(Clone, Debug, Serialize)]
 pub struct EnergyBreakdown {
     pub e_root: f64,
+    pub e_norm: f64,
     pub e_phon: f64,
     pub e_end: f64,
     pub e_coll: f64,
@@ -414,15 +486,21 @@ pub fn compute_energy(genome: &Genome, db: &CandidateDB) -> EnergyBreakdown {
     let mut all_phonemes: HashSet<String> = HashSet::new();
     let mut root_viols = 0u64;
 
+    let mut support_gap = 0u64;
     for i in 0..genome.n_concepts() {
         let r = genome.get_root(i, db);
         root_syls += r.syllables as u64;
         root_viols += r.violations as u64;
+        let s = r.support.max(1);
+        if (s as f64) < N_SOURCES {
+            support_gap += (N_SOURCES as u64) - s as u64;
+        }
         for p in &r.lacyo_phonemes {
             all_phonemes.insert(p.clone());
         }
     }
     let e_root = W_SYL * root_syls as f64;
+    let e_norm = W_NORM * support_gap as f64;
 
     let mut end_syls = 0u64;
     let mut end_viols = 0u64;
@@ -443,9 +521,9 @@ pub fn compute_energy(genome: &Genome, db: &CandidateDB) -> EnergyBreakdown {
     let e_coll = W_COLL * count_ending_collisions(genome) as f64;
     let e_dist = W_DIST * count_dist_penalty(genome);
 
-    let total = e_root + e_phon + e_end + e_coll + e_tact + e_dist;
+    let total = e_root + e_norm + e_phon + e_end + e_coll + e_tact + e_dist;
 
-    EnergyBreakdown { e_root, e_phon, e_end, e_coll, e_tact, e_dist, total }
+    EnergyBreakdown { e_root, e_norm, e_phon, e_end, e_coll, e_tact, e_dist, total }
 }
 
 fn count_ending_collisions(genome: &Genome) -> u64 {
@@ -525,6 +603,7 @@ fn collect_all_endings(genome: &Genome) -> Vec<&Vec<String>> {
 pub struct EnergyCache {
     pub total_root_syls: u64,
     pub total_root_viols: u64,
+    pub total_support_gap: u64,
     /// phoneme → count of roots+endings using it
     pub phoneme_counts: HashMap<String, u32>,
     /// Number of distinct phonemes (entries in phoneme_counts with count > 0)
@@ -540,12 +619,17 @@ impl EnergyCache {
     pub fn from_genome(genome: &Genome, db: &CandidateDB) -> Self {
         let mut total_root_syls = 0u64;
         let mut total_root_viols = 0u64;
+        let mut total_support_gap = 0u64;
         let mut phoneme_counts: HashMap<String, u32> = HashMap::new();
 
         for i in 0..genome.n_concepts() {
             let r = genome.get_root(i, db);
             total_root_syls += r.syllables as u64;
             total_root_viols += r.violations as u64;
+            let s = r.support.max(1);
+            if (s as f64) < N_SOURCES {
+                total_support_gap += (N_SOURCES as u64) - s as u64;
+            }
             for p in &r.lacyo_phonemes {
                 *phoneme_counts.entry(p.clone()).or_insert(0) += 1;
             }
@@ -568,6 +652,7 @@ impl EnergyCache {
         EnergyCache {
             total_root_syls,
             total_root_viols,
+            total_support_gap,
             phoneme_counts,
             n_phonemes,
             total_end_syls,
@@ -579,12 +664,13 @@ impl EnergyCache {
 
     pub fn energy(&self) -> f64 {
         let e_root = W_SYL * self.total_root_syls as f64;
+        let e_norm = W_NORM * self.total_support_gap as f64;
         let e_phon = W_PHON * self.n_phonemes as f64;
         let e_end = W_END * self.total_end_syls as f64;
         let e_tact = W_TACT * (self.total_root_viols + self.total_end_viols) as f64;
         let e_coll = W_COLL * self.ending_collisions as f64;
         let e_dist = W_DIST * self.ending_dist_penalty;
-        e_root + e_phon + e_end + e_coll + e_tact + e_dist
+        e_root + e_norm + e_phon + e_end + e_coll + e_tact + e_dist
     }
 
     fn add_phonemes(&mut self, phonemes: &[String]) {
@@ -606,9 +692,19 @@ impl EnergyCache {
 
     /// Update cache after a root selection change.
     /// `old_root` / `new_root` are the candidate data before/after.
+    fn support_gap(root: &CandidateData) -> u64 {
+        let s = root.support.max(1);
+        if (s as f64) < N_SOURCES {
+            (N_SOURCES as u64) - s as u64
+        } else {
+            0
+        }
+    }
+
     pub fn update_root(&mut self, old_root: &CandidateData, new_root: &CandidateData) {
         self.total_root_syls = self.total_root_syls - old_root.syllables as u64 + new_root.syllables as u64;
         self.total_root_viols = self.total_root_viols - old_root.violations as u64 + new_root.violations as u64;
+        self.total_support_gap = self.total_support_gap - Self::support_gap(old_root) + Self::support_gap(new_root);
         self.remove_phonemes(&old_root.lacyo_phonemes);
         self.add_phonemes(&new_root.lacyo_phonemes);
     }
@@ -663,6 +759,7 @@ pub fn init_genome(
     legal_endings: &[Vec<String>],
     rng: &mut impl rand::Rng,
 ) -> (Genome, CandidateDB) {
+    let _ = legal_endings;
     let concept_ids: Vec<String> = input.concepts.keys().cloned().collect();
     let db = CandidateDB::from_input(input, &concept_ids);
 
@@ -670,23 +767,21 @@ pub fn init_genome(
     for i in 0..concept_ids.len() {
         let best = db.by_index[i].iter()
             .enumerate()
-            .min_by_key(|(_, c)| (c.violations, c.syllables))
+            .min_by_key(|(_, c)| {
+                (c.violations, c.syllables, std::cmp::Reverse(c.support), c.lacyo_phonemes.len(), c.source_lang.clone())
+            })
             .map(|(idx, _)| idx)
             .unwrap_or(0);
         selections.push(best);
     }
 
-    let v_slots = verb_slots();
+    let noun_tmpls = noun_templates();
+    let verb_tmpls = verb_templates();
+    let adj_tmpls = adj_templates();
 
-    let noun_endings = vec![
-        NOUN_SLOTS.iter().map(|_| random_ending(legal_endings, rng)).collect()
-    ];
-    let verb_endings = vec![
-        v_slots.iter().map(|_| random_ending(legal_endings, rng)).collect()
-    ];
-    let adj_endings: Vec<Vec<String>> = ADJ_SLOTS.iter()
-        .map(|_| random_ending(legal_endings, rng))
-        .collect();
+    let noun_endings = vec![noun_tmpls[rng.gen_range(0..noun_tmpls.len())].clone()];
+    let verb_endings = vec![verb_tmpls[rng.gen_range(0..verb_tmpls.len())].clone()];
+    let adj_endings = adj_tmpls[rng.gen_range(0..adj_tmpls.len())].clone();
 
     let genome = Genome {
         selections,
@@ -708,9 +803,9 @@ fn random_ending(pool: &[Vec<String>], rng: &mut impl rand::Rng) -> Vec<String> 
 /// Describes what was mutated so it can be undone.
 pub enum MutationUndo {
     Root { concept_idx: usize, old_selection: usize },
-    NounEnding { class: usize, slot: usize, old_ending: Vec<String> },
-    VerbEnding { class: usize, slot: usize, old_ending: Vec<String> },
-    AdjEnding { slot: usize, old_ending: Vec<String> },
+    NounClass { class: usize, old_endings: Vec<Vec<String>> },
+    VerbClass { class: usize, old_endings: Vec<Vec<String>> },
+    AdjClass { old_endings: Vec<Vec<String>> },
 }
 
 /// Mutate the genome in place and return undo info.
@@ -721,6 +816,7 @@ pub fn mutate_in_place(
     legal_endings: &[Vec<String>],
     rng: &mut impl rand::Rng,
 ) -> MutationUndo {
+    let _ = legal_endings;
     if rng.gen_bool(0.5) {
         // Mutate root
         let n = genome.n_concepts();
@@ -743,31 +839,28 @@ pub fn mutate_in_place(
 
         MutationUndo::Root { concept_idx: idx, old_selection: old_sel }
     } else {
-        // Mutate ending
+        // Mutate a whole paradigm (never mix slots across languages)
         let r: f64 = rng.gen();
-        if r < 0.15 {
+        if r < 0.2 {
             let cls = rng.gen_range(0..genome.noun_endings.len());
-            let slot = rng.gen_range(0..genome.noun_endings[cls].len());
-            let old_ending = genome.noun_endings[cls][slot].clone();
-            let new_ending = random_ending(legal_endings, rng);
-            genome.noun_endings[cls][slot] = new_ending.clone();
-            cache.update_endings(genome, &old_ending, &new_ending);
-            MutationUndo::NounEnding { class: cls, slot, old_ending }
-        } else if r < 0.95 {
+            let old_endings = genome.noun_endings[cls].clone();
+            let tmpls = noun_templates();
+            genome.noun_endings[cls] = tmpls[rng.gen_range(0..tmpls.len())].clone();
+            *cache = EnergyCache::from_genome(genome, db);
+            MutationUndo::NounClass { class: cls, old_endings }
+        } else if r < 0.9 {
             let cls = rng.gen_range(0..genome.verb_endings.len());
-            let slot = rng.gen_range(0..genome.verb_endings[cls].len());
-            let old_ending = genome.verb_endings[cls][slot].clone();
-            let new_ending = random_ending(legal_endings, rng);
-            genome.verb_endings[cls][slot] = new_ending.clone();
-            cache.update_endings(genome, &old_ending, &new_ending);
-            MutationUndo::VerbEnding { class: cls, slot, old_ending }
+            let old_endings = genome.verb_endings[cls].clone();
+            let tmpls = verb_templates();
+            genome.verb_endings[cls] = tmpls[rng.gen_range(0..tmpls.len())].clone();
+            *cache = EnergyCache::from_genome(genome, db);
+            MutationUndo::VerbClass { class: cls, old_endings }
         } else {
-            let slot = rng.gen_range(0..genome.adj_endings.len());
-            let old_ending = genome.adj_endings[slot].clone();
-            let new_ending = random_ending(legal_endings, rng);
-            genome.adj_endings[slot] = new_ending.clone();
-            cache.update_endings(genome, &old_ending, &new_ending);
-            MutationUndo::AdjEnding { slot, old_ending }
+            let old_endings = genome.adj_endings.clone();
+            let tmpls = adj_templates();
+            genome.adj_endings = tmpls[rng.gen_range(0..tmpls.len())].clone();
+            *cache = EnergyCache::from_genome(genome, db);
+            MutationUndo::AdjClass { old_endings }
         }
     }
 }
@@ -787,20 +880,17 @@ pub fn undo_mutation(
             cache.undo_root(old_root, current_root);
             genome.selections[concept_idx] = old_selection;
         }
-        MutationUndo::NounEnding { class, slot, old_ending } => {
-            let new_ending = genome.noun_endings[class][slot].clone();
-            genome.noun_endings[class][slot] = old_ending.clone();
-            cache.undo_endings(genome, &old_ending, &new_ending);
+        MutationUndo::NounClass { class, old_endings } => {
+            genome.noun_endings[class] = old_endings;
+            *cache = EnergyCache::from_genome(genome, db);
         }
-        MutationUndo::VerbEnding { class, slot, old_ending } => {
-            let new_ending = genome.verb_endings[class][slot].clone();
-            genome.verb_endings[class][slot] = old_ending.clone();
-            cache.undo_endings(genome, &old_ending, &new_ending);
+        MutationUndo::VerbClass { class, old_endings } => {
+            genome.verb_endings[class] = old_endings;
+            *cache = EnergyCache::from_genome(genome, db);
         }
-        MutationUndo::AdjEnding { slot, old_ending } => {
-            let new_ending = genome.adj_endings[slot].clone();
-            genome.adj_endings[slot] = old_ending.clone();
-            cache.undo_endings(genome, &old_ending, &new_ending);
+        MutationUndo::AdjClass { old_endings } => {
+            genome.adj_endings = old_endings;
+            *cache = EnergyCache::from_genome(genome, db);
         }
     }
 }
@@ -824,6 +914,7 @@ pub struct LexiconOutput {
 pub struct OutputMetadata {
     pub total_concepts: usize,
     pub total_energy: f64,
+    pub initial_energy: f64,
     pub iterations: u64,
     pub acceptance_rate: f64,
 }
@@ -844,6 +935,7 @@ pub fn format_output(
     breakdown: &EnergyBreakdown,
     iterations: u64,
     accepted: u64,
+    initial_energy: f64,
 ) -> LexiconOutput {
     let mut all_phonemes: HashSet<String> = HashSet::new();
     let mut roots: HashMap<String, RootOutput> = HashMap::new();
@@ -901,6 +993,7 @@ pub fn format_output(
         metadata: OutputMetadata {
             total_concepts: genome.n_concepts(),
             total_energy: breakdown.total,
+            initial_energy,
             iterations,
             acceptance_rate: if iterations > 0 { accepted as f64 / iterations as f64 } else { 0.0 },
         },
