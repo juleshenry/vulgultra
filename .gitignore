@@ -9,7 +9,7 @@ __pycache__/
 .venv/
 xmls/
 *.clatin
-cyberlatin-cli/target/
+vulgultra-cli/target/
 
 Archive/
 Archive.zip
@@ -26,3 +26,5 @@ Archive.zip
 *.pdf
 *.bz2
 vendor/
+*.jsonl
+kaikki.org-dictionary-*.jsonl
