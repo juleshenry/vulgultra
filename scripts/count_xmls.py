@@ -9,6 +9,7 @@ ALL_LANGS = {
     # Reserved: not a Lacyo source. Kept so the dump can be used later.
     'en': ('English (reserved, not a source)', 'enwiktionary-latest-pages-articles.xml', False),
     'es': ('Spanish', 'eswiktionary-latest-pages-articles.xml', False),
+    'ext': ('Extremaduran', 'data/words/ext_words.json', True),
     'fr': ('French', 'frwiktionary-latest-pages-articles.xml', False),
     'gl': ('Galician', 'glwiktionary-latest-pages-articles.xml', False),
     'it': ('Italian', 'itwiktionary-latest-pages-articles.xml', False),
@@ -32,7 +33,6 @@ ALL_LANGS = {
     'frp': ('Franco-Provençal', 'data/words/frp_words.json', True),
     'fur': ('Friulian', 'data/words/fur_words.json', True),
     'nrm': ('Norman', 'data/words/nrm_words.json', True),
-    'ext': ('Extremaduran', 'data/words/ext_words.json', True),
     'eml': ('Emiliano-Romagnolo', 'data/words/eml_words.json', True),
     'lld': ('Ladin', 'data/words/lld_words.json', True),
     'gsc': ('Gascon', 'data/words/gsc_words.json', True),

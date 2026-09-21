@@ -8,6 +8,7 @@ ALL_LANGS = {
     # Reserved dump — not a Lacyo source.
     'en': ('English (reserved)', False),
     'es': ('Spanish', False),
+    'ext': ('Extremaduran', True),
     'fr': ('French', False),
     'gl': ('Galician', False),
     'it': ('Italian', False),
@@ -30,7 +31,6 @@ ALL_LANGS = {
     'frp': ('Franco-Provençal', True),
     'fur': ('Friulian', True),
     'nrm': ('Norman', True),
-    'ext': ('Extremaduran', True),
     'eml': ('Emiliano-Romagnolo', True),
     'lld': ('Ladin', True),
     'gsc': ('Gascon', True),

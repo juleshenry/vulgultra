@@ -1,8 +1,8 @@
-"""Surface realization: articles o/a, verb conjugation, adjective agreement.
+"""Surface realization: case, gender, articles, verbs, copula.
 
-Bare roots are not sentences. Nouns take Portuguese-style articles (o/a/os/as),
-cheaper than el/la. Verbs take the whole conjugation template. Copula is
-suppletive (é/e), not ser + random ending.
+Nouns inflect gender × case × number (reverse VL nom/acc/gen).
+Adjectives copy that table. Definite articles o/a/os/as mark definiteness
+only (not role). Copula is suppletive (é/e).
 """
 
 from __future__ import annotations
@@ -121,8 +121,30 @@ def inflect_verb(
     return add_ending(stem, ending)
 
 
-def inflect_adj(stem: str, gender: str, number: str, adj_endings: dict[str, str]) -> str:
-    slot = f"{gender}_{number}"
+def inflect_noun(
+    stem: str,
+    gender: str,
+    number: str,
+    noun_endings: dict[str, str],
+    case: str = "nom",
+) -> str:
+    slot = f"{gender}_{case}_{number}"
+    fallback = "o" if gender == "m" else "a"
+    if case == "acc":
+        fallback = "on" if gender == "m" else "an"
+    elif case == "gen":
+        fallback = "is" if gender == "m" else "es"
+    return add_ending(stem, noun_endings.get(slot, fallback))
+
+
+def inflect_adj(
+    stem: str,
+    gender: str,
+    number: str,
+    adj_endings: dict[str, str],
+    case: str = "nom",
+) -> str:
+    slot = f"{gender}_{case}_{number}"
     return add_ending(stem, adj_endings.get(slot, "o" if gender == "m" else "a"))
 
 
@@ -147,6 +169,7 @@ def realize_sentence(
     verb_endings: dict[str, str],
     adj_endings: dict[str, str],
     candidates: dict | None = None,
+    noun_endings: dict[str, str] | None = None,
 ) -> list[dict[str, str]]:
     """
     tokens → list of {form, src, concept, role}.
@@ -187,11 +210,13 @@ def realize_sentence(
                     "role": "art",
                 })
                 pending_art = False
+            if noun_endings:
+                stem = inflect_noun(stem, np_gender, "sg", noun_endings, case="nom")
             out.append({"form": stem, "src": src, "concept": tok, "role": "noun"})
             continue
 
         if pos == "adj":
-            form = inflect_adj(stem, np_gender, "sg", adj_endings)
+            form = inflect_adj(stem, np_gender, "sg", adj_endings, case="nom")
             out.append({"form": form, "src": src, "concept": tok, "role": "adj"})
             continue
 

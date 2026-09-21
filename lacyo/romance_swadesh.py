@@ -1,7 +1,7 @@
 """Meaning-aligned Romance Swadesh + closed class.
 
-Full README corpus minus English (34 lects). Each lect has its own
-conjugation table in lacyo.paradigms — no “conjugate like Spanish” fallback.
+Full README corpus minus English (34 lects). Extremaduran kept — book source
+available. Each lect has its own conjugation table in lacyo.paradigms.
 """
 
 from __future__ import annotations

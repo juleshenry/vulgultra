@@ -39,7 +39,8 @@ pub const LEGAL_CODAS: &[&str] = &[
     "j", "w",
 ];  // any consonant — naturalistic, respects Romance sources
 pub const SONORANTS: &[&str] = &["m", "n", "l", "r"];
-pub const OBSTRUENTS: &[&str] = &["p", "b", "t", "d", "k", "ɡ", "f", "v", "s"];
+pub const OBSTRUENTS: &[&str] = &["p", "b", "t", "d", "k", "ɡ", "f", "v", "s", "z", "ʃ", "t͡ʃ"];
+pub const S_LIKE: &[&str] = &["s", "z", "ʃ"];
 pub const ONSET2: &[&str] = &["l", "r", "j", "w"];
 
 // ── IPA → orthography ───────────────────────────────────────────────────
@@ -89,6 +90,29 @@ pub fn is_onset2(p: &str) -> bool {
 }
 
 #[inline]
+pub fn is_s_like(p: &str) -> bool {
+    S_LIKE.contains(&p)
+}
+
+pub fn legal_onset_cluster(c1: &str, c2: &str) -> bool {
+    if is_onset2(c2) && (is_obstruent(c1) || is_sonorant(c1) || is_s_like(c1)) {
+        return true;
+    }
+    is_s_like(c1) && c1 != c2
+}
+
+pub fn legal_onset_triple(c1: &str, c2: &str, c3: &str) -> bool {
+    is_s_like(c1) && legal_onset_cluster(c2, c3)
+}
+
+pub fn legal_coda_cluster(c1: &str, c2: &str) -> bool {
+    if is_sonorant(c1) {
+        return true;
+    }
+    is_s_like(c1) && is_obstruent(c2)
+}
+
+#[inline]
 pub fn is_sonorant(p: &str) -> bool {
     SONORANTS.contains(&p)
 }
@@ -135,16 +159,21 @@ fn syllabify(seq: &[String]) -> Vec<Vec<usize>> {
             } else if inter_len == 2 {
                 let c1 = &seq[inter_start];
                 let c2 = &seq[inter_start + 1];
-                if is_obstruent(c1) && is_onset2(c2) {
+                if legal_onset_cluster(c1, c2) {
                     start = inter_start;
                 } else {
                     syllables.last_mut().unwrap().push(inter_start);
                     start = inter_start + 1;
                 }
             } else {
-                let c_pen = &seq[vi - 2];
-                let c_last = &seq[vi - 1];
-                if is_obstruent(c_pen) && is_onset2(c_last) {
+                let take3 = inter_len >= 3
+                    && legal_onset_triple(&seq[vi - 3], &seq[vi - 2], &seq[vi - 1]);
+                if take3 {
+                    for idx in inter_start..(vi - 3) {
+                        syllables.last_mut().unwrap().push(idx);
+                    }
+                    start = vi - 3;
+                } else if legal_onset_cluster(&seq[vi - 2], &seq[vi - 1]) {
                     for idx in inter_start..(vi - 2) {
                         syllables.last_mut().unwrap().push(idx);
                     }
@@ -192,35 +221,21 @@ pub fn count_violations(seq: &[String]) -> u32 {
         if coda.len() > 2 {
             violations += (coda.len() - 2) as u32;
         }
-        // Coda cluster of 2: sonorant + obstruent is natural in Romance
-        if coda.len() == 2 {
-            if !is_sonorant(coda[0]) {
+        if coda.len() == 2 && !legal_coda_cluster(coda[0], coda[1]) {
+            violations += 1;
+        }
+        if onset.len() > 3 {
+            violations += (onset.len() - 3) as u32;
+        } else if onset.len() == 3 {
+            if !legal_onset_triple(onset[0], onset[1], onset[2]) {
                 violations += 1;
             }
-        }
-        if onset.len() > 2 {
-            violations += (onset.len() - 2) as u32;
-        }
-        if onset.len() == 2 {
-            if !is_obstruent(onset[0]) || !is_onset2(onset[1]) {
-                violations += 1;
-            }
-        }
-        // Any single consonant is a legal coda — naturalistic
-    }
-
-    // No gemination across syllable boundaries
-    for i in 0..syls.len().saturating_sub(1) {
-        let last_of_prev = syls[i].last().map(|&idx| &seq[idx]);
-        let first_of_next = syls[i + 1].first().map(|&idx| &seq[idx]);
-        if let (Some(a), Some(b)) = (last_of_prev, first_of_next) {
-            if a == b && is_consonant(a) {
+        } else if onset.len() == 2 {
+            if !legal_onset_cluster(onset[0], onset[1]) {
                 violations += 1;
             }
         }
     }
-
-    // NOTE: No hard inventory membership check. Inventory is emergent.
 
     violations
 }
@@ -277,7 +292,8 @@ pub struct PipelineInput {
 // ── Ending paradigm slots ───────────────────────────────────────────────
 
 pub const NOUN_SLOTS: &[&str] = &[
-    "m_sg", "f_sg", "m_pl", "f_pl",
+    "m_nom_sg", "m_acc_sg", "m_gen_sg", "m_nom_pl", "m_acc_pl", "m_gen_pl",
+    "f_nom_sg", "f_acc_sg", "f_gen_sg", "f_nom_pl", "f_acc_pl", "f_gen_pl",
 ];
 
 pub fn verb_slots() -> Vec<String> {
@@ -301,7 +317,7 @@ pub fn verb_slots() -> Vec<String> {
     slots
 }
 
-pub const ADJ_SLOTS: &[&str] = &["m_sg", "f_sg", "m_pl", "f_pl"];
+pub const ADJ_SLOTS: &[&str] = NOUN_SLOTS;
 
 fn parse_ortho(s: &str) -> Vec<String> {
     s.chars().map(|ch| match ch {
@@ -312,16 +328,26 @@ fn parse_ortho(s: &str) -> Vec<String> {
     }).collect()
 }
 
-fn fuse_cell(theme: &str, person: &str) -> Vec<String> {
-    if theme.is_empty() {
-        return parse_ortho(person);
+fn clip_one_sigma(seq: Vec<String>) -> Vec<String> {
+    let syls = syllabify(&seq);
+    match syls.last() {
+        Some(idxs) if !idxs.is_empty() => idxs.iter().map(|&i| seq[i].clone()).collect(),
+        _ => seq,
     }
-    let cell = if person.chars().count() > 1 {
-        format!("{}{}", theme, person.chars().last().unwrap())
+}
+
+fn fuse_cell(theme: &str, person: &str) -> Vec<String> {
+    let raw = if theme.is_empty() {
+        parse_ortho(person)
     } else {
-        format!("{}{}", theme, person)
+        let cell = if person.chars().count() > 1 {
+            format!("{}{}", theme, person.chars().last().unwrap())
+        } else {
+            format!("{}{}", theme, person)
+        };
+        parse_ortho(&cell)
     };
-    parse_ortho(&cell)
+    clip_one_sigma(raw)
 }
 
 fn verb_block(persons: &[&str], pst: &str, fut: &str, subj: &str) -> Vec<Vec<String>> {
@@ -352,13 +378,41 @@ pub fn verb_templates() -> Vec<Vec<Vec<String>>> {
     ]
 }
 
-/// Whole-language noun tables: m_sg f_sg m_pl f_pl
+fn case_block(m: &str, f: &str, m_acc_pl: &str, f_acc_pl: &str) -> Vec<Vec<String>> {
+    let with_vowel = |cell: &str, theme: &str| -> String {
+        if cell.chars().any(|ch| "aeiou".contains(ch)) {
+            cell.to_string()
+        } else {
+            format!("{}{}", theme, cell)
+        }
+    };
+    let acc_sg = |theme: &str| -> String {
+        let last = theme.chars().last().unwrap_or('x');
+        if !"aeiou".contains(last) {
+            let mut cs: String = theme.chars().collect();
+            cs.pop();
+            cs.push('n');
+            cs
+        } else {
+            format!("{theme}n")
+        }
+    };
+    let mpl = with_vowel(m_acc_pl, m);
+    let fpl = with_vowel(f_acc_pl, f);
+    let cells = [
+        m.to_string(), acc_sg(m), "is".into(), "i".into(), mpl, "or".into(),
+        f.to_string(), acc_sg(f), "es".into(), "e".into(), fpl, "ar".into(),
+    ];
+    cells.into_iter().map(|c| clip_one_sigma(parse_ortho(&c))).collect()
+}
+
+/// Reverse-VL case on a lect theme: 12 slots (gender × case × number).
 pub fn noun_templates() -> Vec<Vec<Vec<String>>> {
     vec![
-        vec![parse_ortho("o"), parse_ortho("a"), parse_ortho("os"), parse_ortho("as")], // es/pt
-        vec![parse_ortho("o"), parse_ortho("a"), parse_ortho("i"), parse_ortho("e")],   // it
-        vec![parse_ortho("e"), parse_ortho("a"), parse_ortho("s"), parse_ortho("es")],  // ca
-        vec![parse_ortho("e"), parse_ortho("e"), parse_ortho("s"), parse_ortho("s")],   // fr
+        case_block("o", "a", "os", "as"), // es/pt/it
+        case_block("u", "a", "os", "as"), // ast/sc/ro
+        case_block("e", "a", "s", "es"),  // ca/oc
+        case_block("e", "a", "s", "s"),   // fr/oil
     ]
 }
 
@@ -458,21 +512,24 @@ impl Genome {
 
 // ── Energy weights (grammar.tex Ch.4) ───────────────────────────────────
 
+// Lexicographic: 23*W_PHON < W_SYL, 34*W_DIV < W_PHON, mean-support*W_NORM < W_DIV.
 pub const W_SYL: f64  = 1000.0;
-pub const W_PHON: f64 = 0.0;      // inventory is not an objective
-pub const W_NORM: f64 = 10.0;     // syllable-tie: prefer stems covering more sources
-pub const N_SOURCES: f64 = 34.0; // full README corpus minus English
+pub const W_PHON: f64 = 40.0;     // global min |Φ|; 40*23 = 920 < 1000
+pub const W_DIV: f64  = 1.0;      // σ-and-Φ tie: max distinct source lects
+pub const W_NORM: f64 = 0.02;     // *mean* support gap (finer than one lect)
+pub const N_SOURCES: f64 = 34.0;
 pub const W_END: f64  = 200.0;
 pub const W_COLL: f64 = 100_000.0;
-pub const W_TACT: f64 = 500_000.0;
+pub const W_TACT: f64 = 2000.0; // leftover after repair; not a donor-glitch death
 pub const W_DIST: f64 = 500.0;
 pub const DIST_THRESHOLD: u32 = 2;
 
 #[derive(Clone, Debug, Serialize)]
 pub struct EnergyBreakdown {
     pub e_root: f64,
-    pub e_norm: f64,
     pub e_phon: f64,
+    pub e_div: f64,
+    pub e_norm: f64,
     pub e_end: f64,
     pub e_coll: f64,
     pub e_tact: f64,
@@ -487,6 +544,8 @@ pub fn compute_energy(genome: &Genome, db: &CandidateDB) -> EnergyBreakdown {
     let mut root_viols = 0u64;
 
     let mut support_gap = 0u64;
+    let mut lects: HashSet<String> = HashSet::new();
+    let n = genome.n_concepts().max(1);
     for i in 0..genome.n_concepts() {
         let r = genome.get_root(i, db);
         root_syls += r.syllables as u64;
@@ -495,12 +554,14 @@ pub fn compute_energy(genome: &Genome, db: &CandidateDB) -> EnergyBreakdown {
         if (s as f64) < N_SOURCES {
             support_gap += (N_SOURCES as u64) - s as u64;
         }
+        lects.insert(r.source_lang.clone());
         for p in &r.lacyo_phonemes {
             all_phonemes.insert(p.clone());
         }
     }
     let e_root = W_SYL * root_syls as f64;
-    let e_norm = W_NORM * support_gap as f64;
+    let e_div = W_DIV * (N_SOURCES - lects.len() as f64).max(0.0);
+    let e_norm = W_NORM * (support_gap as f64) / (n as f64);
 
     let mut end_syls = 0u64;
     let mut end_viols = 0u64;
@@ -521,9 +582,9 @@ pub fn compute_energy(genome: &Genome, db: &CandidateDB) -> EnergyBreakdown {
     let e_coll = W_COLL * count_ending_collisions(genome) as f64;
     let e_dist = W_DIST * count_dist_penalty(genome);
 
-    let total = e_root + e_norm + e_phon + e_end + e_coll + e_tact + e_dist;
+    let total = e_root + e_phon + e_div + e_norm + e_end + e_coll + e_tact + e_dist;
 
-    EnergyBreakdown { e_root, e_norm, e_phon, e_end, e_coll, e_tact, e_dist, total }
+    EnergyBreakdown { e_root, e_phon, e_div, e_norm, e_end, e_coll, e_tact, e_dist, total }
 }
 
 fn count_ending_collisions(genome: &Genome) -> u64 {
@@ -535,8 +596,18 @@ fn count_ending_collisions(genome: &Genome) -> u64 {
             }
         }
     }
+    // Verbs: collision only inside a 6-person row (cross-tense syncretism is legal).
     for cls in &genome.verb_endings {
-        for i in 0..cls.len() {
+        let finite = cls.len().min(36);
+        for start in (0..finite).step_by(6) {
+            let end = (start + 6).min(finite);
+            for i in start..end {
+                for j in (i + 1)..end {
+                    if cls[i] == cls[j] { collisions += 1; }
+                }
+            }
+        }
+        for i in finite..cls.len() {
             for j in (i + 1)..cls.len() {
                 if cls[i] == cls[j] { collisions += 1; }
             }
@@ -604,11 +675,13 @@ pub struct EnergyCache {
     pub total_root_syls: u64,
     pub total_root_viols: u64,
     pub total_support_gap: u64,
+    pub n_roots: usize,
     /// phoneme → count of roots+endings using it
     pub phoneme_counts: HashMap<String, u32>,
-    /// Number of distinct phonemes (entries in phoneme_counts with count > 0)
     pub n_phonemes: usize,
-    /// Ending energy components (recomputed on ending mutation)
+    /// source lect → how many selected roots
+    pub lang_counts: HashMap<String, u32>,
+    pub n_lects: usize,
     pub total_end_syls: u64,
     pub total_end_viols: u64,
     pub ending_collisions: u64,
@@ -621,6 +694,7 @@ impl EnergyCache {
         let mut total_root_viols = 0u64;
         let mut total_support_gap = 0u64;
         let mut phoneme_counts: HashMap<String, u32> = HashMap::new();
+        let mut lang_counts: HashMap<String, u32> = HashMap::new();
 
         for i in 0..genome.n_concepts() {
             let r = genome.get_root(i, db);
@@ -630,6 +704,7 @@ impl EnergyCache {
             if (s as f64) < N_SOURCES {
                 total_support_gap += (N_SOURCES as u64) - s as u64;
             }
+            *lang_counts.entry(r.source_lang.clone()).or_insert(0) += 1;
             for p in &r.lacyo_phonemes {
                 *phoneme_counts.entry(p.clone()).or_insert(0) += 1;
             }
@@ -648,13 +723,17 @@ impl EnergyCache {
         }
 
         let n_phonemes = phoneme_counts.values().filter(|&&c| c > 0).count();
+        let n_lects = lang_counts.values().filter(|&&c| c > 0).count();
 
         EnergyCache {
             total_root_syls,
             total_root_viols,
             total_support_gap,
+            n_roots: genome.n_concepts(),
             phoneme_counts,
             n_phonemes,
+            lang_counts,
+            n_lects,
             total_end_syls,
             total_end_viols,
             ending_collisions: count_ending_collisions(genome),
@@ -664,13 +743,15 @@ impl EnergyCache {
 
     pub fn energy(&self) -> f64 {
         let e_root = W_SYL * self.total_root_syls as f64;
-        let e_norm = W_NORM * self.total_support_gap as f64;
         let e_phon = W_PHON * self.n_phonemes as f64;
+        let e_div = W_DIV * (N_SOURCES - self.n_lects as f64).max(0.0);
+        let n = self.n_roots.max(1) as f64;
+        let e_norm = W_NORM * (self.total_support_gap as f64) / n;
         let e_end = W_END * self.total_end_syls as f64;
         let e_tact = W_TACT * (self.total_root_viols + self.total_end_viols) as f64;
         let e_coll = W_COLL * self.ending_collisions as f64;
         let e_dist = W_DIST * self.ending_dist_penalty;
-        e_root + e_norm + e_phon + e_end + e_coll + e_tact + e_dist
+        e_root + e_phon + e_div + e_norm + e_end + e_coll + e_tact + e_dist
     }
 
     fn add_phonemes(&mut self, phonemes: &[String]) {
@@ -701,12 +782,27 @@ impl EnergyCache {
         }
     }
 
+    fn add_lang(&mut self, lang: &str) {
+        let count = self.lang_counts.entry(lang.to_string()).or_insert(0);
+        if *count == 0 { self.n_lects += 1; }
+        *count += 1;
+    }
+
+    fn remove_lang(&mut self, lang: &str) {
+        if let Some(count) = self.lang_counts.get_mut(lang) {
+            *count -= 1;
+            if *count == 0 { self.n_lects -= 1; }
+        }
+    }
+
     pub fn update_root(&mut self, old_root: &CandidateData, new_root: &CandidateData) {
         self.total_root_syls = self.total_root_syls - old_root.syllables as u64 + new_root.syllables as u64;
         self.total_root_viols = self.total_root_viols - old_root.violations as u64 + new_root.violations as u64;
         self.total_support_gap = self.total_support_gap - Self::support_gap(old_root) + Self::support_gap(new_root);
         self.remove_phonemes(&old_root.lacyo_phonemes);
         self.add_phonemes(&new_root.lacyo_phonemes);
+        self.remove_lang(&old_root.source_lang);
+        self.add_lang(&new_root.source_lang);
     }
 
     /// Undo a root change (just call update_root with args swapped)
@@ -752,6 +848,48 @@ impl EnergyCache {
     }
 }
 
+fn greedy_root_selections(db: &CandidateDB) -> Vec<usize> {
+    let n = db.by_index.len();
+    if n == 0 {
+        return vec![];
+    }
+    let mut slice: Vec<Vec<usize>> = Vec::with_capacity(n);
+    for i in 0..n {
+        let cands = &db.by_index[i];
+        let best = cands.iter()
+            .map(|c| (c.violations, c.syllables))
+            .min()
+            .unwrap_or((0, 0));
+        let idxs: Vec<usize> = cands.iter().enumerate()
+            .filter(|(_, c)| (c.violations, c.syllables) == best)
+            .map(|(j, _)| j)
+            .collect();
+        slice.push(if idxs.is_empty() { vec![0] } else { idxs });
+    }
+    let mut order: Vec<usize> = (0..n).collect();
+    order.sort_by_key(|&i| slice[i].len());
+
+    let mut used_phon: HashSet<String> = HashSet::new();
+    let mut used_lang: HashSet<String> = HashSet::new();
+    let mut selections = vec![0usize; n];
+
+    for i in order {
+        let best_j = slice[i].iter().copied().min_by_key(|j| {
+            let c = &db.by_index[i][*j];
+            let new_ph = c.lacyo_phonemes.iter().filter(|p| !used_phon.contains(*p)).count();
+            let new_lang: u8 = if used_lang.contains(&c.source_lang) { 1 } else { 0 };
+            (new_ph, new_lang, std::cmp::Reverse(c.support), c.lacyo_phonemes.len(), c.source_lang.clone())
+        }).unwrap_or(0);
+        selections[i] = best_j;
+        let c = &db.by_index[i][best_j];
+        for p in &c.lacyo_phonemes {
+            used_phon.insert(p.clone());
+        }
+        used_lang.insert(c.source_lang.clone());
+    }
+    selections
+}
+
 // ── Genome initialization ───────────────────────────────────────────────
 
 pub fn init_genome(
@@ -763,17 +901,7 @@ pub fn init_genome(
     let concept_ids: Vec<String> = input.concepts.keys().cloned().collect();
     let db = CandidateDB::from_input(input, &concept_ids);
 
-    let mut selections = Vec::with_capacity(concept_ids.len());
-    for i in 0..concept_ids.len() {
-        let best = db.by_index[i].iter()
-            .enumerate()
-            .min_by_key(|(_, c)| {
-                (c.violations, c.syllables, std::cmp::Reverse(c.support), c.lacyo_phonemes.len(), c.source_lang.clone())
-            })
-            .map(|(idx, _)| idx)
-            .unwrap_or(0);
-        selections.push(best);
-    }
+    let selections = greedy_root_selections(&db);
 
     let noun_tmpls = noun_templates();
     let verb_tmpls = verb_templates();
@@ -1014,6 +1142,13 @@ mod tests {
     use super::*;
 
     #[test]
+    fn test_lexicographic_weights() {
+        assert!(W_PHON * 23.0 < W_SYL);
+        assert!(W_DIV * N_SOURCES < W_PHON);
+        assert!(W_NORM * 33.0 < W_DIV);
+    }
+
+    #[test]
     fn test_count_syllables_ipa() {
         let seq: Vec<String> = vec!["r", "u", "ʃ"].into_iter().map(String::from).collect();
         assert_eq!(count_syllables(&seq), 1);
@@ -1029,8 +1164,24 @@ mod tests {
     }
 
     #[test]
-    fn test_violations_bad_coda() {
-        let seq: Vec<String> = vec!["a", "k"].into_iter().map(String::from).collect();
+    fn test_legal_coda_and_sc_onset() {
+        let ak: Vec<String> = vec!["a", "k"].into_iter().map(String::from).collect();
+        assert_eq!(count_violations(&ak), 0);
+
+        let sta: Vec<String> = vec!["s", "t", "a"].into_iter().map(String::from).collect();
+        assert_eq!(count_violations(&sta), 0);
+
+        let nja: Vec<String> = vec!["n", "j", "a"].into_iter().map(String::from).collect();
+        assert_eq!(count_violations(&nja), 0);
+
+        let gem: Vec<String> = ["a", "k", "k", "w", "a"].into_iter().map(String::from).collect();
+        assert_eq!(count_violations(&gem), 0);
+        assert_eq!(count_syllables(&gem), 2);
+    }
+
+    #[test]
+    fn test_illegal_onset() {
+        let seq: Vec<String> = vec!["p", "t", "a"].into_iter().map(String::from).collect();
         assert!(count_violations(&seq) > 0);
     }
 

@@ -22,7 +22,7 @@ from pathlib import Path
 from lacyo.phonology import (
     word_to_ipa, ipa_to_lacyo, count_syllables, count_violations,
     to_orthography, extract_phonemes, PHONEME_INVENTORY,
-    phonemic_edit_distance, overlay_spelling_contrasts,
+    phonemic_edit_distance, overlay_spelling_contrasts, repair,
 )
 from lacyo.optimizer import (
     Candidate, Genome, SAResult, anneal,
@@ -155,10 +155,16 @@ def build_candidates(
         for lang, word in lang_words.items():
             try:
                 ipa = word_to_ipa(word, lang)
-                lacyo_phonemes = overlay_spelling_contrasts(word, ipa_to_lacyo(ipa))
+                lacyo_phonemes = repair(
+                    overlay_spelling_contrasts(word, ipa_to_lacyo(ipa))
+                )
 
                 if not lacyo_phonemes:
                     continue  # empty after adaptation
+
+                viol = count_violations(lacyo_phonemes)
+                if viol:
+                    continue  # unrepairable — discard, do not score as a death penalty
 
                 cand = Candidate(
                     concept=concept_id,
@@ -168,7 +174,7 @@ def build_candidates(
                     lacyo_phonemes=lacyo_phonemes,
                     orthography=to_orthography(lacyo_phonemes),
                     syllables=count_syllables(lacyo_phonemes),
-                    violations=count_violations(lacyo_phonemes),
+                    violations=0,
                 )
                 cands.append(cand)
             except Exception as e:

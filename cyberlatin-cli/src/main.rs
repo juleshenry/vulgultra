@@ -163,8 +163,9 @@ fn print_summary(
 
     println!("\n  Energy breakdown:");
     println!("    E_root       {:>12.0}", breakdown.e_root);
-    println!("    E_norm       {:>12.0}", breakdown.e_norm);
     println!("    E_phon       {:>12.0}", breakdown.e_phon);
+    println!("    E_div        {:>12.0}", breakdown.e_div);
+    println!("    E_norm       {:>12.1}", breakdown.e_norm);
     println!("    E_end        {:>12.0}", breakdown.e_end);
     println!("    E_coll       {:>12.0}", breakdown.e_coll);
     println!("    E_tact       {:>12.0}", breakdown.e_tact);

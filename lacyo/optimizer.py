@@ -5,8 +5,7 @@ Two-stage optimization per grammar.tex Ch.7:
   Stage 1: Root selection (pick best candidate per concept)
   Stage 2: Ending generation (assign fusional endings to paradigm slots)
 
-Energy function per grammar.tex Ch.4:
-  E_total = E_root + E_phon + E_end + E_coll + E_tact + E_dist
+Energy function per grammar.tex: knapsack roots + 1σ endings.
 """
 
 from __future__ import annotations
@@ -34,15 +33,21 @@ from lacyo.paradigms import (
 # Energy weights (grammar.tex Table 4.1)
 # ---------------------------------------------------------------------------
 
-W_SYL  = 1000      # root syllable cost — primary objective
-W_PHON = 0         # inventory is not an objective
-W_NORM = 10        # prefer stems that cover more source forms (syllable ties)
-W_END  = 200       # ending syllable cost
-W_COLL = 100_000   # collision penalty
-W_TACT = 500_000   # phonotactic violation penalty
-W_DIST = 500       # distinctiveness penalty
-DIST_THRESHOLD = 2  # minimum phonemic edit distance between endings
-N_SOURCES = len(SOURCE_LANGS)  # fr, es, it, pt, ca
+# Lexicographic invariants (no lower term may buy a higher one):
+#   23 * W_PHON < W_SYL          extra syllable > emptying the inventory
+#   34 * W_DIV  < W_PHON         extra phoneme  > using every lect
+#   mean support gap * W_NORM < W_DIV
+W_SYL  = 1000
+W_PHON = 40        # global min |Φ|; 40*23 = 920 < 1000
+W_DIV  = 1         # σ-and-Φ tie: max distinct source lects; 34 < 40
+W_NORM = 0.02      # applied to *mean* support gap (< 1 lect of diversity)
+W_END  = 200
+W_COLL = 100_000
+W_TACT = 2000
+W_DIST = 500
+DIST_THRESHOLD = 2
+N_SOURCES = len(SOURCE_LANGS)
+PHONEME_CEILING = 23
 
 
 # ---------------------------------------------------------------------------
@@ -204,29 +209,38 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
         all_phonemes.update(extract_phonemes(e))
     e_phon = W_PHON * len(all_phonemes)
 
-    e_norm = W_NORM * sum(max(0, N_SOURCES - getattr(r, "support", 1)) for r in roots)
+    n_roots = max(len(roots), 1)
+    support_gap = sum(max(0, N_SOURCES - getattr(r, "support", 1)) for r in roots)
+    e_norm = W_NORM * (support_gap / n_roots)
+    n_lects = len({r.source_lang for r in roots})
+    e_div = W_DIV * max(0, N_SOURCES - n_lects)
 
     # E_end: sum of ending syllable counts
     e_end = W_END * sum(count_syllables(e) for e in all_endings)
 
-    # E_coll: collision count within each paradigm
+    # E_coll: within a noun table, and within each 6-person verb row.
+    # Cross-tense syncretism is Romance-legal (reverse VL does not undo it).
     collisions = 0
-    # Noun paradigm collisions
     for cls_endings in genome.noun_endings.values():
-        seqs = [tuple(v) for v in cls_endings.values()]
+        seqs = [tuple(cls_endings[s]) for s in NOUN_SLOTS if s in cls_endings]
         for i in range(len(seqs)):
             for j in range(i + 1, len(seqs)):
                 if seqs[i] == seqs[j]:
                     collisions += 1
-    # Verb paradigm collisions
     for cls_endings in genome.verb_endings.values():
-        seqs = [tuple(v) for v in cls_endings.values()]
-        for i in range(len(seqs)):
-            for j in range(i + 1, len(seqs)):
-                if seqs[i] == seqs[j]:
+        seqs = [tuple(cls_endings[s]) for s in VERB_SLOTS if s in cls_endings]
+        for start in range(0, 36, 6):
+            row = seqs[start:start + 6]
+            for i in range(len(row)):
+                for j in range(i + 1, len(row)):
+                    if row[i] == row[j]:
+                        collisions += 1
+        nf = seqs[36:]
+        for i in range(len(nf)):
+            for j in range(i + 1, len(nf)):
+                if nf[i] == nf[j]:
                     collisions += 1
-    # Adj paradigm collisions
-    adj_seqs = [tuple(v) for v in genome.adj_endings.values()]
+    adj_seqs = [tuple(genome.adj_endings[s]) for s in ADJ_SLOTS if s in genome.adj_endings]
     for i in range(len(adj_seqs)):
         for j in range(i + 1, len(adj_seqs)):
             if adj_seqs[i] == adj_seqs[j]:
@@ -260,11 +274,12 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
                     dist_penalty += DIST_THRESHOLD - d
     e_dist = W_DIST * dist_penalty
 
-    total = e_root + e_norm + e_phon + e_end + e_coll + e_tact + e_dist
+    total = e_root + e_phon + e_div + e_norm + e_end + e_coll + e_tact + e_dist
     breakdown = {
         "E_root": e_root,
-        "E_norm": e_norm,
         "E_phon": e_phon,
+        "E_div": e_div,
+        "E_norm": e_norm,
         "E_end": e_end,
         "E_coll": e_coll,
         "E_tact": e_tact,
@@ -277,31 +292,44 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
 # Genome initialization
 # ---------------------------------------------------------------------------
 
-def init_genome(candidates: dict[str, list[Candidate]]) -> Genome:
+def _sigma_slice(cands: list[Candidate]) -> list[tuple[int, Candidate]]:
+    """Candidates that already win on legality then syllables."""
+    best = min((c.violations, c.syllables) for c in cands)
+    return [(i, c) for i, c in enumerate(cands) if (c.violations, c.syllables) == best]
+
+
+def greedy_root_selections(candidates: dict[str, list[Candidate]]) -> dict[str, int]:
+    """Min σ, then fewest new phonemes, then a new lect, then support.
+
+    Inventory and diversity couple concepts, so this is a set-cover
+    heuristic, not the exact global min — SA can still improve |Φ| / lects.
     """
-    Create initial genome: pick shortest legal candidate per concept,
-    generate random endings.
-    """
-    selections: dict[str, int] = {}
+    items: list[tuple[int, str, list[tuple[int, Candidate]]]] = []
     for concept, cands in candidates.items():
-        # Prefer legal candidates, then shortest
-        legal = [(i, c) for i, c in enumerate(cands) if c.is_legal]
-        if legal:
-            best_idx = min(
-                legal,
-                key=lambda x: (x[1].syllables, -x[1].support, len(x[1].lacyo_phonemes), x[1].source_lang),
-            )[0]
-        else:
-            best_idx = min(
-                range(len(cands)),
-                key=lambda i: (
-                    cands[i].violations,
-                    cands[i].syllables,
-                    -cands[i].support,
-                    cands[i].source_lang,
-                ),
-            )
-        selections[concept] = best_idx
+        sl = _sigma_slice(cands)
+        items.append((len(sl), concept, sl))
+    items.sort(key=lambda t: t[0])
+
+    used_ph: set[str] = set()
+    used_lang: set[str] = set()
+    selections: dict[str, int] = {}
+    for _, concept, sl in items:
+        def key(ic: tuple[int, Candidate]) -> tuple:
+            _i, c = ic
+            new_ph = sum(1 for p in extract_phonemes(c.lacyo_phonemes) if p not in used_ph)
+            new_lang = 1 if c.source_lang in used_lang else 0
+            return (new_ph, new_lang, -c.support, len(c.lacyo_phonemes), c.source_lang)
+
+        idx, c = min(sl, key=key)
+        selections[concept] = idx
+        used_ph |= extract_phonemes(c.lacyo_phonemes)
+        used_lang.add(c.source_lang)
+    return selections
+
+
+def init_genome(candidates: dict[str, list[Candidate]]) -> Genome:
+    """Min-σ set-cover init, then random whole-table endings."""
+    selections = greedy_root_selections(candidates)
 
     noun_name = random.choice(list(NOUN_TEMPLATES))
     noun_endings = {

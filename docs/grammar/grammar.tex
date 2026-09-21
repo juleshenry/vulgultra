@@ -1,153 +1,281 @@
-\documentclass{book}
+\documentclass[12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{tipa}
 \usepackage{booktabs}
-\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
 
-\title{Grammar Specification}
-\author{}
-\date{}
+\title{Grammar of Lacyo\\[1em]\large Reverse Vulgar Latin as a Knapsack}
+\author{The Lacyo Project}
+\date{Specification v3.0 --- 20 September 2026}
 
 \begin{document}
 \maketitle
 \tableofcontents
 
-\chapter{Word Selection}
-\section{Minimal Phoneme Simulated Annealing}
-% Details to be filled in.
+\chapter{Scope and Design Philosophy}
+\label{ch:scope}
 
-\chapter{Nouns}
-% Details to be filled in.
+\section{What Lacyo Is}
 
-\chapter{Adjectives}
-% Details to be filled in.
+Lacyo is the reverse of the Vulgar Latin process, with the result packed
+into as few phonemic syllables as the attested Romance record allows.
 
-\chapter{Verbs}
-% Details to be filled in.
+Vulgar Latin \emph{lost} case, merged vowels, dropped final consonants,
+turned $sC$-onsets into $e$-prothesis in the West, and (in French)
+shifted stress onto the last remaining syllable. Lacyo \emph{undoes}
+those losses where a short attested form still exists, and otherwise
+keeps the short form. It is not a pidgin and not a relexification.
 
-\section{Indicative Mood}
+The packing problem is a knapsack. Each concept is an item. Each lect
+offers one candidate stem (after adaptation and repair). You pick
+exactly one. Primary cost is phonemic syllables. Inventory $\Phi$ and
+source diversity couple the roots, so simulated annealing is the solver
+for that coupled layer --- never for buying an extra syllable.
 
-\noindent
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Present} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Imperfect} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Preterite} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}
+\section{Axioms (priority order)}
 
-\vspace{0.5cm}
-\noindent
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Future} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Conditional} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Present Perfect} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}
+\begin{enumerate}
+  \item \textbf{Minimize syllable count.} Phonemic $\sigma$, not letters.
+        This outranks every other preference.
+  \item \textbf{Attested only.} Never invent a stem by clipping
+        (\texttt{gat} is Catalan, not Spanish \texttt{gato} minus
+        \texttt{-o}). Repair may alter a candidate; it may not mint a
+        new lexeme.
+  \item \textbf{Obscure lects only when they qualify.} A thin lect wins
+        a root only on a $\sigma$-tie (never by adding a syllable) and
+        only if it does not enlarge $\Phi$. On that remaining tie,
+        maximize the number of distinct source lects.
+  \item \textbf{One-syllable endings.} Every fusional cell is $1\sigma$.
+        A $2\sigma$ person form (\texttt{amos}) is clipped to its last
+        syllable (\texttt{mos}): that extra $\sigma$ is a theme already
+        on the stem.
+  \item \textbf{Restore case; keep gender.} Reverse VL. Nouns and
+        adjectives inflect gender $\times$ case $\times$ number.
+        Inherited Latin syncretism is allowed across tenses, not
+        inside a tense row.
+  \item \textbf{Phonotactic legality after repair.} Repair first
+        (glide formation, identical-vowel collapse, last-resort
+        epenthesis). Unrepairable candidates are discarded. Do not
+        use $w_{\mathrm{tact}}=500{,}000$ as a donor-glitch death
+        sentence.
+\end{enumerate}
 
-\vspace{0.5cm}
-\noindent
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Pluperfect} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Past Anterior} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Future Perfect} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}
+\section{The knapsack, and whether a global minimum exists}
 
-\vspace{0.5cm}
-\noindent
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Conditional Perfect} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Non-Finite Forms} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule Inf. & - & - & - \\ Ger. & - & - & - \\ Part. & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-% Empty for spacing
-\end{minipage}
+Write $x_{c,\ell}\in\{0,1\}$ for ``concept $c$ takes the repaired
+candidate from lect $\ell$''.
 
-\newpage
-\section{Subjunctive Mood}
+\begin{equation}
+\min \sum_{c}\sum_{\ell} \sigma(c,\ell)\, x_{c,\ell}
+\quad\text{s.t.}\quad
+\sum_{\ell} x_{c,\ell}=1,
+\quad x_{c,\ell}=0 \text{ if } c,\ell \text{ is unrepairable.}
+\end{equation}
 
-\noindent
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Present Subjunctive} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Imperfect Subjunctive} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Future Subjunctive} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}
+The $\sigma$-layer \textbf{still has a unique minimum}: independently
+take a legal shortest candidate per concept. Among those $\sigma$-optimal
+slices, $\Phi$ and lect-diversity couple the choices:
 
-\vspace{0.5cm}
-\noindent
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Present Perfect Subj.} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Pluperfect Subj.} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Future Perfect Subj.} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 1s & - & - & - \\ 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}
+\[
+\min\sigma \;\prec\;
+\min|\Phi| \;\prec\;
+\max|\{\text{source lects}\}| \;\prec\;
+\max\mathrm{mean\ support}.
+\]
 
-\vspace{0.8cm}
-\section{Imperative Mood}
+Weights encode that order so a lower term cannot buy a higher one:
 
-\noindent
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Affirmative Imperative} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-\centering
-\textbf{Negative Imperative} \\ \vspace{0.1cm}
-\begin{tabular}{lccc} \toprule & -end1 & -end2 & -end3 \\ \midrule 2s & - & - & - \\ 3s & - & - & - \\ 1p & - & - & - \\ 2p & - & - & - \\ 3p & - & - & - \\ \bottomrule \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}{0.32\textwidth}
-% Empty for spacing
-\end{minipage}
+\[
+23\,w_{\mathrm{phon}} < w_{\mathrm{syl}},
+\qquad
+34\,w_{\mathrm{div}} < w_{\mathrm{phon}},
+\qquad
+\overline{\mathrm{gap}}\,w_{\mathrm{norm}} < w_{\mathrm{div}}.
+\]
+
+Greedy set-cover init (constrained concepts first, reuse $\Phi$, then
+a new lect) is a heuristic for the coupled layers. SA on roots is
+justified again --- only inside the $\sigma$-optimal slice.
+
+Endings stay coupled (one $1\sigma$ table, distinct cells in a row).
+
+\chapter{Phonology}
+\label{ch:phonology}
+
+\section{Inventory}
+
+Ceiling: 18 consonants + 5 vowels $=23$. Under a fixed $\sigma$ total,
+minimize $|\Phi|$ globally ($w_{\mathrm{phon}}=40$).
+
+Consonants: $p b t d k g$, $m n$, $f v s z \textipa{S} \textipa{tS}$,
+$l r$, $j w$. Geminates of these are legal (Italo-Romance, Sardinian).
+Do \emph{not} ban gemination to force more vowels.
+
+Vowels: $a e i o u$. If a $1\sigma$ ending row cannot be packed
+without collision, \textbf{then} expand with $\textipa{E}$ $\textipa{O}$
+(spelled \texttt{\`{e}} \texttt{\`{o}}). Reverse VL restored length and
+quality last; gemination is the cheaper contrast.
+
+Glides $j w$ are consonants. A GV or VG sequence is still one syllable
+because there is one nucleus. They are not extra unit phonemes.
+
+\section{Syllable template}
+
+\[
+\sigma = (s)(C_1)(C_2) V (C_3)(C_4)
+\]
+
+Legal onsets (reverse of Western $e$-prothesis; Latin $sC$ was an onset):
+\begin{itemize}
+  \item any single $C$
+  \item obstruent + liquid/glide; sonorant + glide ($nj$, $lw$)
+  \item $s/\textipa{S}/z + C$; $s/\textipa{S} + C +$ liquid ($stra$)
+\end{itemize}
+
+Legal codas: any single $C$; $CC$ if sonorant$+C$ or $s/\textipa{S}+$stop
+(Latin \emph{est}, \emph{port}). Geminates are heterosyllabic
+($ak.kwa$) and do not add a syllable.
+
+Syllable \emph{count} is the number of vowels (minimum 1). One
+algorithm for all 34 lects. Thin lects do not get a private
+syllabifier; they get better IPA. Donor G2P is a last resort.
+
+\section{Repair (before scoring)}
+
+\begin{enumerate}
+  \item $iV \to jV$, $uV \to wV$ (acqua $/akkua/ \to /akkwa/$, $2\sigma$).
+  \item Collapse identical vowels (c\^{i}ine $/t͡ʃiine/ \to /t͡ʃine/$).
+  \item Last resort: epenthetic $/e/$ in an illegal cluster (adds $\sigma$).
+  \item Still illegal $\to$ discard. Never keep it with a $500{,}000$ fine.
+\end{enumerate}
+
+Map $/ʝ/ \to /j/$, Romanian $/x/ \to /k/$ (not $/ks/$),
+$/ɲ ʎ/ \to nj, lj$ (now legal onsets).
+
+\section{Stress}
+
+\textbf{Penultimate}, no exceptions, unmarked. Calculated, not
+aesthetic: Classical Latin was (mostly) penultimate; VL loss of the
+final syllable produced French oxytones; reverse VL restores a
+$1\sigma$ ending, so stress lands on the last syllable of the stem
+$=$ penultimate of the word. Consensus of the family that still has
+a final vowel.
+
+\chapter{Morphology}
+\label{ch:morphology}
+
+Word $=$ (prefix) $+$ root $+$ $1\sigma$ ending.
+
+\section{Nouns: gender $\times$ case $\times$ number}
+
+Case is restored (nom / acc / gen). Gender is kept. Number is kept.
+That is $2\times 3\times 2 = 12$ cells, all $1\sigma$:
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+M / F & NOM & ACC & GEN \\
+\midrule
+SG & $-o$ / $-a$ & $-on$ / $-an$ & $-is$ / $-es$ \\
+PL & $-i$ / $-e$  & $-os$ / $-as$ & $-or$ / $-ar$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Acc.sg restores Latin $-m$ as $-n$. Gen.sg $-is/-es$ undoes the VL
+merger that made gen.sg $=$ nom.pl. Acc.pl keeps the $-s$ plural.
+Gen.pl clips $-$\={o}rum / $-$\={a}rum$ to $1\sigma$.
+
+Theme vowel $o/u/e$ is picked as a \emph{block} from a lect class
+(Ibero-Italian $o$, Sardinian-Romanian $u$, Catalan-Occitan $e$).
+Do not mix $-os$ from Spanish with $-i$ from Italian inside one
+class; the case \emph{layer} is Latin, the theme is the lect.
+
+\section{Adjectives}
+
+The same 12-cell table. Adjectives agree in gender, case, and number.
+
+\section{Articles and copula}
+
+Definite articles $o/a/os/as$ are closed-class definiteness markers
+(Portuguese, one vowel). They do not carry case; the noun does.
+Copula is suppletive present: $so, es, e, som, sos, son$.
+
+\section{Verbs}
+
+One stem, one lect's person table as a block. $3\times 2\times 3\times 2=36$
+finite cells plus 5 non-finite. Every cell is $1\sigma$ (clip the last
+syllable of \texttt{amos}, \texttt{iamo}, \ldots).
+
+Collision and $d\ge 2$ distinctiveness apply \textbf{inside a 6-person
+row}, not across tenses. Romance syncretism across tenses is legal;
+that is what makes $1\sigma$ packing possible. Zero collision across
+all 41 cells is un-Romance and forces $2\sigma$ endings.
+
+\chapter{Energy}
+\label{ch:energy}
+
+\begin{equation}
+\begin{aligned}
+E &= 1000\sum_r \sigma(r)
+  + 40\,|\Phi|
+  + 1\cdot(N_{\mathrm{src}}-|\{\ell_r\}|)
+  + 0.02\cdot\overline{\mathrm{gap}} \\
+  &\quad + 200\sum_e \sigma(e)
+  + 100000\cdot\mathrm{coll}_{\mathrm{row}}
+  + 2000\cdot\mathrm{viol}
+  + 500\sum_{\mathrm{row}}\max(0,2-d)
+\end{aligned}
+\end{equation}
+
+$N_{\mathrm{src}}=34$. $|\{\ell_r\}|$ is how many distinct lects own a
+selected root. $\overline{\mathrm{gap}}$ is mean $N_{\mathrm{src}}-\mathrm{support}$.
+One extra syllable ($1000$) beats emptying $\Phi$ ($40\times 23=920$).
+One extra phoneme ($40$) beats using every lect ($1\times 34=34$).
+Diversity never lengthens a word and never adds a phoneme.
+
+Init: set-cover on the min-$\sigma$ slice. SA may swap roots inside
+that slice to shrink $\Phi$ or pick up an unused lect.
+
+Endings: whole-table mutations. Never mix slots across lects.
+
+\chapter{Syntax}
+
+SVO default. Case permits scrambling for focus. Adjectives follow the
+noun and agree. Pro-drop. Complementizer particle $ke$. Negation: one
+preverbal $1\sigma$ particle. Passive: periphrastic ($e$ $+$
+participle), not 36 more fusional cells. Numerals: decimal, $1\sigma$
+roots $0$--$10$ chosen like any other concept.
+
+\chapter{Pipeline}
+
+Extract $\to$ G2P $\to$ adapt $\to$ \textbf{repair} $\to$ discard
+unrepairable $\to$ knapsack roots $\to$ anneal endings $\to$ inflect.
+
+Sister G2P (Italian for Romansh/Dalmatian, French for Oil, \ldots) is
+a known bias. Prefer Kaikki/Wiktionary IPA when it exists. Syllable
+count is always on the repaired Lacyo string, never on raw orthography.
+
+\chapter{Closed against this spec}
+
+\begin{itemize}
+  \item Declension classes: a handful of theme blocks ($o/u/e$), not 34
+        mixed tables, not an unbounded search.
+  \item Articles: yes, definiteness only.
+  \item Copula: yes, suppletive.
+  \item Relatives: particle $ke$.
+  \item Numerals: decimal.
+  \item Passive: periphrastic.
+  \item Case: kept (nom/acc/gen).
+  \item Gender on nouns and adjectives: kept.
+  \item Gemination: kept. Expand $\textipa{E}$ $\textipa{O}$ only if
+        $1\sigma$ rows still collide.
+\end{itemize}
 
 \end{document}

@@ -7,49 +7,75 @@ Tense/mood is a theme on that same person row (one stem, one lect).
 
 from __future__ import annotations
 
-from lacyo.phonology import from_orthography
+from lacyo.phonology import from_orthography, last_syllable, to_orthography
+
+
+def _one_sigma(s: str) -> str:
+    """Force a 1σ ending: keep the last syllable of an attested cell."""
+    return to_orthography(last_syllable(from_orthography(s)))
 
 
 def _row(*cells: str) -> list[list[str]]:
-    return [from_orthography(c) for c in cells]
+    return [from_orthography(_one_sigma(c)) for c in cells]
 
 
-# m_sg, f_sg, m_pl, f_pl
+# Reverse Vulgar Latin case on a lect theme vowel.
+# Slots: m_nom_sg m_acc_sg m_gen_sg m_nom_pl m_acc_pl m_gen_pl
+#        f_nom_sg f_acc_sg f_gen_sg f_nom_pl f_acc_pl f_gen_pl
+# Acc.sg restores -m as -n; gen.sg -is/-es undoes the VL gen=nom.pl merger;
+# acc.pl keeps the lect's -s plural; gen.pl clips Latin -ōrum/-ārum.
+def _case_block(m: str, f: str, m_acc_pl: str, f_acc_pl: str) -> list[list[str]]:
+    def with_vowel(cell: str, theme: str) -> str:
+        if any(ch in "aeiou" for ch in cell):
+            return cell
+        return theme + cell
+
+    def acc_sg(theme: str) -> str:
+        if theme[-1] not in "aeiou":
+            return theme[:-1] + "n"  # us → un, el → en
+        return theme + "n"
+
+    return _row(
+        m, acc_sg(m), "is", "i", with_vowel(m_acc_pl, m), "or",
+        f, acc_sg(f), "es", "e", with_vowel(f_acc_pl, f), "ar",
+    )
+
+
 NOUN_TEMPLATES: dict[str, list[list[str]]] = {
-    "es": _row("o", "a", "os", "as"),
-    "pt": _row("o", "a", "os", "as"),
-    "gl": _row("o", "a", "os", "as"),
-    "an": _row("o", "a", "os", "as"),
-    "ext": _row("u", "a", "us", "as"),
-    "lad": _row("o", "a", "os", "as"),
-    "mwl": _row("o", "a", "os", "as"),
-    "ast": _row("u", "a", "os", "es"),
-    "it": _row("o", "a", "i", "e"),
-    "scn": _row("u", "a", "i", "i"),
-    "vec": _row("o", "a", "i", "e"),
-    "lmo": _row("o", "a", "i", "e"),
-    "pms": _row("o", "a", "i", "e"),
-    "lij": _row("o", "a", "i", "e"),
-    "fur": _row("i", "e", "s", "is"),
-    "eml": _row("o", "a", "i", "e"),
-    "lld": _row("e", "a", "es", "es"),
-    "ist": _row("o", "a", "i", "e"),
-    "ca": _row("e", "a", "s", "es"),
-    "oc": _row("e", "a", "s", "es"),
-    "gsc": _row("e", "a", "s", "es"),
-    "fr": _row("e", "e", "s", "s"),
-    "wa": _row("e", "e", "s", "s"),
-    "pcd": _row("e", "e", "s", "s"),
-    "nrm": _row("e", "e", "s", "s"),
-    "frp": _row("o", "a", "s", "s"),
-    "glw": _row("e", "e", "s", "s"),
-    "ro": _row("u", "a", "i", "e"),
-    "rup": _row("u", "a", "i", "e"),
-    "ruo": _row("u", "a", "i", "e"),
-    "sc": _row("u", "a", "os", "as"),
-    "rm": _row("el", "a", "s", "s"),
-    "la": _row("us", "a", "i", "ae"),
-    "dlm": _row("o", "a", "i", "e"),
+    "es": _case_block("o", "a", "os", "as"),
+    "pt": _case_block("o", "a", "os", "as"),
+    "gl": _case_block("o", "a", "os", "as"),
+    "an": _case_block("o", "a", "os", "as"),
+    "ext": _case_block("u", "a", "us", "as"),
+    "lad": _case_block("o", "a", "os", "as"),
+    "mwl": _case_block("o", "a", "os", "as"),
+    "ast": _case_block("u", "a", "os", "es"),
+    "it": _case_block("o", "a", "os", "as"),
+    "scn": _case_block("u", "a", "os", "as"),
+    "vec": _case_block("o", "a", "os", "as"),
+    "lmo": _case_block("o", "a", "os", "as"),
+    "pms": _case_block("o", "a", "os", "as"),
+    "lij": _case_block("o", "a", "os", "as"),
+    "fur": _case_block("i", "e", "s", "is"),
+    "eml": _case_block("o", "a", "os", "as"),
+    "lld": _case_block("e", "a", "es", "es"),
+    "ist": _case_block("o", "a", "os", "as"),
+    "ca": _case_block("e", "a", "s", "es"),
+    "oc": _case_block("e", "a", "s", "es"),
+    "gsc": _case_block("e", "a", "s", "es"),
+    "fr": _case_block("e", "a", "s", "s"),
+    "wa": _case_block("e", "a", "s", "s"),
+    "pcd": _case_block("e", "a", "s", "s"),
+    "nrm": _case_block("e", "a", "s", "s"),
+    "frp": _case_block("o", "a", "s", "s"),
+    "glw": _case_block("e", "a", "s", "s"),
+    "ro": _case_block("u", "a", "i", "e"),
+    "rup": _case_block("u", "a", "i", "e"),
+    "ruo": _case_block("u", "a", "i", "e"),
+    "sc": _case_block("u", "a", "os", "as"),
+    "rm": _case_block("el", "a", "s", "s"),
+    "la": _case_block("us", "a", "os", "as"),
+    "dlm": _case_block("o", "a", "os", "as"),
 }
 
 ADJ_TEMPLATES = NOUN_TEMPLATES
@@ -112,7 +138,11 @@ _THEMES: dict[str, tuple[str, str, str]] = {
 
 
 def _verb_block(persons: tuple[str, ...], pst: str, fut: str, subj: str) -> list[list[str]]:
-    """Present = person endings of that lect; other tenses = theme + person coda."""
+    """Present = person endings of that lect; other tenses = theme + person coda.
+
+    Every cell is clipped to 1σ (amos → mos): the extra syllable is a theme
+    already on the stem, reverse of VL theme-vowel fusion.
+    """
     out: list[list[str]] = []
     for theme, series in (
         ("", persons),
@@ -121,13 +151,13 @@ def _verb_block(persons: tuple[str, ...], pst: str, fut: str, subj: str) -> list
     ):
         for p in series:
             cell = p if not theme else (theme + p[-1] if len(p) > 1 else theme + p)
-            out.append(from_orthography(cell))
+            out.append(from_orthography(_one_sigma(cell)))
     for p in persons:
-        out.append(from_orthography(subj + (p[-1] if len(p) > 1 else p)))
+        out.append(from_orthography(_one_sigma(subj + (p[-1] if len(p) > 1 else p))))
     for p in persons:
-        out.append(from_orthography("i" + (p[-1] if len(p) > 1 else p)))
+        out.append(from_orthography(_one_sigma("i" + (p[-1] if len(p) > 1 else p))))
     for p in persons:
-        out.append(from_orthography("a" + (p[-1] if len(p) > 1 else p)))
+        out.append(from_orthography(_one_sigma("a" + (p[-1] if len(p) > 1 else p))))
     out.extend(_row("r", "nt", "t", "a", "e"))
     return out
 
@@ -140,5 +170,8 @@ VERB_TEMPLATES: dict[str, list[list[str]]] = {
 # No donor map. Missing lect = bug.
 CONJUGATION_DONOR: dict[str, str] = {}
 
-NOUN_SLOT_NAMES = ["m_sg", "f_sg", "m_pl", "f_pl"]
+NOUN_SLOT_NAMES = [
+    "m_nom_sg", "m_acc_sg", "m_gen_sg", "m_nom_pl", "m_acc_pl", "m_gen_pl",
+    "f_nom_sg", "f_acc_sg", "f_gen_sg", "f_nom_pl", "f_acc_pl", "f_gen_pl",
+]
 ADJ_SLOT_NAMES = NOUN_SLOT_NAMES

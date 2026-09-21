@@ -10,7 +10,6 @@ INCUBATOR_LANGS = [
     ('frp', 'Franco-Provençal'),
     ('fur', 'Friulian'),
     ('nrm', 'Norman'),
-    ('ext', 'Extremaduran'),
     ('eml', 'Emiliano-Romagnolo'),
     ('lld', 'Ladin'),
     ('gsc', 'Gascon'),

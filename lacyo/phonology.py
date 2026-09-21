@@ -1,12 +1,8 @@
 """
-lacyo.phonology — Single source of truth for Lacyo phonological operations.
+lacyo.phonology — IPA, repair, syllabify, orthography (grammar.tex).
 
-Provides:
-  - IPA-based grapheme-to-phoneme conversion (via epitran)
-  - Proper phoneme extraction (multi-character IPA symbols handled correctly)
-  - IPA-based syllable counting
-  - Phonotactic validation per grammar.tex spec
-  - Phoneme-to-orthography mapping
+Repair runs before scoring. Geminates and Latin sC onsets are legal.
+Syllable count = vowel nuclei. Glides are consonants.
 """
 
 from __future__ import annotations
@@ -37,18 +33,20 @@ VOWELS: set[str] = {"a", "e", "i", "o", "u"}
 
 PHONEME_INVENTORY: set[str] = CONSONANTS | VOWELS
 
-# Onset-2 position: only liquids and glides
+# Onset-2 position: liquids and glides (also after a sonorant: /nj/, /lw/)
 ONSET2: set[str] = {"l", "r", "j", "w"}
 
-# Obstruents that can occupy onset-1 in a cluster
-OBSTRUENTS: set[str] = {"p", "b", "t", "d", "k", "ɡ", "f", "v", "s"}
+# Obstruents, including postalveolar (needed for /ʃt/, /t͡ʃr/)
+OBSTRUENTS: set[str] = {"p", "b", "t", "d", "k", "ɡ", "f", "v", "s", "z", "ʃ", "t͡ʃ"}
+S_LIKE: set[str] = {"s", "z", "ʃ"}
 
-# Legal codas — any single consonant is fine (naturalistic, respects Romance sources).
-# Coda clusters up to 2 are allowed if sonorant precedes obstruent (e.g. /ns/, /nd/, /st/, /rt/).
-LEGAL_SINGLE_CODAS: set[str] = CONSONANTS  # any consonant can close a syllable
+# Legal codas — any single consonant. CC: sonorant+C or s/ʃ + stop (Latin est, port).
+LEGAL_SINGLE_CODAS: set[str] = CONSONANTS
 SONORANTS: set[str] = {"m", "n", "l", "r"}
-# For backwards compat (some old code may reference this)
 LEGAL_CODAS: set[str] = CONSONANTS
+
+# Extra mid vowels: only if 1σ ending packing fails (grammar.tex). Not in the ceiling yet.
+VOWELS_EXPANDED: set[str] = {"ɛ", "ɔ"}
 
 # ---------------------------------------------------------------------------
 # Phoneme-to-orthography mapping (grammar.tex Table 2.5)
@@ -94,8 +92,11 @@ PHONEME_MAP: dict[str, str] = {
     "ʔ": "", "h": "",
     # Labiodental approximant
     "ʋ": "v",
-    # Voiceless velar fricative
-    "x": "ks",
+    # Palatal approximant (Spanish ll yeísmo)
+    "ʝ": "j",
+    # Voiceless velar fricative (Romanian/Istro-RO h) — not /ks/
+    "x": "k",
+    "χ": "k",
     # Other affricates
     "d͡ʒ": "dz", "t͡s": "ts",
     # Flap
@@ -302,79 +303,92 @@ def extract_phonemes(phoneme_seq: list[str]) -> set[str]:
 def count_syllables(phoneme_seq: list[str]) -> int:
     """
     Count syllables in a Lacyo phoneme sequence.
-    Each vowel nucleus = 1 syllable.
+    Each vowel nucleus = 1 syllable. Glides /j w/ are consonants, so
+    /fwe/ and /aj/ are still 1σ.
     """
     return max(1, sum(1 for p in phoneme_seq if p in VOWELS))
+
+
+def last_syllable(phoneme_seq: list[str]) -> list[str]:
+    """Final syllable only — used to force 1σ endings."""
+    syls = syllabify(phoneme_seq)
+    return syls[-1] if syls else list(phoneme_seq)
 
 
 # ---------------------------------------------------------------------------
 # Phonotactic validation (grammar.tex §2.2)
 # ---------------------------------------------------------------------------
 
+def legal_onset_cluster(c1: str, c2: str) -> bool:
+    """Reverse-VL onsets: obstruent+liquid/glide, sonorant+glide, s/ʃ+C."""
+    if c2 in ONSET2 and (c1 in OBSTRUENTS or c1 in SONORANTS or c1 in S_LIKE):
+        return True
+    if c1 in S_LIKE and c1 != c2:
+        return True
+    return False
+
+
+def legal_onset_triple(c1: str, c2: str, c3: str) -> bool:
+    return c1 in S_LIKE and legal_onset_cluster(c2, c3)
+
+
+def legal_coda_cluster(c1: str, c2: str) -> bool:
+    if c1 in SONORANTS:
+        return True
+    if c1 in S_LIKE and c2 in OBSTRUENTS:
+        return True
+    return False
+
+
 def syllabify(phoneme_seq: list[str]) -> list[list[str]]:
     """
-    Syllabify a Lacyo phoneme sequence using maximal onset principle.
+    Maximal onset, with Latin sC onsets legal (reverse of Western prothesis).
     Returns list of syllables, each a list of phonemes.
     """
     if not phoneme_seq:
         return []
 
-    # Identify vowel positions
     vowel_positions = [i for i, p in enumerate(phoneme_seq) if p in VOWELS]
     if not vowel_positions:
-        # No vowels — treat entire thing as one degenerate syllable
         return [phoneme_seq]
 
     syllables: list[list[str]] = []
-    # Assign phonemes to syllables based on vowel nuclei
     for si, vi in enumerate(vowel_positions):
-        syl: list[str] = []
-
         if si == 0:
-            # First syllable gets everything up to and including first vowel
             start = 0
         else:
-            # Maximal onset: assign as many consonants as possible to this syllable
             prev_vi = vowel_positions[si - 1]
             interlude_start = prev_vi + 1
-            interlude_end = vi  # exclusive (vowel itself)
+            interlude_end = vi
             interlude = phoneme_seq[interlude_start:interlude_end]
 
-            # Determine how many consonants go to onset of this syllable
-            # vs coda of previous syllable
             if len(interlude) == 0:
                 start = vi
             elif len(interlude) == 1:
-                # Single consonant → onset of this syllable
                 start = interlude_start
             elif len(interlude) == 2:
                 c1, c2 = interlude
-                if c1 in OBSTRUENTS and c2 in ONSET2:
-                    # Legal onset cluster → both go to this syllable
+                if legal_onset_cluster(c1, c2):
                     start = interlude_start
                 else:
-                    # Split: first to prev coda, second to this onset
                     start = interlude_start + 1
                     syllables[-1].append(phoneme_seq[interlude_start])
             else:
-                # 3+ consonants: give last 2 to onset if legal cluster, else last 1
-                c_pen, c_last = interlude[-2], interlude[-1]
-                if c_pen in OBSTRUENTS and c_last in ONSET2:
+                if len(interlude) >= 3 and legal_onset_triple(
+                    interlude[-3], interlude[-2], interlude[-1]
+                ):
+                    start = interlude_end - 3
+                    syllables[-1].extend(phoneme_seq[interlude_start:start])
+                elif legal_onset_cluster(interlude[-2], interlude[-1]):
                     start = interlude_end - 2
-                    syllables[-1].extend(phoneme_seq[interlude_start:interlude_end - 2])
+                    syllables[-1].extend(phoneme_seq[interlude_start:start])
                 else:
                     start = interlude_end - 1
-                    syllables[-1].extend(phoneme_seq[interlude_start:interlude_end - 1])
+                    syllables[-1].extend(phoneme_seq[interlude_start:start])
 
-        # Determine end of this syllable
-        # For the last vowel, we only go up to vi+1; trailing consonants
-        # are appended separately below to avoid double-counting.
         end = vi + 1
+        syllables.append(phoneme_seq[start:end])
 
-        syl = phoneme_seq[start:end]
-        syllables.append(syl)
-
-    # Handle trailing consonants after last vowel
     last_vi = vowel_positions[-1]
     trailing = phoneme_seq[last_vi + 1:]
     if trailing and syllables:
@@ -392,60 +406,120 @@ def _classify_phoneme(p: str) -> str:
 
 def count_violations(phoneme_seq: list[str]) -> int:
     """
-    Count phonotactic violations in a Lacyo phoneme sequence.
-    Based on grammar.tex §2.2 constraints.
+    Structural phonotactics after repair. Geminates are legal (Italo-Romance
+    / Sardinian). Hiatus is repaired before scoring, not fined here.
     """
     violations = 0
     syls = syllabify(phoneme_seq)
 
     for syl in syls:
         cv = [_classify_phoneme(p) for p in syl]
-
-        # Find the vowel nucleus position
         try:
             nuc_idx = cv.index("V")
         except ValueError:
-            violations += 1  # syllable with no vowel
+            violations += 1
             continue
 
         onset = syl[:nuc_idx]
         coda = syl[nuc_idx + 1:]
 
-        # Constraint 1: Max 2 consonants in coda (3+ is a violation)
         if len(coda) > 2:
             violations += len(coda) - 2
+        if len(coda) == 2 and not legal_coda_cluster(coda[0], coda[1]):
+            violations += 1
 
-        # Constraint 1b: If coda cluster of 2, must be sonorant+obstruent
-        # (e.g. /ns/, /nd/, /rt/, /lk/) — natural in Romance
-        if len(coda) == 2:
-            if coda[0] not in SONORANTS:
+        if len(onset) > 3:
+            violations += len(onset) - 3
+        elif len(onset) == 3:
+            if not legal_onset_triple(onset[0], onset[1], onset[2]):
                 violations += 1
-
-        # Constraint 2: No onset triples (max 2 consonants in onset)
-        if len(onset) > 2:
-            violations += len(onset) - 2
-
-        # Constraint 3: Onset cluster rule
-        if len(onset) == 2:
-            c1, c2 = onset
-            if c1 not in OBSTRUENTS or c2 not in ONSET2:
+        elif len(onset) == 2:
+            if not legal_onset_cluster(onset[0], onset[1]):
                 violations += 1
-
-        # Constraint 4: Any single consonant is a legal coda (naturalistic).
-        # No restriction — Romance sources are respected.
-
-    # Constraint 5: No gemination across syllable boundaries
-    for i in range(len(syls) - 1):
-        if syls[i] and syls[i + 1]:
-            if syls[i][-1] == syls[i + 1][0] and _classify_phoneme(syls[i][-1]) == "C":
-                violations += 1
-
-    # NOTE: No hard inventory membership check here.
-    # The phoneme inventory is EMERGENT — determined by which roots survive
-    # annealing. The E_phon energy term pressures the optimizer to minimize
-    # inventory size. Only structural phonotactics are enforced above.
 
     return violations
+
+
+def repair(phoneme_seq: list[str]) -> list[str]:
+    """Repair-or-keep. Prefer operations that do not add a syllable.
+
+    Order (reverse Vulgar Latin, then shorten):
+      1. i/u before a vowel → glide (acqua /akkua/ → /akkwa/)
+      2. collapse identical vowels (cîine /t͡ʃiine/ → /t͡ʃine/)
+      3. if still illegal, epenthesize /e/ in the leftover cluster
+    Geminates are not degeminated.
+    """
+    seq = [p for p in phoneme_seq if p]
+    if not seq:
+        return seq
+
+    # Glide formation + identical-vowel collapse (may reduce σ)
+    out: list[str] = []
+    i = 0
+    while i < len(seq):
+        a = seq[i]
+        b = seq[i + 1] if i + 1 < len(seq) else None
+        if b is not None and a in VOWELS and b in VOWELS:
+            if a == b:
+                out.append(a)
+                i += 2
+                continue
+            if a == "i":
+                out.append("j")
+                i += 1
+                continue
+            if a == "u":
+                out.append("w")
+                i += 1
+                continue
+            out.append(a)
+            out.append("j")
+            i += 1
+            continue
+        out.append(a)
+        i += 1
+    seq = out
+
+    if count_violations(seq) == 0:
+        return seq
+
+    # Epenthesis /e/ at the first illegal cluster (adds σ; last resort)
+    repaired: list[str] = []
+    syls = syllabify(seq)
+    changed = False
+    for syl in syls:
+        cv = [_classify_phoneme(p) for p in syl]
+        try:
+            nuc_idx = cv.index("V")
+        except ValueError:
+            repaired.extend(syl)
+            continue
+        onset = syl[:nuc_idx]
+        nucleus = syl[nuc_idx]
+        coda = syl[nuc_idx + 1:]
+        if not changed and len(onset) >= 2 and (
+            (len(onset) == 2 and not legal_onset_cluster(onset[0], onset[1]))
+            or (len(onset) >= 3 and not (
+                legal_onset_triple(onset[0], onset[1], onset[2])
+                if len(onset) == 3 else False
+            ))
+        ):
+            repaired.append(onset[0])
+            repaired.append("e")
+            repaired.extend(onset[1:])
+            repaired.append(nucleus)
+            repaired.extend(coda)
+            changed = True
+        elif not changed and len(coda) >= 2 and not legal_coda_cluster(coda[0], coda[1]):
+            repaired.extend(onset)
+            repaired.append(nucleus)
+            repaired.append(coda[0])
+            repaired.append("e")
+            repaired.extend(coda[1:])
+            changed = True
+        else:
+            repaired.extend(syl)
+    return repaired if repaired else seq
 
 
 def is_phonotactically_legal(phoneme_seq: list[str]) -> bool:

@@ -312,24 +312,23 @@ def render_scorecard(
     lines.append("Una raíz no se elige “porque sí”. El recocido minimiza")
     lines.append("")
     lines.append("$$")
-    lines.append(r"E = 1000\sum_r \sigma(r) + 10\sum_r (N_{\mathrm{src}}-\mathrm{support}(r)) + 200\sum_e \sigma(e)")
-    lines.append(r"+ 100000\cdot\mathrm{coll} + 500000\cdot\mathrm{viol} + 500\sum_{i<j}\max(0,2-d(e_i,e_j))")
+    lines.append(r"E = 1000\sum_r \sigma(r) + 40|\Phi| + 1(N_{\mathrm{src}}-n_{\mathrm{lects}}) + 0.02\,\overline{\mathrm{gap}}")
+    lines.append(r"+ 200\sum_e \sigma(e) + 100000\cdot\mathrm{coll} + 2000\cdot\mathrm{viol} + 500\sum_{\mathrm{row}}\max(0,2-d)")
     lines.append("$$")
     lines.append("")
     lines.append("| término | peso | qué hace en la práctica |")
     lines.append("|---|---:|---|")
     lines.append("| **σ raíces** | 1000 | una sílaba extra gana a todo lo de abajo |")
-    lines.append("| **support** | 10 | a igual σ, el stem que cubre más lects (`gat` × ca/oc/lmo… vs `xa` × fr) |")
-    lines.append("| σ desinencias | 200 | terminaciones cortas |")
-    lines.append("| colisiones | 100000 | duro: dos casillas del paradigma no pueden ser homófonas |")
-    lines.append("| fonotáctica | 500000 | duro: forma ilegal fuera (por eso PT crudo pierde aunque sea corto) |")
-    lines.append("| distancia desinencias | 500 | personas de un mismo tiempo no se parecen demasiado |")
-    lines.append("| inventario \\|Φ\\| | **0** | no se minimiza; `/v/` se queda |")
+    lines.append("| **\\|Φ\\|** | 40 | 40×23=920 < 1000: inventario global, nunca compra una σ |")
+    lines.append("| **diversidad** | 1 | a igual σ e igual Φ, maximizar lects distintas (34 < 40) |")
+    lines.append("| support medio | 0.02 | más fino que un lect |")
+    lines.append("| σ desinencias | 200 | terminaciones 1σ |")
+    lines.append("| colisiones | 100000 | duro dentro de una fila |")
+    lines.append("| fonotáctica | 2000 | resto tras repair |")
+    lines.append("| distancia desinencias | 500 | dentro de una fila |")
     lines.append("")
-    lines.append("Orden lexicográfico de una **raíz**: legal → menos σ → más support")
-    lines.append("→ menos fonemas → código de lengua. Por eso portugués puede salir 0%:")
-    lines.append("casi siempre hay una hermana legal igual de corta o más corta.")
-    lines.append("`N_src` = 34. Un stem con support 8 cuesta `10×(34-8)=260`; una σ extra cuesta 1000.")
+    lines.append("Orden: legal → min σ → min \\|Φ\\| → max lects → support.")
+    lines.append("Un lect oscuro gana solo en empate de σ que no agrande Φ.")
     lines.append("")
     lines.append("## Veredicto")
     lines.append("")
@@ -437,6 +436,11 @@ def render_scorecard(
         for cls in lexicon.get("verb_endings", {}).values()
         for slot, ortho in cls.items()
     }
+    noun_endings = {
+        slot: ortho
+        for cls in lexicon.get("noun_endings", {}).values()
+        for slot, ortho in cls.items()
+    }
     adj_endings = dict(lexicon.get("adj_endings", {}))
 
     for sent in SENTENCES:
@@ -452,7 +456,8 @@ def render_scorecard(
             lines.append("")
             continue
         realized = realize_sentence(
-            toks, sa_roots, verb_endings, adj_endings, candidates=candidates,
+            toks, sa_roots, verb_endings, adj_endings,
+            candidates=candidates, noun_endings=noun_endings,
         )
         lacyo_w = [w["form"] for w in realized]
         src_w = [f"[{w['src']}]" for w in realized]

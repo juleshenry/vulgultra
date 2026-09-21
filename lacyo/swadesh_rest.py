@@ -45,7 +45,6 @@ _AN = _pack("an", "yo|tu|él|nusatros|vusatros|els|iste|ixe|aquí|allí|quién|q
 
 _AST = _pack("ast", "yo|tú|él|nosotros|vosotros|ellos|esti|esi|equí|ellí|quién|qué|ónde|cuándo|cómo|non|too|munchos|dalgunos|pocos|otru|un|dos|tres|cuatro|cinco|grande|llargu|anchu|grueso|pesáu|pequeñu|curtiu|estrechu|finu|muyer|home|persona|neñu|esposa|esposu|madre|padre|animal|pez|páxaru|perru|pioyu|cuélebre|gusanu|árbol|bosque|palu|fruta| grana|fueya|raíz|corteza|flor|yerba|cuerda|piel|carne|sangre|huesu|grasa|güevu|cuernu|cola|pluma|pelu|cabeza|oreya|güeyu|nariz|boca|diente|llingua|uña|pie|pierna|rodía|manu|ala|banduyu|tripes|pescuezu|llombu|pechu|corazón|fígado|beber|comer|morder|chupar|escupir|goler|sopliar|respirar|reír|ver|oír|saber|pensar|goler|temer|dormir|vivir|morrer|matar|lluchar|cazar|golpiar|cortar|fender|apuñalar|rascar|cavar|nadar|volar|caminar|venir|xacer|sentar|tar|xirar|cayer|dar|tener|apretar|fregar|llavar|enxugar|tirar|empuxar|llanzar|atar|coser|contar|dicir|cantar|xugar|flotar|fluir|xelar|inchir|sol|lluna|estrella|agua|lluvia|ríu|llagu|mar|sal|piedra|arena|polvu|tierra|nube|ñeblína|cielu|vientu|nieve|xelu|fumu|fueu|ceniza|quemar|caminu|montaña|bermeyu|verde|mariellu|blancu|negru|nueche|día|añu|caliente|fríu|llenú|nuevu|vieyu|bonu|malu|podre|suciu|rectu|redondu|afiaú|romo|llisu|moyáu|secu|correctu|cerca|llonxe|drecha|izquierda|a|en|con|y|si|porque|nome|el|ser|gatu|gata|perra|sonreír")
 
-_EXT = _pack("ext", "yu|tú|él|nosotrus|vosotros|ellus|esti|esi|aquí|allí|quíen|qué|ondi|cuandu|cómmu|nu|tó|muchus|argunus|pocos|otru|un|dos|tres|cuatru|cincu|grandi|largu|anchu|gruesu|pesau|chiquinu|curtu|estrechu|finu|mujel|hombri|persona|niñu|esposa|esposu|mairi|pairi|animal|pez|páxaru|perru|pioju|culebra|gusanu|árbol|bosqui|palu|fruta|simienti|oja|raís|corteza|flor|yerba|cuerda|piel|carni|sangri|huesu|grasa|güevu|cuernu|cola|pluma|pelu|cabeza|oreja|oju|narís|boca|dienti|lengua|uña|pie|pierna|roilla|manu|ala|vientri|tripas|cuellu|espalda|pechu|corazón|hígado|bebel|comel|mordel|chupal|escupil|vomital|soplal|respiral|reíl|vel|oíl|sabel|pensal|olel|temel|dormil|vivil|moríl|matal|luchal|cazal|golpeal|cortal|fendel|apuñalal|rascal|caval|nadal|volal|caminal|venil|jacel|sental|estal|giral|cael|dal|tenel|apretal|fregal|laval|enxugal|tiral|empujal|lanzal|atal|cosel|contal|dicil|cantal|jugal|flotal|fluil|helal|inchal|sol|luna|estrella|água|luvia|ríu|lagu|mar|sal|piedra|arena|polvu|tierra|nubi|niebla|cielu|vientu|nievi|helu|humu|huegu|ceniza|quemal|caminu|montaña|colorau|verdi|amarillu|blancu|negru|nochi|día|añu|calienti|fríu|lenu|nuevu|vieju|güenu|malu|podri|suciu|retu|redondu|afiaú|romu|lisu|mojau|secu|correctu|cerca|lejos|derecha|izquierda|a|en|con|y|si|porque|nombril|el|sel|gatu|gata|perra|sonreíl")
 
 _LAD = _pack("lad", "yo|tu|el|mozotros|vozotros|eyos|este|ake|aki|ayi|ken|ke|onde|kuando|kumo|no|todo|munchos|algunos|pokos|otro|uno|dos|tres|kuatro|sinko|grande|largo|ancho|gordo|pezgado|chiko|kurto|estrecho|fino|mujer|ombre|persona|kriatura|mujer|marido|madre|padre|animal|peche|paxaro|perro|piojo|kulevro|gizano|arvole|boske|palo|fruta|simiente|oja|raiz|kortesa|flor|erva|kuerda|piel|karne|sangre|ueso|grasa|uevo|kuerno|kola|pluma|kaveyo|kavesa|oreja|ojo|nariz|boka|diente|lingua|unya|pie|pierna|rodía|mano|ala|vientre|tripas|kuello|espalda|pecho|korason|igado|bever|komer|morder|chupar|eskupir|vomitar|soplar|respirar|reír|ver|oyir|saver|pensar|oler|temer|durmir|bivir|morir|matar|luchár|kasar|golpear|kortar|fender|apunyalár|rascar|kavar|nadar|volar|kaminar|venir|yazer|sentar|estar|girar|kaer|dar|tener|apretar|fregar|lavar|enxugar|tirar|empujar|lançar|atar|kozer|kontar|dezir|kantar|jugar|flotar|fluir|jelar|inchar|sol|luna|estreya|agua|luvya|rio|lago|mar|sal|piedra|arena|polvo|tierra|nube|niebla|syelo|viento|nieve|yelo|fumo|fuego|seniza|kemar|kamino|montanya|kolorado|vedre|amariyo|blanko|preto|noche|diya|anyo|kaliente|frio|pleno|muevo|viejo|bueno|malo|podrido|suzio|derecho|redondo|agudo|romo|liso|mojado|seko|korrekto|serka|lexos|derecha|sierda|a|en|kon|i|si|porke|nombre|el|ser|gato|gata|perra|sonreír")
 
@@ -84,6 +83,8 @@ _GLW = _pack("glw", "je|te|i|nozaut|vozaut|eus|ceu|cela|ichi|la|qi|qei|iou|qand|
 _GSC = _pack("gsc", "jo|tu|eth|nosauts|vosauts|eths|aqueste|aqueth|ací|aquí|qui|qué|on|quan|coma|non|tot|plan|qualques|pau|aute|un|dus|tres|quatre|cinc|gran|long|larg|espés|pesuc|petit|cort|estret|prim|hemna|òme|persona|mainatge|molhèr|marit|mair|pair|animau|peish|aucèth|can|piolh|sèrp|vèrm|arbre|bòsc|baston|frut|gran|huelha|arrel|escòrça|flor|èrba|còrda|pèth|carn|sang|òs|grèish|uòu|còrn|coa|pluma|pèth|cap|auretha|uelh|nas|boca|dent|lenga|ongla|pè|cama|genolh|man|ala|ventre|tripas|còth|esquia|pitre|còr|gessèr|béver|minjar|mossegar|chucar|escopir|vomir|bufar|respirar|ríser|véder|ausir|saber|pensar|sentir|témer|dormir|víver|morir|tuar|luchar|caçar|tustar|talhar|héner|apunhalar|gratar|cavar|nadar|volar|caminar|víner|jaser|séder|estar|virar|cáder|dar|téner|prémer|fregar|lavar|eishugar|tirar|empénher|lançar|ligar|cósèr|comptar|díser|cantar|jugar|flotar|fluir|gelar|enflar|sorelh|lua|estela|aiga|pluja|arriu|lac|mar|sau|pèira|sabla|polvera|tèrra|nívol|bruma|cèu|vent|nèu|glaç|hum|huec|cendre|cremar|camin|montanha|roge|verd|jaune|blanc|negre|nueit|dia|an|caud|hred|plen|nau|vièlh|bon|marrit|porrit|salop|dret|redond|agut|emós|lis|molhat|sec|corrècte|près|lhen|dreta|esquèrra|a|en|damb|e|se|perqué|nom|eth|èster|gat|gata|canha|sorrisèr")
 
 # Eastern / isolate / Latin
+_EXT = _pack("ext", "yu|tú|él|nosotrus|vosotros|ellus|esti|esi|aquí|allí|quíen|qué|ondi|cuandu|cómmu|nu|tó|muchus|argunus|pocos|otru|un|dos|tres|cuatru|cincu|grandi|largu|anchu|gruesu|pesau|chiquinu|curtu|estrechu|finu|mujel|hombri|persona|niñu|esposa|esposu|mairi|pairi|animal|pez|páxaru|perru|pioju|culebra|gusanu|árbol|bosqui|palu|fruta|simienti|oja|raís|corteza|flor|yerba|cuerda|piel|carni|sangri|huesu|grasa|güevu|cuernu|cola|pluma|pelu|cabeza|oreja|oju|narís|boca|dienti|lengua|uña|pie|pierna|roilla|manu|ala|vientri|tripas|cuellu|espalda|pechu|corazón|hígado|bebel|comel|mordel|chupal|escupil|vomital|soplal|respiral|reíl|vel|oíl|sabel|pensal|olel|temel|dormil|vivil|moríl|matal|luchal|cazal|golpeal|cortal|fendel|apuñalal|rascal|caval|nadal|volal|caminal|venil|jacel|sental|estal|giral|cael|dal|tenel|apretal|fregal|laval|enxugal|tiral|empujal|lanzal|atal|cosel|contal|dicil|cantal|jugal|flotal|fluil|helal|inchal|sol|luna|estrella|água|luvia|ríu|lagu|mar|sal|piedra|arena|polvu|tierra|nubi|niebla|cielu|vientu|nievi|helu|humu|huegu|ceniza|quemal|caminu|montaña|colorau|verdi|amarillu|blancu|negru|nochi|día|añu|calienti|fríu|lenu|nuevu|vieju|güenu|malu|podri|suciu|retu|redondu|afiaú|romu|lisu|mojau|secu|correctu|cerca|lejos|derecha|izquierda|a|en|con|y|si|porque|nombril|el|sel|gatu|gata|perra|sonreíl")
+
 _LA = _pack("la", "ego|tu|is|nos|vos|ei|hic|ille|hic|illic|quis|quid|ubi|quando|quomodo|non|omnis|multi|aliqui|pauci|alius|unus|duo|tres|quattuor|quinque|magnus|longus|latus|crassus|gravis|parvus|brevis|angustus|tenuis|femina|vir|homo|puer|uxor|maritus|mater|pater|animal|piscis|avis|canis|pediculus|serpens|vermis|arbor|silva|baculum|fructus|semen|folium|radix|cortex|flos|herba|funis|cutis|caro|sanguis|os|adeps|ovum|cornu|cauda|pluma|capillus|caput|auris|oculus|nasus|os|dens|lingua|unguis|pes|crus|genu|manus|ala|venter|viscera|collum|dorsum|pectus|cor|iecur|bibere|edere|mordere|sugere|spuere|vomere|flare|spirare|ridere|videre|audire|scire|cogitare|olfacere|timere|dormire|vivere|mori|occidere|pugnare|venari|ferire|secare|findere|confodere|scalpere|fodere|natare|volare|ambulare|venire|iacere|sedere|stare|vertere|cadere|dare|tenere|premere|fricare|lavare|tergere|trahere|pellere|iacere|ligare|suere|numerare|dicere|cantare|ludere|fluitare|fluere|gelare|tumescere|sol|luna|stella|aqua|pluvia|flumen|lacus|mare|sal|lapis|arena|pulvis|terra|nubes|nebula|caelum|ventus|nix|glacies|fumus|ignis|cinis|urere|via|mons|ruber|viridis|flavus|albus|niger|nox|dies|annus|calidus|frigidus|plenus|novus|vetus|bonus|malus|putridus|sordidus|rectus|rotundus|acer|hebes|levis|umidus|siccus|rectus|prope|procul|dextra|sinistra|ad|in|cum|et|si|quia|nomen|ille|esse|cattus|catta|canis|ridere")
 
 _RM = _pack("rm", "jau|ti|el|nus|vus|els|quest|quel|qua|là|tgi|tge|nua|cura|co|betg|tut|blera|tscherts|paucs|auter|in|dus|trais|quater|tschun|grond|lung|lartg|grass|grev|pitg|curt|stretg|fin|dunna|um|persuna|uffant|dunna|umer|mamma|bab|animal|pesch|utschel|chaun|lidom|serp|vierm|ischi|guaud|bastun|fritg|sem|fegl|ragisch|scorsa|flur|erva|corda|pel|carn|sonc|ies|grass|ov|corn|guauda|plima|chavels|tgau|ureglia|egl|nas|bucca|dent|lingua|ungla|pe|comba|schanugl|maun|ala|venter|budels|culiez| uns|peiz|cor|gnirom|baiver|magliar|morder|sitschar|sputar|vomitar|suffers|respirar|rir|vesair|udir|saveir|pensar|sentir|temer|durmir|viver|murir|maffar|cumbatter|chatschar|batter|tagliar|spartir|pugnalar|grattar|chavar|nadar|volar|ir|vegnir|giacer|seser|star|voltar|cader|dar|tegner|smitgar|fritgar|lavar|sitgar|tirar|spinger|bittar|liar|cuser|contar|dir|cantar|giugar|flottar|sgular|gelar|unflar|sulegl|glina|staila|aua|plievgia|flum|lai|mar|sal|crap|sablun|polvra|terra|niv|nebla|tschiel|vent|naiv|glatsch|fum|fieu|tschendra|arder|via|muntogna|cotschen|verd|mellen|alv|nair|notg|di|onn|cauld|freid|plen|nov|vegl|bun|mal|marscha|suid|dretg|rund|spitg|stus|glisch|umid|sitg|correct|datiers|lunsch|dretga|sanestra|a|en|cun|e|sche|perquai|num|il|esser|gat|gata|chauna|smilegiar")
@@ -96,6 +97,90 @@ _RUO = _pack("ruo", "io|tu|el|noi|voi|ei|ăst|ăl|aici|acolo|cari|ce|iu|când|cu
 
 _DLM = _pack("dlm", "ju|te|jal|nu|vu|jali|cest|cal|kai|la|ki|ce|do|kand|ko|na|tot|multe|nek|pok|ater|join|doi|tra|kuatara|cenk|veira|long|larg|gros|pesant|muc|curt|strent|fin|femra|hom|om|feto|muier|marit|mama|tata|animal|pisk|gial|kuan|pedoc|saip|viarm|jakla|bosk|bak|fruta|samen|fuia|raisa|skorza|fior|erba|fune|piel|karn|sank|suos|gruass|jauo|korn|kua|pena|kapel|kap|oreia|vakl|nas|buka|dent|langa|ongla|pi|gamba|zenucl|mun|ala|vintar|budel|kuol|dos|pet|kuor|figat|beivre|mangur|muarder|sucer|spuar|vomitar|bufar|spirar|ridur|veder|sentir|savir|pensar|odur|temer|durmir|vivar|murir|ucider|punar|cazar|bater|taiar|fender|puinal|gratar|cavar|nadar|volar|kaminar|venur|jacer|seder|star|virar|kader|dar|tener|smechar|fregar|lavar|sukar|tirar|spinger|jitar|ligar|kusir|kuntar|dikar|kantar|jugar|flotar|fluir|gelar|gonfiar|saul|loina|stela|aku|pluja|fium|lak|mar|sal|putra|sabia|pulvar|tiara|nuba|nebla|ciel|vint|nai|jak|fum|fuk|cenisa|ardur|via|mont|ruber|viart|gialt|blonk|nier|nuat|di|ain|kald|fred|plin|nov|veklo|bon|mal|putrid|sordid|drit|rotund|akut|otuz|lis|moliat|sek|korekt|vesin|lontan|dret|sanc|a|in|kon|e|se|perke|nom|el|sar|giat|giata|kuana|somiar")
 
+DLM_KAIKKI_OVERRIDES = {
+    "i": "ju",
+    "we": "nu",
+    "you_pl": "voi",
+    "he": "jal",
+    "that": "col",
+    "who": "ci",
+    "what": "co",
+    "when": "cand",
+    "not": "na",
+    "all": "tot",
+    "many": "mult",
+    "one": "ioin",
+    "two": "doi",
+    "three": "tra",
+    "four": "quater",
+    "five": "cionco",
+    "long": "luang",
+    "woman": "dona",
+    "man": "jomno",
+    "dog": "cun",
+    "cat": "cuot",
+    "fish": "pasc",
+    "bird": "paserain",
+    "tree": "iuarbol",
+    "leaf": "fualja",
+    "root": "radaica",
+    "bark": "dermun",
+    "flower": "fiaur",
+    "grass": "iarba",
+    "skin": "pial",
+    "meat": "cuarne",
+    "blood": "suang",
+    "bone": "vuas",
+    "egg": "juv",
+    "horn": "cuarno",
+    "tail": "cauda",
+    "hair": "pail",
+    "head": "cup",
+    "ear": "oracla",
+    "eye": "uaclo",
+    "nose": "nuos",
+    "mouth": "buca",
+    "tooth": "diant",
+    "tongue": "langa",
+    "foot": "pi",
+    "hand": "mun",
+    "belly": "viantro",
+    "neck": "cual",
+    "back": "dri",
+    "heart": "cur",
+    "liver": "fecuat",
+    "sleep": "samno",
+    "sun": "saul",
+    "moon": "loina",
+    "star": "stala",
+    "water": "aqua",
+    "rain": "pluaia",
+    "river": "floim",
+    "sea": "mur",
+    "stone": "pitra",
+    "sand": "sablaun",
+    "sky": "cil",
+    "wind": "viant",
+    "snow": "nai",
+    "ice": "glas",
+    "fire": "fuc",
+    "red": "ros",
+    "green": "vert",
+    "yellow": "zuola",
+    "white": "blanc",
+    "black": "fosc",
+    "night": "nuot",
+    "day": "dai",
+    "year": "jan",
+    "cold": "gelut",
+    "full": "plain",
+    "new": "nuf",
+    "old": "vieclo",
+    "good": "bin",
+    "bad": "ri",
+    "name": "naum",
+}
+
 TABLES: dict[str, dict[str, str]] = {
     "an": _AN, "ast": _AST, "ext": _EXT, "lad": _LAD, "mwl": _MWL,
     "scn": _SCN, "vec": _VEC, "lmo": _LMO, "pms": _PMS, "lij": _LIJ,
@@ -103,6 +188,31 @@ TABLES: dict[str, dict[str, str]] = {
     "wa": _WA, "pcd": _PCD, "nrm": _NRM, "frp": _FRP, "glw": _GLW, "gsc": _GSC,
     "la": _LA, "rm": _RM, "sc": _SC, "rup": _RUP, "ruo": _RUO, "dlm": _DLM,
 }
+TABLES["dlm"].update(DLM_KAIKKI_OVERRIDES)
+
+# Attested Istriot (kaikki.org / Wiktextract). Skip dubious first-hits.
+IST_KAIKKI_OVERRIDES = {
+    "we": "nui",
+    "two": "dui",
+    "three": "trì",
+    "woman": "duona",
+    "man": "omo",
+    "dog": "can",
+    "tree": "arbo",
+    "stone": "pera",
+    "head": "tiesta",
+    "eye": "uocio",
+    "hand": "man",
+    "sun": "sul",
+    "water": "aqua",
+    "red": "russo",
+    "white": "bianco",
+    "black": "nìgaro",
+    "night": "nuoto",
+    "day": "dèi",
+    "name": "nom",
+}
+TABLES["ist"].update(IST_KAIKKI_OVERRIDES)
 
 # Not a source. Same 213 rows, parked for a later English-as-source run.
 _EN = _pack("en", "I|you|he|we|you|they|this|that|here|there|who|what|where|when|how|not|all|many|some|few|other|one|two|three|four|five|big|long|wide|thick|heavy|small|short|narrow|thin|woman|man|person|child|wife|husband|mother|father|animal|fish|bird|dog|louse|snake|worm|tree|forest|stick|fruit|seed|leaf|root|bark|flower|grass|rope|skin|meat|blood|bone|fat|egg|horn|tail|feather|hair|head|ear|eye|nose|mouth|tooth|tongue|fingernail|foot|leg|knee|hand|wing|belly|guts|neck|back|breast|heart|liver|drink|eat|bite|suck|spit|vomit|blow|breathe|laugh|see|hear|know|think|smell|fear|sleep|live|die|kill|fight|hunt|hit|cut|split|stab|scratch|dig|swim|fly|walk|come|lie|sit|stand|turn|fall|give|hold|squeeze|rub|wash|wipe|pull|push|throw|tie|sew|count|say|sing|play|float|flow|freeze|swell|sun|moon|star|water|rain|river|lake|sea|salt|stone|sand|dust|earth|cloud|fog|sky|wind|snow|ice|smoke|fire|ash|burn|road|mountain|red|green|yellow|white|black|night|day|year|warm|cold|full|new|old|good|bad|rotten|dirty|straight|round|sharp|dull|smooth|wet|dry|correct|near|far|right|left|at|in|with|and|if|because|name|the|be|cat|cat|bitch|smile")
