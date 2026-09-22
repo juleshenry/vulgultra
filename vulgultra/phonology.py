@@ -1,5 +1,5 @@
 """
-lacyo.phonology — IPA, repair, syllabify, orthography (grammar.tex).
+vulgultra.phonology — IPA, repair, syllabify, orthography (grammar.tex).
 
 Repair runs before scoring. Geminates and Latin sC onsets are legal.
 Syllable count = vowel nuclei. Glides are consonants.
@@ -16,7 +16,7 @@ import panphon
 from panphon.featuretable import FeatureTable
 
 # ---------------------------------------------------------------------------
-# Lacyo phoneme inventory (grammar.tex Ch.2)
+# Vulgultra phoneme inventory (grammar.tex Ch.2)
 # ---------------------------------------------------------------------------
 
 CONSONANTS: set[str] = {
@@ -65,7 +65,7 @@ IPA_TO_ORTHO: dict[str, str] = {
 ORTHO_TO_IPA: dict[str, str] = {v: k for k, v in IPA_TO_ORTHO.items()}
 
 # ---------------------------------------------------------------------------
-# Phoneme mapping: non-Lacyo IPA → nearest Lacyo equivalent (grammar.tex §5.3)
+# Phoneme mapping: non-Vulgultra IPA → nearest Vulgultra equivalent (grammar.tex §5.3)
 # ---------------------------------------------------------------------------
 
 PHONEME_MAP: dict[str, str] = {
@@ -82,7 +82,7 @@ PHONEME_MAP: dict[str, str] = {
     "ã": "an", "ẽ": "en", "ĩ": "in", "õ": "on", "ũ": "un",
     # Open back
     "ɑ": "a", "æ": "a",
-    # Voiced postalveolar → voiceless (nearest Lacyo equivalent)
+    # Voiced postalveolar → voiceless (nearest Vulgultra equivalent)
     "ʒ": "ʃ",
     # Dental fricatives
     "θ": "t", "ð": "d",
@@ -114,41 +114,28 @@ PHONEME_MAP: dict[str, str] = {
 _g2p_cache: dict[str, epitran.Epitran] = {}
 
 LANG_CODES: dict[str, str] = {
-    "fr": "fra-Latn",
-    "es": "spa-Latn",
-    "it": "ita-Latn",
-    "pt": "por-Latn",
-    "ca": "cat-Latn",
-    "ro": "ron-Latn",
-    "gl": "glg-Latn",
-    "oc": "oci-Latn",
-    # Sister G2P for the rest of the README corpus (no native epitran map)
-    "an": "spa-Latn",
-    "ast": "spa-Latn",
-    "ext": "spa-Latn",
-    "lad": "spa-Latn",
-    "mwl": "por-Latn",
+    # Ibero
+    "es": "spa-Latn", "pt": "por-Latn", "gl": "glg-Latn",
+    "an": "spa-Latn", "ast": "spa-Latn", "ext": "spa-Latn",
+    "lad": "spa-Latn", "mwl": "por-Latn",
+    # Occitano
+    "oc": "oci-Latn", "ca": "cat-Latn", "gsc": "oci-Latn",
+    # Oil / Arpitan
+    "fr": "fra-Latn", "wa": "fra-Latn", "pcd": "fra-Latn",
+    "nrf": "fra-Latn", "glw": "fra-Latn", "frp": "fra-Latn",
+    # Gallo-Italian
+    "lmo": "ita-Latn", "pms": "ita-Latn", "lij": "lij-Latn",
+    "eml": "ita-Latn", "rgn": "ita-Latn",
+    # Italo-Dalmatian
+    "it": "ita-Latn", "scn": "ita-Latn", "vec": "ita-Latn",
+    "co": "ita-Latn", "ist": "ita-Latn", "dlm": "ita-Latn",
+    # Rhaeto / Sardinian
+    "rm": "ita-Latn", "fur": "ita-Latn", "lld": "ita-Latn",
     "sc": "sro-Latn",
-    "scn": "ita-Latn",
-    "vec": "ita-Latn",
-    "lmo": "ita-Latn",
-    "pms": "ita-Latn",
-    "lij": "lij-Latn",
-    "fur": "ita-Latn",
-    "eml": "ita-Latn",
-    "lld": "ita-Latn",
-    "ist": "ita-Latn",
-    "rm": "ita-Latn",
+    # Eastern
+    "ro": "ron-Latn", "rup": "ron-Latn", "ruo": "ron-Latn", "ruq": "ron-Latn",
+    # reserved ancestor
     "la": "ita-Latn",
-    "wa": "fra-Latn",
-    "pcd": "fra-Latn",
-    "nrm": "fra-Latn",
-    "frp": "fra-Latn",
-    "glw": "fra-Latn",
-    "gsc": "oci-Latn",
-    "dlm": "ita-Latn",
-    "rup": "ron-Latn",
-    "ruo": "ron-Latn",
 }
 
 
@@ -169,7 +156,7 @@ def word_to_ipa(word: str, lang: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# IPA → Lacyo phoneme sequence
+# IPA → Vulgultra phoneme sequence
 # ---------------------------------------------------------------------------
 
 # Multi-char IPA tokens to recognize BEFORE splitting by character.
@@ -231,10 +218,10 @@ def tokenize_ipa(ipa: str) -> list[str]:
     return tokens
 
 
-def adapt_to_lacyo(ipa_tokens: list[str]) -> list[str]:
+def adapt_to_vulgultra(ipa_tokens: list[str]) -> list[str]:
     """
-    Map a sequence of IPA tokens to Lacyo phonemes.
-    Non-Lacyo phonemes are mapped via PHONEME_MAP.
+    Map a sequence of IPA tokens to Vulgultra phonemes.
+    Non-Vulgultra phonemes are mapped via PHONEME_MAP.
     Unknown phonemes are dropped.
     """
     result: list[str] = []
@@ -253,7 +240,7 @@ def adapt_to_lacyo(ipa_tokens: list[str]) -> list[str]:
 def overlay_spelling_contrasts(word: str, phonemes: list[str]) -> list[str]:
     """Keep /v/ when the source *spells* v.
 
-    Spanish and Catalan G2P merge v→b (Iberian phonology). Lacyo has both
+    Spanish and Catalan G2P merge v→b (Iberian phonology). Vulgultra has both
     /b/ and /v/; inventory is not being minimized. Trust the letter.
     """
     import unicodedata
@@ -275,16 +262,16 @@ def overlay_spelling_contrasts(word: str, phonemes: list[str]) -> list[str]:
     return out
 
 
-def ipa_to_lacyo(ipa: str) -> list[str]:
-    """Full pipeline: raw IPA string → list of Lacyo phonemes."""
+def ipa_to_vulgultra(ipa: str) -> list[str]:
+    """Full pipeline: raw IPA string → list of Vulgultra phonemes."""
     tokens = tokenize_ipa(ipa)
-    return adapt_to_lacyo(tokens)
+    return adapt_to_vulgultra(tokens)
 
 
-def word_to_lacyo(word: str, lang: str) -> list[str]:
-    """Convert orthographic word → Lacyo phoneme sequence."""
+def word_to_vulgultra(word: str, lang: str) -> list[str]:
+    """Convert orthographic word → Vulgultra phoneme sequence."""
     ipa = word_to_ipa(word, lang)
-    return overlay_spelling_contrasts(word, ipa_to_lacyo(ipa))
+    return overlay_spelling_contrasts(word, ipa_to_vulgultra(ipa))
 
 
 # ---------------------------------------------------------------------------
@@ -292,7 +279,7 @@ def word_to_lacyo(word: str, lang: str) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def extract_phonemes(phoneme_seq: list[str]) -> set[str]:
-    """Extract the set of distinct Lacyo phonemes from a phoneme sequence."""
+    """Extract the set of distinct Vulgultra phonemes from a phoneme sequence."""
     return set(phoneme_seq) & PHONEME_INVENTORY
 
 
@@ -302,7 +289,7 @@ def extract_phonemes(phoneme_seq: list[str]) -> set[str]:
 
 def count_syllables(phoneme_seq: list[str]) -> int:
     """
-    Count syllables in a Lacyo phoneme sequence.
+    Count syllables in a Vulgultra phoneme sequence.
     Each vowel nucleus = 1 syllable. Glides /j w/ are consonants, so
     /fwe/ and /aj/ are still 1σ.
     """
@@ -532,12 +519,12 @@ def is_phonotactically_legal(phoneme_seq: list[str]) -> bool:
 # ---------------------------------------------------------------------------
 
 def to_orthography(phoneme_seq: list[str]) -> str:
-    """Convert a Lacyo phoneme sequence to orthographic form."""
+    """Convert a Vulgultra phoneme sequence to orthographic form."""
     return "".join(IPA_TO_ORTHO.get(p, "?") for p in phoneme_seq)
 
 
 def from_orthography(ortho: str) -> list[str]:
-    """Convert Lacyo orthography back to phoneme sequence."""
+    """Convert Vulgultra orthography back to phoneme sequence."""
     result: list[str] = []
     for ch in ortho.lower():
         if ch in ORTHO_TO_IPA:

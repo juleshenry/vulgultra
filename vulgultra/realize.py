@@ -7,10 +7,10 @@ only (not role). Copula is suppletive (é/e).
 
 from __future__ import annotations
 
-from lacyo.optimizer import VERB_SLOTS
-from lacyo.paradigms import PERSONS, VERB_TEMPLATES
-from lacyo.phonology import count_syllables, from_orthography, to_orthography
-from lacyo.romance_swadesh import GENDER_PAIRS, concepts as swadesh_concepts
+from vulgultra.optimizer import VERB_SLOTS
+from vulgultra.paradigms import PERSONS, VERB_TEMPLATES
+from vulgultra.phonology import count_syllables, from_orthography, to_orthography
+from vulgultra.romance_swadesh import GENDER_PAIRS, concepts as swadesh_concepts
 
 # Closed class: one vowel, gender-marked. Not the Swadesh winner (el/la).
 ARTICLES = {
@@ -179,6 +179,8 @@ def realize_sentence(
     out: list[dict[str, str]] = []
     pending_art = False
     np_gender = "m"
+    np_case = "nom"
+    seen_content_verb = False
 
     for i, tok in enumerate(tokens):
         if tok == "def_art":
@@ -192,6 +194,7 @@ def realize_sentence(
 
         if pos == "noun":
             np_gender = gender_of(tok)
+            np_case = "acc" if seen_content_verb else "nom"
             closed = set(ARTICLES.values()) | set(COPULA_PRS.values())
             if stem in closed and candidates and tok in candidates:
                 alts = [
@@ -211,12 +214,12 @@ def realize_sentence(
                 })
                 pending_art = False
             if noun_endings:
-                stem = inflect_noun(stem, np_gender, "sg", noun_endings, case="nom")
+                stem = inflect_noun(stem, np_gender, "sg", noun_endings, case=np_case)
             out.append({"form": stem, "src": src, "concept": tok, "role": "noun"})
             continue
 
         if pos == "adj":
-            form = inflect_adj(stem, np_gender, "sg", adj_endings, case="nom")
+            form = inflect_adj(stem, np_gender, "sg", adj_endings, case=np_case)
             out.append({"form": form, "src": src, "concept": tok, "role": "adj"})
             continue
 
@@ -230,7 +233,9 @@ def realize_sentence(
             continue
 
         if pos == "verb":
-            form = inflect_verb(stem, person, "prs", verb_endings, source_lang=src)
+            # Lexicon paradigm (one present row), not the root's source lect.
+            form = inflect_verb(stem, person, "prs", verb_endings)
+            seen_content_verb = True
             out.append({"form": form, "src": src, "concept": tok, "role": "verb"})
             continue
 

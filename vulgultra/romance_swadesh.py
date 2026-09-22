@@ -1,7 +1,8 @@
 """Meaning-aligned Romance Swadesh + closed class.
 
-Full README corpus minus English (34 lects). Extremaduran kept — book source
-available. Each lect has its own conjugation table in lacyo.paradigms.
+Romance daughters only (grammar.tex), grouped by branch. Latin and
+English live in RESERVED_TABLES. Each lect has its own conjugation
+table in vulgultra.paradigms.
 """
 
 from __future__ import annotations
@@ -9,16 +10,42 @@ from __future__ import annotations
 from typing import TypedDict
 
 
-from lacyo.paradigms import PERSONS
-from lacyo.swadesh_rest import TABLES as REST_TABLES
+from vulgultra.paradigms import PERSONS, THEME_CLASS
+from vulgultra.swadesh_rest import TABLES as REST_TABLES
 
-SOURCE_LANGS = (
-    "fr", "es", "it", "pt", "ca", "ro", "gl", "oc",
-    "an", "ast", "ext", "lad", "mwl",
-    "scn", "vec", "lmo", "pms", "lij", "fur", "eml", "lld", "ist",
-    "wa", "pcd", "nrm", "frp", "glw", "gsc",
-    "la", "rm", "sc", "rup", "ruo", "dlm",
-)
+# Branch order is the SOURCE_LANGS order. Codes inside a branch are
+# the usual majors-first listing, then conservative foils.
+LECT_BRANCHES: dict[str, tuple[str, ...]] = {
+    "ibero": ("es", "pt", "gl", "an", "ast", "ext", "lad", "mwl"),
+    "occitano": ("oc", "ca", "gsc"),
+    "oil": ("fr", "wa", "pcd", "nrf", "glw"),
+    "arpitan": ("frp",),
+    "gallo_italian": ("lmo", "pms", "lij", "eml", "rgn"),
+    "italo_dalmatian": ("it", "scn", "vec", "co", "ist", "dlm"),
+    "rhaeto": ("rm", "fur", "lld"),
+    "sardinian": ("sc",),
+    "eastern": ("ro", "rup", "ruo", "ruq"),
+}
+
+LECT_NAMES: dict[str, str] = {
+    "es": "Spanish", "pt": "Portuguese", "gl": "Galician",
+    "an": "Aragonese", "ast": "Asturian", "ext": "Extremaduran",
+    "lad": "Ladino", "mwl": "Mirandese",
+    "oc": "Occitan", "ca": "Catalan", "gsc": "Gascon",
+    "fr": "French", "wa": "Walloon", "pcd": "Picard",
+    "nrf": "Norman", "glw": "Gallo",
+    "frp": "Franco-Provençal",
+    "lmo": "Lombard", "pms": "Piedmontese", "lij": "Ligurian",
+    "eml": "Emilian", "rgn": "Romagnol",
+    "it": "Italian", "scn": "Sicilian", "vec": "Venetan",
+    "co": "Corsican", "ist": "Istriot", "dlm": "Dalmatian",
+    "rm": "Romansh", "fur": "Friulian", "lld": "Ladin",
+    "sc": "Sardinian",
+    "ro": "Romanian", "rup": "Aromanian", "ruo": "Istro-Romanian",
+    "ruq": "Megleno-Romanian",
+}
+
+SOURCE_LANGS = tuple(code for group in LECT_BRANCHES.values() for code in group)
 
 
 class Concept(TypedDict):
@@ -464,9 +491,23 @@ GENDER_PAIRS: tuple[tuple[str, str], ...] = (
 
 
 def _validate() -> None:
+    flat = [c for group in LECT_BRANCHES.values() for c in group]
+    if len(flat) != len(set(flat)):
+        raise ValueError("duplicate code in LECT_BRANCHES")
+    if tuple(flat) != SOURCE_LANGS:
+        raise ValueError("SOURCE_LANGS is not the LECT_BRANCHES concatenation")
+    unnamed = [c for c in SOURCE_LANGS if c not in LECT_NAMES]
+    if unnamed:
+        raise ValueError(f"lects without names: {unnamed}")
     missing_conj = [L for L in SOURCE_LANGS if L not in PERSONS]
     if missing_conj:
         raise ValueError(f"lects without conjugation tables: {missing_conj}")
+    extra_conj = sorted(set(PERSONS) - set(SOURCE_LANGS))
+    if extra_conj:
+        raise ValueError(f"conjugation tables for non-daughters: {extra_conj}")
+    missing_theme = [L for L in SOURCE_LANGS if L not in THEME_CLASS]
+    if missing_theme:
+        raise ValueError(f"lects without theme class: {missing_theme}")
     ids = [row[0] for row in _ROWS]
     if len(ids) != len(set(ids)):
         raise ValueError("duplicate concept ids in Swadesh gold list")

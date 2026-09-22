@@ -1,7 +1,8 @@
 """Swadesh citation forms for the rest of the README corpus.
 
-English is in RESERVED_TABLES only — not SOURCE_LANGS. Kept for a later
-experiment; not a Lacyo source.
+English and Latin are in RESERVED_TABLES only — not SOURCE_LANGS.
+Latin is the process being reversed, not a daughter. Empty cells are
+legal: that lect does not compete for that concept.
 """
 
 from __future__ import annotations
@@ -40,6 +41,14 @@ def _pack(tag: str, s: str) -> dict[str, str]:
     return dict(zip(IDS, (x.strip() for x in xs)))
 
 
+def _hits(tag: str, d: dict[str, str]) -> dict[str, str]:
+    """Partial Swadesh: attested cells only. Missing keys → empty (no sister pad)."""
+    extra = set(d) - set(IDS)
+    if extra:
+        raise ValueError(f"{tag}: extra keys {sorted(extra)}")
+    return {i: (d.get(i) or "").strip() for i in IDS}
+
+
 # Ibero-Romance
 _AN = _pack("an", "yo|tu|él|nusatros|vusatros|els|iste|ixe|aquí|allí|quién|qué|án|cuan|cómo|no|tot|muitos|beluns|pocos|atro|un|dos|tres|cuatro|cinco|gran|largo|amplo|grueso|pesau|chicot|curto|estreito|fino|muller|hombre|persona|nino|muller|marido|mai|pai|animal|peix|aucel|can|piojo|sierpe|gusan|árbol|bosque|palo|fruta|simiente|fuella|raiz|corteza|flor|yerba|cuerda|piel|carne|sangre|ueso|grasa|huevo|cuerno|cola|pluma|pelo|cabeza|orella|uello|nariz|boca|diente|lengua|unya|pie|gamba|chinollo|man|ala|vientre|tripas|cuello|espalda|peito|corazón|figado|beber|minchar|morder|chupar|escupir|vomitar|bufar|respirar|reir|veyer|oír|saber|pensar|oler|temer|dormir|vivir|morir|matar|luitar|cazar|golpiar|tallar|fender|apunyalar|rascar|cavar|nadar|volar|caminar|venir|chacer|sentar|estar|chirar|cayer|dar|tener|apretar|fregar|lavar|eixugar|tirar|empentar|lanzar|ligar|coser|contar|decir|cantar|chugar|flotar|fluir|chelar|inchar|sol|luna|estrela|agua|pluvia|río|lago|mar|sal|piedra|arena|polvo|tierra|nube|boira|cielo|viento|nieu|chelo|fumo|fuego|cenisa|quemar|camino|montanya|royo|verde|amariello|blanco|negro|nueit|día|anyo|calient|frío|plen|nuevo|viello|bueno|malo|podriu|sucio|recto|redondo|afilau|romo|liso|mullau|seco|correcto|cerca|leixos|dreita|zurda|a|en|con|y|si|porque|nombre|o|ser|gato|gata|perra|sonreir")
 
@@ -74,7 +83,7 @@ _WA = _pack("wa", "dji|vos|i|nozôtes|vozôtes|i|cisse|cisse-la|chal|la|kî|cwè
 
 _PCD = _pack("pcd", "mi|ti|him|nos|vos|eus|chu|cha|ichi|lo|qui|quoé|dousque|quand|commint|mie|tout|boin|queuques|peu|eute|un|deus|troés|quate|chonc|grand|long|large|épé|lourd|p'tit|court|étroét|mince|fanme|honme|ésonnes|éfant|fanme|mari|mére|père|bète|pésson|osiau|kien|pou|sérpent|vér|abe|bos|bâton|fruit|grainne|fuelle|racine|écorche|fleur|érbe|corde|pieu|char|sang|os|graisse|oeu|corne|keuwe|plume|chéveu|tiète|orelle|oeul|né|bouque|dint|langue|ongle|pié|jambe|génou|main|aile|vinte|boyau|cou|dos|poétrine|keur|foé|boére|minger|mordre|sucer|cracher|vomir|souffler|respirer|rire|vir|oïr|savoér|penser|flairer|crindre|dormir|vivre|mourir|tuer|bate|chèsser|battre|couper|fendre|poignarder|grater|creuser|nager|voler|marcher|venir|gisir|s'assir|s'tenir|tourner|tomber|donner|tenir|sérer|froter|laver|sécher|tirer|pousser|jeter|loyer|coudre|conter|dire|canter|jouer|flotter|couler|gler|gonfler|solé|lune|étoile|iau|pluie|rivière|lac|mer|sé|pierre|sable|poussiére|tére|nuage|brouillard|ciel|vent|nèche|glache|fumée|feu|chendres|brûler|route|montagne|rouche|vert|jone|blanc|noér|nuit|jou|année|chaud|froéd|plén|nouvieu|vieux|bon|méchant|poérri|sale|droét|rond|agu|émoussé|lisse|mouillé|sec|just|près|lon|droéte|gauche|à|in|avec|et|si|parché|nom|ch'|ète|cat|cate|chiène|sourire")
 
-_NRM = _pack("nrm", "jé|tu|il|nouos|vouos|ils|chu|ch'la|ichîn|ilo|qui|qué|ioù|quand|coume|né|touot|byin|tchiq's|pou|aute|eun|deu|treis|quate|chîn|graund|long|lârg|épais|lourd|p'tit|court|êtrait|minche|femme|houme|persoune|mousse|femme|marri|méthe|péthe|bête|peîsson|oîsé|tchian|pou|sépent|vê|arbre|bouais|bâton|fruit|graine|fueille|racine|êcorche|flieur|hèrbe|corde|pé|char|sang|os|graisse|oeu|corne|coue|pliume|cheveu|téte|othelle|yi|nez|bouche|dent|langue|ongle|pid|jambe|génou|main|aile|ventre|boyaux|cou|dos|poitrine|tchoeu|foie|baîre|mangi|mordre|sucer|crachi|vomi|souffli|respirer|rithe|vaie|ouï|savei|penser|senti|criendre|dormi|vivre|mouothi|tuer|battre|quachi|battre|couper|fendre|poignardi|gratter|creûser|nagier|voli|marchi|venin|gisi|s'assiéthe|se t'nin|touônner|tomber|dounner|t'nin|sèrri|frotter|laver|séchi|tirer|pousser|jeter|lier|coudre|couompter|dithe|chaunter|jouaer|flotter|couler|g'ler|gonfler|solé|lune|étoîle|iae|pllie|riviéthe|lac|mé|sé|pierre|sablion|poussiéthe|téthe|nuage|brouillard|ciel|vent|né|gllâche|fumée|feu|chendres|brûler|route|montangne|rouoge|vèrt|jaune|blaunc|neir|niet|jou|annaée|caud|fraid|plyin|nouvé|vyi|bouon|mauvais|pouôrri|sale|dré|rond|aigui|émoussé|lisse|mouoilli|sec|juste|près|llioin|dréte|gauche|à|en|dauve|et|si|pasque|nom|lé|être|cat|cate|chienne|souôri")
+_NRF = _pack("nrf", "jé|tu|il|nouos|vouos|ils|chu|ch'la|ichîn|ilo|qui|qué|ioù|quand|coume|né|touot|byin|tchiq's|pou|aute|eun|deu|treis|quate|chîn|graund|long|lârg|épais|lourd|p'tit|court|êtrait|minche|femme|houme|persoune|mousse|femme|marri|méthe|péthe|bête|peîsson|oîsé|tchian|pou|sépent|vê|arbre|bouais|bâton|fruit|graine|fueille|racine|êcorche|flieur|hèrbe|corde|pé|char|sang|os|graisse|oeu|corne|coue|pliume|cheveu|téte|othelle|yi|nez|bouche|dent|langue|ongle|pid|jambe|génou|main|aile|ventre|boyaux|cou|dos|poitrine|tchoeu|foie|baîre|mangi|mordre|sucer|crachi|vomi|souffli|respirer|rithe|vaie|ouï|savei|penser|senti|criendre|dormi|vivre|mouothi|tuer|battre|quachi|battre|couper|fendre|poignardi|gratter|creûser|nagier|voli|marchi|venin|gisi|s'assiéthe|se t'nin|touônner|tomber|dounner|t'nin|sèrri|frotter|laver|séchi|tirer|pousser|jeter|lier|coudre|couompter|dithe|chaunter|jouaer|flotter|couler|g'ler|gonfler|solé|lune|étoîle|iae|pllie|riviéthe|lac|mé|sé|pierre|sablion|poussiéthe|téthe|nuage|brouillard|ciel|vent|né|gllâche|fumée|feu|chendres|brûler|route|montangne|rouoge|vèrt|jaune|blaunc|neir|niet|jou|annaée|caud|fraid|plyin|nouvé|vyi|bouon|mauvais|pouôrri|sale|dré|rond|aigui|émoussé|lisse|mouoilli|sec|juste|près|llioin|dréte|gauche|à|en|dauve|et|si|pasque|nom|lé|être|cat|cate|chienne|souôri")
 
 _FRP = _pack("frp", "je|te|lui|nos|vos|lor|cen|cil|tê|yal|qui|que|yô|quand|coment|pas|tot|tâs|quârques|pou|ôtro|yon|dos|três|quatro|cinq|grant|long|lârjo|èpês|lourd|petiôt|côrt|ètrêt|fin|fèna|homo|pèrsona|enfant|fèna|mari|mâre|pâre|bètye|pechhon|usél|chin|pou|sèrpent|vèrm|âbro|bôsc|bâton|frût|grena|fôlye|racena|ècôrce|fllor|hèrba|côrda|pêl|châr|sang|os|grâssa|ôf|côrna|coa|pluma|chevél|téta|orèlye|uely|nâs|boche|dent|lengoua|ongla|piéd|jamba|genoly|man|ala|ventro|boyél|côl|dos|pêtrena|cœur|fèy|bêre|mangiér|môrdre|suciér|crachiér|vomir|soflar|respirar|rire|vêre|odre|savêr|pensar|sentir|crendre|dormir|vivre|morir|tuar|batre|chaciér|batre|copar|fendre|poignardar|gratar|crevar|nagiér|volar|marcar|vegnir|gisir|s'assêre|sè tenér|tornar|tombar|balyér|tenér|sèrrar|frotar|lavar|sèchiér|tirar|poussar|jètar|liar|coudre|comptar|dire|chantar|jouar|flotar|colar|gèlar|gonflar|solèly|luna|ètêla|égoua|plove|riviére|lac|mar|sâl|piérra|sabllo|poussiére|tèrra|niola|brumes|cièl|vent|né|gllace|fum|fuè|cendre|brûlar|rota|montagne|roge|vèrd|jôno|blanc|nêr|nuet|jorn|an|chôd|frêd|plen|novél|viél|bon|crouyo|porri|sâlo|drêt|rond|agu|èmossâ|lisse|molyê|sèc|justo|près|luen|drêta|gôche|a|en|avouéc|et|se|perceque|nom|lo|étre|chat|chata|chinna|sourîre")
 
@@ -96,6 +105,15 @@ _RUP = _pack("rup", "eu|tine|năs|noi|voi|năsh|aistu|atsel|aoa|aclo|tsine|tse|i
 _RUO = _pack("ruo", "io|tu|el|noi|voi|ei|ăst|ăl|aici|acolo|cari|ce|iu|când|cum|nu|tot|mult|niște|puțin|alt|un|doi|trei|patru|cinci|mare|lung|larg|gros|greu|mic|scurt|strâmt|subțire|muľare|bărbat|om|fečor|muľare|soț|mame|tate|animal|pește|pasăre|câre|păduche|șarpe|vierme|copac|pădure|băț|fruct|sămânță|frunză|rădăcină|scoarță|floare|iarbă|frânghie|piele|carne|sânge|os|grăsime|ou|corn|coadă|pană|păr|cap|ureche|ochi|nas|gură|dinte|limbă|unghie|picior|picior|genunche|mână|aripă|burtă|măruntaie|gât|spate|sân|inimă|ficat|bea|mânca|mușca|suge|scuipa|vomita|sufla|respira|râde|vedea|auzi|ști|gândi|mirosi|teme|dormi|trăi|muri|ucide|lupta|vâna|lovi|tăia|despica|înjunghia|zgâria|săpa|înota|zbura|umbla|veni|zăcea|ședea|sta|întoarce|cădea|da|ține|strânge|freca|spăla|șterge|trage|împinge|arunca|lega|coase|număra|zice|cânta|juca|pluti|curge|îngheța|umfla|sore|lură|ste|åpę|ploaie|râu|lac|mare|sare|čatrę|nisip|praf|pământ|nor|ceață|cer|vânt|zăpadę|gheață|fum|foc|cenușę|arde|drum|munte|roș|verde|galben|alb|negru|noapte|zi|an|cald|rece|plin|nou|več|bur|rău|putred|murdar|drept|rotund|ascuțit|tocit|neted|ud|uscat|corect|aproape|departe|dreapta|stânga|la|în|cu|și|deca|pentru|nume|lu|fi|pisire|pisire|cățea|zâmbi")
 
 _DLM = _pack("dlm", "ju|te|jal|nu|vu|jali|cest|cal|kai|la|ki|ce|do|kand|ko|na|tot|multe|nek|pok|ater|join|doi|tra|kuatara|cenk|veira|long|larg|gros|pesant|muc|curt|strent|fin|femra|hom|om|feto|muier|marit|mama|tata|animal|pisk|gial|kuan|pedoc|saip|viarm|jakla|bosk|bak|fruta|samen|fuia|raisa|skorza|fior|erba|fune|piel|karn|sank|suos|gruass|jauo|korn|kua|pena|kapel|kap|oreia|vakl|nas|buka|dent|langa|ongla|pi|gamba|zenucl|mun|ala|vintar|budel|kuol|dos|pet|kuor|figat|beivre|mangur|muarder|sucer|spuar|vomitar|bufar|spirar|ridur|veder|sentir|savir|pensar|odur|temer|durmir|vivar|murir|ucider|punar|cazar|bater|taiar|fender|puinal|gratar|cavar|nadar|volar|kaminar|venur|jacer|seder|star|virar|kader|dar|tener|smechar|fregar|lavar|sukar|tirar|spinger|jitar|ligar|kusir|kuntar|dikar|kantar|jugar|flotar|fluir|gelar|gonfiar|saul|loina|stela|aku|pluja|fium|lak|mar|sal|putra|sabia|pulvar|tiara|nuba|nebla|ciel|vint|nai|jak|fum|fuk|cenisa|ardur|via|mont|ruber|viart|gialt|blonk|nier|nuat|di|ain|kald|fred|plin|nov|veklo|bon|mal|putrid|sordid|drit|rotund|akut|otuz|lis|moliat|sek|korekt|vesin|lontan|dret|sanc|a|in|kon|e|se|perke|nom|el|sar|giat|giata|kuana|somiar")
+
+# Corsican: Appendix:Corsican_Swadesh_list first {{l|co|…}}; empty cells from Sicilian sister.
+_CO = _pack("co", "eiu|tù|ellu|noi|voi|elli|questu|quellu|ccà|ci|chì|chè|duva|quandu|cumu|ùn|tuttu|assai|arcuni|picca|altru|unu|dui|trè|quattru|cinque|grande|lungu|largu|spessu|pesantu|picculu|cortu|strettu|magru|donna|omu|parsona|picciriddu|sposu|maritu|mamma|patri|animale|pesciu|ucellu|cani|pidocchiu|serpì|vermu|alberu|boscu|mazzu|fruttu|simenza|fodda|radica|scorcia|fiori|arba|corda|peddi|carni|sangui|ossu|grassu|ovu|cornu|coda|penna|capellu|testa|ricchia|ochju|nasu|bucca|denti|lingua|ugna|pedi|ghjamba|ghjinochju|mani|ala|ventre|budella|collu|spinu|pettu|cori|fegatu|bia|manghjà|mursicà|suchjà|stupà|vòmmiri|suffià|rispirari|rida|veda|senta|sapè|pinsà|annasà|teme|dorma|viva|mora|tumbà|cummàttiri|cacciari|batta|tonda|sparta|pugnialari|sgrinfià|cavari|nutà|vulari|marchjà|vena|chjinà|pasà|alzà|ghjirà|cascà|dà|tena|strìnciri|frìcari|lavà|asciucari|tirà|spìnciri|ghjittà|ligari|cusgà|cuntà|dì|cantà|ghjucà|galleggiri|scùrriri|gilari|gunfià|soli|luna|stella|acqua|pioghja|fiume|lagu|mari|sale|petra|rena|pruvulazzu|terra|nivulu|nebbia|celu|ventu|nevi|ghiacciu|fumu|focu|cinniri|brusgià|strata|monti|rossu|verdi|giaddu|albu|neru|notti|ghjornu|annu|caldu|fritu|chinu|novu|vechju|bonu|malu|marciu|sporcu|drittu|ritondu|affilatu|smussatu|lisciu|bagnatu|asciuttu|currettu|vicinu|lontanu|diritta|manca|à|in|cù|è|si|parchì|nomi|u|esse|ghjattu|ghjatta|cagna|surrisu")
+
+# Megleno-Romanian: Appendix:Megleno-Romanian Swadesh list; empty cells from Aromanian.
+_RUQ = _pack("ruq", "io|tu|iel|noi|voi|ieľ|tsist|tsel|ua|colo|cola|tse|iundi|cǫn|cum|nu|tot|muľts|niști|uneac|altu|un|doi|trei|patru|tsints|mari|lung|larg|gros|greu|mic|scurtu|strimt|subtzǫri|muľari|bărbat|uom|cupilaș|niveastă|bărbat|mamă|tată|animal|peaști|pulj|cǫini|piducľu|şarpi|ghermi|arbur|păduri|virdzeauă|plod|siminţă|frunză|corin|scoarță|floari|iarbă|funi|coajă|carni|sǫnzi|uos|grăsimi|uou|corn|coadă|peană|per|cap|ureacľă|uocľu|nas|gură|dinti|limbă|ungľă|pitšor|pitšor|zinucľu|mǫnă|iaripă|buric|matsi|gușă|gorb|chiept|ińamă|drob|beai|mănǫnc|muscu|sug|scup|vom|suflu|respiru|rǫd|ved|ud|știu|misles|miruses|ạnfric|dorm|trăies|mor|nec|bat|luves|ugudes|taľ|dispic|pung|zgair|sap|plivăies|părăies|amnu|vin|culc|șǫd|stau|ạnvărtes|cad|dau|tsǫn|string|frec|spel|șterg|trag|impingu|runc|leg|cos|numir|spun|cǫnt|joc|plivăies|cur|ạngľets|anflu|soari|lună|steauă|apu|ploaiă|vali|lac|mari|sari|rǫpă|pisoc|prau|pimint|nor|ceatsă|tser|vint|neauă|gľets|fum|foc|tșănușă|ardu|cåle|munti|roș|veardi|galbin|alb|negru|noapti|zuuă|an|cald|ratsi|ạmplin|nou|vecľu|bun|rǫu|putrid|murdar|ndreptu|gurguľat|tăľătos|tutsea|neted|vlajnic|uscat|ndreptu|prochiat|diparti|dirept|stǫng|la|ăn|cu|și|acu|că|numi|u|es|pisică|pisică|cătea|zâmbeascâ")
+
+# Romagnol: Module:Swadesh/data/rgn (ìa, ti) + Kaikki unique glosses; other cells Emilian continuum.
+_RGN = _pack("rgn", "ìa|ti|ló|nó|vó|låur|st|quèll|qué|lé|chi|che|dóvv|quand|come|an|tótt|tant|socuànt|pôc|èter|ón|du|trî|cvàtar|zénc|grãnd|lóng|lèrg|féss|paiṡ|znén|cûrt|stratt|alẓir|dòna|òmen|parsåṅna|babén|mujêr|marè|mèder|pê|animêl|pass|ușël|can|bdòcc|sarpänt|virman|âlber|furèsta|bastån|frûta|smänt|fója|radîṡ|scôrza|fiåur|érba|côrda|pèl|chêrna|sângv|òs|gras|öv|côrna|cô|panna|capèl|tèsta|uraccia|òc|nèṡ|båcca|dänt|längua|ónngia|pà|ganba|żnòc|man|èglia|panza|intestén|cöl|schéṅna|pèt|côr|fégghet|bàvver|magnèr|muṡghèr|sucèr|spudèr|trèr|supièr|respirèr|rédder|vàdder|sénter|savair|pinsèr|naṡèr|tamma|durmîr|stèr|murîr|amazèr|cunbâter|cazièr|culpîr|tajèr|divîder|pugnalèr|ṡgranfgnèr|scavèr|nudèr|vulèr|andèr|vgnîr|dstànndres|sêder|stèr|prilèr|caschèr|dèr|tgnîr|scuizèr|sfarghèr|lavèr|asughèr|tirèr|spénnżer|trèr|lighèr|cûṡer|cõnt|dîr|cantèr|żughèr|galegèr|pasèr|żlèr|gunfièr|sól|lóṅna|strèla|acva|piôva|fiũ|lèg|mêr|sêl|sâs|sâbia|pållver|tèra|nóvvla|nabbia|zîl|vänt|naiv|giâz|fọmm|fûg|zànnder|bruṡèr|strè|muntâgna|råss|vérd|ẓal|biânc|naigher|nòt|dè|ân|chèld|fradd|pi|nôv|vèc|bôn|catîv|mèrz|malnàtt|drétt|tånnd|afilê|ṡmusè|léss|mói|sècc|giósst|avṡén|luntàn|drétta|stanca|a|in|con|e|se|parché|nómm|e|èser|gàt|gàta|càgna|surrìder")
 
 DLM_KAIKKI_OVERRIDES = {
     "i": "ju",
@@ -181,14 +199,295 @@ DLM_KAIKKI_OVERRIDES = {
     "name": "naum",
 }
 
+# Corsican: first citation form from Appendix:Corsican Swadesh list.
+# Empty = appendix blank (no Italian pad).
+_CO = _hits("co", {
+    "i": "eiu", "you_sg": "tù", "he": "ellu", "we": "noi", "you_pl": "voi",
+    "they": "elli", "this": "questu", "that": "quellu", "there": "ci",
+    "who": "chì", "what": "chè", "where": "duva", "when": "quandu",
+    "how": "cumu", "not": "ùn", "all": "tuttu", "other": "altru",
+    "one": "unu", "two": "dui", "three": "trè", "four": "quattru",
+    "five": "cinque", "big": "grande", "long": "lungu", "wide": "largu",
+    "thick": "spessu", "heavy": "pesantu", "small": "picculu", "short": "cortu",
+    "narrow": "strettu", "thin": "magru", "woman": "donna", "man": "omu",
+    "person": "parsona", "child": "zitellu", "wife": "sposa", "husband": "maritu",
+    "mother": "mamma", "father": "babbu", "animal": "animale", "fish": "pesciu",
+    "bird": "ucellu", "dog": "cani", "worm": "vermu", "tree": "alberu",
+    "forest": "boscu", "fruit": "fruttu", "leaf": "foglia", "root": "radica",
+    "flower": "fiore", "grass": "erba", "rope": "corda", "skin": "pelle",
+    "meat": "carne", "blood": "sangue", "bone": "ossu", "fat": "grassu",
+    "tail": "coda", "feather": "penna", "hair": "capellu", "head": "testa",
+    "eye": "ochju", "nose": "nasu", "mouth": "bocca", "tooth": "dente",
+    "tongue": "lingua", "fingernail": "unghja", "foot": "pede", "leg": "ghjamba",
+    "knee": "ghjinochju", "hand": "manu", "wing": "ala", "belly": "ventre",
+    "neck": "collu", "back": "spinu", "breast": "pettu", "heart": "core",
+    "liver": "fegatu", "drink": "beie", "eat": "manghjà", "bite": "mursicà",
+    "suck": "suchjà", "spit": "stupà", "blow": "suffià", "laugh": "ride",
+    "see": "vede", "hear": "sente", "know": "sapè", "think": "pinsà",
+    "smell": "annasà", "sleep": "dorme", "live": "vive", "die": "more",
+    "kill": "tumbà", "hit": "batte", "cut": "tonde", "split": "sparte",
+    "scratch": "sgrinfià", "swim": "nutà", "walk": "marchjà", "come": "vene",
+    "lie": "chjinà", "sit": "pusà", "stand": "alzà", "turn": "ghjirà",
+    "fall": "cascà", "give": "dà", "hold": "tene", "wash": "lavà",
+    "pull": "tirà", "throw": "ghjittà", "sew": "cusgà", "count": "cuntà",
+    "say": "dì", "sing": "cantà", "play": "ghjucà", "swell": "gunfià",
+    "sun": "sole", "moon": "luna", "star": "stella", "water": "acqua",
+    "rain": "pioghja", "river": "fiume", "lake": "lagu", "sea": "mare",
+    "salt": "sale", "stone": "petra", "earth": "terra", "cloud": "nulu",
+    "sky": "celu", "wind": "ventu", "snow": "neve", "smoke": "fumu",
+    "fire": "focu", "burn": "brusgià", "mountain": "monte", "red": "rossu",
+    "green": "verde", "yellow": "giallu", "white": "biancu", "black": "neru",
+    "night": "notte", "day": "ghjornu", "year": "annu", "warm": "caldu",
+    "cold": "freddu", "new": "novu", "old": "vechju", "good": "bonu",
+    "bad": "malu", "rotten": "marciu", "dirty": "sporcu", "straight": "drittu",
+    "round": "rotondu", "sharp": "affilatu", "dull": "smussatu",
+    "smooth": "lisciu", "wet": "bagnatu", "dry": "asciuttu",
+    "correct": "ghjustu", "near": "vicinu", "far": "lontanu",
+    "right": "dritta", "left": "manca", "at": "à", "in": "in", "with": "cù",
+    "and": "è", "because": "perchì", "name": "nome",
+})
+
+# Romagnol: Kaikki exact-gloss hits only (rgn_words.json). No Emilian pad.
+_RGN = _hits("rgn", {
+    "he": "lò", "this": "ste", "that": "quèll", "one": "un", "two": "du",
+    "three": "tri", "four": "cvàtar", "big": "grãnd", "long": "lóng",
+    "small": "znén", "thin": "alẓir", "woman": "dòna", "man": "òm",
+    "child": "babén", "wife": "mój", "husband": "marè", "father": "pê",
+    "animal": "animêl", "bird": "uşël", "dog": "cân", "louse": "bdòcc",
+    "worm": "virman", "forest": "sélva", "leaf": "fója", "root": "radìșa",
+    "flower": "fiôr", "grass": "érba", "skin": "pël", "meat": "chêrna",
+    "blood": "sângv", "fat": "gras", "egg": "öv", "tail": "côda",
+    "hair": "cavèl", "eye": "òcc", "tooth": "dént", "foot": "pè",
+    "hand": "mân", "neck": "cöl", "back": "schéna", "heart": "côr",
+    "drink": "bé", "sleep": "durmì", "fall": "cadér", "wash": "lavêr",
+    "tie": "lighêr", "say": "dì", "float": "galegêr", "sun": "sól",
+    "rain": "piùva", "river": "fiũ", "sand": "sàbia", "sky": "cil",
+    "wind": "vènt", "snow": "név", "smoke": "fọmm", "fire": "fóg",
+    "ash": "zéndra", "red": "ròss", "green": "vérd", "yellow": "ẓal",
+    "white": "biânc", "black": "négar", "night": "nòt", "day": "dè",
+    "year": "ân", "full": "pi", "new": "nóv", "good": "bôn",
+    "bad": "cativ", "straight": "drèt", "sharp": "afilê", "dry": "sècc",
+    "in": "in", "if": "se", "name": "nóm", "def_art": "l'", "copula": "èssér",
+})
+
+# Megleno-Romanian: Appendix:Megleno-Romanian Swadesh list, first form.
+# who: appendix duplicated "there"; use cari (ro.wiki / qualis).
+_RUQ = _hits("ruq", {
+    "i": "io", "you_sg": "tu", "he": "iel", "we": "noi", "you_pl": "voi",
+    "they": "ielj", "this": "tsist", "that": "tsel", "here": "ua",
+    "there": "colo", "who": "cari", "what": "tse", "where": "iundi",
+    "when": "con", "how": "cum", "not": "nu", "all": "tot", "many": "mults",
+    "some": "nisti", "few": "uneac", "other": "altu", "one": "un",
+    "two": "doi", "three": "trei", "four": "patru", "five": "tsints",
+    "big": "mari", "long": "lung", "wide": "larg", "thick": "gros",
+    "heavy": "greu", "small": "mic", "narrow": "strimt", "thin": "subtzeri",
+    "woman": "muljari", "man": "barbat", "person": "uom", "child": "fitsor",
+    "wife": "niveasta", "husband": "barbat", "mother": "mama", "father": "tata",
+    "fish": "peasti", "dog": "coini", "louse": "piduclju", "snake": "sarpi",
+    "worm": "ghermi", "tree": "arbur", "forest": "paduri", "stick": "virdzeaua",
+    "fruit": "plod", "seed": "siminta", "leaf": "frunza", "root": "corin",
+    "flower": "floari", "grass": "iarba", "rope": "funi", "skin": "coaja",
+    "meat": "carni", "blood": "sonzi", "bone": "uos", "fat": "grasimi",
+    "egg": "uou", "horn": "corn", "tail": "coada", "feather": "peana",
+    "hair": "per", "head": "cap", "ear": "ureaclja", "eye": "uoclju",
+    "nose": "nas", "mouth": "gura", "tooth": "dinti", "tongue": "limba",
+    "fingernail": "unglja", "foot": "pitsor", "leg": "pitsor",
+    "knee": "zinuclju", "hand": "mona", "wing": "aripa", "belly": "foali",
+    "guts": "matsi", "neck": "gusa", "back": "gorb", "breast": "chiept",
+    "heart": "inama", "liver": "drob", "drink": "beai", "eat": "manonc",
+    "suck": "sug", "spit": "scup", "vomit": "vom", "blow": "suflu",
+    "laugh": "rod", "see": "ved", "hear": "ud", "know": "stiu",
+    "think": "misles", "smell": "miruses", "fear": "anfric", "sleep": "dorm",
+    "live": "traies", "die": "mor", "kill": "nec", "fight": "bat",
+    "hunt": "luves", "hit": "ugudes", "cut": "talj", "split": "dispic",
+    "stab": "pung", "scratch": "zgair", "dig": "sap", "swim": "plivaies",
+    "fly": "paraies", "walk": "amnu", "come": "vin", "lie": "culc",
+    "sit": "sod", "stand": "stau", "turn": "anvartes", "fall": "cad",
+    "give": "dau", "hold": "tson", "squeeze": "string", "rub": "frec",
+    "wash": "spel", "wipe": "sterg", "pull": "trag", "throw": "runc",
+    "tie": "leg", "sew": "cos", "count": "numir", "say": "spun",
+    "sing": "cont", "play": "joc", "float": "plivaies", "flow": "cur",
+    "freeze": "anglets", "swell": "anflu", "sun": "soari", "moon": "luna",
+    "star": "steaua", "water": "apu", "rain": "ploia", "river": "vali",
+    "lake": "lac", "sea": "mari", "salt": "sari", "stone": "ropa",
+    "sand": "pisoc", "dust": "prau", "earth": "pimint", "cloud": "nor",
+    "sky": "tser", "wind": "vint", "snow": "neaua", "ice": "glets",
+    "smoke": "fum", "fire": "foc", "ash": "tsanusa", "burn": "ardu",
+    "road": "drum", "mountain": "munti", "red": "ros", "green": "veardi",
+    "yellow": "galbin", "white": "alb", "black": "negru", "night": "noapti",
+    "day": "zuua", "year": "an", "warm": "cald", "cold": "ratsi",
+    "full": "amplin", "new": "nou", "old": "veclju", "good": "bun",
+    "bad": "rou", "rotten": "putrid", "dirty": "murdar",
+    "round": "gurguljat", "sharp": "taljatos", "wet": "vlajnic",
+    "dry": "uscat", "near": "proapi", "far": "diparti", "right": "dirept",
+    "left": "stong", "at": "la", "in": "an", "with": "cu", "and": "si",
+    "if": "acu", "because": "ca", "name": "numi",
+})
+
 TABLES: dict[str, dict[str, str]] = {
+    # Ibero (es/pt/gl live in romance_swadesh._ROWS / _EXTRA)
     "an": _AN, "ast": _AST, "ext": _EXT, "lad": _LAD, "mwl": _MWL,
-    "scn": _SCN, "vec": _VEC, "lmo": _LMO, "pms": _PMS, "lij": _LIJ,
-    "fur": _FUR, "eml": _EML, "lld": _LLD, "ist": _IST,
-    "wa": _WA, "pcd": _PCD, "nrm": _NRM, "frp": _FRP, "glw": _GLW, "gsc": _GSC,
-    "la": _LA, "rm": _RM, "sc": _SC, "rup": _RUP, "ruo": _RUO, "dlm": _DLM,
+    # Occitano / Oil / Arpitan
+    "gsc": _GSC, "wa": _WA, "pcd": _PCD, "nrf": _NRF, "glw": _GLW, "frp": _FRP,
+    # Gallo-Italian
+    "lmo": _LMO, "pms": _PMS, "lij": _LIJ, "eml": _EML, "rgn": _RGN,
+    # Italo-Dalmatian
+    "scn": _SCN, "vec": _VEC, "co": _CO, "ist": _IST, "dlm": _DLM,
+    # Rhaeto / Sardinian / Eastern
+    "rm": _RM, "fur": _FUR, "lld": _LLD, "sc": _SC,
+    "rup": _RUP, "ruo": _RUO, "ruq": _RUQ,
 }
 TABLES["dlm"].update(DLM_KAIKKI_OVERRIDES)
+
+# ASJP 40-item ROMANIAN_MEGLENO (Capidan via ASJP v21).
+# Most cells already match the appendix; path is the extra Capidan item.
+TABLES["ruq"].update({"road": "drum"})
+
+# Appendix:Istro-Romanian Swadesh list (en.wiktionary). First citation form.
+# blood: user sănze (appendix sânže). Empty appendix cells keep _RUO.
+RUO_WIKT_SWADESH = {
+    "i": "jo",
+    "you_sg": "tu",
+    "he": "je",
+    "we": "noj",
+    "you_pl": "voj",
+    "they": "jelj",
+    "this": "sta",
+    "that": "čela",
+    "there": "kolo",
+    "who": "čire",
+    "what": "če",
+    "where": "juvę",
+    "when": "kân",
+    "how": "kum",
+    "not": "nu",
+    "all": "tot",
+    "many": "čudę",
+    "other": "åt",
+    "one": "ur",
+    "two": "doj",
+    "three": "trej",
+    "four": "påtru",
+    "five": "činč",
+    "big": "måre",
+    "long": "lung",
+    "heavy": "grev",
+    "small": "mik",
+    "short": "skurt",
+    "woman": "muljęre",
+    "man": "om",
+    "person": "om",
+    "child": "fečor",
+    "wife": "muljęre",
+    "husband": "om",
+    "mother": "måje",
+    "father": "čåče",
+    "fish": "ribę",
+    "bird": "pulj",
+    "dog": "kâre",
+    "louse": "peduklju",
+    "snake": "šerp",
+    "worm": "ljermu",
+    "tree": "stâblę",
+    "forest": "boškę",
+    "fruit": "frut",
+    "leaf": "folje",
+    "grass": "jårbę",
+    "skin": "kože",
+    "meat": "kårne",
+    "blood": "sănze",
+    "bone": "os",
+    "egg": "ov",
+    "hair": "per",
+    "head": "kåp",
+    "ear": "uręklje",
+    "eye": "oklju",
+    "nose": "nås",
+    "mouth": "gurę",
+    "tooth": "dint",
+    "tongue": "limbę",
+    "foot": "pičor",
+    "leg": "pičor",
+    "knee": "žerunklju",
+    "hand": "mâr",
+    "wing": "krelutę",
+    "belly": "târbuh",
+    "neck": "čerbiče",
+    "back": "spåte",
+    "breast": "kljept",
+    "heart": "jirimę",
+    "drink": "bę",
+    "eat": "mâncå",
+    "blow": "suflå",
+    "see": "vedę",
+    "hear": "åvzi",
+    "know": "šti",
+    "think": "misli",
+    "sleep": "durmi",
+    "live": "živi",
+    "die": "muri",
+    "kill": "učide",
+    "fight": "båte",
+    "hunt": "lovi",
+    "cut": "taljå",
+    "walk": "âmnå",
+    "come": "veri",
+    "sit": "šedę",
+    "stand": "stå",
+    "turn": "turnå",
+    "fall": "kadę",
+    "give": "då",
+    "say": "spure",
+    "sing": "kântå",
+    "play": "igręj",
+    "sun": "sore",
+    "moon": "lurę",
+    "star": "stę",
+    "water": "åpę",
+    "rain": "ploje",
+    "river": "potok",
+    "sea": "måre",
+    "salt": "såre",
+    "stone": "ârpę",
+    "earth": "pemint",
+    "sky": "čer",
+    "wind": "vint",
+    "snow": "nę",
+    "ice": "gljåcę",
+    "fire": "fok",
+    "ash": "čeruše",
+    "burn": "årde",
+    "road": "kåle",
+    "mountain": "kodru",
+    "red": "rojšu",
+    "green": "zelen",
+    "yellow": "žut",
+    "white": "åb",
+    "black": "negru",
+    "night": "nopte",
+    "day": "zi",
+    "year": "ån",
+    "warm": "kåd",
+    "cold": "råče",
+    "full": "pljir",
+    "new": "nov",
+    "old": "betâr",
+    "good": "bur",
+    "bad": "ręv",
+    "dirty": "spork",
+    "straight": "drit",
+    "round": "tond",
+    "wet": "ud",
+    "near": "prope",
+    "at": "la",
+    "in": "ân",
+    "with": "ku",
+    "and": "ši",
+    "if": "se",
+    "because": "ke",
+    "name": "lume",
+}
+TABLES["ruo"].update(RUO_WIKT_SWADESH)
 
 # Attested Istriot (kaikki.org / Wiktextract). Skip dubious first-hits.
 IST_KAIKKI_OVERRIDES = {
@@ -217,4 +516,4 @@ TABLES["ist"].update(IST_KAIKKI_OVERRIDES)
 # Not a source. Same 213 rows, parked for a later English-as-source run.
 _EN = _pack("en", "I|you|he|we|you|they|this|that|here|there|who|what|where|when|how|not|all|many|some|few|other|one|two|three|four|five|big|long|wide|thick|heavy|small|short|narrow|thin|woman|man|person|child|wife|husband|mother|father|animal|fish|bird|dog|louse|snake|worm|tree|forest|stick|fruit|seed|leaf|root|bark|flower|grass|rope|skin|meat|blood|bone|fat|egg|horn|tail|feather|hair|head|ear|eye|nose|mouth|tooth|tongue|fingernail|foot|leg|knee|hand|wing|belly|guts|neck|back|breast|heart|liver|drink|eat|bite|suck|spit|vomit|blow|breathe|laugh|see|hear|know|think|smell|fear|sleep|live|die|kill|fight|hunt|hit|cut|split|stab|scratch|dig|swim|fly|walk|come|lie|sit|stand|turn|fall|give|hold|squeeze|rub|wash|wipe|pull|push|throw|tie|sew|count|say|sing|play|float|flow|freeze|swell|sun|moon|star|water|rain|river|lake|sea|salt|stone|sand|dust|earth|cloud|fog|sky|wind|snow|ice|smoke|fire|ash|burn|road|mountain|red|green|yellow|white|black|night|day|year|warm|cold|full|new|old|good|bad|rotten|dirty|straight|round|sharp|dull|smooth|wet|dry|correct|near|far|right|left|at|in|with|and|if|because|name|the|be|cat|cat|bitch|smile")
 
-RESERVED_TABLES: dict[str, dict[str, str]] = {"en": _EN}
+RESERVED_TABLES: dict[str, dict[str, str]] = {"en": _EN, "la": _LA}

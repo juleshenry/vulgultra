@@ -1,5 +1,5 @@
 """
-lacyo.optimizer — Simulated Annealing engine for Lacyo language generation.
+vulgultra.optimizer — Simulated Annealing engine for Vulgultra language generation.
 
 Two-stage optimization per grammar.tex Ch.7:
   Stage 1: Root selection (pick best candidate per concept)
@@ -16,15 +16,15 @@ import copy
 from dataclasses import dataclass, field
 from typing import Optional
 
-from lacyo.phonology import (
+from vulgultra.phonology import (
     PHONEME_INVENTORY, VOWELS, CONSONANTS, LEGAL_CODAS, OBSTRUENTS, ONSET2,
     count_syllables, count_violations, extract_phonemes,
     phonemic_edit_distance, is_phonotactically_legal,
     to_orthography, syllabify,
 )
-from lacyo.romance_swadesh import SOURCE_LANGS
-from lacyo.paradigms import (
-    ADJ_TEMPLATES, NOUN_TEMPLATES, VERB_TEMPLATES,
+from vulgultra.romance_swadesh import SOURCE_LANGS
+from vulgultra.paradigms import (
+    VERB_TEMPLATES, closed_noun_blocks,
     ADJ_SLOT_NAMES, NOUN_SLOT_NAMES,
 )
 
@@ -35,11 +35,11 @@ from lacyo.paradigms import (
 
 # Lexicographic invariants (no lower term may buy a higher one):
 #   23 * W_PHON < W_SYL          extra syllable > emptying the inventory
-#   34 * W_DIV  < W_PHON         extra phoneme  > using every lect
+#   |L| * W_DIV  < W_PHON        extra phoneme  > using every lect
 #   mean support gap * W_NORM < W_DIV
 W_SYL  = 1000
 W_PHON = 40        # global min |Φ|; 40*23 = 920 < 1000
-W_DIV  = 1         # σ-and-Φ tie: max distinct source lects; 34 < 40
+W_DIV  = 1         # σ-and-Φ tie: max distinct source lects; |L| < 40
 W_NORM = 0.02      # applied to *mean* support gap (< 1 lect of diversity)
 W_END  = 200
 W_COLL = 100_000
@@ -48,6 +48,8 @@ W_DIST = 500
 DIST_THRESHOLD = 2
 N_SOURCES = len(SOURCE_LANGS)
 PHONEME_CEILING = 23
+if W_DIV * N_SOURCES >= W_PHON:
+    raise ValueError(f"|L|={N_SOURCES} breaks |L|*W_DIV < W_PHON")
 
 
 # ---------------------------------------------------------------------------
@@ -61,7 +63,7 @@ class Candidate:
     source_lang: str
     source_word: str
     ipa: str
-    lacyo_phonemes: list[str]
+    vulgultra_phonemes: list[str]
     orthography: str
     syllables: int
     violations: int
@@ -74,7 +76,7 @@ class Candidate:
 
 @dataclass
 class Genome:
-    """Complete state of a Lacyo lexicon."""
+    """Complete state of a Vulgultra lexicon."""
     # concept_id → index into candidates list
     selections: dict[str, int]
     # All candidates grouped by concept
@@ -137,7 +139,7 @@ ADJ_SLOTS = list(ADJ_SLOT_NAMES)
 
 def generate_legal_endings() -> list[list[str]]:
     """
-    Generate all phonotactically legal 1-syllable forms from Lacyo inventory.
+    Generate all phonotactically legal 1-syllable forms from Vulgultra inventory.
     Templates: V, CV, VC, CVC (most common/useful for endings).
     We limit to the most useful subset for speed.
     """
@@ -190,22 +192,74 @@ def random_ending() -> list[str]:
 # Energy computation
 # ---------------------------------------------------------------------------
 
+def _pairs_equal(seqs: list[tuple]) -> int:
+    n = 0
+    for i in range(len(seqs)):
+        for j in range(i + 1, len(seqs)):
+            if seqs[i] == seqs[j]:
+                n += 1
+    return n
+
+
+def _scored_endings(genome: Genome) -> list[list[str]]:
+    """Noun table once, then the verb table. Adjectives copy the noun table."""
+    seqs: list[list[str]] = []
+    for cls in genome.noun_endings.values():
+        for slot in NOUN_SLOTS:
+            if slot in cls:
+                seqs.append(cls[slot])
+    for cls in genome.verb_endings.values():
+        for slot in VERB_SLOTS:
+            if slot in cls:
+                seqs.append(cls[slot])
+    return seqs
+
+
+def _collision_count(genome: Genome) -> int:
+    """Noun cells distinct. Verb collisions inside each 6-person row, and among non-finite cells."""
+    collisions = 0
+    for cls in genome.noun_endings.values():
+        seqs = [tuple(cls[s]) for s in NOUN_SLOTS if s in cls]
+        collisions += _pairs_equal(seqs)
+    for cls in genome.verb_endings.values():
+        seqs = [tuple(cls[s]) for s in VERB_SLOTS if s in cls]
+        finite = seqs[:36]
+        for start in range(0, len(finite), 6):
+            collisions += _pairs_equal(finite[start:start + 6])
+        collisions += _pairs_equal(seqs[36:])
+    return collisions
+
+
+def _dist_penalty(genome: Genome) -> float:
+    """d ≥ 2 inside each finite 6-person row. Noun minimal pairs are not taxed."""
+    penalty = 0.0
+    for cls in genome.verb_endings.values():
+        seqs = [cls[s] for s in VERB_SLOTS if s in cls]
+        finite = seqs[:36]
+        for start in range(0, len(finite), 6):
+            row = finite[start:start + 6]
+            for i in range(len(row)):
+                for j in range(i + 1, len(row)):
+                    d = phonemic_edit_distance(row[i], row[j])
+                    if d < DIST_THRESHOLD:
+                        penalty += DIST_THRESHOLD - d
+    return penalty
+
+
 def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
     """
     Compute total energy and per-term breakdown.
     Returns (total_energy, breakdown_dict).
     """
     roots = genome.all_roots()
-    all_endings = genome.all_endings()
+    endings = _scored_endings(genome)
 
-    # E_root: sum of root syllable counts
     e_root = W_SYL * sum(r.syllables for r in roots)
 
-    # E_phon: size of phoneme inventory across entire lexicon
     all_phonemes: set[str] = set()
     for r in roots:
-        all_phonemes.update(extract_phonemes(r.lacyo_phonemes))
-    for e in all_endings:
+        all_phonemes.update(extract_phonemes(r.vulgultra_phonemes))
+    for e in endings:
         all_phonemes.update(extract_phonemes(e))
     e_phon = W_PHON * len(all_phonemes)
 
@@ -215,64 +269,14 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
     n_lects = len({r.source_lang for r in roots})
     e_div = W_DIV * max(0, N_SOURCES - n_lects)
 
-    # E_end: sum of ending syllable counts
-    e_end = W_END * sum(count_syllables(e) for e in all_endings)
+    e_end = W_END * sum(count_syllables(e) for e in endings)
+    e_coll = W_COLL * _collision_count(genome)
 
-    # E_coll: within a noun table, and within each 6-person verb row.
-    # Cross-tense syncretism is Romance-legal (reverse VL does not undo it).
-    collisions = 0
-    for cls_endings in genome.noun_endings.values():
-        seqs = [tuple(cls_endings[s]) for s in NOUN_SLOTS if s in cls_endings]
-        for i in range(len(seqs)):
-            for j in range(i + 1, len(seqs)):
-                if seqs[i] == seqs[j]:
-                    collisions += 1
-    for cls_endings in genome.verb_endings.values():
-        seqs = [tuple(cls_endings[s]) for s in VERB_SLOTS if s in cls_endings]
-        for start in range(0, 36, 6):
-            row = seqs[start:start + 6]
-            for i in range(len(row)):
-                for j in range(i + 1, len(row)):
-                    if row[i] == row[j]:
-                        collisions += 1
-        nf = seqs[36:]
-        for i in range(len(nf)):
-            for j in range(i + 1, len(nf)):
-                if nf[i] == nf[j]:
-                    collisions += 1
-    adj_seqs = [tuple(genome.adj_endings[s]) for s in ADJ_SLOTS if s in genome.adj_endings]
-    for i in range(len(adj_seqs)):
-        for j in range(i + 1, len(adj_seqs)):
-            if adj_seqs[i] == adj_seqs[j]:
-                collisions += 1
-    e_coll = W_COLL * collisions
-
-    # E_tact: phonotactic violations in all morphemes
-    total_viols = 0
-    for r in roots:
-        total_viols += r.violations
-    for e in all_endings:
+    total_viols = sum(r.violations for r in roots)
+    for e in endings:
         total_viols += count_violations(e)
     e_tact = W_TACT * total_viols
-
-    # E_dist: ending distinctiveness within paradigms
-    dist_penalty = 0.0
-    for cls_endings in genome.noun_endings.values():
-        seqs = list(cls_endings.values())
-        for i in range(len(seqs)):
-            for j in range(i + 1, len(seqs)):
-                d = phonemic_edit_distance(seqs[i], seqs[j])
-                if d < DIST_THRESHOLD:
-                    dist_penalty += DIST_THRESHOLD - d
-    for cls_endings in genome.verb_endings.values():
-        seqs = list(cls_endings.values())
-        # For verb paradigms, only check within same tense group to keep O(n^2) manageable
-        for i in range(len(seqs)):
-            for j in range(i + 1, min(i + 7, len(seqs))):  # nearby slots
-                d = phonemic_edit_distance(seqs[i], seqs[j])
-                if d < DIST_THRESHOLD:
-                    dist_penalty += DIST_THRESHOLD - d
-    e_dist = W_DIST * dist_penalty
+    e_dist = W_DIST * _dist_penalty(genome)
 
     total = e_root + e_phon + e_div + e_norm + e_end + e_coll + e_tact + e_dist
     breakdown = {
@@ -308,7 +312,7 @@ def greedy_root_selections(candidates: dict[str, list[Candidate]]) -> dict[str, 
     for concept, cands in candidates.items():
         sl = _sigma_slice(cands)
         items.append((len(sl), concept, sl))
-    items.sort(key=lambda t: t[0])
+    items.sort(key=lambda t: (t[0], t[1]))
 
     used_ph: set[str] = set()
     used_lang: set[str] = set()
@@ -316,34 +320,122 @@ def greedy_root_selections(candidates: dict[str, list[Candidate]]) -> dict[str, 
     for _, concept, sl in items:
         def key(ic: tuple[int, Candidate]) -> tuple:
             _i, c = ic
-            new_ph = sum(1 for p in extract_phonemes(c.lacyo_phonemes) if p not in used_ph)
+            new_ph = sum(1 for p in extract_phonemes(c.vulgultra_phonemes) if p not in used_ph)
             new_lang = 1 if c.source_lang in used_lang else 0
-            return (new_ph, new_lang, -c.support, len(c.lacyo_phonemes), c.source_lang)
+            return (new_ph, new_lang, -c.support, len(c.vulgultra_phonemes), c.source_lang)
 
         idx, c = min(sl, key=key)
         selections[concept] = idx
-        used_ph |= extract_phonemes(c.lacyo_phonemes)
+        used_ph |= extract_phonemes(c.vulgultra_phonemes)
         used_lang.add(c.source_lang)
     return selections
 
 
+def _slot_map(slots: list[str], cells: list[list[str]]) -> dict[str, list[str]]:
+    if len(slots) != len(cells):
+        raise ValueError(f"ending block length {len(cells)} != {len(slots)} slots")
+    return {slot: [p for p in seq] for slot, seq in zip(slots, cells)}
+
+
+# One lect owns a whole 6-person row. Tenses are chosen separately.
+FINITE_ROW_NAMES = ("prs", "pst", "fut", "subj", "theme_i", "theme_a")
+
+
+def _row_score(row: list[list[str]], phonemes: set[str], used_lects: list[str], lang: str) -> tuple:
+    """Collisions, violations, distance, new phonemes, then an unused lect."""
+    seqs = [tuple(cell) for cell in row]
+    collisions = _pairs_equal(seqs)
+    violations = sum(count_violations(cell) for cell in row)
+    dist = 0
+    for i in range(len(row)):
+        for j in range(i + 1, len(row)):
+            d = phonemic_edit_distance(row[i], row[j])
+            if d < DIST_THRESHOLD:
+                dist += DIST_THRESHOLD - d
+    fresh: set[str] = set()
+    for cell in row:
+        fresh.update(extract_phonemes(cell))
+    new_ph = len(fresh - phonemes)
+    already = 1 if lang in used_lects else 0
+    return (collisions, violations, dist, new_ph, already, lang)
+
+
+def assemble_verb_rows(phonemes: set[str]) -> tuple[list[list[str]], str]:
+    """Pick each finite tense from the lect that wins that row alone.
+
+    Slots inside the row stay one lect. Non-finite cells are the shared tail.
+    """
+    used = set(phonemes)
+    used_lects: list[str] = []
+    labels: list[str] = []
+    cells: list[list[str]] = []
+    langs = sorted(VERB_TEMPLATES)
+    for r, name in enumerate(FINITE_ROW_NAMES):
+        start = r * 6
+        best: tuple | None = None
+        best_row: list[list[str]] | None = None
+        best_ph: set[str] = set()
+        for lang in langs:
+            row = [list(cell) for cell in VERB_TEMPLATES[lang][start:start + 6]]
+            key = _row_score(row, used, used_lects, lang)
+            if best is None or key < best:
+                best = key
+                best_row = row
+                best_ph = set()
+                for cell in row:
+                    best_ph.update(extract_phonemes(cell))
+        assert best_row is not None and best is not None
+        cells.extend(best_row)
+        used_lects.append(best[5])
+        labels.append(f"{name}={best[5]}")
+        used |= best_ph
+    tail_lang = langs[0]
+    cells.extend(list(cell) for cell in VERB_TEMPLATES[tail_lang][36:])
+    return cells, ",".join(labels)
+
+
+def enumerate_endings(
+    candidates: dict[str, list[Candidate]],
+    selections: dict[str, int],
+) -> tuple[dict, dict, dict, str, str]:
+    """Noun theme is global. Each verb tense is its own row. Roots stay pinned."""
+    nouns = closed_noun_blocks()
+    root_ph: set[str] = set()
+    for concept, idx in selections.items():
+        root_ph.update(extract_phonemes(candidates[concept][idx].vulgultra_phonemes))
+
+    best_key: tuple | None = None
+    best: tuple | None = None
+    for nname in sorted(nouns):
+        noun_map = {"class_1": _slot_map(NOUN_SLOTS, nouns[nname])}
+        noun_ph = set(root_ph)
+        for cell in noun_map["class_1"].values():
+            noun_ph.update(extract_phonemes(cell))
+        verb_cells, verb_label = assemble_verb_rows(noun_ph)
+        verb_map = {"class_1": _slot_map(VERB_SLOTS, verb_cells)}
+        adj_map = {slot: seq[:] for slot, seq in noun_map["class_1"].items()}
+        trial = Genome(
+            selections=selections,
+            candidates=candidates,
+            noun_endings=noun_map,
+            verb_endings=verb_map,
+            adj_endings=adj_map,
+        )
+        energy, _bd = compute_energy(trial)
+        key = (energy, nname, verb_label)
+        if best_key is None or key < best_key:
+            best_key = key
+            best = (noun_map, verb_map, adj_map, nname, verb_label)
+    assert best is not None
+    return best
+
+
 def init_genome(candidates: dict[str, list[Candidate]]) -> Genome:
-    """Min-σ set-cover init, then random whole-table endings."""
+    """Min-σ set-cover roots, then the exact ending pair at those roots."""
     selections = greedy_root_selections(candidates)
-
-    noun_name = random.choice(list(NOUN_TEMPLATES))
-    noun_endings = {
-        "class_1": {slot: seq[:] for slot, seq in zip(NOUN_SLOTS, NOUN_TEMPLATES[noun_name])}
-    }
-
-    verb_name = random.choice(list(VERB_TEMPLATES))
-    verb_endings = {
-        "class_1": {slot: seq[:] for slot, seq in zip(VERB_SLOTS, VERB_TEMPLATES[verb_name])}
-    }
-
-    adj_name = random.choice(list(ADJ_TEMPLATES))
-    adj_endings = {slot: seq[:] for slot, seq in zip(ADJ_SLOTS, ADJ_TEMPLATES[adj_name])}
-
+    noun_endings, verb_endings, adj_endings, _theme, _lect = enumerate_endings(
+        candidates, selections,
+    )
     return Genome(
         selections=selections,
         candidates=candidates,
@@ -357,51 +449,26 @@ def init_genome(candidates: dict[str, list[Candidate]]) -> Genome:
 # SA mutations
 # ---------------------------------------------------------------------------
 
+def _slice_indices(cands: list[Candidate]) -> list[int]:
+    best = min((c.violations, c.syllables) for c in cands)
+    return [i for i, c in enumerate(cands) if (c.violations, c.syllables) == best]
+
+
 def mutate_root(genome: Genome) -> Genome:
-    """Swap one concept's root to a different candidate."""
+    """Swap one concept to another stem in its minimum-(violations, σ) slice."""
     g = copy.deepcopy(genome)
-    concept = random.choice(list(g.selections.keys()))
-    n_cands = len(g.candidates[concept])
-    if n_cands <= 1:
-        return g  # nothing to swap
-    old_idx = g.selections[concept]
-    new_idx = old_idx
-    while new_idx == old_idx:
-        new_idx = random.randint(0, n_cands - 1)
-    g.selections[concept] = new_idx
-    return g
-
-
-def mutate_ending(genome: Genome) -> Genome:
-    """Replace a whole declension/conjugation template (never mix slots)."""
-    g = copy.deepcopy(genome)
-    r = random.random()
-    if r < 0.2:
-        name = random.choice(list(NOUN_TEMPLATES))
-        cls = random.choice(list(g.noun_endings.keys()))
-        g.noun_endings[cls] = {
-            slot: seq[:] for slot, seq in zip(NOUN_SLOTS, NOUN_TEMPLATES[name])
-        }
-    elif r < 0.9:
-        name = random.choice(list(VERB_TEMPLATES))
-        cls = random.choice(list(g.verb_endings.keys()))
-        g.verb_endings[cls] = {
-            slot: seq[:] for slot, seq in zip(VERB_SLOTS, VERB_TEMPLATES[name])
-        }
-    else:
-        name = random.choice(list(ADJ_TEMPLATES))
-        g.adj_endings = {
-            slot: seq[:] for slot, seq in zip(ADJ_SLOTS, ADJ_TEMPLATES[name])
-        }
+    movable = [c for c, cands in g.candidates.items() if len(_slice_indices(cands)) > 1]
+    if not movable:
+        return g
+    concept = random.choice(movable)
+    options = [i for i in _slice_indices(g.candidates[concept]) if i != g.selections[concept]]
+    g.selections[concept] = random.choice(options)
     return g
 
 
 def mutate(genome: Genome) -> Genome:
-    """Apply a random mutation."""
-    if random.random() < 0.5:
-        return mutate_root(genome)
-    else:
-        return mutate_ending(genome)
+    """Root move inside the σ-slice. Endings are enumerated, not annealed."""
+    return mutate_root(genome)
 
 
 # ---------------------------------------------------------------------------
@@ -419,15 +486,15 @@ class SAResult:
 
 def anneal(
     candidates: dict[str, list[Candidate]],
-    initial_temp: float = 10_000,
-    cooling_rate: float = 0.9999,
-    min_temp: float = 0.01,
-    max_iterations: int = 200_000,
+    initial_temp: float = 80.0,
+    cooling_rate: float = 0.9999852445,
+    min_temp: float = 0.05,
+    max_iterations: int = 500_000,
     seed: int = 42,
     progress_interval: int = 10_000,
 ) -> SAResult:
     """
-    Run simulated annealing to find optimal Lacyo lexicon.
+    Run simulated annealing to find optimal Vulgultra lexicon.
     """
     random.seed(seed)
 

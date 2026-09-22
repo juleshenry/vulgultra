@@ -10,8 +10,8 @@
 \usepackage{geometry}
 \geometry{margin=1in}
 
-\title{Grammar of Lacyo\\[1em]\large Reverse Vulgar Latin as a Knapsack}
-\author{The Lacyo Project}
+\title{Grammar of Vulgultra\\[1em]\large Reverse Vulgar Latin as a Knapsack}
+\author{The Vulgultra Project}
 \date{Specification v3.0 --- 20 September 2026}
 
 \begin{document}
@@ -21,32 +21,47 @@
 \chapter{Scope and Design Philosophy}
 \label{ch:scope}
 
-\section{What Lacyo Is}
+\section{What Vulgultra Is}
 
-Lacyo is the reverse of the Vulgar Latin process, with the result packed
-into as few phonemic syllables as the attested Romance record allows.
+The name is Latin on both sides: \emph{vulgus} (the common speech that
+became Vulgar Latin) + \emph{ultra} (beyond). Not a Greek \emph{cyber-}
+clipping.
+
+Vulgultra is the reverse of the Vulgar Latin process, with the result packed
+into as few phonemic syllables as the attested Romance \emph{daughter}
+record allows.
 
 Vulgar Latin \emph{lost} case, merged vowels, dropped final consonants,
 turned $sC$-onsets into $e$-prothesis in the West, and (in French)
-shifted stress onto the last remaining syllable. Lacyo \emph{undoes}
-those losses where a short attested form still exists, and otherwise
-keeps the short form. It is not a pidgin and not a relexification.
+shifted stress onto the last remaining syllable. Vulgultra \emph{undoes}
+those losses where a short attested daughter form still exists, and
+otherwise keeps the short form. It is not a pidgin and not a
+relexification. Latin is the process being reversed, not a competing
+lect.
 
-The packing problem is a knapsack. Each concept is an item. Each lect
-offers one candidate stem (after adaptation and repair). You pick
-exactly one. Primary cost is phonemic syllables. Inventory $\Phi$ and
-source diversity couple the roots, so simulated annealing is the solver
-for that coupled layer --- never for buying an extra syllable.
+The packing problem is a knapsack. Each concept is an item. Each
+daughter lect offers at most one candidate stem (after adaptation and
+repair; an empty cell is not a candidate). You pick exactly one.
+Primary cost is phonemic syllables. Inventory $\Phi$ and source
+diversity couple the roots, so simulated annealing is the solver for
+that coupled layer --- never for buying an extra syllable.
 
 \section{Axioms (priority order)}
 
 \begin{enumerate}
   \item \textbf{Minimize syllable count.} Phonemic $\sigma$, not letters.
         This outranks every other preference.
+  \item \textbf{Daughters only.} Source lects $L$ are Romance daughters,
+        grouped by branch (Ibero, Occitano, Oil, Arpitan, Gallo-Italian,
+        Italo-Dalmatian, Rhaeto, Sardinian, Eastern). Latin and English
+        are reserved tables, never $x_{c,\ell}$.
+        $N_{\mathrm{src}}=|L|$ (currently 36).
   \item \textbf{Attested only.} Never invent a stem by clipping
         (\texttt{gat} is Catalan, not Spanish \texttt{gato} minus
-        \texttt{-o}). Repair may alter a candidate; it may not mint a
-        new lexeme.
+        \texttt{-o}). Never pad a thin lect from a sister.
+        Repair may alter a candidate; it may not mint a
+        new lexeme. Empty cells are legal: that lect simply does not
+        compete for that concept.
   \item \textbf{Obscure lects only when they qualify.} A thin lect wins
         a root only on a $\sigma$-tie (never by adding a syllable) and
         only if it does not enlarge $\Phi$. On that remaining tie,
@@ -89,21 +104,64 @@ slices, $\Phi$ and lect-diversity couple the choices:
 \max\mathrm{mean\ support}.
 \]
 
-Weights encode that order so a lower term cannot buy a higher one:
+Weights encode that order so a lower term cannot buy a higher one.
+$N_{\mathrm{src}}=|L|$ is not a frozen 34: adding a daughter must
+still satisfy the middle inequality.
 
 \[
 23\,w_{\mathrm{phon}} < w_{\mathrm{syl}},
 \qquad
-34\,w_{\mathrm{div}} < w_{\mathrm{phon}},
+|L|\,w_{\mathrm{div}} < w_{\mathrm{phon}},
 \qquad
 \overline{\mathrm{gap}}\,w_{\mathrm{norm}} < w_{\mathrm{div}}.
 \]
+
+With $w_{\mathrm{phon}}=40$ and $w_{\mathrm{div}}=1$, $|L|\le 39$.
+Current $|L|=36$.
 
 Greedy set-cover init (constrained concepts first, reuse $\Phi$, then
 a new lect) is a heuristic for the coupled layers. SA on roots is
 justified again --- only inside the $\sigma$-optimal slice.
 
 Endings stay coupled (one $1\sigma$ table, distinct cells in a row).
+
+\section{Source inventory}
+
+Nine branches, 36 daughters. Empty Swadesh cells are legal. Romagnol
+\texttt{rgn} is split from Emilian \texttt{eml}. Latin is the ancestor
+being reversed, not a row here.
+
+\begin{center}
+\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Branch & Theme & Lects \\
+\midrule
+Ibero & $o$ ($u$ in ast/ext) &
+  es pt gl an ast ext lad mwl \\
+Occitano & $e$ &
+  oc ca gsc \\
+Oil & $e$ &
+  fr wa pcd nrf glw \\
+Arpitan & $o$ &
+  frp \\
+Gallo-Italian & $o$ &
+  lmo pms lij eml rgn \\
+Italo-Dalmatian & $o$ / $u$ &
+  it vec ist dlm ($o$); scn co ($u$) \\
+Rhaeto & mixed &
+  rm fur lld \\
+Sardinian & $u$ &
+  sc \\
+Eastern & $u$ &
+  ro rup ruo ruq \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Person rows stay per-lect (clipped to $1\sigma$). The case layer is
+Latin; the theme is the class. Do not mix $-os$ from Spanish with
+$-i$ from Italian inside one class.
 
 \chapter{Phonology}
 \label{ch:phonology}
@@ -143,7 +201,7 @@ Legal codas: any single $C$; $CC$ if sonorant$+C$ or $s/\textipa{S}+$stop
 ($ak.kwa$) and do not add a syllable.
 
 Syllable \emph{count} is the number of vowels (minimum 1). One
-algorithm for all 34 lects. Thin lects do not get a private
+algorithm for every daughter. Thin lects do not get a private
 syllabifier; they get better IPA. Donor G2P is a last resort.
 
 \section{Repair (before scoring)}
@@ -192,10 +250,13 @@ Acc.sg restores Latin $-m$ as $-n$. Gen.sg $-is/-es$ undoes the VL
 merger that made gen.sg $=$ nom.pl. Acc.pl keeps the $-s$ plural.
 Gen.pl clips $-$\={o}rum / $-$\={a}rum$ to $1\sigma$.
 
-Theme vowel $o/u/e$ is picked as a \emph{block} from a lect class
-(Ibero-Italian $o$, Sardinian-Romanian $u$, Catalan-Occitan $e$).
-Do not mix $-os$ from Spanish with $-i$ from Italian inside one
-class; the case \emph{layer} is Latin, the theme is the lect.
+Theme vowel $o/u/e$ is picked as a \emph{block} from the source-inventory
+class (Ibero and Gallo-Italian $o$, Sardinian--Eastern $u$, Occitano and
+Oil $e$). Corsican is $u$ with Sicilian; Megleno-Romanian is $u$ with
+Romanian; Romagnol is $o$ with the other Gallo-Italian lects, not a
+clone of Emilian. The case \emph{layer} is Latin, the theme is the
+class. Person rows stay per-lect (clipped to $1\sigma$): that is the
+one place 36 tables are real.
 
 \section{Adjectives}
 
@@ -209,9 +270,11 @@ Copula is suppletive present: $so, es, e, som, sos, son$.
 
 \section{Verbs}
 
-One stem, one lect's person table as a block. $3\times 2\times 3\times 2=36$
-finite cells plus 5 non-finite. Every cell is $1\sigma$ (clip the last
-syllable of \texttt{amos}, \texttt{iamo}, \ldots).
+One lexical stem. Each finite tense is its own 6-person row, taken
+from one lect, and tenses may come from different lects. The tense
+theme and the person endings of that row travel together
+(\texttt{amos} clips to \texttt{mos}). $3\times 2\times 3\times 2=36$
+finite cells plus 5 non-finite. Every cell is $1\sigma$.
 
 Collision and $d\ge 2$ distinctiveness apply \textbf{inside a 6-person
 row}, not across tenses. Romance syncretism across tenses is legal;
@@ -234,16 +297,17 @@ E &= 1000\sum_r \sigma(r)
 \end{aligned}
 \end{equation}
 
-$N_{\mathrm{src}}=34$. $|\{\ell_r\}|$ is how many distinct lects own a
+$N_{\mathrm{src}}=|L|=36$. $|\{\ell_r\}|$ is how many distinct lects own a
 selected root. $\overline{\mathrm{gap}}$ is mean $N_{\mathrm{src}}-\mathrm{support}$.
 One extra syllable ($1000$) beats emptying $\Phi$ ($40\times 23=920$).
-One extra phoneme ($40$) beats using every lect ($1\times 34=34$).
+One extra phoneme ($40$) beats using every lect ($1\times 36=36$).
 Diversity never lengthens a word and never adds a phoneme.
 
 Init: set-cover on the min-$\sigma$ slice. SA may swap roots inside
 that slice to shrink $\Phi$ or pick up an unused lect.
 
-Endings: whole-table mutations. Never mix slots across lects.
+Endings: each tense row is chosen on its own. The six cells of a row
+stay one lect. Noun theme stays one block.
 
 \chapter{Syntax}
 
@@ -257,16 +321,21 @@ roots $0$--$10$ chosen like any other concept.
 
 Extract $\to$ G2P $\to$ adapt $\to$ \textbf{repair} $\to$ discard
 unrepairable $\to$ knapsack roots $\to$ anneal endings $\to$ inflect.
+Empty Swadesh cells are filled from per-lect \texttt{words.json} only on
+an exact English gloss (no sister pad).
 
-Sister G2P (Italian for Romansh/Dalmatian, French for Oil, \ldots) is
-a known bias. Prefer Kaikki/Wiktionary IPA when it exists. Syllable
-count is always on the repaired Lacyo string, never on raw orthography.
+Sister G2P follows the branch (Spanish for Ibero foils, French for Oil
+and Arpitan, Italian for Gallo-Italian / Italo-Dalmatian / Rhaeto,
+Romanian for Eastern). That is a known bias. Prefer Kaikki/Wiktionary
+IPA when it exists. Syllable count is always on the repaired Vulgultra
+string, never on raw orthography.
 
 \chapter{Closed against this spec}
 
 \begin{itemize}
-  \item Declension classes: a handful of theme blocks ($o/u/e$), not 34
-        mixed tables, not an unbounded search.
+  \item Declension classes: a handful of theme blocks ($o/u/e$), not
+        $|L|$ mixed case tables, not an unbounded search.
+  \item Sources: Romance daughters only. Latin/English reserved.
   \item Articles: yes, definiteness only.
   \item Copula: yes, suppletive.
   \item Relatives: particle $ke$.

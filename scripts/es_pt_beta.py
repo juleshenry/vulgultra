@@ -14,17 +14,21 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from lacyo.optimizer import Candidate, Genome, compute_energy, init_genome
-from lacyo.phonology import from_orthography, phonemic_edit_distance
-from lacyo.realize import form_syllables, realize_sentence
-from lacyo.romance_swadesh import (
-    GENDER_PAIRS, SENTENCES, SOURCE_LANGS, concepts as swadesh_concepts,
+from vulgultra.optimizer import (
+    Candidate, Genome, compute_energy, greedy_root_selections, init_genome,
+)
+from vulgultra.phonology import from_orthography, phonemic_edit_distance
+from vulgultra.realize import form_syllables, realize_sentence
+from vulgultra.romance_swadesh import (
+    GENDER_PAIRS, LECT_BRANCHES, LECT_NAMES, SENTENCES, SOURCE_LANGS,
+    concepts as swadesh_concepts,
 )
 
 
 POLICIES = (
     "sa",
-    "legal-shortest",
+    "set-cover",
+    "support-shortest",
     "shortest",
     "always-es",
     "always-pt",
@@ -51,7 +55,7 @@ def load_candidates(path: Path) -> dict[str, list[Candidate]]:
                 source_lang=row["source_lang"],
                 source_word=row["source_word"],
                 ipa=row["ipa"],
-                lacyo_phonemes=list(row["lacyo_phonemes"]),
+                vulgultra_phonemes=list(row.get("vulgultra_phonemes") or row["lacyo_phonemes"]),
                 orthography=row["orthography"],
                 syllables=int(row["syllables"]),
                 violations=int(row["violations"]),
@@ -90,7 +94,7 @@ def shortest_index(cands: list[Candidate]) -> int:
             cands[i].syllables,
             cands[i].violations,
             -cands[i].support,
-            len(cands[i].lacyo_phonemes),
+            len(cands[i].vulgultra_phonemes),
             cands[i].source_lang,
         ),
     )
@@ -104,7 +108,7 @@ def legal_shortest_index(cands: list[Candidate]) -> int:
             cands[i].violations,
             cands[i].syllables,
             -cands[i].support,
-            len(cands[i].lacyo_phonemes),
+            len(cands[i].vulgultra_phonemes),
             cands[i].source_lang,
         ),
     )
@@ -155,12 +159,14 @@ def policy_selections(
         "always-gl": "gl",
         "always-oc": "oc",
     }.get(name)
+    if name == "set-cover":
+        return greedy_root_selections(candidates)
     for cid, cands in candidates.items():
         if name == "sa":
             sel[cid] = sa_index(cands, lexicon["roots"][cid])
         elif name == "shortest":
             sel[cid] = shortest_index(cands)
-        elif name == "legal-shortest":
+        elif name == "support-shortest":
             sel[cid] = legal_shortest_index(cands)
         elif lang:
             idx = cand_by_lang(cands, lang)
@@ -216,13 +222,14 @@ def render_scorecard(
     gold = gold_index()
     sa_sel = policy_selections("sa", candidates, lexicon)
     short_sel = policy_selections("shortest", candidates, lexicon)
-    legal_sel = policy_selections("legal-shortest", candidates, lexicon)
+    legal_sel = policy_selections("set-cover", candidates, lexicon)
+    support_sel = policy_selections("support-shortest", candidates, lexicon)
 
     provenance = Counter()
     rows = []
     disagree = []
     identical_es_pt = 0
-    sa_eq_es = sa_eq_pt = sa_eq_fr = sa_eq_it = sa_eq_short = sa_eq_legal = 0
+    sa_eq_es = sa_eq_pt = sa_eq_fr = sa_eq_it = sa_eq_short = sa_eq_legal = sa_eq_support = 0
 
     for cid in sorted(candidates, key=lambda c: gold.get(c, {}).get("gloss_es", c)):
         cands = candidates[cid]
@@ -233,8 +240,8 @@ def render_scorecard(
 
         es_c = lang_map.get("es")
         pt_c = lang_map.get("pt")
-        d_es = phonemic_edit_distance(chosen.lacyo_phonemes, es_c.lacyo_phonemes) if es_c else None
-        d_pt = phonemic_edit_distance(chosen.lacyo_phonemes, pt_c.lacyo_phonemes) if pt_c else None
+        d_es = phonemic_edit_distance(chosen.vulgultra_phonemes, es_c.vulgultra_phonemes) if es_c else None
+        d_pt = phonemic_edit_distance(chosen.vulgultra_phonemes, pt_c.vulgultra_phonemes) if pt_c else None
         closer_vals = [x for x in (d_es, d_pt) if x is not None]
         closer = min(closer_vals) if closer_vals else 99
         bin_name = transparency_bin(closer) if closer_vals else "—"
@@ -251,6 +258,8 @@ def render_scorecard(
             sa_eq_it += 1
         if sa_sel[cid] == short_sel[cid]:
             sa_eq_short += 1
+        if sa_sel[cid] == support_sel[cid]:
+            sa_eq_support += 1
         if sa_sel[cid] == legal_sel[cid]:
             sa_eq_legal += 1
         else:
@@ -280,7 +289,7 @@ def render_scorecard(
             "fr": form("fr"),
             "it": form("it"),
             "ca": form("ca"),
-            "lacyo": chosen.orthography,
+            "vulgultra": chosen.orthography,
             "src": chosen.source_lang,
             "sig": chosen.syllables,
             "s_es": syl("es"),
@@ -297,15 +306,19 @@ def render_scorecard(
 
     n = len(candidates)
     lines: list[str] = []
-    lines.append(f"# Lacyo Swadesh — {len(SOURCE_LANGS)} lects Romance")
+    lines.append(f"# Vulgultra Swadesh — {len(SOURCE_LANGS)} daughter lects")
     lines.append("")
-    lines.append("Lexicón de origen mixto: una forma Lacyo por concepto, elegida")
+    lines.append("Lexicón de origen mixto: una forma Vulgultra por concepto, elegida")
+    lines.append("entre candidatos meaning-aligned de las hijas Romance, por rama:")
+    lines.append("")
+    for branch, codes in LECT_BRANCHES.items():
+        named = ", ".join(f"`{c}` {LECT_NAMES[c]}" for c in codes)
+        lines.append(f"- **{branch}:** {named}")
+    lines.append("")
     lines.append(
-        "entre candidatos meaning-aligned de **"
-        + " / ".join(SOURCE_LANGS)
-        + f"** ({len(SOURCE_LANGS)} lects)."
+        f"({len(SOURCE_LANGS)} lects. Latin and English are reserved. "
+        "ES/PT columns are inspection only.)"
     )
-    lines.append("El inglés no es lengua fuente. Las columnas ES/PT son de inspección.")
     lines.append("")
     lines.append("## Qué minimiza el SA")
     lines.append("")
@@ -320,7 +333,7 @@ def render_scorecard(
     lines.append("|---|---:|---|")
     lines.append("| **σ raíces** | 1000 | una sílaba extra gana a todo lo de abajo |")
     lines.append("| **\\|Φ\\|** | 40 | 40×23=920 < 1000: inventario global, nunca compra una σ |")
-    lines.append("| **diversidad** | 1 | a igual σ e igual Φ, maximizar lects distintas (34 < 40) |")
+    lines.append(f"| **diversidad** | 1 | a igual σ e igual Φ, maximizar lects distintas ({len(SOURCE_LANGS)} < 40) |")
     lines.append("| support medio | 0.02 | más fino que un lect |")
     lines.append("| σ desinencias | 200 | terminaciones 1σ |")
     lines.append("| colisiones | 100000 | duro dentro de una fila |")
@@ -338,7 +351,7 @@ def render_scorecard(
     pt_p = policies["always-pt"]
     fr_p = policies["always-fr"]
     it_p = policies["always-it"]
-    legal_p = policies["legal-shortest"]
+    legal_p = policies["set-cover"]
     raw_p = policies["shortest"]
 
     lines.append(
@@ -349,27 +362,39 @@ def render_scorecard(
     )
     lines.append("")
     delta_fr = mixed["sum_syl"] - fr_p["sum_syl"]
+    if delta_fr > 0:
+        fr_cmp = f"{delta_fr}σ más largo"
+    elif delta_fr < 0:
+        fr_cmp = f"{-delta_fr}σ más corto"
+    else:
+        fr_cmp = "igual de largo"
     lines.append(
-        f"Frente a **francés crudo**: always-fr suma {fr_p['sum_syl']}σ "
-        f"pero con **{fr_p['viols']} violaciones** (E_tact enorme). "
-        f"El mixto es {delta_fr}σ más largo y legal. Italiano crudo es peor "
-        f"({it_p['sum_syl']}σ, {it_p['viols']} viol.)."
+        f"Frente a **francés**: always-fr suma {fr_p['sum_syl']}σ "
+        f"con **{fr_p['viols']}** violaciones. "
+        f"El mixto es {fr_cmp}, con {mixed['viols']} violaciones. "
+        f"Italiano suma {it_p['sum_syl']}σ ({it_p['viols']} viol.)."
     )
     lines.append("")
     sa_e = mixed["energy"]
     legal_e = legal_p["energy"]
-    extra = mixed["sum_syl"] - legal_p["sum_syl"]
+    sup_p = policies["support-shortest"]
     lines.append(
-        f"Calidad del optimizador (raíces): SA **no recuperó el greedy**. "
-        f"legal-shortest = {legal_p['sum_syl']}σ / E={legal_e:.0f}; "
-        f"SA = {mixed['sum_syl']}σ / E={sa_e:.0f} "
-        f"({extra}σ extra, acuerdo {sa_eq_legal}/{n}). "
-        f"El init ya partía de raíces legal-shortest ({legal_p['sum_syl']}σ); "
-        f"500k iteraciones dejaron la temperatura alta (accept ~90%) y "
-        f"algunas raíces se alargaron mientras se limpiaban colisiones. "
-        f"El shortest crudo (ignora fonotáctica) llega a {raw_p['sum_syl']}σ "
-        f"con {raw_p['viols']} violaciones y no es un baseline de energía."
+        f"Calidad del optimizador: set-cover Σσ={legal_p['sum_syl']} "
+        f"|Φ|={legal_p['n_phon']} lects={legal_p['n_lects']} E={legal_e:.0f}; "
+        f"SA Σσ={mixed['sum_syl']} |Φ|={mixed['n_phon']} lects={mixed['n_lects']} "
+        f"E={sa_e:.0f} (acuerdo con set-cover {sa_eq_legal}/{n}, "
+        f"con support-shortest {sa_eq_support}/{n}). "
+        f"support-shortest suma {sup_p['sum_syl']}σ. "
+        f"El shortest crudo llega a {raw_p['sum_syl']}σ con {raw_p['viols']} violaciones."
     )
+    theme = lexicon.get("metadata", {}).get("noun_theme")
+    verb = lexicon.get("metadata", {}).get("verb_lect")
+    if theme and verb:
+        lines.append("")
+        lines.append(
+            f"Desinencias enumeradas antes del recocido: tema nominal `{theme}`, "
+            f"tiempos verbales `{verb}`. Cada tiempo es una fila; el SA no las mueve."
+        )
     lines.append("")
 
     lines.append("## Procedencia (raíces SA)")
@@ -384,17 +409,18 @@ def render_scorecard(
 
     lines.append("## Totales por política")
     lines.append("")
-    lines.append("Las terminaciones de SA se mantienen fijas en las políticas de raíz")
-    lines.append("(salvo `init`: raíces más cortas legales + terminaciones aleatorias, semilla 42).")
+    lines.append("Las terminaciones de SA se mantienen fijas en las políticas de raíz.")
+    lines.append("`set-cover` es el init: mínima σ, luego menos fonemas nuevos, luego un lect nuevo.")
+    lines.append("`support-shortest` es el antiguo legal-shortest ordenado por support.")
     lines.append("")
-    lines.append("| política | Σσ raíces | media σ | viol | \\|Φ\\| | E_root | E_norm | E_end | E_coll | E_tact | E_dist | E_total |")
-    lines.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
+    lines.append("| política | Σσ raíces | media σ | viol | \\|Φ\\| | lects | E_root | E_norm | E_end | E_coll | E_tact | E_dist | E_total |")
+    lines.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
     for name in POLICIES:
         if name not in policies:
             continue
         p = policies[name]
         lines.append(
-            f"| {name} | {p['sum_syl']} | {p['mean_syl']:.2f} | {p['viols']} | {p['n_phon']} | "
+            f"| {name} | {p['sum_syl']} | {p['mean_syl']:.2f} | {p['viols']} | {p['n_phon']} | {p['n_lects']} | "
             f"{p['bd']['E_root']:.0f} | {p['bd'].get('E_norm', 0):.0f} | {p['bd']['E_end']:.0f} | "
             f"{p['bd']['E_coll']:.0f} | {p['bd']['E_tact']:.0f} | {p['bd']['E_dist']:.0f} | "
             f"{p['energy']:.0f} |"
@@ -411,19 +437,19 @@ def render_scorecard(
     lines.append("")
     lines.append(f"- Conceptos: **{n}**")
     lines.append(f"- ES y PT adaptados idénticos: {identical_es_pt}/{n}")
-    lines.append(f"- SA = ES (ortografía Lacyo): {sa_eq_es}/{n}")
+    lines.append(f"- SA = ES (ortografía Vulgultra): {sa_eq_es}/{n}")
     lines.append(f"- SA = PT: {sa_eq_pt}/{n}")
     lines.append(f"- SA = FR: {sa_eq_fr}/{n}")
     lines.append(f"- SA = IT: {sa_eq_it}/{n}")
     lines.append(f"- SA = shortest (crudo): {sa_eq_short}/{n}")
-    lines.append(f"- SA = legal-shortest: {sa_eq_legal}/{n}")
-    lines.append(f"- SA ≠ legal-shortest: {len(disagree)}/{n}")
+    lines.append(f"- SA = set-cover: {sa_eq_legal}/{n}")
+    lines.append(f"- SA ≠ set-cover: {len(disagree)}/{n}")
     lines.append("")
 
     lines.append("## Frases de demostración")
     lines.append("")
-    lines.append("Con conjugación y concordancia. Artículo cerrado **o/a** (PT), no el/la.")
-    lines.append("Copula 3sg **e** (é). Verbo = tema (infinitivo menos `-r`) + desinencia.")
+    lines.append("Con conjugación y concordancia. Artículo **o/a**. Copula 3sg **e**.")
+    lines.append("Verbo = tema + la fila de presente elegida. El objeto va en acusativo.")
     lines.append("")
 
     sa_roots = {cid: {
@@ -459,7 +485,7 @@ def render_scorecard(
             toks, sa_roots, verb_endings, adj_endings,
             candidates=candidates, noun_endings=noun_endings,
         )
-        lacyo_w = [w["form"] for w in realized]
+        vulgultra_w = [w["form"] for w in realized]
         src_w = [f"[{w['src']}]" for w in realized]
         es_w, pt_w = [], []
         for w in realized:
@@ -476,7 +502,7 @@ def render_scorecard(
             pt_w.append(grow.get("pt", "—"))
         mix_s = sum(form_syllables(w["form"]) for w in realized)
         lines.append("```")
-        lines.append("Lacyo  " + "  ".join(lacyo_w))
+        lines.append("Vulgultra  " + "  ".join(vulgultra_w))
         lines.append("src    " + "  ".join(src_w))
         lines.append("es     " + "  ".join(es_w))
         lines.append("pt     " + "  ".join(pt_w))
@@ -488,9 +514,9 @@ def render_scorecard(
     lines.append("")
     lines.append("Par masculino/femenino elegido por sílabas, independiente.")
     lines.append("Ejemplo permitido: M `gat` [ca] + F `chatte` [fr].")
-    lines.append("Los verbos no se parten así: un lexema, una conjugación entera.")
+    lines.append("El tema léxico del verbo es uno. Cada tiempo elige su propia fila de personas.")
     lines.append("")
-    lines.append("| glosa | M Lacyo | src | σ | F Lacyo | src | σ |")
+    lines.append("| glosa | M Vulgultra | src | σ | F Vulgultra | src | σ |")
     lines.append("|---|---|---|---:|---|---|---:|")
     for masc_id, fem_id in GENDER_PAIRS:
         if masc_id not in sa_sel or fem_id not in sa_sel:
@@ -506,22 +532,22 @@ def render_scorecard(
 
     lines.append("## Tabla por concepto")
     lines.append("")
-    lines.append("| glosa | es | pt | fr | it | ca | Lacyo | src | σ | sup | por qué | bin |")
+    lines.append("| glosa | es | pt | fr | it | ca | Vulgultra | src | σ | sup | por qué | bin |")
     lines.append("|---|---|---|---|---|---|---|---|---:|---:|---|---|")
     for r in rows:
         lines.append(
             f"| {r['gloss']} | {r['es']} | {r['pt']} | {r['fr']} | {r['it']} | {r['ca']} | "
-            f"**{r['lacyo']}** | `{r['src']}` | {r['sig']} | {r['sup']} | {r['why']} | {r['bin']} |"
+            f"**{r['vulgultra']}** | `{r['src']}` | {r['sig']} | {r['sup']} | {r['why']} | {r['bin']} |"
         )
     lines.append("")
 
-    lines.append("## Apéndice: SA ≠ legal-shortest")
+    lines.append("## Apéndice: SA ≠ set-cover")
     lines.append("")
     if not disagree:
-        lines.append("Ninguna. SA coincidió con el greedy legal-shortest en todos los conceptos.")
+        lines.append("Ninguna. SA coincidió con el set-cover en todos los conceptos.")
         lines.append("")
     else:
-        lines.append("| glosa | SA | src | σ | legal-shortest | src | σ | razón |")
+        lines.append("| glosa | SA | src | σ | set-cover | src | σ | razón |")
         lines.append("|---|---|---|---:|---|---|---:|---|")
         for gloss, cid, chosen, short, reason in disagree:
             lines.append(
@@ -533,12 +559,9 @@ def render_scorecard(
     lines.append("## Caveats")
     lines.append("")
     lines.append("- La glosa del scorecard es española; el `id` inglés del gold list no es fuente.")
-    lines.append("- Epitran G2P es aproximado: `água`→`aga`, `olho`→`olo`, `ojo`/`rojo`→`okso`/`rokso` (`/x/`→`ks`), `où` se pierde (`ù` no mapea). `chat`→`xa` es la ortografía fonémica (`ʃ`=`x`).")
-    lines.append("- La especificación trata los diptongos como fonemas-unidad; el código cuenta cada vocal.")
-    lines.append("- Lacyo no tiene género: un solo artículo (`def_art`) para todas las frases.")
-    lines.append("- Las frases muestran raíces, no formas flexionadas.")
-    lines.append("- Rumano queda fuera de esta corrida (no hay G2P cableado).")
-    lines.append("- Cooling por defecto (`0.999997`, 500k iters) no enfría: el greedy de raíces es mejor que SA en este run. Un follow-up es 2M iters o mutar raíces con menos frecuencia que terminaciones.")
+    lines.append("- El inglés no es lengua fuente. El latín está reservado y no entra en el knapsack.")
+    lines.append("- Epitran usa la lect hermana cuando no hay mapa propio (Oil←fr, retorromance y dálmata←it, asturiano←es, oriental←ro): `água`→`aga`, `olho`→`olo`, `ojo`/`rojo`→`okso`/`rokso`. `chat`→`xa` es la ortografía de `ʃ`.")
+    lines.append("- Las desinencias se enumeran por tiempo verbal (tema nominal o/u/e; cada fila de 6 personas es un lect). El recocido solo mueve raíces dentro del corte de σ mínima.")
     lines.append("")
     return "\n".join(lines)
 
@@ -551,7 +574,7 @@ def policy_stats(
     roots = genome.all_roots()
     phon = set()
     for r in roots:
-        phon.update(r.lacyo_phonemes)
+        phon.update(r.vulgultra_phonemes)
     for e in genome.all_endings():
         phon.update(e)
     sum_syl = sum(r.syllables for r in roots)
@@ -561,6 +584,7 @@ def policy_stats(
         "sum_syl": sum_syl,
         "mean_syl": sum_syl / max(len(roots), 1),
         "n_phon": len(phon),
+        "n_lects": len({r.source_lang for r in roots}),
         "viols": sum(r.violations for r in roots),
     }
 

@@ -1,11 +1,11 @@
 """
-lacyo.pipeline — End-to-end pipeline for generating a Lacyo lexicon.
+vulgultra.pipeline — End-to-end pipeline for generating a Vulgultra lexicon.
 
 Steps:
   1. Get top N words by Zipf frequency from Romance languages
   2. Cross-reference to find shared concepts (words appearing in 2+ languages)
   3. Convert each candidate to IPA via epitran
-  4. Adapt to Lacyo phonotactics
+  4. Adapt to Vulgultra phonotactics
   5. Feed into SA optimizer
   6. Output the complete lexicon
 """
@@ -19,17 +19,20 @@ from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
-from lacyo.phonology import (
-    word_to_ipa, ipa_to_lacyo, count_syllables, count_violations,
-    to_orthography, extract_phonemes, PHONEME_INVENTORY,
-    phonemic_edit_distance, overlay_spelling_contrasts, repair,
+from vulgultra.phonology import (
+    word_to_ipa, ipa_to_vulgultra, count_syllables, count_violations,
+    to_orthography, extract_phonemes, PHONEME_INVENTORY, VOWELS,
+    overlay_spelling_contrasts, repair,
 )
-from lacyo.optimizer import (
+from vulgultra.optimizer import (
     Candidate, Genome, SAResult, anneal,
     NOUN_SLOTS, VERB_SLOTS, ADJ_SLOTS,
     compute_energy,
 )
-from lacyo.romance_swadesh import SOURCE_LANGS
+from vulgultra.romance_swadesh import SOURCE_LANGS
+
+_WORDS_DIR = Path(__file__).resolve().parents[1] / "data" / "words"
+_GLOSS_INDEX: dict[str, dict[str, list[str]]] = {}
 
 
 # ---------------------------------------------------------------------------
@@ -107,18 +110,22 @@ def gold_concepts(langs: list[str] | None = None) -> dict[str, dict[str, str]]:
     """
     Meaning-aligned concepts from the Romance Swadesh gold list.
     English ids are keys only — never source forms.
+    Empty Swadesh cells are filled from `{code}_words.json` on an exact
+    English gloss match (no sister pad, no clipping).
     """
-    from lacyo.romance_swadesh import SOURCE_LANGS, concepts as swadesh_concepts
+    from vulgultra.romance_swadesh import SOURCE_LANGS, concepts as swadesh_concepts
 
     wanted = tuple(langs or SOURCE_LANGS)
     for lang in wanted:
         if lang == "en":
-            raise ValueError("English is not a Lacyo source language")
+            raise ValueError("English is not a Vulgultra source language")
         if lang not in SOURCE_LANGS:
             raise ValueError(f"Unsupported source language: {lang}")
 
     out: dict[str, dict[str, str]] = {}
+    pos_of: dict[str, str] = {}
     for row in swadesh_concepts():
+        pos_of[row["id"]] = row["pos"]
         forms: dict[str, str] = {}
         for lang in wanted:
             form = row[lang].strip()
@@ -126,7 +133,80 @@ def gold_concepts(langs: list[str] | None = None) -> dict[str, dict[str, str]]:
                 forms[lang] = form
         if forms:
             out[row["id"]] = forms
-    return out
+    return overlay_word_glosses(out, wanted, pos_of)
+
+
+def overlay_word_glosses(
+    concepts: dict[str, dict[str, str]],
+    langs: tuple[str, ...],
+    pos_of: dict[str, str] | None = None,
+) -> dict[str, dict[str, str]]:
+    """Fill empty concept cells from per-lect words.json exact glosses."""
+    pos_of = pos_of or {}
+    filled = 0
+    for lang in langs:
+        index = _gloss_index(lang)
+        if not index:
+            continue
+        for cid, forms in concepts.items():
+            if forms.get(lang):
+                continue
+            lemma = _best_lemma(index, cid, pos_of.get(cid, ""))
+            if lemma:
+                forms[lang] = lemma
+                filled += 1
+    if filled:
+        print(f"  corpus gloss overlay: filled {filled} empty cells")
+    return concepts
+
+
+def _gloss_index(lang: str) -> dict[str, list[str]]:
+    if lang in _GLOSS_INDEX:
+        return _GLOSS_INDEX[lang]
+    path = _WORDS_DIR / f"{lang}_words.json"
+    index: dict[str, list[str]] = defaultdict(list)
+    if not path.is_file():
+        _GLOSS_INDEX[lang] = {}
+        return _GLOSS_INDEX[lang]
+    data = json.loads(path.read_text(encoding="utf-8"))
+    for lemma, rec in (data.get("entries") or {}).items():
+        if not isinstance(rec, dict):
+            continue
+        pos = rec.get("pos") or []
+        if "character" in pos:
+            continue
+        raw = rec.get(lang) or lemma or ""
+        if isinstance(raw, list):
+            raw = raw[0] if raw else ""
+        word = str(raw).strip()
+        if len(word) < 2:
+            continue
+        for g in rec.get("glosses_en") or []:
+            for key in _gloss_keys(g):
+                if word not in index[key]:
+                    index[key].append(word)
+    _GLOSS_INDEX[lang] = dict(index)
+    return _GLOSS_INDEX[lang]
+
+
+def _gloss_keys(gloss: str) -> list[str]:
+    g = gloss.strip().lower().split(",")[0].split(";")[0].strip()
+    return [g] if g else []
+
+
+def _best_lemma(index: dict[str, list[str]], cid: str, pos: str = "") -> str:
+    spaced = cid.replace("_", " ")
+    keys = [cid, spaced]
+    if pos == "verb":
+        keys.extend([f"to {cid}", f"to {spaced}"])
+    hits: list[str] = []
+    for k in keys:
+        hits.extend(index.get(k, []))
+    if not hits:
+        return ""
+    # shortest attested lemma; no clipping
+    hits = sorted(set(hits), key=lambda w: (len(w), w))
+    return hits[0]
 
 
 def _normalize_for_matching(word: str) -> str:
@@ -145,7 +225,7 @@ def build_candidates(
 ) -> dict[str, list[Candidate]]:
     """
     Convert concept word lists to Candidate objects.
-    Each candidate gets IPA transcription and Lacyo adaptation.
+    Each candidate gets IPA transcription and Vulgultra adaptation.
     """
     all_candidates: dict[str, list[Candidate]] = {}
     errors = 0
@@ -155,14 +235,14 @@ def build_candidates(
         for lang, word in lang_words.items():
             try:
                 ipa = word_to_ipa(word, lang)
-                lacyo_phonemes = repair(
-                    overlay_spelling_contrasts(word, ipa_to_lacyo(ipa))
+                vulgultra_phonemes = repair(
+                    overlay_spelling_contrasts(word, ipa_to_vulgultra(ipa))
                 )
 
-                if not lacyo_phonemes:
+                if not vulgultra_phonemes:
                     continue  # empty after adaptation
 
-                viol = count_violations(lacyo_phonemes)
+                viol = count_violations(vulgultra_phonemes)
                 if viol:
                     continue  # unrepairable — discard, do not score as a death penalty
 
@@ -171,9 +251,9 @@ def build_candidates(
                     source_lang=lang,
                     source_word=word,
                     ipa=ipa,
-                    lacyo_phonemes=lacyo_phonemes,
-                    orthography=to_orthography(lacyo_phonemes),
-                    syllables=count_syllables(lacyo_phonemes),
+                    vulgultra_phonemes=vulgultra_phonemes,
+                    orthography=to_orthography(vulgultra_phonemes),
+                    syllables=count_syllables(vulgultra_phonemes),
                     violations=0,
                 )
                 cands.append(cand)
@@ -190,73 +270,32 @@ def build_candidates(
     return all_candidates
 
 
-def _similar(a: list[str], b: list[str]) -> bool:
-    """Same adapted form, or near-allomorph of an attested form. No clipping."""
-    if a == b:
-        return True
-    return phonemic_edit_distance(a, b) <= 1
-
-
-def _support_of(seq: list[str], originals: list[Candidate]) -> int:
-    n = 0
-    for o in originals:
-        if o.lacyo_phonemes == seq or phonemic_edit_distance(o.lacyo_phonemes, seq) <= 1:
-            n += 1
-    return n
+def _degeminate(seq: list[str]) -> tuple[str, ...]:
+    """Collapse geminate consonants. Vowels stay, so a long vowel is not a geminate."""
+    out: list[str] = []
+    for p in seq:
+        if out and out[-1] == p and p not in VOWELS:
+            continue
+        out.append(p)
+    return tuple(out)
 
 
 def normalize_morphemes(cands: list[Candidate]) -> list[Candidate]:
+    """One repaired candidate per lect.
+
+    Support counts lects whose repaired form matches exactly, or matches
+    after geminate consonants collapse (gato / gatto). Candidates are not
+    merged: an identical string from another lect stays, so the diversity
+    term can assign that lect label. Distance ≤ 1 is not an allomorph.
     """
-    Collapse attested allomorphs of the same word into one candidate.
-
-    gato/gatto → one gato. Does not invent gat by stripping -o.
-    A shorter unrelated form (xa ← chat) stays a separate candidate;
-    syllables still decide between them.
-    """
-    originals = list(cands)
-    pool = list(cands)
-
-    for c in pool:
-        c.support = max(1, _support_of(c.lacyo_phonemes, originals))
-
-    parent = list(range(len(pool)))
-
-    def find(i: int) -> int:
-        while parent[i] != i:
-            parent[i] = parent[parent[i]]
-            i = parent[i]
-        return i
-
-    def union(i: int, j: int) -> None:
-        ri, rj = find(i), find(j)
-        if ri != rj:
-            parent[rj] = ri
-
-    for i in range(len(pool)):
-        for j in range(i + 1, len(pool)):
-            if _similar(pool[i].lacyo_phonemes, pool[j].lacyo_phonemes):
-                union(i, j)
-
-    clusters: dict[int, list[Candidate]] = {}
-    for i, c in enumerate(pool):
-        clusters.setdefault(find(i), []).append(c)
-
-    kept: list[Candidate] = []
-    for group in clusters.values():
-        best = min(
-            group,
-            key=lambda c: (
-                c.violations,
-                c.syllables,
-                -c.support,
-                len(c.lacyo_phonemes),
-                c.source_lang,
-            ),
-        )
-        kept.append(best)
-
-    kept.sort(key=lambda c: (c.violations, c.syllables, -c.support, c.source_lang))
-    return kept
+    keys = [_degeminate(c.vulgultra_phonemes) for c in cands]
+    counts: dict[tuple[str, ...], int] = defaultdict(int)
+    for key in keys:
+        counts[key] += 1
+    for c, key in zip(cands, keys):
+        c.support = max(1, counts[key])
+    cands.sort(key=lambda c: (c.violations, c.syllables, -c.support, c.source_lang))
+    return cands
 
 
 # ---------------------------------------------------------------------------
@@ -273,9 +312,9 @@ def format_genome(result: SAResult) -> dict:
 
     for concept in genome.selections:
         root = genome.get_root(concept)
-        all_phonemes.update(extract_phonemes(root.lacyo_phonemes))
+        all_phonemes.update(extract_phonemes(root.vulgultra_phonemes))
         roots_out[concept] = {
-            "ipa": root.lacyo_phonemes,
+            "ipa": root.vulgultra_phonemes,
             "orthography": root.orthography,
             "source_lang": root.source_lang,
             "source_word": root.source_word,
@@ -330,7 +369,7 @@ def print_summary(result: SAResult):
     roots = genome.all_roots()
 
     print("\n" + "=" * 70)
-    print("  LACYO LEXICON — OPTIMIZATION RESULT")
+    print("  VULGULTRA LEXICON — OPTIMIZATION RESULT")
     print("=" * 70)
 
     print(f"\n  Concepts:       {len(roots)}")
@@ -345,7 +384,7 @@ def print_summary(result: SAResult):
     # Phoneme inventory
     all_phonemes: set[str] = set()
     for r in roots:
-        all_phonemes.update(extract_phonemes(r.lacyo_phonemes))
+        all_phonemes.update(extract_phonemes(r.vulgultra_phonemes))
     for e in genome.all_endings():
         all_phonemes.update(extract_phonemes(e))
     print(f"\n  Phoneme inventory ({len(all_phonemes)} phonemes):")
@@ -406,7 +445,7 @@ def _load_concepts(
     concepts_source: str,
 ) -> dict[str, dict[str, str]]:
     if "en" in langs:
-        raise ValueError("English is not a Lacyo source language")
+        raise ValueError("English is not a Vulgultra source language")
 
     if concepts_source == "swadesh":
         print(f"\n[1/3] Loading Swadesh gold concepts ({', '.join(langs)})...")
@@ -435,16 +474,16 @@ def _load_concepts(
 def run_pipeline(
     n_words: int = 1000,
     sa_iterations: int = 200_000,
-    output_path: str = "data/lacyo_lexicon.json",
+    output_path: str = "data/vulgultra_lexicon.json",
     seed: int = 42,
     langs: list[str] | None = None,
     concepts_source: str = "wordfreq",
 ):
-    """Run the complete Lacyo E2E pipeline."""
+    """Run the complete Vulgultra E2E pipeline."""
 
     langs = langs or list(LANGUAGES)
     print("=" * 70)
-    print("  LACYO E2E PIPELINE")
+    print("  VULGULTRA E2E PIPELINE")
     print("=" * 70)
 
     concepts = _load_concepts(n_words, langs, concepts_source)
@@ -452,7 +491,7 @@ def run_pipeline(
     print(f"  {len(concepts)} concepts ({multi} shared across 2+ languages)")
 
     # Step 3+4: Build candidates
-    print(f"\n[3/5] Building candidates (IPA → Lacyo adaptation)...")
+    print(f"\n[3/5] Building candidates (IPA → Vulgultra adaptation)...")
     t0 = time.time()
     candidates = build_candidates(concepts)
     total_cands = sum(len(v) for v in candidates.values())
@@ -495,12 +534,31 @@ def _parse_langs(langs: list[str] | str | None) -> list[str]:
     if not langs:
         raise ValueError("At least one source language is required")
     if "en" in langs:
-        raise ValueError("English is not a Lacyo source language")
+        raise ValueError("English is not a Vulgultra source language")
     return langs
 
 
+def ending_catalog() -> dict:
+    """Noun themes and verb blocks. Rust anneals roots; it does not own tables."""
+    from vulgultra.paradigms import VERB_TEMPLATES, closed_noun_blocks
+
+    nouns = closed_noun_blocks()
+    return {
+        "noun_slots": list(NOUN_SLOTS),
+        "verb_slots": list(VERB_SLOTS),
+        "noun_blocks": {
+            name: [list(cell) for cell in cells]
+            for name, cells in nouns.items()
+        },
+        "verb_blocks": {
+            lang: [list(cell) for cell in cells]
+            for lang, cells in VERB_TEMPLATES.items()
+        },
+    }
+
+
 def candidates_to_export(candidates: dict[str, list[Candidate]]) -> dict:
-    export = {"concepts": {}}
+    export = {"concepts": {}, "ending_catalog": ending_catalog()}
     for concept_id, cands in candidates.items():
         export["concepts"][concept_id] = [
             {
@@ -508,7 +566,7 @@ def candidates_to_export(candidates: dict[str, list[Candidate]]) -> dict:
                 "source_lang": c.source_lang,
                 "source_word": c.source_word,
                 "ipa": c.ipa,
-                "lacyo_phonemes": c.lacyo_phonemes,
+                "vulgultra_phonemes": c.vulgultra_phonemes,
                 "orthography": c.orthography,
                 "syllables": c.syllables,
                 "violations": c.violations,
@@ -531,14 +589,14 @@ def run_prep(
     """
     langs = _parse_langs(langs)
     print("=" * 70)
-    print("  LACYO PREP — Python G2P Pipeline")
+    print("  VULGULTRA PREP — Python G2P Pipeline")
     print("=" * 70)
 
     concepts = _load_concepts(n_words, langs, concepts_source)
     multi = sum(1 for v in concepts.values() if len(v) >= 2)
     print(f"  {len(concepts)} concepts ({multi} with 2+ language forms)")
 
-    print(f"\n[build] Building candidates (IPA → Lacyo adaptation)...")
+    print(f"\n[build] Building candidates (IPA → Vulgultra adaptation)...")
     t0 = time.time()
     candidates = build_candidates(concepts)
     total_cands = sum(len(v) for v in candidates.values())
@@ -553,14 +611,14 @@ def run_prep(
     with open(out_path, "w") as f:
         json.dump(export, f, indent=2, ensure_ascii=False)
     print(f"\n  Candidates written to {out_path}")
-    print(f"  Ready for Rust optimizer: cyberlatin-cli -i {out_path}")
+    print(f"  Ready for Rust optimizer: vulgultra-cli -i {out_path}")
 
     return export
 
 
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description="Lacyo Pipeline")
+    parser = argparse.ArgumentParser(description="Vulgultra Pipeline")
     sub = parser.add_subparsers(dest="command")
 
     # prep subcommand — Python-only, exports JSON for Rust
@@ -581,7 +639,7 @@ if __name__ == "__main__":
                        help="Number of top words per language")
     run_p.add_argument("-i", "--iterations", type=int, default=200_000,
                        help="Max SA iterations")
-    run_p.add_argument("-o", "--output", type=str, default="data/lacyo_lexicon.json",
+    run_p.add_argument("-o", "--output", type=str, default="data/vulgultra_lexicon.json",
                        help="Output JSON path")
     run_p.add_argument("-s", "--seed", type=int, default=42,
                        help="Random seed")

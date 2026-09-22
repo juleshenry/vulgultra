@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate a test .clatin genome file for Cyber-Latin v2.0 with concept classifications.
+Generate a test .clatin genome file for Vulgultra v2.0 with concept classifications.
 
 This script converts the test_concepts.json file into a msgpack-serialized .clatin file
 that includes concept classifications (LOCAL vs GLOBAL) for the Rust CLI to use.

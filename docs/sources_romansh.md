@@ -1,6 +1,6 @@
 # Romansh (`rm`) source ladder
 
-Ordered by how well they fit **lexical ingestion** for Lacyo (not by prestige).
+Ordered by how well they fit **lexical ingestion** for Vulgultra (not by prestige).
 
 | Priority | Source | Format | Ingest? | Status in this repo |
 |---|---|---|---|---|
@@ -12,7 +12,7 @@ Ordered by how well they fit **lexical ingestion** for Lacyo (not by prestige).
 ## Also open / already pulled
 
 - `xmls/wiki/rmwiki-latest-pages-articles.xml.bz2` — Romansh Wikipedia (types / running text)
-- Swadesh `rm` row in `lacyo/swadesh_rest.py`
+- Swadesh `rm` row in `vulgultra/swadesh_rest.py`
 
 ## Idioms (Pledari / dicziunari)
 

@@ -25,7 +25,7 @@ WIKTIONARY_BASE = "https://en.wiktionary.org"
 PREFIXES_URL = f"{WIKTIONARY_BASE}/wiki/Category:Latin_prefixes"
 SUFFIXES_URL = f"{WIKTIONARY_BASE}/wiki/Category:Latin_suffixes"
 
-USER_AGENT = "CyberLatinBot/1.0 (Educational morpheme research; mailto:research@example.com)"
+USER_AGENT = "VulgultraBot/1.0 (Educational morpheme research; mailto:research@example.com)"
 HEADERS = {"User-Agent": USER_AGENT}
 
 def fetch_category_pages(category_url: str, max_pages: int = 10) -> List[str]:

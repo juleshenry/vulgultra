@@ -5,7 +5,7 @@ ALL_LANGS = {
     'an': ('Aragonese', False),
     'ast': ('Asturian', False),
     'ca': ('Catalan', False),
-    # Reserved dump — not a Lacyo source.
+    # Reserved dump — not a Vulgultra source.
     'en': ('English (reserved)', False),
     'es': ('Spanish', False),
     'ext': ('Extremaduran', True),

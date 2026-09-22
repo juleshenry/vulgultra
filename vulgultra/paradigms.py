@@ -1,13 +1,14 @@
 """Native declension/conjugation per lect.
 
-Every SOURCE_LANGS code has its own person table. Realization never
-falls back to “conjugate like Spanish” for Aragonese, Ladino, Romansh, etc.
-Tense/mood is a theme on that same person row (one stem, one lect).
+Person rows are per-lect (clipped to 1σ). Case theme is a class
+(o / u / e) from the source-inventory branch, not 36 mixed tables.
+Realization never falls back to “conjugate like Spanish” for Aragonese,
+Ladino, Romansh, etc. Tense/mood is a theme on that same person row.
 """
 
 from __future__ import annotations
 
-from lacyo.phonology import from_orthography, last_syllable, to_orthography
+from vulgultra.phonology import from_orthography, last_syllable, to_orthography
 
 
 def _one_sigma(s: str) -> str:
@@ -18,6 +19,26 @@ def _one_sigma(s: str) -> str:
 def _row(*cells: str) -> list[list[str]]:
     return [from_orthography(_one_sigma(c)) for c in cells]
 
+
+# Theme class for the Latin case layer (grammar.tex source inventory).
+THEME_CLASS: dict[str, str] = {
+    # Ibero o; Asturian/Extremaduran keep u
+    "es": "o", "pt": "o", "gl": "o", "an": "o", "lad": "o", "mwl": "o",
+    "ast": "u", "ext": "u",
+    # Occitano / Oil e
+    "oc": "e", "ca": "e", "gsc": "e",
+    "fr": "e", "wa": "e", "pcd": "e", "nrf": "e", "glw": "e",
+    # Arpitan / Gallo-Italian o
+    "frp": "o",
+    "lmo": "o", "pms": "o", "lij": "o", "eml": "o", "rgn": "o",
+    # Italo-Dalmatian
+    "it": "o", "vec": "o", "ist": "o", "dlm": "o",
+    "scn": "u", "co": "u",
+    # Rhaeto mixed, Sardinian/Eastern u
+    "rm": "e", "fur": "e", "lld": "e",
+    "sc": "u",
+    "ro": "u", "rup": "u", "ruo": "u", "ruq": "u",
+}
 
 # Reverse Vulgar Latin case on a lect theme vowel.
 # Slots: m_nom_sg m_acc_sg m_gen_sg m_nom_pl m_acc_pl m_gen_pl
@@ -41,6 +62,18 @@ def _case_block(m: str, f: str, m_acc_pl: str, f_acc_pl: str) -> list[list[str]]
     )
 
 
+# Closed case layer (grammar.tex): theme o/u/e, acc.pl keeps the theme vowel.
+CLOSED_NOUN_THEMES = ("o", "u", "e")
+
+
+def closed_noun_blocks() -> dict[str, list[list[str]]]:
+    """Spec table on each theme. Adjectives use the same cells."""
+    return {
+        theme: _case_block(theme, "a", theme + "s", "as")
+        for theme in CLOSED_NOUN_THEMES
+    }
+
+
 NOUN_TEMPLATES: dict[str, list[list[str]]] = {
     "es": _case_block("o", "a", "os", "as"),
     "pt": _case_block("o", "a", "os", "as"),
@@ -58,23 +91,25 @@ NOUN_TEMPLATES: dict[str, list[list[str]]] = {
     "lij": _case_block("o", "a", "os", "as"),
     "fur": _case_block("i", "e", "s", "is"),
     "eml": _case_block("o", "a", "os", "as"),
+    "rgn": _case_block("o", "a", "os", "as"),
     "lld": _case_block("e", "a", "es", "es"),
     "ist": _case_block("o", "a", "os", "as"),
+    "co": _case_block("u", "a", "i", "e"),
     "ca": _case_block("e", "a", "s", "es"),
     "oc": _case_block("e", "a", "s", "es"),
     "gsc": _case_block("e", "a", "s", "es"),
     "fr": _case_block("e", "a", "s", "s"),
     "wa": _case_block("e", "a", "s", "s"),
     "pcd": _case_block("e", "a", "s", "s"),
-    "nrm": _case_block("e", "a", "s", "s"),
+    "nrf": _case_block("e", "a", "s", "s"),
     "frp": _case_block("o", "a", "s", "s"),
     "glw": _case_block("e", "a", "s", "s"),
     "ro": _case_block("u", "a", "i", "e"),
     "rup": _case_block("u", "a", "i", "e"),
     "ruo": _case_block("u", "a", "i", "e"),
+    "ruq": _case_block("u", "a", "i", "e"),
     "sc": _case_block("u", "a", "os", "as"),
     "rm": _case_block("el", "a", "s", "s"),
-    "la": _case_block("us", "a", "os", "as"),
     "dlm": _case_block("o", "a", "os", "as"),
 }
 
@@ -99,23 +134,25 @@ PERSONS: dict[str, tuple[str, ...]] = {
     "lij": ("o", "amo", "i", "ae", "a", "an"),
     "fur": ("i", "in", "is", "is", "e", "in"),
     "eml": ("o", "em", "i", "iv", "a", "en"),
+    "rgn": ("a", "en", "e", "i", "a", "a"),           # Romagnol 1sg -a, 1pl -en, 3sg=3pl
     "lld": ("e", "on", "es", "eis", "a", "on"),
     "ist": ("o", "emo", "i", "e", "a", "a"),
+    "co": ("u", "emu", "i", "ate", "a", "anu"),        # Corsican 1pl -emu vs Italian -amo
     "ca": ("o", "em", "es", "eu", "a", "en"),
     "oc": ("i", "am", "as", "atz", "a", "an"),         # Occitan 1sg -i, 2pl -atz
     "gsc": ("i", "am", "as", "atz", "a", "an"),
     "fr": ("e", "on", "es", "ez", "e", "ent"),
     "wa": ("e", "ans", "es", "oz", "e", "nut"),        # Walloon 2pl -oz, 3pl -nut
     "pcd": ("e", "ons", "es", "ez", "e", "tte"),
-    "nrm": ("e", "ons", "es", "ez", "e", "ent"),
+    "nrf": ("e", "ons", "es", "ez", "e", "ent"),
     "frp": ("o", "ens", "as", "ed", "e", "ont"),
     "glw": ("e", "ons", "es", "ez", "e", "ent"),
     "ro": ("u", "em", "i", "ats", "e", "u"),
     "rup": ("u", "am", "i", "ats", "e", "u"),
     "ruo": ("u", "em", "i", "ets", "e", "u"),
+    "ruq": ("u", "um", "i", "ats", "a", "u"),          # Megleno 1pl -um
     "sc": ("o", "amus", "as", "ades", "at", "ant"),    # Sardinian 3sg -at
     "rm": ("el", "ein", "as", "eis", "a", "an"),       # Romansh 1sg -el
-    "la": ("o", "mus", "s", "tis", "t", "nt"),         # Latin
     "dlm": ("o", "mo", "s", "te", "a", "nu"),
 }
 
@@ -126,13 +163,15 @@ _THEMES: dict[str, tuple[str, str, str]] = {
     "lad": ("i", "ra", "e"), "mwl": ("i", "ra", "e"),
     "it": ("e", "re", "i"), "scn": ("e", "ri", "i"), "vec": ("e", "ra", "i"),
     "lmo": ("e", "ra", "i"), "pms": ("e", "ra", "e"), "lij": ("e", "re", "i"),
-    "fur": ("e", "ar", "i"), "eml": ("e", "ra", "i"), "lld": ("e", "ra", "e"),
-    "ist": ("e", "ra", "i"),
+    "fur": ("e", "ar", "i"), "eml": ("e", "ra", "i"), "rgn": ("e", "ra", "i"),
+    "lld": ("e", "ra", "e"),
+    "ist": ("e", "ra", "i"), "co": ("e", "re", "i"),
     "ca": ("i", "re", "i"), "oc": ("e", "ra", "e"), "gsc": ("e", "ra", "e"),
     "fr": ("e", "ra", "i"), "wa": ("e", "ra", "i"), "pcd": ("e", "ra", "i"),
-    "nrm": ("e", "ra", "i"), "frp": ("e", "ra", "e"), "glw": ("e", "ra", "i"),
+    "nrf": ("e", "ra", "i"), "frp": ("e", "ra", "e"), "glw": ("e", "ra", "i"),
     "ro": ("i", "re", "e"), "rup": ("i", "re", "e"), "ruo": ("i", "re", "e"),
-    "sc": ("e", "ai", "e"), "rm": ("e", "ar", "e"), "la": ("ba", "bi", "a"),
+    "ruq": ("i", "re", "e"),
+    "sc": ("e", "ai", "e"), "rm": ("e", "ar", "e"),
     "dlm": ("e", "ra", "i"),
 }
 

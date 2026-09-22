@@ -1,6 +1,6 @@
 use clap::Parser;
-use cyberlatin_cli::{
-    compute_energy, format_output, generate_legal_endings, init_genome,
+use vulgultra_cli::{
+    compute_energy, format_output, init_genome,
     mutate_in_place, undo_mutation,
     phonemes_to_ortho, verb_slots, PipelineInput, EnergyCache,
     NOUN_SLOTS, ADJ_SLOTS,
@@ -13,9 +13,9 @@ use std::fs;
 
 #[derive(Parser)]
 #[command(
-    name = "lacyo",
+    name = "vulgultra",
     version = "2.0",
-    about = "Lacyo — Simulated Annealing optimizer for a computationally designed fusional language"
+    about = "Vulgultra — Simulated Annealing optimizer for a computationally designed fusional language"
 )]
 struct Cli {
     /// Path to candidates JSON (output from Python pipeline)
@@ -23,23 +23,23 @@ struct Cli {
     input: String,
 
     /// Output JSON path
-    #[arg(short, long, default_value = "data/lacyo_lexicon.json")]
+    #[arg(short, long, default_value = "data/vulgultra_lexicon.json")]
     output: String,
 
-    /// Max SA iterations
-    #[arg(short = 'n', long, default_value_t = 2_000_000)]
+    /// Max SA iterations. Default reaches min-temp from T0.
+    #[arg(short = 'n', long, default_value_t = 500_000)]
     iterations: u64,
 
-    /// Initial temperature
-    #[arg(long, default_value_t = 10_000.0)]
+    /// Initial temperature. One extra phoneme (Δ=40) is an uphill move from here.
+    #[arg(long, default_value_t = 80.0)]
     temp: f64,
 
-    /// Cooling rate
-    #[arg(long, default_value_t = 0.999_997)]
+    /// Cooling per step. 80 → 0.05 over 500_000 steps.
+    #[arg(long, default_value_t = 0.9999852445)]
     cooling: f64,
 
-    /// Minimum temperature
-    #[arg(long, default_value_t = 0.01)]
+    /// Minimum temperature. Below this, losing one lect (Δ=1) is refused.
+    #[arg(long, default_value_t = 0.05)]
     min_temp: f64,
 
     /// Random seed
@@ -59,16 +59,22 @@ fn main() {
 
     println!("  {} concepts loaded", input.concepts.len());
 
-    // Generate legal endings pool
-    let legal_endings = generate_legal_endings();
-    println!("  {} legal 1-syllable endings in pool", legal_endings.len());
-
-    // Init RNG, genome, candidate DB
+    // Init RNG, genome, candidate DB. Endings are enumerated; SA moves roots only.
     let mut rng = StdRng::seed_from_u64(cli.seed);
-    let (mut genome, db) = init_genome(&input, &legal_endings, &mut rng);
+    let (mut genome, db) = init_genome(&input)
+        .unwrap_or_else(|e| { eprintln!("{e}"); std::process::exit(2); });
     let mut cache = EnergyCache::from_genome(&genome, &db);
     let mut energy = cache.energy();
     let initial_energy = energy;
+    let (init_syl, init_phi, init_lects, init_gap, _) = cache.tiers();
+    println!(
+        "  Endings: noun theme {} / verb {}",
+        genome.noun_theme, genome.verb_lect
+    );
+    println!(
+        "  INIT σ={} |Φ|={} lects={} gap={:.3} E={:.1}",
+        init_syl, init_phi, init_lects, init_gap, initial_energy
+    );
 
     // Keep track of best state
     let mut best_genome = genome.clone();
@@ -89,7 +95,10 @@ fn main() {
 
     let mut temp = cli.temp;
     let mut accepted = 0u64;
+    let mut uphill_seen = 0u64;
+    let mut uphill_accepted = 0u64;
     let mut iterations = 0u64;
+    let (mut best_syl, mut best_phi, mut best_lects, mut best_gap, _) = cache.tiers();
 
     for it in 0..cli.iterations {
         if temp < cli.min_temp {
@@ -97,22 +106,30 @@ fn main() {
             break;
         }
 
-        // Mutate in place, get undo info
-        let undo = mutate_in_place(&mut genome, &db, &mut cache, &legal_endings, &mut rng);
+        let undo = mutate_in_place(&mut genome, &db, &mut cache, &mut rng);
         let new_energy = cache.energy();
         let delta = new_energy - energy;
+        if delta > 0.0 {
+            uphill_seen += 1;
+        }
 
         if delta < 0.0 || rand::Rng::gen::<f64>(&mut rng) < (-delta / temp).exp() {
-            // Accept
             energy = new_energy;
             accepted += 1;
+            if delta > 0.0 {
+                uphill_accepted += 1;
+            }
 
             if energy < best_energy {
                 best_genome = genome.clone();
                 best_energy = energy;
+                let tiers = cache.tiers();
+                best_syl = tiers.0;
+                best_phi = tiers.1;
+                best_lects = tiers.2;
+                best_gap = tiers.3;
             }
         } else {
-            // Reject — undo the mutation
             undo_mutation(&mut genome, &db, &mut cache, undo);
         }
 
@@ -121,13 +138,38 @@ fn main() {
 
         if it % 10000 == 0 {
             pb.set_position(it);
-            pb.set_message(format!("{:.0}", best_energy));
+            let up = if uphill_seen > 0 {
+                uphill_accepted as f64 / uphill_seen as f64 * 100.0
+            } else {
+                0.0
+            };
+            pb.set_message(format!(
+                "σ={} |Φ|={} L={} gap={:.2} E={:.0} uphill={:.1}%",
+                best_syl, best_phi, best_lects, best_gap, best_energy, up
+            ));
         }
     }
 
     pb.set_position(iterations);
     pb.set_message(format!("{:.0}", best_energy));
     pb.finish_with_message(format!("DONE — best energy: {:.0}", best_energy));
+
+    let uphill_rate = if uphill_seen > 0 {
+        uphill_accepted as f64 / uphill_seen as f64 * 100.0
+    } else {
+        0.0
+    };
+    println!(
+        "  BEST σ={} |Φ|={} lects={} gap={:.3} E={:.1}",
+        best_syl, best_phi, best_lects, best_gap, best_energy
+    );
+    println!(
+        "  vs INIT σ={} |Φ|={} lects={} gap={:.3} E={:.1}",
+        init_syl, init_phi, init_lects, init_gap, initial_energy
+    );
+    println!(
+        "  Uphill accept: {uphill_accepted}/{uphill_seen} ({uphill_rate:.2}%)"
+    );
 
     // Final energy breakdown for output
     let breakdown = compute_energy(&best_genome, &db);
@@ -144,16 +186,16 @@ fn main() {
 }
 
 fn print_summary(
-    genome: &cyberlatin_cli::Genome,
-    db: &cyberlatin_cli::CandidateDB,
-    breakdown: &cyberlatin_cli::EnergyBreakdown,
+    genome: &vulgultra_cli::Genome,
+    db: &vulgultra_cli::CandidateDB,
+    breakdown: &vulgultra_cli::EnergyBreakdown,
     iterations: u64,
     accepted: u64,
 ) {
     let n = genome.n_concepts();
 
     println!("\n{}", "═".repeat(70));
-    println!("  LACYO LEXICON — OPTIMIZATION RESULT");
+    println!("  VULGULTRA LEXICON — OPTIMIZATION RESULT");
     println!("{}", "═".repeat(70));
 
     println!("\n  Concepts:       {}", n);
@@ -239,8 +281,18 @@ fn print_summary(
     let mut all_phonemes: std::collections::HashSet<String> = std::collections::HashSet::new();
     for i in 0..n {
         let r = genome.get_root(i, db);
-        for p in &r.lacyo_phonemes {
+        for p in &r.vulgultra_phonemes {
             all_phonemes.insert(p.clone());
+        }
+    }
+    for cls in &genome.noun_endings {
+        for seq in cls {
+            for p in seq { all_phonemes.insert(p.clone()); }
+        }
+    }
+    for cls in &genome.verb_endings {
+        for seq in cls {
+            for p in seq { all_phonemes.insert(p.clone()); }
         }
     }
     let mut inv: Vec<&String> = all_phonemes.iter().collect();

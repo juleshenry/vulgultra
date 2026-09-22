@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Scrapes modern Romance morphemes (prefixes and suffixes) from Wiktionary
-for the core languages Lacyo is built on: French, Spanish, Italian, and Portuguese.
+for the core languages Vulgultra is built on: French, Spanish, Italian, and Portuguese.
 
 Output: data/morphemes/romance_morphemes.json
 """
@@ -19,7 +19,7 @@ import os
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 WIKTIONARY_BASE = "https://en.wiktionary.org"
-USER_AGENT = "CyberLatinBot/1.0 (Educational morpheme research; mailto:research@example.com)"
+USER_AGENT = "VulgultraBot/1.0 (Educational morpheme research; mailto:research@example.com)"
 HEADERS = {"User-Agent": USER_AGENT}
 
 LANGUAGES = {

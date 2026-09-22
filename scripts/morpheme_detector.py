@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Morpheme Detector for Cyber-Latin Hybrid Optimization System
+Morpheme Detector for Vulgultra Hybrid Optimization System
 
 Analyzes words to detect Latin morphemes (prefixes, roots, suffixes) and
 classifies concepts as LOCAL (morpheme-free) or GLOBAL (morpheme-bearing)

@@ -1,9 +1,10 @@
-# Lacyo
+# Vulgultra
 
-A constructed language that **reverses the Vulgar Latin process** and packs
-the result into as few phonemic syllables as the attested Romance record
-allows. Roots are a knapsack (one repaired candidate per concept). Endings
-are a small coupled assignment, solved with simulated annealing.
+*Vulgus* + *ultra*: beyond Vulgar Latin. A constructed language that
+**reverses the Vulgar Latin process** and packs the result into as few
+phonemic syllables as the attested Romance record allows. Roots are a
+knapsack (one repaired candidate per concept). Endings are a small coupled
+assignment, solved with simulated annealing.
 
 Canonical spec: [`docs/grammar/grammar.tex`](docs/grammar/grammar.tex).
 The optimizer must follow that document.
@@ -12,7 +13,7 @@ The optimizer must follow that document.
 
 ```
 Python prep (G2P + repair)  →  JSON candidates  →  Rust SA  →  JSON lexicon
-   lacyo/                       data/              cyberlatin-cli/    data/
+   vulgultra/                       data/              vulgultra-cli/    data/
 ```
 
 Python adapts IPA and **repairs before scoring** (glide formation, identical
@@ -23,12 +24,12 @@ the $\sigma$-optimal slice, so Rust SA is justified there.
 ## Quick Start
 
 ```bash
-.venv/bin/python3 -m lacyo.pipeline prep -n 1000 -o data/candidates.json
+.venv/bin/python3 -m vulgultra.pipeline prep -n 1000 -o data/candidates.json
 
-cd cyberlatin-cli && cargo build --release && cd ..
-./cyberlatin-cli/target/release/cyberlatin-cli \
+cd vulgultra-cli && cargo build --release && cd ..
+./vulgultra-cli/target/release/vulgultra \
     -i data/candidates.json \
-    -o data/lacyo_lexicon.json \
+    -o data/vulgultra_lexicon.json \
     -n 2000000
 ```
 
@@ -37,7 +38,7 @@ cd cyberlatin-cli && cargo build --release && cd ..
 ```
 E = 1000 Σ σ(root)                 # never sold
   +   40 |Φ|                       # 40×23 = 920 < 1000
-  +    1 (N_src − n_lects)         # 34 < 40; σ-and-Φ tie-break
+  +    1 (N_src − n_lects)         # |L|=36 < 40; σ-and-Φ tie-break
   + 0.02 × mean(N_src − support)   # finer than one lect
   +  200 Σ σ(ending)
   + 1e5  · collisions
@@ -45,8 +46,8 @@ E = 1000 Σ σ(root)                 # never sold
   +  500 Σ max(0, 2 − d)
 ```
 
-`N_src = 34`. A thin lect wins a root only on a σ-tie that does not
-enlarge Φ. That is the diversity invariant.
+`N_src = |L| = 36` (daughters only). A thin lect wins a root only on a
+σ-tie that does not enlarge Φ. That is the diversity invariant.
 
 ## Phonotactics (reverse VL)
 
@@ -60,7 +61,7 @@ enlarge Φ. That is the diversity invariant.
 ## Morphology
 
 - **Nouns and adjectives:** gender × case (nom/acc/gen) × number = 12 cells, all 1σ
-- **Verbs:** one lect's person table as a block; every cell clipped to 1σ (`amos` → `mos`)
+- **Verbs:** one stem; each tense is its own 6-person row from one lect (`amos` → `mos`). Tenses may differ.
 - Collision only inside a 6-person row (cross-tense syncretism is Romance-legal)
 - Articles `o/a/os/as` mark definiteness only; case marks role
 - Copula is suppletive (`so / es / e / som / sos / son`)
@@ -68,25 +69,39 @@ enlarge Φ. That is the diversity invariant.
 ## Project structure
 
 ```
-lacyo/                  Python package
+vulgultra/                  Python package
   phonology.py          IPA, repair, syllabify, orthography
   paradigms.py          12-cell case tables, 1σ verb cells
   optimizer.py          Python SA (testing)
   pipeline.py           prep: G2P → repair → discard → JSON
   realize.py            case, gender, articles, copula
 
-cyberlatin-cli/         Rust SA (endings + optional root swaps)
+vulgultra-cli/         Rust SA (endings + optional root swaps)
 docs/grammar/grammar.tex
-docs/eval/34_romance_scorecard.md
+docs/eval/34_romance_scorecard.md   # historical name; run is |L| daughters
 data/words/             per-lect corpora
 xmls/                   Wiktionary / Wikipedia dumps (gitignored)
 ```
 
-## Source lects (34; English is not a source)
+## Source lects
 
-`fr es it pt ca ro gl oc an ast ext lad mwl scn vec lmo pms lij fur eml lld ist wa pcd nrm frp glw gsc la rm sc rup ruo dlm`
+36 Romance daughters, grouped by branch. Latin (`la`) and English (`en`)
+are reserved: they never compete in the knapsack.
 
-Extremaduran is kept (book source). Norman in the code is still `nrm`.
-Swadesh `en` lives in `RESERVED_TABLES` only.
+| Branch | Theme | Lects |
+|---|---|---|
+| Ibero | `o` (`u` in ast/ext) | `es` Spanish, `pt` Portuguese, `gl` Galician, `an` Aragonese, `ast` Asturian, `ext` Extremaduran, `lad` Ladino, `mwl` Mirandese |
+| Occitano | `e` | `oc` Occitan, `ca` Catalan, `gsc` Gascon |
+| Oil | `e` | `fr` French, `wa` Walloon, `pcd` Picard, `nrf` Norman, `glw` Gallo |
+| Arpitan | `o` | `frp` Franco-Provençal |
+| Gallo-Italian | `o` | `lmo` Lombard, `pms` Piedmontese, `lij` Ligurian, `eml` Emilian, `rgn` Romagnol |
+| Italo-Dalmatian | `o` / `u` | `it` Italian, `vec` Venetan, `ist` Istriot, `dlm` Dalmatian (`o`); `scn` Sicilian, `co` Corsican (`u`) |
+| Rhaeto | mixed | `rm` Romansh, `fur` Friulian, `lld` Ladin |
+| Sardinian | `u` | `sc` Sardinian |
+| Eastern | `u` | `ro` Romanian, `rup` Aromanian, `ruo` Istro-Romanian, `ruq` Megleno-Romanian |
+
+Norman is `nrf`. Extremaduran is kept (book source). Empty Swadesh cells are legal; corpus glosses fill them when the match is exact.
+
+Corpus counts: [`docs/corpus.md`](docs/corpus.md). Remaining work: [`TODO.md`](TODO.md).
 
 If you want to grow the thin lects, the [Wikimedia Incubator](https://incubator.wikimedia.org/) takes entries.

@@ -6,7 +6,7 @@ ALL_LANGS = {
     'an': ('Aragonese', 'anwiktionary-latest-pages-articles.xml', False),
     'ast': ('Asturian', 'astwiktionary-latest-stub-articles.xml', False),
     'ca': ('Catalan', 'cawiktionary-latest-pages-articles.xml', False),
-    # Reserved: not a Lacyo source. Kept so the dump can be used later.
+    # Reserved: not a Vulgultra source. Kept so the dump can be used later.
     'en': ('English (reserved, not a source)', 'enwiktionary-latest-pages-articles.xml', False),
     'es': ('Spanish', 'eswiktionary-latest-pages-articles.xml', False),
     'ext': ('Extremaduran', 'data/words/ext_words.json', True),

@@ -203,12 +203,22 @@ def copy_alias(src_code: str, dst_code: str, note: str) -> None:
 
 def report() -> None:
     codes = [
-        "fr", "es", "it", "pt", "ca", "ro", "gl", "oc",
-        "an", "ast", "ext", "lad", "mwl",
-        "scn", "vec", "lmo", "pms", "lij", "fur", "eml", "lld", "ist",
-        "wa", "pcd", "nrm", "frp", "glw", "gsc",
-        "la", "rm", "sc", "rup", "ruo", "dlm",
-        "nrf", "egl", "nap",
+        # Ibero
+        "es", "pt", "gl", "an", "ast", "ext", "lad", "mwl",
+        # Occitano
+        "oc", "ca", "gsc",
+        # Oil / Arpitan
+        "fr", "wa", "pcd", "nrm", "nrf", "glw", "frp",
+        # Gallo-Italian
+        "lmo", "pms", "lij", "eml", "egl", "rgn",
+        # Italo-Dalmatian
+        "it", "scn", "vec", "co", "ist", "dlm", "nap",
+        # Rhaeto / Sardinian
+        "rm", "fur", "lld", "sc",
+        # Eastern
+        "ro", "rup", "ruo", "ruq",
+        # reserved
+        "la",
     ]
     print(f"\n{'code':6} {'entries':>8} {'wikiT':>8} {'ok':6}")
     for c in codes:
@@ -232,7 +242,7 @@ def main() -> None:
     ingest_verbix_ist()
     print("Aliases…")
     copy_alias("egl", "eml", "Emilian Kaikki/Wiktextract uses egl; SOURCE_LANGS is eml")
-    copy_alias("nrf", "nrm", "Norman: prefer nrf; nrm is the SOURCE_LANGS code")
+    copy_alias("nrf", "nrm", "legacy nrm file; SOURCE_LANGS code is nrf")
     report()
 
 

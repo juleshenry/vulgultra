@@ -61,7 +61,7 @@ def create_genesis_state() -> Dict[str, Any]:
     return state
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Cyber-Latin Genesis Generator")
+    parser = argparse.ArgumentParser(description="Vulgultra Genesis Generator")
     parser.add_argument('--out', default='genesis.clatin', help='Output file path')
     args = parser.parse_args()
     
