@@ -1,10 +1,10 @@
 # Vulgultra
 
 *Vulgus* + *ultra*: beyond Vulgar Latin. A constructed language that
-**reverses the Vulgar Latin process** and packs the result into as few
-phonemic syllables as the attested Romance record allows. Roots are a
-knapsack (one repaired candidate per concept). Endings are a small coupled
-assignment, solved with simulated annealing.
+**reverses the Vulgar Latin process** and first takes the shortest legal
+attested forms in a meaning-aligned Romance grid. Simulated annealing then
+chooses among equal-syllable forms to maximize observed phonemic contrasts,
+lect coverage, and reusable cross-lect stems.
 
 Canonical spec: [`docs/grammar/grammar.tex`](docs/grammar/grammar.tex).
 The optimizer must follow that document.
@@ -16,45 +16,46 @@ Python prep (G2P + repair)  →  JSON candidates  →  Rust SA  →  JSON lexico
    vulgultra/                       data/              vulgultra-cli/    data/
 ```
 
-Python adapts IPA and **repairs before scoring** (glide formation, identical
-vowel collapse, last-resort epenthesis; unrepairable forms are discarded).
-Root $\sigma$ is a separable knapsack. $|\Phi|$ and lect-diversity couple
-the $\sigma$-optimal slice, so Rust SA is justified there.
+Python segments IPA with PanPhon and **repairs before scoring** (glide
+formation, identical-vowel collapse, last-resort epenthesis; unrepairable
+forms are discarded). The segment pool is derived from the active Romance
+grid; there is no fixed target-inventory ceiling. The minimum-syllable slice
+is a hard shortlist, so Rust SA cannot buy a shorter word with extra sounds.
 
 ## Quick Start
 
 ```bash
-.venv/bin/python3 -m vulgultra.pipeline prep -n 1000 -o data/candidates.json
-
-cd vulgultra-cli && cargo build --release && cd ..
-./vulgultra-cli/target/release/vulgultra \
-    -i data/candidates.json \
-    -o data/vulgultra_lexicon.json \
-    -n 2000000
+.venv/bin/python3 scripts/run_vulgultra.py --iterations 2000000
 ```
+
+The command also refreshes the phrase report from that exact annealed
+lexicon. An optional five-language Bible lexicon grid can be compiled as
+described in [`docs/bible_grid.md`](docs/bible_grid.md), then passed with
+`--bible-grid data/bible/concept_grid.json`.
 
 ## Energy
 
 ```
 E = 1000 Σ σ(root)                 # never sold
-  +   40 |Φ|                       # 40×23 = 920 < 1000
-  +    1 (N_src − n_lects)         # |L|=36 < 40; σ-and-Φ tie-break
-  + 0.02 × mean(N_src − support)   # finer than one lect
+  −   40 |Φ|                       # maximize observed phones; no numeric cap
+  +    1 (N_src − n_lects)         # after inventory: maximize lect coverage
+  + 0.02 × mean(N_src − support)   # then shared adapted-stem support
   +  200 Σ σ(ending)
   + 1e5  · collisions
   + 2000 · leftover violations
   +  500 Σ max(0, 2 − d)
 ```
 
-`N_src = |L| = 36` (daughters only). A thin lect wins a root only on a
-σ-tie that does not enlarge Φ. That is the diversity invariant.
+`N_src = |L| = 36` (daughters only). `support` counts lects that yield the
+same adapted/degeminated form for a concept; it is a surface cognate proxy,
+not a claim of shared etymology. Every root form must come from the grid.
 
 ## Phonotactics (reverse VL)
 
 - Latin `sC` onsets are legal (undo Western *e*-prothesis)
 - Sonorant + glide (`nj`, `lw`) is a legal onset
 - Any single coda; `CC` if sonorant+C or `s`+stop
-- **Geminates are legal.** Expand `ɛ ɔ` only if 1σ ending rows still collide
+- **Geminates are legal.** IPA vowel qualities remain distinct when they occur
 - Glides `/j w/` are consonants; syllable count = number of vowels
 - Penultimate stress: restoring a 1σ ending puts stress on the stem-final σ
 
@@ -100,7 +101,10 @@ are reserved: they never compete in the knapsack.
 | Sardinian | `u` | `sc` Sardinian |
 | Eastern | `u` | `ro` Romanian, `rup` Aromanian, `ruo` Istro-Romanian, `ruq` Megleno-Romanian |
 
-Norman is `nrf`. Extremaduran is kept (book source). Empty Swadesh cells are legal; corpus glosses fill them when the match is exact.
+Norman is `nrf`. Extremaduran is kept (book source). Empty grid cells stay
+unknown unless a sourced direct/nearest equivalent is supplied. The grid
+defaults to the curated core list and can be extended with the five anchor
+Bible lexicons.
 
 Corpus counts: [`docs/corpus.md`](docs/corpus.md). Remaining work: [`TODO.md`](TODO.md).
 

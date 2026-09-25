@@ -39,12 +39,12 @@ otherwise keeps the short form. It is not a pidgin and not a
 relexification. Latin is the process being reversed, not a competing
 lect.
 
-The packing problem is a knapsack. Each concept is an item. Each
-daughter lect offers at most one candidate stem (after adaptation and
-repair; an empty cell is not a candidate). You pick exactly one.
-Primary cost is phonemic syllables. Inventory $\Phi$ and source
-diversity couple the roots, so simulated annealing is the solver for
-that coupled layer --- never for buying an extra syllable.
+The packing problem begins with a meaning-aligned grid: each concept/sense
+is a row and each daughter lect is a column. A cell may contain several
+attested forms, or remain unknown. Stage one keeps the shortest legal
+syllable count per row. Simulated annealing then chooses only among those
+ties, maximizing the segment inventory observed in the grid before
+optimizing lect coverage and reusable cross-lect stems.
 
 \section{Axioms (priority order)}
 
@@ -62,10 +62,11 @@ that coupled layer --- never for buying an extra syllable.
         Repair may alter a candidate; it may not mint a
         new lexeme. Empty cells are legal: that lect simply does not
         compete for that concept.
-  \item \textbf{Obscure lects only when they qualify.} A thin lect wins
-        a root only on a $\sigma$-tie (never by adding a syllable) and
-        only if it does not enlarge $\Phi$. On that remaining tie,
-        maximize the number of distinct source lects.
+  \item \textbf{Maximize observed contrast on the $\sigma$-slice.}
+        There is no prescribed inventory size. Every selected segment must
+        occur in a candidate form from the active grid. On an inventory
+        tie, maximize source-lect coverage, then cross-lect adapted-stem
+        support. Missing data is not a lexical gap.
   \item \textbf{One-syllable endings.} Every fusional cell is $1\sigma$.
         A $2\sigma$ person form (\texttt{amos}) is clipped to its last
         syllable (\texttt{mos}): that extra $\sigma$ is a theme already
@@ -99,25 +100,24 @@ slices, $\Phi$ and lect-diversity couple the choices:
 
 \[
 \min\sigma \;\prec\;
-\min|\Phi| \;\prec\;
+\max|\Phi| \;\prec\;
 \max|\{\text{source lects}\}| \;\prec\;
-\max\mathrm{mean\ support}.
+\max\mathrm{mean\ same\text{-}stem\ support}.
 \]
 
-Weights encode that order so a lower term cannot buy a higher one.
-$N_{\mathrm{src}}=|L|$ is not a frozen 34: adding a daughter must
-still satisfy the middle inequality.
+The first stage enforces $\min\sigma$ as a hard shortlist. Inside that
+slice, weights encode the coupled tie-breakers. $N_{\mathrm{src}}=|L|$ is
+not a frozen count: adding a daughter updates the coverage term.
 
 \[
-23\,w_{\mathrm{phon}} < w_{\mathrm{syl}},
-\qquad
-|L|\,w_{\mathrm{div}} < w_{\mathrm{phon}},
+|L|\,w_{\mathrm{div}} < |w_{\mathrm{phon}}|,
 \qquad
 \overline{\mathrm{gap}}\,w_{\mathrm{norm}} < w_{\mathrm{div}}.
 \]
 
-With $w_{\mathrm{phon}}=40$ and $w_{\mathrm{div}}=1$, $|L|\le 39$.
-Current $|L|=36$.
+With $w_{\mathrm{phon}}=-40$ and $w_{\mathrm{div}}=1$, one additional
+observed segment outweighs gaining every currently listed lect. There is
+no numeric phoneme ceiling.
 
 Greedy set-cover init (constrained concepts first, reuse $\Phi$, then
 a new lect) is a heuristic for the coupled layers. SA on roots is
@@ -168,20 +168,17 @@ $-i$ from Italian inside one class.
 
 \section{Inventory}
 
-Ceiling: 18 consonants + 5 vowels $=23$. Under a fixed $\sigma$ total,
-minimize $|\Phi|$ globally ($w_{\mathrm{phon}}=40$).
+The root segment inventory $\Phi$ is emergent: it is the union of the IPA
+segments in the selected, grid-attested forms. No closed phoneme list or
+numeric ceiling is imposed. PanPhon segments the transcriptions and supplies
+features used to distinguish vowel nuclei, consonants, sonorants, and
+obstruents for syllabification and phonotactic checks; those feature classes
+are not a prescribed Vulgultra inventory. A conventional spelling map is
+used where available, while other selected segments are written in IPA.
 
-Consonants: $p b t d k g$, $m n$, $f v s z \textipa{S} \textipa{tS}$,
-$l r$, $j w$. Geminates of these are legal (Italo-Romance, Sardinian).
-Do \emph{not} ban gemination to force more vowels.
-
-Vowels: $a e i o u$. If a $1\sigma$ ending row cannot be packed
-without collision, \textbf{then} expand with $\textipa{E}$ $\textipa{O}$
-(spelled \texttt{\`{e}} \texttt{\`{o}}). Reverse VL restored length and
-quality last; gemination is the cheaper contrast.
-
-Glides $j w$ are consonants. A GV or VG sequence is still one syllable
-because there is one nucleus. They are not extra unit phonemes.
+Geminates are legal (including Italo-Romance and Sardinian forms). Glides
+remain non-syllabic. The current morphology ending blocks are a seed set and
+do not cap the root inventory.
 
 \section{Syllable template}
 
@@ -287,7 +284,7 @@ all 41 cells is un-Romance and forces $2\sigma$ endings.
 \begin{equation}
 \begin{aligned}
 E &= 1000\sum_r \sigma(r)
-  + 40\,|\Phi|
+  - 40\,|\Phi|
   + 1\cdot(N_{\mathrm{src}}-|\{\ell_r\}|)
   + 0.02\cdot\overline{\mathrm{gap}} \\
   &\quad + 200\sum_e \sigma(e)
@@ -298,13 +295,15 @@ E &= 1000\sum_r \sigma(r)
 \end{equation}
 
 $N_{\mathrm{src}}=|L|=36$. $|\{\ell_r\}|$ is how many distinct lects own a
-selected root. $\overline{\mathrm{gap}}$ is mean $N_{\mathrm{src}}-\mathrm{support}$.
-One extra syllable ($1000$) beats emptying $\Phi$ ($40\times 23=920$).
-One extra phoneme ($40$) beats using every lect ($1\times 36=36$).
-Diversity never lengthens a word and never adds a phoneme.
+selected root. $\overline{\mathrm{gap}}$ is mean $N_{\mathrm{src}}-\mathrm{support}$,
+where support counts lects yielding the same adapted/degeminated stem for
+that concept. It is a surface-form proxy, not an etymological analysis.
+Syllables cannot be traded: longer candidates are absent from the annealing
+input. Each additional observed segment is rewarded; there is no fixed cap.
 
-Init: set-cover on the min-$\sigma$ slice. SA may swap roots inside
-that slice to shrink $\Phi$ or pick up an unused lect.
+Init: greedy maximum-contrast selection on the min-$\sigma$ slice. SA may
+swap roots inside that slice to add an observed segment, pick up an unused
+lect, or improve shared-stem support.
 
 Endings: each tense row is chosen on its own. The six cells of a row
 stay one lect. Noun theme stays one block.

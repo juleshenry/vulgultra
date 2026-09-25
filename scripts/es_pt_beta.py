@@ -60,6 +60,9 @@ def load_candidates(path: Path) -> dict[str, list[Candidate]]:
                 syllables=int(row["syllables"]),
                 violations=int(row["violations"]),
                 support=int(row.get("support", 1)),
+                evidence=row.get("evidence", ""),
+                relation=row.get("relation", "direct"),
+                morpheme_key=row.get("morpheme_key", ""),
             ))
         if cands:
             out[cid] = cands
@@ -306,7 +309,7 @@ def render_scorecard(
 
     n = len(candidates)
     lines: list[str] = []
-    lines.append(f"# Vulgultra Swadesh — {len(SOURCE_LANGS)} daughter lects")
+    lines.append(f"# Vulgultra concept grid — {len(SOURCE_LANGS)} daughter lects")
     lines.append("")
     lines.append("Lexicón de origen mixto: una forma Vulgultra por concepto, elegida")
     lines.append("entre candidatos meaning-aligned de las hijas Romance, por rama:")
@@ -590,9 +593,9 @@ def policy_stats(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="ES/PT mixed-origin beta scorecard")
-    parser.add_argument("-c", "--candidates", default="data/eval/romance_candidates.json")
-    parser.add_argument("-l", "--lexicon", default="data/eval/romance_lexicon.json")
+    parser = argparse.ArgumentParser(description="Render the selected lexicon and phrase examples")
+    parser.add_argument("-c", "--candidates", default="data/candidates.json")
+    parser.add_argument("-l", "--lexicon", default="data/vulgultra_lexicon.json")
     parser.add_argument("-o", "--output", default="docs/eval/34_romance_scorecard.md")
     parser.add_argument("--init-energy", type=float, default=None,
                         help="Initial energy from Rust SA stdout")
