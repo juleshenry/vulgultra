@@ -15,9 +15,10 @@
 use serde::{Deserialize, Serialize};
 use std::collections::{HashMap, HashSet};
 
-// ── Vulgultra phoneme inventory ceiling (grammar.tex Ch.2) ──────────────────
-// These define the *search space*. The actual inventory is emergent:
-// whichever phonemes the optimizer's selected roots use = the inventory.
+// ── Seed material for morphology-ending templates ───────────────────────────
+// Root candidates carry their corpus-derived IPA segments as strings. This
+// small table is only the current ending-template vocabulary, not a cap on
+// the emergent root phoneme inventory.
 
 pub const VOWELS: &[&str] = &["a", "e", "i", "o", "u"];
 
@@ -54,7 +55,7 @@ pub fn ipa_to_ortho(phoneme: &str) -> &str {
         "l" => "l", "r" => "r",
         "j" => "y", "w" => "w",
         "a" => "a", "e" => "e", "i" => "i", "o" => "o", "u" => "u",
-        _ => "?",
+        other => other,
     }
 }
 
@@ -279,6 +280,12 @@ pub struct CandidateData {
     pub violations: u32,
     #[serde(default = "default_support")]
     pub support: u32,
+    #[serde(default)]
+    pub morpheme_key: String,
+    #[serde(default)]
+    pub evidence: String,
+    #[serde(default)]
+    pub relation: String,
 }
 
 fn default_support() -> u32 {
@@ -525,12 +532,13 @@ impl Genome {
 
 // ── Energy weights (grammar.tex Ch.4) ───────────────────────────────────
 
-// Lexicographic: 23*W_PHON < W_SYL, |L|*W_DIV < W_PHON, mean-support*W_NORM < W_DIV.
-// |L| = SOURCE_LANGS (daughters only). Keep in lockstep with romance_swadesh.py.
+// Root syllables are hard-shortlisted in Python. Among those forms, reward
+// every additional observed phoneme, then lect coverage, then shared-morpheme
+// support. |L| is the number of gridded daughter lects.
 pub const W_SYL: f64  = 1000.0;
-pub const W_PHON: f64 = 40.0;     // global min |Φ|; 40*23 = 920 < 1000
-pub const W_DIV: f64  = 1.0;      // σ-and-Φ tie: max distinct source lects
-pub const W_NORM: f64 = 0.02;     // *mean* support gap (finer than one lect)
+pub const W_PHON: f64 = -40.0;    // maximize the observed |Φ|; no numeric ceiling
+pub const W_DIV: f64  = 1.0;      // phoneme tie: max distinct source lects
+pub const W_NORM: f64 = 0.02;     // mean shared-morpheme support gap
 pub const N_SOURCES: f64 = 36.0;
 pub const W_END: f64  = 200.0;
 pub const W_COLL: f64 = 100_000.0;
@@ -885,7 +893,7 @@ fn greedy_root_selections(db: &CandidateDB) -> Vec<usize> {
             let c = &db.by_index[i][*j];
             let new_ph = c.vulgultra_phonemes.iter().filter(|p| !used_phon.contains(*p)).count();
             let new_lang: u8 = if used_lang.contains(&c.source_lang) { 1 } else { 0 };
-            (new_ph, new_lang, std::cmp::Reverse(c.support), c.vulgultra_phonemes.len(), c.source_lang.clone())
+            (std::cmp::Reverse(new_ph), new_lang, std::cmp::Reverse(c.support), c.vulgultra_phonemes.len(), c.source_lang.clone())
         }).unwrap_or(0);
         selections[i] = best_j;
         let c = &db.by_index[i][best_j];
@@ -925,7 +933,7 @@ fn row_score(
     phonemes: &HashSet<String>,
     used_lects: &[String],
     lang: &str,
-) -> (u64, u64, u32, usize, u8, String) {
+) -> (u64, u64, u32, std::cmp::Reverse<usize>, u8, String) {
     let collisions = row_pair_collisions(row);
     let violations: u64 = row.iter().map(|cell| count_violations(cell) as u64).sum();
     let mut dist = 0u32;
@@ -945,7 +953,7 @@ fn row_score(
     }
     let new_ph = fresh.iter().filter(|p| !phonemes.contains(*p)).count();
     let already: u8 = if used_lects.iter().any(|l| l == lang) { 1 } else { 0 };
-    (collisions, violations, dist, new_ph, already, lang.to_string())
+    (collisions, violations, dist, std::cmp::Reverse(new_ph), already, lang.to_string())
 }
 
 /// Each finite tense is the lect that wins that row. Non-finite tail is shared.
@@ -964,7 +972,7 @@ fn assemble_verb_rows(
     let mut cells: Vec<Vec<String>> = Vec::new();
     for (r, name) in FINITE_ROW_NAMES.iter().enumerate() {
         let start = r * 6;
-        let mut best: Option<(u64, u64, u32, usize, u8, String)> = None;
+        let mut best: Option<(u64, u64, u32, std::cmp::Reverse<usize>, u8, String)> = None;
         let mut best_row: Vec<Vec<String>> = Vec::new();
         for lang in &langs {
             let block = &catalog.verb_blocks[*lang];
@@ -1178,6 +1186,10 @@ pub struct RootOutput {
     pub source_word: String,
     pub syllables: u32,
     pub violations: u32,
+    pub morpheme_key: String,
+    pub morpheme_support: u32,
+    pub evidence: String,
+    pub relation: String,
 }
 
 pub fn format_output(
@@ -1203,6 +1215,10 @@ pub fn format_output(
             source_word: r.source_word.clone(),
             syllables: r.syllables,
             violations: r.violations,
+            morpheme_key: r.morpheme_key.clone(),
+            morpheme_support: r.support,
+            evidence: r.evidence.clone(),
+            relation: r.relation.clone(),
         });
     }
 
@@ -1339,6 +1355,9 @@ mod tests {
             syllables: syl,
             violations: 0,
             support: 1,
+            morpheme_key: String::new(),
+            evidence: String::new(),
+            relation: "direct".into(),
         }
     }
 

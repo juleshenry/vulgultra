@@ -22,7 +22,8 @@ from pathlib import Path
 from vulgultra.phonology import (
     word_to_ipa, ipa_to_vulgultra, count_syllables, count_violations,
     to_orthography, extract_phonemes, PHONEME_INVENTORY, VOWELS,
-    overlay_spelling_contrasts, repair,
+    overlay_spelling_contrasts, repair, tokenize_ipa, configure_inventory,
+    is_vowel,
 )
 from vulgultra.optimizer import (
     Candidate, Genome, SAResult, anneal,
@@ -32,7 +33,9 @@ from vulgultra.optimizer import (
 from vulgultra.romance_swadesh import SOURCE_LANGS
 
 _WORDS_DIR = Path(__file__).resolve().parents[1] / "data" / "words"
+_BIBLE_GRID_PATH = Path(__file__).resolve().parents[1] / "data" / "bible" / "concept_grid.json"
 _GLOSS_INDEX: dict[str, dict[str, list[str]]] = {}
+BIBLE_LANGS = ("fr", "es", "pt", "it", "ro")
 
 
 # ---------------------------------------------------------------------------
@@ -106,12 +109,17 @@ def find_shared_concepts(
     return concepts
 
 
-def gold_concepts(langs: list[str] | None = None) -> dict[str, dict[str, str]]:
+def gold_concepts(
+    langs: list[str] | None = None,
+    bible_grid_path: str | Path | None = None,
+) -> dict[str, dict[str, list[dict[str, str]]]]:
     """
-    Meaning-aligned concepts from the Romance Swadesh gold list.
-    English ids are keys only — never source forms.
-    Empty Swadesh cells are filled from `{code}_words.json` on an exact
-    English gloss match (no sister pad, no clipping).
+    Meaning-aligned Romance concept grid, enriched by an optional Bible lexicon.
+
+    English ids/glosses are labels only — never source forms. Each occupied
+    cell carries one or more forms with evidence and relation metadata. The
+    optional Bible grid can add Biblical concepts and attested alternatives;
+    exact English-gloss matches in per-lect dictionaries only fill empty cells.
     """
     from vulgultra.romance_swadesh import SOURCE_LANGS, concepts as swadesh_concepts
 
@@ -122,27 +130,87 @@ def gold_concepts(langs: list[str] | None = None) -> dict[str, dict[str, str]]:
         if lang not in SOURCE_LANGS:
             raise ValueError(f"Unsupported source language: {lang}")
 
-    out: dict[str, dict[str, str]] = {}
+    out: dict[str, dict[str, list[dict[str, str]]]] = {}
     pos_of: dict[str, str] = {}
+    gloss_of: dict[str, str] = {}
     for row in swadesh_concepts():
         pos_of[row["id"]] = row["pos"]
-        forms: dict[str, str] = {}
+        # Concept ids are stable English keys; Spanish display glosses do not
+        # participate in lexical matching.
+        gloss_of[row["id"]] = row["id"].replace("_", " ")
+        forms: dict[str, list[dict[str, str]]] = {}
         for lang in wanted:
             form = row[lang].strip()
             if form:
-                forms[lang] = form
+                forms[lang] = [{
+                    "form": form,
+                    "evidence": "curated-romance-grid",
+                    "relation": "direct",
+                }]
         if forms:
             out[row["id"]] = forms
-    return overlay_word_glosses(out, wanted, pos_of)
+
+    grid_path = Path(bible_grid_path) if bible_grid_path else _BIBLE_GRID_PATH
+    if grid_path.is_file():
+        _merge_bible_grid(out, pos_of, gloss_of, grid_path, wanted)
+    return overlay_word_glosses(out, wanted, pos_of, gloss_of)
+
+
+def _merge_bible_grid(
+    concepts: dict[str, dict[str, list[dict[str, str]]]],
+    pos_of: dict[str, str],
+    gloss_of: dict[str, str],
+    path: Path,
+    langs: tuple[str, ...],
+) -> None:
+    """Merge human-aligned, per-translation Bible lexicon rows into the grid."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("schema") != "vulgultra.bible-grid.v1":
+        raise ValueError(f"{path}: expected schema vulgultra.bible-grid.v1")
+    rows = data.get("concepts")
+    if not isinstance(rows, list):
+        raise ValueError(f"{path}: concepts must be an array")
+
+    wanted = set(langs)
+    for row in rows:
+        cid = str(row.get("id") or "").strip()
+        if not cid:
+            raise ValueError(f"{path}: concept row has no id")
+        gloss = str(row.get("gloss_en") or row.get("gloss") or cid).strip()
+        pos = str(row.get("pos") or "").strip()
+        gloss_of[cid] = gloss
+        if pos:
+            pos_of[cid] = pos
+        cells = concepts.setdefault(cid, {})
+        for lang, raw_forms in (row.get("forms") or {}).items():
+            if lang not in SOURCE_LANGS:
+                raise ValueError(f"{path}: {lang!r} is not a daughter lect")
+            if lang not in wanted:
+                continue
+            for item in _form_records(raw_forms):
+                form = item["form"].strip()
+                if not form:
+                    continue
+                evidence = item.get("evidence") or "Bible-lexicon"
+                record = {
+                    "form": form,
+                    "evidence": json.dumps(evidence, ensure_ascii=False, sort_keys=True)
+                    if isinstance(evidence, (dict, list)) else str(evidence),
+                    "relation": str(item.get("relation") or "direct"),
+                }
+                if record not in cells.setdefault(lang, []):
+                    cells[lang].append(record)
 
 
 def overlay_word_glosses(
-    concepts: dict[str, dict[str, str]],
+    concepts: dict[str, dict[str, list[dict[str, str]]]],
     langs: tuple[str, ...],
     pos_of: dict[str, str] | None = None,
-) -> dict[str, dict[str, str]]:
+    gloss_of: dict[str, str] | None = None,
+) -> dict[str, dict[str, list[dict[str, str]]]]:
     """Fill empty concept cells from per-lect words.json exact glosses."""
     pos_of = pos_of or {}
+    gloss_of = gloss_of or {}
     filled = 0
     for lang in langs:
         index = _gloss_index(lang)
@@ -151,10 +219,15 @@ def overlay_word_glosses(
         for cid, forms in concepts.items():
             if forms.get(lang):
                 continue
-            lemma = _best_lemma(index, cid, pos_of.get(cid, ""))
-            if lemma:
-                forms[lang] = lemma
-                filled += 1
+            gloss = gloss_of.get(cid, cid)
+            lemmas = _best_lemmas(index, cid, pos_of.get(cid, ""), gloss)
+            if lemmas:
+                forms[lang] = [{
+                    "form": lemma,
+                    "evidence": "exact-English-gloss-lexicon",
+                    "relation": "gloss-equivalent",
+                } for lemma in lemmas]
+                filled += len(lemmas)
     if filled:
         print(f"  corpus gloss overlay: filled {filled} empty cells")
     return concepts
@@ -194,19 +267,56 @@ def _gloss_keys(gloss: str) -> list[str]:
     return [g] if g else []
 
 
-def _best_lemma(index: dict[str, list[str]], cid: str, pos: str = "") -> str:
+def _best_lemmas(
+    index: dict[str, list[str]], cid: str, pos: str = "", gloss: str = "",
+) -> list[str]:
     spaced = cid.replace("_", " ")
-    keys = [cid, spaced]
+    keys = [cid, spaced, gloss.strip().lower()]
     if pos == "verb":
-        keys.extend([f"to {cid}", f"to {spaced}"])
+        keys.extend([f"to {cid}", f"to {spaced}", f"to {gloss.strip().lower()}"])
     hits: list[str] = []
     for k in keys:
         hits.extend(index.get(k, []))
     if not hits:
-        return ""
-    # shortest attested lemma; no clipping
-    hits = sorted(set(hits), key=lambda w: (len(w), w))
-    return hits[0]
+        return []
+    # Keep alternatives: the syllable shortlist, not spelling length, decides.
+    return sorted(set(hits), key=lambda w: (w.casefold(), w))
+
+
+def _form_records(raw: object) -> list[dict[str, str]]:
+    """Normalize a grid cell from a string, object, or list of either."""
+    if isinstance(raw, str):
+        raw_forms: list[object] = [raw]
+    elif isinstance(raw, list):
+        raw_forms = raw
+    elif isinstance(raw, dict):
+        if "form" in raw or "word" in raw:
+            raw_forms = [raw]
+        else:
+            return []
+    else:
+        return []
+
+    out: list[dict[str, str]] = []
+    for value in raw_forms:
+        if isinstance(value, str):
+            record = {"form": value, "evidence": "grid", "relation": "direct"}
+        elif isinstance(value, dict):
+            form = str(value.get("form") or value.get("word") or "").strip()
+            if not form:
+                continue
+            evidence = value.get("evidence") or value.get("source") or "grid"
+            record = {
+                "form": form,
+                "evidence": json.dumps(evidence, ensure_ascii=False, sort_keys=True)
+                if isinstance(evidence, (dict, list)) else str(evidence),
+                "relation": str(value.get("relation") or "direct"),
+            }
+        else:
+            continue
+        if record["form"].strip():
+            out.append(record)
+    return out
 
 
 def _normalize_for_matching(word: str) -> str:
@@ -221,7 +331,7 @@ def _normalize_for_matching(word: str) -> str:
 # ---------------------------------------------------------------------------
 
 def build_candidates(
-    concepts: dict[str, dict[str, str]],
+    concepts: dict[str, dict[str, object]],
 ) -> dict[str, list[Candidate]]:
     """
     Convert concept word lists to Candidate objects.
@@ -229,40 +339,63 @@ def build_candidates(
     """
     all_candidates: dict[str, list[Candidate]] = {}
     errors = 0
+    prepared: list[tuple[str, str, dict[str, str], str, list[str]]] = []
+    observed_segments: set[str] = set()
 
-    for concept_id, lang_words in concepts.items():
+    # Transcribe the complete active grid first. Phoneme indexes and feature
+    # classes are then derived from actual Romance candidate forms, never from
+    # a predeclared target inventory.
+    for concept_id, lang_forms in concepts.items():
+        for lang, raw_forms in lang_forms.items():
+            for record in _form_records(raw_forms):
+                try:
+                    ipa = word_to_ipa(record["form"], lang)
+                    segments = tokenize_ipa(ipa)
+                    if not segments:
+                        continue
+                    prepared.append((concept_id, lang, record, ipa, segments))
+                    observed_segments.update(segments)
+                except Exception:
+                    errors += 1
+
+    configure_inventory(observed_segments)
+
+    for concept_id, lang, record, ipa, segments in prepared:
         cands: list[Candidate] = []
-        for lang, word in lang_words.items():
-            try:
-                ipa = word_to_ipa(word, lang)
-                vulgultra_phonemes = repair(
-                    overlay_spelling_contrasts(word, ipa_to_vulgultra(ipa))
-                )
-
-                if not vulgultra_phonemes:
-                    continue  # empty after adaptation
-
-                viol = count_violations(vulgultra_phonemes)
-                if viol:
-                    continue  # unrepairable — discard, do not score as a death penalty
-
-                cand = Candidate(
-                    concept=concept_id,
-                    source_lang=lang,
-                    source_word=word,
-                    ipa=ipa,
-                    vulgultra_phonemes=vulgultra_phonemes,
-                    orthography=to_orthography(vulgultra_phonemes),
-                    syllables=count_syllables(vulgultra_phonemes),
-                    violations=0,
-                )
-                cands.append(cand)
-            except Exception as e:
-                errors += 1
+        word = record["form"]
+        try:
+            vulgultra_phonemes = repair(
+                overlay_spelling_contrasts(word, ipa_to_vulgultra(ipa))
+            )
+            if not vulgultra_phonemes:
                 continue
+            if count_violations(vulgultra_phonemes):
+                continue
+            cands.append(Candidate(
+                concept=concept_id,
+                source_lang=lang,
+                source_word=word,
+                ipa=ipa,
+                vulgultra_phonemes=vulgultra_phonemes,
+                orthography=to_orthography(vulgultra_phonemes),
+                syllables=count_syllables(vulgultra_phonemes),
+                violations=0,
+                evidence=record.get("evidence", "grid"),
+                relation=record.get("relation", "direct"),
+            ))
+        except Exception:
+            errors += 1
+            continue
+        all_candidates.setdefault(concept_id, []).extend(cands)
 
-        if cands:
-            all_candidates[concept_id] = normalize_morphemes(cands)
+    for concept_id, cands in list(all_candidates.items()):
+        cands = normalize_morphemes(cands)
+        # Stage 1 is a hard operation: only the legal minimum-σ slice is
+        # exported. Stage 2 (SA) can never trade a syllable for inventory.
+        min_syllables = min(c.syllables for c in cands)
+        all_candidates[concept_id] = [
+            c for c in cands if c.syllables == min_syllables
+        ]
 
     if errors:
         print(f"  Warning: {errors} G2P errors skipped")
@@ -274,14 +407,14 @@ def _degeminate(seq: list[str]) -> tuple[str, ...]:
     """Collapse geminate consonants. Vowels stay, so a long vowel is not a geminate."""
     out: list[str] = []
     for p in seq:
-        if out and out[-1] == p and p not in VOWELS:
+        if out and out[-1] == p and not is_vowel(p):
             continue
         out.append(p)
     return tuple(out)
 
 
 def normalize_morphemes(cands: list[Candidate]) -> list[Candidate]:
-    """One repaired candidate per lect.
+    """Attach a reusable adapted-stem/morpheme-support count to each form.
 
     Support counts lects whose repaired form matches exactly, or matches
     after geminate consonants collapse (gato / gatto). Candidates are not
@@ -293,6 +426,7 @@ def normalize_morphemes(cands: list[Candidate]) -> list[Candidate]:
     for key in keys:
         counts[key] += 1
     for c, key in zip(cands, keys):
+        c.morpheme_key = "|".join(key)
         c.support = max(1, counts[key])
     cands.sort(key=lambda c: (c.violations, c.syllables, -c.support, c.source_lang))
     return cands
@@ -320,6 +454,10 @@ def format_genome(result: SAResult) -> dict:
             "source_word": root.source_word,
             "syllables": root.syllables,
             "violations": root.violations,
+            "evidence": root.evidence,
+            "relation": root.relation,
+            "morpheme_key": root.morpheme_key,
+            "morpheme_support": root.support,
         }
 
     # Endings
@@ -443,15 +581,19 @@ def _load_concepts(
     n_words: int,
     langs: list[str],
     concepts_source: str,
-) -> dict[str, dict[str, str]]:
+    bible_grid_path: str | Path | None = None,
+) -> dict[str, dict[str, object]]:
     if "en" in langs:
         raise ValueError("English is not a Vulgultra source language")
 
-    if concepts_source == "swadesh":
-        print(f"\n[1/3] Loading Swadesh gold concepts ({', '.join(langs)})...")
+    if concepts_source in {"grid", "swadesh"}:
+        print(f"\n[1/3] Loading meaning grid ({', '.join(langs)})...")
         t0 = time.time()
-        concepts = gold_concepts(langs)
+        concepts = gold_concepts(langs, bible_grid_path)
         print(f"  {len(concepts)} meaning-aligned concepts")
+        active_bible_grid = Path(bible_grid_path) if bible_grid_path else _BIBLE_GRID_PATH
+        if active_bible_grid.is_file():
+            print(f"  Bible lexicon grid: {active_bible_grid}")
         print(f"  done in {time.time()-t0:.1f}s")
         return concepts
 
@@ -477,7 +619,8 @@ def run_pipeline(
     output_path: str = "data/vulgultra_lexicon.json",
     seed: int = 42,
     langs: list[str] | None = None,
-    concepts_source: str = "wordfreq",
+    concepts_source: str = "grid",
+    bible_grid_path: str | Path | None = None,
 ):
     """Run the complete Vulgultra E2E pipeline."""
 
@@ -486,7 +629,8 @@ def run_pipeline(
     print("  VULGULTRA E2E PIPELINE")
     print("=" * 70)
 
-    concepts = _load_concepts(n_words, langs, concepts_source)
+    concepts = _load_concepts(n_words, langs, concepts_source, bible_grid_path)
+    write_concept_grid(concepts, "data/concept_grid.json", bible_grid_path)
     multi = sum(1 for v in concepts.values() if len(v) >= 2)
     print(f"  {len(concepts)} concepts ({multi} shared across 2+ languages)")
 
@@ -558,7 +702,15 @@ def ending_catalog() -> dict:
 
 
 def candidates_to_export(candidates: dict[str, list[Candidate]]) -> dict:
-    export = {"concepts": {}, "ending_catalog": ending_catalog()}
+    export = {
+        "algorithm": {
+            "grid": "meaning-aligned Romance concept grid",
+            "stage_1": "legal minimum-syllable shortlist per concept",
+            "stage_2": "anneal phoneme inventory, lect coverage, and morpheme support",
+        },
+        "concepts": {},
+        "ending_catalog": ending_catalog(),
+    }
     for concept_id, cands in candidates.items():
         export["concepts"][concept_id] = [
             {
@@ -571,17 +723,51 @@ def candidates_to_export(candidates: dict[str, list[Candidate]]) -> dict:
                 "syllables": c.syllables,
                 "violations": c.violations,
                 "support": c.support,
+                "morpheme_key": c.morpheme_key,
+                "evidence": c.evidence,
+                "relation": c.relation,
             }
             for c in cands
         ]
     return export
 
 
+def write_concept_grid(
+    concepts: dict[str, dict[str, object]],
+    output_path: str | Path,
+    bible_grid_path: str | Path | None = None,
+) -> None:
+    """Write the auditable aligned grid separately from its σ shortlist."""
+    rows = []
+    for cid, cells in sorted(concepts.items()):
+        forms = {}
+        for lang, raw in sorted(cells.items()):
+            records = _form_records(raw)
+            if records:
+                forms[lang] = records
+        rows.append({"id": cid, "forms": forms})
+    path = Path(output_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({
+        "schema": "vulgultra.concept-grid.v1",
+        "metadata": {
+            "source": "romance_swadesh grid plus optional Bible lexicon grid",
+            "daughter_lects": list(SOURCE_LANGS),
+            "bible_lexicon_languages": list(BIBLE_LANGS),
+            "bible_grid_loaded": Path(bible_grid_path).is_file()
+            if bible_grid_path else _BIBLE_GRID_PATH.is_file(),
+        },
+        "concepts": rows,
+    }, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def run_prep(
     n_words: int = 1000,
     output_path: str = "data/candidates.json",
     langs: list[str] | str | None = None,
-    concepts_source: str = "wordfreq",
+    concepts_source: str = "grid",
+    grid_output_path: str = "data/concept_grid.json",
+    bible_grid_path: str | Path | None = None,
 ):
     """
     Python-only prep stage: get word lists, build candidates, export JSON
@@ -592,7 +778,7 @@ def run_prep(
     print("  VULGULTRA PREP — Python G2P Pipeline")
     print("=" * 70)
 
-    concepts = _load_concepts(n_words, langs, concepts_source)
+    concepts = _load_concepts(n_words, langs, concepts_source, bible_grid_path)
     multi = sum(1 for v in concepts.values() if len(v) >= 2)
     print(f"  {len(concepts)} concepts ({multi} with 2+ language forms)")
 
@@ -605,6 +791,7 @@ def run_prep(
     print(f"  {legal}/{total_cands} candidates are phonotactically legal")
     print(f"  done in {time.time()-t0:.1f}s")
 
+    write_concept_grid(concepts, grid_output_path, bible_grid_path)
     export = candidates_to_export(candidates)
     out_path = Path(output_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -629,9 +816,13 @@ if __name__ == "__main__":
                         help="Output candidates JSON path")
     prep_p.add_argument("--langs", type=str, default=",".join(LANGUAGES),
                         help="Comma-separated source languages (no English)")
-    prep_p.add_argument("--concepts", type=str, default="wordfreq",
-                        choices=["wordfreq", "swadesh"],
-                        help="Concept source: wordfreq (orthographic) or swadesh (meaning-aligned)")
+    prep_p.add_argument("--concepts", type=str, default="grid",
+                        choices=["grid", "swadesh", "wordfreq"],
+                        help="Default grid is meaning-aligned; wordfreq is exploratory only")
+    prep_p.add_argument("--grid-output", type=str, default="data/concept_grid.json",
+                        help="Write the full aligned grid before minimum-σ filtering")
+    prep_p.add_argument("--bible-grid", type=str, default=None,
+                        help="Optional Bible lexicon grid; default data/bible/concept_grid.json")
 
     # run subcommand — full Python pipeline (slower, for testing)
     run_p = sub.add_parser("run", help="Full Python pipeline (slow, for testing)")
@@ -645,9 +836,11 @@ if __name__ == "__main__":
                        help="Random seed")
     run_p.add_argument("--langs", type=str, default=",".join(LANGUAGES),
                         help="Comma-separated source languages (no English)")
-    run_p.add_argument("--concepts", type=str, default="wordfreq",
-                        choices=["wordfreq", "swadesh"],
-                        help="Concept source: wordfreq (orthographic) or swadesh (meaning-aligned)")
+    run_p.add_argument("--concepts", type=str, default="grid",
+                       choices=["grid", "swadesh", "wordfreq"],
+                       help="Default grid is meaning-aligned; wordfreq is exploratory only")
+    run_p.add_argument("--bible-grid", type=str, default=None,
+                       help="Optional Bible lexicon grid; default data/bible/concept_grid.json")
 
     args = parser.parse_args()
 
@@ -657,6 +850,8 @@ if __name__ == "__main__":
             output_path=args.output,
             langs=args.langs,
             concepts_source=args.concepts,
+            grid_output_path=args.grid_output,
+            bible_grid_path=args.bible_grid,
         )
     elif args.command == "run":
         run_pipeline(
@@ -666,6 +861,7 @@ if __name__ == "__main__":
             seed=args.seed,
             langs=_parse_langs(args.langs),
             concepts_source=args.concepts,
+            bible_grid_path=args.bible_grid,
         )
     else:
         parser.print_help()

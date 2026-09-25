@@ -33,22 +33,20 @@ from vulgultra.paradigms import (
 # Energy weights (grammar.tex Table 4.1)
 # ---------------------------------------------------------------------------
 
-# Lexicographic invariants (no lower term may buy a higher one):
-#   23 * W_PHON < W_SYL          extra syllable > emptying the inventory
-#   |L| * W_DIV  < W_PHON        extra phoneme  > using every lect
-#   mean support gap * W_NORM < W_DIV
+# Root syllable minima are applied as a hard shortlist before annealing.
+# Inside that slice the objective maximizes attested phoneme contrasts, then
+# source-lect coverage, then cross-lect cognate-morpheme support.
 W_SYL  = 1000
-W_PHON = 40        # global min |Φ|; 40*23 = 920 < 1000
-W_DIV  = 1         # σ-and-Φ tie: max distinct source lects; |L| < 40
-W_NORM = 0.02      # applied to *mean* support gap (< 1 lect of diversity)
+W_PHON = -40       # maximize |Φ|, bounded by the attested 23-phoneme inventory
+W_DIV  = 1          # after |Φ|: maximize distinct source lects; |L| < 40
+W_NORM = 0.02       # after lect coverage: minimize mean cognate-morpheme support gap
 W_END  = 200
 W_COLL = 100_000
 W_TACT = 2000
 W_DIST = 500
 DIST_THRESHOLD = 2
 N_SOURCES = len(SOURCE_LANGS)
-PHONEME_CEILING = 23
-if W_DIV * N_SOURCES >= W_PHON:
+if W_DIV * N_SOURCES >= abs(W_PHON):
     raise ValueError(f"|L|={N_SOURCES} breaks |L|*W_DIV < W_PHON")
 
 
@@ -68,6 +66,9 @@ class Candidate:
     syllables: int
     violations: int
     support: int = 1  # how many source forms this stem covers
+    evidence: str = ""
+    relation: str = "direct"
+    morpheme_key: str = ""
 
     @property
     def is_legal(self) -> bool:
@@ -303,10 +304,10 @@ def _sigma_slice(cands: list[Candidate]) -> list[tuple[int, Candidate]]:
 
 
 def greedy_root_selections(candidates: dict[str, list[Candidate]]) -> dict[str, int]:
-    """Min σ, then fewest new phonemes, then a new lect, then support.
+    """Min σ shortlist, then most new phonemes, a new lect, then morpheme support.
 
-    Inventory and diversity couple concepts, so this is a set-cover
-    heuristic, not the exact global min — SA can still improve |Φ| / lects.
+    Inventory and diversity couple concepts, so this is a set-cover heuristic;
+    SA can still improve phoneme inventory, lect coverage, and support globally.
     """
     items: list[tuple[int, str, list[tuple[int, Candidate]]]] = []
     for concept, cands in candidates.items():
@@ -322,7 +323,7 @@ def greedy_root_selections(candidates: dict[str, list[Candidate]]) -> dict[str, 
             _i, c = ic
             new_ph = sum(1 for p in extract_phonemes(c.vulgultra_phonemes) if p not in used_ph)
             new_lang = 1 if c.source_lang in used_lang else 0
-            return (new_ph, new_lang, -c.support, len(c.vulgultra_phonemes), c.source_lang)
+            return (-new_ph, new_lang, -c.support, len(c.vulgultra_phonemes), c.source_lang)
 
         idx, c = min(sl, key=key)
         selections[concept] = idx
@@ -342,7 +343,7 @@ FINITE_ROW_NAMES = ("prs", "pst", "fut", "subj", "theme_i", "theme_a")
 
 
 def _row_score(row: list[list[str]], phonemes: set[str], used_lects: list[str], lang: str) -> tuple:
-    """Collisions, violations, distance, new phonemes, then an unused lect."""
+    """Collisions, violations, distance, new phonemes (max), then unused lect."""
     seqs = [tuple(cell) for cell in row]
     collisions = _pairs_equal(seqs)
     violations = sum(count_violations(cell) for cell in row)
@@ -357,7 +358,7 @@ def _row_score(row: list[list[str]], phonemes: set[str], used_lects: list[str], 
         fresh.update(extract_phonemes(cell))
     new_ph = len(fresh - phonemes)
     already = 1 if lang in used_lects else 0
-    return (collisions, violations, dist, new_ph, already, lang)
+    return (collisions, violations, dist, -new_ph, already, lang)
 
 
 def assemble_verb_rows(phonemes: set[str]) -> tuple[list[list[str]], str]:

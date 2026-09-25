@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import re
 import functools
+import unicodedata
 from typing import Optional
 
 import epitran
@@ -16,37 +17,85 @@ import panphon
 from panphon.featuretable import FeatureTable
 
 # ---------------------------------------------------------------------------
-# Vulgultra phoneme inventory (grammar.tex Ch.2)
+# Corpus-derived phone inventory
 # ---------------------------------------------------------------------------
 
-CONSONANTS: set[str] = {
-    "p", "b", "t", "d", "k", "ɡ",       # plosives
-    "m", "n",                             # nasals
-    "f", "v", "s", "z", "ʃ",             # fricatives
-    "t͡ʃ",                                # affricate (single phoneme!)
-    "l",                                  # lateral
-    "r",                                  # tap/trill
-    "j", "w",                             # approximants / glides
-}
-
-VOWELS: set[str] = {"a", "e", "i", "o", "u"}
-
-PHONEME_INVENTORY: set[str] = CONSONANTS | VOWELS
-
-# Onset-2 position: liquids and glides (also after a sonorant: /nj/, /lw/)
-ONSET2: set[str] = {"l", "r", "j", "w"}
-
-# Obstruents, including postalveolar (needed for /ʃt/, /t͡ʃr/)
-OBSTRUENTS: set[str] = {"p", "b", "t", "d", "k", "ɡ", "f", "v", "s", "z", "ʃ", "t͡ʃ"}
-S_LIKE: set[str] = {"s", "z", "ʃ"}
-
-# Legal codas — any single consonant. CC: sonorant+C or s/ʃ + stop (Latin est, port).
+# These mutable sets are populated from IPA transcriptions of the forms in the
+# active grid. They are working indexes, not a predefined Vulgultra inventory.
+CONSONANTS: set[str] = set()
+VOWELS: set[str] = set()
+PHONEME_INVENTORY: set[str] = set()
+ONSET2: set[str] = set()
+OBSTRUENTS: set[str] = set()
+S_LIKE: set[str] = set()
+SONORANTS: set[str] = set()
 LEGAL_SINGLE_CODAS: set[str] = CONSONANTS
-SONORANTS: set[str] = {"m", "n", "l", "r"}
 LEGAL_CODAS: set[str] = CONSONANTS
+VOWELS_EXPANDED: set[str] = set()
 
-# Extra mid vowels: only if 1σ ending packing fails (grammar.tex). Not in the ceiling yet.
-VOWELS_EXPANDED: set[str] = {"ɛ", "ɔ"}
+_FEATURES = FeatureTable()
+_FEATURE_INDEX = {name: i for i, name in enumerate(_FEATURES.names)}
+
+
+@functools.lru_cache(maxsize=None)
+def _segment_features(segment: str) -> dict[str, str]:
+    vector = _FEATURES.segment_to_vector(segment)
+    if not vector:
+        return {}
+    return dict(zip(_FEATURES.names, vector))
+
+
+def is_vowel(segment: str) -> bool:
+    """Use PanPhon syllabicity/consonant features, not a hand-set phone list."""
+    features = _segment_features(segment)
+    return features.get("syl") == "+" and features.get("cons") == "-"
+
+
+def is_consonant(segment: str) -> bool:
+    features = _segment_features(segment)
+    return features.get("cons") == "+" or not is_vowel(segment)
+
+
+def _is_sonorant(segment: str) -> bool:
+    return _segment_features(segment).get("son") == "+"
+
+
+def _is_obstruent(segment: str) -> bool:
+    features = _segment_features(segment)
+    return features.get("cons") == "+" and features.get("son") == "-"
+
+
+def _is_s_like(segment: str) -> bool:
+    features = _segment_features(segment)
+    return features.get("strid") == "+" and features.get("cont") == "+"
+
+
+def _is_onset2(segment: str) -> bool:
+    features = _segment_features(segment)
+    return (
+        (features.get("cons") == "-" and features.get("syl") == "-")
+        or features.get("lat") == "+"
+        or (features.get("son") == "+" and features.get("cont") == "+"
+            and features.get("cor") == "+")
+    )
+
+
+def configure_inventory(segments: set[str] | list[str] | tuple[str, ...]) -> None:
+    """Index the segments actually found in the active Romance grid."""
+    observed = set(segments)
+    vowels = {p for p in observed if is_vowel(p)}
+    consonants = observed - vowels
+    for target, values in (
+        (PHONEME_INVENTORY, observed),
+        (VOWELS, vowels),
+        (CONSONANTS, consonants),
+        (SONORANTS, {p for p in consonants if _is_sonorant(p)}),
+        (OBSTRUENTS, {p for p in consonants if _is_obstruent(p)}),
+        (S_LIKE, {p for p in consonants if _is_s_like(p)}),
+        (ONSET2, {p for p in consonants if _is_onset2(p)}),
+    ):
+        target.clear()
+        target.update(values)
 
 # ---------------------------------------------------------------------------
 # Phoneme-to-orthography mapping (grammar.tex Table 2.5)
@@ -65,48 +114,6 @@ IPA_TO_ORTHO: dict[str, str] = {
 ORTHO_TO_IPA: dict[str, str] = {v: k for k, v in IPA_TO_ORTHO.items()}
 
 # ---------------------------------------------------------------------------
-# Phoneme mapping: non-Vulgultra IPA → nearest Vulgultra equivalent (grammar.tex §5.3)
-# ---------------------------------------------------------------------------
-
-PHONEME_MAP: dict[str, str] = {
-    # French uvular → alveolar
-    "ʁ": "r", "ʀ": "r", "ɣ": "r",
-    # Front rounded → back
-    "y": "u", "ø": "o", "œ": "o",
-    # Lax vowels → tense
-    "ɛ": "e", "ɔ": "o", "ɪ": "i", "ʊ": "u",
-    # Schwa / near-open / Romanian close central
-    "ə": "e", "ɐ": "a", "ɨ": "i", "î": "i",
-    # Nasal vowels → V+n (handled in adapt_ipa)
-    "ɑ̃": "an", "ɛ̃": "en", "ɔ̃": "on", "œ̃": "on",
-    "ã": "an", "ẽ": "en", "ĩ": "in", "õ": "on", "ũ": "un",
-    # Open back
-    "ɑ": "a", "æ": "a",
-    # Voiced postalveolar → voiceless (nearest Vulgultra equivalent)
-    "ʒ": "ʃ",
-    # Dental fricatives
-    "θ": "t", "ð": "d",
-    # Palatal nasal/lateral → sequences
-    "ɲ": "nj", "ʎ": "lj",
-    # Glottal
-    "ʔ": "", "h": "",
-    # Labiodental approximant
-    "ʋ": "v",
-    # Palatal approximant (Spanish ll yeísmo)
-    "ʝ": "j",
-    # Voiceless velar fricative (Romanian/Istro-RO h) — not /ks/
-    "x": "k",
-    "χ": "k",
-    # Other affricates
-    "d͡ʒ": "dz", "t͡s": "ts",
-    # Flap
-    "ɾ": "r",
-    # Labial-velar
-    "ɥ": "w",
-    # Long vowels (strip length)
-    "aː": "a", "eː": "e", "iː": "i", "oː": "o", "uː": "u",
-}
-
 # ---------------------------------------------------------------------------
 # G2P engines (lazily initialized)
 # ---------------------------------------------------------------------------
@@ -159,17 +166,6 @@ def word_to_ipa(word: str, lang: str) -> str:
 # IPA → Vulgultra phoneme sequence
 # ---------------------------------------------------------------------------
 
-# Multi-char IPA tokens to recognize BEFORE splitting by character.
-# Order matters: longer tokens first.
-_MULTI_CHAR_IPA = sorted(
-    [p for p in PHONEME_INVENTORY if len(p) > 1] +
-    [p for p in PHONEME_MAP if len(p) > 1],
-    key=len, reverse=True
-)
-
-# Regex for nasal vowel diacritics (combining tilde U+0303)
-_NASAL_RE = re.compile(r"([aeiouyɛɔœøɑ])\u0303")
-
 # Regex for length mark
 _LENGTH_RE = re.compile(r"ː")
 
@@ -182,59 +178,31 @@ _SYLLABLE_BOUNDARY_RE = re.compile(r"[.\-]")
 
 def _normalize_ipa(ipa: str) -> str:
     """Normalize IPA string before tokenization."""
+    ipa = unicodedata.normalize("NFC", ipa)
     # Strip stress marks
     ipa = _STRESS_RE.sub("", ipa)
     # Strip syllable boundaries
     ipa = _SYLLABLE_BOUNDARY_RE.sub("", ipa)
-    # Handle combining tilde (nasal vowels) → V + n
-    ipa = _NASAL_RE.sub(lambda m: PHONEME_MAP.get(m.group(0), m.group(1) + "n"), ipa)
-    # Strip length marks
+    # Strip phonetic length; segment identity and quality remain intact.
     ipa = _LENGTH_RE.sub("", ipa)
     return ipa
 
 
 def tokenize_ipa(ipa: str) -> list[str]:
     """
-    Tokenize an IPA string into a list of IPA segments.
-    Handles multi-character symbols (t͡ʃ, etc.) correctly.
+    Segment IPA with PanPhon's full IPA segment inventory. No Vulgultra
+    phoneme list controls which source segments can enter the candidate pool.
     """
-    ipa = _normalize_ipa(ipa)
-    tokens: list[str] = []
-    i = 0
-    while i < len(ipa):
-        matched = False
-        # Try multi-char tokens longest first
-        for mc in _MULTI_CHAR_IPA:
-            if ipa[i:i+len(mc)] == mc:
-                tokens.append(mc)
-                i += len(mc)
-                matched = True
-                break
-        if not matched:
-            ch = ipa[i]
-            if ch.strip():  # skip whitespace
-                tokens.append(ch)
-            i += 1
-    return tokens
+    return [segment for segment in _FEATURES.segs_safe(_normalize_ipa(ipa)) if segment.strip()]
 
 
 def adapt_to_vulgultra(ipa_tokens: list[str]) -> list[str]:
     """
-    Map a sequence of IPA tokens to Vulgultra phonemes.
-    Non-Vulgultra phonemes are mapped via PHONEME_MAP.
-    Unknown phonemes are dropped.
+    Identity adaptation: candidate segments stay as transcribed. Phonological
+    adaptation/repair may change a sequence, but does not collapse a source
+    segment to a hand-picked target inventory.
     """
-    result: list[str] = []
-    for tok in ipa_tokens:
-        if tok in PHONEME_INVENTORY:
-            result.append(tok)
-        elif tok in PHONEME_MAP:
-            mapped = PHONEME_MAP[tok]
-            if mapped:
-                # mapped could be multi-char like "nj"
-                result.extend(tokenize_ipa(mapped))
-        # else: drop unknown phoneme
-    return result
+    return list(ipa_tokens)
 
 
 def overlay_spelling_contrasts(word: str, phonemes: list[str]) -> list[str]:
@@ -249,7 +217,7 @@ def overlay_spelling_contrasts(word: str, phonemes: list[str]) -> list[str]:
     out = list(phonemes)
     li = 0
     for i, p in enumerate(out):
-        if p not in CONSONANTS:
+        if not is_consonant(p):
             continue
         while li < len(letters) and letters[li] in "aeiou":
             li += 1
@@ -279,8 +247,8 @@ def word_to_vulgultra(word: str, lang: str) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def extract_phonemes(phoneme_seq: list[str]) -> set[str]:
-    """Extract the set of distinct Vulgultra phonemes from a phoneme sequence."""
-    return set(phoneme_seq) & PHONEME_INVENTORY
+    """Return every distinct segment carried by the candidate sequence."""
+    return set(phoneme_seq)
 
 
 # ---------------------------------------------------------------------------
@@ -293,7 +261,7 @@ def count_syllables(phoneme_seq: list[str]) -> int:
     Each vowel nucleus = 1 syllable. Glides /j w/ are consonants, so
     /fwe/ and /aj/ are still 1σ.
     """
-    return max(1, sum(1 for p in phoneme_seq if p in VOWELS))
+    return max(1, sum(1 for p in phoneme_seq if is_vowel(p)))
 
 
 def last_syllable(phoneme_seq: list[str]) -> list[str]:
@@ -308,21 +276,21 @@ def last_syllable(phoneme_seq: list[str]) -> list[str]:
 
 def legal_onset_cluster(c1: str, c2: str) -> bool:
     """Reverse-VL onsets: obstruent+liquid/glide, sonorant+glide, s/ʃ+C."""
-    if c2 in ONSET2 and (c1 in OBSTRUENTS or c1 in SONORANTS or c1 in S_LIKE):
+    if _is_onset2(c2) and (_is_obstruent(c1) or _is_sonorant(c1) or _is_s_like(c1)):
         return True
-    if c1 in S_LIKE and c1 != c2:
+    if _is_s_like(c1) and c1 != c2:
         return True
     return False
 
 
 def legal_onset_triple(c1: str, c2: str, c3: str) -> bool:
-    return c1 in S_LIKE and legal_onset_cluster(c2, c3)
+    return _is_s_like(c1) and legal_onset_cluster(c2, c3)
 
 
 def legal_coda_cluster(c1: str, c2: str) -> bool:
-    if c1 in SONORANTS:
+    if _is_sonorant(c1):
         return True
-    if c1 in S_LIKE and c2 in OBSTRUENTS:
+    if _is_s_like(c1) and _is_obstruent(c2):
         return True
     return False
 
@@ -335,7 +303,7 @@ def syllabify(phoneme_seq: list[str]) -> list[list[str]]:
     if not phoneme_seq:
         return []
 
-    vowel_positions = [i for i, p in enumerate(phoneme_seq) if p in VOWELS]
+    vowel_positions = [i for i, p in enumerate(phoneme_seq) if is_vowel(p)]
     if not vowel_positions:
         return [phoneme_seq]
 
@@ -386,7 +354,7 @@ def syllabify(phoneme_seq: list[str]) -> list[list[str]]:
 
 def _classify_phoneme(p: str) -> str:
     """Classify a phoneme as 'C' (consonant) or 'V' (vowel)."""
-    if p in VOWELS:
+    if is_vowel(p):
         return "V"
     return "C"
 
@@ -446,7 +414,7 @@ def repair(phoneme_seq: list[str]) -> list[str]:
     while i < len(seq):
         a = seq[i]
         b = seq[i + 1] if i + 1 < len(seq) else None
-        if b is not None and a in VOWELS and b in VOWELS:
+        if b is not None and is_vowel(a) and is_vowel(b):
             if a == b:
                 out.append(a)
                 i += 2
@@ -519,8 +487,8 @@ def is_phonotactically_legal(phoneme_seq: list[str]) -> bool:
 # ---------------------------------------------------------------------------
 
 def to_orthography(phoneme_seq: list[str]) -> str:
-    """Convert a Vulgultra phoneme sequence to orthographic form."""
-    return "".join(IPA_TO_ORTHO.get(p, "?") for p in phoneme_seq)
+    """Render known symbols conventionally and preserve new IPA transparently."""
+    return "".join(IPA_TO_ORTHO.get(p, p) for p in phoneme_seq)
 
 
 def from_orthography(ortho: str) -> list[str]:
