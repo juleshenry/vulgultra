@@ -43,8 +43,7 @@ The packing problem begins with a meaning-aligned grid: each concept/sense
 is a row and each daughter lect is a column. A cell may contain several
 attested forms, or remain unknown. Stage one keeps the shortest legal
 syllable count per row. Simulated annealing then chooses only among those
-ties, maximizing the segment inventory observed in the grid before
-optimizing lect coverage and reusable cross-lect stems.
+ties, maximizing the union of IPA segments in the selected roots.
 
 \section{Axioms (priority order)}
 
@@ -62,11 +61,12 @@ optimizing lect coverage and reusable cross-lect stems.
         Repair may alter a candidate; it may not mint a
         new lexeme. Empty cells are legal: that lect simply does not
         compete for that concept.
-  \item \textbf{Maximize observed contrast on the $\sigma$-slice.}
-        There is no prescribed inventory size. Every selected segment must
-        occur in a candidate form from the active grid. On an inventory
-        tie, maximize source-lect coverage, then cross-lect adapted-stem
-        support. Missing data is not a lexical gap.
+  \item \textbf{Maximize root contrast on the $\sigma$-slice.}
+        There is no prescribed inventory size. Every selected root segment must
+        occur in a candidate form from the active grid. Missing data is not
+        a lexical gap. Source spread and morpheme uniformity are not scoring
+        criteria. Endings are selected separately after roots, so productive
+        endings cannot pre-fill the root inventory.
   \item \textbf{One-syllable endings.} Every fusional cell is $1\sigma$.
         A $2\sigma$ person form (\texttt{amos}) is clipped to its last
         syllable (\texttt{mos}): that extra $\sigma$ is a theme already
@@ -96,32 +96,20 @@ candidate from lect $\ell$''.
 
 The $\sigma$-layer \textbf{still has a unique minimum}: independently
 take a legal shortest candidate per concept. Among those $\sigma$-optimal
-slices, $\Phi$ and lect-diversity couple the choices:
+slices, maximize the union of observed segments:
 
 \[
-\min\sigma \;\prec\;
-\max|\Phi| \;\prec\;
-\max|\{\text{source lects}\}| \;\prec\;
-\max\mathrm{mean\ same\text{-}stem\ support}.
+\min\sigma \;\prec\; \max|\Phi_{root}|.
 \]
 
 The first stage enforces $\min\sigma$ as a hard shortlist. Inside that
-slice, weights encode the coupled tie-breakers. $N_{\mathrm{src}}=|L|$ is
-not a frozen count: adding a daughter updates the coverage term.
+slice, the only lexical tie-break is $-|\Phi_{root}|$; each newly observed segment
+lowers the energy by one. There is no numeric phoneme ceiling, lect-coverage
+bonus, or morpheme-uniformity bonus.
 
-\[
-|L|\,w_{\mathrm{div}} < |w_{\mathrm{phon}}|,
-\qquad
-\overline{\mathrm{gap}}\,w_{\mathrm{norm}} < w_{\mathrm{div}}.
-\]
-
-With $w_{\mathrm{phon}}=-40$ and $w_{\mathrm{div}}=1$, one additional
-observed segment outweighs gaining every currently listed lect. There is
-no numeric phoneme ceiling.
-
-Greedy set-cover init (constrained concepts first, reuse $\Phi$, then
-a new lect) is a heuristic for the coupled layers. SA on roots is
-justified again --- only inside the $\sigma$-optimal slice.
+Greedy initialization visits constrained concepts first and prefers a
+candidate that adds the most new segments. Simulated annealing then explores
+the same $\sigma$-optimal slice.
 
 Endings stay coupled (one $1\sigma$ table, distinct cells in a row).
 
@@ -168,17 +156,20 @@ $-i$ from Italian inside one class.
 
 \section{Inventory}
 
-The root segment inventory $\Phi$ is emergent: it is the union of the IPA
-segments in the selected, grid-attested forms. No closed phoneme list or
+The root segment inventory $\Phi_{root}$ is emergent: it is the union of the
+IPA segments in selected, grid-attested roots. No closed phoneme list or
 numeric ceiling is imposed. PanPhon segments the transcriptions and supplies
 features used to distinguish vowel nuclei, consonants, sonorants, and
 obstruents for syllabification and phonotactic checks; those feature classes
 are not a prescribed Vulgultra inventory. A conventional spelling map is
-used where available, while other selected segments are written in IPA.
+used where available, while other segments are shown in explicit IPA brackets.
 
 Geminates are legal (including Italo-Romance and Sardinian forms). Glides
-remain non-syllabic. The current morphology ending blocks are a seed set and
-do not cap the root inventory.
+remain non-syllabic. Inflection may use either attested lect tables or a
+productive \texttt{grid-inventory} block made from legal $V$, $CV$, $VC$,
+and $CVC$ forms over segments observed in the shortlisted root grid. These
+combinations are proposals, not claimed attested morphemes, and do not cap
+the root inventory.
 
 \section{Syllable template}
 
@@ -205,13 +196,13 @@ syllabifier; they get better IPA. Donor G2P is a last resort.
 
 \begin{enumerate}
   \item $iV \to jV$, $uV \to wV$ (acqua $/akkua/ \to /akkwa/$, $2\sigma$).
-  \item Collapse identical vowels (c\^{i}ine $/t͡ʃiine/ \to /t͡ʃine/$).
+  \item Collapse identical vowels (Romanian \emph{cîine} /tS-iine/ $\to$ /tS-ine/).
   \item Last resort: epenthetic $/e/$ in an illegal cluster (adds $\sigma$).
   \item Still illegal $\to$ discard. Never keep it with a $500{,}000$ fine.
 \end{enumerate}
 
-Map $/ʝ/ \to /j/$, Romanian $/x/ \to /k/$ (not $/ks/$),
-$/ɲ ʎ/ \to nj, lj$ (now legal onsets).
+Map the palatal fricative to /j/, Romanian /x/ to /k/ (not /ks/),
+and palatal nasals/laterals to /nj, lj/ (now legal onsets).
 
 \section{Stress}
 
@@ -245,7 +236,7 @@ PL & $-i$ / $-e$  & $-os$ / $-as$ & $-or$ / $-ar$ \\
 
 Acc.sg restores Latin $-m$ as $-n$. Gen.sg $-is/-es$ undoes the VL
 merger that made gen.sg $=$ nom.pl. Acc.pl keeps the $-s$ plural.
-Gen.pl clips $-$\={o}rum / $-$\={a}rum$ to $1\sigma$.
+Gen.pl clips $-\bar{o}rum / -\bar{a}rum$ to $1\sigma$.
 
 Theme vowel $o/u/e$ is picked as a \emph{block} from the source-inventory
 class (Ibero and Gallo-Italian $o$, Sardinian--Eastern $u$, Occitano and
@@ -281,29 +272,36 @@ all 41 cells is un-Romance and forces $2\sigma$ endings.
 \chapter{Energy}
 \label{ch:energy}
 
+During root annealing, only the first term varies:
 \begin{equation}
 \begin{aligned}
-E &= 1000\sum_r \sigma(r)
-  - 40\,|\Phi|
-  + 1\cdot(N_{\mathrm{src}}-|\{\ell_r\}|)
-  + 0.02\cdot\overline{\mathrm{gap}} \\
-  &\quad + 200\sum_e \sigma(e)
+E_{root} &= -|\Phi_{root}| \\
+\end{aligned}
+\end{equation}
+
+After root selection, morphology uses:
+\begin{equation}
+\begin{aligned}
+E_{morph} &= -|\Phi_{root}\cup\Phi_{ending}|
+  + 200\sum_e \sigma(e)
   + 100000\cdot\mathrm{coll}_{\mathrm{row}}
   + 2000\cdot\mathrm{viol}
   + 500\sum_{\mathrm{row}}\max(0,2-d)
 \end{aligned}
 \end{equation}
 
-$N_{\mathrm{src}}=|L|=36$. $|\{\ell_r\}|$ is how many distinct lects own a
-selected root. $\overline{\mathrm{gap}}$ is mean $N_{\mathrm{src}}-\mathrm{support}$,
-where support counts lects yielding the same adapted/degeminated stem for
-that concept. It is a surface-form proxy, not an etymological analysis.
-Syllables cannot be traded: longer candidates are absent from the annealing
-input. Each additional observed segment is rewarded; there is no fixed cap.
+The shortest legal candidate slice is a hard input constraint, so syllables
+cannot be traded against anything else. During root annealing, $\Phi_{root}$
+is the union of segments in selected roots; each additional observed root
+segment lowers energy by one. Endings are fixed while roots anneal. After
+roots are chosen, table selection uses $-|\Phi_{root}\cup\Phi_{ending}|$ with
+the same ending legality, collision, and distance terms, so a table is
+rewarded for contributing new segments without making lexical choices moot.
+There is no fixed cap. Lect and evidence remain available for inspection but
+do not bias lexical selection.
 
 Init: greedy maximum-contrast selection on the min-$\sigma$ slice. SA may
-swap roots inside that slice to add an observed segment, pick up an unused
-lect, or improve shared-stem support.
+swap roots inside that slice only to improve the root segment union.
 
 Endings: each tense row is chosen on its own. The six cells of a row
 stay one lect. Noun theme stays one block.
@@ -319,7 +317,8 @@ roots $0$--$10$ chosen like any other concept.
 \chapter{Pipeline}
 
 Extract $\to$ G2P $\to$ adapt $\to$ \textbf{repair} $\to$ discard
-unrepairable $\to$ knapsack roots $\to$ anneal endings $\to$ inflect.
+unrepairable $\to$ shortlist roots $\to$ enumerate endings $\to$ anneal
+root ties $\to$ inflect.
 Empty Swadesh cells are filled from per-lect \texttt{words.json} only on
 an exact English gloss (no sister pad).
 

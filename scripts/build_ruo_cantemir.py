@@ -17,7 +17,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PDF = ROOT / "Cantemir_Thesis_Final_Draft-converted.pdf"
+PDF = ROOT / "data" / "sources" / "pdf" / "Cantemir_Thesis_Final_Draft-converted.pdf"
 WORDS = ROOT / "data" / "words"
 DEST = WORDS / "ruo_words.json"
 

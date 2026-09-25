@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT / "vendor" / "recursos_es-ext"
-PDF_SRC = ROOT / "oscec-diccionario-castellano-extremec3b1o-ismael-carmona-garcc3ada.pdf"
+PDF_SRC = ROOT / "data" / "sources" / "pdf" / "oscec-diccionario-castellano-extremec3b1o-ismael-carmona-garcc3ada.pdf"
 PDF_TXT = Path("/tmp/ext_dict.txt")
 WIKI = ROOT / "xmls" / "extwiki-latest-pages-articles.xml"
 OUT = ROOT / "data" / "words" / "ext_words.json"

@@ -66,10 +66,10 @@ def main() -> None:
     files = [Path(p) for p in args.files]
     if args.all or not files:
         files = sorted(WORDS.glob("kaikki-*.jsonl"))
-        # plus root-level dlm/rm if present
+        # plus legacy-name source snapshots kept outside generated word tables
         for extra in (
-            ROOT / "kaikki.org-dictionary-Dalmatian.jsonl",
-            ROOT / "kaikki.org-dictionary-Romansh.jsonl",
+            ROOT / "data" / "sources" / "jsonl" / "kaikki.org-dictionary-Dalmatian.jsonl",
+            ROOT / "data" / "sources" / "jsonl" / "kaikki.org-dictionary-Romansh.jsonl",
         ):
             if extra.exists():
                 files.append(extra)

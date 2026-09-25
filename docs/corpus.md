@@ -61,7 +61,7 @@ Reserved (not sources): `la` Latin, `en` English.
 | code | why it stops |
 |---|---|
 | `ist` | Kaikki max. TalkBank CHA zip is auth-gated. |
-| `dlm` | Kaikki max. No Wikipedia. `Il Dalmatico.pdf` has no text layer. |
+| `dlm` | Kaikki max. No Wikipedia. [`data/sources/pdf/Il Dalmatico.pdf`](../data/sources/pdf/Il%20Dalmatico.pdf) has no text layer. |
 | `rgn` | Kaikki max. No Wikipedia. |
 | `ruo` | Cantemir 2020 appendix. No Kaikki/wiki. Do not scrape vlaski-zejanski. |
 | `ruq` | Swadesh appendix + category. No Kaikki/wiki. |
@@ -76,4 +76,5 @@ pms 3023, nrf 1526, pcd 768, mwl 590, egl/eml 152, lij 141, lad 107, frp 83, fur
 
 - Wikipedia dumps `xmls/wiki/`: an fur frp lad lij lld mwl nap pcd pms rm sc vec eml roa_rup co
 - Apertium `vendor/`: arg, spa-arg, ast, spa-ast, oci, oci-spa, srd, ita-srd, scn, mwl, glg, nap, fra-cat (no official fur/lld/vec)
-- Kaikki JSONL `data/words/kaikki-*.jsonl` (gitignored)
+- Kaikki JSONL `data/words/kaikki-*.jsonl` (gitignored), with legacy-name
+  snapshots in `data/sources/jsonl/` (also ignored; see the source manifest)

@@ -4,7 +4,7 @@ Ordered by how well they fit **lexical ingestion** for Vulgultra (not by prestig
 
 | Priority | Source | Format | Ingest? | Status in this repo |
 |---|---|---|---|---|
-| 1 | **Kaikki / Wiktextract** | JSONL | **Yes** — structured lemmas + EN glosses | `kaikki.org-dictionary-Romansh.jsonl` → `data/words/rm_words.json` (~2.3k lemmas) |
+| 1 | **Kaikki / Wiktextract** | JSONL | **Yes** — structured lemmas + EN glosses | [`data/sources/jsonl/kaikki.org-dictionary-Romansh.jsonl`](../data/sources/jsonl/kaikki.org-dictionary-Romansh.jsonl) → `data/words/rm_words.json` (~2.3k lemmas) |
 | 2 | **DRG digitization (Trier / IDRG)** | TEI / XML | **Only if bulk public dump exists** | TEI used internally; **no verified bulk public download**. Online UI: [online.drg.ch](https://online.drg.ch/). Do not scrape. |
 | 3 | **DRG volumes** | PDF / scans | **No** (human reference only) | Per-article/volume PDFs exist (e.g. `online.drg.ch/pdf/DRG_01.pdf`); poor for bulk lexicon |
 | 4 | **Pledari Grond** (via dicziunari pipeline) | JSON exports | **Yes, if you obtain exports legally** | [farscrl/dicziunari](https://github.com/farscrl/dicziunari) ships **scripts only**. Full data **must not** be redistributed from GitHub. Drop publisher exports into `vendor/dicziunari/db/data/` as `pledarigrond_export_json_{idiom}.json` |

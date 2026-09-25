@@ -19,6 +19,11 @@ def main() -> None:
                         help="Comma-separated daughter lect codes; defaults to all 36")
     parser.add_argument("--bible-grid", type=Path, default=None,
                         help="Optional compiled five-language Bible grid")
+    parser.add_argument("--bible-input-dir", type=Path, default=None,
+                        help="Directory containing fr.tsv, es.tsv, pt.tsv, it.tsv, ro.tsv; compile before prep")
+    parser.add_argument("--bible-grid-output", type=Path,
+                        default=Path("data/bible/concept_grid.json"),
+                        help="Compiled Bible grid path when --bible-input-dir is used")
     parser.add_argument("--candidates", type=Path, default=Path("data/candidates.json"))
     parser.add_argument("--grid", type=Path, default=Path("data/concept_grid.json"))
     parser.add_argument("--lexicon", type=Path, default=Path("data/vulgultra_lexicon.json"))
@@ -34,14 +39,28 @@ def main() -> None:
     lexicon = Path(absolute(args.lexicon))
     report = Path(absolute(args.report))
 
+    if args.bible_grid and args.bible_input_dir:
+        parser.error("use --bible-grid or --bible-input-dir, not both")
+
+    bible_grid = Path(absolute(args.bible_grid)) if args.bible_grid else None
+    if args.bible_input_dir:
+        bible_input_dir = Path(absolute(args.bible_input_dir))
+        bible_grid = Path(absolute(args.bible_grid_output))
+        compile_bible = [
+            sys.executable, str(ROOT / "scripts" / "build_bible_grid.py"),
+            "--input-dir", str(bible_input_dir),
+            "--output", str(bible_grid),
+        ]
+        subprocess.run(compile_bible, cwd=ROOT, check=True)
+
     prep = [
         sys.executable, "-m", "vulgultra.pipeline", "prep",
         "--output", str(candidates), "--grid-output", str(grid),
     ]
     if args.langs:
         prep.extend(["--langs", args.langs])
-    if args.bible_grid:
-        prep.extend(["--bible-grid", absolute(args.bible_grid)])
+    if bible_grid:
+        prep.extend(["--bible-grid", str(bible_grid)])
     subprocess.run(prep, cwd=ROOT, check=True)
 
     optimize = [

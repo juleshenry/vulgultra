@@ -8,7 +8,7 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "kaikki.org-dictionary-Dalmatian.jsonl"
+SRC = ROOT / "data" / "sources" / "jsonl" / "kaikki.org-dictionary-Dalmatian.jsonl"
 OUT = ROOT / "data" / "words" / "dlm_words.json"
 
 # English gloss → our Swadesh concept ids (best-effort)

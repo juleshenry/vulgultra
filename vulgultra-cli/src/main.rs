@@ -1,6 +1,6 @@
 use clap::Parser;
 use vulgultra_cli::{
-    compute_energy, format_output, init_genome,
+    compute_energy, enumerate_endings, format_output, init_genome,
     mutate_in_place, undo_mutation,
     phonemes_to_ortho, verb_slots, PipelineInput, EnergyCache,
     NOUN_SLOTS, ADJ_SLOTS,
@@ -30,7 +30,7 @@ struct Cli {
     #[arg(short = 'n', long, default_value_t = 500_000)]
     iterations: u64,
 
-    /// Initial temperature. One extra phoneme (Δ=40) is an uphill move from here.
+    /// Initial temperature. Losing one segment (Δ=1) is an uphill move from here.
     #[arg(long, default_value_t = 80.0)]
     temp: f64,
 
@@ -66,14 +66,14 @@ fn main() {
     let mut cache = EnergyCache::from_genome(&genome, &db);
     let mut energy = cache.energy();
     let initial_energy = energy;
-    let (init_syl, init_phi, init_lects, init_gap, _) = cache.tiers();
+    let (init_syl, init_phi, _) = cache.tiers();
     println!(
         "  Endings: noun theme {} / verb {}",
         genome.noun_theme, genome.verb_lect
     );
     println!(
-        "  INIT σ={} |Φ|={} lects={} gap={:.3} E={:.1}",
-        init_syl, init_phi, init_lects, init_gap, initial_energy
+        "  INIT Σσ={} |Φ_root|={} E={:.1}",
+        init_syl, init_phi, initial_energy
     );
 
     // Keep track of best state
@@ -98,7 +98,7 @@ fn main() {
     let mut uphill_seen = 0u64;
     let mut uphill_accepted = 0u64;
     let mut iterations = 0u64;
-    let (mut best_syl, mut best_phi, mut best_lects, mut best_gap, _) = cache.tiers();
+    let (mut best_syl, mut best_phi, _) = cache.tiers();
 
     for it in 0..cli.iterations {
         if temp < cli.min_temp {
@@ -126,8 +126,6 @@ fn main() {
                 let tiers = cache.tiers();
                 best_syl = tiers.0;
                 best_phi = tiers.1;
-                best_lects = tiers.2;
-                best_gap = tiers.3;
             }
         } else {
             undo_mutation(&mut genome, &db, &mut cache, undo);
@@ -144,11 +142,28 @@ fn main() {
                 0.0
             };
             pb.set_message(format!(
-                "σ={} |Φ|={} L={} gap={:.2} E={:.0} uphill={:.1}%",
-                best_syl, best_phi, best_lects, best_gap, best_energy, up
+                "Σσ={} |Φ|={} E={:.0} uphill={:.1}%",
+                best_syl, best_phi, best_energy, up
             ));
         }
     }
+
+    // Root annealing deliberately scores only the root segment union. Once
+    // its winners are fixed, reselect endings so the final tables contribute
+    // the best legal set of additional grid-observed segments.
+    let catalog = input.ending_catalog.as_ref().expect("catalog checked at init");
+    let (noun, verb, noun_theme, verb_lect) = enumerate_endings(
+        catalog,
+        &best_genome.selections,
+        &best_genome.concept_ids,
+        &db,
+    ).unwrap_or_else(|e| { eprintln!("{e}"); std::process::exit(2); });
+    best_genome.noun_endings = vec![noun.clone()];
+    best_genome.adj_endings = noun;
+    best_genome.verb_endings = vec![verb];
+    best_genome.noun_theme = noun_theme;
+    best_genome.verb_lect = verb_lect;
+    best_energy = compute_energy(&best_genome, &db).total;
 
     pb.set_position(iterations);
     pb.set_message(format!("{:.0}", best_energy));
@@ -160,12 +175,12 @@ fn main() {
         0.0
     };
     println!(
-        "  BEST σ={} |Φ|={} lects={} gap={:.3} E={:.1}",
-        best_syl, best_phi, best_lects, best_gap, best_energy
+        "  BEST Σσ={} |Φ|={} E={:.1}",
+        best_syl, best_phi, best_energy
     );
     println!(
-        "  vs INIT σ={} |Φ|={} lects={} gap={:.3} E={:.1}",
-        init_syl, init_phi, init_lects, init_gap, initial_energy
+        "  vs INIT Σσ={} |Φ_root|={} E={:.1}",
+        init_syl, init_phi, initial_energy
     );
     println!(
         "  Uphill accept: {uphill_accepted}/{uphill_seen} ({uphill_rate:.2}%)"
@@ -204,10 +219,7 @@ fn print_summary(
     println!("  Total energy:   {:.0}", breakdown.total);
 
     println!("\n  Energy breakdown:");
-    println!("    E_root       {:>12.0}", breakdown.e_root);
     println!("    E_phon       {:>12.0}", breakdown.e_phon);
-    println!("    E_div        {:>12.0}", breakdown.e_div);
-    println!("    E_norm       {:>12.1}", breakdown.e_norm);
     println!("    E_end        {:>12.0}", breakdown.e_end);
     println!("    E_coll       {:>12.0}", breakdown.e_coll);
     println!("    E_tact       {:>12.0}", breakdown.e_tact);

@@ -11,24 +11,7 @@ from vulgultra.optimizer import VERB_SLOTS
 from vulgultra.paradigms import PERSONS, VERB_TEMPLATES
 from vulgultra.phonology import count_syllables, from_orthography, to_orthography
 from vulgultra.romance_swadesh import GENDER_PAIRS, concepts as swadesh_concepts
-
-# Closed class: one vowel, gender-marked. Not the Swadesh winner (el/la).
-ARTICLES = {
-    "m_sg": "o",
-    "f_sg": "a",
-    "m_pl": "os",
-    "f_pl": "as",
-}
-
-# Suppletive present of ser/être/essere — 3sg is é, written e.
-COPULA_PRS = {
-    "1sg": "so",
-    "1pl": "som",
-    "2sg": "es",
-    "2pl": "sos",
-    "3sg": "e",
-    "3pl": "son",
-}
+from vulgultra.morphology_constants import ARTICLES, COPULA_PRS, PERSON_OF
 
 _PAIR_GENDER = {}
 for _m, _f in GENDER_PAIRS:
@@ -47,16 +30,6 @@ INHERENT_GENDER: dict[str, str] = {
 }
 
 _POS = {row["id"]: row["pos"] for row in swadesh_concepts()}
-
-PERSON_OF = {
-    "i": "1sg",
-    "we": "1pl",
-    "you_sg": "2sg",
-    "you_pl": "2pl",
-    "he": "3sg",
-    "they": "3pl",
-}
-
 
 def gender_of(concept_id: str) -> str:
     return INHERENT_GENDER.get(concept_id, "m")
@@ -156,6 +129,11 @@ def copula(person: str) -> str:
     return COPULA_PRS.get(person, COPULA_PRS["3sg"])
 
 
+def is_proper_pos(pos: str) -> bool:
+    """Proper names stay invariant and retain initial capitalization."""
+    return pos.casefold() in {"proper", "proper_noun", "proper-name", "name", "character"}
+
+
 def _subject_person(tokens: list[str]) -> str:
     for tok in tokens:
         if tok in PERSON_OF:
@@ -189,8 +167,18 @@ def realize_sentence(
 
         pos = _POS.get(tok, "")
         root = roots.get(tok, {})
+        pos = str(root.get("pos") or pos)
         stem = root.get("orthography", tok)
         src = root.get("source_lang", "?")
+
+        if is_proper_pos(pos):
+            out.append({
+                "form": stem[:1].upper() + stem[1:] if stem else stem,
+                "src": src,
+                "concept": tok,
+                "role": "proper_noun",
+            })
+            continue
 
         if pos == "noun":
             np_gender = gender_of(tok)
@@ -202,7 +190,7 @@ def realize_sentence(
                     if c.orthography not in closed and c.violations == 0
                 ]
                 if alts:
-                    alt = min(alts, key=lambda c: (c.syllables, -c.support, c.source_lang))
+                    alt = min(alts, key=lambda c: (c.syllables, c.source_lang, c.source_word))
                     stem = alt.orthography
                     src = alt.source_lang
             if pending_art:

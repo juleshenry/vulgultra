@@ -1,7 +1,7 @@
 """Energy parity fixture and the σ-slice mutation invariant.
 
-The hand total is the same vector the Rust test asserts:
-E = 3000 + 600 + 33 + 0.7 + 10600 = 14233.7
+The hand total is the same vector the Rust test asserts. Root SA scores only
+the selected-root segment union; endings are optimized separately.
 """
 
 from __future__ import annotations
@@ -17,7 +17,6 @@ from vulgultra.optimizer import (
     compute_energy,
     mutate_root,
 )
-from vulgultra.pipeline import normalize_morphemes
 
 
 def _cand(concept: str, lang: str, word: str, phones: list[str], syl: int = 1) -> Candidate:
@@ -30,7 +29,6 @@ def _cand(concept: str, lang: str, word: str, phones: list[str], syl: int = 1) -
         orthography="".join(phones),
         syllables=syl,
         violations=0,
-        support=1,
     )
 
 
@@ -64,15 +62,12 @@ def _fixture() -> Genome:
 class EnergyTests(unittest.TestCase):
     def test_fixture_matches_hand_total(self) -> None:
         total, bd = compute_energy(_fixture())
-        self.assertEqual(bd["E_root"], 3000)
-        self.assertEqual(bd["E_phon"], 600)
-        self.assertEqual(bd["E_div"], 33)
-        self.assertAlmostEqual(bd["E_norm"], 0.7, places=9)
+        self.assertEqual(bd["E_phon"], -5)
         self.assertEqual(bd["E_end"], 10600)
         self.assertEqual(bd["E_coll"], 0)
         self.assertEqual(bd["E_tact"], 0)
         self.assertEqual(bd["E_dist"], 0)
-        self.assertAlmostEqual(total, 14233.7, places=6)
+        self.assertAlmostEqual(total, 10595, places=6)
 
     def test_mutation_stays_on_sigma_slice(self) -> None:
         genome = _fixture()
@@ -86,14 +81,6 @@ class EnergyTests(unittest.TestCase):
         for _ in range(40):
             moved = mutate_root(genome)
             self.assertEqual(moved.get_root("c1").syllables, 1)
-
-    def test_normalize_keeps_both_lects(self) -> None:
-        a = _cand("cat", "es", "gato", ["g", "a", "t", "o"])
-        b = _cand("cat", "ca", "gat", ["g", "a", "t"])
-        kept = normalize_morphemes([a, b])
-        self.assertEqual(len(kept), 2)
-        self.assertEqual({c.source_lang for c in kept}, {"es", "ca"})
-
 
 if __name__ == "__main__":
     unittest.main()

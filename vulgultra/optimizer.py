@@ -1,11 +1,10 @@
 """
 vulgultra.optimizer — Simulated Annealing engine for Vulgultra language generation.
 
-Two-stage optimization per grammar.tex Ch.7:
-  Stage 1: Root selection (pick best candidate per concept)
-  Stage 2: Ending generation (assign fusional endings to paradigm slots)
-
-Energy function per grammar.tex: knapsack roots + 1σ endings.
+Root candidates are hard-filtered to each concept's shortest legal forms.
+Annealing then chooses among those ties to maximize the observed root-segment
+union. Inflection tables may also use productive combinations of segments
+observed in the shortlisted grid.
 """
 
 from __future__ import annotations
@@ -17,37 +16,20 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 from vulgultra.phonology import (
-    PHONEME_INVENTORY, VOWELS, CONSONANTS, LEGAL_CODAS, OBSTRUENTS, ONSET2,
+    VOWELS, CONSONANTS, LEGAL_CODAS,
     count_syllables, count_violations, extract_phonemes,
     phonemic_edit_distance, is_phonotactically_legal,
     to_orthography, syllabify,
 )
-from vulgultra.romance_swadesh import SOURCE_LANGS
 from vulgultra.paradigms import (
-    VERB_TEMPLATES, closed_noun_blocks,
+    NOUN_TEMPLATES, VERB_TEMPLATES, closed_noun_blocks,
+    productive_grid_blocks,
     ADJ_SLOT_NAMES, NOUN_SLOT_NAMES,
 )
-
-
-# ---------------------------------------------------------------------------
-# Energy weights (grammar.tex Table 4.1)
-# ---------------------------------------------------------------------------
-
-# Root syllable minima are applied as a hard shortlist before annealing.
-# Inside that slice the objective maximizes attested phoneme contrasts, then
-# source-lect coverage, then cross-lect cognate-morpheme support.
-W_SYL  = 1000
-W_PHON = -40       # maximize |Φ|, bounded by the attested 23-phoneme inventory
-W_DIV  = 1          # after |Φ|: maximize distinct source lects; |L| < 40
-W_NORM = 0.02       # after lect coverage: minimize mean cognate-morpheme support gap
-W_END  = 200
-W_COLL = 100_000
-W_TACT = 2000
-W_DIST = 500
-DIST_THRESHOLD = 2
-N_SOURCES = len(SOURCE_LANGS)
-if W_DIV * N_SOURCES >= abs(W_PHON):
-    raise ValueError(f"|L|={N_SOURCES} breaks |L|*W_DIV < W_PHON")
+from vulgultra.optimizer_constants import (
+    DIST_THRESHOLD, VERB_NONFINITE, VERB_SLOTS, VERB_SLOTS_IND,
+    VERB_SLOTS_SUBJ, W_COLL, W_DIST, W_END, W_PHON, W_TACT,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -65,10 +47,9 @@ class Candidate:
     orthography: str
     syllables: int
     violations: int
-    support: int = 1  # how many source forms this stem covers
     evidence: str = ""
     relation: str = "direct"
-    morpheme_key: str = ""
+    pos: str = ""
 
     @property
     def is_legal(self) -> bool:
@@ -113,24 +94,6 @@ class Genome:
 
 NOUN_SLOTS = list(NOUN_SLOT_NAMES)
 
-VERB_SLOTS_IND = [
-    f"{tense}_{person}{number}"
-    for tense in ["prs", "pst", "fut"]
-    for person in ["1", "2", "3"]
-    for number in ["sg", "pl"]
-]
-
-VERB_SLOTS_SUBJ = [
-    f"{tense}_subj_{person}{number}"
-    for tense in ["prs", "pst", "fut"]
-    for person in ["1", "2", "3"]
-    for number in ["sg", "pl"]
-]
-
-VERB_NONFINITE = ["inf", "ptcp_act", "ptcp_pas", "imp_2sg", "imp_2pl"]
-
-VERB_SLOTS = VERB_SLOTS_IND + VERB_SLOTS_SUBJ + VERB_NONFINITE
-
 ADJ_SLOTS = list(ADJ_SLOT_NAMES)
 
 
@@ -140,15 +103,15 @@ ADJ_SLOTS = list(ADJ_SLOT_NAMES)
 
 def generate_legal_endings() -> list[list[str]]:
     """
-    Generate all phonotactically legal 1-syllable forms from Vulgultra inventory.
-    Templates: V, CV, VC, CVC (most common/useful for endings).
-    We limit to the most useful subset for speed.
+    Legacy helper: generate legal 1σ shapes from the current grid inventory.
+    The active catalog uses `productive_grid_blocks` to build structured
+    noun and verb tables from the same unrestricted observed segment set.
     """
     endings: list[list[str]] = []
     vowels = sorted(VOWELS)
     codas = sorted(LEGAL_CODAS)
     # Simple onsets (single consonant, not clusters for endings)
-    onsets = sorted(CONSONANTS - {"w"})  # w is rare in endings
+    onsets = sorted(CONSONANTS)
 
     # V
     for v in vowels:
@@ -175,11 +138,18 @@ def generate_legal_endings() -> list[list[str]]:
 
 # Cache it
 _LEGAL_ENDINGS: list[list[str]] | None = None
+_LEGAL_ENDINGS_INVENTORY: tuple[tuple[str, ...], ...] | None = None
 
 def get_legal_endings() -> list[list[str]]:
-    global _LEGAL_ENDINGS
-    if _LEGAL_ENDINGS is None:
+    global _LEGAL_ENDINGS, _LEGAL_ENDINGS_INVENTORY
+    inventory = (
+        tuple(sorted(VOWELS)),
+        tuple(sorted(CONSONANTS)),
+        tuple(sorted(LEGAL_CODAS)),
+    )
+    if _LEGAL_ENDINGS is None or inventory != _LEGAL_ENDINGS_INVENTORY:
         _LEGAL_ENDINGS = generate_legal_endings()
+        _LEGAL_ENDINGS_INVENTORY = inventory
     return _LEGAL_ENDINGS
 
 
@@ -255,20 +225,13 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
     roots = genome.all_roots()
     endings = _scored_endings(genome)
 
-    e_root = W_SYL * sum(r.syllables for r in roots)
-
-    all_phonemes: set[str] = set()
+    root_phonemes: set[str] = set()
     for r in roots:
-        all_phonemes.update(extract_phonemes(r.vulgultra_phonemes))
-    for e in endings:
-        all_phonemes.update(extract_phonemes(e))
-    e_phon = W_PHON * len(all_phonemes)
-
-    n_roots = max(len(roots), 1)
-    support_gap = sum(max(0, N_SOURCES - getattr(r, "support", 1)) for r in roots)
-    e_norm = W_NORM * (support_gap / n_roots)
-    n_lects = len({r.source_lang for r in roots})
-    e_div = W_DIV * max(0, N_SOURCES - n_lects)
+        root_phonemes.update(extract_phonemes(r.vulgultra_phonemes))
+    # Endings are selected once against the root inventory. Keeping them out
+    # of the root SA term prevents a productive template from pre-filling the
+    # very inventory the lexical annealing is meant to optimize.
+    e_phon = W_PHON * len(root_phonemes)
 
     e_end = W_END * sum(count_syllables(e) for e in endings)
     e_coll = W_COLL * _collision_count(genome)
@@ -279,12 +242,9 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
     e_tact = W_TACT * total_viols
     e_dist = W_DIST * _dist_penalty(genome)
 
-    total = e_root + e_phon + e_div + e_norm + e_end + e_coll + e_tact + e_dist
+    total = e_phon + e_end + e_coll + e_tact + e_dist
     breakdown = {
-        "E_root": e_root,
         "E_phon": e_phon,
-        "E_div": e_div,
-        "E_norm": e_norm,
         "E_end": e_end,
         "E_coll": e_coll,
         "E_tact": e_tact,
@@ -304,11 +264,7 @@ def _sigma_slice(cands: list[Candidate]) -> list[tuple[int, Candidate]]:
 
 
 def greedy_root_selections(candidates: dict[str, list[Candidate]]) -> dict[str, int]:
-    """Min σ shortlist, then most new phonemes, a new lect, then morpheme support.
-
-    Inventory and diversity couple concepts, so this is a set-cover heuristic;
-    SA can still improve phoneme inventory, lect coverage, and support globally.
-    """
+    """Choose the shortest legal forms, preferring segments not yet selected."""
     items: list[tuple[int, str, list[tuple[int, Candidate]]]] = []
     for concept, cands in candidates.items():
         sl = _sigma_slice(cands)
@@ -316,19 +272,16 @@ def greedy_root_selections(candidates: dict[str, list[Candidate]]) -> dict[str, 
     items.sort(key=lambda t: (t[0], t[1]))
 
     used_ph: set[str] = set()
-    used_lang: set[str] = set()
     selections: dict[str, int] = {}
     for _, concept, sl in items:
         def key(ic: tuple[int, Candidate]) -> tuple:
             _i, c = ic
             new_ph = sum(1 for p in extract_phonemes(c.vulgultra_phonemes) if p not in used_ph)
-            new_lang = 1 if c.source_lang in used_lang else 0
-            return (-new_ph, new_lang, -c.support, len(c.vulgultra_phonemes), c.source_lang)
+            return (-new_ph, c.source_lang, c.source_word)
 
         idx, c = min(sl, key=key)
         selections[concept] = idx
         used_ph |= extract_phonemes(c.vulgultra_phonemes)
-        used_lang.add(c.source_lang)
     return selections
 
 
@@ -342,8 +295,13 @@ def _slot_map(slots: list[str], cells: list[list[str]]) -> dict[str, list[str]]:
 FINITE_ROW_NAMES = ("prs", "pst", "fut", "subj", "theme_i", "theme_a")
 
 
-def _row_score(row: list[list[str]], phonemes: set[str], used_lects: list[str], lang: str) -> tuple:
-    """Collisions, violations, distance, new phonemes (max), then unused lect."""
+def _row_score(row: list[list[str]], phonemes: set[str], lang: str) -> tuple:
+    """Choose legal short rows, then maximize new segment diversity.
+
+    The explicit order is collision/phonotactics, distance, shortest cells,
+    then maximum new-phone coverage. It makes the conjugation heuristic
+    inspectable instead of letting a long exotic ending win by accident.
+    """
     seqs = [tuple(cell) for cell in row]
     collisions = _pairs_equal(seqs)
     violations = sum(count_violations(cell) for cell in row)
@@ -357,28 +315,31 @@ def _row_score(row: list[list[str]], phonemes: set[str], used_lects: list[str], 
     for cell in row:
         fresh.update(extract_phonemes(cell))
     new_ph = len(fresh - phonemes)
-    already = 1 if lang in used_lects else 0
-    return (collisions, violations, dist, -new_ph, already, lang)
+    length = sum(len(cell) for cell in row)
+    return (collisions, violations, dist, length, -new_ph, lang)
 
 
-def assemble_verb_rows(phonemes: set[str]) -> tuple[list[list[str]], str]:
+def assemble_verb_rows(
+    phonemes: set[str],
+    templates: dict[str, list[list[str]]] | None = None,
+) -> tuple[list[list[str]], str]:
     """Pick each finite tense from the lect that wins that row alone.
 
     Slots inside the row stay one lect. Non-finite cells are the shared tail.
     """
     used = set(phonemes)
-    used_lects: list[str] = []
     labels: list[str] = []
     cells: list[list[str]] = []
-    langs = sorted(VERB_TEMPLATES)
+    templates = templates or VERB_TEMPLATES
+    langs = sorted(templates)
     for r, name in enumerate(FINITE_ROW_NAMES):
         start = r * 6
         best: tuple | None = None
         best_row: list[list[str]] | None = None
         best_ph: set[str] = set()
         for lang in langs:
-            row = [list(cell) for cell in VERB_TEMPLATES[lang][start:start + 6]]
-            key = _row_score(row, used, used_lects, lang)
+            row = [list(cell) for cell in templates[lang][start:start + 6]]
+            key = _row_score(row, used, lang)
             if best is None or key < best:
                 best = key
                 best_row = row
@@ -387,11 +348,10 @@ def assemble_verb_rows(phonemes: set[str]) -> tuple[list[list[str]], str]:
                     best_ph.update(extract_phonemes(cell))
         assert best_row is not None and best is not None
         cells.extend(best_row)
-        used_lects.append(best[5])
         labels.append(f"{name}={best[5]}")
         used |= best_ph
     tail_lang = langs[0]
-    cells.extend(list(cell) for cell in VERB_TEMPLATES[tail_lang][36:])
+    cells.extend(list(cell) for cell in templates[tail_lang][36:])
     return cells, ",".join(labels)
 
 
@@ -400,7 +360,23 @@ def enumerate_endings(
     selections: dict[str, int],
 ) -> tuple[dict, dict, dict, str, str]:
     """Noun theme is global. Each verb tense is its own row. Roots stay pinned."""
-    nouns = closed_noun_blocks()
+    observed = {
+        phone
+        for candidate_list in candidates.values()
+        for candidate in candidate_list
+        for phone in candidate.vulgultra_phonemes
+    }
+    productive_nouns, productive_verbs = productive_grid_blocks(observed)
+    nouns: dict[str, list[list[str]]] = {
+        f"theme:{name}": cells
+        for name, cells in closed_noun_blocks().items()
+    }
+    nouns.update({f"lect:{lang}": cells for lang, cells in NOUN_TEMPLATES.items()})
+    if productive_nouns:
+        nouns["grid-inventory"] = productive_nouns
+    verb_templates = {lang: cells for lang, cells in VERB_TEMPLATES.items()}
+    if productive_verbs:
+        verb_templates["grid-inventory"] = productive_verbs
     root_ph: set[str] = set()
     for concept, idx in selections.items():
         root_ph.update(extract_phonemes(candidates[concept][idx].vulgultra_phonemes))
@@ -412,7 +388,7 @@ def enumerate_endings(
         noun_ph = set(root_ph)
         for cell in noun_map["class_1"].values():
             noun_ph.update(extract_phonemes(cell))
-        verb_cells, verb_label = assemble_verb_rows(noun_ph)
+        verb_cells, verb_label = assemble_verb_rows(noun_ph, verb_templates)
         verb_map = {"class_1": _slot_map(VERB_SLOTS, verb_cells)}
         adj_map = {slot: seq[:] for slot, seq in noun_map["class_1"].items()}
         trial = Genome(
@@ -423,7 +399,16 @@ def enumerate_endings(
             adj_endings=adj_map,
         )
         energy, _bd = compute_energy(trial)
-        key = (energy, nname, verb_label)
+        ending_ph: set[str] = set()
+        for cell in trial.all_endings():
+            ending_ph.update(cell)
+        # Morphology is chosen after roots: prefer valid paradigms that add
+        # the most distinct segments to the final root+ending inventory.
+        ending_bonus = len(ending_ph - root_ph)
+        # This is exactly the morphology objective in grammar.tex §4:
+        # reward the final root+ending union, then use stable names only to
+        # make equal-energy runs deterministic.
+        key = (energy - ending_bonus, nname, verb_label)
         if best_key is None or key < best_key:
             best_key = key
             best = (noun_map, verb_map, adj_map, nname, verb_label)
@@ -432,7 +417,7 @@ def enumerate_endings(
 
 
 def init_genome(candidates: dict[str, list[Candidate]]) -> Genome:
-    """Min-σ set-cover roots, then the exact ending pair at those roots."""
+    """Shortest-slice, segment-greedy roots, then the ending pair at those roots."""
     selections = greedy_root_selections(candidates)
     noun_endings, verb_endings, adj_endings, _theme, _lect = enumerate_endings(
         candidates, selections,
@@ -535,6 +520,15 @@ def anneal(
             print(f"  iter {it+1:>7d} | temp {temp:>10.2f} | energy {energy:>12.0f} | best {best_energy:>12.0f} | accept {accepted/(it+1):.2%}")
 
     final_iters = it + 1
+    # Re-enumerate the ending pair against the final annealed roots. Endings
+    # stay fixed during root moves so they cannot pre-fill the root score.
+    noun_endings, verb_endings, adj_endings, _theme, _lect = enumerate_endings(
+        candidates, best_genome.selections,
+    )
+    best_genome.noun_endings = noun_endings
+    best_genome.verb_endings = verb_endings
+    best_genome.adj_endings = adj_endings
+    best_energy, best_breakdown = compute_energy(best_genome)
     return SAResult(
         genome=best_genome,
         energy=best_energy,

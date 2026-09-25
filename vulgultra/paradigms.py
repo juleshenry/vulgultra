@@ -1,14 +1,21 @@
-"""Native declension/conjugation per lect.
+"""Attested lect paradigms plus productive, grid-segment ending proposals.
 
-Person rows are per-lect (clipped to 1σ). Case theme is a class
-(o / u / e) from the source-inventory branch, not 36 mixed tables.
+Attested person rows are per-lect and clipped to 1σ; productive alternatives
+are assembled separately from the observed shortlisted segment inventory.
 Realization never falls back to “conjugate like Spanish” for Aragonese,
 Ladino, Romansh, etc. Tense/mood is a theme on that same person row.
 """
 
 from __future__ import annotations
 
-from vulgultra.phonology import from_orthography, last_syllable, to_orthography
+from collections.abc import Iterable
+
+from vulgultra.phonology import (
+    from_orthography, last_syllable, phonemic_edit_distance, to_orthography,
+)
+from vulgultra.morphology_constants import (
+    CLOSED_NOUN_THEMES, NOUN_SLOT_NAMES, ADJ_SLOT_NAMES, THEME_CLASS,
+)
 
 
 def _one_sigma(s: str) -> str:
@@ -19,26 +26,6 @@ def _one_sigma(s: str) -> str:
 def _row(*cells: str) -> list[list[str]]:
     return [from_orthography(_one_sigma(c)) for c in cells]
 
-
-# Theme class for the Latin case layer (grammar.tex source inventory).
-THEME_CLASS: dict[str, str] = {
-    # Ibero o; Asturian/Extremaduran keep u
-    "es": "o", "pt": "o", "gl": "o", "an": "o", "lad": "o", "mwl": "o",
-    "ast": "u", "ext": "u",
-    # Occitano / Oil e
-    "oc": "e", "ca": "e", "gsc": "e",
-    "fr": "e", "wa": "e", "pcd": "e", "nrf": "e", "glw": "e",
-    # Arpitan / Gallo-Italian o
-    "frp": "o",
-    "lmo": "o", "pms": "o", "lij": "o", "eml": "o", "rgn": "o",
-    # Italo-Dalmatian
-    "it": "o", "vec": "o", "ist": "o", "dlm": "o",
-    "scn": "u", "co": "u",
-    # Rhaeto mixed, Sardinian/Eastern u
-    "rm": "e", "fur": "e", "lld": "e",
-    "sc": "u",
-    "ro": "u", "rup": "u", "ruo": "u", "ruq": "u",
-}
 
 # Reverse Vulgar Latin case on a lect theme vowel.
 # Slots: m_nom_sg m_acc_sg m_gen_sg m_nom_pl m_acc_pl m_gen_pl
@@ -60,10 +47,6 @@ def _case_block(m: str, f: str, m_acc_pl: str, f_acc_pl: str) -> list[list[str]]
         m, acc_sg(m), "is", "i", with_vowel(m_acc_pl, m), "or",
         f, acc_sg(f), "es", "e", with_vowel(f_acc_pl, f), "ar",
     )
-
-
-# Closed case layer (grammar.tex): theme o/u/e, acc.pl keeps the theme vowel.
-CLOSED_NOUN_THEMES = ("o", "u", "e")
 
 
 def closed_noun_blocks() -> dict[str, list[list[str]]]:
@@ -206,11 +189,71 @@ VERB_TEMPLATES: dict[str, list[list[str]]] = {
     for lang, persons in PERSONS.items()
 }
 
+
+def productive_grid_blocks(
+    segments: Iterable[str],
+) -> tuple[list[list[str]], list[list[str]]]:
+    """Build productive 1σ tables from segments in the shortlisted grid.
+
+    These are *combinations* of observed segments, not attested morphemes or
+    claims about any source lect's morphology. Candidate shapes are V, CV,
+    VC, and CVC; the ordinary phonotactic validator filters the pool.
+    """
+    from vulgultra.phonology import count_syllables, count_violations, is_vowel
+
+    observed = set(segments)
+    vowels = sorted(p for p in observed if is_vowel(p))
+    consonants = sorted(observed - set(vowels))
+    if not vowels:
+        return [], []
+
+    pool: set[tuple[str, ...]] = {(v,) for v in vowels}
+    pool.update((c, v) for c in consonants for v in vowels)
+    pool.update((v, c) for v in vowels for c in consonants)
+    pool.update((c1, v, c2) for c1 in consonants for v in vowels for c2 in consonants)
+    forms = sorted(
+        (form for form in pool
+         if count_syllables(list(form)) == 1 and count_violations(list(form)) == 0),
+        key=lambda form: (len(form), form),
+    )
+    if not forms:
+        return [], []
+
+    def choose_block(size: int, row_size: int | None = None) -> list[list[str]]:
+        chosen: list[tuple[str, ...]] = []
+        used: set[tuple[str, ...]] = set()
+        covered: set[str] = set()
+        for slot in range(size):
+            row = chosen[-(slot % row_size):] if row_size and slot % row_size else []
+            available = [form for form in forms if form not in used]
+            if not available:
+                available = forms
+
+            def key(form: tuple[str, ...]) -> tuple:
+                distance_cost = 0
+                if row_size:
+                    distance_cost = sum(
+                        max(0, 2 - phonemic_edit_distance(list(form), list(other)))
+                        for other in row
+                    )
+                novelty = len(set(form) - covered)
+                return (distance_cost, -novelty, len(form), form)
+
+            # Noun cells do not have a minimum-distance constraint.
+            if row_size is None:
+                form = min(available, key=lambda candidate: (-len(set(candidate) - covered), len(candidate), candidate))
+            else:
+                form = min(available, key=key)
+            chosen.append(form)
+            used.add(form)
+            covered.update(form)
+        return [list(form) for form in chosen]
+
+    # Noun/adjective table has 12 gender × case × number cells. The verb
+    # block has six 6-person rows followed by five non-finite cells.
+    return choose_block(12), choose_block(41, row_size=6)
+
 # No donor map. Missing lect = bug.
 CONJUGATION_DONOR: dict[str, str] = {}
 
-NOUN_SLOT_NAMES = [
-    "m_nom_sg", "m_acc_sg", "m_gen_sg", "m_nom_pl", "m_acc_pl", "m_gen_pl",
-    "f_nom_sg", "f_acc_sg", "f_gen_sg", "f_nom_pl", "f_acc_pl", "f_gen_pl",
-]
-ADJ_SLOT_NAMES = NOUN_SLOT_NAMES
+# Re-exported above for callers that historically imported these from here.

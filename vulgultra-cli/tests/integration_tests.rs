@@ -1,117 +1,91 @@
-use std::collections::{HashMap, HashSet};
+use std::collections::HashMap;
 
-#[test]
-fn test_load_tiny_genome() {
-    // Test loading the tiny test genome file
-    let genome_path = "../data/test_concepts_tiny.clatin";
-    
-    // This test assumes the file exists - skip if it doesn't
-    if !std::path::Path::new(genome_path).exists() {
-        eprintln!("Skipping test - genome file not found: {}", genome_path);
-        return;
+use rand::SeedableRng;
+use serde_json::json;
+use vulgultra_cli::{
+    compute_energy, format_output, init_genome, mutate_in_place, CandidateData,
+    EndingCatalog, PipelineInput,
+};
+
+fn tiny_catalog() -> EndingCatalog {
+    let noun_slots = vec![
+        "m_nom_sg", "m_acc_sg", "m_gen_sg", "m_nom_pl", "m_acc_pl", "m_gen_pl",
+        "f_nom_sg", "f_acc_sg", "f_gen_sg", "f_nom_pl", "f_acc_pl", "f_gen_pl",
+    ].into_iter().map(String::from).collect::<Vec<_>>();
+    let verb_slots = vulgultra_cli::verb_slots();
+    let noun = vec![vec!["a".to_string()]; 12];
+    let verb = vec![vec!["a".to_string()]; 41];
+    EndingCatalog {
+        noun_slots,
+        verb_slots,
+        noun_blocks: HashMap::from([(String::from("fixture"), noun)]),
+        verb_blocks: HashMap::from([(String::from("fixture"), verb)]),
+        vowels: vec!["a".into(), "e".into(), "i".into(), "o".into(), "u".into()],
     }
-    
-    // We can't directly call load_state from main.rs without refactoring,
-    // so we'll manually deserialize here for testing
-    use std::fs::File;
-    use std::io::Read;
-    
-    let mut file = File::open(genome_path).expect("Failed to open genome file");
-    let mut buffer = Vec::new();
-    file.read_to_end(&mut buffer).expect("Failed to read file");
-    
-    // Try to deserialize as msgpack
-    let result: Result<serde_json::Value, _> = rmp_serde::from_slice(&buffer);
-    
-    match result {
-        Ok(data) => {
-            println!("Successfully loaded tiny genome");
-            println!("Data structure: {}", serde_json::to_string_pretty(&data).unwrap_or_default());
-            
-            // Verify it has the expected structure
-            assert!(data.get("concepts").is_some(), "Should have 'concepts' field");
-            assert!(data.get("choices").is_some(), "Should have 'choices' field");
-        }
-        Err(e) => {
-            panic!("Failed to deserialize genome: {:?}", e);
-        }
+}
+
+fn candidate(concept: &str, word: &str, phones: &[&str], syllables: u32, evidence: &str) -> CandidateData {
+    CandidateData {
+        concept: concept.into(),
+        source_lang: "es".into(),
+        source_word: word.into(),
+        ipa: word.into(),
+        vulgultra_phonemes: phones.iter().map(|p| (*p).into()).collect(),
+        orthography: word.into(),
+        syllables,
+        violations: 0,
+        evidence: evidence.into(),
+        relation: "direct".into(),
+        pos: "noun".into(),
+    }
+}
+
+fn fixture_input() -> PipelineInput {
+    PipelineInput {
+        concepts: HashMap::from([(
+            "water".into(),
+            vec![
+                candidate("water", "a", &["a"], 1, "fixture-a"),
+                candidate("water", "baba", &["b", "a", "b", "a"], 2, "fixture-long"),
+            ],
+        )]),
+        ending_catalog: Some(tiny_catalog()),
     }
 }
 
 #[test]
-fn test_load_small_genome() {
-    // Test loading the small test genome file
-    let genome_path = "../data/test_concepts_small.clatin";
-    
-    if !std::path::Path::new(genome_path).exists() {
-        eprintln!("Skipping test - genome file not found: {}", genome_path);
-        return;
-    }
-    
-    use std::fs::File;
-    use std::io::Read;
-    
-    let mut file = File::open(genome_path).expect("Failed to open genome file");
-    let mut buffer = Vec::new();
-    file.read_to_end(&mut buffer).expect("Failed to read file");
-    
-    let result: Result<serde_json::Value, _> = rmp_serde::from_slice(&buffer);
-    
-    match result {
-        Ok(data) => {
-            println!("Successfully loaded small genome");
-            
-            // Count concepts
-            if let Some(concepts) = data.get("concepts").and_then(|c| c.as_object()) {
-                println!("Number of concepts: {}", concepts.len());
-                assert!(concepts.len() >= 5, "Small genome should have at least 5 concepts");
-            }
-        }
-        Err(e) => {
-            panic!("Failed to deserialize genome: {:?}", e);
-        }
-    }
+fn json_schema_and_evidence_are_accepted() {
+    let input = json!({
+        "schema": "vulgultra.candidates.v2",
+        "concepts": {"water": [candidate("water", "a", &["a"], 1, "fixture")]},
+        "ending_catalog": tiny_catalog(),
+    });
+    let parsed: PipelineInput = serde_json::from_value(input).expect("candidate JSON schema");
+    assert_eq!(parsed.concepts["water"][0].evidence, "fixture");
 }
 
 #[test]
-fn test_genome_has_classifications() {
-    // Verify that generated genomes include concept classifications
-    let genome_path = "../data/test_concepts_tiny.clatin";
-    
-    if !std::path::Path::new(genome_path).exists() {
-        eprintln!("Skipping test - genome file not found: {}", genome_path);
-        return;
-    }
-    
-    use std::fs::File;
-    use std::io::Read;
-    
-    let mut file = File::open(genome_path).expect("Failed to open genome file");
-    let mut buffer = Vec::new();
-    file.read_to_end(&mut buffer).expect("Failed to read file");
-    
-    let data: serde_json::Value = rmp_serde::from_slice(&buffer).expect("Failed to deserialize");
-    
-    // Check that at least one concept has a classification
-    if let Some(concepts) = data.get("concepts").and_then(|c| c.as_object()) {
-        let mut has_local = false;
-        let mut has_global = false;
-        
-        for (concept_id, concept_data) in concepts {
-            if let Some(classification) = concept_data.get("classification").and_then(|c| c.as_str()) {
-                println!("Concept {} classification: {}", concept_id, classification);
-                
-                if classification == "LOCAL" {
-                    has_local = true;
-                }
-                if classification == "GLOBAL" {
-                    has_global = true;
-                }
-            }
-        }
-        
-        // Tiny genome should have both LOCAL and GLOBAL concepts
-        assert!(has_local, "Tiny genome should have at least one LOCAL concept");
-        assert!(has_global, "Tiny genome should have at least one GLOBAL concept");
+fn initialization_respects_shortest_legal_slice_and_retains_evidence() {
+    let input = fixture_input();
+    let (genome, db) = init_genome(&input).expect("tiny fixture");
+    assert_eq!(genome.get_root(0, &db).syllables, 1);
+    assert_eq!(genome.get_root(0, &db).evidence, "fixture-a");
+    let output = format_output(&genome, &db, &compute_energy(&genome, &db), 0, 0, 0.0);
+    assert_eq!(output.roots["water"].evidence, "fixture-a");
+}
+
+#[test]
+fn seeded_mutation_is_deterministic() {
+    let input = fixture_input();
+    let (mut left, left_db) = init_genome(&input).expect("left fixture");
+    let (mut right, right_db) = init_genome(&input).expect("right fixture");
+    let mut left_cache = vulgultra_cli::EnergyCache::from_genome(&left, &left_db);
+    let mut right_cache = vulgultra_cli::EnergyCache::from_genome(&right, &right_db);
+    let mut left_rng = rand::rngs::StdRng::seed_from_u64(17);
+    let mut right_rng = rand::rngs::StdRng::seed_from_u64(17);
+    for _ in 0..20 {
+        mutate_in_place(&mut left, &left_db, &mut left_cache, &mut left_rng);
+        mutate_in_place(&mut right, &right_db, &mut right_cache, &mut right_rng);
+        assert_eq!(left.selections, right.selections);
     }
 }

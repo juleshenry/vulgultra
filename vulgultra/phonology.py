@@ -15,6 +15,7 @@ from typing import Optional
 import epitran
 import panphon
 from panphon.featuretable import FeatureTable
+from vulgultra.phonology_constants import IPA_TO_ORTHO, LANG_CODES, ORTHO_TO_IPA
 
 # ---------------------------------------------------------------------------
 # Corpus-derived phone inventory
@@ -98,53 +99,11 @@ def configure_inventory(segments: set[str] | list[str] | tuple[str, ...]) -> Non
         target.update(values)
 
 # ---------------------------------------------------------------------------
-# Phoneme-to-orthography mapping (grammar.tex Table 2.5)
-# ---------------------------------------------------------------------------
-
-IPA_TO_ORTHO: dict[str, str] = {
-    "p": "p", "b": "b", "t": "t", "d": "d", "k": "k", "ɡ": "g",
-    "m": "m", "n": "n",
-    "f": "f", "v": "v", "s": "s", "z": "z",
-    "ʃ": "x", "t͡ʃ": "c",
-    "l": "l", "r": "r",
-    "j": "y", "w": "w",
-    "a": "a", "e": "e", "i": "i", "o": "o", "u": "u",
-}
-
-ORTHO_TO_IPA: dict[str, str] = {v: k for k, v in IPA_TO_ORTHO.items()}
-
-# ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
 # G2P engines (lazily initialized)
 # ---------------------------------------------------------------------------
 
 _g2p_cache: dict[str, epitran.Epitran] = {}
-
-LANG_CODES: dict[str, str] = {
-    # Ibero
-    "es": "spa-Latn", "pt": "por-Latn", "gl": "glg-Latn",
-    "an": "spa-Latn", "ast": "spa-Latn", "ext": "spa-Latn",
-    "lad": "spa-Latn", "mwl": "por-Latn",
-    # Occitano
-    "oc": "oci-Latn", "ca": "cat-Latn", "gsc": "oci-Latn",
-    # Oil / Arpitan
-    "fr": "fra-Latn", "wa": "fra-Latn", "pcd": "fra-Latn",
-    "nrf": "fra-Latn", "glw": "fra-Latn", "frp": "fra-Latn",
-    # Gallo-Italian
-    "lmo": "ita-Latn", "pms": "ita-Latn", "lij": "lij-Latn",
-    "eml": "ita-Latn", "rgn": "ita-Latn",
-    # Italo-Dalmatian
-    "it": "ita-Latn", "scn": "ita-Latn", "vec": "ita-Latn",
-    "co": "ita-Latn", "ist": "ita-Latn", "dlm": "ita-Latn",
-    # Rhaeto / Sardinian
-    "rm": "ita-Latn", "fur": "ita-Latn", "lld": "ita-Latn",
-    "sc": "sro-Latn",
-    # Eastern
-    "ro": "ron-Latn", "rup": "ron-Latn", "ruo": "ron-Latn", "ruq": "ron-Latn",
-    # reserved ancestor
-    "la": "ita-Latn",
-}
-
 
 def _get_g2p(lang: str) -> epitran.Epitran:
     """Get or create an epitran G2P engine for a language."""
@@ -487,16 +446,33 @@ def is_phonotactically_legal(phoneme_seq: list[str]) -> bool:
 # ---------------------------------------------------------------------------
 
 def to_orthography(phoneme_seq: list[str]) -> str:
-    """Render known symbols conventionally and preserve new IPA transparently."""
-    return "".join(IPA_TO_ORTHO.get(p, p) for p in phoneme_seq)
+    """Render mapped symbols and visibly delimit IPA without a spelling rule."""
+    return "".join(
+        IPA_TO_ORTHO[p] if p in IPA_TO_ORTHO else f"⟨{p}⟩"
+        for p in phoneme_seq
+    )
 
 
 def from_orthography(ortho: str) -> list[str]:
-    """Convert Vulgultra orthography back to phoneme sequence."""
+    """Decode the conventional map plus explicitly delimited IPA segments."""
     result: list[str] = []
-    for ch in ortho.lower():
+    i = 0
+    while i < len(ortho):
+        if ortho[i] == "⟨":
+            end = ortho.find("⟩", i + 1)
+            if end >= 0:
+                segment = ortho[i + 1:end]
+                if segment:
+                    result.append(segment)
+                i = end + 1
+                continue
+        ch = ortho[i].lower()
         if ch in ORTHO_TO_IPA:
             result.append(ORTHO_TO_IPA[ch])
+        else:
+            # Do not silently erase a segment when reading a future spelling.
+            result.append(ch)
+        i += 1
     return result
 
 
