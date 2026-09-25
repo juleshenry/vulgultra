@@ -17,30 +17,48 @@ boundaries from a compact string.
 
 ## Current state
 
-`data/conjugation/source_manifest.json` tracks the 36 expected lects. They are
-currently marked `pending`: the repository's existing `VERB_TEMPLATES` are
-available only as a bootstrap ending fixture, not as collected full
-conjugation evidence.
+`scripts/build_conjugation_pages.py` harvests local Kaikki JSONL into:
 
-The fixture can exercise the complete schema and report path:
+- compact lect pages under `docs/conjugations/` (class → ending inventory →
+  representative 6-slot grids)
+- normalized JSON under `data/conjugation/sources/{lect}.json`
+
+`data/conjugation/source_manifest.json` marks harvested lects. Lects without a
+local Kaikki dump remain `pending`. Extremaduran stays `raw-unaligned` until
+its flattened tables get six-slot labels.
+
+Orthographic ending inventories live in each JSON file's
+`metadata.ending_inventories`. Candidate phoneme links need explicit
+`phonemes` lists; harvested rows currently leave those empty on purpose.
+
+## Commands
+
+Rebuild pages + JSON corpus:
 
 ```bash
-.venv/bin/python3 scripts/conjugation_eda.py \
-  --from-templates \
-  --output /tmp/conjugation_eda.json \
-  --normalized-output /tmp/conjugation_seed.json \
-  --markdown-output /tmp/conjugation_eda.md
+.venv/bin/python3 scripts/build_conjugation_pages.py
 ```
 
-Real source files can be supplied as one JSON file or a directory of JSON
-files:
+EDA on the harvested corpus:
 
 ```bash
 .venv/bin/python3 scripts/conjugation_eda.py \
   --input data/conjugation/sources \
   --output data/eda/conjugation_eda.json \
   --normalized-output data/eda/conjugation_normalized.json \
-  --markdown-output docs/eval/conjugation_eda.md
+  --markdown-output docs/eval/conjugation_eda.md \
+  --comparison-output docs/eval/conjugation_comparison.md
+```
+
+Bootstrap fixture from hand templates (not sourced evidence):
+
+```bash
+.venv/bin/python3 scripts/conjugation_eda.py \
+  --from-templates \
+  --output /tmp/conjugation_eda.json \
+  --normalized-output /tmp/conjugation_seed.json \
+  --markdown-output /tmp/conjugation_eda.md \
+  --comparison-output docs/eval/conjugation_comparison.md
 ```
 
 ## Link analysis

@@ -377,6 +377,76 @@ def render_markdown(result: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def render_comparison_markdown(
+    paradigms: list[dict[str, Any]],
+    *,
+    source_note: str,
+) -> str:
+    """Render every lect's six-slot rows for direct visual comparison.
+
+    This report intentionally says whether its rows are sourced full forms or
+    the repository's ending-only bootstrap.  It is a comparison aid, not a
+    claim of complete conjugation coverage.
+    """
+    by_lect = {str(paradigm["lect"]): paradigm for paradigm in paradigms}
+    attested = sum(
+        1 for paradigm in paradigms
+        if isinstance(paradigm.get("source"), dict)
+        and paradigm["source"].get("attested") is True
+    )
+    features: list[str] = []
+    for paradigm in paradigms:
+        for feature in paradigm["cells"]:
+            if feature not in features:
+                features.append(feature)
+    lines = [
+        "# Romance conjugation comparison",
+        "",
+        "> **Evidence warning:** this is a comparison view, not proof that every",
+        "> lect has a complete sourced conjugation. Internal template rows are",
+        "> endings only; they contain no lexical stem evidence.",
+        "",
+        f"- Dataset: {source_note}",
+        f"- Lect rows: **{len(by_lect)}**",
+        f"- Paradigms explicitly marked attested: **{attested}**",
+        f"- Person slots per row: `{', '.join(PERSON_SLOTS)}`",
+        "",
+        "A dash means that the normalized input had no cell for that slot.",
+        "",
+    ]
+    for feature in features:
+        lines.extend([
+            f"## `{feature}`",
+            "",
+            "| Lect | Class/source | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |",
+            "|---|---|---|---|---|---|---|---|",
+        ])
+        for lect in sorted(by_lect):
+            paradigm = by_lect[lect]
+            row = paradigm["cells"].get(feature, {})
+            values = []
+            for slot in PERSON_SLOTS:
+                cell = row.get(slot)
+                value = str(cell.get("form", "—")) if cell else "—"
+                values.append(value.replace("|", "\\|"))
+            class_source = str(paradigm.get("class_source") or "—")
+            lines.append(
+                f"| `{lect}` | `{class_source}` | "
+                + " | ".join(values)
+                + " |"
+            )
+        lines.append("")
+    lines.extend([
+        "## Interpretation",
+        "",
+        "These rows are the input surface for later linkage analysis. Similar",
+        "suffixes across the same slot may support a person-number linkage, but",
+        "the report does not decide whether a substring is a morpheme.",
+        "",
+    ])
+    return "\n".join(lines)
+
+
 def template_seed_paradigms() -> list[dict[str, Any]]:
     """Export current internal ending templates as an explicitly non-source seed.
 

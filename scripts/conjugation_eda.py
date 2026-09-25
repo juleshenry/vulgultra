@@ -51,6 +51,10 @@ def main() -> int:
         "--markdown-output", type=Path,
         help="also write a human-readable EDA report",
     )
+    parser.add_argument(
+        "--comparison-output", type=Path,
+        help="also write all lects/features as six-slot comparison tables",
+    )
     args = parser.parse_args()
     if bool(args.input) == bool(args.from_templates):
         parser.error("choose exactly one of --input or --from-templates")
@@ -72,6 +76,13 @@ def main() -> int:
         args.markdown_output.parent.mkdir(parents=True, exist_ok=True)
         from vulgultra.conjugation_eda import render_markdown
         args.markdown_output.write_text(render_markdown(result), encoding="utf-8")
+    if args.comparison_output:
+        args.comparison_output.parent.mkdir(parents=True, exist_ok=True)
+        from vulgultra.conjugation_eda import render_comparison_markdown
+        args.comparison_output.write_text(
+            render_comparison_markdown(paradigms, source_note=source_note),
+            encoding="utf-8",
+        )
 
     coverage = result["coverage"]
     print(f"wrote {args.output}")

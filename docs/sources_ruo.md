@@ -7,5 +7,6 @@
 | **[Appendix:Istro-Romanian Swadesh list](https://en.wiktionary.org/wiki/Appendix:Istro-Romanian_Swadesh_list)** | 207-concept list; ~140 filled | **Done:** `RUO_WIKT_SWADESH` (first citation form). `sănze` blood kept over appendix `sânže`. Empty cells not filled with Daco-Romanian. |
 | Kaikki / Wikipedia | None | English-edition Kaikki 404; no `ruowiki`. |
 | Kovačec / Byhan / vlaski-zejanski | Dictionaries / site | Not bulk-open. Do not scrape. |
+| **Verbix Istro-Romanian docs** + scanned notes | Four conjugations + -éi/-úi; present/imperfect/future/perfect/conditional | **Done:** `scripts/harvest_ruo_verbix.py` → `data/conjugation/sources/ruo_diseux.json`, page `docs/conjugations/ruo.md`. Secondary summary — prefer Neiescu/Kovačec/Oxford for formal citation. See `docs/eval/ruo_conjugation_notes.md`. |
 
 Cantemir appendix columns are Daco-Romanian orthography, DR IPA, **IR IPA**, English. IR lemmas are the IPA column, not the Romanian spelling. Example (p. 40, ex. 27): DR `['fo.kul]` ~ IR `['fo.ku]` ‘the fire’ → `foku`.
