@@ -13,7 +13,7 @@ import json
 import re
 import sys
 import unicodedata
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT))
 from vulgultra.conjugation_harvest import (  # noqa: E402
     PERSON_SLOTS,
     aggregate_ending_inventory,
+    strip_endings,
 )
 from vulgultra.romance_swadesh import SOURCE_LANGS  # noqa: E402
 
@@ -201,9 +202,13 @@ def stem_sort_key(name: str) -> tuple:
 
 
 def ending_syllables(ending: str) -> int:
-    """Vowel groups in the suffix. ∅ and C-only are 0."""
+    """Vowel groups in the suffix, minimum 1.
+
+    The cell is a word: stem already has a syllable, so ∅, -s, and -o
+    all count as 1σ. Two nuclei (-amos, -ìzzo) count as 2.
+    """
     if ending in {"∅", ""}:
-        return 0
+        return 1
     nfd = unicodedata.normalize("NFD", ending.casefold())
     letters = "".join(ch for ch in nfd if unicodedata.category(ch) != "Mn")
     count = 0
@@ -213,7 +218,7 @@ def ending_syllables(ending: str) -> int:
         if vowel and not in_vowel:
             count += 1
         in_vowel = vowel
-    return count
+    return max(count, 1)
 
 
 def shortest_slot_map(slot_map: dict) -> dict:
@@ -235,10 +240,12 @@ def md_cell(text: str) -> str:
     return text.replace("|", "\\|").replace("\n", " ")
 
 
-def show_ending(ending: str) -> str:
+def show_ending(ending: str, *, full_word: bool = False) -> str:
     if ending in {"∅", ""}:
         return "∅"
     if ending.startswith("-"):
+        return ending
+    if full_word:
         return ending
     return f"-{ending}"
 
@@ -258,7 +265,7 @@ def format_sources(sources: list[tuple[str, str, int]]) -> str:
     return " ".join(parts)
 
 
-def format_cell(endings: dict) -> str:
+def format_cell(endings: dict, *, full_word: bool = False) -> str:
     """`-o (es, pt) -i (oc, gsc)` grouped by ending, lects in source order."""
     if not endings:
         return "—"
@@ -275,7 +282,7 @@ def format_cell(endings: dict) -> str:
         item[0],
     ))
     return " ".join(
-        f"{show_ending(ending)} ({', '.join(lects)})"
+        f"{show_ending(ending, full_word=full_word)} ({', '.join(lects)})"
         for ending, lects in groups
     )
 
@@ -293,6 +300,78 @@ def _row_forms(row: dict) -> dict[str, str]:
             if form:
                 out[slot] = str(form)
     return out
+
+
+def _ending_pick_key(ending: str, support: int) -> tuple:
+    """Shortest 1σ ending wins. ∅ is not shorter than -o."""
+    if ending in {"∅", ""}:
+        letters = 1
+    else:
+        letters = len(ending)
+    return (ending_syllables(ending), letters, -support, ending)
+
+
+def inventory_shortest_cells(paradigms: list[dict]) -> dict[str, dict[str, dict]]:
+    """Per-cell shortest ending, not whole-row LCP majority.
+
+    Spanish *-er* LCP majority is *-zco* (*conocer*); the person ending is
+    *-o* (*comer*, *escribir*).
+    """
+    counts: dict[str, dict[str, dict[str, Counter]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(Counter))
+    )
+    for paradigm in paradigms:
+        class_source = str(paradigm.get("class_source") or "unknown")
+        stem = None
+        source = paradigm.get("source")
+        if isinstance(source, dict):
+            stem = source.get("stem")
+        latin = (
+            class_source in ESSE_STEMS
+            or class_source in STARE_STEMS
+            or class_source in HABERE_STEMS
+            or surface_stem(class_source) in ESSE_STEMS | STARE_STEMS | HABERE_STEMS
+        )
+        cells = paradigm.get("cells") or {}
+        for feature, row in cells.items():
+            if not isinstance(row, dict):
+                continue
+            forms = _row_forms(row)
+            if latin:
+                for slot, form in forms.items():
+                    if slot not in PERSON_SLOTS or form in {"—", ""}:
+                        continue
+                    counts[class_source][str(feature)][slot][form] += 1
+                continue
+            stripped = strip_endings(forms, stem)
+            if not stripped:
+                continue
+            endings, _used, _mode = stripped
+            for slot, ending in endings.items():
+                if slot not in PERSON_SLOTS or ending in {"—", ""}:
+                    continue
+                token = ending if ending else "∅"
+                counts[class_source][str(feature)][slot][token] += 1
+    grouped: dict[str, dict[str, dict]] = {}
+    for class_source, features in counts.items():
+        grouped[class_source] = {}
+        for feature, slots in features.items():
+            chosen: dict[str, str] = {}
+            support = 0
+            for slot, counter in slots.items():
+                ending, n = min(
+                    counter.items(),
+                    key=lambda item: _ending_pick_key(item[0], item[1]),
+                )
+                chosen[slot] = ending
+                support = max(support, n)
+            if chosen:
+                grouped[class_source][feature] = {
+                    "endings": chosen,
+                    "support": support,
+                    "stem_mode": "shortest-cell",
+                }
+    return grouped
 
 
 def inventory_from_paradigms(paradigms: list[dict]) -> dict[str, dict[str, dict]]:
@@ -342,20 +421,16 @@ def load_inventories() -> tuple[Inventory, dict[str, str]]:
             notes[lect] = "no source JSON"
             continue
         document = json.loads(path.read_text(encoding="utf-8"))
-        meta = document.get("metadata") or {}
-        inv = dict(meta.get("ending_inventories") or {})
-        source = "metadata.ending_inventories"
-        para = inventory_from_paradigms(document.get("paradigms") or [])
+        paradigms = document.get("paradigms") or []
+        inv = inventory_shortest_cells(paradigms)
+        source = "shortest per cell from paradigms"
         if not inv:
-            inv = para
-            source = "majority from serialized paradigms (metadata empty)"
-        else:
-            # Thin complete classes (e.g. dlm -ur) can miss the metadata
-            # majority cut and still belong in the candidate tables.
-            for class_source, features in para.items():
-                if class_source not in inv:
-                    inv[class_source] = features
-                    source = "metadata.ending_inventories plus paradigm majority"
+            meta = document.get("metadata") or {}
+            inv = dict(meta.get("ending_inventories") or {})
+            source = "metadata.ending_inventories"
+        if not inv:
+            inv = inventory_from_paradigms(paradigms)
+            source = "majority from serialized paradigms"
         if not inv:
             notes[lect] = "no stripable 6-grid"
             continue
@@ -426,8 +501,37 @@ def stem_lects(inventories: Inventory, class_source: str) -> str:
     return format_sources(sources) or "—"
 
 
-def index_tables(inventories: Inventory, stems: list[str]) -> list[str]:
+LATIN_CLASSES = {"esse", "stare", "habere"}
+
+
+def conglomerate_feature(tree: dict, members: list[str], feature: str) -> dict:
+    """Pool one TAM's forms from every lect variant of a class."""
+    slot_map: dict = {}
+    for stem in members:
+        row = (tree.get(stem) or {}).get(feature) or {}
+        for slot, endings in row.items():
+            dest = slot_map.setdefault(slot, {})
+            for ending, node in endings.items():
+                cell = dest.setdefault(ending, {"support": 0, "sources": []})
+                cell["support"] += node["support"]
+                cell["sources"].extend(node["sources"])
+    return slot_map
+
+
+def conglomerate_present(tree: dict, members: list[str]) -> dict:
+    return conglomerate_feature(tree, members, "indicative.present")
+
+
+def class_tam_names(tree: dict, members: list[str]) -> list[str]:
+    present = set()
+    for stem in members:
+        present.update(tree.get(stem) or {})
+    return [name for name in TAM_ORDER if name in present]
+
+
+def index_tables(inventories: Inventory, tree: dict, stems: list[str]) -> list[str]:
     lines = ["# index", ""]
+    theme_shortlist = {"a-theme", "e-theme", "i-theme", "re"}
     for bucket in BUCKET_ORDER:
         members = [stem for stem in stems if bucket_of(stem) == bucket]
         if not members:
@@ -442,8 +546,32 @@ def index_tables(inventories: Inventory, stems: list[str]) -> list[str]:
         ])
         for stem in members:
             lects = ", ".join(lects_for(inventories, stem)) or "—"
-            lines.append(f"| {stem_link(stem)} | {lects} |")
+            if bucket in LATIN_CLASSES:
+                lines.append(
+                    f'| <a id="{stem_anchor(stem)}"></a>{brace(stem)} | {lects} |'
+                )
+            else:
+                lines.append(f"| {stem_link(stem)} | {lects} |")
         lines.append("")
+        if bucket in theme_shortlist:
+            pooled = conglomerate_present(tree, members)
+            lines.extend([
+                "conglomerate shortlist",
+                "",
+            ])
+            lines.extend(person_table(shortest_slot_map(pooled)))
+            lines.append("")
+        if bucket in LATIN_CLASSES:
+            for feature in class_tam_names(tree, members):
+                pooled = conglomerate_feature(tree, members, feature)
+                if not pooled:
+                    continue
+                lines.extend([
+                    f"### {feature} (shortlist)",
+                    "",
+                ])
+                lines.extend(person_table(shortest_slot_map(pooled), full_word=True))
+                lines.append("")
     lines.extend([
         "## other",
         "",
@@ -485,7 +613,7 @@ def other_irregulars_table(
     return lines
 
 
-def person_table(slot_map: dict) -> list[str]:
+def person_table(slot_map: dict, *, full_word: bool = False) -> list[str]:
     """3×2 (person × number) table. Each cell is `-ending (lect, lect)`."""
     lines = [
         "| | sg | pl |",
@@ -495,7 +623,7 @@ def person_table(slot_map: dict) -> list[str]:
         cells = []
         for number in NUMBERS:
             slot = f"{person}{number}"
-            cells.append(md_cell(format_cell(slot_map.get(slot) or {})))
+            cells.append(md_cell(format_cell(slot_map.get(slot) or {}, full_word=full_word)))
         lines.append(f"| **{person}** | {cells[0]} | {cells[1]} |")
     return lines
 
@@ -503,8 +631,11 @@ def person_table(slot_map: dict) -> list[str]:
 def render(inventories: Inventory) -> str:
     tree = collect_candidates(inventories)
     stems = sorted(tree, key=stem_sort_key)
-    lines: list[str] = index_tables(inventories, stems)
-    analyzed = [stem for stem in stems if bucket_of(stem) != "other"]
+    lines: list[str] = index_tables(inventories, tree, stems)
+    analyzed = [
+        stem for stem in stems
+        if bucket_of(stem) not in {"other", *LATIN_CLASSES}
+    ]
     for class_source in analyzed:
         features = tree[class_source]
         tams = [name for name in TAM_ORDER if name in features]
