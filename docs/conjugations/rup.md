@@ -10,7 +10,7 @@
 - Verb lemma entries: **920**
 - Inflected form records: **3930**
 - Separate form-of entries: **68**
-- Classified person-slot observations: **1379**
+- Classified person-slot observations: **1415**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 

@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries
 - Source files: `kaikki-ast.jsonl`
-- Lemmas with forms: **2005**
+- Lemmas with forms: **2004**
 - Verb lemma entries: **1545**
-- Inflected form records: **96145**
+- Inflected form records: **96086**
 - Separate form-of entries: **25421**
-- Classified person-slot observations: **106356**
+- Classified person-slot observations: **106304**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -19,7 +19,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
 | `-ar` | 1209 | 9 | 9 |
-| `-ir` | 168 | 9 | 8 |
+| `-ir` | 167 | 9 | 8 |
 | `-er` | 145 | 8 | 8 |
 | `other` | 483 | 0 | 0 |
 
@@ -342,9 +342,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.imperfect` | 69 | `template` | -ía | -íes | -ía | -íemos | -íeis | -íen |
 | `indicative.pluperfect` | 68 | `template` | -iere | -ieres | -iere | -iéremos | -iereis | -ieren |
 | `indicative.present` | 67 | `template` | -o | -es | -e | -imos | -ís | -en |
-| `indicative.preterite` | 68 | `template` | -í | -iesti | -ió | -iemos | -iestis | -ieron |
+| `indicative.preterite` | 67 | `template` | -í | -iesti | -ió | -iemos | -iestis | -ieron |
 | `subjunctive.imperfect` | 69 | `template` | -iere | -ieres | -iere | -iéremos | -iereis | -ieren |
-| `subjunctive.present` | 71 | `template` | -a | -as | -a | -amos | -áis | -an |
+| `subjunctive.present` | 70 | `template` | -a | -as | -a | -amos | -áis | -an |
 
 ### Representative lemmas
 

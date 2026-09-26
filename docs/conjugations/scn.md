@@ -8,9 +8,9 @@
 - Source files: `kaikki-scn.jsonl`
 - Lemmas with forms: **176**
 - Verb lemma entries: **278**
-- Inflected form records: **5445**
+- Inflected form records: **5421**
 - Separate form-of entries: **99**
-- Classified person-slot observations: **5001**
+- Classified person-slot observations: **4977**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 

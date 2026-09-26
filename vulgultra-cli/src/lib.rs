@@ -856,48 +856,53 @@ fn slice_indices(cands: &[CandidateData]) -> Vec<usize> {
 
 const FINITE_ROW_NAMES: [&str; 6] = ["prs", "pst", "fut", "subj", "theme_i", "theme_a"];
 
-fn row_pair_collisions(row: &[Vec<String>]) -> u64 {
-    let mut n = 0u64;
-    for i in 0..row.len() {
-        for j in (i + 1)..row.len() {
-            if row[i] == row[j] { n += 1; }
+fn common_suffix_len(left: &[String], right: &[String]) -> usize {
+    let mut n = 0usize;
+    for (a, b) in left.iter().rev().zip(right.iter().rev()) {
+        if a != b {
+            break;
         }
+        n += 1;
     }
     n
 }
 
-/// Score one 6-person row. Lower is better. Matches Python `_row_score` key order.
-fn row_score(
-    row: &[Vec<String>],
+/// Score one finite cell. Lower is better. Matches Python `_cell_score`.
+/// Syllables first; concordance (shared person coda) only among equals.
+fn cell_score(
+    cell: &[String],
+    row_so_far: &[Vec<String>],
+    anchors: &[Vec<String>],
     phonemes: &HashSet<String>,
     lang: &str,
     vowels: &[String],
-) -> (u64, u64, u32, usize, std::cmp::Reverse<usize>, String) {
-    let collisions = row_pair_collisions(row);
-    let violations: u64 = row.iter()
-        .map(|cell| count_violations_in(cell, vowels) as u64)
-        .sum();
+) -> (u32, u64, u64, u32, std::cmp::Reverse<usize>, std::cmp::Reverse<usize>, usize, String) {
+    let syllables = count_syllables_in(cell, vowels);
+    let violations = count_violations_in(cell, vowels) as u64;
+    let collisions = row_so_far.iter().filter(|other| other.as_slice() == cell).count() as u64;
     let mut dist = 0u32;
-    for i in 0..row.len() {
-        for j in (i + 1)..row.len() {
-            let d = phonemic_edit_distance(&row[i], &row[j]);
-            if d < DIST_THRESHOLD {
-                dist += DIST_THRESHOLD - d;
-            }
+    for other in row_so_far {
+        let d = phonemic_edit_distance(cell, other);
+        if d < DIST_THRESHOLD {
+            dist += DIST_THRESHOLD - d;
         }
     }
-    let mut fresh: HashSet<String> = HashSet::new();
-    for cell in row {
-        for p in cell {
-            fresh.insert(p.clone());
-        }
-    }
-    let new_ph = fresh.iter().filter(|p| !phonemes.contains(*p)).count();
-    let length = row.iter().map(|cell| cell.len()).sum();
-    (collisions, violations, dist, length, std::cmp::Reverse(new_ph), lang.to_string())
+    let concordance: usize = anchors.iter().map(|a| common_suffix_len(cell, a)).sum();
+    let new_ph = cell.iter().filter(|p| !phonemes.contains(*p)).collect::<HashSet<_>>().len();
+    (
+        syllables,
+        violations,
+        collisions,
+        dist,
+        std::cmp::Reverse(concordance),
+        std::cmp::Reverse(new_ph),
+        cell.len(),
+        lang.to_string(),
+    )
 }
 
-/// Each finite tense is the lect that wins that row. Non-finite tail is shared.
+/// Each finite cell may come from any lect; concordance breaks σ ties.
+/// Non-finite tail is shared from the first catalog lect.
 fn assemble_verb_rows(
     catalog: &EndingCatalog,
     phonemes: &HashSet<String>,
@@ -910,30 +915,50 @@ fn assemble_verb_rows(
     let mut used = phonemes.clone();
     let mut labels: Vec<String> = Vec::new();
     let mut cells: Vec<Vec<String>> = Vec::new();
+    let mut anchors: Vec<Vec<Vec<String>>> = vec![Vec::new(); 6];
     for (r, name) in FINITE_ROW_NAMES.iter().enumerate() {
         let start = r * 6;
-        let mut best: Option<(u64, u64, u32, usize, std::cmp::Reverse<usize>, String)> = None;
-        let mut best_row: Vec<Vec<String>> = Vec::new();
-        for lang in &langs {
-            let block = &catalog.verb_blocks[*lang];
-            if block.len() < start + 6 {
-                return Err(format!("verb block {lang} has {} cells, need {}", block.len(), start + 6));
+        let mut row: Vec<Vec<String>> = Vec::with_capacity(6);
+        let mut row_langs: Vec<String> = Vec::with_capacity(6);
+        for person in 0..6 {
+            let mut best: Option<(
+                u32, u64, u64, u32,
+                std::cmp::Reverse<usize>, std::cmp::Reverse<usize>, usize, String,
+            )> = None;
+            let mut best_cell: Vec<String> = Vec::new();
+            for lang in &langs {
+                let block = &catalog.verb_blocks[*lang];
+                if block.len() < start + 6 {
+                    return Err(format!(
+                        "verb block {lang} has {} cells, need {}",
+                        block.len(),
+                        start + 6
+                    ));
+                }
+                let cell = &block[start + person];
+                let key = cell_score(
+                    cell,
+                    &row,
+                    &anchors[person],
+                    &used,
+                    lang,
+                    &catalog.vowels,
+                );
+                if best.as_ref().map(|b| key < *b).unwrap_or(true) {
+                    best = Some(key);
+                    best_cell = cell.clone();
+                }
             }
-            let row = &block[start..start + 6];
-            let key = row_score(row, &used, lang, &catalog.vowels);
-            if best.as_ref().map(|b| key < *b).unwrap_or(true) {
-                best = Some(key);
-                best_row = row.to_vec();
-            }
-        }
-        let winner = best.ok_or("no verb row")?;
-        for cell in &best_row {
-            for p in cell {
+            let winner = best.ok_or("no verb cell")?;
+            for p in &best_cell {
                 used.insert(p.clone());
             }
+            anchors[person].push(best_cell.clone());
+            row_langs.push(winner.7);
+            row.push(best_cell);
         }
-        labels.push(format!("{name}={}", winner.5));
-        cells.extend(best_row);
+        labels.push(format!("{name}={}", row_langs.join("/")));
+        cells.extend(row);
     }
     let tail_lang = langs[0];
     let tail = &catalog.verb_blocks[tail_lang];
@@ -944,7 +969,7 @@ fn assemble_verb_rows(
     Ok((cells, labels.join(",")))
 }
 
-/// Noun theme is global. Each verb tense is its own row. Roots stay pinned.
+/// Noun theme is global. Verb cells mix lects; concordance breaks ties.
 pub fn enumerate_endings(
     catalog: &EndingCatalog,
     selections: &[usize],

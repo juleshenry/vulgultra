@@ -147,9 +147,9 @@ Eastern & $u$ &
 \end{tabular}
 \end{center}
 
-Person rows stay per-lect (clipped to $1\sigma$). The case layer is
+Person cells may mix lects (clipped to $1\sigma$). The case layer is
 Latin; the theme is the class. Do not mix $-os$ from Spanish with
-$-i$ from Italian inside one class.
+$-i$ from Italian inside one noun class.
 
 \chapter{Phonology}
 \label{ch:phonology}
@@ -243,7 +243,7 @@ class (Ibero and Gallo-Italian $o$, Sardinian--Eastern $u$, Occitano and
 Oil $e$). Corsican is $u$ with Sicilian; Megleno-Romanian is $u$ with
 Romanian; Romagnol is $o$ with the other Gallo-Italian lects, not a
 clone of Emilian. The case \emph{layer} is Latin, the theme is the
-class. Person rows stay per-lect (clipped to $1\sigma$): that is the
+class. Person cells may mix lects (clipped to $1\sigma$): that is the
 one place 36 tables are real.
 
 \section{Adjectives}
@@ -258,11 +258,17 @@ Copula is suppletive present: $so, es, e, som, sos, son$.
 
 \section{Verbs}
 
-One lexical stem. Each finite tense is its own 6-person row, taken
-from one lect, and tenses may come from different lects. The tense
-theme and the person endings of that row travel together
-(\texttt{amos} clips to \texttt{mos}). $3\times 2\times 3\times 2=36$
-finite cells plus 5 non-finite. Every cell is $1\sigma$.
+One lexical stem. Each finite cell (person $\times$ tense/mood) is
+chosen on its own from any lect; a row may mix lects.
+\texttt{amos} clips to \texttt{mos}. $3\times 2\times 3\times 2=36$
+finite cells plus 5 non-finite. Every cell is $1\sigma$ when the
+shortlist allows.
+
+Among equal-length legal candidates for a cell, prefer
+\emph{concordance}: a shared person coda with already-chosen cells of
+the same person across earlier tenses/moods (present 1pl \texttt{ons}
+tips a tied future toward \texttt{erons}). Concordance never spends an
+extra syllable.
 
 Collision and $d\ge 2$ distinctiveness apply \textbf{inside a 6-person
 row}, not across tenses. Romance syncretism across tenses is legal;
@@ -303,8 +309,9 @@ do not bias lexical selection.
 Init: greedy maximum-contrast selection on the min-$\sigma$ slice. SA may
 swap roots inside that slice only to improve the root segment union.
 
-Endings: each tense row is chosen on its own. The six cells of a row
-stay one lect. Noun theme stays one block.
+Endings: each finite cell is chosen on its own. Concordance (shared
+person coda across tenses) breaks length ties. Noun theme stays one
+block.
 
 \chapter{Syntax}
 

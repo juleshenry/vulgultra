@@ -10,7 +10,7 @@
 - Verb lemma entries: **303**
 - Inflected form records: **204**
 - Separate form-of entries: **0**
-- Classified person-slot observations: **2331**
+- Classified person-slot observations: **2392**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -44,12 +44,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | i son |
-| `2sg` | it ses |
-| `3sg` | a l'é |
-| `1pl` | i soma |
-| `2pl` | i seve |
-| `3pl` | a son |
+| `1sg` | sun |
+| `2sg` | ses |
+| `3sg` | è |
+| `1pl` | suma |
+| `2pl` | seve |
+| `3pl` | sun |
 
 ##### `conditional`
 

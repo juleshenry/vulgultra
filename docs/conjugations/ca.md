@@ -10,7 +10,7 @@
 - Verb lemma entries: **4276**
 - Inflected form records: **255182**
 - Separate form-of entries: **1**
-- Classified person-slot observations: **195792**
+- Classified person-slot observations: **207525**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,15 +18,15 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-ar` | 3228 | 11 | 8 |
-| `-ir` | 496 | 11 | 8 |
-| `-re` | 194 | 11 | 8 |
-| `estar` | 1 | 11 | 8 |
-| `haver` | 1 | 11 | 8 |
-| `-er` | 69 | 11 | 7 |
-| `ser` | 1 | 11 | 6 |
-| `other` | 224 | 11 | 1 |
-| `anar` | 1 | 13 | 0 |
+| `-ar` | 3228 | 12 | 9 |
+| `-ir` | 496 | 12 | 9 |
+| `other` | 224 | 12 | 9 |
+| `-re` | 194 | 12 | 9 |
+| `estar` | 1 | 12 | 9 |
+| `haver` | 1 | 12 | 9 |
+| `-er` | 69 | 12 | 7 |
+| `ser` | 1 | 12 | 7 |
+| `anar` | 1 | 14 | 0 |
 
 ## Ending: `-ar`
 
@@ -40,12 +40,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 3179 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `conditional.perfect` | 85 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `imperative` | 65 | `lcp` | -i | -a | -i | -em | -eu | -in |
 | `indicative.future` | 3179 | `lcp` | -é | -às | -à | -em | -eu | -an |
 | `indicative.imperfect` | 3178 | `lcp` | -ava | -aves | -ava | -àvem | -àveu | -aven |
 | `indicative.present` | 2437 | `lcp` | -o | -es | -a | -em | -eu | -en |
 | `indicative.preterite` | 2428 | `lcp` | -í | -ares | -à | -àrem | -àreu | -aren |
 | `subjunctive.imperfect` | 3177 | `lcp` | -és | -essis | -és | -éssim | -éssiu | -essin |
-| `subjunctive.present` | 3002 | `lcp` | -i | -is | -i | -em | -eu | -in |
+| `subjunctive.present` | 2998 | `lcp` | -i | -is | -i | -em | -eu | -in |
 
 ### Representative lemmas
 
@@ -83,6 +84,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parli |
+| `2sg` | parla |
+| `3sg` | parli |
+| `1pl` | parlem |
+| `2pl` | parleu |
+| `3pl` | parlin |
 
 ##### `indicative.future`
 
@@ -128,17 +140,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | havíeu parlat |
 | `3pl` | havien parlat |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlí |
-| `2sg` | parlares |
-| `3sg` | parlà |
-| `1pl` | parlàrem |
-| `2pl` | parlàreu |
-| `3pl` | parlaren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 #### `menjar`
@@ -175,6 +176,17 @@ _…4 more tense/mood rows in the JSON corpus._
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | mengi |
+| `2sg` | menja |
+| `3sg` | mengi |
+| `1pl` | mengem |
+| `2pl` | mengeu |
+| `3pl` | mengin |
 
 ##### `indicative.future`
 
@@ -220,17 +232,6 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | havíeu menjat |
 | `3pl` | havien menjat |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mengí |
-| `2sg` | menjares |
-| `3sg` | menjà |
-| `1pl` | menjàrem |
-| `2pl` | menjàreu |
-| `3pl` | menjaren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 #### `adinerar`
@@ -267,6 +268,17 @@ _…4 more tense/mood rows in the JSON corpus._
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | adineri |
+| `2sg` | adinera |
+| `3sg` | adineri |
+| `1pl` | adinerem |
+| `2pl` | adinereu |
+| `3pl` | adinerin |
 
 ##### `indicative.future`
 
@@ -312,17 +324,6 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | havíeu adinerat |
 | `3pl` | havien adinerat |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | adinerí |
-| `2sg` | adinerares |
-| `3sg` | adinerà |
-| `1pl` | adineràrem |
-| `2pl` | adineràreu |
-| `3pl` | adineraren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 ## Ending: `-ir`
@@ -337,12 +338,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 481 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `conditional.perfect` | 20 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `imperative` | 13 | `lcp` | -eixi | -eix | -eixi | -im | -iu | -eixin |
 | `indicative.future` | 481 | `lcp` | -é | -às | -à | -em | -eu | -an |
-| `indicative.imperfect` | 412 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
-| `indicative.present` | 353 | `lcp` | -eixo | -eixes | -eix | -im | -iu | -eixen |
-| `indicative.preterite` | 388 | `lcp` | -í | -ires | -í | -írem | -íreu | -iren |
-| `subjunctive.imperfect` | 389 | `lcp` | -ís | -issis | -ís | -íssim | -íssiu | -issin |
-| `subjunctive.present` | 353 | `lcp` | -eixi | -eixis | -eixi | -im | -iu | -eixin |
+| `indicative.imperfect` | 411 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `indicative.present` | 352 | `lcp` | -eixo | -eixes | -eix | -im | -iu | -eixen |
+| `indicative.preterite` | 373 | `lcp` | -í | -ires | -í | -írem | -íreu | -iren |
+| `subjunctive.imperfect` | 388 | `lcp` | -ís | -issis | -ís | -íssim | -íssiu | -issin |
+| `subjunctive.present` | 352 | `lcp` | -eixi | -eixis | -eixi | -im | -iu | -eixin |
 
 ### Representative lemmas
 
@@ -380,6 +382,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | tingui |
+| `2sg` | té |
+| `3sg` | tingui |
+| `1pl` | tinguem |
+| `2pl` | teniu |
+| `3pl` | tinguin |
 
 ##### `indicative.future`
 
@@ -425,17 +438,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | havíeu tingut |
 | `3pl` | havien tingut |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tinguí |
-| `2sg` | tingueres |
-| `3sg` | tingué |
-| `1pl` | tinguérem |
-| `2pl` | tinguéreu |
-| `3pl` | tingueren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 #### `dir`
@@ -472,6 +474,17 @@ _…4 more tense/mood rows in the JSON corpus._
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | digui |
+| `2sg` | digues |
+| `3sg` | digui |
+| `1pl` | diguem |
+| `2pl` | dieu |
+| `3pl` | diguin |
 
 ##### `indicative.future`
 
@@ -517,17 +530,6 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | havíeu dit |
 | `3pl` | havien dit |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | diguí |
-| `2sg` | digueres |
-| `3sg` | digué |
-| `1pl` | diguérem |
-| `2pl` | diguéreu |
-| `3pl` | digueren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 #### `adherir`
@@ -564,6 +566,17 @@ _…4 more tense/mood rows in the JSON corpus._
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | adhereixi |
+| `2sg` | adhereix |
+| `3sg` | adhereixi |
+| `1pl` | adherim |
+| `2pl` | adheriu |
+| `3pl` | adhereixin |
 
 ##### `indicative.future`
 
@@ -609,16 +622,303 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | havíeu adherit |
 | `3pl` | havien adherit |
 
-##### `indicative.preterite`
+_…4 more tense/mood rows in the JSON corpus._
+
+## `other`
+
+Template stem args observed: `<var:aux>`, `estrènyer<>-li`.
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 5 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `conditional.perfect` | 4 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `imperative` | 1 | `lcp` | -i's | -a | -i | -em | -eu | -in |
+| `indicative.future` | 5 | `lcp` | -é | -às | -à | -em | -eu | -an |
+| `indicative.imperfect` | 2 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `indicative.present` | 1 | `lcp` | -c | -us | -u | -em | -eu | -en |
+| `indicative.preterite` | 3 | `lcp` | -í | -eres | -é | -érem | -éreu | -eren |
+| `subjunctive.imperfect` | 5 | `lcp` | -és | -essis | -és | -éssim | -éssiu | -essin |
+| `subjunctive.present` | 5 | `lcp` | -i | -is | -i | -em | -eu | -in |
+
+### Representative lemmas
+
+#### `adir-se`
+
+##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | adherí |
-| `2sg` | adherires |
-| `3sg` | adherí |
-| `1pl` | adherírem |
-| `2pl` | adheríreu |
-| `3pl` | adheriren |
+| `1sg` | adic |
+| `2sg` | adius |
+| `3sg` | adiu |
+| `1pl` | adiem |
+| `2pl` | adieu |
+| `3pl` | adiuen |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | adiria |
+| `2sg` | adiries |
+| `3sg` | adiria |
+| `1pl` | adiríem |
+| `2pl` | adiríeu |
+| `3pl` | adirien |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | hauria |
+| `2sg` | hauries |
+| `3sg` | hauria |
+| `1pl` | hauríem |
+| `2pl` | hauríeu |
+| `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | adigui's |
+| `2sg` | adigues |
+| `3sg` | adigui |
+| `1pl` | adiguem |
+| `2pl` | adieu |
+| `3pl` | adiguin |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | adiré |
+| `2sg` | adiràs |
+| `3sg` | adirà |
+| `1pl` | adirem |
+| `2pl` | adireu |
+| `3pl` | adiran |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | adeia |
+| `2sg` | adeies |
+| `3sg` | adeia |
+| `1pl` | adèiem |
+| `2pl` | adèieu |
+| `3pl` | adeien |
+
+##### `indicative.periphrastic-past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vaig adir |
+| `2sg` | vas adir |
+| `3sg` | va adir |
+| `1pl` | vam adir |
+| `2pl` | vau adir |
+| `3pl` | van adir |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | havia adit |
+| `2sg` | havies adit |
+| `3sg` | havia adit |
+| `1pl` | havíem adit |
+| `2pl` | havíeu adit |
+| `3pl` | havien adit |
+
+_…4 more tense/mood rows in the JSON corpus._
+
+#### `acarnissar-se`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | acarnisso |
+| `2sg` | acarnisses |
+| `3sg` | acarnissa |
+| `1pl` | acarnissem |
+| `2pl` | acarnisseu |
+| `3pl` | acarnissen |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | acarnissaria |
+| `2sg` | acarnissaries |
+| `3sg` | acarnissaria |
+| `1pl` | acarnissaríem |
+| `2pl` | acarnissaríeu |
+| `3pl` | acarnissarien |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | hauria |
+| `2sg` | hauries |
+| `3sg` | hauria |
+| `1pl` | hauríem |
+| `2pl` | hauríeu |
+| `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | acarnissi's |
+| `2sg` | acarnissa |
+| `3sg` | acarnissi |
+| `1pl` | acarnissem |
+| `2pl` | acarnisseu |
+| `3pl` | acarnissin |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | acarnissaré |
+| `2sg` | acarnissaràs |
+| `3sg` | acarnissarà |
+| `1pl` | acarnissarem |
+| `2pl` | acarnissareu |
+| `3pl` | acarnissaran |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | acarnissava |
+| `2sg` | acarnissaves |
+| `3sg` | acarnissava |
+| `1pl` | acarnissàvem |
+| `2pl` | acarnissàveu |
+| `3pl` | acarnissaven |
+
+##### `indicative.periphrastic-past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vaig acarnissar |
+| `2sg` | vas acarnissar |
+| `3sg` | va acarnissar |
+| `1pl` | vam acarnissar |
+| `2pl` | vau acarnissar |
+| `3pl` | van acarnissar |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | havia acarnissat |
+| `2sg` | havies acarnissat |
+| `3sg` | havia acarnissat |
+| `1pl` | havíem acarnissat |
+| `2pl` | havíeu acarnissat |
+| `3pl` | havien acarnissat |
+
+_…4 more tense/mood rows in the JSON corpus._
+
+#### `abstindre's`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abstindo |
+| `2sg` | abstinds |
+| `3sg` | abstind |
+| `1pl` | abstindem |
+| `2pl` | abstindeu |
+| `3pl` | abstinden |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abstindria |
+| `2sg` | abstindries |
+| `3sg` | abstindria |
+| `1pl` | abstindríem |
+| `2pl` | abstindríeu |
+| `3pl` | abstindrien |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | hauria |
+| `2sg` | hauries |
+| `3sg` | hauria |
+| `1pl` | hauríem |
+| `2pl` | hauríeu |
+| `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abstingui's |
+| `2sg` | abstind |
+| `3sg` | abstindi |
+| `1pl` | abstindem |
+| `2pl` | abstindeu |
+| `3pl` | abstindin |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abstindré |
+| `2sg` | abstindràs |
+| `3sg` | abstindrà |
+| `1pl` | abstindrem |
+| `2pl` | abstindreu |
+| `3pl` | abstindran |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abstindia |
+| `2sg` | abstindies |
+| `3sg` | abstindia |
+| `1pl` | abstindíem |
+| `2pl` | abstindíeu |
+| `3pl` | abstindien |
+
+##### `indicative.periphrastic-past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vaig abstindre |
+| `2sg` | vas abstindre |
+| `3sg` | va abstindre |
+| `1pl` | vam abstindre |
+| `2pl` | vau abstindre |
+| `3pl` | van abstindre |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | havia abstindut |
+| `2sg` | havies abstindut |
+| `3sg` | havia abstindut |
+| `1pl` | havíem abstindut |
+| `2pl` | havíeu abstindut |
+| `3pl` | havien abstindut |
 
 _…4 more tense/mood rows in the JSON corpus._
 
@@ -634,12 +934,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 184 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `conditional.perfect` | 5 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `imperative` | 2 | `lcp` | -egui | -eu | -egui | -eguem | -aieu | -eguin |
 | `indicative.future` | 184 | `lcp` | -é | -às | -à | -em | -eu | -an |
 | `indicative.imperfect` | 140 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `indicative.present` | 32 | `lcp` | -o | -s | ∅ | -em | -eu | -en |
-| `indicative.preterite` | 172 | `lcp` | -í | -eres | -é | -érem | -éreu | -eren |
+| `indicative.preterite` | 167 | `lcp` | -í | -eres | -é | -érem | -éreu | -eren |
 | `subjunctive.imperfect` | 177 | `lcp` | -és | -essis | -és | -éssim | -éssiu | -essin |
-| `subjunctive.present` | 164 | `lcp` | -i | -is | -i | -em | -eu | -in |
+| `subjunctive.present` | 166 | `lcp` | -i | -is | -i | -em | -eu | -in |
 
 ### Representative lemmas
 
@@ -677,6 +978,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | visqui |
+| `2sg` | viu |
+| `3sg` | visqui |
+| `1pl` | visquem |
+| `2pl` | viviu |
+| `3pl` | visquin |
 
 ##### `indicative.future`
 
@@ -722,17 +1034,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | havíeu viscut |
 | `3pl` | havien viscut |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | visquí |
-| `2sg` | visqueres |
-| `3sg` | visqué |
-| `1pl` | visquérem |
-| `2pl` | visquéreu |
-| `3pl` | visqueren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 #### `abstreure`
@@ -752,12 +1053,12 @@ _…4 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | abstrauria |
-| `2sg` | abstrauries |
-| `3sg` | abstrauria |
-| `1pl` | abstrauríem |
-| `2pl` | abstrauríeu |
-| `3pl` | abstraurien |
+| `1sg` | abstrauia |
+| `2sg` | abstrauies |
+| `3sg` | abstrauia |
+| `1pl` | abstrauíem |
+| `2pl` | abstrauíeu |
+| `3pl` | abstrauien |
 
 ##### `conditional.perfect`
 
@@ -770,16 +1071,27 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | hauríeu |
 | `3pl` | haurien |
 
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abstregui |
+| `2sg` | abstreu |
+| `3sg` | abstregui |
+| `1pl` | abstreguem |
+| `2pl` | abstraieu |
+| `3pl` | abstreguin |
+
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abstrauré |
-| `2sg` | abstrauràs |
-| `3sg` | abstraurà |
-| `1pl` | abstraurem |
-| `2pl` | abstraureu |
-| `3pl` | abstrauran |
+| `1sg` | abstraué |
+| `2sg` | abstrauàs |
+| `3sg` | abstrauà |
+| `1pl` | abstrauem |
+| `2pl` | abstraueu |
+| `3pl` | abstrauan |
 
 ##### `indicative.imperfect`
 
@@ -814,17 +1126,6 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | havíeu abstret |
 | `3pl` | havien abstret |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abstraguí |
-| `2sg` | abstragueres |
-| `3sg` | abstragué |
-| `1pl` | abstraguérem |
-| `2pl` | abstraguéreu |
-| `3pl` | abstragueren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 #### `abstraure`
@@ -844,12 +1145,12 @@ _…4 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | abstrauria |
-| `2sg` | abstrauries |
-| `3sg` | abstrauria |
-| `1pl` | abstrauríem |
-| `2pl` | abstrauríeu |
-| `3pl` | abstraurien |
+| `1sg` | abstrauia |
+| `2sg` | abstrauies |
+| `3sg` | abstrauia |
+| `1pl` | abstrauíem |
+| `2pl` | abstrauíeu |
+| `3pl` | abstrauien |
 
 ##### `conditional.perfect`
 
@@ -862,16 +1163,27 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | hauríeu |
 | `3pl` | haurien |
 
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abstregui |
+| `2sg` | abstreu |
+| `3sg` | abstregui |
+| `1pl` | abstreguem |
+| `2pl` | abstraieu |
+| `3pl` | abstreguin |
+
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abstrauré |
-| `2sg` | abstrauràs |
-| `3sg` | abstraurà |
-| `1pl` | abstraurem |
-| `2pl` | abstraureu |
-| `3pl` | abstrauran |
+| `1sg` | abstraué |
+| `2sg` | abstrauàs |
+| `3sg` | abstrauà |
+| `1pl` | abstrauem |
+| `2pl` | abstraueu |
+| `3pl` | abstrauan |
 
 ##### `indicative.imperfect`
 
@@ -906,17 +1218,6 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | havíeu abstret |
 | `3pl` | havien abstret |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abstraguí |
-| `2sg` | abstragueres |
-| `3sg` | abstragué |
-| `1pl` | abstraguérem |
-| `2pl` | abstraguéreu |
-| `3pl` | abstragueren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 ## Irregular: `estar`
@@ -929,10 +1230,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 1 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `conditional.perfect` | 1 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `imperative` | 1 | `lcp` | -igui | -igues | -igui | -iguem | -eu | -iguin |
 | `indicative.future` | 1 | `lcp` | -é | -às | -à | -em | -eu | -an |
 | `indicative.imperfect` | 1 | `lcp` | -ava | -aves | -ava | -àvem | -àveu | -aven |
 | `indicative.present` | 1 | `lcp` | -ic | -às | -à | -em | -eu | -an |
-| `indicative.preterite` | 1 | `lcp` | -í | -eres | -é | -érem | -éreu | -eren |
+| `indicative.preterite` | 1 | `lcp` | -í | -ares | -à | -àrem | -àreu | -aren |
 | `subjunctive.imperfect` | 1 | `lcp` | -és | -essis | -és | -éssim | -éssiu | -essin |
 | `subjunctive.present` | 1 | `lcp` | -i | -is | -i | -em | -eu | -in |
 
@@ -972,6 +1274,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estigui |
+| `2sg` | estigues |
+| `3sg` | estigui |
+| `1pl` | estiguem |
+| `2pl` | esteu |
+| `3pl` | estiguin |
 
 ##### `indicative.future`
 
@@ -1017,17 +1330,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | havíeu estat |
 | `3pl` | havien estat |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estiguí |
-| `2sg` | estigueres |
-| `3sg` | estigué |
-| `1pl` | estiguérem |
-| `2pl` | estiguéreu |
-| `3pl` | estigueren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 ## Irregular: `haver`
@@ -1042,10 +1344,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 1 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `conditional.perfect` | 1 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `imperative` | 1 | `lcp` | -egui | -aig | -aig | -aig | -aig | -aig |
 | `indicative.future` | 1 | `lcp` | -é | -às | -à | -em | -eu | -an |
 | `indicative.imperfect` | 1 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `indicative.present` | 1 | `lcp` | -e | -as | -a | -em | -eu | -an |
-| `indicative.preterite` | 1 | `lcp` | -í | -eres | -é | -érem | -éreu | -eren |
+| `indicative.preterite` | 1 | `lcp` | -í | -eres | -é | -érem | -éreu | -éren |
 | `subjunctive.imperfect` | 1 | `lcp` | -és | -essis | -és | -éssim | -éssiu | -essin |
 | `subjunctive.present` | 1 | `lcp` | -agi | -agis | -agi | -àgim | -àgiu | -agin |
 
@@ -1087,6 +1390,17 @@ Stem: `<var:aux>`.
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | hegui |
+| `2sg` | haig |
+| `3sg` | haig |
+| `1pl` | haig |
+| `2pl` | haig |
+| `3pl` | haig |
 
 ##### `indicative.future`
 
@@ -1132,17 +1446,6 @@ Stem: `<var:aux>`.
 | `2pl` | havíeu hagut |
 | `3pl` | havien hagut |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | haguí |
-| `2sg` | hagueres |
-| `3sg` | hagué |
-| `1pl` | haguérem |
-| `2pl` | haguéreu |
-| `3pl` | hagueren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 ## Ending: `-er`
@@ -1159,7 +1462,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.future` | 61 | `lcp` | -é | -às | -à | -em | -eu | -an |
 | `indicative.imperfect` | 53 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `indicative.present` | 11 | `lcp` | -o | -s | ∅ | -em | -eu | -en |
-| `indicative.preterite` | 51 | `lcp` | -í | -eres | -é | -érem | -éreu | -eren |
+| `indicative.preterite` | 50 | `lcp` | -í | -eres | -é | -érem | -éreu | -eren |
 | `subjunctive.imperfect` | 59 | `lcp` | -és | -essis | -és | -éssim | -éssiu | -essin |
 | `subjunctive.present` | 47 | `lcp` | -i | -is | -i | -em | -eu | -in |
 
@@ -1199,6 +1502,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | faci |
+| `2sg` | fes |
+| `3sg` | faci |
+| `1pl` | fem |
+| `2pl` | feu |
+| `3pl` | facin |
 
 ##### `indicative.future`
 
@@ -1244,17 +1558,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | havíeu fet |
 | `3pl` | havien fet |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fiu |
-| `2sg` | feres |
-| `3sg` | feu |
-| `1pl` | férem |
-| `2pl` | féreu |
-| `3pl` | feren |
-
 _…4 more tense/mood rows in the JSON corpus._
 
 #### `acórrer`
@@ -1291,6 +1594,17 @@ _…4 more tense/mood rows in the JSON corpus._
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | acorri |
+| `2sg` | acorre |
+| `3sg` | acorri |
+| `1pl` | acorrem |
+| `2pl` | acorreu |
+| `3pl` | acorrin |
 
 ##### `indicative.future`
 
@@ -1335,17 +1649,6 @@ _…4 more tense/mood rows in the JSON corpus._
 | `1pl` | havíem acorregut |
 | `2pl` | havíeu acorregut |
 | `3pl` | havien acorregut |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | acorreguí |
-| `2sg` | acorregueres |
-| `3sg` | acorregué |
-| `1pl` | acorreguérem |
-| `2pl` | acorreguéreu |
-| `3pl` | acorregueren |
 
 _…4 more tense/mood rows in the JSON corpus._
 
@@ -1432,12 +1735,12 @@ _…4 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | — |
+| `1sg` | sigui |
+| `2sg` | no sigui |
 | `3sg` | — |
 | `1pl` | siguem |
 | `2pl` | sigueu |
-| `3pl` | — |
+| `3pl` | siguin |
 
 ## Irregular: `ser`
 
@@ -1449,6 +1752,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 1 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
 | `conditional.perfect` | 1 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
+| `imperative` | 1 | `lcp` | -igui | -igues | -igui | -iguem | -ou | -iguin |
 | `indicative.future` | 1 | `lcp` | -é | -às | -à | -em | -eu | -an |
 | `indicative.preterite` | 1 | `lcp` | -ui | -ores | -ou | -órem | -óreu | -oren |
 | `subjunctive.imperfect` | 1 | `lcp` | -os | -ossis | -os | -óssim | -óssiu | -ossin |
@@ -1462,7 +1766,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | soc |
+| `1sg` | sóc |
 | `2sg` | ets |
 | `3sg` | és |
 | `1pl` | som |
@@ -1490,6 +1794,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | hauríem |
 | `2pl` | hauríeu |
 | `3pl` | haurien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sigui |
+| `2sg` | sigues |
+| `3sg` | sigui |
+| `1pl` | siguem |
+| `2pl` | sou |
+| `3pl` | siguin |
 
 ##### `indicative.future`
 
@@ -1534,307 +1849,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | havíem estat |
 | `2pl` | havíeu estat |
 | `3pl` | havien estat |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fui |
-| `2sg` | fores |
-| `3sg` | fou |
-| `1pl` | fórem |
-| `2pl` | fóreu |
-| `3pl` | foren |
-
-_…4 more tense/mood rows in the JSON corpus._
-
-## `other`
-
-Template stem args observed: `<var:aux>`, `estrènyer<>-li`.
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional.perfect` | 4 | `lcp` | -ia | -ies | -ia | -íem | -íeu | -ien |
-
-### Representative lemmas
-
-#### `adir-se`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'adic |
-| `2sg` | t'adius |
-| `3sg` | s'adiu |
-| `1pl` | ens adiem |
-| `2pl` | us adieu |
-| `3pl` | s'adiuen |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'adiria |
-| `2sg` | t'adiries |
-| `3sg` | s'adiria |
-| `1pl` | ens adiríem |
-| `2pl` | us adiríeu |
-| `3pl` | s'adirien |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | hauria |
-| `2sg` | hauries |
-| `3sg` | hauria |
-| `1pl` | hauríem |
-| `2pl` | hauríeu |
-| `3pl` | haurien |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'adiré |
-| `2sg` | t'adiràs |
-| `3sg` | s'adirà |
-| `1pl` | ens adirem |
-| `2pl` | us adireu |
-| `3pl` | s'adiran |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'adeia |
-| `2sg` | t'adeies |
-| `3sg` | s'adeia |
-| `1pl` | ens adèiem |
-| `2pl` | us adèieu |
-| `3pl` | s'adeien |
-
-##### `indicative.periphrastic-past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vaig adir |
-| `2sg` | vas adir |
-| `3sg` | va adir |
-| `1pl` | vam adir |
-| `2pl` | vau adir |
-| `3pl` | van adir |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | havia adit |
-| `2sg` | havies adit |
-| `3sg` | havia adit |
-| `1pl` | havíem adit |
-| `2pl` | havíeu adit |
-| `3pl` | havien adit |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'adiguí |
-| `2sg` | t'adigueres |
-| `3sg` | s'adigué |
-| `1pl` | ens adiguérem |
-| `2pl` | us adiguéreu |
-| `3pl` | s'adigueren |
-
-_…4 more tense/mood rows in the JSON corpus._
-
-#### `acarnissar-se`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'acarnisso |
-| `2sg` | t'acarnisses |
-| `3sg` | s'acarnissa |
-| `1pl` | ens acarnissem |
-| `2pl` | us acarnisseu |
-| `3pl` | s'acarnissen |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'acarnissaria |
-| `2sg` | t'acarnissaries |
-| `3sg` | s'acarnissaria |
-| `1pl` | ens acarnissaríem |
-| `2pl` | us acarnissaríeu |
-| `3pl` | s'acarnissarien |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | hauria |
-| `2sg` | hauries |
-| `3sg` | hauria |
-| `1pl` | hauríem |
-| `2pl` | hauríeu |
-| `3pl` | haurien |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'acarnissaré |
-| `2sg` | t'acarnissaràs |
-| `3sg` | s'acarnissarà |
-| `1pl` | ens acarnissarem |
-| `2pl` | us acarnissareu |
-| `3pl` | s'acarnissaran |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'acarnissava |
-| `2sg` | t'acarnissaves |
-| `3sg` | s'acarnissava |
-| `1pl` | ens acarnissàvem |
-| `2pl` | us acarnissàveu |
-| `3pl` | s'acarnissaven |
-
-##### `indicative.periphrastic-past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vaig acarnissar |
-| `2sg` | vas acarnissar |
-| `3sg` | va acarnissar |
-| `1pl` | vam acarnissar |
-| `2pl` | vau acarnissar |
-| `3pl` | van acarnissar |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | havia acarnissat |
-| `2sg` | havies acarnissat |
-| `3sg` | havia acarnissat |
-| `1pl` | havíem acarnissat |
-| `2pl` | havíeu acarnissat |
-| `3pl` | havien acarnissat |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'acarnissí |
-| `2sg` | t'acarnissares |
-| `3sg` | s'acarnissà |
-| `1pl` | ens acarnissàrem |
-| `2pl` | us acarnissàreu |
-| `3pl` | s'acarnissaren |
-
-_…4 more tense/mood rows in the JSON corpus._
-
-#### `abstindre's`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m' abstinc |
-| `2sg` | t'abstens |
-| `3sg` | s'absté |
-| `1pl` | ens abstenim |
-| `2pl` | us absteniu |
-| `3pl` | s'abstenen |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstindria |
-| `2sg` | t'abstindries |
-| `3sg` | s'abstindria |
-| `1pl` | ens abstindríem |
-| `2pl` | us abstindríeu |
-| `3pl` | s'abstindrien |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | hauria |
-| `2sg` | hauries |
-| `3sg` | hauria |
-| `1pl` | hauríem |
-| `2pl` | hauríeu |
-| `3pl` | haurien |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstindré |
-| `2sg` | t'abstindràs |
-| `3sg` | s'abstindrà |
-| `1pl` | ens abstindrem |
-| `2pl` | us abstindreu |
-| `3pl` | s'abstindran |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstenia |
-| `2sg` | t'abstenies |
-| `3sg` | s'abstenia |
-| `1pl` | ens absteníem |
-| `2pl` | us absteníeu |
-| `3pl` | s'abstenien |
-
-##### `indicative.periphrastic-past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vaig abstindre |
-| `2sg` | vas abstindre |
-| `3sg` | va abstindre |
-| `1pl` | vam abstindre |
-| `2pl` | vau abstindre |
-| `3pl` | van abstindre |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | havia abstindut |
-| `2sg` | havies abstindut |
-| `3sg` | havia abstindut |
-| `1pl` | havíem abstindut |
-| `2pl` | havíeu abstindut |
-| `3pl` | havien abstindut |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m' abstinguí |
-| `2sg` | t'abstingueres |
-| `3sg` | s'abstingué |
-| `1pl` | ens abstinguérem |
-| `2pl` | us abstinguéreu |
-| `3pl` | s'abstingueren |
 
 _…4 more tense/mood rows in the JSON corpus._
 
@@ -1885,6 +1899,17 @@ Stem: `vaig`.
 | `2pl` | hauríeu |
 | `3pl` | haurien |
 
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vagi |
+| `2sg` | vés |
+| `3sg` | vagi |
+| `1pl` | anem |
+| `2pl` | aneu |
+| `3pl` | vagin |
+
 ##### `indicative`
 
 | Slot | Form |
@@ -1928,16 +1953,5 @@ Stem: `vaig`.
 | `1pl` | vam anar |
 | `2pl` | vau anar |
 | `3pl` | van anar |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | havia anat |
-| `2sg` | havies anat |
-| `3sg` | havia anat |
-| `1pl` | havíem anat |
-| `2pl` | havíeu anat |
-| `3pl` | havien anat |
 
 _…6 more tense/mood rows in the JSON corpus._

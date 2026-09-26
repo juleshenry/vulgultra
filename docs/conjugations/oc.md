@@ -10,7 +10,7 @@
 - Verb lemma entries: **963**
 - Inflected form records: **157558**
 - Separate form-of entries: **332**
-- Classified person-slot observations: **58146**
+- Classified person-slot observations: **60470**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,299 +18,11 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
+| `-ar` | 588 | 7 | 5 |
+| `-ir` | 70 | 7 | 5 |
 | `-er` | 43 | 7 | 5 |
-| `-ar` | 588 | 5 | 5 |
-| `-ir` | 70 | 5 | 5 |
-| `-re` | 36 | 5 | 5 |
+| `-re` | 36 | 7 | 5 |
 | `other` | 51 | 0 | 0 |
-
-## Ending: `-er`
-
-Template stem args observed: `con`.
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 11 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.future` | 8 | `lcp` | -ai | -às | -à | -em | -etz | -àn |
-| `indicative.imperfect` | 11 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.present` | 3 | `lcp` | -i | -es | ∅ | -èm | -ètz | -on |
-| `indicative.preterite` | 8 | `lcp` | -ri | -res | -t | -rem | -retz | -ron |
-
-### Representative lemmas
-
-#### `èsser`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | soi |
-| `2sg` | ès |
-| `3sg` | es |
-| `1pl` | sèm |
-| `2pl` | sètz |
-| `3pl` | son |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | seriái |
-| `2sg` | seriás |
-| `3sg` | seriá |
-| `1pl` | seriam |
-| `2pl` | seriatz |
-| `3pl` | serián |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | serai |
-| `2sg` | seràs |
-| `3sg` | serà |
-| `1pl` | serem |
-| `2pl` | seretz |
-| `3pl` | seràn |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | èri |
-| `2sg` | èras |
-| `3sg` | èra |
-| `1pl` | èrem |
-| `2pl` | èretz |
-| `3pl` | èran |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | foguèri |
-| `2sg` | foguères |
-| `3sg` | foguèt |
-| `1pl` | foguèrem |
-| `2pl` | foguèretz |
-| `3pl` | foguèron |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | foguèsse |
-| `2sg` | foguèsses |
-| `3sg` | foguèsse |
-| `1pl` | foguèssem |
-| `2pl` | foguèssetz |
-| `3pl` | foguèssen |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | siá |
-| `2sg` | siás |
-| `3sg` | siá |
-| `1pl` | siam |
-| `2pl` | siatz |
-| `3pl` | sián |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | siá |
-| `3sg` | — |
-| `1pl` | siam |
-| `2pl` | siatz |
-| `3pl` | — |
-
-#### `aver`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ai |
-| `2sg` | as |
-| `3sg` | a |
-| `1pl` | avèm |
-| `2pl` | avètz |
-| `3pl` | an |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | auriái |
-| `2sg` | auriás |
-| `3sg` | auriá |
-| `1pl` | auriam |
-| `2pl` | auriatz |
-| `3pl` | aurián |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai |
-| `2sg` | auràs |
-| `3sg` | aurà |
-| `1pl` | aurem |
-| `2pl` | auretz |
-| `3pl` | auràn |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aviái |
-| `2sg` | aviás |
-| `3sg` | aviá |
-| `1pl` | aviam |
-| `2pl` | aviatz |
-| `3pl` | avián |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aguèri |
-| `2sg` | aguères |
-| `3sg` | aguèt |
-| `1pl` | aguèrem |
-| `2pl` | aguèretz |
-| `3pl` | aguèron |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aguèsse |
-| `2sg` | aguèsses |
-| `3sg` | aguèsse |
-| `1pl` | aguèssem |
-| `2pl` | aguèssetz |
-| `3pl` | aguèsson |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aja |
-| `2sg` | ajas |
-| `3sg` | aja |
-| `1pl` | ajam |
-| `2pl` | ajatz |
-| `3pl` | ajan |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | aja |
-| `3sg` | — |
-| `1pl` | ajam |
-| `2pl` | ajatz |
-| `3pl` | — |
-
-#### `véser`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesi |
-| `2sg` | veses |
-| `3sg` | ves |
-| `1pl` | vesèm |
-| `2pl` | vesètz |
-| `3pl` | veson |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesriái |
-| `2sg` | vesriás |
-| `3sg` | vesriá |
-| `1pl` | vesriam |
-| `2pl` | vesriatz |
-| `3pl` | vesrián |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegèri |
-| `2sg` | vegères |
-| `3sg` | vegèt |
-| `1pl` | vegèrem |
-| `2pl` | vegèretz |
-| `3pl` | vegèron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesiái |
-| `2sg` | vesiás |
-| `3sg` | vesiá |
-| `1pl` | vesiam |
-| `2pl` | vesiatz |
-| `3pl` | vesián |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesrai |
-| `2sg` | vesràs |
-| `3sg` | vesrà |
-| `1pl` | vesrem |
-| `2pl` | vesretz |
-| `3pl` | vesràn |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | veja |
-| `3sg` | — |
-| `1pl` | vejam |
-| `2pl` | vejatz |
-| `3pl` | — |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | vegèsse |
-| `1pl` | vegèssem |
-| `2pl` | vegèssetz |
-| `3pl` | vegèsson |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | veja |
-| `1pl` | vejam |
-| `2pl` | vejatz |
-| `3pl` | vejan |
 
 ## Ending: `-ar`
 
@@ -330,281 +42,281 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 ### Representative lemmas
 
-#### `vojar`
+#### `raubar`
 
-Stem: `voj`.
+Stem: `raub`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | voji |
-| `2sg` | vojas |
-| `3sg` | voja |
-| `1pl` | vojam |
-| `2pl` | vojatz |
-| `3pl` | vojan |
+| `1sg` | raubi |
+| `2sg` | raubas |
+| `3sg` | rauba |
+| `1pl` | raubam |
+| `2pl` | raubatz |
+| `3pl` | rauban |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vojariái |
-| `2sg` | vojariás |
-| `3sg` | vojariá |
-| `1pl` | vojariam |
-| `2pl` | vojariatz |
-| `3pl` | vojarián |
+| `1sg` | raubariái |
+| `2sg` | raubariás |
+| `3sg` | raubariá |
+| `1pl` | raubariam |
+| `2pl` | raubariatz |
+| `3pl` | raubarián |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vojarai |
-| `2sg` | vojaràs |
-| `3sg` | vojarà |
-| `1pl` | vojarem |
-| `2pl` | vojaretz |
-| `3pl` | vojaràn |
+| `1sg` | raubarai |
+| `2sg` | raubaràs |
+| `3sg` | raubarà |
+| `1pl` | raubarem |
+| `2pl` | raubaretz |
+| `3pl` | raubaràn |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vojavi |
-| `2sg` | vojavas |
-| `3sg` | vojava |
-| `1pl` | vojàvem |
-| `2pl` | vojàvetz |
-| `3pl` | vojavan |
+| `1sg` | raubavi |
+| `2sg` | raubavas |
+| `3sg` | raubava |
+| `1pl` | raubàvem |
+| `2pl` | raubàvetz |
+| `3pl` | raubavan |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vojèri |
-| `2sg` | vojères |
-| `3sg` | vojèt |
-| `1pl` | vojèrem |
-| `2pl` | vojèretz |
-| `3pl` | vojèron |
+| `1sg` | raubèri |
+| `2sg` | raubères |
+| `3sg` | raubèt |
+| `1pl` | raubèrem |
+| `2pl` | raubèretz |
+| `3pl` | raubèron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | raubèsses |
+| `2sg` | ʀɔu̯bˈeses |
+| `3sg` | raubèsse |
+| `1pl` | raubèssem |
+| `2pl` | raubèssetz |
+| `3pl` | raubèsson |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | raubes |
+| `2sg` | ʀˈɔu̯bes |
+| `3sg` | raube |
+| `1pl` | raubem |
+| `2pl` | raubetz |
+| `3pl` | rauben |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | voja |
+| `2sg` | rauba |
 | `3sg` | — |
-| `1pl` | vojem |
-| `2pl` | vojatz |
-| `3pl` | — |
+| `1pl` | raubem |
+| `2pl` | raubatz |
+| `3pl` | raubatz |
 
-##### `subjunctive.imperfect`
+#### `pintar`
 
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | vojèsse |
-| `1pl` | vojèssem |
-| `2pl` | vojèssetz |
-| `3pl` | vojèsson |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | voje |
-| `1pl` | vojem |
-| `2pl` | vojetz |
-| `3pl` | vojen |
-
-#### `voidar`
-
-Stem: `void`.
+Stem: `pint`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | voidi |
-| `2sg` | voidas |
-| `3sg` | voida |
-| `1pl` | voidam |
-| `2pl` | voidatz |
-| `3pl` | voidan |
+| `1sg` | pinti |
+| `2sg` | pintas |
+| `3sg` | pinta |
+| `1pl` | pintam |
+| `2pl` | pintatz |
+| `3pl` | pintan |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | voidariái |
-| `2sg` | voidariás |
-| `3sg` | voidariá |
-| `1pl` | voidariam |
-| `2pl` | voidariatz |
-| `3pl` | voidarián |
+| `1sg` | pintariái |
+| `2sg` | pintariás |
+| `3sg` | pintariá |
+| `1pl` | pintariam |
+| `2pl` | pintariatz |
+| `3pl` | pintarián |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | voidarai |
-| `2sg` | voidaràs |
-| `3sg` | voidarà |
-| `1pl` | voidarem |
-| `2pl` | voidaretz |
-| `3pl` | voidaràn |
+| `1sg` | pintarai |
+| `2sg` | pintaràs |
+| `3sg` | pintarà |
+| `1pl` | pintarem |
+| `2pl` | pintaretz |
+| `3pl` | pintaràn |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | voidavi |
-| `2sg` | voidavas |
-| `3sg` | voidava |
-| `1pl` | voidàvem |
-| `2pl` | voidàvetz |
-| `3pl` | voidavan |
+| `1sg` | pintavi |
+| `2sg` | pintavas |
+| `3sg` | pintava |
+| `1pl` | pintàvem |
+| `2pl` | pintàvetz |
+| `3pl` | pintavan |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | voidèri |
-| `2sg` | voidères |
-| `3sg` | voidèt |
-| `1pl` | voidèrem |
-| `2pl` | voidèretz |
-| `3pl` | voidèron |
+| `1sg` | pintèri |
+| `2sg` | pintères |
+| `3sg` | pintèt |
+| `1pl` | pintèrem |
+| `2pl` | pintèretz |
+| `3pl` | pintèron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | pintèsses |
+| `2sg` | pintˈeses |
+| `3sg` | pintèsse |
+| `1pl` | pintèssem |
+| `2pl` | pintèssetz |
+| `3pl` | pintèsson |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | pintes |
+| `2sg` | pˈintes |
+| `3sg` | pinte |
+| `1pl` | pintem |
+| `2pl` | pintetz |
+| `3pl` | pinten |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | voida |
+| `2sg` | pinta |
 | `3sg` | — |
-| `1pl` | voidem |
-| `2pl` | voidatz |
-| `3pl` | — |
+| `1pl` | pintem |
+| `2pl` | pintatz |
+| `3pl` | pintatz |
 
-##### `subjunctive.imperfect`
+#### `parlar`
 
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | voidèsse |
-| `1pl` | voidèssem |
-| `2pl` | voidèssetz |
-| `3pl` | voidèsson |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | voide |
-| `1pl` | voidem |
-| `2pl` | voidetz |
-| `3pl` | voiden |
-
-#### `virolejar`
-
-Stem: `virolej`.
+Stem: `parl`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | virolegi |
-| `2sg` | virolejas |
-| `3sg` | viroleja |
-| `1pl` | virolejam |
-| `2pl` | virolejatz |
-| `3pl` | virolejan |
+| `1sg` | parli |
+| `2sg` | parlas |
+| `3sg` | parla |
+| `1pl` | parlam |
+| `2pl` | parlatz |
+| `3pl` | parlan |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | virolejariái |
-| `2sg` | virolejariás |
-| `3sg` | virolejariá |
-| `1pl` | virolejariam |
-| `2pl` | virolejariatz |
-| `3pl` | virolejarián |
+| `1sg` | parlariái |
+| `2sg` | parlariás |
+| `3sg` | parlariá |
+| `1pl` | parlariam |
+| `2pl` | parlariatz |
+| `3pl` | parlarián |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | virolejarai |
-| `2sg` | virolejaràs |
-| `3sg` | virolejarà |
-| `1pl` | virolejarem |
-| `2pl` | virolejaretz |
-| `3pl` | virolejaràn |
+| `1sg` | parlarai |
+| `2sg` | parlaràs |
+| `3sg` | parlarà |
+| `1pl` | parlarem |
+| `2pl` | parlaretz |
+| `3pl` | parlaràn |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | virolejavi |
-| `2sg` | virolejavas |
-| `3sg` | virolejava |
-| `1pl` | virolejàvem |
-| `2pl` | virolejàvetz |
-| `3pl` | virolejavan |
+| `1sg` | parlavi |
+| `2sg` | parlavas |
+| `3sg` | parlava |
+| `1pl` | parlàvem |
+| `2pl` | parlàvetz |
+| `3pl` | parlavan |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | virolegèri |
-| `2sg` | virolegères |
-| `3sg` | virolegèt |
-| `1pl` | virolegèrem |
-| `2pl` | virolegèretz |
-| `3pl` | virolegèron |
+| `1sg` | parlèri |
+| `2sg` | parlères |
+| `3sg` | parlèt |
+| `1pl` | parlèrem |
+| `2pl` | parlèretz |
+| `3pl` | parlèron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parlèsses |
+| `2sg` | paʀlˈeses |
+| `3sg` | parlèsse |
+| `1pl` | parlèssem |
+| `2pl` | parlèssetz |
+| `3pl` | parlèsson |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parles |
+| `2sg` | pˈaʀles |
+| `3sg` | parle |
+| `1pl` | parlem |
+| `2pl` | parletz |
+| `3pl` | parlen |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | viroleja |
+| `2sg` | parla |
 | `3sg` | — |
-| `1pl` | virolegem |
-| `2pl` | virolejatz |
-| `3pl` | — |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | virolegèsse |
-| `1pl` | virolegèssem |
-| `2pl` | virolegèssetz |
-| `3pl` | virolegèsson |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | virolege |
-| `1pl` | virolegem |
-| `2pl` | virolegetz |
-| `3pl` | virolegen |
+| `1pl` | parlem |
+| `2pl` | parlatz |
+| `3pl` | parlatz |
 
 ## Ending: `-ir`
 
@@ -623,6 +335,98 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.preterite` | 51 | `template` | -iguèri | -iguères | -iguèt | -iguèrem | -iguèretz | -iguèron |
 
 ### Representative lemmas
+
+#### `proïbir`
+
+Stem: `proïb`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | proïbissi |
+| `2sg` | proïbisses |
+| `3sg` | proïbís |
+| `1pl` | proïbissèm |
+| `2pl` | proïbissètz |
+| `3pl` | proïbisson |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | proïbiriái |
+| `2sg` | proïbiriás |
+| `3sg` | proïbiriá |
+| `1pl` | proïbiriam |
+| `2pl` | proïbiriatz |
+| `3pl` | proïbirián |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | proïbirai |
+| `2sg` | proïbiràs |
+| `3sg` | proïbirà |
+| `1pl` | proïbirem |
+| `2pl` | proïbiretz |
+| `3pl` | proïbiràn |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | proïbissiái |
+| `2sg` | proïbissiás |
+| `3sg` | proïbissiá |
+| `1pl` | proïbissiam |
+| `2pl` | proïbissiatz |
+| `3pl` | proïbissián |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | proïbiguèri |
+| `2sg` | proïbiguères |
+| `3sg` | proïbiguèt |
+| `1pl` | proïbiguèrem |
+| `2pl` | proïbiguèretz |
+| `3pl` | proïbiguèron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | proïbiguèsses |
+| `2sg` | pʀuibisˈeses |
+| `3sg` | proïbiguèsse |
+| `1pl` | proïbiguèssem |
+| `2pl` | proïbiguèssetz |
+| `3pl` | proïbiguèsson |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | proïbiscas |
+| `2sg` | pʀuibˈises |
+| `3sg` | proïbisca |
+| `1pl` | proïbiscam |
+| `2pl` | proïbiscatz |
+| `3pl` | proïbiscan |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | proïbís |
+| `3sg` | — |
+| `1pl` | proïbiscam |
+| `2pl` | proïbissetz |
+| `3pl` | proïbissetz |
 
 #### `vestir`
 
@@ -698,7 +502,7 @@ Stem: `vest`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
+| `1sg` | vestiguèsses |
 | `2sg` | — |
 | `3sg` | vestiguèsse |
 | `1pl` | vestiguèssem |
@@ -709,7 +513,7 @@ Stem: `vest`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
+| `1sg` | vestiscas |
 | `2sg` | — |
 | `3sg` | vestisca |
 | `1pl` | vestiscam |
@@ -788,7 +592,7 @@ Stem: `vest`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
+| `1sg` | venguèsses |
 | `2sg` | — |
 | `3sg` | venguèsse |
 | `1pl` | venguèssem |
@@ -799,106 +603,16 @@ Stem: `vest`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
+| `1sg` | vengas |
 | `2sg` | — |
 | `3sg` | venga |
 | `1pl` | vengam |
 | `2pl` | vengatz |
 | `3pl` | vengan |
 
-#### `unir`
+## Ending: `-er`
 
-Stem: `un`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | unissi |
-| `2sg` | unisses |
-| `3sg` | unís |
-| `1pl` | unissèm |
-| `2pl` | unissètz |
-| `3pl` | unisson |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | uniriái |
-| `2sg` | uniriás |
-| `3sg` | uniriá |
-| `1pl` | uniriam |
-| `2pl` | uniriatz |
-| `3pl` | unirián |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | unirai |
-| `2sg` | uniràs |
-| `3sg` | unirà |
-| `1pl` | unirem |
-| `2pl` | uniretz |
-| `3pl` | uniràn |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | unissiái |
-| `2sg` | unissiás |
-| `3sg` | unissiá |
-| `1pl` | unissiam |
-| `2pl` | unissiatz |
-| `3pl` | unissián |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | uniguèri |
-| `2sg` | uniguères |
-| `3sg` | uniguèt |
-| `1pl` | uniguèrem |
-| `2pl` | uniguèretz |
-| `3pl` | uniguèron |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | unís |
-| `3sg` | — |
-| `1pl` | uniscam |
-| `2pl` | unissetz |
-| `3pl` | — |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | uniguèsse |
-| `1pl` | uniguèssem |
-| `2pl` | uniguèssetz |
-| `3pl` | uniguèsson |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | unisca |
-| `1pl` | uniscam |
-| `2pl` | uniscatz |
-| `3pl` | uniscan |
-
-## Ending: `-re`
+Template stem args observed: `con`.
 
 ### Person-slot inventory
 
@@ -906,105 +620,195 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.future` | 6 | `lcp` | -ai | -às | -à | -em | -etz | -àn |
-| `indicative.imperfect` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.present` | 4 | `lcp` | -vi | -ves | -u | -vèm | -vètz | -von |
-| `indicative.preterite` | 6 | `lcp` | -ri | -res | -t | -rem | -retz | -ron |
+| `conditional` | 11 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
+| `indicative.future` | 8 | `lcp` | -ai | -às | -à | -em | -etz | -àn |
+| `indicative.imperfect` | 11 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
+| `indicative.present` | 3 | `lcp` | -i | -es | ∅ | -èm | -ètz | -on |
+| `indicative.preterite` | 8 | `lcp` | -ri | -res | -t | -rem | -retz | -ron |
 
 ### Representative lemmas
 
-#### `viure`
+#### `aver`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vivi |
-| `2sg` | vives |
-| `3sg` | viu |
-| `1pl` | vivèm |
-| `2pl` | vivètz |
-| `3pl` | vivon |
+| `1sg` | ai |
+| `2sg` | as |
+| `3sg` | a |
+| `1pl` | avèm |
+| `2pl` | avètz |
+| `3pl` | an |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | viuriái |
-| `2sg` | viuriás |
-| `3sg` | viuriá |
-| `1pl` | viuriam |
-| `2pl` | viuriatz |
-| `3pl` | viurián |
+| `1sg` | auriái |
+| `2sg` | auriás |
+| `3sg` | auriá |
+| `1pl` | auriam |
+| `2pl` | auriatz |
+| `3pl` | aurián |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | visquèri |
-| `2sg` | visquères |
-| `3sg` | visquèt |
-| `1pl` | visquèrem |
-| `2pl` | visquèretz |
-| `3pl` | visquèron |
+| `1sg` | aurai |
+| `2sg` | auràs |
+| `3sg` | aurà |
+| `1pl` | aurem |
+| `2pl` | auretz |
+| `3pl` | auràn |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | viviái |
-| `2sg` | viviás |
-| `3sg` | viviá |
-| `1pl` | viviam |
-| `2pl` | viviatz |
-| `3pl` | vivián |
+| `1sg` | aviái |
+| `2sg` | aviás |
+| `3sg` | aviá |
+| `1pl` | aviam |
+| `2pl` | aviatz |
+| `3pl` | avián |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | viurai |
-| `2sg` | viuràs |
-| `3sg` | viurà |
-| `1pl` | viurem |
-| `2pl` | viuretz |
-| `3pl` | viuràn |
+| `1sg` | aguèri |
+| `2sg` | aguères |
+| `3sg` | aguèt |
+| `1pl` | aguèrem |
+| `2pl` | aguèretz |
+| `3pl` | aguèron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aguèsses |
+| `2sg` | aiguesses |
+| `3sg` | aguèsse |
+| `1pl` | aguèssem |
+| `2pl` | aguèssetz |
+| `3pl` | aguèsson |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ajas |
+| `2sg` | aigues |
+| `3sg` | aja |
+| `1pl` | ajam |
+| `2pl` | ajatz |
+| `3pl` | ajan |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | viu |
+| `2sg` | aja |
 | `3sg` | — |
-| `1pl` | viscam |
-| `2pl` | vivètz |
-| `3pl` | — |
+| `1pl` | ajam |
+| `2pl` | ajatz |
+| `3pl` | aguem [ɔu̯ɡˈẽŋ] |
+
+#### `èsser`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | soi |
+| `2sg` | ès |
+| `3sg` | es |
+| `1pl` | sèm |
+| `2pl` | sètz |
+| `3pl` | son |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | seriái |
+| `2sg` | seriás |
+| `3sg` | seriá |
+| `1pl` | seriam |
+| `2pl` | seriatz |
+| `3pl` | serián |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | serai |
+| `2sg` | seràs |
+| `3sg` | serà |
+| `1pl` | serem |
+| `2pl` | seretz |
+| `3pl` | seràn |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | èri |
+| `2sg` | èras |
+| `3sg` | èra |
+| `1pl` | èrem |
+| `2pl` | èretz |
+| `3pl` | èran |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | foguèri |
+| `2sg` | foguères |
+| `3sg` | foguèt |
+| `1pl` | foguèrem |
+| `2pl` | foguèretz |
+| `3pl` | foguèron |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | visquèsse |
-| `1pl` | visquèssem |
-| `2pl` | visquèssetz |
-| `3pl` | visquèssen |
+| `1sg` | foguèsses |
+| `2sg` | foguèsses |
+| `3sg` | foguèsse |
+| `1pl` | foguèssem |
+| `2pl` | foguèssetz |
+| `3pl` | foguèssen |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | visca |
-| `1pl` | viscam |
-| `2pl` | viscatz |
-| `3pl` | viscan |
+| `1sg` | siás |
+| `2sg` | siás |
+| `3sg` | siá |
+| `1pl` | siam |
+| `2pl` | siatz |
+| `3pl` | sián |
 
-#### `veire`
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | siá |
+| `3sg` | — |
+| `1pl` | siam |
+| `2pl` | siatz |
+| `3pl` | — |
+
+#### `véser`
 
 ##### `indicative.present`
 
@@ -1012,7 +816,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---|
 | `1sg` | vesi |
 | `2sg` | veses |
-| `3sg` | vei |
+| `3sg` | ves |
 | `1pl` | vesèm |
 | `2pl` | vesètz |
 | `3pl` | veson |
@@ -1021,12 +825,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | veiriái |
-| `2sg` | veiriás |
-| `3sg` | veiriá |
-| `1pl` | veiriam |
-| `2pl` | veiriatz |
-| `3pl` | veirián |
+| `1sg` | vesriái |
+| `2sg` | vesriás |
+| `3sg` | vesriá |
+| `1pl` | vesriam |
+| `2pl` | vesriatz |
+| `3pl` | vesrián |
 
 ##### `indicative.future`
 
@@ -1054,12 +858,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | veirai |
-| `2sg` | veiràs |
-| `3sg` | veirà |
-| `1pl` | veirem |
-| `2pl` | veiretz |
-| `3pl` | veiràn |
+| `1sg` | vesrai |
+| `2sg` | vesràs |
+| `3sg` | vesrà |
+| `1pl` | vesrem |
+| `2pl` | vesretz |
+| `3pl` | vesràn |
 
 ##### `imperative`
 
@@ -1076,7 +880,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
+| `1sg` | vegèsses |
 | `2sg` | — |
 | `3sg` | vegèsse |
 | `1pl` | vegèssem |
@@ -1087,102 +891,298 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
+| `1sg` | vejas |
 | `2sg` | — |
 | `3sg` | veja |
 | `1pl` | vejam |
 | `2pl` | vejatz |
 | `3pl` | vejan |
 
-#### `sèire`
+## Ending: `-re`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
+| `indicative.future` | 6 | `lcp` | -ai | -às | -à | -em | -etz | -àn |
+| `indicative.imperfect` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
+| `indicative.present` | 4 | `lcp` | -vi | -ves | -u | -vèm | -vètz | -von |
+| `indicative.preterite` | 6 | `lcp` | -ri | -res | -t | -rem | -retz | -ron |
+
+### Representative lemmas
+
+#### `faire`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | sèsi |
-| `2sg` | sèses |
-| `3sg` | sèi |
-| `1pl` | sesèm |
-| `2pl` | sesètz |
-| `3pl` | sèson |
+| `1sg` | fau |
+| `2sg` | fas |
+| `3sg` | fa |
+| `1pl` | fasèm |
+| `2pl` | fasètz |
+| `3pl` | fan |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | seiriái |
-| `2sg` | seiriás |
-| `3sg` | seiriá |
-| `1pl` | seiriam |
-| `2pl` | seiriatz |
-| `3pl` | seirián |
+| `1sg` | fariái |
+| `2sg` | fariás |
+| `3sg` | fariá |
+| `1pl` | fariam |
+| `2pl` | fariatz |
+| `3pl` | farián |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | seirai |
-| `2sg` | seiràs |
-| `3sg` | seirà |
-| `1pl` | seirem |
-| `2pl` | seiretz |
-| `3pl` | seiràn |
+| `1sg` | farai |
+| `2sg` | faràs |
+| `3sg` | farà |
+| `1pl` | farem |
+| `2pl` | faretz |
+| `3pl` | faràn |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | sesiái |
-| `2sg` | sesiás |
-| `3sg` | sesiá |
-| `1pl` | sesiam |
-| `2pl` | sesiatz |
-| `3pl` | sesián |
+| `1sg` | fasiái |
+| `2sg` | fasiás |
+| `3sg` | fasiá |
+| `1pl` | fasiam |
+| `2pl` | fasiatz |
+| `3pl` | fasián |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | seguèri |
-| `2sg` | seguères |
-| `3sg` | seguèt |
-| `1pl` | seguèrem |
-| `2pl` | seguèretz |
-| `3pl` | seguèron |
+| `1sg` | faguèri |
+| `2sg` | faguères |
+| `3sg` | faguèt |
+| `1pl` | faguèrem |
+| `2pl` | faguèretz |
+| `3pl` | faguèron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | faguèsses |
+| `2sg` | faguesse [faɡˈese] |
+| `3sg` | faguèsse |
+| `1pl` | faguèssem |
+| `2pl` | faguèssetz |
+| `3pl` | faguèsson |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fagas |
+| `2sg` | fague² [fˈaɡe] |
+| `3sg` | faga |
+| `1pl` | fagam |
+| `2pl` | fagatz |
+| `3pl` | fagan |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | sèi |
+| `2sg` | fai |
 | `3sg` | — |
-| `1pl` | segam |
-| `2pl` | sesètz |
+| `1pl` | fagam |
+| `2pl` | fasètz |
 | `3pl` | — |
+
+#### `dire`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | disi |
+| `2sg` | dises |
+| `3sg` | ditz |
+| `1pl` | disèm |
+| `2pl` | disètz |
+| `3pl` | dison |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | diriái |
+| `2sg` | diriás |
+| `3sg` | diriá |
+| `1pl` | diriam |
+| `2pl` | diriatz |
+| `3pl` | dirián |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dirai |
+| `2sg` | diràs |
+| `3sg` | dirà |
+| `1pl` | direm |
+| `2pl` | diretz |
+| `3pl` | diràn |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | disiái |
+| `2sg` | disiás |
+| `3sg` | disiá |
+| `1pl` | disiam |
+| `2pl` | disiatz |
+| `3pl` | disián |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | diguèri |
+| `2sg` | diguères |
+| `3sg` | diguèt |
+| `1pl` | diguèrem |
+| `2pl` | diguèretz |
+| `3pl` | diguèron |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | seguèsse |
-| `1pl` | seguèssem |
-| `2pl` | seguèssetz |
-| `3pl` | seguèsson |
+| `1sg` | diguèsses |
+| `2sg` | diguesse [diɡˈese] |
+| `3sg` | diguèsse |
+| `1pl` | diguèssem |
+| `2pl` | diguèssetz |
+| `3pl` | diguèsson |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
+| `1sg` | digas |
+| `2sg` | digue [dˈiɡe] |
+| `3sg` | diga |
+| `1pl` | digam |
+| `2pl` | digatz |
+| `3pl` | digan |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | diga |
+| `3sg` | — |
+| `1pl` | digam |
+| `2pl` | digatz |
+| `3pl` | — |
+
+#### `èstre`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | siáu [ˈsjeu̯] |
+| `2sg` | siás [ˈsjɛs] |
+| `3sg` | es [ˈes] |
+| `1pl` | sièm |
+| `2pl` | siam² [ˈsjɛ̃ŋ] |
+| `3pl` | ˈsjãŋ |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | serii [seˈʀiji] |
+| `2sg` | series [seˈʀijes] |
+| `3sg` | seria [seˈʀija] |
+| `1pl` | seriavam [seʀjaˈvãŋ] |
+| `2pl` | seriavatz [seʀjaˈvas] |
+| `3pl` | serion [seˈʀiju] |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | serai [seˈʀai̯] |
+| `2sg` | seràs [seˈʀas] |
+| `3sg` | serà [seˈʀa] |
+| `1pl` | serèm [seˈʀɛ̃ŋ] |
+| `2pl` | serètz [seˈʀɛs] |
+| `3pl` | seràn [seˈʀãŋ] |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | èri [ˈɛʀi] |
+| `2sg` | ères [ˈɛʀes] |
+| `3sg` | èra [ˈɛʀa] |
+| `1pl` | eravam [eʀaˈvãŋ] |
+| `2pl` | eravatz [eʀaˈvas] |
+| `3pl` | èron [ˈɛʀu] |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | siguèri |
+| `2sg` | siguères |
+| `3sg` | siguèt |
+| `1pl` | sigueriam |
+| `2pl` | fogueriam¹ [siɡeˈʀjãŋ] |
+| `3pl` | fuɡeˈʀjãŋ |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | siguesses |
+| `2sg` | foguesses¹ [siˈɡeses] |
+| `3sg` | fuˈɡeses |
+| `1pl` | siguessiam |
+| `2pl` | foguessiam |
+| `3pl` | siguessèm |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sigues [ˈsiɡes] |
+| `2sg` | sigue [ˈsiɡe] |
+| `3sg` | ˈsiɡas |
+| `1pl` | siguem [siˈɡẽŋ] |
+| `2pl` | siguetz [siˈɡes] |
+| `3pl` | sigon [ˈsiɡu] |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
 | `1sg` | — |
 | `2sg` | — |
-| `3sg` | sèga |
-| `1pl` | sègam |
-| `2pl` | sègatz |
-| `3pl` | sègan |
+| `3sg` | — |
+| `1pl` | siguem [siˈɡẽŋ] |
+| `2pl` | siguetz [siˈɡes] |
+| `3pl` | — |
 
 ## Sparse / unclassified
 

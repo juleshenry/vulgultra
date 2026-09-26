@@ -10,7 +10,7 @@
 - Verb lemma entries: **303**
 - Inflected form records: **3223**
 - Separate form-of entries: **25**
-- Classified person-slot observations: **5384**
+- Classified person-slot observations: **5686**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -21,7 +21,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-ar` | 103 | 10 | 5 |
 | `-er` | 74 | 10 | 5 |
 | `-ir` | 30 | 10 | 5 |
-| `-air` | 14 | 9 | 1 |
+| `-air` | 14 | 9 | 3 |
 | `-eir` | 11 | 8 | 0 |
 | `other` | 23 | 0 | 0 |
 
@@ -35,11 +35,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 35 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 28 | `lcp` | -el | -as | -a | -ein | -eis | -an |
+| `indicative.imperfect` | 39 | `lcp` | -el | -as | -a | -an | -as | -an |
+| `indicative.present` | 29 | `lcp` | -el | -as | -a | -ein | -eis | -an |
 | `subjunctive.imperfect` | 36 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
 | `subjunctive.past` | 8 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.present` | 31 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
+| `subjunctive.present` | 32 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
 
 ### Representative lemmas
 
@@ -327,8 +327,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 26 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 24 | `lcp` | -el | -as | -a | -ein | -eis | -an |
+| `indicative.imperfect` | 32 | `lcp` | -el | -as | -a | -an | -as | -an |
+| `indicative.present` | 28 | `lcp` | -el | -as | -a | -ein | -eis | -an |
 | `subjunctive.imperfect` | 27 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
 | `subjunctive.past` | 9 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
 | `subjunctive.present` | 29 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
@@ -374,12 +374,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | havavel |
+| `1sg` | (ha)vevel |
 | `2sg` | (ha)vevas |
-| `3sg` | havava |
-| `1pl` | havavan |
-| `2pl` | havavas |
-| `3pl` | havavan |
+| `3sg` | (ha)veva |
+| `1pl` | (ha)vevan |
+| `2pl` | (ha)vevas |
+| `3pl` | (ha)vevan |
 
 ##### `indicative.pluperfect`
 
@@ -444,12 +444,12 @@ _…5 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel a esser |
+| `1sg` | vegnel ad esser |
 | `2sg` | vegns ad esser |
-| `3sg` | vegn a esser |
-| `1pl` | vegnin a esser |
-| `2pl` | vegnis a esser |
-| `3pl` | vegnan a esser |
+| `3sg` | vegn ad esser |
+| `1pl` | vegnin ad esser |
+| `2pl` | vegnis ad esser |
+| `3pl` | vegnan ad esser |
 
 ##### `indicative.future-perfect`
 
@@ -619,8 +619,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 7 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 6 | `lcp` | -eschel | -eschas | -escha | -in | -is | -eschan |
+| `indicative.imperfect` | 12 | `lcp` | -el | -as | -a | -an | -as | -an |
+| `indicative.present` | 8 | `lcp` | -eschel | -eschas | -escha | -in | -is | -eschan |
 | `subjunctive.imperfect` | 8 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
 | `subjunctive.past` | 7 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
 | `subjunctive.present` | 8 | `lcp` | -eschi | -eschies | -eschi | -îen | -îes | -eschien |
@@ -644,12 +644,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel a ir |
+| `1sg` | vegnel ad ir |
 | `2sg` | vegns ad ir |
-| `3sg` | vegn a ir |
-| `1pl` | vegnin a ir |
-| `2pl` | vegnis a ir |
-| `3pl` | vegnan a ir |
+| `3sg` | vegn ad ir |
+| `1pl` | vegnin ad ir |
+| `2pl` | vegnis ad ir |
+| `3pl` | vegnan ad ir |
 
 ##### `indicative.future-perfect`
 
@@ -726,7 +726,7 @@ _…5 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | di |
-| `2sg` | dias |
+| `2sg` | dis |
 | `3sg` | di |
 | `1pl` | schain |
 | `2pl` | schais |
@@ -736,12 +736,12 @@ _…5 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel a dir |
+| `1sg` | vegnel a der |
 | `2sg` | vegns a der |
-| `3sg` | vegn a dir |
-| `1pl` | vegnin a dir |
-| `2pl` | vegnis a dir |
-| `3pl` | vegnan a dir |
+| `3sg` | vegn a der |
+| `1pl` | vegnin a der |
+| `2pl` | vegnis a der |
+| `3pl` | vegnan a der |
 
 ##### `indicative.future-perfect`
 
@@ -759,7 +759,7 @@ _…5 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | scheva |
-| `2sg` | devas |
+| `2sg` | schevas |
 | `3sg` | scheva |
 | `1pl` | schevan |
 | `2pl` | schevas |
@@ -913,7 +913,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `subjunctive.present` | 3 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
+| `indicative.imperfect` | 2 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
+| `indicative.present` | 2 | `lcp` | ∅ | -as | -a | -ain | -ais | -an |
+| `subjunctive.present` | 2 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
 
 ### Representative lemmas
 
@@ -923,23 +925,23 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | hai |
+| `1sg` | avaeschel |
 | `2sg` | avaeschas |
-| `3sg` | ha |
+| `3sg` | avaescha |
 | `1pl` | avain |
 | `2pl` | avais |
-| `3pl` | han |
+| `3pl` | avaeschan |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel a avair |
+| `1sg` | vegnel ad avair |
 | `2sg` | vegns ad avair |
-| `3sg` | vegn a avair |
-| `1pl` | vegnin a avair |
-| `2pl` | vegnis a avair |
-| `3pl` | vegnan a avair |
+| `3sg` | vegn ad avair |
+| `1pl` | vegnin ad avair |
+| `2pl` | vegnis ad avair |
+| `3pl` | vegnan ad avair |
 
 ##### `indicative.future-perfect`
 
@@ -956,12 +958,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | aveva |
+| `1sg` | avaevel |
 | `2sg` | avaevas |
-| `3sg` | aveva |
-| `1pl` | avevan |
-| `2pl` | avevas |
-| `3pl` | avevan |
+| `3sg` | avaeva |
+| `1pl` | avaevan |
+| `2pl` | avaevas |
+| `3pl` | avaevan |
 
 ##### `indicative.pluperfect`
 
@@ -1016,11 +1018,33 @@ _…4 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | tem |
-| `2sg` | — |
+| `2sg` | temas |
 | `3sg` | tema |
 | `1pl` | temain |
 | `2pl` | temais |
 | `3pl` | teman |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegnel a temair |
+| `2sg` | vegns a temair |
+| `3sg` | vegn a temair |
+| `1pl` | vegnin a temair |
+| `2pl` | vegnis a temair |
+| `3pl` | vegnan a temair |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | temeva |
+| `2sg` | temevas |
+| `3sg` | temeva |
+| `1pl` | temevan |
+| `2pl` | temevas |
+| `3pl` | temevan |
 
 ##### `subjunctive.future`
 
@@ -1070,34 +1094,12 @@ _…4 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
+| `1sg` | tema |
 | `2sg` | — |
 | `3sg` | — |
 | `1pl` | — |
 | `2pl` | temai |
 | `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel a temair |
-| `2sg` | — |
-| `3sg` | vegn a temair |
-| `1pl` | vegnin a temair |
-| `2pl` | vegnis a temair |
-| `3pl` | vegnan a temair |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | temeva |
-| `2sg` | — |
-| `3sg` | temeva |
-| `1pl` | temevan |
-| `2pl` | temevas |
-| `3pl` | temevan |
 
 #### `giudair`
 
@@ -1106,11 +1108,33 @@ _…4 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | giud |
-| `2sg` | — |
+| `2sg` | giudas |
 | `3sg` | giuda |
 | `1pl` | giudain |
 | `2pl` | giudais |
 | `3pl` | giudan |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegnel a giudair |
+| `2sg` | vegns a giudair |
+| `3sg` | vegn a giudair |
+| `1pl` | vegnin a giudair |
+| `2pl` | vegnis a giudair |
+| `3pl` | vegnan a giudair |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | giudeva |
+| `2sg` | giudevas |
+| `3sg` | giudeva |
+| `1pl` | giudevan |
+| `2pl` | giudevas |
+| `3pl` | giudevan |
 
 ##### `subjunctive.future`
 
@@ -1160,34 +1184,12 @@ _…4 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
+| `1sg` | giuda |
 | `2sg` | — |
 | `3sg` | — |
 | `1pl` | — |
 | `2pl` | giudai |
 | `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel a giudair |
-| `2sg` | — |
-| `3sg` | vegn a giudair |
-| `1pl` | vegnin a giudair |
-| `2pl` | vegnis a giudair |
-| `3pl` | vegnan a giudair |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | giudeva |
-| `2sg` | — |
-| `3sg` | giudeva |
-| `1pl` | giudevan |
-| `2pl` | giudevas |
-| `3pl` | giudevan |
 
 ## Ending: `-eir`
 

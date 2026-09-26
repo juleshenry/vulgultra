@@ -37,12 +37,35 @@ SLOTS = ("1sg", "2sg", "3sg", "1pl", "2pl", "3pl")
 USER_AGENT = "vulgultra-research/0.1 (+noncommercial Picard morphology)"
 
 
+_OIL_COMPL = re.compile(r"^(?:qu['’]|q['’]|équ?|eq)\s*", re.I)
+_OIL_WORD = re.compile(
+    r"^(?:éj|ej|jé|je|tu|té|te|vous|il|is|ale|al|in|os|vos|i)\s+",
+    re.I,
+)
+_OIL_ELIDE = re.compile(r"^[jtimsv]['’]", re.I)
+_OIL_REFL = re.compile(r"^(?:m['’]in|t['’]in|s['’]in|nos in|vos in)\s+", re.I)
+
+
+def strip_subject(form: str) -> str:
+    """Drop pedagogical subject clitics so inventories can strip endings."""
+    text = form.strip()
+    for _ in range(3):
+        nxt = _OIL_COMPL.sub("", text).strip()
+        nxt = _OIL_WORD.sub("", nxt).strip()
+        nxt = _OIL_ELIDE.sub("", nxt).strip()
+        nxt = _OIL_REFL.sub("", nxt).strip()
+        if nxt == text:
+            break
+        text = nxt
+    return text.strip("-").strip()
+
+
 def clean_cell(text: str) -> str:
     text = re.sub(r"<[^>]+>", "", text)
     text = text.replace("\xa0", " ").replace("\u00ad", "").replace("\n", " ")
     text = re.sub(r"\s+", " ", text).strip()
     text = text.strip("-").strip()
-    return text
+    return strip_subject(text)
 
 
 def fetch(url: str, dest: Path) -> str:
@@ -156,7 +179,7 @@ def class_from_lemma(lemma: str) -> str:
 
 
 def add_form(cells: dict, feature: str, slot: str, form: str, *, url: str, note: str) -> None:
-    form = form.strip()
+    form = strip_subject(form.strip())
     if not form or form == "-":
         return
     row = cells.setdefault(feature, {})

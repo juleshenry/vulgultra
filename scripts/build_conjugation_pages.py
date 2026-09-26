@@ -121,34 +121,46 @@ def collect_kaikki(lect: str) -> tuple[dict, dict, list[str], dict[str, int]]:
     return paradigms, lemma_meta, input_files, counts
 
 
-def collect_extremaduran() -> tuple[dict, dict, list[str], dict[str, int]]:
-    folder = ROOT / "vendor" / "recursos_es-ext" / "Conjugacion verbos"
-    paradigms: dict = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
-    lemma_meta: dict = {}
-    sources: list[str] = []
-    count = 0
-    if folder.is_dir():
-        for path in sorted(folder.glob("*.ext.txt")):
-            sources.append(str(path.relative_to(ROOT)))
-            lemma = path.name[:-8]
-            text = path.read_text(encoding="utf-8", errors="replace").strip()
-            if text:
-                paradigms[lemma]["source-layout.unparsed"]["?"] = [{
-                    "form": text,
-                    "ipa": "",
-                    "tags": [],
-                    "source_file": str(path.relative_to(ROOT)),
-                    "source_url": "",
-                    "ambiguous_slot": True,
-                    "raw_block": True,
-                }]
-                lemma_meta[lemma] = {
-                    "class_source": "ext-unparsed",
-                    "stem": None,
-                    "source_url": "",
-                }
-                count += 1
-    return paradigms, lemma_meta, sources, {"raw_tables": count, "classified_cells": 0}
+INFINITIVE_ENDINGS = {
+    "dlm": ("ure", "uar", "ur", "ar", "er", "ro", "ire", "ir"),
+    "ext": ("al", "el", "il", "ar", "er", "ir"),
+    "glw": ("air", "ae", "er", "ir", "rr", "i", "r"),
+    "ist": ("àse", "ìse", "à", "ì", "i"),
+}
+
+INFINITIVE_IRREGULAR = {
+    "dlm": {"saite": "saite", "avar": "avar", "zer": "zer", "far": "far"},
+    "ext": {
+        "sel": "ser", "ser": "ser", "estal": "estar", "estar": "estar",
+        "avel": "haber", "haber": "haber", "dil": "ir", "ir": "ir",
+        "venir": "venir",
+    },
+    "glw": {
+        "aler": "aler", "avair": "avair", "aveir": "avair",
+        "étr": "étr", "éstr": "étr", "ói": "ói", "se nalae": "aler",
+    },
+    "ist": {"avì": "avì", "ièsi": "ièsi"},
+}
+
+
+def class_from_infinitive_local(lect: str, lemma: str) -> str:
+    low = lemma.lower().strip()
+    irregulars = INFINITIVE_IRREGULAR.get(lect) or {}
+    if low in irregulars:
+        return irregulars[low]
+    for ending in INFINITIVE_ENDINGS.get(lect) or ():
+        if low.endswith(ending):
+            return f"-{ending}"
+    return "unknown"
+
+
+def fill_unknown_classes(lect: str, lemma_meta: dict) -> None:
+    if lect not in INFINITIVE_ENDINGS:
+        return
+    for lemma, meta in lemma_meta.items():
+        current = str(meta.get("class_source") or "unknown")
+        if current in {"", "unknown"}:
+            meta["class_source"] = class_from_infinitive_local(lect, lemma)
 
 
 def normalize_ending_classes(lect: str, lemma_meta: dict) -> None:
@@ -229,7 +241,8 @@ def merge_conjugation_json(
                     "ambiguous_slot": False,
                 }
                 if existing:
-                    paradigms[lemma][feature][slot].append(record)
+                    # Hand corpora (diseux / Verbix docs) win as the primary form.
+                    paradigms[lemma][feature][slot] = [record] + existing
                 else:
                     paradigms[lemma][feature][slot] = [record]
                     counts["classified_cells"] += 1
@@ -258,14 +271,10 @@ def merge_verbix(
 
 
 def source_paradigms(lect: str) -> tuple[dict, dict, list[str], dict[str, int], str]:
-    if lect == "ext":
-        paradigms, lemma_meta, files, counts = collect_extremaduran()
-        note = "local Extremenho and Spanish comparison tables; raw layout preserved"
-        return paradigms, lemma_meta, files, counts, note
     paradigms, lemma_meta, files, counts = collect_kaikki(lect)
     note = "Wiktionary/Wiktextract form-of entries" if files else "none currently collected locally"
     merged = merge_verbix(lect, paradigms, lemma_meta, counts, files)
-    # Hand / site corpora (e.g. Picard Chés Diseux).
+    # Hand / site corpora (e.g. Picard Chés Diseux, Extremaduran recursos, Gallo Wiktionnaire).
     extra = OUT_JSON / f"{lect}_diseux.json"
     diseux_added = merge_conjugation_json(
         lect, paradigms, lemma_meta, counts, files, extra,
@@ -273,6 +282,7 @@ def source_paradigms(lect: str) -> tuple[dict, dict, list[str], dict[str, int], 
         normalize=False,
     )
     normalize_ending_classes(lect, lemma_meta)
+    fill_unknown_classes(lect, lemma_meta)
     bits = []
     if any(name.startswith("kaikki-") for name in files):
         bits.append("Wiktionary/Wiktextract form-of entries")
@@ -291,6 +301,28 @@ def source_paradigms(lect: str) -> tuple[dict, dict, list[str], dict[str, int], 
                 "Capidan 1925 / Romance Verbal Inflection Dataset 2.0 "
                 "(Oxford ODRVM; GPLv3)"
             )
+        elif lect == "ext":
+            bits.append(
+                "recursos_es-ext paired ES/EXT tables "
+                "(https://github.com/juanro49/recursos_es-ext, CC0)"
+            )
+        elif lect == "glw":
+            bits.append(
+                "Wiktionnaire Conjugaison:gallo "
+                "(https://fr.wiktionary.org/wiki/Catégorie:Conjugaison_en_gallo)"
+            )
+        elif lect == "ist":
+            bits.append(
+                "Verbix Istriot docs "
+                "(https://docs.verbix.com/Languages/Istriot)"
+            )
+        elif lect == "dlm":
+            bits.append(
+                "Verbix Dalmatian docs "
+                "(https://docs.verbix.com/Languages/Dalmatian)"
+            )
+        elif lect == "rgn":
+            bits.append("Wiktionary rgn-conj templates")
         else:
             bits.append(f"local `{extra.name}` corpus")
     if bits:
@@ -444,16 +476,6 @@ def render_page(
         ])
         return "\n".join(lines)
 
-    if lect == "ext":
-        lines.extend([
-            "## Raw local tables",
-            "",
-            "Extremaduran sources are flattened text without stable six-slot labels.",
-            f"Stored raw tables: **{counts.get('raw_tables', 0)}**.",
-            "",
-        ])
-        return "\n".join(lines)
-
     grouped = group_by_class(paradigms, lemma_meta)
     rich = []
     sparse = []
@@ -532,8 +554,6 @@ def update_manifest(sourced_lects: set[str]) -> None:
         if lect in sourced_lects:
             item["status"] = "harvested"
             item["source"] = "data/conjugation/sources/" + f"{lect}.json"
-        elif lect == "ext":
-            item["status"] = "raw-unaligned"
         # leave other pending
     MANIFEST.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
@@ -561,7 +581,7 @@ def main() -> int:
 
         inventory_classes = 0
         lemma_count = len(paradigms)
-        if files and lect != "ext":
+        if files:
             grouped = group_by_class(paradigms, lemma_meta)
             document = build_lect_document(lect, grouped)
             (OUT_JSON / f"{lect}.json").write_text(
@@ -571,9 +591,6 @@ def main() -> int:
             inventory_classes = len(document["metadata"].get("ending_inventories") or {})
             if document["paradigms"]:
                 sourced.add(lect)
-        elif lect == "ext" and files:
-            # Keep ext out of the normalized six-slot corpus until aligned.
-            pass
 
         if files:
             index.append(

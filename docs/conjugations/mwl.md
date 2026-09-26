@@ -10,7 +10,7 @@
 - Verb lemma entries: **82**
 - Inflected form records: **4617**
 - Separate form-of entries: **34**
-- Classified person-slot observations: **1932**
+- Classified person-slot observations: **4004**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,9 +18,9 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-er` | 22 | 8 | 8 |
-| `-ar` | 34 | 8 | 0 |
-| `-ir` | 19 | 8 | 0 |
+| `-er` | 22 | 9 | 8 |
+| `-ar` | 34 | 8 | 4 |
+| `-ir` | 19 | 8 | 4 |
 | `other` | 3 | 0 | 0 |
 
 ## Ending: `-er`
@@ -34,15 +34,107 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 4 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.future` | 4 | `lcp` | -ei | -ás | -á | -emos | -eis | -an |
+| `indicative.future` | 18 | `lcp` | -ei | -ás | -á | -emos | -eis | -an |
 | `indicative.imperfect` | 3 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 | `indicative.pluperfect` | 3 | `lcp` | -ira | -iras | -ira | -íramos | -írades | -íran |
-| `indicative.present` | 1 | `lcp` | -o | -es | -e | -emos | -eis | -en |
-| `indicative.preterite` | 2 | `lcp` | -i | -iste | -iu | -imos | -istes | -írun |
+| `indicative.present` | 3 | `lcp` | -eço | -eces | -ece | -ecemos | -eceis | -écen |
+| `indicative.preterite` | 13 | `lcp` | -i | -iste | -iu | -imos | -istes | -írun |
 | `subjunctive.imperfect` | 3 | `lcp` | -isse | -isses | -isse | -íssemos | -íssedes | -íssen |
-| `subjunctive.present` | 1 | `lcp` | -eia | -eias | -eia | -éiamos | -éiades | -éian |
+| `subjunctive.present` | 2 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 
 ### Representative lemmas
+
+#### `antretener`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | antreteno |
+| `2sg` | antretenes |
+| `3sg` | antretene |
+| `1pl` | antretenemos |
+| `2pl` | antreteneis |
+| `3pl` | antreténen |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | antretenerie |
+| `2sg` | antreteneries |
+| `3sg` | antretenerie-se |
+| `1pl` | antreteneriemos |
+| `2pl` | antreteneriedes |
+| `3pl` | antretenerien |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | antretenerei |
+| `2sg` | antretenerás |
+| `3sg` | antretenerá |
+| `1pl` | antreteneremos |
+| `2pl` | antretenereis |
+| `3pl` | antreteneran |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | antretenie |
+| `2sg` | antretenies |
+| `3sg` | antretenie-se |
+| `1pl` | antreteniemos |
+| `2pl` | antreteniedes |
+| `3pl` | antretenien |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | antretenira |
+| `2sg` | antreteniras |
+| `3sg` | antretenira-se |
+| `1pl` | antreteníramos |
+| `2pl` | antretenírades |
+| `3pl` | antreteníran |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | antreteni |
+| `2sg` | antreteniste |
+| `3sg` | antreteniu |
+| `1pl` | antretenimos |
+| `2pl` | antretenistes |
+| `3pl` | antretenírun |
+
+##### `subjunctive.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | antretenir |
+| `2sg` | antretenires |
+| `3sg` | se antretenir |
+| `1pl` | antretenirmos |
+| `2pl` | antretenirdes |
+| `3pl` | antreteníren |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | antretenisse |
+| `2sg` | antretenisses |
+| `3sg` | antretenisse-se |
+| `1pl` | antreteníssemos |
+| `2pl` | antreteníssedes |
+| `3pl` | antreteníssen |
+
+_…2 more tense/mood rows in the JSON corpus._
 
 #### `ser`
 
@@ -52,7 +144,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---|
 | `1sg` | sou |
 | `2sg` | sós |
-| `3sg` | ye |
+| `3sg` | yê |
 | `1pl` | somos |
 | `2pl` | sodes |
 | `3pl` | son |
@@ -228,105 +320,20 @@ _…2 more tense/mood rows in the JSON corpus._
 
 _…2 more tense/mood rows in the JSON corpus._
 
-#### `comer`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | como |
-| `2sg` | comes |
-| `3sg` | come |
-| `1pl` | comemos |
-| `2pl` | comeis |
-| `3pl` | comen |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | comerie |
-| `2sg` | comeries |
-| `3sg` | comerie |
-| `1pl` | comeriemos |
-| `2pl` | comeriedes |
-| `3pl` | comerien |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | comerei |
-| `2sg` | comerás |
-| `3sg` | comerá |
-| `1pl` | comeremos |
-| `2pl` | comereis |
-| `3pl` | comeran |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | comie |
-| `2sg` | comies |
-| `3sg` | comie |
-| `1pl` | comiemos |
-| `2pl` | comiedes |
-| `3pl` | comien |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | comira |
-| `2sg` | comiras |
-| `3sg` | comira |
-| `1pl` | comíramos |
-| `2pl` | comírades |
-| `3pl` | comíran |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | comi |
-| `2sg` | comiste |
-| `3sg` | comiu |
-| `1pl` | comimos |
-| `2pl` | comistes |
-| `3pl` | comírun |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | comisse |
-| `2sg` | comisses |
-| `3sg` | comisse |
-| `1pl` | comíssemos |
-| `2pl` | comíssedes |
-| `3pl` | comíssen |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | coma |
-| `2sg` | comas |
-| `3sg` | coma |
-| `1pl` | cómamos |
-| `2pl` | comades |
-| `3pl` | coman |
-
-_…2 more tense/mood rows in the JSON corpus._
-
 ## Ending: `-ar`
 
 Template stem args observed: `<a-e>`, `<e-ei>`, `<ie>`.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.future` | 30 | `lcp` | -ei | -ás | -á | -emos | -eis | -an |
+| `indicative.present` | 2 | `lcp` | -uno | -unas | -una | -unamos | -unais | -únan |
+| `indicative.preterite` | 25 | `lcp` | -ei | -este | -ou | -emos | -estes | -órun |
+| `subjunctive.present` | 1 | `lcp` | -eia | -és | -eia | -éiamos | -éiades | -éian |
 
 ### Representative lemmas
 
@@ -514,97 +521,95 @@ _…2 more tense/mood rows in the JSON corpus._
 
 _…2 more tense/mood rows in the JSON corpus._
 
-#### `zenhar`
-
-Stem: `<e-ei>`.
+#### `dar`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zeinho |
-| `2sg` | zeinhas |
-| `3sg` | zenha |
-| `1pl` | zenhamos |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | zenharies |
-| `3sg` | — |
-| `1pl` | zenhariemos |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | zeinha |
-| `3sg` | — |
-| `1pl` | - |
-| `2pl` | — |
-| `3pl` | — |
+| `1sg` | dou |
+| `2sg` | dás |
+| `3sg` | dá |
+| `1pl` | damos |
+| `2pl` | dais |
+| `3pl` | dan |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | zenharás |
-| `3sg` | — |
-| `1pl` | zenharemos |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | zenhabas |
-| `3sg` | — |
-| `1pl` | zenhábamos |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | zenharas |
-| `3sg` | — |
-| `1pl` | zenháramos |
-| `2pl` | — |
-| `3pl` | — |
+| `1sg` | darei |
+| `2sg` | darás |
+| `3sg` | dará |
+| `1pl` | daremos |
+| `2pl` | dareis |
+| `3pl` | daran |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zenhei |
-| `2sg` | zenheste |
-| `3sg` | — |
-| `1pl` | zenhemos |
-| `2pl` | — |
-| `3pl` | — |
+| `1sg` | dei |
+| `2sg` | deste |
+| `3sg` | dou |
+| `1pl` | demos |
+| `2pl` | destes |
+| `3pl` | dórun |
 
-##### `subjunctive.future`
+##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | zenhares |
+| `1sg` | deia |
+| `2sg` | deias |
+| `3sg` | dé |
+| `1pl` | déiamos |
+| `2pl` | déiades |
+| `3pl` | deis |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | darie |
+| `2sg` | daries |
 | `3sg` | — |
-| `1pl` | zenharmos |
-| `2pl` | — |
-| `3pl` | — |
+| `1pl` | dariemos |
+| `2pl` | dariedes |
+| `3pl` | darien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | - |
+| `2sg` | dá |
+| `3sg` | — |
+| `1pl` | - |
+| `2pl` | dai |
+| `3pl` | - |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | daba |
+| `2sg` | dabas |
+| `3sg` | — |
+| `1pl` | dábamos |
+| `2pl` | dábades |
+| `3pl` | dában |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dira |
+| `2sg` | diras |
+| `3sg` | — |
+| `1pl` | díramos |
+| `2pl` | dírades |
+| `3pl` | díran |
 
 _…2 more tense/mood rows in the JSON corpus._
 
@@ -614,7 +619,14 @@ Template stem args observed: `<a-i>`, `<e-i>`.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.future` | 19 | `lcp` | -ei | -ás | -á | -emos | -eis | -an |
+| `indicative.present` | 3 | `lcp` | -o | -es | -e | -imos | -is | -en |
+| `indicative.preterite` | 15 | `lcp` | -i | -iste | -iu | -imos | -istes | -írun |
+| `subjunctive.present` | 1 | `lcp` | -aia | -aias | -aia | -áiamos | -áiades | -áian |
 
 ### Representative lemmas
 
@@ -796,101 +808,101 @@ _…1 more tense/mood rows in the JSON corpus._
 | `1sg` | biba |
 | `2sg` | bibas |
 | `3sg` | biba |
-| `1pl` | bíbamos |
+| `1pl` | bibamos |
 | `2pl` | bibades |
 | `3pl` | biban |
 
 _…2 more tense/mood rows in the JSON corpus._
 
-#### `çtruir`
+#### `salir`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | çtruo |
-| `2sg` | çtrues |
-| `3sg` | — |
-| `1pl` | çtruimos |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | çtruiries |
-| `3sg` | — |
-| `1pl` | çtruiriemos |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | çtrue |
-| `3sg` | — |
-| `1pl` | - |
-| `2pl` | — |
-| `3pl` | — |
+| `1sg` | salo |
+| `2sg` | sales |
+| `3sg` | salgo |
+| `1pl` | salimos |
+| `2pl` | salis |
+| `3pl` | sálen |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | çtruirás |
-| `3sg` | — |
-| `1pl` | çtruiremos |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | çtruies |
-| `3sg` | — |
-| `1pl` | çtruiemos |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | çtruiras |
-| `3sg` | — |
-| `1pl` | çtruíramos |
-| `2pl` | — |
-| `3pl` | — |
+| `1sg` | salirei |
+| `2sg` | salirás |
+| `3sg` | salirá |
+| `1pl` | saliremos |
+| `2pl` | salireis |
+| `3pl` | saliran |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | çtrui |
-| `2sg` | çtruiste |
-| `3sg` | — |
-| `1pl` | çtruimos |
-| `2pl` | — |
-| `3pl` | — |
+| `1sg` | sali |
+| `2sg` | saliste |
+| `3sg` | saliu |
+| `1pl` | salimos |
+| `2pl` | salistes |
+| `3pl` | salírun |
 
-##### `subjunctive.future`
+##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | çtruires |
+| `1sg` | sala |
+| `2sg` | salas |
+| `3sg` | salga |
+| `1pl` | sálamos |
+| `2pl` | sálades |
+| `3pl` | sálgades |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | salirie |
+| `2sg` | saliries |
 | `3sg` | — |
-| `1pl` | çtruirmos |
-| `2pl` | — |
-| `3pl` | — |
+| `1pl` | saliriemos |
+| `2pl` | saliriedes |
+| `3pl` | salirien |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | - |
+| `2sg` | sal |
+| `3sg` | — |
+| `1pl` | - |
+| `2pl` | sali |
+| `3pl` | - |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | salie |
+| `2sg` | salies |
+| `3sg` | — |
+| `1pl` | saliemos |
+| `2pl` | saliedes |
+| `3pl` | salien |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | salira |
+| `2sg` | saliras |
+| `3sg` | — |
+| `1pl` | salíramos |
+| `2pl` | salírades |
+| `3pl` | salíran |
 
 _…2 more tense/mood rows in the JSON corpus._
 

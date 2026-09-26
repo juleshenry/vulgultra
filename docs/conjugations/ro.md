@@ -10,7 +10,7 @@
 - Verb lemma entries: **7509**
 - Inflected form records: **284694**
 - Separate form-of entries: **1**
-- Classified person-slot observations: **248244**
+- Classified person-slot observations: **248366**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,13 +18,13 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-a` | 4145 | 9 | 6 |
-| `-i` | 2628 | 9 | 6 |
-| `-e` | 364 | 9 | 6 |
-| `other` | 266 | 9 | 4 |
+| `-a` | 4145 | 9 | 7 |
+| `-i` | 2628 | 9 | 7 |
+| `-e` | 364 | 9 | 7 |
+| `other` | 266 | 10 | 4 |
 | `-ea` | 63 | 5 | 4 |
+| `fi` | 1 | 9 | 1 |
 | `avea` | 1 | 9 | 0 |
-| `fi` | 1 | 9 | 0 |
 | `vrea` | 1 | 5 | 0 |
 
 ## Ending: `-a`
@@ -38,11 +38,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `indicative` | 3758 | `lcp` | -ai | -ași | -ă | -arăm | -arăți | -ară |
-| `indicative.imperfect` | 3437 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
-| `indicative.pluperfect` | 3437 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
-| `indicative.present` | 2647 | `lcp` | -ez | -ezi | -ează | -ăm | -ați | -ează |
+| `indicative.imperfect` | 3374 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
+| `indicative.pluperfect` | 3374 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
+| `indicative.present` | 2598 | `lcp` | -ez | -ezi | -ează | -ăm | -ați | -ează |
 | `indicative.preterite` | 80 | `lcp` | -ai | -aşi | -ă | -arăm | -arăţi | -ară |
 | `subjunctive.imperfect` | 64 | `lcp` | -e | -i | -e | -em | -et | -e |
+| `subjunctive.present` | 52 | `lcp` | -ez | -ezi | -eze | -ăm | -aţi | -eze |
 
 ### Representative lemmas
 
@@ -150,7 +151,7 @@ Stem: `lucr`.
 | `2sg` | lucrezi |
 | `3sg` | lucrează |
 | `1pl` | lucrăm |
-| `2pl` | lucrați |
+| `2pl` | lucraţi |
 | `3pl` | lucrează |
 
 ##### `conditional`
@@ -194,7 +195,7 @@ Stem: `lucr`.
 | `2sg` | lucrai |
 | `3sg` | lucra |
 | `1pl` | lucram |
-| `2pl` | lucrați |
+| `2pl` | lucraţi |
 | `3pl` | lucrau |
 
 ##### `indicative.pluperfect`
@@ -202,10 +203,10 @@ Stem: `lucr`.
 | Slot | Form |
 |---|---|
 | `1sg` | lucrasem |
-| `2sg` | lucraseși |
+| `2sg` | lucraseşi |
 | `3sg` | lucrase |
 | `1pl` | lucraserăm |
-| `2pl` | lucraserăți |
+| `2pl` | lucraserăţi |
 | `3pl` | lucraseră |
 
 ##### `indicative.preterite`
@@ -244,7 +245,7 @@ Stem: `adap, adăp/adap`.
 | `2sg` | adapi |
 | `3sg` | adapă |
 | `1pl` | adăpăm |
-| `2pl` | adăpați |
+| `2pl` | adăpaţi |
 | `3pl` | adapă |
 
 ##### `conditional`
@@ -288,7 +289,7 @@ Stem: `adap, adăp/adap`.
 | `2sg` | adăpai |
 | `3sg` | adăpa |
 | `1pl` | adăpam |
-| `2pl` | adăpați |
+| `2pl` | adăpaţi |
 | `3pl` | adăpau |
 
 ##### `indicative.pluperfect`
@@ -296,10 +297,10 @@ Stem: `adap, adăp/adap`.
 | Slot | Form |
 |---|---|
 | `1sg` | adăpasem |
-| `2sg` | adăpaseși |
+| `2sg` | adăpaseşi |
 | `3sg` | adăpase |
 | `1pl` | adăpaserăm |
-| `2pl` | adăpaserăți |
+| `2pl` | adăpaserăţi |
 | `3pl` | adăpaseră |
 
 ##### `indicative.preterite`
@@ -337,11 +338,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `indicative` | 2077 | `lcp` | -i | -și | ∅ | -răm | -răți | -ră |
-| `indicative.imperfect` | 2065 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
-| `indicative.pluperfect` | 2065 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
-| `indicative.present` | 1588 | `lcp` | -esc | -ești | -ește | -im | -iți | -esc |
+| `indicative.imperfect` | 2054 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
+| `indicative.pluperfect` | 2054 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
+| `indicative.present` | 1576 | `lcp` | -esc | -ești | -ește | -im | -iți | -esc |
 | `indicative.preterite` | 11 | `lcp` | -i | -şi | ∅ | -răm | -răţi | -ră |
 | `subjunctive.imperfect` | 11 | `lcp` | -e | -i | -e | -em | -et | -e |
+| `subjunctive.present` | 13 | `template` | -esc | -eşti | -ească | -im | -iţi | -ească |
 
 ### Representative lemmas
 
@@ -354,10 +356,10 @@ Stem: `vorb`.
 | Slot | Form |
 |---|---|
 | `1sg` | vorbesc |
-| `2sg` | vorbești |
-| `3sg` | vorbește |
+| `2sg` | vorbeşti |
+| `3sg` | vorbeşte |
 | `1pl` | vorbim |
-| `2pl` | vorbiți |
+| `2pl` | vorbiţi |
 | `3pl` | vorbesc |
 
 ##### `conditional`
@@ -401,7 +403,7 @@ Stem: `vorb`.
 | `2sg` | vorbeai |
 | `3sg` | vorbea |
 | `1pl` | vorbeam |
-| `2pl` | vorbeați |
+| `2pl` | vorbeaţi |
 | `3pl` | vorbeau |
 
 ##### `indicative.pluperfect`
@@ -409,10 +411,10 @@ Stem: `vorb`.
 | Slot | Form |
 |---|---|
 | `1sg` | vorbisem |
-| `2sg` | vorbiseși |
+| `2sg` | vorbiseşi |
 | `3sg` | vorbise |
 | `1pl` | vorbiserăm |
-| `2pl` | vorbiserăți |
+| `2pl` | vorbiserăţi |
 | `3pl` | vorbiseră |
 
 ##### `indicative.preterite`
@@ -446,10 +448,10 @@ _…2 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | adăpostesc |
-| `2sg` | adăpostești |
-| `3sg` | adăpostește |
+| `2sg` | adăposteşti |
+| `3sg` | adăposteşte |
 | `1pl` | adăpostim |
-| `2pl` | adăpostiți |
+| `2pl` | adăpostiţi |
 | `3pl` | adăpostesc |
 
 ##### `conditional`
@@ -493,7 +495,7 @@ _…2 more tense/mood rows in the JSON corpus._
 | `2sg` | adăposteai |
 | `3sg` | adăpostea |
 | `1pl` | adăposteam |
-| `2pl` | adăposteați |
+| `2pl` | adăposteaţi |
 | `3pl` | adăposteau |
 
 ##### `indicative.pluperfect`
@@ -501,10 +503,10 @@ _…2 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | adăpostisem |
-| `2sg` | adăpostiseși |
+| `2sg` | adăpostiseşi |
 | `3sg` | adăpostise |
 | `1pl` | adăpostiserăm |
-| `2pl` | adăpostiserăți |
+| `2pl` | adăpostiserăţi |
 | `3pl` | adăpostiseră |
 
 ##### `indicative.preterite`
@@ -537,12 +539,12 @@ _…2 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | adăog |
-| `2sg` | adăogi |
+| `1sg` | adaog |
+| `2sg` | adaogi |
 | `3sg` | adaoge |
 | `1pl` | adăogim |
-| `2pl` | adăogiți |
-| `3pl` | adăog |
+| `2pl` | adăogiţi |
+| `3pl` | adaog |
 
 ##### `conditional`
 
@@ -585,7 +587,7 @@ _…2 more tense/mood rows in the JSON corpus._
 | `2sg` | adăogeai |
 | `3sg` | adăogea |
 | `1pl` | adăogeam |
-| `2pl` | adăogeați |
+| `2pl` | adăogeaţi |
 | `3pl` | adăogeau |
 
 ##### `indicative.pluperfect`
@@ -593,10 +595,10 @@ _…2 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | adăogisem |
-| `2sg` | adăogiseși |
+| `2sg` | adăogiseşi |
 | `3sg` | adăogise |
 | `1pl` | adăogiserăm |
-| `2pl` | adăogiserăți |
+| `2pl` | adăogiserăţi |
 | `3pl` | adăogiseră |
 
 ##### `indicative.preterite`
@@ -634,11 +636,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `indicative` | 114 | `lcp` | -i | -și | ∅ | -răm | -răți | -ră |
-| `indicative.imperfect` | 127 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
-| `indicative.pluperfect` | 126 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
-| `indicative.present` | 63 | `lcp` | ∅ | -i | -e | -em | -eți | ∅ |
+| `indicative.imperfect` | 123 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
+| `indicative.pluperfect` | 123 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
+| `indicative.present` | 61 | `lcp` | ∅ | -i | -e | -em | -eți | ∅ |
 | `indicative.preterite` | 4 | `lcp` | -i | -şi | ∅ | -răm | -răţi | -ră |
 | `subjunctive.imperfect` | 4 | `lcp` | -e | -i | -e | -em | -et | -e |
+| `subjunctive.present` | 2 | `lcp` | ∅ | -i | -ă | -em | -eţi | -ă |
 
 ### Representative lemmas
 
@@ -652,7 +655,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2sg` | zici |
 | `3sg` | zice |
 | `1pl` | zicem |
-| `2pl` | ziceți |
+| `2pl` | ziceţi |
 | `3pl` | zic |
 
 ##### `conditional`
@@ -696,7 +699,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2sg` | ziceai |
 | `3sg` | zicea |
 | `1pl` | ziceam |
-| `2pl` | ziceați |
+| `2pl` | ziceaţi |
 | `3pl` | ziceau |
 
 ##### `indicative.pluperfect`
@@ -704,10 +707,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Slot | Form |
 |---|---|
 | `1sg` | zisesem |
-| `2sg` | ziseseși |
+| `2sg` | ziseseşi |
 | `3sg` | zisese |
 | `1pl` | ziseserăm |
-| `2pl` | ziseserăți |
+| `2pl` | ziseserăţi |
 | `3pl` | ziseseră |
 
 ##### `indicative.preterite`
@@ -746,7 +749,7 @@ Stem: `mer`.
 | `2sg` | mergi |
 | `3sg` | merge |
 | `1pl` | mergem |
-| `2pl` | mergeți |
+| `2pl` | mergeţi |
 | `3pl` | merg |
 
 ##### `conditional`
@@ -790,7 +793,7 @@ Stem: `mer`.
 | `2sg` | mergeai |
 | `3sg` | mergea |
 | `1pl` | mergeam |
-| `2pl` | mergeați |
+| `2pl` | mergeaţi |
 | `3pl` | mergeau |
 
 ##### `indicative.pluperfect`
@@ -798,10 +801,10 @@ Stem: `mer`.
 | Slot | Form |
 |---|---|
 | `1sg` | mersesem |
-| `2sg` | merseseși |
+| `2sg` | merseseşi |
 | `3sg` | mersese |
 | `1pl` | merseserăm |
-| `2pl` | merseserăți |
+| `2pl` | merseserăţi |
 | `3pl` | merseseră |
 
 ##### `indicative.preterite`
@@ -838,7 +841,7 @@ _…2 more tense/mood rows in the JSON corpus._
 | `2sg` | faci |
 | `3sg` | face |
 | `1pl` | facem |
-| `2pl` | faceți |
+| `2pl` | faceţi |
 | `3pl` | fac |
 
 ##### `conditional`
@@ -882,7 +885,7 @@ _…2 more tense/mood rows in the JSON corpus._
 | `2sg` | făceai |
 | `3sg` | făcea |
 | `1pl` | făceam |
-| `2pl` | făceați |
+| `2pl` | făceaţi |
 | `3pl` | făceau |
 
 ##### `indicative.pluperfect`
@@ -890,10 +893,10 @@ _…2 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | făcusem |
-| `2sg` | făcuseși |
+| `2sg` | făcuseşi |
 | `3sg` | făcuse |
 | `1pl` | făcuserăm |
-| `2pl` | făcuserăți |
+| `2pl` | făcuserăţi |
 | `3pl` | făcuseră |
 
 ##### `indicative.preterite`
@@ -1121,72 +1124,72 @@ _…1 more tense/mood rows in the JSON corpus._
 
 _…1 more tense/mood rows in the JSON corpus._
 
-#### `zăvorî`
+#### `фи`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zăvorăsc |
-| `2sg` | zăvorăști |
-| `3sg` | zăvorăște |
-| `1pl` | zăvorâm |
-| `2pl` | zăvorâți |
-| `3pl` | zăvorăsc |
-
-##### `indicative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | zăvorâi |
-| `2sg` | zăvorâși |
-| `3sg` | zăvorî |
-| `1pl` | zăvorârăm |
-| `2pl` | zăvorârăți |
-| `3pl` | zăvorâră |
+| `1sg` | сынт |
+| `2sg` | ешть |
+| `3sg` | есте |
+| `1pl` | сынтем |
+| `2pl` | сынтець |
+| `3pl` | сынт |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zăvoram |
-| `2sg` | zăvorai |
-| `3sg` | zăvora |
-| `1pl` | zăvoram |
-| `2pl` | zăvorați |
-| `3pl` | zăvorau |
+| `1sg` | ерам |
+| `2sg` | ерай |
+| `3sg` | ера |
+| `1pl` | ерам |
+| `2pl` | ераць |
+| `3pl` | ерау |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zăvorâsem |
-| `2sg` | zăvorâseși |
-| `3sg` | zăvorâse |
-| `1pl` | zăvorâserăm |
-| `2pl` | zăvorâserăți |
-| `3pl` | zăvorâseră |
+| `1sg` | фусесем |
+| `2sg` | фусесешь |
+| `3sg` | фусесе |
+| `1pl` | фусесерэм |
+| `2pl` | фусесерэць |
+| `3pl` | фусесерэ |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | să zăvorăsc |
-| `2sg` | să zăvorăști |
-| `3sg` | să zăvorască |
-| `1pl` | să zăvorâm |
-| `2pl` | să zăvorâți |
-| `3pl` | să zăvorască |
+| `1sg` | сэ фиу |
+| `2sg` | сэ фий |
+| `3sg` | сэ фие |
+| `1pl` | сэ фим |
+| `2pl` | сэ фиць |
+| `3pl` | сэ фие |
 
-##### `imperative`
+##### `imperative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | zăvorăște |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | zăvorâți |
+| `1sg` | - |
+| `2sg` | фий |
+| `3sg` | - |
+| `1pl` | - |
+| `2pl` | фиць |
+| `3pl` | — |
+
+##### `subjunctive.past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | сэ фи фост |
+| `2sg` | сэ фи фост |
+| `3sg` | сэ фи фост |
+| `1pl` | сэ фи фост |
+| `2pl` | — |
 | `3pl` | — |
 
 ## Ending: `-ea`
@@ -1412,117 +1415,17 @@ Stem: `țin`.
 | `2pl` | învegheați |
 | `3pl` | — |
 
-## Irregular: `avea`
-
-Template stem args observed: `am`.
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `avea`
-
-Stem: `am`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am |
-| `2sg` | ai |
-| `3sg` | are |
-| `1pl` | avem |
-| `2pl` | aveți |
-| `3pl` | au |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aş avea |
-| `2sg` | ai avea |
-| `3sg` | ar avea |
-| `1pl` | am avea |
-| `2pl` | aţi avea |
-| `3pl` | ar avea |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aş fi avut |
-| `2sg` | ai fi avut |
-| `3sg` | ar fi avut |
-| `1pl` | am fi avut |
-| `2pl` | aţi fi avut |
-| `3pl` | ar fi avut |
-
-##### `indicative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avui |
-| `2sg` | avuși |
-| `3sg` | avu |
-| `1pl` | avurăm |
-| `2pl` | avurăți |
-| `3pl` | avură |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aveam |
-| `2sg` | aveai |
-| `3sg` | avea |
-| `1pl` | aveam |
-| `2pl` | aveați |
-| `3pl` | aveau |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avusem |
-| `2sg` | avuseși |
-| `3sg` | avuse |
-| `1pl` | avuserăm |
-| `2pl` | avuserăți |
-| `3pl` | avuseră |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avusei |
-| `2sg` | avuseşi |
-| `3sg` | avuse |
-| `1pl` | avuserăm |
-| `2pl` | avuserăţi |
-| `3pl` | avuseră |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avure |
-| `2sg` | avuri |
-| `3sg` | avure |
-| `1pl` | avurem |
-| `2pl` | avuret |
-| `3pl` | avure |
-
-_…2 more tense/mood rows in the JSON corpus._
-
 ## Conjugation: `fi`
 
 Template stem args observed: `fi`.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `subjunctive.present` | 1 | `template` | -u | -i | -e | -m | -ţi | -e |
 
 ### Representative lemmas
 
@@ -1535,10 +1438,10 @@ Stem: `fi`.
 | Slot | Form |
 |---|---|
 | `1sg` | sunt |
-| `2sg` | ești |
+| `2sg` | eşti |
 | `3sg` | este |
 | `1pl` | suntem |
-| `2pl` | sunteți |
+| `2pl` | sunteţi |
 | `3pl` | sunt |
 
 ##### `conditional`
@@ -1582,7 +1485,7 @@ Stem: `fi`.
 | `2sg` | erai |
 | `3sg` | era |
 | `1pl` | eram |
-| `2pl` | erați |
+| `2pl` | eraţi |
 | `3pl` | erau |
 
 ##### `indicative.pluperfect`
@@ -1590,10 +1493,10 @@ Stem: `fi`.
 | Slot | Form |
 |---|---|
 | `1sg` | fusesem |
-| `2sg` | fuseseși |
+| `2sg` | fuseseşi |
 | `3sg` | fusese |
 | `1pl` | fuseserăm |
-| `2pl` | fuseserăți |
+| `2pl` | fuseserăţi |
 | `3pl` | fuseseră |
 
 ##### `indicative.preterite`
@@ -1617,6 +1520,110 @@ Stem: `fi`.
 | `1pl` | furem |
 | `2pl` | furet |
 | `3pl` | fure |
+
+_…2 more tense/mood rows in the JSON corpus._
+
+## Irregular: `avea`
+
+Template stem args observed: `am`.
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
+
+### Representative lemmas
+
+#### `avea`
+
+Stem: `am`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | am |
+| `2sg` | ai |
+| `3sg` | are |
+| `1pl` | avem |
+| `2pl` | aveţi |
+| `3pl` | au |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aş avea |
+| `2sg` | ai avea |
+| `3sg` | ar avea |
+| `1pl` | am avea |
+| `2pl` | aţi avea |
+| `3pl` | ar avea |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aş fi avut |
+| `2sg` | ai fi avut |
+| `3sg` | ar fi avut |
+| `1pl` | am fi avut |
+| `2pl` | aţi fi avut |
+| `3pl` | ar fi avut |
+
+##### `indicative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avui |
+| `2sg` | avuși |
+| `3sg` | avu |
+| `1pl` | avurăm |
+| `2pl` | avurăți |
+| `3pl` | avură |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aveam |
+| `2sg` | aveai |
+| `3sg` | avea |
+| `1pl` | aveam |
+| `2pl` | aveaţi |
+| `3pl` | aveau |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avusem |
+| `2sg` | avuseşi |
+| `3sg` | avuse |
+| `1pl` | avuserăm |
+| `2pl` | avuserăţi |
+| `3pl` | avuseră |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avusei |
+| `2sg` | avuseşi |
+| `3sg` | avuse |
+| `1pl` | avuserăm |
+| `2pl` | avuserăţi |
+| `3pl` | avuseră |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avure |
+| `2sg` | avuri |
+| `3sg` | avure |
+| `1pl` | avurem |
+| `2pl` | avuret |
+| `3pl` | avure |
 
 _…2 more tense/mood rows in the JSON corpus._
 

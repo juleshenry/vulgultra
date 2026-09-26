@@ -10,7 +10,7 @@
 - Verb lemma entries: **497**
 - Inflected form records: **28918**
 - Separate form-of entries: **262**
-- Classified person-slot observations: **21788**
+- Classified person-slot observations: **25627**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,7 +18,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `vec-conj-auto` | 383 | 6 | 0 |
+| `vec-conj-auto` | 383 | 7 | 0 |
 | `unknown` | 38 | 0 | 0 |
 
 ## `vec-conj-auto`
@@ -29,242 +29,242 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 ### Representative lemmas
 
-#### `èser`
+#### `łustrar`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | son |
-| `2sg` | sì |
-| `3sg` | xe |
-| `1pl` | semo |
-| `2pl` | sì |
-| `3pl` | xe |
+| `1sg` | łustro |
+| `2sg` | łustri |
+| `3sg` | el łustra |
+| `1pl` | łustrémo |
+| `2pl` | łustré |
+| `3pl` | i łustra |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | sarìa |
-| `2sg` | sarìsi |
-| `3sg` | el sarìa |
-| `1pl` | sarìsimo |
-| `2pl` | sarisi |
-| `3pl` | i sarìa |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sarò |
-| `2sg` | sarè |
-| `3sg` | sarà |
-| `1pl` | sarémo |
-| `2pl` | sarè |
-| `3pl` | sarà |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | gero |
-| `2sg` | geri |
-| `3sg` | gera |
-| `1pl` | gèrimo |
-| `2pl` | geri |
-| `3pl` | gera |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fuse |
-| `2sg` | fusi |
-| `3sg` | fuse |
-| `1pl` | fùsimo |
-| `2pl` | fusi |
-| `3pl` | fuse |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sia |
-| `2sg` | sì |
-| `3sg` | el sia |
-| `1pl` | sémo |
-| `2pl` | sì |
-| `3pl` | i sia |
+| `1sg` | łustrarìa |
+| `2sg` | łustrarisi |
+| `3sg` | el łustrarìa |
+| `1pl` | łustrarìsimo |
+| `2pl` | łustrarisi |
+| `3pl` | i łustrarìa |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | sì |
-| `3sg` | el sia |
-| `1pl` | sémo |
-| `2pl` | sì |
-| `3pl` | i sia |
+| `1sg` | łustra |
+| `2sg` | te łustra |
+| `3sg` | el łustra |
+| `1pl` | łustrémo |
+| `2pl` | łustré |
+| `3pl` | i łustra |
 
-#### `aver`
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łustrarò |
+| `2sg` | łustrarè |
+| `3sg` | el łustrarà |
+| `1pl` | łustrarémo |
+| `2pl` | łustrarè |
+| `3pl` | i łustrarà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łustrava |
+| `2sg` | łustravi |
+| `3sg` | el łustrava |
+| `1pl` | łustràvimo |
+| `2pl` | łustravi |
+| `3pl` | i łustrava |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łustrase |
+| `2sg` | łustrasi |
+| `3sg` | el łustrase |
+| `1pl` | łustràsimo |
+| `2pl` | łustrasi |
+| `3pl` | i łustrase |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łustre |
+| `2sg` | łustri |
+| `3sg` | el łustre |
+| `1pl` | łustrémo |
+| `2pl` | łustré |
+| `3pl` | i łustre |
+
+#### `łimar`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | ghè |
-| `3sg` | el ga |
-| `1pl` | avémo |
-| `2pl` | avì |
-| `3pl` | i ga |
+| `1sg` | łimo |
+| `2sg` | łimi |
+| `3sg` | el łima |
+| `1pl` | łimémo |
+| `2pl` | łimé |
+| `3pl` | i łima |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avarìa |
-| `2sg` | avarisi |
-| `3sg` | el avarìa |
-| `1pl` | avarìsimo |
-| `2pl` | avarisi |
-| `3pl` | i avarìa |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avarò |
-| `2sg` | avarè |
-| `3sg` | el avarà |
-| `1pl` | avarémo |
-| `2pl` | avarè |
-| `3pl` | i avarà |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avéa |
-| `2sg` | avivi |
-| `3sg` | el avéa |
-| `1pl` | avévimo |
-| `2pl` | avivi |
-| `3pl` | i avéa |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avése |
-| `2sg` | avisi |
-| `3sg` | el avése |
-| `1pl` | avésimo |
-| `2pl` | avisi |
-| `3pl` | i avése |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abia |
-| `2sg` | abi |
-| `3sg` | el abia |
-| `1pl` | avémo |
-| `2pl` | avì |
-| `3pl` | i abia |
+| `1sg` | łimarìa |
+| `2sg` | łimarisi |
+| `3sg` | el łimarìa |
+| `1pl` | łimarìsimo |
+| `2pl` | łimarisi |
+| `3pl` | i łimarìa |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | abi |
-| `3sg` | el abia |
-| `1pl` | avémo |
-| `2pl` | avì |
-| `3pl` | i abia |
+| `1sg` | łima |
+| `2sg` | te łima |
+| `3sg` | el łima |
+| `1pl` | łimémo |
+| `2pl` | łimé |
+| `3pl` | i łima |
 
-#### `scoltar`
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łimarò |
+| `2sg` | łimarè |
+| `3sg` | el łimarà |
+| `1pl` | łimarémo |
+| `2pl` | łimarè |
+| `3pl` | i łimarà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łimava |
+| `2sg` | łimavi |
+| `3sg` | el łimava |
+| `1pl` | łimàvimo |
+| `2pl` | łimavi |
+| `3pl` | i łimava |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łimase |
+| `2sg` | łimasi |
+| `3sg` | el łimase |
+| `1pl` | łimàsimo |
+| `2pl` | łimasi |
+| `3pl` | i łimase |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łime |
+| `2sg` | łimi |
+| `3sg` | el łime |
+| `1pl` | łimémo |
+| `2pl` | łimé |
+| `3pl` | i łime |
+
+#### `łigar`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | scolto |
-| `2sg` | scolti |
-| `3sg` | el scolta |
-| `1pl` | scoltémo |
-| `2pl` | scolté |
-| `3pl` | i scolta |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | scoltase |
-| `2sg` | scoltasi |
-| `3sg` | el scoltase |
-| `1pl` | scoltàsimo |
-| `2pl` | scoltasi |
-| `3pl` | i scoltase |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | scolte |
-| `2sg` | scolti |
-| `3sg` | el scolte |
-| `1pl` | scoltémo |
-| `2pl` | scolté |
-| `3pl` | i scolte |
+| `1sg` | łigo |
+| `2sg` | łighi |
+| `3sg` | el łiga |
+| `1pl` | łighémo |
+| `2pl` | łighé |
+| `3pl` | i łiga |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | el scoltarìa |
-| `1pl` | scoltarìsimo |
-| `2pl` | scoltarisi |
-| `3pl` | i scoltarìa |
+| `1sg` | łigarìa |
+| `2sg` | łigarisi |
+| `3sg` | el łigarìa |
+| `1pl` | łigarìsimo |
+| `2pl` | łigarisi |
+| `3pl` | i łigarìa |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | el scolta |
-| `1pl` | scoltémo |
-| `2pl` | scolté |
-| `3pl` | i scolta |
+| `1sg` | łiga |
+| `2sg` | te łiga |
+| `3sg` | el łiga |
+| `1pl` | łighémo |
+| `2pl` | łighé |
+| `3pl` | i łiga |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | el scoltarà |
-| `1pl` | scoltarémo |
-| `2pl` | scoltarè |
-| `3pl` | i scoltarà |
+| `1sg` | łigarò |
+| `2sg` | łigarè |
+| `3sg` | el łigarà |
+| `1pl` | łigarémo |
+| `2pl` | łigarè |
+| `3pl` | i łigarà |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | el scoltava |
-| `1pl` | scoltàvimo |
-| `2pl` | scoltavi |
-| `3pl` | i scoltava |
+| `1sg` | łigava |
+| `2sg` | łigavi |
+| `3sg` | el łigava |
+| `1pl` | łigàvimo |
+| `2pl` | łigavi |
+| `3pl` | i łigava |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łigase |
+| `2sg` | łigasi |
+| `3sg` | el łigase |
+| `1pl` | łigàsimo |
+| `2pl` | łigasi |
+| `3pl` | i łigase |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | łighe |
+| `2sg` | łighi |
+| `3sg` | el łighe |
+| `1pl` | łighémo |
+| `2pl` | łighé |
+| `3pl` | i łighe |
 
 ## `unknown`
 

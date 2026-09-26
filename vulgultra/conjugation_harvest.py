@@ -12,6 +12,15 @@ from urllib.parse import quote
 
 PERSON_SLOTS = ("1sg", "2sg", "3sg", "1pl", "2pl", "3pl")
 
+SLOT_PERSON_TAGS = {
+    "1sg": ("first-person", "singular"),
+    "2sg": ("second-person", "singular"),
+    "3sg": ("third-person", "singular"),
+    "1pl": ("first-person", "plural"),
+    "2pl": ("second-person", "plural"),
+    "3pl": ("third-person", "plural"),
+}
+
 MOODS = {
     "indicative": "indicative",
     "subjunctive": "subjunctive",
@@ -66,6 +75,83 @@ def decode_tags(tags: list[str]) -> tuple[str | None, str, bool]:
             mood = "indicative"
         feature = ".".join(piece for piece in (mood, tense) if piece) or "unclassified"
     return slot, feature, ambiguous
+
+
+def recover_conjugation_persons(forms: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Fill 1sg/3sg/3pl when Wiktextract leaves only number on a conjugation cell.
+
+    Dalmatian, Istriot, and Romagnol tables list persons in 1sg–3pl order.
+    2sg/1pl/2pl are often tagged; leftover singulars fill 1sg then 3sg, leftover
+    plurals fill the remaining plural slots. Already-tagged cells stay put.
+    """
+    recovered: list[dict[str, Any]] = [
+        dict(item) if isinstance(item, dict) else item  # type: ignore[misc]
+        for item in forms
+    ]
+    group: list[int] = []
+    group_feature: str | None = None
+
+    def inject(rec: dict[str, Any], slot: str) -> None:
+        tags = [str(tag) for tag in rec.get("tags") or []]
+        tags = [tag for tag in tags if tag != "error-unrecognized-form"]
+        have = {tag.lower().replace("_", "-") for tag in tags}
+        for piece in SLOT_PERSON_TAGS[slot]:
+            if piece not in have:
+                tags.append(piece)
+        rec["tags"] = tags
+
+    def flush() -> None:
+        nonlocal group, group_feature
+        if not group:
+            return
+        tagged: set[str] = set()
+        unlabeled_sg: list[int] = []
+        unlabeled_pl: list[int] = []
+        for idx in group:
+            rec = recovered[idx]
+            if not isinstance(rec, dict):
+                continue
+            tags = [str(tag).lower().replace("_", "-") for tag in rec.get("tags") or []]
+            slot, _feature, ambiguous = decode_tags(tags)
+            if slot and not ambiguous:
+                tagged.add(slot)
+                continue
+            if "singular" in tags:
+                unlabeled_sg.append(idx)
+            elif "plural" in tags:
+                unlabeled_pl.append(idx)
+        sg_needed = [slot for slot in ("1sg", "2sg", "3sg") if slot not in tagged]
+        pl_needed = [slot for slot in ("1pl", "2pl", "3pl") if slot not in tagged]
+        for idx, slot in zip(unlabeled_sg, sg_needed):
+            rec = recovered[idx]
+            if isinstance(rec, dict):
+                inject(rec, slot)
+        for idx, slot in zip(unlabeled_pl, pl_needed):
+            rec = recovered[idx]
+            if isinstance(rec, dict):
+                inject(rec, slot)
+        group = []
+        group_feature = None
+
+    for idx, rec in enumerate(recovered):
+        if not isinstance(rec, dict):
+            continue
+        tags = [str(tag).lower().replace("_", "-") for tag in rec.get("tags") or []]
+        if rec.get("source") != "conjugation":
+            continue
+        if "table-tags" in tags or "inflection-template" in tags:
+            flush()
+            continue
+        if "infinitive" in tags or "gerund" in tags or "participle" in tags:
+            flush()
+            continue
+        _slot, feature, _ambiguous = decode_tags(tags)
+        if group and feature != group_feature:
+            flush()
+        group_feature = feature
+        group.append(idx)
+    flush()
+    return recovered
 
 
 def primary_conj_template(templates: object) -> tuple[str, str | None]:
@@ -372,18 +458,23 @@ def harvest_kaikki_file(
             if stem and not meta.get("stem"):
                 meta["stem"] = stem
             meta["source_url"] = source_url
-            for form_record in entry.get("forms", []):
-                if not isinstance(form_record, dict):
-                    continue
+            raw_forms = [
+                item for item in (entry.get("forms") or [])
+                if isinstance(item, dict)
+            ]
+            for form_record in recover_conjugation_persons(raw_forms):
                 tags = sorted(str(tag) for tag in form_record.get("tags", []))
                 if "inflection-template" in tags or "table-tags" in tags:
+                    continue
+                form_text = str(form_record.get("form") or "")
+                if "{{" in form_text:
                     continue
                 source_kind = str(form_record.get("source") or "lemma-form")
                 form_ipa = str(form_record.get("ipa") or ipa)
                 store_form(
                     paradigms, seen, counts,
                     lemma=word,
-                    form=str(form_record.get("form") or ""),
+                    form=form_text,
                     tags=tags,
                     ipa=form_ipa,
                     filename=filename,

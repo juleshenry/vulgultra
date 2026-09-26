@@ -291,65 +291,104 @@ def _slot_map(slots: list[str], cells: list[list[str]]) -> dict[str, list[str]]:
     return {slot: [p for p in seq] for slot, seq in zip(slots, cells)}
 
 
-# One lect owns a whole 6-person row. Tenses are chosen separately.
+# Finite tenses are independent 6-person rows; each cell may come from a
+# different lect. Concordance (shared person coda across tenses) breaks ties.
 FINITE_ROW_NAMES = ("prs", "pst", "fut", "subj", "theme_i", "theme_a")
+PERSON_CELL_NAMES = ("1sg", "1pl", "2sg", "2pl", "3sg", "3pl")
 
 
-def _row_score(row: list[list[str]], phonemes: set[str], lang: str) -> tuple:
-    """Choose legal short rows, then maximize new segment diversity.
+def _common_suffix_len(left: list[str], right: list[str]) -> int:
+    """Shared trailing phoneme count; person-marker overlap signal."""
+    n = 0
+    for a, b in zip(reversed(left), reversed(right)):
+        if a != b:
+            break
+        n += 1
+    return n
 
-    The explicit order is collision/phonotactics, distance, shortest cells,
-    then maximum new-phone coverage. It makes the conjugation heuristic
-    inspectable instead of letting a long exotic ending win by accident.
+
+def _cell_score(
+    cell: list[str],
+    *,
+    row_so_far: list[list[str]],
+    anchors: list[list[str]],
+    phonemes: set[str],
+    lang: str,
+) -> tuple:
+    """Lower is better. Syllables first; concordance only among equals.
+
+    Concordance rewards a shared person coda with already-chosen cells of the
+    same person across earlier tenses/moods (e.g. present 1pl /ons/ tips a
+    tied future toward /erons/). It never spends an extra syllable.
     """
-    seqs = [tuple(cell) for cell in row]
-    collisions = _pairs_equal(seqs)
-    violations = sum(count_violations(cell) for cell in row)
+    syllables = count_syllables(cell)
+    violations = count_violations(cell)
+    collisions = sum(1 for other in row_so_far if other == cell)
     dist = 0
-    for i in range(len(row)):
-        for j in range(i + 1, len(row)):
-            d = phonemic_edit_distance(row[i], row[j])
-            if d < DIST_THRESHOLD:
-                dist += DIST_THRESHOLD - d
-    fresh: set[str] = set()
-    for cell in row:
-        fresh.update(extract_phonemes(cell))
-    new_ph = len(fresh - phonemes)
-    length = sum(len(cell) for cell in row)
-    return (collisions, violations, dist, length, -new_ph, lang)
+    for other in row_so_far:
+        d = phonemic_edit_distance(cell, other)
+        if d < DIST_THRESHOLD:
+            dist += DIST_THRESHOLD - d
+    concordance = sum(_common_suffix_len(cell, anchor) for anchor in anchors)
+    new_ph = len(extract_phonemes(cell) - phonemes)
+    return (
+        syllables,
+        violations,
+        collisions,
+        dist,
+        -concordance,
+        -new_ph,
+        len(cell),
+        lang,
+    )
 
 
 def assemble_verb_rows(
     phonemes: set[str],
     templates: dict[str, list[list[str]]] | None = None,
 ) -> tuple[list[list[str]], str]:
-    """Pick each finite tense from the lect that wins that row alone.
+    """Pick each finite cell from any lect; concordance breaks σ ties.
 
-    Slots inside the row stay one lect. Non-finite cells are the shared tail.
+    Person markers may mix across a row. Non-finite cells stay a shared tail.
     """
     used = set(phonemes)
     labels: list[str] = []
     cells: list[list[str]] = []
     templates = templates or VERB_TEMPLATES
     langs = sorted(templates)
+    # Already-chosen cells for each person index (0=1sg … 5=3pl).
+    anchors: list[list[list[str]]] = [[] for _ in PERSON_CELL_NAMES]
     for r, name in enumerate(FINITE_ROW_NAMES):
         start = r * 6
-        best: tuple | None = None
-        best_row: list[list[str]] | None = None
-        best_ph: set[str] = set()
-        for lang in langs:
-            row = [list(cell) for cell in templates[lang][start:start + 6]]
-            key = _row_score(row, used, lang)
-            if best is None or key < best:
-                best = key
-                best_row = row
-                best_ph = set()
-                for cell in row:
-                    best_ph.update(extract_phonemes(cell))
-        assert best_row is not None and best is not None
-        cells.extend(best_row)
-        labels.append(f"{name}={best[5]}")
-        used |= best_ph
+        row: list[list[str]] = []
+        row_langs: list[str] = []
+        for person in range(6):
+            best_key: tuple | None = None
+            best_cell: list[str] | None = None
+            best_lang = ""
+            for lang in langs:
+                block = templates[lang]
+                if len(block) < start + 6:
+                    continue
+                cell = list(block[start + person])
+                key = _cell_score(
+                    cell,
+                    row_so_far=row,
+                    anchors=anchors[person],
+                    phonemes=used,
+                    lang=lang,
+                )
+                if best_key is None or key < best_key:
+                    best_key = key
+                    best_cell = cell
+                    best_lang = lang
+            assert best_cell is not None and best_key is not None
+            row.append(best_cell)
+            row_langs.append(best_lang)
+            anchors[person].append(best_cell)
+            used |= extract_phonemes(best_cell)
+        cells.extend(row)
+        labels.append(f"{name}={'/'.join(row_langs)}")
     tail_lang = langs[0]
     cells.extend(list(cell) for cell in templates[tail_lang][36:])
     return cells, ",".join(labels)
@@ -359,7 +398,7 @@ def enumerate_endings(
     candidates: dict[str, list[Candidate]],
     selections: dict[str, int],
 ) -> tuple[dict, dict, dict, str, str]:
-    """Noun theme is global. Each verb tense is its own row. Roots stay pinned."""
+    """Noun theme is global. Verb cells mix lects; concordance breaks ties."""
     observed = {
         phone
         for candidate_list in candidates.values()

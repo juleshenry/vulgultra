@@ -18,24 +18,32 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-ir` | 12 | 5 | 0 |
-| `-re` | 8 | 5 | 0 |
-| `other` | 7 | 5 | 0 |
-| `-te` | 3 | 5 | 0 |
-| `-tcher` | 2 | 5 | 0 |
-| `-djer` | 1 | 5 | 0 |
-| `-er` | 1 | 5 | 0 |
-| `aller` | 1 | 5 | 0 |
-| `avoér` | 1 | 5 | 0 |
-| `dvoér` | 1 | 5 | 0 |
-| `s'in aler` | 1 | 5 | 0 |
-| `ête` | 1 | 5 | 0 |
+| `-ir` | 12 | 5 | 5 |
+| `-re` | 8 | 5 | 5 |
+| `other` | 7 | 5 | 5 |
+| `-te` | 3 | 5 | 5 |
+| `-tcher` | 2 | 5 | 5 |
+| `-djer` | 1 | 5 | 5 |
+| `-er` | 1 | 5 | 5 |
+| `dvoér` | 1 | 5 | 5 |
+| `ête` | 1 | 5 | 4 |
+| `aller` | 1 | 5 | 3 |
+| `avoér` | 1 | 5 | 3 |
+| `s'in aler` | 1 | 5 | 3 |
 
 ## Ending: `-ir`
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 11 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 11 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 12 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.present` | 1 | `lcp` | -s | -s | -;t | -yons | -yez | -'te |
+| `subjunctive.present` | 2 | `lcp` | -che | -ches | -che | -yonche | -yèche | -che'te |
 
 ### Representative lemmas
 
@@ -45,56 +53,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj viens |
-| `2sg` | tu viens |
-| `3sg` | i vient |
-| `1pl` | os vnons |
-| `2pl` | os vnez |
-| `3pl` | i vien'te |
+| `1sg` | viens |
+| `2sg` | viens |
+| `3sg` | vient |
+| `1pl` | vnons |
+| `2pl` | vnez |
+| `3pl` | vien'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj varoais |
-| `2sg` | tu varoais |
-| `3sg` | i varoait |
-| `1pl` | os varoème |
-| `2pl` | os varoète |
-| `3pl` | i varoai'te |
+| `1sg` | varoais |
+| `2sg` | varoais |
+| `3sg` | varoait |
+| `1pl` | varoème |
+| `2pl` | varoète |
+| `3pl` | varoai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj varai |
-| `2sg` | tu varos |
-| `3sg` | i varo |
-| `1pl` | os varons |
-| `2pl` | os varez |
-| `3pl` | i varont |
+| `1sg` | varai |
+| `2sg` | varos |
+| `3sg` | varo |
+| `1pl` | varons |
+| `2pl` | varez |
+| `3pl` | varont |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | jé vnoais |
-| `2sg` | tu vnoais |
-| `3sg` | i vnoait |
-| `1pl` | os vnoème |
-| `2pl` | os vnoète |
-| `3pl` | i vnoai'te |
+| `1sg` | vnoais |
+| `2sg` | vnoais |
+| `3sg` | vnoait |
+| `1pl` | vnoème |
+| `2pl` | vnoète |
+| `3pl` | vnoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj vienche |
-| `2sg` | éq tu vienches |
-| `3sg` | qu’i vienche |
-| `1pl` | qu’os vnonche |
-| `2pl` | qu’os vnèche |
-| `3pl` | qu’i vienche'te |
+| `1sg` | vienche |
+| `2sg` | vienches |
+| `3sg` | vienche |
+| `1pl` | vnonche |
+| `2pl` | vnèche |
+| `3pl` | vienche'te |
 
 ##### `imperative`
 
@@ -113,56 +121,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj voés |
-| `2sg` | tu voés |
-| `3sg` | i voét |
-| `1pl` | os voéyons |
-| `2pl` | os voéyez |
-| `3pl` | i voé'te |
+| `1sg` | voés |
+| `2sg` | voés |
+| `3sg` | voét |
+| `1pl` | voéyons |
+| `2pl` | voéyez |
+| `3pl` | voé'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj voéroais |
-| `2sg` | tu voéroais |
-| `3sg` | i voéroait |
-| `1pl` | os voéroème |
-| `2pl` | os voéroète |
-| `3pl` | i voéroai'te |
+| `1sg` | voéroais |
+| `2sg` | voéroais |
+| `3sg` | voéroait |
+| `1pl` | voéroème |
+| `2pl` | voéroète |
+| `3pl` | voéroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj voérai |
-| `2sg` | tu voéros |
-| `3sg` | i voéro |
-| `1pl` | os voérons |
-| `2pl` | os voérez |
-| `3pl` | i voéront |
+| `1sg` | voérai |
+| `2sg` | voéros |
+| `3sg` | voéro |
+| `1pl` | voérons |
+| `2pl` | voérez |
+| `3pl` | voéront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj voéyoais |
-| `2sg` | tu voéyoais |
-| `3sg` | i voéyoait |
-| `1pl` | os voéyoème |
-| `2pl` | os voéyoète |
-| `3pl` | i voéyoai'te |
+| `1sg` | voéyoais |
+| `2sg` | voéyoais |
+| `3sg` | voéyoait |
+| `1pl` | voéyoème |
+| `2pl` | voéyoète |
+| `3pl` | voéyoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj voéche |
-| `2sg` | éq tu voéches |
-| `3sg` | qu’i voéche |
-| `1pl` | qu’os voéyonche |
-| `2pl` | qu’os voéyèche |
-| `3pl` | qu’i voéche'te |
+| `1sg` | voéche |
+| `2sg` | voéches |
+| `3sg` | voéche |
+| `1pl` | voéyonche |
+| `2pl` | voéyèche |
+| `3pl` | voéche'te |
 
 ##### `imperative`
 
@@ -181,56 +189,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj tiens |
-| `2sg` | tu tiens |
-| `3sg` | i tient |
-| `1pl` | os tnons |
-| `2pl` | os tnez |
-| `3pl` | i tien.ne'te |
+| `1sg` | tiens |
+| `2sg` | tiens |
+| `3sg` | tient |
+| `1pl` | tnons |
+| `2pl` | tnez |
+| `3pl` | tien.ne'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj taroais |
-| `2sg` | tu taroais |
-| `3sg` | i taroait |
-| `1pl` | os tiendroème |
-| `2pl` | os tiendroète |
-| `3pl` | i tiendroai'te |
+| `1sg` | taroais |
+| `2sg` | taroais |
+| `3sg` | taroait |
+| `1pl` | tiendroème |
+| `2pl` | tiendroète |
+| `3pl` | tiendroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj tarai |
-| `2sg` | tu taros |
-| `3sg` | i taro |
-| `1pl` | os tiendrons |
-| `2pl` | os tiendrez |
-| `3pl` | i tiendront |
+| `1sg` | tarai |
+| `2sg` | taros |
+| `3sg` | taro |
+| `1pl` | tiendrons |
+| `2pl` | tiendrez |
+| `3pl` | tiendront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | jé tnoais |
-| `2sg` | tu tnoais |
-| `3sg` | i tnoait |
-| `1pl` | os tnoème |
-| `2pl` | os tnoète |
-| `3pl` | i tnoai'te |
+| `1sg` | tnoais |
+| `2sg` | tnoais |
+| `3sg` | tnoait |
+| `1pl` | tnoème |
+| `2pl` | tnoète |
+| `3pl` | tnoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj tienche |
-| `2sg` | éq tu tienches |
-| `3sg` | qu’i tienche |
-| `1pl` | qu’os tnonche |
-| `2pl` | qu’os tnèche |
-| `3pl` | qu’i tienche'te |
+| `1sg` | tienche |
+| `2sg` | tienches |
+| `3sg` | tienche |
+| `1pl` | tnonche |
+| `2pl` | tnèche |
+| `3pl` | tienche'te |
 
 ##### `imperative`
 
@@ -247,7 +255,15 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 8 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 8 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 8 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.present` | 2 | `lcp` | -s | -s | -t | -yons | -yez | -'te |
+| `subjunctive.present` | 2 | `lcp` | -che | -ches | -che | -yonche | -yèche | -che'te |
 
 ### Representative lemmas
 
@@ -257,56 +273,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj tchuis |
-| `2sg` | tu tchuis |
-| `3sg` | i tchuit |
-| `1pl` | os tchuisons |
-| `2pl` | os tchuisez |
-| `3pl` | i tchui'te |
+| `1sg` | tchuis |
+| `2sg` | tchuis |
+| `3sg` | tchuit |
+| `1pl` | tchuisons |
+| `2pl` | tchuisez |
+| `3pl` | tchui'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj tchuiroais |
-| `2sg` | tu tchuiroais |
-| `3sg` | i tchuiroait |
-| `1pl` | os tchuiroème |
-| `2pl` | os tchuiroète |
-| `3pl` | i tchuiroai'te |
+| `1sg` | tchuiroais |
+| `2sg` | tchuiroais |
+| `3sg` | tchuiroait |
+| `1pl` | tchuiroème |
+| `2pl` | tchuiroète |
+| `3pl` | tchuiroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj tchuirai |
-| `2sg` | tu tchuiros |
-| `3sg` | i tchuiro |
-| `1pl` | os tchuirons |
-| `2pl` | os tchuirez |
-| `3pl` | i tchuiront |
+| `1sg` | tchuirai |
+| `2sg` | tchuiros |
+| `3sg` | tchuiro |
+| `1pl` | tchuirons |
+| `2pl` | tchuirez |
+| `3pl` | tchuiront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj tchuisoais |
-| `2sg` | tu tchuisoais |
-| `3sg` | i tchuisoait |
-| `1pl` | os tchuisoème |
-| `2pl` | os tchuisoète |
-| `3pl` | i tchuisoai'te |
+| `1sg` | tchuisoais |
+| `2sg` | tchuisoais |
+| `3sg` | tchuisoait |
+| `1pl` | tchuisoème |
+| `2pl` | tchuisoète |
+| `3pl` | tchuisoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj tchuiche |
-| `2sg` | éq tu tchuiches |
-| `3sg` | qu’i tchuiche |
-| `1pl` | qu’os tchuisonche |
-| `2pl` | qu’os tchuisèche |
-| `3pl` | qu’i tchuiche'te |
+| `1sg` | tchuiche |
+| `2sg` | tchuiches |
+| `3sg` | tchuiche |
+| `1pl` | tchuisonche |
+| `2pl` | tchuisèche |
+| `3pl` | tchuiche'te |
 
 ##### `imperative`
 
@@ -325,56 +341,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj suis |
-| `2sg` | tu suis |
-| `3sg` | i suit |
-| `1pl` | os suivons |
-| `2pl` | os suivez |
-| `3pl` | i sui'te |
+| `1sg` | suis |
+| `2sg` | suis |
+| `3sg` | suit |
+| `1pl` | suivons |
+| `2pl` | suivez |
+| `3pl` | sui'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj suiroais |
-| `2sg` | tu suiroais |
-| `3sg` | i suiroait |
-| `1pl` | os suiroème |
-| `2pl` | os suiroète |
-| `3pl` | i suiroai'te |
+| `1sg` | suiroais |
+| `2sg` | suiroais |
+| `3sg` | suiroait |
+| `1pl` | suiroème |
+| `2pl` | suiroète |
+| `3pl` | suiroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj suirai |
-| `2sg` | tu suiros |
-| `3sg` | i suiro |
-| `1pl` | os suirons |
-| `2pl` | os suirez |
-| `3pl` | i suiront |
+| `1sg` | suirai |
+| `2sg` | suiros |
+| `3sg` | suiro |
+| `1pl` | suirons |
+| `2pl` | suirez |
+| `3pl` | suiront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj suivoais |
-| `2sg` | tu suivoais |
-| `3sg` | i suivoait |
-| `1pl` | os suivoème |
-| `2pl` | os suivoète |
-| `3pl` | i suivoai'te |
+| `1sg` | suivoais |
+| `2sg` | suivoais |
+| `3sg` | suivoait |
+| `1pl` | suivoème |
+| `2pl` | suivoète |
+| `3pl` | suivoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj suiche |
-| `2sg` | éq tu suiches |
-| `3sg` | qu’i suiche |
-| `1pl` | qu’os suivonche |
-| `2pl` | qu’os suivèche |
-| `3pl` | qu’i suiche'te |
+| `1sg` | suiche |
+| `2sg` | suiches |
+| `3sg` | suiche |
+| `1pl` | suivonche |
+| `2pl` | suivèche |
+| `3pl` | suiche'te |
 
 ##### `imperative`
 
@@ -393,56 +409,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj ris |
-| `2sg` | tu ris |
-| `3sg` | i rit |
-| `1pl` | os rions |
-| `2pl` | os riez |
-| `3pl` | i ri'te |
+| `1sg` | ris |
+| `2sg` | ris |
+| `3sg` | rit |
+| `1pl` | rions |
+| `2pl` | riez |
+| `3pl` | ri'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj riroais |
-| `2sg` | tu riroais |
-| `3sg` | i riroait |
-| `1pl` | os riroème |
-| `2pl` | os riroète |
-| `3pl` | i riroai'te |
+| `1sg` | riroais |
+| `2sg` | riroais |
+| `3sg` | riroait |
+| `1pl` | riroème |
+| `2pl` | riroète |
+| `3pl` | riroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj rirai |
-| `2sg` | tu riros |
-| `3sg` | i riro |
-| `1pl` | os rirons |
-| `2pl` | os rirez |
-| `3pl` | i riront |
+| `1sg` | rirai |
+| `2sg` | riros |
+| `3sg` | riro |
+| `1pl` | rirons |
+| `2pl` | rirez |
+| `3pl` | riront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj rioais |
-| `2sg` | tu rioais |
-| `3sg` | i rioait |
-| `1pl` | os rioème |
-| `2pl` | os rioète |
-| `3pl` | i rioai'te |
+| `1sg` | rioais |
+| `2sg` | rioais |
+| `3sg` | rioait |
+| `1pl` | rioème |
+| `2pl` | rioète |
+| `3pl` | rioai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj riche |
-| `2sg` | éq tu riches |
-| `3sg` | qu’i riche |
-| `1pl` | qu’os rionche |
-| `2pl` | qu’os rièche |
-| `3pl` | qu’i riche'te |
+| `1sg` | riche |
+| `2sg` | riches |
+| `3sg` | riche |
+| `1pl` | rionche |
+| `2pl` | rièche |
+| `3pl` | riche'te |
 
 ##### `imperative`
 
@@ -459,7 +475,15 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 7 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 7 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 7 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.present` | 1 | `lcp` | -s | -s | -t | -dons | -dez | -de'te |
+| `subjunctive.present` | 2 | `lcp` | -che | -ches | -che | -donche | -dèche | -che'te |
 
 ### Representative lemmas
 
@@ -469,56 +493,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj vux |
-| `2sg` | tu vux |
-| `3sg` | i vut |
-| `1pl` | os voulons |
-| `2pl` | os voulez |
-| `3pl` | i veu'te |
+| `1sg` | vux |
+| `2sg` | vux |
+| `3sg` | vut |
+| `1pl` | voulons |
+| `2pl` | voulez |
+| `3pl` | veu'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj vourroais |
-| `2sg` | tu vourroais |
-| `3sg` | i vourroait |
-| `1pl` | os vourroème |
-| `2pl` | os vourroète |
-| `3pl` | i vourroai'te |
+| `1sg` | vourroais |
+| `2sg` | vourroais |
+| `3sg` | vourroait |
+| `1pl` | vourroème |
+| `2pl` | vourroète |
+| `3pl` | vourroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj vourrai |
-| `2sg` | tu vourros |
-| `3sg` | i vourro |
-| `1pl` | os vourrons |
-| `2pl` | os vourrez |
-| `3pl` | i vourront |
+| `1sg` | vourrai |
+| `2sg` | vourros |
+| `3sg` | vourro |
+| `1pl` | vourrons |
+| `2pl` | vourrez |
+| `3pl` | vourront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj vouloais |
-| `2sg` | tu vouloais |
-| `3sg` | i vouloait |
-| `1pl` | os vouloème |
-| `2pl` | os vouloète |
-| `3pl` | i vouloai'te |
+| `1sg` | vouloais |
+| `2sg` | vouloais |
+| `3sg` | vouloait |
+| `1pl` | vouloème |
+| `2pl` | vouloète |
+| `3pl` | vouloai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj veuche |
-| `2sg` | éq tu veuches |
-| `3sg` | qu’i veuche |
-| `1pl` | qu’os voulonche |
-| `2pl` | qu’os voulèche |
-| `3pl` | qu’i veuche'te |
+| `1sg` | veuche |
+| `2sg` | veuches |
+| `3sg` | veuche |
+| `1pl` | voulonche |
+| `2pl` | voulèche |
+| `3pl` | veuche'te |
 
 ##### `imperative`
 
@@ -537,56 +561,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj veux |
-| `2sg` | tu veux |
-| `3sg` | i veut |
-| `1pl` | os valons |
-| `2pl` | os valez |
-| `3pl` | i val'te |
+| `1sg` | veux |
+| `2sg` | veux |
+| `3sg` | veut |
+| `1pl` | valons |
+| `2pl` | valez |
+| `3pl` | val'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj veudroais |
-| `2sg` | tu veudroais |
-| `3sg` | i veudroait |
-| `1pl` | os veudroème |
-| `2pl` | os veudroète |
-| `3pl` | i veudroai'te |
+| `1sg` | veudroais |
+| `2sg` | veudroais |
+| `3sg` | veudroait |
+| `1pl` | veudroème |
+| `2pl` | veudroète |
+| `3pl` | veudroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj veudrai |
-| `2sg` | tu veudros |
-| `3sg` | i veudro |
-| `1pl` | os veudrons |
-| `2pl` | os veudrez |
-| `3pl` | i veudront |
+| `1sg` | veudrai |
+| `2sg` | veudros |
+| `3sg` | veudro |
+| `1pl` | veudrons |
+| `2pl` | veudrez |
+| `3pl` | veudront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj valoais |
-| `2sg` | tu valoais |
-| `3sg` | i valoait |
-| `1pl` | os valoème |
-| `2pl` | os valoète |
-| `3pl` | i valoai'te |
+| `1sg` | valoais |
+| `2sg` | valoais |
+| `3sg` | valoait |
+| `1pl` | valoème |
+| `2pl` | valoète |
+| `3pl` | valoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj veuche |
-| `2sg` | éq tu veuches |
-| `3sg` | qu’i veuche |
-| `1pl` | qu’os valonche |
-| `2pl` | qu’os valèche |
-| `3pl` | qu’i veuche'te |
+| `1sg` | veuche |
+| `2sg` | veuches |
+| `3sg` | veuche |
+| `1pl` | valonche |
+| `2pl` | valèche |
+| `3pl` | veuche'te |
 
 ##### `imperative`
 
@@ -605,56 +629,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj sais |
-| `2sg` | tu sais |
-| `3sg` | i sait |
-| `1pl` | os savons |
-| `2pl` | os savez |
-| `3pl` | i sai'te |
+| `1sg` | sais |
+| `2sg` | sais |
+| `3sg` | sait |
+| `1pl` | savons |
+| `2pl` | savez |
+| `3pl` | sai'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj séroais |
-| `2sg` | tu séroais |
-| `3sg` | i séroait |
-| `1pl` | os séroème |
-| `2pl` | os séroète |
-| `3pl` | i séroai'te |
+| `1sg` | séroais |
+| `2sg` | séroais |
+| `3sg` | séroait |
+| `1pl` | séroème |
+| `2pl` | séroète |
+| `3pl` | séroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj sérai |
-| `2sg` | tu séros |
-| `3sg` | i séro |
-| `1pl` | os sérons |
-| `2pl` | os sérez |
-| `3pl` | i séront |
+| `1sg` | sérai |
+| `2sg` | séros |
+| `3sg` | séro |
+| `1pl` | sérons |
+| `2pl` | sérez |
+| `3pl` | séront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj savoais |
-| `2sg` | tu savoais |
-| `3sg` | i savoait |
-| `1pl` | os savoème |
-| `2pl` | os savoète |
-| `3pl` | i savoai'te |
+| `1sg` | savoais |
+| `2sg` | savoais |
+| `3sg` | savoait |
+| `1pl` | savoème |
+| `2pl` | savoète |
+| `3pl` | savoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj seuche |
-| `2sg` | éq tu seuches |
-| `3sg` | qu’i seuche |
-| `1pl` | qu’os sachonche |
-| `2pl` | qu’os sachèche |
-| `3pl` | qu’i seuche'te |
+| `1sg` | seuche |
+| `2sg` | seuches |
+| `3sg` | seuche |
+| `1pl` | sachonche |
+| `2pl` | sachèche |
+| `3pl` | seuche'te |
 
 ##### `imperative`
 
@@ -671,7 +695,15 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 3 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 3 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 3 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.present` | 1 | `lcp` | -ots | -ots | -ot | -attons | -attez | -at'te |
+| `subjunctive.present` | 1 | `lcp` | -che | -ches | -che | -ttonche | -ttèche | -che'te |
 
 ### Representative lemmas
 
@@ -681,56 +713,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj mets |
-| `2sg` | tu mets |
-| `3sg` | i met |
-| `1pl` | os mettons |
-| `2pl` | os mettez |
-| `3pl` | i met'te |
+| `1sg` | mets |
+| `2sg` | mets |
+| `3sg` | met |
+| `1pl` | mettons |
+| `2pl` | mettez |
+| `3pl` | met'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj mettroais |
-| `2sg` | tu mettroais |
-| `3sg` | i mettroait |
-| `1pl` | os mettroème |
-| `2pl` | os mettroète |
-| `3pl` | i mettroai'te |
+| `1sg` | mettroais |
+| `2sg` | mettroais |
+| `3sg` | mettroait |
+| `1pl` | mettroème |
+| `2pl` | mettroète |
+| `3pl` | mettroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj mettrai |
-| `2sg` | tu mettros |
-| `3sg` | i mettro |
-| `1pl` | os mettrons |
-| `2pl` | os mettrez |
-| `3pl` | i mettront |
+| `1sg` | mettrai |
+| `2sg` | mettros |
+| `3sg` | mettro |
+| `1pl` | mettrons |
+| `2pl` | mettrez |
+| `3pl` | mettront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj mettoais |
-| `2sg` | tu mettoais |
-| `3sg` | i mettoait |
-| `1pl` | os mettoème |
-| `2pl` | os mettoète |
-| `3pl` | i mettoai'te |
+| `1sg` | mettoais |
+| `2sg` | mettoais |
+| `3sg` | mettoait |
+| `1pl` | mettoème |
+| `2pl` | mettoète |
+| `3pl` | mettoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj méche |
-| `2sg` | éq tu méches |
-| `3sg` | qu’i méche |
-| `1pl` | qu’os mettonche |
-| `2pl` | qu’os mettèche |
-| `3pl` | qu’i méche'te |
+| `1sg` | méche |
+| `2sg` | méches |
+| `3sg` | méche |
+| `1pl` | mettonche |
+| `2pl` | mettèche |
+| `3pl` | méche'te |
 
 ##### `imperative`
 
@@ -749,56 +781,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj con.noais |
-| `2sg` | tu con.noais |
-| `3sg` | i con.noait |
-| `1pl` | os con.naissons |
-| `2pl` | os con.naissez |
-| `3pl` | i con.noai'te |
+| `1sg` | con.noais |
+| `2sg` | con.noais |
+| `3sg` | con.noait |
+| `1pl` | con.naissons |
+| `2pl` | con.naissez |
+| `3pl` | con.noai'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj con.naitroais |
-| `2sg` | tu con.naitroais |
-| `3sg` | i con.naitroait |
-| `1pl` | os con.naitroème |
-| `2pl` | os con.naitroète |
-| `3pl` | i con.naitroai'te |
+| `1sg` | con.naitroais |
+| `2sg` | con.naitroais |
+| `3sg` | con.naitroait |
+| `1pl` | con.naitroème |
+| `2pl` | con.naitroète |
+| `3pl` | con.naitroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj con.naitrai |
-| `2sg` | tu con.naitros |
-| `3sg` | i con.naitro |
-| `1pl` | os con.naitrons |
-| `2pl` | os con.naitrez |
-| `3pl` | i con.naitront |
+| `1sg` | con.naitrai |
+| `2sg` | con.naitros |
+| `3sg` | con.naitro |
+| `1pl` | con.naitrons |
+| `2pl` | con.naitrez |
+| `3pl` | con.naitront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj con.naissoais |
-| `2sg` | tu con.naissoais |
-| `3sg` | i con.naissoait |
-| `1pl` | os con.naissoème |
-| `2pl` | os con.naissoète |
-| `3pl` | i con.naissoai'te |
+| `1sg` | con.naissoais |
+| `2sg` | con.naissoais |
+| `3sg` | con.naissoait |
+| `1pl` | con.naissoème |
+| `2pl` | con.naissoète |
+| `3pl` | con.naissoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj con.noaiche |
-| `2sg` | éq tu con.noaiches |
-| `3sg` | qu’i con.noaiche |
-| `1pl` | qu’os con.naissonche |
-| `2pl` | qu’os con.naissèche |
-| `3pl` | qu’i con.noaiche'te |
+| `1sg` | con.noaiche |
+| `2sg` | con.noaiches |
+| `3sg` | con.noaiche |
+| `1pl` | con.naissonche |
+| `2pl` | con.naissèche |
+| `3pl` | con.noaiche'te |
 
 ##### `imperative`
 
@@ -817,56 +849,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj bots |
-| `2sg` | tu bots |
-| `3sg` | i bot |
-| `1pl` | os battons |
-| `2pl` | os battez |
-| `3pl` | i bat'te |
+| `1sg` | bots |
+| `2sg` | bots |
+| `3sg` | bot |
+| `1pl` | battons |
+| `2pl` | battez |
+| `3pl` | bat'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj battroais |
-| `2sg` | tu battroais |
-| `3sg` | i battroait |
-| `1pl` | os battroème |
-| `2pl` | os battroète |
-| `3pl` | i battroai'te |
+| `1sg` | battroais |
+| `2sg` | battroais |
+| `3sg` | battroait |
+| `1pl` | battroème |
+| `2pl` | battroète |
+| `3pl` | battroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj battrai |
-| `2sg` | tu battros |
-| `3sg` | i battro |
-| `1pl` | os battrons |
-| `2pl` | os battrez |
-| `3pl` | i battront |
+| `1sg` | battrai |
+| `2sg` | battros |
+| `3sg` | battro |
+| `1pl` | battrons |
+| `2pl` | battrez |
+| `3pl` | battront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj battoais |
-| `2sg` | tu battoais |
-| `3sg` | i battoait |
-| `1pl` | os battoème |
-| `2pl` | os battoète |
-| `3pl` | i battoai'te |
+| `1sg` | battoais |
+| `2sg` | battoais |
+| `3sg` | battoait |
+| `1pl` | battoème |
+| `2pl` | battoète |
+| `3pl` | battoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj bache |
-| `2sg` | éq tu baches |
-| `3sg` | qu’i bache |
-| `1pl` | qu’os battonche |
-| `2pl` | qu’os battèche |
-| `3pl` | qu’i bache'te |
+| `1sg` | bache |
+| `2sg` | baches |
+| `3sg` | bache |
+| `1pl` | battonche |
+| `2pl` | battèche |
+| `3pl` | bache'te |
 
 ##### `imperative`
 
@@ -883,7 +915,15 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -és | -és | -ét | -ème | -ète | -ai'te |
+| `indicative.future` | 2 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -és | -és | -ét | -ème | -ète | -ai'te |
+| `indicative.present` | 2 | `lcp` | -que | -ques | -que | -tchons | -tchez | -que'te |
+| `subjunctive.present` | 2 | `lcp` | -que | -ques | -que | -tchonche | -tchèche | -que'te |
 
 ### Representative lemmas
 
@@ -893,56 +933,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj couque |
-| `2sg` | tu couques |
-| `3sg` | i couque |
-| `1pl` | os coutchons |
-| `2pl` | os coutchez |
-| `3pl` | i couque'te |
+| `1sg` | couque |
+| `2sg` | couques |
+| `3sg` | couque |
+| `1pl` | coutchons |
+| `2pl` | coutchez |
+| `3pl` | couque'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj couqueroais |
-| `2sg` | tu couqueroais |
-| `3sg` | i couqueroait |
-| `1pl` | os couqueroème |
-| `2pl` | os couqueroète |
-| `3pl` | i couqueroai'te |
+| `1sg` | couqueroais |
+| `2sg` | couqueroais |
+| `3sg` | couqueroait |
+| `1pl` | couqueroème |
+| `2pl` | couqueroète |
+| `3pl` | couqueroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj couquerai |
-| `2sg` | tu couqueros |
-| `3sg` | i couquero |
-| `1pl` | os couquerons |
-| `2pl` | os couquerez |
-| `3pl` | i couqueront |
+| `1sg` | couquerai |
+| `2sg` | couqueros |
+| `3sg` | couquero |
+| `1pl` | couquerons |
+| `2pl` | couquerez |
+| `3pl` | couqueront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj coutchoais |
-| `2sg` | tu coutchoais |
-| `3sg` | i coutchoait |
-| `1pl` | os coutchoème |
-| `2pl` | os coutchoète |
-| `3pl` | i coutchoai'te |
+| `1sg` | coutchoais |
+| `2sg` | coutchoais |
+| `3sg` | coutchoait |
+| `1pl` | coutchoème |
+| `2pl` | coutchoète |
+| `3pl` | coutchoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj couque |
-| `2sg` | éq tu couques |
-| `3sg` | qu’i couque |
-| `1pl` | qu’os coutchonche |
-| `2pl` | qu’os coutchèche |
-| `3pl` | qu’i couque'te |
+| `1sg` | couque |
+| `2sg` | couques |
+| `3sg` | couque |
+| `1pl` | coutchonche |
+| `2pl` | coutchèche |
+| `3pl` | couque'te |
 
 ##### `imperative`
 
@@ -961,56 +1001,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj claque |
-| `2sg` | tu claques |
-| `3sg` | i claque |
-| `1pl` | os clatchons |
-| `2pl` | os clatchez |
-| `3pl` | i claque'te |
+| `1sg` | claque |
+| `2sg` | claques |
+| `3sg` | claque |
+| `1pl` | clatchons |
+| `2pl` | clatchez |
+| `3pl` | claque'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj clatcheroés |
-| `2sg` | tu clatcheroés |
-| `3sg` | i clatcheroét |
-| `1pl` | os clatcheroème |
-| `2pl` | os clatcheroète |
-| `3pl` | i clatcheroai'te |
+| `1sg` | clatcheroés |
+| `2sg` | clatcheroés |
+| `3sg` | clatcheroét |
+| `1pl` | clatcheroème |
+| `2pl` | clatcheroète |
+| `3pl` | clatcheroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj clatcherai |
-| `2sg` | tu clatcheros |
-| `3sg` | i clatchero |
-| `1pl` | os clatcherons |
-| `2pl` | os clatcherez |
-| `3pl` | i clatcheront |
+| `1sg` | clatcherai |
+| `2sg` | clatcheros |
+| `3sg` | clatchero |
+| `1pl` | clatcherons |
+| `2pl` | clatcherez |
+| `3pl` | clatcheront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj clatchoés |
-| `2sg` | tu clatchoés |
-| `3sg` | i clatchoét |
-| `1pl` | os clatchoème |
-| `2pl` | os clatchoète |
-| `3pl` | i clatchoai'te |
+| `1sg` | clatchoés |
+| `2sg` | clatchoés |
+| `3sg` | clatchoét |
+| `1pl` | clatchoème |
+| `2pl` | clatchoète |
+| `3pl` | clatchoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj claque |
-| `2sg` | éq tu claques |
-| `3sg` | qu’i claque |
-| `1pl` | qu’os clatchonche |
-| `2pl` | qu’os clatchèche |
-| `3pl` | qu’i claque'te |
+| `1sg` | claque |
+| `2sg` | claques |
+| `3sg` | claque |
+| `1pl` | clatchonche |
+| `2pl` | clatchèche |
+| `3pl` | claque'te |
 
 ##### `imperative`
 
@@ -1027,7 +1067,15 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.present` | 1 | `lcp` | -gue | -gues | -gue | -djons | -djez | -gue'te |
+| `subjunctive.present` | 1 | `lcp` | -gue | -gues | -gue | -djonche | -djèche | -gue'te |
 
 ### Representative lemmas
 
@@ -1037,56 +1085,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj bégue |
-| `2sg` | tu bégues |
-| `3sg` | i bégue |
-| `1pl` | os bédjons |
-| `2pl` | os bédjez |
-| `3pl` | i bégue'te |
+| `1sg` | bégue |
+| `2sg` | bégues |
+| `3sg` | bégue |
+| `1pl` | bédjons |
+| `2pl` | bédjez |
+| `3pl` | bégue'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj bégueroais |
-| `2sg` | tu bégueroais |
-| `3sg` | i bégueroait |
-| `1pl` | os bégueroème |
-| `2pl` | os bégueroète |
-| `3pl` | i bégueroai'te |
+| `1sg` | bégueroais |
+| `2sg` | bégueroais |
+| `3sg` | bégueroait |
+| `1pl` | bégueroème |
+| `2pl` | bégueroète |
+| `3pl` | bégueroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj béguerai |
-| `2sg` | tu bégueros |
-| `3sg` | i béguero |
-| `1pl` | os béguerons |
-| `2pl` | os béguerez |
-| `3pl` | i bégueront |
+| `1sg` | béguerai |
+| `2sg` | bégueros |
+| `3sg` | béguero |
+| `1pl` | béguerons |
+| `2pl` | béguerez |
+| `3pl` | bégueront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj bédjoais |
-| `2sg` | tu bédjoais |
-| `3sg` | i bédjoait |
-| `1pl` | os bédjoème |
-| `2pl` | os bédjoète |
-| `3pl` | i bédjoai'te |
+| `1sg` | bédjoais |
+| `2sg` | bédjoais |
+| `3sg` | bédjoait |
+| `1pl` | bédjoème |
+| `2pl` | bédjoète |
+| `3pl` | bédjoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj bégue |
-| `2sg` | éq tu bégues |
-| `3sg` | qu’i bégue |
-| `1pl` | qu’os bédjonche |
-| `2pl` | qu’os bédjèche |
-| `3pl` | qu’i bégue'te |
+| `1sg` | bégue |
+| `2sg` | bégues |
+| `3sg` | bégue |
+| `1pl` | bédjonche |
+| `2pl` | bédjèche |
+| `3pl` | bégue'te |
 
 ##### `imperative`
 
@@ -1103,7 +1151,15 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.present` | 1 | `lcp` | -e | -es | -e | -ons | -ez | -e'te |
+| `subjunctive.present` | 1 | `lcp` | -e | -es | -e | -onche | -èche | -e'te |
 
 ### Representative lemmas
 
@@ -1113,56 +1169,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj warde |
-| `2sg` | tu wardes |
-| `3sg` | i warde |
-| `1pl` | os wardons |
-| `2pl` | os wardez |
-| `3pl` | i warde'te |
+| `1sg` | warde |
+| `2sg` | wardes |
+| `3sg` | warde |
+| `1pl` | wardons |
+| `2pl` | wardez |
+| `3pl` | warde'te |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj warderoais |
-| `2sg` | tu warderoais |
-| `3sg` | i warderoait |
-| `1pl` | os warderoème |
-| `2pl` | os warderoète |
-| `3pl` | i warderoai'te |
+| `1sg` | warderoais |
+| `2sg` | warderoais |
+| `3sg` | warderoait |
+| `1pl` | warderoème |
+| `2pl` | warderoète |
+| `3pl` | warderoai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj warderai |
-| `2sg` | tu warderos |
-| `3sg` | i wardero |
-| `1pl` | os warderons |
-| `2pl` | os warderez |
-| `3pl` | i warderont |
+| `1sg` | warderai |
+| `2sg` | warderos |
+| `3sg` | wardero |
+| `1pl` | warderons |
+| `2pl` | warderez |
+| `3pl` | warderont |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj wardoais |
-| `2sg` | tu wardoais |
-| `3sg` | i wardoait |
-| `1pl` | os wardoème |
-| `2pl` | os wardoète |
-| `3pl` | i wardoai'te |
+| `1sg` | wardoais |
+| `2sg` | wardoais |
+| `3sg` | wardoait |
+| `1pl` | wardoème |
+| `2pl` | wardoète |
+| `3pl` | wardoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj warde |
-| `2sg` | équ tu wardes |
-| `3sg` | qu’i warde |
-| `1pl` | qu’os wardonche |
-| `2pl` | qu’os wardèche |
-| `3pl` | qu’i warde'te |
+| `1sg` | warde |
+| `2sg` | wardes |
+| `3sg` | warde |
+| `1pl` | wardonche |
+| `2pl` | wardèche |
+| `3pl` | warde'te |
 
 ##### `imperative`
 
@@ -1175,11 +1231,184 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | wardez |
 | `3pl` | — |
 
+## Irregular: `dvoér`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.present` | 1 | `lcp` | -oés | -oés | -oét | -vons | -vez | -oé'te |
+| `subjunctive.present` | 1 | `lcp` | -oéche | -oéches | -oéche | -vonche | -vèche | -oéche'te |
+
+### Representative lemmas
+
+#### `dvoér`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | doés |
+| `2sg` | doés |
+| `3sg` | doét |
+| `1pl` | dvons |
+| `2pl` | dvez |
+| `3pl` | doé'te |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dvroais |
+| `2sg` | dvroais |
+| `3sg` | dvroait |
+| `1pl` | dvroème |
+| `2pl` | dvroète |
+| `3pl` | dvroai'te |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dvrai |
+| `2sg` | dvros |
+| `3sg` | dvro |
+| `1pl` | dvrons |
+| `2pl` | dvrez |
+| `3pl` | dvront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dvoais |
+| `2sg` | dvoais |
+| `3sg` | dvoait |
+| `1pl` | dvoème |
+| `2pl` | dvoète |
+| `3pl` | dvoai'te |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | doéche |
+| `2sg` | doéches |
+| `3sg` | doéche |
+| `1pl` | dvonche |
+| `2pl` | dvèche |
+| `3pl` | doéche'te |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | doés |
+| `3sg` | — |
+| `1pl` | dvons |
+| `2pl` | dvez |
+| `3pl` | — |
+
+## Irregular: `ête`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -(s) | -s | -t | -nmes | -tes | -tte |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -(s) | -s | -t | -nmes | -tes | -tte |
+| `subjunctive.present` | 1 | `lcp` | -che | -ches | -che | -ïonches | -ïèches | -chtte |
+
+### Representative lemmas
+
+#### `ête`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | su |
+| `2sg` | es |
+| `3sg` | est |
+| `1pl` | sonmes |
+| `2pl` | ètes |
+| `3pl` | sont |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | séro(s) |
+| `2sg` | séros |
+| `3sg` | sérot |
+| `1pl` | séronmes |
+| `2pl` | sérotes |
+| `3pl` | sérotte |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | srai |
+| `2sg` | sros |
+| `3sg` | sro |
+| `1pl` | srons |
+| `2pl` | srez |
+| `3pl` | sront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | éto(s) |
+| `2sg` | étos |
+| `3sg` | étot |
+| `1pl` | étonmes |
+| `2pl` | étotes |
+| `3pl` | étotte |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | soéche |
+| `2sg` | soéches |
+| `3sg` | soéche |
+| `1pl` | soéïonches |
+| `2pl` | soéïèches |
+| `3pl` | soéchtte |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | soéche |
+| `3sg` | — |
+| `1pl` | soéïons |
+| `2pl` | soéïez |
+| `3pl` | — |
+
 ## Irregular: `aller`
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
 
 ### Representative lemmas
 
@@ -1189,56 +1418,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | éj vos |
-| `2sg` | tu vos |
-| `3sg` | i vo |
-| `1pl` | os allons |
-| `2pl` | os allez |
-| `3pl` | i vont |
+| `1sg` | vos |
+| `2sg` | vos |
+| `3sg` | vo |
+| `1pl` | allons |
+| `2pl` | allez |
+| `3pl` | vont |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j’iroais |
-| `2sg` | t’iroais |
-| `3sg` | il iroait |
-| `1pl` | os iroème |
-| `2pl` | os iroète |
-| `3pl` | is iroai'te |
+| `1sg` | iroais |
+| `2sg` | iroais |
+| `3sg` | iroait |
+| `1pl` | iroème |
+| `2pl` | iroète |
+| `3pl` | iroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j’irai |
-| `2sg` | t’iros |
-| `3sg` | il iro |
-| `1pl` | os irons |
-| `2pl` | os irez |
-| `3pl` | is iront |
+| `1sg` | irai |
+| `2sg` | iros |
+| `3sg` | iro |
+| `1pl` | irons |
+| `2pl` | irez |
+| `3pl` | iront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j’alloais |
-| `2sg` | t’alloais |
-| `3sg` | il alloait |
-| `1pl` | os alloème |
-| `2pl` | os alloète |
-| `3pl` | is alloai'te |
+| `1sg` | alloais |
+| `2sg` | alloais |
+| `3sg` | alloait |
+| `1pl` | alloème |
+| `2pl` | alloète |
+| `3pl` | alloai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’éj voéche |
-| `2sg` | éq tu voéches |
-| `3sg` | qu’i voéche |
-| `1pl` | qu’os allonche |
-| `2pl` | qu’os allèche |
-| `3pl` | qu’i voéche'te |
+| `1sg` | voéche |
+| `2sg` | voéches |
+| `3sg` | voéche |
+| `1pl` | allonche |
+| `2pl` | allèche |
+| `3pl` | voéche'te |
 
 ##### `imperative`
 
@@ -1255,7 +1484,13 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
 
 ### Representative lemmas
 
@@ -1265,56 +1500,56 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | j’ai |
-| `2sg` | t’os |
-| `3sg` | il o |
-| `1pl` | os avons |
-| `2pl` | os avez |
-| `3pl` | is ont |
+| `1sg` | ai |
+| `2sg` | os |
+| `3sg` | o |
+| `1pl` | avons |
+| `2pl` | avez |
+| `3pl` | ont |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j’éroais |
-| `2sg` | t’éroais |
-| `3sg` | il éroait |
-| `1pl` | os éroème |
-| `2pl` | os éroète |
-| `3pl` | is éroai'te |
+| `1sg` | éroais |
+| `2sg` | éroais |
+| `3sg` | éroait |
+| `1pl` | éroème |
+| `2pl` | éroète |
+| `3pl` | éroai'te |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j’érai |
-| `2sg` | t’éros |
-| `3sg` | il éro |
-| `1pl` | os érons |
-| `2pl` | os érez |
-| `3pl` | is éront |
+| `1sg` | érai |
+| `2sg` | éros |
+| `3sg` | éro |
+| `1pl` | érons |
+| `2pl` | érez |
+| `3pl` | éront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j’avoais |
-| `2sg` | t’avoais |
-| `3sg` | il avoait |
-| `1pl` | os avoème |
-| `2pl` | os avoète |
-| `3pl` | is avoai'te |
+| `1sg` | avoais |
+| `2sg` | avoais |
+| `3sg` | avoait |
+| `1pl` | avoème |
+| `2pl` | avoète |
+| `3pl` | avoai'te |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu’j’euche |
-| `2sg` | équ t’euche |
-| `3sg` | qu’il euche |
-| `1pl` | qu’os ayonche |
-| `2pl` | qu’os ayèche |
-| `3pl` | qu’is euche'te |
+| `1sg` | euche |
+| `2sg` | euche |
+| `3sg` | euche |
+| `1pl` | ayonche |
+| `2pl` | ayèche |
+| `3pl` | euche'te |
 
 ##### `imperative`
 
@@ -1327,87 +1562,17 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | ayez |
 | `3pl` | — |
 
-## Irregular: `dvoér`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `dvoér`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | éj doés |
-| `2sg` | tu doés |
-| `3sg` | i doét |
-| `1pl` | os dvons |
-| `2pl` | os dvez |
-| `3pl` | i doé'te |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | jé dvroais |
-| `2sg` | tu dvroais |
-| `3sg` | i dvroait |
-| `1pl` | os dvroème |
-| `2pl` | os dvroète |
-| `3pl` | i dvroai'te |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | jé dvrai |
-| `2sg` | tu dvros |
-| `3sg` | i dvro |
-| `1pl` | os dvrons |
-| `2pl` | os dvrez |
-| `3pl` | i dvront |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | jé dvoais |
-| `2sg` | tu dvoais |
-| `3sg` | i dvoait |
-| `1pl` | os dvoème |
-| `2pl` | os dvoète |
-| `3pl` | i dvoai'te |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | qu’éj doéche |
-| `2sg` | éq tu doéches |
-| `3sg` | qu’i doéche |
-| `1pl` | qu’os dvonche |
-| `2pl` | qu’os dvèche |
-| `3pl` | qu’i doéche'te |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | doés |
-| `3sg` | — |
-| `1pl` | dvons |
-| `2pl` | dvez |
-| `3pl` | — |
-
 ## Irregular: `s'in aler`
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -s | -s | -t | -nmes | -tes | -tte |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `subjunctive.present` | 1 | `lcp` | -e | -e | -e | -lotte | -lotte | -lote |
 
 ### Representative lemmas
 
@@ -1417,129 +1582,53 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | j'm'in vas |
-| `2sg` | té t'in vas |
-| `3sg` | i s'in va |
-| `1pl` | os nos in alons |
-| `2pl` | os vos in alez |
-| `3pl` | is s'in vont |
+| `1sg` | vas |
+| `2sg` | vas |
+| `3sg` | va |
+| `1pl` | alons |
+| `2pl` | alez |
+| `3pl` | vont |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j'm'in iros |
-| `2sg` | té t'in iros |
-| `3sg` | i s'in irot |
-| `1pl` | os nos in ironmes |
-| `2pl` | os vos in irotes |
-| `3pl` | is s'in irotte |
+| `1sg` | iros |
+| `2sg` | iros |
+| `3sg` | irot |
+| `1pl` | ironmes |
+| `2pl` | irotes |
+| `3pl` | irotte |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j'm'in irai |
-| `2sg` | tu t'in iros |
-| `3sg` | i s'in iro |
-| `1pl` | os nos in irons |
-| `2pl` | vos vos in irez |
-| `3pl` | is s'in iront |
+| `1sg` | irai |
+| `2sg` | iros |
+| `3sg` | iro |
+| `1pl` | irons |
+| `2pl` | irez |
+| `3pl` | iront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | j'm'in alos |
-| `2sg` | té t'in alos |
-| `3sg` | i s'in a lot |
-| `1pl` | os nos in alonmes |
-| `2pl` | os vos in alotes |
-| `3pl` | is s'in alotte |
+| `1sg` | alos |
+| `2sg` | alos |
+| `3sg` | a lot |
+| `1pl` | alonmes |
+| `2pl` | alotes |
+| `3pl` | alotte |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | qu'ej m'in ale |
-| `2sg` | qu'té t'in ale |
-| `3sg` | qu'i s'in ale |
-| `1pl` | qu'os nos in allotte |
-| `2pl` | qu'os vos in allotte |
-| `3pl` | qu'is s'in allote |
-
-## Irregular: `ête`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `ête`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ej su |
-| `2sg` | t'es |
-| `3sg` | il est |
-| `1pl` | os sonmes |
-| `2pl` | os ètes |
-| `3pl` | is sont |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ej séro(s) |
-| `2sg` | té séros |
-| `3sg` | i sérot |
-| `1pl` | os séronmes |
-| `2pl` | os sérotes |
-| `3pl` | is sérotte |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ej srai |
-| `2sg` | tu sros |
-| `3sg` | i sro |
-| `1pl` | os srons |
-| `2pl` | os srez |
-| `3pl` | is sront |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | j'éto(s) |
-| `2sg` | t'étos |
-| `3sg` | i'étot |
-| `1pl` | os étonmes |
-| `2pl` | os étotes |
-| `3pl` | is étotte |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | qu'ej soéche |
-| `2sg` | eq tu soéches |
-| `3sg` | qu'i soéche |
-| `1pl` | qu'os soéïonches |
-| `2pl` | qu'os soéïèches |
-| `3pl` | qu'is soéchtte |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | soéche |
-| `3sg` | — |
-| `1pl` | soéïons |
-| `2pl` | soéïez |
-| `3pl` | — |
+| `1sg` | ale |
+| `2sg` | ale |
+| `3sg` | ale |
+| `1pl` | allotte |
+| `2pl` | allotte |
+| `3pl` | allote |

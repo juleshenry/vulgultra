@@ -10,7 +10,7 @@
 - Verb lemma entries: **350**
 - Inflected form records: **8155**
 - Separate form-of entries: **5167**
-- Classified person-slot observations: **11635**
+- Classified person-slot observations: **11704**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -21,8 +21,8 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-er` | 145 | 5 | 5 |
 | `-ir` | 22 | 5 | 5 |
 | `other` | 30 | 5 | 4 |
+| `-ì` | 6 | 3 | 2 |
 | `-é` | 115 | 5 | 0 |
-| `-ì` | 6 | 3 | 0 |
 
 ## Ending: `-er`
 
@@ -38,7 +38,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.imperfect` | 142 | `template` | -ove | -oves | -ova | -ovan | -ovais | -ova |
 | `indicative.present` | 112 | `template` | -e | -es | -a | -on | -eis | -a |
 | `subjunctive.imperfect` | 110 | `template` | -asse | -asses | -assa | -assan | -assais | -assa |
-| `subjunctive.present` | 107 | `template` | -e | -es | -e | -on | -eis | -e |
+| `subjunctive.present` | 108 | `template` | -e | -es | -e | -on | -eis | -e |
 
 ### Representative lemmas
 
@@ -106,7 +106,7 @@ Stem: `cumport`.
 | Slot | Form |
 |---|---|
 | `1sg` | cumporta |
-| `2sg` | cumporta |
+| `2sg` | cumporton |
 | `3sg` | cumportede |
 | `1pl` | cumporton |
 | `2pl` | cumportede |
@@ -176,7 +176,7 @@ Stem: `cumand`.
 | Slot | Form |
 |---|---|
 | `1sg` | cumanda |
-| `2sg` | cumanda |
+| `2sg` | cumandon |
 | `3sg` | cumandede |
 | `1pl` | cumandon |
 | `2pl` | cumandede |
@@ -246,7 +246,7 @@ Stem: `cruzi`.
 | Slot | Form |
 |---|---|
 | `1sg` | cruzia |
-| `2sg` | cruzia |
+| `2sg` | cruzion |
 | `3sg` | cruziede |
 | `1pl` | cruzion |
 | `2pl` | cruziede |
@@ -334,7 +334,7 @@ Stem: `costitu`.
 | Slot | Form |
 |---|---|
 | `1sg` | costitu |
-| `2sg` | costitu |
+| `2sg` | costituion |
 | `3sg` | costituide |
 | `1pl` | costituion |
 | `2pl` | costituide |
@@ -404,7 +404,7 @@ Stem: `cap`.
 | Slot | Form |
 |---|---|
 | `1sg` | cap |
-| `2sg` | cap |
+| `2sg` | capion |
 | `3sg` | capide |
 | `1pl` | capion |
 | `2pl` | capide |
@@ -474,7 +474,7 @@ Stem: `atribu`.
 | Slot | Form |
 |---|---|
 | `1sg` | atribu |
-| `2sg` | atribu |
+| `2sg` | atribuion |
 | `3sg` | atribuide |
 | `1pl` | atribuion |
 | `2pl` | atribuide |
@@ -561,7 +561,7 @@ Stem: `coromp`.
 | Slot | Form |
 |---|---|
 | `1sg` | coromp |
-| `2sg` | coromp |
+| `2sg` | corompon |
 | `3sg` | corompede |
 | `1pl` | corompon |
 | `2pl` | corompede |
@@ -691,6 +691,223 @@ Stem: `coromp`.
 | `1pl` | ausson |
 | `2pl` | ausseis |
 | `3pl` | ausse |
+
+## Ending: `-ì`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.future` | 2 | `lcp` | -é | -as | -à | -on | -eis | -à |
+| `indicative.imperfect` | 2 | `lcp` | -e | -es | -a | -an | -ais | -a |
+
+### Representative lemmas
+
+#### `vegnì`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegne |
+| `2sg` | vegnes |
+| `3sg` | vegn |
+| `1pl` | vegnion |
+| `2pl` | vegnieis |
+| `3pl` | vegn |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegniré |
+| `2sg` | vegniras |
+| `3sg` | vegnirà |
+| `1pl` | vegniron |
+| `2pl` | vegnireis |
+| `3pl` | vegnirà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegnive |
+| `2sg` | vegnives |
+| `3sg` | vegniva |
+| `1pl` | vegnivan |
+| `2pl` | vegnivais |
+| `3pl` | vegniva |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | vie |
+| `3sg` | — |
+| `1pl` | - |
+| `2pl` | vegnide |
+| `3pl` | — |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegnisse |
+| `2sg` | — |
+| `3sg` | vegnissa |
+| `1pl` | vegnissan |
+| `2pl` | vegnissais |
+| `3pl` | vegnissa |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegne |
+| `2sg` | — |
+| `3sg` | vegne |
+| `1pl` | vegnion |
+| `2pl` | vegnieis |
+| `3pl` | vegne |
+
+#### `dì`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dije |
+| `2sg` | dijes |
+| `3sg` | dij |
+| `1pl` | dijon |
+| `2pl` | dijeis |
+| `3pl` | dij |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dijaré |
+| `2sg` | dijaras |
+| `3sg` | dijarà |
+| `1pl` | dijaron |
+| `2pl` | dijareis |
+| `3pl` | dijarà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dijove |
+| `2sg` | dijoves |
+| `3sg` | dijova |
+| `1pl` | dijovan |
+| `2pl` | dijovais |
+| `3pl` | dijova |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | dì |
+| `3sg` | — |
+| `1pl` | - |
+| `2pl` | dijede |
+| `3pl` | — |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dijesse |
+| `2sg` | — |
+| `3sg` | dijessa |
+| `1pl` | dijessan |
+| `2pl` | dijessais |
+| `3pl` | dijessa |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dije |
+| `2sg` | — |
+| `3sg` | dije |
+| `1pl` | dijon |
+| `2pl` | dijeis |
+| `3pl` | dije |
+
+#### `jì`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vede |
+| `2sg` | ves |
+| `3sg` | va |
+| `1pl` | jon |
+| `2pl` | jëis |
+| `3pl` | va |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | jiré |
+| `2sg` | jires |
+| `3sg` | jirà |
+| `1pl` | jiron |
+| `2pl` | jirëis |
+| `3pl` | jirà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | jive |
+| `2sg` | jives |
+| `3sg` | jiva |
+| `1pl` | jan |
+| `2pl` | jais |
+| `3pl` | jiva |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | va |
+| `2sg` | va |
+| `3sg` | — |
+| `1pl` | jon |
+| `2pl` | jide |
+| `3pl` | — |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | jisse |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vede |
+| `2sg` | — |
+| `3sg` | vede |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | vede |
 
 ## Ending: `-é`
 
@@ -839,215 +1056,3 @@ No majority ending pattern with enough complete six-slot rows yet.
 #### `śaré`
 
 _No classified person-number cells for this lemma._
-
-## Ending: `-ì`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `vegnì`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegne |
-| `2sg` | vegnes |
-| `3sg` | vegn |
-| `1pl` | vegnion |
-| `2pl` | vegnieis |
-| `3pl` | vegn |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegniré |
-| `2sg` | vegniras |
-| `3sg` | vegnirà |
-| `1pl` | vegniron |
-| `2pl` | vegnireis |
-| `3pl` | vegnirà |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnive |
-| `2sg` | vegnives |
-| `3sg` | vegniva |
-| `1pl` | vegnivan |
-| `2pl` | vegnivais |
-| `3pl` | vegniva |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | vie |
-| `3sg` | — |
-| `1pl` | - |
-| `2pl` | vegnide |
-| `3pl` | — |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnisse |
-| `2sg` | — |
-| `3sg` | vegnissa |
-| `1pl` | vegnissan |
-| `2pl` | vegnissais |
-| `3pl` | vegnissa |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegne |
-| `2sg` | — |
-| `3sg` | vegne |
-| `1pl` | vegnion |
-| `2pl` | vegnieis |
-| `3pl` | vegne |
-
-#### `dì`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | dije |
-| `2sg` | dijes |
-| `3sg` | dij |
-| `1pl` | dijon |
-| `2pl` | dijeis |
-| `3pl` | dij |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | dijaré |
-| `2sg` | dijaras |
-| `3sg` | dijarà |
-| `1pl` | dijaron |
-| `2pl` | dijareis |
-| `3pl` | dijarà |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | dijove |
-| `2sg` | dijoves |
-| `3sg` | dijova |
-| `1pl` | dijovan |
-| `2pl` | dijovais |
-| `3pl` | dijova |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | dì |
-| `3sg` | — |
-| `1pl` | - |
-| `2pl` | dijede |
-| `3pl` | — |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | dijesse |
-| `2sg` | — |
-| `3sg` | dijessa |
-| `1pl` | dijessan |
-| `2pl` | dijessais |
-| `3pl` | dijessa |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | dije |
-| `2sg` | — |
-| `3sg` | dije |
-| `1pl` | dijon |
-| `2pl` | dijeis |
-| `3pl` | dije |
-
-#### `jì`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vede |
-| `2sg` | ves |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | va |
-| `2sg` | va |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | jiré |
-| `2sg` | jires |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | jive |
-| `2sg` | jives |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | jisse |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vede |
-| `2sg` | — |
-| `3sg` | vede |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | vede |

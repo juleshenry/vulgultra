@@ -99,7 +99,7 @@ post-root morphology objective.
 ## Morphology
 
 - **Nouns and adjectives:** gender × case (nom/acc/gen) × number = 12 cells, all 1σ
-- **Verbs:** one stem; each tense is its own 6-person row from one lect (`amos` → `mos`). Tenses may differ.
+- **Verbs:** one stem; each finite cell may come from any lect (`amos` → `mos`). Among equal-length ties, prefer concordance (shared person coda across tenses, e.g. present `ons` tips future toward `erons`).
 - Collision only inside a 6-person row (cross-tense syncretism is Romance-legal)
 - Articles `o/a/os/as` mark definiteness only; case marks role
 - Copula is suppletive (`so / es / e / som / sos / son`)

@@ -6,6 +6,7 @@ from vulgultra.conjugation_harvest import (
     aggregate_ending_inventory,
     decode_tags,
     primary_conj_template,
+    recover_conjugation_persons,
     select_representatives,
     strip_endings,
 )
@@ -97,6 +98,37 @@ class ConjugationHarvestTests(unittest.TestCase):
         self.assertEqual(present["support"], 5)
         self.assertEqual(present["endings"]["1sg"], "o")
         self.assertEqual(present["endings"]["2pl"], "éis")
+
+    def test_recover_conjugation_persons_fills_1sg_3sg_3pl(self) -> None:
+        forms = recover_conjugation_persons([
+            {"form": "sai", "source": "conjugation",
+             "tags": ["error-unrecognized-form", "indicative", "present", "singular"]},
+            {"form": "sante", "source": "conjugation",
+             "tags": ["indicative", "present", "second-person", "singular"]},
+            {"form": "sant", "source": "conjugation",
+             "tags": ["error-unrecognized-form", "indicative", "present", "singular"]},
+            {"form": "saime", "source": "conjugation",
+             "tags": ["first-person", "indicative", "plural", "present"]},
+            {"form": "saite", "source": "conjugation",
+             "tags": ["indicative", "plural", "present", "second-person"]},
+            {"form": "sant", "source": "conjugation",
+             "tags": ["error-unrecognized-form", "indicative", "present", "plural"]},
+        ])
+        slots = []
+        for rec in forms:
+            slot, feature, amb = decode_tags(rec["tags"])
+            slots.append((rec["form"], slot, feature, amb))
+        self.assertEqual(
+            slots,
+            [
+                ("sai", "1sg", "indicative.present", False),
+                ("sante", "2sg", "indicative.present", False),
+                ("sant", "3sg", "indicative.present", False),
+                ("saime", "1pl", "indicative.present", False),
+                ("saite", "2pl", "indicative.present", False),
+                ("sant", "3pl", "indicative.present", False),
+            ],
+        )
 
 
 if __name__ == "__main__":

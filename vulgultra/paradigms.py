@@ -1,9 +1,11 @@
 """Attested lect paradigms plus productive, grid-segment ending proposals.
 
-Attested person rows are per-lect and clipped to 1σ; productive alternatives
-are assembled separately from the observed shortlisted segment inventory.
-Realization never falls back to “conjugate like Spanish” for Aragonese,
-Ladino, Romansh, etc. Tense/mood is a theme on that same person row.
+Attested person cells are clipped to 1σ per lect template; the optimizer
+may mix lects across cells and uses concordance (shared person coda across
+tenses) only as a length tie-breaker. Productive alternatives are assembled
+separately from the observed shortlisted segment inventory. Realization
+never falls back to “conjugate like Spanish” for Aragonese, Ladino,
+Romansh, etc.
 """
 
 from __future__ import annotations

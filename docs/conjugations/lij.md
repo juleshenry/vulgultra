@@ -8,9 +8,9 @@
 - Source files: `kaikki-lij.jsonl`
 - Lemmas with forms: **92**
 - Verb lemma entries: **133**
-- Inflected form records: **3415**
+- Inflected form records: **3402**
 - Separate form-of entries: **465**
-- Classified person-slot observations: **3284**
+- Classified person-slot observations: **3272**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -19,7 +19,6 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
 | `lij-conj` | 19 | 6 | 4 |
-| `lij-conj-êse` | 1 | 6 | 0 |
 | `lij-conj-3rd` | 6 | 5 | 0 |
 | `lij-conj-1st` | 14 | 4 | 0 |
 | `lij-conj-1st-ciâ` | 3 | 4 | 0 |
@@ -32,6 +31,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `lij-conj-1st-iâ` | 1 | 4 | 0 |
 | `lij-conj-1st-iâse` | 1 | 4 | 0 |
 | `lij-conj-4th-îse` | 1 | 4 | 0 |
+| `lij-conj-êse` | 1 | 4 | 0 |
 | `unknown` | 33 | 0 | 0 |
 
 ## `lij-conj`
@@ -285,93 +285,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | agémmo |
 | `2pl` | agéi |
 | `3pl` | àgian |
-
-## `lij-conj-êse`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `êse`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | són |
-| `2sg` | ê |
-| `3sg` | é |
-| `1pl` | sémmo |
-| `2pl` | séi |
-| `3pl` | én |
-
-##### `conditional.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | saiéiva |
-| `2sg` | ti saiêsci |
-| `3sg` | saiéiva |
-| `1pl` | saiêscimo |
-| `2pl` | saiêsci |
-| `3pl` | saiéivan |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | saiò |
-| `2sg` | ti saiæ |
-| `3sg` | saiâ |
-| `1pl` | saiêmo |
-| `2pl` | saiéi |
-| `3pl` | saiàn |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | {{{impf1s}}} |
-| `2sg` | {{{impf2s}}} |
-| `3sg` | {{{impf3s}}} |
-| `1pl` | êmo |
-| `2pl` | {{{impf2p}}} |
-| `3pl` | {{{impf3p}}} |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | {{{impfsub1s}}} |
-| `2sg` | {{{impfsub2s}}} |
-| `3sg` | {{{impfsub3s}}} |
-| `1pl` | {{{impfsub1p}}} |
-| `2pl` | {{{impfsub2p}}} |
-| `3pl` | foîsan |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ségge |
-| `2sg` | ti séggi |
-| `3sg` | ségge |
-| `1pl` | ségimo |
-| `2pl` | segéi |
-| `3pl` | ségian |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | séggi |
-| `3sg` | ségge |
-| `1pl` | ségimo |
-| `2pl` | segéi |
-| `3pl` | ségian |
 
 ## `lij-conj-3rd`
 
@@ -2517,6 +2430,93 @@ Stem: `vest`.
 | `1pl` | se vestìmmo |
 | `2pl` | ve vestî |
 | `3pl` | — |
+
+## `lij-conj-êse`
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
+
+### Representative lemmas
+
+#### `êse`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | són |
+| `2sg` | ê |
+| `3sg` | é |
+| `1pl` | sémmo |
+| `2pl` | séi |
+| `3pl` | én |
+
+##### `conditional.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | saiéiva |
+| `2sg` | ti saiêsci |
+| `3sg` | saiéiva |
+| `1pl` | saiêscimo |
+| `2pl` | saiêsci |
+| `3pl` | saiéivan |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | saiò |
+| `2sg` | ti saiæ |
+| `3sg` | saiâ |
+| `1pl` | saiêmo |
+| `2pl` | saiéi |
+| `3pl` | saiàn |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ségge |
+| `2sg` | ti séggi |
+| `3sg` | ségge |
+| `1pl` | ségimo |
+| `2pl` | segéi |
+| `3pl` | ségian |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | séggi |
+| `3sg` | ségge |
+| `1pl` | ségimo |
+| `2pl` | segéi |
+| `3pl` | ségian |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | êo |
+| `2sg` | êi |
+| `3sg` | — |
+| `1pl` | êmo |
+| `2pl` | êi |
+| `3pl` | êan |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | foîsci |
+| `3sg` | — |
+| `1pl` | foîscimo |
+| `2pl` | foîsci |
+| `3pl` | foîsan |
 
 ## `unknown`
 

@@ -10,7 +10,7 @@
 - Verb lemma entries: **380**
 - Inflected form records: **10937**
 - Separate form-of entries: **22**
-- Classified person-slot observations: **10488**
+- Classified person-slot observations: **10531**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -33,11 +33,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 14 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 14 | `lcp` | -ai | -aris | -à | -arin | -aris | -arin |
-| `indicative.present` | 14 | `lcp` | -i | -is | -e | -ìn | -ais | -in |
-| `subjunctive.imperfect` | 14 | `lcp` | -às | -assis | -às | -assin | -assis | -assin |
-| `subjunctive.present` | 14 | `lcp` | -i | -is | -i | -ìn | -ais | -in |
+| `indicative.future` | 47 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
+| `indicative.imperfect` | 46 | `lcp` | -ai | -aris | -à | -arin | -aris | -arin |
+| `indicative.present` | 45 | `lcp` | -i | -is | -e | -ìn | -ais | -in |
+| `subjunctive.imperfect` | 46 | `lcp` | -às | -assis | -às | -assin | -assis | -assin |
+| `subjunctive.present` | 45 | `lcp` | -i | -is | -i | -ìn | -ais | -in |
 
 ### Representative lemmas
 
@@ -321,11 +321,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 9 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 9 | `lcp` | -ei | -eris | -è | -erin | -eris | -erin |
-| `indicative.present` | 2 | `lcp` | -ç | -zis | -ç | -zìn | -zês | -zin |
-| `subjunctive.imperfect` | 9 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
-| `subjunctive.present` | 9 | `lcp` | -i | -is | -i | -ìn | -ês | -in |
+| `indicative.future` | 15 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
+| `indicative.imperfect` | 13 | `lcp` | -ei | -eris | -è | -erin | -eris | -erin |
+| `indicative.present` | 3 | `lcp` | ∅ | -is | ∅ | -ìn | -ês | -in |
+| `subjunctive.imperfect` | 13 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
+| `subjunctive.present` | 13 | `lcp` | -i | -is | -i | -ìn | -ês | -in |
 
 ### Representative lemmas
 
@@ -335,12 +335,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | o soi |
-| `2sg` | tu sês |
-| `3sg` | al |
-| `1pl` | o sin |
-| `2pl` | o sês |
-| `3pl` | a ses |
+| `1sg` | jes |
+| `2sg` | jessis |
+| `3sg` | jes |
+| `1pl` | jessìn |
+| `2pl` | jessîs |
+| `3pl` | jessin |
 
 ##### `conditional`
 
@@ -357,23 +357,23 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | o sarai |
-| `2sg` | tu sarâs |
-| `3sg` | al |
-| `1pl` | o sarìn |
-| `2pl` | o sarês |
-| `3pl` | a saran |
+| `1sg` | jessirai |
+| `2sg` | jessirâs |
+| `3sg` | jessirà |
+| `1pl` | jessirìn |
+| `2pl` | jessirês |
+| `3pl` | jessiran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o jeri |
-| `2sg` | tu jeris |
-| `3sg` | al |
-| `1pl` | o jerin |
-| `2pl` | o jeris |
-| `3pl` | a jerin |
+| `1sg` | jessii |
+| `2sg` | jessiris |
+| `3sg` | jessì |
+| `1pl` | jessirin |
+| `2pl` | jessiris |
+| `3pl` | jessirin |
 
 ##### `indicative.past`
 
@@ -390,23 +390,23 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | o fos |
-| `2sg` | tu fossis |
-| `3sg` | al |
-| `1pl` | o fossin |
-| `2pl` | o fossis |
-| `3pl` | a fossin |
+| `1sg` | jessìs |
+| `2sg` | jessissis |
+| `3sg` | jessìs |
+| `1pl` | jessissin |
+| `2pl` | jessissis |
+| `3pl` | jessissin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o sedi |
-| `2sg` | tu sedis |
-| `3sg` | al |
-| `1pl` | o sedin |
-| `2pl` | o sedis |
-| `3pl` | a sedin |
+| `1sg` | jessi |
+| `2sg` | jessis |
+| `3sg` | jessi |
+| `1pl` | jessìn |
+| `2pl` | jessîs |
+| `3pl` | jessin |
 
 ##### `conditional.present`
 
@@ -611,11 +611,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 6 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 6 | `lcp` | -ii | -iris | -ì | -irin | -iris | -irin |
-| `indicative.present` | 4 | `lcp` | -ìs | -issis | -ìs | -ìn | -îs | -issin |
-| `subjunctive.imperfect` | 6 | `lcp` | -ìs | -issis | -ìs | -issin | -issis | -issin |
-| `subjunctive.present` | 4 | `lcp` | -issi | -issis | -issi | -ìn | -issis | -issin |
+| `indicative.future` | 8 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
+| `indicative.imperfect` | 7 | `lcp` | -ii | -iris | -ì | -irin | -iris | -irin |
+| `indicative.present` | 5 | `lcp` | -ìs | -issis | -ìs | -ìn | -îs | -issin |
+| `subjunctive.imperfect` | 7 | `lcp` | -ìs | -issis | -ìs | -issin | -issis | -issin |
+| `subjunctive.present` | 5 | `lcp` | -issi | -issis | -issi | -ìn | -issis | -issin |
 
 ### Representative lemmas
 
@@ -903,12 +903,12 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | o ai |
-| `2sg` | tu âs |
-| `3sg` | al |
-| `1pl` | o vin |
-| `2pl` | o vês |
-| `3pl` | a an |
+| `1sg` | ai |
+| `2sg` | âs |
+| `3sg` | à |
+| `1pl` | vin |
+| `2pl` | vês |
+| `3pl` | àn |
 
 ##### `conditional`
 
@@ -925,23 +925,23 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | o varai |
-| `2sg` | tu varâs |
-| `3sg` | al |
-| `1pl` | o varìn |
-| `2pl` | o varês |
-| `3pl` | a varan |
+| `1sg` | varai |
+| `2sg` | varâs |
+| `3sg` | varà |
+| `1pl` | varìn |
+| `2pl` | varês |
+| `3pl` | varan |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vevi |
-| `2sg` | tu vevis |
-| `3sg` | al |
-| `1pl` | o vevin |
-| `2pl` | o vevis |
-| `3pl` | a vevin |
+| `1sg` | vei |
+| `2sg` | veris |
+| `3sg` | ve |
+| `1pl` | verin |
+| `2pl` | veris |
+| `3pl` | verin |
 
 ##### `indicative.past`
 
@@ -958,23 +958,23 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | o ves |
-| `2sg` | tu vessis |
-| `3sg` | al |
-| `1pl` | o vessin |
-| `2pl` | o vessis |
-| `3pl` | a vessin |
+| `1sg` | ves |
+| `2sg` | vessis |
+| `3sg` | ves |
+| `1pl` | vessin |
+| `2pl` | vessis |
+| `3pl` | vessin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vedi |
-| `2sg` | tu vedis |
-| `3sg` | al |
-| `1pl` | o vedìn |
-| `2pl` | o vedês |
-| `3pl` | a vedin |
+| `1sg` | vebi |
+| `2sg` | vebis |
+| `3sg` | vebi |
+| `1pl` | vebin |
+| `2pl` | vebis |
+| `3pl` | vebin |
 
 ##### `imperative`
 

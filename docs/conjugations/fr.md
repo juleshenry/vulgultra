@@ -34,14 +34,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 6459 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.future` | 6459 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
-| `indicative.imperfect` | 6140 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `conditional` | 6460 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.future` | 6460 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
+| `indicative.imperfect` | 6141 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
 | `indicative.past` | 6140 | `lcp` | -ai | -as | -a | -âmes | -âtes | -èrent |
-| `indicative.present` | 5693 | `lcp` | -e | -es | -e | -ons | -ez | -ent |
+| `indicative.present` | 5696 | `lcp` | -e | -es | -e | -ons | -ez | -ent |
 | `indicative.preterite` | 84 | `lcp` | -ai | -as | -a | -âmes | -âtes | -èrent |
-| `subjunctive.imperfect` | 6458 | `lcp` | -asse | -asses | -ât | -assions | -assiez | -assent |
-| `subjunctive.present` | 5995 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
+| `subjunctive.imperfect` | 6459 | `lcp` | -asse | -asses | -ât | -assions | -assiez | -assent |
+| `subjunctive.present` | 5998 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
 
 ### Representative lemmas
 
@@ -329,9 +329,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 448 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.future` | 449 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
-| `indicative.imperfect` | 446 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `conditional` | 449 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.future` | 450 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
+| `indicative.imperfect` | 447 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
 | `indicative.past` | 381 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
 | `indicative.present` | 317 | `lcp` | -s | -s | -t | -ssons | -ssez | -ssent |
 | `indicative.preterite` | 17 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
@@ -632,7 +632,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.past` | 214 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
 | `indicative.present` | 52 | `lcp` | -s | -s | ∅ | -ons | -ez | -ent |
 | `indicative.preterite` | 5 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
-| `subjunctive.imperfect` | 214 | `lcp` | -isse | -isses | -ît | -issions | -issiez | -issent |
+| `subjunctive.imperfect` | 215 | `lcp` | -isse | -isses | -ît | -issions | -issiez | -issent |
 | `subjunctive.present` | 268 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
 
 ### Representative lemmas

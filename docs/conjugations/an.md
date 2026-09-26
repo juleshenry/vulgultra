@@ -10,7 +10,7 @@
 - Verb lemma entries: **282**
 - Inflected form records: **8202**
 - Separate form-of entries: **46**
-- Classified person-slot observations: **19660**
+- Classified person-slot observations: **19804**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -22,10 +22,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-er` | 49 | 11 | 7 |
 | `-ir` | 45 | 11 | 7 |
 | `haber` | 2 | 11 | 7 |
+| `estar` | 1 | 11 | 7 |
 | `haber-ie` | 1 | 11 | 7 |
 | `ir` | 1 | 11 | 6 |
 | `ser` | 1 | 11 | 6 |
-| `estar` | 1 | 11 | 4 |
 | `ir/anar` | 1 | 0 | 0 |
 | `other` | 3 | 0 | 0 |
 
@@ -42,286 +42,292 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 108 | `template` | -aría | -arías | -aría | -aríanos | -aríatz | -arían |
 | `indicative.future` | 108 | `template` | -aré | -arás | -ará | -aremos | -aretz | -arán |
 | `indicative.imperfect` | 108 | `template` | -aba | -abas | -aba | -abanos | -abatz | -aban |
-| `indicative.present` | 107 | `template` | -o | -as | -a | -amos | -atz | -an |
+| `indicative.present` | 137 | `template` | -o | -as | -a | -amos | -atz | -en |
 | `indicative.preterite` | 146 | `template` | -é | -és | -ó | -emos | -etz | -oron |
 | `subjunctive.imperfect` | 108 | `template` | -ase | -ases | -ase | -asenos | -asetz | -asen |
-| `subjunctive.present` | 95 | `template` | -e | -es | -e | -emos | -etz | -en |
+| `subjunctive.present` | 89 | `template` | -e | -es | -e | -emos | -etz | -en |
 
 ### Representative lemmas
 
-#### `librar`
+#### `zarrar`
+
+Stem: `zarr`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | libro |
-| `2sg` | libras |
-| `3sg` | libra |
-| `1pl` | libramos |
-| `2pl` | libratz |
-| `3pl` | libren |
+| `1sg` | zarro |
+| `2sg` | zarras |
+| `3sg` | zarra |
+| `1pl` | zarramos |
+| `2pl` | zarratz |
+| `3pl` | zarren |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | libraría |
-| `2sg` | librarías |
-| `3sg` | libraría |
-| `1pl` | libraríanos |
-| `2pl` | libraríatz |
-| `3pl` | librarían |
+| `1sg` | zarraría |
+| `2sg` | zarrarías |
+| `3sg` | zarraría |
+| `1pl` | zarraríanos |
+| `2pl` | zarraríatz |
+| `3pl` | zarrarían |
 
 ##### `conditional.perfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | habría librau |
-| `2sg` | habrías librau |
-| `3sg` | habría librau |
-| `1pl` | habríanos librau |
-| `2pl` | habríatz librau |
-| `3pl` | habrían librau |
+| `1sg` | habría zarrau |
+| `2sg` | habrías zarrau |
+| `3sg` | habría zarrau |
+| `1pl` | habríanos zarrau |
+| `2pl` | habríatz zarrau |
+| `3pl` | habrían zarrau |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | libraré |
-| `2sg` | librarás |
-| `3sg` | librará |
-| `1pl` | libraremos |
-| `2pl` | libraretz |
-| `3pl` | librarán |
+| `1sg` | zarraré |
+| `2sg` | zarrarás |
+| `3sg` | zarrará |
+| `1pl` | zarraremos |
+| `2pl` | zarraretz |
+| `3pl` | zarrarán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | libraba |
-| `2sg` | librabas |
-| `3sg` | libraba |
-| `1pl` | librabanos |
-| `2pl` | librabatz |
-| `3pl` | libraban |
+| `1sg` | zarraba |
+| `2sg` | zarrabas |
+| `3sg` | zarraba |
+| `1pl` | zarrabanos |
+| `2pl` | zarrabatz |
+| `3pl` | zarraban |
 
 ##### `indicative.periphrastic-past`
 
 | Slot | Form |
 |---|---|
-| `1sg` | va librar |
-| `2sg` | vas librar |
-| `3sg` | va librar |
-| `1pl` | vamos librar |
-| `2pl` | vatz librar |
-| `3pl` | van librar |
+| `1sg` | va zarrar |
+| `2sg` | vas zarrar |
+| `3sg` | va zarrar |
+| `1pl` | vamos zarrar |
+| `2pl` | vatz zarrar |
+| `3pl` | van zarrar |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | heba librau |
-| `2sg` | hebas librau |
-| `3sg` | heba librau |
-| `1pl` | hebanos librau |
-| `2pl` | hebatz librau |
-| `3pl` | heban librau |
+| `1sg` | heba zarrau |
+| `2sg` | hebas zarrau |
+| `3sg` | heba zarrau |
+| `1pl` | hebanos zarrau |
+| `2pl` | hebatz zarrau |
+| `3pl` | heban zarrau |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | libré |
-| `2sg` | librés |
-| `3sg` | libró |
-| `1pl` | libremos |
-| `2pl` | libretz |
-| `3pl` | libroron |
+| `1sg` | zarré |
+| `2sg` | zarrés |
+| `3sg` | zarró |
+| `1pl` | zarremos |
+| `2pl` | zarretz |
+| `3pl` | zarroron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
-#### `zepillar`
+#### `xaguar`
+
+Stem: `xagu`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zepillo |
-| `2sg` | zepillas |
-| `3sg` | zepilla |
-| `1pl` | zepillamos |
-| `2pl` | zepillatz |
-| `3pl` | zepillen |
+| `1sg` | xaguo |
+| `2sg` | xaguas |
+| `3sg` | xagua |
+| `1pl` | xaguamos |
+| `2pl` | xaguatz |
+| `3pl` | xagüen |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zepillaría |
-| `2sg` | zepillarías |
-| `3sg` | zepillaría |
-| `1pl` | zepillaríanos |
-| `2pl` | zepillaríatz |
-| `3pl` | zepillarían |
+| `1sg` | xaguaría |
+| `2sg` | xaguarías |
+| `3sg` | xaguaría |
+| `1pl` | xaguaríanos |
+| `2pl` | xaguaríatz |
+| `3pl` | xaguarían |
 
 ##### `conditional.perfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | habría zepillau |
-| `2sg` | habrías zepillau |
-| `3sg` | habría zepillau |
-| `1pl` | habríanos zepillau |
-| `2pl` | habríatz zepillau |
-| `3pl` | habrían zepillau |
+| `1sg` | habría xaguau |
+| `2sg` | habrías xaguau |
+| `3sg` | habría xaguau |
+| `1pl` | habríanos xaguau |
+| `2pl` | habríatz xaguau |
+| `3pl` | habrían xaguau |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zepillaré |
-| `2sg` | zepillarás |
-| `3sg` | zepillará |
-| `1pl` | zepillaremos |
-| `2pl` | zepillaretz |
-| `3pl` | zepillarán |
+| `1sg` | xaguaré |
+| `2sg` | xaguarás |
+| `3sg` | xaguará |
+| `1pl` | xaguaremos |
+| `2pl` | xaguaretz |
+| `3pl` | xaguarán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zepillaba |
-| `2sg` | zepillabas |
-| `3sg` | zepillaba |
-| `1pl` | zepillabanos |
-| `2pl` | zepillabatz |
-| `3pl` | zepillaban |
+| `1sg` | xaguaba |
+| `2sg` | xaguabas |
+| `3sg` | xaguaba |
+| `1pl` | xaguabanos |
+| `2pl` | xaguabatz |
+| `3pl` | xaguaban |
 
 ##### `indicative.periphrastic-past`
 
 | Slot | Form |
 |---|---|
-| `1sg` | va zepillar |
-| `2sg` | vas zepillar |
-| `3sg` | va zepillar |
-| `1pl` | vamos zepillar |
-| `2pl` | vatz zepillar |
-| `3pl` | van zepillar |
+| `1sg` | va xaguar |
+| `2sg` | vas xaguar |
+| `3sg` | va xaguar |
+| `1pl` | vamos xaguar |
+| `2pl` | vatz xaguar |
+| `3pl` | van xaguar |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | heba zepillau |
-| `2sg` | hebas zepillau |
-| `3sg` | heba zepillau |
-| `1pl` | hebanos zepillau |
-| `2pl` | hebatz zepillau |
-| `3pl` | heban zepillau |
+| `1sg` | heba xaguau |
+| `2sg` | hebas xaguau |
+| `3sg` | heba xaguau |
+| `1pl` | hebanos xaguau |
+| `2pl` | hebatz xaguau |
+| `3pl` | heban xaguau |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zepillé |
-| `2sg` | zepillés |
-| `3sg` | zepilló |
-| `1pl` | zepillemos |
-| `2pl` | zepilletz |
-| `3pl` | zepilloron |
+| `1sg` | xagüé |
+| `2sg` | xagüés |
+| `3sg` | xaguó |
+| `1pl` | xagüemos |
+| `2pl` | xagüetz |
+| `3pl` | xaguoron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
-#### `zelebrar`
+#### `vomecar`
+
+Stem: `vomec`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zelebro |
-| `2sg` | zelebras |
-| `3sg` | zelebra |
-| `1pl` | zelebramos |
-| `2pl` | zelebratz |
-| `3pl` | zelebren |
+| `1sg` | vomeco |
+| `2sg` | vomecas |
+| `3sg` | vomeca |
+| `1pl` | vomecamos |
+| `2pl` | vomecatz |
+| `3pl` | vomequen |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zelebraría |
-| `2sg` | zelebrarías |
-| `3sg` | zelebraría |
-| `1pl` | zelebraríanos |
-| `2pl` | zelebraríatz |
-| `3pl` | zelebrarían |
+| `1sg` | vomecaría |
+| `2sg` | vomecarías |
+| `3sg` | vomecaría |
+| `1pl` | vomecaríanos |
+| `2pl` | vomecaríatz |
+| `3pl` | vomecarían |
 
 ##### `conditional.perfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | habría zelebrau |
-| `2sg` | habrías zelebrau |
-| `3sg` | habría zelebrau |
-| `1pl` | habríanos zelebrau |
-| `2pl` | habríatz zelebrau |
-| `3pl` | habrían zelebrau |
+| `1sg` | habría vomecau |
+| `2sg` | habrías vomecau |
+| `3sg` | habría vomecau |
+| `1pl` | habríanos vomecau |
+| `2pl` | habríatz vomecau |
+| `3pl` | habrían vomecau |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zelebraré |
-| `2sg` | zelebrarás |
-| `3sg` | zelebrará |
-| `1pl` | zelebraremos |
-| `2pl` | zelebraretz |
-| `3pl` | zelebrarán |
+| `1sg` | vomecaré |
+| `2sg` | vomecarás |
+| `3sg` | vomecará |
+| `1pl` | vomecaremos |
+| `2pl` | vomecaretz |
+| `3pl` | vomecarán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zelebraba |
-| `2sg` | zelebrabas |
-| `3sg` | zelebraba |
-| `1pl` | zelebrabanos |
-| `2pl` | zelebrabatz |
-| `3pl` | zelebraban |
+| `1sg` | vomecaba |
+| `2sg` | vomecabas |
+| `3sg` | vomecaba |
+| `1pl` | vomecabanos |
+| `2pl` | vomecabatz |
+| `3pl` | vomecaban |
 
 ##### `indicative.periphrastic-past`
 
 | Slot | Form |
 |---|---|
-| `1sg` | va zelebrar |
-| `2sg` | vas zelebrar |
-| `3sg` | va zelebrar |
-| `1pl` | vamos zelebrar |
-| `2pl` | vatz zelebrar |
-| `3pl` | van zelebrar |
+| `1sg` | va vomecar |
+| `2sg` | vas vomecar |
+| `3sg` | va vomecar |
+| `1pl` | vamos vomecar |
+| `2pl` | vatz vomecar |
+| `3pl` | van vomecar |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | heba zelebrau |
-| `2sg` | hebas zelebrau |
-| `3sg` | heba zelebrau |
-| `1pl` | hebanos zelebrau |
-| `2pl` | hebatz zelebrau |
-| `3pl` | heban zelebrau |
+| `1sg` | heba vomecau |
+| `2sg` | hebas vomecau |
+| `3sg` | heba vomecau |
+| `1pl` | hebanos vomecau |
+| `2pl` | hebatz vomecau |
+| `3pl` | heban vomecau |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | zelebré |
-| `2sg` | zelebrés |
-| `3sg` | zelebró |
-| `1pl` | zelebremos |
-| `2pl` | zelebretz |
-| `3pl` | zelebroron |
+| `1sg` | vomequé |
+| `2sg` | vomequés |
+| `3sg` | vomecó |
+| `1pl` | vomequemos |
+| `2pl` | vomequetz |
+| `3pl` | vomecoron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
@@ -338,8 +344,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 37 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
 | `indicative.future` | 37 | `lcp` | -é | -ás | -á | -emos | -etz | -án |
 | `indicative.imperfect` | 37 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `indicative.present` | 24 | `lcp` | -o | -es | -e | -emos | -etz | -en |
-| `indicative.preterite` | 20 | `lcp` | -é | -és | -ó | -emos | -etz | -oron |
+| `indicative.present` | 21 | `lcp` | -o | -es | -e | -emos | -etz | -en |
+| `indicative.preterite` | 23 | `lcp` | -ié | -iés | -ó | -emos | -etz | -ioron |
 | `subjunctive.imperfect` | 37 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
 | `subjunctive.present` | 31 | `lcp` | ∅ | -s | ∅ | -mos | -tz | -n |
 
@@ -367,7 +373,7 @@ Stem: `vey`.
 | `1sg` | veyería |
 | `2sg` | veyerías |
 | `3sg` | veyería |
-| `1pl` | veyerianos |
+| `1pl` | veyeríanos |
 | `2pl` | veyeríatz |
 | `3pl` | veyerían |
 
@@ -430,196 +436,200 @@ Stem: `vey`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | veyé |
-| `2sg` | veyés |
+| `1sg` | veyié |
+| `2sg` | veyiés |
 | `3sg` | veyó |
 | `1pl` | veyemos |
 | `2pl` | veyetz |
-| `3pl` | veyoron |
+| `3pl` | veyioron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
-#### `vender`
+#### `saper`
+
+Stem: `sap`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendo |
-| `2sg` | vendes |
-| `3sg` | vende |
-| `1pl` | vendemos |
-| `2pl` | vendetz |
-| `3pl` | venden |
+| `1sg` | sap |
+| `2sg` | sap |
+| `3sg` | sap |
+| `1pl` | sap |
+| `2pl` | sap |
+| `3pl` | sap |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendería |
-| `2sg` | venderías |
-| `3sg` | vendería |
-| `1pl` | venderíanos |
-| `2pl` | venderíatz |
-| `3pl` | venderían |
+| `1sg` | sapría |
+| `2sg` | saprías |
+| `3sg` | sapría |
+| `1pl` | sapríanos |
+| `2pl` | sapríatz |
+| `3pl` | saprían |
 
 ##### `conditional.perfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | habría vendiu |
-| `2sg` | habrías vendiu |
-| `3sg` | habría vendiu |
-| `1pl` | habríanos vendiu |
-| `2pl` | habríatz vendiu |
-| `3pl` | habrían vendiu |
+| `1sg` | habría sapiu |
+| `2sg` | habrías sapiu |
+| `3sg` | habría sapiu |
+| `1pl` | habríanos sapiu |
+| `2pl` | habríatz sapiu |
+| `3pl` | habrían sapiu |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | venderé |
-| `2sg` | venderás |
-| `3sg` | venderá |
-| `1pl` | venderemos |
-| `2pl` | venderetz |
-| `3pl` | venderán |
+| `1sg` | sapré |
+| `2sg` | saprás |
+| `3sg` | saprá |
+| `1pl` | sapremos |
+| `2pl` | sapretz |
+| `3pl` | saprán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendeba |
-| `2sg` | vendebas |
-| `3sg` | vendeba |
-| `1pl` | vendebanos |
-| `2pl` | vendebatz |
-| `3pl` | vendeban |
+| `1sg` | sapeba |
+| `2sg` | sapebas |
+| `3sg` | sapeba |
+| `1pl` | sapebanos |
+| `2pl` | sapebatz |
+| `3pl` | sapeban |
 
 ##### `indicative.periphrastic-past`
 
 | Slot | Form |
 |---|---|
-| `1sg` | va vender |
-| `2sg` | vas vender |
-| `3sg` | va vender |
-| `1pl` | vamos vender |
-| `2pl` | vatz vender |
-| `3pl` | van vender |
+| `1sg` | va saper |
+| `2sg` | vas saper |
+| `3sg` | va saper |
+| `1pl` | vamos saper |
+| `2pl` | vatz saper |
+| `3pl` | van saper |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | heba vendiu |
-| `2sg` | hebas vendiu |
-| `3sg` | heba vendiu |
-| `1pl` | hebanos vendiu |
-| `2pl` | hebatz vendiu |
-| `3pl` | heban vendiu |
+| `1sg` | heba sapiu |
+| `2sg` | hebas sapiu |
+| `3sg` | heba sapiu |
+| `1pl` | hebanos sapiu |
+| `2pl` | hebatz sapiu |
+| `3pl` | heban sapiu |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendié |
-| `2sg` | vendiés |
-| `3sg` | vendió |
-| `1pl` | vendiemos |
-| `2pl` | vendietz |
-| `3pl` | vendioron |
+| `1sg` | sapié |
+| `2sg` | sapiés |
+| `3sg` | sapió |
+| `1pl` | sapiemos |
+| `2pl` | sapietz |
+| `3pl` | sapioron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
-#### `veder`
+#### `querer`
+
+Stem: `quer`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vedo |
-| `2sg` | vedes |
-| `3sg` | vede |
-| `1pl` | vedemos |
-| `2pl` | vedetz |
-| `3pl` | veden |
+| `1sg` | quiero |
+| `2sg` | quiers |
+| `3sg` | quiere |
+| `1pl` | queremos |
+| `2pl` | queretz |
+| `3pl` | quieren |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vedería |
-| `2sg` | vederías |
-| `3sg` | vedería |
-| `1pl` | vederíanos |
-| `2pl` | vederíatz |
-| `3pl` | vederían |
+| `1sg` | querría |
+| `2sg` | querrías |
+| `3sg` | querría |
+| `1pl` | querríanos |
+| `2pl` | querríatz |
+| `3pl` | querrían |
 
 ##### `conditional.perfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | habría vediu |
-| `2sg` | habrías vediu |
-| `3sg` | habría vediu |
-| `1pl` | habríanos vediu |
-| `2pl` | habríatz vediu |
-| `3pl` | habrían vediu |
+| `1sg` | habría quiesto |
+| `2sg` | habrías quiesto |
+| `3sg` | habría quiesto |
+| `1pl` | habríanos quiesto |
+| `2pl` | habríatz quiesto |
+| `3pl` | habrían quiesto |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vederé |
-| `2sg` | vederás |
-| `3sg` | vederá |
-| `1pl` | vederemos |
-| `2pl` | vederetz |
-| `3pl` | vederán |
+| `1sg` | querré |
+| `2sg` | querrás |
+| `3sg` | querrá |
+| `1pl` | querremos |
+| `2pl` | querretz |
+| `3pl` | querrán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vedeba |
-| `2sg` | vedebas |
-| `3sg` | vedeba |
-| `1pl` | vedebanos |
-| `2pl` | vedebatz |
-| `3pl` | vedeban |
+| `1sg` | quereba |
+| `2sg` | querebas |
+| `3sg` | quereba |
+| `1pl` | querebanos |
+| `2pl` | querebatz |
+| `3pl` | quereban |
 
 ##### `indicative.periphrastic-past`
 
 | Slot | Form |
 |---|---|
-| `1sg` | va veder |
-| `2sg` | vas veder |
-| `3sg` | va veder |
-| `1pl` | vamos veder |
-| `2pl` | vatz veder |
-| `3pl` | van veder |
+| `1sg` | va querer |
+| `2sg` | vas querer |
+| `3sg` | va querer |
+| `1pl` | vamos querer |
+| `2pl` | vatz querer |
+| `3pl` | van querer |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | heba vediu |
-| `2sg` | hebas vediu |
-| `3sg` | heba vediu |
-| `1pl` | hebanos vediu |
-| `2pl` | hebatz vediu |
-| `3pl` | heban vediu |
+| `1sg` | heba quiesto |
+| `2sg` | hebas quiesto |
+| `3sg` | heba quiesto |
+| `1pl` | hebanos quiesto |
+| `2pl` | hebatz quiesto |
+| `3pl` | heban quiesto |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vedié |
-| `2sg` | vediés |
-| `3sg` | vedió |
-| `1pl` | vediemos |
-| `2pl` | vedietz |
-| `3pl` | vedioron |
+| `1sg` | querié |
+| `2sg` | queriés |
+| `3sg` | querió |
+| `1pl` | queriemos |
+| `2pl` | querietz |
+| `3pl` | querioron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
@@ -636,286 +646,292 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 26 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
 | `indicative.future` | 26 | `lcp` | -é | -ás | -á | -emos | -etz | -án |
 | `indicative.imperfect` | 26 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `indicative.present` | 26 | `lcp` | -o | -es | -e | -imos | -itz | -en |
+| `indicative.present` | 23 | `lcp` | -o | -es | -e | -imos | -itz | -en |
 | `indicative.preterite` | 25 | `lcp` | -é | -és | -ó | -emos | -etz | -oron |
 | `subjunctive.imperfect` | 26 | `lcp` | ∅ | -s | ∅ | -mos | -is | -n |
 | `subjunctive.present` | 24 | `lcp` | ∅ | -s | ∅ | -mos | -tz | -n |
 
 ### Representative lemmas
 
-#### `vivir`
+#### `ubrir`
+
+Stem: `ubr`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vivo |
-| `2sg` | vives |
-| `3sg` | vive |
-| `1pl` | vivimos |
-| `2pl` | vivitz |
-| `3pl` | viven |
+| `1sg` | ubro |
+| `2sg` | ubres |
+| `3sg` | ubre |
+| `1pl` | ubrimos |
+| `2pl` | ubritz |
+| `3pl` | ubren |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | viviría |
-| `2sg` | vivirías |
-| `3sg` | viviría |
-| `1pl` | viviríanos |
-| `2pl` | viviríatz |
-| `3pl` | vivirían |
+| `1sg` | ubriría |
+| `2sg` | ubrirías |
+| `3sg` | ubriría |
+| `1pl` | ubriríanos |
+| `2pl` | ubriríatz |
+| `3pl` | ubrirían |
 
 ##### `conditional.perfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | habría viviu |
-| `2sg` | habrías viviu |
-| `3sg` | habría viviu |
-| `1pl` | habríanos viviu |
-| `2pl` | habríatz viviu |
-| `3pl` | habrían viviu |
+| `1sg` | habría ubierto |
+| `2sg` | habrías ubierto |
+| `3sg` | habría ubierto |
+| `1pl` | habríanos ubierto |
+| `2pl` | habríatz ubierto |
+| `3pl` | habrían ubierto |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | viviré |
-| `2sg` | vivirás |
-| `3sg` | vivirá |
-| `1pl` | viviremos |
-| `2pl` | viviretz |
-| `3pl` | vivirán |
+| `1sg` | ubriré |
+| `2sg` | ubrirás |
+| `3sg` | ubrirá |
+| `1pl` | ubriremos |
+| `2pl` | ubriretz |
+| `3pl` | ubrirán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | viviba |
-| `2sg` | vivibas |
-| `3sg` | viviba |
-| `1pl` | vivibanos |
-| `2pl` | vivibatz |
-| `3pl` | viviban |
+| `1sg` | ubriba |
+| `2sg` | ubribas |
+| `3sg` | ubriba |
+| `1pl` | ubribanos |
+| `2pl` | ubribatz |
+| `3pl` | ubriban |
 
 ##### `indicative.periphrastic-past`
 
 | Slot | Form |
 |---|---|
-| `1sg` | va vivir |
-| `2sg` | vas vivir |
-| `3sg` | va vivir |
-| `1pl` | vamos vivir |
-| `2pl` | vatz vivir |
-| `3pl` | van vivir |
+| `1sg` | va ubrir |
+| `2sg` | vas ubrir |
+| `3sg` | va ubrir |
+| `1pl` | vamos ubrir |
+| `2pl` | vatz ubrir |
+| `3pl` | van ubrir |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | heba viviu |
-| `2sg` | hebas viviu |
-| `3sg` | heba viviu |
-| `1pl` | hebanos viviu |
-| `2pl` | hebatz viviu |
-| `3pl` | heban viviu |
+| `1sg` | heba ubierto |
+| `2sg` | hebas ubierto |
+| `3sg` | heba ubierto |
+| `1pl` | hebanos ubierto |
+| `2pl` | hebatz ubierto |
+| `3pl` | heban ubierto |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vivié |
-| `2sg` | viviés |
-| `3sg` | vivió |
-| `1pl` | viviemos |
-| `2pl` | vivietz |
-| `3pl` | vivioron |
+| `1sg` | ubrié |
+| `2sg` | ubriés |
+| `3sg` | ubrió |
+| `1pl` | ubriemos |
+| `2pl` | ubrietz |
+| `3pl` | ubrioron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
-#### `vestir`
+#### `tusir`
+
+Stem: `tus`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | visto |
-| `2sg` | vistes |
-| `3sg` | viste |
-| `1pl` | vestimos |
-| `2pl` | vestitz |
-| `3pl` | visten |
+| `1sg` | tuseixco |
+| `2sg` | tuseixes |
+| `3sg` | tuseix |
+| `1pl` | tusimos |
+| `2pl` | tusitz |
+| `3pl` | tuseixen |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vestiría |
-| `2sg` | vestirías |
-| `3sg` | vestiría |
-| `1pl` | vestiríanos |
-| `2pl` | vestiríatz |
-| `3pl` | vestirían |
+| `1sg` | tusiría |
+| `2sg` | tusirías |
+| `3sg` | tusiría |
+| `1pl` | tusiríanos |
+| `2pl` | tusiríatz |
+| `3pl` | tusirían |
 
 ##### `conditional.perfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | habría vestiu |
-| `2sg` | habrías vestiu |
-| `3sg` | habría vestiu |
-| `1pl` | habríanos vestiu |
-| `2pl` | habríatz vestiu |
-| `3pl` | habrían vestiu |
+| `1sg` | habría tusiu |
+| `2sg` | habrías tusiu |
+| `3sg` | habría tusiu |
+| `1pl` | habríanos tusiu |
+| `2pl` | habríatz tusiu |
+| `3pl` | habrían tusiu |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vestiré |
-| `2sg` | vestirás |
-| `3sg` | vestirá |
-| `1pl` | vestiremos |
-| `2pl` | vestiretz |
-| `3pl` | vestirán |
+| `1sg` | tusiré |
+| `2sg` | tusirás |
+| `3sg` | tusirá |
+| `1pl` | tusiremos |
+| `2pl` | tusiretz |
+| `3pl` | tusirán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vestiba |
-| `2sg` | vestibas |
-| `3sg` | vestiba |
-| `1pl` | vestibanos |
-| `2pl` | vestibatz |
-| `3pl` | vestiban |
+| `1sg` | tusiba |
+| `2sg` | tusibas |
+| `3sg` | tusiba |
+| `1pl` | tusibanos |
+| `2pl` | tusibatz |
+| `3pl` | tusiban |
 
 ##### `indicative.periphrastic-past`
 
 | Slot | Form |
 |---|---|
-| `1sg` | va vestir |
-| `2sg` | vas vestir |
-| `3sg` | va vestir |
-| `1pl` | vamos vestir |
-| `2pl` | vatz vestir |
-| `3pl` | van vestir |
+| `1sg` | va tusir |
+| `2sg` | vas tusir |
+| `3sg` | va tusir |
+| `1pl` | vamos tusir |
+| `2pl` | vatz tusir |
+| `3pl` | van tusir |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | heba vestiu |
-| `2sg` | hebas vestiu |
-| `3sg` | heba vestiu |
-| `1pl` | hebanos vestiu |
-| `2pl` | hebatz vestiu |
-| `3pl` | heban vestiu |
+| `1sg` | heba tusiu |
+| `2sg` | hebas tusiu |
+| `3sg` | heba tusiu |
+| `1pl` | hebanos tusiu |
+| `2pl` | hebatz tusiu |
+| `3pl` | heban tusiu |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vistié |
-| `2sg` | vistiés |
-| `3sg` | vistió |
-| `1pl` | vistiemos |
-| `2pl` | vistietz |
-| `3pl` | vistioron |
+| `1sg` | tusié |
+| `2sg` | tusiés |
+| `3sg` | tusió |
+| `1pl` | tusiemos |
+| `2pl` | tusietz |
+| `3pl` | tusioron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
-#### `venir`
+#### `trusquir`
+
+Stem: `trus`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | viengo |
-| `2sg` | viens |
-| `3sg` | vien |
-| `1pl` | venimos |
-| `2pl` | venitz |
-| `3pl` | vienen |
+| `1sg` | trusco |
+| `2sg` | trusques |
+| `3sg` | trusque |
+| `1pl` | trusquimos |
+| `2pl` | trusquitz |
+| `3pl` | trusquen |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendría |
-| `2sg` | vendrías |
-| `3sg` | vendría |
-| `1pl` | vendríanos |
-| `2pl` | vendríatz |
-| `3pl` | vendrían |
+| `1sg` | trusquiría |
+| `2sg` | trusquirías |
+| `3sg` | trusquiría |
+| `1pl` | trusquiríanos |
+| `2pl` | trusquiríatz |
+| `3pl` | trusquirían |
 
 ##### `conditional.perfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | sería veniu |
-| `2sg` | serías veniu |
-| `3sg` | sería venius |
-| `1pl` | seríanos venius |
-| `2pl` | seríatz venius |
-| `3pl` | serían venius |
+| `1sg` | habría trusquiu |
+| `2sg` | habrías trusquiu |
+| `3sg` | habría trusquiu |
+| `1pl` | habríanos trusquiu |
+| `2pl` | habríatz trusquiu |
+| `3pl` | habrían trusquiu |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendré |
-| `2sg` | vendrás |
-| `3sg` | vendrá |
-| `1pl` | vendremos |
-| `2pl` | vendretz |
-| `3pl` | vendrán |
+| `1sg` | trusquiré |
+| `2sg` | trusquirás |
+| `3sg` | trusquirá |
+| `1pl` | trusquiremos |
+| `2pl` | trusquiretz |
+| `3pl` | trusquirán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | veniba |
-| `2sg` | venibas |
-| `3sg` | veniba |
-| `1pl` | venibanos |
-| `2pl` | venibatz |
-| `3pl` | veniban |
+| `1sg` | trusquiba |
+| `2sg` | trusquibas |
+| `3sg` | trusquiba |
+| `1pl` | trusquibanos |
+| `2pl` | trusquibatz |
+| `3pl` | trusquiban |
 
 ##### `indicative.periphrastic-past`
 
 | Slot | Form |
 |---|---|
-| `1sg` | va venir |
-| `2sg` | vas venir |
-| `3sg` | va venir |
-| `1pl` | vamos venir |
-| `2pl` | vatz venir |
-| `3pl` | van venir |
+| `1sg` | va trusquir |
+| `2sg` | vas trusquir |
+| `3sg` | va trusquir |
+| `1pl` | vamos trusquir |
+| `2pl` | vatz trusquir |
+| `3pl` | van trusquir |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | yera veniu |
-| `2sg` | yeras veniu |
-| `3sg` | yera venius |
-| `1pl` | yeranos venius |
-| `2pl` | yeratz venius |
-| `3pl` | yeran venius |
+| `1sg` | heba trusquiu |
+| `2sg` | hebas trusquiu |
+| `3sg` | heba trusquiu |
+| `1pl` | hebanos trusquiu |
+| `2pl` | hebatz trusquiu |
+| `3pl` | heban trusquiu |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | venié |
-| `2sg` | veniés |
-| `3sg` | venió |
-| `1pl` | veniemos |
-| `2pl` | venietz |
-| `3pl` | venioron |
+| `1sg` | trusquié |
+| `2sg` | trusquiés |
+| `3sg` | trusquió |
+| `1pl` | trusquiemos |
+| `2pl` | trusquietz |
+| `3pl` | trusquioron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
@@ -927,13 +943,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -ría | -rías | -ría | -ríanos | -eríatz | -rían |
-| `indicative.future` | 1 | `lcp` | -ré | -rás | -rá | -remos | -eretz | -rán |
-| `indicative.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `indicative.present` | 1 | `lcp` | -e | -as | -a | -emos | -etz | -an |
+| `conditional` | 2 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
+| `indicative.future` | 2 | `lcp` | -é | -ás | -á | -emos | -etz | -án |
+| `indicative.imperfect` | 2 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
+| `indicative.present` | 1 | `lcp` | -o | -es | -e | -emos | -etz | -en |
 | `indicative.preterite` | 2 | `lcp` | -é | -és | -ó | -emos | -etz | -oron |
-| `subjunctive.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `subjunctive.present` | 1 | `lcp` | -iga | -igas | -iga | -igamos | -batz | -igan |
+| `subjunctive.imperfect` | 2 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
+| `subjunctive.present` | 2 | `lcp` | ∅ | -s | ∅ | -mos | -tz | -n |
 
 ### Representative lemmas
 
@@ -1035,23 +1051,23 @@ _…4 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | he |
-| `2sg` | has |
-| `3sg` | ha |
-| `1pl` | emos |
+| `1sg` | abo |
+| `2sg` | abes |
+| `3sg` | abe |
+| `1pl` | abemos |
 | `2pl` | abetz |
-| `3pl` | han |
+| `3pl` | aben |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abría |
-| `2sg` | abrías |
-| `3sg` | abría |
-| `1pl` | abríanos |
+| `1sg` | abería |
+| `2sg` | aberías |
+| `3sg` | abería |
+| `1pl` | aberíanos |
 | `2pl` | aberíatz |
-| `3pl` | abrían |
+| `3pl` | aberían |
 
 ##### `conditional.perfect`
 
@@ -1068,23 +1084,23 @@ _…4 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | abré |
-| `2sg` | abrás |
-| `3sg` | abrá |
-| `1pl` | abremos |
+| `1sg` | aberé |
+| `2sg` | aberás |
+| `3sg` | aberá |
+| `1pl` | aberemos |
 | `2pl` | aberetz |
-| `3pl` | abrán |
+| `3pl` | aberán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | eba |
-| `2sg` | ebas |
-| `3sg` | eba |
-| `1pl` | ebanos |
+| `1sg` | abeba |
+| `2sg` | abebas |
+| `3sg` | abeba |
+| `1pl` | abebanos |
 | `2pl` | abebatz |
-| `3pl` | eban |
+| `3pl` | abeban |
 
 ##### `indicative.periphrastic-past`
 
@@ -1118,6 +1134,116 @@ _…4 more tense/mood rows in the JSON corpus._
 | `1pl` | abiemos |
 | `2pl` | abietz |
 | `3pl` | abioron |
+
+_…4 more tense/mood rows in the JSON corpus._
+
+## Irregular: `estar`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
+| `indicative.future` | 1 | `lcp` | -é | -ás | -á | -emos | -etz | -án |
+| `indicative.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
+| `indicative.present` | 1 | `lcp` | -oi | -ás | -á | -amos | -atz | -án |
+| `indicative.preterite` | 1 | `lcp` | -é | -és | -ó | -emos | -etz | -oron |
+| `subjunctive.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
+| `subjunctive.present` | 1 | `lcp` | -é | -és | -é | -emos | -etz | -én |
+
+### Representative lemmas
+
+#### `estar`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estoi |
+| `2sg` | estás |
+| `3sg` | está |
+| `1pl` | estamos |
+| `2pl` | estatz |
+| `3pl` | están |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estaría |
+| `2sg` | estarías |
+| `3sg` | estaría |
+| `1pl` | estaríanos |
+| `2pl` | estaríatz |
+| `3pl` | estarían |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | habría estau |
+| `2sg` | habrías estau |
+| `3sg` | habría estau |
+| `1pl` | habríanos estau |
+| `2pl` | habríatz estau |
+| `3pl` | habrían estau |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estaré |
+| `2sg` | estarás |
+| `3sg` | estará |
+| `1pl` | estaremos |
+| `2pl` | estaretz |
+| `3pl` | estarán |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estaba |
+| `2sg` | estabas |
+| `3sg` | estaba |
+| `1pl` | estabanos |
+| `2pl` | estabatz |
+| `3pl` | estaban |
+
+##### `indicative.periphrastic-past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | va estar |
+| `2sg` | vas estar |
+| `3sg` | va estar |
+| `1pl` | vamos estar |
+| `2pl` | vatz estar |
+| `3pl` | van estar |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | heba estau |
+| `2sg` | hebas estau |
+| `3sg` | heba estau |
+| `1pl` | hebanos estau |
+| `2pl` | hebatz estau |
+| `3pl` | heban estau |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estié |
+| `2sg` | estiés |
+| `3sg` | estió |
+| `1pl` | estiemos |
+| `2pl` | estietz |
+| `3pl` | estioron |
 
 _…4 more tense/mood rows in the JSON corpus._
 
@@ -1435,113 +1561,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | hebanos siu |
 | `2pl` | hebatz siu |
 | `3pl` | heban siu |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estié |
-| `2sg` | estiés |
-| `3sg` | estió |
-| `1pl` | estiemos |
-| `2pl` | estietz |
-| `3pl` | estioron |
-
-_…4 more tense/mood rows in the JSON corpus._
-
-## Irregular: `estar`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -arba | -arbas | -arba | -árbanos | -aríatz | -arban |
-| `indicative.future` | 1 | `lcp` | -é | -ás | -á | -emos | -etz | -án |
-| `indicative.preterite` | 1 | `lcp` | -é | -és | -ó | -emos | -etz | -oron |
-| `subjunctive.imperfect` | 1 | `lcp` | -ase | -ases | -ase | -ásenos | -asetz | -asen |
-
-### Representative lemmas
-
-#### `estar`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | soi |
-| `2sg` | yes |
-| `3sg` | ye |
-| `1pl` | semos |
-| `2pl` | estatz |
-| `3pl` | son |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estarba |
-| `2sg` | estarbas |
-| `3sg` | estarba |
-| `1pl` | estárbanos |
-| `2pl` | estaríatz |
-| `3pl` | estarban |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | habría estau |
-| `2sg` | habrías estau |
-| `3sg` | habría estau |
-| `1pl` | habríanos estau |
-| `2pl` | habríatz estau |
-| `3pl` | habrían estau |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estaré |
-| `2sg` | estarás |
-| `3sg` | estará |
-| `1pl` | estaremos |
-| `2pl` | estaretz |
-| `3pl` | estarán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yera |
-| `2sg` | yeras |
-| `3sg` | yera |
-| `1pl` | yéranos |
-| `2pl` | estabatz |
-| `3pl` | yeran |
-
-##### `indicative.periphrastic-past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | va estar |
-| `2sg` | vas estar |
-| `3sg` | va estar |
-| `1pl` | vamos estar |
-| `2pl` | vatz estar |
-| `3pl` | van estar |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | heba estau |
-| `2sg` | hebas estau |
-| `3sg` | heba estau |
-| `1pl` | hebanos estau |
-| `2pl` | hebatz estau |
-| `3pl` | heban estau |
 
 ##### `indicative.preterite`
 

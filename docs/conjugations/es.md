@@ -41,13 +41,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `imperative` | 61 | `lcp` | -á | -a | -e | -emos | -ad | -en |
 | `indicative.future` | 7336 | `lcp` | -é | -ás | -á | -emos | -éis | -án |
 | `indicative.imperfect` | 7336 | `lcp` | -aba | -abas | -aba | -ábamos | -abais | -aban |
-| `indicative.present` | 6935 | `lcp` | -o | -as | -a | -amos | -áis | -an |
+| `indicative.present` | 6933 | `lcp` | -o | -as | -a | -amos | -áis | -an |
 | `indicative.preterite` | 5611 | `lcp` | -é | -aste | -ó | -amos | -asteis | -aron |
 | `nonfinite.gerund` | 222 | `lcp` | -me | -te | -se | -nos | -os | -se |
 | `nonfinite.infinitive` | 222 | `lcp` | -me | -te | -se | -nos | -os | -se |
 | `subjunctive.future` | 7332 | `lcp` | -are | -ares | -are | -áremos | -areis | -aren |
 | `subjunctive.imperfect` | 7332 | `lcp` | -ara | -aras | -ara | -áramos | -arais | -aran |
-| `subjunctive.present` | 6942 | `lcp` | -e | -es | -e | -emos | -éis | -en |
+| `subjunctive.present` | 6940 | `lcp` | -e | -es | -e | -emos | -éis | -en |
 
 ### Representative lemmas
 
@@ -339,9 +339,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 14 | `lcp` | ∅ | -s | ∅ | -mos | -is | -n |
+| `conditional` | 17 | `lcp` | ∅ | -s | ∅ | -mos | -is | -n |
 | `imperative` | 1 | `lcp` | -illá | -íllate | -íllese | -illémonos | -illaos | -íllense |
-| `indicative.future` | 14 | `lcp` | -é | -ás | -á | -emos | -éis | -án |
+| `indicative.future` | 17 | `lcp` | -é | -ás | -á | -emos | -éis | -án |
 | `indicative.imperfect` | 14 | `lcp` | ∅ | -s | ∅ | -mos | -is | -n |
 | `indicative.present` | 8 | `lcp` | -ío | -íes | -íe | -eímos | -eís | -íen |
 | `indicative.preterite` | 6 | `lcp` | -í | -íste | -yó | -ímos | -ísteis | -yeron |
@@ -359,23 +359,23 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | me aborrego |
-| `2sg` | te aborregas |
-| `3sg` | se aborrega |
-| `1pl` | nos aborregamos |
-| `2pl` | os aborregáis |
-| `3pl` | se aborregan |
+| `1sg` | aborrego |
+| `2sg` | aborregas |
+| `3sg` | aborrega |
+| `1pl` | aborregamos |
+| `2pl` | aborregáis |
+| `3pl` | aborregan |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me aborregaría |
-| `2sg` | te aborregarías |
-| `3sg` | se aborregaría |
-| `1pl` | nos aborregaríamos |
-| `2pl` | os aborregaríais |
-| `3pl` | se aborregarían |
+| `1sg` | aborregaría |
+| `2sg` | aborregarías |
+| `3sg` | aborregaría |
+| `1pl` | aborregaríamos |
+| `2pl` | aborregaríais |
+| `3pl` | aborregarían |
 
 ##### `conditional.perfect`
 
@@ -403,12 +403,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | me aborregaré |
-| `2sg` | te aborregarás |
-| `3sg` | se aborregará |
-| `1pl` | nos aborregaremos |
-| `2pl` | os aborregaréis |
-| `3pl` | se aborregarán |
+| `1sg` | aborregaré |
+| `2sg` | aborregarás |
+| `3sg` | aborregará |
+| `1pl` | aborregaremos |
+| `2pl` | aborregaréis |
+| `3pl` | aborregarán |
 
 ##### `indicative.future-perfect`
 
@@ -425,12 +425,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | me aborregaba |
-| `2sg` | te aborregabas |
-| `3sg` | se aborregaba |
-| `1pl` | nos aborregábamos |
-| `2pl` | os aborregabais |
-| `3pl` | se aborregaban |
+| `1sg` | aborregaba |
+| `2sg` | aborregabas |
+| `3sg` | aborregaba |
+| `1pl` | aborregábamos |
+| `2pl` | aborregabais |
+| `3pl` | aborregaban |
 
 ##### `indicative.pluperfect`
 
@@ -451,23 +451,23 @@ _…5 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | me aborrasco |
-| `2sg` | te aborrascas |
-| `3sg` | se aborrasca |
-| `1pl` | nos aborrascamos |
-| `2pl` | os aborrascáis |
-| `3pl` | se aborrascan |
+| `1sg` | aborrasco |
+| `2sg` | aborrascas |
+| `3sg` | aborrasca |
+| `1pl` | aborrascamos |
+| `2pl` | aborrascáis |
+| `3pl` | aborrascan |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me aborrascaría |
-| `2sg` | te aborrascarías |
-| `3sg` | se aborrascaría |
-| `1pl` | nos aborrascaríamos |
-| `2pl` | os aborrascaríais |
-| `3pl` | se aborrascarían |
+| `1sg` | aborrascaría |
+| `2sg` | aborrascarías |
+| `3sg` | aborrascaría |
+| `1pl` | aborrascaríamos |
+| `2pl` | aborrascaríais |
+| `3pl` | aborrascarían |
 
 ##### `conditional.perfect`
 
@@ -495,12 +495,12 @@ _…5 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | me aborrascaré |
-| `2sg` | te aborrascarás |
-| `3sg` | se aborrascará |
-| `1pl` | nos aborrascaremos |
-| `2pl` | os aborrascaréis |
-| `3pl` | se aborrascarán |
+| `1sg` | aborrascaré |
+| `2sg` | aborrascarás |
+| `3sg` | aborrascará |
+| `1pl` | aborrascaremos |
+| `2pl` | aborrascaréis |
+| `3pl` | aborrascarán |
 
 ##### `indicative.future-perfect`
 
@@ -517,12 +517,12 @@ _…5 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | me aborrascaba |
-| `2sg` | te aborrascabas |
-| `3sg` | se aborrascaba |
-| `1pl` | nos aborrascábamos |
-| `2pl` | os aborrascabais |
-| `3pl` | se aborrascaban |
+| `1sg` | aborrascaba |
+| `2sg` | aborrascabas |
+| `3sg` | aborrascaba |
+| `1pl` | aborrascábamos |
+| `2pl` | aborrascabais |
+| `3pl` | aborrascaban |
 
 ##### `indicative.pluperfect`
 
@@ -543,23 +543,23 @@ _…5 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ababillo |
-| `2sg` | te ababillas |
-| `3sg` | se ababilla |
-| `1pl` | nos ababillamos |
-| `2pl` | os ababilláis |
-| `3pl` | se ababillan |
+| `1sg` | ababillo |
+| `2sg` | ababillas |
+| `3sg` | ababilla |
+| `1pl` | ababillamos |
+| `2pl` | ababilláis |
+| `3pl` | ababillan |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ababillaría |
-| `2sg` | te ababillarías |
-| `3sg` | se ababillaría |
-| `1pl` | nos ababillaríamos |
-| `2pl` | os ababillaríais |
-| `3pl` | se ababillarían |
+| `1sg` | ababillaría |
+| `2sg` | ababillarías |
+| `3sg` | ababillaría |
+| `1pl` | ababillaríamos |
+| `2pl` | ababillaríais |
+| `3pl` | ababillarían |
 
 ##### `conditional.perfect`
 
@@ -587,12 +587,12 @@ _…5 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ababillaré |
-| `2sg` | te ababillarás |
-| `3sg` | se ababillará |
-| `1pl` | nos ababillaremos |
-| `2pl` | os ababillaréis |
-| `3pl` | se ababillarán |
+| `1sg` | ababillaré |
+| `2sg` | ababillarás |
+| `3sg` | ababillará |
+| `1pl` | ababillaremos |
+| `2pl` | ababillaréis |
+| `3pl` | ababillarán |
 
 ##### `indicative.future-perfect`
 
@@ -609,12 +609,12 @@ _…5 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ababillaba |
-| `2sg` | te ababillabas |
-| `3sg` | se ababillaba |
-| `1pl` | nos ababillábamos |
-| `2pl` | os ababillabais |
-| `3pl` | se ababillaban |
+| `1sg` | ababillaba |
+| `2sg` | ababillabas |
+| `3sg` | ababillaba |
+| `1pl` | ababillábamos |
+| `2pl` | ababillabais |
+| `3pl` | ababillaban |
 
 ##### `indicative.pluperfect`
 

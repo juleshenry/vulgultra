@@ -20,13 +20,13 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 |---|---:|---:|---:|
 | `-are` | 8458 | 11 | 8 |
 | `-ire` | 973 | 11 | 8 |
-| `fare` | 1 | 11 | 8 |
-| `stare` | 1 | 11 | 8 |
 | `-ere` | 1064 | 11 | 7 |
+| `fare` | 1 | 11 | 7 |
+| `stare` | 1 | 11 | 7 |
 | `dare` | 1 | 7 | 7 |
+| `other` | 3856 | 11 | 6 |
 | `andare` | 1 | 11 | 6 |
 | `avere` | 1 | 11 | 4 |
-| `other` | 3856 | 11 | 1 |
 | `essere` | 1 | 11 | 0 |
 
 ## Ending: `-are`
@@ -39,9 +39,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 8380 | `lcp` | -èi | -ésti | -èbbe | -émmo | -éste | -èbbero |
-| `indicative.future` | 8386 | `lcp` | -ò | -ài | -à | -émo | -éte | -ànno |
-| `indicative.imperfect` | 8353 | `lcp` | -àvo | -àvi | -àva | -avàmo | -avàte | -àvano |
+| `conditional` | 8313 | `lcp` | -èi | -ésti | -èbbe | -émmo | -éste | -èbbero |
+| `indicative.future` | 8319 | `lcp` | -ò | -ài | -à | -émo | -éte | -ànno |
+| `indicative.imperfect` | 8286 | `lcp` | -àvo | -àvi | -àva | -avàmo | -avàte | -àvano |
 | `indicative.past` | 8346 | `lcp` | -ài | -àsti | -ò | -àmmo | -àste | -àrono |
 | `indicative.present` | 713 | `lcp` | -ìzzo | -ìzzi | -ìzza | -izziàmo | -izzàte | -ìzzano |
 | `indicative.preterite` | 67 | `lcp` | -ai | -asti | -ò | -ammo | -aste | -arono |
@@ -58,23 +58,23 @@ Stem: `a/à`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | pàrlo |
-| `2sg` | pàrli |
-| `3sg` | pàrla |
-| `1pl` | parliàmo |
-| `2pl` | parlàte |
-| `3pl` | pàrlano |
+| `1sg` | parlo |
+| `2sg` | parli |
+| `3sg` | parla |
+| `1pl` | parliamo |
+| `2pl` | parlate |
+| `3pl` | parlano |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | parlerèi |
-| `2sg` | parlerésti |
-| `3sg` | parlerèbbe |
-| `1pl` | parlerémmo |
-| `2pl` | parleréste |
-| `3pl` | parlerèbbero |
+| `1sg` | parlerei |
+| `2sg` | parleresti |
+| `3sg` | parlerebbe |
+| `1pl` | parleremmo |
+| `2pl` | parlereste |
+| `3pl` | parlerebbero |
 
 ##### `conditional.perfect`
 
@@ -92,22 +92,22 @@ Stem: `a/à`.
 | Slot | Form |
 |---|---|
 | `1sg` | parlerò |
-| `2sg` | parlerài |
+| `2sg` | parlerai |
 | `3sg` | parlerà |
-| `1pl` | parlerémo |
-| `2pl` | parleréte |
-| `3pl` | parlerànno |
+| `1pl` | parleremo |
+| `2pl` | parlerete |
+| `3pl` | parleranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | parlàvo |
-| `2sg` | parlàvi |
-| `3sg` | parlàva |
-| `1pl` | parlavàmo |
-| `2pl` | parlavàte |
-| `3pl` | parlàvano |
+| `1sg` | parlavo |
+| `2sg` | parlavi |
+| `3sg` | parlava |
+| `1pl` | parlavamo |
+| `2pl` | parlavate |
+| `3pl` | parlavano |
 
 ##### `indicative.past`
 
@@ -152,23 +152,23 @@ Stem: `a/à`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbruciàcchio |
-| `2sg` | abbruciàcchi |
-| `3sg` | abbruciàcchia |
-| `1pl` | abbruciacchiàmo |
-| `2pl` | abbruciacchiàte |
-| `3pl` | abbruciàcchiano |
+| `1sg` | abbruciacchio |
+| `2sg` | abbruciacchi |
+| `3sg` | abbruciacchia |
+| `1pl` | abbruciacchiamo |
+| `2pl` | abbruciacchiate |
+| `3pl` | abbruciacchiano |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbruciacchierèi |
-| `2sg` | abbruciacchierésti |
-| `3sg` | abbruciacchierèbbe |
-| `1pl` | abbruciacchierémmo |
-| `2pl` | abbruciacchieréste |
-| `3pl` | abbruciacchierèbbero |
+| `1sg` | abbruciacchierei |
+| `2sg` | abbruciacchieresti |
+| `3sg` | abbruciacchierebbe |
+| `1pl` | abbruciacchieremmo |
+| `2pl` | abbruciacchiereste |
+| `3pl` | abbruciacchierebbero |
 
 ##### `conditional.perfect`
 
@@ -186,22 +186,22 @@ Stem: `a/à`.
 | Slot | Form |
 |---|---|
 | `1sg` | abbruciacchierò |
-| `2sg` | abbruciacchierài |
+| `2sg` | abbruciacchierai |
 | `3sg` | abbruciacchierà |
-| `1pl` | abbruciacchierémo |
-| `2pl` | abbruciacchieréte |
-| `3pl` | abbruciacchierànno |
+| `1pl` | abbruciacchieremo |
+| `2pl` | abbruciacchierete |
+| `3pl` | abbruciacchieranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbruciacchiàvo |
-| `2sg` | abbruciacchiàvi |
-| `3sg` | abbruciacchiàva |
-| `1pl` | abbruciacchiavàmo |
-| `2pl` | abbruciacchiavàte |
-| `3pl` | abbruciacchiàvano |
+| `1sg` | abbruciacchiavo |
+| `2sg` | abbruciacchiavi |
+| `3sg` | abbruciacchiava |
+| `1pl` | abbruciacchiavamo |
+| `2pl` | abbruciacchiavate |
+| `3pl` | abbruciacchiavano |
 
 ##### `indicative.past`
 
@@ -246,23 +246,23 @@ Stem: `a/ó-`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbróstolo |
-| `2sg` | abbróstoli |
-| `3sg` | abbróstola |
-| `1pl` | abbrostoliàmo |
-| `2pl` | abbrostolàte |
-| `3pl` | abbróstolano |
+| `1sg` | abbrostolo |
+| `2sg` | abbrostoli |
+| `3sg` | abbrostola |
+| `1pl` | abbrostoliamo |
+| `2pl` | abbrostolate |
+| `3pl` | abbrostolano |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbrostolerèi |
-| `2sg` | abbrostolerésti |
-| `3sg` | abbrostolerèbbe |
-| `1pl` | abbrostolerémmo |
-| `2pl` | abbrostoleréste |
-| `3pl` | abbrostolerèbbero |
+| `1sg` | abbrostolerei |
+| `2sg` | abbrostoleresti |
+| `3sg` | abbrostolerebbe |
+| `1pl` | abbrostoleremmo |
+| `2pl` | abbrostolereste |
+| `3pl` | abbrostolerebbero |
 
 ##### `conditional.perfect`
 
@@ -280,22 +280,22 @@ Stem: `a/ó-`.
 | Slot | Form |
 |---|---|
 | `1sg` | abbrostolerò |
-| `2sg` | abbrostolerài |
+| `2sg` | abbrostolerai |
 | `3sg` | abbrostolerà |
-| `1pl` | abbrostolerémo |
-| `2pl` | abbrostoleréte |
-| `3pl` | abbrostolerànno |
+| `1pl` | abbrostoleremo |
+| `2pl` | abbrostolerete |
+| `3pl` | abbrostoleranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbrostolàvo |
-| `2sg` | abbrostolàvi |
-| `3sg` | abbrostolàva |
-| `1pl` | abbrostolavàmo |
-| `2pl` | abbrostolavàte |
-| `3pl` | abbrostolàvano |
+| `1sg` | abbrostolavo |
+| `2sg` | abbrostolavi |
+| `3sg` | abbrostolava |
+| `1pl` | abbrostolavamo |
+| `2pl` | abbrostolavate |
+| `3pl` | abbrostolavano |
 
 ##### `indicative.past`
 
@@ -342,14 +342,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 960 | `lcp` | -èi | -ésti | -èbbe | -émmo | -éste | -èbbero |
-| `indicative.future` | 962 | `lcp` | -ò | -ài | -à | -émo | -éte | -ànno |
-| `indicative.imperfect` | 941 | `lcp` | -ìvo | -ìvi | -ìva | -ivàmo | -ivàte | -ìvano |
+| `conditional` | 952 | `lcp` | -èi | -ésti | -èbbe | -émmo | -éste | -èbbero |
+| `indicative.future` | 954 | `lcp` | -ò | -ài | -à | -émo | -éte | -ànno |
+| `indicative.imperfect` | 934 | `lcp` | -ìvo | -ìvi | -ìva | -ivàmo | -ivàte | -ìvano |
 | `indicative.past` | 905 | `lcp` | -i | -sti | ∅ | -mmo | -ste | -rono |
-| `indicative.present` | 800 | `lcp` | -ìsco | -ìsci | -ìsce | -iàmo | -ìte | -ìscono |
+| `indicative.present` | 794 | `lcp` | -ìsco | -ìsci | -ìsce | -iàmo | -ìte | -ìscono |
 | `indicative.preterite` | 7 | `lcp` | -ii | -isti | -ì | -immo | -iste | -irono |
 | `subjunctive.imperfect` | 960 | `lcp` | -si | -si | -se | -simo | -te | -sero |
-| `subjunctive.present` | 800 | `lcp` | -ìsca | -ìsca | -ìsca | -iàmo | -iàte | -ìscano |
+| `subjunctive.present` | 794 | `lcp` | -ìsca | -ìsca | -ìsca | -iàmo | -iàte | -ìscano |
 
 ### Representative lemmas
 
@@ -453,23 +453,23 @@ Stem: `a/@`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | dòrmo |
-| `2sg` | dòrmi |
-| `3sg` | dòrme |
-| `1pl` | dormiàmo |
-| `2pl` | dormìte |
-| `3pl` | dòrmono |
+| `1sg` | dormo |
+| `2sg` | dormi |
+| `3sg` | dorme |
+| `1pl` | dormiamo |
+| `2pl` | dormite |
+| `3pl` | dormono |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | dormirèi |
-| `2sg` | dormirésti |
-| `3sg` | dormirèbbe |
-| `1pl` | dormirémmo |
-| `2pl` | dormiréste |
-| `3pl` | dormirèbbero |
+| `1sg` | dormirei |
+| `2sg` | dormiresti |
+| `3sg` | dormirebbe |
+| `1pl` | dormiremmo |
+| `2pl` | dormireste |
+| `3pl` | dormirebbero |
 
 ##### `conditional.perfect`
 
@@ -487,22 +487,22 @@ Stem: `a/@`.
 | Slot | Form |
 |---|---|
 | `1sg` | dormirò |
-| `2sg` | dormirài |
+| `2sg` | dormirai |
 | `3sg` | dormirà |
-| `1pl` | dormirémo |
-| `2pl` | dormiréte |
-| `3pl` | dormirànno |
+| `1pl` | dormiremo |
+| `2pl` | dormirete |
+| `3pl` | dormiranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | dormìvo |
-| `2sg` | dormìvi |
-| `3sg` | dormìva |
-| `1pl` | dormivàmo |
-| `2pl` | dormivàte |
-| `3pl` | dormìvano |
+| `1sg` | dormivo |
+| `2sg` | dormivi |
+| `3sg` | dormiva |
+| `1pl` | dormivamo |
+| `2pl` | dormivate |
+| `3pl` | dormivano |
 
 ##### `indicative.past`
 
@@ -547,23 +547,23 @@ Stem: `a/@`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | dìco |
-| `2sg` | dìci |
-| `3sg` | dìce |
-| `1pl` | diciàmo |
-| `2pl` | dìte |
-| `3pl` | dìcono |
+| `1sg` | dico |
+| `2sg` | dici |
+| `3sg` | dice |
+| `1pl` | diciamo |
+| `2pl` | dite |
+| `3pl` | dicono |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | dirèi |
-| `2sg` | dirésti |
-| `3sg` | dirèbbe |
-| `1pl` | dirémmo |
-| `2pl` | diréste |
-| `3pl` | dirèbbero |
+| `1sg` | direi |
+| `2sg` | diresti |
+| `3sg` | direbbe |
+| `1pl` | diremmo |
+| `2pl` | direste |
+| `3pl` | direbbero |
 
 ##### `conditional.perfect`
 
@@ -581,22 +581,22 @@ Stem: `a/@`.
 | Slot | Form |
 |---|---|
 | `1sg` | dirò |
-| `2sg` | dirài |
+| `2sg` | dirai |
 | `3sg` | dirà |
-| `1pl` | dirémo |
-| `2pl` | diréte |
-| `3pl` | dirànno |
+| `1pl` | diremo |
+| `2pl` | direte |
+| `3pl` | diranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | dicévo |
-| `2sg` | dicévi |
-| `3sg` | dicéva |
-| `1pl` | dicevàmo |
-| `2pl` | dicevàte |
-| `3pl` | dicévano |
+| `1sg` | dicevo |
+| `2sg` | dicevi |
+| `3sg` | diceva |
+| `1pl` | dicevamo |
+| `2pl` | dicevate |
+| `3pl` | dicevano |
 
 ##### `indicative.past`
 
@@ -633,236 +633,6 @@ Stem: `a/@`.
 
 _…4 more tense/mood rows in the JSON corpus._
 
-## Irregular: `fare`
-
-Template stem args observed: `a/@`.
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -èi | -ésti | -èbbe | -émmo | -éste | -èbbero |
-| `indicative.future` | 1 | `lcp` | -ò | -ài | -à | -émo | -éte | -ànno |
-| `indicative.imperfect` | 1 | `lcp` | -évo | -évi | -éva | -evàmo | -evàte | -évano |
-| `indicative.past` | 1 | `lcp` | -éci | -acésti | -éce | -acémmo | -acéste | -écero |
-| `indicative.present` | 1 | `lcp` | -àccio | -ài | -à | -acciàmo | -àte | -ànno |
-| `indicative.preterite` | 1 | `lcp` | -eci | -acesti | -ece | -acemmo | -aceste | -ecero |
-| `subjunctive.imperfect` | 1 | `lcp` | -si | -si | -se | -simo | -te | -sero |
-| `subjunctive.present` | 1 | `lcp` | -àccia | -àccia | -àccia | -acciàmo | -acciàte | -àcciano |
-
-### Representative lemmas
-
-#### `fare`
-
-Stem: `a/@`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fàccio |
-| `2sg` | fài |
-| `3sg` | fà |
-| `1pl` | facciàmo |
-| `2pl` | fàte |
-| `3pl` | fànno |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | farèi |
-| `2sg` | farésti |
-| `3sg` | farèbbe |
-| `1pl` | farémmo |
-| `2pl` | faréste |
-| `3pl` | farèbbero |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avrei fatto |
-| `2sg` | avresti fatto |
-| `3sg` | avrebbe fatto |
-| `1pl` | avremmo fatto |
-| `2pl` | avreste fatto |
-| `3pl` | avrebbero fatto |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | farò |
-| `2sg` | farài |
-| `3sg` | farà |
-| `1pl` | farémo |
-| `2pl` | faréte |
-| `3pl` | farànno |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | facévo |
-| `2sg` | facévi |
-| `3sg` | facéva |
-| `1pl` | facevàmo |
-| `2pl` | facevàte |
-| `3pl` | facévano |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | féci |
-| `2sg` | facésti |
-| `3sg` | féce |
-| `1pl` | facémmo |
-| `2pl` | facéste |
-| `3pl` | fécero |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avevo fatto |
-| `2sg` | avevi fatto |
-| `3sg` | aveva fatto |
-| `1pl` | avevamo fatto |
-| `2pl` | avevate fatto |
-| `3pl` | avevano fatto |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | feci |
-| `2sg` | facesti |
-| `3sg` | fece |
-| `1pl` | facemmo |
-| `2pl` | faceste |
-| `3pl` | fecero |
-
-_…4 more tense/mood rows in the JSON corpus._
-
-## Irregular: `stare`
-
-Template stem args observed: `e/@`.
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -èi | -ésti | -èbbe | -émmo | -éste | -èbbero |
-| `indicative.future` | 1 | `lcp` | -ò | -ài | -à | -émo | -éte | -ànno |
-| `indicative.imperfect` | 1 | `lcp` | -àvo | -àvi | -àva | -avàmo | -avàte | -àvano |
-| `indicative.past` | 1 | `lcp` | -tti | -sti | -tte | -mmo | -ste | -ttero |
-| `indicative.present` | 1 | `lcp` | -ò | -ài | -à | -iàmo | -àte | -ànno |
-| `indicative.preterite` | 1 | `lcp` | -tti | -sti | -tte | -mmo | -ste | -ttero |
-| `subjunctive.imperfect` | 1 | `lcp` | -si | -si | -se | -simo | -te | -sero |
-| `subjunctive.present` | 1 | `lcp` | -ìa | -ìa | -ìa | -iàmo | -iàte | -ìano |
-
-### Representative lemmas
-
-#### `stare`
-
-Stem: `e/@`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | stò |
-| `2sg` | stài |
-| `3sg` | stà |
-| `1pl` | stiàmo |
-| `2pl` | stàte |
-| `3pl` | stànno |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | starèi |
-| `2sg` | starésti |
-| `3sg` | starèbbe |
-| `1pl` | starémmo |
-| `2pl` | staréste |
-| `3pl` | starèbbero |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sarei stato |
-| `2sg` | saresti stato |
-| `3sg` | sarebbe stato |
-| `1pl` | saremmo stati |
-| `2pl` | sareste stati |
-| `3pl` | sarebbero stati |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | starò |
-| `2sg` | starài |
-| `3sg` | starà |
-| `1pl` | starémo |
-| `2pl` | staréte |
-| `3pl` | starànno |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | stàvo |
-| `2sg` | stàvi |
-| `3sg` | stàva |
-| `1pl` | stavàmo |
-| `2pl` | stavàte |
-| `3pl` | stàvano |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | stétti |
-| `2sg` | stésti |
-| `3sg` | stétte |
-| `1pl` | stémmo |
-| `2pl` | stéste |
-| `3pl` | stéttero |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ero stato |
-| `2sg` | eri stato |
-| `3sg` | era stato |
-| `1pl` | eravamo stati |
-| `2pl` | eravate stati |
-| `3pl` | erano stati |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | stetti |
-| `2sg` | stesti |
-| `3sg` | stette |
-| `1pl` | stemmo |
-| `2pl` | steste |
-| `3pl` | stettero |
-
-_…5 more tense/mood rows in the JSON corpus._
-
 ## Ending: `-ere`
 
 Template stem args observed: `-/-,-,-.fut:-.imperf:-.impsub:-.ger:-`, `-/-,-,-.nofinite.ger:-.presp:-`, `-/@`, `-/@.pp:-`, `-/\è,-,-.presonly.thirdonly.pres3p:-.ger:-.presp:-` (+140 more).
@@ -891,23 +661,23 @@ Stem: `a\@`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | crédo |
-| `2sg` | crédi |
-| `3sg` | créde |
-| `1pl` | crediàmo |
-| `2pl` | credéte |
-| `3pl` | crédono |
+| `1sg` | credo |
+| `2sg` | credi |
+| `3sg` | crede |
+| `1pl` | crediamo |
+| `2pl` | credete |
+| `3pl` | credono |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | crederèi |
-| `2sg` | crederésti |
-| `3sg` | crederèbbe |
-| `1pl` | crederémmo |
-| `2pl` | crederéste |
-| `3pl` | crederèbbero |
+| `1sg` | crederei |
+| `2sg` | crederesti |
+| `3sg` | crederebbe |
+| `1pl` | crederemmo |
+| `2pl` | credereste |
+| `3pl` | crederebbero |
 
 ##### `conditional.perfect`
 
@@ -925,22 +695,22 @@ Stem: `a\@`.
 | Slot | Form |
 |---|---|
 | `1sg` | crederò |
-| `2sg` | crederài |
+| `2sg` | crederai |
 | `3sg` | crederà |
-| `1pl` | crederémo |
-| `2pl` | crederéte |
-| `3pl` | crederànno |
+| `1pl` | crederemo |
+| `2pl` | crederete |
+| `3pl` | crederanno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | credévo |
-| `2sg` | credévi |
-| `3sg` | credéva |
-| `1pl` | credevàmo |
-| `2pl` | credevàte |
-| `3pl` | credévano |
+| `1sg` | credevo |
+| `2sg` | credevi |
+| `3sg` | credeva |
+| `1pl` | credevamo |
+| `2pl` | credevate |
+| `3pl` | credevano |
 
 ##### `indicative.past`
 
@@ -985,23 +755,23 @@ Stem: `a\@`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbàtto |
-| `2sg` | abbàtti |
-| `3sg` | abbàtte |
-| `1pl` | abbattiàmo |
-| `2pl` | abbattéte |
-| `3pl` | abbàttono |
+| `1sg` | abbatto |
+| `2sg` | abbatti |
+| `3sg` | abbatte |
+| `1pl` | abbattiamo |
+| `2pl` | abbattete |
+| `3pl` | abbattono |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbatterèi |
-| `2sg` | abbatterésti |
-| `3sg` | abbatterèbbe |
-| `1pl` | abbatterémmo |
-| `2pl` | abbatteréste |
-| `3pl` | abbatterèbbero |
+| `1sg` | abbatterei |
+| `2sg` | abbatteresti |
+| `3sg` | abbatterebbe |
+| `1pl` | abbatteremmo |
+| `2pl` | abbattereste |
+| `3pl` | abbatterebbero |
 
 ##### `conditional.perfect`
 
@@ -1019,22 +789,22 @@ Stem: `a\@`.
 | Slot | Form |
 |---|---|
 | `1sg` | abbatterò |
-| `2sg` | abbatterài |
+| `2sg` | abbatterai |
 | `3sg` | abbatterà |
-| `1pl` | abbatterémo |
-| `2pl` | abbatteréte |
-| `3pl` | abbatterànno |
+| `1pl` | abbatteremo |
+| `2pl` | abbatterete |
+| `3pl` | abbatteranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbattévo |
-| `2sg` | abbattévi |
-| `3sg` | abbattéva |
-| `1pl` | abbattevàmo |
-| `2pl` | abbattevàte |
-| `3pl` | abbattévano |
+| `1sg` | abbattevo |
+| `2sg` | abbattevi |
+| `3sg` | abbatteva |
+| `1pl` | abbattevamo |
+| `2pl` | abbattevate |
+| `3pl` | abbattevano |
 
 ##### `indicative.past`
 
@@ -1165,6 +935,234 @@ Stem: `a/@`.
 
 _…1 more tense/mood rows in the JSON corpus._
 
+## Irregular: `fare`
+
+Template stem args observed: `a/@`.
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
+| `indicative.future` | 1 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
+| `indicative.imperfect` | 1 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
+| `indicative.past` | 1 | `lcp` | -éci | -acésti | -éce | -acémmo | -acéste | -écero |
+| `indicative.present` | 1 | `lcp` | -ccio | -i | ∅ | -cciamo | -te | -nno |
+| `indicative.preterite` | 1 | `lcp` | -eci | -acesti | -ece | -acemmo | -aceste | -ecero |
+| `subjunctive.imperfect` | 1 | `lcp` | -si | -si | -se | -simo | -te | -sero |
+
+### Representative lemmas
+
+#### `fare`
+
+Stem: `a/@`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | faccio |
+| `2sg` | fai |
+| `3sg` | fa |
+| `1pl` | facciamo |
+| `2pl` | fate |
+| `3pl` | fanno |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | farei |
+| `2sg` | faresti |
+| `3sg` | farebbe |
+| `1pl` | faremmo |
+| `2pl` | fareste |
+| `3pl` | farebbero |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avrei fatto |
+| `2sg` | avresti fatto |
+| `3sg` | avrebbe fatto |
+| `1pl` | avremmo fatto |
+| `2pl` | avreste fatto |
+| `3pl` | avrebbero fatto |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | farò |
+| `2sg` | farai |
+| `3sg` | farà |
+| `1pl` | faremo |
+| `2pl` | farete |
+| `3pl` | faranno |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | facevo |
+| `2sg` | facevi |
+| `3sg` | faceva |
+| `1pl` | facevamo |
+| `2pl` | facevate |
+| `3pl` | facevano |
+
+##### `indicative.past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | féci |
+| `2sg` | facésti |
+| `3sg` | féce |
+| `1pl` | facémmo |
+| `2pl` | facéste |
+| `3pl` | fécero |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avevo fatto |
+| `2sg` | avevi fatto |
+| `3sg` | aveva fatto |
+| `1pl` | avevamo fatto |
+| `2pl` | avevate fatto |
+| `3pl` | avevano fatto |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | feci |
+| `2sg` | facesti |
+| `3sg` | fece |
+| `1pl` | facemmo |
+| `2pl` | faceste |
+| `3pl` | fecero |
+
+_…4 more tense/mood rows in the JSON corpus._
+
+## Irregular: `stare`
+
+Template stem args observed: `e/@`.
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
+| `indicative.future` | 1 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
+| `indicative.imperfect` | 1 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
+| `indicative.past` | 1 | `lcp` | -tti | -sti | -tte | -mmo | -ste | -ttero |
+| `indicative.present` | 1 | `lcp` | -o | -ai | -à | -iamo | -ate | -anno |
+| `indicative.preterite` | 1 | `lcp` | -tti | -sti | -tte | -mmo | -ste | -ttero |
+| `subjunctive.imperfect` | 1 | `lcp` | -si | -si | -se | -simo | -te | -sero |
+
+### Representative lemmas
+
+#### `stare`
+
+Stem: `e/@`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sto |
+| `2sg` | stai |
+| `3sg` | stà |
+| `1pl` | stiamo |
+| `2pl` | state |
+| `3pl` | stanno |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | starei |
+| `2sg` | staresti |
+| `3sg` | starebbe |
+| `1pl` | staremmo |
+| `2pl` | stareste |
+| `3pl` | starebbero |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sarei stato |
+| `2sg` | saresti stato |
+| `3sg` | sarebbe stato |
+| `1pl` | saremmo stati |
+| `2pl` | sareste stati |
+| `3pl` | sarebbero stati |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | starò |
+| `2sg` | starai |
+| `3sg` | starà |
+| `1pl` | staremo |
+| `2pl` | starete |
+| `3pl` | staranno |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | stavo |
+| `2sg` | stavi |
+| `3sg` | stava |
+| `1pl` | stavamo |
+| `2pl` | stavate |
+| `3pl` | stavano |
+
+##### `indicative.past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | stétti |
+| `2sg` | stésti |
+| `3sg` | stétte |
+| `1pl` | stémmo |
+| `2pl` | stéste |
+| `3pl` | stéttero |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ero stato |
+| `2sg` | eri stato |
+| `3sg` | era stato |
+| `1pl` | eravamo stati |
+| `2pl` | eravate stati |
+| `3pl` | erano stati |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | stetti |
+| `2sg` | stesti |
+| `3sg` | stette |
+| `1pl` | stemmo |
+| `2pl` | steste |
+| `3pl` | stettero |
+
+_…5 more tense/mood rows in the JSON corpus._
+
 ## Irregular: `dare`
 
 Template stem args observed: `a/@`.
@@ -1279,6 +1277,307 @@ Stem: `a/@`.
 
 _…1 more tense/mood rows in the JSON corpus._
 
+## `other`
+
+Template stem args observed: `+isc`, `+isc.presp:+:avviliènte􂀿rare􂁀`, `+isc.presp:+􂀿rare􂁀`, `+isc.presp:-`, `+isc.presp:concipiènte` (+103 more).
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 7 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
+| `indicative.future` | 7 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
+| `indicative.imperfect` | 7 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
+| `indicative.present` | 4 | `lcp` | -o | -i | -a | -iamo | -ate | -ano |
+| `indicative.preterite` | 5 | `lcp` | -ai | -asti | -ò | -ammo | -aste | -arono |
+| `subjunctive.imperfect` | 7 | `lcp` | -si | -si | -se | -simo | -te | -sero |
+
+### Representative lemmas
+
+#### `abbronzarsi`
+
+Stem: `ó`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbronzo |
+| `2sg` | abbronzi |
+| `3sg` | abbronza |
+| `1pl` | abbronziamo |
+| `2pl` | abbronzate |
+| `3pl` | abbronzano |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbronzerei |
+| `2sg` | abbronzeresti |
+| `3sg` | abbronzerebbe |
+| `1pl` | abbronzeremmo |
+| `2pl` | abbronzereste |
+| `3pl` | abbronzerebbero |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sarei abbronzato |
+| `2sg` | saresti abbronzato |
+| `3sg` | sarebbe abbronzato |
+| `1pl` | saremmo abbronzati |
+| `2pl` | sareste abbronzati |
+| `3pl` | sarebbero abbronzati |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbronzerò |
+| `2sg` | abbronzerai |
+| `3sg` | abbronzerà |
+| `1pl` | abbronzeremo |
+| `2pl` | abbronzerete |
+| `3pl` | abbronzeranno |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbronzavo |
+| `2sg` | abbronzavi |
+| `3sg` | abbronzava |
+| `1pl` | abbronzavamo |
+| `2pl` | abbronzavate |
+| `3pl` | abbronzavano |
+
+##### `indicative.past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | mi abbronzài |
+| `2sg` | ti abbronzàsti |
+| `3sg` | si abbronzò |
+| `1pl` | ci abbronzàmmo |
+| `2pl` | vi abbronzàste |
+| `3pl` | si abbronzàrono |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ero abbronzato |
+| `2sg` | eri abbronzato |
+| `3sg` | era abbronzato |
+| `1pl` | eravamo abbronzati |
+| `2pl` | eravate abbronzati |
+| `3pl` | erano abbronzati |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbronzai |
+| `2sg` | abbronzasti |
+| `3sg` | abbronzò |
+| `1pl` | abbronzammo |
+| `2pl` | abbronzaste |
+| `3pl` | abbronzarono |
+
+_…4 more tense/mood rows in the JSON corpus._
+
+#### `abbrancarsi`
+
+Stem: `à+`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbranco |
+| `2sg` | abbranchi |
+| `3sg` | abbranca |
+| `1pl` | abbranchiamo |
+| `2pl` | abbrancate |
+| `3pl` | abbrancano |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbrancherei |
+| `2sg` | abbrancheresti |
+| `3sg` | abbrancherebbe |
+| `1pl` | abbrancheremmo |
+| `2pl` | abbranchereste |
+| `3pl` | abbrancherebbero |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sarei abbrancato |
+| `2sg` | saresti abbrancato |
+| `3sg` | sarebbe abbrancato |
+| `1pl` | saremmo abbrancati |
+| `2pl` | sareste abbrancati |
+| `3pl` | sarebbero abbrancati |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbrancherò |
+| `2sg` | abbrancherai |
+| `3sg` | abbrancherà |
+| `1pl` | abbrancheremo |
+| `2pl` | abbrancherete |
+| `3pl` | abbrancheranno |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbrancavo |
+| `2sg` | abbrancavi |
+| `3sg` | abbrancava |
+| `1pl` | abbrancavamo |
+| `2pl` | abbrancavate |
+| `3pl` | abbrancavano |
+
+##### `indicative.past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | mi abbrancài |
+| `2sg` | ti abbrancàsti |
+| `3sg` | si abbrancò |
+| `1pl` | ci abbrancàmmo |
+| `2pl` | vi abbrancàste |
+| `3pl` | si abbrancàrono |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ero abbrancato |
+| `2sg` | eri abbrancato |
+| `3sg` | era abbrancato |
+| `1pl` | eravamo abbrancati |
+| `2pl` | eravate abbrancati |
+| `3pl` | erano abbrancati |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbrancai |
+| `2sg` | abbrancasti |
+| `3sg` | abbrancò |
+| `1pl` | abbrancammo |
+| `2pl` | abbrancaste |
+| `3pl` | abbrancarono |
+
+_…4 more tense/mood rows in the JSON corpus._
+
+#### `abbracciarsi`
+
+Stem: `à`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbraccio |
+| `2sg` | abbracci |
+| `3sg` | abbraccia |
+| `1pl` | abbracciamo |
+| `2pl` | abbracciate |
+| `3pl` | abbracciano |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbraccerei |
+| `2sg` | abbracceresti |
+| `3sg` | abbraccerebbe |
+| `1pl` | abbracceremmo |
+| `2pl` | abbraccereste |
+| `3pl` | abbraccerebbero |
+
+##### `conditional.perfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sarei abbracciato |
+| `2sg` | saresti abbracciato |
+| `3sg` | sarebbe abbracciato |
+| `1pl` | saremmo abbracciati |
+| `2pl` | sareste abbracciati |
+| `3pl` | sarebbero abbracciati |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbraccerò |
+| `2sg` | abbraccerai |
+| `3sg` | abbraccerà |
+| `1pl` | abbracceremo |
+| `2pl` | abbraccerete |
+| `3pl` | abbracceranno |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbracciavo |
+| `2sg` | abbracciavi |
+| `3sg` | abbracciava |
+| `1pl` | abbracciavamo |
+| `2pl` | abbracciavate |
+| `3pl` | abbracciavano |
+
+##### `indicative.past`
+
+| Slot | Form |
+|---|---|
+| `1sg` | mi abbracciài |
+| `2sg` | ti abbracciàsti |
+| `3sg` | si abbracciò |
+| `1pl` | ci abbracciàmmo |
+| `2pl` | vi abbracciàste |
+| `3pl` | si abbracciàrono |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ero abbracciato |
+| `2sg` | eri abbracciato |
+| `3sg` | era abbracciato |
+| `1pl` | eravamo abbracciati |
+| `2pl` | eravate abbracciati |
+| `3pl` | erano abbracciati |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abbracciai |
+| `2sg` | abbracciasti |
+| `3sg` | abbracciò |
+| `1pl` | abbracciammo |
+| `2pl` | abbracciaste |
+| `3pl` | abbracciarono |
+
+_…4 more tense/mood rows in the JSON corpus._
+
 ## Irregular: `andare`
 
 Template stem args observed: `e/@`.
@@ -1289,9 +1588,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -èi | -ésti | -èbbe | -émmo | -éste | -èbbero |
-| `indicative.future` | 1 | `lcp` | -ò | -ài | -à | -émo | -éte | -ànno |
-| `indicative.imperfect` | 1 | `lcp` | -àvo | -àvi | -àva | -avàmo | -avàte | -àvano |
+| `conditional` | 1 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
+| `indicative.future` | 1 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
+| `indicative.imperfect` | 1 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
 | `indicative.past` | 1 | `lcp` | -ài | -àsti | -ò | -àmmo | -àste | -àrono |
 | `indicative.preterite` | 1 | `lcp` | -ai | -asti | -ò | -ammo | -aste | -arono |
 | `subjunctive.imperfect` | 1 | `lcp` | -si | -si | -se | -simo | -te | -sero |
@@ -1306,23 +1605,23 @@ Stem: `e/@`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | vàdo |
-| `2sg` | vài |
-| `3sg` | và |
-| `1pl` | andiàmo |
-| `2pl` | andàte |
-| `3pl` | vànno |
+| `1sg` | vado |
+| `2sg` | vai |
+| `3sg` | va |
+| `1pl` | andiamo |
+| `2pl` | andate |
+| `3pl` | vanno |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | andrèi |
-| `2sg` | andrésti |
-| `3sg` | andrèbbe |
-| `1pl` | andrémmo |
-| `2pl` | andréste |
-| `3pl` | andrèbbero |
+| `1sg` | andrei |
+| `2sg` | andresti |
+| `3sg` | andrebbe |
+| `1pl` | andremmo |
+| `2pl` | andreste |
+| `3pl` | andrebbero |
 
 ##### `conditional.perfect`
 
@@ -1340,22 +1639,22 @@ Stem: `e/@`.
 | Slot | Form |
 |---|---|
 | `1sg` | andrò |
-| `2sg` | andrài |
+| `2sg` | andrai |
 | `3sg` | andrà |
-| `1pl` | andrémo |
-| `2pl` | andréte |
-| `3pl` | andrànno |
+| `1pl` | andremo |
+| `2pl` | andrete |
+| `3pl` | andranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | andàvo |
-| `2sg` | andàvi |
-| `3sg` | andàva |
-| `1pl` | andavàmo |
-| `2pl` | andavàte |
-| `3pl` | andàvano |
+| `1sg` | andavo |
+| `2sg` | andavi |
+| `3sg` | andava |
+| `1pl` | andavamo |
+| `2pl` | andavate |
+| `3pl` | andavano |
 
 ##### `indicative.past`
 
@@ -1402,9 +1701,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -èi | -ésti | -èbbe | -émmo | -éste | -èbbero |
-| `indicative.future` | 1 | `lcp` | -ò | -ài | -à | -émo | -éte | -ànno |
-| `indicative.imperfect` | 1 | `lcp` | -évo | -évi | -éva | -evàmo | -evàte | -évano |
+| `conditional` | 1 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
+| `indicative.future` | 1 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
+| `indicative.imperfect` | 1 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
 | `subjunctive.imperfect` | 1 | `lcp` | -si | -si | -se | -simo | -te | -sero |
 
 ### Representative lemmas
@@ -1417,23 +1716,23 @@ Stem: `a/@`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | hò |
-| `2sg` | hài |
-| `3sg` | hà |
-| `1pl` | abbiàmo |
-| `2pl` | avéte |
-| `3pl` | hànno |
+| `1sg` | ho |
+| `2sg` | hai |
+| `3sg` | ha |
+| `1pl` | abbiamo |
+| `2pl` | avete |
+| `3pl` | hanno |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avrèi |
-| `2sg` | avrésti |
-| `3sg` | avrèbbe |
-| `1pl` | avrémmo |
-| `2pl` | avréste |
-| `3pl` | avrèbbero |
+| `1sg` | avrei |
+| `2sg` | avresti |
+| `3sg` | avrebbe |
+| `1pl` | avremmo |
+| `2pl` | avreste |
+| `3pl` | avrebbero |
 
 ##### `conditional.perfect`
 
@@ -1451,22 +1750,22 @@ Stem: `a/@`.
 | Slot | Form |
 |---|---|
 | `1sg` | avrò |
-| `2sg` | avrài |
+| `2sg` | avrai |
 | `3sg` | avrà |
-| `1pl` | avrémo |
-| `2pl` | avréte |
-| `3pl` | avrànno |
+| `1pl` | avremo |
+| `2pl` | avrete |
+| `3pl` | avranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avévo |
-| `2sg` | avévi |
-| `3sg` | avéva |
-| `1pl` | avevàmo |
-| `2pl` | avevàte |
-| `3pl` | avévano |
+| `1sg` | avevo |
+| `2sg` | avevi |
+| `3sg` | aveva |
+| `1pl` | avevamo |
+| `2pl` | avevate |
+| `3pl` | avevano |
 
 ##### `indicative.past`
 
@@ -1503,302 +1802,6 @@ Stem: `a/@`.
 
 _…5 more tense/mood rows in the JSON corpus._
 
-## `other`
-
-Template stem args observed: `+isc`, `+isc.presp:+:avviliènte􂀿rare􂁀`, `+isc.presp:+􂀿rare􂁀`, `+isc.presp:-`, `+isc.presp:concipiènte` (+103 more).
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `indicative.preterite` | 5 | `lcp` | -ai | -asti | -ò | -ammo | -aste | -arono |
-
-### Representative lemmas
-
-#### `abbronzarsi`
-
-Stem: `ó`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbrónzo |
-| `2sg` | ti abbrónzi |
-| `3sg` | si abbrónza |
-| `1pl` | ci abbronziàmo |
-| `2pl` | vi abbronzàte |
-| `3pl` | si abbrónzano |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbronzerèi |
-| `2sg` | ti abbronzerésti |
-| `3sg` | si abbronzerèbbe |
-| `1pl` | ci abbronzerémmo |
-| `2pl` | vi abbronzeréste |
-| `3pl` | si abbronzerèbbero |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sarei abbronzato |
-| `2sg` | saresti abbronzato |
-| `3sg` | sarebbe abbronzato |
-| `1pl` | saremmo abbronzati |
-| `2pl` | sareste abbronzati |
-| `3pl` | sarebbero abbronzati |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbronzerò |
-| `2sg` | ti abbronzerài |
-| `3sg` | si abbronzerà |
-| `1pl` | ci abbronzerémo |
-| `2pl` | vi abbronzeréte |
-| `3pl` | si abbronzerànno |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbronzàvo |
-| `2sg` | ti abbronzàvi |
-| `3sg` | si abbronzàva |
-| `1pl` | ci abbronzavàmo |
-| `2pl` | vi abbronzavàte |
-| `3pl` | si abbronzàvano |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbronzài |
-| `2sg` | ti abbronzàsti |
-| `3sg` | si abbronzò |
-| `1pl` | ci abbronzàmmo |
-| `2pl` | vi abbronzàste |
-| `3pl` | si abbronzàrono |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ero abbronzato |
-| `2sg` | eri abbronzato |
-| `3sg` | era abbronzato |
-| `1pl` | eravamo abbronzati |
-| `2pl` | eravate abbronzati |
-| `3pl` | erano abbronzati |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abbronzai |
-| `2sg` | abbronzasti |
-| `3sg` | abbronzò |
-| `1pl` | abbronzammo |
-| `2pl` | abbronzaste |
-| `3pl` | abbronzarono |
-
-_…4 more tense/mood rows in the JSON corpus._
-
-#### `abbrancarsi`
-
-Stem: `à+`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbrànco |
-| `2sg` | ti abbrànchi |
-| `3sg` | si abbrànca |
-| `1pl` | ci abbranchiàmo |
-| `2pl` | vi abbrancàte |
-| `3pl` | si abbràncano |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbrancherèi |
-| `2sg` | ti abbrancherésti |
-| `3sg` | si abbrancherèbbe |
-| `1pl` | ci abbrancherémmo |
-| `2pl` | vi abbrancheréste |
-| `3pl` | si abbrancherèbbero |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sarei abbrancato |
-| `2sg` | saresti abbrancato |
-| `3sg` | sarebbe abbrancato |
-| `1pl` | saremmo abbrancati |
-| `2pl` | sareste abbrancati |
-| `3pl` | sarebbero abbrancati |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbrancherò |
-| `2sg` | ti abbrancherài |
-| `3sg` | si abbrancherà |
-| `1pl` | ci abbrancherémo |
-| `2pl` | vi abbrancheréte |
-| `3pl` | si abbrancherànno |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbrancàvo |
-| `2sg` | ti abbrancàvi |
-| `3sg` | si abbrancàva |
-| `1pl` | ci abbrancavàmo |
-| `2pl` | vi abbrancavàte |
-| `3pl` | si abbrancàvano |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbrancài |
-| `2sg` | ti abbrancàsti |
-| `3sg` | si abbrancò |
-| `1pl` | ci abbrancàmmo |
-| `2pl` | vi abbrancàste |
-| `3pl` | si abbrancàrono |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ero abbrancato |
-| `2sg` | eri abbrancato |
-| `3sg` | era abbrancato |
-| `1pl` | eravamo abbrancati |
-| `2pl` | eravate abbrancati |
-| `3pl` | erano abbrancati |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abbrancai |
-| `2sg` | abbrancasti |
-| `3sg` | abbrancò |
-| `1pl` | abbrancammo |
-| `2pl` | abbrancaste |
-| `3pl` | abbrancarono |
-
-_…4 more tense/mood rows in the JSON corpus._
-
-#### `abbracciarsi`
-
-Stem: `à`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbràccio |
-| `2sg` | ti abbràcci |
-| `3sg` | si abbràccia |
-| `1pl` | ci abbracciàmo |
-| `2pl` | vi abbracciàte |
-| `3pl` | si abbràcciano |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbraccerèi |
-| `2sg` | ti abbraccerésti |
-| `3sg` | si abbraccerèbbe |
-| `1pl` | ci abbraccerémmo |
-| `2pl` | vi abbracceréste |
-| `3pl` | si abbraccerèbbero |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sarei abbracciato |
-| `2sg` | saresti abbracciato |
-| `3sg` | sarebbe abbracciato |
-| `1pl` | saremmo abbracciati |
-| `2pl` | sareste abbracciati |
-| `3pl` | sarebbero abbracciati |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbraccerò |
-| `2sg` | ti abbraccerài |
-| `3sg` | si abbraccerà |
-| `1pl` | ci abbraccerémo |
-| `2pl` | vi abbracceréte |
-| `3pl` | si abbraccerànno |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbracciàvo |
-| `2sg` | ti abbracciàvi |
-| `3sg` | si abbracciàva |
-| `1pl` | ci abbracciavàmo |
-| `2pl` | vi abbracciavàte |
-| `3pl` | si abbracciàvano |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi abbracciài |
-| `2sg` | ti abbracciàsti |
-| `3sg` | si abbracciò |
-| `1pl` | ci abbracciàmmo |
-| `2pl` | vi abbracciàste |
-| `3pl` | si abbracciàrono |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ero abbracciato |
-| `2sg` | eri abbracciato |
-| `3sg` | era abbracciato |
-| `1pl` | eravamo abbracciati |
-| `2pl` | eravate abbracciati |
-| `3pl` | erano abbracciati |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abbracciai |
-| `2sg` | abbracciasti |
-| `3sg` | abbracciò |
-| `1pl` | abbracciammo |
-| `2pl` | abbracciaste |
-| `3pl` | abbracciarono |
-
-_…4 more tense/mood rows in the JSON corpus._
-
 ## Irregular: `essere`
 
 Template stem args observed: `e\@`.
@@ -1817,23 +1820,23 @@ Stem: `e\@`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | sóno |
-| `2sg` | sèi |
+| `1sg` | sono |
+| `2sg` | sei |
 | `3sg` | è |
-| `1pl` | siàmo |
-| `2pl` | siéte |
-| `3pl` | sóno |
+| `1pl` | siamo |
+| `2pl` | siete |
+| `3pl` | sono |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | sarèi |
-| `2sg` | sarésti |
-| `3sg` | sarèbbe |
-| `1pl` | sarémmo |
-| `2pl` | saréste |
-| `3pl` | sarèbbero |
+| `1sg` | sarei |
+| `2sg` | saresti |
+| `3sg` | sarebbe |
+| `1pl` | saremmo |
+| `2pl` | sareste |
+| `3pl` | sarebbero |
 
 ##### `conditional.perfect`
 
@@ -1851,22 +1854,22 @@ Stem: `e\@`.
 | Slot | Form |
 |---|---|
 | `1sg` | sarò |
-| `2sg` | sarài |
+| `2sg` | sarai |
 | `3sg` | sarà |
-| `1pl` | sarémo |
-| `2pl` | saréte |
-| `3pl` | sarànno |
+| `1pl` | saremo |
+| `2pl` | sarete |
+| `3pl` | saranno |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | èro |
-| `2sg` | èri |
-| `3sg` | èra |
-| `1pl` | eravàmo |
-| `2pl` | eravàte |
-| `3pl` | èrano |
+| `1sg` | ero |
+| `2sg` | eri |
+| `3sg` | era |
+| `1pl` | eravamo |
+| `2pl` | eravate |
+| `3pl` | erano |
 
 ##### `indicative.past`
 
