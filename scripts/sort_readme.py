@@ -37,7 +37,7 @@ ALL_LANGS = {
     'dlm': ('Dalmatian', True),
     'ist': ('Istriot', True),
     'ruo': ('Istro-Romanian', True),
-    'glw': ('Gallo', True)
+    'gallo': ('Gallo', True)
 }
 
 sorted_codes = sorted(ALL_LANGS.keys())

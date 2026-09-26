@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-OUT = ROOT / "data" / "conjugation" / "sources" / "glw_diseux.json"
+OUT = ROOT / "data" / "conjugation" / "sources" / "gallo_diseux.json"
 CACHE = ROOT / "data" / "sources" / "gallo_frwikt"
 USER_AGENT = "vulgultra-research/0.1 (+noncommercial; cite Wiktionnaire)"
 API = "https://fr.wiktionary.org/w/api.php"
@@ -267,7 +267,7 @@ def parse_page(title: str) -> dict | None:
     if not cells:
         return None
     return {
-        "lect": "glw",
+        "lect": "gallo",
         "lemma": lemma,
         "class_source": class_from_lemma(lemma),
         "regularity": "irregular" if class_from_lemma(lemma) in IRREGULAR.values() else "regular",
@@ -296,7 +296,7 @@ def main() -> int:
     document = {
         "schema": "vulgultra.conjugation.v1",
         "metadata": {
-            "lect": "glw",
+            "lect": "gallo",
             "purpose": "Gallo conjugations from Wiktionnaire Conjugaison:gallo",
             "provider": "fr.wiktionary.org",
             "attribution": "Wiktionnaire Catégorie:Conjugaison en gallo (CC BY-SA)",

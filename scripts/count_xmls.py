@@ -39,7 +39,7 @@ ALL_LANGS = {
     'dlm': ('Dalmatian', 'data/words/dlm_words.json', True),
     'ist': ('Istriot', 'data/words/ist_words.json', True),
     'ruo': ('Istro-Romanian', 'data/words/ruo_words.json', True),
-    'glw': ('Gallo', 'data/words/glw_words.json', True)
+    'gallo': ('Gallo', 'data/words/gallo_words.json', True)
 }
 
 counts = {}

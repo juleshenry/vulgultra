@@ -1,11 +1,11 @@
-# Gallo (`glw`) conjugation data
+# Gallo (`gallo`) conjugation data
 
 > Source-observed forms from the local corpus. Empty cells are data gaps.
 > Pages are organized by this lect's own conjugation classes. Class labels
 > are not aligned across lects.
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Wiktionnaire Conjugaison:gallo (https://fr.wiktionary.org/wiki/Catégorie:Conjugaison_en_gallo)
-- Source files: `kaikki-glw.jsonl`, `glw_diseux.json`
+- Source files: `kaikki-gallo.jsonl`, `gallo_diseux.json`
 - Lemmas with forms: **572**
 - Verb lemma entries: **1755**
 - Inflected form records: **408**

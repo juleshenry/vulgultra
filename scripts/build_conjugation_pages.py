@@ -48,7 +48,7 @@ DIRECT_FILES = {
     "fr": ["kaikki-fr.jsonl"],
     "fur": ["kaikki-fur.jsonl"],
     "gl": ["kaikki-gl.jsonl"],
-    "glw": ["kaikki-glw.jsonl"],
+    "gallo": ["kaikki-gallo.jsonl"],
     "ist": ["kaikki-ist.jsonl"],
     "it": ["kaikki-it.jsonl"],
     "lad": ["kaikki-lad.jsonl"],
@@ -124,7 +124,7 @@ def collect_kaikki(lect: str) -> tuple[dict, dict, list[str], dict[str, int]]:
 INFINITIVE_ENDINGS = {
     "dlm": ("ure", "uar", "ur", "ar", "er", "ro", "ire", "ir"),
     "ext": ("al", "el", "il", "ar", "er", "ir"),
-    "glw": ("air", "ae", "er", "ir", "rr", "i", "r"),
+    "gallo": ("air", "ae", "er", "ir", "rr", "i", "r"),
     "ist": ("àse", "ìse", "à", "ì", "i"),
 }
 
@@ -135,7 +135,7 @@ INFINITIVE_IRREGULAR = {
         "avel": "haber", "haber": "haber", "dil": "ir", "ir": "ir",
         "venir": "venir",
     },
-    "glw": {
+    "gallo": {
         "aler": "aler", "avair": "avair", "aveir": "avair",
         "étr": "étr", "éstr": "étr", "ói": "ói", "se nalae": "aler",
     },
@@ -306,7 +306,7 @@ def source_paradigms(lect: str) -> tuple[dict, dict, list[str], dict[str, int], 
                 "recursos_es-ext paired ES/EXT tables "
                 "(https://github.com/juanro49/recursos_es-ext, CC0)"
             )
-        elif lect == "glw":
+        elif lect == "gallo":
             bits.append(
                 "Wiktionnaire Conjugaison:gallo "
                 "(https://fr.wiktionary.org/wiki/Catégorie:Conjugaison_en_gallo)"

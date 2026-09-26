@@ -208,7 +208,7 @@ def report() -> None:
         # Occitano
         "oc", "ca", "gsc",
         # Oil / Arpitan
-        "fr", "wa", "pcd", "nrm", "nrf", "glw", "frp",
+        "fr", "wa", "pcd", "nrm", "nrf", "gallo", "frp",
         # Gallo-Italian
         "lmo", "pms", "lij", "eml", "egl", "rgn",
         # Italo-Dalmatian

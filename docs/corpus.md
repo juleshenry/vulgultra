@@ -32,7 +32,7 @@ Do not scrape Pledari, DRG, TalkBank, Verbix site-wide, or vlaski-zejanski.
 | Oil | wa | Walloon | 42716 | 0 | lemmas |
 | Oil | pcd | Picard | 765 | 126753 | wiki |
 | Oil | nrf | Norman | 11244 | 0 | lemmas |
-| Oil | glw | Gallo | 11566 | 0 | lemmas (frwiktionary) |
+| Oil | gallo | Gallo | 11566 | 0 | lemmas (frwiktionary) |
 | Arpitan | frp | Franco-Provençal | 82 | 77352 | wiki |
 | Gallo-Italian | lmo | Lombard | 35741 | 0 | lemmas |
 | Gallo-Italian | pms | Piedmontese | 4053 | 205321 | wiki |

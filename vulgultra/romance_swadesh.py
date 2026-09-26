@@ -18,7 +18,7 @@ from vulgultra.swadesh_rest import TABLES as REST_TABLES
 LECT_BRANCHES: dict[str, tuple[str, ...]] = {
     "ibero": ("es", "pt", "gl", "an", "ast", "ext", "lad", "mwl"),
     "occitano": ("oc", "ca", "gsc"),
-    "oil": ("fr", "wa", "pcd", "nrf", "glw"),
+    "oil": ("fr", "wa", "pcd", "nrf", "gallo"),
     "arpitan": ("frp",),
     "gallo_italian": ("lmo", "pms", "lij", "eml", "rgn"),
     "italo_dalmatian": ("it", "scn", "vec", "co", "ist", "dlm"),
@@ -33,7 +33,9 @@ LECT_NAMES: dict[str, str] = {
     "lad": "Ladino", "mwl": "Mirandese",
     "oc": "Occitan", "ca": "Catalan", "gsc": "Gascon",
     "fr": "French", "wa": "Walloon", "pcd": "Picard",
-    "nrf": "Norman", "glw": "Gallo",
+    "nrf": "Norman",
+    # Gallo has no ISO 639-3; `glw` is Glavda (Chadic).
+    "gallo": "Gallo",
     "frp": "Franco-Provençal",
     "lmo": "Lombard", "pms": "Piedmontese", "lij": "Ligurian",
     "eml": "Emilian", "rgn": "Romagnol",

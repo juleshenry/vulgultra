@@ -15,7 +15,7 @@ BIBLE_GRID_PATH = ROOT / "data" / "bible" / "concept_grid.json"
 BIBLE_LANGS = ("fr", "es", "pt", "it", "ro")
 LANGUAGES = (
     "es", "pt", "gl", "an", "ast", "ext", "lad", "mwl", "oc", "ca", "gsc",
-    "fr", "wa", "pcd", "nrf", "glw", "frp", "lmo", "pms", "lij", "eml", "rgn",
+    "fr", "wa", "pcd", "nrf", "gallo", "frp", "lmo", "pms", "lij", "eml", "rgn",
     "it", "scn", "vec", "co", "ist", "dlm", "rm", "fur", "lld", "sc", "ro", "rup", "ruo", "ruq",
 )
 

@@ -11,7 +11,7 @@ from __future__ import annotations
 THEME_CLASS: dict[str, str] = {
     "es": "o", "pt": "o", "gl": "o", "an": "o", "lad": "o", "mwl": "o",
     "ast": "u", "ext": "u", "oc": "e", "ca": "e", "gsc": "e",
-    "fr": "e", "wa": "e", "pcd": "e", "nrf": "e", "glw": "e",
+    "fr": "e", "wa": "e", "pcd": "e", "nrf": "e", "gallo": "e",
     "frp": "o", "lmo": "o", "pms": "o", "lij": "o", "eml": "o", "rgn": "o",
     "it": "o", "vec": "o", "ist": "o", "dlm": "o", "scn": "u", "co": "u",
     "rm": "e", "fur": "e", "lld": "e", "sc": "u",

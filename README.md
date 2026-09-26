@@ -135,7 +135,7 @@ are reserved: they never compete in the knapsack.
 |---|---|---|
 | Ibero | `o` (`u` in ast/ext) | `es` Spanish, `pt` Portuguese, `gl` Galician, `an` Aragonese, `ast` Asturian, `ext` Extremaduran, `lad` Ladino, `mwl` Mirandese |
 | Occitano | `e` | `oc` Occitan, `ca` Catalan, `gsc` Gascon |
-| Oil | `e` | `fr` French, `wa` Walloon, `pcd` Picard, `nrf` Norman, `glw` Gallo |
+| Oil | `e` | `fr` French, `wa` Walloon, `pcd` Picard, `nrf` Norman, `gallo` Gallo (no ISO 639-3; `glw` is Glavda) |
 | Arpitan | `o` | `frp` Franco-Provençal |
 | Gallo-Italian | `o` | `lmo` Lombard, `pms` Piedmontese, `lij` Ligurian, `eml` Emilian, `rgn` Romagnol |
 | Italo-Dalmatian | `o` / `u` | `it` Italian, `vec` Venetan, `ist` Istriot, `dlm` Dalmatian (`o`); `scn` Sicilian, `co` Corsican (`u`) |

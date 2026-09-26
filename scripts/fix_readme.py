@@ -16,7 +16,7 @@ INCUBATOR_LANGS = [
     ('dlm', 'Dalmatian'),
     ('ist', 'Istriot'),
     ('ruo', 'Istro-Romanian'),
-    ('glw', 'Gallo')
+    ('gallo', 'Gallo')
 ]
 
 with open('README.md', 'r') as f:

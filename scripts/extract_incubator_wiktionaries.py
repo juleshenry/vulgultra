@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import re
 import os
 
-LANGUAGES = ['ext', 'lad', 'mwl', 'eml', 'lij', 'pms', 'fur', 'lld', 'frp', 'gsc', 'dlm', 'ist', 'ruo', 'nrm', 'pcd', 'glw']
+LANGUAGES = ['ext', 'lad', 'mwl', 'eml', 'lij', 'pms', 'fur', 'lld', 'frp', 'gsc', 'dlm', 'ist', 'ruo', 'nrm', 'pcd', 'gallo']
 DUMP_FILE = 'incubatorwiki-latest-pages-articles.xml.bz2'
 OUTPUT_DIR = 'xmls'
 

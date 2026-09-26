@@ -26,7 +26,7 @@ LANG_CODES: dict[str, str] = {
     "lad": "spa-Latn", "mwl": "por-Latn",
     "oc": "oci-Latn", "ca": "cat-Latn", "gsc": "oci-Latn",
     "fr": "fra-Latn", "wa": "fra-Latn", "pcd": "fra-Latn",
-    "nrf": "fra-Latn", "glw": "fra-Latn", "frp": "fra-Latn",
+    "nrf": "fra-Latn", "gallo": "fra-Latn", "frp": "fra-Latn",
     "lmo": "ita-Latn", "pms": "ita-Latn", "lij": "lij-Latn",
     "eml": "ita-Latn", "rgn": "ita-Latn",
     "it": "ita-Latn", "scn": "ita-Latn", "vec": "ita-Latn",

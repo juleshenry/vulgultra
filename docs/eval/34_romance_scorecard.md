@@ -1,5 +1,5 @@
 <!-- GENERATED FILE: scripts/es_pt_beta.py; do not edit by hand. -->
-<!-- source_lects: 36 (es, pt, gl, an, ast, ext, lad, mwl, oc, ca, gsc, fr, wa, pcd, nrf, glw, frp, lmo, pms, lij, eml, rgn, it, scn, vec, co, ist, dlm, rm, fur, lld, sc, ro, rup, ruo, ruq) -->
+<!-- source_lects: 36 (es, pt, gl, an, ast, ext, lad, mwl, oc, ca, gsc, fr, wa, pcd, nrf, gallo, frp, lmo, pms, lij, eml, rgn, it, scn, vec, co, ist, dlm, rm, fur, lld, sc, ro, rup, ruo, ruq) -->
 <!-- concepts: 213 -->
 <!-- candidates_sha256_16: f757820ba72963f2 -->
 <!-- lexicon_sha256_16: bed2db33daab92b5 -->
@@ -12,7 +12,7 @@ entre candidatos meaning-aligned de las hijas Romance, por rama:
 
 - **ibero:** `es` Spanish, `pt` Portuguese, `gl` Galician, `an` Aragonese, `ast` Asturian, `ext` Extremaduran, `lad` Ladino, `mwl` Mirandese
 - **occitano:** `oc` Occitan, `ca` Catalan, `gsc` Gascon
-- **oil:** `fr` French, `wa` Walloon, `pcd` Picard, `nrf` Norman, `glw` Gallo
+- **oil:** `fr` French, `wa` Walloon, `pcd` Picard, `nrf` Norman, `gallo` Gallo
 - **arpitan:** `frp` Franco-Provençal
 - **gallo_italian:** `lmo` Lombard, `pms` Piedmontese, `lij` Ligurian, `eml` Emilian, `rgn` Romagnol
 - **italo_dalmatian:** `it` Italian, `scn` Sicilian, `vec` Venetan, `co` Corsican, `ist` Istriot, `dlm` Dalmatian
@@ -71,7 +71,7 @@ Desinencias seleccionadas después de fijar las raíces: tema nominal `lect:an`,
 | `wa` | 6 | 2.8% |
 | `pcd` | 3 | 1.4% |
 | `nrf` | 1 | 0.5% |
-| `glw` | 5 | 2.3% |
+| `gallo` | 5 | 2.3% |
 | `frp` | 3 | 1.4% |
 | `lmo` | 8 | 3.8% |
 | `pms` | 1 | 0.5% |
@@ -163,7 +163,7 @@ PT: A água é fria.
 
 ```
 Vulgultra  a  ⟨ə⟩wa  e  f⟨ɾ⟩yoa
-src    [pt]  [glw]  [pt]  [an]
+src    [pt]  [gallo]  [pt]  [an]
 es     el/la  agua  es  frío
 pt     a  água  é  frio
 σ      6
@@ -211,7 +211,7 @@ PT: Nós damos água.
 
 ```
 Vulgultra  nu  da⟨ɾ⟩em  ⟨ə⟩wan
-src    [dlm]  [an]  [glw]
+src    [dlm]  [an]  [gallo]
 es     nosotros  dar  agua
 pt     nós  dar  água
 σ      5
@@ -247,7 +247,7 @@ PT: Tu ouves o vento.
 
 ```
 Vulgultra  tu  wyi⟨ʀ⟩as  o  v⟨ɛ⟩nton
-src    [an]  [glw]  [pt]  [ca]
+src    [an]  [gallo]  [pt]  [ca]
 es     tú  oír  el/la  viento
 pt     tu  ouvir  o  vento
 σ      6
@@ -276,7 +276,7 @@ El tema léxico del verbo es uno. Cada tiempo elige su propia fila de personas.
 | allí | allí | ali | là | lì | allà | **ci** | `co` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | amarillo | amarillo | amarelo | jaune | giallo | groc | **g⟨ɾ⟩⟨ɔ⟩k** | `ca` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | ancho | ancho | largo | large | largo | ample | **larg** | `dlm` | 1 | σ=1; desempate por segmentos del léxico global | — |
-| animal | animal | animal | animal | animale | animal | **bet** | `glw` | 1 | σ=1; desempate por segmentos del léxico global | — |
+| animal | animal | animal | animal | animale | animal | **bet** | `gallo` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | apretar | apretar | apertar | presser | spremere | prémer | **strens** | `lmo` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | apuñalar | apuñalar | esfaquear | poignarder | pugnalare | apunyalar | **pung** | `ruq` | 1 | única legal a σ=1 | — |
 | aquí | aquí | aqui | ici | qui | aquí | **ka** | `co` | 1 | σ=1; desempate por segmentos del léxico global | — |
@@ -313,7 +313,7 @@ El tema léxico del verbo es uno. Cada tiempo elige su propia fila de personas.
 | corteza | corteza | casca | écorce | corteccia | escorça | **skwaz** | `wa` | 1 | única legal a σ=1 | — |
 | corto | corto | curto | court | corto | curt | **ku⟨ɾ⟩t** | `ca` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | coser | coser | costurar | coudre | cucire | cosir | **kos** | `rup` | 1 | σ=1; desempate por segmentos del léxico global | — |
-| cuatro | cuatro | quatro | quatre | quattro | quatre | **kat** | `glw` | 1 | σ=1; desempate por segmentos del léxico global | — |
+| cuatro | cuatro | quatro | quatre | quattro | quatre | **kat** | `gallo` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | cuello | cuello | pescoço | cou | collo | coll | **k⟨ɔ⟩⟨ʎ⟩** | `ca` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | cuerda | cuerda | corda | corde | corda | corda | **k⟨ɔ⟩⟨ʀ⟩d** | `fr` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | cuerno | cuerno | chifre | corne | corno | banya | **k⟨ɔ⟩⟨ʀ⟩n** | `fr` | 1 | σ=1; desempate por segmentos del léxico global | — |
@@ -375,7 +375,7 @@ El tema léxico del verbo es uno. Cada tiempo elige su propia fila de personas.
 | lengua | lengua | língua | langue | lingua | llengua | **l⟨ɑ̃⟩g** | `fr` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | liso | liso | liso | lisse | liscio | llis | **⟨ʎ⟩is** | `ca` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | lleno | lleno | cheio | plein | pieno | ple | **plen** | `an` | 1 | σ=1; desempate por segmentos del léxico global | — |
-| lluvia | lluvia | chuva | pluie | pioggia | pluja | **pl⟨ø⟩** | `glw` | 1 | σ=1; desempate por segmentos del léxico global | — |
+| lluvia | lluvia | chuva | pluie | pioggia | pluja | **pl⟨ø⟩** | `gallo` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | luna | luna | lua | lune | luna | lluna | **lw⟨ɐ⟩** | `pt` | 1 | σ=1; desempate por segmentos del léxico global | transparente |
 | madre | madre | mãe | mère | madre | mare | **m⟨ɐ̃⟩⟨j̃⟩** | `pt` | 1 | σ=1; desempate por segmentos del léxico global | transparente |
 | malo | malo | mau | mauvais | cattivo | dolent | **ri** | `dlm` | 1 | σ=1; desempate por segmentos del léxico global | adivinable |
@@ -404,7 +404,7 @@ El tema léxico del verbo es uno. Cada tiempo elige su propia fila de personas.
 | oler | oler | cheirar | sentir | odorare | ensumar | **ole⟨ɾ⟩** | `an` | 2 | σ=2; desempate por segmentos del léxico global | transparente |
 | oreja | oreja | orelha | oreille | orecchio | orella | **⟨ɔ⟩⟨ʀ⟩** | `wa` | 1 | única legal a σ=1 | — |
 | otro | otro | outro | autre | altro | altre | **ot** | `nrf` | 1 | σ=1; desempate por segmentos del léxico global | — |
-| oír | oír | ouvir | entendre | sentire | sentir | **wyi⟨ʀ⟩** | `glw` | 1 | σ=1; desempate por segmentos del léxico global | — |
+| oír | oír | ouvir | entendre | sentire | sentir | **wyi⟨ʀ⟩** | `gallo` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | padre | padre | pai | père | padre | pare | **pa⟨ʀ⟩** | `frp` | 1 | σ=1; desempate por segmentos del léxico global | transparente |
 | palo | palo | pau | bâton | bastone | pal | **pal** | `ca` | 1 | σ=1; desempate por segmentos del léxico global | transparente |
 | parar | parar | ficar | tenir | stare | estar | **ta⟨ɾ⟩** | `ast` | 1 | σ=1; desempate por segmentos del léxico global | — |
@@ -479,7 +479,7 @@ El tema léxico del verbo es uno. Cada tiempo elige su propia fila de personas.
 | y | y | e | et | e | i | **i** | `an` | 1 | σ=1; desempate por segmentos del léxico global | transparente |
 | yacer | yacer | jazer | gésir | giacere | jeure | **zak** | `rup` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | yo | yo | eu | je | io | jo | **yo** | `an` | 1 | σ=1; desempate por segmentos del léxico global | transparente |
-| árbol | árbol | árvore | arbre | albero | arbre | **ab** | `glw` | 1 | σ=1; desempate por segmentos del léxico global | — |
+| árbol | árbol | árvore | arbre | albero | arbre | **ab** | `gallo` | 1 | σ=1; desempate por segmentos del léxico global | — |
 | él | él | ele | il | lui | ell | **el** | `an` | 1 | σ=1; desempate por segmentos del léxico global | transparente |
 
 ## Apéndice: SA ≠ greedy-phones
