@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-fr.jsonl`, `fr_verbix.json`
-- Lemmas with forms: **7569**
+- Lemmas with forms: **7372**
 - Verb lemma entries: **7601**
 - Inflected form records: **493949**
 - Separate form-of entries: **6**
@@ -18,10 +18,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-re` | 328 | 8 | 7 |
-| `-er` | 6571 | 7 | 7 |
-| `-ir` | 478 | 7 | 7 |
-| `other` | 189 | 7 | 7 |
+| `-re` | 311 | 8 | 7 |
+| `-er` | 6550 | 7 | 7 |
+| `-ir` | 471 | 7 | 7 |
+| `other` | 37 | 7 | 7 |
 | `aller` | 1 | 7 | 6 |
 | `avoir` | 1 | 7 | 6 |
 | `être` | 1 | 7 | 6 |

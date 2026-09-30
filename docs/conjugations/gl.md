@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-gl.jsonl`, `gl_verbix.json`
-- Lemmas with forms: **2594**
+- Lemmas with forms: **2525**
 - Verb lemma entries: **2655**
 - Inflected form records: **395739**
 - Separate form-of entries: **5**
-- Classified person-slot observations: **259907**
+- Classified person-slot observations: **259312**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,10 +18,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-ar` | 1985 | 11 | 11 |
-| `-er` | 263 | 11 | 11 |
-| `-ir` | 223 | 11 | 11 |
-| `other` | 119 | 11 | 11 |
+| `-ar` | 1983 | 11 | 11 |
+| `-er` | 260 | 11 | 11 |
+| `-ir` | 250 | 11 | 11 |
+| `other` | 28 | 11 | 11 |
 | `estar` | 1 | 11 | 11 |
 | `ser` | 1 | 11 | 10 |
 | `haber` | 1 | 9 | 9 |
@@ -637,9 +637,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 184 | `infinitive` | -iría | -irías | -iría | -iriamos | -iriades | -irían |
+| `conditional` | 213 | `infinitive` | -iría | -irías | -iría | -iriamos | -iriades | -irían |
 | `imperative` | 101 | `infinitive` | -a | -e | -a | -amos | -ide | -an |
-| `indicative.future` | 186 | `infinitive` | -irei | -irás | -irá | -iremos | -iredes | -irán |
+| `indicative.future` | 215 | `infinitive` | -irei | -irás | -irá | -iremos | -iredes | -irán |
 | `indicative.imperfect` | 180 | `infinitive` | -ía | -ías | -ía | -iamos | -iades | -ían |
 | `indicative.pluperfect` | 176 | `infinitive` | -ira | -iras | -ira | -iramos | -irades | -iran |
 | `indicative.present` | 75 | `infinitive` | -o | -es | -e | -imos | -ides | -en |
@@ -647,7 +647,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `nonfinite.infinitive` | 131 | `infinitive` | -ir | -ires | -ir | -irmos | -irdes | -irem |
 | `subjunctive.future` | 178 | `infinitive` | -ir | -ires | -ir | -irmos | -irdes | -iren |
 | `subjunctive.imperfect` | 176 | `infinitive` | -ise | -ises | -ise | -ísemos | -ísedes | -isen |
-| `subjunctive.present` | 101 | `infinitive` | -a | -as | -a | -amos | -ades | -an |
+| `subjunctive.present` | 126 | `infinitive` | -a | -as | -a | -amos | -ades | -an |
 
 ### Representative lemmas
 
@@ -933,25 +933,23 @@ _…2 more tense/mood rows in the JSON corpus._
 
 ## `other`
 
-Template stem args observed: `<u-o>`, `cuspir<u-o> para arriba`, `morrer<only3s> o conto`.
-
 ### Person-slot inventory
 
 Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 52 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
-| `imperative` | 25 | `lcp` | -úa | -úe | -úa | -uamos | -uíde | -úan |
-| `indicative.future` | 52 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
-| `indicative.imperfect` | 31 | `lcp` | -ía | -ías | -ía | -ïamos | -ïades | -ían |
-| `indicative.pluperfect` | 31 | `lcp` | -íra | -íras | -íra | -iramos | -irades | -íran |
-| `indicative.present` | 25 | `lcp` | -úo | -úes | -úe | -uímos | -uídes | -úen |
-| `indicative.preterite` | 31 | `lcp` | -n | -ches | -u | -mos | -stes | -ron |
+| `conditional` | 21 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
+| `imperative` | 18 | `lcp` | -oña | -ón | -onha | -oñamos | -onde | -oñan |
+| `indicative.future` | 21 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
+| `indicative.imperfect` | 21 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `indicative.pluperfect` | 21 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `indicative.present` | 20 | `lcp` | -oño | -ós | -ón | -omos | -ondes | -ón |
+| `indicative.preterite` | 21 | `lcp` | -en | -eches | -o | -emos | -estes | -eron |
 | `nonfinite.infinitive` | 18 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.future` | 52 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
-| `subjunctive.imperfect` | 31 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `subjunctive.present` | 26 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `subjunctive.future` | 21 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
+| `subjunctive.imperfect` | 21 | `lcp` | -ese | -eses | -ese | -ésemos | -ésedes | -esen |
+| `subjunctive.present` | 21 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 
 ### Representative lemmas
 
@@ -1047,98 +1045,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 _…2 more tense/mood rows in the JSON corpus._
 
-#### `ter que`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | teño que |
-| `2sg` | tes que |
-| `3sg` | ten que |
-| `1pl` | temos que |
-| `2pl` | tendes que |
-| `3pl` | tenhem que |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tería que |
-| `2sg` | terías que |
-| `3sg` | tería que |
-| `1pl` | teriamos que |
-| `2pl` | teriades que |
-| `3pl` | terían que |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | teña que |
-| `2sg` | ten que |
-| `3sg` | tenha que |
-| `1pl` | teñamos que |
-| `2pl` | tende que |
-| `3pl` | tenham que |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | terei que |
-| `2sg` | terás que |
-| `3sg` | terá que |
-| `1pl` | teremos que |
-| `2pl` | teredes que |
-| `3pl` | terán que |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tiña que |
-| `2sg` | tiñas que |
-| `3sg` | tiña que |
-| `1pl` | tiñamos que |
-| `2pl` | tiñades que |
-| `3pl` | tiñan que |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tivera que |
-| `2sg` | tiveras que |
-| `3sg` | tivera que |
-| `1pl` | tiveramos que |
-| `2pl` | tiverades que |
-| `3pl` | tiveran que |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tiven que |
-| `2sg` | tiveches que |
-| `3sg` | tivo que |
-| `1pl` | tivemos que |
-| `2pl` | tivestes que |
-| `3pl` | tiveron que |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tiver que |
-| `2sg` | tiveres que |
-| `3sg` | tiver que |
-| `1pl` | tivermos que |
-| `2pl` | tiverdes que |
-| `3pl` | tiveren que |
-
-_…2 more tense/mood rows in the JSON corpus._
-
 #### `supor`
 
 ##### `indicative.present`
@@ -1228,6 +1134,98 @@ _…2 more tense/mood rows in the JSON corpus._
 | `1pl` | supuxermos |
 | `2pl` | supuxerdes |
 | `3pl` | supuxeren |
+
+_…2 more tense/mood rows in the JSON corpus._
+
+#### `superpor`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | superpoño |
+| `2sg` | superpós |
+| `3sg` | superpón |
+| `1pl` | superpomos |
+| `2pl` | superpondes |
+| `3pl` | superpón |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | superporía |
+| `2sg` | superporías |
+| `3sg` | superporía |
+| `1pl` | superporiamos |
+| `2pl` | superporiades |
+| `3pl` | superporían |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | superpoña |
+| `2sg` | superpón |
+| `3sg` | superponha |
+| `1pl` | superpoñamos |
+| `2pl` | superponde |
+| `3pl` | superpoñan |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | superporei |
+| `2sg` | superporás |
+| `3sg` | superporá |
+| `1pl` | superporemos |
+| `2pl` | superporedes |
+| `3pl` | superporán |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | superpuña |
+| `2sg` | superpuñas |
+| `3sg` | superpuña |
+| `1pl` | superpuñamos |
+| `2pl` | superpuñades |
+| `3pl` | superpuñan |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | superpuxera |
+| `2sg` | superpuxeras |
+| `3sg` | superpuxera |
+| `1pl` | superpuxeramos |
+| `2pl` | superpuxerades |
+| `3pl` | superpuxeran |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | superpuxen |
+| `2sg` | superpuxeches |
+| `3sg` | superpuxo |
+| `1pl` | superpuxemos |
+| `2pl` | superpuxestes |
+| `3pl` | superpuxeron |
+
+##### `subjunctive.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | superpuxer |
+| `2sg` | superpuxeres |
+| `3sg` | superpuxer |
+| `1pl` | superpuxermos |
+| `2pl` | superpuxerdes |
+| `3pl` | superpuxeren |
 
 _…2 more tense/mood rows in the JSON corpus._
 

@@ -162,7 +162,12 @@ class HarvestFixTests(unittest.TestCase):
         self.assertEqual(strip_subject_clitics("fur", "o fevelavi"), "fevelavi")
         self.assertEqual(strip_subject_clitics("fur", "al"), "")
         self.assertEqual(strip_subject_clitics("vec", "el łustra"), "łustra")
-        self.assertEqual(strip_subject_clitics("es", "me fié"), "me fié")
+        self.assertEqual(strip_subject_clitics("es", "me fié"), "fié")
+        self.assertEqual(strip_subject_clitics("es", "me la zumbo"), "zumbo")
+        self.assertEqual(strip_subject_clitics("es", "salgo"), "salgo")
+        self.assertEqual(strip_subject_clitics("ca", "m'adiro"), "adiro")
+        self.assertEqual(strip_subject_clitics("pt", "queixo-me"), "queixo")
+        self.assertEqual(strip_subject_clitics("it", "mi zittisco"), "zittisco")
 
     def test_tense_tags(self) -> None:
         self.assertEqual(decode_tags(["historic", "indicative", "past", "first-person", "singular"])[1],
@@ -208,6 +213,20 @@ class VerbixParseTests(unittest.TestCase):
         self.assertEqual(map_feature("Indicative Past", "fur"), "indicative.preterite")
         self.assertEqual(map_feature("Indicative Past", "pt"), "indicative.imperfect")
         self.assertIsNone(parse_paradigm("es", self.record([("Indicative Present", [(1, "x")])], exists=False)))
+
+
+class PronominalClassTests(unittest.TestCase):
+    def test_enclitic_infinitives_join_their_class(self) -> None:
+        from vulgultra.verbix import class_from_infinitive
+        cases = [
+            ("es", "zumbársela", "-ar"), ("es", "quejarse", "-ar"), ("es", "reír", "-ir"),
+            ("ca", "queixar-se", "-ar"), ("ca", "captindre's", "-re"),
+            ("it", "zittirsi", "-ire"), ("it", "volgersi", "-ere"),
+            ("ro", "omorî", "-î"), ("fur", "vivi", "-i"), ("lld", "lascèr", "-èr"),
+            ("pt", "tirar a sorte grande", "phrase"),
+        ]
+        for lect, lemma, expected in cases:
+            self.assertEqual(class_from_infinitive(lect, lemma), expected, (lect, lemma))
 
 
 class RegularityTests(unittest.TestCase):

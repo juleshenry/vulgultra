@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries
 - Source files: `kaikki-oc.jsonl`
-- Lemmas with forms: **788**
+- Lemmas with forms: **783**
 - Verb lemma entries: **963**
 - Inflected form records: **157563**
 - Separate form-of entries: **332**
@@ -22,7 +22,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-ir` | 70 | 7 | 5 |
 | `-er` | 43 | 7 | 5 |
 | `-re` | 36 | 7 | 5 |
-| `other` | 51 | 0 | 0 |
+| `other` | 46 | 0 | 0 |
 
 ## Ending: `-ar`
 
@@ -330,11 +330,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 50 | `infinitive` | -iriái | -iriás | -iriá | -iriam | -iriatz | -irián |
-| `indicative.future` | 50 | `infinitive` | -irai | -iràs | -irà | -irem | -iretz | -iràn |
-| `indicative.imperfect` | 51 | `infinitive` | -iái | -iás | -iá | -iam | -iatz | -ián |
-| `indicative.present` | 50 | `infinitive` | -i | -es | -ís | -èm | -ètz | -on |
-| `indicative.preterite` | 50 | `infinitive` | -iguèri | -iguères | -iguèt | -iguèrem | -iguèretz | -iguèron |
+| `conditional` | 51 | `infinitive` | -iriái | -iriás | -iriá | -iriam | -iriatz | -irián |
+| `indicative.future` | 51 | `infinitive` | -irai | -iràs | -irà | -irem | -iretz | -iràn |
+| `indicative.imperfect` | 52 | `infinitive` | -iái | -iás | -iá | -iam | -iatz | -ián |
+| `indicative.present` | 51 | `infinitive` | -i | -es | -ís | -èm | -ètz | -on |
+| `indicative.preterite` | 51 | `infinitive` | -iguèri | -iguères | -iguèt | -iguèrem | -iguèretz | -iguèron |
 
 ### Representative lemmas
 
@@ -1192,4 +1192,4 @@ Paradigms without a full six-slot inventory (count only).
 
 | Ending / paradigm | Lemmas |
 |---|---:|
-| `other` | 51 |
+| `other` | 46 |

@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Wiktionnaire Conjugaison:gallo (https://fr.wiktionary.org/wiki/Catégorie:Conjugaison_en_gallo)
 - Source files: `kaikki-gallo.jsonl`, `gallo_diseux.json`
-- Lemmas with forms: **556**
+- Lemmas with forms: **522**
 - Verb lemma entries: **1755**
 - Inflected form records: **408**
 - Separate form-of entries: **2536**
@@ -24,7 +24,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `aler` | 1 | 8 | 7 |
 | `ói` | 1 | 6 | 5 |
 | `-i` | 37 | 6 | 0 |
-| `unknown` | 108 | 0 | 0 |
+| `unknown` | 74 | 0 | 0 |
 | `-ae` | 29 | 0 | 0 |
 | `-r` | 26 | 0 | 0 |
 | `-ir` | 15 | 0 | 0 |
@@ -935,7 +935,7 @@ Paradigms without a full six-slot inventory (count only).
 
 | Ending / paradigm | Lemmas |
 |---|---:|
-| `unknown` | 108 |
+| `unknown` | 74 |
 | `-ae` | 29 |
 | `-r` | 26 |
 | `-ir` | 15 |

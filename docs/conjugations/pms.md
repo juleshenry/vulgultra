@@ -18,12 +18,13 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `other` | 21 | 7 | 6 |
+| `-e` | 20 | 7 | 6 |
 | `-é` | 80 | 6 | 6 |
 | `-ì` | 18 | 6 | 6 |
 | `-è` | 1 | 6 | 5 |
+| `other` | 1 | 2 | 1 |
 
-## `other`
+## Ending: `-e`
 
 ### Person-slot inventory
 
@@ -31,12 +32,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `indicative.future` | 12 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
-| `indicative.imperfect` | 11 | `lcp` | -ìa | -ìe | -ìa | -io | -ìe | -ìo |
-| `indicative.present` | 9 | `lcp` | -o | -e | ∅ | -uma | -e | -o |
-| `subjunctive.imperfect` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `subjunctive.present` | 10 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `conditional` | 11 | `infinitive` | -rìa | -rìe | -rìa | -rìo | -rìe | -rìo |
+| `indicative.future` | 11 | `infinitive` | -rai | -ras | -rà | -ruma | -reve | -ran |
+| `indicative.imperfect` | 11 | `infinitive` | -ìa | -ìe | -ìa | -io | -ìe | -ìo |
+| `indicative.present` | 9 | `infinitive` | -o | -e | ∅ | -uma | -e | -o |
+| `subjunctive.imperfect` | 11 | `infinitive` | -ea | -ee | -ea | -eo | -ee | -eo |
+| `subjunctive.present` | 9 | `infinitive` | -a | -e | -a | -o | -e | -o |
 
 ### Representative lemmas
 
@@ -881,3 +882,94 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | anduma |
 | `2pl` | andé |
 | `3pl` | vado |
+
+## `other`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.future` | 1 | `lcp` | -ai | -as | -à | -oma | -eve | -an |
+
+### Representative lemmas
+
+#### `avèj`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | hai |
+| `2sg` | heu |
+| `3sg` | hèi |
+| `1pl` | oma |
+| `2pl` | eve |
+| `3pl` | han |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avrai |
+| `2sg` | avras |
+| `3sg` | avrà |
+| `1pl` | avroma |
+| `2pl` | avreve |
+| `3pl` | avran |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avrìa |
+| `2sg` | avrìës |
+| `3sg` | — |
+| `1pl` | avrìo |
+| `2pl` | avrìës |
+| `3pl` | — |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | - |
+| `2sg` | àbie |
+| `3sg` | - |
+| `1pl` | avoma |
+| `2pl` | avèje |
+| `3pl` | — |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avìa |
+| `2sg` | avìës |
+| `3sg` | — |
+| `1pl` | avìo |
+| `2pl` | avìës |
+| `3pl` | — |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avèissa |
+| `2sg` | avèissës |
+| `3sg` | — |
+| `1pl` | avèisso |
+| `2pl` | avèissës |
+| `3pl` | — |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | àbia |
+| `2sg` | àbiës |
+| `3sg` | — |
+| `1pl` | àbio |
+| `2pl` | àbiës |
+| `3pl` | — |

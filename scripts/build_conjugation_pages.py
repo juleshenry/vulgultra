@@ -32,6 +32,7 @@ from vulgultra.conjugation_harvest import (  # noqa: E402
 from vulgultra.romance_swadesh import LECT_NAMES, SOURCE_LANGS  # noqa: E402
 from vulgultra.verbix import LECT_CONFIG as VERBIX_LECTS  # noqa: E402
 from vulgultra.verbix import NOT_HARVESTED as VERBIX_NOT_HARVESTED  # noqa: E402
+from vulgultra.verbix import bare_infinitive  # noqa: E402
 from vulgultra.verbix import normalize_class as normalize_verbix_class  # noqa: E402
 
 WORDS = ROOT / "data" / "words"
@@ -166,7 +167,7 @@ TEMPLATE_CLASS_ENDINGS = {
     "lij": ("âse", "îse", "êse", "â", "î", "éi", "ei", "ê", "e"),
     "nrf": ("ier", "er", "ir", "re", "i"),
     "wa": ("yî", "î", "er", "eur", "ur", "re", "e", "i"),
-    "eml": ("ēr", "èr", "er", "îr", "ir", "ôr", "ar"),
+    "eml": ("ēres", "ères", "îres", "ēr", "èr", "er", "îr", "ir", "ôr", "ar"),
     "lmo": ("à", "è", "er", "ì", "ir"),
     "rgn": ("êr", "ér", "ar", "ìr", "ir"),
 }
@@ -183,8 +184,10 @@ def normalize_template_classes(lect: str, lemma_meta: dict) -> None:
             continue
         low = re.sub(r"^(?:se\s+|s['’])", "", lemma.lower().strip())
         ending = next((e for e in endings if low.endswith(e)), None)
-        # âse / îse / êse are reflexive infinitives of the â / î / ê class.
-        meta["class_source"] = f"-{ending[:-2] if ending and ending.endswith('se') else ending}" if ending else "unknown"
+        # Reflexive infinitives join their class: lij âse → â, eml ères → èr.
+        if ending and ending.endswith(("se", "res")):
+            ending = ending[:-2]
+        meta["class_source"] = f"-{ending}" if ending else "unknown"
 
 
 def fill_unknown_classes(lect: str, lemma_meta: dict) -> None:
@@ -204,6 +207,25 @@ def normalize_ending_classes(lect: str, lemma_meta: dict) -> None:
         meta["class_source"] = normalize_verbix_class(
             lect, lemma, meta.get("class_source"),
         )
+
+
+def drop_phrases_and_pronominal_twins(lect: str, paradigms: dict, lemma_meta: dict) -> None:
+    """Idioms (`tirar a sorte grande`) are not verbs; a pronominal lemma whose
+    plain infinitive is also a lemma (quejarse / quejar) would count twice;
+    non-Latin-script duplicates (ro Cyrillic) are dropped."""
+    lemmas = {lemma.lower() for lemma in lemma_meta}
+    for lemma in list(lemma_meta):
+        bare = bare_infinitive(lect, lemma)
+        cls = lemma_meta[lemma].get("class_source")
+        if (
+            cls == "phrase"
+            or (" " in lemma.strip() and cls in {None, "", "unknown", "other"})
+            # Cyrillic / Hebrew spellings of Latin-script lemmas (ro фи, lad סיר).
+            or not re.search(r"[a-zà-ɏ]", lemma.lower())
+            or (bare != lemma.lower() and bare in lemmas)
+        ):
+            lemma_meta.pop(lemma, None)
+            paradigms.pop(lemma, None)
 
 
 def merge_conjugation_json(
@@ -348,6 +370,7 @@ def source_paradigms(lect: str) -> tuple[dict, dict, list[str], dict[str, int], 
     normalize_ending_classes(lect, lemma_meta)
     normalize_template_classes(lect, lemma_meta)
     fill_unknown_classes(lect, lemma_meta)
+    drop_phrases_and_pronominal_twins(lect, paradigms, lemma_meta)
     bits = []
     if any(name.startswith("kaikki-") for name in files):
         bits.append("Wiktionary/Wiktextract form-of entries")

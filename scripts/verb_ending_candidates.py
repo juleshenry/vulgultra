@@ -88,7 +88,7 @@ LECT_THEME = {
     "wa": {"-er": "a", "-eur": "e", "-ur": "e", "-î": "i", "-e": "re"},
     # Gallo-Italian / Rhaeto: stressed -é/-èr/-er from -ĀRE.
     "pms": {"-é": "a", "-è": "e", "-e": "re"},
-    "lld": {"-er": "a", "-é": "e"},
+    "lld": {"-er": "a", "-èr": "a", "-é": "e", "-ëi": "e"},
     "eml": {"-ēr": "a", "-èr": "a", "-er": "re", "-îr": "i", "-ôr": "a"},
     "rgn": {"-êr": "a", "-ér": "a", "-ar": "re", "-ìr": "i"},
     "fur": {"-i": "re"},

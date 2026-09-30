@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-rm.jsonl`, `rm_verbix.json`
-- Lemmas with forms: **246**
+- Lemmas with forms: **220**
 - Verb lemma entries: **303**
 - Inflected form records: **3231**
 - Separate form-of entries: **25**
@@ -20,10 +20,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 |---|---:|---:|---:|
 | `-er` | 68 | 9 | 6 |
 | `-ar` | 100 | 8 | 6 |
-| `-ir` | 30 | 10 | 4 |
+| `-ir` | 27 | 10 | 4 |
 | `-air` | 14 | 7 | 3 |
-| `other` | 23 | 0 | 0 |
-| `-eir` | 11 | 0 | 0 |
+| `-eir` | 10 | 0 | 0 |
+| `other` | 1 | 0 | 0 |
 
 ## Ending: `-er`
 
@@ -1196,5 +1196,5 @@ Paradigms without a full six-slot inventory (count only).
 
 | Ending / paradigm | Lemmas |
 |---|---:|
-| `other` | 23 |
-| `-eir` | 11 |
+| `-eir` | 10 |
+| `other` | 1 |

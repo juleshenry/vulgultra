@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries
 - Source files: `kaikki-lad.jsonl`
-- Lemmas with forms: **260**
+- Lemmas with forms: **225**
 - Verb lemma entries: **456**
 - Inflected form records: **4804**
 - Separate form-of entries: **179**
@@ -21,7 +21,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-ar` | 159 | 8 | 7 |
 | `-ir` | 33 | 8 | 7 |
 | `-er` | 25 | 8 | 7 |
-| `unknown` | 43 | 0 | 0 |
+| `unknown` | 8 | 0 | 0 |
 
 ## Ending: `-ar`
 
@@ -891,31 +891,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | ve |
 | `3pl` | ved |
 
-## `unknown`
+## Sparse / unclassified
 
-### Person-slot inventory
+Paradigms without a full six-slot inventory (count only).
 
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `סיר`
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | אירה |
-| `2sg` | — |
-| `3sg` | אירה |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-#### `קריאיר`
-
-_No classified person-number cells for this lemma._
-
-#### `קאבזאר`
-
-_No classified person-number cells for this lemma._
+| Ending / paradigm | Lemmas |
+|---|---:|
+| `unknown` | 8 |

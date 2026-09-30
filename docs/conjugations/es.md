@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-es.jsonl`, `es_verbix.json`
-- Lemmas with forms: **10883**
+- Lemmas with forms: **8768**
 - Verb lemma entries: **10960**
 - Inflected form records: **1609385**
 - Separate form-of entries: **21**
-- Classified person-slot observations: **1218316**
+- Classified person-slot observations: **1201582**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,18 +18,18 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-ar` | 7426 | 10 | 10 |
-| `other` | 2328 | 10 | 10 |
-| `-ir` | 600 | 10 | 10 |
-| `-er` | 525 | 10 | 10 |
+| `-ar` | 7596 | 10 | 10 |
+| `-ir` | 633 | 10 | 10 |
+| `-er` | 517 | 10 | 10 |
 | `estar` | 1 | 10 | 10 |
 | `haber` | 1 | 10 | 10 |
 | `ir` | 1 | 10 | 9 |
 | `ser` | 1 | 8 | 6 |
+| `other` | 18 | 0 | 0 |
 
 ## Ending: `-ar`
 
-Template stem args observed: `<+,ie>`, `<+,ie􂀿in some parts of Latin America􂁀>`, `<+,ie􂀿obsolete􂁀>`, `<+,ú>`, `<hue>` (+32 more).
+Template stem args observed: `<+,ie>`, `<+,ie􂀿in some parts of Latin America􂁀>`, `<+,ie􂀿obsolete􂁀>`, `<+,ú>`, `<hue>` (+31 more).
 
 ### Person-slot inventory
 
@@ -37,16 +37,16 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 7325 | `infinitive` | -aría | -arías | -aría | -aríamos | -aríais | -arían |
-| `indicative.future` | 7325 | `infinitive` | -aré | -arás | -ará | -aremos | -aréis | -arán |
-| `indicative.imperfect` | 7325 | `infinitive` | -aba | -abas | -aba | -ábamos | -abais | -aban |
-| `indicative.present` | 7083 | `infinitive` | -o | -as | -a | -amos | -áis | -an |
-| `indicative.preterite` | 5629 | `infinitive` | -é | -aste | -ó | -amos | -asteis | -aron |
+| `conditional` | 7343 | `infinitive` | -aría | -arías | -aría | -aríamos | -aríais | -arían |
+| `indicative.future` | 7343 | `infinitive` | -aré | -arás | -ará | -aremos | -aréis | -arán |
+| `indicative.imperfect` | 7343 | `infinitive` | -aba | -abas | -aba | -ábamos | -abais | -aban |
+| `indicative.present` | 7100 | `infinitive` | -o | -as | -a | -amos | -áis | -an |
+| `indicative.preterite` | 5643 | `infinitive` | -é | -aste | -ó | -amos | -asteis | -aron |
 | `nonfinite.gerund` | 238 | `infinitive` | -ándome | -ándote | -ándose | -ándonos | -ándoos | -ándose |
 | `nonfinite.infinitive` | 238 | `infinitive` | -arme | -arte | -arse | -arnos | -aros | -arse |
-| `subjunctive.future` | 7321 | `infinitive` | -are | -ares | -are | -áremos | -areis | -aren |
-| `subjunctive.imperfect` | 7321 | `infinitive` | -ara | -aras | -ara | -áramos | -arais | -aran |
-| `subjunctive.present` | 5458 | `infinitive` | -e | -es | -e | -emos | -éis | -en |
+| `subjunctive.future` | 7339 | `infinitive` | -are | -ares | -are | -áremos | -areis | -aren |
+| `subjunctive.imperfect` | 7339 | `infinitive` | -ara | -aras | -ara | -áramos | -arais | -aran |
+| `subjunctive.present` | 5471 | `infinitive` | -e | -es | -e | -emos | -éis | -en |
 
 ### Representative lemmas
 
@@ -58,89 +58,89 @@ Stem: `ñangotarse`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ñangoto |
-| `2sg` | te ñangotas |
-| `3sg` | se ñangota |
-| `1pl` | nos ñangotamos |
-| `2pl` | os ñangotáis |
-| `3pl` | se ñangotan |
+| `1sg` | ñangoto |
+| `2sg` | ñangotas |
+| `3sg` | ñangota |
+| `1pl` | ñangotamos |
+| `2pl` | ñangotáis |
+| `3pl` | ñangotan |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ñangotaría |
-| `2sg` | te ñangotarías |
-| `3sg` | se ñangotaría |
-| `1pl` | nos ñangotaríamos |
-| `2pl` | os ñangotaríais |
-| `3pl` | se ñangotarían |
+| `1sg` | ñangotaría |
+| `2sg` | ñangotarías |
+| `3sg` | ñangotaría |
+| `1pl` | ñangotaríamos |
+| `2pl` | ñangotaríais |
+| `3pl` | ñangotarían |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ñangotaré |
-| `2sg` | te ñangotarás |
-| `3sg` | se ñangotará |
-| `1pl` | nos ñangotaremos |
-| `2pl` | os ñangotaréis |
-| `3pl` | se ñangotarán |
+| `1sg` | ñangotaré |
+| `2sg` | ñangotarás |
+| `3sg` | ñangotará |
+| `1pl` | ñangotaremos |
+| `2pl` | ñangotaréis |
+| `3pl` | ñangotarán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ñangotaba |
-| `2sg` | te ñangotabas |
-| `3sg` | se ñangotaba |
-| `1pl` | nos ñangotábamos |
-| `2pl` | os ñangotabais |
-| `3pl` | se ñangotaban |
+| `1sg` | ñangotaba |
+| `2sg` | ñangotabas |
+| `3sg` | ñangotaba |
+| `1pl` | ñangotábamos |
+| `2pl` | ñangotabais |
+| `3pl` | ñangotaban |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ñangoté |
-| `2sg` | te ñangotaste |
-| `3sg` | se ñangotó |
-| `1pl` | nos ñangotamos |
-| `2pl` | os ñangotasteis |
-| `3pl` | se ñangotaron |
+| `1sg` | ñangoté |
+| `2sg` | ñangotaste |
+| `3sg` | ñangotó |
+| `1pl` | ñangotamos |
+| `2pl` | ñangotasteis |
+| `3pl` | ñangotaron |
 
 ##### `subjunctive.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ñangotare |
-| `2sg` | te ñangotares |
-| `3sg` | se ñangotare |
-| `1pl` | nos ñangotáremos |
-| `2pl` | os ñangotareis |
-| `3pl` | se ñangotaren |
+| `1sg` | ñangotare |
+| `2sg` | ñangotares |
+| `3sg` | ñangotare |
+| `1pl` | ñangotáremos |
+| `2pl` | ñangotareis |
+| `3pl` | ñangotaren |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ñangotara |
-| `2sg` | te ñangotaras |
-| `3sg` | se ñangotara |
-| `1pl` | nos ñangotáramos |
-| `2pl` | os ñangotarais |
-| `3pl` | se ñangotaran |
+| `1sg` | ñangotara |
+| `2sg` | ñangotaras |
+| `3sg` | ñangotara |
+| `1pl` | ñangotáramos |
+| `2pl` | ñangotarais |
+| `3pl` | ñangotaran |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | me ñangote |
-| `2sg` | te ñangotes |
-| `3sg` | se ñangote |
-| `1pl` | nos ñangotemos |
-| `2pl` | os ñangotéis |
-| `3pl` | se ñangoten |
+| `1sg` | ñangote |
+| `2sg` | ñangotes |
+| `3sg` | ñangote |
+| `1pl` | ñangotemos |
+| `2pl` | ñangotéis |
+| `3pl` | ñangoten |
 
 _…1 more tense/mood rows in the JSON corpus._
 
@@ -328,308 +328,9 @@ _…1 more tense/mood rows in the JSON corpus._
 
 _…1 more tense/mood rows in the JSON corpus._
 
-## `other`
-
-Template stem args observed: `<+,ú>`, `<i>`, `<ie-i>`, `<ie>`, `<no_pres_stressed>` (+9 more).
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 17 | `lcp` | ∅ | -s | ∅ | -mos | -is | -n |
-| `indicative.future` | 17 | `lcp` | -é | -ás | -á | -emos | -éis | -án |
-| `indicative.imperfect` | 14 | `lcp` | ∅ | -s | ∅ | -mos | -is | -n |
-| `indicative.present` | 8 | `lcp` | -ío | -íes | -íe | -eímos | -eís | -íen |
-| `indicative.preterite` | 6 | `lcp` | -í | -íste | -yó | -ímos | -ísteis | -yeron |
-| `nonfinite.gerund` | 247 | `lcp` | -me | -te | -se | -nos | -os | -se |
-| `nonfinite.infinitive` | 247 | `lcp` | -me | -te | -se | -nos | -os | -se |
-| `subjunctive.future` | 14 | `lcp` | -ere | -eres | -ere | -éremos | -ereis | -eren |
-| `subjunctive.imperfect` | 14 | `lcp` | -era | -eras | -era | -éramos | -erais | -eran |
-| `subjunctive.present` | 6 | `lcp` | -ía | -ías | -ía | -iamos | -iáis | -ían |
-
-### Representative lemmas
-
-#### `zumbársela`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me la zumbo |
-| `2sg` | te la zumbas |
-| `3sg` | se la zumba |
-| `1pl` | nos la zumbamos |
-| `2pl` | os la zumbáis |
-| `3pl` | se la zumban |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me la zumbaría |
-| `2sg` | te la zumbarías |
-| `3sg` | se la zumbaría |
-| `1pl` | nos la zumbaríamos |
-| `2pl` | os la zumbaríais |
-| `3pl` | se la zumbarían |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me la zumbaré |
-| `2sg` | te la zumbarás |
-| `3sg` | se la zumbará |
-| `1pl` | nos la zumbaremos |
-| `2pl` | os la zumbaréis |
-| `3pl` | se la zumbarán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me la zumbaba |
-| `2sg` | te la zumbabas |
-| `3sg` | se la zumbaba |
-| `1pl` | nos la zumbábamos |
-| `2pl` | os la zumbabais |
-| `3pl` | se la zumbaban |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me la zumbé |
-| `2sg` | te la zumbaste |
-| `3sg` | se la zumbó |
-| `1pl` | nos la zumbamos |
-| `2pl` | os la zumbasteis |
-| `3pl` | se la zumbaron |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me la zumbare |
-| `2sg` | te la zumbares |
-| `3sg` | se la zumbare |
-| `1pl` | nos la zumbáremos |
-| `2pl` | os la zumbareis |
-| `3pl` | se la zumbaren |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me la zumbara |
-| `2sg` | te la zumbaras |
-| `3sg` | se la zumbara |
-| `1pl` | nos la zumbáramos |
-| `2pl` | os la zumbarais |
-| `3pl` | se la zumbaran |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me la zumbe |
-| `2sg` | te la zumbes |
-| `3sg` | se la zumbe |
-| `1pl` | nos la zumbemos |
-| `2pl` | os la zumbéis |
-| `3pl` | se la zumben |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `vérselas`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las veo |
-| `2sg` | te las ves |
-| `3sg` | se las ve |
-| `1pl` | nos las vemos |
-| `2pl` | os las veis |
-| `3pl` | se las ven |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las vería |
-| `2sg` | te las verías |
-| `3sg` | se las vería |
-| `1pl` | nos las veríamos |
-| `2pl` | os las veríais |
-| `3pl` | se las verían |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las veré |
-| `2sg` | te las verás |
-| `3sg` | se las verá |
-| `1pl` | nos las veremos |
-| `2pl` | os las veréis |
-| `3pl` | se las verán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las veía |
-| `2sg` | te las veías |
-| `3sg` | se las veía |
-| `1pl` | nos las veíamos |
-| `2pl` | os las veíais |
-| `3pl` | se las veían |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las vi |
-| `2sg` | te las viste |
-| `3sg` | se las vio |
-| `1pl` | nos las vimos |
-| `2pl` | os las visteis |
-| `3pl` | se las vieron |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las viere |
-| `2sg` | te las vieres |
-| `3sg` | se las viere |
-| `1pl` | nos las viéremos |
-| `2pl` | os las viereis |
-| `3pl` | se las vieren |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las viera |
-| `2sg` | te las vieras |
-| `3sg` | se las viera |
-| `1pl` | nos las viéramos |
-| `2pl` | os las vierais |
-| `3pl` | se las vieran |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las vea |
-| `2sg` | te las veas |
-| `3sg` | se las vea |
-| `1pl` | nos las veamos |
-| `2pl` | os las veáis |
-| `3pl` | se las vean |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `valérselas`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las valgo |
-| `2sg` | te las vales |
-| `3sg` | se las vale |
-| `1pl` | nos las valemos |
-| `2pl` | os las valéis |
-| `3pl` | se las valen |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las valdría |
-| `2sg` | te las valdrías |
-| `3sg` | se las valdría |
-| `1pl` | nos las valdríamos |
-| `2pl` | os las valdríais |
-| `3pl` | se las valdrían |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las valdré |
-| `2sg` | te las valdrás |
-| `3sg` | se las valdrá |
-| `1pl` | nos las valdremos |
-| `2pl` | os las valdréis |
-| `3pl` | se las valdrán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las valía |
-| `2sg` | te las valías |
-| `3sg` | se las valía |
-| `1pl` | nos las valíamos |
-| `2pl` | os las valíais |
-| `3pl` | se las valían |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las valí |
-| `2sg` | te las valiste |
-| `3sg` | se las valió |
-| `1pl` | nos las valimos |
-| `2pl` | os las valisteis |
-| `3pl` | se las valieron |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las valiere |
-| `2sg` | te las valieres |
-| `3sg` | se las valiere |
-| `1pl` | nos las valiéremos |
-| `2pl` | os las valiereis |
-| `3pl` | se las valieren |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las valiera |
-| `2sg` | te las valieras |
-| `3sg` | se las valiera |
-| `1pl` | nos las valiéramos |
-| `2pl` | os las valierais |
-| `3pl` | se las valieran |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me las valga |
-| `2sg` | te las valgas |
-| `3sg` | se las valga |
-| `1pl` | nos las valgamos |
-| `2pl` | os las valgáis |
-| `3pl` | se las valgan |
-
-_…1 more tense/mood rows in the JSON corpus._
-
 ## Ending: `-ir`
 
-Template stem args observed: `<i>`, `<ie-i>`, `<ie.only3sp>`, `<ie>`, `<no_pres1_and_sub>` (+6 more).
+Template stem args observed: `<i>`, `<ie-i>`, `<ie.only3sp>`, `<ie>`, `<no_pres1_and_sub>` (+5 more).
 
 ### Person-slot inventory
 
@@ -637,9 +338,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 562 | `infinitive` | -iría | -irías | -iría | -iríamos | -iríais | -irían |
-| `indicative.future` | 562 | `infinitive` | -iré | -irás | -irá | -iremos | -iréis | -irán |
-| `indicative.imperfect` | 591 | `infinitive` | -ía | -ías | -ía | -íamos | -íais | -ían |
+| `conditional` | 576 | `infinitive` | -iría | -irías | -iría | -iríamos | -iríais | -irían |
+| `indicative.future` | 576 | `infinitive` | -iré | -irás | -irá | -iremos | -iréis | -irán |
+| `indicative.imperfect` | 605 | `infinitive` | -ía | -ías | -ía | -íamos | -íais | -ían |
 | `indicative.present` | 329 | `infinitive` | -o | -es | -e | -imos | -ís | -en |
 | `indicative.preterite` | 356 | `infinitive` | -í | -iste | -ió | -imos | -isteis | -ieron |
 | `nonfinite.gerund` | 17 | `infinitive` | -iéndome | -iéndote | -iéndose | -iéndonos | -iéndoos | -iéndose |
@@ -1673,3 +1374,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `3pl` | sean |
 
 _…1 more tense/mood rows in the JSON corpus._
+
+## Sparse / unclassified
+
+Paradigms without a full six-slot inventory (count only).
+
+| Ending / paradigm | Lemmas |
+|---|---:|
+| `other` | 18 |

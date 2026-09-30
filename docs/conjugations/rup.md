@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries
 - Source files: `kaikki-rup.jsonl`
-- Lemmas with forms: **800**
+- Lemmas with forms: **799**
 - Verb lemma entries: **920**
 - Inflected form records: **3930**
 - Separate form-of entries: **68**
@@ -18,7 +18,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `unknown` | 779 | 4 | 3 |
+| `unknown` | 778 | 4 | 3 |
 | `-are` | 21 | 4 | 3 |
 
 ## `unknown`

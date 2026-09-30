@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-lld.jsonl`, `lld_verbix.json`
-- Lemmas with forms: **318**
+- Lemmas with forms: **307**
 - Verb lemma entries: **350**
 - Inflected form records: **8157**
 - Separate form-of entries: **5167**
@@ -20,9 +20,13 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 |---|---:|---:|---:|
 | `-er` | 145 | 5 | 5 |
 | `-ir` | 22 | 5 | 5 |
-| `other` | 30 | 5 | 4 |
-| `-ì` | 6 | 3 | 2 |
-| `-é` | 115 | 5 | 0 |
+| `-ei` | 10 | 5 | 3 |
+| `-ì` | 5 | 3 | 2 |
+| `-ëi` | 1 | 3 | 2 |
+| `-é` | 113 | 5 | 0 |
+| `-e` | 3 | 5 | 0 |
+| `-èr` | 5 | 0 | 0 |
+| `other` | 3 | 0 | 0 |
 
 ## Ending: `-er`
 
@@ -480,9 +484,9 @@ Stem: `atribu`.
 | `2pl` | atribuide |
 | `3pl` | — |
 
-## `other`
+## Ending: `-ei`
 
-Template stem args observed: `coromp`, `perd`, `sav`, `ved`.
+Template stem args observed: `sav`, `ved`.
 
 ### Person-slot inventory
 
@@ -490,82 +494,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 6 | `lcp` | -é | -as | -à | -on | -eis | -à |
-| `indicative.imperfect` | 5 | `lcp` | -e | -es | -a | -an | -ais | -a |
-| `indicative.present` | 5 | `lcp` | -e | -es | ∅ | -on | -eis | ∅ |
-| `subjunctive.imperfect` | 2 | `lcp` | -e | -es | -a | -an | -ais | -a |
+| `indicative.future` | 6 | `infinitive` | -aré | -aras | -arà | -aron | -areis | -arà |
+| `indicative.imperfect` | 5 | `infinitive` | -ove | -oves | -ova | -ovan | -ovais | -ova |
+| `indicative.present` | 2 | `infinitive` | -e | -es | ∅ | -on | -eis | ∅ |
 
 ### Representative lemmas
-
-#### `corompe`
-
-Stem: `coromp`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | corompe |
-| `2sg` | corompes |
-| `3sg` | coromp |
-| `1pl` | corompon |
-| `2pl` | corompeis |
-| `3pl` | coromp |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | coromparé |
-| `2sg` | coromparas |
-| `3sg` | coromparà |
-| `1pl` | coromparon |
-| `2pl` | corompareis |
-| `3pl` | coromparà |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | corompove |
-| `2sg` | corompoves |
-| `3sg` | corompova |
-| `1pl` | corompovan |
-| `2pl` | corompovais |
-| `3pl` | corompova |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | corompesse |
-| `2sg` | corompesses |
-| `3sg` | corompessa |
-| `1pl` | corompessan |
-| `2pl` | corompessais |
-| `3pl` | corompessa |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | corompe |
-| `2sg` | corompes |
-| `3sg` | corompe |
-| `1pl` | corompon |
-| `2pl` | corompeis |
-| `3pl` | corompe |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | coromp |
-| `3sg` | — |
-| `1pl` | corompon |
-| `2pl` | corompede |
-| `3pl` | — |
 
 #### `avei`
 
@@ -691,6 +624,76 @@ Stem: `coromp`.
 | `1pl` | ausson |
 | `2pl` | ausseis |
 | `3pl` | ausse |
+
+#### `vedei`
+
+Stem: `ved`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | veide |
+| `2sg` | veides |
+| `3sg` | veid |
+| `1pl` | vedon |
+| `2pl` | vedeis |
+| `3pl` | veid |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vedaré |
+| `2sg` | vedaras |
+| `3sg` | vedarà |
+| `1pl` | vedaron |
+| `2pl` | vedareis |
+| `3pl` | vedarà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vedove |
+| `2sg` | vedoves |
+| `3sg` | vedova |
+| `1pl` | vedovan |
+| `2pl` | vedovais |
+| `3pl` | vedova |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | veid |
+| `3sg` | — |
+| `1pl` | vedon |
+| `2pl` | vedede |
+| `3pl` | — |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vedesse |
+| `2sg` | — |
+| `3sg` | vedessa |
+| `1pl` | vedessan |
+| `2pl` | vedessais |
+| `3pl` | vedessa |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | veide |
+| `2sg` | — |
+| `3sg` | veide |
+| `1pl` | vedon |
+| `2pl` | vedeis |
+| `3pl` | veide |
 
 ## Ending: `-ì`
 
@@ -909,6 +912,87 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | — |
 | `3pl` | vede |
 
+## Ending: `-ëi`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.future` | 1 | `infinitive` | -eré | -eres | -erà | -eron | -erëis | -erà |
+| `indicative.imperfect` | 1 | `infinitive` | -ove | -oves | -ova | -an | -ais | -ova |
+
+### Representative lemmas
+
+#### `udëi`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vëije |
+| `2sg` | vëijes |
+| `3sg` | vëiga |
+| `1pl` | udon |
+| `2pl` | udëis |
+| `3pl` | vëija |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | uderé |
+| `2sg` | uderes |
+| `3sg` | uderà |
+| `1pl` | uderon |
+| `2pl` | uderëis |
+| `3pl` | uderà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | udove |
+| `2sg` | udoves |
+| `3sg` | udova |
+| `1pl` | udan |
+| `2pl` | udais |
+| `3pl` | udova |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | vëiga |
+| `3sg` | — |
+| `1pl` | - |
+| `2pl` | udëde |
+| `3pl` | — |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | udësse |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vëije |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
+
 ## Ending: `-é`
 
 ### Person-slot inventory
@@ -1056,3 +1140,203 @@ No majority ending pattern with enough complete six-slot rows yet.
 #### `śaré`
 
 _No classified person-number cells for this lemma._
+
+## Ending: `-e`
+
+Template stem args observed: `coromp`, `perd`.
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
+
+### Representative lemmas
+
+#### `corompe`
+
+Stem: `coromp`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | corompe |
+| `2sg` | corompes |
+| `3sg` | coromp |
+| `1pl` | corompon |
+| `2pl` | corompeis |
+| `3pl` | coromp |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | coromparé |
+| `2sg` | coromparas |
+| `3sg` | coromparà |
+| `1pl` | coromparon |
+| `2pl` | corompareis |
+| `3pl` | coromparà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | corompove |
+| `2sg` | corompoves |
+| `3sg` | corompova |
+| `1pl` | corompovan |
+| `2pl` | corompovais |
+| `3pl` | corompova |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | corompesse |
+| `2sg` | corompesses |
+| `3sg` | corompessa |
+| `1pl` | corompessan |
+| `2pl` | corompessais |
+| `3pl` | corompessa |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | corompe |
+| `2sg` | corompes |
+| `3sg` | corompe |
+| `1pl` | corompon |
+| `2pl` | corompeis |
+| `3pl` | corompe |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | coromp |
+| `3sg` | — |
+| `1pl` | corompon |
+| `2pl` | corompede |
+| `3pl` | — |
+
+#### `perde`
+
+Stem: `perd`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | perde |
+| `2sg` | perdes |
+| `3sg` | perd |
+| `1pl` | perdon |
+| `2pl` | perdeis |
+| `3pl` | perd |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | perdaré |
+| `2sg` | perdaras |
+| `3sg` | perdarà |
+| `1pl` | perdaron |
+| `2pl` | perdareis |
+| `3pl` | perdarà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | perdove |
+| `2sg` | perdoves |
+| `3sg` | perdova |
+| `1pl` | perdovan |
+| `2pl` | perdovais |
+| `3pl` | perdova |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | perd |
+| `3sg` | — |
+| `1pl` | perdon |
+| `2pl` | perdede |
+| `3pl` | — |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | perdesse |
+| `2sg` | — |
+| `3sg` | perdessa |
+| `1pl` | perdessan |
+| `2pl` | perdessais |
+| `3pl` | perdessa |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | perde |
+| `2sg` | — |
+| `3sg` | perde |
+| `1pl` | perdon |
+| `2pl` | perdeis |
+| `3pl` | perde |
+
+#### `cueje`
+
+_No classified person-number cells for this lemma._
+
+## Ending: `-èr`
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
+
+### Representative lemmas
+
+#### `lascèr`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | — |
+| `3sg` | lascia |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
+
+#### `adatèr`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | — |
+| `3sg` | adatea |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
+
+#### `rejonèr`
+
+_No classified person-number cells for this lemma._
+
+## Sparse / unclassified
+
+Paradigms without a full six-slot inventory (count only).
+
+| Ending / paradigm | Lemmas |
+|---|---:|
+| `other` | 3 |

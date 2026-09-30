@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-mwl.jsonl`, `mwl_verbix.json`
-- Lemmas with forms: **77**
+- Lemmas with forms: **75**
 - Verb lemma entries: **82**
 - Inflected form records: **5077**
 - Separate form-of entries: **34**
-- Classified person-slot observations: **4413**
+- Classified person-slot observations: **4364**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -21,7 +21,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-ar` | 34 | 9 | 9 |
 | `-er` | 21 | 9 | 9 |
 | `-ir` | 19 | 9 | 9 |
-| `other` | 3 | 0 | 0 |
+| `other` | 1 | 0 | 0 |
 
 ## Ending: `-ar`
 
@@ -331,15 +331,15 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 14 | `infinitive` | -erie | -eries | -erie | -eriemos | -eriedes | -erien |
+| `conditional` | 15 | `infinitive` | -erie | -eries | -erie | -eriemos | -eriedes | -erien |
 | `indicative.future` | 17 | `infinitive` | -erei | -erás | -erá | -eremos | -ereis | -eran |
-| `indicative.imperfect` | 14 | `infinitive` | -ie | -ies | -ie | -iemos | -iedes | -ien |
-| `indicative.pluperfect` | 12 | `infinitive` | -ira | -iras | -ira | -íramos | -írades | -íran |
+| `indicative.imperfect` | 15 | `infinitive` | -ie | -ies | -ie | -iemos | -iedes | -ien |
+| `indicative.pluperfect` | 13 | `infinitive` | -ira | -iras | -ira | -íramos | -írades | -íran |
 | `indicative.present` | 5 | `infinitive` | -o | -es | -e | -emos | -eis | -en |
 | `indicative.preterite` | 12 | `infinitive` | -i | -iste | -iu | -imos | -istes | -írun |
 | `subjunctive.future` | 13 | `infinitive` | -ir | -ires | -ir | -irmos | -irdes | -íren |
-| `subjunctive.imperfect` | 12 | `infinitive` | -isse | -isses | -isse | -íssemos | -íssedes | -íssen |
-| `subjunctive.present` | 4 | `infinitive` | -eia | -eias | -eia | -éiamos | -éiades | -éian |
+| `subjunctive.imperfect` | 13 | `infinitive` | -isse | -isses | -isse | -íssemos | -íssedes | -íssen |
+| `subjunctive.present` | 5 | `infinitive` | -a | -as | -a | -amos | -ades | -an |
 
 ### Representative lemmas
 
@@ -917,62 +917,10 @@ _…2 more tense/mood rows in the JSON corpus._
 
 _…2 more tense/mood rows in the JSON corpus._
 
-## `other`
+## Sparse / unclassified
 
-### Person-slot inventory
+Paradigms without a full six-slot inventory (count only).
 
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `armar un trinta i un`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | armo un trinta i un |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | armei un trinta i un |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-#### `anchir la mula`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | incho la mula |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | anchi la mula |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-#### `sido`
-
-_No classified person-number cells for this lemma._
+| Ending / paradigm | Lemmas |
+|---|---:|
+| `other` | 1 |

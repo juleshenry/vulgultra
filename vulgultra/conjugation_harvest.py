@@ -103,10 +103,54 @@ def lect_from_filename(filename: str) -> str:
     return name.split(".", 1)[0]
 
 
+# Object / reflexive clitics written before the verb in pronominal lemmas
+# (es `me la zumbo`, ca `m'adiro`, it `mi zittisco`) or hyphenated after it
+# (pt `queixo-me`). Stripped so the cell is the verb form alone.
+_IBERO_OBJ = ("me", "te", "se", "nos", "os", "vos", "la", "las", "lo", "los", "le", "les")
+_ITALO_OBJ = ("mi", "ti", "si", "ci", "vi", "ne", "lo", "la", "li", "le", "gli",
+              "me", "te", "se", "ce", "ve")
+OBJECT_CLITICS: dict[str, tuple[str, ...]] = {
+    "es": _IBERO_OBJ, "ast": _IBERO_OBJ, "an": _IBERO_OBJ, "ext": _IBERO_OBJ,
+    "lad": _IBERO_OBJ,
+    "gl": ("me", "te", "se", "nos", "vos", "o", "a", "os", "as", "lle", "lles", "che"),
+    "pt": ("me", "te", "se", "nos", "vos", "o", "a", "os", "as", "lhe", "lhes"),
+    "mwl": ("me", "te", "se", "mos", "bos", "l", "la", "ls", "las", "le", "les"),
+    "ca": ("em", "et", "es", "ens", "us", "el", "la", "els", "les", "li", "hi", "en", "ho",
+           "me", "te", "se", "ne"),
+    "oc": ("me", "te", "se", "nos", "vos", "lo", "la", "los", "las", "li", "i", "ne"),
+    "it": _ITALO_OBJ, "co": _ITALO_OBJ, "scn": _ITALO_OBJ, "sc": _ITALO_OBJ,
+    "ro": ("mă", "te", "se", "ne", "vă", "își", "îmi", "îți", "îl", "o", "îi", "le", "și"),
+}
+_ELIDED_OBJ = re.compile(r"^(?:[mtsnlcv]|ens|us)['’](?=\w)")
+_HYPHEN_OBJ_LECTS = {"pt", "gl", "mwl", "ca"}
+
+
+def strip_object_clitics(lect: str, form: str) -> str:
+    """`me la zumbo` → `zumbo`, `m'adiro` → `adiro`, `queixo-me` → `queixo`."""
+    clitics = OBJECT_CLITICS.get(lect)
+    if not clitics:
+        return form
+    words = form.split()
+    while len(words) > 1 and words[0] in clitics:
+        words = words[1:]
+    if len(words) == 1:
+        word = words[0]
+        if lect in {"ca", "oc", "it", "co", "scn", "sc"}:
+            word = _ELIDED_OBJ.sub("", word)
+        if lect in _HYPHEN_OBJ_LECTS and "-" in word:
+            head, _, tail = word.partition("-")
+            if head and tail.replace("-", "") and all(
+                part in clitics or part in {"hi", "ho", "en", "n'hi"} for part in tail.split("-")
+            ):
+                word = head
+        words = [word]
+    return " ".join(words)
+
+
 def strip_subject_clitics(lect: str, form: str) -> str:
     """`o fevelavi` → `fevelavi`; a bare clitic (`al`) → ``."""
     clitics = SUBJECT_CLITICS.get(lect)
-    text = form.strip()
+    text = strip_object_clitics(lect, form.strip())
     if lect in PREFIX_PARTICLES:
         text = PREFIX_PARTICLES[lect].sub("", text)
     if not clitics:

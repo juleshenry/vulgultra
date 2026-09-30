@@ -76,19 +76,19 @@ LECT_CONFIG: dict[str, dict[str, Any]] = {
     "ca": {"iso": "cat", "langid": 7, "endings": ("ar", "er", "ir", "re")},
     "fr": {"iso": "fra", "langid": 3, "endings": ("er", "ir", "re")},
     "it": {"iso": "ita", "langid": 4, "endings": ("are", "ere", "ire")},
-    "ro": {"iso": "ron", "langid": 5, "endings": ("ea", "a", "e", "i")},
+    "ro": {"iso": "ron", "langid": 5, "endings": ("ea", "a", "e", "i", "î")},
     "an": {"iso": "arg", "langid": 52, "endings": ("ar", "er", "ir", "re")},
     "ast": {"iso": "ast", "langid": 16, "endings": ("ar", "er", "ir")},
     "mwl": {"iso": "mwl", "langid": 54, "endings": ("ar", "er", "ir")},
     "oc": {"iso": "oci", "langid": 8, "endings": ("ar", "er", "ir", "re")},
     "co": {"iso": "cos", "langid": 129, "endings": ("à", "é", "ì", "are", "ere", "ire", "a", "e", "i")},
-    "fur": {"iso": "fur", "langid": 132, "endings": ("â", "ê", "î", "à", "è", "ì", "ar", "er", "ir")},
+    "fur": {"iso": "fur", "langid": 132, "endings": ("â", "ê", "î", "à", "è", "ì", "ar", "er", "ir", "i")},
     "frp": {"iso": "frp", "langid": 261, "endings": ("ar", "er", "ir", "re")},
     "rm": {"iso": "roh", "langid": 56, "endings": ("ar", "er", "ir", "air", "eir", "ir")},
-    "pms": {"iso": "pms", "langid": 12034, "endings": ("é", "è", "ì", "é", "ar", "er", "ir")},
+    "pms": {"iso": "pms", "langid": 12034, "endings": ("é", "è", "ì", "ar", "er", "ir", "e")},
     "sc": {"iso": "srd", "langid": 12, "endings": ("are", "ere", "ire", "ai", "ei", "i")},
     "scn": {"iso": "scn", "langid": 13946, "endings": ("ari", "iri", "iri", "ari")},
-    "lld": {"iso": "lld", "langid": 295, "endings": ("é", "er", "ir", "ì")},
+    "lld": {"iso": "lld", "langid": 295, "endings": ("é", "èr", "er", "ir", "ì", "ëi", "ei", "e")},
     # Verbix shelves Gascon under Occitan (oci); keep lect code gsc locally.
     "gsc": {"iso": "oci", "langid": 8, "endings": ("ar", "er", "ir", "re")},
 }
@@ -108,8 +108,42 @@ IRREGULAR = {
 }
 
 
-def class_from_infinitive(lect: str, lemma: str) -> str:
+# Enclitic pronouns on pronominal infinitives: es zumbársela, it andarsene,
+# pt/ca queixar-se. Stripped so the verb joins its conjugation class.
+_IBERO_ENCLITIC = re.compile(r"(?<=r)(?:se|me|te|nos|os)?(?:l[aoe]s?)?$")
+_ITALO_ENCLITIC = re.compile(r"(?<=r)(?:si|mi|ti|ci|vi)?(?:ne|l[aoie]|cel[aoie]|sel[aoie]|sene|cene)?$")
+_HYPHEN_ENCLITIC = re.compile(
+    r"(?:-(?:se|s'hi|me|te|nos|vos|li|hi|ne|en|lo|la|lhe|o|a)(?:-\w+)?|'(?:s|n|l|m|t|hi))$"
+)
+_UNACCENT = str.maketrans("áéíóú", "aeiou")
+_IBERO = {"es", "ast", "an", "ext", "gl", "mwl", "lad"}
+_ITALO = {"it", "co", "scn", "sc"}
+
+
+def bare_infinitive(lect: str, lemma: str) -> str:
+    """Infinitive without enclitic pronouns (zumbársela → zumbar, andarsene → andare)."""
     low = lemma.lower().strip()
+    stripped = _HYPHEN_ENCLITIC.sub("", low)
+    if stripped == low and lect in _IBERO:
+        stripped = _IBERO_ENCLITIC.sub("", low)
+        if stripped != low:
+            stripped = stripped[:-2] + stripped[-2:].translate(_UNACCENT)
+        # Hiatus -ír is the -ir class (reír, oír, saír).
+        if stripped.endswith("ír"):
+            stripped = stripped[:-2] + "ir"
+    elif stripped == low and lect in _ITALO:
+        stripped = _ITALO_ENCLITIC.sub("", low)
+        if stripped != low:
+            # Italian drops -e before the clitic; -rre verbs (condursi, porsi, trarsi).
+            stripped += "re" if stripped.endswith(("dur", "por", "trar")) else "e"
+    return stripped
+
+
+def class_from_infinitive(lect: str, lemma: str) -> str:
+    if " " in lemma.strip():
+        # Idioms (tirar a sorte grande, fer olor) are phrases, not verb classes.
+        return "phrase"
+    low = bare_infinitive(lect, lemma)
     irregulars = IRREGULAR.get(lect, {})
     if low in irregulars:
         return irregulars[low]

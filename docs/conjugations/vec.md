@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries
 - Source files: `kaikki-vec.jsonl`
-- Lemmas with forms: **421**
+- Lemmas with forms: **420**
 - Verb lemma entries: **497**
 - Inflected form records: **28918**
 - Separate form-of entries: **262**
@@ -21,7 +21,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-ar` | 355 | 7 | 7 |
 | `-ir` | 31 | 7 | 7 |
 | `-er` | 19 | 7 | 7 |
-| `unknown` | 16 | 7 | 7 |
+| `unknown` | 15 | 7 | 7 |
 
 ## Ending: `-ar`
 

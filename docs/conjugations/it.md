@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-it.jsonl`, `it_verbix.json`
-- Lemmas with forms: **14357**
+- Lemmas with forms: **10926**
 - Verb lemma entries: **14650**
 - Inflected form records: **895859**
 - Separate form-of entries: **1356**
@@ -18,10 +18,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-are` | 8458 | 7 | 7 |
-| `other` | 3856 | 7 | 7 |
+| `-are` | 8586 | 7 | 7 |
 | `-ere` | 1064 | 7 | 7 |
-| `-ire` | 973 | 7 | 7 |
+| `-ire` | 977 | 7 | 7 |
+| `other` | 293 | 7 | 7 |
 | `dare` | 1 | 7 | 6 |
 | `fare` | 1 | 7 | 6 |
 | `stare` | 1 | 7 | 6 |
@@ -31,7 +31,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 ## Ending: `-are`
 
-Template stem args observed: `-/à`, `-/à+`, `-/ì+,+,-`, `-/ì,+,-`, `-/ì,+,-.no_root_stressed` (+349 more).
+Template stem args observed: `-/à`, `-/à+`, `-/ì+,+,-`, `-/ì,+,-`, `-/ì,+,-.no_root_stressed` (+373 more).
 
 ### Person-slot inventory
 
@@ -331,311 +331,9 @@ Stem: `e/@`.
 
 _…1 more tense/mood rows in the JSON corpus._
 
-## `other`
-
-Template stem args observed: `+isc`, `+isc.presp:+:avviliènte􂀿rare􂁀`, `+isc.presp:+􂀿rare􂁀`, `+isc.presp:-`, `+isc.presp:concipiènte` (+103 more).
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 127 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
-| `indicative.future` | 127 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
-| `indicative.imperfect` | 127 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
-| `indicative.present` | 53 | `lcp` | -go | -i | -e | -iamo | -ete | -gono |
-| `indicative.preterite` | 53 | `lcp` | -si | -nesti | -se | -nemmo | -neste | -sero |
-| `subjunctive.imperfect` | 127 | `lcp` | -si | -si | -se | -simo | -te | -sero |
-| `subjunctive.present` | 53 | `lcp` | -ga | -ga | -ga | -iamo | -iate | -gano |
-
-### Representative lemmas
-
-#### `starsi`
-
-Stem: `@`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi stò |
-| `2sg` | ti stài |
-| `3sg` | si stà |
-| `1pl` | ci stiàmo |
-| `2pl` | vi stàte |
-| `3pl` | si stànno |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi starèi |
-| `2sg` | ti starésti |
-| `3sg` | si starèbbe |
-| `1pl` | ci starémmo |
-| `2pl` | vi staréste |
-| `3pl` | si starèbbero |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi starò |
-| `2sg` | ti starài |
-| `3sg` | si starà |
-| `1pl` | ci starémo |
-| `2pl` | vi staréte |
-| `3pl` | si starànno |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi stàvo |
-| `2sg` | ti stàvi |
-| `3sg` | si stàva |
-| `1pl` | ci stavàmo |
-| `2pl` | vi stavàte |
-| `3pl` | si stàvano |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi stétti |
-| `2sg` | ti stésti |
-| `3sg` | si stétte |
-| `1pl` | ci stémmo |
-| `2pl` | vi stéste |
-| `3pl` | si stéttero |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi stéssi |
-| `2sg` | ti stéssi |
-| `3sg` | si stésse |
-| `1pl` | ci stéssimo |
-| `2pl` | vi stéste |
-| `3pl` | si stéssero |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi stìa |
-| `2sg` | ti stìa |
-| `3sg` | si stìa |
-| `1pl` | ci stiàmo |
-| `2pl` | vi stiàte |
-| `3pl` | si stìano |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | statti |
-| `3sg` | si stìa |
-| `1pl` | stiamoci |
-| `2pl` | statevi |
-| `3pl` | si stìano |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `starsene`
-
-Stem: `@`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me ne stò |
-| `2sg` | te ne stài |
-| `3sg` | se ne stà |
-| `1pl` | ce ne stiàmo |
-| `2pl` | ve ne stàte |
-| `3pl` | se ne stànno |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me ne starèi |
-| `2sg` | te ne starésti |
-| `3sg` | se ne starèbbe |
-| `1pl` | ce ne starémmo |
-| `2pl` | ve ne staréste |
-| `3pl` | se ne starèbbero |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me ne starò |
-| `2sg` | te ne starài |
-| `3sg` | se ne starà |
-| `1pl` | ce ne starémo |
-| `2pl` | ve ne staréte |
-| `3pl` | se ne starànno |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me ne stàvo |
-| `2sg` | te ne stàvi |
-| `3sg` | se ne stàva |
-| `1pl` | ce ne stavàmo |
-| `2pl` | ve ne stavàte |
-| `3pl` | se ne stàvano |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me ne stétti |
-| `2sg` | te ne stésti |
-| `3sg` | se ne stétte |
-| `1pl` | ce ne stémmo |
-| `2pl` | ve ne stéste |
-| `3pl` | se ne stéttero |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me ne stéssi |
-| `2sg` | te ne stéssi |
-| `3sg` | se ne stésse |
-| `1pl` | ce ne stéssimo |
-| `2pl` | ve ne stéste |
-| `3pl` | se ne stéssero |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | me ne stìa |
-| `2sg` | te ne stìa |
-| `3sg` | se ne stìa |
-| `1pl` | ce ne stiàmo |
-| `2pl` | ve ne stiàte |
-| `3pl` | se ne stìano |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | stattene |
-| `3sg` | se ne stìa |
-| `1pl` | stiamocene |
-| `2pl` | statevene |
-| `3pl` | se ne stìano |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `soddisfarsi`
-
-Stem: `@`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi soddisfàccio |
-| `2sg` | ti soddisfài |
-| `3sg` | si soddisfà |
-| `1pl` | ci soddisfacciàmo |
-| `2pl` | vi soddisfàte |
-| `3pl` | si soddisfànno |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi soddisfarèi |
-| `2sg` | ti soddisfarésti |
-| `3sg` | si soddisfarèbbe |
-| `1pl` | ci soddisfarémmo |
-| `2pl` | vi soddisfaréste |
-| `3pl` | si soddisfarèbbero |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi soddisfarò |
-| `2sg` | ti soddisfarài |
-| `3sg` | si soddisfarà |
-| `1pl` | ci soddisfarémo |
-| `2pl` | vi soddisfaréte |
-| `3pl` | si soddisfarànno |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi soddisfacévo |
-| `2sg` | ti soddisfacévi |
-| `3sg` | si soddisfacéva |
-| `1pl` | ci soddisfacevàmo |
-| `2pl` | vi soddisfacevàte |
-| `3pl` | si soddisfacévano |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi soddisféci |
-| `2sg` | ti soddisfacésti |
-| `3sg` | si soddisféce |
-| `1pl` | ci soddisfacémmo |
-| `2pl` | vi soddisfacéste |
-| `3pl` | si soddisfécero |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi soddisfacéssi |
-| `2sg` | ti soddisfacéssi |
-| `3sg` | si soddisfacésse |
-| `1pl` | ci soddisfacéssimo |
-| `2pl` | vi soddisfacéste |
-| `3pl` | si soddisfacéssero |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | mi soddisfàccia |
-| `2sg` | ti soddisfàccia |
-| `3sg` | si soddisfàccia |
-| `1pl` | ci soddisfacciàmo |
-| `2pl` | vi soddisfacciàte |
-| `3pl` | si soddisfàcciano |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | soddisfatti |
-| `3sg` | si soddisfàccia |
-| `1pl` | soddisfacciamoci |
-| `2pl` | soddisfatevi |
-| `3pl` | si soddisfàcciano |
-
-_…1 more tense/mood rows in the JSON corpus._
-
 ## Ending: `-ere`
 
-Template stem args observed: `-/-,-,-.fut:-.imperf:-.impsub:-.ger:-`, `-/-,-,-.nofinite.ger:-.presp:-`, `-/@`, `-/@.pp:-`, `-/\è,-,-.presonly.thirdonly.pres3p:-.ger:-.presp:-` (+140 more).
+Template stem args observed: `-/-,-,-.fut:-.imperf:-.impsub:-.ger:-`, `-/-,-,-.nofinite.ger:-.presp:-`, `-/@`, `-/@.pp:-`, `-/\è,-,-.presonly.thirdonly.pres3p:-.ger:-.presp:-` (+142 more).
 
 ### Person-slot inventory
 
@@ -937,7 +635,7 @@ _…1 more tense/mood rows in the JSON corpus._
 
 ## Ending: `-ire`
 
-Template stem args observed: `-/+isc,+,-`, `-/+isc,+,-.addnote[pres􂀿123􂁀􂀿sp􂁀]􂀿rare􂁀`, `-/-,-,-.thirdonly.pres:-.imperf:-.impsub:-.fut3s:fìa:fìe.fut3p:fìano:fìeno:fìero:fìaro.cond:-.presp:-.ger:-`, `-/@.pp:-`, `-/ó,-,-.presonly.thirdonly.pres3p:-.ger:-.presp:-` (+94 more).
+Template stem args observed: `+isc`, `-/+isc,+,-`, `-/+isc,+,-.addnote[pres􂀿123􂁀􂀿sp􂁀]􂀿rare􂁀`, `-/-,-,-.thirdonly.pres:-.imperf:-.impsub:-.fut3s:fìa:fìe.fut3p:fìano:fìeno:fìero:fìaro.cond:-.presp:-.ger:-`, `-/@.pp:-` (+95 more).
 
 ### Person-slot inventory
 
@@ -1232,6 +930,302 @@ Stem: `a/@`.
 | `1pl` | presentiamo |
 | `2pl` | presentite |
 | `3pl` | presentano |
+
+## `other`
+
+Template stem args observed: `\@`, `\@.rre`, `a/@`, `a\@`, `a\è\disvèllo:disvèlgo,disvèlsi,disvèlto.stem:disvèlle` (+14 more).
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 97 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
+| `indicative.future` | 97 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
+| `indicative.imperfect` | 97 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
+| `indicative.present` | 53 | `lcp` | -go | -i | -e | -iamo | -ete | -gono |
+| `indicative.preterite` | 53 | `lcp` | -si | -nesti | -se | -nemmo | -neste | -sero |
+| `subjunctive.imperfect` | 126 | `lcp` | -si | -si | -se | -simo | -te | -sero |
+| `subjunctive.present` | 53 | `lcp` | -ga | -ga | -ga | -iamo | -iate | -gano |
+
+### Representative lemmas
+
+#### `trasporre`
+
+Stem: `a\@`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | traspongo |
+| `2sg` | trasponi |
+| `3sg` | traspone |
+| `1pl` | trasponiamo |
+| `2pl` | trasponete |
+| `3pl` | traspongono |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasporrei |
+| `2sg` | trasporresti |
+| `3sg` | trasporrebbe |
+| `1pl` | trasporremmo |
+| `2pl` | trasporreste |
+| `3pl` | trasporrebbero |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasporrò |
+| `2sg` | trasporrai |
+| `3sg` | trasporrà |
+| `1pl` | trasporremo |
+| `2pl` | trasporrete |
+| `3pl` | trasporranno |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasponevo |
+| `2sg` | trasponevi |
+| `3sg` | trasponeva |
+| `1pl` | trasponevamo |
+| `2pl` | trasponevate |
+| `3pl` | trasponevano |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasposi |
+| `2sg` | trasponesti |
+| `3sg` | traspose |
+| `1pl` | trasponemmo |
+| `2pl` | trasponeste |
+| `3pl` | trasposero |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasponessi |
+| `2sg` | trasponessi |
+| `3sg` | trasponesse |
+| `1pl` | trasponessimo |
+| `2pl` | trasponeste |
+| `3pl` | trasponessero |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasponga |
+| `2sg` | trasponga |
+| `3sg` | trasponga |
+| `1pl` | trasponiamo |
+| `2pl` | trasponiate |
+| `3pl` | traspongano |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | trasponi |
+| `3sg` | trasponga |
+| `1pl` | trasponiamo |
+| `2pl` | trasponete |
+| `3pl` | traspongano |
+
+#### `trasdurre`
+
+Stem: `a\@`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasduco |
+| `2sg` | trasduci |
+| `3sg` | trasduce |
+| `1pl` | trasduciamo |
+| `2pl` | trasducete |
+| `3pl` | trasducono |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasdurrei |
+| `2sg` | trasdurresti |
+| `3sg` | trasdurrebbe |
+| `1pl` | trasdurremmo |
+| `2pl` | trasdurreste |
+| `3pl` | trasdurrebbero |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasdurrò |
+| `2sg` | trasdurrai |
+| `3sg` | trasdurrà |
+| `1pl` | trasdurremo |
+| `2pl` | trasdurrete |
+| `3pl` | trasdurranno |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasducevo |
+| `2sg` | trasducevi |
+| `3sg` | trasduceva |
+| `1pl` | trasducevamo |
+| `2pl` | trasducevate |
+| `3pl` | trasducevano |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasdussi |
+| `2sg` | trasducesti |
+| `3sg` | trasdusse |
+| `1pl` | trasducemmo |
+| `2pl` | trasduceste |
+| `3pl` | trasdussero |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasducessi |
+| `2sg` | trasducessi |
+| `3sg` | trasducesse |
+| `1pl` | trasducessimo |
+| `2pl` | trasduceste |
+| `3pl` | trasducessero |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trasduca |
+| `2sg` | trasduca |
+| `3sg` | trasduca |
+| `1pl` | trasduciamo |
+| `2pl` | trasduciate |
+| `3pl` | trasducano |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | trasduci |
+| `3sg` | trasduca |
+| `1pl` | trasduciamo |
+| `2pl` | trasducete |
+| `3pl` | trasducano |
+
+#### `trarre`
+
+Stem: `a\@`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | traggo |
+| `2sg` | trai |
+| `3sg` | trae |
+| `1pl` | traiamo |
+| `2pl` | traete |
+| `3pl` | traggono |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trarrei |
+| `2sg` | trarresti |
+| `3sg` | trarrebbe |
+| `1pl` | trarremmo |
+| `2pl` | trarreste |
+| `3pl` | trarrebbero |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trarrò |
+| `2sg` | trarrai |
+| `3sg` | trarrà |
+| `1pl` | trarremo |
+| `2pl` | trarrete |
+| `3pl` | trarranno |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | traevo |
+| `2sg` | traevi |
+| `3sg` | traeva |
+| `1pl` | traevamo |
+| `2pl` | traevate |
+| `3pl` | traevano |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | trassi |
+| `2sg` | traesti |
+| `3sg` | trasse |
+| `1pl` | traemmo |
+| `2pl` | traeste |
+| `3pl` | trassero |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | traessi |
+| `2sg` | traessi |
+| `3sg` | traesse |
+| `1pl` | traessimo |
+| `2pl` | traeste |
+| `3pl` | traessero |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | tragga |
+| `2sg` | tragga |
+| `3sg` | tragga |
+| `1pl` | traiamo |
+| `2pl` | traiate |
+| `3pl` | traggano |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | trai |
+| `3sg` | tragga |
+| `1pl` | traiamo |
+| `2pl` | traete |
+| `3pl` | traggano |
 
 ## Irregular: `dare`
 

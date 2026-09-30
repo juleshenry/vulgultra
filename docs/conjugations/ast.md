@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries
 - Source files: `kaikki-ast.jsonl`
-- Lemmas with forms: **2004**
+- Lemmas with forms: **1998**
 - Verb lemma entries: **1545**
 - Inflected form records: **96086**
 - Separate form-of entries: **25421**
@@ -21,7 +21,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-ar` | 1209 | 9 | 9 |
 | `-ir` | 167 | 9 | 8 |
 | `-er` | 145 | 8 | 8 |
-| `other` | 483 | 0 | 0 |
+| `other` | 477 | 0 | 0 |
 
 ## Ending: `-ar`
 
@@ -933,40 +933,10 @@ Stem: `estend`.
 
 _…2 more tense/mood rows in the JSON corpus._
 
-## `other`
+## Sparse / unclassified
 
-### Person-slot inventory
+Paradigms without a full six-slot inventory (count only).
 
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `second-person singular present subjunctive`
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | mancas |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-#### `second-person plural future`
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | decidiréis |
-| `3pl` | — |
-
-#### `ḥispiáu`
-
-_No classified person-number cells for this lemma._
+| Ending / paradigm | Lemmas |
+|---|---:|
+| `other` | 477 |

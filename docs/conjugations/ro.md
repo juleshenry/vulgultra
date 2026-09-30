@@ -6,7 +6,7 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-ro.jsonl`, `ro_verbix.json`
-- Lemmas with forms: **7469**
+- Lemmas with forms: **7173**
 - Verb lemma entries: **7509**
 - Inflected form records: **284694**
 - Separate form-of entries: **1**
@@ -18,14 +18,15 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-a` | 4145 | 7 | 5 |
-| `-i` | 2628 | 7 | 5 |
-| `-e` | 364 | 7 | 5 |
+| `-a` | 4109 | 7 | 5 |
+| `-i` | 2589 | 7 | 5 |
+| `-e` | 309 | 7 | 5 |
 | `avea` | 1 | 5 | 5 |
-| `other` | 266 | 5 | 4 |
-| `-ea` | 63 | 5 | 4 |
+| `-ea` | 57 | 5 | 4 |
+| `-î` | 32 | 5 | 4 |
 | `fi` | 1 | 5 | 4 |
 | `vrea` | 1 | 5 | 4 |
+| `other` | 74 | 0 | 0 |
 
 ## Ending: `-a`
 
@@ -477,7 +478,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 ## Ending: `-e`
 
-Template stem args observed: `a`, `abat`, `abstra`, `admi`, `ajun` (+182 more).
+Template stem args observed: `a`, `abat`, `abstra`, `admi`, `ajun` (+180 more).
 
 ### Person-slot inventory
 
@@ -813,240 +814,6 @@ Stem: `am`.
 | `2pl` | aveți |
 | `3pl` | — |
 
-## `other`
-
-Template stem args observed: `amăr`, `bor`, `chior`, `cobor/coboar`, `da` (+14 more).
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 24 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
-| `indicative.pluperfect` | 24 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
-| `indicative.present` | 22 | `lcp` | ∅ | -i | -e | -âm | -âți | ∅ |
-| `indicative.preterite` | 31 | `lcp` | -âi | -âși | -î | -ârăm | -ârăți | -âră |
-
-### Representative lemmas
-
-#### `фи`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | сынт |
-| `2sg` | ешть |
-| `3sg` | есте |
-| `1pl` | сынтем |
-| `2pl` | сынтець |
-| `3pl` | сынт |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ерам |
-| `2sg` | ерай |
-| `3sg` | ера |
-| `1pl` | ерам |
-| `2pl` | ераць |
-| `3pl` | ерау |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | фусесем |
-| `2sg` | фусесешь |
-| `3sg` | фусесе |
-| `1pl` | фусесерэм |
-| `2pl` | фусесерэць |
-| `3pl` | фусесерэ |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | фусей |
-| `2sg` | фусешь |
-| `3sg` | фу |
-| `1pl` | фусерэм |
-| `2pl` | фурэм |
-| `3pl` | фусерэць |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | сэ фиу |
-| `2sg` | сэ фий |
-| `3sg` | сэ фие |
-| `1pl` | сэ фим |
-| `2pl` | сэ фиць |
-| `3pl` | сэ фие |
-
-##### `imperative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | - |
-| `2sg` | фий |
-| `3sg` | - |
-| `1pl` | - |
-| `2pl` | фиць |
-| `3pl` | — |
-
-##### `subjunctive.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | сэ фи фост |
-| `2sg` | сэ фи фост |
-| `3sg` | сэ фи фост |
-| `1pl` | сэ фи фост |
-| `2pl` | — |
-| `3pl` | — |
-
-#### `юби`
-
-Stem: `юб`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | юбеск |
-| `2sg` | юбешть |
-| `3sg` | юбеште |
-| `1pl` | юбим |
-| `2pl` | юбиць |
-| `3pl` | юбеск |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | юбям |
-| `2sg` | юбяи |
-| `3sg` | юбя |
-| `1pl` | юбям |
-| `2pl` | юбяць |
-| `3pl` | юбяу |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | юбисем |
-| `2sg` | юбисешь |
-| `3sg` | юбисе |
-| `1pl` | юбисерэм |
-| `2pl` | юбисерэць |
-| `3pl` | юбисерэ |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | юбий |
-| `2sg` | юбишь |
-| `3sg` | юби |
-| `1pl` | юбирэм |
-| `2pl` | юбирэць |
-| `3pl` | юбирэ |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | сэ юбеск |
-| `2sg` | сэ юбешть |
-| `3sg` | сэ юбяскэ |
-| `1pl` | сэ юбим |
-| `2pl` | сэ юбиць |
-| `3pl` | сэ юбяскэ |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | юбеште |
-| `3sg` | — |
-| `1pl` | юбиць |
-| `2pl` | — |
-| `3pl` | — |
-
-#### `хухура`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | хухур |
-| `2sg` | хухурь |
-| `3sg` | хухурэ |
-| `1pl` | хухурэм |
-| `2pl` | хухураць |
-| `3pl` | хухурэ |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | хухурам |
-| `2sg` | хухурай |
-| `3sg` | хухура |
-| `1pl` | хухурам |
-| `2pl` | хухураць |
-| `3pl` | хухурау |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | хухурасем |
-| `2sg` | хухурасешь |
-| `3sg` | хухурасе |
-| `1pl` | хухурасерэм |
-| `2pl` | хухурасерэць |
-| `3pl` | хухурасерэ |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | хухурай |
-| `2sg` | хухурашь |
-| `3sg` | хухурэ |
-| `1pl` | хухурэм |
-| `2pl` | хухурарэць |
-| `3pl` | хухурарэ |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | сэ хухур |
-| `2sg` | сэ хухурь |
-| `3sg` | сэ хухуре |
-| `1pl` | сэ хухурэм |
-| `2pl` | сэ хухураць |
-| `3pl` | сэ хухуре |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | - |
-| `2sg` | хухурэ |
-| `3sg` | — |
-| `1pl` | хухураць |
-| `2pl` | — |
-| `3pl` | — |
-
 ## Ending: `-ea`
 
 Template stem args observed: `cad`, `compar`, `complăc`, `cre`, `dispăr` (+7 more).
@@ -1270,6 +1037,227 @@ Stem: `țin`.
 | `2pl` | învegheați |
 | `3pl` | — |
 
+## Ending: `-î`
+
+Template stem args observed: `amăr`, `bor`, `chior`, `cobor/coboar`, `dobor/doboar` (+9 more).
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.imperfect` | 31 | `infinitive` | -am | -ai | -a | -am | -ați | -au |
+| `indicative.pluperfect` | 31 | `infinitive` | -âsem | -âseși | -âse | -âserăm | -âserăți | -âseră |
+| `indicative.present` | 22 | `infinitive` | ∅ | -i | -e | -âm | -âți | ∅ |
+| `indicative.preterite` | 31 | `infinitive` | -âi | -âși | -î | -ârăm | -ârăți | -âră |
+
+### Representative lemmas
+
+#### `zăvorî`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | zăvorăsc |
+| `2sg` | zăvorăști |
+| `3sg` | zăvorăște |
+| `1pl` | zăvorâm |
+| `2pl` | zăvorâți |
+| `3pl` | zăvorăsc |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | zăvoram |
+| `2sg` | zăvorai |
+| `3sg` | zăvora |
+| `1pl` | zăvoram |
+| `2pl` | zăvorați |
+| `3pl` | zăvorau |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | zăvorâsem |
+| `2sg` | zăvorâseși |
+| `3sg` | zăvorâse |
+| `1pl` | zăvorâserăm |
+| `2pl` | zăvorâserăți |
+| `3pl` | zăvorâseră |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | zăvorâi |
+| `2sg` | zăvorâși |
+| `3sg` | zăvorî |
+| `1pl` | zăvorârăm |
+| `2pl` | zăvorârăți |
+| `3pl` | zăvorâră |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | să zăvorăsc |
+| `2sg` | să zăvorăști |
+| `3sg` | să zăvorască |
+| `1pl` | să zăvorâm |
+| `2pl` | să zăvorâți |
+| `3pl` | să zăvorască |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | zăvorăște |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | zăvorâți |
+| `3pl` | — |
+
+#### `zădărî`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | zădărăsc |
+| `2sg` | zădărăști |
+| `3sg` | zădărăște |
+| `1pl` | zădărâm |
+| `2pl` | zădărâți |
+| `3pl` | zădărăsc |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | zădăram |
+| `2sg` | zădărai |
+| `3sg` | zădăra |
+| `1pl` | zădăram |
+| `2pl` | zădărați |
+| `3pl` | zădărau |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | zădărâsem |
+| `2sg` | zădărâseși |
+| `3sg` | zădărâse |
+| `1pl` | zădărâserăm |
+| `2pl` | zădărâserăți |
+| `3pl` | zădărâseră |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | zădărâi |
+| `2sg` | zădărâși |
+| `3sg` | zădărî |
+| `1pl` | zădărârăm |
+| `2pl` | zădărârăți |
+| `3pl` | zădărâră |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | să zădărăsc |
+| `2sg` | să zădărăști |
+| `3sg` | să zădărască |
+| `1pl` | să zădărâm |
+| `2pl` | să zădărâți |
+| `3pl` | să zădărască |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | zădărăște |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | zădărâți |
+| `3pl` | — |
+
+#### `vârî`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vâr |
+| `2sg` | vâri |
+| `3sg` | vâră |
+| `1pl` | vârâm |
+| `2pl` | vârâți |
+| `3pl` | vâră |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vâram |
+| `2sg` | vârai |
+| `3sg` | vâra |
+| `1pl` | vâram |
+| `2pl` | vârați |
+| `3pl` | vârau |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vârâsem |
+| `2sg` | vârâseși |
+| `3sg` | vârâse |
+| `1pl` | vârâserăm |
+| `2pl` | vârâserăți |
+| `3pl` | vârâseră |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vârâi |
+| `2sg` | vârâși |
+| `3sg` | vârî |
+| `1pl` | vârârăm |
+| `2pl` | vârârăți |
+| `3pl` | vârâră |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | să vâr |
+| `2sg` | să vâri |
+| `3sg` | să vâre |
+| `1pl` | să vârâm |
+| `2pl` | să vârâți |
+| `3pl` | să vâre |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | vâră |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | vârâți |
+| `3pl` | — |
+
 ## Conjugation: `fi`
 
 Template stem args observed: `fi`.
@@ -1443,3 +1431,11 @@ Stem: `voi`.
 | `1pl` | — |
 | `2pl` | vreți |
 | `3pl` | — |
+
+## Sparse / unclassified
+
+Paradigms without a full six-slot inventory (count only).
+
+| Ending / paradigm | Lemmas |
+|---|---:|
+| `other` | 74 |

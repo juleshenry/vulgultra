@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-ca.jsonl`, `ca_verbix.json`
-- Lemmas with forms: **4215**
+- Lemmas with forms: **4074**
 - Verb lemma entries: **4276**
 - Inflected form records: **255182**
 - Separate form-of entries: **1**
-- Classified person-slot observations: **192707**
+- Classified person-slot observations: **192621**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,15 +18,15 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-ir` | 496 | 9 | 8 |
-| `-ar` | 3228 | 8 | 8 |
-| `-re` | 194 | 8 | 8 |
+| `-ir` | 504 | 9 | 8 |
+| `-ar` | 3267 | 8 | 8 |
+| `-re` | 193 | 8 | 8 |
 | `estar` | 1 | 8 | 8 |
 | `haver` | 1 | 8 | 8 |
 | `anar` | 1 | 10 | 7 |
-| `-er` | 69 | 8 | 7 |
+| `-er` | 67 | 8 | 7 |
 | `ser` | 1 | 8 | 6 |
-| `other` | 224 | 8 | 1 |
+| `other` | 39 | 7 | 0 |
 
 ## Ending: `-ir`
 
@@ -1638,284 +1638,192 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 ## `other`
 
-Template stem args observed: `<var:aux>`, `estrènyer<>-li`.
-
 ### Person-slot inventory
 
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `imperative` | 1 | `lcp` | -i's | -a | -i | -em-nos | -eu-vos | -in-se |
+No majority ending pattern with enough complete six-slot rows yet.
 
 ### Representative lemmas
 
-#### `adir-se`
+#### `endur-se`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'adic |
-| `2sg` | t'adius |
-| `3sg` | s'adiu |
-| `1pl` | ens adiem |
-| `2pl` | us adieu |
-| `3pl` | s'adiuen |
+| `1sg` | enduc |
+| `2sg` | enduus |
+| `3sg` | enduu |
+| `1pl` | enduem |
+| `2pl` | endueu |
+| `3pl` | enduen |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'adiria |
-| `2sg` | t'adiries |
-| `3sg` | s'adiria |
-| `1pl` | ens adiríem |
-| `2pl` | us adiríeu |
-| `3pl` | s'adirien |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | adigui's |
-| `2sg` | adigues |
-| `3sg` | adigui |
-| `1pl` | adiguem-nos |
-| `2pl` | adigueu-vos |
-| `3pl` | adiguin-se |
+| `1sg` | enduria |
+| `2sg` | enduries |
+| `3sg` | enduria |
+| `1pl` | enduríem |
+| `2pl` | enduríeu |
+| `3pl` | endurien |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'adiré |
-| `2sg` | t'adiràs |
-| `3sg` | s'adirà |
-| `1pl` | ens adirem |
-| `2pl` | us adireu |
-| `3pl` | s'adiran |
+| `1sg` | enduré |
+| `2sg` | enduràs |
+| `3sg` | endurà |
+| `1pl` | endurem |
+| `2pl` | endureu |
+| `3pl` | enduran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'adeia |
-| `2sg` | t'adeies |
-| `3sg` | s'adeia |
-| `1pl` | ens adèiem |
-| `2pl` | us adèieu |
-| `3pl` | s'adeien |
+| `1sg` | enduia |
+| `2sg` | enduies |
+| `3sg` | enduia |
+| `1pl` | endúiem |
+| `2pl` | endúieu |
+| `3pl` | enduien |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'adiguí |
-| `2sg` | t'adigueres |
-| `3sg` | s'adigué |
-| `1pl` | ens adiguérem |
-| `2pl` | us adiguéreu |
-| `3pl` | s'adigueren |
+| `1sg` | enduguí |
+| `2sg` | endugueres |
+| `3sg` | endugué |
+| `1pl` | enduguérem |
+| `2pl` | enduguéreu |
+| `3pl` | endugueren |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'adigués |
-| `2sg` | t'adiguessis |
-| `3sg` | s'adigués |
-| `1pl` | ens adiguéssim |
-| `2pl` | us adiguéssiu |
-| `3pl` | s'adiguessin |
+| `1sg` | endugués |
+| `2sg` | enduguessis |
+| `3sg` | endugués |
+| `1pl` | enduguéssim |
+| `2pl` | enduguéssiu |
+| `3pl` | enduguessin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'adigui |
-| `2sg` | t'adiguis |
-| `3sg` | s'adigui |
-| `1pl` | ens adiguem |
-| `2pl` | us adigueu |
-| `3pl` | s'adiguin |
+| `1sg` | endugui |
+| `2sg` | enduguis |
+| `3sg` | endugui |
+| `1pl` | enduguem |
+| `2pl` | endugueu |
+| `3pl` | enduguin |
 
-#### `acarnissar-se`
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | endugui's |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | enduguem-nos |
+| `2pl` | endueu-vos |
+| `3pl` | enduguin |
+
+#### `dur`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'acarnisso |
-| `2sg` | t'acarnisses |
-| `3sg` | s'acarnissa |
-| `1pl` | ens acarnissem |
-| `2pl` | us acarnisseu |
-| `3pl` | s'acarnissen |
+| `1sg` | duc |
+| `2sg` | duus |
+| `3sg` | duu |
+| `1pl` | duem |
+| `2pl` | dueu |
+| `3pl` | duen |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'acarnissaria |
-| `2sg` | t'acarnissaries |
-| `3sg` | s'acarnissaria |
-| `1pl` | ens acarnissaríem |
-| `2pl` | us acarnissaríeu |
-| `3pl` | s'acarnissarien |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | acarnissi's |
-| `2sg` | acarnissa |
-| `3sg` | acarnissi |
-| `1pl` | acarnissem-nos |
-| `2pl` | acarnisseu-vos |
-| `3pl` | acarnissin-se |
+| `1sg` | duria |
+| `2sg` | duries |
+| `3sg` | duria |
+| `1pl` | duríem |
+| `2pl` | duríeu |
+| `3pl` | durien |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'acarnissaré |
-| `2sg` | t'acarnissaràs |
-| `3sg` | s'acarnissarà |
-| `1pl` | ens acarnissarem |
-| `2pl` | us acarnissareu |
-| `3pl` | s'acarnissaran |
+| `1sg` | duré |
+| `2sg` | duràs |
+| `3sg` | durà |
+| `1pl` | durem |
+| `2pl` | dureu |
+| `3pl` | duran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'acarnissava |
-| `2sg` | t'acarnissaves |
-| `3sg` | s'acarnissava |
-| `1pl` | ens acarnissàvem |
-| `2pl` | us acarnissàveu |
-| `3pl` | s'acarnissaven |
+| `1sg` | duia |
+| `2sg` | duies |
+| `3sg` | duia |
+| `1pl` | dúiem |
+| `2pl` | dúieu |
+| `3pl` | duien |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'acarnissí |
-| `2sg` | t'acarnissares |
-| `3sg` | s'acarnissà |
-| `1pl` | ens acarnissàrem |
-| `2pl` | us acarnissàreu |
-| `3pl` | s'acarnissaren |
+| `1sg` | duguí |
+| `2sg` | dugueres |
+| `3sg` | dugué |
+| `1pl` | duguérem |
+| `2pl` | duguéreu |
+| `3pl` | dugueren |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'acarnissés |
-| `2sg` | t'acarnissessis |
-| `3sg` | s'acarnissés |
-| `1pl` | ens acarnisséssim |
-| `2pl` | us acarnisséssiu |
-| `3pl` | s'acarnissessin |
+| `1sg` | dugués |
+| `2sg` | duguessis |
+| `3sg` | dugués |
+| `1pl` | duguéssim |
+| `2pl` | duguéssiu |
+| `3pl` | duguessin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | m'acarnissi |
-| `2sg` | t'acarnissis |
-| `3sg` | s'acarnissi |
-| `1pl` | ens acarnissem |
-| `2pl` | us acarnisseu |
-| `3pl` | s'acarnissin |
-
-#### `abstenir-se`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstinc |
-| `2sg` | t'abstens |
-| `3sg` | s'absté |
-| `1pl` | ens abstenim |
-| `2pl` | us absteniu |
-| `3pl` | s'abstenen |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstindria |
-| `2sg` | t'abstindries |
-| `3sg` | s'abstindria |
-| `1pl` | ens abstindríem |
-| `2pl` | us abstindríeu |
-| `3pl` | s'abstindrien |
+| `1sg` | dugui |
+| `2sg` | duguis |
+| `3sg` | dugui |
+| `1pl` | duguem |
+| `2pl` | dugueu |
+| `3pl` | duguin |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abstingui's |
-| `2sg` | abstén |
-| `3sg` | abstingui |
-| `1pl` | abstinguem-nos |
-| `2pl` | absteniu-vos |
-| `3pl` | abstinguin |
+| `1sg` | dugui |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | duguem |
+| `2pl` | dueu |
+| `3pl` | duguin |
 
-##### `indicative.future`
+#### `transmés`
 
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstindré |
-| `2sg` | t'abstindràs |
-| `3sg` | s'abstindrà |
-| `1pl` | ens abstindrem |
-| `2pl` | us abstindreu |
-| `3pl` | s'abstindran |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstenia |
-| `2sg` | t'abstenies |
-| `3sg` | s'abstenia |
-| `1pl` | ens absteníem |
-| `2pl` | us absteníeu |
-| `3pl` | s'abstenien |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstinguí |
-| `2sg` | t'abstingueres |
-| `3sg` | s'abstingué |
-| `1pl` | ens abstinguérem |
-| `2pl` | us abstinguéreu |
-| `3pl` | s'abstingueren |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstingués |
-| `2sg` | t'abstinguessis |
-| `3sg` | s'abstingués |
-| `1pl` | ens abstinguéssim |
-| `2pl` | us abstinguéssiu |
-| `3pl` | s'abstinguessin |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | m'abstingui |
-| `2sg` | t'abstinguis |
-| `3sg` | s'abstingui |
-| `1pl` | ens abstinguem |
-| `2pl` | us abstingueu |
-| `3pl` | s'abstinguin |
+_No classified person-number cells for this lemma._

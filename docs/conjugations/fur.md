@@ -19,7 +19,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
 | `-â` | 179 | 7 | 7 |
-| `other` | 72 | 7 | 7 |
+| `-i` | 72 | 7 | 7 |
 | `-î` | 31 | 7 | 7 |
 | `-ê` | 14 | 7 | 7 |
 
@@ -315,7 +315,7 @@ _…1 more tense/mood rows in the JSON corpus._
 | `2pl` | zunait |
 | `3pl` | — |
 
-## `other`
+## Ending: `-i`
 
 Template stem args observed: `scriv`, `vi`.
 
@@ -325,13 +325,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 25 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
-| `indicative.future` | 25 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 25 | `lcp` | -i | -is | -e | -in | -is | -in |
-| `indicative.present` | 16 | `lcp` | ∅ | -is | ∅ | -ìn | -ês | -in |
-| `indicative.preterite` | 25 | `lcp` | -ei | -eris | -è | -erin | -eris | -erin |
-| `subjunctive.imperfect` | 25 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
-| `subjunctive.present` | 25 | `lcp` | -i | -is | -i | -ìn | -ês | -in |
+| `conditional` | 26 | `infinitive` | -arès | -aressis | -arès | -aressin | -aressis | -aressin |
+| `indicative.future` | 26 | `infinitive` | -arai | -arâs | -arà | -arìn | -arês | -aran |
+| `indicative.imperfect` | 26 | `infinitive` | -evi | -evis | -eve | -evin | -evis | -evin |
+| `indicative.present` | 19 | `infinitive` | ∅ | -is | ∅ | -ìn | -ês | -in |
+| `indicative.preterite` | 26 | `infinitive` | -ei | -eris | -è | -erin | -eris | -erin |
+| `subjunctive.imperfect` | 26 | `infinitive` | -ès | -essis | -ès | -essin | -essis | -essin |
+| `subjunctive.present` | 26 | `infinitive` | -i | -is | -i | -ìn | -ês | -in |
 
 ### Representative lemmas
 

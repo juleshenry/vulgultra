@@ -18,18 +18,18 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-èr` | 189 | 7 | 6 |
+| `-èr` | 195 | 7 | 6 |
 | `-er` | 80 | 7 | 6 |
-| `-îr` | 21 | 7 | 6 |
+| `-îr` | 23 | 7 | 6 |
 | `-ir` | 5 | 7 | 6 |
 | `-ôr` | 1 | 7 | 6 |
 | `-ēr` | 2 | 6 | 6 |
-| `unknown` | 86 | 7 | 5 |
+| `unknown` | 78 | 7 | 5 |
 | `-ar` | 8 | 0 | 0 |
 
 ## Ending: `-èr`
 
-Template stem args observed: `abajèr`, `abasèr`, `abrazèr`, `acunpagnèr`, `adruvèr` (+178 more).
+Template stem args observed: `abajèr`, `abasèr`, `abrazèr`, `acunpagnèr`, `adruvèr` (+184 more).
 
 ### Person-slot inventory
 
@@ -627,7 +627,7 @@ Stem: `ónnżer`.
 
 ## Ending: `-îr`
 
-Template stem args observed: `avrîr`, `bandîr`, `capîr`, `culpîr`, `cunparîr` (+16 more).
+Template stem args observed: `arabîres`, `avrîr`, `bandîr`, `capîr`, `culpîr` (+18 more).
 
 ### Person-slot inventory
 
@@ -1521,7 +1521,7 @@ Stem: `bal`.
 
 ## `unknown`
 
-Template stem args observed: `andär`, `arabîres`, `arcmandères`, `arcurdères`, `avér` (+17 more).
+Template stem args observed: `andär`, `avér`, `avêr`, `avêreg`, `där` (+9 more).
 
 ### Person-slot inventory
 
@@ -1536,98 +1536,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `subjunctive.present` | 1 | `lcp` | -āpja | -āpi | -āpja | -aváma | -avîdi | -āpjen |
 
 ### Representative lemmas
-
-#### `vargugnères`
-
-Stem: `vargugnères`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am vargåggn |
-| `2sg` | at vargåggn |
-| `3sg` | as vargåggna |
-| `1pl` | as vargugnän |
-| `2pl` | av vargugnè |
-| `3pl` | as vargåggnen |
-
-##### `conditional.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am vargugnarêv |
-| `2sg` | at vargugnaréss |
-| `3sg` | as vargugnarêv |
-| `1pl` | as vargugnarénn |
-| `2pl` | av vargugnaréssi |
-| `3pl` | as vargugnarénn |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am vargugnarò |
-| `2sg` | at vargugnarè |
-| `3sg` | as vargugnarà |
-| `1pl` | as vargugnarän |
-| `2pl` | av vargugnarî |
-| `3pl` | as vargugnaràn |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am vargugnèva |
-| `2sg` | at vargugnèv |
-| `3sg` | as vargugnèva |
-| `1pl` | as vargugnèven |
-| `2pl` | av vargugnèvi |
-| `3pl` | as vargugnèven |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am vargugné |
-| `2sg` | at vargugnéss |
-| `3sg` | as vargugné |
-| `1pl` | as vargugnénn |
-| `2pl` | av vargugnéssi |
-| `3pl` | as vargugnénn |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am vargugnéss |
-| `2sg` | at vargugnéss |
-| `3sg` | as vargugnéss |
-| `1pl` | as vargugnéssen |
-| `2pl` | av vargugnéssi |
-| `3pl` | as vargugnéssen |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am vargåggna |
-| `2sg` | at vargåggn |
-| `3sg` | as vargåggna |
-| `1pl` | as vargugnaggna |
-| `2pl` | av vargugnèdi |
-| `3pl` | as vargåggnen |
-
-##### `imperative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | - |
-| `2sg` | vargåggnet |
-| `3sg` | - |
-| `1pl` | vargugnäṅnes |
-| `2pl` | vargugnèv |
-| `3pl` | - |
 
 #### `prupårr`
 
@@ -1721,96 +1629,166 @@ Stem: `prupårr`.
 | `2pl` | prupunî |
 | `3pl` | - |
 
-#### `pintîres`
+#### `ésor`
 
-Stem: `pintîres`.
+Stem: `ésor, éssor`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | am pintéss |
-| `2sg` | at pintéss |
-| `3sg` | as pintéss |
-| `1pl` | as pintän |
-| `2pl` | av pintî |
-| `3pl` | as pintéssen |
+| `1sg` | a són |
+| `2sg` | t'é |
+| `3sg` | l'é |
+| `1pl` | a sèmma |
+| `2pl` | a sì |
+| `3pl` | j'én |
 
 ##### `conditional.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | am pintirêv |
-| `2sg` | at pintiréss |
-| `3sg` | as pintirêv |
-| `1pl` | as pintirénn |
-| `2pl` | av pintiréssi |
-| `3pl` | as pintirénn |
+| `1sg` | a sarè |
+| `2sg` | t sarìss |
+| `3sg` | al |
+| `1pl` | a sarìsson |
+| `2pl` | a sarìssov |
+| `3pl` | i sarìsson |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | am pintirò |
-| `2sg` | at pintirè |
-| `3sg` | as pintirà |
-| `1pl` | as pintirän |
-| `2pl` | av pintirî |
-| `3pl` | as pintiràn |
+| `1sg` | a sarò |
+| `2sg` | t sarè |
+| `3sg` | al |
+| `1pl` | a sarèmma |
+| `2pl` | a sarì |
+| `3pl` | i saràn |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | am pintêva |
-| `2sg` | at pintêv |
-| `3sg` | as pintêva |
-| `1pl` | as pintêven |
-| `2pl` | av pintêvi |
-| `3pl` | as pintêven |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | am pinté |
-| `2sg` | at pintéss |
-| `3sg` | as pinté |
-| `1pl` | as pinténn |
-| `2pl` | av pintéssi |
-| `3pl` | as pinténn |
+| `1sg` | a j'éra |
+| `2sg` | t'ér |
+| `3sg` | l'éra |
+| `1pl` | a j'éron |
+| `2pl` | a j'érov |
+| `3pl` | j'éron |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | am pintéss |
-| `2sg` | at pintéss |
-| `3sg` | as pintéss |
-| `1pl` | as pintéssen |
-| `2pl` | av pintéssi |
-| `3pl` | as pintéssen |
+| `1sg` | a fuss |
+| `2sg` | at fuss |
+| `3sg` | al |
+| `1pl` | a fùsson |
+| `2pl` | a fùssov |
+| `3pl` | i fùsson |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | am pintéssa |
-| `2sg` | at pintéss |
-| `3sg` | as pintéssa |
-| `1pl` | as pintaggna |
-| `2pl` | av pintêdi |
-| `3pl` | as pintéssen |
+| `1sg` | a sìa |
+| `2sg` | t sìa |
+| `3sg` | al |
+| `1pl` | a sèmma |
+| `2pl` | a sì |
+| `3pl` | i sìon |
 
 ##### `imperative.present`
 
 | Slot | Form |
 |---|---|
 | `1sg` | - |
-| `2sg` | pintésset |
+| `2sg` | sìa |
 | `3sg` | - |
-| `1pl` | pintänṅes |
-| `2pl` | pintîv |
+| `1pl` | sèmma |
+| `2pl` | sìi |
+| `3pl` | - |
+
+#### `tór`
+
+Stem: `tór`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | a tógh |
+| `2sg` | et tô |
+| `3sg` | al |
+| `1pl` | a tulàm |
+| `2pl` | a tulî |
+| `3pl` | i |
+
+##### `conditional.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | a turév |
+| `2sg` | et turéss |
+| `3sg` | al |
+| `1pl` | a turéven |
+| `2pl` | a turéssi |
+| `3pl` | i |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | a turò |
+| `2sg` | et turê |
+| `3sg` | al |
+| `1pl` | a turàm |
+| `2pl` | a turî |
+| `3pl` | i |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | a tuliva |
+| `2sg` | et tuliv |
+| `3sg` | al |
+| `1pl` | a tuliven |
+| `2pl` | a tulivi |
+| `3pl` | i |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | a tuléss |
+| `2sg` | et tuléss |
+| `3sg` | al |
+| `1pl` | a tuléssen |
+| `2pl` | a tuléssi |
+| `3pl` | i |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | a tóga |
+| `2sg` | et tógh |
+| `3sg` | al |
+| `1pl` | a tulàm |
+| `2pl` | a tulî |
+| `3pl` | i |
+
+##### `imperative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | - |
+| `2sg` | tó |
+| `3sg` | - |
+| `1pl` | tulàm |
+| `2pl` | tulî |
 | `3pl` | - |
 
 ## Sparse / unclassified
