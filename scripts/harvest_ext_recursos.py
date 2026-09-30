@@ -133,10 +133,23 @@ def assign_slots(
                 current.append(ext_form)
         if current:
             groups.append(current)
-        usable = [[form for form in group if form and form != "-"] for group in groups]
-        usable = [group for group in usable if group]
-        if len(usable) == 6:
-            return {slot: group for slot, group in zip(SLOTS, usable)}
+        # Keep empty groups ("-" for imperative 1sg) so persons stay aligned.
+        if len(groups) == 6:
+            slotted = {
+                slot: [form for form in group if form and form != "-"]
+                for slot, group in zip(SLOTS, groups)
+            }
+            return {slot: forms for slot, forms in slotted.items() if forms}
+    # Several forms per person in person order (subjunctive -ra/-se pairs).
+    if len(ext_forms) > 6 and len(ext_forms) % 6 == 0:
+        size = len(ext_forms) // 6
+        slotted = {}
+        for index, slot in enumerate(SLOTS):
+            chunk = ext_forms[index * size:(index + 1) * size]
+            forms = list(dict.fromkeys(form for form in chunk if form and form != "-"))
+            if forms:
+                slotted[slot] = forms
+        return slotted
     n = len(cleaned)
     if n == 6:
         return {slot: [form] for slot, form in zip(SLOTS, cleaned)}

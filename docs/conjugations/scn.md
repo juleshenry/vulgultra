@@ -32,13 +32,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative` | 60 | `template` | -irìa | -irissi | -irìa | -irìamu | -irìavu | -irìanu |
-| `indicative.future` | 60 | `template` | -irò | -irai | -irà | -iremu | -ireti | -irannu |
-| `indicative.imperfect` | 67 | `template` | -ava | -avi | -ava | -àvamu | -àvavu | -àvanu |
-| `indicative.present` | 10 | `template` | -u | -i | -a | -amu | -ati | -anu |
-| `indicative.preterite` | 66 | `template` | -ai | -asti | -au | -ammu | -àstivu | -àrunu |
-| `subjunctive.imperfect` | 73 | `template` | -assi | -assi | -assi | -àssimu | -àssivu | -àssiru |
-| `subjunctive.present` | 10 | `template` | -u | -i | -a | -amu | -ati | -anu |
+| `indicative` | 60 | `infinitive` | -irìa | -irissi | -irìa | -irìamu | -irìavu | -irìanu |
+| `indicative.future` | 60 | `infinitive` | -irò | -irai | -irà | -iremu | -ireti | -irannu |
+| `indicative.imperfect` | 66 | `infinitive` | -ava | -avi | -ava | -àvamu | -àvavu | -àvanu |
+| `indicative.present` | 47 | `infinitive` | -u | -i | -a | -amu | -ati | -anu |
+| `indicative.preterite` | 65 | `infinitive` | -ai | -asti | -au | -ammu | -àstivu | -àrunu |
+| `subjunctive.imperfect` | 71 | `infinitive` | -assi | -assi | -assi | -àssimu | -àssivu | -àssiru |
+| `subjunctive.present` | 47 | `infinitive` | -u | -i | -a | -amu | -ati | -anu |
 
 ### Representative lemmas
 
@@ -330,12 +330,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative` | 16 | `template` | -irìa | -irissi | -irìa | -irìamu | -irìavu | -irìanu |
-| `indicative.imperfect` | 21 | `template` | -ìa | -ivi | -ìa | -ìamu | -ìavu | -ìanu |
-| `indicative.present` | 3 | `template` | -u | -i | -i | -emu | -iti | -inu |
-| `indicative.preterite` | 16 | `template` | -ivi | -isti | -ìu | -emmu | -ìstivu | -eru |
-| `subjunctive.imperfect` | 22 | `template` | -issi | -issi | -issi | -ìssimu | -ìssivu | -ìssiru |
-| `subjunctive.present` | 3 | `template` | -u | -i | -i | -emu | -iti | -inu |
+| `indicative` | 16 | `infinitive` | -irìa | -irissi | -irìa | -irìamu | -irìavu | -irìanu |
+| `indicative.imperfect` | 18 | `infinitive` | -ìa | -ivi | -ìa | -ìamu | -ìavu | -ìanu |
+| `indicative.present` | 10 | `infinitive` | -u | -i | -i | -emu | -iti | -inu |
+| `indicative.preterite` | 13 | `infinitive` | -ivi | -isti | -ìu | -emmu | -ìstivu | -eru |
+| `subjunctive.imperfect` | 19 | `infinitive` | -issi | -issi | -issi | -ìssimu | -ìssivu | -ìssiru |
+| `subjunctive.present` | 10 | `infinitive` | -u | -i | -i | -emu | -iti | -inu |
 
 ### Representative lemmas
 

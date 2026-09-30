@@ -37,11 +37,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 3506 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
-| `indicative.pluperfect` | 3506 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
-| `indicative.present` | 3170 | `lcp` | ∅ | -i | -ă | -ăm | -ați | -ă |
-| `indicative.preterite` | 3805 | `lcp` | -ai | -ași | -ă | -arăm | -arăți | -ară |
-| `subjunctive.present` | 43 | `lcp` | ∅ | -i | -e | -ăm | -aţi | -e |
+| `indicative.imperfect` | 3895 | `infinitive` | -am | -ai | -a | -am | -ați | -au |
+| `indicative.pluperfect` | 3893 | `infinitive` | -asem | -aseși | -ase | -aserăm | -aserăți | -aseră |
+| `indicative.present` | 3319 | `infinitive` | ∅ | -i | -ă | -ăm | -ați | -ă |
+| `indicative.preterite` | 3631 | `infinitive` | -ai | -ași | -ă | -arăm | -arăți | -ară |
+| `subjunctive.present` | 50 | `infinitive` | ∅ | -i | -e | -ăm | -aţi | -e |
 
 ### Representative lemmas
 
@@ -241,11 +241,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 2102 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
-| `indicative.pluperfect` | 2092 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
-| `indicative.present` | 1555 | `lcp` | ∅ | -i | -e | -im | -iți | ∅ |
-| `indicative.preterite` | 2104 | `lcp` | -i | -și | ∅ | -răm | -răți | -ră |
-| `subjunctive.present` | 8 | `lcp` | ∅ | -eşti | -ească | -im | -iţi | -ească |
+| `indicative.imperfect` | 1724 | `infinitive` | -eam | -eai | -ea | -eam | -eați | -eau |
+| `indicative.pluperfect` | 2392 | `infinitive` | -isem | -iseși | -ise | -iserăm | -iserăți | -iseră |
+| `indicative.present` | 1579 | `infinitive` | ∅ | -i | -e | -im | -iți | ∅ |
+| `indicative.preterite` | 2392 | `infinitive` | -ii | -iși | -i | -irăm | -irăți | -iră |
+| `subjunctive.present` | 8 | `infinitive` | ∅ | -eşti | -ească | -im | -iţi | -ească |
 
 ### Representative lemmas
 
@@ -485,11 +485,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 149 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
-| `indicative.pluperfect` | 148 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
-| `indicative.present` | 72 | `lcp` | ∅ | -i | -e | -em | -eți | ∅ |
-| `indicative.preterite` | 133 | `lcp` | -i | -și | ∅ | -răm | -răți | -ră |
-| `subjunctive.present` | 2 | `lcp` | -t | -ţi | -tă | -tem | -teţi | -tă |
+| `indicative.imperfect` | 244 | `infinitive` | -eam | -eai | -ea | -eam | -eați | -eau |
+| `indicative.pluperfect` | 47 | `infinitive` | -usem | -useși | -use | -userăm | -userăți | -useră |
+| `indicative.present` | 142 | `infinitive` | ∅ | -i | -e | -em | -eți | ∅ |
+| `indicative.preterite` | 47 | `infinitive` | -ui | -uși | -u | -urăm | -urăți | -ură |
+| `subjunctive.present` | 6 | `infinitive` | ∅ | -i | -ă | -em | -eţi | -ă |
 
 ### Representative lemmas
 
@@ -1057,10 +1057,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 50 | `lcp` | -m | -i | ∅ | -m | -ți | -u |
-| `indicative.pluperfect` | 50 | `lcp` | -m | -și | ∅ | -răm | -răți | -ră |
-| `indicative.present` | 12 | `lcp` | ∅ | -i | -ă | -em | -eați | -ă |
-| `indicative.preterite` | 30 | `lcp` | -i | -și | ∅ | -răm | -răți | -ră |
+| `indicative.imperfect` | 55 | `infinitive` | -eam | -eai | -ea | -eam | -eați | -eau |
+| `indicative.pluperfect` | 19 | `infinitive` | -easem | -easeși | -ease | -easerăm | -easerăți | -easeră |
+| `indicative.present` | 12 | `infinitive` | ∅ | -i | -ă | -em | -eați | -ă |
+| `indicative.preterite` | 18 | `infinitive` | -ui | -uși | -u | -urăm | -urăți | -ură |
 
 ### Representative lemmas
 

@@ -143,9 +143,6 @@ def build() -> dict:
                     "source_label": "gerund",
                 }},
                 "indicative.present": row("tiru", "tíri", "tíre", "tirén", "tiréţ", "tíru"),
-                "indicative.imperfect": row(
-                    "cadéiam", "cadéiai", "cadéia", "cadéian", "cadéiat", "cadéia",
-                ),
                 "indicative.future": row(
                     "tirúr", "tirúri", "tirúre", "tirúrno", "tirúret", "tirúru",
                 ),
@@ -155,6 +152,17 @@ def build() -> dict:
             },
             gloss="class II model (tiré / cadé / ramaré)",
             note="Other II: ve, be, ramaré",
+        ),
+        # The source's class II imperfect model is cadé, not tiré.
+        paradigm(
+            "cadé",
+            "II-é",
+            {
+                "indicative.imperfect": row(
+                    "cadéiam", "cadéiai", "cadéia", "cadéian", "cadéiat", "cadéia",
+                ),
+            },
+            gloss="class II imperfect model (source table)",
         ),
         paradigm(
             "ramaré",
@@ -172,15 +180,10 @@ def build() -> dict:
             "trage",
             "III-e",
             {
-                "nonfinite.infinitive": {"?": {
-                    "form": "båte", "phonemes": [], "source_url": DOCS_URL,
-                    "source_label": "class III infinitive example båte",
-                }},
                 "nonfinite.gerund": {"?": {
                     "form": "tragánda", "phonemes": [], "source_url": DOCS_URL,
                     "source_label": "gerund",
                 }},
-                "indicative.present": row("meg", "méži", "mége", "mézen", "mézeţ", "mégu"),
                 "indicative.imperfect": row(
                     "trazéiam", "trazéiai", "trazéia", "trazéian", "trazéiat", "trazéia",
                 ),
@@ -193,6 +196,16 @@ def build() -> dict:
             },
             gloss="class III model (båte / trage)",
             note="Other III: årde, pl'erde, zacl'ide",
+        ),
+        # The source's class III present model is this verb (1sg meg); the
+        # page gives no infinitive for it, so it is cited by its 1sg.
+        paradigm(
+            "meg",
+            "III-e",
+            {
+                "indicative.present": row("meg", "méži", "mége", "mézen", "mézeţ", "mégu"),
+            },
+            gloss="class III present model (source table; infinitive not given)",
         ),
         paradigm(
             "båte",

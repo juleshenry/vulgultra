@@ -358,7 +358,8 @@ def repair(phoneme_seq: list[str]) -> list[str]:
     """Repair-or-keep. Prefer operations that do not add a syllable.
 
     Order (reverse Vulgar Latin, then shorten):
-      1. i/u before a vowel → glide (acqua /akkua/ → /akkwa/)
+      1. i/u next to a vowel → glide: rising before a vowel (acqua /akkua/ →
+         /akkwa/), falling after one (-ais /ais/ → /ajs/, -eu → /ew/)
       2. collapse identical vowels (cîine /t͡ʃiine/ → /t͡ʃine/)
       3. if still illegal, epenthesize /e/ in the leftover cluster
     Geminates are not degeminated.
@@ -386,8 +387,17 @@ def repair(phoneme_seq: list[str]) -> list[str]:
                 out.append("w")
                 i += 1
                 continue
+            c = seq[i + 2] if i + 2 < len(seq) else None
+            if b in {"i", "u"} and (c is None or not is_vowel(c)):
+                # Falling diphthong: the high vowel is the offglide (ai, eu).
+                out.append(a)
+                out.append("j" if b == "i" else "w")
+                i += 2
+                continue
             out.append(a)
-            out.append("j")
+            if b not in {"i", "u"}:
+                # Hiatus breaker; a high b becomes the next onset glide (aio → ajo).
+                out.append("j")
             i += 1
             continue
         out.append(a)

@@ -38,16 +38,16 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 5165 | `lcp` | -ia | -ias | -ia | -íamos | -íeis | -iam |
-| `indicative.future` | 5165 | `lcp` | -ei | -ás | -á | -emos | -eis | -ão |
-| `indicative.imperfect` | 5165 | `lcp` | -ava | -avas | -ava | -ávamos | -áveis | -avam |
-| `indicative.pluperfect` | 5161 | `lcp` | -ara | -aras | -ara | -áramos | -áreis | -aram |
-| `indicative.present` | 4827 | `lcp` | -o | -as | -a | -amos | -ais | -am |
-| `indicative.preterite` | 4443 | `lcp` | -ei | -aste | -ou | -amos | -astes | -aram |
-| `nonfinite.infinitive` | 5164 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.future` | 5166 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.imperfect` | 5162 | `lcp` | -asse | -asses | -asse | -ássemos | -ásseis | -assem |
-| `subjunctive.present` | 4829 | `lcp` | ∅ | -s | ∅ | -mos | -is | -m |
+| `conditional` | 5165 | `infinitive` | -aria | -arias | -aria | -aríamos | -aríeis | -ariam |
+| `indicative.future` | 5165 | `infinitive` | -arei | -arás | -ará | -aremos | -areis | -arão |
+| `indicative.imperfect` | 5165 | `infinitive` | -ava | -avas | -ava | -ávamos | -áveis | -avam |
+| `indicative.pluperfect` | 5161 | `infinitive` | -ara | -aras | -ara | -áramos | -áreis | -aram |
+| `indicative.present` | 4867 | `infinitive` | -o | -as | -a | -amos | -ais | -am |
+| `indicative.preterite` | 4554 | `infinitive` | -ei | -aste | -ou | -amos | -astes | -aram |
+| `nonfinite.infinitive` | 5164 | `infinitive` | -ar | -ares | -ar | -armos | -ardes | -arem |
+| `subjunctive.future` | 5162 | `infinitive` | -ar | -ares | -ar | -armos | -ardes | -arem |
+| `subjunctive.imperfect` | 5162 | `infinitive` | -asse | -asses | -asse | -ássemos | -ásseis | -assem |
+| `subjunctive.present` | 4262 | `infinitive` | -e | -es | -e | -emos | -eis | -em |
 
 ### Representative lemmas
 
@@ -636,16 +636,16 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 441 | `lcp` | -ia | -ias | -ia | -íamos | -íeis | -iam |
-| `indicative.future` | 441 | `lcp` | -ei | -ás | -á | -emos | -eis | -ão |
-| `indicative.imperfect` | 360 | `lcp` | -ia | -ias | -ia | -íamos | -íeis | -iam |
-| `indicative.pluperfect` | 360 | `lcp` | -ira | -iras | -ira | -íramos | -íreis | -iram |
-| `indicative.present` | 168 | `lcp` | -o | -es | -e | -imos | -is | -em |
-| `indicative.preterite` | 359 | `lcp` | ∅ | -ste | -u | -mos | -stes | -ram |
-| `nonfinite.infinitive` | 368 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.future` | 369 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.imperfect` | 360 | `lcp` | -isse | -isses | -isse | -íssemos | -ísseis | -issem |
-| `subjunctive.present` | 421 | `lcp` | ∅ | -s | ∅ | -mos | -is | -m |
+| `conditional` | 441 | `infinitive` | -iria | -irias | -iria | -iríamos | -iríeis | -iriam |
+| `indicative.future` | 441 | `infinitive` | -irei | -irás | -irá | -iremos | -ireis | -irão |
+| `indicative.imperfect` | 360 | `infinitive` | -ia | -ias | -ia | -íamos | -íeis | -iam |
+| `indicative.pluperfect` | 360 | `infinitive` | -ira | -iras | -ira | -íramos | -íreis | -iram |
+| `indicative.present` | 174 | `infinitive` | -o | -es | -e | -imos | -is | -em |
+| `indicative.preterite` | 359 | `infinitive` | -i | -iste | -iu | -imos | -istes | -iram |
+| `nonfinite.infinitive` | 368 | `infinitive` | -ir | -ires | -ir | -irmos | -irdes | -irem |
+| `subjunctive.future` | 360 | `infinitive` | -ir | -ires | -ir | -irmos | -irdes | -irem |
+| `subjunctive.imperfect` | 360 | `infinitive` | -isse | -isses | -isse | -íssemos | -ísseis | -issem |
+| `subjunctive.present` | 251 | `infinitive` | -a | -as | -a | -amos | -ais | -am |
 
 ### Representative lemmas
 
@@ -935,16 +935,16 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 421 | `lcp` | -ia | -ias | -ia | -íamos | -íeis | -iam |
-| `indicative.future` | 421 | `lcp` | -ei | -ás | -á | -emos | -eis | -ão |
-| `indicative.imperfect` | 407 | `lcp` | -ia | -ias | -ia | -íamos | -íeis | -iam |
-| `indicative.pluperfect` | 378 | `lcp` | -era | -eras | -era | -êramos | -êreis | -eram |
-| `indicative.present` | 196 | `lcp` | -o | -es | -e | -emos | -eis | -em |
-| `indicative.preterite` | 373 | `lcp` | -i | -este | -eu | -emos | -estes | -eram |
-| `nonfinite.infinitive` | 421 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.future` | 421 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.imperfect` | 378 | `lcp` | -esse | -esses | -esse | -êssemos | -êsseis | -essem |
-| `subjunctive.present` | 418 | `lcp` | ∅ | -s | ∅ | -mos | -is | -m |
+| `conditional` | 401 | `infinitive` | -eria | -erias | -eria | -eríamos | -eríeis | -eriam |
+| `indicative.future` | 401 | `infinitive` | -erei | -erás | -erá | -eremos | -ereis | -erão |
+| `indicative.imperfect` | 407 | `infinitive` | -ia | -ias | -ia | -íamos | -íeis | -iam |
+| `indicative.pluperfect` | 378 | `infinitive` | -era | -eras | -era | -êramos | -êreis | -eram |
+| `indicative.present` | 343 | `infinitive` | -o | -es | -e | -emos | -eis | -em |
+| `indicative.preterite` | 373 | `infinitive` | -i | -este | -eu | -emos | -estes | -eram |
+| `nonfinite.infinitive` | 421 | `infinitive` | -er | -eres | -er | -ermos | -erdes | -erem |
+| `subjunctive.future` | 378 | `infinitive` | -er | -eres | -er | -ermos | -erdes | -erem |
+| `subjunctive.imperfect` | 378 | `infinitive` | -esse | -esses | -esse | -êssemos | -êsseis | -essem |
+| `subjunctive.present` | 351 | `infinitive` | -a | -as | -a | -amos | -ais | -am |
 
 ### Representative lemmas
 

@@ -37,12 +37,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 182 | `lcp` | -êv | -éss | -êv | -énn | -éssi | -énn |
-| `indicative.future` | 182 | `lcp` | -ò | -è | -à | -än | -î | -àn |
-| `indicative.imperfect` | 182 | `lcp` | -a | ∅ | -a | -en | -i | -en |
-| `indicative.present` | 5 | `lcp` | -âz | -âz | -âza | -azän | -azè | -âzen |
-| `indicative.preterite` | 183 | `lcp` | ∅ | -ss | ∅ | -nn | -ssi | -nn |
-| `subjunctive.present` | 5 | `lcp` | -âza | -âz | -âza | -azaggna | -azèdi | -âzen |
+| `conditional.present` | 148 | `infinitive` | -arêv | -aréss | -arêv | -arénn | -aréssi | -arénn |
+| `indicative.future` | 148 | `infinitive` | -arò | -arè | -arà | -arän | -arî | -aràn |
+| `indicative.imperfect` | 181 | `infinitive` | -èva | -èv | -èva | -èven | -èvi | -èven |
+| `indicative.present` | 54 | `infinitive` | ∅ | ∅ | -a | -än | -è | -en |
+| `indicative.preterite` | 182 | `infinitive` | -é | -éss | -é | -énn | -éssi | -énn |
+| `subjunctive.present` | 54 | `infinitive` | -a | ∅ | -a | -aggna | -èdi | -en |
 
 ### Representative lemmas
 
@@ -338,12 +338,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 66 | `lcp` | -êv | -éss | -êv | -énn | -éssi | -énn |
-| `indicative.future` | 66 | `lcp` | -ò | -è | -à | -än | -î | -àn |
-| `indicative.imperfect` | 67 | `lcp` | -a | ∅ | -a | -en | -i | -en |
-| `indicative.present` | 5 | `lcp` | -ûṡ | -ûṡ | -ûṡ | -uṡän | -uṡî | -ûṡen |
-| `indicative.preterite` | 65 | `lcp` | ∅ | -ss | ∅ | -nn | -ssi | -nn |
-| `subjunctive.present` | 5 | `lcp` | -ûṡa | -ûṡ | -ûṡa | -uṡaggna | -uṡêdi | -ûṡen |
+| `conditional.present` | 16 | `infinitive` | -rêv | -réss | -rêv | -rénn | -réssi | -rénn |
+| `indicative.future` | 16 | `infinitive` | -rò | -rè | -rà | -rän | -rî | -ràn |
+| `indicative.imperfect` | 16 | `infinitive` | -êva | -êv | -êva | -êven | -êvi | -êven |
+| `indicative.present` | 16 | `infinitive` | ∅ | ∅ | ∅ | -än | -î | -en |
+| `indicative.preterite` | 16 | `infinitive` | -é | -éss | -é | -énn | -éssi | -énn |
+| `subjunctive.present` | 16 | `infinitive` | -a | ∅ | -a | -aggna | -êdi | -en |
 
 ### Representative lemmas
 
@@ -635,12 +635,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 19 | `lcp` | -êv | -éss | -êv | -énn | -éssi | -énn |
-| `indicative.future` | 19 | `lcp` | -ò | -è | -à | -än | -î | -àn |
-| `indicative.imperfect` | 19 | `lcp` | -a | ∅ | -a | -en | -i | -en |
-| `indicative.present` | 11 | `lcp` | -éss | -éss | -éss | -än | -î | -éssen |
-| `indicative.preterite` | 19 | `lcp` | ∅ | -ss | ∅ | -nn | -ssi | -nn |
-| `subjunctive.present` | 11 | `lcp` | -éssa | -éss | -éssa | -aggna | -êdi | -éssen |
+| `conditional.present` | 17 | `infinitive` | -irêv | -iréss | -irêv | -irénn | -iréssi | -irénn |
+| `indicative.future` | 17 | `infinitive` | -irò | -irè | -irà | -irän | -irî | -iràn |
+| `indicative.imperfect` | 18 | `infinitive` | -êva | -êv | -êva | -êven | -êvi | -êven |
+| `indicative.present` | 11 | `infinitive` | -éss | -éss | -éss | -än | -î | -éssen |
+| `indicative.preterite` | 20 | `infinitive` | -é | -éss | -é | -énn | -éssi | -énn |
+| `subjunctive.present` | 11 | `infinitive` | -éssa | -éss | -éssa | -aggna | -êdi | -éssen |
 
 ### Representative lemmas
 
@@ -1235,12 +1235,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 1 | `lcp` | -êv | -éss | -êv | -énn | -éssi | -énn |
-| `indicative.future` | 1 | `lcp` | -ò | -è | -à | -än | -î | -àn |
-| `indicative.imperfect` | 1 | `lcp` | -a | ∅ | -a | -en | -i | -en |
-| `indicative.present` | 1 | `lcp` | -ói | -û | -ôl | -ulän | -ulî | -ôlen |
-| `indicative.preterite` | 1 | `lcp` | ∅ | -ss | ∅ | -nn | -ssi | -nn |
-| `subjunctive.present` | 1 | `lcp` | -ójja | -ói | -ójja | -ulaggna | -ulêdi | -ójjen |
+| `conditional.present` | 1 | `infinitive` | -urêv | -uréss | -urêv | -urénn | -uréssi | -urénn |
+| `indicative.future` | 1 | `infinitive` | -urò | -urè | -urà | -urän | -urî | -uràn |
+| `indicative.imperfect` | 1 | `infinitive` | -ulêva | -ulêv | -ulêva | -ulêven | -ulêvi | -ulêven |
+| `indicative.present` | 1 | `infinitive` | -ói | -û | -ôl | -ulän | -ulî | -ôlen |
+| `indicative.preterite` | 1 | `infinitive` | -ulé | -uléss | -ulé | -ulénn | -uléssi | -ulénn |
+| `subjunctive.present` | 1 | `infinitive` | -ójja | -ói | -ójja | -ulaggna | -ulêdi | -ójjen |
 
 ### Representative lemmas
 
@@ -1348,12 +1348,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 2 | `template` | -arév | -arés | -arév | -aréven | -arési | -aréven |
-| `indicative.future` | 2 | `template` | -arò | -arē | -arà | -arám | -arî | -arān |
-| `indicative.imperfect` | 2 | `template` | -ēva | -ēv | -ēva | -ēven | -ēvi | -ēven |
-| `indicative.present` | 1 | `lcp` | -āl | -āl | -āla | -alám | -alē | -ālen |
-| `subjunctive.imperfect` | 2 | `template` | -ésa | -ésa | -ésa | -ésen | -ési | -ésen |
-| `subjunctive.present` | 1 | `lcp` | -āla | -āl | -āla | -aláma | -alēdi | -ālen |
+| `conditional.present` | 2 | `infinitive` | -arév | -arés | -arév | -aréven | -arési | -aréven |
+| `indicative.future` | 2 | `infinitive` | -arò | -arē | -arà | -arám | -arî | -arān |
+| `indicative.imperfect` | 2 | `infinitive` | -ēva | -ēv | -ēva | -ēven | -ēvi | -ēven |
+| `indicative.present` | 2 | `infinitive` | ∅ | ∅ | -a | -ám | -ē | -en |
+| `subjunctive.imperfect` | 2 | `infinitive` | -ésa | -ésa | -ésa | -ésen | -ési | -ésen |
+| `subjunctive.present` | 2 | `infinitive` | -a | ∅ | -a | -áma | -ēdi | -en |
 
 ### Representative lemmas
 

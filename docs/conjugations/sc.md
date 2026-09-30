@@ -35,10 +35,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 3 | `template` | -ia | -ias | -iat | -ìamus | -iais | -iant |
-| `indicative.present` | 3 | `template` | -o | -es | -et | -imus | -ides | -ent |
-| `subjunctive.imperfect` | 3 | `template` | -ere | -eres | -eret | -eremus | -ereis | -erent |
-| `subjunctive.present` | 5 | `template` | -a | -as | -at | -amus | -ais | -ant |
+| `indicative.imperfect` | 5 | `infinitive` | -ia | -ias | -iat | -ìamus | -iais | -iant |
+| `indicative.present` | 3 | `infinitive` | -o | -es | -et | -imus | -ides | -ent |
+| `subjunctive.imperfect` | 5 | `infinitive` | -ere | -eres | -eret | -eremus | -ereis | -erent |
+| `subjunctive.present` | 3 | `infinitive` | -a | -as | -at | -amus | -ais | -ant |
 
 ### Representative lemmas
 
@@ -302,10 +302,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 13 | `template` | -aia | -aias | -aiat | -aìamus | -aìazis | -aiant |
-| `indicative.present` | 11 | `template` | -o | -as | -at | -amus | -ades | -ant |
-| `subjunctive.imperfect` | 13 | `template` | -ere | -eres | -eret | -èremus | -èrezis | -erent |
-| `subjunctive.present` | 11 | `template` | -e | -es | -et | -emus | -edas | -ent |
+| `indicative.imperfect` | 14 | `infinitive` | -aia | -aias | -aiat | -aìamus | -aìazis | -aiant |
+| `indicative.present` | 13 | `infinitive` | -o | -as | -at | -amus | -ades | -ant |
+| `subjunctive.imperfect` | 12 | `infinitive` | -ere | -eres | -eret | -èremus | -èrezis | -erent |
+| `subjunctive.present` | 10 | `infinitive` | -e | -es | -et | -emus | -edas | -ent |
 
 ### Representative lemmas
 
@@ -562,10 +562,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 3 | `template` | -amu | -ast | -at | -amus | -astis | -ant |
-| `indicative.present` | 3 | `template` | -u | -as | -at | -aus | -ais | -ant |
-| `subjunctive.imperfect` | 2 | `template` | -hessi | -hessis | -hessit | -hèssimus | -hestis | -hessint |
-| `subjunctive.present` | 2 | `template` | -hi | -his | -hit | -heus | -heis | -hint |
+| `indicative.imperfect` | 3 | `infinitive` | -amu | -ast | -at | -amus | -astis | -ant |
+| `indicative.present` | 3 | `infinitive` | -u | -as | -at | -aus | -ais | -ant |
+| `subjunctive.imperfect` | 2 | `infinitive` | -hessi | -hessis | -hessit | -hèssimus | -hestis | -hessint |
+| `subjunctive.present` | 2 | `infinitive` | -hi | -his | -hit | -heus | -heis | -hint |
 
 ### Representative lemmas
 

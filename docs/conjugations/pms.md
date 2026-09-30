@@ -287,12 +287,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 49 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `indicative.future` | 49 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
-| `indicative.imperfect` | 49 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `indicative.present` | 43 | `lcp` | -o | -e | -a | -uma | -e | -o |
-| `subjunctive.imperfect` | 50 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `subjunctive.present` | 46 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `conditional` | 47 | `infinitive` | -erìa | -erìe | -erìa | -erìo | -erìe | -erìo |
+| `indicative.future` | 47 | `infinitive` | -erai | -eras | -erà | -eruma | -ereve | -eran |
+| `indicative.imperfect` | 44 | `infinitive` | -ava | -ave | -ava | -avo | -ave | -avo |
+| `indicative.present` | 43 | `infinitive` | -o | -e | -a | -uma | -e | -o |
+| `subjunctive.imperfect` | 50 | `infinitive` | -ea | -ee | -ea | -eo | -ee | -eo |
+| `subjunctive.present` | 44 | `infinitive` | -a | -e | -a | -o | -e | -o |
 
 ### Representative lemmas
 
@@ -541,12 +541,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `indicative.future` | 12 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
-| `indicative.imperfect` | 10 | `lcp` | -ìa | -ìe | -ìa | -io | -ìe | -ìo |
-| `indicative.present` | 10 | `lcp` | -o | -e | ∅ | -iuma | -e | -o |
-| `subjunctive.imperfect` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `subjunctive.present` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `conditional` | 12 | `infinitive` | -irìa | -irìe | -irìa | -irìo | -irìe | -irìo |
+| `indicative.future` | 12 | `infinitive` | -irai | -iras | -irà | -iruma | -ireve | -iran |
+| `indicative.imperfect` | 10 | `infinitive` | -ìa | -ìe | -ìa | -io | -ìe | -ìo |
+| `indicative.present` | 10 | `infinitive` | -o | -e | ∅ | -iuma | -e | -o |
+| `subjunctive.imperfect` | 10 | `infinitive` | -iea | -iee | -iea | -ieo | -iee | -ieo |
+| `subjunctive.present` | 10 | `infinitive` | -a | -e | -a | -o | -e | -o |
 
 ### Representative lemmas
 
@@ -795,10 +795,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `indicative.future` | 1 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
-| `indicative.imperfect` | 1 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `subjunctive.imperfect` | 1 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `conditional` | 1 | `infinitive` | -rìa | -rìe | -rìa | -rìo | -rìe | -rìo |
+| `indicative.future` | 1 | `infinitive` | -rai | -ras | -rà | -ruma | -reve | -ran |
+| `indicative.imperfect` | 1 | `infinitive` | -asìa | -asìe | -asìa | -asìo | -asìe | -asìo |
+| `subjunctive.imperfect` | 1 | `infinitive` | -ea | -ee | -ea | -eo | -ee | -eo |
 | `subjunctive.present` | 1 | `lcp` | -a | -e | -a | -o | -e | -o |
 
 ### Representative lemmas

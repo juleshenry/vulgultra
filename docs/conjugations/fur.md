@@ -33,13 +33,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 148 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
-| `indicative.future` | 148 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 148 | `lcp` | -i | -is | -e | -in | -is | -in |
-| `indicative.present` | 131 | `lcp` | -i | -is | -e | -ìn | -ais | -in |
-| `indicative.preterite` | 145 | `lcp` | -ai | -aris | -à | -arin | -aris | -arin |
-| `subjunctive.imperfect` | 147 | `lcp` | -às | -assis | -às | -assin | -assis | -assin |
-| `subjunctive.present` | 131 | `lcp` | -i | -is | -i | -ìn | -ais | -in |
+| `conditional` | 147 | `infinitive` | -arès | -aressis | -arès | -aressin | -aressis | -aressin |
+| `indicative.future` | 147 | `infinitive` | -arai | -arâs | -arà | -arìn | -arês | -aran |
+| `indicative.imperfect` | 147 | `infinitive` | -avi | -avis | -ave | -avin | -avis | -avin |
+| `indicative.present` | 145 | `infinitive` | -i | -is | -e | -ìn | -ais | -in |
+| `indicative.preterite` | 145 | `infinitive` | -ai | -aris | -à | -arin | -aris | -arin |
+| `subjunctive.imperfect` | 147 | `infinitive` | -às | -assis | -às | -assin | -assis | -assin |
+| `subjunctive.present` | 145 | `infinitive` | -i | -is | -i | -ìn | -ais | -in |
 
 ### Representative lemmas
 
@@ -617,13 +617,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 20 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
-| `indicative.future` | 21 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 20 | `lcp` | -i | -is | -e | -in | -is | -in |
-| `indicative.present` | 15 | `lcp` | -ìs | -is | -ìs | -in | -ìs | -in |
-| `indicative.preterite` | 19 | `lcp` | -ii | -iris | -ì | -irin | -iris | -irin |
-| `subjunctive.imperfect` | 19 | `lcp` | -ìs | -is | -ìs | -in | -is | -in |
-| `subjunctive.present` | 15 | `lcp` | -i | -is | -i | -ìn | -îs | -in |
+| `conditional` | 18 | `infinitive` | -irès | -iressis | -irès | -iressin | -iressis | -iressin |
+| `indicative.future` | 18 | `infinitive` | -irai | -irâs | -irà | -irìn | -irês | -iran |
+| `indicative.imperfect` | 19 | `infinitive` | -ivi | -ivis | -ive | -ivin | -ivis | -ivin |
+| `indicative.present` | 15 | `infinitive` | -ìs | -is | -ìs | -in | -ìs | -in |
+| `indicative.preterite` | 19 | `infinitive` | -ii | -iris | -ì | -irin | -iris | -irin |
+| `subjunctive.imperfect` | 19 | `infinitive` | -ìs | -is | -ìs | -in | -is | -in |
+| `subjunctive.present` | 15 | `infinitive` | -i | -is | -i | -ìn | -îs | -in |
 
 ### Representative lemmas
 
@@ -905,13 +905,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 8 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
-| `indicative.future` | 8 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 2 | `lcp` | -i | -is | -e | -in | -is | -in |
-| `indicative.present` | 2 | `lcp` | -âs | -asis | -âs | -asìn | -asês | -asin |
-| `indicative.preterite` | 7 | `lcp` | -ei | -eris | -è | -erin | -eris | -erin |
-| `subjunctive.imperfect` | 2 | `lcp` | -asès | -asessis | -âsès | -asessin | -asessis | -asessin |
-| `subjunctive.present` | 8 | `lcp` | -i | -is | -i | -ìn | -ês | -in |
+| `conditional` | 8 | `infinitive` | -arès | -aressis | -arès | -aressin | -aressis | -aressin |
+| `indicative.future` | 8 | `infinitive` | -arai | -arâs | -arà | -arìn | -arês | -aran |
+| `indicative.imperfect` | 8 | `infinitive` | -evi | -evis | -eve | -evin | -evis | -evin |
+| `indicative.present` | 7 | `infinitive` | ∅ | -is | ∅ | -ìn | -ês | -in |
+| `indicative.preterite` | 7 | `infinitive` | -ei | -eris | -è | -erin | -eris | -erin |
+| `subjunctive.imperfect` | 7 | `infinitive` | -ès | -essis | -ès | -essin | -essis | -essin |
+| `subjunctive.present` | 7 | `infinitive` | -i | -is | -i | -ìn | -ês | -in |
 
 ### Representative lemmas
 

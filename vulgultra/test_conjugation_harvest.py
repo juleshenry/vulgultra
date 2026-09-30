@@ -208,3 +208,47 @@ class VerbixParseTests(unittest.TestCase):
         self.assertEqual(map_feature("Indicative Past", "fur"), "indicative.preterite")
         self.assertEqual(map_feature("Indicative Past", "pt"), "indicative.imperfect")
         self.assertIsNone(parse_paradigm("es", self.record([("Indicative Present", [(1, "x")])], exists=False)))
+
+
+class RegularityTests(unittest.TestCase):
+    SLOTS = ("1sg", "2sg", "3sg", "1pl", "2pl", "3pl")
+
+    def row(self, forms: str) -> dict:
+        return dict(zip(self.SLOTS, forms.split()))
+
+    def test_infinitive_stem(self) -> None:
+        from vulgultra.conjugation_harvest import infinitive_stem
+        self.assertEqual(infinitive_stem("comer", "-er"), "com")
+        self.assertEqual(infinitive_stem("se lavar", "-ar"), "lav")
+        self.assertIsNone(infinitive_stem("ser", "ser"))
+
+    def test_stem_change_is_not_regular(self) -> None:
+        from vulgultra.conjugation_harvest import regular_endings
+        self.assertEqual(
+            regular_endings(self.row("como comes come comemos coméis comen"), "com", "ast"),
+            dict(zip(self.SLOTS, "o es e emos éis en".split())),
+        )
+        self.assertIsNone(regular_endings(self.row("conozo conoces conoz conocemos conocéis conocen"), "conoc", "ast"))
+        self.assertIsNone(regular_endings(self.row("cuerro cuerres cuerre corremos corréis cuerren"), "corr", "ast"))
+
+    def test_inchoative_and_stress_marks_stay_regular(self) -> None:
+        from vulgultra.conjugation_harvest import regular_endings
+        self.assertEqual(
+            regular_endings(self.row("finisco finisci finisce finiamo finite finiscono"), "fin", "it")["1sg"], "o")
+        self.assertEqual(
+            regular_endings(self.row("pàrlo pàrli pàrla parlémmo parlæ pàrlan"), "parl", "lij")["1pl"], "émmo")
+
+    def test_majority_uses_regular_rows_only(self) -> None:
+        from vulgultra.conjugation_harvest import aggregate_ending_inventory
+        def lemma(forms: str) -> dict:
+            return {"stem": None, "features": {"indicative.present": {
+                slot: [{"form": form}] for slot, form in zip(self.SLOTS, forms.split())}}}
+        lemmas = {
+            "conocer": lemma("conozo conoces conoz conocemos conocéis conocen"),
+            "reconocer": lemma("reconozo reconoces reconoz reconocemos reconocéis reconocen"),
+            "desconocer": lemma("desconozo desconoces desconoz desconocemos desconocéis desconocen"),
+            "comer": lemma("como comes come comemos coméis comen"),
+        }
+        row = aggregate_ending_inventory(lemmas, lect="ast", class_source="-er")["indicative.present"]
+        self.assertEqual(row["endings"]["3sg"], "e")
+        self.assertEqual((row["support"], row["regular_rows"]), (1, 1))

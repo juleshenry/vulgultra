@@ -34,11 +34,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 142 | `template` | -aré | -aras | -arà | -aron | -areis | -arà |
-| `indicative.imperfect` | 142 | `template` | -ove | -oves | -ova | -ovan | -ovais | -ova |
-| `indicative.present` | 112 | `template` | -e | -es | -a | -on | -eis | -a |
-| `subjunctive.imperfect` | 110 | `template` | -asse | -asses | -assa | -assan | -assais | -assa |
-| `subjunctive.present` | 107 | `template` | -e | -es | -e | -on | -eis | -e |
+| `indicative.future` | 142 | `infinitive` | -aré | -aras | -arà | -aron | -areis | -arà |
+| `indicative.imperfect` | 142 | `infinitive` | -ove | -oves | -ova | -ovan | -ovais | -ova |
+| `indicative.present` | 112 | `infinitive` | -e | -es | -a | -on | -eis | -a |
+| `subjunctive.imperfect` | 110 | `infinitive` | -asse | -asses | -assa | -assan | -assais | -assa |
+| `subjunctive.present` | 107 | `infinitive` | -e | -es | -e | -on | -eis | -e |
 
 ### Representative lemmas
 
@@ -262,11 +262,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 20 | `template` | -iré | -iras | -irà | -iron | -ireis | -irà |
-| `indicative.imperfect` | 20 | `template` | -ive | -ives | -iva | -ivan | -ivais | -iva |
-| `indicative.present` | 20 | `template` | -e | -es | ∅ | -ion | -ieis | ∅ |
-| `subjunctive.imperfect` | 3 | `template` | -isse | -isses | -issa | -issan | -issais | -issa |
-| `subjunctive.present` | 3 | `template` | -e | -es | -e | -ion | -ieis | -e |
+| `indicative.future` | 22 | `infinitive` | -iré | -iras | -irà | -iron | -ireis | -irà |
+| `indicative.imperfect` | 22 | `infinitive` | -ive | -ives | -iva | -ivan | -ivais | -iva |
+| `indicative.present` | 20 | `infinitive` | -e | -es | ∅ | -ion | -ieis | ∅ |
+| `subjunctive.imperfect` | 3 | `infinitive` | -isse | -isses | -issa | -issan | -issais | -issa |
+| `subjunctive.present` | 3 | `infinitive` | -e | -es | -e | -ion | -ieis | -e |
 
 ### Representative lemmas
 
@@ -700,8 +700,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 2 | `lcp` | -é | -as | -à | -on | -eis | -à |
-| `indicative.imperfect` | 2 | `lcp` | -e | -es | -a | -an | -ais | -a |
+| `indicative.future` | 1 | `infinitive` | -iré | -ires | -irà | -iron | -irëis | -irà |
+| `indicative.imperfect` | 1 | `infinitive` | -ive | -ives | -iva | -an | -ais | -iva |
 
 ### Representative lemmas
 

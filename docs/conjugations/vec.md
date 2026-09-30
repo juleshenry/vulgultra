@@ -31,13 +31,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 330 | `lcp` | -ìa | -isi | -isi | -ìsimo | -isi | -ìa |
-| `imperative` | 239 | `lcp` | -a | -a | -a | -émo | -é | -a |
-| `indicative.future` | 330 | `lcp` | -ò | -è | -è | -émo | -è | -à |
-| `indicative.imperfect` | 290 | `lcp` | -ava | -avi | -avi | -àvimo | -avi | -ava |
-| `indicative.present` | 239 | `lcp` | -o | -i | -i | -émo | -é | -a |
-| `subjunctive.imperfect` | 290 | `lcp` | -ase | -asi | -ase | -àsimo | -asi | -ase |
-| `subjunctive.present` | 290 | `lcp` | -e | -i | -e | -émo | -é | -e |
+| `conditional` | 330 | `infinitive` | -arìa | -arisi | -arisi | -arìsimo | -arisi | -arìa |
+| `imperative` | 239 | `infinitive` | -a | -a | -a | -émo | -é | -a |
+| `indicative.future` | 330 | `infinitive` | -arò | -arè | -arè | -arémo | -arè | -arà |
+| `indicative.imperfect` | 290 | `infinitive` | -ava | -avi | -avi | -àvimo | -avi | -ava |
+| `indicative.present` | 239 | `infinitive` | -o | -i | -i | -émo | -é | -a |
+| `subjunctive.imperfect` | 290 | `infinitive` | -ase | -asi | -ase | -àsimo | -asi | -ase |
+| `subjunctive.present` | 239 | `infinitive` | -e | -i | -e | -émo | -é | -e |
 
 ### Representative lemmas
 
@@ -286,13 +286,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 31 | `lcp` | -ìa | -isi | -isi | -ìsimo | -isi | -ìa |
-| `imperative` | 26 | `lcp` | -isi | -isi | -isa | -imo | -ì | -isa |
-| `indicative.future` | 30 | `lcp` | -ò | -è | -è | -émo | -è | -à |
-| `indicative.imperfect` | 26 | `lcp` | -ìa | -ivi | -ivi | -ìvimo | -ivi | -ìa |
-| `indicative.present` | 26 | `lcp` | -iso | -isi | -isi | -imo | -ì | -ise |
-| `subjunctive.imperfect` | 26 | `lcp` | -e | -i | -e | -imo | -i | -e |
-| `subjunctive.present` | 26 | `lcp` | -isa | -isi | -isa | -imo | -ì | -isa |
+| `conditional` | 27 | `infinitive` | -irìa | -irisi | -irisi | -irìsimo | -irisi | -irìa |
+| `imperative` | 26 | `infinitive` | -isi | -isi | -isa | -imo | -ì | -isa |
+| `indicative.future` | 26 | `infinitive` | -irò | -irè | -irè | -irémo | -irè | -irà |
+| `indicative.imperfect` | 26 | `infinitive` | -ìa | -ivi | -ivi | -ìvimo | -ivi | -ìa |
+| `indicative.present` | 26 | `infinitive` | -iso | -isi | -isi | -imo | -ì | -ise |
+| `subjunctive.imperfect` | 26 | `infinitive` | -ise | -isi | -ise | -isimo | -isi | -ise |
+| `subjunctive.present` | 26 | `infinitive` | -isa | -isi | -isa | -imo | -ì | -isa |
 
 ### Representative lemmas
 
@@ -541,13 +541,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 14 | `lcp` | -ìa | -isi | -isi | -ìsimo | -isi | -ìa |
-| `imperative` | 13 | `lcp` | -i | -i | -a | -émo | -ì | -a |
-| `indicative.future` | 14 | `lcp` | -ò | -è | -è | -émo | -è | -à |
-| `indicative.imperfect` | 13 | `lcp` | -éa | -ivi | -ivi | -évimo | -ivi | -éa |
-| `indicative.present` | 12 | `lcp` | -o | -i | -i | -émo | -ì | -e |
-| `subjunctive.imperfect` | 14 | `lcp` | -ése | -isi | -ése | -ésimo | -isi | -ése |
-| `subjunctive.present` | 13 | `lcp` | -a | -i | -a | -émo | -ì | -a |
+| `conditional` | 12 | `infinitive` | -arìa | -arisi | -arisi | -arìsimo | -arisi | -arìa |
+| `imperative` | 13 | `infinitive` | -i | -i | -a | -émo | -ì | -a |
+| `indicative.future` | 13 | `infinitive` | -arò | -arè | -arè | -arémo | -arè | -arà |
+| `indicative.imperfect` | 13 | `infinitive` | -éa | -ivi | -ivi | -évimo | -ivi | -éa |
+| `indicative.present` | 12 | `infinitive` | -o | -i | -i | -émo | -ì | -e |
+| `subjunctive.imperfect` | 14 | `infinitive` | -ése | -isi | -ése | -ésimo | -isi | -ése |
+| `subjunctive.present` | 13 | `infinitive` | -a | -i | -a | -émo | -ì | -a |
 
 ### Representative lemmas
 

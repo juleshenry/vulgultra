@@ -39,14 +39,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 37 | `lcp` | -aes | -aes | -aet | -ins | -iéz | -aent |
-| `indicative.future` | 37 | `lcp` | -ë | -âs | -a | -ons | -éz | -ont |
-| `indicative.imperfect` | 18 | `lcp` | -aes | -aes | -aet | -ins | -iyéz | -aent |
-| `indicative.present` | 14 | `lcp` | -e | -es | -e | -ons | -éz | -ent |
-| `indicative.preterite` | 37 | `lcp` | -s | -s | -t | -te | -te | -te |
-| `subjunctive.imperfect` | 37 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
-| `subjunctive.present` | 23 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
-| `subjunctive.present-2` | 15 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
+| `conditional` | 22 | `infinitive` | -eraes | -eraes | -eraet | -erins | -eriéz | -eraent |
+| `indicative.future` | 20 | `infinitive` | -erë | -erâs | -era | -erons | -eréz | -eront |
+| `indicative.imperfect` | 18 | `infinitive` | -aes | -aes | -aet | -ins | -iyéz | -aent |
+| `indicative.present` | 13 | `infinitive` | -e | -es | -e | -ons | -éz | -ent |
+| `indicative.preterite` | 37 | `infinitive` | -is | -is | -it | -ite | -ite | -ite |
+| `subjunctive.imperfect` | 37 | `infinitive` | -ije | -ijes | -ije | -ijions | -ijiéz | -ijent |
+| `subjunctive.present` | 18 | `infinitive` | -eje | -ejes | -eje | -ejions | -ejiéz | -ejent |
+| `subjunctive.present-2` | 9 | `infinitive` | -je | -jes | -je | -jions | -jiéz | -jent |
 
 ### Representative lemmas
 

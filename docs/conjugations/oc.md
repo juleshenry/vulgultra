@@ -34,13 +34,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 518 | `template` | -ariái | -ariás | -ariá | -ariam | -ariatz | -arián |
-| `indicative.future` | 518 | `template` | -arai | -aràs | -arà | -arem | -aretz | -aràn |
-| `indicative.imperfect` | 529 | `template` | -avi | -avas | -ava | -àvem | -àvetz | -avan |
-| `indicative.present` | 385 | `template` | -i | -as | -a | -am | -atz | -an |
-| `indicative.preterite` | 377 | `template` | -èri | -ères | -èt | -èrem | -èretz | -èron |
-| `subjunctive.imperfect` | 2 | `template` | -èsses | -ˈeses | -èsse | -èssem | -èssetz | -èsson |
-| `subjunctive.present` | 1 | `lcp` | -ònes | -ones | -òne | -onem | -onetz | -ònen |
+| `conditional` | 519 | `infinitive` | -ariái | -ariás | -ariá | -ariam | -ariatz | -arián |
+| `indicative.future` | 519 | `infinitive` | -arai | -aràs | -arà | -arem | -aretz | -aràn |
+| `indicative.imperfect` | 517 | `infinitive` | -avi | -avas | -ava | -àvem | -àvetz | -avan |
+| `indicative.present` | 400 | `infinitive` | -i | -as | -a | -am | -atz | -an |
+| `indicative.preterite` | 402 | `infinitive` | -èri | -ères | -èt | -èrem | -èretz | -èron |
+| `subjunctive.imperfect` | 2 | `infinitive` | -èsses | -ˈeses | -èsse | -èssem | -èssetz | -èsson |
+| `subjunctive.present` | 1 | `infinitive` | -es | -es | -e | -em | -etz | -en |
 
 ### Representative lemmas
 
@@ -330,11 +330,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 51 | `template` | -iriái | -iriás | -iriá | -iriam | -iriatz | -irián |
-| `indicative.future` | 51 | `template` | -irai | -iràs | -irà | -irem | -iretz | -iràn |
-| `indicative.imperfect` | 52 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.present` | 51 | `lcp` | -i | -es | -ís | -èm | -ètz | -on |
-| `indicative.preterite` | 51 | `template` | -iguèri | -iguères | -iguèt | -iguèrem | -iguèretz | -iguèron |
+| `conditional` | 50 | `infinitive` | -iriái | -iriás | -iriá | -iriam | -iriatz | -irián |
+| `indicative.future` | 50 | `infinitive` | -irai | -iràs | -irà | -irem | -iretz | -iràn |
+| `indicative.imperfect` | 51 | `infinitive` | -iái | -iás | -iá | -iam | -iatz | -ián |
+| `indicative.present` | 50 | `infinitive` | -i | -es | -ís | -èm | -ètz | -on |
+| `indicative.preterite` | 50 | `infinitive` | -iguèri | -iguères | -iguèt | -iguèrem | -iguèretz | -iguèron |
 
 ### Representative lemmas
 
@@ -622,11 +622,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.future` | 9 | `lcp` | -ai | -às | -à | -em | -etz | -àn |
-| `indicative.imperfect` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.present` | 3 | `lcp` | -i | -es | ∅ | -èm | -ètz | -on |
-| `indicative.preterite` | 8 | `lcp` | -ri | -res | -t | -rem | -retz | -ron |
+| `conditional` | 3 | `infinitive` | -riái | -riás | -riá | -riam | -riatz | -rián |
+| `indicative.future` | 2 | `infinitive` | -drai | -dràs | -drà | -drem | -dretz | -dràn |
+| `indicative.imperfect` | 9 | `infinitive` | -iái | -iás | -iá | -iam | -iatz | -ián |
+| `indicative.present` | 5 | `infinitive` | -i | -es | ∅ | -èm | -ètz | -on |
+| `indicative.preterite` | 3 | `infinitive` | -rai | -ràs | -rà | -rem | -retz | -ràn |
 
 ### Representative lemmas
 
@@ -908,11 +908,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.future` | 6 | `lcp` | -ai | -às | -à | -em | -etz | -àn |
-| `indicative.imperfect` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.present` | 4 | `lcp` | -vi | -ves | -u | -vèm | -vètz | -von |
-| `indicative.preterite` | 6 | `lcp` | -ri | -res | -t | -rem | -retz | -ron |
+| `conditional` | 11 | `infinitive` | -riái | -riás | -riá | -riam | -riatz | -rián |
+| `indicative.future` | 5 | `infinitive` | -rai | -ràs | -rà | -rem | -retz | -ràn |
+| `indicative.imperfect` | 2 | `infinitive` | -siái | -siás | -siá | -siam | -siatz | -sián |
+| `indicative.present` | 2 | `infinitive` | -si | -ses | -tz | -sèm | -sètz | -son |
+| `indicative.preterite` | 6 | `infinitive` | -rai | -ràs | -rà | -rem | -retz | -ràn |
 
 ### Representative lemmas
 

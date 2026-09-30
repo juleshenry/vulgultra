@@ -35,10 +35,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 18 | `template` | -iéiva | -iêsci | -iéiva | -iêscimo | -iêsci | -iéivan |
-| `indicative.future` | 16 | `template` | -iö | -iæ | -iâ | -iêmo | -iæ | -iàn |
-| `indicative.imperfect` | 16 | `template` | -âva | -âvi | -âva | -âvimo | -âvi | -âvan |
-| `indicative.present` | 3 | `lcp` | -àngio | -àngi | -àngia | -angémmo | -angiæ | -àngian |
+| `conditional.present` | 15 | `infinitive` | -iéiva | -iêsci | -iéiva | -iêscimo | -iêsci | -iéivan |
+| `indicative.future` | 13 | `infinitive` | -iö | -iæ | -iâ | -iêmo | -iæ | -iàn |
+| `indicative.imperfect` | 24 | `infinitive` | -âva | -âvi | -âva | -âvimo | -âvi | -âvan |
+| `indicative.present` | 10 | `infinitive` | -o | -i | -a | -émmo | -æ | -an |
 
 ### Representative lemmas
 
@@ -293,10 +293,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 3 | `template` | -iéiva | -iêsci | -iéiva | -iêscimo | -iêsci | -iéivan |
-| `indicative.future` | 3 | `template` | -iö | -iæ | -iâ | -iêmo | -iéi | -iàn |
-| `indicative.imperfect` | 3 | `template` | -éiva | -éivi | -éiva | -éivimo | -éivi | -éivan |
-| `indicative.present` | 1 | `lcp` | -ò | -æ | -a | -émmo | -éi | -àn |
+| `conditional.present` | 4 | `infinitive` | -iéiva | -iêsci | -iéiva | -iêscimo | -iêsci | -iéivan |
+| `indicative.future` | 3 | `infinitive` | -iö | -iæ | -iâ | -iêmo | -iéi | -iàn |
+| `indicative.imperfect` | 4 | `infinitive` | -éiva | -éivi | -éiva | -éivimo | -éivi | -éivan |
+| `indicative.present` | 2 | `infinitive` | -o | -i | -e | -émmo | -éi | -an |
 
 ### Representative lemmas
 
@@ -547,10 +547,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 6 | `template` | -iéiva | -iêsci | -iéiva | -iêscimo | -iêsci | -iéivan |
-| `indicative.future` | 6 | `template` | -iö | -iæ | -iâ | -iêmo | -iéi | -iàn |
-| `indicative.imperfect` | 6 | `template` | -éiva | -éivi | -éiva | -éivimo | -éivi | -éivan |
-| `indicative.present` | 2 | `lcp` | -àtto | -àtti | -àtte | -atémmo | -atéi | -àttan |
+| `conditional.present` | 1 | `infinitive` | -iéiva | -iêsci | -iéiva | -iêscimo | -iêsci | -iéivan |
+| `indicative.future` | 1 | `infinitive` | -iö | -iæ | -iâ | -iêmo | -iéi | -iàn |
+| `indicative.imperfect` | 1 | `infinitive` | -éiva | -éivi | -éiva | -éivimo | -éivi | -éivan |
+| `indicative.present` | 1 | `infinitive` | -o | -i | -e | -émmo | -éi | -an |
 
 ### Representative lemmas
 
@@ -805,10 +805,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional.present` | 6 | `template` | -iéiva | -iêsci | -iéiva | -iêscimo | -iêsci | -iéivan |
-| `indicative.future` | 6 | `template` | -iö | -iæ | -iâ | -iêmo | -iéi | -iàn |
-| `indicative.imperfect` | 5 | `template` | -îva | -îvi | -îva | -îvimo | -îvi | -îvan |
-| `indicative.present` | 2 | `lcp` | -ésto | -ésti | -éste | -estìmmo | -estî | -éstan |
+| `conditional.present` | 5 | `infinitive` | -iéiva | -iêsci | -iéiva | -iêscimo | -iêsci | -iéivan |
+| `indicative.future` | 5 | `infinitive` | -iö | -iæ | -iâ | -iêmo | -iéi | -iàn |
+| `indicative.imperfect` | 4 | `infinitive` | -îva | -îvi | -îva | -îvimo | -îvi | -îvan |
+| `indicative.present` | 2 | `infinitive` | -îscio | -îsci | -îsce | -îmo | -î | -îscian |
 
 ### Representative lemmas
 

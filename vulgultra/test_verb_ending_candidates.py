@@ -43,13 +43,27 @@ class VerbEndingCandidateTests(unittest.TestCase):
         self.assertEqual(vec.canonical_tam("indicative.present"), "indicative.present")
         self.assertIsNone(vec.canonical_tam("indicative"))
 
-    def test_sigma_keeps_two_syllables_and_forms_glides(self) -> None:
-        self.assertEqual(vec.ending_sigma("∅"), 0)
-        self.assertEqual(vec.ending_sigma("o"), 1)
-        self.assertEqual(vec.ending_sigma("amos"), 2)
-        self.assertEqual(vec.ending_sigma("iamo"), 2)
-        # Read as Vulgultra spelling, not Romanian: final i is a vowel.
-        self.assertEqual(vec.ending_sigma("ați"), 2)
+    def test_sigma_is_source_phonology(self) -> None:
+        cases = [
+            ("∅", "ro", 0), ("o", "es", 1), ("amos", "es", 2), ("iamo", "it", 2),
+            ("áis", "es", 1), ("eu", "ca", 1), ("ía", "es", 2),
+            ("ent", "fr", 0), ("es", "fr", 0), ("es", "es", 1), ("aient", "fr", 1),
+            ("ați", "ro", 1), ("i", "ro", 0), ("ează", "ro", 2), ("au̯", "ruq", 1),
+            ("éis", "es", 1), ("ia", "pt", 2), ("aria", "ca", 3), ("ien", "ca", 2),
+            ("aia", "sc", 2), ("arão", "pt", 2), ("ões", "pt", 1), ("aróo", "lmo", 2),
+            ("ē", "eml", 1), ("ii", "it", 2), ("ii", "ro", 1), ("oais", "pcd", 1),
+            ("ˈeses", "oc", 2), ("iamo", "it", 2),
+        ]
+        for ending, lect, sigma in cases:
+            self.assertEqual(vec.ending_sigma(ending, lect), sigma, (ending, lect))
+    def test_whole_words_keep_their_only_vowel(self) -> None:
+        self.assertEqual(vec.ending_sigma("es", "fr", word=True), 1)
+        self.assertEqual(vec.ending_sigma("sommes", "fr", word=True), 1)
+        self.assertEqual(vec.ending_sigma("es", "fr"), 0)
+
+    def test_named_verbs_cover_the_copula(self) -> None:
+        self.assertEqual(vec.NAMED_VERBS["esse"]["es"], ("ser",))
+        self.assertIn("fr", vec.NAMED_VERBS["habere"])
 
 
 if __name__ == "__main__":

@@ -39,13 +39,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 8380 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
-| `indicative.future` | 8386 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
-| `indicative.imperfect` | 8380 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
-| `indicative.present` | 5892 | `lcp` | -o | -i | -a | -iamo | -ate | -ano |
-| `indicative.preterite` | 8346 | `lcp` | -ai | -asti | -ò | -ammo | -aste | -arono |
-| `subjunctive.imperfect` | 8380 | `lcp` | -si | -si | -se | -simo | -te | -sero |
-| `subjunctive.present` | 27 | `lcp` | -i | -i | -i | -amo | -ate | -ino |
+| `conditional` | 6597 | `infinitive` | -erei | -eresti | -erebbe | -eremmo | -ereste | -erebbero |
+| `indicative.future` | 6598 | `infinitive` | -erò | -erai | -erà | -eremo | -erete | -eranno |
+| `indicative.imperfect` | 8268 | `infinitive` | -avo | -avi | -ava | -avamo | -avate | -avano |
+| `indicative.present` | 5848 | `infinitive` | -o | -i | -a | -iamo | -ate | -ano |
+| `indicative.preterite` | 8261 | `infinitive` | -ai | -asti | -ò | -ammo | -aste | -arono |
+| `subjunctive.imperfect` | 8263 | `infinitive` | -assi | -assi | -asse | -assimo | -aste | -assero |
+| `subjunctive.present` | 27 | `infinitive` | -i | -i | -i | -amo | -ate | -ino |
 
 ### Representative lemmas
 
@@ -643,13 +643,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 999 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
-| `indicative.future` | 1002 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
-| `indicative.imperfect` | 1002 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
-| `indicative.present` | 877 | `lcp` | -o | -i | -e | -iamo | -ete | -ono |
-| `indicative.preterite` | 164 | `lcp` | -si | -gesti | -se | -gemmo | -geste | -sero |
-| `subjunctive.imperfect` | 1002 | `lcp` | -si | -si | -se | -simo | -te | -sero |
-| `subjunctive.present` | 883 | `lcp` | -a | -a | -a | -iamo | -iate | -ano |
+| `conditional` | 854 | `infinitive` | -erei | -eresti | -erebbe | -eremmo | -ereste | -erebbero |
+| `indicative.future` | 857 | `infinitive` | -erò | -erai | -erà | -eremo | -erete | -eranno |
+| `indicative.imperfect` | 949 | `infinitive` | -evo | -evi | -eva | -evamo | -evate | -evano |
+| `indicative.present` | 837 | `infinitive` | -o | -i | -e | -iamo | -ete | -ono |
+| `indicative.preterite` | 96 | `infinitive` | -etti | -esti | -ette | -emmo | -este | -ettero |
+| `subjunctive.imperfect` | 948 | `infinitive` | -essi | -essi | -esse | -essimo | -este | -essero |
+| `subjunctive.present` | 839 | `infinitive` | -a | -a | -a | -iamo | -iate | -ano |
 
 ### Representative lemmas
 
@@ -945,13 +945,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 960 | `lcp` | -i | -sti | -bbe | -mmo | -ste | -bbero |
-| `indicative.future` | 962 | `lcp` | -ò | -ai | -à | -emo | -ete | -anno |
-| `indicative.imperfect` | 960 | `lcp` | -o | -i | -a | -amo | -ate | -ano |
-| `indicative.present` | 875 | `lcp` | -o | -i | -e | -iamo | -ite | -ono |
-| `indicative.preterite` | 903 | `lcp` | -ii | -isti | -ì | -immo | -iste | -irono |
-| `subjunctive.imperfect` | 960 | `lcp` | -si | -si | -se | -simo | -te | -sero |
-| `subjunctive.present` | 893 | `lcp` | -a | -a | -a | -iamo | -iate | -ano |
+| `conditional` | 920 | `infinitive` | -irei | -iresti | -irebbe | -iremmo | -ireste | -irebbero |
+| `indicative.future` | 921 | `infinitive` | -irò | -irai | -irà | -iremo | -irete | -iranno |
+| `indicative.imperfect` | 933 | `infinitive` | -ivo | -ivi | -iva | -ivamo | -ivate | -ivano |
+| `indicative.present` | 873 | `infinitive` | -o | -i | -e | -iamo | -ite | -ono |
+| `indicative.preterite` | 896 | `infinitive` | -ii | -isti | -ì | -immo | -iste | -irono |
+| `subjunctive.imperfect` | 933 | `infinitive` | -issi | -issi | -isse | -issimo | -iste | -issero |
+| `subjunctive.present` | 873 | `infinitive` | -a | -a | -a | -iamo | -iate | -ano |
 
 ### Representative lemmas
 

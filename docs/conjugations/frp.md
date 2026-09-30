@@ -31,13 +31,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 2 | `lcp` | -en | -ias | -êt | -ians | -iâds | -iant |
-| `indicative.future` | 2 | `lcp` | -é | -és | -at | -ens | -éds | -ont |
-| `indicative.imperfect` | 2 | `lcp` | -en | -as | -êt | -ans | -âds | -ant |
+| `conditional` | 1 | `infinitive` | -iren | -irias | -irêt | -irians | -iriâds | -iriant |
+| `indicative.future` | 1 | `infinitive` | -iré | -irés | -irat | -irens | -iréds | -iront |
+| `indicative.imperfect` | 2 | `infinitive` | -ien | -ias | -iêt | -ians | -iâds | -iant |
 | `indicative.present` | 1 | `lcp` | -to | -s | -t | -tens | -tids | -tont |
-| `indicative.preterite` | 2 | `lcp` | ∅ | -s | -t | -rons | -tes | -ront |
-| `subjunctive.imperfect` | 2 | `lcp` | -en | -ias | -e | -ians | -iâds | -ant |
-| `subjunctive.present` | 2 | `lcp` | -o | -es | -e | -ans | -iâds | -ant |
+| `indicative.preterite` | 2 | `infinitive` | -i | -is | -it | -irons | -ites | -iront |
+| `subjunctive.imperfect` | 2 | `infinitive` | -issen | -issias | -isse | -issians | -issiâds | -issant |
+| `subjunctive.present` | 2 | `infinitive` | -o | -es | -e | -ans | -iâds | -ant |
 
 ### Representative lemmas
 
@@ -229,13 +229,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -m | -es | -et | -ams | -ads | -ant |
-| `indicative.future` | 1 | `lcp` | -ai | -és | -at | -ems | -eds | -ánt |
-| `indicative.imperfect` | 1 | `lcp` | -o | -es | -et | -ams | -ads | -ant |
-| `indicative.present` | 1 | `lcp` | -o | -es | -et | -ems | -ads | -ont |
-| `indicative.preterite` | 1 | `lcp` | -ei | -és | -ét | -émos | -êtes | -éront |
-| `subjunctive.imperfect` | 1 | `lcp` | -o | -es | -et | -ams | -ads | -ant |
-| `subjunctive.present` | 1 | `lcp` | -o | -es | -et | -ams | -ads | -ant |
+| `conditional` | 1 | `infinitive` | -erim | -eries | -eriet | -eriams | -eriads | -eriant |
+| `indicative.future` | 1 | `infinitive` | -erai | -erés | -erat | -erems | -ereds | -eránt |
+| `indicative.imperfect` | 1 | `infinitive` | -avo | -aves | -avet | -avams | -avads | -avant |
+| `indicative.present` | 1 | `infinitive` | -o | -es | -et | -ems | -ads | -ont |
+| `indicative.preterite` | 1 | `infinitive` | -ei | -és | -ét | -émos | -êtes | -éront |
+| `subjunctive.imperfect` | 1 | `infinitive` | -esso | -esses | -esset | -essams | -essads | -essant |
+| `subjunctive.present` | 1 | `infinitive` | -o | -es | -et | -ams | -ads | -ant |
 
 ### Representative lemmas
 
@@ -337,8 +337,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -im | -iés | -iet | -iams | -iaz | -íontprendríant |
-| `indicative.future` | 1 | `lcp` | -ai | -és | -a | -ems | -eiz | -ant |
+| `conditional` | 1 | `infinitive` | -rim | -riés | -riet | -riams | -riaz | -ríont |
+| `indicative.future` | 1 | `infinitive` | -rai | -rés | -ra | -rems | -reiz | -rant |
 | `indicative.imperfect` | 1 | `lcp` | -èvo | -èves | -ève | -évams | -évaz | -èvant |
 | `indicative.present` | 1 | `lcp` | -no | -ds | -d | -ems | -tes | -nont |
 | `indicative.preterite` | 1 | `lcp` | -i | -is | -it | -îmos | -îtes | -iront |
@@ -369,7 +369,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `3sg` | prendriet |
 | `1pl` | prendriams |
 | `2pl` | prendriaz |
-| `3pl` | prendríontprendríant |
+| `3pl` | prendríont |
 
 ##### `indicative.future`
 

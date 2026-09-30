@@ -39,14 +39,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 108 | `template` | -aría | -arías | -aría | -aríanos | -aríaz | -arían |
-| `indicative.future` | 108 | `template` | -aré | -arás | -ará | -aremos | -arez | -arán |
-| `indicative.imperfect` | 108 | `template` | -aba | -abas | -aba | -abanos | -abaz | -aban |
-| `indicative.pluperfect` | 4 | `template` | -ada | -ada | -adas | -adas | -adas | -adas |
-| `indicative.present` | 107 | `template` | -o | -as | -a | -amos | -az | -an |
-| `indicative.preterite` | 108 | `template` | -é | -és | -ó | -emos | -ez | -oron |
-| `subjunctive.imperfect` | 108 | `template` | -ase | -ases | -ase | -asenos | -asez | -asen |
-| `subjunctive.present` | 107 | `template` | -e | -es | -e | -emos | -ez | -en |
+| `conditional` | 112 | `infinitive` | -aría | -arías | -aría | -aríanos | -aríaz | -arían |
+| `indicative.future` | 112 | `infinitive` | -aré | -arás | -ará | -aremos | -arez | -arán |
+| `indicative.imperfect` | 112 | `infinitive` | -aba | -abas | -aba | -abanos | -abaz | -aban |
+| `indicative.pluperfect` | 4 | `infinitive` | -ada | -ada | -adas | -adas | -adas | -adas |
+| `indicative.present` | 111 | `infinitive` | -o | -as | -a | -amos | -az | -an |
+| `indicative.preterite` | 108 | `infinitive` | -é | -és | -ó | -emos | -ez | -oron |
+| `subjunctive.imperfect` | 112 | `infinitive` | -ase | -ases | -ase | -asenos | -asez | -asen |
+| `subjunctive.present` | 107 | `infinitive` | -e | -es | -e | -emos | -ez | -en |
 
 ### Representative lemmas
 
@@ -342,14 +342,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 21 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `indicative.future` | 21 | `lcp` | -é | -ás | -á | -emos | -etz | -án |
-| `indicative.imperfect` | 21 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `indicative.pluperfect` | 2 | `lcp` | ∅ | ∅ | -s | -s | -s | -s |
-| `indicative.present` | 7 | `template` | -o | -es | -e | -emos | -ez | -en |
-| `indicative.preterite` | 12 | `lcp` | -é | -és | -ó | -emos | -etz | -oron |
-| `subjunctive.imperfect` | 21 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `subjunctive.present` | 15 | `lcp` | ∅ | -s | ∅ | -mos | -tz | -n |
+| `conditional` | 16 | `infinitive` | -ería | -erías | -ería | -eríanos | -eríatz | -erían |
+| `indicative.future` | 16 | `infinitive` | -eré | -erás | -erá | -eremos | -eretz | -erán |
+| `indicative.imperfect` | 21 | `infinitive` | -eba | -ebas | -eba | -ebanos | -ebatz | -eban |
+| `indicative.pluperfect` | 1 | `infinitive` | -iu | -iu | -iu | -iu | -iu | -iu |
+| `indicative.present` | 7 | `infinitive` | -o | -es | -e | -emos | -ez | -en |
+| `indicative.preterite` | 12 | `infinitive` | -ié | -iés | -ió | -iemos | -ietz | -ioron |
+| `subjunctive.imperfect` | 21 | `infinitive` | -ese | -eses | -ese | -esenos | -esetz | -esen |
+| `subjunctive.present` | 7 | `infinitive` | -a | -as | -a | -amos | -az | -an |
 
 ### Representative lemmas
 
@@ -645,14 +645,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 16 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `indicative.future` | 16 | `lcp` | -é | -ás | -á | -emos | -etz | -án |
-| `indicative.imperfect` | 16 | `lcp` | ∅ | -s | ∅ | -nos | -tz | -n |
-| `indicative.pluperfect` | 3 | `lcp` | ∅ | ∅ | -s | -s | -s | -s |
-| `indicative.present` | 12 | `template` | -o | -es | -e | -imos | -iz | -en |
-| `indicative.preterite` | 15 | `lcp` | -é | -és | -ó | -emos | -etz | -oron |
-| `subjunctive.imperfect` | 16 | `lcp` | ∅ | -s | ∅ | -mos | -is | -n |
-| `subjunctive.present` | 14 | `lcp` | ∅ | -s | ∅ | -mos | -tz | -n |
+| `conditional` | 17 | `infinitive` | -iría | -irías | -iría | -iríanos | -iríaz | -irían |
+| `indicative.future` | 17 | `infinitive` | -iré | -irás | -irá | -iremos | -irez | -irán |
+| `indicative.imperfect` | 17 | `infinitive` | -iba | -ibas | -iba | -ibanos | -ibaz | -iban |
+| `indicative.pluperfect` | 2 | `infinitive` | -ida | -ida | -idas | -idas | -idas | -idas |
+| `indicative.present` | 12 | `infinitive` | -o | -es | -e | -imos | -iz | -en |
+| `indicative.preterite` | 15 | `infinitive` | -ié | -iés | -ió | -iemos | -iez | -ioron |
+| `subjunctive.imperfect` | 17 | `infinitive` | -ise | -ises | -ise | -isenos | -isez | -isen |
+| `subjunctive.present` | 12 | `infinitive` | -a | -as | -a | -amos | -az | -an |
 
 ### Representative lemmas
 

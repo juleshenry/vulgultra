@@ -35,11 +35,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 19 | `lcp` | -a | -i | -a | -amu | -ate | -anu |
-| `indicative.future` | 17 | `lcp` | -aghju | -ai | -à | -emu | -ete | -anu |
-| `indicative.imperfect` | 19 | `lcp` | -a | -i | -a | -amu | -ate | -anu |
-| `indicative.present` | 18 | `lcp` | -u | -i | -a | -emu | -ate | -anu |
-| `indicative.preterite` | 17 | `lcp` | -ai | -asti | -ò | -aimu | -aste | -onu |
+| `conditional` | 18 | `infinitive` | -eria | -erii | -eria | -eriamu | -eriate | -erianu |
+| `indicative.future` | 17 | `infinitive` | -eraghju | -erai | -erà | -eremu | -erete | -eranu |
+| `indicative.imperfect` | 18 | `infinitive` | -ava | -avi | -ava | -avamu | -avate | -avanu |
+| `indicative.present` | 17 | `infinitive` | -u | -i | -a | -emu | -ate | -anu |
+| `indicative.preterite` | 17 | `infinitive` | -ai | -asti | -ò | -aimu | -aste | -onu |
 
 ### Representative lemmas
 
@@ -329,11 +329,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 4 | `lcp` | -u | -i | -a | -amu | -ati | -ani |
-| `indicative.future` | 5 | `lcp` | -aghju | -ai | -à | -emu | -eti | -ani |
-| `indicative.imperfect` | 4 | `lcp` | -a | -i | -a | -amu | -ati | -ani |
-| `indicative.present` | 1 | `lcp` | -u | -i | -i | -imu | -iti | -ini |
-| `indicative.preterite` | 1 | `lcp` | -si | -disti | -si | -simu | -disti | -sini |
+| `conditional` | 2 | `infinitive` | -ariu | -arii | -aria | -ariamu | -ariati | -ariani |
+| `indicative.future` | 2 | `infinitive` | -araghju | -arai | -arà | -aremu | -areti | -arani |
+| `indicative.imperfect` | 1 | `infinitive` | -ia | -ii | -ia | -iamu | -iati | -iani |
+| `indicative.present` | 1 | `infinitive` | -u | -i | -i | -imu | -iti | -ini |
+| `indicative.preterite` | 1 | `infinitive` | -ai | -asti | -ò | -aimu | -aste | -onu |
 
 ### Representative lemmas
 
@@ -623,10 +623,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 6 | `lcp` | -a | -i | -a | -amu | -ate | -anu |
-| `indicative.future` | 6 | `lcp` | -aghju | -ai | -à | -emu | -ete | -anu |
-| `indicative.imperfect` | 6 | `lcp` | -a | -i | -a | -amu | -ate | -anu |
-| `indicative.present` | 2 | `lcp` | -engu | -eni | -ene | -inimu | -inite | -enenu |
+| `conditional` | 2 | `infinitive` | -eria | -erii | -eria | -eriamu | -eriate | -erianu |
+| `indicative.future` | 2 | `infinitive` | -eraghju | -erai | -erà | -eremu | -erete | -eranu |
+| `indicative.imperfect` | 2 | `infinitive` | -ia | -ii | -ia | -iamu | -iate | -ianu |
+| `indicative.present` | 1 | `infinitive` | -u | -i | -e | -imu | -ite | -enu |
 | `indicative.preterite` | 2 | `lcp` | -ensi | -inisti | -ense | -ensimu | -iniste | -ensenu |
 
 ### Representative lemmas

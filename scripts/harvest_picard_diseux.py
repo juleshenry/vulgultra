@@ -63,6 +63,8 @@ def strip_subject(form: str) -> str:
 def clean_cell(text: str) -> str:
     text = re.sub(r"<[^>]+>", "", text)
     text = text.replace("\xa0", " ").replace("\u00ad", "").replace("\n", " ")
+    # Source typo: "il assi;t" (verb3g). A semicolon is never part of a form.
+    text = text.replace(";", "")
     text = re.sub(r"\s+", " ", text).strip()
     text = text.strip("-").strip()
     return strip_subject(text)

@@ -6,7 +6,7 @@
 
 - Source set: Verbix Istro-Romanian docs (https://docs.verbix.com/Languages/Istroromanian)
 - Source files: `ruo_diseux.json`
-- Lemmas with forms: **5**
+- Lemmas with forms: **7**
 - Verb lemma entries: **0**
 - Inflected form records: **0**
 - Separate form-of entries: **0**
@@ -19,8 +19,8 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
 | `I-å` | 1 | 4 | 3 |
-| `II-é` | 1 | 3 | 3 |
-| `III-e` | 1 | 3 | 3 |
+| `II-é` | 2 | 3 | 3 |
+| `III-e` | 2 | 3 | 3 |
 | `IV-í` | 1 | 3 | 2 |
 | `IV-éi` | 1 | 2 | 2 |
 
@@ -133,17 +133,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | tirúret |
 | `3pl` | tirúru |
 
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cadéiam |
-| `2sg` | cadéiai |
-| `3sg` | cadéia |
-| `1pl` | cadéian |
-| `2pl` | cadéiat |
-| `3pl` | cadéia |
-
 ##### `indicative.perfect`
 
 | Slot | Form |
@@ -154,6 +143,19 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | — |
 | `2pl` | — |
 | `3pl` | — |
+
+#### `cadé`
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | cadéiam |
+| `2sg` | cadéiai |
+| `3sg` | cadéia |
+| `1pl` | cadéian |
+| `2pl` | cadéiat |
+| `3pl` | cadéia |
 
 ## Conjugation: `III-e`
 
@@ -170,17 +172,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 ### Representative lemmas
 
 #### `trage`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | meg |
-| `2sg` | méži |
-| `3sg` | mége |
-| `1pl` | mézen |
-| `2pl` | mézeţ |
-| `3pl` | mégu |
 
 ##### `indicative.future`
 
@@ -214,6 +205,19 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | — |
 | `2pl` | — |
 | `3pl` | — |
+
+#### `meg`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | meg |
+| `2sg` | méži |
+| `3sg` | mége |
+| `1pl` | mézen |
+| `2pl` | mézeţ |
+| `3pl` | mégu |
 
 ## Conjugation: `IV-í`
 

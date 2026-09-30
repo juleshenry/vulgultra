@@ -35,12 +35,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 21 | `template` | -arìa | -arìet | -arìa | -arìom | -arìov | -arìen |
-| `indicative.future` | 21 | `template` | -aróo | -aré | -arà | -arèmm | -arii | -arànn |
-| `indicative.imperfect` | 21 | `template` | -àvi | -àvet | -àva | -àvom | -àvov | -àven |
-| `indicative.present` | 21 | `lcp` | -i | -et | -a | -om | -ov | -en |
-| `subjunctive.present` | 21 | `lcp` | -i | -et | -a | -om | -ov | -en |
-| `subjunctive.preterite` | 21 | `template` | -àssi | -àsset | -àss | -àssom | -àssov | -àssen |
+| `conditional` | 21 | `infinitive` | -arìa | -arìet | -arìa | -arìom | -arìov | -arìen |
+| `indicative.future` | 21 | `infinitive` | -aróo | -aré | -arà | -arèmm | -arii | -arànn |
+| `indicative.imperfect` | 21 | `infinitive` | -àvi | -àvet | -àva | -àvom | -àvov | -àven |
+| `indicative.present` | 21 | `infinitive` | -i | -et | -a | -om | -ov | -en |
+| `subjunctive.present` | 21 | `infinitive` | -i | -et | -a | -om | -ov | -en |
+| `subjunctive.preterite` | 21 | `infinitive` | -àssi | -àsset | -àss | -àssom | -àssov | -àssen |
 
 ### Representative lemmas
 
@@ -308,12 +308,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `template` | -arìa | -arìet | -arìa | -arìom | -arìov | -arìen |
-| `indicative.future` | 1 | `template` | -aróo | -aré | -arà | -arèmm | -arii | -arànn |
-| `indicative.imperfect` | 1 | `template` | -évi | -évet | -éva | -évom | -évov | -éven |
-| `indicative.present` | 1 | `lcp` | -i | -et | ∅ | -om | -ov | -en |
-| `subjunctive.present` | 1 | `lcp` | -a | -et | -a | -om | -ov | -en |
-| `subjunctive.preterite` | 1 | `template` | -èssi | -èsset | -èss | -èssom | -èssov | -èssen |
+| `conditional` | 1 | `infinitive` | -arìa | -arìet | -arìa | -arìom | -arìov | -arìen |
+| `indicative.future` | 1 | `infinitive` | -aróo | -aré | -arà | -arèmm | -arii | -arànn |
+| `indicative.imperfect` | 1 | `infinitive` | -évi | -évet | -éva | -évom | -évov | -éven |
+| `indicative.present` | 1 | `infinitive` | -i | -et | ∅ | -om | -ov | -en |
+| `subjunctive.present` | 1 | `infinitive` | -a | -et | -a | -om | -ov | -en |
+| `subjunctive.preterite` | 1 | `infinitive` | -èssi | -èsset | -èss | -èssom | -èssov | -èssen |
 
 ### Representative lemmas
 

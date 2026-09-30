@@ -545,7 +545,7 @@ def render_page(
     rich = []
     sparse = []
     for class_source, lemmas in grouped.items():
-        inventory = aggregate_ending_inventory(lemmas, lect=lect)
+        inventory = aggregate_ending_inventory(lemmas, lect=lect, class_source=class_source)
         full_features = feature_full_grid_count(lemmas)
         bucket = (class_source, lemmas, inventory, full_features)
         # Show representatives whenever person slots exist, even if no row is

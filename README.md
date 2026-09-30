@@ -22,8 +22,12 @@ snapshots are catalogued in [`docs/sources_manifest.md`](docs/sources_manifest.m
 under `data/sources/`; generated word tables remain separate.
 
 Python segments IPA with PanPhon and **repairs before scoring** (glide
-formation, identical-vowel collapse, last-resort epenthesis; unrepairable
-forms are discarded). The segment pool is derived from the active Romance
+formation on both sides of a vowel, so `ai`/`eu` are 1σ; identical-vowel
+collapse; last-resort epenthesis; unrepairable
+forms are discarded). A *glide* is an *i*/*u* said as a consonant (/j/, /w/)
+and adds no syllable; a *diphthong* is a vowel plus a glide in one syllable
+(`ai`, `eu`); a *hiatus* is two neighbouring vowels in separate syllables
+(es *co-mí-a*, 2 syllables for `-ía`). The segment pool is derived from the active Romance
 grid; there is no fixed target-inventory ceiling. The minimum-syllable slice
 is a hard shortlist, so Rust SA cannot buy a shorter word with extra sounds.
 

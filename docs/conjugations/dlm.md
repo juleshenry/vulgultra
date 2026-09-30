@@ -36,12 +36,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 4 | `lcp` | -re | -re | -re | -erme | -erte | -re |
-| `indicative.future` | 4 | `lcp` | -ra | -rai | -ro | -erme | -erte | -ro |
-| `indicative.imperfect` | 2 | `lcp` | -a | -a | -a | -me | -te | -a |
-| `indicative.present` | 2 | `lcp` | -o | -ai | -aja | -aime | -aite | -aja |
-| `subjunctive.imperfect` | 5 | `lcp` | ∅ | -se | -sa | -saime | -saite | ∅ |
-| `subjunctive.present` | 5 | `lcp` | -ja | -ja | -ja | -ime | -ite | -ja |
+| `conditional` | 4 | `infinitive` | -re | -re | -re | -erme | -erte | -re |
+| `indicative.future` | 4 | `infinitive` | -ra | -rai | -ro | -erme | -erte | -ro |
+| `indicative.imperfect` | 2 | `infinitive` | -ua | -ua | -ua | -ume | -ute | -ua |
+| `indicative.present` | 2 | `infinitive` | -o | -ai | -aja | -aime | -aite | -aja |
+| `subjunctive.imperfect` | 5 | `infinitive` | -as | -asse | -assa | -assaime | -assaite | -as |
+| `subjunctive.present` | 5 | `infinitive` | -aja | -aja | -aja | -aime | -aite | -aja |
 
 ### Representative lemmas
 
@@ -655,10 +655,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 2 | `lcp` | -a | -ai | -a | -me | -te | -a |
-| `indicative.present` | 2 | `lcp` | -jo | -i | -ja | -ime | -ite | -ja |
-| `subjunctive.imperfect` | 3 | `lcp` | ∅ | -se | -sa | -saime | -saite | ∅ |
-| `subjunctive.present` | 1 | `lcp` | -uasa | -otaja | -otaja | -uasaime | -otaite | -otaja |
+| `indicative.future` | 2 | `infinitive` | -ara | -arai | -ara | -arme | -arte | -ara |
+| `indicative.present` | 2 | `infinitive` | -ajo | -ai | -aja | -aime | -aite | -aja |
+| `subjunctive.imperfect` | 3 | `infinitive` | -as | -asse | -assa | -assaime | -assaite | -as |
+| `subjunctive.present` | 1 | `infinitive` | -aja | -aja | -aja | -aiame | -aiate | -aja |
 
 ### Representative lemmas
 

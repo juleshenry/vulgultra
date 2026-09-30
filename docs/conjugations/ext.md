@@ -34,14 +34,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 2 | `lcp` | -ía | -ías | -ía | -iamus | -iais | -ían |
-| `indicative.future` | 2 | `lcp` | -é | -ás | -á | -emus | -eis | -án |
-| `indicative.imperfect` | 2 | `lcp` | ∅ | -s | ∅ | -mus | -is | -n |
-| `indicative.present` | 2 | `lcp` | -u | -as | -a | -amus | -ais | -an |
-| `indicative.preterite` | 2 | `lcp` | -é | -asti | -ó | -émus | -aistis | -arun |
-| `subjunctive.future` | 2 | `lcp` | -ari | -aris | -ari | -árimus | -aris | -arin |
-| `subjunctive.imperfect` | 2 | `lcp` | -ra | -ra | -ssi | -ssis | -ras | -ssis |
-| `subjunctive.present` | 2 | `lcp` | -i | -is | -i | -emus | -eis | -in |
+| `conditional` | 2 | `infinitive` | -aría | -arías | -aría | -ariamus | -ariais | -arían |
+| `indicative.future` | 2 | `infinitive` | -aré | -arás | -ará | -aremus | -areis | -arán |
+| `indicative.imperfect` | 2 | `infinitive` | -ava | -avas | -ava | -avamus | -avais | -avan |
+| `indicative.present` | 2 | `infinitive` | -u | -as | -a | -amus | -ais | -an |
+| `indicative.preterite` | 2 | `infinitive` | -é | -asti | -ó | -émus | -aistis | -arun |
+| `subjunctive.future` | 2 | `infinitive` | -ari | -aris | -ari | -árimus | -aris | -arin |
+| `subjunctive.imperfect` | 2 | `infinitive` | -ara | -aras | -ara | -áramus | -árais | -aran |
+| `subjunctive.present` | 2 | `infinitive` | -i | -is | -i | -emus | -eis | -in |
 
 ### Representative lemmas
 
@@ -118,11 +118,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Slot | Form |
 |---|---|
 | `1sg` | habrara |
-| `2sg` | habrara |
-| `3sg` | habrassi |
-| `1pl` | habrassis |
-| `2pl` | habraras |
-| `3pl` | habrassis |
+| `2sg` | habraras |
+| `3sg` | habrara |
+| `1pl` | habráramus |
+| `2pl` | habrárais |
+| `3pl` | habraran |
 
 ##### `subjunctive.present`
 
@@ -210,11 +210,11 @@ _…1 more tense/mood rows in the JSON corpus._
 | Slot | Form |
 |---|---|
 | `1sg` | cantara |
-| `2sg` | cantara |
-| `3sg` | cantassi |
-| `1pl` | cantassis |
-| `2pl` | cantaras |
-| `3pl` | cantassis |
+| `2sg` | cantaras |
+| `3sg` | cantara |
+| `1pl` | cantáramus |
+| `2pl` | cantárais |
+| `3pl` | cantaran |
 
 ##### `subjunctive.present`
 
@@ -237,14 +237,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -ía | -ías | -ía | -iamus | -iais | -ían |
-| `indicative.future` | 1 | `lcp` | -é | -ás | -á | -emus | -eis | -án |
-| `indicative.imperfect` | 1 | `lcp` | -ía | -ías | -ía | -iamus | -iais | -ían |
-| `indicative.present` | 1 | `lcp` | -u | -is | -i | -emus | -eis | -in |
-| `indicative.preterite` | 1 | `lcp` | -í | -isti | -ió | -imus | -istis | -ierun |
-| `subjunctive.future` | 1 | `lcp` | -eri | -eris | -eri | -érimus | -eris | -erin |
-| `subjunctive.imperfect` | 1 | `lcp` | -ra | -ra | -ssi | -ssis | -ras | -ssis |
-| `subjunctive.present` | 1 | `lcp` | ∅ | -s | ∅ | -mus | -is | -n |
+| `conditional` | 1 | `infinitive` | -ería | -erías | -ería | -eriamus | -eriais | -erían |
+| `indicative.future` | 1 | `infinitive` | -eré | -erás | -erá | -eremus | -ereis | -erán |
+| `indicative.imperfect` | 1 | `infinitive` | -ía | -ías | -ía | -iamus | -iais | -ían |
+| `indicative.present` | 1 | `infinitive` | -u | -is | -i | -emus | -eis | -in |
+| `indicative.preterite` | 1 | `infinitive` | -í | -isti | -ió | -imus | -istis | -ierun |
+| `subjunctive.future` | 1 | `infinitive` | -ieri | -ieris | -ieri | -iérimus | -ieris | -ierin |
+| `subjunctive.imperfect` | 1 | `infinitive` | -iera | -ieras | -iera | -ieramus | -ierais | -ieran |
+| `subjunctive.present` | 1 | `infinitive` | -a | -as | -a | -amus | -ais | -an |
 
 ### Representative lemmas
 
@@ -321,11 +321,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Slot | Form |
 |---|---|
 | `1sg` | comiera |
-| `2sg` | comiera |
-| `3sg` | comiessi |
-| `1pl` | comiessis |
-| `2pl` | comieras |
-| `3pl` | comiessis |
+| `2sg` | comieras |
+| `3sg` | comiera |
+| `1pl` | comieramus |
+| `2pl` | comierais |
+| `3pl` | comieran |
 
 ##### `subjunctive.present`
 

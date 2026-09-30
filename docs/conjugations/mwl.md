@@ -33,15 +33,15 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 30 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.future` | 30 | `lcp` | -ei | -ás | -á | -emos | -eis | -an |
-| `indicative.imperfect` | 30 | `lcp` | -aba | -abas | -aba | -ábamos | -ábades | -ában |
-| `indicative.pluperfect` | 28 | `lcp` | -ara | -aras | -ara | -áramos | -árades | -áran |
-| `indicative.present` | 2 | `lcp` | -uno | -unas | -una | -unamos | -unais | -únan |
-| `indicative.preterite` | 25 | `lcp` | -ei | -este | -ou | -emos | -estes | -órun |
-| `subjunctive.future` | 28 | `lcp` | -ar | -ares | -ar | -armos | -ardes | -áren |
-| `subjunctive.imperfect` | 28 | `lcp` | -asse | -asses | -asse | -ássemos | -ássedes | -ássen |
-| `subjunctive.present` | 2 | `lcp` | -une | -unes | -une | -unemos | -uneis | -únen |
+| `conditional` | 30 | `infinitive` | -arie | -aries | -arie | -ariemos | -ariedes | -arien |
+| `indicative.future` | 30 | `infinitive` | -arei | -arás | -ará | -aremos | -areis | -aran |
+| `indicative.imperfect` | 30 | `infinitive` | -aba | -abas | -aba | -ábamos | -ábades | -ában |
+| `indicative.pluperfect` | 28 | `infinitive` | -ara | -aras | -ara | -áramos | -árades | -áran |
+| `indicative.present` | 21 | `infinitive` | -o | -as | -a | -amos | -ais | -an |
+| `indicative.preterite` | 26 | `infinitive` | -ei | -este | -ou | -emos | -estes | -órun |
+| `subjunctive.future` | 28 | `infinitive` | -ar | -ares | -ar | -armos | -ardes | -áren |
+| `subjunctive.imperfect` | 28 | `infinitive` | -asse | -asses | -asse | -ássemos | -ássedes | -ássen |
+| `subjunctive.present` | 18 | `infinitive` | -e | -es | -e | -emos | -eis | -en |
 
 ### Representative lemmas
 
@@ -331,15 +331,15 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 15 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.future` | 17 | `lcp` | -ei | -ás | -á | -emos | -eis | -an |
-| `indicative.imperfect` | 15 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.pluperfect` | 15 | `lcp` | -ira | -iras | -ira | -íramos | -írades | -íran |
-| `indicative.present` | 3 | `lcp` | -eço | -eces | -ece | -ecemos | -eceis | -écen |
-| `indicative.preterite` | 12 | `lcp` | -i | -iste | -iu | -imos | -istes | -írun |
-| `subjunctive.future` | 16 | `lcp` | -ir | -ires | -ir | -irmos | -irdes | -íren |
-| `subjunctive.imperfect` | 14 | `lcp` | -isse | -isses | -isse | -íssemos | -íssedes | -íssen |
-| `subjunctive.present` | 4 | `lcp` | -eia | -eias | -eia | -éiamos | -éiades | -éian |
+| `conditional` | 14 | `infinitive` | -erie | -eries | -erie | -eriemos | -eriedes | -erien |
+| `indicative.future` | 17 | `infinitive` | -erei | -erás | -erá | -eremos | -ereis | -eran |
+| `indicative.imperfect` | 14 | `infinitive` | -ie | -ies | -ie | -iemos | -iedes | -ien |
+| `indicative.pluperfect` | 12 | `infinitive` | -ira | -iras | -ira | -íramos | -írades | -íran |
+| `indicative.present` | 5 | `infinitive` | -o | -es | -e | -emos | -eis | -en |
+| `indicative.preterite` | 12 | `infinitive` | -i | -iste | -iu | -imos | -istes | -írun |
+| `subjunctive.future` | 13 | `infinitive` | -ir | -ires | -ir | -irmos | -irdes | -íren |
+| `subjunctive.imperfect` | 12 | `infinitive` | -isse | -isses | -isse | -íssemos | -íssedes | -íssen |
+| `subjunctive.present` | 4 | `infinitive` | -eia | -eias | -eia | -éiamos | -éiades | -éian |
 
 ### Representative lemmas
 
@@ -629,15 +629,15 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 19 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.future` | 19 | `lcp` | -ei | -ás | -á | -emos | -eis | -an |
-| `indicative.imperfect` | 18 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.pluperfect` | 18 | `lcp` | -ira | -iras | -ira | -íramos | -írades | -íran |
-| `indicative.present` | 2 | `lcp` | -ubro | -ubres | -ubre | -ubrimos | -ubris | -úbren |
-| `indicative.preterite` | 15 | `lcp` | -i | -iste | -iu | -imos | -istes | -írun |
-| `subjunctive.future` | 18 | `lcp` | -ir | -ires | -ir | -irmos | -irdes | -íren |
-| `subjunctive.imperfect` | 18 | `lcp` | -isse | -isses | -isse | -íssemos | -íssedes | -íssen |
-| `subjunctive.present` | 2 | `lcp` | -iba | -ibas | -iba | -íbamos | -íbades | -íban |
+| `conditional` | 17 | `infinitive` | -irie | -iries | -irie | -iriemos | -iriedes | -irien |
+| `indicative.future` | 17 | `infinitive` | -irei | -irás | -irá | -iremos | -ireis | -iran |
+| `indicative.imperfect` | 18 | `infinitive` | -ie | -ies | -ie | -iemos | -iedes | -ien |
+| `indicative.pluperfect` | 18 | `infinitive` | -ira | -iras | -ira | -íramos | -írades | -íran |
+| `indicative.present` | 11 | `infinitive` | -o | -es | -e | -imos | -is | -en |
+| `indicative.preterite` | 15 | `infinitive` | -i | -iste | -iu | -imos | -istes | -írun |
+| `subjunctive.future` | 18 | `infinitive` | -ir | -ires | -ir | -irmos | -irdes | -íren |
+| `subjunctive.imperfect` | 18 | `infinitive` | -isse | -isses | -isse | -íssemos | -íssedes | -íssen |
+| `subjunctive.present` | 11 | `infinitive` | -a | -as | -a | -amos | -ades | -an |
 
 ### Representative lemmas
 

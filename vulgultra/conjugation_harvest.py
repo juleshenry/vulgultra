@@ -6,6 +6,7 @@ derived from complete person rows; missing cells stay missing.
 
 from __future__ import annotations
 
+import re
 import unicodedata
 from collections import Counter, defaultdict
 from typing import Any, Iterable
@@ -40,6 +41,20 @@ TENSES = {
     "perfect": "preterite",
     "past": "past",
 }
+# Particles hyphenated onto the verb (Aromanian conditional s-cãntari).
+PREFIX_PARTICLES = {"rup": re.compile(r"^s-")}
+# Lects cited by 1sg: the class comes from the long infinitive in the table.
+INFINITIVE_CLASS = {"rup": (("are", "ari"), ("ere", "eri"), ("ire", "iri"))}
+# Tables Wiktextract could not parse (every cell error-unrecognized-form, person
+# lost). The forms are all in the record; this only puts them back in their
+# Wiktionary cells, in page order.
+RESEGMENT: dict[tuple[str, str], dict[str, tuple[str, ...]]] = {
+    ("rup", "escu"): {
+        "1sg": ("escu", "hiu"), "2sg": ("eshti", "esci", "hii"),
+        "3sg": ("easti", "easte", "easci"), "1pl": ("him", "himu"),
+        "2pl": ("hits", "hitsã"), "3pl": ("suntu", "sun"),
+    },
+}
 # Bare "past" (no historic/perfect tag): the preterite in co, the imperfect in pms.
 BARE_PAST = {"pms": "imperfect"}
 # Periphrastic rows and negative imperatives are not person endings.
@@ -65,8 +80,8 @@ INCHOATIVE_INFIXES: dict[str, tuple[tuple[str, str], ...]] = {
     "fur": (("iss", ""),), "eml": (("iss", ""),),
     "ro": (("eaz", ""), ("ez", ""), ("esc", ""), ("ește", "e"), ("ești", "i"),
            ("ăsc", ""), ("ășt", "")),
-    "rup": (("ãsc", ""), ("ez", ""), ("edz", "")),
-    "ruq": (("ez", ""), ("esc", "")),
+    "rup": (("eadz", ""), ("edz", ""), ("ãsc", ""), ("ez", "")),
+    "ruq": (("e̯az", ""), ("ez", ""), ("esc", ""), ("eʃt", "")),
     "ruo": (("ésc", ""), ("éš", "")),
     "ca": (("eix", ""), ("ix", ""), ("esc", "")),
     "oc": (("iss", ""), ("isc", "")), "gsc": (("iss", ""), ("isc", "")),
@@ -92,6 +107,8 @@ def strip_subject_clitics(lect: str, form: str) -> str:
     """`o fevelavi` → `fevelavi`; a bare clitic (`al`) → ``."""
     clitics = SUBJECT_CLITICS.get(lect)
     text = form.strip()
+    if lect in PREFIX_PARTICLES:
+        text = PREFIX_PARTICLES[lect].sub("", text)
     if not clitics:
         return text
     words = text.split()
@@ -160,6 +177,22 @@ def decode_tags(tags: list[str], lect: str = "") -> tuple[str | None, str, bool]
             mood = "indicative"
         feature = ".".join(piece for piece in (mood, tense) if piece) or "unclassified"
     return slot, feature, ambiguous
+
+
+def resegment(
+    forms: list[dict[str, Any]], cells: dict[str, tuple[str, ...]]
+) -> list[dict[str, Any]]:
+    """Re-tag unparsed present-indicative forms with their known cells."""
+    slot_of = {form: slot for slot, row in cells.items() for form in row}
+    out: list[dict[str, Any]] = []
+    for rec in forms:
+        tags = rec.get("tags") or []
+        form = str(rec.get("form") or "")
+        if "error-unrecognized-form" not in tags:
+            out.append(rec)
+        elif form in slot_of:
+            out.append({**rec, "tags": ["indicative", "present", *SLOT_PERSON_TAGS[slot_of[form]]]})
+    return out
 
 
 def recover_conjugation_persons(
@@ -447,16 +480,57 @@ def select_representatives(
     return chosen
 
 
+def infinitive_stem(lemma: str, class_source: str) -> str | None:
+    """`comer` in class `-er` → `com`; None when the class is not an ending."""
+    if not class_source.startswith("-"):
+        return None
+    bare = _bare(re.sub(r"^(?:se\s+|s['’])", "", lemma.strip().lower()))
+    ending = _bare(class_source[1:].lower())
+    if not ending or not bare.endswith(ending) or len(bare) == len(ending):
+        return None
+    return bare[: -len(ending)]
+
+
+def regular_endings(
+    forms: dict[str, str], stem: str | None, lect: str,
+) -> dict[str, str] | None:
+    """Endings cut at the infinitive stem, or None if the row changes stem.
+
+    Regular row: every form starts with the infinitive stem. The inchoative
+    infix is stem (finisco → fin·o), so it is removed first. Stem
+    alternations (cuerro/correr, conozo/conocer, tengo/tener) fail. Stress
+    marks are ignored when matching (lij màngio / mangiâ).
+    """
+    if not stem:
+        return None
+    reduced = drop_inchoative(lect, forms) if lect in INCHOATIVE_INFIXES else forms
+    endings: dict[str, str] = {}
+    for slot in PERSON_SLOTS:
+        form = unicodedata.normalize("NFC", reduced.get(slot) or "")
+        bare = _bare(form.lower())
+        if not form or not bare.startswith(stem) or len(bare) != len(form):
+            return None
+        endings[slot] = form[len(stem):] or "∅"
+    return endings
+
+
 def aggregate_ending_inventory(
     lemmas: dict[str, dict[str, Any]],
     *,
     min_support: int = MIN_INVENTORY_SUPPORT,
     lect: str = "",
+    class_source: str = "",
 ) -> dict[str, dict[str, Any]]:
-    """Majority orthographic endings per feature for one conj class."""
-    by_feature: dict[str, list[tuple[tuple[str, ...], str, str]]] = defaultdict(list)
-    for meta in lemmas.values():
+    """Regular endings per feature for one conj class.
+
+    A regular row keeps the infinitive stem in all six forms; the class's
+    ending row is the most common among regular rows (all rows when no
+    lemma qualifies, e.g. classes named after one irregular verb).
+    """
+    by_feature: dict[str, list[tuple[tuple[str, ...], str, str, bool]]] = defaultdict(list)
+    for lemma, meta in lemmas.items():
         stem = meta.get("stem")
+        lemma_stem = infinitive_stem(meta.get("infinitive") or lemma, class_source)
         for feature, cells in meta["features"].items():
             forms = row_forms(cells)
             if not is_complete_row(forms):
@@ -465,22 +539,29 @@ def aggregate_ending_inventory(
             if not stripped:
                 continue
             endings, used, mode = stripped
+            cut = regular_endings(forms, lemma_stem, lect)
+            if cut:
+                endings, used, mode = cut, lemma_stem or used, "infinitive"
             pattern = tuple(endings[slot] for slot in PERSON_SLOTS)
-            by_feature[feature].append((pattern, used, mode))
+            by_feature[feature].append((pattern, used, mode, cut is not None))
 
     inventory: dict[str, dict[str, Any]] = {}
     for feature, rows in sorted(by_feature.items()):
         support_needed = 1 if len(lemmas) < min_support else min_support
         if len(rows) < support_needed:
             continue
-        counts = Counter(pattern for pattern, _used, _mode in rows)
+        regular = [row for row in rows if row[3]]
+        pool = regular or rows
+        counts = Counter(row[0] for row in pool)
         pattern, support = counts.most_common(1)[0]
-        modes = Counter(mode for _pattern, _used, mode in rows if _pattern == pattern)
+        modes = Counter(row[2] for row in pool if row[0] == pattern)
         inventory[feature] = {
             "endings": {slot: pattern[index] for index, slot in enumerate(PERSON_SLOTS)},
             "support": support,
             "variants": len(counts),
             "stem_mode": modes.most_common(1)[0][0],
+            "regular_rows": len(regular),
+            "rows": len(rows),
         }
     return inventory
 
@@ -495,6 +576,7 @@ def group_by_class(
         meta = lemma_meta.get(lemma, {})
         class_source = str(meta.get("class_source") or "unknown")
         grouped[class_source][lemma] = {
+            "infinitive": meta.get("infinitive"),
             "stem": meta.get("stem"),
             "source_url": meta.get("source_url") or "",
             "features": features,
@@ -598,6 +680,19 @@ def harvest_kaikki_file(
                 item for item in (entry.get("forms") or [])
                 if isinstance(item, dict)
             ]
+            if lect in INFINITIVE_CLASS:
+                infinitive = next((
+                    str(item.get("form") or "") for item in raw_forms
+                    if item.get("source") == "conjugation"
+                    and "infinitive" in (item.get("tags") or [])
+                ), "")
+                for spellings in INFINITIVE_CLASS[lect]:
+                    if infinitive.endswith(spellings):
+                        meta["infinitive"] = infinitive[: -len(spellings[0])] + spellings[0]
+                        meta["class_source"] = f"-{spellings[0]}"
+                        break
+            if (lect, word) in RESEGMENT:
+                raw_forms = resegment(raw_forms, RESEGMENT[(lect, word)])
             for form_record in recover_conjugation_persons(raw_forms, lect):
                 tags = sorted(str(tag) for tag in form_record.get("tags", []))
                 if "inflection-template" in tags or "table-tags" in tags:
@@ -724,7 +819,7 @@ def build_lect_document(
     total_lemmas = 0
     for class_source, lemmas in sorted(grouped.items(), key=lambda item: (-len(item[1]), item[0])):
         total_lemmas += len(lemmas)
-        inventory = aggregate_ending_inventory(lemmas, lect=lect)
+        inventory = aggregate_ending_inventory(lemmas, lect=lect, class_source=class_source)
         if inventory:
             inventories[class_source] = inventory
         ranked = sorted(

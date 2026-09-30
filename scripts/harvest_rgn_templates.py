@@ -23,11 +23,14 @@ SLOTS = ("1sg", "2sg", "3sg", "1pl", "2pl", "3pl")
 
 
 def cell(form: str, *, url: str, label: str) -> dict | None:
-    form = form.strip()
-    if not form or form == "—" or "{{" in form:
+    """`form` may list comma variants ("abandùn, abandòn"): first is primary."""
+    pieces = [piece.strip() for piece in form.split(",")]
+    pieces = [piece for piece in pieces if piece and piece != "—" and "{{" not in piece]
+    if not pieces:
         return None
     return {
-        "form": form,
+        "form": pieces[0],
+        "variants": pieces[1:],
         "phonemes": [],
         "source_label": label,
         "source_url": url,
@@ -44,27 +47,25 @@ def row(forms: dict[str, str], *, url: str, label: str) -> dict:
 
 
 def join(stem: str, ending: str | None) -> str:
-    if ending is None:
-        return stem
+    """A missing template arg is a missing cell, never the bare stem.
+
+    Wiktionary renders those cells as `abandun{{{1-s-pr-s}}}` / "Term?".
+    """
+    if not stem or ending is None or not str(ending).strip():
+        return ""
     if "{{" in stem or "{{" in ending:
         return ""
-    return f"{stem}{ending}"
-
-
-def first_variant(value: str) -> str:
-    # "{{l|rgn|ó}}, {{l|rgn|ò}}" already unwrapped by args; keep first comma piece
-    piece = value.split(",")[0].strip()
-    return piece
+    return ", ".join(f"{stem}{piece.strip()}" for piece in str(ending).split(","))
 
 
 def from_table_args(lemma: str, class_source: str, args: dict, url: str) -> dict | None:
     stem = str(args.get("stem") or "").strip()
     if not stem:
         return None
-    pres1 = first_variant(str(args.get("pres-1") or stem))
-    pres3_stem = first_variant(str(args.get("pres-3") or stem))
-    three_sg_end = str(args.get("3-s-pr") or "")
-    pres3 = join(pres3_stem, three_sg_end)
+    # Empty pres-1 / pres-3 render as "Term?" on Wiktionary: leave them out.
+    pres1 = str(args.get("pres-1") or "").strip()
+    pres3_stem = str(args.get("pres-3") or "").split(",")[0].strip()
+    pres3 = join(pres3_stem, args.get("3-s-pr"))
     present = {
         "1sg": pres1,
         "2sg": pres1,
@@ -106,7 +107,7 @@ def from_table_args(lemma: str, class_source: str, args: dict, url: str) -> dict
         "3pl": join(stem, args.get("1-s-cond")),
     }
     subj_3sg = join(stem, args.get("3-s-pr"))
-    subj_3pl = join(stem, args.get("1-s-pr-s")) or subj_3sg
+    subj_3pl = join(stem, args.get("1-s-pr-s"))
     subjunctive = {
         "1sg": subj_3sg,
         "2sg": subj_3sg,
@@ -124,7 +125,7 @@ def from_table_args(lemma: str, class_source: str, args: dict, url: str) -> dict
         ("conditional", cond),
         ("subjunctive.present", subjunctive),
         ("imperative", {
-            "2sg": first_variant(str(args.get("pres-3") or "")),
+            "2sg": pres3_stem,
             "1pl": join(stem, args.get("1-p-pr")),
             "2pl": join(stem, args.get("2-p-pr")),
         }),
@@ -237,7 +238,7 @@ def harvest_kaikki() -> list[dict]:
             if "conj" not in name:
                 continue
             if "table" in name:
-                table = item
+                table = table or item
             elif class_source == "unknown":
                 class_source = name
         if table is None:

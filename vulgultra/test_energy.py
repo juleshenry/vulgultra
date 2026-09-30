@@ -118,3 +118,14 @@ class EnergyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DiphthongRepairTests(unittest.TestCase):
+    def test_falling_and_rising_diphthongs_are_one_syllable(self) -> None:
+        from vulgultra.phonology import count_syllables, from_orthography, repair
+        for ortho, sigma in [("ais", 1), ("ai", 1), ("eu", 1), ("au", 1), ("akua", 2), ("amos", 2), ("ea", 2)]:
+            self.assertEqual(count_syllables(repair(from_orthography(ortho))), sigma, ortho)
+
+    def test_intervocalic_high_vowel_is_one_glide(self) -> None:
+        from vulgultra.phonology import repair
+        self.assertEqual(repair(list("aio")), list("ajo"))

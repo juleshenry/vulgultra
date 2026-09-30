@@ -38,13 +38,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 45 | `lcp` | -eu | -eus | -eut | -éns | -îz | -ént |
-| `indicative.future` | 45 | `lcp` | -è | -ès | -è | -ans | -oz | -ont |
-| `indicative.imperfect` | 51 | `lcp` | -éve | -éves | -éve | -éns | -îz | -ént |
-| `indicative.present` | 41 | `lcp` | -e | -es | -e | -ans | -ez | -èt |
-| `indicative.preterite` | 50 | `lcp` | -a | -as | -a | -îs | -îz | -ît |
-| `subjunctive.imperfect` | 41 | `lcp` | -axhe | -axhes | -axhe | -énxhe | -îxhe | -énxhe |
-| `subjunctive.present` | 41 | `lcp` | -e | -es | -e | -anxhe | -oxhe | -èxhe |
+| `conditional` | 42 | `infinitive` | -reu | -reus | -reut | -réns | -rîz | -rént |
+| `indicative.future` | 42 | `infinitive` | -rè | -rès | -rè | -rans | -roz | -ront |
+| `indicative.imperfect` | 53 | `infinitive` | -éve | -éves | -éve | -éns | -îz | -ént |
+| `indicative.present` | 41 | `infinitive` | -e | -es | -e | -ans | -ez | -èt |
+| `indicative.preterite` | 52 | `infinitive` | -a | -as | -a | -îs | -îz | -ît |
+| `subjunctive.imperfect` | 41 | `infinitive` | -axhe | -axhes | -axhe | -énxhe | -îxhe | -énxhe |
+| `subjunctive.present` | 41 | `infinitive` | -e | -es | -e | -anxhe | -oxhe | -èxhe |
 
 ### Representative lemmas
 
@@ -293,13 +293,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 8 | `lcp` | -eu | -eus | -eu | -éns | -îz | -ént |
-| `indicative.future` | 8 | `lcp` | -è | -ès | -è | -ans | -oz | -ont |
-| `indicative.imperfect` | 8 | `lcp` | -îve | -îves | -îve | -éns | -îz | -ént |
-| `indicative.present` | 8 | `lcp` | -e | -es | -e | -ans | -îz | -èt |
-| `indicative.preterite` | 8 | `lcp` | -a | -as | -a | -îs | -îz | -ît |
-| `subjunctive.imperfect` | 8 | `lcp` | -axhe | -anxhes | -axhe | -énxhe | -îxhe | -énxhe |
-| `subjunctive.present` | 8 | `lcp` | -e | -es | -e | -anxhe | -oxhe | -èxhe |
+| `conditional` | 8 | `infinitive` | -reu | -reus | -reu | -réns | -rîz | -rént |
+| `indicative.future` | 8 | `infinitive` | -rè | -rès | -rè | -rans | -roz | -ront |
+| `indicative.imperfect` | 8 | `infinitive` | -îve | -îves | -îve | -éns | -îz | -ént |
+| `indicative.present` | 8 | `infinitive` | -e | -es | -e | -ans | -îz | -èt |
+| `indicative.preterite` | 8 | `infinitive` | -a | -as | -a | -îs | -îz | -ît |
+| `subjunctive.imperfect` | 8 | `infinitive` | -axhe | -anxhes | -axhe | -énxhe | -îxhe | -énxhe |
+| `subjunctive.present` | 8 | `infinitive` | -e | -es | -e | -anxhe | -oxhe | -èxhe |
 
 ### Representative lemmas
 
@@ -550,12 +550,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 8 | `template` | -eyreu | -eyreus | -eyreut | -eyréns | -eyrîz | -eyrént |
-| `indicative.future` | 8 | `template` | -eyrè | -eyrès | -eyrè | -eyrans | -eyroz | -eyront |
-| `indicative.imperfect` | 8 | `template` | -ive | -ives | -ive | -iéns | -yîz | -iént |
-| `indicative.present` | 8 | `template` | -eye | -eyes | -eye | -ians | -yîz | -ièt |
-| `indicative.preterite` | 8 | `template` | -ia | -ias | -ia | -yîs | -yîz | -yît |
-| `subjunctive.present` | 8 | `template` | -eye | -eyes | -eye | -ianxhe | -yîxhe | -ièxhe |
+| `conditional` | 8 | `infinitive` | -eyreu | -eyreus | -eyreut | -eyréns | -eyrîz | -eyrént |
+| `indicative.future` | 8 | `infinitive` | -eyrè | -eyrès | -eyrè | -eyrans | -eyroz | -eyront |
+| `indicative.imperfect` | 8 | `infinitive` | -ive | -ives | -ive | -iéns | -yîz | -iént |
+| `indicative.present` | 8 | `infinitive` | -eye | -eyes | -eye | -ians | -yîz | -ièt |
+| `indicative.preterite` | 8 | `infinitive` | -ia | -ias | -ia | -yîs | -yîz | -yît |
+| `subjunctive.present` | 8 | `infinitive` | -eye | -eyes | -eye | -ianxhe | -yîxhe | -ièxhe |
 
 ### Representative lemmas
 
@@ -810,12 +810,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 2 | `lcp` | -eu | -eus | -eut | -éns | -îz | -ént |
-| `indicative.future` | 2 | `lcp` | -è | -ès | -è | -ans | -oz | -ont |
-| `indicative.imperfect` | 2 | `template` | -eu | -eus | -eut | -ins | -îz | -int |
-| `indicative.present` | 2 | `template` | -e | -es | -e | -ans | -oz | -nut |
-| `indicative.preterite` | 3 | `template` | -a | -as | -a | -îs | -îz | -ît |
-| `subjunctive.present` | 2 | `template` | -e | -es | -e | -anxhe | -oxhe | -èxhe |
+| `conditional` | 2 | `infinitive` | -reu | -reus | -reut | -rins | -rîz | -rint |
+| `indicative.future` | 3 | `infinitive` | -rè | -rès | -rè | -rans | -roz | -ront |
+| `indicative.imperfect` | 2 | `infinitive` | -eu | -eus | -eut | -ins | -îz | -int |
+| `indicative.present` | 2 | `infinitive` | -e | -es | -e | -ans | -oz | -nut |
+| `indicative.preterite` | 2 | `infinitive` | -a | -as | -a | -îs | -îz | -ît |
+| `subjunctive.present` | 2 | `infinitive` | -e | -es | -e | -anxhe | -oxhe | -èxhe |
 
 ### Representative lemmas
 
@@ -1070,12 +1070,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 3 | `template` | -ireu | -ireus | -ireut | -iréns | -irîz | -irént |
-| `indicative.future` | 3 | `lcp` | -irè | -irès | -rès | -irans | -iroz | -ront |
-| `indicative.imperfect` | 5 | `lcp` | -eu | -eus | -eut | -éns | -îz | -ént |
-| `indicative.present` | 3 | `lcp` | -i | -is | -s | -ans | -oz | -nut |
-| `indicative.preterite` | 5 | `lcp` | -a | -as | -a | -îs | -îz | -ît |
-| `subjunctive.present` | 3 | `lcp` | -e | -es | -e | -anxhe | -oxhe | -nuxhe |
+| `conditional` | 3 | `infinitive` | -ireu | -ireus | -ireut | -iréns | -irîz | -irént |
+| `indicative.future` | 3 | `infinitive` | -irè | -irès | -rès | -irans | -iroz | -ront |
+| `indicative.imperfect` | 5 | `infinitive` | -eu | -eus | -eut | -éns | -îz | -ént |
+| `indicative.present` | 3 | `infinitive` | -i | -is | -s | -ans | -oz | -nut |
+| `indicative.preterite` | 5 | `infinitive` | -a | -as | -a | -îs | -îz | -ît |
+| `subjunctive.present` | 3 | `infinitive` | -e | -es | -e | -anxhe | -oxhe | -nuxhe |
 
 ### Representative lemmas
 
@@ -1332,9 +1332,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 2 | `lcp` | -eu | -eus | -eut | -éns | -îz | -ént |
 | `indicative.future` | 3 | `lcp` | -è | -ès | -è | -ans | -oz | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -oleu | -oleus | -leus | -olins | -olîz | -lint |
+| `indicative.imperfect` | 1 | `infinitive` | -eu | -eus | -eu | -éns | -îz | -ént |
 | `indicative.present` | 2 | `lcp` | -u | -us | -ut | -lans | -loz | -lèt |
-| `indicative.preterite` | 2 | `lcp` | -ola | -olas | -las | -olîs | -olîz | -lît |
+| `indicative.preterite` | 1 | `infinitive` | -a | -as | -a | -îs | -îz | -ît |
 | `subjunctive.present` | 1 | `lcp` | -ye | -yes | -ye | -lanxhe | -loxhe | -ynuxhe |
 
 ### Representative lemmas
@@ -1575,12 +1575,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -oz | -ont | -eu | -eus | -eut | -éns |
-| `indicative.future` | 1 | `lcp` | -jhîz | -jhît | -rè | -rès | -rè | -rans |
-| `indicative.imperfect` | 1 | `lcp` | -èt | -eu | -eus | -eut | -éns | -îz |
-| `indicative.present` | 1 | `lcp` | -éjhowes | -é | -és | -ét | -ijhans | -ijhoz |
-| `indicative.preterite` | 1 | `template` | -a | -as | -a | -îs | -îz | -ît |
-| `subjunctive.present` | 1 | `lcp` | -irîz | -irént | -éjhe | -éjhes | -éjhe | -ijhanxhe |
+| `conditional` | 1 | `infinitive` | -rreu | -rreus | -rreut | -rrins | -rrîz | -rrint |
+| `indicative.future` | 1 | `infinitive` | -rrè | -rrès | -rrè | -rrans | -rroz | -rront |
+| `indicative.imperfect` | 1 | `infinitive` | -reu | -reus | -reut | -rins | -rîz | -rint |
+| `indicative.present` | 1 | `infinitive` | -re | -res | -re | -rans | -roz | -rnut |
+| `indicative.preterite` | 1 | `infinitive` | -ra | -ras | -ra | -rîs | -rîz | -rît |
+| `subjunctive.present` | 1 | `infinitive` | -re | -res | -re | -ranxhe | -roxhe | -rèxhe |
 
 ### Representative lemmas
 

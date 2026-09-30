@@ -10,7 +10,7 @@
 - Verb lemma entries: **920**
 - Inflected form records: **3930**
 - Separate form-of entries: **68**
-- Classified person-slot observations: **1425**
+- Classified person-slot observations: **1430**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,7 +18,8 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `unknown` | 800 | 4 | 3 |
+| `unknown` | 779 | 4 | 3 |
+| `-are` | 21 | 4 | 3 |
 
 ## `unknown`
 
@@ -28,9 +29,194 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 24 | `lcp` | -m | -i | ∅ | -m | -ts | ∅ |
-| `indicative.present` | 7 | `lcp` | ∅ | -ã | -eadzã | -ãm | -ats | -ã |
-| `indicative.preterite` | 24 | `lcp` | -ai | -ash | -ã | -ãm | -at | -arã |
+| `indicative.imperfect` | 3 | `lcp` | -m | -i | ∅ | -m | -ts | ∅ |
+| `indicative.present` | 2 | `lcp` | ∅ | -ã | -ã | -ãm | -ats | -ã |
+| `indicative.preterite` | 3 | `lcp` | -ai | -ash | -ã | -ãm | -at | -arã |
+
+### Representative lemmas
+
+#### `bãnedz`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bãnedz |
+| `2sg` | bãnedzã |
+| `3sg` | bãneadzã |
+| `1pl` | bãnãm |
+| `2pl` | bãnats |
+| `3pl` | bãnã |
+
+##### `conditional.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bãnarim |
+| `2sg` | bãnari |
+| `3sg` | bãnari |
+| `1pl` | bãnarim |
+| `2pl` | bãnarit |
+| `3pl` | bãnari |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bãnam |
+| `2sg` | bãnai |
+| `3sg` | bãna |
+| `1pl` | bãnam |
+| `2pl` | bãnats |
+| `3pl` | bãna |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bãnai |
+| `2sg` | bãnash |
+| `3sg` | bãnã |
+| `1pl` | bãnãm |
+| `2pl` | bãnat |
+| `3pl` | bãnarã |
+
+##### `imperative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | - |
+| `2sg` | bãnã |
+| `3sg` | - |
+| `1pl` | - |
+| `2pl` | bãnats |
+| `3pl` | - |
+
+#### `bãnedzu`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bãnedzu |
+| `2sg` | bãnedzã |
+| `3sg` | bãneadzã |
+| `1pl` | bãnãm |
+| `2pl` | bãnats |
+| `3pl` | bãnã |
+
+##### `conditional.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bãnarim |
+| `2sg` | bãnari |
+| `3sg` | bãnari |
+| `1pl` | bãnarim |
+| `2pl` | bãnarit |
+| `3pl` | bãnari |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bãnam |
+| `2sg` | bãnai |
+| `3sg` | bãna |
+| `1pl` | bãnam |
+| `2pl` | bãnats |
+| `3pl` | bãna |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bãnai |
+| `2sg` | bãnash |
+| `3sg` | bãnã |
+| `1pl` | bãnãm |
+| `2pl` | bãnat |
+| `3pl` | bãnarã |
+
+##### `imperative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | - |
+| `2sg` | bãnã |
+| `3sg` | - |
+| `1pl` | - |
+| `2pl` | bãnats |
+| `3pl` | - |
+
+#### `bishinedz`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bishinedz |
+| `2sg` | bishinedzã |
+| `3sg` | bishineadzã |
+| `1pl` | bishinãm |
+| `2pl` | bishinats |
+| `3pl` | bishinã |
+
+##### `conditional.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bishinarim |
+| `2sg` | bishinari |
+| `3sg` | bishinari |
+| `1pl` | bishinarim |
+| `2pl` | bishinarit |
+| `3pl` | bishinari |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bishinam |
+| `2sg` | bishinai |
+| `3sg` | bishina |
+| `1pl` | bishinam |
+| `2pl` | bishinats |
+| `3pl` | bishina |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bishinai |
+| `2sg` | bishinash |
+| `3sg` | bishinã |
+| `1pl` | bishinãm |
+| `2pl` | bishinat |
+| `3pl` | bishinarã |
+
+##### `imperative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | - |
+| `2sg` | bishinã |
+| `3sg` | - |
+| `1pl` | - |
+| `2pl` | bishinats |
+| `3pl` | - |
+
+## Ending: `-are`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.imperfect` | 21 | `infinitive` | -am | -ai | -a | -am | -ats | -a |
+| `indicative.present` | 6 | `infinitive` | ∅ | -ã | -ã | -ãm | -ats | -ã |
+| `indicative.preterite` | 21 | `infinitive` | -ai | -ash | -ã | -ãm | -at | -arã |
 
 ### Representative lemmas
 
@@ -51,12 +237,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | s-lucrarim |
-| `2sg` | s-lucrari |
-| `3sg` | s-lucrari |
-| `1pl` | s-lucrarim |
-| `2pl` | s-lucrarit |
-| `3pl` | s-lucrari |
+| `1sg` | lucrarim |
+| `2sg` | lucrari |
+| `3sg` | lucrari |
+| `1pl` | lucrarim |
+| `2pl` | lucrarit |
+| `3pl` | lucrari |
 
 ##### `indicative.imperfect`
 
@@ -108,12 +294,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | s-lãvdarim |
-| `2sg` | s-lãvdari |
-| `3sg` | s-lãvdari |
-| `1pl` | s-lãvdarim |
-| `2pl` | s-lãvdarit |
-| `3pl` | s-lãvdari |
+| `1sg` | lãvdarim |
+| `2sg` | lãvdari |
+| `3sg` | lãvdari |
+| `1pl` | lãvdarim |
+| `2pl` | lãvdarit |
+| `3pl` | lãvdari |
 
 ##### `indicative.imperfect`
 
@@ -165,12 +351,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | s-discãntarim |
-| `2sg` | s-discãntari |
-| `3sg` | s-discãntari |
-| `1pl` | s-discãntarim |
-| `2pl` | s-discãntarit |
-| `3pl` | s-discãntari |
+| `1sg` | discãntarim |
+| `2sg` | discãntari |
+| `3sg` | discãntari |
+| `1pl` | discãntarim |
+| `2pl` | discãntarit |
+| `3pl` | discãntari |
 
 ##### `indicative.imperfect`
 

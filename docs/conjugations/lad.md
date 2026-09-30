@@ -33,13 +33,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 48 | `template` | -aría | -arías | -aría | -aríamos | -aríax | -arían |
-| `indicative.future` | 48 | `template` | -aré | -arás | -ará | -aremos | -aréx | -arán |
-| `indicative.imperfect` | 48 | `template` | -ava | -avas | -ava | -ávamos | -avax | -avan |
-| `indicative.present` | 48 | `template` | -o | -as | -a | -amos | -áx | -an |
-| `indicative.preterite` | 47 | `template` | -ì | -ates | -ó | -ìmos | -atex | -aron |
-| `subjunctive.imperfect` | 48 | `template` | -ara | -aras | -ara | -áramos | -arax | -aran |
-| `subjunctive.present` | 48 | `template` | -e | -es | -e | -emos | -éx | -en |
+| `conditional` | 47 | `infinitive` | -aría | -arías | -aría | -aríamos | -aríax | -arían |
+| `indicative.future` | 47 | `infinitive` | -aré | -arás | -ará | -aremos | -aréx | -arán |
+| `indicative.imperfect` | 47 | `infinitive` | -ava | -avas | -ava | -ávamos | -avax | -avan |
+| `indicative.present` | 47 | `infinitive` | -o | -as | -a | -amos | -áx | -an |
+| `indicative.preterite` | 46 | `infinitive` | -ì | -ates | -ó | -ìmos | -atex | -aron |
+| `subjunctive.imperfect` | 47 | `infinitive` | -ara | -aras | -ara | -áramos | -arax | -aran |
+| `subjunctive.present` | 47 | `infinitive` | -e | -es | -e | -emos | -éx | -en |
 
 ### Representative lemmas
 
@@ -321,13 +321,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 8 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
-| `indicative.future` | 4 | `lcp` | -é | -ás | -á | -emos | -ásh | -án |
-| `indicative.imperfect` | 7 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
-| `indicative.present` | 3 | `lcp` | -o | -es | -e | -imos | -ish | -en |
-| `indicative.preterite` | 2 | `lcp` | -í | -ites | -ió | -imos | -itesh | -ieron |
-| `subjunctive.present` | 4 | `lcp` | -a | -as | -a | -amos | -ásh | -an |
-| `subjunctive.preterite` | 3 | `lcp` | -era | -eras | -era | -éramos | -erash | -eran |
+| `conditional` | 2 | `infinitive` | -driya | -driyas | -driya | -driyamos | -driyash | -driyan |
+| `indicative.future` | 2 | `infinitive` | -dré | -drás | -drá | -dremos | -drash | -drán |
+| `indicative.imperfect` | 4 | `infinitive` | -iya | -iyas | -iya | -iyamos | -iyash | -iyan |
+| `indicative.present` | 3 | `infinitive` | -o | -es | -e | -imos | -ish | -en |
+| `indicative.preterite` | 2 | `infinitive` | -í | -ites | -ió | -imos | -itesh | -ieron |
+| `subjunctive.present` | 2 | `infinitive` | -ga | -gas | -ga | -gamos | -gásh | -gan |
+| `subjunctive.preterite` | 1 | `infinitive` | -yera | -yeras | -iera | -yéramos | -iéramos | -yerash |
 
 ### Representative lemmas
 
@@ -611,13 +611,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 4 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
-| `indicative.future` | 3 | `lcp` | -é | -ás | -á | -emos | -ésh | -ásh |
-| `indicative.imperfect` | 4 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
-| `indicative.present` | 2 | `lcp` | -o | -es | -e | -imos | -esh | -en |
-| `indicative.preterite` | 2 | `lcp` | -e | -ites | -o | -imos | -itesh | -yeron |
-| `subjunctive.present` | 3 | `lcp` | -a | -as | -a | -amos | -ásh | -an |
-| `subjunctive.preterite` | 2 | `lcp` | -yera | -yeras | -iera | -yéramos | -iéramos | -yerash |
+| `conditional` | 2 | `infinitive` | -ería | -erías | -ería | -eríamos | -eríash | -erían |
+| `indicative.future` | 3 | `infinitive` | -eré | -erás | -erá | -eremos | -erésh | -erásh |
+| `indicative.imperfect` | 2 | `infinitive` | -iya | -iyas | -iya | -iyamos | -iyash | -iyan |
+| `indicative.present` | 2 | `infinitive` | -o | -es | -e | -imos | -esh | -en |
+| `indicative.preterite` | 1 | `infinitive` | -ide | -ites | -ido | -imos | -itesh | -yeron |
+| `subjunctive.present` | 2 | `infinitive` | -ea | -eas | -ea | -eamos | -eásh | -ean |
+| `subjunctive.preterite` | 1 | `infinitive` | -yera | -yeras | -iera | -yéramos | -iéramos | -yerash |
 
 ### Representative lemmas
 

@@ -10,7 +10,7 @@
 - Verb lemma entries: **109**
 - Inflected form records: **667**
 - Separate form-of entries: **70**
-- Classified person-slot observations: **678**
+- Classified person-slot observations: **668**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,10 +18,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-êr` | 33 | 6 | 6 |
+| `-êr` | 33 | 5 | 5 |
 | `rgn-conj-vlér` | 1 | 5 | 5 |
 | `rgn-conj-avér` | 1 | 6 | 4 |
-| `-ar` | 4 | 6 | 0 |
+| `-ar` | 4 | 4 | 0 |
 | `unknown` | 7 | 0 | 0 |
 | `-ìr` | 2 | 0 | 0 |
 | `-ér` | 1 | 0 | 0 |
@@ -36,12 +36,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 5 | `template` | -arèb | -arès | -arèb | -arèsum | -arèsuv | -arèb |
-| `indicative.future` | 5 | `template` | -arò | -aré | -arà | -arẽn | -arì | -arà |
-| `indicative.imperfect` | 5 | `template` | -éva | -ìvtia | -éva | -imia | -ìvia | -éva |
+| `conditional` | 4 | `infinitive` | -arèb | -arès | -arèb | -arèsum | -arèsuv | -arèb |
+| `indicative.future` | 4 | `infinitive` | -arò | -aré | -arà | -arẽn | -arì | -arà |
+| `indicative.imperfect` | 4 | `infinitive` | -éva | -ìvtia | -éva | -imia | -ìvia | -éva |
 | `indicative.present` | 1 | `lcp` | -ùn | -ùn | -öna | -unẽn | -unì | -öna |
-| `indicative.preterite` | 5 | `template` | -èt | -ès | -èt | -èsum | -èsuv | -èt |
-| `subjunctive.present` | 5 | `template` | -a | -a | -a | -ègna | -ìva | ∅ |
+| `indicative.preterite` | 4 | `infinitive` | -èt | -ès | -èt | -èsum | -èsuv | -èt |
 
 ### Representative lemmas
 
@@ -104,17 +103,6 @@ Stem: `truv`.
 | `2pl` | truvèsuv |
 | `3pl` | truvèt |
 
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | truva |
-| `2sg` | truva |
-| `3sg` | truva |
-| `1pl` | truvègna |
-| `2pl` | truvìva |
-| `3pl` | truv |
-
 ##### `conditional.preterite`
 
 | Slot | Form |
@@ -135,6 +123,17 @@ Stem: `truv`.
 | `3sg` | — |
 | `1pl` | truvẽn |
 | `2pl` | truvì |
+| `3pl` | — |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | truva |
+| `2sg` | truva |
+| `3sg` | truva |
+| `1pl` | truvègna |
+| `2pl` | truvìva |
 | `3pl` | — |
 
 #### `lavêr`
@@ -196,17 +195,6 @@ Stem: `lav`.
 | `2pl` | lavèsuv |
 | `3pl` | lavèt |
 
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | lava |
-| `2sg` | lava |
-| `3sg` | lava |
-| `1pl` | lavègna |
-| `2pl` | lavìva |
-| `3pl` | lav |
-
 ##### `conditional.preterite`
 
 | Slot | Form |
@@ -227,6 +215,17 @@ Stem: `lav`.
 | `3sg` | — |
 | `1pl` | lavẽn |
 | `2pl` | lavì |
+| `3pl` | — |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | lava |
+| `2sg` | lava |
+| `3sg` | lava |
+| `1pl` | lavègna |
+| `2pl` | lavìva |
 | `3pl` | — |
 
 #### `abivrêr`
@@ -288,17 +287,6 @@ Stem: `abriv`.
 | `2pl` | abrivèsuv |
 | `3pl` | abrivèt |
 
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abriva |
-| `2sg` | abriva |
-| `3sg` | abriva |
-| `1pl` | abrivègna |
-| `2pl` | abrivìva |
-| `3pl` | abriv |
-
 ##### `conditional.preterite`
 
 | Slot | Form |
@@ -319,6 +307,17 @@ Stem: `abriv`.
 | `3sg` | — |
 | `1pl` | abrivẽn |
 | `2pl` | abrivì |
+| `3pl` | — |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | abriva |
+| `2sg` | abriva |
+| `3sg` | abriva |
+| `1pl` | abrivègna |
+| `2pl` | abrivìva |
 | `3pl` | — |
 
 ## `rgn-conj-vlér`
@@ -517,12 +516,12 @@ Stem: `leẓ`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | leẓ |
-| `2sg` | leẓ |
-| `3sg` | leẓ |
+| `1sg` | leẓa |
+| `2sg` | — |
+| `3sg` | — |
 | `1pl` | leẓẽn |
 | `2pl` | leẓì |
-| `3pl` | leẓ |
+| `3pl` | leẓa |
 
 ##### `conditional`
 
@@ -568,17 +567,6 @@ Stem: `leẓ`.
 | `2pl` | leẓèsuv |
 | `3pl` | leẓèt |
 
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | leẓ |
-| `2sg` | leẓ |
-| `3sg` | leẓ |
-| `1pl` | leẓègna |
-| `2pl` | leẓìva |
-| `3pl` | leẓa |
-
 ##### `conditional.preterite`
 
 | Slot | Form |
@@ -600,6 +588,17 @@ Stem: `leẓ`.
 | `1pl` | leẓẽn |
 | `2pl` | leẓì |
 | `3pl` | — |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | leẓègna |
+| `2pl` | leẓìva |
+| `3pl` | leẓa |
 
 #### `ësar`
 

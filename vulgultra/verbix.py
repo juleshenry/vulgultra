@@ -208,12 +208,20 @@ def map_feature(tense_name: str, lect: str = "") -> str | None:
 _DIALECT_TAG = re.compile(r"\s*\((?:N|S)\)\s*$")
 
 
-def clean_form(form: str) -> str | None:
-    """One Verbix form → bare word, or None for compound / annotated forms."""
+def clean_form(form: str) -> list[str]:
+    """One Verbix form → bare words; [] for compound / annotated forms.
+
+    Some pages glue two variants with no separator (frp prendríontprendríant):
+    two halves of near-equal length that share a 5+ letter prefix.
+    """
     text = _DIALECT_TAG.sub("", str(form or "").strip())
     if not text or text == "-" or " " in text or "(" in text:
-        return None
-    return text
+        return []
+    for cut in range(5, len(text) - 4):
+        head, tail = text[:cut], text[cut:]
+        if head[:5] == tail[:5] and abs(len(head) - len(tail)) <= 2:
+            return [head, tail]
+    return [text]
 
 
 def _imperative_slots(ids: list[int]) -> dict[int, str]:
@@ -254,20 +262,20 @@ def parse_paradigm(lect: str, record: dict[str, Any]) -> dict[str, Any] | None:
         row = cells.setdefault(feature, {})
         for person_id, rec in zip(ids, forms):
             slot = slots.get(person_id)
-            form = clean_form(rec.get("form"))
-            if not slot or not form:
+            if not slot:
                 continue
-            cell = row.get(slot)
-            if cell is None:
-                row[slot] = {
-                    "form": form,
-                    "variants": [],
-                    "phonemes": [],
-                    "source_label": name,
-                    "source_url": record.get("page_url") or "",
-                }
-            elif form != cell["form"] and form not in cell["variants"]:
-                cell["variants"].append(form)
+            for form in clean_form(rec.get("form")):
+                cell = row.get(slot)
+                if cell is None:
+                    row[slot] = {
+                        "form": form,
+                        "variants": [],
+                        "phonemes": [],
+                        "source_label": name,
+                        "source_url": record.get("page_url") or "",
+                    }
+                elif form != cell["form"] and form not in cell["variants"]:
+                    cell["variants"].append(form)
         if not row:
             cells.pop(feature)
     if not cells:

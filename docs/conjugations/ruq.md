@@ -19,12 +19,12 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
 | `I` | 8 | 4 | 3 |
+| `II` | 4 | 4 | 3 |
+| `other` | 6 | 3 | 3 |
 | `III` | 13 | 4 | 2 |
-| `II` | 4 | 4 | 2 |
-| `fi` | 1 | 4 | 2 |
-| `other` | 6 | 3 | 2 |
-| `I-ez` | 1 | 2 | 1 |
-| `IV-esc` | 1 | 2 | 1 |
+| `I-ez` | 1 | 2 | 2 |
+| `IV-esc` | 1 | 2 | 2 |
+| `fi` | 1 | 4 | 1 |
 | `IV` | 3 | 4 | 0 |
 
 ## Conjugation: `I`
@@ -35,9 +35,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 1 | `lcp` | -m | -i̯ | ∅ | -m | -ț | -u̯ |
+| `indicative.imperfect` | 3 | `lcp` | -m | -i̯ | ∅ | -m | -ʦ | -u̯ |
 | `indicative.present` | 2 | `lcp` | -au̯ | -ai̯ | -a | -ɔm | -aʦ | -au̯ |
-| `indicative.preterite` | 1 | `lcp` | -ái̯ | -áș | -ǫ́ | -ǫ́m | -áț | -áră |
+| `indicative.preterite` | 3 | `lcp` | -ai̯ | -aʃ | -ɔ | -ɔm | -aʦ | -arə |
 
 ### Representative lemmas
 
@@ -47,55 +47,55 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | cǫ́nt |
-| `2sg` | cǫ́nț |
-| `3sg` | cǫ́ntă |
-| `1pl` | căntǫ́m |
-| `2pl` | căntáț |
-| `3pl` | cǫ́ntă |
+| `1sg` | kɔnt |
+| `2sg` | kɔnʦ |
+| `3sg` | kɔntə |
+| `1pl` | kəntɔm |
+| `2pl` | kəntaʦ |
+| `3pl` | kɔntə |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | căntám |
-| `2sg` | căntái̯ |
-| `3sg` | căntá |
-| `1pl` | căntám |
-| `2pl` | căntáț |
-| `3pl` | căntáu̯ |
+| `1sg` | kəntam |
+| `2sg` | kəntai̯ |
+| `3sg` | kənta |
+| `1pl` | kəntam |
+| `2pl` | kəntaʦ |
+| `3pl` | kəntau̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | căntái̯ |
-| `2sg` | căntáș |
-| `3sg` | căntǫ́ |
-| `1pl` | căntǫ́m |
-| `2pl` | căntáț |
-| `3pl` | căntáră |
+| `1sg` | kəntai̯ |
+| `2sg` | kəntaʃ |
+| `3sg` | kəntɔ |
+| `1pl` | kəntɔm |
+| `2pl` | kəntaʦ |
+| `3pl` | kəntarə |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | să cǫ́nt |
-| `2sg` | să cǫ́nț |
-| `3sg` | să cǫ́ntă |
-| `1pl` | să căntǫ́m |
-| `2pl` | să căntáț |
-| `3pl` | să cǫ́ntă |
+| `1sg` | kɔnt |
+| `2sg` | kɔnʦ |
+| `3sg` | kɔntə |
+| `1pl` | kəntɔm |
+| `2pl` | kəntaʦ |
+| `3pl` | kɔntə |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | ˈkɔntə |
+| `2sg` | kɔntə |
 | `3sg` | — |
-| `1pl` | kənˈtəm |
-| `2pl` | kənˈtaʦ |
+| `1pl` | kəntəm |
+| `2pl` | kəntaʦ |
 | `3pl` | — |
 
 #### `leuare`
@@ -104,44 +104,44 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈle̯au̯ |
-| `2sg` | ˈle̯ai̯ |
-| `3sg` | ˈle̯a |
-| `1pl` | ˈlɔm |
-| `2pl` | ˈlaʦ |
-| `3pl` | ˈle̯au |
+| `1sg` | le̯au̯ |
+| `2sg` | le̯ai̯ |
+| `3sg` | le̯a |
+| `1pl` | lɔm |
+| `2pl` | laʦ |
+| `3pl` | le̯au |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ləˈjam |
-| `2sg` | ləˈjai̯ |
-| `3sg` | ləˈja |
-| `1pl` | ləˈjam |
-| `2pl` | ləˈjaʦ |
-| `3pl` | ləˈjau̯ |
+| `1sg` | ləjam |
+| `2sg` | ləjai̯ |
+| `3sg` | ləja |
+| `1pl` | ləjam |
+| `2pl` | ləjaʦ |
+| `3pl` | ləjau̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈlai̯ |
-| `2sg` | ˈlaʃ |
-| `3sg` | ˈlɔ |
-| `1pl` | ˈlɔm |
-| `2pl` | ˈlaʦ |
-| `3pl` | ˈlarə |
+| `1sg` | lai̯ |
+| `2sg` | laʃ |
+| `3sg` | lɔ |
+| `1pl` | lɔm |
+| `2pl` | laʦ |
+| `3pl` | larə |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | ˈle̯a |
+| `2sg` | le̯a |
 | `3sg` | — |
-| `1pl` | ˈlɔm |
-| `2pl` | ˈlaʦ |
+| `1pl` | lɔm |
+| `2pl` | laʦ |
 | `3pl` | — |
 
 #### `dare`
@@ -150,173 +150,44 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈdau̯ |
-| `2sg` | ˈdai̯ |
-| `3sg` | ˈda |
-| `1pl` | ˈdɔm |
-| `2pl` | ˈdaʦ |
-| `3pl` | ˈdau̯ |
+| `1sg` | dau̯ |
+| `2sg` | dai̯ |
+| `3sg` | da |
+| `1pl` | dɔm |
+| `2pl` | daʦ |
+| `3pl` | dau̯ |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | dəˈde̯am |
-| `2sg` | dəˈde̯ai̯ |
-| `3sg` | dəˈde̯a |
-| `1pl` | dəˈde̯am |
-| `2pl` | dəˈde̯aʦ |
-| `3pl` | dəˈdeau̯ |
+| `1sg` | dəde̯am |
+| `2sg` | dəde̯ai̯ |
+| `3sg` | dəde̯a |
+| `1pl` | dəde̯am |
+| `2pl` | dəde̯aʦ |
+| `3pl` | dədeau̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈded |
-| `2sg` | ˈde̯adiʃ |
-| `3sg` | ˈde̯adi |
-| `1pl` | ˈde̯adim |
-| `2pl` | ˈde̯adiʦ |
-| `3pl` | ˈde̯adirə |
+| `1sg` | ded |
+| `2sg` | de̯adiʃ |
+| `3sg` | de̯adi |
+| `1pl` | de̯adim |
+| `2pl` | de̯adiʦ |
+| `3pl` | de̯adirə |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | ˈdɔ |
+| `2sg` | dɔ |
 | `3sg` | — |
-| `1pl` | ˈdɔm |
-| `2pl` | ˈdaʦ |
-| `3pl` | — |
-
-## Conjugation: `III`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `indicative.present` | 1 | `lcp` | -at | -aț | -áti | -átim | -átiț | -at |
-| `indicative.preterite` | 1 | `lcp` | -i̯ | -ș | ∅ | -m | -ț | -ră |
-
-### Representative lemmas
-
-#### `bátiri`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | bat |
-| `2sg` | baț |
-| `3sg` | báti |
-| `1pl` | bátim |
-| `2pl` | bátiț |
-| `3pl` | bat |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | băte̯ám |
-| `2sg` | băte̯ái̯ |
-| `3sg` | băte̯á |
-| `1pl` | băte̯ám |
-| `2pl` | băte̯áț |
-| `3pl` | băte̯áu̯ |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | bătúi̯ |
-| `2sg` | bătúș |
-| `3sg` | bătú |
-| `1pl` | bătúm |
-| `2pl` | bătúț |
-| `3pl` | bătúră |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | să bát |
-| `2sg` | să báț |
-| `3sg` | să bátă |
-| `1pl` | să bátim |
-| `2pl` | să bátiț |
-| `3pl` | să bátă |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | ˈbati |
-| `3sg` | — |
-| `1pl` | ˈbatim |
-| `2pl` | ˈbatiʦ |
-| `3pl` | — |
-
-#### `bibere`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ˈbi̯au̯ |
-| `2sg` | ˈbi̯ai̯ |
-| `3sg` | ˈbi̯au̯ |
-| `1pl` | ˈbi̯əm |
-| `2pl` | ˈbeʦ |
-| `3pl` | ˈbi̯au̯ |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ˈbi̯am |
-| `2sg` | ˈbi̯ai̯ |
-| `3sg` | ˈbi̯a |
-| `1pl` | ˈbi̯am |
-| `2pl` | ˈbi̯ats |
-| `3pl` | ˈbi̯au̯ |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ˈbi̯ui̯ |
-| `2sg` | ˈbi̯uʃ |
-| `3sg` | ˈbi̯u |
-| `1pl` | ˈbi̯um |
-| `2pl` | ˈbi̯uʦ |
-| `3pl` | ˈbi̯urə |
-
-#### `mergere`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ˈmerg |
-| `2sg` | ˈmerʣ |
-| `3sg` | ˈme̯arʣi |
-| `1pl` | ˈme̯arʣim |
-| `2pl` | ˈme̯arʣiʦ |
-| `3pl` | ˈmerg |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ˈmerʃ |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
+| `1pl` | dɔm |
+| `2pl` | daʦ |
 | `3pl` | — |
 
 ## Conjugation: `II`
@@ -328,7 +199,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `indicative.imperfect` | 2 | `lcp` | -m | -i̯ | ∅ | -m | -ʦ | -u̯ |
-| `indicative.preterite` | 2 | `lcp` | -i̯ | -ʃ | ∅ | -m | -ʦ | -rə |
+| `indicative.present` | 1 | `lcp` | -ad | -az | -adi | -ədem | -ədeʦ | -ad |
+| `indicative.preterite` | 3 | `lcp` | -i̯ | -ʃ | ∅ | -m | -ʦ | -rə |
 
 ### Representative lemmas
 
@@ -338,55 +210,55 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | cad |
-| `2sg` | caz |
-| `3sg` | cádi |
-| `1pl` | cădém |
-| `2pl` | cădéț |
-| `3pl` | cad |
+| `1sg` | kad |
+| `2sg` | kaz |
+| `3sg` | kadi |
+| `1pl` | kədem |
+| `2pl` | kədeʦ |
+| `3pl` | kad |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | căde̯ám |
-| `2sg` | căde̯ái̯ |
-| `3sg` | căde̯á |
-| `1pl` | căde̯ám |
-| `2pl` | căde̯áț |
-| `3pl` | căde̯áu̯ |
+| `1sg` | kəde̯am |
+| `2sg` | kəde̯ai̯ |
+| `3sg` | kəde̯a |
+| `1pl` | kəde̯am |
+| `2pl` | kəde̯a |
+| `3pl` | kəde̯au̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | căzúi̯ |
-| `2sg` | căzúș |
-| `3sg` | căzú |
-| `1pl` | căzúm |
-| `2pl` | căzúț |
-| `3pl` | căzúră |
+| `1sg` | kəzui̯ |
+| `2sg` | kəzuʃ |
+| `3sg` | kəzu |
+| `1pl` | kəzum |
+| `2pl` | kəzuʦ |
+| `3pl` | kəzurə |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | să cád |
-| `2sg` | să cáz |
-| `3sg` | să cádă |
-| `1pl` | să cădém |
-| `2pl` | să cădéț |
-| `3pl` | să cádă |
+| `1sg` | kad |
+| `2sg` | kaz |
+| `3sg` | kadə |
+| `1pl` | kədem |
+| `2pl` | kədeʦ |
+| `3pl` | kadə |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | ˈkad |
+| `2sg` | kad |
 | `3sg` | — |
-| `1pl` | kəˈdem |
-| `2pl` | kəˈdeʦ |
+| `1pl` | kədem |
+| `2pl` | kədeʦ |
 | `3pl` | — |
 
 #### `habere`
@@ -395,45 +267,45 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈam |
-| `2sg` | ˈai̯ |
-| `3sg` | ˈari |
-| `1pl` | ˈvem |
-| `2pl` | ˈveʦ |
+| `1sg` | am |
+| `2sg` | ai̯ |
+| `3sg` | ari |
+| `1pl` | vem |
+| `2pl` | veʦ |
 | `3pl` | au̯u |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈve̯am |
-| `2sg` | ˈve̯ai̯ |
-| `3sg` | ˈve̯a |
-| `1pl` | ˈve̯a |
-| `2pl` | ˈve̯am |
-| `3pl` | ˈve̯au̯ |
+| `1sg` | ve̯am |
+| `2sg` | ve̯ai̯ |
+| `3sg` | ve̯a |
+| `1pl` | ve̯a |
+| `2pl` | ve̯am |
+| `3pl` | ve̯au̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈvui̯ |
-| `2sg` | ˈvuʃ |
-| `3sg` | ˈvu |
-| `1pl` | ˈvum |
-| `2pl` | ˈvuʦ |
-| `3pl` | ˈvurə |
+| `1sg` | vui̯ |
+| `2sg` | vuʃ |
+| `3sg` | vu |
+| `1pl` | vum |
+| `2pl` | vuʦ |
+| `3pl` | vurə |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈam |
-| `2sg` | ˈai̯ |
-| `3sg` | ˈai̯bə |
-| `1pl` | ˈvem |
-| `2pl` | ˈveʦ |
-| `3pl` | ˈai̯bə |
+| `1sg` | am |
+| `2sg` | ai̯ |
+| `3sg` | ai̯bə |
+| `1pl` | vem |
+| `2pl` | veʦ |
+| `3pl` | ai̯bə |
 
 #### `posse`
 
@@ -441,104 +313,34 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈpot |
-| `2sg` | ˈpoʦ |
-| `3sg` | ˈpo̯ati |
-| `1pl` | puˈtem |
-| `2pl` | puˈteʦ |
-| `3pl` | ˈpot |
+| `1sg` | pot |
+| `2sg` | poʦ |
+| `3sg` | po̯ati |
+| `1pl` | putem |
+| `2pl` | puteʦ |
+| `3pl` | pot |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | puˈte̯am |
-| `2sg` | puˈte̯ai̯ |
-| `3sg` | puˈte̯a |
-| `1pl` | puˈte̯am |
-| `2pl` | puˈte̯aʦ |
-| `3pl` | puˈte̯au̯ |
+| `1sg` | pute̯am |
+| `2sg` | pute̯ai̯ |
+| `3sg` | pute̯a |
+| `1pl` | pute̯am |
+| `2pl` | pute̯aʦ |
+| `3pl` | pute̯au̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | puˈtui̯ |
-| `2sg` | puˈtuʃ |
-| `3sg` | puˈtu |
-| `1pl` | puˈtum |
-| `2pl` | puˈtuʦ |
-| `3pl` | puˈturə |
-
-## Conjugation: `fi`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 1 | `lcp` | -m | -i̯ | ∅ | -m | -ț | -u̯ |
-| `indicative.preterite` | 1 | `lcp` | -i̯ | -ș | ∅ | -m | -ț | -ră |
-
-### Representative lemmas
-
-#### `iri / sam`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | jes |
-| `2sg` | jești |
-| `3sg` | jasti |
-| `1pl` | im |
-| `2pl` | iț |
-| `3pl` | sa |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ăi̯ram |
-| `2sg` | ăi̯rai̯ |
-| `3sg` | ăi̯ra |
-| `1pl` | ăi̯ram |
-| `2pl` | ăi̯raț |
-| `3pl` | ăi̯rau̯ |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fui̯ |
-| `2sg` | fuș |
-| `3sg` | fu |
-| `1pl` | fum |
-| `2pl` | fuț |
-| `3pl` | fură |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | esku |
-| `2sg` | jeș |
-| `3sg` | jască |
-| `1pl` | im |
-| `2pl` | iț |
-| `3pl` | ijă |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | ˈiri |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | ˈireʦ |
-| `3pl` | — |
+| `1sg` | putui̯ |
+| `2sg` | putuʃ |
+| `3sg` | putu |
+| `1pl` | putum |
+| `2pl` | putuʦ |
+| `3pl` | puturə |
 
 ## `other`
 
@@ -549,7 +351,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `indicative.imperfect` | 2 | `lcp` | -m | -i̯ | ∅ | -m | -ʦ | -u̯ |
-| `indicative.preterite` | 1 | `lcp` | -i̯ | -ʃ | ∅ | -m | -ʦ | -rə |
+| `indicative.present` | 1 | `lcp` | ∅ | ∅ | -ə | -ɔm | -aʦ | -ə |
+| `indicative.preterite` | 1 | `lcp` | -ai̯ | -aʃ | -ɔ | -ɔm | -ats | -arə |
 
 ### Representative lemmas
 
@@ -559,34 +362,34 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈjerb |
-| `2sg` | ˈjerb |
-| `3sg` | ˈjarbi |
-| `1pl` | ˈjarbim |
-| `2pl` | ˈjarbiʦ |
-| `3pl` | ˈjerb |
+| `1sg` | jerb |
+| `2sg` | jerb |
+| `3sg` | jarbi |
+| `1pl` | jarbim |
+| `2pl` | jarbiʦ |
+| `3pl` | jerb |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | irˈbe̯am |
-| `2sg` | irˈbe̯ai̯ |
-| `3sg` | irˈbe̯a |
-| `1pl` | irˈbe̯am |
-| `2pl` | irˈbe̯aʦ |
-| `3pl` | irˈbe̯au̯ |
+| `1sg` | irbe̯am |
+| `2sg` | irbe̯ai̯ |
+| `3sg` | irbe̯a |
+| `1pl` | irbe̯am |
+| `2pl` | irbe̯aʦ |
+| `3pl` | irbe̯au̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈjerʃu |
-| `2sg` | ˈjarsiʃ |
-| `3sg` | ˈjarsi |
-| `1pl` | ˈjarsim |
-| `2pl` | ˈjarsiʦ |
-| `3pl` | ˈjarsirə |
+| `1sg` | jerʃ |
+| `2sg` | jarsiʃ |
+| `3sg` | jarsi |
+| `1pl` | jarsim |
+| `2pl` | jarsiʦ |
+| `3pl` | jarsirə |
 
 #### `expauere`
 
@@ -594,34 +397,34 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈspar |
-| `2sg` | ˈspar |
-| `3sg` | ˈsparə |
-| `1pl` | ˈsparim |
-| `2pl` | ˈspariʦ |
-| `3pl` | ˈspar |
+| `1sg` | spar |
+| `2sg` | spar |
+| `3sg` | sparə |
+| `1pl` | spərɔm |
+| `2pl` | spərɔʦ |
+| `3pl` | spar |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | spəˈram |
-| `2sg` | spəˈrai̯ |
-| `3sg` | spəˈra |
-| `1pl` | spəˈram |
-| `2pl` | spəˈraʦ |
-| `3pl` | spəˈrau̯ |
+| `1sg` | spəram |
+| `2sg` | spərai̯ |
+| `3sg` | spəra |
+| `1pl` | spəram |
+| `2pl` | spəraʦ |
+| `3pl` | spərau̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | spəˈrui̯ |
-| `2sg` | spəˈruʃ |
-| `3sg` | spəˈru |
-| `1pl` | spəˈrum |
-| `2pl` | spəˈruʦ |
-| `3pl` | spəˈrurə |
+| `1sg` | spərui̯ |
+| `2sg` | spəruʃ |
+| `3sg` | spəru |
+| `1pl` | spərum |
+| `2pl` | spəruʦ |
+| `3pl` | spərurə |
 
 #### `conspuere`
 
@@ -629,34 +432,163 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈskup |
-| `2sg` | ˈskup |
-| `3sg` | ˈskupə |
-| `1pl` | skuˈpɔm |
-| `2pl` | skuˈpaʦ |
-| `3pl` | ˈskupə |
+| `1sg` | skup |
+| `2sg` | skup |
+| `3sg` | skupə |
+| `1pl` | skupɔm |
+| `2pl` | skupaʦ |
+| `3pl` | skupə |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | skuˈpe̯am |
-| `2sg` | skuˈpe̯ai̯ |
-| `3sg` | skuˈpe̯a |
-| `1pl` | skuˈpe̯am |
-| `2pl` | skuˈpe̯aʦ |
-| `3pl` | skuˈpeau̯ |
+| `1sg` | skupe̯am |
+| `2sg` | skupe̯ai̯ |
+| `3sg` | skupe̯a |
+| `1pl` | skupe̯am |
+| `2pl` | skupe̯aʦ |
+| `3pl` | skupeau̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈskupʃ |
-| `2sg` | skupˈsiʃ |
-| `3sg` | ˈskupsi |
-| `1pl` | ˈskupsim |
-| `2pl` | ˈskupsiʦ |
-| `3pl` | ˈskupsirə |
+| `1sg` | skupai̯ |
+| `2sg` | skupaʃ |
+| `3sg` | skupɔ |
+| `1pl` | skupɔm |
+| `2pl` | skupats |
+| `3pl` | skuparə |
+
+## Conjugation: `III`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.present` | 1 | `lcp` | -t | -ʦ | -ti | -tim | -tiʦ | -t |
+| `indicative.preterite` | 1 | `lcp` | -i̯ | -ʃ | ∅ | -m | -t | -rə |
+
+### Representative lemmas
+
+#### `bátiri`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bat |
+| `2sg` | baʦ |
+| `3sg` | bati |
+| `1pl` | batim |
+| `2pl` | batiʦ |
+| `3pl` | bat |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bəte̯am |
+| `2sg` | bəte̯ai̯ |
+| `3sg` | bəte̯a |
+| `1pl` | bəte̯am |
+| `2pl` | bəte̯aʦ |
+| `3pl` | bəte̯au̯ |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bətui̯ |
+| `2sg` | bətuʃ |
+| `3sg` | bətu |
+| `1pl` | bətum |
+| `2pl` | bətut |
+| `3pl` | bəturə |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bat |
+| `2sg` | baʦ |
+| `3sg` | batə |
+| `1pl` | batim |
+| `2pl` | batiʦ |
+| `3pl` | batə |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | bati |
+| `3sg` | — |
+| `1pl` | batim |
+| `2pl` | batiʦ |
+| `3pl` | — |
+
+#### `bibere`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | be̯au̯ |
+| `2sg` | be̯ai̯ |
+| `3sg` | be̯a |
+| `1pl` | bem |
+| `2pl` | bi̯əʦ |
+| `3pl` | be̯au̯ |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | be̯am |
+| `2sg` | be̯ai̯ |
+| `3sg` | be̯a |
+| `1pl` | be̯am |
+| `2pl` | be̯ats |
+| `3pl` | be̯au̯ |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bi̯ui̯ |
+| `2sg` | bi̯uʃ |
+| `3sg` | bi̯u |
+| `1pl` | bi̯um |
+| `2pl` | bi̯uʦ |
+| `3pl` | bi̯urə |
+
+#### `mergere`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | merg |
+| `2sg` | merʣ |
+| `3sg` | me̯arʣi |
+| `1pl` | me̯arʣim |
+| `2pl` | me̯arʣiʦ |
+| `3pl` | merg |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | merʃ |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
 
 ## Conjugation: `I-ez`
 
@@ -666,7 +598,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.present` | 1 | `lcp` | -éz | -éz | -e̯áză | -ǫ́m | -áț | -e̯áză |
+| `indicative.present` | 1 | `lcp` | ∅ | ∅ | -ə | -ɔm | -aʦ | -ə |
+| `subjunctive.present` | 1 | `lcp` | ∅ | ∅ | -ə | -ɔm | -aʦ | -ə |
 
 ### Representative lemmas
 
@@ -676,33 +609,33 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | lucréz |
-| `2sg` | lucréz |
-| `3sg` | lucre̯áză |
-| `1pl` | lucrǫ́m |
-| `2pl` | lucráț |
-| `3pl` | lucre̯áză |
+| `1sg` | lukrez |
+| `2sg` | lukrez |
+| `3sg` | lukre̯azə |
+| `1pl` | lukrɔm |
+| `2pl` | lukraʦ |
+| `3pl` | lukre̯azə |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | să lucréz |
-| `2sg` | să lucréz |
-| `3sg` | să lucre̯áză |
-| `1pl` | să lucrǫ́m |
-| `2pl` | să lucráț |
-| `3pl` | să lucre̯áză |
+| `1sg` | lukrez |
+| `2sg` | lukrez |
+| `3sg` | lukre̯azə |
+| `1pl` | lukrɔm |
+| `2pl` | lukraʦ |
+| `3pl` | lukre̯azə |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | luˈkre̯azə |
+| `2sg` | lukre̯azə |
 | `3sg` | — |
-| `1pl` | luˈkrɔm |
-| `2pl` | luˈkraʦ |
+| `1pl` | lukrɔm |
+| `2pl` | lukraʦ |
 | `3pl` | — |
 
 ## Conjugation: `IV-esc`
@@ -713,7 +646,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.present` | 1 | `lcp` | -és | -éș | -e̯áști | -ím | -íț | -és |
+| `indicative.present` | 1 | `lcp` | -es | -eʃ | -e̯aʃti | -im | -iʦ | -es |
+| `subjunctive.present` | 1 | `lcp` | -es | -eʃ | -e̯askə | -im | -iʦ | -e̯askə |
 
 ### Representative lemmas
 
@@ -723,33 +657,102 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | sirbés |
-| `2sg` | sirbéș |
-| `3sg` | sirbe̯áști |
-| `1pl` | sirbím |
-| `2pl` | sirbíț |
-| `3pl` | sirbés |
+| `1sg` | sirbes |
+| `2sg` | sirbeʃ |
+| `3sg` | sirbe̯aʃti |
+| `1pl` | sirbim |
+| `2pl` | sirbiʦ |
+| `3pl` | sirbes |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | să sirbés |
-| `2sg` | să sirbéș |
-| `3sg` | să sirbe̯áscă |
-| `1pl` | să sirbím |
-| `2pl` | să sirbíț |
-| `3pl` | să sirbe̯áscă |
+| `1sg` | sirbes |
+| `2sg` | sirbeʃ |
+| `3sg` | sirbe̯askə |
+| `1pl` | sirbim |
+| `2pl` | sirbiʦ |
+| `3pl` | sirbe̯askə |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | sirˈbe̯a |
+| `2sg` | sirbe̯a |
 | `3sg` | — |
-| `1pl` | sirˈbim |
-| `2pl` | sirˈbiʦ |
+| `1pl` | sirbim |
+| `2pl` | sirbiʦ |
+| `3pl` | — |
+
+## Conjugation: `fi`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `indicative.preterite` | 1 | `lcp` | -i̯ | -ʃ | ∅ | -m | -ʦ | -rə |
+
+### Representative lemmas
+
+#### `iri / sam`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sam |
+| `2sg` | jeʃ |
+| `3sg` | jasti |
+| `1pl` | im |
+| `2pl` | iʦ |
+| `3pl` | sa |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ̯ram |
+| `2sg` | rai̯ |
+| `3sg` | ra |
+| `1pl` | ̯ram |
+| `2pl` | rats |
+| `3pl` | ̯rau̯ |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fui̯ |
+| `2sg` | fuʃ |
+| `3sg` | fu |
+| `1pl` | fum |
+| `2pl` | fuʦ |
+| `3pl` | furə |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sɔm |
+| `2sg` | jeʃ |
+| `3sg` | ijə |
+| `1pl` | im |
+| `2pl` | iʦ |
+| `3pl` | ijə |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | iri |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | ireʦ |
 | `3pl` | — |
 
 ## Conjugation: `IV`
@@ -768,32 +771,32 @@ No majority ending pattern with enough complete six-slot rows yet.
 |---|---|
 | `1sg` | dorm |
 | `2sg` | dorm |
-| `3sg` | do̯ármi |
-| `1pl` | durmím |
-| `2pl` | durmíț |
+| `3sg` | do̯armi |
+| `1pl` | durmim |
+| `2pl` | durmiʦ |
 | `3pl` | dorm |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | durme̯ám |
-| `2sg` | durme̯ái̯ |
-| `3sg` | durme̯á |
-| `1pl` | durme̯ám |
-| `2pl` | durme̯áț |
-| `3pl` | durme̯áu̯ |
+| `1sg` | durme̯am |
+| `2sg` | durme̯ai̯ |
+| `3sg` | durme̯a |
+| `1pl` | durme̯am |
+| `2pl` | durme̯aʦ |
+| `3pl` | durmeau̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | durmíi̯ |
-| `2sg` | durmíș |
-| `3sg` | durmí |
-| `1pl` | durmím |
-| `2pl` | durmíț |
-| `3pl` | durmíră |
+| `1sg` | durmii̯ |
+| `2sg` | durmiʃ |
+| `3sg` | durmi |
+| `1pl` | durmim |
+| `2pl` | durmiʦ |
+| `3pl` | durmirə |
 
 ##### `subjunctive.present`
 
@@ -811,10 +814,10 @@ No majority ending pattern with enough complete six-slot rows yet.
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | ˈdorm |
+| `2sg` | dorm |
 | `3sg` | — |
-| `1pl` | durˈmim |
-| `2pl` | durˈmiʦ |
+| `1pl` | durmim |
+| `2pl` | durmiʦ |
 | `3pl` | — |
 
 #### `subire`
@@ -823,34 +826,34 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | ˈsui̯ |
-| `2sg` | ˈsui̯ |
-| `3sg` | ˈsujə |
-| `1pl` | suˈjəm |
-| `2pl` | suˈjaʦ |
-| `3pl` | ˈsujə |
+| `1sg` | sui̯ |
+| `2sg` | sui̯ |
+| `3sg` | sujə |
+| `1pl` | sujəm |
+| `2pl` | sujaʦ |
+| `3pl` | sujə |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | sujˈam |
-| `2sg` | suˈjai̯ |
-| `3sg` | suˈja |
-| `1pl` | suˈjam |
-| `2pl` | suˈjaʦ |
-| `3pl` | suˈjau̯ |
+| `1sg` | sujam |
+| `2sg` | sujai̯ |
+| `3sg` | suja |
+| `1pl` | sujam |
+| `2pl` | sujaʦ |
+| `3pl` | sujau̯ |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | suˈjai̯ |
-| `2sg` | suˈjaʃ |
-| `3sg` | suˈjə |
-| `1pl` | suˈjəm |
-| `2pl` | suˈjaʦ |
-| `3pl` | suˈjarə |
+| `1sg` | sujai̯ |
+| `2sg` | sujaʃ |
+| `3sg` | sujə |
+| `1pl` | sujəm |
+| `2pl` | sujaʦ |
+| `3pl` | sujarə |
 
 #### `fugere`
 
@@ -859,7 +862,7 @@ No majority ending pattern with enough complete six-slot rows yet.
 | Slot | Form |
 |---|---|
 | `1sg` | — |
-| `2sg` | ˈfui̯ |
+| `2sg` | fui̯ |
 | `3sg` | — |
 | `1pl` | — |
 | `2pl` | — |

@@ -115,9 +115,22 @@ FI_ORTHO = {
 }
 
 
-def cell(form: str, *, ipa: str = "", url: str = "", label: str = "") -> dict:
+def phonemic(ipa: str) -> str:
+    """RVID IPA without stress marks: the one notation used for every ruq form."""
+    return ipa.replace("ˈ", "").replace("ˌ", "").strip()
+
+
+def cell(
+    form: str,
+    *,
+    ipa: str = "",
+    url: str = "",
+    label: str = "",
+    variants: list[str] | None = None,
+) -> dict:
     out = {
         "form": form,
+        "variants": list(dict.fromkeys(item for item in (variants or []) if item and item != form)),
         "phonemes": [],
         "source_label": label or "rvid/capidan",
         "source_url": url or "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
@@ -128,17 +141,28 @@ def cell(form: str, *, ipa: str = "", url: str = "", label: str = "") -> dict:
 
 
 def row_forms(forms: tuple[str, ...], *, ipas: dict[str, str] | None = None) -> dict[str, dict]:
+    """IPA (from RVID) is the form when present; Capidan spelling is a variant."""
     out = {}
     for slot, form in zip(SLOTS, forms):
         if not form:
             continue
-        out[slot] = cell(form, ipa=(ipas or {}).get(slot, ""), label="capidan-tradition orthography")
+        ipa_forms = (ipas or {}).get(slot) or []
+        if ipa_forms:
+            out[slot] = cell(
+                phonemic(ipa_forms[0]), ipa=ipa_forms[0],
+                label="rvid IPA (capidan spelling as variant)",
+                variants=[phonemic(item) for item in ipa_forms[1:]] + [form],
+            )
+        else:
+            out[slot] = cell(form, label="capidan-tradition orthography")
     return out
 
 
-def parse_rvid() -> dict[str, dict[str, dict[str, str]]]:
-    """cognateset → feature → slot → IPA form."""
-    by: dict[str, dict[str, dict[str, str]]] = defaultdict(lambda: defaultdict(dict))
+def parse_rvid() -> dict[str, dict[str, dict[str, list[str]]]]:
+    """cognateset → feature → slot → IPA forms (every attested one, in order)."""
+    by: dict[str, dict[str, dict[str, list[str]]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(list))
+    )
     with open(RVID / "forms.csv", encoding="utf-8") as handle:
         for row in csv.DictReader(handle):
             form = (row.get("Form") or "").strip()
@@ -164,7 +188,9 @@ def parse_rvid() -> dict[str, dict[str, dict[str, str]]]:
                 else:
                     continue
             slot = PERSON.get(person, person.lower() if person else "inv")
-            by[row["Cognateset_ID"]][feature][slot] = form
+            forms = by[row["Cognateset_ID"]][feature][slot]
+            if form not in forms:
+                forms.append(form)
     return by
 
 
@@ -187,7 +213,7 @@ def build() -> dict:
     for feature, forms in FI_ORTHO.items():
         if feature in {"lemma", "class_source", "gloss"}:
             continue
-        ipas = {slot: fi_ipas.get(feature, {}).get(slot, "") for slot in SLOTS}
+        ipas = {slot: fi_ipas.get(feature, {}).get(slot, []) for slot in SLOTS}
         fi_cells[feature] = row_forms(forms, ipas=ipas)
     for feature, slot_map in fi_ipas.items():
         if feature in fi_cells:
@@ -195,7 +221,10 @@ def build() -> dict:
         row = {}
         for slot, ipa in slot_map.items():
             if slot in SLOTS:
-                row[slot] = cell(ipa, ipa=ipa, label="rvid IPA")
+                row[slot] = cell(
+                    phonemic(ipa[0]), ipa=ipa[0], label="rvid IPA",
+                    variants=[phonemic(item) for item in ipa[1:]],
+                )
         if row:
             fi_cells[feature] = row
     paradigms.append({
@@ -224,7 +253,7 @@ def build() -> dict:
             if feature in {"lemma", "class_source", "gloss"}:
                 continue
             ipas = {
-                slot: ipa_map.get(feature, {}).get(slot, "")
+                slot: ipa_map.get(feature, {}).get(slot, [])
                 for slot in SLOTS
             }
             cells[feature] = row_forms(forms, ipas=ipas)
@@ -236,8 +265,8 @@ def build() -> dict:
                 # citation infinitive note
                 for slot, ipa in slot_map.items():
                     cells.setdefault(feature, {})[slot] = cell(
-                        f"[{ipa}]",
-                        ipa=ipa,
+                        f"[{ipa[0]}]",
+                        ipa=ipa[0],
                         label="rvid IPA citation form (infinitive restricted)",
                     )
                 continue
@@ -245,7 +274,10 @@ def build() -> dict:
             for slot, ipa in slot_map.items():
                 if slot not in SLOTS:
                     continue
-                row[slot] = cell(ipa, ipa=ipa, label="rvid IPA")
+                row[slot] = cell(
+                    phonemic(ipa[0]), ipa=ipa[0], label="rvid IPA",
+                    variants=[phonemic(item) for item in ipa[1:]],
+                )
             if row:
                 cells[feature] = row
         paradigms.append({
@@ -283,9 +315,12 @@ def build() -> dict:
             for slot, ipa in slot_map.items():
                 key = slot if slot in SLOTS or slot in {"cit", "msg", "inv"} else slot
                 if feature.startswith("nonfinite."):
-                    row[key] = cell(f"[{ipa}]", ipa=ipa, label="rvid IPA")
+                    row[key] = cell(f"[{ipa[0]}]", ipa=ipa[0], label="rvid IPA")
                 elif slot in SLOTS:
-                    row[slot] = cell(ipa, ipa=ipa, label="rvid IPA")
+                    row[slot] = cell(
+                    phonemic(ipa[0]), ipa=ipa[0], label="rvid IPA",
+                    variants=[phonemic(item) for item in ipa[1:]],
+                )
             if row:
                 cells[feature] = row
         if not any(slot in SLOTS for row in cells.values() for slot in row):

@@ -33,12 +33,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 3 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `indicative.imperfect` | 7 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 5 | `lcp` | -el | -as | -a | -ein | -eis | -an |
-| `subjunctive.imperfect` | 3 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.present` | 6 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
-| `subjunctive.preterite` | 9 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
+| `conditional` | 1 | `infinitive` | -ess | -esses | -ess | -essen | -esses | -essen |
+| `indicative.imperfect` | 6 | `infinitive` | -avel | -avas | -ava | -avan | -avas | -avan |
+| `indicative.present` | 4 | `infinitive` | -el | -as | -a | -ein | -eis | -an |
+| `subjunctive.imperfect` | 2 | `infinitive` | -evi | -evies | -evi | -evien | -evies | -evien |
+| `subjunctive.present` | 5 | `infinitive` | -i | -ies | -i | -eien | -eies | -ien |
+| `subjunctive.preterite` | 7 | `infinitive` | -evi | -evies | -evi | -evien | -evies | -evien |
 
 ### Representative lemmas
 
@@ -328,12 +328,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 5 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `indicative.imperfect` | 10 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 4 | `template` | ∅ | -as | -a | -ain | -ais | -an |
-| `subjunctive.imperfect` | 5 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.present` | 3 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
-| `subjunctive.preterite` | 8 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
+| `conditional` | 5 | `infinitive` | -ass | -asses | -ass | -assen | -asses | -assen |
+| `indicative.imperfect` | 10 | `infinitive` | -avel | -avas | -ava | -avan | -avas | -avan |
+| `indicative.present` | 3 | `infinitive` | ∅ | -as | -a | -ain | -ais | -an |
+| `subjunctive.imperfect` | 5 | `infinitive` | -avi | -avies | -avi | -avien | -avies | -avien |
+| `subjunctive.present` | 3 | `infinitive` | -ia | -ias | -ia | -ian | -ias | -ian |
+| `subjunctive.preterite` | 7 | `infinitive` | -avi | -avies | -avi | -avien | -avies | -avien |
 
 ### Representative lemmas
 
@@ -621,10 +621,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 6 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 2 | `lcp` | -el | -as | -a | -in | -is | -an |
-| `subjunctive.present` | 3 | `lcp` | -i | -ies | -i | -îen | -îes | -ien |
-| `subjunctive.preterite` | 7 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
+| `indicative.imperfect` | 4 | `infinitive` | -evel | -evas | -eva | -evan | -evas | -evan |
+| `indicative.present` | 2 | `infinitive` | -el | -as | -a | -in | -is | -an |
+| `subjunctive.present` | 2 | `infinitive` | -i | -ies | -i | -îen | -îes | -ien |
+| `subjunctive.preterite` | 5 | `infinitive` | -evi | -evies | -evi | -evien | -evies | -evien |
 
 ### Representative lemmas
 
@@ -914,9 +914,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 3 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
-| `indicative.present` | 2 | `lcp` | ∅ | -as | -a | -ain | -ais | -an |
-| `subjunctive.present` | 4 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
+| `indicative.imperfect` | 3 | `infinitive` | -eva | -evas | -eva | -evan | -evas | -evan |
+| `indicative.present` | 2 | `infinitive` | ∅ | -as | -a | -ain | -ais | -an |
+| `subjunctive.present` | 2 | `infinitive` | -ia | -ias | -ia | -ian | -ias | -ian |
 
 ### Representative lemmas
 

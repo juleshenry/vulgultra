@@ -40,11 +40,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 12 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.future` | 12 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `indicative.imperfect` | 13 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.present` | 1 | `lcp` | -s | -s | -;t | -yons | -yez | -'te |
-| `subjunctive.present` | 2 | `lcp` | -e | -es | -e | -onche | -èche | -e'te |
+| `conditional` | 9 | `infinitive` | -iroais | -iroais | -iroait | -iroème | -iroète | -iroai'te |
+| `indicative.future` | 9 | `infinitive` | -irai | -iros | -iro | -irons | -irez | -iront |
+| `indicative.imperfect` | 10 | `infinitive` | -oais | -oais | -oait | -oème | -oète | -oai'te |
+| `indicative.present` | 1 | `infinitive` | -is | -is | -it | -iyons | -iyez | -i'te |
+| `subjunctive.present` | 2 | `infinitive` | -e | -es | -e | -onche | -èche | -e'te |
 
 ### Representative lemmas
 
@@ -260,11 +260,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 7 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.future` | 7 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `indicative.imperfect` | 7 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.present` | 2 | `lcp` | -s | -s | -t | -yons | -yez | -'te |
-| `subjunctive.present` | 2 | `lcp` | -e | -es | -e | -isonche | -isèche | -e'te |
+| `conditional` | 7 | `infinitive` | -roais | -roais | -roait | -roème | -roète | -roai'te |
+| `indicative.future` | 7 | `infinitive` | -rai | -ros | -ro | -rons | -rez | -ront |
+| `indicative.imperfect` | 2 | `infinitive` | -yoais | -yoais | -yoait | -yoème | -yoète | -yoai'te |
+| `indicative.present` | 2 | `infinitive` | -s | -s | -t | -yons | -yez | -'te |
+| `subjunctive.present` | 1 | `infinitive` | -che | -ches | -che | -yonche | -yèche | -che'te |
 
 ### Representative lemmas
 
@@ -700,10 +700,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 3 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.future` | 3 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `indicative.imperfect` | 3 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.present` | 1 | `lcp` | -ots | -ots | -ot | -attons | -attez | -at'te |
+| `conditional` | 2 | `infinitive` | -troais | -troais | -troait | -troème | -troète | -troai'te |
+| `indicative.future` | 2 | `infinitive` | -trai | -tros | -tro | -trons | -trez | -tront |
+| `indicative.imperfect` | 2 | `infinitive` | -toais | -toais | -toait | -toème | -toète | -toai'te |
+| `indicative.present` | 1 | `infinitive` | -s | -s | ∅ | -tons | -tez | -'te |
 | `subjunctive.present` | 1 | `lcp` | -che | -ches | -che | -ttonche | -ttèche | -che'te |
 
 ### Representative lemmas
@@ -920,11 +920,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -és | -és | -ét | -ème | -ète | -ai'te |
-| `indicative.future` | 2 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -és | -és | -ét | -ème | -ète | -ai'te |
-| `indicative.present` | 2 | `lcp` | -que | -ques | -que | -tchons | -tchez | -que'te |
-| `subjunctive.present` | 2 | `lcp` | -que | -ques | -que | -tchonche | -tchèche | -que'te |
+| `conditional` | 1 | `infinitive` | -tcheroés | -tcheroés | -tcheroét | -tcheroème | -tcheroète | -tcheroai'te |
+| `indicative.future` | 1 | `infinitive` | -tcherai | -tcheros | -tchero | -tcherons | -tcherez | -tcheront |
+| `indicative.imperfect` | 1 | `infinitive` | -tchoés | -tchoés | -tchoét | -tchoème | -tchoète | -tchoai'te |
+| `indicative.present` | 2 | `infinitive` | -que | -ques | -que | -tchons | -tchez | -que'te |
+| `subjunctive.present` | 2 | `infinitive` | -que | -ques | -que | -tchonche | -tchèche | -que'te |
 
 ### Representative lemmas
 
@@ -1072,11 +1072,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.present` | 1 | `lcp` | -gue | -gues | -gue | -djons | -djez | -gue'te |
-| `subjunctive.present` | 1 | `lcp` | -gue | -gues | -gue | -djonche | -djèche | -gue'te |
+| `conditional` | 1 | `infinitive` | -gueroais | -gueroais | -gueroait | -gueroème | -gueroète | -gueroai'te |
+| `indicative.future` | 1 | `infinitive` | -guerai | -gueros | -guero | -guerons | -guerez | -gueront |
+| `indicative.imperfect` | 1 | `infinitive` | -djoais | -djoais | -djoait | -djoème | -djoète | -djoai'te |
+| `indicative.present` | 1 | `infinitive` | -gue | -gues | -gue | -djons | -djez | -gue'te |
+| `subjunctive.present` | 1 | `infinitive` | -gue | -gues | -gue | -djonche | -djèche | -gue'te |
 
 ### Representative lemmas
 
@@ -1156,11 +1156,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.present` | 1 | `lcp` | -e | -es | -e | -ons | -ez | -e'te |
-| `subjunctive.present` | 1 | `lcp` | -e | -es | -e | -onche | -èche | -e'te |
+| `conditional` | 1 | `infinitive` | -eroais | -eroais | -eroait | -eroème | -eroète | -eroai'te |
+| `indicative.future` | 1 | `infinitive` | -erai | -eros | -ero | -erons | -erez | -eront |
+| `indicative.imperfect` | 1 | `infinitive` | -oais | -oais | -oait | -oème | -oète | -oai'te |
+| `indicative.present` | 1 | `infinitive` | -e | -es | -e | -ons | -ez | -e'te |
+| `subjunctive.present` | 1 | `infinitive` | -e | -es | -e | -onche | -èche | -e'te |
 
 ### Representative lemmas
 
