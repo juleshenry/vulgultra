@@ -1,677 +1,301 @@
 #!/usr/bin/env python3
-"""Stem-first ending candidate report: 3×2 person tables per TAM.
+"""Verb ending shortlist: every lect's regular endings, per theme × TAM × person.
 
-Each harvested class is its own stem. Related stems are only hinted as a
-bucket (a-theme, e-theme, …); their tables are never merged. Stem labels
-are written `{ -ar }`. A cell is `-ending (lect)`.
+Regular only. Each lect-class contributes the six-ending row that the most
+lemmas of that class share (`metadata.ending_inventories`, built over the
+full lemma set, inchoative infix already moved into the stem). Its support
+is the number of verbs that follow that row. Classes are pooled by their
+Latin conjugation (a/e/i/re theme), not by the spelling of the infinitive:
+French `-er` and Piedmontese `-é` are Latin -ARE, so a-theme.
+
+Nothing is dropped for length: 2σ endings (`-amos`) compete whole. σ is the
+ending read as Vulgultra orthography after repair (glide formation), which
+is how the optimizer reads an ending.
+
+Irregular and named classes (esse, habere, stare, ire, …) go to the
+irregular report as full words.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 import unicodedata
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from vulgultra.conjugation_harvest import (  # noqa: E402
-    PERSON_SLOTS,
-    aggregate_ending_inventory,
-    strip_endings,
-)
+from vulgultra.conjugation_harvest import PERSON_SLOTS, row_forms  # noqa: E402
+from vulgultra.phonology import from_orthography, is_vowel, repair  # noqa: E402
 from vulgultra.romance_swadesh import SOURCE_LANGS  # noqa: E402
 
 SOURCES = ROOT / "data" / "conjugation" / "sources"
 DEFAULT_OUTPUT = ROOT / "docs" / "eval" / "verb_ending_candidates.md"
 DEFAULT_IRREGULAR = ROOT / "docs" / "eval" / "verb_ending_candidates_irregular.md"
-IRREGULAR_LINK = "verb_ending_candidates_irregular.md"
 
-PERSONS = ("1", "2", "3")
-NUMBERS = ("sg", "pl")
-VOWELS = set(
-    "aeiouàáâãäåæèéêëìíîïòóôõöùúûüýÿăâîøœ"
-    "ɔɛəɨʌɐɒʊɪãõũĩỹǫɜɞɘɵɤɯɑæẽ"
-)
-BUCKET_ORDER = ("a-theme", "e-theme", "i-theme", "re", "esse", "stare", "habere", "other")
-ESSE_STEMS = {
-    "ser", "essere", "être", "esser", "fi",
-    "ête", "étr", "éstr", "ièsi", "saite", "zer",
+THEMES = ("a", "e", "i", "re")
+THEME_TITLE = {
+    "a": "a-theme (Latin -ĀRE)",
+    "e": "e-theme (Latin -ĒRE)",
+    "i": "i-theme (Latin -ĪRE)",
+    "re": "re-theme (Latin -ERE)",
 }
-STARE_STEMS = {"estar", "stare"}
-HABERE_STEMS = {
-    "haber", "haber-ie", "haver", "avere", "avoir", "avè", "aver",
-    "aveur", "avea",
-    "avair", "aveir", "avar", "avoér", "avér", "avì", "avaer",
-}
-STEM_BUCKET: dict[str, str] = {
-    "-ar": "a-theme", "-are": "a-theme", "-ari": "a-theme",
-    "-â": "a-theme", "-à": "a-theme", "-å": "a-theme", "-a": "a-theme", "-ai": "a-theme",
-    "-al": "a-theme", "-ur": "a-theme", "-ae": "a-theme", "-êr": "a-theme",
-    "-er": "e-theme", "-ere": "e-theme", "-ēr": "e-theme", "-é": "e-theme",
-    "-è": "e-theme", "-ea": "e-theme", "-e": "e-theme", "-el": "e-theme",
-    "-tcher": "e-theme", "-djer": "e-theme",
-    "-ir": "i-theme", "-ire": "i-theme", "-iri": "i-theme",
-    "-î": "i-theme", "-ì": "i-theme", "-í": "i-theme", "-éi": "i-theme",
-    "-i": "i-theme", "-air": "i-theme", "-yî": "i-theme", "-il": "i-theme",
-    "-re": "re", "-ro": "re", "-r": "re", "-rr": "re", "-te": "re",
-}
+THIN = 5
 
-TAM_ORDER = [
+# Canonical TAMs, in display order. Source labels map onto these.
+TAMS = (
     "indicative.present",
     "indicative.imperfect",
     "indicative.preterite",
-    "indicative.past",
     "indicative.future",
     "indicative.pluperfect",
     "subjunctive.present",
     "subjunctive.imperfect",
-    "subjunctive.past",
-    "subjunctive.preterite",
     "subjunctive.future",
     "conditional",
-    "conditional.present",
     "imperative",
-]
-
-
-_TEMPLATE_CONJ = re.compile(r"^[a-z]{2,4}-conj-(.+)$", re.I)
-_EASTERN_CLASS = re.compile(r"^(IV|III|II|I)(?:-(.+))?$")
-_EASTERN_PLAIN = {"I": "-a", "II": "-ea", "III": "-e", "IV": "-i"}
-_EASTERN_INFIX = {"ez", "esc"}
-_TEMPLATE_STEM = {
-    "egl-conj-er1-Modena": "-ēr",
-    "egl-conj-ir-Modena": "-ir",
-    "egl-conj-er3-Modena": "-er",
-    "wa-conj-er-T": "-er",
-    "wa-conj-er-R": "-er",
-    "wa-conj-er-K": "-er",
-    "wa-conj-er-R-eye": "-er",
-    "wa-conj-ner": "-er",
-    "wa-conj-e": "-e",
-    "wa-conj-i": "-i",
-    "wa-conj-i-R": "-i",
-    "wa-conj-yî": "-yî",
-    "wa-conj-lére": "-re",
-    "rgn-conj-first": "-êr",
-    "rgn-conj-first-cons": "-êr",
-    "rgn-conj-first-vow": "-êr",
-    "rgn-conj-third-cons": "-ar",
-    "rgn-conj-avér": "avér",
-    "rgn-conj-vlér": "vlér",
-}
-_SIMPLE_ENDINGS = {
-    "ar", "are", "ari", "er", "ere", "eri", "ir", "ire", "iri", "re", "air",
-    "à", "è", "ì", "â", "ê", "î", "é", "í", "á", "å", "éi", "e", "i",
-    "al", "el", "il", "ur", "ro", "ae", "rr", "êr", "ér",
-}
-_STEM_FROM_REST = re.compile(
-    r"^(er|ir|re|ar|are|ere|ire|ari|iri|air|e|i)(?:[-0-9].*)?$",
-    re.I,
 )
-_NAMED_STEM = re.compile(r"^[A-Za-zàèìòùâêîôûéíóúäöüåŷî]+$")
+TAM_ALIASES = {
+    "indicative.past": "indicative.preterite",
+    "conditional.present": "conditional",
+    "imperative.present": "imperative",
+    "subjunctive.past": "subjunctive.imperfect",
+    # Wiktionary's "preterite subjunctive" (ast, lad, lmo, sc, rm) is the
+    # -ra/-se imperfect subjunctive.
+    "subjunctive.preterite": "subjunctive.imperfect",
+}
+
+# Latin conjugation of each lect-class. Generic endings first; per-lect
+# entries override where the infinitive spelling hides the Latin class.
+GENERIC_THEME = {
+    "-ar": "a", "-are": "a", "-ari": "a", "-à": "a", "-â": "a", "-a": "a",
+    "-al": "a", "-ur": "a", "-ae": "a",
+    "-er": "e", "-ere": "e", "-ê": "e", "-é": "e", "-è": "e", "-ea": "e",
+    "-el": "e", "-éi": "e", "-ei": "e",
+    "-ir": "i", "-ire": "i", "-iri": "i", "-î": "i", "-ì": "i", "-í": "i",
+    "-i": "i", "-il": "i", "-yî": "a",
+    "-re": "re", "-ro": "re", "-te": "re", "-r": "re", "-rr": "re", "-e": "re",
+}
+LECT_THEME = {
+    # Oïl -er is Latin -ĀRE.
+    "fr": {"-er": "a"}, "gallo": {"-er": "a"}, "nrf": {"-er": "a", "-ier": "a"},
+    "pcd": {"-er": "a", "-tcher": "a", "-djer": "a"},
+    "wa": {"-er": "a", "-eur": "e", "-ur": "e", "-î": "i", "-e": "re"},
+    # Gallo-Italian / Rhaeto: stressed -é/-èr/-er from -ĀRE.
+    "pms": {"-é": "a", "-è": "e", "-e": "re"},
+    "lld": {"-er": "a", "-é": "e"},
+    "eml": {"-ēr": "a", "-èr": "a", "-er": "re", "-îr": "i", "-ôr": "a"},
+    "rgn": {"-êr": "a", "-ér": "a", "-ar": "re", "-ìr": "i"},
+    "fur": {"-i": "re"},
+    "lij": {"-e": "re"},
+    "lmo": {"-er": "re"},
+    "rm": {"-air": "e", "-eir": "e"},
+    "co": {"-e": "re"},
+    # Sicilian -iri merges Latin -ĒRE / -ERE / -ĪRE.
+    "scn": {"-iri": "i"},
+    "sc": {"-ai": "a", "-ei": "e"},
+    "dlm": {"-er": "e"},
+    # Romanian families: -a I, -ea II, -e III, -i/-î IV.
+    "ro": {"-e": "re", "-î": "i"},
+    "ruq": {"I": "a", "I-ez": "a", "II": "e", "III": "re", "IV": "i", "IV-esc": "i"},
+    "ruo": {"I-å": "a", "II-é": "e", "III-e": "re", "IV-éi": "i", "IV-í": "i"},
+}
+
+_SPELL = str.maketrans({
+    "ț": "t", "ţ": "t", "ș": "s", "ş": "s", "ʦ": "ts", "ʣ": "dz", "ł": "l",
+    "š": "s", "ž": "z", "č": "c", "ə": "e", "ă": "a", "â": "a", "î": "i",
+    "å": "o", "ŭ": "u", "ẽ": "e", "ẓ": "z", "ç": "s", "ñ": "n", "'": "", "’": "",
+})
 
 
-def surface_stem(class_source: str) -> str:
-    """Strip provider tags to the unique infinitive stem.
-
-    `lad-conj-ar` → `-ar`. `egl-conj-er1-Modena` → `-ēr`. `wa-conj-er-T` → `-er`.
-    """
-    raw = (class_source or "").strip() or "unknown"
-    if raw in _TEMPLATE_STEM:
-        return _TEMPLATE_STEM[raw]
-    eastern = _EASTERN_CLASS.fullmatch(raw)
-    if eastern:
-        numeral, suffix = eastern.group(1), eastern.group(2)
-        if suffix and suffix not in _EASTERN_INFIX:
-            return suffix if suffix.startswith("-") else f"-{suffix}"
-        return _EASTERN_PLAIN[numeral]
-    match = _TEMPLATE_CONJ.match(raw)
-    if not match:
-        return raw
-    rest = match.group(1)
-    if "/" in rest or "auto" in rest.lower():
-        return raw
-    if rest.startswith("er1"):
-        return "-ēr"
-    if rest.startswith("er3"):
-        return "-er"
-    if rest.startswith("first"):
-        return "-êr"
-    if rest.startswith("third"):
-        return "-ar"
-    if rest in _SIMPLE_ENDINGS or rest.lower() in _SIMPLE_ENDINGS:
-        return rest if rest.startswith("-") else f"-{rest}"
-    chunk = _STEM_FROM_REST.match(rest)
-    if chunk:
-        ending = chunk.group(1)
-        return ending if ending.startswith("-") else f"-{ending}"
-    # Named irregulars: ast-conj-ser → ser, rgn-conj-avér → avér.
-    if _NAMED_STEM.fullmatch(rest) and (
-        rest.endswith("r")
-        or rest in ESSE_STEMS
-        or rest in STARE_STEMS
-        or rest in HABERE_STEMS
-    ):
-        return rest
-    return raw
+def theme_of(lect: str, class_source: str) -> str | None:
+    override = LECT_THEME.get(lect, {})
+    if class_source in override:
+        return override[class_source]
+    return GENERIC_THEME.get(class_source)
 
 
-def brace(stem: str) -> str:
-    return "{ " + stem + " }"
+def canonical_tam(feature: str) -> str | None:
+    feature = TAM_ALIASES.get(feature, feature)
+    return feature if feature in TAMS else None
 
 
-def stem_anchor(stem: str) -> str:
-    return "s-" + stem.replace(" ", "-").replace("/", "-")
-
-
-def stem_link(stem: str) -> str:
-    return f"[{brace(stem)}](#{stem_anchor(stem)})"
-
-
-def bucket_of(stem: str) -> str:
-    if stem in ESSE_STEMS:
-        return "esse"
-    if stem in STARE_STEMS:
-        return "stare"
-    if stem in HABERE_STEMS:
-        return "habere"
-    if stem in STEM_BUCKET:
-        return STEM_BUCKET[stem]
-    if not (stem.startswith("-") or stem[:1].isupper() or "conj" in stem):
-        return "other"
-    tail = stem.rsplit("-", 1)[-1].lower()
-    if tail in {"ar", "are", "ari", "al", "ur", "ae", "êr"}:
-        return "a-theme"
-    if tail in {"er", "ere", "eri", "el", "tcher", "djer"}:
-        return "e-theme"
-    if tail in {"ir", "ire", "iri", "il"}:
-        return "i-theme"
-    if tail in {"re", "ro", "rr", "r", "te"}:
-        return "re"
-    return "other"
-
-
-def stem_sort_key(name: str) -> tuple:
-    bucket = bucket_of(name)
-    return (BUCKET_ORDER.index(bucket), name.casefold())
-
-
-def ending_syllables(ending: str) -> int:
-    """Vowel groups in the suffix, minimum 1.
-
-    The cell is a word: stem already has a syllable, so ∅, -s, and -o
-    all count as 1σ. Two nuclei (-amos, -ìzzo) count as 2.
-    """
+def ending_sigma(ending: str) -> int:
+    """σ of an ending read as Vulgultra orthography after repair; ∅ is 0."""
     if ending in {"∅", ""}:
-        return 1
-    nfd = unicodedata.normalize("NFD", ending.casefold())
-    letters = "".join(ch for ch in nfd if unicodedata.category(ch) != "Mn")
-    count = 0
-    in_vowel = False
-    for ch in letters:
-        vowel = ch in VOWELS
-        if vowel and not in_vowel:
-            count += 1
-        in_vowel = vowel
-    return max(count, 1)
-
-
-def shortest_slot_map(slot_map: dict) -> dict:
-    """Keep only the endings at the lowest syllable count in each cell."""
-    out: dict = {}
-    for slot, endings in slot_map.items():
-        if not endings:
-            continue
-        best = min(ending_syllables(ending) for ending in endings)
-        out[slot] = {
-            ending: node
-            for ending, node in endings.items()
-            if ending_syllables(ending) == best
-        }
-    return out
-
-
-def md_cell(text: str) -> str:
-    return text.replace("|", "\\|").replace("\n", " ")
-
-
-def show_ending(ending: str, *, full_word: bool = False) -> str:
-    if ending in {"∅", ""}:
-        return "∅"
-    if ending.startswith("-"):
-        return ending
-    if full_word:
-        return ending
-    return f"-{ending}"
-
-
-def format_sources(sources: list[tuple[str, str, int]]) -> str:
-    """`-ar (es, pt) -are (it)` — class label, then the lects that use it."""
-    lects_by_class: dict[str, list[str]] = {}
-    for lect, class_source, _support in sources:
-        bucket = lects_by_class.setdefault(class_source, [])
-        if lect not in bucket:
-            bucket.append(lect)
-    parts = []
-    for class_source in sorted(lects_by_class, key=stem_sort_key):
-        lects = [code for code in SOURCE_LANGS if code in lects_by_class[class_source]]
-        lects.extend(code for code in lects_by_class[class_source] if code not in lects)
-        parts.append(f"{brace(class_source)} ({', '.join(lects)})")
-    return " ".join(parts)
-
-
-def format_cell(endings: dict, *, full_word: bool = False) -> str:
-    """`-o (es, pt) -i (oc, gsc)` grouped by ending, lects in source order."""
-    if not endings:
-        return "—"
-    groups: list[tuple[str, list[str]]] = []
-    for ending, node in endings.items():
-        lects = []
-        for lect, _cls, _sup in node["sources"]:
-            if lect not in lects:
-                lects.append(lect)
-        lects = [code for code in SOURCE_LANGS if code in lects] or lects
-        groups.append((ending, lects))
-    groups.sort(key=lambda item: (
-        min(SOURCE_LANGS.index(code) if code in SOURCE_LANGS else 99 for code in item[1]),
-        item[0],
-    ))
-    return " ".join(
-        f"{show_ending(ending, full_word=full_word)} ({', '.join(lects)})"
-        for ending, lects in groups
+        return 0
+    text = unicodedata.normalize("NFC", ending.lower())
+    # Non-syllabic marks (ruq transcription): u̯ i̯ e̯ are glides.
+    text = text.replace("u\u032f", "w").replace("i\u032f", "j").replace("e\u032f", "j")
+    text = text.translate(_SPELL)
+    text = "".join(
+        ch for ch in unicodedata.normalize("NFD", text)
+        if unicodedata.category(ch) != "Mn"
     )
+    try:
+        return sum(1 for seg in repair(from_orthography(text)) if is_vowel(seg))
+    except Exception:  # noqa: BLE001 - unknown symbol: fall back to vowel groups
+        groups, inside = 0, False
+        for ch in text:
+            vowel = ch in "aeiouy"
+            groups += vowel and not inside
+            inside = vowel
+        return groups
 
 
-# lect → class → feature → {endings, support, stem_mode, source}
-Inventory = dict[str, dict[str, dict[str, dict]]]
-
-
-def _row_forms(row: dict) -> dict[str, str]:
-    out: dict[str, str] = {}
-    for slot in PERSON_SLOTS:
-        cell = row.get(slot)
-        if isinstance(cell, dict):
-            form = cell.get("form")
-            if form:
-                out[slot] = str(form)
-    return out
-
-
-def _ending_pick_key(ending: str, support: int) -> tuple:
-    """Shortest 1σ ending wins. ∅ is not shorter than -o."""
-    if ending in {"∅", ""}:
-        letters = 1
-    else:
-        letters = len(ending)
-    return (ending_syllables(ending), letters, -support, ending)
-
-
-def inventory_shortest_cells(paradigms: list[dict]) -> dict[str, dict[str, dict]]:
-    """Per-cell shortest ending, not whole-row LCP majority.
-
-    Spanish *-er* LCP majority is *-zco* (*conocer*); the person ending is
-    *-o* (*comer*, *escribir*).
-    """
-    counts: dict[str, dict[str, dict[str, Counter]]] = defaultdict(
-        lambda: defaultdict(lambda: defaultdict(Counter))
-    )
-    for paradigm in paradigms:
-        class_source = str(paradigm.get("class_source") or "unknown")
-        stem = None
-        source = paradigm.get("source")
-        if isinstance(source, dict):
-            stem = source.get("stem")
-        latin = (
-            class_source in ESSE_STEMS
-            or class_source in STARE_STEMS
-            or class_source in HABERE_STEMS
-            or surface_stem(class_source) in ESSE_STEMS | STARE_STEMS | HABERE_STEMS
-        )
-        cells = paradigm.get("cells") or {}
-        for feature, row in cells.items():
-            if not isinstance(row, dict):
-                continue
-            forms = _row_forms(row)
-            if latin:
-                for slot, form in forms.items():
-                    if slot not in PERSON_SLOTS or form in {"—", ""}:
-                        continue
-                    counts[class_source][str(feature)][slot][form] += 1
-                continue
-            stripped = strip_endings(forms, stem)
-            if not stripped:
-                continue
-            endings, _used, _mode = stripped
-            for slot, ending in endings.items():
-                if slot not in PERSON_SLOTS or ending in {"—", ""}:
-                    continue
-                token = ending if ending else "∅"
-                counts[class_source][str(feature)][slot][token] += 1
-    grouped: dict[str, dict[str, dict]] = {}
-    for class_source, features in counts.items():
-        grouped[class_source] = {}
-        for feature, slots in features.items():
-            chosen: dict[str, str] = {}
-            support = 0
-            for slot, counter in slots.items():
-                ending, n = min(
-                    counter.items(),
-                    key=lambda item: _ending_pick_key(item[0], item[1]),
-                )
-                chosen[slot] = ending
-                support = max(support, n)
-            if chosen:
-                grouped[class_source][feature] = {
-                    "endings": chosen,
-                    "support": support,
-                    "stem_mode": "shortest-cell",
-                }
-    return grouped
-
-
-def inventory_from_paradigms(paradigms: list[dict]) -> dict[str, dict[str, dict]]:
-    """Majority endings from serialized paradigms when metadata is empty."""
-    grouped: dict[str, dict[str, dict]] = defaultdict(dict)
-    # Rebuild the harvest-style lemma map class → lemma → features.
-    by_class: dict[str, dict[str, dict]] = defaultdict(dict)
-    for paradigm in paradigms:
-        lemma = str(paradigm.get("lemma") or "").strip()
-        if not lemma:
-            continue
-        class_source = str(paradigm.get("class_source") or "unknown")
-        stem = None
-        source = paradigm.get("source")
-        if isinstance(source, dict):
-            stem = source.get("stem")
-        features: dict[str, dict[str, list]] = {}
-        cells = paradigm.get("cells") or {}
-        for feature, row in cells.items():
-            if not isinstance(row, dict):
-                continue
-            forms = _row_forms(row)
-            packed = {
-                slot: [{"form": form, "ipa": "", "tags": []}]
-                for slot, form in forms.items()
-            }
-            features[str(feature)] = packed
-        if not features:
-            continue
-        by_class[class_source][lemma] = {
-            "stem": stem,
-            "features": features,
-            "source_url": "",
-        }
-    for class_source, lemmas in by_class.items():
-        grouped[class_source] = aggregate_ending_inventory(lemmas, min_support=1)
-    return grouped
-
-
-def load_inventories() -> tuple[Inventory, dict[str, str]]:
-    """Load metadata inventories; fall back to paradigm majority for empty lects."""
-    inventories: Inventory = {}
-    notes: dict[str, str] = {}
+def load_regular() -> tuple[dict, dict]:
+    """theme → tam → slot → ending → [(lect, class, support)]; plus notes."""
+    tree: dict = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list))))
+    notes: dict = {"no_data": [], "unthemed": defaultdict(list), "dropped_tams": defaultdict(set)}
     for lect in SOURCE_LANGS:
         path = SOURCES / f"{lect}.json"
         if not path.is_file():
-            notes[lect] = "no source JSON"
+            notes["no_data"].append(lect)
             continue
-        document = json.loads(path.read_text(encoding="utf-8"))
-        paradigms = document.get("paradigms") or []
-        inv = inventory_shortest_cells(paradigms)
-        source = "shortest per cell from paradigms"
-        if not inv:
-            meta = document.get("metadata") or {}
-            inv = dict(meta.get("ending_inventories") or {})
-            source = "metadata.ending_inventories"
-        if not inv:
-            inv = inventory_from_paradigms(paradigms)
-            source = "majority from serialized paradigms"
-        if not inv:
-            notes[lect] = "no stripable 6-grid"
-            continue
-        inventories[lect] = {}
-        for class_source, features in inv.items():
-            packed: dict[str, dict] = {}
+        inventories = json.loads(path.read_text(encoding="utf-8"))["metadata"].get(
+            "ending_inventories"
+        ) or {}
+        if not inventories:
+            notes["no_data"].append(lect)
+        for class_source, features in inventories.items():
+            theme = theme_of(lect, class_source)
+            if theme is None:
+                notes["unthemed"][lect].append(class_source)
+                continue
+            best: dict[str, dict] = {}
             for feature, payload in features.items():
-                endings = (payload or {}).get("endings") or {}
-                if not endings:
+                tam = canonical_tam(feature)
+                if tam is None:
+                    notes["dropped_tams"][lect].add(feature)
                     continue
-                packed[feature] = {
-                    "endings": {
-                        slot: str(endings[slot])
-                        for slot in PERSON_SLOTS
-                        if slot in endings
-                    },
-                    "support": int((payload or {}).get("support") or 0),
-                    "stem_mode": str((payload or {}).get("stem_mode") or ""),
-                    "source": source,
-                }
-            if packed:
-                stem = surface_stem(class_source)
-                if stem in inventories[lect]:
-                    dest = inventories[lect][stem]
-                    for feature, payload in packed.items():
-                        old = dest.get(feature)
-                        if old is None or payload["support"] > old["support"]:
-                            dest[feature] = payload
-                else:
-                    inventories[lect][stem] = packed
-        if not inventories[lect]:
-            notes[lect] = "no stripable 6-grid"
-            inventories.pop(lect)
-            continue
-        notes[lect] = source
-    return inventories, notes
-
-
-def collect_candidates(inventories: Inventory) -> dict:
-    """class → feature → slot → ending → {support, sources}."""
-    tree: dict = defaultdict(
-        lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: {
-            "support": 0,
-            "sources": [],
-        })))
-    )
-    for lect, classes in inventories.items():
-        for class_source, features in classes.items():
-            for feature, payload in features.items():
+                if tam not in best or payload["support"] > best[tam]["support"]:
+                    best[tam] = payload
+            for tam, payload in best.items():
                 for slot, ending in payload["endings"].items():
                     if ending in {"—", ""}:
                         continue
-                    node = tree[class_source][feature][slot][ending]
-                    node["support"] += payload["support"]
-                    node["sources"].append((lect, class_source, payload["support"]))
-    return tree
+                    tree[theme][tam][slot][ending].append(
+                        (lect, class_source, int(payload["support"]))
+                    )
+    return tree, notes
 
 
-def lects_for(inventories: Inventory, stem: str) -> list[str]:
-    return [lect for lect in SOURCE_LANGS if stem in (inventories.get(lect) or {})]
+def show(ending: str) -> str:
+    return "∅" if ending in {"∅", ""} else f"-{ending}"
 
 
-def stem_lects(inventories: Inventory, class_source: str) -> str:
-    sources = [
-        (lect, class_source, 0)
-        for lect in lects_for(inventories, class_source)
-    ]
-    return format_sources(sources) or "—"
+def format_candidates(endings: dict) -> str:
+    """`**-amos** 2σ — es 6937 · gl 1862`, ordered by σ then total support.
 
-
-LATIN_CLASSES = {"esse", "stare", "habere"}
-
-
-def conglomerate_feature(tree: dict, members: list[str], feature: str) -> dict:
-    """Pool one TAM's forms from every lect variant of a class."""
-    slot_map: dict = {}
-    for stem in members:
-        row = (tree.get(stem) or {}).get(feature) or {}
-        for slot, endings in row.items():
-            dest = slot_map.setdefault(slot, {})
-            for ending, node in endings.items():
-                cell = dest.setdefault(ending, {"support": 0, "sources": []})
-                cell["support"] += node["support"]
-                cell["sources"].extend(node["sources"])
-    return slot_map
-
-
-def conglomerate_present(tree: dict, members: list[str]) -> dict:
-    return conglomerate_feature(tree, members, "indicative.present")
-
-
-def class_tam_names(tree: dict, members: list[str]) -> list[str]:
-    present = set()
-    for stem in members:
-        present.update(tree.get(stem) or {})
-    return [name for name in TAM_ORDER if name in present]
-
-
-def index_tables(inventories: Inventory, tree: dict, stems: list[str]) -> list[str]:
-    lines = ["# index", ""]
-    theme_shortlist = {"a-theme", "e-theme", "i-theme", "re"}
-    for bucket in BUCKET_ORDER:
-        members = [stem for stem in stems if bucket_of(stem) == bucket]
-        if not members:
+    Candidates that no lect backs with THIN+ verbs collapse into one
+    trailing `thin:` line: one-lemma rows mostly carry stem alternations.
+    """
+    ranked = sorted(
+        endings.items(),
+        key=lambda item: (ending_sigma(item[0]), -sum(s for _l, _c, s in item[1]), item[0]),
+    )
+    parts, thin = [], []
+    for ending, sources in ranked:
+        sigma = ending_sigma(ending)
+        ordered = sorted(sources, key=lambda src: -src[2])
+        if ordered[0][2] < THIN:
+            lects = ", ".join(f"{lect} {support}" for lect, _cls, support in ordered)
+            thin.append(f"{show(ending)} {sigma}σ ({lects})")
             continue
-        if bucket == "other":
+        lects = " · ".join(
+            f"{lect} {support}" + ("*" if support < THIN else "")
+            for lect, _cls, support in ordered
+        )
+        parts.append(f"**{show(ending)}** {sigma}σ — {lects}")
+    if thin:
+        parts.append("<sub>thin: " + " · ".join(thin) + "</sub>")
+    return "<br>".join(parts) or "—"
+
+
+def theme_section(theme: str, tams: dict) -> list[str]:
+    lines = [f'<a id="{theme}"></a>', f"## {THEME_TITLE[theme]}", ""]
+    for tam in TAMS:
+        slots = tams.get(tam)
+        if not slots:
             continue
-        lines.extend([
-            f"## {bucket}",
-            "",
-            "| stem | lects |",
-            "|---|---|",
-        ])
-        for stem in members:
-            lects = ", ".join(lects_for(inventories, stem)) or "—"
-            if bucket in LATIN_CLASSES:
-                lines.append(
-                    f'| <a id="{stem_anchor(stem)}"></a>{brace(stem)} | {lects} |'
-                )
-            else:
-                lines.append(f"| {stem_link(stem)} | {lects} |")
+        lines.extend([f"### {tam}", "", "| | candidates |", "|---|---|"])
+        for slot in PERSON_SLOTS:
+            lines.append(f"| **{slot}** | {format_candidates(slots.get(slot) or {})} |")
         lines.append("")
-        if bucket in theme_shortlist:
-            pooled = conglomerate_present(tree, members)
-            lines.extend([
-                "conglomerate shortlist",
-                "",
-            ])
-            lines.extend(person_table(shortest_slot_map(pooled)))
-            lines.append("")
-        if bucket in LATIN_CLASSES:
-            for feature in class_tam_names(tree, members):
-                pooled = conglomerate_feature(tree, members, feature)
-                if not pooled:
-                    continue
-                lines.extend([
-                    f"### {feature} (shortlist)",
-                    "",
-                ])
-                lines.extend(person_table(shortest_slot_map(pooled), full_word=True))
-                lines.append("")
-    lines.extend([
-        "## other",
-        "",
-        f"[other irregulars]({IRREGULAR_LINK}) — present 6-grid dump, not esse / stare / habere.",
-        "",
-    ])
     return lines
 
 
-def other_irregulars_table(
-    inventories: Inventory,
-    tree: dict,
-    stems: list[str],
-) -> list[str]:
-    """Present 6-grid only. These stems do not get per-TAM analysis."""
-    members = [stem for stem in stems if bucket_of(stem) == "other"]
-    if not members:
-        return []
+def render(tree: dict, notes: dict) -> str:
+    covered = sorted(
+        {lect for tams in tree.values() for slots in tams.values()
+         for endings in slots.values() for srcs in endings.values() for lect, _c, _s in srcs},
+        key=SOURCE_LANGS.index,
+    )
     lines = [
-        "# other irregulars",
+        "# Verb ending shortlist",
         "",
-        "Dump of harvested irregulars that are not esse / stare / habere.",
-        "Present indicative 6-grid only. Analyzed stems live in",
-        f"[verb_ending_candidates.md]({DEFAULT_OUTPUT.name}).",
+        "Regular verbs only. Each cell lists every lect's regular ending for that",
+        "theme, tense and person: `**-ending** σ — lect support`. Support is the",
+        "number of verbs in that lect-class that follow the regular row",
+        f"(`*` = fewer than {THIN}, thin evidence). Candidates are ordered by σ,",
+        "then by total support. 2σ endings are kept whole. Inchoative infixes",
+        "(-isc-, -esc-/-ez-, -eix-, -iss-, -zc-) are part of the stem.",
         "",
-        "| stem | lects | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |",
-        "|---|---|---|---|---|---|---|---|",
+        f"Lects with regular data ({len(covered)}): {', '.join(covered)}.",
+        "",
+        "Themes: " + " · ".join(f"[{THEME_TITLE[t]}](#{t})" for t in THEMES if t in tree),
+        "",
     ]
-    for stem in members:
-        features = tree[stem]
-        slot_map = features.get("indicative.present") or {}
-        lects = ", ".join(lects_for(inventories, stem)) or "—"
-        cells = [
-            md_cell(format_cell(slot_map.get(slot) or {}))
-            for slot in PERSON_SLOTS
-        ]
-        lines.append(f"| {brace(stem)} | {lects} | " + " | ".join(cells) + " |")
+    for theme in THEMES:
+        if theme in tree:
+            lines.extend(theme_section(theme, tree[theme]))
+    lines.extend(["## Not in the shortlist", ""])
+    if notes["no_data"]:
+        lines.append(f"- No regular inventory: {', '.join(notes['no_data'])}.")
+    for lect in SOURCE_LANGS:
+        classes = notes["unthemed"].get(lect)
+        if classes:
+            lines.append(
+                f"- {lect}: irregular / unclassed ({', '.join(sorted(classes))}) —"
+                f" see [irregulars]({DEFAULT_IRREGULAR.name})."
+            )
+    for lect in SOURCE_LANGS:
+        dropped = notes["dropped_tams"].get(lect)
+        if dropped:
+            lines.append(f"- {lect}: unmapped TAM labels {', '.join(sorted(dropped))}.")
     lines.append("")
-    return lines
+    return "\n".join(lines)
 
 
-def person_table(slot_map: dict, *, full_word: bool = False) -> list[str]:
-    """3×2 (person × number) table. Each cell is `-ending (lect, lect)`."""
+def render_irregular() -> str:
+    """Full-word present rows for classes outside the four themes."""
     lines = [
-        "| | sg | pl |",
-        "|---|---|---|",
+        "# Irregular verbs (present indicative)",
+        "",
+        "Classes outside the a/e/i/re themes: copula, auxiliaries, ire, and",
+        "suppletive verbs. Full words, one row per lemma.",
+        "",
+        "| lect | class | lemma | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |",
+        "|---|---|---|---|---|---|---|---|---|",
     ]
-    for person in PERSONS:
-        cells = []
-        for number in NUMBERS:
-            slot = f"{person}{number}"
-            cells.append(md_cell(format_cell(slot_map.get(slot) or {}, full_word=full_word)))
-        lines.append(f"| **{person}** | {cells[0]} | {cells[1]} |")
-    return lines
-
-
-def render(inventories: Inventory) -> str:
-    tree = collect_candidates(inventories)
-    stems = sorted(tree, key=stem_sort_key)
-    lines: list[str] = index_tables(inventories, tree, stems)
-    analyzed = [
-        stem for stem in stems
-        if bucket_of(stem) not in {"other", *LATIN_CLASSES}
-    ]
-    for class_source in analyzed:
-        features = tree[class_source]
-        tams = [name for name in TAM_ORDER if name in features]
-        extra_tams = sorted(name for name in features if name not in TAM_ORDER)
-        bucket = bucket_of(class_source)
-        lines.extend([
-            f'<a id="{stem_anchor(class_source)}"></a>',
-            f"# {brace(class_source)}",
-            "",
-            f"[{bucket}](#{bucket})",
-            "",
-            stem_lects(inventories, class_source),
-            "",
-        ])
-        for feature in tams + extra_tams:
-            lines.extend([
-                f"## {feature}",
-                "",
-            ])
-            slot_map = features[feature]
-            lines.extend(person_table(slot_map))
-            lines.extend([
-                "",
-                "lowest syllable",
-                "",
-            ])
-            lines.extend(person_table(shortest_slot_map(slot_map)))
-            lines.append("")
-    missing = [lect for lect in SOURCE_LANGS if lect not in inventories]
-    if missing:
-        lines.extend([
-            "# missing",
-            "",
-            " ".join(f"{lect}" for lect in missing),
-            "",
-        ])
+    for lect in SOURCE_LANGS:
+        path = SOURCES / f"{lect}.json"
+        if not path.is_file():
+            continue
+        for paradigm in json.loads(path.read_text(encoding="utf-8")).get("paradigms") or []:
+            class_source = str(paradigm.get("class_source") or "unknown")
+            if theme_of(lect, class_source) is not None:
+                continue
+            cells = paradigm.get("cells", {}).get("indicative.present") or {}
+            forms = row_forms({slot: [cell] for slot, cell in cells.items()})
+            if not forms:
+                continue
+            row = " | ".join(forms.get(slot, "—") for slot in PERSON_SLOTS)
+            lines.append(f"| {lect} | {class_source} | {paradigm['lemma']} | {row} |")
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -680,17 +304,14 @@ def main() -> int:
     parser.add_argument("-o", "--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--irregular-output", type=Path, default=DEFAULT_IRREGULAR)
     args = parser.parse_args()
-    inventories, _notes = load_inventories()
-    tree = collect_candidates(inventories)
-    stems = sorted(tree, key=stem_sort_key)
-    text = render(inventories)
+    tree, notes = load_regular()
+    text = render(tree, notes)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(text, encoding="utf-8")
-    irregular = "\n".join(other_irregulars_table(inventories, tree, stems))
+    irregular = render_irregular()
     args.irregular_output.write_text(irregular, encoding="utf-8")
     print(f"wrote {args.output} ({len(text):,} chars)")
     print(f"wrote {args.irregular_output} ({len(irregular):,} chars)")
-    print(f"  lects: {len(inventories)}")
     return 0
 
 

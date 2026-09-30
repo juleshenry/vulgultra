@@ -6,11 +6,11 @@
 
 - Source set: Chés Diseux d'Achteure (http://ches.diseux.free.fr/conj/)
 - Source files: `pcd_diseux.json`
-- Lemmas with forms: **39**
+- Lemmas with forms: **40**
 - Verb lemma entries: **0**
 - Inflected form records: **0**
 - Separate form-of entries: **0**
-- Classified person-slot observations: **1281**
+- Classified person-slot observations: **1314**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,18 +18,19 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-ir` | 12 | 5 | 5 |
-| `-re` | 8 | 5 | 5 |
+| `-ir` | 13 | 5 | 5 |
+| `-re` | 7 | 5 | 5 |
 | `other` | 7 | 5 | 5 |
 | `-te` | 3 | 5 | 5 |
 | `-tcher` | 2 | 5 | 5 |
 | `-djer` | 1 | 5 | 5 |
 | `-er` | 1 | 5 | 5 |
 | `dvoér` | 1 | 5 | 5 |
+| `foaire` | 1 | 5 | 5 |
+| `s'in aler` | 1 | 5 | 4 |
 | `ête` | 1 | 5 | 4 |
 | `aller` | 1 | 5 | 3 |
 | `avoér` | 1 | 5 | 3 |
-| `s'in aler` | 1 | 5 | 3 |
 
 ## Ending: `-ir`
 
@@ -39,11 +40,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 11 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.future` | 11 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `indicative.imperfect` | 12 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `conditional` | 12 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 12 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 13 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
 | `indicative.present` | 1 | `lcp` | -s | -s | -;t | -yons | -yez | -'te |
-| `subjunctive.present` | 2 | `lcp` | -che | -ches | -che | -yonche | -yèche | -che'te |
+| `subjunctive.present` | 2 | `lcp` | -e | -es | -e | -onche | -èche | -e'te |
 
 ### Representative lemmas
 
@@ -259,11 +260,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 8 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
-| `indicative.future` | 8 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `indicative.imperfect` | 8 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `conditional` | 7 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 7 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 7 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
 | `indicative.present` | 2 | `lcp` | -s | -s | -t | -yons | -yez | -'te |
-| `subjunctive.present` | 2 | `lcp` | -che | -ches | -che | -yonche | -yèche | -che'te |
+| `subjunctive.present` | 2 | `lcp` | -e | -es | -e | -isonche | -isèche | -e'te |
 
 ### Representative lemmas
 
@@ -1315,6 +1316,162 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | dvez |
 | `3pl` | — |
 
+## Irregular: `foaire`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ème | -ète | -ai'te |
+| `indicative.present` | 1 | `lcp` | -s | -s | -t | -sons | -sez | -'te |
+| `subjunctive.present` | 1 | `lcp` | -e | -es | -e | -isonche | -isèche | -e'te |
+
+### Representative lemmas
+
+#### `foaire`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | foais |
+| `2sg` | foais |
+| `3sg` | foait |
+| `1pl` | foaisons |
+| `2pl` | foaisez |
+| `3pl` | foai'te |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | froais |
+| `2sg` | froais |
+| `3sg` | froait |
+| `1pl` | froème |
+| `2pl` | froète |
+| `3pl` | froai'te |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | frai |
+| `2sg` | fros |
+| `3sg` | fro |
+| `1pl` | frons |
+| `2pl` | frez |
+| `3pl` | front |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | foaisoais |
+| `2sg` | foaisoais |
+| `3sg` | foaisoait |
+| `1pl` | foaisoème |
+| `2pl` | foaisoète |
+| `3pl` | foaisoai'te |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | foaiche |
+| `2sg` | foaiches |
+| `3sg` | foaiche |
+| `1pl` | foaisonche |
+| `2pl` | foaisèche |
+| `3pl` | foaiche'te |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | foais |
+| `3sg` | — |
+| `1pl` | foaisons |
+| `2pl` | foaisez |
+| `3pl` | — |
+
+## Irregular: `s'in aler`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -s | -s | -t | -nmes | -tes | -tte |
+| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -s | -s | -ét | -nmes | -tes | -tte |
+| `subjunctive.present` | 1 | `lcp` | -e | -e | -e | -lotte | -lotte | -lote |
+
+### Representative lemmas
+
+#### `s'in aler`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vas |
+| `2sg` | vas |
+| `3sg` | va |
+| `1pl` | alons |
+| `2pl` | alez |
+| `3pl` | vont |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | iros |
+| `2sg` | iros |
+| `3sg` | irot |
+| `1pl` | ironmes |
+| `2pl` | irotes |
+| `3pl` | irotte |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | irai |
+| `2sg` | iros |
+| `3sg` | iro |
+| `1pl` | irons |
+| `2pl` | irez |
+| `3pl` | iront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | alos |
+| `2sg` | alos |
+| `3sg` | a lot |
+| `1pl` | alonmes |
+| `2pl` | alotes |
+| `3pl` | alotte |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ale |
+| `2sg` | ale |
+| `3sg` | ale |
+| `1pl` | allotte |
+| `2pl` | allotte |
+| `3pl` | allote |
+
 ## Irregular: `ête`
 
 ### Person-slot inventory
@@ -1561,74 +1718,3 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | ayons |
 | `2pl` | ayez |
 | `3pl` | — |
-
-## Irregular: `s'in aler`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -s | -s | -t | -nmes | -tes | -tte |
-| `indicative.future` | 1 | `lcp` | -ai | -os | -o | -ons | -ez | -ont |
-| `subjunctive.present` | 1 | `lcp` | -e | -e | -e | -lotte | -lotte | -lote |
-
-### Representative lemmas
-
-#### `s'in aler`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vas |
-| `2sg` | vas |
-| `3sg` | va |
-| `1pl` | alons |
-| `2pl` | alez |
-| `3pl` | vont |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | iros |
-| `2sg` | iros |
-| `3sg` | irot |
-| `1pl` | ironmes |
-| `2pl` | irotes |
-| `3pl` | irotte |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | irai |
-| `2sg` | iros |
-| `3sg` | iro |
-| `1pl` | irons |
-| `2pl` | irez |
-| `3pl` | iront |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | alos |
-| `2sg` | alos |
-| `3sg` | a lot |
-| `1pl` | alonmes |
-| `2pl` | alotes |
-| `3pl` | alotte |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ale |
-| `2sg` | ale |
-| `3sg` | ale |
-| `1pl` | allotte |
-| `2pl` | allotte |
-| `3pl` | allote |

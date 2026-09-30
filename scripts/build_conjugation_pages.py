@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -153,6 +154,37 @@ def class_from_infinitive_local(lect: str, lemma: str) -> str:
         if low.endswith(ending):
             return f"-{ending}"
     return "unknown"
+
+
+# Lects whose Kaikki class is a template name (`vec-conj-auto`,
+# `nrf-conj-tenir`): the conjugation class is the infinitive ending instead.
+# Templates naming an auxiliary / copula keep their name so they stay out of
+# the regular theme classes.
+TEMPLATE_CLASS_ENDINGS = {
+    "lad": ("ar", "er", "ir"),
+    "vec": ("ar", "er", "ir"),
+    "lij": ("âse", "îse", "êse", "â", "î", "éi", "ei", "ê", "e"),
+    "nrf": ("ier", "er", "ir", "re", "i"),
+    "wa": ("yî", "î", "er", "eur", "ur", "re", "e", "i"),
+    "eml": ("ēr", "èr", "er", "îr", "ir", "ôr", "ar"),
+    "lmo": ("à", "è", "er", "ì", "ir"),
+    "rgn": ("êr", "ér", "ar", "ìr", "ir"),
+}
+TEMPLATE_KEEP = ("aveur", "avaer", "aver", "avér", "avè", "vlér", "êt", "esse", "ièsi", "avì")
+
+
+def normalize_template_classes(lect: str, lemma_meta: dict) -> None:
+    endings = TEMPLATE_CLASS_ENDINGS.get(lect)
+    if not endings:
+        return
+    for lemma, meta in lemma_meta.items():
+        current = str(meta.get("class_source") or "unknown")
+        if current.split("conj-")[-1] in TEMPLATE_KEEP:
+            continue
+        low = re.sub(r"^(?:se\s+|s['’])", "", lemma.lower().strip())
+        ending = next((e for e in endings if low.endswith(e)), None)
+        # âse / îse / êse are reflexive infinitives of the â / î / ê class.
+        meta["class_source"] = f"-{ending[:-2] if ending and ending.endswith('se') else ending}" if ending else "unknown"
 
 
 def fill_unknown_classes(lect: str, lemma_meta: dict) -> None:
@@ -314,6 +346,7 @@ def source_paradigms(lect: str) -> tuple[dict, dict, list[str], dict[str, int], 
         normalize=False,
     )
     normalize_ending_classes(lect, lemma_meta)
+    normalize_template_classes(lect, lemma_meta)
     fill_unknown_classes(lect, lemma_meta)
     bits = []
     if any(name.startswith("kaikki-") for name in files):
@@ -512,7 +545,7 @@ def render_page(
     rich = []
     sparse = []
     for class_source, lemmas in grouped.items():
-        inventory = aggregate_ending_inventory(lemmas)
+        inventory = aggregate_ending_inventory(lemmas, lect=lect)
         full_features = feature_full_grid_count(lemmas)
         bucket = (class_source, lemmas, inventory, full_features)
         # Show representatives whenever person slots exist, even if no row is

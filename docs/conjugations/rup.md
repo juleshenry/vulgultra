@@ -10,7 +10,7 @@
 - Verb lemma entries: **920**
 - Inflected form records: **3930**
 - Separate form-of entries: **68**
-- Classified person-slot observations: **1415**
+- Classified person-slot observations: **1425**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -28,9 +28,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative` | 24 | `lcp` | -ai | -ash | -ã | -ãm | -at | -arã |
 | `indicative.imperfect` | 24 | `lcp` | -m | -i | ∅ | -m | -ts | ∅ |
-| `indicative.present` | 7 | `lcp` | -edz | -edzã | -eadzã | -ãm | -ats | -ã |
+| `indicative.present` | 7 | `lcp` | ∅ | -ã | -eadzã | -ãm | -ats | -ã |
+| `indicative.preterite` | 24 | `lcp` | -ai | -ash | -ã | -ãm | -at | -arã |
 
 ### Representative lemmas
 
@@ -58,17 +58,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | s-lucrarit |
 | `3pl` | s-lucrari |
 
-##### `indicative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | lucrai |
-| `2sg` | lucrash |
-| `3sg` | lucrã |
-| `1pl` | lucrãm |
-| `2pl` | lucrat |
-| `3pl` | lucrarã |
-
 ##### `indicative.imperfect`
 
 | Slot | Form |
@@ -79,6 +68,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | lucram |
 | `2pl` | lucrats |
 | `3pl` | lucra |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | lucrai |
+| `2sg` | lucrash |
+| `3sg` | lucrã |
+| `1pl` | lucrãm |
+| `2pl` | lucrat |
+| `3pl` | lucrarã |
 
 ##### `imperative.present`
 
@@ -115,17 +115,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | s-lãvdarit |
 | `3pl` | s-lãvdari |
 
-##### `indicative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | lãvdai |
-| `2sg` | lãvdash |
-| `3sg` | lãvdã |
-| `1pl` | lãvdãm |
-| `2pl` | lãvdat |
-| `3pl` | lãvdarã |
-
 ##### `indicative.imperfect`
 
 | Slot | Form |
@@ -136,6 +125,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | lãvdam |
 | `2pl` | lãvdats |
 | `3pl` | lãvda |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | lãvdai |
+| `2sg` | lãvdash |
+| `3sg` | lãvdã |
+| `1pl` | lãvdãm |
+| `2pl` | lãvdat |
+| `3pl` | lãvdarã |
 
 ##### `imperative.present`
 
@@ -172,17 +172,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | s-discãntarit |
 | `3pl` | s-discãntari |
 
-##### `indicative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | discãntai |
-| `2sg` | discãntash |
-| `3sg` | discãntã |
-| `1pl` | discãntãm |
-| `2pl` | discãntat |
-| `3pl` | discãntarã |
-
 ##### `indicative.imperfect`
 
 | Slot | Form |
@@ -193,6 +182,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | discãntam |
 | `2pl` | discãntats |
 | `3pl` | discãnta |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | discãntai |
+| `2sg` | discãntash |
+| `3sg` | discãntã |
+| `1pl` | discãntãm |
+| `2pl` | discãntat |
+| `3pl` | discãntarã |
 
 ##### `imperative.present`
 

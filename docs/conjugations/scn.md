@@ -330,7 +330,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative` | 17 | `template` | -irìa | -irissi | -irìa | -irìamu | -irìavu | -irìanu |
+| `indicative` | 16 | `template` | -irìa | -irissi | -irìa | -irìamu | -irìavu | -irìanu |
 | `indicative.imperfect` | 21 | `template` | -ìa | -ivi | -ìa | -ìamu | -ìavu | -ìanu |
 | `indicative.present` | 3 | `template` | -u | -i | -i | -emu | -iti | -inu |
 | `indicative.preterite` | 16 | `template` | -ivi | -isti | -ìu | -emmu | -ìstivu | -eru |
@@ -338,98 +338,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `subjunctive.present` | 3 | `template` | -u | -i | -i | -emu | -iti | -inu |
 
 ### Representative lemmas
-
-#### `cumprènniri`
-
-Stem: `cumprenn`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumprennu |
-| `2sg` | cumprenni |
-| `3sg` | cumprenni |
-| `1pl` | cumprennemu |
-| `2pl` | cumprenniti |
-| `3pl` | cumprenninu |
-
-##### `indicative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumprennirìa |
-| `2sg` | cumprennirissi |
-| `3sg` | cumprennirìa |
-| `1pl` | cumprennirìamu |
-| `2pl` | cumprennirìavu |
-| `3pl` | cumprennirìanu |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumprennìa |
-| `2sg` | cumprennivi |
-| `3sg` | cumprennìa |
-| `1pl` | cumprennìamu |
-| `2pl` | cumprennìavu |
-| `3pl` | cumprennìanu |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumprennivi |
-| `2sg` | cumprennisti |
-| `3sg` | cumprennìu |
-| `1pl` | cumprennemmu |
-| `2pl` | cumprennìstivu |
-| `3pl` | cumprenneru |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumprennissi |
-| `2sg` | cumprennissi |
-| `3sg` | cumprennissi |
-| `1pl` | cumprennìssimu |
-| `2pl` | cumprennìssivu |
-| `3pl` | cumprennìssiru |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumprennu |
-| `2sg` | cumprenni |
-| `3sg` | cumprenni |
-| `1pl` | cumprennemu |
-| `2pl` | cumprenniti |
-| `3pl` | cumprenninu |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | cumprenni |
-| `3sg` | cumprennissi |
-| `1pl` | cumprennemu |
-| `2pl` | cumprenniti |
-| `3pl` | — |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumprennìi |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
 
 #### `èssiri`
 
@@ -587,6 +495,87 @@ Stem: `cumprenn`.
 | `3sg` | vogghia |
 | `1pl` | vulemu |
 | `2pl` | vuliti |
+| `3pl` | — |
+
+#### `vistiri`
+
+Stem: `vist`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vestu |
+| `2sg` | vesti |
+| `3sg` | vesti |
+| `1pl` | vistemu |
+| `2pl` | vistiti |
+| `3pl` | vèstinu |
+
+##### `indicative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vistirìa |
+| `2sg` | vistirissi |
+| `3sg` | vistirìa |
+| `1pl` | vistirìamu |
+| `2pl` | vistirìavu |
+| `3pl` | vistirìanu |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vistìa |
+| `2sg` | vistivi |
+| `3sg` | vistìa |
+| `1pl` | vistìamu |
+| `2pl` | vistìavu |
+| `3pl` | vistìanu |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vistivi |
+| `2sg` | vististi |
+| `3sg` | vistìu |
+| `1pl` | vistemmu |
+| `2pl` | vistìstivu |
+| `3pl` | visteru |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vistissi |
+| `2sg` | vistissi |
+| `3sg` | vistissi |
+| `1pl` | vistìssimu |
+| `2pl` | vistìssivu |
+| `3pl` | vistìssiru |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vestu |
+| `2sg` | vesti |
+| `3sg` | vesti |
+| `1pl` | vistemu |
+| `2pl` | vistiti |
+| `3pl` | vèstinu |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | vesti |
+| `3sg` | vistissi |
+| `1pl` | vistemu |
+| `2pl` | vistiti |
 | `3pl` | — |
 
 ## Sparse / unclassified

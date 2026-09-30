@@ -8,9 +8,9 @@
 - Source files: `kaikki-oc.jsonl`
 - Lemmas with forms: **788**
 - Verb lemma entries: **963**
-- Inflected form records: **157558**
+- Inflected form records: **157563**
 - Separate form-of entries: **332**
-- Classified person-slot observations: **60470**
+- Classified person-slot observations: **61242**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,7 +18,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-ar` | 588 | 7 | 5 |
+| `-ar` | 588 | 7 | 7 |
 | `-ir` | 70 | 7 | 5 |
 | `-er` | 43 | 7 | 5 |
 | `-re` | 36 | 7 | 5 |
@@ -34,11 +34,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 528 | `template` | -ariái | -ariás | -ariá | -ariam | -ariatz | -arián |
-| `indicative.future` | 528 | `template` | -arai | -aràs | -arà | -arem | -aretz | -aràn |
+| `conditional` | 518 | `template` | -ariái | -ariás | -ariá | -ariam | -ariatz | -arián |
+| `indicative.future` | 518 | `template` | -arai | -aràs | -arà | -arem | -aretz | -aràn |
 | `indicative.imperfect` | 529 | `template` | -avi | -avas | -ava | -àvem | -àvetz | -avan |
 | `indicative.present` | 385 | `template` | -i | -as | -a | -am | -atz | -an |
-| `indicative.preterite` | 385 | `template` | -èri | -ères | -èt | -èrem | -èretz | -èron |
+| `indicative.preterite` | 377 | `template` | -èri | -ères | -èt | -èrem | -èretz | -èron |
+| `subjunctive.imperfect` | 2 | `template` | -èsses | -ˈeses | -èsse | -èssem | -èssetz | -èsson |
+| `subjunctive.present` | 1 | `lcp` | -ònes | -ones | -òne | -onem | -onetz | -ònen |
 
 ### Representative lemmas
 
@@ -330,8 +332,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 51 | `template` | -iriái | -iriás | -iriá | -iriam | -iriatz | -irián |
 | `indicative.future` | 51 | `template` | -irai | -iràs | -irà | -irem | -iretz | -iràn |
-| `indicative.imperfect` | 51 | `template` | -issiái | -issiás | -issiá | -issiam | -issiatz | -issián |
-| `indicative.present` | 51 | `template` | -issi | -isses | -ís | -issèm | -issètz | -isson |
+| `indicative.imperfect` | 52 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
+| `indicative.present` | 51 | `lcp` | -i | -es | -ís | -èm | -ètz | -on |
 | `indicative.preterite` | 51 | `template` | -iguèri | -iguères | -iguèt | -iguèrem | -iguèretz | -iguèron |
 
 ### Representative lemmas
@@ -620,9 +622,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 11 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
-| `indicative.future` | 8 | `lcp` | -ai | -às | -à | -em | -etz | -àn |
-| `indicative.imperfect` | 11 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
+| `conditional` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
+| `indicative.future` | 9 | `lcp` | -ai | -às | -à | -em | -etz | -àn |
+| `indicative.imperfect` | 12 | `lcp` | -ái | -ás | -á | -am | -atz | -án |
 | `indicative.present` | 3 | `lcp` | -i | -es | ∅ | -èm | -ètz | -on |
 | `indicative.preterite` | 8 | `lcp` | -ri | -res | -t | -rem | -retz | -ron |
 
@@ -1146,7 +1148,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---|
 | `1sg` | siguèri |
 | `2sg` | siguères |
-| `3sg` | siguèt |
+| `3sg` | foguèt¹ [siˈɡɛ] |
 | `1pl` | sigueriam |
 | `2pl` | fogueriam¹ [siɡeˈʀjãŋ] |
 | `3pl` | fuɡeˈʀjãŋ |

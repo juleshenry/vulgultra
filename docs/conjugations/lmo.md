@@ -18,12 +18,14 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `lmo-conj-à` | 21 | 6 | 6 |
+| `-à` | 26 | 6 | 6 |
+| `-è` | 1 | 6 | 6 |
 | `lmo-conj-avè` | 1 | 6 | 5 |
-| `lmo-conj-è` | 1 | 6 | 4 |
-| `unknown` | 15 | 0 | 0 |
+| `-er` | 6 | 0 | 0 |
+| `unknown` | 3 | 0 | 0 |
+| `-ì` | 1 | 0 | 0 |
 
-## `lmo-conj-à`
+## Ending: `-à`
 
 Template stem args observed: `abbord`, `abdic`, `alz`, `am`, `bagn` (+16 more).
 
@@ -36,9 +38,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 21 | `template` | -arìa | -arìet | -arìa | -arìom | -arìov | -arìen |
 | `indicative.future` | 21 | `template` | -aróo | -aré | -arà | -arèmm | -arii | -arànn |
 | `indicative.imperfect` | 21 | `template` | -àvi | -àvet | -àva | -àvom | -àvov | -àven |
-| `indicative.present` | 6 | `template` | -i | -et | -a | -om | -ov | -en |
-| `subjunctive.past` | 21 | `template` | -àssi | -àsset | -àss | -àssom | -àssov | -àssen |
-| `subjunctive.present` | 6 | `template` | -i | -et | -a | -om | -ov | -en |
+| `indicative.present` | 21 | `lcp` | -i | -et | -a | -om | -ov | -en |
+| `subjunctive.present` | 21 | `lcp` | -i | -et | -a | -om | -ov | -en |
+| `subjunctive.preterite` | 21 | `template` | -àssi | -àsset | -àss | -àssom | -àssov | -àssen |
 
 ### Representative lemmas
 
@@ -90,17 +92,6 @@ Stem: `sent`.
 | `2pl` | sentàvov |
 | `3pl` | sentàven |
 
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sentàssi |
-| `2sg` | sentàsset |
-| `3sg` | sentàss |
-| `1pl` | sentàssom |
-| `2pl` | sentàssov |
-| `3pl` | sentàssen |
-
 ##### `subjunctive.present`
 
 | Slot | Form |
@@ -111,6 +102,17 @@ Stem: `sent`.
 | `1pl` | sentom |
 | `2pl` | sentov |
 | `3pl` | senten |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sentàssi |
+| `2sg` | sentàsset |
+| `3sg` | sentàss |
+| `1pl` | sentàssom |
+| `2pl` | sentàssov |
+| `3pl` | sentàssen |
 
 ##### `imperative`
 
@@ -182,17 +184,6 @@ Stem: `vard`.
 | `2pl` | vardàvov |
 | `3pl` | vardàven |
 
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vardàssi |
-| `2sg` | vardàsset |
-| `3sg` | vardàss |
-| `1pl` | vardàssom |
-| `2pl` | vardàssov |
-| `3pl` | vardàssen |
-
 ##### `subjunctive.present`
 
 | Slot | Form |
@@ -203,6 +194,17 @@ Stem: `vard`.
 | `1pl` | vàrdom |
 | `2pl` | vàrdov |
 | `3pl` | vàrden |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vardàssi |
+| `2sg` | vardàsset |
+| `3sg` | vardàss |
+| `1pl` | vardàssom |
+| `2pl` | vardàssov |
+| `3pl` | vardàssen |
 
 ##### `imperative`
 
@@ -263,17 +265,6 @@ Stem: `somei`.
 | `2pl` | someiàvov |
 | `3pl` | someiàven |
 
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | someiàssi |
-| `2sg` | someiàsset |
-| `3sg` | someiàss |
-| `1pl` | someiàssom |
-| `2pl` | someiàssov |
-| `3pl` | someiàssen |
-
 ##### `subjunctive.present`
 
 | Slot | Form |
@@ -284,6 +275,17 @@ Stem: `somei`.
 | `1pl` | somèiom |
 | `2pl` | somèiov |
 | `3pl` | somèien |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | someiàssi |
+| `2sg` | someiàsset |
+| `3sg` | someiàss |
+| `1pl` | someiàssom |
+| `2pl` | someiàssov |
+| `3pl` | someiàssen |
 
 ##### `imperative`
 
@@ -296,102 +298,7 @@ Stem: `somei`.
 | `2pl` | someiee |
 | `3pl` | somèien |
 
-## `lmo-conj-avè`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -a | -et | -a | -om | -ov | -en |
-| `indicative.future` | 1 | `lcp` | -óo | -é | -à | -èmm | -ii | -ànn |
-| `indicative.imperfect` | 1 | `lcp` | -i | -et | -a | -om | -ov | -en |
-| `subjunctive.past` | 1 | `lcp` | -i | -et | ∅ | -om | -ov | -en |
-| `subjunctive.present` | 1 | `lcp` | -a | -et | -a | -om | -ov | -en |
-
-### Representative lemmas
-
-#### `avè`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | hoo |
-| `2sg` | hé |
-| `3sg` | hà |
-| `1pl` | hèmm |
-| `2pl` | avìi |
-| `3pl` | hann |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avarìa |
-| `2sg` | avarìet |
-| `3sg` | avarìa |
-| `1pl` | avarìom |
-| `2pl` | avarìov |
-| `3pl` | avarìen |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avaróo |
-| `2sg` | avaré |
-| `3sg` | avarà |
-| `1pl` | avarèmm |
-| `2pl` | avarii |
-| `3pl` | avarànn |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avévi |
-| `2sg` | avévet |
-| `3sg` | avéva |
-| `1pl` | avévom |
-| `2pl` | avévov |
-| `3pl` | avéven |
-
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avèssi |
-| `2sg` | avèsset |
-| `3sg` | avèss |
-| `1pl` | avèssom |
-| `2pl` | avèssov |
-| `3pl` | avèssen |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | àbia |
-| `2sg` | àbiet |
-| `3sg` | àbia |
-| `1pl` | àbiom |
-| `2pl` | àbiov |
-| `3pl` | àbien |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | àbi |
-| `3sg` | àbia |
-| `1pl` | - |
-| `2pl` | - |
-| `3pl` | - |
-
-## `lmo-conj-è`
+## Ending: `-è`
 
 Template stem args observed: `god`.
 
@@ -404,7 +311,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 1 | `template` | -arìa | -arìet | -arìa | -arìom | -arìov | -arìen |
 | `indicative.future` | 1 | `template` | -aróo | -aré | -arà | -arèmm | -arii | -arànn |
 | `indicative.imperfect` | 1 | `template` | -évi | -évet | -éva | -évom | -évov | -éven |
-| `subjunctive.past` | 1 | `template` | -èssi | -èsset | -èss | -èssom | -èssov | -èssen |
+| `indicative.present` | 1 | `lcp` | -i | -et | ∅ | -om | -ov | -en |
+| `subjunctive.present` | 1 | `lcp` | -a | -et | -a | -om | -ov | -en |
+| `subjunctive.preterite` | 1 | `template` | -èssi | -èsset | -èss | -èssom | -èssov | -èssen |
 
 ### Representative lemmas
 
@@ -456,17 +365,6 @@ Stem: `god`.
 | `2pl` | godévov |
 | `3pl` | godéven |
 
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | godèssi |
-| `2sg` | godèsset |
-| `3sg` | godèss |
-| `1pl` | godèssom |
-| `2pl` | godèssov |
-| `3pl` | godèssen |
-
 ##### `subjunctive.present`
 
 | Slot | Form |
@@ -477,6 +375,17 @@ Stem: `god`.
 | `1pl` | gòdom |
 | `2pl` | gòdov |
 | `3pl` | gòden |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | godèssi |
+| `2sg` | godèsset |
+| `3sg` | godèss |
+| `1pl` | godèssom |
+| `2pl` | godèssov |
+| `3pl` | godèssen |
 
 ##### `imperative`
 
@@ -489,7 +398,102 @@ Stem: `god`.
 | `2pl` | godee |
 | `3pl` | gòden |
 
-## `unknown`
+## `lmo-conj-avè`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -a | -et | -a | -om | -ov | -en |
+| `indicative.future` | 1 | `lcp` | -óo | -é | -à | -èmm | -ii | -ànn |
+| `indicative.imperfect` | 1 | `lcp` | -i | -et | -a | -om | -ov | -en |
+| `subjunctive.present` | 1 | `lcp` | -a | -et | -a | -om | -ov | -en |
+| `subjunctive.preterite` | 1 | `lcp` | -i | -et | ∅ | -om | -ov | -en |
+
+### Representative lemmas
+
+#### `avè`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | hoo |
+| `2sg` | hé |
+| `3sg` | hà |
+| `1pl` | hèmm |
+| `2pl` | avìi |
+| `3pl` | hann |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avarìa |
+| `2sg` | avarìet |
+| `3sg` | avarìa |
+| `1pl` | avarìom |
+| `2pl` | avarìov |
+| `3pl` | avarìen |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avaróo |
+| `2sg` | avaré |
+| `3sg` | avarà |
+| `1pl` | avarèmm |
+| `2pl` | avarii |
+| `3pl` | avarànn |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avévi |
+| `2sg` | avévet |
+| `3sg` | avéva |
+| `1pl` | avévom |
+| `2pl` | avévov |
+| `3pl` | avéven |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | àbia |
+| `2sg` | àbiet |
+| `3sg` | àbia |
+| `1pl` | àbiom |
+| `2pl` | àbiov |
+| `3pl` | àbien |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avèssi |
+| `2sg` | avèsset |
+| `3sg` | avèss |
+| `1pl` | avèssom |
+| `2pl` | avèssov |
+| `3pl` | avèssen |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | àbi |
+| `3sg` | àbia |
+| `1pl` | - |
+| `2pl` | - |
+| `3pl` | - |
+
+## Ending: `-er`
 
 ### Person-slot inventory
 
@@ -521,22 +525,11 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | — |
 | `3pl` | — |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
 | `1sg` | seri |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | — |
-
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fuss |
 | `2sg` | — |
 | `3sg` | — |
 | `1pl` | — |
@@ -548,6 +541,17 @@ No majority ending pattern with enough complete six-slot rows yet.
 | Slot | Form |
 |---|---|
 | `1sg` | sia |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fuss |
 | `2sg` | — |
 | `3sg` | — |
 | `1pl` | — |
@@ -567,7 +571,7 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | — |
 | `3pl` | lez |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -591,7 +595,7 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | — |
 | `3pl` | — |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -601,3 +605,40 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `1pl` | — |
 | `2pl` | — |
 | `3pl` | — |
+
+## `unknown`
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
+
+### Representative lemmas
+
+#### `stremí`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | stremissi |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
+
+#### `tajâ`
+
+_No classified person-number cells for this lemma._
+
+#### `manjar`
+
+_No classified person-number cells for this lemma._
+
+## Sparse / unclassified
+
+Paradigms without a full six-slot inventory (count only).
+
+| Ending / paradigm | Lemmas |
+|---|---:|
+| `-ì` | 1 |

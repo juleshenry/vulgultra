@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-rm.jsonl`, `rm_verbix.json`
-- Lemmas with forms: **255**
+- Lemmas with forms: **246**
 - Verb lemma entries: **303**
-- Inflected form records: **3223**
+- Inflected form records: **3231**
 - Separate form-of entries: **25**
-- Classified person-slot observations: **5686**
+- Classified person-slot observations: **2342**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,306 +18,12 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-ar` | 103 | 10 | 5 |
-| `-er` | 74 | 10 | 5 |
-| `-ir` | 30 | 10 | 5 |
-| `-air` | 14 | 9 | 3 |
-| `-eir` | 11 | 8 | 0 |
+| `-er` | 68 | 9 | 6 |
+| `-ar` | 100 | 8 | 6 |
+| `-ir` | 30 | 10 | 4 |
+| `-air` | 14 | 7 | 3 |
 | `other` | 23 | 0 | 0 |
-
-## Ending: `-ar`
-
-Template stem args observed: `magl`, `mangi`, `pled`.
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 39 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 29 | `lcp` | -el | -as | -a | -ein | -eis | -an |
-| `subjunctive.imperfect` | 36 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.past` | 8 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.present` | 32 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
-
-### Representative lemmas
-
-#### `dar`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | dun |
-| `2sg` | das |
-| `3sg` | dat |
-| `1pl` | dein |
-| `2pl` | deis |
-| `3pl` | dattan |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel a dar |
-| `2sg` | vegns a dar |
-| `3sg` | vegn a dar |
-| `1pl` | vegnin a dar |
-| `2pl` | vegnis a dar |
-| `3pl` | vegnan a dar |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver dau |
-| `2sg` | vegns ad haver dau |
-| `3sg` | vegn ad haver dau |
-| `1pl` | vegnin ad haver dau |
-| `2pl` | vegnis ad haver dau |
-| `3pl` | vegnan ad haver dau |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | davel |
-| `2sg` | davas |
-| `3sg` | dava |
-| `1pl` | davan |
-| `2pl` | davas |
-| `3pl` | davan |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevel dau |
-| `2sg` | (ha)vevas dau |
-| `3sg` | (ha)veva dau |
-| `1pl` | (ha)vevan dau |
-| `2pl` | (ha)vevas dau |
-| `3pl` | (ha)vevan dau |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegni a dar |
-| `2sg` | vegnies a dar |
-| `3sg` | vegni a dar |
-| `1pl` | vegnîen a dar |
-| `2pl` | vegnîes a dar |
-| `3pl` | vegnien a dar |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | davi |
-| `2sg` | davies |
-| `3sg` | davi |
-| `1pl` | davien |
-| `2pl` | davies |
-| `3pl` | davien |
-
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | davi |
-| `2sg` | davies |
-| `3sg` | davi |
-| `1pl` | davien |
-| `2pl` | davies |
-| `3pl` | davien |
-
-_…5 more tense/mood rows in the JSON corpus._
-
-#### `curdar`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | crodel |
-| `2sg` | crodas |
-| `3sg` | croda |
-| `1pl` | curdein |
-| `2pl` | curdeis |
-| `3pl` | crodan |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel a curdar |
-| `2sg` | vegns a curdar |
-| `3sg` | vegn a curdar |
-| `1pl` | vegnin a curdar |
-| `2pl` | vegnis a curdar |
-| `3pl` | vegnan a curdar |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver curdau |
-| `2sg` | vegns ad haver curdau |
-| `3sg` | vegn ad haver curdau |
-| `1pl` | vegnin ad haver curdau |
-| `2pl` | vegnis ad haver curdau |
-| `3pl` | vegnan ad haver curdau |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | curdavel |
-| `2sg` | curdavas |
-| `3sg` | curdava |
-| `1pl` | curdavan |
-| `2pl` | curdavas |
-| `3pl` | curdavan |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevel curdau |
-| `2sg` | (ha)vevas curdau |
-| `3sg` | (ha)veva curdau |
-| `1pl` | (ha)vevan curdau |
-| `2pl` | (ha)vevas curdau |
-| `3pl` | (ha)vevan curdau |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegni a curdar |
-| `2sg` | vegnies a curdar |
-| `3sg` | vegni a curdar |
-| `1pl` | vegnîen a curdar |
-| `2pl` | vegnîes a curdar |
-| `3pl` | vegnien a curdar |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | curdavi |
-| `2sg` | curdavies |
-| `3sg` | curdavi |
-| `1pl` | curdavien |
-| `2pl` | curdavies |
-| `3pl` | curdavien |
-
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | curdavi |
-| `2sg` | curdavies |
-| `3sg` | curdavi |
-| `1pl` | curdavien |
-| `2pl` | curdavies |
-| `3pl` | curdavien |
-
-_…5 more tense/mood rows in the JSON corpus._
-
-#### `cumprar`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumprel |
-| `2sg` | cumpras |
-| `3sg` | cumpra |
-| `1pl` | cumprein |
-| `2pl` | cumpreis |
-| `3pl` | cumpran |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel a cumprar |
-| `2sg` | vegns a cumprar |
-| `3sg` | vegn a cumprar |
-| `1pl` | vegnin a cumprar |
-| `2pl` | vegnis a cumprar |
-| `3pl` | vegnan a cumprar |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver cumprau |
-| `2sg` | vegns ad haver cumprau |
-| `3sg` | vegn ad haver cumprau |
-| `1pl` | vegnin ad haver cumprau |
-| `2pl` | vegnis ad haver cumprau |
-| `3pl` | vegnan ad haver cumprau |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumpravel |
-| `2sg` | cumpravas |
-| `3sg` | cumprava |
-| `1pl` | cumpravan |
-| `2pl` | cumpravas |
-| `3pl` | cumpravan |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevel cumprau |
-| `2sg` | (ha)vevas cumprau |
-| `3sg` | (ha)veva cumprau |
-| `1pl` | (ha)vevan cumprau |
-| `2pl` | (ha)vevas cumprau |
-| `3pl` | (ha)vevan cumprau |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegni a cumprar |
-| `2sg` | vegnies a cumprar |
-| `3sg` | vegni a cumprar |
-| `1pl` | vegnîen a cumprar |
-| `2pl` | vegnîes a cumprar |
-| `3pl` | vegnien a cumprar |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumpravi |
-| `2sg` | cumpravies |
-| `3sg` | cumpravi |
-| `1pl` | cumpravien |
-| `2pl` | cumpravies |
-| `3pl` | cumpravien |
-
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | cumpravi |
-| `2sg` | cumpravies |
-| `3sg` | cumpravi |
-| `1pl` | cumpravien |
-| `2pl` | cumpravies |
-| `3pl` | cumpravien |
-
-_…5 more tense/mood rows in the JSON corpus._
+| `-eir` | 11 | 0 | 0 |
 
 ## Ending: `-er`
 
@@ -327,105 +33,106 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 32 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 28 | `lcp` | -el | -as | -a | -ein | -eis | -an |
-| `subjunctive.imperfect` | 27 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.past` | 9 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.present` | 29 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
+| `conditional` | 3 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
+| `indicative.imperfect` | 7 | `lcp` | -el | -as | -a | -an | -as | -an |
+| `indicative.present` | 5 | `lcp` | -el | -as | -a | -ein | -eis | -an |
+| `subjunctive.imperfect` | 3 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
+| `subjunctive.present` | 6 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
+| `subjunctive.preterite` | 9 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
 
 ### Representative lemmas
 
-#### `haver`
+#### `arver`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | hai |
-| `2sg` | has |
-| `3sg` | ha |
-| `1pl` | havein |
-| `2pl` | haveis |
-| `3pl` | han |
+| `1sg` | arvel |
+| `2sg` | arvas |
+| `3sg` | arva |
+| `1pl` | arvein |
+| `2pl` | arveis |
+| `3pl` | arvan |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | arvess |
+| `2sg` | arvesses |
+| `3sg` | arvess |
+| `1pl` | arvessen |
+| `2pl` | arvesses |
+| `3pl` | arvessen |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel a haver |
-| `2sg` | vegns a haver |
-| `3sg` | vegn a haver |
-| `1pl` | vegnin a haver |
-| `2pl` | vegnis a haver |
-| `3pl` | vegnan a haver |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver giu |
-| `2sg` | vegns ad haver giu |
-| `3sg` | vegn ad haver giu |
-| `1pl` | vegnin ad haver giu |
-| `2pl` | vegnis ad haver giu |
-| `3pl` | vegnan ad haver giu |
+| `1sg` | vegnel a arver |
+| `2sg` | vegns a arver |
+| `3sg` | vegn a arver |
+| `1pl` | vegnin a arver |
+| `2pl` | vegnis a arver |
+| `3pl` | vegnan a arver |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | (ha)vevel |
-| `2sg` | (ha)vevas |
-| `3sg` | (ha)veva |
-| `1pl` | (ha)vevan |
-| `2pl` | (ha)vevas |
-| `3pl` | (ha)vevan |
+| `1sg` | arvavel |
+| `2sg` | arvavas |
+| `3sg` | arvava |
+| `1pl` | arvavan |
+| `2pl` | arvavas |
+| `3pl` | arvavan |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | (ha)vevel giu |
-| `2sg` | (ha)vevas giu |
-| `3sg` | (ha)veva giu |
-| `1pl` | (ha)vevan giu |
-| `2pl` | (ha)vevas giu |
-| `3pl` | (ha)vevan giu |
+| `1sg` | aviarts |
+| `2sg` | aviarts |
+| `3sg` | aviarts |
+| `1pl` | aviarts |
+| `2pl` | aviarts |
+| `3pl` | aviarts |
 
 ##### `subjunctive.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegni a haver |
-| `2sg` | vegnies a haver |
-| `3sg` | vegni a haver |
-| `1pl` | vegnîen a haver |
-| `2pl` | vegnîes a haver |
-| `3pl` | vegnien a haver |
+| `1sg` | vegni a arver |
+| `2sg` | vegnies a arver |
+| `3sg` | vegni a arver |
+| `1pl` | vegnîen a arver |
+| `2pl` | vegnîes a arver |
+| `3pl` | vegnien a arver |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | (ha)vevi |
-| `2sg` | (ha)vevies |
-| `3sg` | (ha)vevi |
-| `1pl` | (ha)vevien |
-| `2pl` | (ha)vevies |
-| `3pl` | (ha)vevien |
+| `1sg` | arvevi |
+| `2sg` | arvevies |
+| `3sg` | arvevi |
+| `1pl` | arvevien |
+| `2pl` | arvevies |
+| `3pl` | arvevien |
 
-##### `subjunctive.past`
+##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | havevi |
-| `2sg` | havevies |
-| `3sg` | havevi |
-| `1pl` | havevien |
-| `2pl` | havevies |
-| `3pl` | havevien |
+| `1sg` | arvi |
+| `2sg` | arvies |
+| `3sg` | arvi |
+| `1pl` | arveien |
+| `2pl` | arveies |
+| `3pl` | arvien |
 
-_…5 more tense/mood rows in the JSON corpus._
+_…4 more tense/mood rows in the JSON corpus._
 
 #### `esser`
 
@@ -440,27 +147,27 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | essas |
 | `3pl` | ein |
 
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fuss |
+| `2sg` | fusses |
+| `3sg` | fuss |
+| `1pl` | fussen |
+| `2pl` | fusses |
+| `3pl` | fussen |
+
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel ad esser |
-| `2sg` | vegns ad esser |
-| `3sg` | vegn ad esser |
-| `1pl` | vegnin ad esser |
-| `2pl` | vegnis ad esser |
-| `3pl` | vegnan ad esser |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad esser staus |
-| `2sg` | vegns ad esser staus |
-| `3sg` | vegn ad esser staus |
-| `1pl` | vegnin ad esser stai |
-| `2pl` | vegnis ad esser stai |
-| `3pl` | vegnan ad esser stai |
+| `1sg` | vegnel a esser |
+| `2sg` | vegns a esser |
+| `3sg` | vegn a esser |
+| `1pl` | vegnin a esser |
+| `2pl` | vegnis a esser |
+| `3pl` | vegnan a esser |
 
 ##### `indicative.imperfect`
 
@@ -468,21 +175,10 @@ _…5 more tense/mood rows in the JSON corpus._
 |---|---|
 | `1sg` | erel |
 | `2sg` | eras |
-| `3sg` | era |
+| `3sg` | fuvas |
 | `1pl` | eran |
 | `2pl` | eras |
 | `3pl` | eran |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | erel staus |
-| `2sg` | eras staus |
-| `3sg` | era staus |
-| `1pl` | eran stai |
-| `2pl` | eras stai |
-| `3pl` | eran stai |
 
 ##### `subjunctive.future`
 
@@ -506,7 +202,18 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | eries |
 | `3pl` | erien |
 
-##### `subjunctive.past`
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | seigi |
+| `2sg` | seigies |
+| `3sg` | seigi |
+| `1pl` | seigien |
+| `2pl` | seigies |
+| `3pl` | seigien |
+
+##### `subjunctive.preterite`
 
 | Slot | Form |
 |---|---|
@@ -517,7 +224,7 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | eries |
 | `3pl` | erien |
 
-_…5 more tense/mood rows in the JSON corpus._
+_…3 more tense/mood rows in the JSON corpus._
 
 #### `beiber`
 
@@ -532,6 +239,17 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | bueis |
 | `3pl` | beiban |
 
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | buess |
+| `2sg` | buesses |
+| `3sg` | buess |
+| `1pl` | buessen |
+| `2pl` | buesses |
+| `3pl` | buessen |
+
 ##### `indicative.future`
 
 | Slot | Form |
@@ -543,17 +261,6 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | vegnis a beiber |
 | `3pl` | vegnan a beiber |
 
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver buiu |
-| `2sg` | vegns ad haver buiu |
-| `3sg` | vegn ad haver buiu |
-| `1pl` | vegnin ad haver buiu |
-| `2pl` | vegnis ad haver buiu |
-| `3pl` | vegnan ad haver buiu |
-
 ##### `indicative.imperfect`
 
 | Slot | Form |
@@ -564,17 +271,6 @@ _…5 more tense/mood rows in the JSON corpus._
 | `1pl` | beibavan |
 | `2pl` | beibavas |
 | `3pl` | beibavan |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevel buiu |
-| `2sg` | (ha)vevas buiu |
-| `3sg` | (ha)veva buiu |
-| `1pl` | (ha)vevan buiu |
-| `2pl` | (ha)vevas buiu |
-| `3pl` | (ha)vevan buiu |
 
 ##### `subjunctive.future`
 
@@ -598,7 +294,18 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | beibevies |
 | `3pl` | beibevien |
 
-##### `subjunctive.past`
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | beibi |
+| `2sg` | beibies |
+| `3sg` | beibi |
+| `1pl` | bueien |
+| `2pl` | bueies |
+| `3pl` | beibien |
+
+##### `subjunctive.preterite`
 
 | Slot | Form |
 |---|---|
@@ -609,7 +316,302 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | beibevies |
 | `3pl` | beibevien |
 
-_…5 more tense/mood rows in the JSON corpus._
+_…3 more tense/mood rows in the JSON corpus._
+
+## Ending: `-ar`
+
+Template stem args observed: `magl`, `mangi`, `pled`.
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 5 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
+| `indicative.imperfect` | 10 | `lcp` | -el | -as | -a | -an | -as | -an |
+| `indicative.present` | 4 | `template` | ∅ | -as | -a | -ain | -ais | -an |
+| `subjunctive.imperfect` | 5 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
+| `subjunctive.present` | 3 | `lcp` | -i | -ies | -i | -eien | -eies | -ien |
+| `subjunctive.preterite` | 8 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
+
+### Representative lemmas
+
+#### `dar`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dun |
+| `2sg` | das |
+| `3sg` | dat |
+| `1pl` | dein |
+| `2pl` | deis |
+| `3pl` | dattan |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dass |
+| `2sg` | dasses |
+| `3sg` | dass |
+| `1pl` | dassen |
+| `2pl` | dasses |
+| `3pl` | dassen |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegnel a dar |
+| `2sg` | vegns a dar |
+| `3sg` | vegn a dar |
+| `1pl` | vegnin a dar |
+| `2pl` | vegnis a dar |
+| `3pl` | vegnan a dar |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | davel |
+| `2sg` | davas |
+| `3sg` | dava |
+| `1pl` | davan |
+| `2pl` | davas |
+| `3pl` | davan |
+
+##### `subjunctive.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegni a dar |
+| `2sg` | vegnies a dar |
+| `3sg` | vegni a dar |
+| `1pl` | vegnîen a dar |
+| `2pl` | vegnîes a dar |
+| `3pl` | vegnien a dar |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | davi |
+| `2sg` | davies |
+| `3sg` | davi |
+| `1pl` | davien |
+| `2pl` | davies |
+| `3pl` | davien |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | detti |
+| `2sg` | detties |
+| `3sg` | detti |
+| `1pl` | deien |
+| `2pl` | deies |
+| `3pl` | dettien |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | davi |
+| `2sg` | davies |
+| `3sg` | davi |
+| `1pl` | davien |
+| `2pl` | davies |
+| `3pl` | davien |
+
+_…3 more tense/mood rows in the JSON corpus._
+
+#### `curdar`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | crodel |
+| `2sg` | crodas |
+| `3sg` | croda |
+| `1pl` | curdein |
+| `2pl` | curdeis |
+| `3pl` | crodan |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | curdass |
+| `2sg` | curdasses |
+| `3sg` | curdass |
+| `1pl` | curdassen |
+| `2pl` | curdasses |
+| `3pl` | curdassen |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegnel a curdar |
+| `2sg` | vegns a curdar |
+| `3sg` | vegn a curdar |
+| `1pl` | vegnin a curdar |
+| `2pl` | vegnis a curdar |
+| `3pl` | vegnan a curdar |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | curdavel |
+| `2sg` | curdavas |
+| `3sg` | curdava |
+| `1pl` | curdavan |
+| `2pl` | curdavas |
+| `3pl` | curdavan |
+
+##### `subjunctive.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegni a curdar |
+| `2sg` | vegnies a curdar |
+| `3sg` | vegni a curdar |
+| `1pl` | vegnîen a curdar |
+| `2pl` | vegnîes a curdar |
+| `3pl` | vegnien a curdar |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | curdavi |
+| `2sg` | curdavies |
+| `3sg` | curdavi |
+| `1pl` | curdavien |
+| `2pl` | curdavies |
+| `3pl` | curdavien |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | crodi |
+| `2sg` | crodies |
+| `3sg` | crodi |
+| `1pl` | curdeien |
+| `2pl` | curdeies |
+| `3pl` | crodien |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | curdavi |
+| `2sg` | curdavies |
+| `3sg` | curdavi |
+| `1pl` | curdavien |
+| `2pl` | curdavies |
+| `3pl` | curdavien |
+
+_…3 more tense/mood rows in the JSON corpus._
+
+#### `cantar`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | contel |
+| `2sg` | contas |
+| `3sg` | conta |
+| `1pl` | cantein |
+| `2pl` | canteis |
+| `3pl` | contan |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | cantass |
+| `2sg` | cantasses |
+| `3sg` | cantass |
+| `1pl` | cantassen |
+| `2pl` | cantasses |
+| `3pl` | cantassen |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegnel a cantar |
+| `2sg` | vegns a cantar |
+| `3sg` | vegn a cantar |
+| `1pl` | vegnin a cantar |
+| `2pl` | vegnis a cantar |
+| `3pl` | vegnan a cantar |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | cantavel |
+| `2sg` | cantavas |
+| `3sg` | cantava |
+| `1pl` | cantavan |
+| `2pl` | cantavas |
+| `3pl` | cantavan |
+
+##### `subjunctive.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegni a cantar |
+| `2sg` | vegnies a cantar |
+| `3sg` | vegni a cantar |
+| `1pl` | vegnîen a cantar |
+| `2pl` | vegnîes a cantar |
+| `3pl` | vegnien a cantar |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | cantavi |
+| `2sg` | cantavies |
+| `3sg` | cantavi |
+| `1pl` | cantavien |
+| `2pl` | cantavies |
+| `3pl` | cantavien |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | conti |
+| `2sg` | conties |
+| `3sg` | conti |
+| `1pl` | canteien |
+| `2pl` | canteies |
+| `3pl` | contien |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | cantavi |
+| `2sg` | cantavies |
+| `3sg` | cantavi |
+| `1pl` | cantavien |
+| `2pl` | cantavies |
+| `3pl` | cantavien |
+
+_…3 more tense/mood rows in the JSON corpus._
 
 ## Ending: `-ir`
 
@@ -619,11 +621,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 12 | `lcp` | -el | -as | -a | -an | -as | -an |
-| `indicative.present` | 8 | `lcp` | -eschel | -eschas | -escha | -in | -is | -eschan |
-| `subjunctive.imperfect` | 8 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.past` | 7 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
-| `subjunctive.present` | 8 | `lcp` | -eschi | -eschies | -eschi | -îen | -îes | -eschien |
+| `indicative.imperfect` | 6 | `lcp` | -el | -as | -a | -an | -as | -an |
+| `indicative.present` | 2 | `lcp` | -el | -as | -a | -in | -is | -an |
+| `subjunctive.present` | 3 | `lcp` | -i | -ies | -i | -îen | -îes | -ien |
+| `subjunctive.preterite` | 7 | `lcp` | ∅ | -es | ∅ | -en | -es | -en |
 
 ### Representative lemmas
 
@@ -640,27 +641,27 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | meis |
 | `3pl` | van |
 
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | mass |
+| `2sg` | masses |
+| `3sg` | mass |
+| `1pl` | massen |
+| `2pl` | masses |
+| `3pl` | massen |
+
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel ad ir |
-| `2sg` | vegns ad ir |
-| `3sg` | vegn ad ir |
-| `1pl` | vegnin ad ir |
-| `2pl` | vegnis ad ir |
-| `3pl` | vegnan ad ir |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad esser ius |
-| `2sg` | vegns ad esser ius |
-| `3sg` | vegn ad esser ius |
-| `1pl` | vegnin ad esser ii |
-| `2pl` | vegnis ad esser ii |
-| `3pl` | vegnan ad esser ii |
+| `1sg` | vegnel a ir |
+| `2sg` | vegns a ir |
+| `3sg` | vegn a ir |
+| `1pl` | vegnin a ir |
+| `2pl` | vegnis a ir |
+| `3pl` | vegnan a ir |
 
 ##### `indicative.imperfect`
 
@@ -672,17 +673,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | evan |
 | `2pl` | evas |
 | `3pl` | evan |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | erel ius |
-| `2sg` | eras ius |
-| `3sg` | era ius |
-| `1pl` | eran ii |
-| `2pl` | eras ii |
-| `3pl` | eran ii |
 
 ##### `subjunctive.future`
 
@@ -706,7 +696,18 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | evies |
 | `3pl` | evien |
 
-##### `subjunctive.past`
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | mondi |
+| `2sg` | mondies |
+| `3sg` | mondi |
+| `1pl` | meien |
+| `2pl` | meies |
+| `3pl` | mondien |
+
+##### `subjunctive.preterite`
 
 | Slot | Form |
 |---|---|
@@ -717,7 +718,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | evies |
 | `3pl` | evien |
 
-_…5 more tense/mood rows in the JSON corpus._
+_…3 more tense/mood rows in the JSON corpus._
 
 #### `dir`
 
@@ -732,27 +733,27 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | schais |
 | `3pl` | din |
 
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | schess |
+| `2sg` | schesses |
+| `3sg` | schess |
+| `1pl` | schessen |
+| `2pl` | schesses |
+| `3pl` | schessen |
+
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel a der |
-| `2sg` | vegns a der |
-| `3sg` | vegn a der |
-| `1pl` | vegnin a der |
-| `2pl` | vegnis a der |
-| `3pl` | vegnan a der |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver detg |
-| `2sg` | vegns ad haver detg |
-| `3sg` | vegn ad haver detg |
-| `1pl` | vegnin ad haver detg |
-| `2pl` | vegnis ad haver detg |
-| `3pl` | vegnan ad haver detg |
+| `1sg` | vegnel a dir |
+| `2sg` | vegns a dir |
+| `3sg` | vegn a dir |
+| `1pl` | vegnin a dir |
+| `2pl` | vegnis a dir |
+| `3pl` | vegnan a dir |
 
 ##### `indicative.imperfect`
 
@@ -764,17 +765,6 @@ _…5 more tense/mood rows in the JSON corpus._
 | `1pl` | schevan |
 | `2pl` | schevas |
 | `3pl` | schevan |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevel detg |
-| `2sg` | (ha)vevas detg |
-| `3sg` | (ha)veva detg |
-| `1pl` | (ha)vevan detg |
-| `2pl` | (ha)vevas detg |
-| `3pl` | (ha)vevan detg |
 
 ##### `subjunctive.future`
 
@@ -798,7 +788,18 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | devies |
 | `3pl` | devien |
 
-##### `subjunctive.past`
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dia |
+| `2sg` | dias |
+| `3sg` | dia |
+| `1pl` | dian |
+| `2pl` | dias |
+| `3pl` | dian |
+
+##### `subjunctive.preterite`
 
 | Slot | Form |
 |---|---|
@@ -809,99 +810,99 @@ _…5 more tense/mood rows in the JSON corpus._
 | `2pl` | devies |
 | `3pl` | devien |
 
-_…5 more tense/mood rows in the JSON corpus._
+_…3 more tense/mood rows in the JSON corpus._
 
-#### `drivir`
+#### `vegnir`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | driveschel |
-| `2sg` | driveschas |
-| `3sg` | drivescha |
-| `1pl` | drivin |
-| `2pl` | drivis |
-| `3pl` | driveschan |
+| `1sg` | vegnel |
+| `2sg` | vegns |
+| `3sg` | vegn |
+| `1pl` | vegnin |
+| `2pl` | vegnis |
+| `3pl` | vegnan |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel a drivir |
-| `2sg` | vegns a drivir |
-| `3sg` | vegn a drivir |
-| `1pl` | vegnin a drivir |
-| `2pl` | vegnis a drivir |
-| `3pl` | vegnan a drivir |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver driviu |
-| `2sg` | vegns ad haver driviu |
-| `3sg` | vegn ad haver driviu |
-| `1pl` | vegnin ad haver driviu |
-| `2pl` | vegnis ad haver driviu |
-| `3pl` | vegnan ad haver driviu |
+| `1sg` | vegnel a vegnir |
+| `2sg` | vegns a vegnir |
+| `3sg` | vegn a vegnir |
+| `1pl` | vegnin a vegnir |
+| `2pl` | vegnis a vegnir |
+| `3pl` | vegnan a vegnir |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | drivevel |
-| `2sg` | drivevas |
-| `3sg` | driveva |
-| `1pl` | drivevan |
-| `2pl` | drivevas |
-| `3pl` | drivevan |
+| `1sg` | vegnevel |
+| `2sg` | vegnevas |
+| `3sg` | vegneva |
+| `1pl` | vegnevan |
+| `2pl` | vegnevas |
+| `3pl` | vegnevan |
 
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevel driviu |
-| `2sg` | (ha)vevas driviu |
-| `3sg` | (ha)veva driviu |
-| `1pl` | (ha)vevan driviu |
-| `2pl` | (ha)vevas driviu |
-| `3pl` | (ha)vevan driviu |
-
-##### `subjunctive.imperfect`
+##### `subjunctive.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | drivevi |
-| `2sg` | drivevies |
-| `3sg` | drivevi |
-| `1pl` | drivevien |
-| `2pl` | drivevies |
-| `3pl` | drivevien |
-
-##### `subjunctive.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevi driviu |
-| `2sg` | (ha)vevies driviu |
-| `3sg` | (ha)vevi driviu |
-| `1pl` | (ha)vevien driviu |
-| `2pl` | (ha)vevies driviu |
-| `3pl` | (ha)vevien driviu |
+| `1sg` | vegni a vegnir |
+| `2sg` | vegnies a vegnir |
+| `3sg` | vegni a vegnir |
+| `1pl` | vegnîen a vegnir |
+| `2pl` | vegnîes a vegnir |
+| `3pl` | vegnien a vegnir |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | driveschi |
-| `2sg` | driveschies |
-| `3sg` | driveschi |
-| `1pl` | drivîen |
-| `2pl` | drivîes |
-| `3pl` | driveschien |
+| `1sg` | vegni |
+| `2sg` | vegnies |
+| `3sg` | vegni |
+| `1pl` | vegnîen |
+| `2pl` | vegnîes |
+| `3pl` | vegnien |
 
-_…1 more tense/mood rows in the JSON corpus._
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegnevi |
+| `2sg` | vegnevies |
+| `3sg` | vegnevi |
+| `1pl` | vegnevien |
+| `2pl` | vegnevies |
+| `3pl` | vegnevien |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegniss |
+| `2sg` | vegnissas |
+| `3sg` | — |
+| `1pl` | vegnissan |
+| `2pl` | vegnissas |
+| `3pl` | vegnissan |
+
+##### `conditional.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vegness a vegnir |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
+
+_…2 more tense/mood rows in the JSON corpus._
 
 ## Ending: `-air`
 
@@ -913,103 +914,11 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.imperfect` | 2 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
+| `indicative.imperfect` | 3 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
 | `indicative.present` | 2 | `lcp` | ∅ | -as | -a | -ain | -ais | -an |
-| `subjunctive.present` | 2 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
+| `subjunctive.present` | 4 | `lcp` | ∅ | -s | ∅ | -n | -s | -n |
 
 ### Representative lemmas
-
-#### `avair`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avaeschel |
-| `2sg` | avaeschas |
-| `3sg` | avaescha |
-| `1pl` | avain |
-| `2pl` | avais |
-| `3pl` | avaeschan |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad avair |
-| `2sg` | vegns ad avair |
-| `3sg` | vegn ad avair |
-| `1pl` | vegnin ad avair |
-| `2pl` | vegnis ad avair |
-| `3pl` | vegnan ad avair |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver avaiu |
-| `2sg` | vegns ad haver avaiu |
-| `3sg` | vegn ad haver avaiu |
-| `1pl` | vegnin ad haver avaiu |
-| `2pl` | vegnis ad haver avaiu |
-| `3pl` | vegnan ad haver avaiu |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avaevel |
-| `2sg` | avaevas |
-| `3sg` | avaeva |
-| `1pl` | avaevan |
-| `2pl` | avaevas |
-| `3pl` | avaevan |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevel avaiu |
-| `2sg` | (ha)vevas avaiu |
-| `3sg` | (ha)veva avaiu |
-| `1pl` | (ha)vevan avaiu |
-| `2pl` | (ha)vevas avaiu |
-| `3pl` | (ha)vevan avaiu |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegni a avair |
-| `2sg` | vegnies a avair |
-| `3sg` | vegni a avair |
-| `1pl` | vegnîen a avair |
-| `2pl` | vegnîes a avair |
-| `3pl` | vegnien a avair |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avaevi |
-| `2sg` | avaevies |
-| `3sg` | avaevi |
-| `1pl` | avaevien |
-| `2pl` | avaevies |
-| `3pl` | avaevien |
-
-##### `subjunctive.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevi avaiu |
-| `2sg` | (ha)vevies avaiu |
-| `3sg` | (ha)vevi avaiu |
-| `1pl` | (ha)vevien avaiu |
-| `2pl` | (ha)vevies avaiu |
-| `3pl` | (ha)vevien avaiu |
-
-_…4 more tense/mood rows in the JSON corpus._
 
 #### `temair`
 
@@ -1191,201 +1100,95 @@ _…4 more tense/mood rows in the JSON corpus._
 | `2pl` | giudai |
 | `3pl` | — |
 
-## Ending: `-eir`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `deir`
+#### `avair`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | deeschel |
-| `2sg` | deeschas |
-| `3sg` | deescha |
-| `1pl` | dein |
-| `2pl` | deis |
-| `3pl` | deeschan |
+| `1sg` | hai |
+| `2sg` | has |
+| `3sg` | ha |
+| `1pl` | avain |
+| `2pl` | avais |
+| `3pl` | han |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel a deir |
-| `2sg` | vegns a deir |
-| `3sg` | vegn a deir |
-| `1pl` | vegnin a deir |
-| `2pl` | vegnis a deir |
-| `3pl` | vegnan a deir |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel ad haver deiu |
-| `2sg` | vegns ad haver deiu |
-| `3sg` | vegn ad haver deiu |
-| `1pl` | vegnin ad haver deiu |
-| `2pl` | vegnis ad haver deiu |
-| `3pl` | vegnan ad haver deiu |
+| `1sg` | vegnel a avair |
+| `2sg` | vegns a avair |
+| `3sg` | vegn a avair |
+| `1pl` | vegnin a avair |
+| `2pl` | vegnis a avair |
+| `3pl` | vegnan a avair |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | deevel |
-| `2sg` | deevas |
-| `3sg` | deeva |
-| `1pl` | deevan |
-| `2pl` | deevas |
-| `3pl` | deevan |
+| `1sg` | aveva |
+| `2sg` | avevas |
+| `3sg` | aveva |
+| `1pl` | avevan |
+| `2pl` | avevas |
+| `3pl` | avevan |
 
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevel deiu |
-| `2sg` | (ha)vevas deiu |
-| `3sg` | (ha)veva deiu |
-| `1pl` | (ha)vevan deiu |
-| `2pl` | (ha)vevas deiu |
-| `3pl` | (ha)vevan deiu |
-
-##### `subjunctive.imperfect`
+##### `subjunctive.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | deevi |
-| `2sg` | deevies |
-| `3sg` | deevi |
-| `1pl` | deevien |
-| `2pl` | deevies |
-| `3pl` | deevien |
-
-##### `subjunctive.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevi deiu |
-| `2sg` | (ha)vevies deiu |
-| `3sg` | (ha)vevi deiu |
-| `1pl` | (ha)vevien deiu |
-| `2pl` | (ha)vevies deiu |
-| `3pl` | (ha)vevien deiu |
+| `1sg` | vegni a avair |
+| `2sg` | vegnies a avair |
+| `3sg` | vegni a avair |
+| `1pl` | vegnîen a avair |
+| `2pl` | vegnîes a avair |
+| `3pl` | vegnien a avair |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | deeschi |
-| `2sg` | deeschies |
-| `3sg` | deeschi |
-| `1pl` | deîen |
-| `2pl` | deîes |
-| `3pl` | deeschien |
+| `1sg` | haja |
+| `2sg` | hajas |
+| `3sg` | haja |
+| `1pl` | hajan |
+| `2pl` | hajas |
+| `3pl` | hajan |
 
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `darveir`
-
-##### `indicative.present`
+##### `conditional.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | darveeschel |
-| `2sg` | darveeschas |
-| `3sg` | darveescha |
-| `1pl` | darvein |
-| `2pl` | darveis |
-| `3pl` | darveeschan |
+| `1sg` | vegness a avair |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
 
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vegnel a darveir |
-| `2sg` | vegns a darveir |
-| `3sg` | vegn a darveir |
-| `1pl` | vegnin a darveir |
-| `2pl` | vegnis a darveir |
-| `3pl` | vegnan a darveir |
-
-##### `indicative.future-perfect`
+##### `conditional.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vegnel ad haver darveiu |
-| `2sg` | vegns ad haver darveiu |
-| `3sg` | vegn ad haver darveiu |
-| `1pl` | vegnin ad haver darveiu |
-| `2pl` | vegnis ad haver darveiu |
-| `3pl` | vegnan ad haver darveiu |
+| `1sg` | avess |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | — |
+| `3pl` | — |
 
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | darveevel |
-| `2sg` | darveevas |
-| `3sg` | darveeva |
-| `1pl` | darveevan |
-| `2pl` | darveevas |
-| `3pl` | darveevan |
-
-##### `indicative.pluperfect`
+##### `imperative`
 
 | Slot | Form |
 |---|---|
-| `1sg` | (ha)vevel darveiu |
-| `2sg` | (ha)vevas darveiu |
-| `3sg` | (ha)veva darveiu |
-| `1pl` | (ha)vevan darveiu |
-| `2pl` | (ha)vevas darveiu |
-| `3pl` | (ha)vevan darveiu |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | darveevi |
-| `2sg` | darveevies |
-| `3sg` | darveevi |
-| `1pl` | darveevien |
-| `2pl` | darveevies |
-| `3pl` | darveevien |
-
-##### `subjunctive.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | (ha)vevi darveiu |
-| `2sg` | (ha)vevies darveiu |
-| `3sg` | (ha)vevi darveiu |
-| `1pl` | (ha)vevien darveiu |
-| `2pl` | (ha)vevies darveiu |
-| `3pl` | (ha)vevien darveiu |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | darveeschi |
-| `2sg` | darveeschies |
-| `3sg` | darveeschi |
-| `1pl` | darveîen |
-| `2pl` | darveîes |
-| `3pl` | darveeschien |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `veir`
-
-_No classified person-number cells for this lemma._
+| `1sg` | hajas |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | — |
+| `2pl` | hajas |
+| `3pl` | — |
 
 ## Sparse / unclassified
 
@@ -1394,3 +1197,4 @@ Paradigms without a full six-slot inventory (count only).
 | Ending / paradigm | Lemmas |
 |---|---:|
 | `other` | 23 |
+| `-eir` | 11 |

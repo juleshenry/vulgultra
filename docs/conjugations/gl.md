@@ -8,9 +8,9 @@
 - Source files: `kaikki-gl.jsonl`, `gl_verbix.json`
 - Lemmas with forms: **2594**
 - Verb lemma entries: **2655**
-- Inflected form records: **390731**
+- Inflected form records: **395739**
 - Separate form-of entries: **5**
-- Classified person-slot observations: **279741**
+- Classified person-slot observations: **259907**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -21,8 +21,8 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-ar` | 1985 | 11 | 11 |
 | `-er` | 263 | 11 | 11 |
 | `-ir` | 223 | 11 | 11 |
+| `other` | 119 | 11 | 11 |
 | `estar` | 1 | 11 | 11 |
-| `other` | 119 | 11 | 10 |
 | `ser` | 1 | 11 | 10 |
 | `haber` | 1 | 9 | 9 |
 | `ir` | 1 | 11 | 8 |
@@ -37,17 +37,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1923 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
-| `imperative` | 13 | `lcp` | -e | -a | -e | -emos | -ade | -en |
-| `indicative.future` | 1923 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
-| `indicative.imperfect` | 1923 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.pluperfect` | 1923 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.present` | 1867 | `lcp` | -o | -as | -a | -amos | -ades | -an |
-| `indicative.preterite` | 1416 | `lcp` | -ei | -aches | -ou | -amos | -astes | -aron |
+| `conditional` | 1918 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
+| `imperative` | 1296 | `lcp` | -e | -a | -e | -emos | -ade | -en |
+| `indicative.future` | 1918 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
+| `indicative.imperfect` | 1918 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `indicative.pluperfect` | 1918 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `indicative.present` | 1862 | `lcp` | -o | -as | -a | -amos | -ades | -an |
+| `indicative.preterite` | 1429 | `lcp` | -ei | -aches | -ou | -amos | -astes | -aron |
 | `nonfinite.infinitive` | 1437 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
 | `subjunctive.future` | 1918 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
-| `subjunctive.imperfect` | 1833 | `lcp` | -ase | -ases | -ase | -ásemos | -ásedes | -asen |
-| `subjunctive.present` | 1870 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `subjunctive.imperfect` | 1917 | `lcp` | -ase | -ases | -ase | -ásemos | -ásedes | -asen |
+| `subjunctive.present` | 1865 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 
 ### Representative lemmas
 
@@ -81,7 +81,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---|
 | `1sg` | zurre |
 | `2sg` | zurra |
-| `3sg` | non zurre |
+| `3sg` | zurre |
 | `1pl` | zurremos |
 | `2pl` | zurrade |
 | `3pl` | zurren |
@@ -173,7 +173,7 @@ _…2 more tense/mood rows in the JSON corpus._
 |---|---|
 | `1sg` | zumegue |
 | `2sg` | zumega |
-| `3sg` | non zumegue |
+| `3sg` | zumegue |
 | `1pl` | zumeguemos |
 | `2pl` | zumegade |
 | `3pl` | zumeguen |
@@ -265,7 +265,7 @@ _…2 more tense/mood rows in the JSON corpus._
 |---|---|
 | `1sg` | zumbe |
 | `2sg` | zumba |
-| `3sg` | non zumbe |
+| `3sg` | zumbe |
 | `1pl` | zumbemos |
 | `2pl` | zumbade |
 | `3pl` | zumben |
@@ -337,17 +337,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 242 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
-| `imperative` | 3 | `lcp` | -za | -ce | -za | -zamos | -cede | -zan |
-| `indicative.future` | 242 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
-| `indicative.imperfect` | 215 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
-| `indicative.pluperfect` | 242 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.present` | 87 | `lcp` | -o | -es | -e | -emos | -edes | -en |
-| `indicative.preterite` | 162 | `lcp` | -ín | -iches | -eu | -emos | -estes | -eron |
+| `conditional` | 241 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
+| `imperative` | 84 | `lcp` | -a | -e | -a | -amos | -ede | -an |
+| `indicative.future` | 241 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
+| `indicative.imperfect` | 213 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
+| `indicative.pluperfect` | 241 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `indicative.present` | 86 | `lcp` | -o | -es | -e | -emos | -edes | -en |
+| `indicative.preterite` | 173 | `lcp` | -ín | -iches | -eu | -emos | -estes | -eron |
 | `nonfinite.infinitive` | 176 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.future` | 240 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
-| `subjunctive.imperfect` | 221 | `lcp` | -ese | -eses | -ese | -ésemos | -ésedes | -esen |
-| `subjunctive.present` | 242 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `subjunctive.future` | 241 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
+| `subjunctive.imperfect` | 237 | `lcp` | -ese | -eses | -ese | -ésemos | -ésedes | -esen |
+| `subjunctive.present` | 241 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 
 ### Representative lemmas
 
@@ -381,7 +381,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---|
 | `1sg` | volva |
 | `2sg` | volve |
-| `3sg` | non volva |
+| `3sg` | volva |
 | `1pl` | volvamos |
 | `2pl` | volvede |
 | `3pl` | volvan |
@@ -473,7 +473,7 @@ _…2 more tense/mood rows in the JSON corpus._
 |---|---|
 | `1sg` | viva |
 | `2sg` | vive |
-| `3sg` | non viva |
+| `3sg` | viva |
 | `1pl` | vivamos |
 | `2pl` | vivede |
 | `3pl` | vivan |
@@ -565,7 +565,7 @@ _…2 more tense/mood rows in the JSON corpus._
 |---|---|
 | `1sg` | verta |
 | `2sg` | verte |
-| `3sg` | non verta |
+| `3sg` | verta |
 | `1pl` | vertamos |
 | `2pl` | vertede |
 | `3pl` | vertan |
@@ -637,17 +637,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 190 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
-| `imperative` | 2 | `lcp` | -a | -e | -a | -amos | -ide | -an |
-| `indicative.future` | 192 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
-| `indicative.imperfect` | 182 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
-| `indicative.pluperfect` | 190 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.present` | 77 | `lcp` | -o | -es | -e | -imos | -ides | -en |
-| `indicative.preterite` | 170 | `lcp` | -ín | -iches | -iu | -imos | -istes | -iron |
+| `conditional` | 187 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
+| `imperative` | 101 | `lcp` | -a | -e | -a | -amos | -ide | -an |
+| `indicative.future` | 189 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
+| `indicative.imperfect` | 180 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
+| `indicative.pluperfect` | 187 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `indicative.present` | 75 | `lcp` | -o | -es | -e | -imos | -ides | -en |
+| `indicative.preterite` | 174 | `lcp` | -ín | -iches | -iu | -imos | -istes | -iron |
 | `nonfinite.infinitive` | 131 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.future` | 190 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
-| `subjunctive.imperfect` | 170 | `lcp` | -ise | -ises | -ise | -ísemos | -ísedes | -isen |
-| `subjunctive.present` | 190 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `subjunctive.future` | 189 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
+| `subjunctive.imperfect` | 176 | `lcp` | -ise | -ises | -ise | -ísemos | -ísedes | -isen |
+| `subjunctive.present` | 187 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 
 ### Representative lemmas
 
@@ -683,7 +683,7 @@ Stem: `<i-e>`.
 |---|---|
 | `1sg` | prefira |
 | `2sg` | prefire |
-| `3sg` | non prefira |
+| `3sg` | prefira |
 | `1pl` | prefiramos |
 | `2pl` | preferide |
 | `3pl` | prefiran |
@@ -777,7 +777,7 @@ Stem: `<u-o>`.
 |---|---|
 | `1sg` | xurda |
 | `2sg` | xurde |
-| `3sg` | non xurda |
+| `3sg` | xurda |
 | `1pl` | xurdamos |
 | `2pl` | xurdide |
 | `3pl` | xurdan |
@@ -850,7 +850,7 @@ _…2 more tense/mood rows in the JSON corpus._
 | `3sg` | vén |
 | `1pl` | vimos |
 | `2pl` | vindes |
-| `3pl` | veñen |
+| `3pl` | venhem |
 
 ##### `conditional`
 
@@ -869,10 +869,10 @@ _…2 more tense/mood rows in the JSON corpus._
 |---|---|
 | `1sg` | veña |
 | `2sg` | ven |
-| `3sg` | non veña |
+| `3sg` | venha |
 | `1pl` | veñamos |
 | `2pl` | vinde |
-| `3pl` | veñan |
+| `3pl` | venham |
 
 ##### `indicative.future`
 
@@ -931,120 +931,6 @@ _…2 more tense/mood rows in the JSON corpus._
 
 _…2 more tense/mood rows in the JSON corpus._
 
-## Irregular: `estar`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
-| `imperative` | 1 | `lcp` | -ea | -á | -ea | -eamos | -ade | -ean |
-| `indicative.future` | 1 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
-| `indicative.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.pluperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.present` | 1 | `lcp` | -ou | -ás | -á | -amos | -ades | -án |
-| `indicative.preterite` | 1 | `lcp` | -en | -eches | -o | -emos | -estes | -eron |
-| `nonfinite.infinitive` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
-| `subjunctive.future` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
-| `subjunctive.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `subjunctive.present` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-
-### Representative lemmas
-
-#### `estar`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estou |
-| `2sg` | estás |
-| `3sg` | está |
-| `1pl` | estamos |
-| `2pl` | estades |
-| `3pl` | están |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estaría |
-| `2sg` | estarías |
-| `3sg` | estaría |
-| `1pl` | estariamos |
-| `2pl` | estariades |
-| `3pl` | estarían |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estea |
-| `2sg` | está |
-| `3sg` | estea |
-| `1pl` | esteamos |
-| `2pl` | estade |
-| `3pl` | estean |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estarei |
-| `2sg` | estarás |
-| `3sg` | estará |
-| `1pl` | estaremos |
-| `2pl` | estaredes |
-| `3pl` | estarán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estaba |
-| `2sg` | estabas |
-| `3sg` | estaba |
-| `1pl` | estabamos |
-| `2pl` | estabades |
-| `3pl` | estaban |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estivera |
-| `2sg` | estiveras |
-| `3sg` | estivera |
-| `1pl` | estiveramos |
-| `2pl` | estiverades |
-| `3pl` | estiveran |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estiven |
-| `2sg` | estiveches |
-| `3sg` | estivo |
-| `1pl` | estivemos |
-| `2pl` | estivestes |
-| `3pl` | estiveron |
-
-##### `subjunctive.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | estiver |
-| `2sg` | estiveres |
-| `3sg` | estiver |
-| `1pl` | estivermos |
-| `2pl` | estiverdes |
-| `3pl` | estiveren |
-
-_…2 more tense/mood rows in the JSON corpus._
-
 ## `other`
 
 Template stem args observed: `<u-o>`, `cuspir<u-o> para arriba`, `morrer<only3s> o conto`.
@@ -1056,6 +942,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 52 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
+| `imperative` | 25 | `lcp` | -úa | -úe | -úa | -uamos | -uíde | -úan |
 | `indicative.future` | 52 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
 | `indicative.imperfect` | 31 | `lcp` | -ía | -ías | -ía | -ïamos | -ïades | -ían |
 | `indicative.pluperfect` | 31 | `lcp` | -íra | -íras | -íra | -iramos | -irades | -íran |
@@ -1098,7 +985,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---|
 | `1sg` | traspoña |
 | `2sg` | traspón |
-| `3sg` | non traspoña |
+| `3sg` | trasponha |
 | `1pl` | traspoñamos |
 | `2pl` | trasponde |
 | `3pl` | traspoñan |
@@ -1171,7 +1058,7 @@ _…2 more tense/mood rows in the JSON corpus._
 | `3sg` | ten que |
 | `1pl` | temos que |
 | `2pl` | tendes que |
-| `3pl` | teñen que |
+| `3pl` | tenhem que |
 
 ##### `conditional`
 
@@ -1190,10 +1077,10 @@ _…2 more tense/mood rows in the JSON corpus._
 |---|---|
 | `1sg` | teña que |
 | `2sg` | ten que |
-| `3sg` | non teña que |
+| `3sg` | tenha que |
 | `1pl` | teñamos que |
 | `2pl` | tende que |
-| `3pl` | teñan que |
+| `3pl` | tenham que |
 
 ##### `indicative.future`
 
@@ -1282,7 +1169,7 @@ _…2 more tense/mood rows in the JSON corpus._
 |---|---|
 | `1sg` | supoña |
 | `2sg` | supón |
-| `3sg` | non supoña |
+| `3sg` | suponha |
 | `1pl` | supoñamos |
 | `2pl` | suponde |
 | `3pl` | supoñan |
@@ -1344,6 +1231,120 @@ _…2 more tense/mood rows in the JSON corpus._
 
 _…2 more tense/mood rows in the JSON corpus._
 
+## Irregular: `estar`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
+| `imperative` | 1 | `lcp` | -ea | -á | -eja | -eamos | -ade | -ean |
+| `indicative.future` | 1 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
+| `indicative.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `indicative.pluperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `indicative.present` | 1 | `lcp` | -ou | -ás | -á | -amos | -ades | -án |
+| `indicative.preterite` | 1 | `lcp` | -en | -eches | -o | -emos | -estes | -eron |
+| `nonfinite.infinitive` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
+| `subjunctive.future` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
+| `subjunctive.imperfect` | 1 | `lcp` | -ese | -eses | -ese | -ésemos | -ésedes | -esen |
+| `subjunctive.present` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+
+### Representative lemmas
+
+#### `estar`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estou |
+| `2sg` | estás |
+| `3sg` | está |
+| `1pl` | estamos |
+| `2pl` | estades |
+| `3pl` | están |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estaría |
+| `2sg` | estarías |
+| `3sg` | estaría |
+| `1pl` | estariamos |
+| `2pl` | estariades |
+| `3pl` | estarían |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estea |
+| `2sg` | está |
+| `3sg` | esteja |
+| `1pl` | esteamos |
+| `2pl` | estade |
+| `3pl` | estean |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estarei |
+| `2sg` | estarás |
+| `3sg` | estará |
+| `1pl` | estaremos |
+| `2pl` | estaredes |
+| `3pl` | estarán |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estaba |
+| `2sg` | estabas |
+| `3sg` | estaba |
+| `1pl` | estabamos |
+| `2pl` | estabades |
+| `3pl` | estaban |
+
+##### `indicative.pluperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estivera |
+| `2sg` | estiveras |
+| `3sg` | estivera |
+| `1pl` | estiveramos |
+| `2pl` | estiverades |
+| `3pl` | estiveran |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estiven |
+| `2sg` | estiveches |
+| `3sg` | estivo |
+| `1pl` | estivemos |
+| `2pl` | estivestes |
+| `3pl` | estiveron |
+
+##### `subjunctive.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estiver |
+| `2sg` | estiveres |
+| `3sg` | estiver |
+| `1pl` | estivermos |
+| `2pl` | estiverdes |
+| `3pl` | estiveren |
+
+_…2 more tense/mood rows in the JSON corpus._
+
 ## Irregular: `ser`
 
 ### Person-slot inventory
@@ -1353,14 +1354,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 1 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
-| `imperative` | 1 | `lcp` | -exa | -é | -exa | -examos | -ede | -exan |
+| `imperative` | 1 | `lcp` | -exa | -é | -eja | -examos | -ede | -exan |
 | `indicative.future` | 1 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
 | `indicative.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 | `indicative.pluperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.preterite` | 1 | `lcp` | -un | -uche | -oi | -omos | -ostes | -oron |
+| `indicative.preterite` | 1 | `lcp` | -un | -uches | -oi | -omos | -ostes | -oron |
 | `nonfinite.infinitive` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
 | `subjunctive.future` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
-| `subjunctive.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `subjunctive.imperfect` | 1 | `lcp` | -ose | -oses | -ose | -ósemos | -ósedes | -osen |
 | `subjunctive.present` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 
 ### Representative lemmas
@@ -1395,7 +1396,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---|
 | `1sg` | sexa |
 | `2sg` | sé |
-| `3sg` | sexa |
+| `3sg` | seja |
 | `1pl` | sexamos |
 | `2pl` | sede |
 | `3pl` | sexan |
@@ -1438,7 +1439,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Slot | Form |
 |---|---|
 | `1sg` | fun |
-| `2sg` | fuche |
+| `2sg` | fuches |
 | `3sg` | foi |
 | `1pl` | fomos |
 | `2pl` | fostes |
@@ -1470,9 +1471,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.imperfect` | 1 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
 | `indicative.pluperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 | `indicative.present` | 1 | `lcp` | -ei | -as | -a | -abemos | -abedes | -an |
-| `indicative.preterite` | 1 | `lcp` | -en | -eche | -o | -emos | -estes | -eron |
+| `indicative.preterite` | 1 | `lcp` | -en | -eches | -o | -emos | -estes | -eron |
 | `subjunctive.future` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
-| `subjunctive.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `subjunctive.imperfect` | 1 | `lcp` | -ese | -eses | -ese | -ésemos | -ésedes | -esen |
 | `subjunctive.present` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 
 ### Representative lemmas
@@ -1539,7 +1540,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Slot | Form |
 |---|---|
 | `1sg` | houben |
-| `2sg` | houbeche |
+| `2sg` | houbeches |
 | `3sg` | houbo |
 | `1pl` | houbemos |
 | `2pl` | houbestes |
@@ -1563,8 +1564,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1sg` | houbese |
 | `2sg` | houbeses |
 | `3sg` | houbese |
-| `1pl` | houbesemos |
-| `2pl` | houbesedes |
+| `1pl` | houbésemos |
+| `2pl` | houbésedes |
 | `3pl` | houbesen |
 
 _…2 more tense/mood rows in the JSON corpus._
@@ -1580,10 +1581,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 1 | `lcp` | -ía | -ías | -ía | -iamos | -iades | -ían |
 | `indicative.future` | 1 | `lcp` | -ei | -ás | -á | -emos | -edes | -án |
 | `indicative.pluperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
-| `indicative.preterite` | 1 | `lcp` | -un | -uche | -oi | -omos | -ostes | -oron |
+| `indicative.preterite` | 1 | `lcp` | -un | -uches | -oi | -omos | -ostes | -oron |
 | `nonfinite.infinitive` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -em |
 | `subjunctive.future` | 1 | `lcp` | ∅ | -es | ∅ | -mos | -des | -en |
-| `subjunctive.imperfect` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
+| `subjunctive.imperfect` | 1 | `lcp` | -ose | -oses | -ose | -ósemos | -ósedes | -osen |
 | `subjunctive.present` | 1 | `lcp` | ∅ | -s | ∅ | -mos | -des | -n |
 
 ### Representative lemmas
@@ -1618,7 +1619,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---|
 | `1sg` | vaia |
 | `2sg` | vai |
-| `3sg` | non vaia |
+| `3sg` | vaia |
 | `1pl` | vamos |
 | `2pl` | ide |
 | `3pl` | vaian |
@@ -1661,7 +1662,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Slot | Form |
 |---|---|
 | `1sg` | fun |
-| `2sg` | fuche |
+| `2sg` | fuches |
 | `3sg` | foi |
 | `1pl` | fomos |
 | `2pl` | fostes |

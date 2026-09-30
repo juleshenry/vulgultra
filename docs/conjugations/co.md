@@ -10,7 +10,7 @@
 - Verb lemma entries: **389**
 - Inflected form records: **4293**
 - Separate form-of entries: **210**
-- Classified person-slot observations: **2946**
+- Classified person-slot observations: **2914**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,10 +18,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-à` | 34 | 8 | 0 |
-| `-a` | 12 | 8 | 0 |
-| `-e` | 11 | 8 | 0 |
-| `other` | 9 | 8 | 0 |
+| `-à` | 34 | 7 | 5 |
+| `-a` | 12 | 7 | 5 |
+| `-e` | 11 | 7 | 5 |
+| `other` | 9 | 7 | 0 |
 | `-i` | 4 | 0 | 0 |
 | `-ì` | 1 | 0 | 0 |
 
@@ -31,197 +31,17 @@ Template stem args observed: `abbachjendu`, `abbaghjendu`, `accumpagnendu`, `agh
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 19 | `lcp` | -a | -i | -a | -amu | -ate | -anu |
+| `indicative.future` | 17 | `lcp` | -aghju | -ai | -à | -emu | -ete | -anu |
+| `indicative.imperfect` | 19 | `lcp` | -a | -i | -a | -amu | -ate | -anu |
+| `indicative.present` | 18 | `lcp` | -u | -i | -a | -emu | -ate | -anu |
+| `indicative.preterite` | 17 | `lcp` | -ai | -asti | -ò | -aimu | -aste | -onu |
 
 ### Representative lemmas
-
-#### `parlà`
-
-Stem: `parlendu`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlu |
-| `2sg` | parli |
-| `3sg` | parla |
-| `1pl` | parlemu |
-| `2pl` | parlate (N) |
-| `3pl` | parlanu (N) |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parleria (N) |
-| `2sg` | parlerii (N) |
-| `3sg` | parleria (N) |
-| `1pl` | parleriamu (N) |
-| `2pl` | parleriate (N) |
-| `3pl` | parlerianu (N) |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parleraghju (N) |
-| `2sg` | parlerai (N) |
-| `3sg` | parlerà (N) |
-| `1pl` | parleremu (N) |
-| `2pl` | parlerete (N) |
-| `3pl` | parleranu (N) |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlava |
-| `2sg` | parlavi |
-| `3sg` | parlava |
-| `1pl` | parlavamu |
-| `2pl` | parlavate (N) |
-| `3pl` | parlavanu (N) |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlai |
-| `2sg` | parlasti |
-| `3sg` | parlò |
-| `1pl` | parlaimu |
-| `2pl` | parlaste |
-| `3pl` | parlonu |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlai |
-| `2sg` | parlasti |
-| `3sg` | parlò |
-| `1pl` | parlaimu |
-| `2pl` | parlaste (N) |
-| `3pl` | parlonu (N) |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlassi |
-| `2sg` | parlassi |
-| `3sg` | parlassi |
-| `1pl` | parlassimu |
-| `2pl` | parlassite (N) |
-| `3pl` | parlassinu (N) |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parli |
-| `2sg` | parli |
-| `3sg` | parli |
-| `1pl` | parlimu |
-| `2pl` | parlite (N) |
-| `3pl` | parlinu (N) |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `andà`
-
-Stem: `andendu`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vò |
-| `2sg` | vai |
-| `3sg` | và |
-| `1pl` | andemu |
-| `2pl` | andate (N) |
-| `3pl` | vanu (N) |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | anderia (N) |
-| `2sg` | anderii (N) |
-| `3sg` | anderia (N) |
-| `1pl` | anderiamu (N) |
-| `2pl` | anderiate (N) |
-| `3pl` | anderianu (N) |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | anderaghju (N) |
-| `2sg` | anderai (N) |
-| `3sg` | anderà (N) |
-| `1pl` | anderemu (N) |
-| `2pl` | anderete (N) |
-| `3pl` | anderanu (N) |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | andava |
-| `2sg` | andavi |
-| `3sg` | andava |
-| `1pl` | andavamu |
-| `2pl` | andavate (N) |
-| `3pl` | andavanu (N) |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | andai |
-| `2sg` | andasti |
-| `3sg` | andò |
-| `1pl` | andaimu |
-| `2pl` | andaste |
-| `3pl` | andonu |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | andai |
-| `2sg` | andasti |
-| `3sg` | andò |
-| `1pl` | andaimu |
-| `2pl` | andaste (N) |
-| `3pl` | andonu (N) |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | andassi |
-| `2sg` | andassi |
-| `3sg` | andassi |
-| `1pl` | andassimu |
-| `2pl` | andassite (N) |
-| `3pl` | andassinu (N) |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vochi |
-| `2sg` | vochi |
-| `3sg` | vochi |
-| `1pl` | vochimu |
-| `2pl` | vocate (N) |
-| `3pl` | vocanu (N) |
-
-_…1 more tense/mood rows in the JSON corpus._
 
 #### `starnutà`
 
@@ -271,7 +91,7 @@ Stem: `starnutendu`.
 | `2pl` | starnutavate |
 | `3pl` | starnutavanu |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -315,13 +135,205 @@ Stem: `starnutendu`.
 | `2pl` | starnutate |
 | `3pl` | — |
 
+#### `parlà`
+
+Stem: `parlendu`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parlu |
+| `2sg` | parli |
+| `3sg` | parla |
+| `1pl` | parlemu |
+| `2pl` | parlate |
+| `3pl` | parlanu |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parleria |
+| `2sg` | parlerii |
+| `3sg` | parleria |
+| `1pl` | parleriamu |
+| `2pl` | parleriate |
+| `3pl` | parlerianu |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parleraghju |
+| `2sg` | parlerai |
+| `3sg` | parlerà |
+| `1pl` | parleremu |
+| `2pl` | parlerete |
+| `3pl` | parleranu |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parlava |
+| `2sg` | parlavi |
+| `3sg` | parlava |
+| `1pl` | parlavamu |
+| `2pl` | parlavate |
+| `3pl` | parlavanu |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parlai |
+| `2sg` | parlasti |
+| `3sg` | parlò |
+| `1pl` | parlaimu |
+| `2pl` | parlaste |
+| `3pl` | parlonu |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parlassi |
+| `2sg` | parlassi |
+| `3sg` | parlassi |
+| `1pl` | parlassimu |
+| `2pl` | parlassite |
+| `3pl` | parlassinu |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parli |
+| `2sg` | parli |
+| `3sg` | parli |
+| `1pl` | parlimu |
+| `2pl` | parlite |
+| `3pl` | parlinu |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | parla |
+| `3sg` | — |
+| `1pl` | parlemu |
+| `2pl` | parlate |
+| `3pl` | — |
+
+#### `manghjà`
+
+Stem: `manghjendu`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | manghju |
+| `2sg` | manghji |
+| `3sg` | manghja |
+| `1pl` | manghjemu |
+| `2pl` | manghjate |
+| `3pl` | manghjanu |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | manghjeria |
+| `2sg` | manghjerii |
+| `3sg` | manghjeria |
+| `1pl` | manghjeriamu |
+| `2pl` | manghjeriate |
+| `3pl` | manghjerianu |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | manghjeraghju |
+| `2sg` | manghjerai |
+| `3sg` | manghjerà |
+| `1pl` | manghjeremu |
+| `2pl` | manghjerete |
+| `3pl` | manghjeranu |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | manghjava |
+| `2sg` | manghjavi |
+| `3sg` | manghjava |
+| `1pl` | manghjavamu |
+| `2pl` | manghjavate |
+| `3pl` | manghjavanu |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | manghjai |
+| `2sg` | manghjasti |
+| `3sg` | manghjò |
+| `1pl` | manghjaimu |
+| `2pl` | manghjaste |
+| `3pl` | manghjonu |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | manghjassi |
+| `2sg` | manghjassi |
+| `3sg` | manghjassi |
+| `1pl` | manghjassimu |
+| `2pl` | manghjassite |
+| `3pl` | manghjassinu |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | manghji |
+| `2sg` | manghji |
+| `3sg` | manghji |
+| `1pl` | manghjimu |
+| `2pl` | manghjite |
+| `3pl` | manghjinu |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | manghja |
+| `3sg` | — |
+| `1pl` | manghjemu |
+| `2pl` | manghjate |
+| `3pl` | — |
+
 ## Ending: `-a`
 
 Template stem args observed: `ridendu`, `spindendu`, `traducendu`, `uttenendu, uttinendu`.
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 4 | `lcp` | -u | -i | -a | -amu | -ati | -ani |
+| `indicative.future` | 5 | `lcp` | -aghju | -ai | -à | -emu | -eti | -ani |
+| `indicative.imperfect` | 4 | `lcp` | -a | -i | -a | -amu | -ati | -ani |
+| `indicative.present` | 1 | `lcp` | -u | -i | -i | -imu | -iti | -ini |
+| `indicative.preterite` | 1 | `lcp` | -si | -disti | -si | -simu | -disti | -sini |
 
 ### Representative lemmas
 
@@ -373,7 +385,7 @@ Stem: `uttenendu, uttinendu`.
 | `2pl` | uttiniati |
 | `3pl` | uttiniani |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -465,7 +477,7 @@ Stem: `traducendu`.
 | `2pl` | traduciati |
 | `3pl` | traduciani |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -557,7 +569,7 @@ Stem: `spindendu`.
 | `2pl` | spindiati |
 | `3pl` | spindiani |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -607,101 +619,17 @@ Template stem args observed: `ottenendu, ottinendu`, `ridendu`, `spindendu`, `tr
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 6 | `lcp` | -a | -i | -a | -amu | -ate | -anu |
+| `indicative.future` | 6 | `lcp` | -aghju | -ai | -à | -emu | -ete | -anu |
+| `indicative.imperfect` | 6 | `lcp` | -a | -i | -a | -amu | -ate | -anu |
+| `indicative.present` | 2 | `lcp` | -engu | -eni | -ene | -inimu | -inite | -enenu |
+| `indicative.preterite` | 2 | `lcp` | -ensi | -inisti | -ense | -ensimu | -iniste | -ensenu |
 
 ### Representative lemmas
-
-#### `esse`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sò |
-| `2sg` | sì (N) |
-| `3sg` | (h)è |
-| `1pl` | simu (N) |
-| `2pl` | site (N) |
-| `3pl` | sò |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | seria (N) |
-| `2sg` | serii (N) |
-| `3sg` | seria (N) |
-| `1pl` | seriamu (N) |
-| `2pl` | seriate (N) |
-| `3pl` | serianu (N) |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | seraghju (N) |
-| `2sg` | serai (N) |
-| `3sg` | serà (N) |
-| `1pl` | seremu (N) |
-| `2pl` | serete (N) |
-| `3pl` | seranu (N) |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | era |
-| `2sg` | eri |
-| `3sg` | era |
-| `1pl` | eramu |
-| `2pl` | erate (N) |
-| `3pl` | eranu (N) |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fubbi |
-| `2sg` | fusti |
-| `3sg` | fubbe |
-| `1pl` | fubbimu |
-| `2pl` | fuste |
-| `3pl` | fubbenu |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fubbi |
-| `2sg` | fusti |
-| `3sg` | fù |
-| `1pl` | fubbimu |
-| `2pl` | fuste (N) |
-| `3pl` | fubbenu (N) |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fussi |
-| `2sg` | fussi |
-| `3sg` | fussi |
-| `1pl` | fussimu |
-| `2pl` | fussite (N) |
-| `3pl` | fussinu (N) |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sia (N) |
-| `2sg` | sia (N) |
-| `3sg` | sia (N) |
-| `1pl` | siamu (N) |
-| `2pl` | siate (N) |
-| `3pl` | sianu (N) |
-
-_…1 more tense/mood rows in the JSON corpus._
 
 #### `uttene`
 
@@ -751,7 +679,7 @@ Stem: `uttenendu, uttinendu`.
 | `2pl` | uttiniate |
 | `3pl` | uttinianu |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -843,7 +771,7 @@ Stem: `traducendu`.
 | `2pl` | traduciate |
 | `3pl` | traducianu |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -887,6 +815,98 @@ Stem: `traducendu`.
 | `2pl` | traducite |
 | `3pl` | — |
 
+#### `spende`
+
+Stem: `spindendu`.
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | spendu |
+| `2sg` | spendi |
+| `3sg` | spende |
+| `1pl` | spindimu |
+| `2pl` | spindite |
+| `3pl` | spendenu |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | spinderia |
+| `2sg` | spinderii |
+| `3sg` | spinderia |
+| `1pl` | spinderiamu |
+| `2pl` | spinderiate |
+| `3pl` | spinderianu |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | spinderaghju |
+| `2sg` | spinderai |
+| `3sg` | spinderà |
+| `1pl` | spinderemu |
+| `2pl` | spinderete |
+| `3pl` | spinderanu |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | spindia |
+| `2sg` | spindii |
+| `3sg` | spindia |
+| `1pl` | spindiamu |
+| `2pl` | spindiate |
+| `3pl` | spindianu |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | spesi |
+| `2sg` | spindisti |
+| `3sg` | spese |
+| `1pl` | spesimu |
+| `2pl` | spindiste |
+| `3pl` | spesenu |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | spindissi |
+| `2sg` | spindissi |
+| `3sg` | spindissi |
+| `1pl` | spindissimu |
+| `2pl` | spindissite |
+| `3pl` | spindissinu |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | spendi |
+| `2sg` | spendi |
+| `3sg` | spendi |
+| `1pl` | spendimu |
+| `2pl` | spendite |
+| `3pl` | spendinu |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | spendi |
+| `3sg` | — |
+| `1pl` | spindimu |
+| `2pl` | spindite |
+| `3pl` | — |
+
 ## `other`
 
 ### Person-slot inventory
@@ -903,32 +923,32 @@ No majority ending pattern with enough complete six-slot rows yet.
 |---|---|
 | `1sg` | aghju |
 | `2sg` | ai |
-| `3sg` | (h)à |
+| `3sg` | hà |
 | `1pl` | avemu |
-| `2pl` | avete (N) |
-| `3pl` | anu (N) |
+| `2pl` | avete |
+| `3pl` | anu |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | averia (N) |
-| `2sg` | averii (N) |
-| `3sg` | averia (N) |
-| `1pl` | averiamu (N) |
-| `2pl` | averiate (N) |
-| `3pl` | averianu (N) |
+| `1sg` | averia |
+| `2sg` | averii |
+| `3sg` | averia |
+| `1pl` | averiamu |
+| `2pl` | averiate |
+| `3pl` | averianu |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | averaghju (N) |
-| `2sg` | averai (N) |
-| `3sg` | averà (N) |
-| `1pl` | averemu (N) |
-| `2pl` | averete (N) |
-| `3pl` | averanu (N) |
+| `1sg` | averaghju |
+| `2sg` | averai |
+| `3sg` | averà |
+| `1pl` | averemu |
+| `2pl` | averete |
+| `3pl` | averanu |
 
 ##### `indicative.imperfect`
 
@@ -938,10 +958,10 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2sg` | avii |
 | `3sg` | avia |
 | `1pl` | aviamu |
-| `2pl` | aviate (N) |
-| `3pl` | avianu (N) |
+| `2pl` | aviate |
+| `3pl` | avianu |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -952,17 +972,6 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | aveste |
 | `3pl` | ebbenu |
 
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ebbi |
-| `2sg` | avisti |
-| `3sg` | ebbe (N) |
-| `1pl` | ebbimu |
-| `2pl` | aveste (N) |
-| `3pl` | ebbenu (N) |
-
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
@@ -971,21 +980,30 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2sg` | avessi |
 | `3sg` | avessi |
 | `1pl` | avessimu |
-| `2pl` | avessite (N) |
-| `3pl` | avessinu (N) |
+| `2pl` | avessite |
+| `3pl` | avessinu |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | abbia (N) |
-| `2sg` | abbia (N) |
-| `3sg` | abbia (N) |
-| `1pl` | abbiamu (N) |
-| `2pl` | abbiate (N) |
-| `3pl` | abbianu (N) |
+| `1sg` | abbia |
+| `2sg` | abbia |
+| `3sg` | abbia |
+| `1pl` | abbiamu |
+| `2pl` | abbiate |
+| `3pl` | abbianu |
 
-_…1 more tense/mood rows in the JSON corpus._
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | abbia |
+| `3sg` | — |
+| `1pl` | abbiamu |
+| `2pl` | abbiate |
+| `3pl` | — |
 
 #### `vulè`
 

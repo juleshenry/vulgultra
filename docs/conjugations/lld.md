@@ -8,9 +8,9 @@
 - Source files: `kaikki-lld.jsonl`, `lld_verbix.json`
 - Lemmas with forms: **318**
 - Verb lemma entries: **350**
-- Inflected form records: **8155**
+- Inflected form records: **8157**
 - Separate form-of entries: **5167**
-- Classified person-slot observations: **11704**
+- Classified person-slot observations: **11630**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -38,218 +38,218 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.imperfect` | 142 | `template` | -ove | -oves | -ova | -ovan | -ovais | -ova |
 | `indicative.present` | 112 | `template` | -e | -es | -a | -on | -eis | -a |
 | `subjunctive.imperfect` | 110 | `template` | -asse | -asses | -assa | -assan | -assais | -assa |
-| `subjunctive.present` | 108 | `template` | -e | -es | -e | -on | -eis | -e |
+| `subjunctive.present` | 107 | `template` | -e | -es | -e | -on | -eis | -e |
 
 ### Representative lemmas
 
-#### `cumporter`
+#### `viuler`
 
-Stem: `cumport`.
+Stem: `viul`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumporte |
-| `2sg` | cumportes |
-| `3sg` | cumporta |
-| `1pl` | cumporton |
-| `2pl` | cumporteis |
-| `3pl` | cumporta |
+| `1sg` | viule |
+| `2sg` | viules |
+| `3sg` | viula |
+| `1pl` | viulon |
+| `2pl` | viuleis |
+| `3pl` | viula |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumportaré |
-| `2sg` | cumportaras |
-| `3sg` | cumportarà |
-| `1pl` | cumportaron |
-| `2pl` | cumportareis |
-| `3pl` | cumportarà |
+| `1sg` | viularé |
+| `2sg` | viularas |
+| `3sg` | viularà |
+| `1pl` | viularon |
+| `2pl` | viulareis |
+| `3pl` | viularà |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumportove |
-| `2sg` | cumportoves |
-| `3sg` | cumportova |
-| `1pl` | cumportovan |
-| `2pl` | cumportovais |
-| `3pl` | cumportova |
+| `1sg` | viulove |
+| `2sg` | viuloves |
+| `3sg` | viulova |
+| `1pl` | viulovan |
+| `2pl` | viulovais |
+| `3pl` | viulova |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumportasse |
-| `2sg` | cumportasses |
-| `3sg` | cumportassa |
-| `1pl` | cumportassan |
-| `2pl` | cumportassais |
-| `3pl` | cumportassa |
+| `1sg` | viulasse |
+| `2sg` | viulasses |
+| `3sg` | viulassa |
+| `1pl` | viulassan |
+| `2pl` | viulassais |
+| `3pl` | viulassa |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumporte |
-| `2sg` | cumportes |
-| `3sg` | cumporte |
-| `1pl` | cumporton |
-| `2pl` | cumporteis |
-| `3pl` | cumporte |
+| `1sg` | viule |
+| `2sg` | viules |
+| `3sg` | viule |
+| `1pl` | viulon |
+| `2pl` | viuleis |
+| `3pl` | viule |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumporta |
-| `2sg` | cumporton |
-| `3sg` | cumportede |
-| `1pl` | cumporton |
-| `2pl` | cumportede |
+| `1sg` | — |
+| `2sg` | viula |
+| `3sg` | — |
+| `1pl` | viulon |
+| `2pl` | viulede |
 | `3pl` | — |
 
-#### `cumander`
+#### `usserver`
 
-Stem: `cumand`.
+Stem: `usserv`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumande |
-| `2sg` | cumandes |
-| `3sg` | cumanda |
-| `1pl` | cumandon |
-| `2pl` | cumandeis |
-| `3pl` | cumanda |
+| `1sg` | usserve |
+| `2sg` | usserves |
+| `3sg` | usserva |
+| `1pl` | usservon |
+| `2pl` | usserveis |
+| `3pl` | usserva |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumandaré |
-| `2sg` | cumandaras |
-| `3sg` | cumandarà |
-| `1pl` | cumandaron |
-| `2pl` | cumandareis |
-| `3pl` | cumandarà |
+| `1sg` | usservaré |
+| `2sg` | usservaras |
+| `3sg` | usservarà |
+| `1pl` | usservaron |
+| `2pl` | usservareis |
+| `3pl` | usservarà |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumandove |
-| `2sg` | cumandoves |
-| `3sg` | cumandova |
-| `1pl` | cumandovan |
-| `2pl` | cumandovais |
-| `3pl` | cumandova |
+| `1sg` | usservove |
+| `2sg` | usservoves |
+| `3sg` | usservova |
+| `1pl` | usservovan |
+| `2pl` | usservovais |
+| `3pl` | usservova |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumandasse |
-| `2sg` | cumandasses |
-| `3sg` | cumandassa |
-| `1pl` | cumandassan |
-| `2pl` | cumandassais |
-| `3pl` | cumandassa |
+| `1sg` | usservasse |
+| `2sg` | usservasses |
+| `3sg` | usservassa |
+| `1pl` | usservassan |
+| `2pl` | usservassais |
+| `3pl` | usservassa |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumande |
-| `2sg` | cumandes |
-| `3sg` | cumande |
-| `1pl` | cumandon |
-| `2pl` | cumandeis |
-| `3pl` | cumande |
+| `1sg` | usserve |
+| `2sg` | usserves |
+| `3sg` | usserve |
+| `1pl` | usservon |
+| `2pl` | usserveis |
+| `3pl` | usserve |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cumanda |
-| `2sg` | cumandon |
-| `3sg` | cumandede |
-| `1pl` | cumandon |
-| `2pl` | cumandede |
+| `1sg` | — |
+| `2sg` | usserva |
+| `3sg` | — |
+| `1pl` | usservon |
+| `2pl` | usservede |
 | `3pl` | — |
 
-#### `cruzier`
+#### `urganiser`
 
-Stem: `cruzi`.
+Stem: `urganis`.
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cruzie |
-| `2sg` | cruzies |
-| `3sg` | cruzia |
-| `1pl` | cruzion |
-| `2pl` | cruzieis |
-| `3pl` | cruzia |
+| `1sg` | urganise |
+| `2sg` | urganises |
+| `3sg` | urganisa |
+| `1pl` | urganison |
+| `2pl` | urganiseis |
+| `3pl` | urganisa |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cruziaré |
-| `2sg` | cruziaras |
-| `3sg` | cruziarà |
-| `1pl` | cruziaron |
-| `2pl` | cruziareis |
-| `3pl` | cruziarà |
+| `1sg` | urganisaré |
+| `2sg` | urganisaras |
+| `3sg` | urganisarà |
+| `1pl` | urganisaron |
+| `2pl` | urganisareis |
+| `3pl` | urganisarà |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cruziove |
-| `2sg` | cruzioves |
-| `3sg` | cruziova |
-| `1pl` | cruziovan |
-| `2pl` | cruziovais |
-| `3pl` | cruziova |
+| `1sg` | urganisove |
+| `2sg` | urganisoves |
+| `3sg` | urganisova |
+| `1pl` | urganisovan |
+| `2pl` | urganisovais |
+| `3pl` | urganisova |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cruziasse |
-| `2sg` | cruziasses |
-| `3sg` | cruziassa |
-| `1pl` | cruziassan |
-| `2pl` | cruziassais |
-| `3pl` | cruziassa |
+| `1sg` | urganisasse |
+| `2sg` | urganisasses |
+| `3sg` | urganisassa |
+| `1pl` | urganisassan |
+| `2pl` | urganisassais |
+| `3pl` | urganisassa |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cruzie |
-| `2sg` | cruzies |
-| `3sg` | cruzie |
-| `1pl` | cruzion |
-| `2pl` | cruzieis |
-| `3pl` | cruzie |
+| `1sg` | urganise |
+| `2sg` | urganises |
+| `3sg` | urganise |
+| `1pl` | urganison |
+| `2pl` | urganiseis |
+| `3pl` | urganise |
 
 ##### `imperative`
 
 | Slot | Form |
 |---|---|
-| `1sg` | cruzia |
-| `2sg` | cruzion |
-| `3sg` | cruziede |
-| `1pl` | cruzion |
-| `2pl` | cruziede |
+| `1sg` | — |
+| `2sg` | urganisa |
+| `3sg` | — |
+| `1pl` | urganison |
+| `2pl` | urganisede |
 | `3pl` | — |
 
 ## Ending: `-ir`
@@ -333,9 +333,9 @@ Stem: `costitu`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | costitu |
-| `2sg` | costituion |
-| `3sg` | costituide |
+| `1sg` | — |
+| `2sg` | costitu |
+| `3sg` | — |
 | `1pl` | costituion |
 | `2pl` | costituide |
 | `3pl` | — |
@@ -403,9 +403,9 @@ Stem: `cap`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | cap |
-| `2sg` | capion |
-| `3sg` | capide |
+| `1sg` | — |
+| `2sg` | cap |
+| `3sg` | — |
 | `1pl` | capion |
 | `2pl` | capide |
 | `3pl` | — |
@@ -473,9 +473,9 @@ Stem: `atribu`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | atribu |
-| `2sg` | atribuion |
-| `3sg` | atribuide |
+| `1sg` | — |
+| `2sg` | atribu |
+| `3sg` | — |
 | `1pl` | atribuion |
 | `2pl` | atribuide |
 | `3pl` | — |
@@ -560,9 +560,9 @@ Stem: `coromp`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | coromp |
-| `2sg` | corompon |
-| `3sg` | corompede |
+| `1sg` | — |
+| `2sg` | coromp |
+| `3sg` | — |
 | `1pl` | corompon |
 | `2pl` | corompede |
 | `3pl` | — |
@@ -628,9 +628,9 @@ Stem: `coromp`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | aes |
+| `1sg` | — |
 | `2sg` | aes |
-| `3sg` | aede |
+| `3sg` | — |
 | `1pl` | - |
 | `2pl` | aede |
 | `3pl` | — |
@@ -880,7 +880,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | va |
+| `1sg` | — |
 | `2sg` | va |
 | `3sg` | — |
 | `1pl` | jon |
@@ -978,9 +978,9 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | fà |
+| `1sg` | — |
 | `2sg` | fà |
-| `3sg` | fajede |
+| `3sg` | — |
 | `1pl` | - |
 | `2pl` | fajede |
 | `3pl` | — |

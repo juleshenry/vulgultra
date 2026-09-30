@@ -21,7 +21,7 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | `-ere` | 47 | 7 | 4 |
 | `-are` | 45 | 6 | 4 |
 | `-ai` | 3 | 6 | 4 |
-| `-ire` | 5 | 12 | 0 |
+| `-ire` | 5 | 14 | 0 |
 | `-i` | 3 | 6 | 0 |
 | `other` | 2 | 0 | 0 |
 
@@ -835,17 +835,6 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | finides |
 | `3pl` | finint |
 
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | dio aer finidu |
-| `2sg` | dias aer finidu |
-| `3sg` | diat aer finidu |
-| `1pl` | diamus aer finidu |
-| `2pl` | diazis aer finidu |
-| `3pl` | diant aer finidu |
-
 ##### `conditional.present`
 
 | Slot | Form |
@@ -856,6 +845,17 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `1pl` | diamus finire |
 | `2pl` | diazis finire |
 | `3pl` | diant finire |
+
+##### `conditional.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | dio aer finidu |
+| `2sg` | dias aer finidu |
+| `3sg` | diat aer finidu |
+| `1pl` | diamus aer finidu |
+| `2pl` | diazis aer finidu |
+| `3pl` | diant aer finidu |
 
 ##### `indicative`
 
@@ -912,7 +912,7 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | finerezes |
 | `3pl` | finerent |
 
-_…3 more tense/mood rows in the JSON corpus._
+_…4 more tense/mood rows in the JSON corpus._
 
 #### `ischire`
 

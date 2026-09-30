@@ -33,14 +33,14 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 907 | `template` | -aría | -aríes | -aría | -aríemos | -aríeis | -aríen |
-| `indicative.future` | 907 | `template` | -aré | -arás | -ará | -aremos | -aréis | -arán |
-| `indicative.imperfect` | 908 | `template` | -aba | -abes | -aba | -ábemos | -abeis | -aben |
-| `indicative.pluperfect` | 908 | `template` | -are | -ares | -are | -áremos | -areis | -aren |
+| `conditional` | 906 | `template` | -aría | -aríes | -aría | -aríemos | -aríeis | -aríen |
+| `indicative.future` | 906 | `template` | -aré | -arás | -ará | -aremos | -aréis | -arán |
+| `indicative.imperfect` | 909 | `template` | -aba | -abes | -aba | -ábemos | -abeis | -aben |
+| `indicative.pluperfect` | 909 | `template` | -are | -ares | -are | -áremos | -areis | -aren |
 | `indicative.present` | 777 | `template` | -o | -es | -a | -amos | -áis | -en |
 | `indicative.preterite` | 832 | `template` | -é | -asti | -ó | -emos | -astis | -aron |
-| `subjunctive.imperfect` | 908 | `template` | -are | -ares | -are | -áremos | -areis | -aren |
-| `subjunctive.present` | 767 | `template` | -e | -es | -e | -emos | -éis | -en |
+| `subjunctive.imperfect` | 909 | `template` | -are | -ares | -are | -áremos | -areis | -aren |
+| `subjunctive.present` | 808 | `template` | -e | -es | -e | -emos | -éis | -en |
 | `subjunctive.preterite` | 4 | `template` | -ara | -aras | -ara | -áramos | -arais | -aran |
 
 ### Representative lemmas

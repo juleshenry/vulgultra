@@ -283,7 +283,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `indicative.future` | 1 | `lcp` | ∅ | -i | -e | -no | -et | -u |
-| `indicative.present` | 1 | `lcp` | -ésc | -éšti | -éšte | -ín | -íţ | -éscu |
+| `indicative.present` | 1 | `lcp` | ∅ | -ti | -te | -ín | -íţ | -u |
 
 ### Representative lemmas
 

@@ -133,3 +133,78 @@ class ConjugationHarvestTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HarvestFixTests(unittest.TestCase):
+    SLOTS = ("1sg", "2sg", "3sg", "1pl", "2pl", "3pl")
+
+    def endings(self, lect: str, forms: str) -> dict:
+        from vulgultra.conjugation_harvest import strip_endings
+        result = strip_endings(dict(zip(self.SLOTS, forms.split())), None, lect)
+        assert result
+        return result[0]
+
+    def test_inchoative_infix_is_stem(self) -> None:
+        dormo = self.endings("it", "dormo dormi dorme dormiamo dormite dormono")
+        self.assertEqual(self.endings("it", "finisco finisci finisce finiamo finite finiscono"), dormo)
+        self.assertEqual(self.endings("ro", "lucrez lucrezi lucrează lucrăm lucrați lucrează")["1sg"], "∅")
+        self.assertEqual(self.endings("ca", "serveixo serveixes serveix servim serviu serveixen")["1sg"], "o")
+        self.assertEqual(self.endings("es", "conozco conoces conoce conocemos conocéis conocen")["1sg"], "o")
+
+    def test_template_stem_falls_back_to_lcp(self) -> None:
+        from vulgultra.conjugation_harvest import strip_endings
+        forms = dict(zip(self.SLOTS, "canto cantas canta cantamos cantais cantan".split()))
+        endings, used, mode = strip_endings(forms, stem="aveir")
+        self.assertEqual((used, mode, endings["1sg"]), ("cant", "lcp", "o"))
+
+    def test_subject_clitics(self) -> None:
+        from vulgultra.conjugation_harvest import strip_subject_clitics
+        self.assertEqual(strip_subject_clitics("fur", "o fevelavi"), "fevelavi")
+        self.assertEqual(strip_subject_clitics("fur", "al"), "")
+        self.assertEqual(strip_subject_clitics("vec", "el łustra"), "łustra")
+        self.assertEqual(strip_subject_clitics("es", "me fié"), "me fié")
+
+    def test_tense_tags(self) -> None:
+        self.assertEqual(decode_tags(["historic", "indicative", "past", "first-person", "singular"])[1],
+                         "indicative.preterite")
+        self.assertEqual(decode_tags(["indicative", "perfect", "first-person", "singular"], "ro")[1],
+                         "indicative.preterite")
+        self.assertEqual(decode_tags(["indicative", "past", "first-person", "singular"], "pms")[1],
+                         "indicative.imperfect")
+        self.assertTrue(decode_tags(["imperative", "negative", "second-person", "singular"])[1].startswith("skip"))
+
+    def test_row_forms_prefers_single_word(self) -> None:
+        from vulgultra.conjugation_harvest import row_forms
+        cells = {"1sg": [{"form": "me fiai"}, {"form": "fiai"}]}
+        self.assertEqual(row_forms(cells)["1sg"], "fiai")
+
+
+class VerbixParseTests(unittest.TestCase):
+    def record(self, tenses: list, exists: bool = True) -> dict:
+        return {"lemma": "falar", "raw": {"exists": exists, "tenses": {
+            str(i): {"name": name, "forms": [{"id": pid, "form": form} for pid, form in forms]}
+            for i, (name, forms) in enumerate(tenses)
+        }}}
+
+    def test_first_tense_wins_and_compound_is_skipped(self) -> None:
+        from vulgultra.verbix import parse_paradigm
+        paradigm = parse_paradigm("pt", self.record([
+            ("Indicative Pluperfect", [(1, "falara")]),
+            ("Indicative Pluperfect", [(1, "tinha falado")]),
+        ]))
+        cell = paradigm["cells"]["indicative.pluperfect"]["1sg"]
+        self.assertEqual((cell["form"], cell["variants"]), ("falara", []))
+
+    def test_extra_forms_are_variants(self) -> None:
+        from vulgultra.verbix import parse_paradigm
+        paradigm = parse_paradigm("es", self.record([
+            ("Subjunctive Past", [(1, "hablara"), (1, "hablase")]),
+        ]))
+        cell = paradigm["cells"]["subjunctive.imperfect"]["1sg"]
+        self.assertEqual((cell["form"], cell["variants"]), ("hablara", ["hablase"]))
+
+    def test_friulian_past_is_preterite_and_generated_pages_skipped(self) -> None:
+        from vulgultra.verbix import map_feature, parse_paradigm
+        self.assertEqual(map_feature("Indicative Past", "fur"), "indicative.preterite")
+        self.assertEqual(map_feature("Indicative Past", "pt"), "indicative.imperfect")
+        self.assertIsNone(parse_paradigm("es", self.record([("Indicative Present", [(1, "x")])], exists=False)))

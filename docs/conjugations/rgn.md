@@ -10,7 +10,7 @@
 - Verb lemma entries: **109**
 - Inflected form records: **667**
 - Separate form-of entries: **70**
-- Classified person-slot observations: **683**
+- Classified person-slot observations: **678**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,222 +18,17 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `rgn-conj-first` | 2 | 7 | 6 |
-| `rgn-conj-avér` | 1 | 8 | 5 |
-| `rgn-conj-first-cons` | 2 | 7 | 5 |
-| `rgn-conj-first-vow` | 1 | 7 | 5 |
+| `-êr` | 33 | 6 | 6 |
 | `rgn-conj-vlér` | 1 | 5 | 5 |
-| `rgn-conj-third-cons` | 1 | 7 | 4 |
-| `unknown` | 41 | 0 | 0 |
+| `rgn-conj-avér` | 1 | 6 | 4 |
+| `-ar` | 4 | 6 | 0 |
+| `unknown` | 7 | 0 | 0 |
+| `-ìr` | 2 | 0 | 0 |
+| `-ér` | 1 | 0 | 0 |
 
-## `rgn-conj-first`
+## Ending: `-êr`
 
-Template stem args observed: `abandun`, `abrugh`.
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 2 | `template` | -arèb | -arès | -arèb | -arèsum | -arèsuv | -arèb |
-| `indicative.future` | 2 | `template` | -arò | -aré | -arà | -arẽn | -arì | -arà |
-| `indicative.imperfect` | 2 | `template` | -éva | -ìvtia | -éva | -imia | -ìvia | -éva |
-| `indicative.present` | 1 | `template` | ∅ | ∅ | -a | -ẽn | -ì | -a |
-| `indicative.preterite` | 2 | `template` | -èt | -ès | -èt | -èsum | -èsuv | -èt |
-| `subjunctive.present` | 2 | `template` | -a | -a | -a | -ègna | -ìva | ∅ |
-
-### Representative lemmas
-
-#### `abandunêr`
-
-Stem: `abandun`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abandùn |
-| `2sg` | abandùn |
-| `3sg` | abandöna |
-| `1pl` | abandunẽn |
-| `2pl` | abandunì |
-| `3pl` | abandöna |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abandunarèb |
-| `2sg` | abandunarès |
-| `3sg` | abandunarèb |
-| `1pl` | abandunarèsum |
-| `2pl` | abandunarèsuv |
-| `3pl` | abandunarèb |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abandunarò |
-| `2sg` | abandunaré |
-| `3sg` | abandunarà |
-| `1pl` | abandunarẽn |
-| `2pl` | abandunarì |
-| `3pl` | abandunarà |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abandunéva |
-| `2sg` | abandunìvtia |
-| `3sg` | abandunéva |
-| `1pl` | abandunimia |
-| `2pl` | abandunìvia |
-| `3pl` | abandunéva |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abandunèt |
-| `2sg` | abandunès |
-| `3sg` | abandunèt |
-| `1pl` | abandunèsum |
-| `2pl` | abandunèsuv |
-| `3pl` | abandunèt |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abanduna |
-| `2sg` | abanduna |
-| `3sg` | abanduna |
-| `1pl` | abandunègna |
-| `2pl` | abandunìva |
-| `3pl` | abandun |
-
-##### `conditional.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | arèb abandunê |
-| `2sg` | arès abandunê |
-| `3sg` | — |
-| `1pl` | arèsum abandunê |
-| `2pl` | arèsuv abandunê |
-| `3pl` | arèb abandunê |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abandön |
-| `2sg` | abandön |
-| `3sg` | — |
-| `1pl` | abandunẽn |
-| `2pl` | abandunì |
-| `3pl` | — |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `abrughêr`
-
-Stem: `abrugh`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abrugh |
-| `2sg` | abrugh |
-| `3sg` | abrugha |
-| `1pl` | abrughẽn |
-| `2pl` | abrughì |
-| `3pl` | abrugha |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abrugharèb |
-| `2sg` | abrugharès |
-| `3sg` | abrugharèb |
-| `1pl` | abrugharèsum |
-| `2pl` | abrugharèsuv |
-| `3pl` | abrugharèb |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abrugharò |
-| `2sg` | abrugharé |
-| `3sg` | abrugharà |
-| `1pl` | abrugharẽn |
-| `2pl` | abrugharì |
-| `3pl` | abrugharà |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abrughéva |
-| `2sg` | abrughìvtia |
-| `3sg` | abrughéva |
-| `1pl` | abrughimia |
-| `2pl` | abrughìvia |
-| `3pl` | abrughéva |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abrughèt |
-| `2sg` | abrughès |
-| `3sg` | abrughèt |
-| `1pl` | abrughèsum |
-| `2pl` | abrughèsuv |
-| `3pl` | abrughèt |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | abrugha |
-| `2sg` | abrugha |
-| `3sg` | abrugha |
-| `1pl` | abrughègna |
-| `2pl` | abrughìva |
-| `3pl` | abrugh |
-
-##### `conditional.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | arèb abrughê |
-| `2sg` | arès abrughê |
-| `3sg` | — |
-| `1pl` | arèsum abrughê |
-| `2pl` | arèsuv abrughê |
-| `3pl` | arèb abrughê |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | Term? |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | abrughẽn |
-| `2pl` | abrughì |
-| `3pl` | — |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-## `rgn-conj-avér`
+Template stem args observed: `abandun`, `abriv`, `abrugh`, `lav`, `truv`.
 
 ### Person-slot inventory
 
@@ -241,121 +36,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -b | -s | -b | -sum | -suv | -b |
-| `indicative.future` | 1 | `lcp` | -ò | -é | -à | -ẽn | -ì | -à |
-| `indicative.imperfect` | 1 | `lcp` | -éva | -ìvtia | -éva | -ìmia | -ìvia | -éva |
-| `indicative.past` | 1 | `lcp` | ∅ | ∅ | -s | -sum | -som | -suv |
-| `indicative.preterite` | 1 | `lcp` | -t | -s | -t | -sum | -suv | -t |
-
-### Representative lemmas
-
-#### `avér`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ò |
-| `2sg` | é |
-| `3sg` | à |
-| `1pl` | avẽn |
-| `2pl` | avì |
-| `3pl` | à |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | arèb |
-| `2sg` | arès |
-| `3sg` | arèb |
-| `1pl` | arèsum |
-| `2pl` | arèsuv |
-| `3pl` | arèb |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | arò |
-| `2sg` | aré |
-| `3sg` | arà |
-| `1pl` | arẽn |
-| `2pl` | arì |
-| `3pl` | arà |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avéva |
-| `2sg` | avìvtia |
-| `3sg` | avéva |
-| `1pl` | avìmia |
-| `2pl` | avìvia |
-| `3pl` | avéva |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avè |
-| `2sg` | avè |
-| `3sg` | avès |
-| `1pl` | avèsum |
-| `2pl` | avèsom |
-| `3pl` | avèsuv |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avèt |
-| `2sg` | avès |
-| `3sg` | avèt |
-| `1pl` | avèsum |
-| `2pl` | avèsuv |
-| `3pl` | avèt |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | éva |
-| `2sg` | éva |
-| `3sg` | éva |
-| `1pl` | avègna |
-| `2pl` | avìva |
-| `3pl` | éva |
-
-##### `conditional.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | arèb avù |
-| `2sg` | arès avù |
-| `3sg` | — |
-| `1pl` | arèsum avù |
-| `2pl` | arèsuv avù |
-| `3pl` | arèb avù |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-## `rgn-conj-first-cons`
-
-Template stem args observed: `lav`, `truv`.
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 2 | `template` | -arèb | -arès | -arèb | -arèsum | -arèsuv | -arèb |
-| `indicative.future` | 2 | `template` | -arò | -aré | -arà | -arẽn | -arì | -arà |
-| `indicative.imperfect` | 2 | `template` | -éva | -ìvtia | -éva | -imia | -ìvia | -éva |
-| `indicative.preterite` | 2 | `template` | -èt | -ès | -èt | -èsum | -èsuv | -èt |
-| `subjunctive.present` | 2 | `template` | -a | -a | -a | -ègna | -ìva | ∅ |
+| `conditional` | 5 | `template` | -arèb | -arès | -arèb | -arèsum | -arèsuv | -arèb |
+| `indicative.future` | 5 | `template` | -arò | -aré | -arà | -arẽn | -arì | -arà |
+| `indicative.imperfect` | 5 | `template` | -éva | -ìvtia | -éva | -imia | -ìvia | -éva |
+| `indicative.present` | 1 | `lcp` | -ùn | -ùn | -öna | -unẽn | -unì | -öna |
+| `indicative.preterite` | 5 | `template` | -èt | -ès | -èt | -èsum | -èsuv | -èt |
+| `subjunctive.present` | 5 | `template` | -a | -a | -a | -ègna | -ìva | ∅ |
 
 ### Representative lemmas
 
@@ -429,7 +115,7 @@ Stem: `truv`.
 | `2pl` | truvìva |
 | `3pl` | truv |
 
-##### `conditional.past`
+##### `conditional.preterite`
 
 | Slot | Form |
 |---|---|
@@ -450,8 +136,6 @@ Stem: `truv`.
 | `1pl` | truvẽn |
 | `2pl` | truvì |
 | `3pl` | — |
-
-_…1 more tense/mood rows in the JSON corpus._
 
 #### `lavêr`
 
@@ -523,7 +207,7 @@ Stem: `lav`.
 | `2pl` | lavìva |
 | `3pl` | lav |
 
-##### `conditional.past`
+##### `conditional.preterite`
 
 | Slot | Form |
 |---|---|
@@ -544,26 +228,6 @@ Stem: `lav`.
 | `1pl` | lavẽn |
 | `2pl` | lavì |
 | `3pl` | — |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-## `rgn-conj-first-vow`
-
-Template stem args observed: `abriv`.
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `template` | -arèb | -arès | -arèb | -arèsum | -arèsuv | -arèb |
-| `indicative.future` | 1 | `template` | -arò | -aré | -arà | -arẽn | -arì | -arà |
-| `indicative.imperfect` | 1 | `template` | -éva | -ìvtia | -éva | -imia | -ìvia | -éva |
-| `indicative.preterite` | 1 | `template` | -èt | -ès | -èt | -èsum | -èsuv | -èt |
-| `subjunctive.present` | 1 | `template` | -a | -a | -a | -ègna | -ìva | ∅ |
-
-### Representative lemmas
 
 #### `abivrêr`
 
@@ -635,7 +299,7 @@ Stem: `abriv`.
 | `2pl` | abrivìva |
 | `3pl` | abriv |
 
-##### `conditional.past`
+##### `conditional.preterite`
 
 | Slot | Form |
 |---|---|
@@ -656,8 +320,6 @@ Stem: `abriv`.
 | `1pl` | abrivẽn |
 | `2pl` | abrivì |
 | `3pl` | — |
-
-_…1 more tense/mood rows in the JSON corpus._
 
 ## `rgn-conj-vlér`
 
@@ -732,9 +394,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | vlèsuv |
 | `3pl` | vlét |
 
-## `rgn-conj-third-cons`
-
-Template stem args observed: `leẓ`.
+## `rgn-conj-avér`
 
 ### Person-slot inventory
 
@@ -742,10 +402,110 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `template` | -arèb | -arès | -arèb | -arèsum | -arèsuv | -arèb |
-| `indicative.future` | 1 | `template` | -aró | -aré | -arà | -arẽn | -arì | -arà |
-| `indicative.imperfect` | 1 | `template` | -éva | -ìvtia | -éva | -ìmia | -ìvia | -éva |
-| `indicative.preterite` | 1 | `template` | -èt | -ès | -èt | -èsum | -èsuv | -èt |
+| `conditional` | 1 | `lcp` | -b | -s | -b | -sum | -suv | -b |
+| `indicative.future` | 1 | `lcp` | -ò | -é | -à | -ẽn | -ì | -à |
+| `indicative.imperfect` | 1 | `lcp` | -éva | -ìvtia | -éva | -ìmia | -ìvia | -éva |
+| `indicative.preterite` | 1 | `lcp` | -t | -s | -t | -sum | -suv | -t |
+
+### Representative lemmas
+
+#### `avér`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ò |
+| `2sg` | é |
+| `3sg` | à |
+| `1pl` | avẽn |
+| `2pl` | avì |
+| `3pl` | à |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | arèb |
+| `2sg` | arès |
+| `3sg` | arèb |
+| `1pl` | arèsum |
+| `2pl` | arèsuv |
+| `3pl` | arèb |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | arò |
+| `2sg` | aré |
+| `3sg` | arà |
+| `1pl` | arẽn |
+| `2pl` | arì |
+| `3pl` | arà |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avéva |
+| `2sg` | avìvtia |
+| `3sg` | avéva |
+| `1pl` | avìmia |
+| `2pl` | avìvia |
+| `3pl` | avéva |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avèt |
+| `2sg` | avès |
+| `3sg` | avèt |
+| `1pl` | avèsum |
+| `2pl` | avèsuv |
+| `3pl` | avèt |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | éva |
+| `2sg` | éva |
+| `3sg` | éva |
+| `1pl` | avègna |
+| `2pl` | avìva |
+| `3pl` | éva |
+
+##### `conditional.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | arès |
+| `3sg` | — |
+| `1pl` | arèsom |
+| `2pl` | arèsuv |
+| `3pl` | — |
+
+##### `conditional.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | arèb avù |
+| `2sg` | arès avù |
+| `3sg` | — |
+| `1pl` | arèsum avù |
+| `2pl` | arèsuv avù |
+| `3pl` | arèb avù |
+
+## Ending: `-ar`
+
+Template stem args observed: `leẓ`.
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
 
 ### Representative lemmas
 
@@ -819,7 +579,7 @@ Stem: `leẓ`.
 | `2pl` | leẓìva |
 | `3pl` | leẓa |
 
-##### `conditional.past`
+##### `conditional.preterite`
 
 | Slot | Form |
 |---|---|
@@ -841,16 +601,6 @@ Stem: `leẓ`.
 | `2pl` | leẓì |
 | `3pl` | — |
 
-_…1 more tense/mood rows in the JSON corpus._
-
-## `unknown`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
 #### `ësar`
 
 ##### `indicative.present`
@@ -863,6 +613,18 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `1pl` | — |
 | `2pl` | — |
 | `3pl` | — |
+
+#### `aflèzar`
+
+_No classified person-number cells for this lemma._
+
+## `unknown`
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
+
+### Representative lemmas
 
 #### `es`
 
@@ -877,6 +639,19 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | — |
 | `3pl` | — |
 
-#### `èssér`
+#### `alatê`
 
 _No classified person-number cells for this lemma._
+
+#### `ajutê`
+
+_No classified person-number cells for this lemma._
+
+## Sparse / unclassified
+
+Paradigms without a full six-slot inventory (count only).
+
+| Ending / paradigm | Lemmas |
+|---|---:|
+| `-ìr` | 2 |
+| `-ér` | 1 |

@@ -10,7 +10,7 @@
 - Verb lemma entries: **158**
 - Inflected form records: **81**
 - Separate form-of entries: **14**
-- Classified person-slot observations: **87**
+- Classified person-slot observations: **96**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -174,7 +174,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `3sg` | saruò |
 | `1pl` | sarèmo |
 | `2pl` | sarì |
-| `3pl` | saruò |
+| `3pl` | sarìde |
 
 ##### `subjunctive.imperfect`
 

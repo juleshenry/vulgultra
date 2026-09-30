@@ -10,7 +10,7 @@
 - Verb lemma entries: **7601**
 - Inflected form records: **493949**
 - Separate form-of entries: **6**
-- Classified person-slot observations: **371744**
+- Classified person-slot observations: **345575**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,603 +18,13 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-er` | 6571 | 12 | 8 |
-| `-ir` | 478 | 12 | 8 |
-| `-re` | 328 | 12 | 8 |
-| `aller` | 1 | 12 | 7 |
-| `avoir` | 1 | 12 | 7 |
-| `être` | 1 | 12 | 7 |
+| `-re` | 328 | 8 | 7 |
+| `-er` | 6571 | 7 | 7 |
+| `-ir` | 478 | 7 | 7 |
 | `other` | 189 | 7 | 7 |
-
-## Ending: `-er`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 6460 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.future` | 6460 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
-| `indicative.imperfect` | 6141 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.past` | 6140 | `lcp` | -ai | -as | -a | -âmes | -âtes | -èrent |
-| `indicative.present` | 5696 | `lcp` | -e | -es | -e | -ons | -ez | -ent |
-| `indicative.preterite` | 84 | `lcp` | -ai | -as | -a | -âmes | -âtes | -èrent |
-| `subjunctive.imperfect` | 6459 | `lcp` | -asse | -asses | -ât | -assions | -assiez | -assent |
-| `subjunctive.present` | 5998 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
-
-### Representative lemmas
-
-#### `parler`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parle |
-| `2sg` | parles |
-| `3sg` | parle |
-| `1pl` | parlons |
-| `2pl` | parlez |
-| `3pl` | parlent |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlerais |
-| `2sg` | parlerais |
-| `3sg` | parlerait |
-| `1pl` | parlerions |
-| `2pl` | parleriez |
-| `3pl` | parleraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais parlé |
-| `2sg` | aurais parlé |
-| `3sg` | aurait parlé |
-| `1pl` | aurions parlé |
-| `2pl` | auriez parlé |
-| `3pl` | auraient parlé |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlerai |
-| `2sg` | parleras |
-| `3sg` | parlera |
-| `1pl` | parlerons |
-| `2pl` | parlerez |
-| `3pl` | parleront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai parlé |
-| `2sg` | auras parlé |
-| `3sg` | aura parlé |
-| `1pl` | aurons parlé |
-| `2pl` | aurez parlé |
-| `3pl` | auront parlé |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlais |
-| `2sg` | parlais |
-| `3sg` | parlait |
-| `1pl` | parlions |
-| `2pl` | parliez |
-| `3pl` | parlaient |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | parlai |
-| `2sg` | parlas |
-| `3sg` | parla |
-| `1pl` | parlâmes |
-| `2pl` | parlâtes |
-| `3pl` | parlèrent |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avais parlé |
-| `2sg` | avais parlé |
-| `3sg` | avait parlé |
-| `1pl` | avions parlé |
-| `2pl` | aviez  parlé |
-| `3pl` | avaient parlé |
-
-_…5 more tense/mood rows in the JSON corpus._
-
-#### `achalander`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | achalande |
-| `2sg` | achalandes |
-| `3sg` | achalande |
-| `1pl` | achalandons |
-| `2pl` | achalandez |
-| `3pl` | achalandent |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | achalanderais |
-| `2sg` | achalanderais |
-| `3sg` | achalanderait |
-| `1pl` | achalanderions |
-| `2pl` | achalanderiez |
-| `3pl` | achalanderaient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais achalandé |
-| `2sg` | aurais achalandé |
-| `3sg` | aurait achalandé |
-| `1pl` | aurions achalandé |
-| `2pl` | auriez achalandé |
-| `3pl` | auraient achalandé |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | achalanderai |
-| `2sg` | achalanderas |
-| `3sg` | achalandera |
-| `1pl` | achalanderons |
-| `2pl` | achalanderez |
-| `3pl` | achalanderont |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai achalandé |
-| `2sg` | auras achalandé |
-| `3sg` | aura achalandé |
-| `1pl` | aurons achalandé |
-| `2pl` | aurez achalandé |
-| `3pl` | auront achalandé |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | achalandais |
-| `2sg` | achalandais |
-| `3sg` | achalandait |
-| `1pl` | achalandions |
-| `2pl` | achalandiez |
-| `3pl` | achalandaient |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | achalandai |
-| `2sg` | achalandas |
-| `3sg` | achalanda |
-| `1pl` | achalandâmes |
-| `2pl` | achalandâtes |
-| `3pl` | achalandèrent |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avais achalandé |
-| `2sg` | avais achalandé |
-| `3sg` | avait achalandé |
-| `1pl` | avions achalandé |
-| `2pl` | aviez  achalandé |
-| `3pl` | avaient achalandé |
-
-_…5 more tense/mood rows in the JSON corpus._
-
-#### `accélérer`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accélère |
-| `2sg` | accélères |
-| `3sg` | accélère |
-| `1pl` | accélérons |
-| `2pl` | accélérez |
-| `3pl` | accélèrent |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accélèrerais |
-| `2sg` | accélèrerais |
-| `3sg` | accélèrerait |
-| `1pl` | accélèrerions |
-| `2pl` | accélèreriez |
-| `3pl` | accélèreraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais accéléré |
-| `2sg` | aurais accéléré |
-| `3sg` | aurait accéléré |
-| `1pl` | aurions accéléré |
-| `2pl` | auriez accéléré |
-| `3pl` | auraient accéléré |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accélèrerai |
-| `2sg` | accélèreras |
-| `3sg` | accélèrera |
-| `1pl` | accélèrerons |
-| `2pl` | accélèrerez |
-| `3pl` | accélèreront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai accéléré |
-| `2sg` | auras accéléré |
-| `3sg` | aura accéléré |
-| `1pl` | aurons accéléré |
-| `2pl` | aurez accéléré |
-| `3pl` | auront accéléré |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accélérais |
-| `2sg` | accélérais |
-| `3sg` | accélérait |
-| `1pl` | accélérions |
-| `2pl` | accélériez |
-| `3pl` | accéléraient |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accélérai |
-| `2sg` | accéléras |
-| `3sg` | accéléra |
-| `1pl` | accélérâmes |
-| `2pl` | accélérâtes |
-| `3pl` | accélérèrent |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avais accéléré |
-| `2sg` | avais accéléré |
-| `3sg` | avait accéléré |
-| `1pl` | avions accéléré |
-| `2pl` | aviez  accéléré |
-| `3pl` | avaient accéléré |
-
-_…5 more tense/mood rows in the JSON corpus._
-
-## Ending: `-ir`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 449 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.future` | 450 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
-| `indicative.imperfect` | 447 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.past` | 381 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
-| `indicative.present` | 317 | `lcp` | -s | -s | -t | -ssons | -ssez | -ssent |
-| `indicative.preterite` | 17 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
-| `subjunctive.imperfect` | 378 | `lcp` | -isse | -isses | -ît | -issions | -issiez | -issent |
-| `subjunctive.present` | 376 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
-
-### Representative lemmas
-
-#### `venir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | viens |
-| `2sg` | viens |
-| `3sg` | vient |
-| `1pl` | venons |
-| `2pl` | venez |
-| `3pl` | viennent |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | viendrais |
-| `2sg` | viendrais |
-| `3sg` | viendrait |
-| `1pl` | viendrions |
-| `2pl` | viendriez |
-| `3pl` | viendraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | serais venu(e) |
-| `2sg` | serais venu(e) |
-| `3sg` | serait venu(e) |
-| `1pl` | serions venu(e)s |
-| `2pl` | seriez venu(e)(s) |
-| `3pl` | seraient venu(e)s |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | viendrai |
-| `2sg` | viendras |
-| `3sg` | viendra |
-| `1pl` | viendrons |
-| `2pl` | viendrez |
-| `3pl` | viendront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | serai venu(e) |
-| `2sg` | seras venu(e) |
-| `3sg` | sera venu(e) |
-| `1pl` | serons venu(e)s |
-| `2pl` | serez venu(e)(s) |
-| `3pl` | seront venu(e)s |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | venais |
-| `2sg` | venais |
-| `3sg` | venait |
-| `1pl` | venions |
-| `2pl` | veniez |
-| `3pl` | venaient |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vins |
-| `2sg` | vins |
-| `3sg` | vint |
-| `1pl` | vînmes |
-| `2pl` | vîntes |
-| `3pl` | vinrent |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | étais venu(e) |
-| `2sg` | étais venu(e) |
-| `3sg` | était venu(e) |
-| `1pl` | étions venu(e)s |
-| `2pl` | étiez venu(e)(s) |
-| `3pl` | étaient venu(e)s |
-
-_…5 more tense/mood rows in the JSON corpus._
-
-#### `finir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | finis |
-| `2sg` | finis |
-| `3sg` | finit |
-| `1pl` | finissons |
-| `2pl` | finissez |
-| `3pl` | finissent |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | finirais |
-| `2sg` | finirais |
-| `3sg` | finirait |
-| `1pl` | finirions |
-| `2pl` | finiriez |
-| `3pl` | finiraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais fini |
-| `2sg` | aurais fini |
-| `3sg` | aurait fini |
-| `1pl` | aurions fini |
-| `2pl` | auriez fini |
-| `3pl` | auraient fini |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | finirai |
-| `2sg` | finiras |
-| `3sg` | finira |
-| `1pl` | finirons |
-| `2pl` | finirez |
-| `3pl` | finiront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai fini |
-| `2sg` | auras fini |
-| `3sg` | aura fini |
-| `1pl` | aurons fini |
-| `2pl` | aurez fini |
-| `3pl` | auront fini |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | finissais |
-| `2sg` | finissais |
-| `3sg` | finissait |
-| `1pl` | finissions |
-| `2pl` | finissiez |
-| `3pl` | finissaient |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | finis |
-| `2sg` | finis |
-| `3sg` | finit |
-| `1pl` | finîmes |
-| `2pl` | finîtes |
-| `3pl` | finirent |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avais fini |
-| `2sg` | avais fini |
-| `3sg` | avait fini |
-| `1pl` | avions fini |
-| `2pl` | aviez  fini |
-| `3pl` | avaient fini |
-
-_…5 more tense/mood rows in the JSON corpus._
-
-#### `accueillir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accueille |
-| `2sg` | accueilles |
-| `3sg` | accueille |
-| `1pl` | accueillons |
-| `2pl` | accueillez |
-| `3pl` | accueillent |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accueillirais |
-| `2sg` | accueillirais |
-| `3sg` | accueillirait |
-| `1pl` | accueillirions |
-| `2pl` | accueilliriez |
-| `3pl` | accueilliraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais accueilli |
-| `2sg` | aurais accueilli |
-| `3sg` | aurait accueilli |
-| `1pl` | aurions accueilli |
-| `2pl` | auriez accueilli |
-| `3pl` | auraient accueilli |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accueillirai |
-| `2sg` | accueilliras |
-| `3sg` | accueillira |
-| `1pl` | accueillirons |
-| `2pl` | accueillirez |
-| `3pl` | accueilliront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai accueilli |
-| `2sg` | auras accueilli |
-| `3sg` | aura accueilli |
-| `1pl` | aurons accueilli |
-| `2pl` | aurez accueilli |
-| `3pl` | auront accueilli |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accueillais |
-| `2sg` | accueillais |
-| `3sg` | accueillait |
-| `1pl` | accueillions |
-| `2pl` | accueilliez |
-| `3pl` | accueillaient |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | accueillis |
-| `2sg` | accueillis |
-| `3sg` | accueillit |
-| `1pl` | accueillîmes |
-| `2pl` | accueillîtes |
-| `3pl` | accueillirent |
-
-##### `indicative.pluperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avais accueilli |
-| `2sg` | avais accueilli |
-| `3sg` | avait accueilli |
-| `1pl` | avions accueilli |
-| `2pl` | aviez  accueilli |
-| `3pl` | avaient accueilli |
-
-_…5 more tense/mood rows in the JSON corpus._
+| `aller` | 1 | 7 | 6 |
+| `avoir` | 1 | 7 | 6 |
+| `être` | 1 | 7 | 6 |
 
 ## Ending: `-re`
 
@@ -628,292 +38,287 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 300 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
 | `indicative.future` | 300 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
-| `indicative.imperfect` | 293 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.past` | 214 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
+| `indicative.imperfect` | 294 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
 | `indicative.present` | 52 | `lcp` | -s | -s | ∅ | -ons | -ez | -ent |
-| `indicative.preterite` | 5 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
-| `subjunctive.imperfect` | 215 | `lcp` | -isse | -isses | -ît | -issions | -issiez | -issent |
-| `subjunctive.present` | 268 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
+| `indicative.preterite` | 214 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
+| `subjunctive.imperfect` | 214 | `lcp` | -e | -es | -ît | -ions | -iez | -ent |
+| `subjunctive.present` | 269 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
 
 ### Representative lemmas
 
-#### `vendre`
+#### `absoudre`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vends |
-| `2sg` | vends |
-| `3sg` | vend |
-| `1pl` | vendons |
-| `2pl` | vendez |
-| `3pl` | vendent |
+| `1sg` | absous |
+| `2sg` | absous |
+| `3sg` | absout |
+| `1pl` | absolvons |
+| `2pl` | absolvez |
+| `3pl` | absolvent |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendrais |
-| `2sg` | vendrais |
-| `3sg` | vendrait |
-| `1pl` | vendrions |
-| `2pl` | vendriez |
-| `3pl` | vendraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais vendu |
-| `2sg` | aurais vendu |
-| `3sg` | aurait vendu |
-| `1pl` | aurions vendu |
-| `2pl` | auriez vendu |
-| `3pl` | auraient vendu |
+| `1sg` | absoudrais |
+| `2sg` | absoudrais |
+| `3sg` | absoudrait |
+| `1pl` | absoudrions |
+| `2pl` | absoudriez |
+| `3pl` | absoudraient |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendrai |
-| `2sg` | vendras |
-| `3sg` | vendra |
-| `1pl` | vendrons |
-| `2pl` | vendrez |
-| `3pl` | vendront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai vendu |
-| `2sg` | auras vendu |
-| `3sg` | aura vendu |
-| `1pl` | aurons vendu |
-| `2pl` | aurez vendu |
-| `3pl` | auront vendu |
+| `1sg` | absoudrai |
+| `2sg` | absoudras |
+| `3sg` | absoudra |
+| `1pl` | absoudrons |
+| `2pl` | absoudrez |
+| `3pl` | absoudront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vendais |
-| `2sg` | vendais |
-| `3sg` | vendait |
-| `1pl` | vendions |
-| `2pl` | vendiez |
-| `3pl` | vendaient |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vendis |
-| `2sg` | vendis |
-| `3sg` | vendit |
-| `1pl` | vendîmes |
-| `2pl` | vendîtes |
-| `3pl` | vendirent |
+| `1sg` | absolvais |
+| `2sg` | absolvais |
+| `3sg` | absolvait |
+| `1pl` | absolvions |
+| `2pl` | absolviez |
+| `3pl` | absolvaient |
 
 ##### `indicative.pluperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avais vendu |
-| `2sg` | avais vendu |
-| `3sg` | avait vendu |
-| `1pl` | avions vendu |
-| `2pl` | aviez  vendu |
-| `3pl` | avaient vendu |
+| `1sg` | absolu |
+| `2sg` | absolu |
+| `3sg` | absolu |
+| `1pl` | absolu |
+| `2pl` | absolu |
+| `3pl` | absolu |
 
-_…5 more tense/mood rows in the JSON corpus._
+##### `indicative.preterite`
 
-#### `faire`
+| Slot | Form |
+|---|---|
+| `1sg` | absolus |
+| `2sg` | absolus |
+| `3sg` | absolut |
+| `1pl` | absolûmes |
+| `2pl` | absolûtes |
+| `3pl` | absolurent |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | absolusse |
+| `2sg` | absolusses |
+| `3sg` | absolût |
+| `1pl` | absolussions |
+| `2pl` | absolussiez |
+| `3pl` | absolussent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | absolve |
+| `2sg` | absolves |
+| `3sg` | absolve |
+| `1pl` | absolvions |
+| `2pl` | absolviez |
+| `3pl` | absolvent |
+
+_…1 more tense/mood rows in the JSON corpus._
+
+#### `étreindre`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | fais |
-| `2sg` | fais |
-| `3sg` | fait |
-| `1pl` | faisons |
-| `2pl` | faites |
-| `3pl` | font |
+| `1sg` | étreins |
+| `2sg` | étreins |
+| `3sg` | étreint |
+| `1pl` | étreignons |
+| `2pl` | étreignez |
+| `3pl` | étreignent |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ferais |
-| `2sg` | ferais |
-| `3sg` | ferait |
-| `1pl` | ferions |
-| `2pl` | feriez |
-| `3pl` | feraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais fait |
-| `2sg` | aurais fait |
-| `3sg` | aurait fait |
-| `1pl` | aurions fait |
-| `2pl` | auriez fait |
-| `3pl` | auraient fait |
+| `1sg` | étreindrais |
+| `2sg` | étreindrais |
+| `3sg` | étreindrait |
+| `1pl` | étreindrions |
+| `2pl` | étreindriez |
+| `3pl` | étreindraient |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ferai |
-| `2sg` | feras |
-| `3sg` | fera |
-| `1pl` | ferons |
-| `2pl` | ferez |
-| `3pl` | feront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai fait |
-| `2sg` | auras fait |
-| `3sg` | aura fait |
-| `1pl` | aurons fait |
-| `2pl` | aurez fait |
-| `3pl` | auront fait |
+| `1sg` | étreindrai |
+| `2sg` | étreindras |
+| `3sg` | étreindra |
+| `1pl` | étreindrons |
+| `2pl` | étreindrez |
+| `3pl` | étreindront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | faisais |
-| `2sg` | faisais |
-| `3sg` | faisait |
-| `1pl` | faisions |
-| `2pl` | faisiez |
-| `3pl` | faisaient |
+| `1sg` | étreignais |
+| `2sg` | étreignais |
+| `3sg` | étreignait |
+| `1pl` | étreignions |
+| `2pl` | étreigniez |
+| `3pl` | étreignaient |
 
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fis |
-| `2sg` | fis |
-| `3sg` | fit |
-| `1pl` | fîmes |
-| `2pl` | fîtes |
-| `3pl` | firent |
-
-##### `indicative.pluperfect`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avais fait |
-| `2sg` | avais fait |
-| `3sg` | avait fait |
-| `1pl` | avions fait |
-| `2pl` | aviez  fait |
-| `3pl` | avaient fait |
+| `1sg` | étreignis |
+| `2sg` | étreignis |
+| `3sg` | étreignit |
+| `1pl` | étreignîmes |
+| `2pl` | étreignîtes |
+| `3pl` | étreignirent |
 
-_…5 more tense/mood rows in the JSON corpus._
+##### `subjunctive.imperfect`
 
-#### `dire`
+| Slot | Form |
+|---|---|
+| `1sg` | étreignisse |
+| `2sg` | étreignisses |
+| `3sg` | étreignît |
+| `1pl` | étreignissions |
+| `2pl` | étreignissiez |
+| `3pl` | étreignissent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étreigne |
+| `2sg` | étreignes |
+| `3sg` | étreigne |
+| `1pl` | étreignions |
+| `2pl` | étreigniez |
+| `3pl` | étreignent |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | étreins |
+| `3sg` | — |
+| `1pl` | étreignons |
+| `2pl` | étreignez |
+| `3pl` | — |
+
+#### `étendre`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | dis |
-| `2sg` | dis |
-| `3sg` | dit |
-| `1pl` | disons |
-| `2pl` | dites |
-| `3pl` | disent |
+| `1sg` | étends |
+| `2sg` | étends |
+| `3sg` | étend |
+| `1pl` | étendons |
+| `2pl` | étendez |
+| `3pl` | étendent |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | dirais |
-| `2sg` | dirais |
-| `3sg` | dirait |
-| `1pl` | dirions |
-| `2pl` | diriez |
-| `3pl` | diraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais dit |
-| `2sg` | aurais dit |
-| `3sg` | aurait dit |
-| `1pl` | aurions dit |
-| `2pl` | auriez dit |
-| `3pl` | auraient dit |
+| `1sg` | étendrais |
+| `2sg` | étendrais |
+| `3sg` | étendrait |
+| `1pl` | étendrions |
+| `2pl` | étendriez |
+| `3pl` | étendraient |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | dirai |
-| `2sg` | diras |
-| `3sg` | dira |
-| `1pl` | dirons |
-| `2pl` | direz |
-| `3pl` | diront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai dit |
-| `2sg` | auras dit |
-| `3sg` | aura dit |
-| `1pl` | aurons dit |
-| `2pl` | aurez dit |
-| `3pl` | auront dit |
+| `1sg` | étendrai |
+| `2sg` | étendras |
+| `3sg` | étendra |
+| `1pl` | étendrons |
+| `2pl` | étendrez |
+| `3pl` | étendront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | disais |
-| `2sg` | disais |
-| `3sg` | disait |
-| `1pl` | disions |
-| `2pl` | disiez |
-| `3pl` | disaient |
+| `1sg` | étendais |
+| `2sg` | étendais |
+| `3sg` | étendait |
+| `1pl` | étendions |
+| `2pl` | étendiez |
+| `3pl` | étendaient |
 
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | dis |
-| `2sg` | dis |
-| `3sg` | dit |
-| `1pl` | dîmes |
-| `2pl` | dîtes |
-| `3pl` | dirent |
-
-##### `indicative.pluperfect`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avais dit |
-| `2sg` | avais dit |
-| `3sg` | avait dit |
-| `1pl` | avions dit |
-| `2pl` | aviez  dit |
-| `3pl` | avaient dit |
+| `1sg` | étendis |
+| `2sg` | étendis |
+| `3sg` | étendit |
+| `1pl` | étendîmes |
+| `2pl` | étendîtes |
+| `3pl` | étendirent |
 
-_…5 more tense/mood rows in the JSON corpus._
+##### `subjunctive.imperfect`
 
-## Irregular: `aller`
+| Slot | Form |
+|---|---|
+| `1sg` | étendisse |
+| `2sg` | étendisses |
+| `3sg` | étendît |
+| `1pl` | étendissions |
+| `2pl` | étendissiez |
+| `3pl` | étendissent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étende |
+| `2sg` | étendes |
+| `3sg` | étende |
+| `1pl` | étendions |
+| `2pl` | étendiez |
+| `3pl` | étendent |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | étends |
+| `3sg` | — |
+| `1pl` | étendons |
+| `2pl` | étendez |
+| `3pl` | — |
+
+## Ending: `-er`
 
 ### Person-slot inventory
 
@@ -921,109 +326,287 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.future` | 1 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.past` | 1 | `lcp` | -ai | -as | -a | -âmes | -âtes | -èrent |
-| `indicative.preterite` | 1 | `lcp` | -ai | -as | -a | -âmes | -âtes | -èrent |
-| `subjunctive.imperfect` | 1 | `lcp` | -asse | -asses | -ât | -assions | -assiez | -assent |
-| `subjunctive.present` | 1 | `lcp` | -ille | -illes | -ille | -llions | -lliez | -illent |
+| `conditional` | 6460 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.future` | 6460 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
+| `indicative.imperfect` | 6141 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.present` | 5694 | `lcp` | -e | -es | -e | -ons | -ez | -ent |
+| `indicative.preterite` | 6141 | `lcp` | -ai | -as | -a | -âmes | -âtes | -èrent |
+| `subjunctive.imperfect` | 6459 | `lcp` | -asse | -asses | -ât | -assions | -assiez | -assent |
+| `subjunctive.present` | 5996 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
 
 ### Representative lemmas
 
-#### `aller`
+#### `œuvrer`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | vais |
-| `2sg` | vas |
-| `3sg` | va |
-| `1pl` | allons |
-| `2pl` | allez |
-| `3pl` | vont |
+| `1sg` | œuvre |
+| `2sg` | œuvres |
+| `3sg` | œuvre |
+| `1pl` | œuvrons |
+| `2pl` | œuvrez |
+| `3pl` | œuvrent |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | irais |
-| `2sg` | irais |
-| `3sg` | irait |
-| `1pl` | irions |
-| `2pl` | iriez |
-| `3pl` | iraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | serais allé(e) |
-| `2sg` | serais allé(e) |
-| `3sg` | serait allé(e) |
-| `1pl` | serions allé(e)s |
-| `2pl` | seriez allé(e)(s) |
-| `3pl` | seraient allé(e)s |
+| `1sg` | œuvrerais |
+| `2sg` | œuvrerais |
+| `3sg` | œuvrerait |
+| `1pl` | œuvrerions |
+| `2pl` | œuvreriez |
+| `3pl` | œuvreraient |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | irai |
-| `2sg` | iras |
-| `3sg` | ira |
-| `1pl` | irons |
-| `2pl` | irez |
-| `3pl` | iront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | serai allé(e) |
-| `2sg` | seras allé(e) |
-| `3sg` | sera allé(e) |
-| `1pl` | serons allé(e)s |
-| `2pl` | serez allé(e)(s) |
-| `3pl` | seront allé(e)s |
+| `1sg` | œuvrerai |
+| `2sg` | œuvreras |
+| `3sg` | œuvrera |
+| `1pl` | œuvrerons |
+| `2pl` | œuvrerez |
+| `3pl` | œuvreront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | allais |
-| `2sg` | allais |
-| `3sg` | allait |
-| `1pl` | allions |
-| `2pl` | alliez |
-| `3pl` | allaient |
+| `1sg` | œuvrais |
+| `2sg` | œuvrais |
+| `3sg` | œuvrait |
+| `1pl` | œuvrions |
+| `2pl` | œuvriez |
+| `3pl` | œuvraient |
 
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | allai |
-| `2sg` | allas |
-| `3sg` | alla |
-| `1pl` | allâmes |
-| `2pl` | allâtes |
-| `3pl` | allèrent |
-
-##### `indicative.pluperfect`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | étais allé(e) |
-| `2sg` | étais allé(e) |
-| `3sg` | était allé(e) |
-| `1pl` | étions allé(e)s |
-| `2pl` | étiez allé(e)(s) |
-| `3pl` | étaient allé(e)s |
+| `1sg` | œuvrai |
+| `2sg` | œuvras |
+| `3sg` | œuvra |
+| `1pl` | œuvrâmes |
+| `2pl` | œuvrâtes |
+| `3pl` | œuvrèrent |
 
-_…5 more tense/mood rows in the JSON corpus._
+##### `subjunctive.imperfect`
 
-## Irregular: `avoir`
+| Slot | Form |
+|---|---|
+| `1sg` | œuvrasse |
+| `2sg` | œuvrasses |
+| `3sg` | œuvrât |
+| `1pl` | œuvrassions |
+| `2pl` | œuvrassiez |
+| `3pl` | œuvrassent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œuvre |
+| `2sg` | œuvres |
+| `3sg` | œuvre |
+| `1pl` | œuvrions |
+| `2pl` | œuvriez |
+| `3pl` | œuvrent |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | œuvre |
+| `3sg` | — |
+| `1pl` | œuvrons |
+| `2pl` | œuvrez |
+| `3pl` | — |
+
+#### `œdipianiser`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œdipianise |
+| `2sg` | œdipianises |
+| `3sg` | œdipianise |
+| `1pl` | œdipianisons |
+| `2pl` | œdipianisez |
+| `3pl` | œdipianisent |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œdipianiserais |
+| `2sg` | œdipianiserais |
+| `3sg` | œdipianiserait |
+| `1pl` | œdipianiserions |
+| `2pl` | œdipianiseriez |
+| `3pl` | œdipianiseraient |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œdipianiserai |
+| `2sg` | œdipianiseras |
+| `3sg` | œdipianisera |
+| `1pl` | œdipianiserons |
+| `2pl` | œdipianiserez |
+| `3pl` | œdipianiseront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œdipianisais |
+| `2sg` | œdipianisais |
+| `3sg` | œdipianisait |
+| `1pl` | œdipianisions |
+| `2pl` | œdipianisiez |
+| `3pl` | œdipianisaient |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œdipianisai |
+| `2sg` | œdipianisas |
+| `3sg` | œdipianisa |
+| `1pl` | œdipianisâmes |
+| `2pl` | œdipianisâtes |
+| `3pl` | œdipianisèrent |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œdipianisasse |
+| `2sg` | œdipianisasses |
+| `3sg` | œdipianisât |
+| `1pl` | œdipianisassions |
+| `2pl` | œdipianisassiez |
+| `3pl` | œdipianisassent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œdipianise |
+| `2sg` | œdipianises |
+| `3sg` | œdipianise |
+| `1pl` | œdipianisions |
+| `2pl` | œdipianisiez |
+| `3pl` | œdipianisent |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | œdipianise |
+| `3sg` | — |
+| `1pl` | œdipianisons |
+| `2pl` | œdipianisez |
+| `3pl` | — |
+
+#### `œconomiser`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œconomise |
+| `2sg` | œconomises |
+| `3sg` | œconomise |
+| `1pl` | œconomisons |
+| `2pl` | œconomisez |
+| `3pl` | œconomisent |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œconomiserais |
+| `2sg` | œconomiserais |
+| `3sg` | œconomiserait |
+| `1pl` | œconomiserions |
+| `2pl` | œconomiseriez |
+| `3pl` | œconomiseraient |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œconomiserai |
+| `2sg` | œconomiseras |
+| `3sg` | œconomisera |
+| `1pl` | œconomiserons |
+| `2pl` | œconomiserez |
+| `3pl` | œconomiseront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œconomisais |
+| `2sg` | œconomisais |
+| `3sg` | œconomisait |
+| `1pl` | œconomisions |
+| `2pl` | œconomisiez |
+| `3pl` | œconomisaient |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œconomisai |
+| `2sg` | œconomisas |
+| `3sg` | œconomisa |
+| `1pl` | œconomisâmes |
+| `2pl` | œconomisâtes |
+| `3pl` | œconomisèrent |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œconomisasse |
+| `2sg` | œconomisasses |
+| `3sg` | œconomisât |
+| `1pl` | œconomisassions |
+| `2pl` | œconomisassiez |
+| `3pl` | œconomisassent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | œconomise |
+| `2sg` | œconomises |
+| `3sg` | œconomise |
+| `1pl` | œconomisions |
+| `2pl` | œconomisiez |
+| `3pl` | œconomisent |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | œconomise |
+| `3sg` | — |
+| `1pl` | œconomisons |
+| `2pl` | œconomisez |
+| `3pl` | — |
+
+## Ending: `-ir`
 
 ### Person-slot inventory
 
@@ -1031,217 +614,285 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.future` | 1 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.past` | 1 | `lcp` | -us | -us | -ut | -ûmes | -ûtes | -urent |
-| `indicative.preterite` | 1 | `lcp` | -us | -us | -ut | -ûmes | -ûtes | -urent |
-| `subjunctive.imperfect` | 1 | `lcp` | -usse | -usses | -ût | -ussions | -ussiez | -ussent |
-| `subjunctive.present` | 1 | `lcp` | -ie | -ies | -it | -yons | -yez | -ient |
+| `conditional` | 448 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.future` | 449 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
+| `indicative.imperfect` | 447 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.present` | 316 | `lcp` | -is | -is | -it | -ons | -ez | -ent |
+| `indicative.preterite` | 381 | `lcp` | -is | -is | -it | -îmes | -îtes | -irent |
+| `subjunctive.imperfect` | 376 | `lcp` | -e | -es | -ît | -ions | -iez | -ent |
+| `subjunctive.present` | 377 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
 
 ### Representative lemmas
 
-#### `avoir`
+#### `évanouir`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | ai |
-| `2sg` | as |
-| `3sg` | a |
-| `1pl` | avons |
-| `2pl` | avez |
-| `3pl` | ont |
+| `1sg` | m'évanouis |
+| `2sg` | t'évanouis |
+| `3sg` | s'évanouit |
+| `1pl` | nous évanouissons |
+| `2pl` | vous évanouissez |
+| `3pl` | s'évanouissent |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | aurais |
-| `2sg` | aurais |
-| `3sg` | aurait |
-| `1pl` | aurions |
-| `2pl` | auriez |
-| `3pl` | auraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais eu |
-| `2sg` | aurais eu |
-| `3sg` | aurait eu |
-| `1pl` | aurions eu |
-| `2pl` | auriez eu |
-| `3pl` | auraient eu |
+| `1sg` | m'évanouirais |
+| `2sg` | t'évanouirais |
+| `3sg` | s'évanouirait |
+| `1pl` | nous évanouirions |
+| `2pl` | vous évanouiriez |
+| `3pl` | s'évanouiraient |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | aurai |
-| `2sg` | auras |
-| `3sg` | aura |
-| `1pl` | aurons |
-| `2pl` | aurez |
-| `3pl` | auront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai eu |
-| `2sg` | auras eu |
-| `3sg` | aura eu |
-| `1pl` | aurons eu |
-| `2pl` | aurez eu |
-| `3pl` | auront eu |
+| `1sg` | m'évanouirai |
+| `2sg` | t'évanouiras |
+| `3sg` | s'évanouira |
+| `1pl` | nous évanouirons |
+| `2pl` | vous évanouirez |
+| `3pl` | s'évanouiront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avais |
-| `2sg` | avais |
-| `3sg` | avait |
-| `1pl` | avions |
-| `2pl` | aviez |
-| `3pl` | avaient |
+| `1sg` | m'évanouissais |
+| `2sg` | t'évanouissais |
+| `3sg` | s'évanouissait |
+| `1pl` | nous évanouissions |
+| `2pl` | vous évanouissiez |
+| `3pl` | s'évanouissaient |
 
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | eus |
-| `2sg` | eus |
-| `3sg` | eut |
-| `1pl` | eûmes |
-| `2pl` | eûtes |
-| `3pl` | eurent |
-
-##### `indicative.pluperfect`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avais eu |
-| `2sg` | avais eu |
-| `3sg` | avait eu |
-| `1pl` | avions eu |
-| `2pl` | aviez  eu |
-| `3pl` | avaient eu |
+| `1sg` | m'évanouis |
+| `2sg` | t'évanouis |
+| `3sg` | s'évanouit |
+| `1pl` | nous évanouîmes |
+| `2pl` | vous évanouîtes |
+| `3pl` | s'évanouirent |
 
-_…5 more tense/mood rows in the JSON corpus._
+##### `subjunctive.imperfect`
 
-## Irregular: `être`
+| Slot | Form |
+|---|---|
+| `1sg` | m'évanouisse |
+| `2sg` | t'évanouisses |
+| `3sg` | s'évanouît |
+| `1pl` | nous évanouissions |
+| `2pl` | vous évanouissiez |
+| `3pl` | s'évanouissent |
 
-### Person-slot inventory
+##### `subjunctive.present`
 
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+| Slot | Form |
+|---|---|
+| `1sg` | m'évanouisse |
+| `2sg` | t'évanouisses |
+| `3sg` | s'évanouisse |
+| `1pl` | nous évanouissions |
+| `2pl` | vous évanouissiez |
+| `3pl` | s'évanouissent |
 
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.future` | 1 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.past` | 1 | `lcp` | -us | -us | -ut | -ûmes | -ûtes | -urent |
-| `indicative.preterite` | 1 | `lcp` | -us | -us | -ut | -ûmes | -ûtes | -urent |
-| `subjunctive.imperfect` | 1 | `lcp` | -usse | -usses | -ût | -ussions | -ussiez | -ussent |
-| `subjunctive.present` | 1 | `lcp` | -is | -is | -it | -yons | -yez | -ient |
+##### `imperative`
 
-### Representative lemmas
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | évanouis-toi |
+| `3sg` | — |
+| `1pl` | évanouissons-nous |
+| `2pl` | évanouissez-vous |
+| `3pl` | — |
 
-#### `être`
+#### `étrécir`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | suis |
-| `2sg` | es |
-| `3sg` | est |
-| `1pl` | sommes |
-| `2pl` | êtes |
-| `3pl` | sont |
+| `1sg` | étrécis |
+| `2sg` | étrécis |
+| `3sg` | étrécit |
+| `1pl` | étrécissons |
+| `2pl` | étrécissez |
+| `3pl` | étrécissent |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | serais |
-| `2sg` | serais |
-| `3sg` | serait |
-| `1pl` | serions |
-| `2pl` | seriez |
-| `3pl` | seraient |
-
-##### `conditional.perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurais été |
-| `2sg` | aurais été |
-| `3sg` | aurait été |
-| `1pl` | aurions été |
-| `2pl` | auriez été |
-| `3pl` | auraient été |
+| `1sg` | étrécirais |
+| `2sg` | étrécirais |
+| `3sg` | étrécirait |
+| `1pl` | étrécirions |
+| `2pl` | étréciriez |
+| `3pl` | étréciraient |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | serai |
-| `2sg` | seras |
-| `3sg` | sera |
-| `1pl` | serons |
-| `2pl` | serez |
-| `3pl` | seront |
-
-##### `indicative.future-perfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aurai été |
-| `2sg` | auras été |
-| `3sg` | aura été |
-| `1pl` | aurons été |
-| `2pl` | aurez été |
-| `3pl` | auront été |
+| `1sg` | étrécirai |
+| `2sg` | étréciras |
+| `3sg` | étrécira |
+| `1pl` | étrécirons |
+| `2pl` | étrécirez |
+| `3pl` | étréciront |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | étais |
-| `2sg` | étais |
-| `3sg` | était |
-| `1pl` | étions |
-| `2pl` | étiez |
-| `3pl` | étaient |
+| `1sg` | étrécissais |
+| `2sg` | étrécissais |
+| `3sg` | étrécissait |
+| `1pl` | étrécissions |
+| `2pl` | étrécissiez |
+| `3pl` | étrécissaient |
 
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fus |
-| `2sg` | fus |
-| `3sg` | fut |
-| `1pl` | fûmes |
-| `2pl` | fûtes |
-| `3pl` | furent |
-
-##### `indicative.pluperfect`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | avais été |
-| `2sg` | avais été |
-| `3sg` | avait été |
-| `1pl` | avions été |
-| `2pl` | aviez  été |
-| `3pl` | avaient été |
+| `1sg` | étrécis |
+| `2sg` | étrécis |
+| `3sg` | étrécit |
+| `1pl` | étrécîmes |
+| `2pl` | étrécîtes |
+| `3pl` | étrécirent |
 
-_…5 more tense/mood rows in the JSON corpus._
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étrécisse |
+| `2sg` | étrécisses |
+| `3sg` | étrécît |
+| `1pl` | étrécissions |
+| `2pl` | étrécissiez |
+| `3pl` | étrécissent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étrécisse |
+| `2sg` | étrécisses |
+| `3sg` | étrécisse |
+| `1pl` | étrécissions |
+| `2pl` | étrécissiez |
+| `3pl` | étrécissent |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | étrécis |
+| `3sg` | — |
+| `1pl` | étrécissons |
+| `2pl` | étrécissez |
+| `3pl` | — |
+
+#### `étourdir`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étourdis |
+| `2sg` | étourdis |
+| `3sg` | étourdit |
+| `1pl` | étourdissons |
+| `2pl` | étourdissez |
+| `3pl` | étourdissent |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étourdirais |
+| `2sg` | étourdirais |
+| `3sg` | étourdirait |
+| `1pl` | étourdirions |
+| `2pl` | étourdiriez |
+| `3pl` | étourdiraient |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étourdirai |
+| `2sg` | étourdiras |
+| `3sg` | étourdira |
+| `1pl` | étourdirons |
+| `2pl` | étourdirez |
+| `3pl` | étourdiront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étourdissais |
+| `2sg` | étourdissais |
+| `3sg` | étourdissait |
+| `1pl` | étourdissions |
+| `2pl` | étourdissiez |
+| `3pl` | étourdissaient |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étourdis |
+| `2sg` | étourdis |
+| `3sg` | étourdit |
+| `1pl` | étourdîmes |
+| `2pl` | étourdîtes |
+| `3pl` | étourdirent |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étourdisse |
+| `2sg` | étourdisses |
+| `3sg` | étourdît |
+| `1pl` | étourdissions |
+| `2pl` | étourdissiez |
+| `3pl` | étourdissent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étourdisse |
+| `2sg` | étourdisses |
+| `3sg` | étourdisse |
+| `1pl` | étourdissions |
+| `2pl` | étourdissiez |
+| `3pl` | étourdissent |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | étourdis |
+| `3sg` | — |
+| `1pl` | étourdissons |
+| `2pl` | étourdissez |
+| `3pl` | — |
 
 ## `other`
 
@@ -1254,8 +905,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 6 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
 | `indicative.future` | 6 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
 | `indicative.imperfect` | 5 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
-| `indicative.past` | 5 | `lcp` | -s | -s | -t | -mes | -tes | -rent |
 | `indicative.present` | 4 | `lcp` | -s | -s | -t | -ssons | -ssez | -ssent |
+| `indicative.preterite` | 5 | `lcp` | -s | -s | -t | -mes | -tes | -rent |
 | `subjunctive.imperfect` | 5 | `lcp` | -sse | -sses | -t | -ssions | -ssiez | -ssent |
 | `subjunctive.present` | 5 | `lcp` | -e | -es | -e | -ions | -iez | -ent |
 
@@ -1307,7 +958,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | réouïssiez |
 | `3pl` | réouïssaient |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -1397,7 +1048,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | ouïssiez |
 | `3pl` | ouïssaient |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -1487,7 +1138,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | inouïssiez |
 | `3pl` | inouïssaient |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
@@ -1529,4 +1180,325 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `3sg` | — |
 | `1pl` | inouïssons |
 | `2pl` | inouïssez |
+| `3pl` | — |
+
+## Irregular: `aller`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.future` | 1 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.preterite` | 1 | `lcp` | -ai | -as | -a | -âmes | -âtes | -èrent |
+| `subjunctive.imperfect` | 1 | `lcp` | -asse | -asses | -ât | -assions | -assiez | -assent |
+| `subjunctive.present` | 1 | `lcp` | -ille | -illes | -ille | -llions | -lliez | -illent |
+
+### Representative lemmas
+
+#### `aller`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vais |
+| `2sg` | vas |
+| `3sg` | va |
+| `1pl` | allons |
+| `2pl` | allez |
+| `3pl` | vont |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | irais |
+| `2sg` | irais |
+| `3sg` | irait |
+| `1pl` | irions |
+| `2pl` | iriez |
+| `3pl` | iraient |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | irai |
+| `2sg` | iras |
+| `3sg` | ira |
+| `1pl` | irons |
+| `2pl` | irez |
+| `3pl` | iront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | allais |
+| `2sg` | allais |
+| `3sg` | allait |
+| `1pl` | allions |
+| `2pl` | alliez |
+| `3pl` | allaient |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | allai |
+| `2sg` | allas |
+| `3sg` | alla |
+| `1pl` | allâmes |
+| `2pl` | allâtes |
+| `3pl` | allèrent |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | allasse |
+| `2sg` | allasses |
+| `3sg` | allât |
+| `1pl` | allassions |
+| `2pl` | allassiez |
+| `3pl` | allassent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aille |
+| `2sg` | ailles |
+| `3sg` | aille |
+| `1pl` | allions |
+| `2pl` | alliez |
+| `3pl` | aillent |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | va |
+| `3sg` | — |
+| `1pl` | allons |
+| `2pl` | allez |
+| `3pl` | — |
+
+## Irregular: `avoir`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.future` | 1 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.preterite` | 1 | `lcp` | -us | -us | -ut | -ûmes | -ûtes | -urent |
+| `subjunctive.imperfect` | 1 | `lcp` | -usse | -usses | -ût | -ussions | -ussiez | -ussent |
+| `subjunctive.present` | 1 | `lcp` | -ie | -ies | -it | -yons | -yez | -ient |
+
+### Representative lemmas
+
+#### `avoir`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ai |
+| `2sg` | as |
+| `3sg` | a |
+| `1pl` | avons |
+| `2pl` | avez |
+| `3pl` | ont |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aurais |
+| `2sg` | aurais |
+| `3sg` | aurait |
+| `1pl` | aurions |
+| `2pl` | auriez |
+| `3pl` | auraient |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aurai |
+| `2sg` | auras |
+| `3sg` | aura |
+| `1pl` | aurons |
+| `2pl` | aurez |
+| `3pl` | auront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avais |
+| `2sg` | avais |
+| `3sg` | avait |
+| `1pl` | avions |
+| `2pl` | aviez |
+| `3pl` | avaient |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | eus |
+| `2sg` | eus |
+| `3sg` | eut |
+| `1pl` | eûmes |
+| `2pl` | eûtes |
+| `3pl` | eurent |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | eusse |
+| `2sg` | eusses |
+| `3sg` | eût |
+| `1pl` | eussions |
+| `2pl` | eussiez |
+| `3pl` | eussent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aie |
+| `2sg` | aies |
+| `3sg` | ait |
+| `1pl` | ayons |
+| `2pl` | ayez |
+| `3pl` | aient |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | aie |
+| `3sg` | — |
+| `1pl` | ayons |
+| `2pl` | ayez |
+| `3pl` | — |
+
+## Irregular: `être`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.future` | 1 | `lcp` | -ai | -as | -a | -ons | -ez | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -ais | -ais | -ait | -ions | -iez | -aient |
+| `indicative.preterite` | 1 | `lcp` | -us | -us | -ut | -ûmes | -ûtes | -urent |
+| `subjunctive.imperfect` | 1 | `lcp` | -usse | -usses | -ût | -ussions | -ussiez | -ussent |
+| `subjunctive.present` | 1 | `lcp` | -is | -is | -it | -yons | -yez | -ient |
+
+### Representative lemmas
+
+#### `être`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | suis |
+| `2sg` | es |
+| `3sg` | est |
+| `1pl` | sommes |
+| `2pl` | êtes |
+| `3pl` | sont |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | serais |
+| `2sg` | serais |
+| `3sg` | serait |
+| `1pl` | serions |
+| `2pl` | seriez |
+| `3pl` | seraient |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | serai |
+| `2sg` | seras |
+| `3sg` | sera |
+| `1pl` | serons |
+| `2pl` | serez |
+| `3pl` | seront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | étais |
+| `2sg` | étais |
+| `3sg` | était |
+| `1pl` | étions |
+| `2pl` | étiez |
+| `3pl` | étaient |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fus |
+| `2sg` | fus |
+| `3sg` | fut |
+| `1pl` | fûmes |
+| `2pl` | fûtes |
+| `3pl` | furent |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fusse |
+| `2sg` | fusses |
+| `3sg` | fût |
+| `1pl` | fussions |
+| `2pl` | fussiez |
+| `3pl` | fussent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | sois |
+| `2sg` | sois |
+| `3sg` | soit |
+| `1pl` | soyons |
+| `2pl` | soyez |
+| `3pl` | soient |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | sois |
+| `3sg` | — |
+| `1pl` | soyons |
+| `2pl` | soyez |
 | `3pl` | — |

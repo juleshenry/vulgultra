@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-fur.jsonl`, `fur_verbix.json`
-- Lemmas with forms: **302**
+- Lemmas with forms: **296**
 - Verb lemma entries: **380**
 - Inflected form records: **10937**
 - Separate form-of entries: **22**
-- Classified person-slot observations: **10531**
+- Classified person-slot observations: **9233**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,10 +18,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `-â` | 183 | 7 | 5 |
-| `other` | 72 | 7 | 5 |
-| `-î` | 33 | 7 | 5 |
-| `-ê` | 14 | 7 | 0 |
+| `-â` | 179 | 7 | 7 |
+| `other` | 72 | 7 | 7 |
+| `-î` | 31 | 7 | 7 |
+| `-ê` | 14 | 7 | 7 |
 
 ## Ending: `-â`
 
@@ -33,13 +33,107 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 47 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 46 | `lcp` | -ai | -aris | -à | -arin | -aris | -arin |
-| `indicative.present` | 45 | `lcp` | -i | -is | -e | -ìn | -ais | -in |
-| `subjunctive.imperfect` | 46 | `lcp` | -às | -assis | -às | -assin | -assis | -assin |
-| `subjunctive.present` | 45 | `lcp` | -i | -is | -i | -ìn | -ais | -in |
+| `conditional` | 148 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
+| `indicative.future` | 148 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
+| `indicative.imperfect` | 148 | `lcp` | -i | -is | -e | -in | -is | -in |
+| `indicative.present` | 131 | `lcp` | -i | -is | -e | -ìn | -ais | -in |
+| `indicative.preterite` | 145 | `lcp` | -ai | -aris | -à | -arin | -aris | -arin |
+| `subjunctive.imperfect` | 147 | `lcp` | -às | -assis | -às | -assin | -assis | -assin |
+| `subjunctive.present` | 131 | `lcp` | -i | -is | -i | -ìn | -ais | -in |
 
 ### Representative lemmas
+
+#### `armâ`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | armi |
+| `2sg` | armis |
+| `3sg` | arme |
+| `1pl` | armìn |
+| `2pl` | armais |
+| `3pl` | armin |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | armarès |
+| `2sg` | armaressis |
+| `3sg` | armarès |
+| `1pl` | armaressin |
+| `2pl` | armaressis |
+| `3pl` | armaressin |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | armarai |
+| `2sg` | armarâs |
+| `3sg` | armarà |
+| `1pl` | armarìn |
+| `2pl` | armarês |
+| `3pl` | armaran |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | armavi |
+| `2sg` | armavis |
+| `3sg` | armave |
+| `1pl` | armavin |
+| `2pl` | armavis |
+| `3pl` | armavin |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | armai |
+| `2sg` | armaris |
+| `3sg` | armà |
+| `1pl` | armarin |
+| `2pl` | armaris |
+| `3pl` | armarin |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | armàs |
+| `2sg` | armassis |
+| `3sg` | armàs |
+| `1pl` | armassin |
+| `2pl` | armassis |
+| `3pl` | armassin |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | armi |
+| `2sg` | armis |
+| `3sg` | armi |
+| `1pl` | armìn |
+| `2pl` | armais |
+| `3pl` | armin |
+
+##### `conditional.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | armarès |
+| `2sg` | armaressis |
+| `3sg` | — |
+| `1pl` | armaressin |
+| `2pl` | armaressis |
+| `3pl` | — |
+
+_…1 more tense/mood rows in the JSON corpus._
 
 #### `zurâ`
 
@@ -47,78 +141,78 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zuri |
-| `2sg` | tu zuris |
-| `3sg` | al |
-| `1pl` | o zurìn |
-| `2pl` | o zurais |
-| `3pl` | a zurin |
+| `1sg` | zuri |
+| `2sg` | zuris |
+| `3sg` | zure |
+| `1pl` | zurìn |
+| `2pl` | zurais |
+| `3pl` | zurin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zurarès |
-| `2sg` | tu zuraressis |
-| `3sg` | al |
-| `1pl` | o zuraressin |
-| `2pl` | o zuraressis |
-| `3pl` | a zuraressin |
+| `1sg` | zurarès |
+| `2sg` | zuraressis |
+| `3sg` | zurarès |
+| `1pl` | zuraressin |
+| `2pl` | zuraressis |
+| `3pl` | zuraressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zurarai |
-| `2sg` | tu zurarâs |
-| `3sg` | al |
-| `1pl` | o zurarìn |
-| `2pl` | o zurarês |
-| `3pl` | a zuraran |
+| `1sg` | zurarai |
+| `2sg` | zurarâs |
+| `3sg` | zurarà |
+| `1pl` | zurarìn |
+| `2pl` | zurarês |
+| `3pl` | zuraran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zuravi |
-| `2sg` | tu zuravis |
-| `3sg` | al |
-| `1pl` | o zuravin |
-| `2pl` | o zuravis |
-| `3pl` | a zuravin |
+| `1sg` | zuravi |
+| `2sg` | zuravis |
+| `3sg` | zurave |
+| `1pl` | zuravin |
+| `2pl` | zuravis |
+| `3pl` | zuravin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zurai |
-| `2sg` | tu zuraris |
-| `3sg` | al |
-| `1pl` | o zurarin |
-| `2pl` | o zuraris |
-| `3pl` | a zurarin |
+| `1sg` | zurai |
+| `2sg` | zuraris |
+| `3sg` | zurà |
+| `1pl` | zurarin |
+| `2pl` | zuraris |
+| `3pl` | zurarin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zuràs |
-| `2sg` | tu zurassis |
-| `3sg` | al |
-| `1pl` | o zurassin |
-| `2pl` | o zurassis |
-| `3pl` | a zurassin |
+| `1sg` | zuràs |
+| `2sg` | zurassis |
+| `3sg` | zuràs |
+| `1pl` | zurassin |
+| `2pl` | zurassis |
+| `3pl` | zurassin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zuri |
-| `2sg` | tu zuris |
-| `3sg` | al |
-| `1pl` | o zurìn |
-| `2pl` | o zurais |
-| `3pl` | a zurin |
+| `1sg` | zuri |
+| `2sg` | zuris |
+| `3sg` | zuri |
+| `1pl` | zurìn |
+| `2pl` | zurais |
+| `3pl` | zurin |
 
 ##### `imperative`
 
@@ -137,78 +231,78 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zuni |
-| `2sg` | tu zunis |
-| `3sg` | al |
-| `1pl` | o zunìn |
-| `2pl` | o zunais |
-| `3pl` | a zunin |
+| `1sg` | zuni |
+| `2sg` | zunis |
+| `3sg` | zune |
+| `1pl` | zunìn |
+| `2pl` | zunais |
+| `3pl` | zunin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zunarès |
-| `2sg` | tu zunaressis |
-| `3sg` | al |
-| `1pl` | o zunaressin |
-| `2pl` | o zunaressis |
-| `3pl` | a zunaressin |
+| `1sg` | zunarès |
+| `2sg` | zunaressis |
+| `3sg` | zunarès |
+| `1pl` | zunaressin |
+| `2pl` | zunaressis |
+| `3pl` | zunaressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zunarai |
-| `2sg` | tu zunarâs |
-| `3sg` | al |
-| `1pl` | o zunarìn |
-| `2pl` | o zunarês |
-| `3pl` | a zunaran |
+| `1sg` | zunarai |
+| `2sg` | zunarâs |
+| `3sg` | zunarà |
+| `1pl` | zunarìn |
+| `2pl` | zunarês |
+| `3pl` | zunaran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zunavi |
-| `2sg` | tu zunavis |
-| `3sg` | al |
-| `1pl` | o zunavin |
-| `2pl` | o zunavis |
-| `3pl` | a zunavin |
+| `1sg` | zunavi |
+| `2sg` | zunavis |
+| `3sg` | zunave |
+| `1pl` | zunavin |
+| `2pl` | zunavis |
+| `3pl` | zunavin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zunai |
-| `2sg` | tu zunaris |
-| `3sg` | al |
-| `1pl` | o zunarin |
-| `2pl` | o zunaris |
-| `3pl` | a zunarin |
+| `1sg` | zunai |
+| `2sg` | zunaris |
+| `3sg` | zunà |
+| `1pl` | zunarin |
+| `2pl` | zunaris |
+| `3pl` | zunarin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zunàs |
-| `2sg` | tu zunassis |
-| `3sg` | al |
-| `1pl` | o zunassin |
-| `2pl` | o zunassis |
-| `3pl` | a zunassin |
+| `1sg` | zunàs |
+| `2sg` | zunassis |
+| `3sg` | zunàs |
+| `1pl` | zunassin |
+| `2pl` | zunassis |
+| `3pl` | zunassin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o zuni |
-| `2sg` | tu zunis |
-| `3sg` | al |
-| `1pl` | o zunìn |
-| `2pl` | o zunais |
-| `3pl` | a zunin |
+| `1sg` | zuni |
+| `2sg` | zunis |
+| `3sg` | zuni |
+| `1pl` | zunìn |
+| `2pl` | zunais |
+| `3pl` | zunin |
 
 ##### `imperative`
 
@@ -221,96 +315,6 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | zunait |
 | `3pl` | — |
 
-#### `zontâ`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | o zonti |
-| `2sg` | tu zontis |
-| `3sg` | al |
-| `1pl` | o zontìn |
-| `2pl` | o zontais |
-| `3pl` | a zontin |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | o zontarès |
-| `2sg` | tu zontaressis |
-| `3sg` | al |
-| `1pl` | o zontaressin |
-| `2pl` | o zontaressis |
-| `3pl` | a zontaressin |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | o zontarai |
-| `2sg` | tu zontarâs |
-| `3sg` | al |
-| `1pl` | o zontarìn |
-| `2pl` | o zontarês |
-| `3pl` | a zontaran |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | o zontavi |
-| `2sg` | tu zontavis |
-| `3sg` | al |
-| `1pl` | o zontavin |
-| `2pl` | o zontavis |
-| `3pl` | a zontavin |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | o zontai |
-| `2sg` | tu zontaris |
-| `3sg` | al |
-| `1pl` | o zontarin |
-| `2pl` | o zontaris |
-| `3pl` | a zontarin |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | o zontàs |
-| `2sg` | tu zontassis |
-| `3sg` | al |
-| `1pl` | o zontassin |
-| `2pl` | o zontassis |
-| `3pl` | a zontassin |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | o zonti |
-| `2sg` | tu zontis |
-| `3sg` | al |
-| `1pl` | o zontìn |
-| `2pl` | o zontais |
-| `3pl` | a zontin |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | zonte |
-| `3sg` | — |
-| `1pl` | zontìn |
-| `2pl` | zontait |
-| `3pl` | — |
-
 ## `other`
 
 Template stem args observed: `scriv`, `vi`.
@@ -321,11 +325,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 15 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 13 | `lcp` | -ei | -eris | -è | -erin | -eris | -erin |
-| `indicative.present` | 3 | `lcp` | ∅ | -is | ∅ | -ìn | -ês | -in |
-| `subjunctive.imperfect` | 13 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
-| `subjunctive.present` | 13 | `lcp` | -i | -is | -i | -ìn | -ês | -in |
+| `conditional` | 25 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
+| `indicative.future` | 25 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
+| `indicative.imperfect` | 25 | `lcp` | -i | -is | -e | -in | -is | -in |
+| `indicative.present` | 16 | `lcp` | ∅ | -is | ∅ | -ìn | -ês | -in |
+| `indicative.preterite` | 25 | `lcp` | -ei | -eris | -è | -erin | -eris | -erin |
+| `subjunctive.imperfect` | 25 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
+| `subjunctive.present` | 25 | `lcp` | -i | -is | -i | -ìn | -ês | -in |
 
 ### Representative lemmas
 
@@ -335,78 +341,78 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | jes |
-| `2sg` | jessis |
-| `3sg` | jes |
-| `1pl` | jessìn |
-| `2pl` | jessîs |
-| `3pl` | jessin |
+| `1sg` | soi |
+| `2sg` | sês |
+| `3sg` | è |
+| `1pl` | sin |
+| `2pl` | sês |
+| `3pl` | ses |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o sarès |
-| `2sg` | tu saressis |
-| `3sg` | al |
-| `1pl` | o saressin |
-| `2pl` | o saressis |
-| `3pl` | a saressin |
+| `1sg` | sarès |
+| `2sg` | saressis |
+| `3sg` | sarès |
+| `1pl` | saressin |
+| `2pl` | saressis |
+| `3pl` | saressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | jessirai |
-| `2sg` | jessirâs |
-| `3sg` | jessirà |
-| `1pl` | jessirìn |
-| `2pl` | jessirês |
-| `3pl` | jessiran |
+| `1sg` | sarai |
+| `2sg` | sarâs |
+| `3sg` | sarà |
+| `1pl` | sarìn |
+| `2pl` | sarês |
+| `3pl` | saran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | jessii |
-| `2sg` | jessiris |
-| `3sg` | jessì |
-| `1pl` | jessirin |
-| `2pl` | jessiris |
-| `3pl` | jessirin |
+| `1sg` | jeri |
+| `2sg` | jeris |
+| `3sg` | jere |
+| `1pl` | jerin |
+| `2pl` | jeris |
+| `3pl` | jerin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o foi |
-| `2sg` | tu foris |
-| `3sg` | al |
-| `1pl` | o forin |
-| `2pl` | o foris |
-| `3pl` | a forin |
+| `1sg` | foi |
+| `2sg` | foris |
+| `3sg` | fo |
+| `1pl` | forin |
+| `2pl` | foris |
+| `3pl` | forin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | jessìs |
-| `2sg` | jessissis |
-| `3sg` | jessìs |
-| `1pl` | jessissin |
-| `2pl` | jessissis |
-| `3pl` | jessissin |
+| `1sg` | fos |
+| `2sg` | fossis |
+| `3sg` | fos |
+| `1pl` | fossin |
+| `2pl` | fossis |
+| `3pl` | fossin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | jessi |
-| `2sg` | jessis |
-| `3sg` | jessi |
-| `1pl` | jessìn |
-| `2pl` | jessîs |
-| `3pl` | jessin |
+| `1sg` | sedi |
+| `2sg` | sedis |
+| `3sg` | sedi |
+| `1pl` | sedin |
+| `2pl` | sedis |
+| `3pl` | sedin |
 
 ##### `conditional.present`
 
@@ -427,78 +433,78 @@ _…1 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | o viv |
-| `2sg` | tu vivis |
-| `3sg` | al |
-| `1pl` | o vivìn |
-| `2pl` | o vivês |
-| `3pl` | a vivin |
+| `1sg` | viv |
+| `2sg` | vivis |
+| `3sg` | viv |
+| `1pl` | vivìn |
+| `2pl` | vivês |
+| `3pl` | vivin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vivarès |
-| `2sg` | tu vivaressis |
-| `3sg` | al |
-| `1pl` | o vivaressin |
-| `2pl` | o vivaressis |
-| `3pl` | a vivaressin |
+| `1sg` | vivarès |
+| `2sg` | vivaressis |
+| `3sg` | vivarès |
+| `1pl` | vivaressin |
+| `2pl` | vivaressis |
+| `3pl` | vivaressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vivarai |
-| `2sg` | tu vivarâs |
-| `3sg` | al |
-| `1pl` | o vivarìn |
-| `2pl` | o vivarês |
-| `3pl` | a vivaran |
+| `1sg` | vivarai |
+| `2sg` | vivarâs |
+| `3sg` | vivarà |
+| `1pl` | vivarìn |
+| `2pl` | vivarês |
+| `3pl` | vivaran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vivevi |
-| `2sg` | tu vivevis |
-| `3sg` | al |
-| `1pl` | o vivevin |
-| `2pl` | o vivevis |
-| `3pl` | a vivevin |
+| `1sg` | vivevi |
+| `2sg` | vivevis |
+| `3sg` | viveve |
+| `1pl` | vivevin |
+| `2pl` | vivevis |
+| `3pl` | vivevin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vivei |
-| `2sg` | tu viveris |
-| `3sg` | al |
-| `1pl` | o viverin |
-| `2pl` | o viveris |
-| `3pl` | a viverin |
+| `1sg` | vivei |
+| `2sg` | viveris |
+| `3sg` | vivè |
+| `1pl` | viverin |
+| `2pl` | viveris |
+| `3pl` | viverin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vivès |
-| `2sg` | tu vivessis |
-| `3sg` | al |
-| `1pl` | o vivessin |
-| `2pl` | o vivessis |
-| `3pl` | a vivessin |
+| `1sg` | vivès |
+| `2sg` | vivessis |
+| `3sg` | vivès |
+| `1pl` | vivessin |
+| `2pl` | vivessis |
+| `3pl` | vivessin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vivi |
-| `2sg` | tu vivis |
-| `3sg` | al |
-| `1pl` | o vivìn |
-| `2pl` | o vivês |
-| `3pl` | a vivin |
+| `1sg` | vivi |
+| `2sg` | vivis |
+| `3sg` | vivi |
+| `1pl` | vivìn |
+| `2pl` | vivês |
+| `3pl` | vivin |
 
 ##### `imperative`
 
@@ -519,78 +525,78 @@ Stem: `vi`.
 
 | Slot | Form |
 |---|---|
-| `1sg` | o viod |
-| `2sg` | tu viodis |
-| `3sg` | al |
-| `1pl` | o viodìn |
-| `2pl` | o viodês |
-| `3pl` | a viodin |
+| `1sg` | viod |
+| `2sg` | viodis |
+| `3sg` | viod |
+| `1pl` | viodìn |
+| `2pl` | viodês |
+| `3pl` | viodin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o viodarès |
-| `2sg` | tu viodaressis |
-| `3sg` | al |
-| `1pl` | o viodaressin |
-| `2pl` | o viodaressis |
-| `3pl` | a viodaressin |
+| `1sg` | viodarès |
+| `2sg` | viodaressis |
+| `3sg` | viodarès |
+| `1pl` | viodaressin |
+| `2pl` | viodaressis |
+| `3pl` | viodaressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o viodarai |
-| `2sg` | tu viodarâs |
-| `3sg` | al |
-| `1pl` | o viodarìn |
-| `2pl` | o viodarês |
-| `3pl` | a viodaran |
+| `1sg` | viodarai |
+| `2sg` | viodarâs |
+| `3sg` | viodarà |
+| `1pl` | viodarìn |
+| `2pl` | viodarês |
+| `3pl` | viodaran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o viodevi |
-| `2sg` | tu viodevis |
-| `3sg` | al |
-| `1pl` | o viodevin |
-| `2pl` | o viodevis |
-| `3pl` | a viodevin |
+| `1sg` | viodevi |
+| `2sg` | viodevis |
+| `3sg` | viodeve |
+| `1pl` | viodevin |
+| `2pl` | viodevis |
+| `3pl` | viodevin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o viodei |
-| `2sg` | tu vioderis |
-| `3sg` | al |
-| `1pl` | o vioderin |
-| `2pl` | o vioderis |
-| `3pl` | a vioderin |
+| `1sg` | viodei |
+| `2sg` | vioderis |
+| `3sg` | viodè |
+| `1pl` | vioderin |
+| `2pl` | vioderis |
+| `3pl` | vioderin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o viodès |
-| `2sg` | tu viodessis |
-| `3sg` | al |
-| `1pl` | o viodessin |
-| `2pl` | o viodessis |
-| `3pl` | a viodessin |
+| `1sg` | viodès |
+| `2sg` | viodessis |
+| `3sg` | viodès |
+| `1pl` | viodessin |
+| `2pl` | viodessis |
+| `3pl` | viodessin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o viodi |
-| `2sg` | tu viodis |
-| `3sg` | al |
-| `1pl` | o viodìn |
-| `2pl` | o viodês |
-| `3pl` | a viodin |
+| `1sg` | viodi |
+| `2sg` | viodis |
+| `3sg` | viodi |
+| `1pl` | viodìn |
+| `2pl` | viodês |
+| `3pl` | viodin |
 
 ##### `imperative`
 
@@ -611,11 +617,13 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 8 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
-| `indicative.imperfect` | 7 | `lcp` | -ii | -iris | -ì | -irin | -iris | -irin |
-| `indicative.present` | 5 | `lcp` | -ìs | -issis | -ìs | -ìn | -îs | -issin |
-| `subjunctive.imperfect` | 7 | `lcp` | -ìs | -issis | -ìs | -issin | -issis | -issin |
-| `subjunctive.present` | 5 | `lcp` | -issi | -issis | -issi | -ìn | -issis | -issin |
+| `conditional` | 20 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
+| `indicative.future` | 21 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
+| `indicative.imperfect` | 20 | `lcp` | -i | -is | -e | -in | -is | -in |
+| `indicative.present` | 15 | `lcp` | -ìs | -is | -ìs | -in | -ìs | -in |
+| `indicative.preterite` | 19 | `lcp` | -ii | -iris | -ì | -irin | -iris | -irin |
+| `subjunctive.imperfect` | 19 | `lcp` | -ìs | -is | -ìs | -in | -is | -in |
+| `subjunctive.present` | 15 | `lcp` | -i | -is | -i | -ìn | -îs | -in |
 
 ### Representative lemmas
 
@@ -625,78 +633,78 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vistìs |
-| `2sg` | tu vistissis |
-| `3sg` | al |
-| `1pl` | o vistin |
-| `2pl` | o vistìs |
-| `3pl` | a vistissin |
+| `1sg` | vistìs |
+| `2sg` | vistissis |
+| `3sg` | vistìs |
+| `1pl` | vistin |
+| `2pl` | vistìs |
+| `3pl` | vistissin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vistirès |
-| `2sg` | tu vistiressis |
-| `3sg` | al |
-| `1pl` | o vistiressin |
-| `2pl` | o vistiressis |
-| `3pl` | a vistiressin |
+| `1sg` | vistirès |
+| `2sg` | vistiressis |
+| `3sg` | vistirès |
+| `1pl` | vistiressin |
+| `2pl` | vistiressis |
+| `3pl` | vistiressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vistirai |
-| `2sg` | tu vistirâs |
-| `3sg` | al |
-| `1pl` | o vistirìn |
-| `2pl` | o vistirês |
-| `3pl` | a vistiran |
+| `1sg` | vistirai |
+| `2sg` | vistirâs |
+| `3sg` | vistirà |
+| `1pl` | vistirìn |
+| `2pl` | vistirês |
+| `3pl` | vistiran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vistivi |
-| `2sg` | tu vistivis |
-| `3sg` | al |
-| `1pl` | o vistivin |
-| `2pl` | o vistivis |
-| `3pl` | a vistivin |
+| `1sg` | vistivi |
+| `2sg` | vistivis |
+| `3sg` | vistive |
+| `1pl` | vistivin |
+| `2pl` | vistivis |
+| `3pl` | vistivin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vistii |
-| `2sg` | tu vistiris |
-| `3sg` | al |
-| `1pl` | o vistirin |
-| `2pl` | o vistiris |
-| `3pl` | a vistirin |
+| `1sg` | vistii |
+| `2sg` | vistiris |
+| `3sg` | vistì |
+| `1pl` | vistirin |
+| `2pl` | vistiris |
+| `3pl` | vistirin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vistìs |
-| `2sg` | tu vistissis |
-| `3sg` | al |
-| `1pl` | o vistissin |
-| `2pl` | o vistissis |
-| `3pl` | a vistissin |
+| `1sg` | vistìs |
+| `2sg` | vistissis |
+| `3sg` | vistìs |
+| `1pl` | vistissin |
+| `2pl` | vistissis |
+| `3pl` | vistissin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vistissi |
-| `2sg` | tu vistissis |
-| `3sg` | al |
-| `1pl` | o vistìn |
-| `2pl` | o vistîs |
-| `3pl` | a vistissin |
+| `1sg` | vistissi |
+| `2sg` | vistissis |
+| `3sg` | vistissi |
+| `1pl` | vistìn |
+| `2pl` | vistîs |
+| `3pl` | vistissin |
 
 ##### `imperative`
 
@@ -715,78 +723,78 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | o urdìs |
-| `2sg` | tu urdissis |
-| `3sg` | al |
-| `1pl` | o urdin |
-| `2pl` | o urdìs |
-| `3pl` | a urdissin |
+| `1sg` | urdìs |
+| `2sg` | urdissis |
+| `3sg` | urdìs |
+| `1pl` | urdin |
+| `2pl` | urdìs |
+| `3pl` | urdissin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o urdirès |
-| `2sg` | tu urdiressis |
-| `3sg` | al |
-| `1pl` | o urdiressin |
-| `2pl` | o urdiressis |
-| `3pl` | a urdiressin |
+| `1sg` | urdirès |
+| `2sg` | urdiressis |
+| `3sg` | urdirès |
+| `1pl` | urdiressin |
+| `2pl` | urdiressis |
+| `3pl` | urdiressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o urdirai |
-| `2sg` | tu urdirâs |
-| `3sg` | al |
-| `1pl` | o urdirìn |
-| `2pl` | o urdirês |
-| `3pl` | a urdiran |
+| `1sg` | urdirai |
+| `2sg` | urdirâs |
+| `3sg` | urdirà |
+| `1pl` | urdirìn |
+| `2pl` | urdirês |
+| `3pl` | urdiran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o urdivi |
-| `2sg` | tu urdivis |
-| `3sg` | al |
-| `1pl` | o urdivin |
-| `2pl` | o urdivis |
-| `3pl` | a urdivin |
+| `1sg` | urdivi |
+| `2sg` | urdivis |
+| `3sg` | urdive |
+| `1pl` | urdivin |
+| `2pl` | urdivis |
+| `3pl` | urdivin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o urdii |
-| `2sg` | tu urdiris |
-| `3sg` | al |
-| `1pl` | o urdirin |
-| `2pl` | o urdiris |
-| `3pl` | a urdirin |
+| `1sg` | urdii |
+| `2sg` | urdiris |
+| `3sg` | urdì |
+| `1pl` | urdirin |
+| `2pl` | urdiris |
+| `3pl` | urdirin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o urdìs |
-| `2sg` | tu urdissis |
-| `3sg` | al |
-| `1pl` | o urdissin |
-| `2pl` | o urdissis |
-| `3pl` | a urdissin |
+| `1sg` | urdìs |
+| `2sg` | urdissis |
+| `3sg` | urdìs |
+| `1pl` | urdissin |
+| `2pl` | urdissis |
+| `3pl` | urdissin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o urdissi |
-| `2sg` | tu urdissis |
-| `3sg` | al |
-| `1pl` | o urdìn |
-| `2pl` | o urdîs |
-| `3pl` | a urdissin |
+| `1sg` | urdissi |
+| `2sg` | urdissis |
+| `3sg` | urdissi |
+| `1pl` | urdìn |
+| `2pl` | urdîs |
+| `3pl` | urdissin |
 
 ##### `imperative`
 
@@ -805,78 +813,78 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | o unìs |
-| `2sg` | tu unissis |
-| `3sg` | al |
-| `1pl` | o unin |
-| `2pl` | o unìs |
-| `3pl` | a unissin |
+| `1sg` | unìs |
+| `2sg` | unissis |
+| `3sg` | unìs |
+| `1pl` | unin |
+| `2pl` | unìs |
+| `3pl` | unissin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o unirès |
-| `2sg` | tu uniressis |
-| `3sg` | al |
-| `1pl` | o uniressin |
-| `2pl` | o uniressis |
-| `3pl` | a uniressin |
+| `1sg` | unirès |
+| `2sg` | uniressis |
+| `3sg` | unirès |
+| `1pl` | uniressin |
+| `2pl` | uniressis |
+| `3pl` | uniressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o unirai |
-| `2sg` | tu unirâs |
-| `3sg` | al |
-| `1pl` | o unirìn |
-| `2pl` | o unirês |
-| `3pl` | a uniran |
+| `1sg` | unirai |
+| `2sg` | unirâs |
+| `3sg` | unirà |
+| `1pl` | unirìn |
+| `2pl` | unirês |
+| `3pl` | uniran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o univi |
-| `2sg` | tu univis |
-| `3sg` | al |
-| `1pl` | o univin |
-| `2pl` | o univis |
-| `3pl` | a univin |
+| `1sg` | univi |
+| `2sg` | univis |
+| `3sg` | unive |
+| `1pl` | univin |
+| `2pl` | univis |
+| `3pl` | univin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o unii |
-| `2sg` | tu uniris |
-| `3sg` | al |
-| `1pl` | o unirin |
-| `2pl` | o uniris |
-| `3pl` | a unirin |
+| `1sg` | unii |
+| `2sg` | uniris |
+| `3sg` | unì |
+| `1pl` | unirin |
+| `2pl` | uniris |
+| `3pl` | unirin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o unìs |
-| `2sg` | tu unissis |
-| `3sg` | al |
-| `1pl` | o unissin |
-| `2pl` | o unissis |
-| `3pl` | a unissin |
+| `1sg` | unìs |
+| `2sg` | unissis |
+| `3sg` | unìs |
+| `1pl` | unissin |
+| `2pl` | unissis |
+| `3pl` | unissin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o unissi |
-| `2sg` | tu unissis |
-| `3sg` | al |
-| `1pl` | o unìn |
-| `2pl` | o unîs |
-| `3pl` | a unissin |
+| `1sg` | unissi |
+| `2sg` | unissis |
+| `3sg` | unissi |
+| `1pl` | unìn |
+| `2pl` | unîs |
+| `3pl` | unissin |
 
 ##### `imperative`
 
@@ -893,7 +901,17 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 8 | `lcp` | -ès | -essis | -ès | -essin | -essis | -essin |
+| `indicative.future` | 8 | `lcp` | -ai | -âs | -à | -ìn | -ês | -an |
+| `indicative.imperfect` | 2 | `lcp` | -i | -is | -e | -in | -is | -in |
+| `indicative.present` | 2 | `lcp` | -âs | -asis | -âs | -asìn | -asês | -asin |
+| `indicative.preterite` | 7 | `lcp` | -ei | -eris | -è | -erin | -eris | -erin |
+| `subjunctive.imperfect` | 2 | `lcp` | -asès | -asessis | -âsès | -asessin | -asessis | -asessin |
+| `subjunctive.present` | 8 | `lcp` | -i | -is | -i | -ìn | -ês | -in |
 
 ### Representative lemmas
 
@@ -908,18 +926,18 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `3sg` | à |
 | `1pl` | vin |
 | `2pl` | vês |
-| `3pl` | àn |
+| `3pl` | an |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o varès |
-| `2sg` | tu varessis |
-| `3sg` | al |
-| `1pl` | o varessin |
-| `2pl` | o varessis |
-| `3pl` | a varessin |
+| `1sg` | varès |
+| `2sg` | varessis |
+| `3sg` | varès |
+| `1pl` | varessin |
+| `2pl` | varessis |
+| `3pl` | varessin |
 
 ##### `indicative.future`
 
@@ -936,23 +954,23 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
+| `1sg` | vevi |
+| `2sg` | vevis |
+| `3sg` | veve |
+| `1pl` | vevin |
+| `2pl` | vevis |
+| `3pl` | vevin |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
 | `1sg` | vei |
 | `2sg` | veris |
 | `3sg` | ve |
 | `1pl` | verin |
 | `2pl` | veris |
 | `3pl` | verin |
-
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | o vei |
-| `2sg` | tu veris |
-| `3sg` | al |
-| `1pl` | o verin |
-| `2pl` | o veris |
-| `3pl` | a verin |
 
 ##### `subjunctive.imperfect`
 
@@ -969,12 +987,12 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | vebi |
-| `2sg` | vebis |
-| `3sg` | vebi |
-| `1pl` | vebin |
-| `2pl` | vebis |
-| `3pl` | vebin |
+| `1sg` | vedi |
+| `2sg` | vedis |
+| `3sg` | vedi |
+| `1pl` | vedìn |
+| `2pl` | vedês |
+| `3pl` | vedin |
 
 ##### `imperative`
 
@@ -993,78 +1011,78 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vâl |
-| `2sg` | tu valis |
-| `3sg` | al |
-| `1pl` | o valìn |
-| `2pl` | o valês |
-| `3pl` | a valin |
+| `1sg` | vâl |
+| `2sg` | valis |
+| `3sg` | vâl |
+| `1pl` | valìn |
+| `2pl` | valês |
+| `3pl` | valin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o valarès |
-| `2sg` | tu valaressis |
-| `3sg` | al |
-| `1pl` | o valaressin |
-| `2pl` | o valaressis |
-| `3pl` | a valaressin |
+| `1sg` | valarès |
+| `2sg` | valaressis |
+| `3sg` | valarès |
+| `1pl` | valaressin |
+| `2pl` | valaressis |
+| `3pl` | valaressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o valarai |
-| `2sg` | tu valarâs |
-| `3sg` | al |
-| `1pl` | o valarìn |
-| `2pl` | o valarês |
-| `3pl` | a valaran |
+| `1sg` | valarai |
+| `2sg` | valarâs |
+| `3sg` | valarà |
+| `1pl` | valarìn |
+| `2pl` | valarês |
+| `3pl` | valaran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o valevi |
-| `2sg` | tu valevis |
-| `3sg` | al |
-| `1pl` | o valevin |
-| `2pl` | o valevis |
-| `3pl` | a valevin |
+| `1sg` | valevi |
+| `2sg` | valevis |
+| `3sg` | vâleve |
+| `1pl` | valevin |
+| `2pl` | valevis |
+| `3pl` | valevin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o valei |
-| `2sg` | tu valeris |
-| `3sg` | al |
-| `1pl` | o valerin |
-| `2pl` | o valeris |
-| `3pl` | a valerin |
+| `1sg` | valei |
+| `2sg` | valeris |
+| `3sg` | valè |
+| `1pl` | valerin |
+| `2pl` | valeris |
+| `3pl` | valerin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o valès |
-| `2sg` | tu valessis |
-| `3sg` | al |
-| `1pl` | o valessin |
-| `2pl` | o valessis |
-| `3pl` | a valessin |
+| `1sg` | valès |
+| `2sg` | valessis |
+| `3sg` | vâlès |
+| `1pl` | valessin |
+| `2pl` | valessis |
+| `3pl` | valessin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o vali |
-| `2sg` | tu valis |
-| `3sg` | al |
-| `1pl` | o valìn |
-| `2pl` | o valês |
-| `3pl` | a valin |
+| `1sg` | vali |
+| `2sg` | valis |
+| `3sg` | vali |
+| `1pl` | valìn |
+| `2pl` | valês |
+| `3pl` | valin |
 
 ##### `imperative`
 
@@ -1083,78 +1101,78 @@ No majority ending pattern with enough complete six-slot rows yet.
 
 | Slot | Form |
 |---|---|
-| `1sg` | o tem |
-| `2sg` | tu temis |
-| `3sg` | al |
-| `1pl` | o temìn |
-| `2pl` | o temês |
-| `3pl` | a temin |
+| `1sg` | tem |
+| `2sg` | temis |
+| `3sg` | tem |
+| `1pl` | temìn |
+| `2pl` | temês |
+| `3pl` | temin |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o temarès |
-| `2sg` | tu temaressis |
-| `3sg` | al |
-| `1pl` | o temaressin |
-| `2pl` | o temaressis |
-| `3pl` | a temaressin |
+| `1sg` | temarès |
+| `2sg` | temaressis |
+| `3sg` | temarès |
+| `1pl` | temaressin |
+| `2pl` | temaressis |
+| `3pl` | temaressin |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o temarai |
-| `2sg` | tu temarâs |
-| `3sg` | al |
-| `1pl` | o temarìn |
-| `2pl` | o temarês |
-| `3pl` | a temaran |
+| `1sg` | temarai |
+| `2sg` | temarâs |
+| `3sg` | temarà |
+| `1pl` | temarìn |
+| `2pl` | temarês |
+| `3pl` | temaran |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o temevi |
-| `2sg` | tu temevis |
-| `3sg` | al |
-| `1pl` | o temevin |
-| `2pl` | o temevis |
-| `3pl` | a temevin |
+| `1sg` | temevi |
+| `2sg` | temevis |
+| `3sg` | temeve |
+| `1pl` | temevin |
+| `2pl` | temevis |
+| `3pl` | temevin |
 
-##### `indicative.past`
+##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o temei |
-| `2sg` | tu temeris |
-| `3sg` | al |
-| `1pl` | o temerin |
-| `2pl` | o temeris |
-| `3pl` | a temerin |
+| `1sg` | temei |
+| `2sg` | temeris |
+| `3sg` | temè |
+| `1pl` | temerin |
+| `2pl` | temeris |
+| `3pl` | temerin |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o temès |
-| `2sg` | tu temessis |
-| `3sg` | al |
-| `1pl` | o temessin |
-| `2pl` | o temessis |
-| `3pl` | a temessin |
+| `1sg` | temès |
+| `2sg` | temessis |
+| `3sg` | temès |
+| `1pl` | temessin |
+| `2pl` | temessis |
+| `3pl` | temessin |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | o temi |
-| `2sg` | tu temis |
-| `3sg` | al |
-| `1pl` | o temìn |
-| `2pl` | o temês |
-| `3pl` | a temin |
+| `1sg` | temi |
+| `2sg` | temis |
+| `3sg` | temi |
+| `1pl` | temìn |
+| `2pl` | temês |
+| `3pl` | temin |
 
 ##### `imperative`
 

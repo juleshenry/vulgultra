@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Verbix (CC BY-NC 3.0; https://www.verbix.com)
 - Source files: `kaikki-pms.jsonl`, `pms_verbix.json`
-- Lemmas with forms: **124**
+- Lemmas with forms: **120**
 - Verb lemma entries: **303**
-- Inflected form records: **204**
+- Inflected form records: **207**
 - Separate form-of entries: **0**
-- Classified person-slot observations: **2392**
+- Classified person-slot observations: **3158**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,10 +18,10 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `other` | 21 | 8 | 4 |
-| `-é` | 84 | 4 | 4 |
-| `-ì` | 18 | 4 | 4 |
-| `-è` | 1 | 4 | 3 |
+| `other` | 21 | 7 | 6 |
+| `-é` | 80 | 6 | 6 |
+| `-ì` | 18 | 6 | 6 |
+| `-è` | 1 | 6 | 5 |
 
 ## `other`
 
@@ -35,6 +35,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.future` | 12 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
 | `indicative.imperfect` | 11 | `lcp` | -ìa | -ìe | -ìa | -io | -ìe | -ìo |
 | `indicative.present` | 9 | `lcp` | -o | -e | ∅ | -uma | -e | -o |
+| `subjunctive.imperfect` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `subjunctive.present` | 10 | `lcp` | -a | -e | -a | -o | -e | -o |
 
 ### Representative lemmas
 
@@ -44,12 +46,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | sun |
+| `1sg` | son |
 | `2sg` | ses |
-| `3sg` | è |
-| `1pl` | suma |
+| `3sg` | é |
+| `1pl` | soma |
 | `2pl` | seve |
-| `3pl` | sun |
+| `3pl` | son |
 
 ##### `conditional`
 
@@ -77,45 +79,34 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | era |
-| `2sg` | ere |
+| `1sg` | j'era |
+| `2sg` | j'ere |
 | `3sg` | era |
-| `1pl` | ero |
-| `2pl` | ere |
-| `3pl` | ero |
+| `1pl` | j'ero |
+| `2pl` | j'ere |
+| `3pl` | j'ero |
 
-##### `indicative.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | i j'era |
-| `2sg` | it j'ere |
-| `3sg` | a l'era |
-| `1pl` | i j'ero |
-| `2pl` | i j'ere |
-| `3pl` | a j'ero |
-
-##### `subjunctive.past`
+##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | i fussa |
-| `2sg` | it fusse |
-| `3sg` | a fussa |
-| `1pl` | i fusso |
-| `2pl` | i fusse |
-| `3pl` | a fusso |
+| `1sg` | fussa |
+| `2sg` | fusse |
+| `3sg` | fussa |
+| `1pl` | fusso |
+| `2pl` | fusse |
+| `3pl` | fusso |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | i sia |
-| `2sg` | it sie |
-| `3sg` | a sia |
-| `1pl` | i sio |
-| `2pl` | i sie |
-| `3pl` | a sio |
+| `1sg` | sia |
+| `2sg` | sie |
+| `3sg` | sia |
+| `1pl` | sio |
+| `2pl` | sie |
+| `3pl` | sio |
 
 ##### `imperative`
 
@@ -174,6 +165,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | evadìe |
 | `3pl` | evadìo |
 
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | evadeissa |
+| `2sg` | evadeisse |
+| `3sg` | evadeissa |
+| `1pl` | evadeisso |
+| `2pl` | evadeisse |
+| `3pl` | evadeisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | evada |
+| `2sg` | evade |
+| `3sg` | evada |
+| `1pl` | evado |
+| `2pl` | evade |
+| `3pl` | evado |
+
 ##### `imperative`
 
 | Slot | Form |
@@ -231,6 +244,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | estraìe |
 | `3pl` | estraìo |
 
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estraeissa |
+| `2sg` | estraeisse |
+| `3sg` | estraeissa |
+| `1pl` | estraeisso |
+| `2pl` | estraeisse |
+| `3pl` | estraeisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | estraa |
+| `2sg` | estrae |
+| `3sg` | estraa |
+| `1pl` | estrao |
+| `2pl` | estrae |
+| `3pl` | estrao |
+
 ##### `imperative`
 
 | Slot | Form |
@@ -252,10 +287,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `conditional` | 53 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `indicative.future` | 53 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
-| `indicative.imperfect` | 53 | `lcp` | -a | -e | -a | -o | -e | -o |
-| `indicative.present` | 48 | `lcp` | -o | -e | -a | -uma | -e | -o |
+| `conditional` | 49 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `indicative.future` | 49 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
+| `indicative.imperfect` | 49 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `indicative.present` | 43 | `lcp` | -o | -e | -a | -uma | -e | -o |
+| `subjunctive.imperfect` | 50 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `subjunctive.present` | 46 | `lcp` | -a | -e | -a | -o | -e | -o |
 
 ### Representative lemmas
 
@@ -304,6 +341,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | parlavo |
 | `2pl` | parlave |
 | `3pl` | parlavo |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parleissa |
+| `2sg` | parleisse |
+| `3sg` | parleissa |
+| `1pl` | parleisso |
+| `2pl` | parleisse |
+| `3pl` | parleisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | parla |
+| `2sg` | parle |
+| `3sg` | parla |
+| `1pl` | parlo |
+| `2pl` | parle |
+| `3pl` | parlo |
 
 ##### `imperative`
 
@@ -362,6 +421,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | galopave |
 | `3pl` | galopavo |
 
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | galopeissa |
+| `2sg` | galopeisse |
+| `3sg` | galopeissa |
+| `1pl` | galopeisso |
+| `2pl` | galopeisse |
+| `3pl` | galopeisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | galopa |
+| `2sg` | galope |
+| `3sg` | galopa |
+| `1pl` | galopo |
+| `2pl` | galope |
+| `3pl` | galopo |
+
 ##### `imperative`
 
 | Slot | Form |
@@ -419,6 +500,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | gabave |
 | `3pl` | gabavo |
 
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | gabeissa |
+| `2sg` | gabeisse |
+| `3sg` | gabeissa |
+| `1pl` | gabeisso |
+| `2pl` | gabeisse |
+| `3pl` | gabeisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | gaba |
+| `2sg` | gabe |
+| `3sg` | gaba |
+| `1pl` | gabo |
+| `2pl` | gabe |
+| `3pl` | gabo |
+
 ##### `imperative`
 
 | Slot | Form |
@@ -441,7 +544,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
 | `indicative.future` | 12 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
 | `indicative.imperfect` | 10 | `lcp` | -ìa | -ìe | -ìa | -io | -ìe | -ìo |
-| `indicative.present` | 10 | `lcp` | -sso | -sse | -ss | -uma | -sse | -sso |
+| `indicative.present` | 10 | `lcp` | -o | -e | ∅ | -iuma | -e | -o |
+| `subjunctive.imperfect` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `subjunctive.present` | 12 | `lcp` | -a | -e | -a | -o | -e | -o |
 
 ### Representative lemmas
 
@@ -490,6 +595,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | fiorio |
 | `2pl` | fiorìe |
 | `3pl` | fiorìo |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fiorieissa |
+| `2sg` | fiorieisse |
+| `3sg` | fiorieissa |
+| `1pl` | fiorieisso |
+| `2pl` | fiorieisse |
+| `3pl` | fiorieisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fiorissa |
+| `2sg` | fiorisse |
+| `3sg` | fiorissa |
+| `1pl` | fiorisso |
+| `2pl` | fiorisse |
+| `3pl` | fiorisso |
 
 ##### `imperative`
 
@@ -548,6 +675,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | finìe |
 | `3pl` | finìo |
 
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | finieissa |
+| `2sg` | finieisse |
+| `3sg` | finieissa |
+| `1pl` | finieisso |
+| `2pl` | finieisse |
+| `3pl` | finieisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | finissa |
+| `2sg` | finisse |
+| `3sg` | finissa |
+| `1pl` | finisso |
+| `2pl` | finisse |
+| `3pl` | finisso |
+
 ##### `imperative`
 
 | Slot | Form |
@@ -605,6 +754,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | ferìe |
 | `3pl` | ferìo |
 
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ferieissa |
+| `2sg` | ferieisse |
+| `3sg` | ferieissa |
+| `1pl` | ferieisso |
+| `2pl` | ferieisse |
+| `3pl` | ferieisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ferissa |
+| `2sg` | ferisse |
+| `3sg` | ferissa |
+| `1pl` | ferisso |
+| `2pl` | ferisse |
+| `3pl` | ferisso |
+
 ##### `imperative`
 
 | Slot | Form |
@@ -627,6 +798,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `conditional` | 1 | `lcp` | -a | -e | -a | -o | -e | -o |
 | `indicative.future` | 1 | `lcp` | -ai | -as | -à | -uma | -eve | -an |
 | `indicative.imperfect` | 1 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `subjunctive.imperfect` | 1 | `lcp` | -a | -e | -a | -o | -e | -o |
+| `subjunctive.present` | 1 | `lcp` | -a | -e | -a | -o | -e | -o |
 
 ### Representative lemmas
 
@@ -675,6 +848,28 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1pl` | andasìo |
 | `2pl` | andasìe |
 | `3pl` | andasìo |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | andeissa |
+| `2sg` | andeisse |
+| `3sg` | andeissa |
+| `1pl` | andeisso |
+| `2pl` | andeisse |
+| `3pl` | andeisso |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vada |
+| `2sg` | vade |
+| `3sg` | vada |
+| `1pl` | vado |
+| `2pl` | vade |
+| `3pl` | vado |
 
 ##### `imperative`
 

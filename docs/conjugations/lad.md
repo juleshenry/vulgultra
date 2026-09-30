@@ -10,7 +10,7 @@
 - Verb lemma entries: **456**
 - Inflected form records: **4804**
 - Separate form-of entries: **179**
-- Classified person-slot observations: **3911**
+- Classified person-slot observations: **3945**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -18,302 +18,12 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
-| `unknown` | 191 | 7 | 7 |
-| `lad-conj-ar` | 48 | 7 | 7 |
-| `lad-conj-auto/empty` | 20 | 7 | 7 |
-| `lad-conj-auto/irregular` | 1 | 6 | 3 |
+| `-ar` | 159 | 8 | 7 |
+| `-ir` | 33 | 8 | 7 |
+| `-er` | 25 | 8 | 7 |
+| `unknown` | 43 | 0 | 0 |
 
-## `unknown`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 9 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
-| `indicative.future` | 4 | `lcp` | -é | -ás | -á | -emos | -ásh | -án |
-| `indicative.imperfect` | 7 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
-| `indicative.present` | 3 | `lcp` | -o | -as | -a | -amos | -ash | -an |
-| `indicative.preterite` | 3 | `lcp` | -e | -ites | -o | -imos | -itesh | -yeron |
-| `subjunctive.past` | 6 | `lcp` | -yera | -yeras | -yera | -yéramos | -iéramos | -yerash |
-| `subjunctive.present` | 6 | `lcp` | -a | -as | -a | -amos | -ásh | -an |
-
-### Representative lemmas
-
-#### `ir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vo |
-| `2sg` | vas |
-| `3sg` | va |
-| `1pl` | vamos |
-| `2pl` | vash |
-| `3pl` | van |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | iriya |
-| `2sg` | iriyas |
-| `3sg` | iriya |
-| `1pl` | iriyamos |
-| `2pl` | iriyash |
-| `3pl` | iriyan |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | iré |
-| `2sg` | irás |
-| `3sg` | irá |
-| `1pl` | iremos |
-| `2pl` | irásh |
-| `3pl` | irán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | iva |
-| `2sg` | ivas |
-| `3sg` | iva |
-| `1pl` | ivamos |
-| `2pl` | ivash |
-| `3pl` | ivan |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fui |
-| `2sg` | fuites |
-| `3sg` | fue |
-| `1pl` | fuimos |
-| `2pl` | fuitesh |
-| `3pl` | fueron |
-
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fuera |
-| `2sg` | fueras |
-| `3sg` | fuera |
-| `1pl` | fuéramos |
-| `2pl` | fuerash |
-| `3pl` | fueran |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vaya |
-| `2sg` | vayas |
-| `3sg` | vaya |
-| `1pl` | vayamos |
-| `2pl` | vayásh |
-| `3pl` | vayan |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vaya |
-| `2sg` | no vaya |
-| `3sg` | — |
-| `1pl` | vayamos |
-| `2pl` | vayash |
-| `3pl` | vayan |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `ver`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | veo |
-| `2sg` | ves |
-| `3sg` | ve |
-| `1pl` | vemos |
-| `2pl` | vesh |
-| `3pl` | ven |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | veriya |
-| `2sg` | veriyas |
-| `3sg` | veriya |
-| `1pl` | veriyamos |
-| `2pl` | veriyash |
-| `3pl` | veriyan |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | veré |
-| `2sg` | verás |
-| `3sg` | verá |
-| `1pl` | veremos |
-| `2pl` | verésh |
-| `3pl` | verán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | viya |
-| `2sg` | viyas |
-| `3sg` | viya |
-| `1pl` | viyamos |
-| `2pl` | viyash |
-| `3pl` | viyan |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vide |
-| `2sg` | vites |
-| `3sg` | vido |
-| `1pl` | vimos |
-| `2pl` | vitesh |
-| `3pl` | vyeron |
-
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vyera |
-| `2sg` | vyeras |
-| `3sg` | vyera |
-| `1pl` | vyéramos |
-| `2pl` | viéramos |
-| `3pl` | vyerash |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vea |
-| `2sg` | veas |
-| `3sg` | vea |
-| `1pl` | veamos |
-| `2pl` | veásh |
-| `3pl` | vean |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vea |
-| `2sg` | no vea |
-| `3sg` | — |
-| `1pl` | veamos |
-| `2pl` | ve |
-| `3pl` | ved |
-
-#### `venir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vengo |
-| `2sg` | vienes |
-| `3sg` | viene |
-| `1pl` | venimos |
-| `2pl` | venísh |
-| `3pl` | vienen |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vendriya |
-| `2sg` | vendriyas |
-| `3sg` | vendriya |
-| `1pl` | vendriyamos |
-| `2pl` | vendriyash |
-| `3pl` | vendriyan |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vendré |
-| `2sg` | vendrás |
-| `3sg` | vendrá |
-| `1pl` | vendremos |
-| `2pl` | vendrash |
-| `3pl` | vendrán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | veniya |
-| `2sg` | veniyas |
-| `3sg` | veniya |
-| `1pl` | veniyamos |
-| `2pl` | veniyash |
-| `3pl` | veniyan |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vine |
-| `2sg` | vinites |
-| `3sg` | vino |
-| `1pl` | venimos |
-| `2pl` | vinitesh |
-| `3pl` | vinyeron |
-
-##### `subjunctive.past`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vinyera |
-| `2sg` | vinyeras |
-| `3sg` | vinyera |
-| `1pl` | vinyéramos |
-| `2pl` | vinyerash |
-| `3pl` | vinyeran |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | venga |
-| `2sg` | vengas |
-| `3sg` | venga |
-| `1pl` | vengamos |
-| `2pl` | vengásh |
-| `3pl` | vengan |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | venga |
-| `2sg` | no venga |
-| `3sg` | — |
-| `1pl` | vengamos |
-| `2pl` | venid |
-| `3pl` | vengan |
-
-## `lad-conj-ar`
+## Ending: `-ar`
 
 Template stem args observed: `abaf`, `akavid`, `akompani`, `amah`, `amostr` (+43 more).
 
@@ -327,303 +37,9 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `indicative.future` | 48 | `template` | -aré | -arás | -ará | -aremos | -aréx | -arán |
 | `indicative.imperfect` | 48 | `template` | -ava | -avas | -ava | -ávamos | -avax | -avan |
 | `indicative.present` | 48 | `template` | -o | -as | -a | -amos | -áx | -an |
-| `indicative.preterite` | 47 | `template` | -í | -ates | -ó | -imos | -atex | -aron |
+| `indicative.preterite` | 47 | `template` | -ì | -ates | -ó | -ìmos | -atex | -aron |
 | `subjunctive.imperfect` | 48 | `template` | -ara | -aras | -ara | -áramos | -arax | -aran |
 | `subjunctive.present` | 48 | `template` | -e | -es | -e | -emos | -éx | -en |
-
-### Representative lemmas
-
-#### `yamar`
-
-Stem: `yam`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yamo |
-| `2sg` | yamas |
-| `3sg` | yama |
-| `1pl` | yamamos |
-| `2pl` | yamáx |
-| `3pl` | yaman |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yamaría |
-| `2sg` | yamarías |
-| `3sg` | yamaría |
-| `1pl` | yamaríamos |
-| `2pl` | yamaríax |
-| `3pl` | yamarían |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yamaré |
-| `2sg` | yamarás |
-| `3sg` | yamará |
-| `1pl` | yamaremos |
-| `2pl` | yamaréx |
-| `3pl` | yamarán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yamava |
-| `2sg` | yamavas |
-| `3sg` | yamava |
-| `1pl` | yamávamos |
-| `2pl` | yamavax |
-| `3pl` | yamavan |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yamí |
-| `2sg` | yamates |
-| `3sg` | yamó |
-| `1pl` | yamimos |
-| `2pl` | yamatex |
-| `3pl` | yamaron |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yamara |
-| `2sg` | yamaras |
-| `3sg` | yamara |
-| `1pl` | yamáramos |
-| `2pl` | yamarax |
-| `3pl` | yamaran |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yame |
-| `2sg` | yames |
-| `3sg` | yame |
-| `1pl` | yamemos |
-| `2pl` | yaméx |
-| `3pl` | yamen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | yama |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | yamad |
-| `3pl` | — |
-
-#### `tomar`
-
-Stem: `tom`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tomo |
-| `2sg` | tomas |
-| `3sg` | toma |
-| `1pl` | tomamos |
-| `2pl` | tomáx |
-| `3pl` | toman |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tomaría |
-| `2sg` | tomarías |
-| `3sg` | tomaría |
-| `1pl` | tomaríamos |
-| `2pl` | tomaríax |
-| `3pl` | tomarían |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tomaré |
-| `2sg` | tomarás |
-| `3sg` | tomará |
-| `1pl` | tomaremos |
-| `2pl` | tomaréx |
-| `3pl` | tomarán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tomava |
-| `2sg` | tomavas |
-| `3sg` | tomava |
-| `1pl` | tomávamos |
-| `2pl` | tomavax |
-| `3pl` | tomavan |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tomí |
-| `2sg` | tomates |
-| `3sg` | tomó |
-| `1pl` | tomimos |
-| `2pl` | tomatex |
-| `3pl` | tomaron |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tomara |
-| `2sg` | tomaras |
-| `3sg` | tomara |
-| `1pl` | tomáramos |
-| `2pl` | tomarax |
-| `3pl` | tomaran |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tome |
-| `2sg` | tomes |
-| `3sg` | tome |
-| `1pl` | tomemos |
-| `2pl` | toméx |
-| `3pl` | tomen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | toma |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | tomad |
-| `3pl` | — |
-
-#### `rovar`
-
-Stem: `rov`.
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | rovo |
-| `2sg` | rovas |
-| `3sg` | rova |
-| `1pl` | rovamos |
-| `2pl` | rováx |
-| `3pl` | rovan |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | rovaría |
-| `2sg` | rovarías |
-| `3sg` | rovaría |
-| `1pl` | rovaríamos |
-| `2pl` | rovaríax |
-| `3pl` | rovarían |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | rovaré |
-| `2sg` | rovarás |
-| `3sg` | rovará |
-| `1pl` | rovaremos |
-| `2pl` | rovaréx |
-| `3pl` | rovarán |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | rovava |
-| `2sg` | rovavas |
-| `3sg` | rovava |
-| `1pl` | rovávamos |
-| `2pl` | rovavax |
-| `3pl` | rovavan |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | roví |
-| `2sg` | rovates |
-| `3sg` | rovó |
-| `1pl` | rovimos |
-| `2pl` | rovatex |
-| `3pl` | rovaron |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | rovara |
-| `2sg` | rovaras |
-| `3sg` | rovara |
-| `1pl` | rováramos |
-| `2pl` | rovarax |
-| `3pl` | rovaran |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | rove |
-| `2sg` | roves |
-| `3sg` | rove |
-| `1pl` | rovemos |
-| `2pl` | rovéx |
-| `3pl` | roven |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | rova |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | rovad |
-| `3pl` | — |
-
-## `lad-conj-auto/empty`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 20 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
-| `indicative.future` | 20 | `lcp` | -é | -ás | -á | -emos | -ésh | -ásh |
-| `indicative.imperfect` | 16 | `lcp` | -ava | -avas | -ava | -ávamos | -ávash | -avan |
-| `indicative.present` | 16 | `lcp` | -o | -as | -a | -amos | -ásh | -an |
-| `indicative.preterite` | 16 | `lcp` | -í | -ates | -ó | -imos | -atesh | -aron |
-| `subjunctive.imperfect` | 16 | `lcp` | -ara | -aras | -ara | -áramos | -árash | -aran |
-| `subjunctive.present` | 16 | `lcp` | -e | -es | -e | -emos | -ésh | -en |
 
 ### Representative lemmas
 
@@ -897,7 +313,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `2pl` | sinyá |
 | `3pl` | sinyad |
 
-## `lad-conj-auto/irregular`
+## Ending: `-ir`
 
 ### Person-slot inventory
 
@@ -905,57 +321,61 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
-| `indicative.future` | 1 | `lcp` | -é | -ás | -á | -emos | -ésh | -ásh |
-| `indicative.preterite` | 1 | `lcp` | -i | -ites | -e | -imos | -itesh | -eron |
-| `subjunctive.present` | 1 | `lcp` | -a | -as | -a | -amos | -ásh | -an |
+| `conditional` | 8 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
+| `indicative.future` | 4 | `lcp` | -é | -ás | -á | -emos | -ásh | -án |
+| `indicative.imperfect` | 7 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
+| `indicative.present` | 3 | `lcp` | -o | -es | -e | -imos | -ish | -en |
+| `indicative.preterite` | 2 | `lcp` | -í | -ites | -ió | -imos | -itesh | -ieron |
+| `subjunctive.present` | 4 | `lcp` | -a | -as | -a | -amos | -ásh | -an |
+| `subjunctive.preterite` | 3 | `lcp` | -era | -eras | -era | -éramos | -erash | -eran |
 
 ### Representative lemmas
 
-#### `ser`
+#### `ir`
 
 ##### `indicative.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | so |
-| `2sg` | sos |
-| `3sg` | es |
-| `1pl` | somos |
-| `2pl` | sosh |
-| `3pl` | son |
+| `1sg` | vo |
+| `2sg` | vas |
+| `3sg` | va |
+| `1pl` | vamos |
+| `2pl` | vash |
+| `3pl` | van |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | sería |
-| `2sg` | serías |
-| `3sg` | sería |
-| `1pl` | seríamos |
-| `2pl` | seríash |
-| `3pl` | sería |
+| `1sg` | iriya |
+| `2sg` | iriyas |
+| `3sg` | iriya |
+| `1pl` | iriyamos |
+| `2pl` | iriyash |
+| `3pl` | iriyan |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | seré |
-| `2sg` | serás |
-| `3sg` | será |
-| `1pl` | seremos |
-| `2pl` | serésh |
-| `3pl` | serásh |
+| `1sg` | iré |
+| `2sg` | irás |
+| `3sg` | irá |
+| `1pl` | iremos |
+| `2pl` | irásh |
+| `3pl` | irán |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | era |
-| `2sg` | eras |
-| `3sg` | era |
-| `1pl` | éramos |
-| `2pl` | erash |
-| `3pl` | eran |
+| `1sg` | iva |
+| `2sg` | ivas |
+| `3sg` | iva |
+| `1pl` | ivamos |
+| `2pl` | ivash |
+| `3pl` | ivan |
 
 ##### `indicative.preterite`
 
@@ -972,12 +392,115 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | sea |
-| `2sg` | seas |
-| `3sg` | sea |
-| `1pl` | seamos |
-| `2pl` | seásh |
-| `3pl` | sean |
+| `1sg` | vaya |
+| `2sg` | vayas |
+| `3sg` | vaya |
+| `1pl` | vayamos |
+| `2pl` | vayásh |
+| `3pl` | vayan |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fuera |
+| `2sg` | fueras |
+| `3sg` | fuera |
+| `1pl` | fuéramos |
+| `2pl` | fuerash |
+| `3pl` | fueran |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vaya |
+| `2sg` | no vaya |
+| `3sg` | — |
+| `1pl` | vayamos |
+| `2pl` | vayash |
+| `3pl` | vayan |
+
+_…1 more tense/mood rows in the JSON corpus._
+
+#### `murir`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | muro |
+| `2sg` | mures |
+| `3sg` | mure |
+| `1pl` | murimos |
+| `2pl` | murish |
+| `3pl` | muren |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | muriría |
+| `2sg` | murirías |
+| `3sg` | muriría |
+| `1pl` | muriríamos |
+| `2pl` | muriríash |
+| `3pl` | murirían |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | muriré |
+| `2sg` | murirás |
+| `3sg` | murirá |
+| `1pl` | muriremos |
+| `2pl` | murirésh |
+| `3pl` | murirásh |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | muría |
+| `2sg` | murías |
+| `3sg` | muría |
+| `1pl` | muríamos |
+| `2pl` | muríash |
+| `3pl` | murían |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | murí |
+| `2sg` | murites |
+| `3sg` | murió |
+| `1pl` | murimos |
+| `2pl` | muritesh |
+| `3pl` | murieron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | muriera |
+| `2sg` | murieras |
+| `3sg` | muriera |
+| `1pl` | muriéramos |
+| `2pl` | murierash |
+| `3pl` | murieran |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | mura |
+| `2sg` | muras |
+| `3sg` | mura |
+| `1pl` | muramos |
+| `2pl` | murash |
+| `3pl` | muran |
 
 ##### `imperative`
 
@@ -986,17 +509,413 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1sg` | — |
 | `2sg` | — |
 | `3sg` | — |
-| `1pl` | seamos |
-| `2pl` | seásh |
-| `3pl` | no seamos |
+| `1pl` | muramos |
+| `2pl` | murí |
+| `3pl` | murid |
+
+#### `bivir`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bivo |
+| `2sg` | bives |
+| `3sg` | bive |
+| `1pl` | bivimos |
+| `2pl` | bivish |
+| `3pl` | biven |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | biviría |
+| `2sg` | bivirías |
+| `3sg` | biviría |
+| `1pl` | biviríamos |
+| `2pl` | biviríash |
+| `3pl` | bivirían |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | biviré |
+| `2sg` | bivirás |
+| `3sg` | bivirá |
+| `1pl` | biviremos |
+| `2pl` | bivirésh |
+| `3pl` | bivirásh |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | bivía |
+| `2sg` | bivías |
+| `3sg` | bivía |
+| `1pl` | bivíamos |
+| `2pl` | bivíash |
+| `3pl` | bivían |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | biví |
+| `2sg` | bivites |
+| `3sg` | bivió |
+| `1pl` | bivimos |
+| `2pl` | bivitesh |
+| `3pl` | bivieron |
 
 ##### `subjunctive.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | fuera |
-| `2sg` | fueras |
-| `3sg` | fuera |
-| `1pl` | fueramos |
-| `2pl` | fuerash |
+| `1sg` | biviera |
+| `2sg` | bivieras |
+| `3sg` | biviera |
+| `1pl` | biviéramos |
+| `2pl` | bivierash |
+| `3pl` | bivieran |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | biva |
+| `2sg` | bivas |
+| `3sg` | biva |
+| `1pl` | bivamos |
+| `2pl` | bivash |
+| `3pl` | bivan |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | bivamos |
+| `2pl` | biví |
+| `3pl` | bivid |
+
+## Ending: `-er`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 4 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
+| `indicative.future` | 3 | `lcp` | -é | -ás | -á | -emos | -ésh | -ásh |
+| `indicative.imperfect` | 4 | `lcp` | ∅ | -s | ∅ | -mos | -sh | -n |
+| `indicative.present` | 2 | `lcp` | -o | -es | -e | -imos | -esh | -en |
+| `indicative.preterite` | 2 | `lcp` | -e | -ites | -o | -imos | -itesh | -yeron |
+| `subjunctive.present` | 3 | `lcp` | -a | -as | -a | -amos | -ásh | -an |
+| `subjunctive.preterite` | 2 | `lcp` | -yera | -yeras | -iera | -yéramos | -iéramos | -yerash |
+
+### Representative lemmas
+
+#### `komer`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | komo |
+| `2sg` | komes |
+| `3sg` | kome |
+| `1pl` | komimos |
+| `2pl` | komesh |
+| `3pl` | komen |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | komería |
+| `2sg` | komerías |
+| `3sg` | komería |
+| `1pl` | komeríamos |
+| `2pl` | komeríash |
+| `3pl` | komerían |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | komeré |
+| `2sg` | komerás |
+| `3sg` | komerá |
+| `1pl` | komeremos |
+| `2pl` | komerésh |
+| `3pl` | komerásh |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | komía |
+| `2sg` | komías |
+| `3sg` | komía |
+| `1pl` | komíamos |
+| `2pl` | komíash |
+| `3pl` | komían |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | komí |
+| `2sg` | komites |
+| `3sg` | komió |
+| `1pl` | komimos |
+| `2pl` | komitesh |
+| `3pl` | komieron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | komiera |
+| `2sg` | komieras |
+| `3sg` | komiera |
+| `1pl` | komiéramos |
+| `2pl` | komierash |
+| `3pl` | komieran |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | koma |
+| `2sg` | komas |
+| `3sg` | koma |
+| `1pl` | komamos |
+| `2pl` | komash |
+| `3pl` | koman |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | komamos |
+| `2pl` | komé |
+| `3pl` | komed |
+
+#### `kerer`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | kero |
+| `2sg` | keres |
+| `3sg` | kere |
+| `1pl` | kerimos |
+| `2pl` | keresh |
+| `3pl` | keren |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | kerería |
+| `2sg` | kererías |
+| `3sg` | kerería |
+| `1pl` | kereríamos |
+| `2pl` | kereríash |
+| `3pl` | kererían |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | kereré |
+| `2sg` | kererás |
+| `3sg` | kererá |
+| `1pl` | kereremos |
+| `2pl` | kererésh |
+| `3pl` | kererásh |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | kería |
+| `2sg` | kerías |
+| `3sg` | kería |
+| `1pl` | keríamos |
+| `2pl` | keríash |
+| `3pl` | kerían |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | kiji |
+| `2sg` | kerites |
+| `3sg` | kerió |
+| `1pl` | kerimos |
+| `2pl` | keritesh |
+| `3pl` | kerieron |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | keriera |
+| `2sg` | kerieras |
+| `3sg` | keriera |
+| `1pl` | keriéramos |
+| `2pl` | kerierash |
+| `3pl` | kerieran |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | kera |
+| `2sg` | keras |
+| `3sg` | kera |
+| `1pl` | keramos |
+| `2pl` | kerash |
+| `3pl` | keran |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | keramos |
+| `2pl` | keré |
+| `3pl` | kered |
+
+#### `ver`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | veo |
+| `2sg` | ves |
+| `3sg` | ve |
+| `1pl` | vemos |
+| `2pl` | vesh |
+| `3pl` | ven |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | veriya |
+| `2sg` | veriyas |
+| `3sg` | veriya |
+| `1pl` | veriyamos |
+| `2pl` | veriyash |
+| `3pl` | veriyan |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | veré |
+| `2sg` | verás |
+| `3sg` | verá |
+| `1pl` | veremos |
+| `2pl` | verésh |
+| `3pl` | verán |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | viya |
+| `2sg` | viyas |
+| `3sg` | viya |
+| `1pl` | viyamos |
+| `2pl` | viyash |
+| `3pl` | viyan |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vide |
+| `2sg` | vites |
+| `3sg` | vido |
+| `1pl` | vimos |
+| `2pl` | vitesh |
+| `3pl` | vyeron |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vea |
+| `2sg` | veas |
+| `3sg` | vea |
+| `1pl` | veamos |
+| `2pl` | veásh |
+| `3pl` | vean |
+
+##### `subjunctive.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vyera |
+| `2sg` | vyeras |
+| `3sg` | viera |
+| `1pl` | vyéramos |
+| `2pl` | viéramos |
+| `3pl` | vyerash |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | vea |
+| `2sg` | — |
+| `3sg` | — |
+| `1pl` | veamos |
+| `2pl` | ve |
+| `3pl` | ved |
+
+## `unknown`
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
+
+### Representative lemmas
+
+#### `סיר`
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | אירה |
+| `2sg` | — |
+| `3sg` | אירה |
+| `1pl` | — |
+| `2pl` | — |
 | `3pl` | — |
+
+#### `קריאיר`
+
+_No classified person-number cells for this lemma._
+
+#### `קאבזאר`
+
+_No classified person-number cells for this lemma._

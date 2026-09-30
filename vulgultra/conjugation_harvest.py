@@ -6,6 +6,7 @@ derived from complete person rows; missing cells stay missing.
 
 from __future__ import annotations
 
+import unicodedata
 from collections import Counter, defaultdict
 from typing import Any, Iterable
 from urllib.parse import quote
@@ -53,6 +54,28 @@ SUBJECT_CLITICS: dict[str, tuple[str, ...]] = {
     "pms": ("mi", "i", "it", "a", "at", "as", "is", "I"),
 }
 
+# Inchoative infixes are stem allomorphs, not person endings (grammar.tex):
+# `finisco` is fin·isc·o, so its ending is -o like `dormo`. Each pair is
+# (infix as written, what the stem shows without it); the rightmost
+# occurrence in each form is removed before the stem is split off.
+INCHOATIVE_INFIXES: dict[str, tuple[tuple[str, str], ...]] = {
+    "it": (("isc", ""),), "sc": (("isc", ""),), "scn": (("isc", ""),),
+    "co": (("isc", ""),), "lij": (("isc", ""),),
+    "vec": (("iss", ""),), "lmo": (("iss", ""),), "pms": (("iss", ""),),
+    "fur": (("iss", ""),), "eml": (("iss", ""),),
+    "ro": (("eaz", ""), ("ez", ""), ("esc", ""), ("ește", "e"), ("ești", "i"),
+           ("ăsc", ""), ("ășt", "")),
+    "rup": (("ãsc", ""), ("ez", ""), ("edz", "")),
+    "ruq": (("ez", ""), ("esc", "")),
+    "ruo": (("ésc", ""), ("éš", "")),
+    "ca": (("eix", ""), ("ix", ""), ("esc", "")),
+    "oc": (("iss", ""), ("isc", "")), "gsc": (("iss", ""), ("isc", "")),
+    "fr": (("iss", ""),), "wa": (("ixh", ""), ("iss", "")),
+    "pcd": (("ich", ""), ("iss", "")), "nrf": (("iss", ""),),
+    "rm": (("esch", ""), ("eg", "")),
+    "es": (("zc", "c"),), "gl": (("zc", "c"),), "ast": (("zc", "c"),),
+}
+
 MAX_REPRESENTATIVES = 3
 MIN_INVENTORY_SUPPORT = 3
 
@@ -77,6 +100,27 @@ def strip_subject_clitics(lect: str, form: str) -> str:
     if words and lect == "pms" and words[0][:2] in {"l'", "l’"}:
         words[0] = words[0][2:]
     return " ".join(words)
+
+
+def _bare(text: str) -> str:
+    return "".join(
+        ch for ch in unicodedata.normalize("NFD", text)
+        if unicodedata.category(ch) != "Mn"
+    )
+
+
+def plain_spelling(form_record: dict[str, Any], form: str) -> str:
+    """Drop pedagogical stress marks Wiktionary adds (it `pàrlo` → `parlo`).
+
+    The record's first link carries the standard spelling; use it only when
+    the two differ by diacritics alone.
+    """
+    for link in form_record.get("links") or []:
+        if isinstance(link, list) and len(link) == 2 and link[0] == form:
+            target = str(link[1]).split("#", 1)[0].strip()
+            if target and target != form and _bare(target) == _bare(form):
+                return target
+    return form
 
 
 def decode_tags(tags: list[str], lect: str = "") -> tuple[str | None, str, bool]:
@@ -134,6 +178,7 @@ def recover_conjugation_persons(
     ]
     group: list[int] = []
     group_feature: str | None = None
+    extras: list[dict[str, Any]] = []
 
     def inject(rec: dict[str, Any], slot: str) -> None:
         tags = [str(tag) for tag in rec.get("tags") or []]
@@ -166,6 +211,12 @@ def recover_conjugation_persons(
                 unlabeled_pl.append(idx)
         sg_needed = [slot for slot in ("1sg", "2sg", "3sg") if slot not in tagged]
         pl_needed = [slot for slot in ("1pl", "2pl", "3pl") if slot not in tagged]
+        if len(unlabeled_sg) == 1 and sg_needed == ["1sg", "3sg"]:
+            # One shared cell for je/il (nrf `aime`): it fills both persons.
+            twin = dict(recovered[unlabeled_sg[0]])
+            twin["tags"] = list(twin.get("tags") or [])
+            inject(twin, "3sg")
+            extras.append(twin)
         for idx, slot in zip(unlabeled_sg, sg_needed):
             rec = recovered[idx]
             if isinstance(rec, dict):
@@ -207,7 +258,7 @@ def recover_conjugation_persons(
         group_feature = feature
         group.append(idx)
     flush()
-    return recovered
+    return recovered + extras
 
 
 def primary_conj_template(templates: object) -> tuple[str, str | None]:
@@ -298,11 +349,29 @@ def usable_stem(stem: str | None) -> str | None:
     return text
 
 
+def drop_inchoative(lect: str, forms: dict[str, str]) -> dict[str, str]:
+    """Move the inchoative infix into the stem: finisco → fino (fin + o)."""
+    out = dict(forms)
+    for slot, form in forms.items():
+        # Per form, the first listed variant it contains (ro lucrez / lucrează).
+        for infix, keep in INCHOATIVE_INFIXES.get(lect, ()):
+            at = form.rfind(infix)
+            if at > 0:
+                out[slot] = form[:at] + keep + form[at + len(infix):]
+                break
+    return out
+
+
 def strip_endings(
     forms: dict[str, str],
     stem: str | None = None,
+    lect: str = "",
 ) -> tuple[dict[str, str], str, str] | None:
     """Return (endings, stem_used, stem_mode) for a complete or near-complete row."""
+    if lect in INCHOATIVE_INFIXES:
+        reduced = drop_inchoative(lect, forms)
+        if reduced != forms:
+            forms, stem = reduced, None
     occupied = [forms[slot] for slot in PERSON_SLOTS if forms.get(slot)]
     if len(occupied) < 4:
         return None
@@ -382,6 +451,7 @@ def aggregate_ending_inventory(
     lemmas: dict[str, dict[str, Any]],
     *,
     min_support: int = MIN_INVENTORY_SUPPORT,
+    lect: str = "",
 ) -> dict[str, dict[str, Any]]:
     """Majority orthographic endings per feature for one conj class."""
     by_feature: dict[str, list[tuple[tuple[str, ...], str, str]]] = defaultdict(list)
@@ -391,7 +461,7 @@ def aggregate_ending_inventory(
             forms = row_forms(cells)
             if not is_complete_row(forms):
                 continue
-            stripped = strip_endings(forms, stem)
+            stripped = strip_endings(forms, stem, lect)
             if not stripped:
                 continue
             endings, used, mode = stripped
@@ -535,6 +605,7 @@ def harvest_kaikki_file(
                 form_text = str(form_record.get("form") or "")
                 if "{{" in form_text:
                     continue
+                form_text = plain_spelling(form_record, form_text)
                 source_kind = str(form_record.get("source") or "lemma-form")
                 form_ipa = str(form_record.get("ipa") or ipa)
                 store_form(
@@ -653,7 +724,7 @@ def build_lect_document(
     total_lemmas = 0
     for class_source, lemmas in sorted(grouped.items(), key=lambda item: (-len(item[1]), item[0])):
         total_lemmas += len(lemmas)
-        inventory = aggregate_ending_inventory(lemmas)
+        inventory = aggregate_ending_inventory(lemmas, lect=lect)
         if inventory:
             inventories[class_source] = inventory
         ranked = sorted(
