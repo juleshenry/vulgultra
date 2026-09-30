@@ -7,6 +7,7 @@ data/sources/verbix/{lect}/.
 from __future__ import annotations
 
 import json
+import re
 import time
 import urllib.error
 import urllib.parse
@@ -21,6 +22,9 @@ PERSON_BY_ID = {
     1: "1sg", 2: "2sg", 3: "3sg", 4: "1pl", 5: "2pl", 6: "3pl",
 }
 
+# Simple (synthetic) tenses only. Compound tenses (perfects, periphrastic
+# past, compound pluperfects) carry an auxiliary and are not person endings;
+# pluperfect stays because pt/gl/ro have a synthetic one (falara, lucrasem).
 TENSE_BY_NAME = {
     "indicative present": "indicative.present",
     "subjunctive present": "subjunctive.present",
@@ -30,16 +34,39 @@ TENSE_BY_NAME = {
     "subjunctive imperfect": "subjunctive.imperfect",
     "indicative preterite": "indicative.preterite",
     "indicative future": "indicative.future",
+    "indicative future i": "indicative.future",
+    "subjunctive future": "subjunctive.future",
     "conditional": "conditional",
+    "conditional present": "conditional",
+    "conditional present, direct": "conditional",
     "imperative": "imperative",
-    "indicative perifrastic past": "indicative.periphrastic-past",
-    "indicative present perfect": "indicative.present-perfect",
     "indicative pluperfect": "indicative.pluperfect",
-    "indicative future perfect": "indicative.future-perfect",
-    "subjunctive present perfect": "subjunctive.present-perfect",
-    "subjunctive pluperfect": "subjunctive.pluperfect",
-    "conditional perfect": "conditional.perfect",
+    # lld / frp tables omit the mood; pms says "conjunctive".
+    "present": "indicative.present",
+    "imperfect": "indicative.imperfect",
+    "preterite": "indicative.preterite",
+    "future": "indicative.future",
+    "subj.present": "subjunctive.present",
+    "subj.imperfect": "subjunctive.imperfect",
+    "conjunctive present": "subjunctive.present",
+    "conjunctive past": "subjunctive.imperfect",
+    # Second series of a tense: parsed as variants of the first.
+    "subjunctive present ii": "subjunctive.present",
+    "indicative future ii": "indicative.future",
+    "conditional present ii": "conditional",
+    "conditional present, indirect": "conditional",
 }
+
+# Per-lect corrections to the generic map (None drops the tense).
+LECT_TENSE_BY_NAME: dict[str, dict[str, str | None]] = {
+    # Friulian lists Indicative Imperfect separately; its "Past" is the preterite.
+    "fur": {"indicative past": "indicative.preterite"},
+    # Romanian has no synthetic past subjunctive; Verbix fills it with junk.
+    "ro": {"subjunctive past": None, "indicative future ii": None},
+}
+
+# Verbix shelves Gascon under Occitan, so its "gsc" pages are Languedocien.
+NOT_HARVESTED = {"gsc"}
 
 # Lect → Verbix ISO + numeric langid + infinitive ending classes.
 LECT_CONFIG: dict[str, dict[str, Any]] = {
@@ -170,53 +197,88 @@ def load_or_fetch(
     return record
 
 
-def map_feature(tense_name: str) -> str | None:
-    return TENSE_BY_NAME.get(tense_name.strip().lower())
+def map_feature(tense_name: str, lect: str = "") -> str | None:
+    name = tense_name.strip().lower()
+    overrides = LECT_TENSE_BY_NAME.get(lect, {})
+    if name in overrides:
+        return overrides[name]
+    return TENSE_BY_NAME.get(name)
+
+
+_DIALECT_TAG = re.compile(r"\s*\((?:N|S)\)\s*$")
+
+
+def clean_form(form: str) -> str | None:
+    """One Verbix form → bare word, or None for compound / annotated forms."""
+    text = _DIALECT_TAG.sub("", str(form or "").strip())
+    if not text or text == "-" or " " in text or "(" in text:
+        return None
+    return text
+
+
+def _imperative_slots(ids: list[int]) -> dict[int, str]:
+    """Some lects number imperative persons 1..3 (2sg, 1pl, 2pl)."""
+    if ids and max(ids) <= 3:
+        return {1: "2sg", 2: "1pl", 3: "2pl"}
+    return PERSON_BY_ID
 
 
 def parse_paradigm(lect: str, record: dict[str, Any]) -> dict[str, Any] | None:
+    """First tense mapped to a feature is primary; later ones add variants.
+
+    Every form listed for a person is kept in page order: the first as
+    `form`, the rest as `variants` (es -ra/-se subjunctive, co N/S pairs).
+    Rule-generated pages (`exists: false`) are not attested and are skipped.
+    """
     lemma = str(record.get("lemma") or "").strip()
     raw = record.get("raw") if isinstance(record.get("raw"), dict) else {}
     tenses = raw.get("tenses") if isinstance(raw.get("tenses"), dict) else {}
-    if not lemma or not tenses:
+    if not lemma or not tenses or not raw.get("exists"):
         return None
     cells: dict[str, dict[str, dict[str, Any]]] = {}
     for tense in tenses.values():
         if not isinstance(tense, dict):
             continue
-        feature = map_feature(str(tense.get("name") or ""))
+        name = str(tense.get("name") or "")
+        feature = map_feature(name, lect)
         if not feature:
             continue
-        row: dict[str, dict[str, Any]] = {}
-        for form_rec in tense.get("forms") or []:
-            if not isinstance(form_rec, dict):
-                continue
+        forms = [rec for rec in tense.get("forms") or [] if isinstance(rec, dict)]
+        ids: list[int] = []
+        for rec in forms:
             try:
-                person_id = int(form_rec.get("id"))
+                ids.append(int(rec.get("id")))
             except (TypeError, ValueError):
+                ids.append(0)
+        slots = _imperative_slots(ids) if feature == "imperative" else PERSON_BY_ID
+        row = cells.setdefault(feature, {})
+        for person_id, rec in zip(ids, forms):
+            slot = slots.get(person_id)
+            form = clean_form(rec.get("form"))
+            if not slot or not form:
                 continue
-            slot = PERSON_BY_ID.get(person_id)
-            form = str(form_rec.get("form") or "").strip()
-            if not slot or not form or form == "-":
-                continue
-            row.setdefault(slot, {
-                "form": form,
-                "phonemes": [],
-                "source_label": str(tense.get("name") or ""),
-                "source_url": record.get("page_url") or "",
-            })
-        if row:
-            cells[feature] = row
+            cell = row.get(slot)
+            if cell is None:
+                row[slot] = {
+                    "form": form,
+                    "variants": [],
+                    "phonemes": [],
+                    "source_label": name,
+                    "source_url": record.get("page_url") or "",
+                }
+            elif form != cell["form"] and form not in cell["variants"]:
+                cell["variants"].append(form)
+        if not row:
+            cells.pop(feature)
     if not cells:
         return None
-    exists = bool(raw.get("exists"))
     return {
         "lect": lect,
         "lemma": lemma,
         "class_source": class_from_infinitive(lect, lemma),
-        "regularity": "attested" if exists else "rule-generated",
+        "regularity": "attested",
         "source": {
-            "attested": exists,
+            "attested": True,
             "title": f"Verbix {lect}:{lemma}",
             "url": record.get("page_url") or page_url(lect, lemma),
             "provider": "Verbix",
@@ -245,12 +307,10 @@ def harvest_lemmas(
         stats["fetched"] += 1
         paradigm = parse_paradigm(lect, record)
         if not paradigm:
-            stats["empty"] += 1
+            raw = record.get("raw") if isinstance(record.get("raw"), dict) else {}
+            stats["generated" if raw.get("tenses") and not raw.get("exists") else "empty"] += 1
             continue
-        if paradigm["source"]["attested"]:
-            stats["attested"] += 1
-        else:
-            stats["generated"] += 1
+        stats["attested"] += 1
         paradigms.append(paradigm)
     return {
         "schema": "vulgultra.conjugation.v1",

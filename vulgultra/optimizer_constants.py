@@ -8,11 +8,9 @@ from __future__ import annotations
 
 
 W_PHON = -1       # maximize observed root segments after the shortest slice
-W_END = 200       # one-syllable morphology cost
-W_COLL = 100_000  # collisions inside a finite person row
+W_END = 200       # per-syllable ending cost
+W_COLL = 100_000  # identical noun cells / identical non-finite verb cells
 W_TACT = 2_000    # leftover phonotactic violations
-W_DIST = 500      # distance shortfall inside a finite person row
-DIST_THRESHOLD = 2
 
 VERB_SLOTS_IND = [
     f"{tense}_{person}{number}"

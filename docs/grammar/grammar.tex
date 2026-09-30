@@ -67,13 +67,15 @@ ties, maximizing the union of IPA segments in the selected roots.
         a lexical gap. Source spread and morpheme uniformity are not scoring
         criteria. Endings are selected separately after roots, so productive
         endings cannot pre-fill the root inventory.
-  \item \textbf{One-syllable endings.} Every fusional cell is $1\sigma$.
-        A $2\sigma$ person form (\texttt{amos}) is clipped to its last
-        syllable (\texttt{mos}): that extra $\sigma$ is a theme already
-        on the stem.
+  \item \textbf{One-syllable nominal endings.} Every noun and adjective
+        case cell is $1\sigma$; a $2\sigma$ nominal form
+        ($-\bar{o}rum$) is clipped to its last syllable. Verb cells are
+        \emph{not} clipped: an attested person ending is kept whole
+        (\texttt{amos} stays \texttt{amos}). Axiom~1 still prefers the
+        candidate with fewer syllables for each verb cell.
   \item \textbf{Restore case; keep gender.} Reverse VL. Nouns and
         adjectives inflect gender $\times$ case $\times$ number.
-        Inherited Latin syncretism is allowed across tenses, not
+        Inherited Latin verb syncretism is allowed, across tenses and
         inside a tense row.
   \item \textbf{Phonotactic legality after repair.} Repair first
         (glide formation, identical-vowel collapse, last-resort
@@ -111,7 +113,8 @@ Greedy initialization visits constrained concepts first and prefers a
 candidate that adds the most new segments. Simulated annealing then explores
 the same $\sigma$-optimal slice.
 
-Endings stay coupled (one $1\sigma$ table, distinct cells in a row).
+Endings stay coupled: one $1\sigma$ nominal table with distinct cells,
+and one verb table whose cells keep their attested length.
 
 \section{Source inventory}
 
@@ -147,7 +150,7 @@ Eastern & $u$ &
 \end{tabular}
 \end{center}
 
-Person cells may mix lects (clipped to $1\sigma$). The case layer is
+Person cells may mix lects (kept at attested length). The case layer is
 Latin; the theme is the class. Do not mix $-os$ from Spanish with
 $-i$ from Italian inside one noun class.
 
@@ -209,14 +212,16 @@ and palatal nasals/laterals to /nj, lj/ (now legal onsets).
 \textbf{Penultimate}, no exceptions, unmarked. Calculated, not
 aesthetic: Classical Latin was (mostly) penultimate; VL loss of the
 final syllable produced French oxytones; reverse VL restores a
-$1\sigma$ ending, so stress lands on the last syllable of the stem
-$=$ penultimate of the word. Consensus of the family that still has
+$1\sigma$ nominal ending, so stress lands on the last syllable of the stem
+$=$ penultimate of the word (a $2\sigma$ verb ending such as
+\texttt{amos} carries the penult itself). Consensus of the family that still has
 a final vowel.
 
 \chapter{Morphology}
 \label{ch:morphology}
 
-Word $=$ (prefix) $+$ root $+$ $1\sigma$ ending.
+Word $=$ (prefix) $+$ root $+$ ending: $1\sigma$ for nouns and
+adjectives, attested length for verbs.
 
 \section{Nouns: gender $\times$ case $\times$ number}
 
@@ -243,8 +248,8 @@ class (Ibero and Gallo-Italian $o$, Sardinian--Eastern $u$, Occitano and
 Oil $e$). Corsican is $u$ with Sicilian; Megleno-Romanian is $u$ with
 Romanian; Romagnol is $o$ with the other Gallo-Italian lects, not a
 clone of Emilian. The case \emph{layer} is Latin, the theme is the
-class. Person cells may mix lects (clipped to $1\sigma$): that is the
-one place 36 tables are real.
+class. Verb person cells may mix lects (kept at attested length): that is
+the one place 36 tables are real.
 
 \section{Adjectives}
 
@@ -259,10 +264,10 @@ Copula is suppletive present: $so, es, e, som, sos, son$.
 \section{Verbs}
 
 One lexical stem. Each finite cell (person $\times$ tense/mood) is
-chosen on its own from any lect; a row may mix lects.
-\texttt{amos} clips to \texttt{mos}. $3\times 2\times 3\times 2=36$
-finite cells plus 5 non-finite. Every cell is $1\sigma$ when the
-shortlist allows.
+chosen on its own from any lect; a row may mix lects. An attested
+ending is kept whole (\texttt{amos} is not clipped); among candidates
+for a cell, fewer syllables win. $3\times 2\times 3\times 2=36$
+finite cells plus 5 non-finite.
 
 Among equal-length legal candidates for a cell, prefer
 \emph{concordance}: a shared person coda with already-chosen cells of
@@ -270,16 +275,16 @@ the same person across earlier tenses/moods (present 1pl \texttt{ons}
 tips a tied future toward \texttt{erons}). Concordance never spends an
 extra syllable.
 
-Collision and $d\ge 2$ distinctiveness apply \textbf{inside a 6-person
-row}, not across tenses. Romance syncretism across tenses is legal;
-that is what makes $1\sigma$ packing possible. Zero collision across
-all 41 cells is un-Romance and forces $2\sigma$ endings.
+Finite verb cells carry no collision or distinctiveness constraint:
+two persons may share an ending, inside a row or across tenses
+(Venetian 3sg $=$ 3pl). The 5 non-finite cells stay mutually distinct.
 
-TBD: inchoative stem change (Spanish \texttt{-zco} \emph{conocer},
-Italian \texttt{-isc-} \emph{finire}, Romanian \texttt{-ez}/\texttt{-esc}).
-That extra consonant is a stem allomorph, not the person ending.
-Regular 1sg is \texttt{-o} (\emph{como}, \emph{escribo}). Do not treat
-the inchoative as the class cell.
+Inchoative infix (Spanish \texttt{-zc-} \emph{conocer}, Italian
+\texttt{-isc-} \emph{finire}, Romanian \texttt{-ez}/\texttt{-esc},
+Catalan \texttt{-eix-}, Occitan/French \texttt{-iss-}) is a stem
+allomorph, not part of the person ending. It is stripped into the stem
+before ending extraction, and an inchoative verb joins its conjugation
+class. Regular 1sg is \texttt{-o} (\emph{como}, \emph{escribo}).
 
 \chapter{Energy}
 \label{ch:energy}
@@ -296,18 +301,21 @@ After root selection, morphology uses:
 \begin{aligned}
 E_{morph} &= -|\Phi_{root}\cup\Phi_{ending}|
   + 200\sum_e \sigma(e)
-  + 100000\cdot\mathrm{coll}_{\mathrm{row}}
+  + 100000\cdot\mathrm{coll}
   + 2000\cdot\mathrm{viol}
-  + 500\sum_{\mathrm{row}}\max(0,2-d)
 \end{aligned}
 \end{equation}
+
+Here $\mathrm{coll}$ counts identical pairs among the 12 noun cells and
+among the 5 non-finite verb cells. Finite verb cells are not counted and
+there is no distance term.
 
 The shortest legal candidate slice is a hard input constraint, so syllables
 cannot be traded against anything else. During root annealing, $\Phi_{root}$
 is the union of segments in selected roots; each additional observed root
 segment lowers energy by one. Endings are fixed while roots anneal. After
 roots are chosen, table selection uses $-|\Phi_{root}\cup\Phi_{ending}|$ with
-the same ending legality, collision, and distance terms, so a table is
+the same ending legality and collision terms, so a table is
 rewarded for contributing new segments without making lexical choices moot.
 There is no fixed cap. Lect and evidence remain available for inspection but
 do not bias lexical selection.
@@ -355,7 +363,7 @@ string, never on raw orthography.
   \item Case: kept (nom/acc/gen).
   \item Gender on nouns and adjectives: kept.
   \item Gemination: kept. Expand $\textipa{E}$ $\textipa{O}$ only if
-        $1\sigma$ rows still collide.
+        $1\sigma$ noun cells still collide.
 \end{itemize}
 
 \end{document}

@@ -21,6 +21,8 @@ pub const W_PHON: f64 = -1.0;
 pub const W_END: f64 = 200.0;
 pub const W_COLL: f64 = 100_000.0;
 pub const W_TACT: f64 = 2_000.0;
+// Retired: the finite-row d≥2 term was dropped from the energy. Kept only so
+// the `optimization` facade re-export stays source-compatible; unused.
 pub const W_DIST: f64 = 500.0;
 pub const DIST_THRESHOLD: u32 = 2;
 

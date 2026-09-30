@@ -69,13 +69,16 @@ Stage 1: hard shortlist of each concept's shortest legal grid forms.
 Root SA: maximize |Φ_root|; ending costs are fixed during root moves.
 Then choose morphology with E_morph = −|Φ_root ∪ Φ_ending|
   + 200 Σ σ(ending) + 1e5 · collisions
-  + 2000 · leftover violations + 500 Σ max(0, 2 − d)
+  + 2000 · leftover violations
+(collisions = identical noun cells + identical non-finite verb cells;
+ finite verb rows have no collision or distance term)
 ```
 
 There is no target inventory size or phoneme ceiling. The root tie-break is
 kept separate so a productive ending assembled from the full grid cannot
 pre-fill the inventory before roots are annealed. Attested lect paradigms
-remain candidates; a separate `grid-inventory` paradigm builds legal 1σ
+remain candidates (verb cells keep their attested length, noun cells are
+1σ); a separate `grid-inventory` paradigm builds legal 1σ
 endings from the segments in the shortlisted grid. Those combinations are
 productive proposals, not claims that the sequence is an attested morpheme.
 Source lect and evidence stay visible for auditing, but neither source spread
@@ -99,8 +102,9 @@ post-root morphology objective.
 ## Morphology
 
 - **Nouns and adjectives:** gender × case (nom/acc/gen) × number = 12 cells, all 1σ
-- **Verbs:** one stem; each finite cell may come from any lect (`amos` → `mos`). Among equal-length ties, prefer concordance (shared person coda across tenses, e.g. present `ons` tips future toward `erons`).
-- Collision only inside a 6-person row (cross-tense syncretism is Romance-legal)
+- **Verbs:** one stem; each finite cell may come from any lect and keeps its attested ending whole (`amos` stays `amos`; only nominal cells are clipped to 1σ). Fewer syllables still win among candidates. Among equal-length ties, prefer concordance (shared person coda across tenses, e.g. present `ons` tips future toward `erons`).
+- No collision or distance rule on finite verb rows: person syncretism (Venetian 3sg = 3pl) is legal. Noun cells and the non-finite verb cells stay distinct.
+- Inchoative infix (Spanish `-zc-` *conocer*, Italian `-isc-` *finire*, Romanian `-ez`/`-esc`, Catalan `-eix-`, Occitan/French `-iss-`) is a stem allomorph: it is stripped into the stem before ending extraction, the verb joins its conjugation class, and regular 1sg is `-o`.
 - Articles `o/a/os/as` mark definiteness only; case marks role
 - Copula is suppletive (`so / es / e / som / sos / son`)
 

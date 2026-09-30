@@ -1,6 +1,7 @@
 """Attested lect paradigms plus productive, grid-segment ending proposals.
 
-Attested person cells are clipped to 1σ per lect template; the optimizer
+Attested verb person cells keep the lect's whole ending (amos stays amos);
+noun/adjective case cells are clipped to 1σ. The optimizer
 may mix lects across cells and uses concordance (shared person coda across
 tenses) only as a length tie-breaker. Productive alternatives are assembled
 separately from the observed shortlisted segment inventory. Realization
@@ -13,7 +14,7 @@ from __future__ import annotations
 from collections.abc import Iterable
 
 from vulgultra.phonology import (
-    from_orthography, last_syllable, phonemic_edit_distance, to_orthography,
+    from_orthography, last_syllable, to_orthography,
 )
 from vulgultra.morphology_constants import (
     CLOSED_NOUN_THEMES, NOUN_SLOT_NAMES, ADJ_SLOT_NAMES, THEME_CLASS,
@@ -164,8 +165,9 @@ _THEMES: dict[str, tuple[str, str, str]] = {
 def _verb_block(persons: tuple[str, ...], pst: str, fut: str, subj: str) -> list[list[str]]:
     """Present = person endings of that lect; other tenses = theme + person coda.
 
-    Every cell is clipped to 1σ (amos → mos): the extra syllable is a theme
-    already on the stem, reverse of VL theme-vowel fusion.
+    Verb cells keep the attested ending whole (amos stays amos, no 1σ
+    clipping); the optimizer's syllable term still prefers shorter cells
+    among candidates. Only noun/adjective case cells are clipped.
     """
     out: list[list[str]] = []
     for theme, series in (
@@ -175,14 +177,14 @@ def _verb_block(persons: tuple[str, ...], pst: str, fut: str, subj: str) -> list
     ):
         for p in series:
             cell = p if not theme else (theme + p[-1] if len(p) > 1 else theme + p)
-            out.append(from_orthography(_one_sigma(cell)))
+            out.append(from_orthography(cell))
     for p in persons:
-        out.append(from_orthography(_one_sigma(subj + (p[-1] if len(p) > 1 else p))))
+        out.append(from_orthography(subj + (p[-1] if len(p) > 1 else p)))
     for p in persons:
-        out.append(from_orthography(_one_sigma("i" + (p[-1] if len(p) > 1 else p))))
+        out.append(from_orthography("i" + (p[-1] if len(p) > 1 else p)))
     for p in persons:
-        out.append(from_orthography(_one_sigma("a" + (p[-1] if len(p) > 1 else p))))
-    out.extend(_row("r", "nt", "t", "a", "e"))
+        out.append(from_orthography("a" + (p[-1] if len(p) > 1 else p)))
+    out.extend(from_orthography(nf) for nf in ("r", "nt", "t", "a", "e"))
     return out
 
 
@@ -196,6 +198,9 @@ def productive_grid_blocks(
     segments: Iterable[str],
 ) -> tuple[list[list[str]], list[list[str]]]:
     """Build productive 1σ tables from segments in the shortlisted grid.
+
+    Productive shapes stay 1σ for both nouns and verbs: they are assembled
+    proposals, not attested endings, so they never earn a second syllable.
 
     These are *combinations* of observed segments, not attested morphemes or
     claims about any source lect's morphology. Candidate shapes are V, CV,
@@ -221,31 +226,18 @@ def productive_grid_blocks(
     if not forms:
         return [], []
 
-    def choose_block(size: int, row_size: int | None = None) -> list[list[str]]:
+    def choose_block(size: int) -> list[list[str]]:
+        # Greedy novelty fill. No minimum-distance constraint: nouns never
+        # had one, and finite verb rows no longer do (syncretism is legal).
         chosen: list[tuple[str, ...]] = []
         used: set[tuple[str, ...]] = set()
         covered: set[str] = set()
-        for slot in range(size):
-            row = chosen[-(slot % row_size):] if row_size and slot % row_size else []
-            available = [form for form in forms if form not in used]
-            if not available:
-                available = forms
-
-            def key(form: tuple[str, ...]) -> tuple:
-                distance_cost = 0
-                if row_size:
-                    distance_cost = sum(
-                        max(0, 2 - phonemic_edit_distance(list(form), list(other)))
-                        for other in row
-                    )
-                novelty = len(set(form) - covered)
-                return (distance_cost, -novelty, len(form), form)
-
-            # Noun cells do not have a minimum-distance constraint.
-            if row_size is None:
-                form = min(available, key=lambda candidate: (-len(set(candidate) - covered), len(candidate), candidate))
-            else:
-                form = min(available, key=key)
+        for _slot in range(size):
+            available = [form for form in forms if form not in used] or forms
+            form = min(
+                available,
+                key=lambda candidate: (-len(set(candidate) - covered), len(candidate), candidate),
+            )
             chosen.append(form)
             used.add(form)
             covered.update(form)
@@ -253,7 +245,7 @@ def productive_grid_blocks(
 
     # Noun/adjective table has 12 gender × case × number cells. The verb
     # block has six 6-person rows followed by five non-finite cells.
-    return choose_block(12), choose_block(41, row_size=6)
+    return choose_block(12), choose_block(41)
 
 # No donor map. Missing lect = bug.
 CONJUGATION_DONOR: dict[str, str] = {}

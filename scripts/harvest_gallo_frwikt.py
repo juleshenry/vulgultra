@@ -22,6 +22,8 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 OUT = ROOT / "data" / "conjugation" / "sources" / "gallo_diseux.json"
+# ELG-spelling pages: kept for reference, not merged into the gallo lect.
+OUT_ELG = ROOT / "data" / "conjugation" / "sources" / "gallo_elg.json"
 CACHE = ROOT / "data" / "sources" / "gallo_frwikt"
 USER_AGENT = "vulgultra-research/0.1 (+noncommercial; cite Wiktionnaire)"
 API = "https://fr.wiktionary.org/w/api.php"
@@ -38,18 +40,25 @@ SKIP_TITLES = {
 
 IRREGULAR = {
     "aler": "aler", "avair": "avair", "aveir": "avair",
-    "étr": "étr", "éstr": "étr", "ói": "ói", "se nalae": "aler",
+    "étr": "étr", "éstr": "étr", "ói": "ói", "alae": "aler", "se nalae": "aler",
 }
 
 _OIL_COMPL = re.compile(r"^(?:qu['’]|q['’]|qe)\s*", re.I)
-_OIL_WORD = re.compile(r"^(?:je|j['’]|tu|t['’]|vous|v['’]|il|i)\s+", re.I)
+# "vous / v'etes": pronoun alternation, not a form variant.
+_OIL_ALT = re.compile(r"^vous\s*/\s*", re.I)
+# vóz is the ELG spelling of vous; il/ol lists 3rd-person pronoun variants.
+_OIL_WORD = re.compile(r"^(?:je|tu|vous|vóz|il/ol|il|ol|i)\s+", re.I)
 _OIL_ELIDE = re.compile(r"^[jtv]['’]", re.I)
+# Reflexive clitics, proclitic (je me nall) and enclitic imperative (nall tei).
+_REFL_WORD = re.compile(r"^(?:me|te|se|nóz|nous|vóz|vous)\s+", re.I)
+_REFL_ELIDE = re.compile(r"^[mts]['’]\s*", re.I)
+_REFL_ENCLITIC = re.compile(r"\s+(?:tei|toi|te|nóz|nous|vóz|vous)$", re.I)
 
-# Pages with several variant tables: features where the first table is the
-# citation form. étr: "Imparfait en et-" (etaes) precedes clipped "en t-" (taes).
-FIRST_TABLE_WINS = {"étr": {"indicative.imperfect"}}
 # éstr lists only clipped ’taes / ’taet; restore the full et- imperfect.
 _CLIPPED_ET = re.compile(r"^['’]t")
+# Pages written in the ELG spelling announce it in the heading: "chauntae (ELG)".
+# ABCD is the Wiktionnaire / kaikki default and stays the canonical Gallo lect.
+_ELG_HEADING = re.compile(r"^Conjugaison de [^\n,]*\(ELG\)")
 
 
 def fold(text: str) -> str:
@@ -78,17 +87,40 @@ def clean_html(text: str) -> str:
     return text
 
 
-def strip_pronoun(form: str) -> str:
-    text = form.strip()
-    text = text.split("\n")[0].strip().rstrip("*").strip()
-    for _ in range(3):
+def is_reflexive(lemma: str) -> bool:
+    return bool(re.match(r"^(?:se\s+|s['’])", lemma.strip(), re.I))
+
+
+def strip_pronoun(form: str, *, reflexive: bool = False) -> str:
+    """One variant line → bare verb form."""
+    text = form.strip().rstrip("*").strip()
+    for _ in range(4):
         nxt = _OIL_COMPL.sub("", text).strip()
+        nxt = _OIL_ALT.sub("", nxt).strip()
         nxt = _OIL_WORD.sub("", nxt).strip()
         nxt = _OIL_ELIDE.sub("", nxt).strip()
+        if reflexive:
+            nxt = _REFL_WORD.sub("", nxt).strip()
+            nxt = _REFL_ELIDE.sub("", nxt).strip()
+            nxt = _REFL_ENCLITIC.sub("", nxt).strip()
         if nxt == text:
             break
         text = nxt
     return text.strip("-").strip()
+
+
+def cell_forms(raw: str, *, reflexive: bool = False) -> list[str]:
+    """All variants in a cell, in page order: 'il chauntt\\nil chauntan' → both."""
+    forms: list[str] = []
+    for line in raw.split("\n"):
+        form = strip_pronoun(line, reflexive=reflexive)
+        form = _CLIPPED_ET.sub("et", form)
+        for piece in form.split("/"):
+            piece = piece.strip()
+            if not piece or piece == "-" or " " in piece or piece in forms:
+                continue
+            forms.append(piece)
+    return forms
 
 
 def tense_feature(mood: str | None, header: str) -> str | None:
@@ -126,7 +158,14 @@ def tense_feature(mood: str | None, header: str) -> str | None:
 
 
 def parse_html(html: str, lemma: str, url: str) -> dict[str, dict]:
-    keep_first = FIRST_TABLE_WINS.get(lemma, set())
+    """Several tables on one page are regional radicals / variants.
+
+    The pages state the first table is built on the infinitive's radical
+    ("La première forme conjuguée se forme sur le même radical que
+    l'infinitif"), so it supplies the primary form; later tables and extra
+    lines inside a cell are kept as `variants`.
+    """
+    reflexive = is_reflexive(lemma)
     rows = re.findall(r"<tr[^>]*>(.*?)</tr>", html, flags=re.I | re.S)
     mood: str | None = None
     feature: str | None = None
@@ -142,24 +181,26 @@ def parse_html(html: str, lemma: str, url: str) -> dict[str, dict]:
             mapping = list(zip(("2sg", "1pl", "2pl"), buffer[:3]))
         else:
             mapping = list(zip(SLOTS, buffer[:6]))
-        row = {}
-        for slot, form in mapping:
-            form = strip_pronoun(form)
-            if not form or form == "-":
+        row = cells.setdefault(feature, {})
+        for slot, raw in mapping:
+            forms = cell_forms(raw, reflexive=reflexive)
+            if not forms:
                 continue
-            # Keep the first graphic variant (before slash).
-            form = form.split("/")[0].strip()
-            form = _CLIPPED_ET.sub("et", form)
-            if " " in form:
-                continue
-            row[slot] = {
-                "form": form,
-                "phonemes": [],
-                "source_label": feature,
-                "source_url": url,
-            }
-        if row and not (feature in keep_first and feature in cells):
-            cells[feature] = row
+            cell = row.get(slot)
+            if cell is None:
+                cell = row[slot] = {
+                    "form": forms[0],
+                    "variants": [],
+                    "phonemes": [],
+                    "source_label": feature,
+                    "source_url": url,
+                }
+                forms = forms[1:]
+            for form in forms:
+                if form != cell["form"] and form not in cell["variants"]:
+                    cell["variants"].append(form)
+        if not row:
+            cells.pop(feature)
         buffer = []
 
     for raw in rows:
@@ -200,6 +241,52 @@ def parse_html(html: str, lemma: str, url: str) -> dict[str, dict]:
                 feature = None
     flush()
     return cells
+
+
+# Genuine suppletive forms the foreign-form check would otherwise drop.
+SUPPLETIVE = {("faèrr", "indicative.present", "3pl")}  # fon "they do"
+
+
+def stem_key(text: str) -> str:
+    bare = re.sub(r"^(?:se\s+|s['’])", "", text.strip(), flags=re.I)
+    return fold(bare)[:2].replace("y", "i")
+
+
+def drop_foreign_forms(lemma: str, cells: dict[str, dict]) -> list[str]:
+    """Drop forms copied from another verb.
+
+    Wiktionnaire pages carry paste errors: chauntae's whole present
+    subjunctive is balhae's (bauj), prandr's preterite 3sg is póvit
+    (pouvoir). A row or cell is foreign when its opening letters occur
+    nowhere else in the verb, including the lemma. Real stem alternations
+    (teni → tienrae, perier → prie) always recur across several cells.
+    """
+    dropped: list[str] = []
+
+    def keys_outside(skip_feature: str | None, skip_slot: str | None) -> set[str]:
+        keys = {stem_key(lemma)}
+        for feature, row in cells.items():
+            for slot, cell in row.items():
+                if feature == skip_feature and (skip_slot is None or slot == skip_slot):
+                    continue
+                keys.add(stem_key(cell["form"]))
+        return keys
+
+    for feature, row in list(cells.items()):
+        own = {stem_key(cell["form"]) for cell in row.values()}
+        if own and not own & keys_outside(feature, None):
+            dropped.append(f"{feature} ({' '.join(c['form'] for c in row.values())})")
+            cells.pop(feature)
+    for feature, row in list(cells.items()):
+        for slot, cell in list(row.items()):
+            if (lemma, feature, slot) in SUPPLETIVE:
+                continue
+            if stem_key(cell["form"]) not in keys_outside(feature, slot):
+                dropped.append(f"{feature}.{slot} ({cell['form']})")
+                row.pop(slot)
+        if not row:
+            cells.pop(feature)
+    return dropped
 
 
 def fetch(url: str, dest: Path) -> str:
@@ -272,13 +359,19 @@ def parse_page(title: str) -> dict | None:
         return None
     page_url = "https://fr.wiktionary.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
     cells = parse_html(html, lemma, page_url)
+    irregular = class_from_lemma(lemma) in IRREGULAR.values()
+    if not irregular:
+        for where in drop_foreign_forms(lemma, cells):
+            print(f"  drop {lemma} {where}: belongs to another verb")
     if not cells:
         return None
+    orthography = "ELG" if _ELG_HEADING.search(clean_html(html)) else "ABCD"
     return {
         "lect": "gallo",
         "lemma": lemma,
+        "orthography": orthography,
         "class_source": class_from_lemma(lemma),
-        "regularity": "irregular" if class_from_lemma(lemma) in IRREGULAR.values() else "regular",
+        "regularity": "irregular" if irregular else "regular",
         "source": {
             "attested": True,
             "title": title,
@@ -292,30 +385,36 @@ def parse_page(title: str) -> dict | None:
 def main() -> int:
     titles = list_titles()
     print(f"category members: {len(titles)}")
-    paradigms: list[dict] = []
+    by_spelling: dict[str, list[dict]] = {"ABCD": [], "ELG": []}
     for title in titles:
         packed = parse_page(title)
         if not packed:
             print(f"  skip {title}")
             continue
         present = packed["cells"].get("indicative.present", {})
-        print(f"  {packed['lemma']} class={packed['class_source']} present={len(present)} tams={len(packed['cells'])}")
-        paradigms.append(packed)
-    document = {
-        "schema": "vulgultra.conjugation.v1",
-        "metadata": {
-            "lect": "gallo",
-            "purpose": "Gallo conjugations from Wiktionnaire Conjugaison:gallo",
-            "provider": "fr.wiktionary.org",
-            "attribution": "Wiktionnaire Catégorie:Conjugaison en gallo (CC BY-SA)",
-            "ending_inventories": {},
-            "optimizer_involved": False,
-        },
-        "paradigms": sorted(paradigms, key=lambda item: item["lemma"]),
-    }
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(document, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"wrote {OUT} paradigms={len(paradigms)}")
+        print(
+            f"  {packed['lemma']} [{packed['orthography']}] class={packed['class_source']} "
+            f"present={len(present)} tams={len(packed['cells'])}"
+        )
+        by_spelling[packed["orthography"]].append(packed)
+    for orthography, path in (("ABCD", OUT), ("ELG", OUT_ELG)):
+        paradigms = by_spelling[orthography]
+        document = {
+            "schema": "vulgultra.conjugation.v1",
+            "metadata": {
+                "lect": "gallo",
+                "orthography": orthography,
+                "purpose": f"Gallo conjugations from Wiktionnaire Conjugaison:gallo ({orthography} spelling)",
+                "provider": "fr.wiktionary.org",
+                "attribution": "Wiktionnaire Catégorie:Conjugaison en gallo (CC BY-SA)",
+                "ending_inventories": {},
+                "optimizer_involved": False,
+            },
+            "paradigms": sorted(paradigms, key=lambda item: item["lemma"]),
+        }
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(document, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"wrote {path} paradigms={len(paradigms)}")
     return 0
 
 

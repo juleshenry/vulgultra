@@ -17,8 +17,8 @@ SPEC.loader.exec_module(vec)
 
 
 class VerbEndingCandidateTests(unittest.TestCase):
-    def test_surface_stem_keeps_rgn_first_class(self) -> None:
-        self.assertEqual(vec.surface_stem("rgn-conj-first"), "rgn-conj-first")
+    def test_surface_stem_maps_rgn_first_class(self) -> None:
+        self.assertEqual(vec.surface_stem("rgn-conj-first"), "-êr")
         self.assertEqual(vec.surface_stem("rgn-conj-avér"), "avér")
         self.assertEqual(vec.surface_stem("lad-conj-ar"), "-ar")
 
@@ -28,7 +28,7 @@ class VerbEndingCandidateTests(unittest.TestCase):
         self.assertEqual(vec.bucket_of("-ur"), "a-theme")
         self.assertEqual(vec.bucket_of("-ro"), "re")
         self.assertEqual(vec.bucket_of("-tcher"), "e-theme")
-        self.assertEqual(vec.bucket_of("rgn-conj-first"), "a-theme")
+        self.assertEqual(vec.bucket_of("-êr"), "a-theme")
         self.assertEqual(vec.bucket_of("ête"), "esse")
         self.assertEqual(vec.bucket_of("avì"), "habere")
         self.assertEqual(vec.bucket_of("saite"), "esse")

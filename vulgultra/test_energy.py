@@ -17,6 +17,8 @@ from vulgultra.optimizer import (
     compute_energy,
     mutate_root,
 )
+from vulgultra.optimizer_constants import W_COLL
+from vulgultra.phonology import count_syllables
 
 
 def _cand(concept: str, lang: str, word: str, phones: list[str], syl: int = 1) -> Candidate:
@@ -68,6 +70,38 @@ class EnergyTests(unittest.TestCase):
         self.assertEqual(bd["E_tact"], 0)
         self.assertEqual(bd["E_dist"], 0)
         self.assertAlmostEqual(total, 10595, places=6)
+
+    def test_finite_verb_syncretism_costs_nothing(self) -> None:
+        genome = _fixture()
+        verb = genome.verb_endings["class_1"]
+        verb["prs_3pl"] = verb["prs_3sg"][:]
+        verb["prs_2sg"] = verb["prs_1sg"][:]
+        _total, bd = compute_energy(genome)
+        self.assertEqual(bd["E_coll"], 0)
+        self.assertEqual(bd["E_dist"], 0)
+
+    def test_noun_and_nonfinite_collisions_still_counted(self) -> None:
+        genome = _fixture()
+        noun = genome.noun_endings["class_1"]
+        noun[NOUN_SLOTS[1]] = noun[NOUN_SLOTS[0]][:]
+        self.assertEqual(compute_energy(genome)[1]["E_coll"], W_COLL)
+        genome = _fixture()
+        verb = genome.verb_endings["class_1"]
+        verb[VERB_SLOTS[-1]] = verb[VERB_SLOTS[-2]][:]
+        self.assertEqual(compute_energy(genome)[1]["E_coll"], W_COLL)
+
+    def test_verb_cells_keep_attested_ending_nouns_clip(self) -> None:
+        from vulgultra.paradigms import VERB_TEMPLATES, _case_block, _row
+        from vulgultra.phonology import from_orthography
+        # Aragonese present 1pl is attested `amos` and must not clip to `mos`.
+        self.assertEqual(VERB_TEMPLATES["an"][1], from_orthography("amos"))
+        # Noun gen.pl is still 1σ (Latin -ōrum/-ārum reduced to `or`/`ar`).
+        block = _case_block("o", "a", "os", "as")
+        gen_pl = block[NOUN_SLOTS.index("m_gen_pl")]
+        self.assertEqual(count_syllables(gen_pl), 1)
+        self.assertTrue(all(count_syllables(cell) == 1 for cell in block))
+        # The nominal row builder still clips a 2σ cell to its last σ.
+        self.assertEqual(_row("orum")[0], from_orthography("rum"))
 
     def test_mutation_stays_on_sigma_slice(self) -> None:
         genome = _fixture()

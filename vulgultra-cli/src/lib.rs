@@ -389,7 +389,9 @@ fn fuse_cell(theme: &str, person: &str) -> Vec<String> {
         };
         parse_ortho(&cell)
     };
-    clip_one_sigma(raw)
+    // Verb cells keep the attested ending whole (amos stays amos). Only
+    // noun/adjective case cells are clipped to 1σ.
+    raw
 }
 
 fn verb_block(persons: &[&str], pst: &str, fut: &str, subj: &str) -> Vec<Vec<String>> {
@@ -600,9 +602,10 @@ pub fn compute_energy(genome: &Genome, db: &CandidateDB) -> EnergyBreakdown {
     let e_tact = W_TACT * (root_viols + end_viols) as f64;
 
     let e_coll = W_COLL * count_ending_collisions(genome) as f64;
-    let e_dist = W_DIST * count_dist_penalty(genome);
+    // The finite-row d≥2 term was dropped; the field stays at 0 for readers.
+    let e_dist = 0.0;
 
-    let total = e_phon + e_end + e_coll + e_tact + e_dist;
+    let total = e_phon + e_end + e_coll + e_tact;
 
     EnergyBreakdown { e_phon, e_end, e_coll, e_tact, e_dist, total }
 }
@@ -616,17 +619,9 @@ fn count_ending_collisions(genome: &Genome) -> u64 {
             }
         }
     }
-    // Verbs: collision only inside a 6-person row (cross-tense syncretism is legal).
+    // Verbs: only the non-finite tail. Finite person rows may syncretize.
     for cls in &genome.verb_endings {
         let finite = cls.len().min(36);
-        for start in (0..finite).step_by(6) {
-            let end = (start + 6).min(finite);
-            for i in start..end {
-                for j in (i + 1)..end {
-                    if cls[i] == cls[j] { collisions += 1; }
-                }
-            }
-        }
         for i in finite..cls.len() {
             for j in (i + 1)..cls.len() {
                 if cls[i] == cls[j] { collisions += 1; }
@@ -634,26 +629,6 @@ fn count_ending_collisions(genome: &Genome) -> u64 {
         }
     }
     collisions
-}
-
-fn count_dist_penalty(genome: &Genome) -> f64 {
-    // d ≥ 2 inside each finite 6-person row. Noun minimal pairs (-o/-on/-os) are not taxed.
-    let mut penalty = 0.0f64;
-    for cls in &genome.verb_endings {
-        let finite = cls.len().min(36);
-        let mut start = 0;
-        while start < finite {
-            let end = (start + 6).min(finite);
-            for i in start..end {
-                for j in (i + 1)..end {
-                    let d = phonemic_edit_distance(&cls[i], &cls[j]);
-                    if d < DIST_THRESHOLD { penalty += (DIST_THRESHOLD - d) as f64; }
-                }
-            }
-            start += 6;
-        }
-    }
-    penalty
 }
 
 fn collect_all_endings(genome: &Genome) -> Vec<&Vec<String>> {
@@ -681,7 +656,6 @@ pub struct EnergyCache {
     pub total_end_syls: u64,
     pub total_end_viols: u64,
     pub ending_collisions: u64,
-    pub ending_dist_penalty: f64,
 }
 
 impl EnergyCache {
@@ -716,7 +690,6 @@ impl EnergyCache {
             total_end_syls,
             total_end_viols,
             ending_collisions: count_ending_collisions(genome),
-            ending_dist_penalty: count_dist_penalty(genome),
         }
     }
 
@@ -729,8 +702,7 @@ impl EnergyCache {
         let e_end = W_END * self.total_end_syls as f64;
         let e_tact = W_TACT * (self.total_root_viols + self.total_end_viols) as f64;
         let e_coll = W_COLL * self.ending_collisions as f64;
-        let e_dist = W_DIST * self.ending_dist_penalty;
-        e_phon + e_end + e_coll + e_tact + e_dist
+        e_phon + e_end + e_coll + e_tact
     }
 
     fn add_phonemes(&mut self, phonemes: &[String]) {
@@ -778,9 +750,8 @@ impl EnergyCache {
             self.total_end_viols += count_violations_in(seq, &genome.vowels) as u64;
         }
 
-        // Recompute collisions and dist (fast: ~50 endings)
+        // Recompute collisions (fast: ~50 endings)
         self.ending_collisions = count_ending_collisions(genome);
-        self.ending_dist_penalty = count_dist_penalty(genome);
     }
 
     /// Undo an ending change
@@ -795,7 +766,6 @@ impl EnergyCache {
             self.total_end_viols += count_violations_in(seq, &genome.vowels) as u64;
         }
         self.ending_collisions = count_ending_collisions(genome);
-        self.ending_dist_penalty = count_dist_penalty(genome);
     }
 }
 
@@ -876,24 +846,16 @@ fn cell_score(
     phonemes: &HashSet<String>,
     lang: &str,
     vowels: &[String],
-) -> (u32, u64, u64, u32, std::cmp::Reverse<usize>, std::cmp::Reverse<usize>, usize, String) {
+) -> (u32, u64, std::cmp::Reverse<usize>, std::cmp::Reverse<usize>, usize, String) {
     let syllables = count_syllables_in(cell, vowels);
     let violations = count_violations_in(cell, vowels) as u64;
-    let collisions = row_so_far.iter().filter(|other| other.as_slice() == cell).count() as u64;
-    let mut dist = 0u32;
-    for other in row_so_far {
-        let d = phonemic_edit_distance(cell, other);
-        if d < DIST_THRESHOLD {
-            dist += DIST_THRESHOLD - d;
-        }
-    }
+    // No collision / distance term: finite persons may syncretize.
+    let _ = row_so_far;
     let concordance: usize = anchors.iter().map(|a| common_suffix_len(cell, a)).sum();
     let new_ph = cell.iter().filter(|p| !phonemes.contains(*p)).collect::<HashSet<_>>().len();
     (
         syllables,
         violations,
-        collisions,
-        dist,
         std::cmp::Reverse(concordance),
         std::cmp::Reverse(new_ph),
         cell.len(),
@@ -922,7 +884,7 @@ fn assemble_verb_rows(
         let mut row_langs: Vec<String> = Vec::with_capacity(6);
         for person in 0..6 {
             let mut best: Option<(
-                u32, u64, u64, u32,
+                u32, u64,
                 std::cmp::Reverse<usize>, std::cmp::Reverse<usize>, usize, String,
             )> = None;
             let mut best_cell: Vec<String> = Vec::new();
@@ -954,7 +916,7 @@ fn assemble_verb_rows(
                 used.insert(p.clone());
             }
             anchors[person].push(best_cell.clone());
-            row_langs.push(winner.7);
+            row_langs.push(winner.5);
             row.push(best_cell);
         }
         labels.push(format!("{name}={}", row_langs.join("/")));
@@ -1392,6 +1354,36 @@ mod tests {
         assert_eq!(bd.e_tact, 0.0, "tact {}", bd.e_tact);
         assert_eq!(bd.e_dist, 0.0, "dist {}", bd.e_dist);
         assert!((bd.total - 10595.0).abs() < 1e-6, "total {}", bd.total);
+    }
+
+    #[test]
+    fn test_verb_cells_not_clipped_noun_cells_clipped() {
+        // Verb: attested 2σ `amos` stays whole.
+        assert_eq!(fuse_cell("", "amos"), phon(&["a", "m", "o", "s"]));
+        // Noun: a 2σ case cell is still clipped to its last syllable.
+        assert_eq!(clip_one_sigma(parse_ortho("orum")), phon(&["r", "u", "m"]));
+    }
+
+    #[test]
+    fn test_finite_verb_syncretism_costs_nothing() {
+        let (mut genome, db) = fixture_genome();
+        // 3sg = 3pl and 1sg = 2sg inside the present row.
+        genome.verb_endings[0][5] = genome.verb_endings[0][4].clone();
+        genome.verb_endings[0][2] = genome.verb_endings[0][0].clone();
+        let bd = compute_energy(&genome, &db);
+        assert_eq!(bd.e_coll, 0.0);
+        assert_eq!(bd.e_dist, 0.0);
+        assert_eq!(EnergyCache::from_genome(&genome, &db).ending_collisions, 0);
+    }
+
+    #[test]
+    fn test_noun_and_nonfinite_collisions_still_counted() {
+        let (mut genome, db) = fixture_genome();
+        genome.noun_endings[0][1] = genome.noun_endings[0][0].clone();
+        assert_eq!(compute_energy(&genome, &db).e_coll, W_COLL);
+        let (mut genome, db) = fixture_genome();
+        genome.verb_endings[0][40] = genome.verb_endings[0][39].clone();
+        assert_eq!(compute_energy(&genome, &db).e_coll, W_COLL);
     }
 
     #[test]

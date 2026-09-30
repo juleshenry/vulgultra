@@ -96,10 +96,13 @@ def nearest_verb_label(html: str, offset: int) -> tuple[str, str]:
             re.I,
         ),
     ]
+    # Nearest label wins: the match ending closest to the table, whichever
+    # pattern found it (the last pattern used to override nearer labels).
     best = None
     for pattern in patterns:
         for match in pattern.finditer(window):
-            best = match
+            if best is None or match.end() > best.end():
+                best = match
     if not best:
         return "", ""
     return clean_cell(best.group(1)), clean_cell(best.group(2) or "")

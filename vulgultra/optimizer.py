@@ -18,7 +18,7 @@ from typing import Optional
 from vulgultra.phonology import (
     VOWELS, CONSONANTS, LEGAL_CODAS,
     count_syllables, count_violations, extract_phonemes,
-    phonemic_edit_distance, is_phonotactically_legal,
+    is_phonotactically_legal,
     to_orthography, syllabify,
 )
 from vulgultra.paradigms import (
@@ -27,8 +27,8 @@ from vulgultra.paradigms import (
     ADJ_SLOT_NAMES, NOUN_SLOT_NAMES,
 )
 from vulgultra.optimizer_constants import (
-    DIST_THRESHOLD, VERB_NONFINITE, VERB_SLOTS, VERB_SLOTS_IND,
-    VERB_SLOTS_SUBJ, W_COLL, W_DIST, W_END, W_PHON, W_TACT,
+    VERB_NONFINITE, VERB_SLOTS, VERB_SLOTS_IND,
+    VERB_SLOTS_SUBJ, W_COLL, W_END, W_PHON, W_TACT,
 )
 
 
@@ -187,34 +187,19 @@ def _scored_endings(genome: Genome) -> list[list[str]]:
 
 
 def _collision_count(genome: Genome) -> int:
-    """Noun cells distinct. Verb collisions inside each 6-person row, and among non-finite cells."""
+    """Noun cells distinct; verb non-finite cells distinct.
+
+    Finite verb rows are not checked: person syncretism inside a tense row
+    (Venetian 3sg = 3pl) is legal Romance.
+    """
     collisions = 0
     for cls in genome.noun_endings.values():
         seqs = [tuple(cls[s]) for s in NOUN_SLOTS if s in cls]
         collisions += _pairs_equal(seqs)
     for cls in genome.verb_endings.values():
         seqs = [tuple(cls[s]) for s in VERB_SLOTS if s in cls]
-        finite = seqs[:36]
-        for start in range(0, len(finite), 6):
-            collisions += _pairs_equal(finite[start:start + 6])
         collisions += _pairs_equal(seqs[36:])
     return collisions
-
-
-def _dist_penalty(genome: Genome) -> float:
-    """d ≥ 2 inside each finite 6-person row. Noun minimal pairs are not taxed."""
-    penalty = 0.0
-    for cls in genome.verb_endings.values():
-        seqs = [cls[s] for s in VERB_SLOTS if s in cls]
-        finite = seqs[:36]
-        for start in range(0, len(finite), 6):
-            row = finite[start:start + 6]
-            for i in range(len(row)):
-                for j in range(i + 1, len(row)):
-                    d = phonemic_edit_distance(row[i], row[j])
-                    if d < DIST_THRESHOLD:
-                        penalty += DIST_THRESHOLD - d
-    return penalty
 
 
 def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
@@ -240,15 +225,15 @@ def compute_energy(genome: Genome) -> tuple[float, dict[str, float]]:
     for e in endings:
         total_viols += count_violations(e)
     e_tact = W_TACT * total_viols
-    e_dist = W_DIST * _dist_penalty(genome)
 
-    total = e_phon + e_end + e_coll + e_tact + e_dist
+    total = e_phon + e_end + e_coll + e_tact
     breakdown = {
         "E_phon": e_phon,
         "E_end": e_end,
         "E_coll": e_coll,
         "E_tact": e_tact,
-        "E_dist": e_dist,
+        # The finite-row d≥2 term was dropped; key kept at 0 for report readers.
+        "E_dist": 0.0,
     }
     return total, breakdown
 
@@ -320,22 +305,17 @@ def _cell_score(
     Concordance rewards a shared person coda with already-chosen cells of the
     same person across earlier tenses/moods (e.g. present 1pl /ons/ tips a
     tied future toward /erons/). It never spends an extra syllable.
+    Persons inside a row may coincide: there is no collision or distance
+    term for finite verb cells. ``row_so_far`` is accepted for API
+    stability but no longer affects the score.
     """
     syllables = count_syllables(cell)
     violations = count_violations(cell)
-    collisions = sum(1 for other in row_so_far if other == cell)
-    dist = 0
-    for other in row_so_far:
-        d = phonemic_edit_distance(cell, other)
-        if d < DIST_THRESHOLD:
-            dist += DIST_THRESHOLD - d
     concordance = sum(_common_suffix_len(cell, anchor) for anchor in anchors)
     new_ph = len(extract_phonemes(cell) - phonemes)
     return (
         syllables,
         violations,
-        collisions,
-        dist,
         -concordance,
         -new_ph,
         len(cell),

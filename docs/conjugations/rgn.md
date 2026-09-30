@@ -242,8 +242,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 1 | `lcp` | -b | -s | -b | -sum | -suv | -b |
-| `indicative.future` | 1 | `lcp` | -ò | -é | -à | -én | -ẽn | -à |
-| `indicative.imperfect` | 1 | `lcp` | -éva | -ivtia | -éva | -èmia | -ìmia | -éva |
+| `indicative.future` | 1 | `lcp` | -ò | -é | -à | -ẽn | -ì | -à |
+| `indicative.imperfect` | 1 | `lcp` | -éva | -ìvtia | -éva | -ìmia | -ìvia | -éva |
 | `indicative.past` | 1 | `lcp` | ∅ | ∅ | -s | -sum | -som | -suv |
 | `indicative.preterite` | 1 | `lcp` | -t | -s | -t | -sum | -suv | -t |
 
@@ -258,7 +258,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1sg` | ò |
 | `2sg` | é |
 | `3sg` | à |
-| `1pl` | avén |
+| `1pl` | avẽn |
 | `2pl` | avì |
 | `3pl` | à |
 
@@ -280,8 +280,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1sg` | arò |
 | `2sg` | aré |
 | `3sg` | arà |
-| `1pl` | arén |
-| `2pl` | arẽn |
+| `1pl` | arẽn |
+| `2pl` | arì |
 | `3pl` | arà |
 
 ##### `indicative.imperfect`
@@ -289,10 +289,10 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | Slot | Form |
 |---|---|
 | `1sg` | avéva |
-| `2sg` | avivtia |
+| `2sg` | avìvtia |
 | `3sg` | avéva |
-| `1pl` | avèmia |
-| `2pl` | avìmia |
+| `1pl` | avìmia |
+| `2pl` | avìvia |
 | `3pl` | avéva |
 
 ##### `indicative.past`
@@ -326,7 +326,7 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `3sg` | éva |
 | `1pl` | avègna |
 | `2pl` | avìva |
-| `3pl` | épa |
+| `3pl` | éva |
 
 ##### `conditional.past`
 

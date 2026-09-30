@@ -30,6 +30,7 @@ from vulgultra.conjugation_harvest import (  # noqa: E402
 )
 from vulgultra.romance_swadesh import LECT_NAMES, SOURCE_LANGS  # noqa: E402
 from vulgultra.verbix import LECT_CONFIG as VERBIX_LECTS  # noqa: E402
+from vulgultra.verbix import NOT_HARVESTED as VERBIX_NOT_HARVESTED  # noqa: E402
 from vulgultra.verbix import normalize_class as normalize_verbix_class  # noqa: E402
 
 WORDS = ROOT / "data" / "words"
@@ -227,26 +228,54 @@ def merge_conjugation_json(
                 if not form:
                     continue
                 existing = paradigms[lemma][feature].get(slot) or []
-                if any(str(item.get("form") or "").strip() == form for item in existing):
-                    continue
-                record = {
-                    "form": form,
-                    "ipa": "",
-                    "tags": [feature.replace(".", ", "), source_tag],
-                    "source_file": source_name,
-                    "source_url": page_url,
-                    "source_kind": (
-                        f"{source_tag}-attested" if attested else f"{source_tag}-generated"
-                    ),
-                    "ambiguous_slot": False,
-                }
-                if existing:
-                    # Hand corpora (diseux / Verbix docs) win as the primary form.
-                    paradigms[lemma][feature][slot] = [record] + existing
-                else:
-                    paradigms[lemma][feature][slot] = [record]
+                if not existing:
                     counts["classified_cells"] += 1
                     added += 1
+
+                def record_for(value: str, primary: bool) -> dict:
+                    return {
+                        "form": value,
+                        "ipa": "",
+                        "tags": [feature.replace(".", ", "), source_tag]
+                        + ([] if primary else ["variant"]),
+                        "source_file": source_name,
+                        "source_url": page_url,
+                        "source_kind": (
+                            f"{source_tag}-attested" if attested else f"{source_tag}-generated"
+                        ),
+                        "ambiguous_slot": False,
+                    }
+
+                same = [
+                    item for item in existing
+                    if str(item.get("form") or "").strip() == form
+                ]
+                if source_tag == "diseux":
+                    # Hand corpora win as the primary form, even when another
+                    # source already listed the same spelling.
+                    rest = [item for item in existing if item not in same]
+                    merged = [record_for(form, True)] + rest
+                elif existing:
+                    # Verbix only fills gaps: kaikki keeps its primary form and
+                    # a differing Verbix form is kept as a variant.
+                    merged = list(existing)
+                    if not same:
+                        merged.append(record_for(form, False))
+                else:
+                    merged = [record_for(form, True)]
+                # Alternates: `variants`, or `notes` ("north: form") in older
+                # hand harvesters (pcd, ext, ist).
+                alternates = list(cell.get("variants") or [])
+                alternates += [
+                    str(note).split(": ", 1)[-1] for note in cell.get("notes") or []
+                ]
+                for variant in alternates:
+                    variant = str(variant).strip()
+                    if variant and all(
+                        str(item.get("form") or "").strip() != variant for item in merged
+                    ):
+                        merged.append(record_for(variant, False))
+                paradigms[lemma][feature][slot] = merged
     if source_name not in files:
         files.append(source_name)
     return added
@@ -261,6 +290,9 @@ def merge_verbix(
 ) -> bool:
     """Merge `{lect}_verbix.json` into paradigms. Returns True if merged."""
     path = OUT_JSON / f"{lect}_verbix.json"
+    if lect in VERBIX_NOT_HARVESTED:
+        counts["verbix_slots_added"] = 0
+        return False
     added = merge_conjugation_json(
         lect, paradigms, lemma_meta, counts, files, path,
         source_tag="verbix",

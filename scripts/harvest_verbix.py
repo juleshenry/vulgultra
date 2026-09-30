@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from vulgultra.verbix import LECT_CONFIG, harvest_lemmas  # noqa: E402
+from vulgultra.verbix import LECT_CONFIG, NOT_HARVESTED, harvest_lemmas  # noqa: E402
 
 WORDS = ROOT / "data" / "words"
 CACHE_ROOT = ROOT / "data" / "sources" / "verbix"
@@ -131,13 +131,23 @@ def main() -> int:
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--sleep", type=float, default=0.12)
     parser.add_argument("--limit", type=int, default=0, help="cap lemmas per lect")
+    parser.add_argument(
+        "--cached-only", action="store_true",
+        help="reparse the local cache without fetching new lemmas",
+    )
     args = parser.parse_args()
-    lects = args.lects or sorted(LECT_CONFIG)
+    lects = args.lects or sorted(set(LECT_CONFIG) - NOT_HARVESTED)
     for lect in lects:
-        if lect not in LECT_CONFIG:
-            print(f"skip unknown lect {lect}", file=sys.stderr)
+        if lect not in LECT_CONFIG or lect in NOT_HARVESTED:
+            print(f"skip lect {lect}", file=sys.stderr)
             continue
-        lemmas = lemma_list(lect, limit=args.limit)
+        if args.cached_only:
+            lemmas = sorted(
+                json.loads(path.read_text(encoding="utf-8"))["lemma"]
+                for path in (CACHE_ROOT / lect).glob("*.json")
+            )
+        else:
+            lemmas = lemma_list(lect, limit=args.limit)
         if not lemmas:
             print(f"{lect}: no lemmas")
             continue

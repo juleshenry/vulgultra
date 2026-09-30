@@ -30,19 +30,56 @@ MOODS = {
 TENSES = {
     "present": "present",
     "preterite": "preterite",
-    "past": "past",
     "imperfect": "imperfect",
     "future": "future",
     "pluperfect": "pluperfect",
-    "historic": "historic-past",
-    "remote": "remote-past",
+    # it/fr/eml "historic past" and ro/rup/dlm "perfect" are the simple preterite.
+    "historic": "preterite",
+    "remote": "preterite",
+    "perfect": "preterite",
+    "past": "past",
+}
+# Bare "past" (no historic/perfect tag): the preterite in co, the imperfect in pms.
+BARE_PAST = {"pms": "imperfect"}
+# Periphrastic rows and negative imperatives are not person endings.
+SKIP_TAGS = {"multiword-construction", "anterior", "negative"}
+
+# Subject clitics written into Kaikki conjugation cells (NB: obligatory in
+# these lects). Stripped so the cell is the verb form alone.
+SUBJECT_CLITICS: dict[str, tuple[str, ...]] = {
+    "fur": ("o", "tu", "al", "e", "a", "i"),
+    "vec": ("el", "ła", "la", "i", "łe", "le", "te", "ti", "a"),
+    "lij": ("mi", "ti", "o", "a", "i", "e", "se", "me", "ve", "ne", "te"),
+    "pms": ("mi", "i", "it", "a", "at", "as", "is", "I"),
 }
 
 MAX_REPRESENTATIVES = 3
 MIN_INVENTORY_SUPPORT = 3
 
 
-def decode_tags(tags: list[str]) -> tuple[str | None, str, bool]:
+def lect_from_filename(filename: str) -> str:
+    """`kaikki-fur.jsonl` → `fur`."""
+    name = str(filename).rsplit("/", 1)[-1]
+    if name.startswith("kaikki-"):
+        name = name[len("kaikki-"):]
+    return name.split(".", 1)[0]
+
+
+def strip_subject_clitics(lect: str, form: str) -> str:
+    """`o fevelavi` → `fevelavi`; a bare clitic (`al`) → ``."""
+    clitics = SUBJECT_CLITICS.get(lect)
+    text = form.strip()
+    if not clitics:
+        return text
+    words = text.split()
+    while words and words[0] in clitics:
+        words = words[1:]
+    if words and lect == "pms" and words[0][:2] in {"l'", "l’"}:
+        words[0] = words[0][2:]
+    return " ".join(words)
+
+
+def decode_tags(tags: list[str], lect: str = "") -> tuple[str | None, str, bool]:
     """Return person slot, feature id, and whether person/number is ambiguous."""
     tagset = {str(tag).lower().replace("_", "-") for tag in tags}
     person_tokens = [
@@ -70,6 +107,10 @@ def decode_tags(tags: list[str]) -> tuple[str | None, str, bool]:
         else:
             mood = next((name for tag, name in MOODS.items() if tag in tagset), None)
         tense = next((name for tag, name in TENSES.items() if tag in tagset), None)
+        if tense == "past":
+            tense = BARE_PAST.get(lect, "preterite")
+        if tagset & SKIP_TAGS:
+            mood, tense = "skip", None
         # Wiktionary form-of rows often tag tense alone under an indicative table.
         if mood is None and tense is not None:
             mood = "indicative"
@@ -77,7 +118,10 @@ def decode_tags(tags: list[str]) -> tuple[str | None, str, bool]:
     return slot, feature, ambiguous
 
 
-def recover_conjugation_persons(forms: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def recover_conjugation_persons(
+    forms: list[dict[str, Any]],
+    lect: str = "",
+) -> list[dict[str, Any]]:
     """Fill 1sg/3sg/3pl when Wiktextract leaves only number on a conjugation cell.
 
     Dalmatian, Istriot, and Romagnol tables list persons in 1sg–3pl order.
@@ -112,7 +156,7 @@ def recover_conjugation_persons(forms: list[dict[str, Any]]) -> list[dict[str, A
             if not isinstance(rec, dict):
                 continue
             tags = [str(tag).lower().replace("_", "-") for tag in rec.get("tags") or []]
-            slot, _feature, ambiguous = decode_tags(tags)
+            slot, _feature, ambiguous = decode_tags(tags, lect)
             if slot and not ambiguous:
                 tagged.add(slot)
                 continue
@@ -145,8 +189,20 @@ def recover_conjugation_persons(forms: list[dict[str, Any]]) -> list[dict[str, A
         if "infinitive" in tags or "gerund" in tags or "participle" in tags:
             flush()
             continue
-        _slot, feature, _ambiguous = decode_tags(tags)
-        if group and feature != group_feature:
+        slot, feature, ambiguous = decode_tags(tags, lect)
+        # Adjacent tables can decode to the same feature (rgn present indicative
+        # then subjunctive). A slot or number that is already full starts a
+        # new table instead of pooling six more forms into this one.
+        number = "singular" if "singular" in tags else "plural" if "plural" in tags else ""
+        in_group = [
+            [str(t).lower().replace("_", "-") for t in recovered[i].get("tags") or []]
+            for i in group
+        ]
+        slot_seen = bool(slot) and not ambiguous and any(
+            decode_tags(other, lect)[0] == slot for other in in_group
+        )
+        number_full = bool(number) and sum(number in other for other in in_group) >= 3
+        if group and (feature != group_feature or slot_seen or number_full):
             flush()
         group_feature = feature
         group.append(idx)
@@ -211,12 +267,16 @@ def row_forms(cells: dict[str, list[dict[str, Any]]]) -> dict[str, str]:
     """Pick one orthographic form per person slot."""
     out: dict[str, str] = {}
     for slot in PERSON_SLOTS:
-        records = cells.get(slot) or []
-        for record in records:
-            form = str(record.get("form") or "").strip()
-            if form and form != "-":
-                out[slot] = form
-                break
+        forms = [
+            str(record.get("form") or "").strip()
+            for record in cells.get(slot) or []
+        ]
+        forms = [form for form in forms if form and form != "-"]
+        # A reflexive or periphrastic alternate (`me fiai`) listed first must
+        # not hide the synthetic form and knock the row out of the inventory.
+        single = [form for form in forms if " " not in form]
+        if single or forms:
+            out[slot] = (single or forms)[0]
     return out
 
 
@@ -252,7 +312,9 @@ def strip_endings(
 
     mode = "template"
     used = usable_stem(stem) or ""
-    if not used:
+    # Template stem args are sometimes another word (nrf `aveir`, eml `èser`,
+    # co gerund): fall back to the row's own common prefix.
+    if not used or not all(form.startswith(used) for form in occupied):
         used = longest_common_prefix(occupied)
         mode = "lcp"
     if not used:
@@ -386,9 +448,12 @@ def store_form(
     filename: str,
     source_url: str,
     source_kind: str,
+    lect: str = "",
 ) -> None:
-    slot, feature, ambiguous = decode_tags(tags)
-    text = form.strip()
+    slot, feature, ambiguous = decode_tags(tags, lect)
+    if feature.startswith("skip"):
+        return
+    text = strip_subject_clitics(lect, form)
     if not text:
         return
     cell_key = slot or "?"
@@ -421,6 +486,7 @@ def harvest_kaikki_file(
     seen: set[tuple],
 ) -> None:
     """Ingest one Kaikki JSONL into paradigms + lemma_meta."""
+    lect = lect_from_filename(filename)
     for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
         try:
             entry = json_loads(line)
@@ -462,7 +528,7 @@ def harvest_kaikki_file(
                 item for item in (entry.get("forms") or [])
                 if isinstance(item, dict)
             ]
-            for form_record in recover_conjugation_persons(raw_forms):
+            for form_record in recover_conjugation_persons(raw_forms, lect):
                 tags = sorted(str(tag) for tag in form_record.get("tags", []))
                 if "inflection-template" in tags or "table-tags" in tags:
                     continue
@@ -480,6 +546,7 @@ def harvest_kaikki_file(
                     filename=filename,
                     source_url=source_url,
                     source_kind=source_kind,
+                    lect=lect,
                 )
                 if form_record.get("form"):
                     counts["inflected_forms"] += 1
@@ -507,6 +574,7 @@ def harvest_kaikki_file(
                     filename=filename,
                     source_url=source_url,
                     source_kind="form-of-entry",
+                    lect=lect,
                 )
 
 

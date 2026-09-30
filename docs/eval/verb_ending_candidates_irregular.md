@@ -52,4 +52,4 @@ Present indicative 6-grid only. Analyzed stems live in
 | { voleur } | wa | -u (wa) | -us (wa) | -ut (wa) | -lans (wa) | -loz (wa) | -lnut (wa) |
 | { vouleir } | nrf | -euil (nrf) | -eux (nrf) | -eut (nrf) | -ouloms (nrf) | -oulez (nrf) | -eulent (nrf) |
 | { wa-conj-fé } | wa | -wai (wa) | -wais (wa) | -wait (wa) | -ijhans (wa) | -ijhoz (wa) | -oaiynut (wa) |
-| { ói } | gallo | -s (gallo) | -s (gallo) | -t (gallo) | -yon (gallo) | — | -y (gallo) |
+| { ói } | gallo | -s (gallo) | -s (gallo) | -t (gallo) | -yon (gallo) | -yétz (gallo) | -y (gallo) |

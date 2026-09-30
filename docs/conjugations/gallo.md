@@ -6,11 +6,11 @@
 
 - Source set: Wiktionary/Wiktextract form-of entries plus Wiktionnaire Conjugaison:gallo (https://fr.wiktionary.org/wiki/Catégorie:Conjugaison_en_gallo)
 - Source files: `kaikki-gallo.jsonl`, `gallo_diseux.json`
-- Lemmas with forms: **572**
+- Lemmas with forms: **556**
 - Verb lemma entries: **1755**
 - Inflected form records: **408**
 - Separate form-of entries: **2536**
-- Classified person-slot observations: **3450**
+- Classified person-slot observations: **2138**
 
 Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 
@@ -19,16 +19,16 @@ Person slots: `1sg`, `2sg`, `3sg`, `1pl`, `2pl`, `3pl`.
 | Ending / paradigm | Lemmas | Features with a full 6-grid | Inventories |
 |---|---:|---:|---:|
 | `-er` | 329 | 8 | 8 |
-| `aler` | 2 | 8 | 7 |
-| `avair` | 2 | 7 | 7 |
-| `étr` | 2 | 7 | 7 |
-| `-i` | 38 | 0 | 0 |
-| `-ae` | 31 | 0 | 0 |
-| `-r` | 31 | 0 | 0 |
-| `-ir` | 17 | 0 | 0 |
-| `-rr` | 10 | 0 | 0 |
-| `ói` | 1 | 0 | 0 |
+| `avair` | 2 | 8 | 7 |
+| `étr` | 2 | 8 | 7 |
+| `aler` | 1 | 8 | 7 |
+| `ói` | 1 | 6 | 5 |
+| `-i` | 37 | 6 | 0 |
 | `unknown` | 108 | 0 | 0 |
+| `-ae` | 29 | 0 | 0 |
+| `-r` | 26 | 0 | 0 |
+| `-ir` | 15 | 0 | 0 |
+| `-rr` | 5 | 0 | 0 |
 | `-air` | 1 | 0 | 0 |
 
 ## Ending: `-er`
@@ -41,12 +41,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 |---|---:|---|---|---|---|---|---|---|
 | `conditional` | 37 | `lcp` | -aes | -aes | -aet | -ins | -iéz | -aent |
 | `indicative.future` | 37 | `lcp` | -ë | -âs | -a | -ons | -éz | -ont |
-| `indicative.imperfect` | 13 | `lcp` | -aes | -aes | -aet | -ins | -yéz | -aent |
-| `indicative.present` | 12 | `lcp` | -e | -es | -e | -ons | -éz | -ent |
+| `indicative.imperfect` | 18 | `lcp` | -aes | -aes | -aet | -ins | -iyéz | -aent |
+| `indicative.present` | 14 | `lcp` | -e | -es | -e | -ons | -éz | -ent |
 | `indicative.preterite` | 37 | `lcp` | -s | -s | -t | -te | -te | -te |
 | `subjunctive.imperfect` | 37 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
-| `subjunctive.present` | 25 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
-| `subjunctive.present-2` | 14 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
+| `subjunctive.present` | 23 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
+| `subjunctive.present-2` | 15 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
 
 ### Representative lemmas
 
@@ -56,34 +56,34 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | suqere |
-| `2sg` | suqeres |
-| `3sg` | suqere |
+| `1sg` | sucr |
+| `2sg` | sucr |
+| `3sg` | sucr |
 | `1pl` | sucrons |
 | `2pl` | sucréz |
-| `3pl` | suqerent |
+| `3pl` | sucrent |
 
 ##### `conditional`
 
 | Slot | Form |
 |---|---|
-| `1sg` | suqereraes |
-| `2sg` | suqereraes |
-| `3sg` | suqereraet |
-| `1pl` | suqererins |
-| `2pl` | suqereriéz |
-| `3pl` | suqereraent |
+| `1sg` | sucreraes |
+| `2sg` | sucreraes |
+| `3sg` | sucreraet |
+| `1pl` | sucrerins |
+| `2pl` | sucreriéz |
+| `3pl` | sucreraent |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | suqererë |
-| `2sg` | suqererâs |
-| `3sg` | suqerera |
-| `1pl` | suqererons |
-| `2pl` | suqereréz |
-| `3pl` | suqereront |
+| `1sg` | sucrerë |
+| `2sg` | sucrerâs |
+| `3sg` | sucrera |
+| `1pl` | sucrerons |
+| `2pl` | sucreréz |
+| `3pl` | sucreront |
 
 ##### `indicative.imperfect`
 
@@ -92,8 +92,8 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 | `1sg` | sucraes |
 | `2sg` | sucraes |
 | `3sg` | sucraet |
-| `1pl` | suqerions |
-| `2pl` | suqeriéz |
+| `1pl` | sucrins |
+| `2pl` | sucriyéz |
 | `3pl` | sucraent |
 
 ##### `indicative.preterite`
@@ -122,12 +122,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | suqere |
-| `2sg` | suqeres |
-| `3sg` | suqere |
-| `1pl` | suqerions |
-| `2pl` | suqeriéz |
-| `3pl` | suqerent |
+| `1sg` | sucreje |
+| `2sg` | sucrejes |
+| `3sg` | sucreje |
+| `1pl` | sucrejions |
+| `2pl` | sucrejiéz |
+| `3pl` | sucrejent |
 
 ##### `subjunctive.present-2`
 
@@ -148,9 +148,9 @@ _…1 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | subeille |
-| `2sg` | subeilles |
-| `3sg` | subeille |
+| `1sg` | subl |
+| `2sg` | subl |
+| `3sg` | subl |
 | `1pl` | subllons |
 | `2pl` | sublléz |
 | `3pl` | subllent |
@@ -159,23 +159,23 @@ _…1 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | subeilleraes |
-| `2sg` | subeilleraes |
-| `3sg` | subeilleraet |
-| `1pl` | subeillerins |
-| `2pl` | subeilleriéz |
-| `3pl` | subeilleraent |
+| `1sg` | sublleraes |
+| `2sg` | sublleraes |
+| `3sg` | sublleraet |
+| `1pl` | subllerins |
+| `2pl` | sublleriéz |
+| `3pl` | sublleraent |
 
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | subeillerë |
-| `2sg` | subeillerâs |
-| `3sg` | subeillera |
-| `1pl` | subeillerons |
-| `2pl` | subeilleréz |
-| `3pl` | subeilleront |
+| `1sg` | subllerë |
+| `2sg` | subllerâs |
+| `3sg` | subllera |
+| `1pl` | subllerons |
+| `2pl` | sublleréz |
+| `3pl` | sublleront |
 
 ##### `indicative.imperfect`
 
@@ -240,12 +240,12 @@ _…1 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | pllie |
-| `2sg` | pllies |
-| `3sg` | pllie |
+| `1sg` | plliye |
+| `2sg` | plliyes |
+| `3sg` | plliye |
 | `1pl` | plliyons |
 | `2pl` | plliyéz |
-| `3pl` | pllient |
+| `3pl` | plliyent |
 
 ##### `conditional`
 
@@ -317,14 +317,242 @@ _…1 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | pllie |
-| `2sg` | pllies |
-| `3sg` | pllie |
+| `1sg` | plliye |
+| `2sg` | plliyes |
+| `3sg` | plliye |
 | `1pl` | plliyions |
 | `2pl` | plliyiéz |
-| `3pl` | pllient |
+| `3pl` | pllijent |
 
 _…1 more tense/mood rows in the JSON corpus._
+
+## Irregular: `avair`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -aes | -aes | -aet | -ins | -iéz | -aent |
+| `indicative.future` | 1 | `lcp` | -ë | -âs | -a | -ons | -éz | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -aes | -aes | -aet | -ins | -iéz | -aent |
+| `indicative.preterite` | 1 | `lcp` | -s | -s | -t | -te | -te | -te |
+| `subjunctive.imperfect` | 1 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
+| `subjunctive.present` | 1 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
+| `subjunctive.present-2` | 1 | `lcp` | -e | -es | -e | -ons | -éz | -ent |
+
+### Representative lemmas
+
+#### `avair`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | e |
+| `2sg` | as |
+| `3sg` | a |
+| `1pl` | ons |
+| `2pl` | éz |
+| `3pl` | ont |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | araes |
+| `2sg` | araes |
+| `3sg` | araet |
+| `1pl` | arins |
+| `2pl` | ariéz |
+| `3pl` | araent |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | arë |
+| `2sg` | arâs |
+| `3sg` | ara |
+| `1pl` | arons |
+| `2pl` | aréz |
+| `3pl` | aront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | avaes |
+| `2sg` | avaes |
+| `3sg` | avaet |
+| `1pl` | avins |
+| `2pl` | aviéz |
+| `3pl` | avaent |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ûs |
+| `2sg` | ûs |
+| `3sg` | ût |
+| `1pl` | ûte |
+| `2pl` | ûte |
+| `3pl` | ûte |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ûje |
+| `2sg` | ûjes |
+| `3sg` | ûje |
+| `1pl` | ûjions |
+| `2pl` | ûjiéz |
+| `3pl` | ûjent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | eje |
+| `2sg` | ejes |
+| `3sg` | eje |
+| `1pl` | ejions |
+| `2pl` | ejiéz |
+| `3pl` | ejent |
+
+##### `subjunctive.present-2`
+
+| Slot | Form |
+|---|---|
+| `1sg` | aye |
+| `2sg` | ayes |
+| `3sg` | aye |
+| `1pl` | ayons |
+| `2pl` | ayéz |
+| `3pl` | ayent |
+
+_…1 more tense/mood rows in the JSON corpus._
+
+#### `aveir`
+
+_No classified person-number cells for this lemma._
+
+## Irregular: `étr`
+
+### Person-slot inventory
+
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -aes | -aes | -aet | -ins | -iéz | -aent |
+| `indicative.future` | 1 | `lcp` | -ë | -âs | -a | -ons | -éz | -ont |
+| `indicative.imperfect` | 1 | `lcp` | -aes | -aes | -aet | -ions | -iéz | -aent |
+| `indicative.preterite` | 1 | `lcp` | -s | -s | -t | -te | -te | -te |
+| `subjunctive.imperfect` | 1 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
+| `subjunctive.present` | 1 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
+| `subjunctive.present-2` | 1 | `lcp` | -e | -es | -e | -ons | -éz | -ent |
+
+### Representative lemmas
+
+#### `étr`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | ses |
+| `2sg` | és |
+| `3sg` | ét |
+| `1pl` | sons |
+| `2pl` | etes |
+| `3pl` | sont |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | seraes |
+| `2sg` | seraes |
+| `3sg` | seraet |
+| `1pl` | serins |
+| `2pl` | seriéz |
+| `3pl` | seraent |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | serë |
+| `2sg` | serâs |
+| `3sg` | sera |
+| `1pl` | serons |
+| `2pl` | seréz |
+| `3pl` | seront |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | etaes |
+| `2sg` | etaes |
+| `3sg` | etaet |
+| `1pl` | etions |
+| `2pl` | etiéz |
+| `3pl` | etaent |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fus |
+| `2sg` | fus |
+| `3sg` | fut |
+| `1pl` | fute |
+| `2pl` | fute |
+| `3pl` | fute |
+
+##### `subjunctive.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | fuje |
+| `2sg` | fujes |
+| `3sg` | fuje |
+| `1pl` | fujions |
+| `2pl` | fujiéz |
+| `3pl` | fujent |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | seje |
+| `2sg` | sejes |
+| `3sg` | seje |
+| `1pl` | sejions |
+| `2pl` | sejiéz |
+| `3pl` | sejent |
+
+##### `subjunctive.present-2`
+
+| Slot | Form |
+|---|---|
+| `1sg` | saye |
+| `2sg` | sayes |
+| `3sg` | saye |
+| `1pl` | sayons |
+| `2pl` | sayéz |
+| `3pl` | sayent |
+
+_…1 more tense/mood rows in the JSON corpus._
+
+#### `éstr`
+
+_No classified person-number cells for this lemma._
 
 ## Irregular: `aler`
 
@@ -436,1682 +664,19 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 _…1 more tense/mood rows in the JSON corpus._
 
-#### `se nalae`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | — |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | il |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | il |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | il |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | il |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | il |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | il |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | il |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | il |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | il |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | — |
-| `3sg` | il |
-| `1pl` | — |
-| `2pl` | — |
-| `3pl` | il |
-
-## Irregular: `avair`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -aes | -aes | -aet | -ins | -iéz | -aent |
-| `indicative.future` | 1 | `lcp` | -ë | -âs | -a | -ons | -éz | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -aes | -aes | -aet | -ions | -iéz | -aent |
-| `indicative.preterite` | 1 | `lcp` | -s | -s | -t | -te | -te | -te |
-| `subjunctive.imperfect` | 1 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
-| `subjunctive.present` | 1 | `lcp` | -es | -es | -et | -yons | -yéz | -ent |
-| `subjunctive.present-2` | 1 | `lcp` | -e | -es | -e | -ons | -éz | -ent |
-
-### Representative lemmas
-
-#### `avair`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | e |
-| `2sg` | âs |
-| `3sg` | a |
-| `1pl` | avons |
-| `2pl` | — |
-| `3pl` | ont |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | araes |
-| `2sg` | araes |
-| `3sg` | araet |
-| `1pl` | arins |
-| `2pl` | ariéz |
-| `3pl` | araent |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | arë |
-| `2sg` | arâs |
-| `3sg` | ara |
-| `1pl` | arons |
-| `2pl` | aréz |
-| `3pl` | aront |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avaes |
-| `2sg` | avaes |
-| `3sg` | avaet |
-| `1pl` | avions |
-| `2pl` | aviéz |
-| `3pl` | avaent |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | yûs |
-| `2sg` | yûs |
-| `3sg` | yût |
-| `1pl` | yûte |
-| `2pl` | yûte |
-| `3pl` | yûte |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ûje |
-| `2sg` | ûjes |
-| `3sg` | ûje |
-| `1pl` | ûjions |
-| `2pl` | ûjiéz |
-| `3pl` | ûjent |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aes |
-| `2sg` | aes |
-| `3sg` | aet |
-| `1pl` | ayons |
-| `2pl` | ayéz |
-| `3pl` | aent |
-
-##### `subjunctive.present-2`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aye |
-| `2sg` | ayes |
-| `3sg` | aye |
-| `1pl` | ayons |
-| `2pl` | ayéz |
-| `3pl` | ayent |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `aveir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ae |
-| `2sg` | as |
-| `3sg` | a |
-| `1pl` | avon |
-| `2pl` | — |
-| `3pl` | on |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | araes |
-| `2sg` | araes |
-| `3sg` | araet |
-| `1pl` | arion |
-| `2pl` | — |
-| `3pl` | araen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | a |
-| `3sg` | — |
-| `1pl` | avon |
-| `2pl` | avétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | arae |
-| `2sg` | aras |
-| `3sg` | ara |
-| `1pl` | aron |
-| `2pl` | — |
-| `3pl` | aron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | avaes |
-| `2sg` | avaes |
-| `3sg` | avaet |
-| `1pl` | avaen |
-| `2pl` | — |
-| `3pl` | avaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ogus |
-| `2sg` | ogus |
-| `3sg` | ogut |
-| `1pl` | ogum |
-| `2pl` | — |
-| `3pl` | ogurr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | aej |
-| `2sg` | aej |
-| `3sg` | aej |
-| `1pl` | aejion |
-| `2pl` | — |
-| `3pl` | aej |
-
-## Irregular: `étr`
-
-### Person-slot inventory
-
-Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
-
-| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
-|---|---:|---|---|---|---|---|---|---|
-| `conditional` | 1 | `lcp` | -aes | -aes | -aet | -ins | -iéz | -aent |
-| `indicative.future` | 1 | `lcp` | -ë | -âs | -a | -ons | -éz | -ont |
-| `indicative.imperfect` | 1 | `lcp` | -aes | -aes | -aet | -ions | -iéz | -aent |
-| `indicative.preterite` | 1 | `lcp` | -s | -s | -t | -te | -te | -te |
-| `subjunctive.imperfect` | 1 | `lcp` | -e | -es | -e | -ions | -iéz | -ent |
-| `subjunctive.present` | 1 | `lcp` | -es | -es | -et | -yons | -yéz | -ent |
-| `subjunctive.present-2` | 1 | `lcp` | -e | -es | -e | -ons | -éz | -ent |
-
-### Representative lemmas
-
-#### `étr`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ses |
-| `2sg` | és |
-| `3sg` | ét |
-| `1pl` | sons |
-| `2pl` | — |
-| `3pl` | sont |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | seraes |
-| `2sg` | seraes |
-| `3sg` | seraet |
-| `1pl` | serins |
-| `2pl` | seriéz |
-| `3pl` | seraent |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | serë |
-| `2sg` | serâs |
-| `3sg` | sera |
-| `1pl` | serons |
-| `2pl` | seréz |
-| `3pl` | seront |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | etaes |
-| `2sg` | etaes |
-| `3sg` | etaet |
-| `1pl` | etions |
-| `2pl` | etiéz |
-| `3pl` | etaent |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fus |
-| `2sg` | fus |
-| `3sg` | fut |
-| `1pl` | fute |
-| `2pl` | fute |
-| `3pl` | fute |
-
-##### `subjunctive.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fuje |
-| `2sg` | fujes |
-| `3sg` | fuje |
-| `1pl` | fujions |
-| `2pl` | fujiéz |
-| `3pl` | fujent |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | saes |
-| `2sg` | saes |
-| `3sg` | saet |
-| `1pl` | sayons |
-| `2pl` | sayéz |
-| `3pl` | saent |
-
-##### `subjunctive.present-2`
-
-| Slot | Form |
-|---|---|
-| `1sg` | saye |
-| `2sg` | sayes |
-| `3sg` | saye |
-| `1pl` | sayons |
-| `2pl` | sayéz |
-| `3pl` | sayent |
-
-_…1 more tense/mood rows in the JSON corpus._
-
-#### `éstr`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | soe |
-| `2sg` | es |
-| `3sg` | est |
-| `1pl` | son |
-| `2pl` | — |
-| `3pl` | son |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | seraes |
-| `2sg` | seraes |
-| `3sg` | seraet |
-| `1pl` | serion |
-| `2pl` | — |
-| `3pl` | seraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | soe |
-| `3sg` | — |
-| `1pl` | soejion |
-| `2pl` | soejiétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | serae |
-| `2sg` | seras |
-| `3sg` | sera |
-| `1pl` | seron |
-| `2pl` | — |
-| `3pl` | seron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | etaes |
-| `2sg` | etaes |
-| `3sg` | etaet |
-| `1pl` | etaen |
-| `2pl` | — |
-| `3pl` | etaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | fus |
-| `2sg` | fus |
-| `3sg` | fut |
-| `1pl` | fum |
-| `2pl` | — |
-| `3pl` | furan |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | soej |
-| `2sg` | soej |
-| `3sg` | soej |
-| `1pl` | soejion |
-| `2pl` | — |
-| `3pl` | soej |
-
-## Ending: `-i`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `vesqi`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesqis |
-| `2sg` | vesqis |
-| `3sg` | vesqit |
-| `1pl` | vesqison |
-| `2pl` | — |
-| `3pl` | vesqiss |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesqiraes |
-| `2sg` | vesqiraes |
-| `3sg` | vesqiraet |
-| `1pl` | vesqirion |
-| `2pl` | — |
-| `3pl` | vesqiraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | vesqis |
-| `3sg` | — |
-| `1pl` | vesqison |
-| `2pl` | vesqisétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesqirae |
-| `2sg` | vesqiras |
-| `3sg` | vesqira |
-| `1pl` | vesqiron |
-| `2pl` | — |
-| `3pl` | vesqiron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesqiseas |
-| `2sg` | vesqisaes |
-| `3sg` | vesqisaet |
-| `1pl` | vesqision |
-| `2pl` | — |
-| `3pl` | vesqisaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesqis |
-| `2sg` | vesqis |
-| `3sg` | vesqit |
-| `1pl` | vesqim |
-| `2pl` | — |
-| `3pl` | il |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vesqij |
-| `2sg` | vesqij |
-| `3sg` | vesqij |
-| `1pl` | vesqijion |
-| `2pl` | — |
-| `3pl` | vesqij |
-
-#### `veni`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | viens |
-| `2sg` | viens |
-| `3sg` | vient |
-| `1pl` | venon |
-| `2pl` | — |
-| `3pl` | vienn |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vienraes |
-| `2sg` | vienraes |
-| `3sg` | vienraet |
-| `1pl` | vienrion |
-| `2pl` | — |
-| `3pl` | vienraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | viens |
-| `3sg` | — |
-| `1pl` | venon |
-| `2pl` | venétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vienrae |
-| `2sg` | vienras |
-| `3sg` | vienra |
-| `1pl` | vienron |
-| `2pl` | — |
-| `3pl` | vienron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | venaes |
-| `2sg` | venaes |
-| `3sg` | venaet |
-| `1pl` | venion |
-| `2pl` | — |
-| `3pl` | venaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | venis |
-| `2sg` | venis |
-| `3sg` | venit |
-| `1pl` | venim |
-| `2pl` | — |
-| `3pl` | venirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vienj |
-| `2sg` | vienj |
-| `3sg` | vienj |
-| `1pl` | vienjion |
-| `2pl` | — |
-| `3pl` | vienj |
-
-#### `teni`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tiens |
-| `2sg` | tiens |
-| `3sg` | tient |
-| `1pl` | tenon |
-| `2pl` | — |
-| `3pl` | tienn |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tienraes |
-| `2sg` | tienraes |
-| `3sg` | tienraet |
-| `1pl` | tienrion |
-| `2pl` | — |
-| `3pl` | tienraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | tiens |
-| `3sg` | — |
-| `1pl` | tenon |
-| `2pl` | tenétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tienrae |
-| `2sg` | tienras |
-| `3sg` | tienra |
-| `1pl` | tienron |
-| `2pl` | — |
-| `3pl` | tienron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tenaes |
-| `2sg` | tenaes |
-| `3sg` | tenaet |
-| `1pl` | tenion |
-| `2pl` | — |
-| `3pl` | tenaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tenis |
-| `2sg` | tenis |
-| `3sg` | tenit |
-| `1pl` | tenim |
-| `2pl` | — |
-| `3pl` | tenirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tienj |
-| `2sg` | tienj |
-| `3sg` | tienbonj |
-| `1pl` | tienjion |
-| `2pl` | — |
-| `3pl` | tienj |
-
-## Ending: `-ae`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `teróae`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | troes |
-| `2sg` | troes |
-| `3sg` | troet |
-| `1pl` | teróon |
-| `2pl` | — |
-| `3pl` | teróan |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | troeraes |
-| `2sg` | troeraes |
-| `3sg` | troeraet |
-| `1pl` | troerion |
-| `2pl` | — |
-| `3pl` | troeraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | troes |
-| `3sg` | — |
-| `1pl` | teróon |
-| `2pl` | teróétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | troerae |
-| `2sg` | troeras |
-| `3sg` | troera |
-| `1pl` | troeron |
-| `2pl` | — |
-| `3pl` | troeron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | teróaes |
-| `2sg` | teróaes |
-| `3sg` | teróaet |
-| `1pl` | tróvion |
-| `2pl` | — |
-| `3pl` | teróaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | teróis |
-| `2sg` | teróis |
-| `3sg` | teróit |
-| `1pl` | teróim |
-| `2pl` | — |
-| `3pl` | teróirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | troej |
-| `2sg` | troej |
-| `3sg` | troej |
-| `1pl` | troejion |
-| `2pl` | — |
-| `3pl` | troej |
-
-#### `sublae`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | subl |
-| `2sg` | subl |
-| `3sg` | subl |
-| `1pl` | sublon |
-| `2pl` | — |
-| `3pl` | subl |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | subleraes |
-| `2sg` | subleraes |
-| `3sg` | subleraet |
-| `1pl` | sublerion |
-| `2pl` | — |
-| `3pl` | subleraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | subl |
-| `3sg` | — |
-| `1pl` | sublon |
-| `2pl` | sublétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sublerae |
-| `2sg` | subleras |
-| `3sg` | sublera |
-| `1pl` | subleron |
-| `2pl` | — |
-| `3pl` | subleron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sublaes |
-| `2sg` | sublaes |
-| `3sg` | sublaet |
-| `1pl` | sublion |
-| `2pl` | — |
-| `3pl` | sublaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sublis |
-| `2sg` | sublis |
-| `3sg` | sublit |
-| `1pl` | sublim |
-| `2pl` | — |
-| `3pl` | sublirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sublej |
-| `2sg` | sublej |
-| `3sg` | sublej |
-| `1pl` | sublejion |
-| `2pl` | — |
-| `3pl` | sublej |
-
-#### `sauvae`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sauv |
-| `2sg` | sauv |
-| `3sg` | sauv |
-| `1pl` | sauvon |
-| `2pl` | — |
-| `3pl` | sauv |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sauveraes |
-| `2sg` | sauveraes |
-| `3sg` | sauveraet |
-| `1pl` | sauverion |
-| `2pl` | — |
-| `3pl` | sauveraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | sauv |
-| `3sg` | — |
-| `1pl` | sauvon |
-| `2pl` | sauvétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sauverae |
-| `2sg` | sauveras |
-| `3sg` | sauvera |
-| `1pl` | sauveron |
-| `2pl` | — |
-| `3pl` | sauveron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sauvaes |
-| `2sg` | sauvaes |
-| `3sg` | sauvaet |
-| `1pl` | sauvaen |
-| `2pl` | — |
-| `3pl` | sauvaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sauvis |
-| `2sg` | sauvis |
-| `3sg` | sauvit |
-| `1pl` | sauvim |
-| `2pl` | — |
-| `3pl` | sauvirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sauvej |
-| `2sg` | sauvej |
-| `3sg` | sauvej |
-| `1pl` | sauvejion |
-| `2pl` | — |
-| `3pl` | sauvej |
-
-## Ending: `-r`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `viendr`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | viens |
-| `2sg` | viens |
-| `3sg` | vient |
-| `1pl` | venon |
-| `2pl` | — |
-| `3pl` | vienn |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vienraes |
-| `2sg` | vienraes |
-| `3sg` | vienraet |
-| `1pl` | vienrion |
-| `2pl` | — |
-| `3pl` | vienraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | viens |
-| `3sg` | — |
-| `1pl` | venon |
-| `2pl` | venétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vienrae |
-| `2sg` | vienras |
-| `3sg` | vienra |
-| `1pl` | vienron |
-| `2pl` | — |
-| `3pl` | vienron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | venaes |
-| `2sg` | venaes |
-| `3sg` | venaet |
-| `1pl` | venion |
-| `2pl` | — |
-| `3pl` | venaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | venis |
-| `2sg` | venis |
-| `3sg` | venit |
-| `1pl` | venim |
-| `2pl` | — |
-| `3pl` | venirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vienj |
-| `2sg` | vienj |
-| `3sg` | vienj |
-| `1pl` | vienjion |
-| `2pl` | — |
-| `3pl` | vienj |
-
-#### `téstr`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tés |
-| `2sg` | tés |
-| `3sg` | ét |
-| `1pl` | téson |
-| `2pl` | — |
-| `3pl` | téss |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | téstraes |
-| `2sg` | téstraes |
-| `3sg` | téstraet |
-| `1pl` | téstrion |
-| `2pl` | — |
-| `3pl` | téstraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | tés |
-| `3sg` | — |
-| `1pl` | téson |
-| `2pl` | tésétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | téstrae |
-| `2sg` | téstras |
-| `3sg` | téstra |
-| `1pl` | téstron |
-| `2pl` | — |
-| `3pl` | téstron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tésaes |
-| `2sg` | tésaes |
-| `3sg` | tésaet |
-| `1pl` | tésion |
-| `2pl` | — |
-| `3pl` | tésaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tésis |
-| `2sg` | tésis |
-| `3sg` | tésit |
-| `1pl` | tésim |
-| `2pl` | — |
-| `3pl` | tésirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tésj |
-| `2sg` | tésj |
-| `3sg` | tésj |
-| `1pl` | tésjion |
-| `2pl` | — |
-| `3pl` | tésj |
-
-#### `tiendr`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tiens |
-| `2sg` | tiens |
-| `3sg` | tient |
-| `1pl` | tenon |
-| `2pl` | — |
-| `3pl` | tienn |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tienraes |
-| `2sg` | tienraes |
-| `3sg` | tienraet |
-| `1pl` | tienrion |
-| `2pl` | — |
-| `3pl` | tienraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | tiens |
-| `3sg` | — |
-| `1pl` | tenon |
-| `2pl` | tenétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tienrae |
-| `2sg` | tienras |
-| `3sg` | tienra |
-| `1pl` | tienron |
-| `2pl` | — |
-| `3pl` | tienron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tenaes |
-| `2sg` | tenaes |
-| `3sg` | tenaet |
-| `1pl` | tenion |
-| `2pl` | — |
-| `3pl` | tenaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tenis |
-| `2sg` | tenis |
-| `3sg` | tenit |
-| `1pl` | tenim |
-| `2pl` | — |
-| `3pl` | tenirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | tienj |
-| `2sg` | tienj |
-| `3sg` | tienj |
-| `1pl` | tienjion |
-| `2pl` | — |
-| `3pl` | tienj |
-
-## Ending: `-ir`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `vóleir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | voes |
-| `2sg` | voes |
-| `3sg` | voet |
-| `1pl` | vólon |
-| `2pl` | — |
-| `3pl` | voell |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vóraes |
-| `2sg` | vóraes |
-| `3sg` | vóraet |
-| `1pl` | vórion |
-| `2pl` | — |
-| `3pl` | vóraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | voes |
-| `3sg` | — |
-| `1pl` | vólon |
-| `2pl` | vólétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vórae |
-| `2sg` | vóras |
-| `3sg` | vóra |
-| `1pl` | vóron |
-| `2pl` | — |
-| `3pl` | vóron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vólaes |
-| `2sg` | vólaes |
-| `3sg` | vólaet |
-| `1pl` | vólion |
-| `2pl` | — |
-| `3pl` | vólaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | vólis |
-| `2sg` | vólis |
-| `3sg` | vólit |
-| `1pl` | vólim |
-| `2pl` | — |
-| `3pl` | vólirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | voej |
-| `2sg` | voej |
-| `3sg` | voej |
-| `1pl` | voejion |
-| `2pl` | — |
-| `3pl` | voej |
-
-#### `saveir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | saes |
-| `2sg` | saes |
-| `3sg` | saet |
-| `1pl` | savon |
-| `2pl` | — |
-| `3pl` | sav |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | s1raes |
-| `2sg` | saraes |
-| `3sg` | saraet |
-| `1pl` | sarion |
-| `2pl` | — |
-| `3pl` | saraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | saes |
-| `3sg` | — |
-| `1pl` | savon |
-| `2pl` | savétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | sarae |
-| `2sg` | saras |
-| `3sg` | sara |
-| `1pl` | saron |
-| `2pl` | — |
-| `3pl` | saron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | savaes |
-| `2sg` | savaes |
-| `3sg` | savaet |
-| `1pl` | savaen |
-| `2pl` | — |
-| `3pl` | savaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | savis |
-| `2sg` | savis |
-| `3sg` | savit |
-| `1pl` | savim |
-| `2pl` | — |
-| `3pl` | savirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | receij |
-| `2sg` | saj |
-| `3sg` | saj |
-| `1pl` | sajion |
-| `2pl` | — |
-| `3pl` | saj |
-
-#### `receveir`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | receis |
-| `2sg` | receis |
-| `3sg` | receit |
-| `1pl` | receivon |
-| `2pl` | — |
-| `3pl` | receiv |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | receivraes |
-| `2sg` | receivraes |
-| `3sg` | receivraet |
-| `1pl` | receivrion |
-| `2pl` | — |
-| `3pl` | receivraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | receis |
-| `3sg` | — |
-| `1pl` | receivon |
-| `2pl` | receivétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | receivrae |
-| `2sg` | receivras |
-| `3sg` | receivra |
-| `1pl` | receivron |
-| `2pl` | — |
-| `3pl` | receivron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | receivaes |
-| `2sg` | receivaes |
-| `3sg` | receivaet |
-| `1pl` | receivaen |
-| `2pl` | — |
-| `3pl` | receivaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | receivis |
-| `2sg` | receivis |
-| `3sg` | receivit |
-| `1pl` | receivim |
-| `2pl` | — |
-| `3pl` | receivirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | receij |
-| `2sg` | receij |
-| `3sg` | receij |
-| `1pl` | receijion |
-| `2pl` | — |
-| `3pl` | receij |
-
-## Ending: `-rr`
-
-### Person-slot inventory
-
-No majority ending pattern with enough complete six-slot rows yet.
-
-### Representative lemmas
-
-#### `éleirr`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | éleis |
-| `2sg` | éleis |
-| `3sg` | éleit |
-| `1pl` | éleizon |
-| `2pl` | — |
-| `3pl` | éleizz |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | éleizeraes |
-| `2sg` | éleizeraes |
-| `3sg` | éleizeraet |
-| `1pl` | éleizerion |
-| `2pl` | — |
-| `3pl` | éleizeraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | éleis |
-| `3sg` | — |
-| `1pl` | éleizon |
-| `2pl` | éleizétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | éleizerae |
-| `2sg` | éleizeras |
-| `3sg` | éleizera |
-| `1pl` | éleizeron |
-| `2pl` | — |
-| `3pl` | éleizeron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | éleizaes |
-| `2sg` | éleizaes |
-| `3sg` | éleizaet |
-| `1pl` | éleizaen |
-| `2pl` | — |
-| `3pl` | éleizaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | éleizis |
-| `2sg` | éleizis |
-| `3sg` | éleizit |
-| `1pl` | éleizim |
-| `2pl` | — |
-| `3pl` | éleizirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | éleij |
-| `2sg` | éleij |
-| `3sg` | éleij |
-| `1pl` | éleijion |
-| `2pl` | — |
-| `3pl` | éleij |
-
-#### `rirr`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | ris |
-| `2sg` | ris |
-| `3sg` | rit |
-| `1pl` | riyon |
-| `2pl` | — |
-| `3pl` | riy |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | riraes |
-| `2sg` | riraes |
-| `3sg` | riraet |
-| `1pl` | ririon |
-| `2pl` | — |
-| `3pl` | riraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | ris |
-| `3sg` | — |
-| `1pl` | riyon |
-| `2pl` | riyétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | rirae |
-| `2sg` | riras |
-| `3sg` | rira |
-| `1pl` | riron |
-| `2pl` | — |
-| `3pl` | riron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | riyaes |
-| `2sg` | riyaes |
-| `3sg` | riyaet |
-| `1pl` | riyaen |
-| `2pl` | — |
-| `3pl` | riyaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | riyis |
-| `2sg` | ryis |
-| `3sg` | riyit |
-| `1pl` | riyim |
-| `2pl` | — |
-| `3pl` | riyirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | rij |
-| `2sg` | rij |
-| `3sg` | rij |
-| `1pl` | rijion |
-| `2pl` | — |
-| `3pl` | rij |
-
-#### `qoerr`
-
-##### `indicative.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | qoes |
-| `2sg` | qoes |
-| `3sg` | qoet |
-| `1pl` | qoezon |
-| `2pl` | — |
-| `3pl` | qoezz |
-
-##### `conditional`
-
-| Slot | Form |
-|---|---|
-| `1sg` | qoeraes |
-| `2sg` | qoeraes |
-| `3sg` | qoeraet |
-| `1pl` | qoerion |
-| `2pl` | — |
-| `3pl` | qoeraen |
-
-##### `imperative`
-
-| Slot | Form |
-|---|---|
-| `1sg` | — |
-| `2sg` | qoes |
-| `3sg` | — |
-| `1pl` | qoezon |
-| `2pl` | qoezétz |
-| `3pl` | — |
-
-##### `indicative.future`
-
-| Slot | Form |
-|---|---|
-| `1sg` | qoerae |
-| `2sg` | qoeras |
-| `3sg` | qoera |
-| `1pl` | qoeron |
-| `2pl` | — |
-| `3pl` | qoeron |
-
-##### `indicative.imperfect`
-
-| Slot | Form |
-|---|---|
-| `1sg` | qoezaes |
-| `2sg` | qoezaes |
-| `3sg` | qoezaet |
-| `1pl` | qoezion |
-| `2pl` | — |
-| `3pl` | qoezaen |
-
-##### `indicative.preterite`
-
-| Slot | Form |
-|---|---|
-| `1sg` | qoezis |
-| `2sg` | qoezis |
-| `3sg` | qoezit |
-| `1pl` | qoezim |
-| `2pl` | — |
-| `3pl` | qoezirr |
-
-##### `subjunctive.present`
-
-| Slot | Form |
-|---|---|
-| `1sg` | qoej |
-| `2sg` | qoej |
-| `3sg` | qoej |
-| `1pl` | qoejion |
-| `2pl` | — |
-| `3pl` | qoej |
-
 ## Irregular: `ói`
 
 ### Person-slot inventory
 
-No majority ending pattern with enough complete six-slot rows yet.
+Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty suffix; `—` marks a missing slot in a partial pattern.
+
+| Feature | Support | Mode | 1sg | 2sg | 3sg | 1pl | 2pl | 3pl |
+|---|---:|---|---|---|---|---|---|---|
+| `conditional` | 1 | `lcp` | -aes | -aes | -aet | -ion | -iétz | -aen |
+| `indicative.future` | 1 | `lcp` | -ae | -as | -a | -on | -étz | -on |
+| `indicative.imperfect` | 1 | `lcp` | -aes | -aes | -aet | -aen | -iétz | -aen |
+| `indicative.present` | 1 | `lcp` | -s | -s | -t | -yon | -yétz | -y |
+| `indicative.preterite` | 1 | `lcp` | -s | -s | -t | -m | -tt | -rr |
 
 ### Representative lemmas
 
@@ -2125,7 +690,7 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2sg` | óis |
 | `3sg` | óit |
 | `1pl` | óiyon |
-| `2pl` | — |
+| `2pl` | óiyétz |
 | `3pl` | óiy |
 
 ##### `conditional`
@@ -2136,8 +701,52 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2sg` | óiraes |
 | `3sg` | óiraet |
 | `1pl` | óirion |
-| `2pl` | — |
+| `2pl` | óiriétz |
 | `3pl` | óiraen |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | óirae |
+| `2sg` | óiras |
+| `3sg` | óira |
+| `1pl` | óiron |
+| `2pl` | óirétz |
+| `3pl` | óiron |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | óiyaes |
+| `2sg` | óiyaes |
+| `3sg` | óiyaet |
+| `1pl` | óiyaen |
+| `2pl` | óiyiétz |
+| `3pl` | óiyaen |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | óiyis |
+| `2sg` | óiyis |
+| `3sg` | óiyit |
+| `1pl` | óiyim |
+| `2pl` | óiyitt |
+| `3pl` | óiyirr |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | óij |
+| `2sg` | óij |
+| `3sg` | óij |
+| `1pl` | óijion |
+| `2pl` | óijiétz |
+| `3pl` | óij |
 
 ##### `imperative`
 
@@ -2150,49 +759,175 @@ No majority ending pattern with enough complete six-slot rows yet.
 | `2pl` | óiyétz |
 | `3pl` | — |
 
+## Ending: `-i`
+
+### Person-slot inventory
+
+No majority ending pattern with enough complete six-slot rows yet.
+
+### Representative lemmas
+
+#### `fini`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | finis |
+| `2sg` | finis |
+| `3sg` | finit |
+| `1pl` | finison |
+| `2pl` | finisétz |
+| `3pl` | finiss |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | finiraes |
+| `2sg` | finiraes |
+| `3sg` | finiraet |
+| `1pl` | finirion |
+| `2pl` | finiriétz |
+| `3pl` | finiraen |
+
 ##### `indicative.future`
 
 | Slot | Form |
 |---|---|
-| `1sg` | óirae |
-| `2sg` | óiras |
-| `3sg` | óira |
-| `1pl` | óiron |
-| `2pl` | — |
-| `3pl` | óiron |
+| `1sg` | finirae |
+| `2sg` | finiras |
+| `3sg` | finira |
+| `1pl` | finiron |
+| `2pl` | finirétz |
+| `3pl` | finiron |
 
 ##### `indicative.imperfect`
 
 | Slot | Form |
 |---|---|
-| `1sg` | óiyaes |
-| `2sg` | óiyaes |
-| `3sg` | óiyaet |
-| `1pl` | óiyaen |
-| `2pl` | — |
-| `3pl` | óiyaen |
+| `1sg` | finisaes |
+| `2sg` | finisaes |
+| `3sg` | finisaet |
+| `1pl` | finisaen |
+| `2pl` | finisiétz |
+| `3pl` | finisaen |
 
 ##### `indicative.preterite`
 
 | Slot | Form |
 |---|---|
-| `1sg` | óiyis |
-| `2sg` | óiyis |
-| `3sg` | óiyit |
-| `1pl` | óiyim |
-| `2pl` | — |
-| `3pl` | óiyirr |
+| `1sg` | finis |
+| `2sg` | finis |
+| `3sg` | finit |
+| `1pl` | finim |
+| `2pl` | finitt |
+| `3pl` | finirr |
 
 ##### `subjunctive.present`
 
 | Slot | Form |
 |---|---|
-| `1sg` | óij |
-| `2sg` | óij |
-| `3sg` | óij |
-| `1pl` | óijion |
-| `2pl` | — |
-| `3pl` | óij |
+| `1sg` | finij |
+| `2sg` | finij |
+| `3sg` | finij |
+| `1pl` | finijion |
+| `2pl` | finijiétz |
+| `3pl` | finij |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | finis |
+| `3sg` | — |
+| `1pl` | finison |
+| `2pl` | finisétz |
+| `3pl` | — |
+
+#### `parti`
+
+##### `indicative.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | pars |
+| `2sg` | pars |
+| `3sg` | part |
+| `1pl` | parton |
+| `2pl` | partétz |
+| `3pl` | part |
+
+##### `conditional`
+
+| Slot | Form |
+|---|---|
+| `1sg` | partiraes |
+| `2sg` | partiraes |
+| `3sg` | partiraet |
+| `1pl` | partirion |
+| `2pl` | partiriétz |
+| `3pl` | partiraen |
+
+##### `indicative.future`
+
+| Slot | Form |
+|---|---|
+| `1sg` | partirae |
+| `2sg` | partiras |
+| `3sg` | partira |
+| `1pl` | partiron |
+| `2pl` | partirétz |
+| `3pl` | partiron |
+
+##### `indicative.imperfect`
+
+| Slot | Form |
+|---|---|
+| `1sg` | partaes |
+| `2sg` | partaes |
+| `3sg` | partaet |
+| `1pl` | partaen |
+| `2pl` | partiétz |
+| `3pl` | partaen |
+
+##### `subjunctive.present`
+
+| Slot | Form |
+|---|---|
+| `1sg` | part |
+| `2sg` | partj |
+| `3sg` | parj |
+| `1pl` | parjion |
+| `2pl` | parjiétz |
+| `3pl` | parj |
+
+##### `imperative`
+
+| Slot | Form |
+|---|---|
+| `1sg` | — |
+| `2sg` | pars |
+| `3sg` | — |
+| `1pl` | parton |
+| `2pl` | partétz |
+| `3pl` | — |
+
+##### `indicative.preterite`
+
+| Slot | Form |
+|---|---|
+| `1sg` | partis |
+| `2sg` | partis |
+| `3sg` | partit |
+| `1pl` | — |
+| `2pl` | partitt |
+| `3pl` | partirr |
+
+#### `veni`
+
+_No classified person-number cells for this lemma._
 
 ## Sparse / unclassified
 
@@ -2201,4 +936,8 @@ Paradigms without a full six-slot inventory (count only).
 | Ending / paradigm | Lemmas |
 |---|---:|
 | `unknown` | 108 |
+| `-ae` | 29 |
+| `-r` | 26 |
+| `-ir` | 15 |
+| `-rr` | 5 |
 | `-air` | 1 |
