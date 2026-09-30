@@ -8,7 +8,7 @@ Present indicative 6-grid only. Analyzed stems live in
 |---|---|---|---|---|---|---|---|
 | { -eir } | rm | -eschel (rm) | -eschas (rm) | -escha (rm) | -in (rm) | -is (rm) | -eschan (rm) |
 | { -ê } | fur | -ât (fur) | -adis (fur) | -ât (fur) | -adìn (fur) | -adês (fur) | -adin (fur) |
-| { aler } | wa, glw | — | — | — | — | — | — |
+| { aler } | wa, gallo | — | — | — | — | — | — |
 | { aller } | fr, pcd | — | — | — | — | — | — |
 | { andare } | it | — | — | — | — | — | — |
 | { dare } | it | -ò (it) | -ài (it) | -à (it) | -iàmo (it) | -àte (it) | -ànno (it) |
@@ -52,4 +52,4 @@ Present indicative 6-grid only. Analyzed stems live in
 | { voleur } | wa | -u (wa) | -us (wa) | -ut (wa) | -lans (wa) | -loz (wa) | -lnut (wa) |
 | { vouleir } | nrf | -euil (nrf) | -eux (nrf) | -eut (nrf) | -ouloms (nrf) | -oulez (nrf) | -eulent (nrf) |
 | { wa-conj-fé } | wa | -wai (wa) | -wais (wa) | -wait (wa) | -ijhans (wa) | -ijhoz (wa) | -oaiynut (wa) |
-| { ói } | glw | -s (glw) | -s (glw) | -t (glw) | -yon (glw) | — | -y (glw) |
+| { ói } | gallo | -s (gallo) | -s (gallo) | -t (gallo) | -yon (gallo) | — | -y (gallo) |

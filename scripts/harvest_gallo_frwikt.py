@@ -45,6 +45,12 @@ _OIL_COMPL = re.compile(r"^(?:qu['’]|q['’]|qe)\s*", re.I)
 _OIL_WORD = re.compile(r"^(?:je|j['’]|tu|t['’]|vous|v['’]|il|i)\s+", re.I)
 _OIL_ELIDE = re.compile(r"^[jtv]['’]", re.I)
 
+# Pages with several variant tables: features where the first table is the
+# citation form. étr: "Imparfait en et-" (etaes) precedes clipped "en t-" (taes).
+FIRST_TABLE_WINS = {"étr": {"indicative.imperfect"}}
+# éstr lists only clipped ’taes / ’taet; restore the full et- imperfect.
+_CLIPPED_ET = re.compile(r"^['’]t")
+
 
 def fold(text: str) -> str:
     stripped = unicodedata.normalize("NFD", text).encode("ascii", "ignore").decode()
@@ -120,6 +126,7 @@ def tense_feature(mood: str | None, header: str) -> str | None:
 
 
 def parse_html(html: str, lemma: str, url: str) -> dict[str, dict]:
+    keep_first = FIRST_TABLE_WINS.get(lemma, set())
     rows = re.findall(r"<tr[^>]*>(.*?)</tr>", html, flags=re.I | re.S)
     mood: str | None = None
     feature: str | None = None
@@ -142,6 +149,7 @@ def parse_html(html: str, lemma: str, url: str) -> dict[str, dict]:
                 continue
             # Keep the first graphic variant (before slash).
             form = form.split("/")[0].strip()
+            form = _CLIPPED_ET.sub("et", form)
             if " " in form:
                 continue
             row[slot] = {
@@ -150,7 +158,7 @@ def parse_html(html: str, lemma: str, url: str) -> dict[str, dict]:
                 "source_label": feature,
                 "source_url": url,
             }
-        if row:
+        if row and not (feature in keep_first and feature in cells):
             cells[feature] = row
         buffer = []
 

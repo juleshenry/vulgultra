@@ -5,7 +5,7 @@
 | stem | lects |
 |---|---|
 | [{ -a }](#s--a) | co, ro, ruq |
-| [{ -ae }](#s--ae) | glw |
+| [{ -ae }](#s--ae) | gallo |
 | [{ -ai }](#s--ai) | sc |
 | [{ -al }](#s--al) | ext |
 | [{ -ar }](#s--ar) | es, pt, gl, an, ast, lad, mwl, oc, ca, gsc, frp, rgn, dlm, rm |
@@ -20,9 +20,9 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | -o (es, pt, gl, an, ast, lad, mwl, ca, it, sc) -u (ext, scn, sc) -i (oc, gsc, lmo) -t (glw) ∅ (rgn, rm, ro) -jo (dlm) -og (ruo) -au̯ (ruq) | -am (oc, gsc) -em (ca) -on (glw) -om (lmo) -ẽn (rgn) -ein (rm) -aus (sc) -ăm (ro) -ɔm (ruq) |
-| **2** | -as (es, pt, gl, an, ext, lad, mwl, oc, gsc, rm, sc) -es (ast, ca) -t (glw) -et (lmo) ∅ (rgn) -i (it, scn, dlm, ro) -ai̯ (ruq) | -áis (es, ast) -ais (pt, ext, mwl, sc) -atz (an, oc, gsc) -áx (lad) -eu (ca) -ov (lmo) -ì (rgn) -eis (rm) -aes (sc) -aʦ (ruq) |
-| **3** | -a (es, pt, gl, an, ast, ext, lad, mwl, oc, ca, gsc, lmo, rgn, it, scn, rm, ruq) -t (glw) -ja (dlm) -at (sc) -ă (ro) | -an (es, gl, ext, lad, mwl, oc, gsc, rm) -am (pt) -en (an, ast, ca, lmo) -t (glw) -a (rgn) -ja (dlm) -ant (sc) -ă (ro) -au̯ (ruq) |
+| **1** | -o (es, pt, gl, an, ast, lad, mwl, ca, it, sc) -u (ext, scn, sc) -i (oc, gsc, lmo) -t (gallo) ∅ (rgn, rm, ro) -jo (dlm) -og (ruo) -au̯ (ruq) | -am (oc, gsc) -em (ca) -on (gallo) -om (lmo) -ẽn (rgn) -ein (rm) -aus (sc) -ăm (ro) -ɔm (ruq) |
+| **2** | -as (es, pt, gl, an, ext, lad, mwl, oc, gsc, rm, sc) -es (ast, ca) -t (gallo) -et (lmo) ∅ (rgn) -i (it, scn, dlm, ro) -ai̯ (ruq) | -áis (es, ast) -ais (pt, ext, mwl, sc) -atz (an, oc, gsc) -áx (lad) -eu (ca) -ov (lmo) -ì (rgn) -eis (rm) -aes (sc) -aʦ (ruq) |
+| **3** | -a (es, pt, gl, an, ast, ext, lad, mwl, oc, ca, gsc, lmo, rgn, it, scn, rm, ruq) -t (gallo) -ja (dlm) -at (sc) -ă (ro) | -an (es, gl, ext, lad, mwl, oc, gsc, rm) -am (pt) -en (an, ast, ca, lmo) -t (gallo) -a (rgn) -ja (dlm) -ant (sc) -ă (ro) -au̯ (ruq) |
 
 ## e-theme
 
@@ -32,7 +32,7 @@ conglomerate shortlist
 | [{ -e }](#s--e) | wa, co, ro, ruo, ruq |
 | [{ -ea }](#s--ea) | ro, ruq |
 | [{ -el }](#s--el) | ext |
-| [{ -er }](#s--er) | es, pt, gl, an, ast, mwl, oc, ca, gsc, fr, wa, pcd, glw, eml, dlm, rm, lld |
+| [{ -er }](#s--er) | es, pt, gl, an, ast, mwl, oc, ca, gsc, fr, wa, pcd, gallo, eml, dlm, rm, lld |
 | [{ -ere }](#s--ere) | it, sc |
 | [{ -tcher }](#s--tcher) | pcd |
 | [{ -è }](#s--è) | lmo, pms |
@@ -43,17 +43,17 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | -o (es, pt, gl, an, ast, mwl, ca, pms, dlm, sc) -u (ext) -i (oc, gsc, rm) -e (fr, wa, pcd, glw, lld) -gue (pcd) -que (pcd) -ò (it) -é (lld) -g (ro) -z (ro) -eg (ruo) -ad (ruq) -at (ruq) | -mos (es, gl) -èm (oc, gsc) -em (ca, ro) -ons (fr, pcd, glw) -ans (wa) -djons (pcd) -tchons (pcd) -ein (rm) -on (lld) -mus (sc) -m (ro) -i̯əm (ruq) |
-| **2** | -s (es, gl, oc, ca, gsc, rm, sc) -es (pt, an, ast, mwl, fr, wa, pcd, glw, lld) -is (ext) -gues (pcd) -ques (pcd) -e (pms) -ài (it) -i (dlm, ro) -as (lld) -az (ruq) -aț (ruq) | -is (es) -eis (pt, ext, mwl, rm, lld) -des (gl) -etz (an) -éis (ast) -ètz (oc, gsc) -eu (ca) -ez (fr, wa, pcd) -oz (wa) -djez (pcd) -tchez (pcd) -éz (glw) -e (pms) -zis (sc) -ți (ro) -eʦ (ruq) |
-| **3** | -e (es, pt, gl, an, ast, mwl, fr, wa, pcd, glw, ro) -i (ext) ∅ (oc, ca, gsc) -gue (pcd) -que (pcd) -a (pms, rm, lld, ro) -à (it, lld) -t (sc) -i̯au̯ (ruq) | -n (es, gl, oc, gsc, rm) -em (pt) -en (an, ast, mwl, ca) -in (ext) -ent (fr, glw) -nut (wa) -o (pms) -a (lld) -à (lld) -nt (sc) -g (ro) -i (ro) -ad (ruq) -at (ruq) |
+| **1** | -o (es, pt, gl, an, ast, mwl, ca, pms, dlm, sc) -u (ext) -i (oc, gsc, rm) -e (fr, wa, pcd, gallo, lld) -gue (pcd) -que (pcd) -ò (it) -é (lld) -g (ro) -z (ro) -eg (ruo) -ad (ruq) -at (ruq) | -mos (es, gl) -èm (oc, gsc) -em (ca, ro) -ons (fr, pcd, gallo) -ans (wa) -djons (pcd) -tchons (pcd) -ein (rm) -on (lld) -mus (sc) -m (ro) -i̯əm (ruq) |
+| **2** | -s (es, gl, oc, ca, gsc, rm, sc) -es (pt, an, ast, mwl, fr, wa, pcd, gallo, lld) -is (ext) -gues (pcd) -ques (pcd) -e (pms) -ài (it) -i (dlm, ro) -as (lld) -az (ruq) -aț (ruq) | -is (es) -eis (pt, ext, mwl, rm, lld) -des (gl) -etz (an) -éis (ast) -ètz (oc, gsc) -eu (ca) -ez (fr, wa, pcd) -oz (wa) -djez (pcd) -tchez (pcd) -éz (gallo) -e (pms) -zis (sc) -ți (ro) -eʦ (ruq) |
+| **3** | -e (es, pt, gl, an, ast, mwl, fr, wa, pcd, gallo, ro) -i (ext) ∅ (oc, ca, gsc) -gue (pcd) -que (pcd) -a (pms, rm, lld, ro) -à (it, lld) -t (sc) -i̯au̯ (ruq) | -n (es, gl, oc, gsc, rm) -em (pt) -en (an, ast, mwl, ca) -in (ext) -ent (fr, gallo) -nut (wa) -o (pms) -a (lld) -à (lld) -nt (sc) -g (ro) -i (ro) -ad (ruq) -at (ruq) |
 
 ## i-theme
 
 | stem | lects |
 |---|---|
 | [{ -air }](#s--air) | rm |
-| [{ -i }](#s--i) | wa, nrf, glw, sc, ro, ruq |
-| [{ -ir }](#s--ir) | es, pt, gl, an, ast, mwl, oc, ca, gsc, fr, pcd, glw, frp, eml, rm, lld |
+| [{ -i }](#s--i) | wa, nrf, gallo, sc, ro, ruq |
+| [{ -ir }](#s--ir) | es, pt, gl, an, ast, mwl, oc, ca, gsc, fr, pcd, gallo, frp, eml, rm, lld |
 | [{ -ire }](#s--ire) | it, sc |
 | [{ -iri }](#s--iri) | scn |
 | [{ -yî }](#s--yî) | wa |
@@ -66,27 +66,27 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | -o (es, pt, gl, an, ast, mwl, pms, it, sc) -i (oc, gsc, wa) -c (ca) -s (fr, pcd, glw) -és (eml) -u (scn) -el (rm) ∅ (rm, ro) -ìs (fur) -e (lld) -ésc (ruo) -orm (ruq) | -èm (oc, gsc) -im (ca) -ons (fr, pcd) -ians (wa) -son (glw) -von (glw) -ám (eml) -in (rm) -ìn (fur) -ion (lld) -on (lld) -m (ro) -ín (ruo) |
-| **2** | -es (es, pt, gl, an, ast, mwl, oc, gsc, lld) -us (ca) -s (fr, pcd, glw, rm) -is (wa, sc) -e (pms) -és (eml) -i (it, scn) ∅ (ro) -orm (ruq) | -ís (es, ast) -is (pt, mwl, rm) -itz (an) -ètz (oc, gsc) -iu (ca) -ez (fr, pcd) -yîz (wa) -e (pms) -î (eml) -te (it) -îs (fur) -eis (lld) -ieis (lld) -ți (ro) -íţ (ruo) |
-| **3** | -e (es, pt, gl, an, ast, mwl, ca, it, ro) ∅ (oc, gsc, pms, rm, lld) -t (fr, pcd, glw) -it (wa, sc) -és (eml) -i (scn) -a (rm) -ìs (fur) | -en (es, gl, an, ast, mwl) -em (pt) -on (oc, gsc) -uen (ca) -ent (fr) -ièt (wa) -'te (pcd) -m (glw) -v (glw) -o (pms) -an (rm) -n (rm) ∅ (lld) -int (sc) -e (ro) -orm (ruq) |
+| **1** | -o (es, pt, gl, an, ast, mwl, pms, it, sc) -i (oc, gsc, wa) -c (ca) -s (fr, pcd, gallo) -és (eml) -u (scn) -el (rm) ∅ (rm, ro) -ìs (fur) -e (lld) -ésc (ruo) -orm (ruq) | -èm (oc, gsc) -im (ca) -ons (fr, pcd) -ians (wa) -son (gallo) -von (gallo) -ám (eml) -in (rm) -ìn (fur) -ion (lld) -on (lld) -m (ro) -ín (ruo) |
+| **2** | -es (es, pt, gl, an, ast, mwl, oc, gsc, lld) -us (ca) -s (fr, pcd, gallo, rm) -is (wa, sc) -e (pms) -és (eml) -i (it, scn) ∅ (ro) -orm (ruq) | -ís (es, ast) -is (pt, mwl, rm) -itz (an) -ètz (oc, gsc) -iu (ca) -ez (fr, pcd) -yîz (wa) -e (pms) -î (eml) -te (it) -îs (fur) -eis (lld) -ieis (lld) -ți (ro) -íţ (ruo) |
+| **3** | -e (es, pt, gl, an, ast, mwl, ca, it, ro) ∅ (oc, gsc, pms, rm, lld) -t (fr, pcd, gallo) -it (wa, sc) -és (eml) -i (scn) -a (rm) -ìs (fur) | -en (es, gl, an, ast, mwl) -em (pt) -on (oc, gsc) -uen (ca) -ent (fr) -ièt (wa) -'te (pcd) -m (gallo) -v (gallo) -o (pms) -an (rm) -n (rm) ∅ (lld) -int (sc) -e (ro) -orm (ruq) |
 
 ## re
 
 | stem | lects |
 |---|---|
-| [{ -r }](#s--r) | glw |
+| [{ -r }](#s--r) | gallo |
 | [{ -re }](#s--re) | oc, ca, gsc, fr, wa, pcd, frp |
 | [{ -ro }](#s--ro) | dlm |
-| [{ -rr }](#s--rr) | glw |
+| [{ -rr }](#s--rr) | gallo |
 | [{ -te }](#s--te) | pcd |
 
 conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | -i (oc, gsc) -c (ca) -s (fr, pcd, glw) -o (dlm) | -èm (oc, gsc) -em (ca) -ons (fr, pcd) -ét (wa) -tons (pcd) -don (glw) -on (glw) |
-| **2** | -s (oc, ca, fr, pcd, glw) -es (gsc) -é (wa) -ai (dlm) | -ètz (oc, gsc) -eu (ca) -ez (fr, pcd) -tez (pcd) |
-| **3** | -u (oc) ∅ (ca, gsc, pcd) -t (fr, pcd, glw) -és (wa) | -n (oc) -en (ca) -on (gsc) -ent (fr) -'te (pcd) -dd (glw) -y (glw) |
+| **1** | -i (oc, gsc) -c (ca) -s (fr, pcd, gallo) -o (dlm) | -èm (oc, gsc) -em (ca) -ons (fr, pcd) -ét (wa) -tons (pcd) -don (gallo) -on (gallo) |
+| **2** | -s (oc, ca, fr, pcd, gallo) -es (gsc) -é (wa) -ai (dlm) | -ètz (oc, gsc) -eu (ca) -ez (fr, pcd) -tez (pcd) |
+| **3** | -u (oc) ∅ (ca, gsc, pcd) -t (fr, pcd, gallo) -és (wa) | -n (oc) -en (ca) -on (gsc) -ent (fr) -'te (pcd) -dd (gallo) -y (gallo) |
 
 ## esse
 
@@ -98,7 +98,7 @@ conglomerate shortlist
 | <a id="s-saite"></a>{ saite } | dlm |
 | <a id="s-ser"></a>{ ser } | es, pt, gl, an, ext, ca |
 | <a id="s-zer"></a>{ zer } | dlm |
-| <a id="s-étr"></a>{ étr } | glw |
+| <a id="s-étr"></a>{ étr } | gallo |
 | <a id="s-ête"></a>{ ête } | pcd |
 | <a id="s-être"></a>{ être } | fr |
 
@@ -106,25 +106,25 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | soy (es) sou (pt) son (gl, ist) soi (an, ext) sóc (ca) suis (fr) su (pcd) ses (glw) sai (dlm) zai (dlm) sunt (ro) jes (ruq) | som (ca) son (glw) im (ruq) |
-| **2** | és (pt) es (gl, fr, pcd, glw) yes (an) ets (ca) sei (it) son (ist) zai (dlm) | sois (es, pt) sotz (an) seis (ext) sou (ca) iț (ruq) |
-| **3** | es (es, ext) é (pt, gl) ye (an) és (ca) est (fr, pcd) ét (glw) è (it) sant (dlm) | son (es, gl, an, ext, glw) são (pt) són (ca) sont (fr, pcd) zì (ist) sant (dlm) sunt (ro) sa (ruq) |
+| **1** | soy (es) sou (pt) son (gl, ist) soi (an, ext) sóc (ca) suis (fr) su (pcd) ses (gallo) sai (dlm) zai (dlm) sunt (ro) jes (ruq) | som (ca) son (gallo) im (ruq) |
+| **2** | és (pt) es (gl, fr, pcd, gallo) yes (an) ets (ca) sei (it) son (ist) zai (dlm) | sois (es, pt) sotz (an) seis (ext) sou (ca) iț (ruq) |
+| **3** | es (es, ext) é (pt, gl) ye (an) és (ca) est (fr, pcd) ét (gallo) è (it) sant (dlm) | son (es, gl, an, ext, gallo) são (pt) són (ca) sont (fr, pcd) zì (ist) sant (dlm) sunt (ro) sa (ruq) |
 
 ### indicative.imperfect (shortlist)
 
 | | sg | pl |
 |---|---|---|
-| **1** | taes (glw) | tions (glw) |
-| **2** | taes (glw) | tiéz (glw) |
-| **3** | taet (glw) | taent (glw) |
+| **1** | era (es, pt, gl, ext, ca) yera (an) étais (fr) éto(s) (pcd) etaes (gallo) ero (it) jera (dlm) zaja (dlm) eram (ro) ăi̯ram (ruq) | érem (ca) étions (fr) etaen (gallo) eram (ro) ăi̯ram (ruq) |
+| **2** | eras (es, pt, gl, ext) yeras (an) eres (ca) étais (fr) étos (pcd) etaes (gallo) eri (it) jeri (dlm) zaja (dlm) erai (ro) ăi̯rai̯ (ruq) | erais (es, ext) éreis (pt) yeratz (an) éreu (ca) étiez (fr) etiéz (gallo) ăi̯raț (ruq) |
+| **3** | era (es, pt, gl, ext, ca, it, ro) yera (an) était (fr) étot (pcd) etaet (gallo) ăi̯ra (ruq) | eran (es, gl, ext) eram (pt) yeran (an) eren (ca) étaient (fr) etaen (gallo) jera (dlm) zaja (dlm) erau (ro) ăi̯rau̯ (ruq) |
 
 ### indicative.preterite (shortlist)
 
 | | sg | pl |
 |---|---|---|
-| **1** | fui (es, pt, ca, it) fun (gl) hui (ext) fus (fr, glw) foi (dlm) fui̯ (ruq) | fum (glw, ruq) |
-| **2** | fus (fr, glw) foi (dlm) fuș (ruq) | fuț (ruq) |
-| **3** | fue (es) foi (pt, gl) hue (ext) fou (ca) fut (fr, glw) fu (it, ruq) foit (dlm) | foit (dlm) |
+| **1** | fui (es, pt, ca, it) fun (gl) hui (ext) fus (fr, gallo) foi (dlm) fui̯ (ruq) | fum (gallo, ruq) |
+| **2** | fus (fr, gallo) foi (dlm) fuș (ruq) | fuț (ruq) |
+| **3** | fue (es) foi (pt, gl) hue (ext) fou (ca) fut (fr, gallo) fu (it, ruq) foit (dlm) | foit (dlm) |
 
 ### indicative.past (shortlist)
 
@@ -154,16 +154,16 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | sea (es, ext) sois (fr) saes (glw) sia (it) seîo (ist) sai (dlm) fiu (ro) | fim (ro) im (ruq) |
-| **2** | seas (es, ext) sois (fr) saes (glw) sia (it) seîî (ist) sai (dlm) fii (ro) jeș (ruq) | seáis (es) seais (ext) seîî (ist) iț (ruq) |
-| **3** | sea (es, ext) soit (fr) saet (glw) sia (it) seîo (ist) sait (dlm) fie (ro) | sean (es, ext) soient (fr) soej (glw) seîo (ist) sait (dlm) fie (ro) |
+| **1** | sea (es, ext) sois (fr) saes (gallo) sia (it) seîo (ist) sai (dlm) fiu (ro) | fim (ro) im (ruq) |
+| **2** | seas (es, ext) sois (fr) saes (gallo) sia (it) seîî (ist) sai (dlm) fii (ro) jeș (ruq) | seáis (es) seais (ext) seîî (ist) iț (ruq) |
+| **3** | sea (es, ext) soit (fr) saet (gallo) sia (it) seîo (ist) sait (dlm) fie (ro) | sean (es, ext) soient (fr) soej (gallo) seîo (ist) sait (dlm) fie (ro) |
 
 ### subjunctive.imperfect (shortlist)
 
 | | sg | pl |
 |---|---|---|
-| **1** | fos (ca) fuas (dlm) zis (dlm) | fóssim (ca) fussions (fr) fujions (glw) furem (ro) |
-| **2** | fueras (es) fosses (pt) foses (gl) fueses (an) hueras (ext) fossis (ca) fusses (fr) fujes (glw) fossi (it) fuasse (dlm) zisse (dlm) furi (ro) | fuerais (es) fôsseis (pt) fuesetz (an) huérais (ext) fóssiu (ca) fussiez (fr) fujiéz (glw) foste (it) fùsi (ist) furet (ro) |
+| **1** | fos (ca) fuas (dlm) zis (dlm) | fóssim (ca) fussions (fr) fujions (gallo) furem (ro) |
+| **2** | fueras (es) fosses (pt) foses (gl) fueses (an) hueras (ext) fossis (ca) fusses (fr) fujes (gallo) fossi (it) fuasse (dlm) zisse (dlm) furi (ro) | fuerais (es) fôsseis (pt) fuesetz (an) huérais (ext) fóssiu (ca) fussiez (fr) fujiéz (gallo) foste (it) fùsi (ist) furet (ro) |
 | **3** | fos (ca) fût (fr) | fuas (dlm) zis (dlm) |
 
 ### subjunctive.future (shortlist)
@@ -178,16 +178,16 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | sería (es, gl, an) seria (pt, ca) sedría (ext) serais (fr) séro(s) (pcd) seraes (glw) sarei (it) fure (dlm) zere (dlm) aş fi (ro) | seríem (ca) serions (fr) serins (glw) furme (dlm) zerme (dlm) am fi (ro) |
-| **2** | serías (es, gl, an) serias (pt) sedrías (ext) series (ca) serais (fr) séros (pcd) seraes (glw) fure (dlm) zere (dlm) ai fi (ro) | seríais (es) seríeis (pt) seríatz (an) sedríais (ext) seríeu (ca) seriez (fr) seriéz (glw) furte (dlm) zerte (dlm) |
-| **3** | sería (es, gl, an) seria (pt, ca) sedría (ext) serait (fr) sérot (pcd) seraet (glw) ar fi (ro) | serían (es, gl, an) seriam (pt) sedrían (ext) serien (ca) seraient (fr) seraen (glw) fure (dlm) zere (dlm) ar fi (ro) |
+| **1** | sería (es, gl, an) seria (pt, ca) sedría (ext) serais (fr) séro(s) (pcd) seraes (gallo) sarei (it) fure (dlm) zere (dlm) aş fi (ro) | seríem (ca) serions (fr) serins (gallo) furme (dlm) zerme (dlm) am fi (ro) |
+| **2** | serías (es, gl, an) serias (pt) sedrías (ext) series (ca) serais (fr) séros (pcd) seraes (gallo) fure (dlm) zere (dlm) ai fi (ro) | seríais (es) seríeis (pt) seríatz (an) sedríais (ext) seríeu (ca) seriez (fr) seriéz (gallo) furte (dlm) zerte (dlm) |
+| **3** | sería (es, gl, an) seria (pt, ca) sedría (ext) serait (fr) sérot (pcd) seraet (gallo) ar fi (ro) | serían (es, gl, an) seriam (pt) sedrían (ext) serien (ca) seraient (fr) seraen (gallo) fure (dlm) zere (dlm) ar fi (ro) |
 
 ### imperative (shortlist)
 
 | | sg | pl |
 |---|---|---|
 | **1** | sé (es) | soéïons (pcd) |
-| **2** | sé (es, gl, an) sê (pt) sois (fr) soe (glw) sii (it) seîi (ist) sai (dlm) zai (dlm) fii (ro) | sed (es) sou (ca) soéïez (pcd) seiî (ist) |
+| **2** | sé (es, gl, an) sê (pt) sois (fr) soe (gallo) sii (it) seîi (ist) sai (dlm) zai (dlm) fii (ro) | sed (es) sou (ca) soéïez (pcd) seiî (ist) |
 | **3** | sea (es) sia (it) seîo (ist) | sean (es) seîo (ist) |
 
 ## stare
@@ -290,7 +290,7 @@ conglomerate shortlist
 | stem | lects |
 |---|---|
 | <a id="s-avaer"></a>{ avaer } | nrf |
-| <a id="s-avair"></a>{ avair } | glw |
+| <a id="s-avair"></a>{ avair } | gallo |
 | <a id="s-avar"></a>{ avar } | dlm |
 | <a id="s-avea"></a>{ avea } | ro |
 | <a id="s-aver"></a>{ aver } | nrf |
@@ -309,25 +309,25 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | he (es, an, ca) hei (pt, gl) ei (ext) ai (fr, pcd, nrf) a (wa) e (glw) hoo (lmo) ò (rgn) ho (it) iè (ist) jai (dlm) am (ro) | hem (ca) hèmm (lmo) |
-| **2** | has (es, gl, an, ca) hás (pt) ás (ext) as (fr, wa, nrf, glw) os (pcd) hé (lmo) é (rgn) hai (it) iè (ist) ji (dlm) ai (ro) | hetz (an) heu (ca) |
-| **3** | ha (es, gl, an, ca, it) há (pt) á (ext) a (fr, wa, nrf, glw) o (pcd) hà (lmo) à (rgn) uò (ist) ju (dlm) | han (es, gl, an, ca) hão (pt) án (ext) ont (fr, wa, pcd, nrf) on (glw) hann (lmo) à (rgn) uò (ist) ju (dlm) au (ro) |
+| **1** | he (es, an, ca) hei (pt, gl) ei (ext) ai (fr, pcd, nrf) a (wa) e (gallo) hoo (lmo) ò (rgn) ho (it) iè (ist) jai (dlm) am (ro) | hem (ca) hèmm (lmo) |
+| **2** | has (es, gl, an, ca) hás (pt) ás (ext) as (fr, wa, nrf, gallo) os (pcd) hé (lmo) é (rgn) hai (it) iè (ist) ji (dlm) ai (ro) | hetz (an) heu (ca) |
+| **3** | ha (es, gl, an, ca, it) há (pt) á (ext) a (fr, wa, nrf, gallo) o (pcd) hà (lmo) à (rgn) uò (ist) ju (dlm) | han (es, gl, an, ca) hão (pt) án (ext) ont (fr, wa, pcd, nrf) on (gallo) hann (lmo) à (rgn) uò (ist) ju (dlm) au (ro) |
 
 ### indicative.imperfect (shortlist)
 
 | | sg | pl |
 |---|---|---|
-| **1** | había (es, gl) havia (pt, ca) heba (an) avía (ext) avais (fr, nrf) aveu (wa) avoais (pcd) aveis (nrf) avaes (glw) vìvo (ist) avas (dlm) aveam (ro) | havíem (ca) avions (fr, nrf) avéns (wa) avioms (nrf) avaen (glw) vièmi (ist) aveam (ro) |
-| **2** | habías (es, gl) havias (pt) hebas (an) avías (ext) havies (ca) avais (fr, nrf) aveus (wa) avoais (pcd) aveis (nrf) avaes (glw) vìvi (ist) avai (dlm) aveai (ro) | habíais (es) havíeis (pt) hebatz (an) aviais (ext) havíeu (ca) aviez (fr, nrf) avîz (wa) aviéz (glw) vì(de) (ist) |
-| **3** | había (es, gl) havia (pt, ca) heba (an) avía (ext) avait (fr, nrf) aveut (wa) avoait (pcd) aveit (nrf) avaet (glw) vìva (ist) avea (ro) | habían (es, gl) haviam (pt) heban (an) avían (ext) havien (ca) avaient (fr, nrf) avént (wa) aveient (nrf) avaen (glw) vìva (ist) avas (dlm) aveau (ro) |
+| **1** | había (es, gl) havia (pt, ca) heba (an) avía (ext) avais (fr, nrf) aveu (wa) avoais (pcd) aveis (nrf) avaes (gallo) vìvo (ist) avas (dlm) aveam (ro) | havíem (ca) avions (fr, nrf) avéns (wa) avioms (nrf) avaen (gallo) vièmi (ist) aveam (ro) |
+| **2** | habías (es, gl) havias (pt) hebas (an) avías (ext) havies (ca) avais (fr, nrf) aveus (wa) avoais (pcd) aveis (nrf) avaes (gallo) vìvi (ist) avai (dlm) aveai (ro) | habíais (es) havíeis (pt) hebatz (an) aviais (ext) havíeu (ca) aviez (fr, nrf) avîz (wa) aviéz (gallo) vì(de) (ist) |
+| **3** | había (es, gl) havia (pt, ca) heba (an) avía (ext) avait (fr, nrf) aveut (wa) avoait (pcd) aveit (nrf) avaet (gallo) vìva (ist) avea (ro) | habían (es, gl) haviam (pt) heban (an) avían (ext) havien (ca) avaient (fr, nrf) avént (wa) aveient (nrf) avaen (gallo) vìva (ist) avas (dlm) aveau (ro) |
 
 ### indicative.preterite (shortlist)
 
 | | sg | pl |
 |---|---|---|
-| **1** | eus (fr, nrf) yûs (glw) | eûmes (fr, nrf) avîs (wa) eûnmes (nrf) ogum (glw) |
-| **2** | eus (fr, nrf) yûs (glw) | abietz (an) habietz (an) eûtes (fr, nrf) avîz (wa) yûte (glw) |
-| **3** | eut (fr, nrf) yût (glw) | uvun (ext) eurent (fr) avît (wa) eûtent (nrf) eûtrent (nrf) yûte (glw) avèt (rgn) |
+| **1** | eus (fr, nrf) yûs (gallo) | eûmes (fr, nrf) avîs (wa) eûnmes (nrf) ogum (gallo) |
+| **2** | eus (fr, nrf) yûs (gallo) | abietz (an) habietz (an) eûtes (fr, nrf) avîz (wa) yûte (gallo) |
+| **3** | eut (fr, nrf) yût (gallo) | uvun (ext) eurent (fr) avît (wa) eûtent (nrf) eûtrent (nrf) yûte (gallo) avèt (rgn) |
 
 ### indicative.past (shortlist)
 
@@ -341,9 +341,9 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | habré (es, an) hauré (ca) aurai (fr) årè (wa) érai (pcd) airai (nrf) éthai (nrf) arë (glw) arò (rgn) avrò (it) variè (ist) avra (dlm) | haurem (ca) aurons (fr) årans (wa) érons (pcd) airoms (nrf) éthons (nrf) aron (glw) arén (rgn) |
-| **2** | habrás (es, an) hauràs (ca) auras (fr) årès (wa) éros (pcd) airas (nrf) éthas (nrf) aras (glw) aré (rgn) avrai (it, dlm) variè (ist) | habréis (es) habretz (an) haureu (ca) aurez (fr) åroz (wa) érez (pcd) airez (nrf) éthez (nrf) aréz (glw) arẽn (rgn) |
-| **3** | habrá (es, an) haurà (ca) aura (fr) årè (wa) éro (pcd) aira (nrf) étha (nrf) ara (glw) arà (rgn) avrà (it) varuò (ist) | habrán (es, an) hauran (ca) auront (fr) åront (wa) éront (pcd) airont (nrf) éthont (nrf) aron (glw) arà (rgn) varuò (ist) avra (dlm) |
+| **1** | habré (es, an) hauré (ca) aurai (fr) årè (wa) érai (pcd) airai (nrf) éthai (nrf) arë (gallo) arò (rgn) avrò (it) variè (ist) avra (dlm) | haurem (ca) aurons (fr) årans (wa) érons (pcd) airoms (nrf) éthons (nrf) aron (gallo) arén (rgn) |
+| **2** | habrás (es, an) hauràs (ca) auras (fr) årès (wa) éros (pcd) airas (nrf) éthas (nrf) aras (gallo) aré (rgn) avrai (it, dlm) variè (ist) | habréis (es) habretz (an) haureu (ca) aurez (fr) åroz (wa) érez (pcd) airez (nrf) éthez (nrf) aréz (gallo) arẽn (rgn) |
+| **3** | habrá (es, an) haurà (ca) aura (fr) årè (wa) éro (pcd) aira (nrf) étha (nrf) ara (gallo) arà (rgn) avrà (it) varuò (ist) | habrán (es, an) hauran (ca) auront (fr) åront (wa) éront (pcd) airont (nrf) éthont (nrf) aron (gallo) arà (rgn) varuò (ist) avra (dlm) |
 
 ### indicative.pluperfect (shortlist)
 
@@ -357,17 +357,17 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | aie (fr, nrf) aej (glw) am (ro) | hàgim (ca) ayons (fr, nrf, glw) ayoms (nrf) àbiom (lmo) vèmo (ist) avem (ro) |
-| **2** | aies (fr, nrf) aej (glw) ai (ro) | hayáis (es) hajais (pt) abatz (an) haigatz (an) aigais (ext) hàgiu (ca) ayez (fr, nrf) ayiz (nrf) ayéz (glw) àbiov (lmo) vì(de) (ist) |
-| **3** | ait (fr, nrf) aej (glw) | aient (fr, nrf) aej (glw) |
+| **1** | aie (fr, nrf) aej (gallo) am (ro) | hàgim (ca) ayons (fr, nrf, gallo) ayoms (nrf) àbiom (lmo) vèmo (ist) avem (ro) |
+| **2** | aies (fr, nrf) aej (gallo) ai (ro) | hayáis (es) hajais (pt) abatz (an) haigatz (an) aigais (ext) hàgiu (ca) ayez (fr, nrf) ayiz (nrf) ayéz (gallo) àbiov (lmo) vì(de) (ist) |
+| **3** | ait (fr, nrf) aej (gallo) | aient (fr, nrf) aej (gallo) |
 
 ### subjunctive.imperfect (shortlist)
 
 | | sg | pl |
 |---|---|---|
-| **1** | hese (an) hagués (ca) eusse (fr, nrf) eûsse (nrf) ûje (glw) vìso (ist) avas (dlm) | eussions (fr) eussioms (nrf) eûssions (nrf) ûjions (glw) |
-| **2** | heses (an) eusses (fr, nrf) eûsses (nrf) ûjes (glw) vìsi (ist) | hesetz (an) eussiez (fr, nrf) eûssyiz (nrf) ûjiéz (glw) vìsi (ist) |
-| **3** | eût (fr, nrf) | hesen (an) eussent (fr, nrf) eûssiez (nrf) ûjent (glw) vìso (ist) avas (dlm) |
+| **1** | hese (an) hagués (ca) eusse (fr, nrf) eûsse (nrf) ûje (gallo) vìso (ist) avas (dlm) | eussions (fr) eussioms (nrf) eûssions (nrf) ûjions (gallo) |
+| **2** | heses (an) eusses (fr, nrf) eûsses (nrf) ûjes (gallo) vìsi (ist) | hesetz (an) eussiez (fr, nrf) eûssyiz (nrf) ûjiéz (gallo) vìsi (ist) |
+| **3** | eût (fr, nrf) | hesen (an) eussent (fr, nrf) eûssiez (nrf) ûjent (gallo) vìso (ist) avas (dlm) |
 
 ### subjunctive.past (shortlist)
 
@@ -389,9 +389,9 @@ conglomerate shortlist
 
 | | sg | pl |
 |---|---|---|
-| **1** | habría (es, an) hauria (ca) aurais (fr) åreu (wa) éroais (pcd) aireis (nrf) éthais (nrf) araes (glw) arèb (rgn) avrei (it) avre (dlm) | hauríem (ca) aurions (fr) åréns (wa) airioms (nrf) éthions (nrf) arins (glw) |
-| **2** | habrías (es, an) hauries (ca) aurais (fr) åreus (wa) éroais (pcd) aireis (nrf) éthais (nrf) araes (glw) arès (rgn) avre (dlm) | habríais (es) habríatz (an) hauríeu (ca) auriez (fr) årîz (wa) airiez (nrf) éthiez (nrf) ariéz (glw) |
-| **3** | habría (es, an) hauria (ca) aurait (fr) åreut (wa) éroait (pcd) aireit (nrf) éthait (nrf) araet (glw) arèb (rgn) | habrían (es, an) haurien (ca) auraient (fr) årént (wa) aireient (nrf) éthaient (nrf) araen (glw) arèb (rgn) avre (dlm) |
+| **1** | habría (es, an) hauria (ca) aurais (fr) åreu (wa) éroais (pcd) aireis (nrf) éthais (nrf) araes (gallo) arèb (rgn) avrei (it) avre (dlm) | hauríem (ca) aurions (fr) åréns (wa) airioms (nrf) éthions (nrf) arins (gallo) |
+| **2** | habrías (es, an) hauries (ca) aurais (fr) åreus (wa) éroais (pcd) aireis (nrf) éthais (nrf) araes (gallo) arès (rgn) avre (dlm) | habríais (es) habríatz (an) hauríeu (ca) auriez (fr) årîz (wa) airiez (nrf) éthiez (nrf) ariéz (gallo) |
+| **3** | habría (es, an) hauria (ca) aurait (fr) åreut (wa) éroait (pcd) aireit (nrf) éthait (nrf) araet (gallo) arèb (rgn) | habrían (es, an) haurien (ca) auraient (fr) årént (wa) aireient (nrf) éthaient (nrf) araen (gallo) arèb (rgn) avre (dlm) |
 
 ### conditional.present (shortlist)
 
@@ -406,7 +406,7 @@ conglomerate shortlist
 | | sg | pl |
 |---|---|---|
 | **1** | ai (nrf) aie (nrf) | ez (an) haig (ca) |
-| **2** | há (pt) ha (gl, an) haig (ca) aie (fr, pcd) a (glw) ai (ro) | heis (pt) hetz (an) haig (ca) |
+| **2** | há (pt) ha (gl, an) haig (ca) aie (fr, pcd) a (gallo) ai (ro) | heis (pt) hetz (an) haig (ca) |
 | **3** | haig (ca) | haig (ca) |
 
 ## other
@@ -585,87 +585,87 @@ lowest syllable
 
 [a-theme](#a-theme)
 
-{ -ae } (glw)
+{ -ae } (gallo)
 
 ## indicative.present
 
 | | sg | pl |
 |---|---|---|
-| **1** | -t (glw) | -on (glw) |
-| **2** | -t (glw) | — |
-| **3** | -t (glw) | -t (glw) |
+| **1** | -t (gallo) | -on (gallo) |
+| **2** | -t (gallo) | — |
+| **3** | -t (gallo) | -t (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -t (glw) | -on (glw) |
-| **2** | -t (glw) | — |
-| **3** | -t (glw) | -t (glw) |
+| **1** | -t (gallo) | -on (gallo) |
+| **2** | -t (gallo) | — |
+| **3** | -t (gallo) | -t (gallo) |
 
 ## indicative.imperfect
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -n (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -n (glw) |
+| **1** | -s (gallo) | -n (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -n (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -n (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -n (glw) |
+| **1** | -s (gallo) | -n (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -n (gallo) |
 
 ## indicative.preterite
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -m (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -rr (glw) |
+| **1** | -s (gallo) | -m (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -rr (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -m (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -rr (glw) |
+| **1** | -s (gallo) | -m (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -rr (gallo) |
 
 ## indicative.future
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ae (glw) | -on (glw) |
-| **2** | -as (glw) | — |
-| **3** | -a (glw) | -on (glw) |
+| **1** | -ae (gallo) | -on (gallo) |
+| **2** | -as (gallo) | — |
+| **3** | -a (gallo) | -on (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ae (glw) | -on (glw) |
-| **2** | -as (glw) | — |
-| **3** | -a (glw) | -on (glw) |
+| **1** | -ae (gallo) | -on (gallo) |
+| **2** | -as (gallo) | — |
+| **3** | -a (gallo) | -on (gallo) |
 
 ## conditional
 
 | | sg | pl |
 |---|---|---|
-| **1** | -aes (glw) | -ion (glw) |
-| **2** | -aes (glw) | — |
-| **3** | -aet (glw) | -aen (glw) |
+| **1** | -aes (gallo) | -ion (gallo) |
+| **2** | -aes (gallo) | — |
+| **3** | -aet (gallo) | -aen (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -aes (glw) | -ion (glw) |
-| **2** | -aes (glw) | — |
-| **3** | -aet (glw) | -aen (glw) |
+| **1** | -aes (gallo) | -ion (gallo) |
+| **2** | -aes (gallo) | — |
+| **3** | -aet (gallo) | -aen (gallo) |
 
 <a id="s--ai"></a>
 # { -ai }
@@ -2347,55 +2347,55 @@ lowest syllable
 
 [e-theme](#e-theme)
 
-{ -er } (es, pt, gl, an, ast, mwl, oc, ca, gsc, fr, wa, pcd, glw, eml, dlm, rm, lld)
+{ -er } (es, pt, gl, an, ast, mwl, oc, ca, gsc, fr, wa, pcd, gallo, eml, dlm, rm, lld)
 
 ## indicative.present
 
 | | sg | pl |
 |---|---|---|
-| **1** | -o (es, pt, gl, an, ast, mwl, ca, dlm) -i (oc, gsc, rm) -e (fr, wa, pcd, glw, lld) | -mos (es, gl) -emos (pt, an, ast, mwl) -èm (oc, gsc) -em (ca) -ons (fr, pcd, glw) -ans (wa) -aime (dlm) -ein (rm) -on (lld) |
-| **2** | -s (es, gl, oc, ca, gsc, rm) -es (pt, an, ast, mwl, fr, wa, pcd, glw, lld) -i (dlm) | -is (es) -eis (pt, mwl, rm, lld) -des (gl) -etz (an) -éis (ast) -ètz (oc, gsc) -eu (ca) -ez (fr, wa, pcd) -éz (glw) -aite (dlm) |
-| **3** | -e (es, pt, gl, an, ast, mwl, fr, wa, pcd, glw) ∅ (oc, ca, gsc) -aja (dlm) -a (rm, lld) | -n (es, gl, oc, gsc, rm) -em (pt) -en (an, ast, mwl, ca) -ent (fr, glw) -nut (wa) -e'te (pcd) -aja (dlm) -a (lld) |
+| **1** | -o (es, pt, gl, an, ast, mwl, ca, dlm) -i (oc, gsc, rm) -e (fr, wa, pcd, gallo, lld) | -mos (es, gl) -emos (pt, an, ast, mwl) -èm (oc, gsc) -em (ca) -ons (fr, pcd, gallo) -ans (wa) -aime (dlm) -ein (rm) -on (lld) |
+| **2** | -s (es, gl, oc, ca, gsc, rm) -es (pt, an, ast, mwl, fr, wa, pcd, gallo, lld) -i (dlm) | -is (es) -eis (pt, mwl, rm, lld) -des (gl) -etz (an) -éis (ast) -ètz (oc, gsc) -eu (ca) -ez (fr, wa, pcd) -éz (gallo) -aite (dlm) |
+| **3** | -e (es, pt, gl, an, ast, mwl, fr, wa, pcd, gallo) ∅ (oc, ca, gsc) -aja (dlm) -a (rm, lld) | -n (es, gl, oc, gsc, rm) -em (pt) -en (an, ast, mwl, ca) -ent (fr, gallo) -nut (wa) -e'te (pcd) -aja (dlm) -a (lld) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -o (es, pt, gl, an, ast, mwl, ca, dlm) -i (oc, gsc, rm) -e (fr, wa, pcd, glw, lld) | -mos (es, gl) -èm (oc, gsc) -em (ca) -ons (fr, pcd, glw) -ans (wa) -ein (rm) -on (lld) |
-| **2** | -s (es, gl, oc, ca, gsc, rm) -es (pt, an, ast, mwl, fr, wa, pcd, glw, lld) -i (dlm) | -is (es) -eis (pt, mwl, rm, lld) -des (gl) -etz (an) -éis (ast) -ètz (oc, gsc) -eu (ca) -ez (fr, wa, pcd) -éz (glw) |
-| **3** | -e (es, pt, gl, an, ast, mwl, fr, wa, pcd, glw) ∅ (oc, ca, gsc) -a (rm, lld) | -n (es, gl, oc, gsc, rm) -em (pt) -en (an, ast, mwl, ca) -ent (fr, glw) -nut (wa) -a (lld) |
+| **1** | -o (es, pt, gl, an, ast, mwl, ca, dlm) -i (oc, gsc, rm) -e (fr, wa, pcd, gallo, lld) | -mos (es, gl) -èm (oc, gsc) -em (ca) -ons (fr, pcd, gallo) -ans (wa) -ein (rm) -on (lld) |
+| **2** | -s (es, gl, oc, ca, gsc, rm) -es (pt, an, ast, mwl, fr, wa, pcd, gallo, lld) -i (dlm) | -is (es) -eis (pt, mwl, rm, lld) -des (gl) -etz (an) -éis (ast) -ètz (oc, gsc) -eu (ca) -ez (fr, wa, pcd) -éz (gallo) |
+| **3** | -e (es, pt, gl, an, ast, mwl, fr, wa, pcd, gallo) ∅ (oc, ca, gsc) -a (rm, lld) | -n (es, gl, oc, gsc, rm) -em (pt) -en (an, ast, mwl, ca) -ent (fr, gallo) -nut (wa) -a (lld) |
 
 ## indicative.imperfect
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (es, gl, an, mwl) -ia (pt, ca) -a (ast) -i (oc) -ái (gsc) -ais (fr, pcd) -éve (wa) -aes (glw) -îva (eml) -el (rm) -e (lld) | -mos (es, gl, mwl) -íamos (pt) -nos (an) -amos (ast) -am (oc, gsc) -íem (ca) -ions (fr) -éns (wa) -ème (pcd) -ins (glw) -îven (eml) -an (rm, lld) |
-| **2** | -s (es, gl, an, mwl) -ias (pt) -es (ast, lld) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -éves (wa) -aes (glw) -îv (eml) -as (rm) | -is (es) -íeis (pt) -des (gl, mwl) -tz (an) -ais (ast, lld) -atz (oc, gsc) -íeu (ca) -iez (fr) -îz (wa) -ète (pcd) -yéz (glw) -îvi (eml) -as (rm) |
-| **3** | ∅ (es, gl, an, mwl) -ia (pt, ca) -a (ast, rm, lld) -á (oc, gsc) -ait (fr, pcd) -éve (wa) -aet (glw) -îva (eml) | -n (es, gl, an, mwl) -iam (pt) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -ént (wa) -ai'te (pcd) -aent (glw) -îven (eml) -an (rm) -a (lld) |
+| **1** | ∅ (es, gl, an, mwl) -ia (pt, ca) -a (ast) -i (oc) -ái (gsc) -ais (fr, pcd) -éve (wa) -aes (gallo) -îva (eml) -el (rm) -e (lld) | -mos (es, gl, mwl) -íamos (pt) -nos (an) -amos (ast) -am (oc, gsc) -íem (ca) -ions (fr) -éns (wa) -ème (pcd) -ins (gallo) -îven (eml) -an (rm, lld) |
+| **2** | -s (es, gl, an, mwl) -ias (pt) -es (ast, lld) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -éves (wa) -aes (gallo) -îv (eml) -as (rm) | -is (es) -íeis (pt) -des (gl, mwl) -tz (an) -ais (ast, lld) -atz (oc, gsc) -íeu (ca) -iez (fr) -îz (wa) -ète (pcd) -yéz (gallo) -îvi (eml) -as (rm) |
+| **3** | ∅ (es, gl, an, mwl) -ia (pt, ca) -a (ast, rm, lld) -á (oc, gsc) -ait (fr, pcd) -éve (wa) -aet (gallo) -îva (eml) | -n (es, gl, an, mwl) -iam (pt) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -ént (wa) -ai'te (pcd) -aent (gallo) -îven (eml) -an (rm) -a (lld) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (es, gl, an, mwl) -ia (pt, ca) -a (ast) -i (oc) -ái (gsc) -ais (fr, pcd) -aes (glw) -el (rm) -e (lld) | -mos (es, gl, mwl) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -éns (wa) -ins (glw) -an (rm, lld) |
-| **2** | -s (es, gl, an, mwl) -ias (pt) -es (ast, lld) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -aes (glw) -îv (eml) -as (rm) | -is (es) -íeis (pt) -des (gl, mwl) -tz (an) -ais (ast, lld) -atz (oc, gsc) -íeu (ca) -iez (fr) -îz (wa) -yéz (glw) -as (rm) |
-| **3** | ∅ (es, gl, an, mwl) -ia (pt, ca) -a (ast, rm, lld) -á (oc, gsc) -ait (fr, pcd) -aet (glw) | -n (es, gl, an, mwl) -iam (pt) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -ént (wa) -aent (glw) -an (rm) -a (lld) |
+| **1** | ∅ (es, gl, an, mwl) -ia (pt, ca) -a (ast) -i (oc) -ái (gsc) -ais (fr, pcd) -aes (gallo) -el (rm) -e (lld) | -mos (es, gl, mwl) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -éns (wa) -ins (gallo) -an (rm, lld) |
+| **2** | -s (es, gl, an, mwl) -ias (pt) -es (ast, lld) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -aes (gallo) -îv (eml) -as (rm) | -is (es) -íeis (pt) -des (gl, mwl) -tz (an) -ais (ast, lld) -atz (oc, gsc) -íeu (ca) -iez (fr) -îz (wa) -yéz (gallo) -as (rm) |
+| **3** | ∅ (es, gl, an, mwl) -ia (pt, ca) -a (ast, rm, lld) -á (oc, gsc) -ait (fr, pcd) -aet (gallo) | -n (es, gl, an, mwl) -iam (pt) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -ént (wa) -aent (gallo) -an (rm) -a (lld) |
 
 ## indicative.preterite
 
 | | sg | pl |
 |---|---|---|
-| **1** | -í (es, ast, ca) -i (pt, mwl) -n (gl) -é (an) -ri (oc, gsc) -ai (fr) -a (wa) -s (glw) | -mos (es, pt) -ín (gl) -emos (an) -imos (ast, mwl) -em (oc) -érem (ca) -rem (gsc) -âmes (fr) -îs (wa) -te (glw) |
-| **2** | -ste (es, pt) -ches (gl) -és (an) -isti (ast) -iste (mwl) -às (oc) -eres (ca) -res (gsc) -as (fr, wa) -s (glw) | -steis (es) -stes (pt, gl) -etz (an, oc) -istis (ast) -istes (mwl) -éreu (ca) -retz (gsc) -âtes (fr) -îz (wa) -te (glw) |
-| **3** | -o (es, gl, ast, mwl) ∅ (pt) -ó (an) -t (oc, gsc, glw) -é (ca) -a (fr, wa) | -eron (es, ast) -ram (pt) -ron (gl, gsc) -oron (an) -írun (mwl) -àn (oc) -eren (ca) -èrent (fr) -ît (wa) -te (glw) |
+| **1** | -í (es, ast, ca) -i (pt, mwl) -n (gl) -é (an) -ri (oc, gsc) -ai (fr) -a (wa) -s (gallo) | -mos (es, pt) -ín (gl) -emos (an) -imos (ast, mwl) -em (oc) -érem (ca) -rem (gsc) -âmes (fr) -îs (wa) -te (gallo) |
+| **2** | -ste (es, pt) -ches (gl) -és (an) -isti (ast) -iste (mwl) -às (oc) -eres (ca) -res (gsc) -as (fr, wa) -s (gallo) | -steis (es) -stes (pt, gl) -etz (an, oc) -istis (ast) -istes (mwl) -éreu (ca) -retz (gsc) -âtes (fr) -îz (wa) -te (gallo) |
+| **3** | -o (es, gl, ast, mwl) ∅ (pt) -ó (an) -t (oc, gsc, gallo) -é (ca) -a (fr, wa) | -eron (es, ast) -ram (pt) -ron (gl, gsc) -oron (an) -írun (mwl) -àn (oc) -eren (ca) -èrent (fr) -ît (wa) -te (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -í (es, ast, ca) -i (pt, mwl) -n (gl) -é (an) -ri (oc, gsc) -ai (fr) -a (wa) -s (glw) | -mos (es, pt) -ín (gl) -em (oc) -rem (gsc) -îs (wa) -te (glw) |
-| **2** | -ste (es, pt) -ches (gl) -és (an) -às (oc) -res (gsc) -as (fr, wa) -s (glw) | -steis (es) -stes (pt, gl) -etz (an, oc) -retz (gsc) -îz (wa) -te (glw) |
-| **3** | -o (es, gl, ast, mwl) ∅ (pt) -ó (an) -t (oc, gsc, glw) -é (ca) -a (fr, wa) | -ram (pt) -ron (gl, gsc) -àn (oc) -ît (wa) -te (glw) |
+| **1** | -í (es, ast, ca) -i (pt, mwl) -n (gl) -é (an) -ri (oc, gsc) -ai (fr) -a (wa) -s (gallo) | -mos (es, pt) -ín (gl) -em (oc) -rem (gsc) -îs (wa) -te (gallo) |
+| **2** | -ste (es, pt) -ches (gl) -és (an) -às (oc) -res (gsc) -as (fr, wa) -s (gallo) | -steis (es) -stes (pt, gl) -etz (an, oc) -retz (gsc) -îz (wa) -te (gallo) |
+| **3** | -o (es, gl, ast, mwl) ∅ (pt) -ó (an) -t (oc, gsc, gallo) -é (ca) -a (fr, wa) | -ram (pt) -ron (gl, gsc) -àn (oc) -ît (wa) -te (gallo) |
 
 ## indicative.past
 
@@ -2417,17 +2417,17 @@ lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -é (es, an, ast, ca, lld) -ei (pt, gl, mwl) -ai (oc, gsc, fr, pcd) -rè (wa) -ë (glw) -rò (eml) -a (dlm) | -emos (es, pt, gl, an, ast, mwl) -em (oc, ca, gsc) -ons (fr, pcd, glw) -rans (wa) -rám (eml) -me (dlm) -on (lld) |
-| **2** | -ás (es, pt, gl, an, ast, mwl) -às (oc, ca, gsc) -as (fr, lld) -rès (wa) -os (pcd) -âs (glw) -rē (eml) -e (dlm) | -éis (es, ast) -eis (pt, mwl, lld) -edes (gl) -etz (an, oc, gsc) -eu (ca) -ez (fr, pcd) -roz (wa) -éz (glw) -rî (eml) -te (dlm) |
-| **3** | -á (es, pt, gl, an, ast, mwl) -à (oc, ca, gsc, lld) -a (fr, glw) -rè (wa) -o (pcd) -rà (eml) | -án (es, gl, an, ast) -ão (pt) -an (mwl, ca) -àn (oc, gsc) -ont (fr, pcd, glw) -ront (wa) -rān (eml) -a (dlm) -à (lld) |
+| **1** | -é (es, an, ast, ca, lld) -ei (pt, gl, mwl) -ai (oc, gsc, fr, pcd) -rè (wa) -ë (gallo) -rò (eml) -a (dlm) | -emos (es, pt, gl, an, ast, mwl) -em (oc, ca, gsc) -ons (fr, pcd, gallo) -rans (wa) -rám (eml) -me (dlm) -on (lld) |
+| **2** | -ás (es, pt, gl, an, ast, mwl) -às (oc, ca, gsc) -as (fr, lld) -rès (wa) -os (pcd) -âs (gallo) -rē (eml) -e (dlm) | -éis (es, ast) -eis (pt, mwl, lld) -edes (gl) -etz (an, oc, gsc) -eu (ca) -ez (fr, pcd) -roz (wa) -éz (gallo) -rî (eml) -te (dlm) |
+| **3** | -á (es, pt, gl, an, ast, mwl) -à (oc, ca, gsc, lld) -a (fr, gallo) -rè (wa) -o (pcd) -rà (eml) | -án (es, gl, an, ast) -ão (pt) -an (mwl, ca) -àn (oc, gsc) -ont (fr, pcd, gallo) -ront (wa) -rān (eml) -a (dlm) -à (lld) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -é (es, an, ast, ca, lld) -ei (pt, gl, mwl) -ai (oc, gsc, fr, pcd) -rè (wa) -ë (glw) -rò (eml) -a (dlm) | -em (oc, ca, gsc) -ons (fr, pcd, glw) -rans (wa) -rám (eml) -me (dlm) -on (lld) |
-| **2** | -ás (es, pt, gl, an, ast, mwl) -às (oc, ca, gsc) -as (fr, lld) -rès (wa) -os (pcd) -âs (glw) -rē (eml) -e (dlm) | -éis (es, ast) -eis (pt, mwl, lld) -etz (an, oc, gsc) -eu (ca) -ez (fr, pcd) -roz (wa) -éz (glw) -rî (eml) -te (dlm) |
-| **3** | -á (es, pt, gl, an, ast, mwl) -à (oc, ca, gsc, lld) -a (fr, glw) -rè (wa) -o (pcd) -rà (eml) | -án (es, gl, an, ast) -ão (pt) -an (mwl, ca) -àn (oc, gsc) -ont (fr, pcd, glw) -ront (wa) -rān (eml) -a (dlm) -à (lld) |
+| **1** | -é (es, an, ast, ca, lld) -ei (pt, gl, mwl) -ai (oc, gsc, fr, pcd) -rè (wa) -ë (gallo) -rò (eml) -a (dlm) | -em (oc, ca, gsc) -ons (fr, pcd, gallo) -rans (wa) -rám (eml) -me (dlm) -on (lld) |
+| **2** | -ás (es, pt, gl, an, ast, mwl) -às (oc, ca, gsc) -as (fr, lld) -rès (wa) -os (pcd) -âs (gallo) -rē (eml) -e (dlm) | -éis (es, ast) -eis (pt, mwl, lld) -etz (an, oc, gsc) -eu (ca) -ez (fr, pcd) -roz (wa) -éz (gallo) -rî (eml) -te (dlm) |
+| **3** | -á (es, pt, gl, an, ast, mwl) -à (oc, ca, gsc, lld) -a (fr, gallo) -rè (wa) -o (pcd) -rà (eml) | -án (es, gl, an, ast) -ão (pt) -an (mwl, ca) -àn (oc, gsc) -ont (fr, pcd, gallo) -ront (wa) -rān (eml) -a (dlm) -à (lld) |
 
 ## indicative.pluperfect
 
@@ -2449,33 +2449,33 @@ lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -a (es, ast) ∅ (pt, gl, an, mwl, gsc) -s (oc) -i (ca, rm) -e (fr, wa, pcd, glw, lld) -ja (dlm) | -amos (es, ast) -mos (pt, gl, an, mwl) -m (oc, gsc) -em (ca) -ions (fr, glw) -anxhe (wa) -onche (pcd) -ime (dlm) -en (rm) -on (lld) |
-| **2** | -as (es, ast) -s (pt, gl, an, mwl, gsc) -ás (oc) -is (ca) -es (fr, wa, pcd, glw, rm, lld) -ja (dlm) | -áis (es, ast) -is (pt) -des (gl, mwl) -tz (an, oc, gsc) -eu (ca) -iez (fr) -éxhe (wa) -èche (pcd) -iéz (glw) -ite (dlm) -es (rm) -eis (lld) |
-| **3** | -a (es, ast) ∅ (pt, gl, an, mwl, oc, gsc) -i (ca, rm) -e (fr, wa, pcd, glw, lld) | -an (es, ast) -m (pt) -n (gl, an, mwl, oc, gsc) -in (ca) -ent (fr, glw) -nuxhe (wa) -e'te (pcd) -ja (dlm) -en (rm) -e (lld) |
+| **1** | -a (es, ast) ∅ (pt, gl, an, mwl, gsc) -s (oc) -i (ca, rm) -e (fr, wa, pcd, gallo, lld) -ja (dlm) | -amos (es, ast) -mos (pt, gl, an, mwl) -m (oc, gsc) -em (ca) -ions (fr, gallo) -anxhe (wa) -onche (pcd) -ime (dlm) -en (rm) -on (lld) |
+| **2** | -as (es, ast) -s (pt, gl, an, mwl, gsc) -ás (oc) -is (ca) -es (fr, wa, pcd, gallo, rm, lld) -ja (dlm) | -áis (es, ast) -is (pt) -des (gl, mwl) -tz (an, oc, gsc) -eu (ca) -iez (fr) -éxhe (wa) -èche (pcd) -iéz (gallo) -ite (dlm) -es (rm) -eis (lld) |
+| **3** | -a (es, ast) ∅ (pt, gl, an, mwl, oc, gsc) -i (ca, rm) -e (fr, wa, pcd, gallo, lld) | -an (es, ast) -m (pt) -n (gl, an, mwl, oc, gsc) -in (ca) -ent (fr, gallo) -nuxhe (wa) -e'te (pcd) -ja (dlm) -en (rm) -e (lld) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -a (es, ast) ∅ (pt, gl, an, mwl, gsc) -s (oc) -i (ca, rm) -e (fr, wa, pcd, glw, lld) -ja (dlm) | -mos (pt, gl, an, mwl) -m (oc, gsc) -em (ca) -ions (fr, glw) -en (rm) -on (lld) |
-| **2** | -as (es, ast) -s (pt, gl, an, mwl, gsc) -ás (oc) -is (ca) -es (fr, wa, pcd, glw, rm, lld) -ja (dlm) | -áis (es, ast) -is (pt) -des (gl, mwl) -tz (an, oc, gsc) -eu (ca) -iez (fr) -iéz (glw) -es (rm) -eis (lld) |
-| **3** | -a (es, ast) ∅ (pt, gl, an, mwl, oc, gsc) -i (ca, rm) -e (fr, wa, pcd, glw, lld) | -an (es, ast) -m (pt) -n (gl, an, mwl, oc, gsc) -in (ca) -ent (fr, glw) -ja (dlm) -en (rm) -e (lld) |
+| **1** | -a (es, ast) ∅ (pt, gl, an, mwl, gsc) -s (oc) -i (ca, rm) -e (fr, wa, pcd, gallo, lld) -ja (dlm) | -mos (pt, gl, an, mwl) -m (oc, gsc) -em (ca) -ions (fr, gallo) -en (rm) -on (lld) |
+| **2** | -as (es, ast) -s (pt, gl, an, mwl, gsc) -ás (oc) -is (ca) -es (fr, wa, pcd, gallo, rm, lld) -ja (dlm) | -áis (es, ast) -is (pt) -des (gl, mwl) -tz (an, oc, gsc) -eu (ca) -iez (fr) -iéz (gallo) -es (rm) -eis (lld) |
+| **3** | -a (es, ast) ∅ (pt, gl, an, mwl, oc, gsc) -i (ca, rm) -e (fr, wa, pcd, gallo, lld) | -an (es, ast) -m (pt) -n (gl, an, mwl, oc, gsc) -in (ca) -ent (fr, gallo) -ja (dlm) -en (rm) -e (lld) |
 
 ## subjunctive.imperfect
 
 | | sg | pl |
 |---|---|---|
-| **1** | -era (es, ast) -esse (pt) ∅ (gl, an, dlm, rm) -isse (mwl) -s (oc) -és (ca) -e (gsc, glw, lld) -asse (fr) -ésa (eml) | -éramos (es, ast) -êssemos (pt) -mos (gl) -nos (an) -íssemos (mwl) -m (oc) -éssim (ca) -em (gsc) -assions (fr) -ions (glw) -ésen (eml) -saime (dlm) -en (rm) -an (lld) |
-| **2** | -eras (es, ast) -esses (pt) -s (gl, an, oc) -isses (mwl) -essis (ca) -es (gsc, glw, rm, lld) -asses (fr) -ésa (eml) -se (dlm) | -erais (es, ast) -êsseis (pt) -des (gl) -tz (an, oc) -íssedes (mwl) -éssiu (ca) -etz (gsc) -assiez (fr) -iéz (glw) -ési (eml) -saite (dlm) -es (rm) -ais (lld) |
-| **3** | -era (es, ast) -esse (pt) ∅ (gl, an, rm) -isse (mwl) -e (oc, gsc, glw) -és (ca) -ât (fr) -ésa (eml) -sa (dlm) -a (lld) | -eran (es, ast) -essem (pt) -n (gl, an, oc) -íssen (mwl) -essin (ca) -on (gsc) -assent (fr) -ent (glw) -ésen (eml) ∅ (dlm) -en (rm) -a (lld) |
+| **1** | -era (es, ast) -esse (pt) ∅ (gl, an, dlm, rm) -isse (mwl) -s (oc) -és (ca) -e (gsc, gallo, lld) -asse (fr) -ésa (eml) | -éramos (es, ast) -êssemos (pt) -mos (gl) -nos (an) -íssemos (mwl) -m (oc) -éssim (ca) -em (gsc) -assions (fr) -ions (gallo) -ésen (eml) -saime (dlm) -en (rm) -an (lld) |
+| **2** | -eras (es, ast) -esses (pt) -s (gl, an, oc) -isses (mwl) -essis (ca) -es (gsc, gallo, rm, lld) -asses (fr) -ésa (eml) -se (dlm) | -erais (es, ast) -êsseis (pt) -des (gl) -tz (an, oc) -íssedes (mwl) -éssiu (ca) -etz (gsc) -assiez (fr) -iéz (gallo) -ési (eml) -saite (dlm) -es (rm) -ais (lld) |
+| **3** | -era (es, ast) -esse (pt) ∅ (gl, an, rm) -isse (mwl) -e (oc, gsc, gallo) -és (ca) -ât (fr) -ésa (eml) -sa (dlm) -a (lld) | -eran (es, ast) -essem (pt) -n (gl, an, oc) -íssen (mwl) -essin (ca) -on (gsc) -assent (fr) -ent (gallo) -ésen (eml) ∅ (dlm) -en (rm) -a (lld) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (gl, an, dlm, rm) -s (oc) -és (ca) -e (gsc, glw, lld) | -mos (gl) -nos (an) -m (oc) -em (gsc) -ions (glw) -en (rm) -an (lld) |
-| **2** | -s (gl, an, oc) -es (gsc, glw, rm, lld) -se (dlm) | -des (gl) -tz (an, oc) -etz (gsc) -iéz (glw) -es (rm) -ais (lld) |
-| **3** | ∅ (gl, an, rm) -e (oc, gsc, glw) -és (ca) -ât (fr) -sa (dlm) -a (lld) | -n (gl, an, oc) -on (gsc) -ent (glw) ∅ (dlm) -en (rm) -a (lld) |
+| **1** | ∅ (gl, an, dlm, rm) -s (oc) -és (ca) -e (gsc, gallo, lld) | -mos (gl) -nos (an) -m (oc) -em (gsc) -ions (gallo) -en (rm) -an (lld) |
+| **2** | -s (gl, an, oc) -es (gsc, gallo, rm, lld) -se (dlm) | -des (gl) -tz (an, oc) -etz (gsc) -iéz (gallo) -es (rm) -ais (lld) |
+| **3** | ∅ (gl, an, rm) -e (oc, gsc, gallo) -és (ca) -ât (fr) -sa (dlm) -a (lld) | -n (gl, an, oc) -on (gsc) -ent (gallo) ∅ (dlm) -en (rm) -a (lld) |
 
 ## subjunctive.past
 
@@ -2529,17 +2529,17 @@ lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -ái (oc, gsc) -ais (fr, pcd) -reu (wa) -aes (glw) -e (dlm) | -mos (es, mwl) -íamos (pt) -iamos (gl) -nos (an) -amos (ast) -am (oc, gsc) -íem (ca) -ions (fr) -réns (wa) -ème (pcd) -ins (glw) -me (dlm) |
-| **2** | -s (es, an, mwl) -ias (pt) -ías (gl) -es (ast) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -reus (wa) -aes (glw) -e (dlm) | -is (es) -íeis (pt) -iades (gl) -tz (an) -ais (ast) -des (mwl) -atz (oc, gsc) -íeu (ca) -iez (fr) -rîz (wa) -ète (pcd) -iéz (glw) -te (dlm) |
-| **3** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -á (oc, gsc) -ait (fr, pcd) -reut (wa) -aet (glw) | -n (es, an, mwl) -iam (pt) -ían (gl) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -rént (wa) -ai'te (pcd) -aent (glw) -e (dlm) |
+| **1** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -ái (oc, gsc) -ais (fr, pcd) -reu (wa) -aes (gallo) -e (dlm) | -mos (es, mwl) -íamos (pt) -iamos (gl) -nos (an) -amos (ast) -am (oc, gsc) -íem (ca) -ions (fr) -réns (wa) -ème (pcd) -ins (gallo) -me (dlm) |
+| **2** | -s (es, an, mwl) -ias (pt) -ías (gl) -es (ast) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -reus (wa) -aes (gallo) -e (dlm) | -is (es) -íeis (pt) -iades (gl) -tz (an) -ais (ast) -des (mwl) -atz (oc, gsc) -íeu (ca) -iez (fr) -rîz (wa) -ète (pcd) -iéz (gallo) -te (dlm) |
+| **3** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -á (oc, gsc) -ait (fr, pcd) -reut (wa) -aet (gallo) | -n (es, an, mwl) -iam (pt) -ían (gl) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -rént (wa) -ai'te (pcd) -aent (gallo) -e (dlm) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -ái (oc, gsc) -ais (fr, pcd) -reu (wa) -aes (glw) -e (dlm) | -mos (es, mwl) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -réns (wa) -ins (glw) -me (dlm) |
-| **2** | -s (es, an, mwl) -ias (pt) -ías (gl) -es (ast) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -reus (wa) -aes (glw) -e (dlm) | -is (es) -íeis (pt) -tz (an) -ais (ast) -des (mwl) -atz (oc, gsc) -íeu (ca) -iez (fr) -rîz (wa) -iéz (glw) -te (dlm) |
-| **3** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -á (oc, gsc) -ait (fr, pcd) -reut (wa) -aet (glw) | -n (es, an, mwl) -iam (pt) -ían (gl) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -rént (wa) -aent (glw) -e (dlm) |
+| **1** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -ái (oc, gsc) -ais (fr, pcd) -reu (wa) -aes (gallo) -e (dlm) | -mos (es, mwl) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -réns (wa) -ins (gallo) -me (dlm) |
+| **2** | -s (es, an, mwl) -ias (pt) -ías (gl) -es (ast) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -reus (wa) -aes (gallo) -e (dlm) | -is (es) -íeis (pt) -tz (an) -ais (ast) -des (mwl) -atz (oc, gsc) -íeu (ca) -iez (fr) -rîz (wa) -iéz (gallo) -te (dlm) |
+| **3** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -á (oc, gsc) -ait (fr, pcd) -reut (wa) -aet (gallo) | -n (es, an, mwl) -iam (pt) -ían (gl) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -rént (wa) -aent (gallo) -e (dlm) |
 
 ## conditional.present
 
@@ -2593,17 +2593,17 @@ lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -e (glw) | -ions (glw) |
-| **2** | -es (glw) | -iéz (glw) |
-| **3** | -e (glw) | -ent (glw) |
+| **1** | -e (gallo) | -ions (gallo) |
+| **2** | -es (gallo) | -iéz (gallo) |
+| **3** | -e (gallo) | -ent (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -e (glw) | -ions (glw) |
-| **2** | -es (glw) | -iéz (glw) |
-| **3** | -e (glw) | -ent (glw) |
+| **1** | -e (gallo) | -ions (gallo) |
+| **2** | -es (gallo) | -iéz (gallo) |
+| **3** | -e (gallo) | -ent (gallo) |
 
 <a id="s--ere"></a>
 # { -ere }
@@ -3196,71 +3196,71 @@ lowest syllable
 
 [i-theme](#i-theme)
 
-{ -i } (wa, nrf, glw, sc, ro, ruq)
+{ -i } (wa, nrf, gallo, sc, ro, ruq)
 
 ## indicative.present
 
 | | sg | pl |
 |---|---|---|
-| **1** | -i (wa) -s (glw) ∅ (ro) -orm (ruq) | -ixhans (wa) -son (glw) -m (ro) -urmím (ruq) |
-| **2** | -is (wa) -s (glw) ∅ (ro) -orm (ruq) | -ixhoz (wa) -ți (ro) -urmíț (ruq) |
-| **3** | -it (wa) -t (glw) -e (ro) -o̯ármi (ruq) | -ixhnut (wa) -m (glw) -e (ro) -orm (ruq) |
+| **1** | -i (wa) -s (gallo) ∅ (ro) -orm (ruq) | -ixhans (wa) -son (gallo) -m (ro) -urmím (ruq) |
+| **2** | -is (wa) -s (gallo) ∅ (ro) -orm (ruq) | -ixhoz (wa) -ți (ro) -urmíț (ruq) |
+| **3** | -it (wa) -t (gallo) -e (ro) -o̯ármi (ruq) | -ixhnut (wa) -m (gallo) -e (ro) -orm (ruq) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -i (wa) -s (glw) ∅ (ro) -orm (ruq) | -son (glw) -m (ro) |
-| **2** | -is (wa) -s (glw) ∅ (ro) -orm (ruq) | -ți (ro) |
-| **3** | -it (wa) -t (glw) -e (ro) | -m (glw) -e (ro) -orm (ruq) |
+| **1** | -i (wa) -s (gallo) ∅ (ro) -orm (ruq) | -son (gallo) -m (ro) |
+| **2** | -is (wa) -s (gallo) ∅ (ro) -orm (ruq) | -ți (ro) |
+| **3** | -it (wa) -t (gallo) -e (ro) | -m (gallo) -e (ro) -orm (ruq) |
 
 ## indicative.imperfect
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ixheu (wa) -eis (nrf) -s (glw) -emu (sc) -m (ro, ruq) | -ixhéns (wa) -ioums (nrf) -n (glw) -emus (sc) -m (ro, ruq) |
-| **2** | -ixheus (wa) -eis (nrf) -s (glw) -iast (sc) -i (ro) -i̯ (ruq) | -ixhîz (wa) -iaez (nrf) -estis (sc) -ți (ro) -ț (ruq) |
-| **3** | -ixheut (wa) -eit (nrf) -t (glw) -iat (sc) ∅ (ro, ruq) | -ixhént (wa) -eient (nrf) -n (glw) -iant (sc) -u (ro) -u̯ (ruq) |
+| **1** | -ixheu (wa) -eis (nrf) -s (gallo) -emu (sc) -m (ro, ruq) | -ixhéns (wa) -ioums (nrf) -n (gallo) -emus (sc) -m (ro, ruq) |
+| **2** | -ixheus (wa) -eis (nrf) -s (gallo) -iast (sc) -i (ro) -i̯ (ruq) | -ixhîz (wa) -iaez (nrf) -estis (sc) -ți (ro) -ț (ruq) |
+| **3** | -ixheut (wa) -eit (nrf) -t (gallo) -iat (sc) ∅ (ro, ruq) | -ixhént (wa) -eient (nrf) -n (gallo) -iant (sc) -u (ro) -u̯ (ruq) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -eis (nrf) -s (glw) -m (ro, ruq) | -ioums (nrf) -n (glw) -m (ro, ruq) |
-| **2** | -eis (nrf) -s (glw) -iast (sc) -i (ro) -i̯ (ruq) | -iaez (nrf) -ți (ro) -ț (ruq) |
-| **3** | -eit (nrf) -t (glw) -iat (sc) ∅ (ro, ruq) | -eient (nrf) -n (glw) -iant (sc) -u (ro) -u̯ (ruq) |
+| **1** | -eis (nrf) -s (gallo) -m (ro, ruq) | -ioums (nrf) -n (gallo) -m (ro, ruq) |
+| **2** | -eis (nrf) -s (gallo) -iast (sc) -i (ro) -i̯ (ruq) | -iaez (nrf) -ți (ro) -ț (ruq) |
+| **3** | -eit (nrf) -t (gallo) -iat (sc) ∅ (ro, ruq) | -eient (nrf) -n (gallo) -iant (sc) -u (ro) -u̯ (ruq) |
 
 ## indicative.preterite
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ixha (wa) -is (nrf) -s (glw) -i (ro) -i̯ (ruq) | -ixhîs (wa) -îmes (nrf) -m (glw, ruq) -răm (ro) |
-| **2** | -ixhas (wa) -is (nrf) -s (glw) -şi (ro) -ș (ruq) | -ixhîz (wa) -îtes (nrf) -răţi (ro) -ț (ruq) |
-| **3** | -ixha (wa) -ît (nrf) -t (glw) ∅ (ro) -ə (ruq) | -ixhît (wa) -îtent (nrf) -rr (glw) -ră (ro, ruq) |
+| **1** | -ixha (wa) -is (nrf) -s (gallo) -i (ro) -i̯ (ruq) | -ixhîs (wa) -îmes (nrf) -m (gallo, ruq) -răm (ro) |
+| **2** | -ixhas (wa) -is (nrf) -s (gallo) -şi (ro) -ș (ruq) | -ixhîz (wa) -îtes (nrf) -răţi (ro) -ț (ruq) |
+| **3** | -ixha (wa) -ît (nrf) -t (gallo) ∅ (ro) -ə (ruq) | -ixhît (wa) -îtent (nrf) -rr (gallo) -ră (ro, ruq) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -is (nrf) -s (glw) -i (ro) -i̯ (ruq) | -m (glw, ruq) -răm (ro) |
-| **2** | -is (nrf) -s (glw) -şi (ro) -ș (ruq) | -ț (ruq) |
-| **3** | -ît (nrf) -t (glw) ∅ (ro) -ə (ruq) | -rr (glw) -ră (ro, ruq) |
+| **1** | -is (nrf) -s (gallo) -i (ro) -i̯ (ruq) | -m (gallo, ruq) -răm (ro) |
+| **2** | -is (nrf) -s (gallo) -şi (ro) -ș (ruq) | -ț (ruq) |
+| **3** | -ît (nrf) -t (gallo) ∅ (ro) -ə (ruq) | -rr (gallo) -ră (ro, ruq) |
 
 ## indicative.future
 
 | | sg | pl |
 |---|---|---|
-| **1** | -irè (wa) -erai (nrf) -ae (glw) | -irans (wa) -eroums (nrf) -on (glw) |
-| **2** | -irès (wa) -eras (nrf) -as (glw) | -iroz (wa) -eraez (nrf) |
-| **3** | -irè (wa) -era (nrf) -a (glw) | -iront (wa) -erount (nrf) -on (glw) |
+| **1** | -irè (wa) -erai (nrf) -ae (gallo) | -irans (wa) -eroums (nrf) -on (gallo) |
+| **2** | -irès (wa) -eras (nrf) -as (gallo) | -iroz (wa) -eraez (nrf) |
+| **3** | -irè (wa) -era (nrf) -a (gallo) | -iront (wa) -erount (nrf) -on (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ae (glw) | -on (glw) |
-| **2** | -as (glw) | -iroz (wa) -eraez (nrf) |
-| **3** | -a (glw) | -on (glw) |
+| **1** | -ae (gallo) | -on (gallo) |
+| **2** | -as (gallo) | -iroz (wa) -eraez (nrf) |
+| **3** | -a (gallo) | -on (gallo) |
 
 ## indicative.pluperfect
 
@@ -3282,17 +3282,17 @@ lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ixhe (wa) -j (glw) ∅ (sc) -rb (ro) | -ixhanxhe (wa) -jion (glw) -us (sc) -m (ro) |
-| **2** | -ixhes (wa) -j (glw) -st (sc) -rbi (ro) | -ixhoxhe (wa) -is (sc) -ţi (ro) |
-| **3** | -ixhe (wa) -j (glw) -t (sc) -arbă (ro) | -ixhnuxhe (wa) -j (glw) -nt (sc) -arbă (ro) |
+| **1** | -ixhe (wa) -j (gallo) ∅ (sc) -rb (ro) | -ixhanxhe (wa) -jion (gallo) -us (sc) -m (ro) |
+| **2** | -ixhes (wa) -j (gallo) -st (sc) -rbi (ro) | -ixhoxhe (wa) -is (sc) -ţi (ro) |
+| **3** | -ixhe (wa) -j (gallo) -t (sc) -arbă (ro) | -ixhnuxhe (wa) -j (gallo) -nt (sc) -arbă (ro) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -j (glw) ∅ (sc) -rb (ro) | -jion (glw) -us (sc) -m (ro) |
-| **2** | -j (glw) -st (sc) -rbi (ro) | -is (sc) -ţi (ro) |
-| **3** | -j (glw) -t (sc) | -j (glw) -nt (sc) |
+| **1** | -j (gallo) ∅ (sc) -rb (ro) | -jion (gallo) -us (sc) -m (ro) |
+| **2** | -j (gallo) -st (sc) -rbi (ro) | -is (sc) -ţi (ro) |
+| **3** | -j (gallo) -t (sc) | -j (gallo) -nt (sc) |
 
 ## subjunctive.imperfect
 
@@ -3314,17 +3314,17 @@ lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ireu (wa) -ereis (nrf) -aes (glw) | -iréns (wa) -erioums (nrf) -ion (glw) |
-| **2** | -ireus (wa) -ereis (nrf) -aes (glw) | -irîz (wa) -eriaez (nrf) |
-| **3** | -ireut (wa) -ereit (nrf) -aet (glw) | -irént (wa) -ereient (nrf) -aen (glw) |
+| **1** | -ireu (wa) -ereis (nrf) -aes (gallo) | -iréns (wa) -erioums (nrf) -ion (gallo) |
+| **2** | -ireus (wa) -ereis (nrf) -aes (gallo) | -irîz (wa) -eriaez (nrf) |
+| **3** | -ireut (wa) -ereit (nrf) -aet (gallo) | -irént (wa) -ereient (nrf) -aen (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -aes (glw) | -ion (glw) |
-| **2** | -aes (glw) | -irîz (wa) -eriaez (nrf) |
-| **3** | -aet (glw) | -aen (glw) |
+| **1** | -aes (gallo) | -ion (gallo) |
+| **2** | -aes (gallo) | -irîz (wa) -eriaez (nrf) |
+| **3** | -aet (gallo) | -aen (gallo) |
 
 ## imperative
 
@@ -3363,55 +3363,55 @@ lowest syllable
 
 [i-theme](#i-theme)
 
-{ -ir } (es, pt, gl, an, ast, mwl, oc, ca, gsc, fr, pcd, glw, frp, eml, rm, lld)
+{ -ir } (es, pt, gl, an, ast, mwl, oc, ca, gsc, fr, pcd, gallo, frp, eml, rm, lld)
 
 ## indicative.present
 
 | | sg | pl |
 |---|---|---|
-| **1** | -o (es, pt, gl, an, ast, mwl) -i (oc, gsc) -c (ca) -s (fr, pcd, glw) -és (eml) -el (rm) -e (lld) | -imos (es, pt, gl, an, ast, mwl) -èm (oc, gsc) -im (ca) -ons (fr, pcd) -von (glw) -ám (eml) -in (rm) -ion (lld) |
-| **2** | -es (es, pt, gl, an, ast, mwl, oc, gsc, lld) -us (ca) -s (fr, pcd, glw, rm) -és (eml) | -ís (es, ast) -is (pt, mwl, rm) -ides (gl) -itz (an) -ètz (oc, gsc) -iu (ca) -ez (fr, pcd) -î (eml) -ieis (lld) |
-| **3** | -e (es, pt, gl, an, ast, mwl, ca) ∅ (oc, gsc, rm, lld) -t (fr, pcd, glw) -és (eml) | -en (es, gl, an, ast, mwl) -em (pt) -on (oc, gsc) -uen (ca) -ent (fr) -'te (pcd) -v (glw) -ésen (eml) -an (rm) ∅ (lld) |
+| **1** | -o (es, pt, gl, an, ast, mwl) -i (oc, gsc) -c (ca) -s (fr, pcd, gallo) -és (eml) -el (rm) -e (lld) | -imos (es, pt, gl, an, ast, mwl) -èm (oc, gsc) -im (ca) -ons (fr, pcd) -von (gallo) -ám (eml) -in (rm) -ion (lld) |
+| **2** | -es (es, pt, gl, an, ast, mwl, oc, gsc, lld) -us (ca) -s (fr, pcd, gallo, rm) -és (eml) | -ís (es, ast) -is (pt, mwl, rm) -ides (gl) -itz (an) -ètz (oc, gsc) -iu (ca) -ez (fr, pcd) -î (eml) -ieis (lld) |
+| **3** | -e (es, pt, gl, an, ast, mwl, ca) ∅ (oc, gsc, rm, lld) -t (fr, pcd, gallo) -és (eml) | -en (es, gl, an, ast, mwl) -em (pt) -on (oc, gsc) -uen (ca) -ent (fr) -'te (pcd) -v (gallo) -ésen (eml) -an (rm) ∅ (lld) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -o (es, pt, gl, an, ast, mwl) -i (oc, gsc) -c (ca) -s (fr, pcd, glw) -és (eml) -el (rm) -e (lld) | -èm (oc, gsc) -im (ca) -ons (fr, pcd) -von (glw) -ám (eml) -in (rm) -ion (lld) |
-| **2** | -es (es, pt, gl, an, ast, mwl, oc, gsc, lld) -us (ca) -s (fr, pcd, glw, rm) -és (eml) | -ís (es, ast) -is (pt, mwl, rm) -itz (an) -ètz (oc, gsc) -iu (ca) -ez (fr, pcd) -î (eml) -ieis (lld) |
-| **3** | -e (es, pt, gl, an, ast, mwl, ca) ∅ (oc, gsc, rm, lld) -t (fr, pcd, glw) -és (eml) | -en (es, gl, an, ast, mwl) -em (pt) -on (oc, gsc) -uen (ca) -ent (fr) -'te (pcd) -v (glw) -an (rm) ∅ (lld) |
+| **1** | -o (es, pt, gl, an, ast, mwl) -i (oc, gsc) -c (ca) -s (fr, pcd, gallo) -és (eml) -el (rm) -e (lld) | -èm (oc, gsc) -im (ca) -ons (fr, pcd) -von (gallo) -ám (eml) -in (rm) -ion (lld) |
+| **2** | -es (es, pt, gl, an, ast, mwl, oc, gsc, lld) -us (ca) -s (fr, pcd, gallo, rm) -és (eml) | -ís (es, ast) -is (pt, mwl, rm) -itz (an) -ètz (oc, gsc) -iu (ca) -ez (fr, pcd) -î (eml) -ieis (lld) |
+| **3** | -e (es, pt, gl, an, ast, mwl, ca) ∅ (oc, gsc, rm, lld) -t (fr, pcd, gallo) -és (eml) | -en (es, gl, an, ast, mwl) -em (pt) -on (oc, gsc) -uen (ca) -ent (fr) -'te (pcd) -v (gallo) -an (rm) ∅ (lld) |
 
 ## indicative.imperfect
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (es, gl, an, mwl, rm) -a (pt, ast) -ái (oc, gsc) -ia (ca) -ais (fr, pcd) -s (glw) -îva (eml) -e (lld) | -mos (es, gl, mwl) -amos (pt, ast) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -ème (pcd) -n (glw, rm) -îven (eml) -an (lld) |
-| **2** | -s (es, gl, an, mwl, glw, rm) -as (pt) -es (ast, lld) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -îv (eml) | -is (es) -eis (pt) -des (gl, mwl) -tz (an) -ais (ast, lld) -atz (oc, gsc) -íeu (ca) -iez (fr) -ète (pcd) -îvi (eml) -s (rm) |
-| **3** | ∅ (es, gl, an, mwl) -a (pt, ast, rm, lld) -á (oc, gsc) -ia (ca) -ait (fr, pcd) -t (glw) -îva (eml) | -n (es, gl, an, mwl, glw, rm) -am (pt) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -ai'te (pcd) -îven (eml) -a (lld) |
+| **1** | ∅ (es, gl, an, mwl, rm) -a (pt, ast) -ái (oc, gsc) -ia (ca) -ais (fr, pcd) -s (gallo) -îva (eml) -e (lld) | -mos (es, gl, mwl) -amos (pt, ast) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -ème (pcd) -n (gallo, rm) -îven (eml) -an (lld) |
+| **2** | -s (es, gl, an, mwl, gallo, rm) -as (pt) -es (ast, lld) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -îv (eml) | -is (es) -eis (pt) -des (gl, mwl) -tz (an) -ais (ast, lld) -atz (oc, gsc) -íeu (ca) -iez (fr) -ète (pcd) -îvi (eml) -s (rm) |
+| **3** | ∅ (es, gl, an, mwl) -a (pt, ast, rm, lld) -á (oc, gsc) -ia (ca) -ait (fr, pcd) -t (gallo) -îva (eml) | -n (es, gl, an, mwl, gallo, rm) -am (pt) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -ai'te (pcd) -îven (eml) -a (lld) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (es, gl, an, mwl, rm) -a (pt, ast) -ái (oc, gsc) -ia (ca) -ais (fr, pcd) -s (glw) -e (lld) | -mos (es, gl, mwl) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -n (glw, rm) -an (lld) |
-| **2** | -s (es, gl, an, mwl, glw, rm) -as (pt) -es (ast, lld) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -îv (eml) | -is (es) -eis (pt) -des (gl, mwl) -tz (an) -ais (ast, lld) -atz (oc, gsc) -íeu (ca) -iez (fr) -s (rm) |
-| **3** | ∅ (es, gl, an, mwl) -a (pt, ast, rm, lld) -á (oc, gsc) -ia (ca) -ait (fr, pcd) -t (glw) | -n (es, gl, an, mwl, glw, rm) -am (pt) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -a (lld) |
+| **1** | ∅ (es, gl, an, mwl, rm) -a (pt, ast) -ái (oc, gsc) -ia (ca) -ais (fr, pcd) -s (gallo) -e (lld) | -mos (es, gl, mwl) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -n (gallo, rm) -an (lld) |
+| **2** | -s (es, gl, an, mwl, gallo, rm) -as (pt) -es (ast, lld) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -îv (eml) | -is (es) -eis (pt) -des (gl, mwl) -tz (an) -ais (ast, lld) -atz (oc, gsc) -íeu (ca) -iez (fr) -s (rm) |
+| **3** | ∅ (es, gl, an, mwl) -a (pt, ast, rm, lld) -á (oc, gsc) -ia (ca) -ait (fr, pcd) -t (gallo) | -n (es, gl, an, mwl, gallo, rm) -am (pt) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -a (lld) |
 
 ## indicative.preterite
 
 | | sg | pl |
 |---|---|---|
-| **1** | -í (es, ast, ca) ∅ (pt) -n (gl) -é (an) -i (mwl) -ri (oc, gsc) -is (fr) -s (glw) | -imos (es, ast, mwl) -mos (pt, gl) -emos (an) -rem (oc, gsc) -írem (ca) -îmes (fr) -m (glw) |
-| **2** | -iste (es, mwl) -ste (pt) -ches (gl) -és (an) -íes (ast) -res (oc, gsc) -ires (ca) -is (fr) -s (glw) | -isteis (es) -stes (pt, gl) -etz (an) -ieron (ast) -istes (mwl) -retz (oc, gsc) -íreu (ca) -îtes (fr) |
-| **3** | -ó (es, an) -u (pt, gl) -ió (ast) -iu (mwl) -t (oc, gsc, glw) -í (ca) -it (fr) | -eron (es) -ram (pt) -ron (gl, oc, gsc) -oron (an) -íen (ast) -írun (mwl) -íren (ca) -irent (fr) -rr (glw) |
+| **1** | -í (es, ast, ca) ∅ (pt) -n (gl) -é (an) -i (mwl) -ri (oc, gsc) -is (fr) -s (gallo) | -imos (es, ast, mwl) -mos (pt, gl) -emos (an) -rem (oc, gsc) -írem (ca) -îmes (fr) -m (gallo) |
+| **2** | -iste (es, mwl) -ste (pt) -ches (gl) -és (an) -íes (ast) -res (oc, gsc) -ires (ca) -is (fr) -s (gallo) | -isteis (es) -stes (pt, gl) -etz (an) -ieron (ast) -istes (mwl) -retz (oc, gsc) -íreu (ca) -îtes (fr) |
+| **3** | -ó (es, an) -u (pt, gl) -ió (ast) -iu (mwl) -t (oc, gsc, gallo) -í (ca) -it (fr) | -eron (es) -ram (pt) -ron (gl, oc, gsc) -oron (an) -íen (ast) -írun (mwl) -íren (ca) -irent (fr) -rr (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -í (es, ast, ca) ∅ (pt) -n (gl) -é (an) -i (mwl) -ri (oc, gsc) -is (fr) -s (glw) | -mos (pt, gl) -rem (oc, gsc) -m (glw) |
-| **2** | -ste (pt) -ches (gl) -és (an) -íes (ast) -res (oc, gsc) -is (fr) -s (glw) | -stes (pt, gl) -etz (an) -retz (oc, gsc) |
-| **3** | -ó (es, an) -u (pt, gl) -ió (ast) -iu (mwl) -t (oc, gsc, glw) -í (ca) -it (fr) | -ram (pt) -ron (gl, oc, gsc) -íen (ast) -rr (glw) |
+| **1** | -í (es, ast, ca) ∅ (pt) -n (gl) -é (an) -i (mwl) -ri (oc, gsc) -is (fr) -s (gallo) | -mos (pt, gl) -rem (oc, gsc) -m (gallo) |
+| **2** | -ste (pt) -ches (gl) -és (an) -íes (ast) -res (oc, gsc) -is (fr) -s (gallo) | -stes (pt, gl) -etz (an) -retz (oc, gsc) |
+| **3** | -ó (es, an) -u (pt, gl) -ió (ast) -iu (mwl) -t (oc, gsc, gallo) -í (ca) -it (fr) | -ram (pt) -ron (gl, oc, gsc) -íen (ast) -rr (gallo) |
 
 ## indicative.past
 
@@ -3433,17 +3433,17 @@ lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -é (es, an, ast, ca, lld) -ei (pt, gl, mwl) -ai (oc, gsc, fr, pcd) -ae (glw) -irò (eml) | -emos (es, pt, gl, an, ast, mwl) -em (oc, ca, gsc) -ons (fr, pcd) -on (glw, lld) -irám (eml) |
-| **2** | -ás (es, pt, gl, an, ast, mwl) -às (oc, ca, gsc) -as (fr, glw, lld) -os (pcd) -irē (eml) | -éis (es, ast) -eis (pt, mwl, lld) -edes (gl) -etz (an, oc, gsc) -eu (ca) -ez (fr, pcd) -irî (eml) |
-| **3** | -á (es, pt, gl, an, ast, mwl) -à (oc, ca, gsc, lld) -a (fr, glw) -o (pcd) -irà (eml) | -án (es, gl, an, ast) -ão (pt) -an (mwl, ca) -àn (oc, gsc) -ont (fr, pcd) -on (glw) -rān (eml) -à (lld) |
+| **1** | -é (es, an, ast, ca, lld) -ei (pt, gl, mwl) -ai (oc, gsc, fr, pcd) -ae (gallo) -irò (eml) | -emos (es, pt, gl, an, ast, mwl) -em (oc, ca, gsc) -ons (fr, pcd) -on (gallo, lld) -irám (eml) |
+| **2** | -ás (es, pt, gl, an, ast, mwl) -às (oc, ca, gsc) -as (fr, gallo, lld) -os (pcd) -irē (eml) | -éis (es, ast) -eis (pt, mwl, lld) -edes (gl) -etz (an, oc, gsc) -eu (ca) -ez (fr, pcd) -irî (eml) |
+| **3** | -á (es, pt, gl, an, ast, mwl) -à (oc, ca, gsc, lld) -a (fr, gallo) -o (pcd) -irà (eml) | -án (es, gl, an, ast) -ão (pt) -an (mwl, ca) -àn (oc, gsc) -ont (fr, pcd) -on (gallo) -rān (eml) -à (lld) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -é (es, an, ast, ca, lld) -ei (pt, gl, mwl) -ai (oc, gsc, fr, pcd) -ae (glw) | -em (oc, ca, gsc) -ons (fr, pcd) -on (glw, lld) |
-| **2** | -ás (es, pt, gl, an, ast, mwl) -às (oc, ca, gsc) -as (fr, glw, lld) -os (pcd) | -éis (es, ast) -eis (pt, mwl, lld) -etz (an, oc, gsc) -eu (ca) -ez (fr, pcd) |
-| **3** | -á (es, pt, gl, an, ast, mwl) -à (oc, ca, gsc, lld) -a (fr, glw) -o (pcd) | -án (es, gl, an, ast) -ão (pt) -an (mwl, ca) -àn (oc, gsc) -ont (fr, pcd) -on (glw) -rān (eml) -à (lld) |
+| **1** | -é (es, an, ast, ca, lld) -ei (pt, gl, mwl) -ai (oc, gsc, fr, pcd) -ae (gallo) | -em (oc, ca, gsc) -ons (fr, pcd) -on (gallo, lld) |
+| **2** | -ás (es, pt, gl, an, ast, mwl) -às (oc, ca, gsc) -as (fr, gallo, lld) -os (pcd) | -éis (es, ast) -eis (pt, mwl, lld) -etz (an, oc, gsc) -eu (ca) -ez (fr, pcd) |
+| **3** | -á (es, pt, gl, an, ast, mwl) -à (oc, ca, gsc, lld) -a (fr, gallo) -o (pcd) | -án (es, gl, an, ast) -ão (pt) -an (mwl, ca) -àn (oc, gsc) -ont (fr, pcd) -on (gallo) -rān (eml) -à (lld) |
 
 ## indicative.pluperfect
 
@@ -3545,17 +3545,17 @@ lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (es, an, mwl, rm) -ia (pt, ca) -ía (gl) -a (ast) -ái (oc, gsc) -ais (fr, pcd) -aes (glw) -en (frp) | -mos (es, mwl) -íamos (pt) -iamos (gl) -nos (an) -amos (ast) -am (oc, gsc) -íem (ca) -ions (fr) -ème (pcd) -ion (glw) -ians (frp) -an (rm) |
-| **2** | -s (es, an, mwl) -ias (pt, frp) -ías (gl) -es (ast) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -aes (glw) -as (rm) | -is (es) -íeis (pt) -iades (gl) -tz (an) -ais (ast) -des (mwl) -atz (oc, gsc) -íeu (ca) -iez (fr) -ète (pcd) -iâds (frp) -as (rm) |
-| **3** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -á (oc, gsc) -ait (fr, pcd) -aet (glw) -êt (frp) | -n (es, an, mwl) -iam (pt) -ían (gl) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -ai'te (pcd) -aen (glw) -iant (frp) -an (rm) |
+| **1** | ∅ (es, an, mwl, rm) -ia (pt, ca) -ía (gl) -a (ast) -ái (oc, gsc) -ais (fr, pcd) -aes (gallo) -en (frp) | -mos (es, mwl) -íamos (pt) -iamos (gl) -nos (an) -amos (ast) -am (oc, gsc) -íem (ca) -ions (fr) -ème (pcd) -ion (gallo) -ians (frp) -an (rm) |
+| **2** | -s (es, an, mwl) -ias (pt, frp) -ías (gl) -es (ast) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -aes (gallo) -as (rm) | -is (es) -íeis (pt) -iades (gl) -tz (an) -ais (ast) -des (mwl) -atz (oc, gsc) -íeu (ca) -iez (fr) -ète (pcd) -iâds (frp) -as (rm) |
+| **3** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -á (oc, gsc) -ait (fr, pcd) -aet (gallo) -êt (frp) | -n (es, an, mwl) -iam (pt) -ían (gl) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -ai'te (pcd) -aen (gallo) -iant (frp) -an (rm) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | ∅ (es, an, mwl, rm) -ia (pt, ca) -ía (gl) -a (ast) -ái (oc, gsc) -ais (fr, pcd) -aes (glw) -en (frp) | -mos (es, mwl) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -ion (glw) -ians (frp) -an (rm) |
-| **2** | -s (es, an, mwl) -ias (pt, frp) -ías (gl) -es (ast) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -aes (glw) -as (rm) | -is (es) -íeis (pt) -tz (an) -ais (ast) -des (mwl) -atz (oc, gsc) -íeu (ca) -iez (fr) -iâds (frp) -as (rm) |
-| **3** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -á (oc, gsc) -ait (fr, pcd) -aet (glw) -êt (frp) | -n (es, an, mwl) -iam (pt) -ían (gl) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -aen (glw) -iant (frp) -an (rm) |
+| **1** | ∅ (es, an, mwl, rm) -ia (pt, ca) -ía (gl) -a (ast) -ái (oc, gsc) -ais (fr, pcd) -aes (gallo) -en (frp) | -mos (es, mwl) -nos (an) -am (oc, gsc) -íem (ca) -ions (fr) -ion (gallo) -ians (frp) -an (rm) |
+| **2** | -s (es, an, mwl) -ias (pt, frp) -ías (gl) -es (ast) -ás (oc, gsc) -ies (ca) -ais (fr, pcd) -aes (gallo) -as (rm) | -is (es) -íeis (pt) -tz (an) -ais (ast) -des (mwl) -atz (oc, gsc) -íeu (ca) -iez (fr) -iâds (frp) -as (rm) |
+| **3** | ∅ (es, an, mwl) -ia (pt, ca) -ía (gl) -a (ast) -á (oc, gsc) -ait (fr, pcd) -aet (gallo) -êt (frp) | -n (es, an, mwl) -iam (pt) -ían (gl) -en (ast) -án (oc, gsc) -ien (ca) -aient (fr) -aen (gallo) -iant (frp) -an (rm) |
 
 ## conditional.present
 
@@ -4347,103 +4347,103 @@ lowest syllable
 
 [re](#re)
 
-{ -r } (glw)
+{ -r } (gallo)
 
 ## indicative.present
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -don (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -dd (glw) |
+| **1** | -s (gallo) | -don (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -dd (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -don (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -dd (glw) |
+| **1** | -s (gallo) | -don (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -dd (gallo) |
 
 ## indicative.imperfect
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -n (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -n (glw) |
+| **1** | -s (gallo) | -n (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -n (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -n (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -n (glw) |
+| **1** | -s (gallo) | -n (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -n (gallo) |
 
 ## indicative.preterite
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -m (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -rr (glw) |
+| **1** | -s (gallo) | -m (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -rr (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -m (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -rr (glw) |
+| **1** | -s (gallo) | -m (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -rr (gallo) |
 
 ## indicative.future
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ae (glw) | -on (glw) |
-| **2** | -as (glw) | — |
-| **3** | -a (glw) | -on (glw) |
+| **1** | -ae (gallo) | -on (gallo) |
+| **2** | -as (gallo) | — |
+| **3** | -a (gallo) | -on (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ae (glw) | -on (glw) |
-| **2** | -as (glw) | — |
-| **3** | -a (glw) | -on (glw) |
+| **1** | -ae (gallo) | -on (gallo) |
+| **2** | -as (gallo) | — |
+| **3** | -a (gallo) | -on (gallo) |
 
 ## subjunctive.present
 
 | | sg | pl |
 |---|---|---|
-| **1** | -j (glw) | -jion (glw) |
-| **2** | -k (glw) | — |
-| **3** | -j (glw) | -j (glw) |
+| **1** | -j (gallo) | -jion (gallo) |
+| **2** | -k (gallo) | — |
+| **3** | -j (gallo) | -j (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -j (glw) | -jion (glw) |
-| **2** | -k (glw) | — |
-| **3** | -j (glw) | -j (glw) |
+| **1** | -j (gallo) | -jion (gallo) |
+| **2** | -k (gallo) | — |
+| **3** | -j (gallo) | -j (gallo) |
 
 ## conditional
 
 | | sg | pl |
 |---|---|---|
-| **1** | -aes (glw) | -ion (glw) |
-| **2** | -aes (glw) | — |
-| **3** | -aet (glw) | -aen (glw) |
+| **1** | -aes (gallo) | -ion (gallo) |
+| **2** | -aes (gallo) | — |
+| **3** | -aet (gallo) | -aen (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -aes (glw) | -ion (glw) |
-| **2** | -aes (glw) | — |
-| **3** | -aet (glw) | -aen (glw) |
+| **1** | -aes (gallo) | -ion (gallo) |
+| **2** | -aes (gallo) | — |
+| **3** | -aet (gallo) | -aen (gallo) |
 
 <a id="s--re"></a>
 # { -re }
@@ -4720,87 +4720,87 @@ lowest syllable
 
 [re](#re)
 
-{ -rr } (glw)
+{ -rr } (gallo)
 
 ## indicative.present
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -on (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -y (glw) |
+| **1** | -s (gallo) | -on (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -y (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -on (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -y (glw) |
+| **1** | -s (gallo) | -on (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -y (gallo) |
 
 ## indicative.imperfect
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -n (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -n (glw) |
+| **1** | -s (gallo) | -n (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -n (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -n (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -n (glw) |
+| **1** | -s (gallo) | -n (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -n (gallo) |
 
 ## indicative.preterite
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -m (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -rr (glw) |
+| **1** | -s (gallo) | -m (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -rr (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -s (glw) | -m (glw) |
-| **2** | -s (glw) | — |
-| **3** | -t (glw) | -rr (glw) |
+| **1** | -s (gallo) | -m (gallo) |
+| **2** | -s (gallo) | — |
+| **3** | -t (gallo) | -rr (gallo) |
 
 ## indicative.future
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ae (glw) | -on (glw) |
-| **2** | -as (glw) | — |
-| **3** | -a (glw) | -on (glw) |
+| **1** | -ae (gallo) | -on (gallo) |
+| **2** | -as (gallo) | — |
+| **3** | -a (gallo) | -on (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -ae (glw) | -on (glw) |
-| **2** | -as (glw) | — |
-| **3** | -a (glw) | -on (glw) |
+| **1** | -ae (gallo) | -on (gallo) |
+| **2** | -as (gallo) | — |
+| **3** | -a (gallo) | -on (gallo) |
 
 ## conditional
 
 | | sg | pl |
 |---|---|---|
-| **1** | -aes (glw) | -ion (glw) |
-| **2** | -aes (glw) | — |
-| **3** | -aet (glw) | -aen (glw) |
+| **1** | -aes (gallo) | -ion (gallo) |
+| **2** | -aes (gallo) | — |
+| **3** | -aet (gallo) | -aen (gallo) |
 
 lowest syllable
 
 | | sg | pl |
 |---|---|---|
-| **1** | -aes (glw) | -ion (glw) |
-| **2** | -aes (glw) | — |
-| **3** | -aet (glw) | -aen (glw) |
+| **1** | -aes (gallo) | -ion (gallo) |
+| **2** | -aes (gallo) | — |
+| **3** | -aet (gallo) | -aen (gallo) |
 
 <a id="s--te"></a>
 # { -te }

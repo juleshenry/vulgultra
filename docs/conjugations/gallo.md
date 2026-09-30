@@ -750,12 +750,12 @@ Orthographic suffixes stripped from complete six-slot rows. `∅` is an empty su
 
 | Slot | Form |
 |---|---|
-| `1sg` | taes |
-| `2sg` | taes |
-| `3sg` | taet |
-| `1pl` | tions |
-| `2pl` | tiéz |
-| `3pl` | taent |
+| `1sg` | etaes |
+| `2sg` | etaes |
+| `3sg` | etaet |
+| `1pl` | etions |
+| `2pl` | etiéz |
+| `3pl` | etaent |
 
 ##### `indicative.preterite`
 
@@ -853,12 +853,12 @@ _…1 more tense/mood rows in the JSON corpus._
 
 | Slot | Form |
 |---|---|
-| `1sg` | ’taes |
-| `2sg` | ’taes |
-| `3sg` | ’taet |
-| `1pl` | ’taen |
+| `1sg` | etaes |
+| `2sg` | etaes |
+| `3sg` | etaet |
+| `1pl` | etaen |
 | `2pl` | — |
-| `3pl` | ’taen |
+| `3pl` | etaen |
 
 ##### `indicative.preterite`
 
