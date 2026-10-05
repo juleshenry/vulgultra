@@ -23,6 +23,9 @@ Not changed: Gallo, Picard, Franco-Provençal and Extremaduran. None has a usabl
 spelling or too small for a miss to mean anything. The audit confirms 30, 13, 20 and 87 of their 213
 cells; the rest are unconfirmed, not known to be wrong.
 
+One Gallo cell was plainly wrong and is fixed: *dog* held *chat*, the cat word. It is now *chien*,
+which the French Wiktionary's Gallo entry glosses "Chien".
+
 ## Istriot
 
 | concept | was | now | |

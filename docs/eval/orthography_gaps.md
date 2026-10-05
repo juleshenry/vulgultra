@@ -23,8 +23,8 @@ Some daughter uses each of these to tell words apart (`grammar.tex` §2.4), so n
 | ɑ̃ | V | 51 | 16 | 0 | 1 | frp 12, fr 11, gallo 11 | a n | ã | fr *langue* → `l⟨ɑ̃⟩g` | nasal vowel; merging restores the nasal consonant |
 | ʒ | C | 51 | 16 | 0 | 9 | fr 9, gallo 9, nrf 8 | ʃ | j | ca *roig* → `⟨ɾ⟩⟨ɔ⟩⟨ʒ⟩c` | j is a free letter |
 | ɔ̃ | V | 44 | 13 | 1 | 1 | wa 10, pcd 8, frp 7 | o n | õ | wa *ongue* → `⟨ɔ̃⟩g` |  |
+| ɛ̃ | V | 32 | 16 | 3 | 4 | wa 10, pcd 7, fr 5 | e n | ẽ | wa *cinde* → `s⟨ɛ̃⟩d` |  |
 | ø | V | 31 | 15 | 0 | 1 | lmo 8, pms 6, gallo 3 | o | ö | gallo *plleue* → `pl⟨ø⟩` | front rounded mid |
-| ɛ̃ | V | 31 | 16 | 3 | 4 | wa 10, pcd 7, fr 5 | e n | ẽ | wa *cinde* → `s⟨ɛ̃⟩d` |  |
 | œ | V | 23 | 14 | 0 | 1 | pcd 8, fr 7, wa 3 | o | ö | wa *steule* → `st⟨œ⟩l` | front rounded mid, open; one letter with ø |
 | ŋ | C | 21 | 14 | 0 | 3 | lij 10, oc 4, gsc 4 | n | – | ca *blanc* → `bla⟨ŋ⟩k` | variant of /n/ in ca oc gsc; a phoneme in Ligurian and Emilian |
 | t͡s | C | 18 | 13 | 0 | 1 | ruq 9, rup 4, ro 2 | s | ts | ro *soț* → `so⟨t͡s⟩` | digraph, same caveat |

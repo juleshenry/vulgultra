@@ -120,16 +120,20 @@ Transcription, as fixed:
       Daco-Romanian list left in place wherever the Swadesh appendix was
       empty. 8 now carry an attested form, 65 are empty; see
       [`docs/sources_ruo.md`](docs/sources_ruo.md).
-- [ ] The same check for the other thin columns. Franco-Provençal, Picard,
-      Istriot, Gallo, Piedmontese, Ladin, Emilian, Ligurian, Extremaduran
-      and Dalmatian have all 213 cells filled, and under a third of those
-      forms (under half for Dalmatian) appear in the lect's own word list.
-      That does not show padding, only that the word lists cannot confirm
-      the column.
-
-Also decided: **stress** is penultimate by default; a word stressed elsewhere
-in its source lect keeps that stress, marked with an accent (`grammar.tex`
-§2.5).
+- [x] Six more columns re-sourced against Wiktionary's Swadesh lists
+      (`scripts/audit_grid_sources.py`; what changed is in
+      [`docs/sources_grid.md`](docs/sources_grid.md)). Istriot and Dalmatian
+      held invented forms: 173 and 123 of their 213 cells were respelled,
+      replaced or emptied. Ligurian, Emilian and Piedmontese had 124, 150
+      and 62 cells respelled or replaced; Ladin 9.
+- [ ] Gallo, Picard, Franco-Provençal and Extremaduran cannot be checked
+      with what is on disk: no usable Swadesh list, and dictionaries in
+      another spelling or too small. They need a source per lect (an ORB
+      dictionary for Franco-Provençal, the Carmona dictionary read with a
+      spelling map for Extremaduran).
+- [ ] The other columns have Wiktionary lists too and differ from them in a
+      fifth to two thirds of cells (Lombard 68%, Venetan 41%, Aromanian
+      40%). Not yet looked at: much of that is spelling or variety.
 
 After the gate:
 
