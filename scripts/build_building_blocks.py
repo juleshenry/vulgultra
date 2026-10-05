@@ -5,7 +5,8 @@ Pronouns, numerals, prepositions, conjunctions, determiners and the small
 adverbs come before any lexicon: every sentence needs them, and they are
 picked by hand from what the daughters attest. This script gathers the
 evidence for that pick from the Wiktionary extracts on disk
-(`data/words/kaikki-{lect}.jsonl`, English glosses) and writes
+(`data/sources/kaikki_full/{lect}.jsonl` for the big lects, else
+`data/words/kaikki-{lect}.jsonl`; English glosses) and writes
 
     docs/building_blocks/{lect}.md          what one lect attests
     docs/eval/building_block_candidates.md  each meaning's shortest forms across lects
@@ -35,6 +36,7 @@ from vulgultra.phonology import count_syllables  # noqa: E402
 from vulgultra.romance_swadesh import LECT_NAMES, SOURCE_LANGS  # noqa: E402
 
 WORDS = ROOT / "data" / "words"
+FULL = ROOT / "data" / "sources" / "kaikki_full"   # scripts/fetch_kaikki_full.py
 PAGES = ROOT / "docs" / "building_blocks"
 SHORTLIST = ROOT / "docs" / "eval" / "building_block_candidates.md"
 PLURALS = ROOT / "docs" / "eval" / "plural_formation.md"
@@ -81,7 +83,9 @@ GENDERS = ("masculine", "feminine", "neuter")
 
 
 def extract_of(lect: str) -> Path:
-    return WORDS / f"kaikki-{EXTRACT.get(lect, lect)}.jsonl"
+    """The lect's extract: the full one fetched for the big lects, else the one beside the word lists."""
+    full = FULL / f"{lect}.jsonl"
+    return full if full.is_file() else WORDS / f"kaikki-{EXTRACT.get(lect, lect)}.jsonl"
 
 
 def entries(lect: str) -> list[dict]:
