@@ -62,8 +62,12 @@ BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "oc": _STRESS_ONLY,
     "gsc": _STRESS_ONLY,
     "gl": {"ú": "u", "j́": "i"},           # í beside a vowel is a full vowel
+    # Eastern digraphs the Romanian backend reads letter by letter (lj comes
+    # out as l + ʒ). Listed before ž so a real l + ž is not caught.
+    "rup": {"sh": "ʃ", "ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ"},
+    "ruq": {"ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ"},
     # Istro-Romanian in its Croatian-based spelling.
-    "ruo": {"š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "ɛ"},
+    "ruo": {"lʒ": "ʎ", "š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "ɛ"},
     "eml": {"ṅ": "ŋ", "ḱ": "t͡ʃ", "ū": "u", "ī": "i", "ō": "o"},  # ć; macron = length
     "fur": {"ķ": "t͡ʃ"},                    # ç
     "ca": {"ķ": "s"},

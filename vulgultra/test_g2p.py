@@ -25,6 +25,11 @@ class LeftoverFixtures(unittest.TestCase):
         self.assertEqual(read_leftovers("ʎaŋķaɾ", "ca"), "ʎaŋsaɾ")
         self.assertEqual(read_leftovers("ɡlaķ", "it"), nfd("ɡlaķ"))
 
+    def test_digraph_read_letter_by_letter_becomes_one_segment(self) -> None:
+        self.assertEqual(read_leftovers("tsintsi", "rup"), nfd("t͡sint͡si"))
+        self.assertEqual(read_leftovers("mulʒari", "ruq"), "muʎari")
+        self.assertEqual(read_leftovers("žerunklʒu", "ruo"), "ʒerunkʎu")
+
     def test_backend_typos_are_fixed_for_every_lect(self) -> None:
         self.assertEqual(read_leftovers("ajga", "oc"), "ajɡa")
         self.assertEqual(read_leftovers("antʃ͡ʊ", "gl"), nfd("ant͡ʃʊ"))

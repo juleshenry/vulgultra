@@ -91,6 +91,7 @@ PROPOSALS: dict[str, tuple[str, tuple[str, ...] | None, str, str]] = {
     "ʒ": (CONTRAST, ("ʃ",), "j", "j is a free letter"),
     "d͡ʒ": (CONTRAST, ("t͡ʃ",), "dj", "digraph; the reader is one character at a time today"),
     "t͡s": (CONTRAST, ("s",), "ts", "digraph, same caveat"),
+    "d͡z": (CONTRAST, ("z",), "dz", "digraph, same caveat"),
     "h": (CONTRAST, (), "h", "h is a free letter; merging means deleting it"),
     "θ": (CONTRAST, ("s",), "", "Galician"),
     "ɑ̃": (CONTRAST, ("a", "n"), "ã", "nasal vowel; merge restores the nasal consonant"),
