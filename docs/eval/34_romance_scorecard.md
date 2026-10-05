@@ -1,7 +1,7 @@
 <!-- GENERATED FILE: scripts/es_pt_beta.py; do not edit by hand. -->
 <!-- source_lects: 36 (es, pt, gl, an, ast, ext, lad, mwl, oc, ca, gsc, fr, wa, pcd, nrf, gallo, frp, lmo, pms, lij, eml, rgn, it, scn, vec, co, ist, dlm, rm, fur, lld, sc, ro, rup, ruo, ruq) -->
 <!-- concepts: 213 -->
-<!-- candidates_sha256_16: 6ba4dc8948018a82 -->
+<!-- candidates_sha256_16: de5c4f8133483c72 -->
 <!-- lexicon_sha256_16: a21f0e21447a50da -->
 <!-- lexicon_iterations: 499997 -->
 <!-- Re-run scripts/run_vulgultra.py or this renderer to refresh. -->

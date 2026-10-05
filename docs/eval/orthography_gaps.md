@@ -14,7 +14,7 @@ Some daughter uses each of these to tell words apart (`grammar.tex` §2.4), so n
 
 | segment | | cands | concepts | forced | roots | lects | merge to | spell as | example | note |
 |---|---|---:|---:|---:|---:|---|---|---|---|---|
-| ɛ | V | 221 | 88 | 4 | 19 | wa 33, frp 23, eml 21 | e | è | wa *lexhe* → `l⟨ɛ⟩x` | open e |
+| ɛ | V | 222 | 88 | 4 | 19 | wa 33, frp 23, eml 21 | e | è | wa *lexhe* → `l⟨ɛ⟩x` | open e |
 | ʀ | C | 183 | 52 | 3 | 18 | fr 35, pcd 35, wa 30 | r | – | nrf *dréte* → `d⟨ʀ⟩et` | the one rhotic of the Oïl lects |
 | ɾ | C | 181 | 42 | 0 | 9 | ast 21, pt 20, gl 19 | r | – | lad *sonreír* → `son⟨ɾ⟩ey⟨ɾ⟩` | single r; es ca pt gl contrast it with the strong r (caro/carro) |
 | ɔ | V | 114 | 53 | 1 | 10 | wa 20, ca 17, pms 10 | o | ò | pms *nòm* → `n⟨ɔ⟩m` | open o |
@@ -22,7 +22,7 @@ Some daughter uses each of these to tell words apart (`grammar.tex` §2.4), so n
 | y | V | 52 | 28 | 0 | 3 | pms 8, gsc 7, lmo 7 | u | ü | nrf *juste* → `⟨ʒ⟩⟨y⟩st` | front rounded high |
 | ɑ̃ | V | 52 | 21 | 0 | 3 | fr 13, nrf 12, pcd 9 | a n | ã | gallo *sante* → `s⟨ɑ̃⟩t` | nasal vowel; merging restores the nasal consonant |
 | ø | V | 46 | 25 | 0 | 2 | pcd 13, lmo 8, pms 6 | o | ö | pms *neuit* → `n⟨ø⟩yt` | front rounded mid |
-| ə | V | 44 | 30 | 1 | 7 | ca 10, rup 8, gallo 7 | e | ë | ca *el* → `⟨ə⟩l` | schwa |
+| ə | V | 42 | 28 | 1 | 7 | ca 10, rup 8, gallo 6 | e | ë | ca *el* → `⟨ə⟩l` | schwa |
 | ʒ | C | 40 | 14 | 0 | 5 | fr 10, nrf 8, gallo 7 | ʃ | j | nrf *juste* → `⟨ʒ⟩⟨y⟩st` | j is a free letter |
 | ɔ̃ | V | 38 | 13 | 0 | 2 | wa 8, pcd 8, fr 6 | o n | õ | pcd *ongue* → `⟨ɔ̃⟩g` |  |
 | d͡ʒ | C | 25 | 12 | 0 | 5 | wa 7, pms 3, lmo 3 | t͡ʃ | dj | eml *giâz* → `⟨d͡ʒ⟩a⟨θ⟩` | digraph; the reader is one character at a time today |

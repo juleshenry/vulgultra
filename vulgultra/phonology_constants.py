@@ -105,8 +105,9 @@ RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
     "gsc": (("qu", "⟨k⟩"), ("rn$", "⟨ɾ⟩")),
     # Genoese x is ʒ and eu is ø (Saenko: xoâ [ʒoˈaː], euvu [œːvu]).
     "lij": (("x", "⟨ʒ⟩"), ("[eêé]u", "⟨ø⟩")),
-    # Gallo in the ABCD spelling: eû is ø; ae, and a final ai, are ɛ.
-    "gallo": (("eû", "eu"), ("ai$|ae", "è")),
+    # Gallo in the ABCD spelling: eû is ø; ae, and a final ai, are ɛ; the
+    # word e (and) is [e].
+    "gallo": (("eû", "eu"), ("ai$|ae", "è"), ("^e$", "é")),
     # Picard: the dot of grain.ne is a spelling device, oé is [we], and an
     # infinitive in -tcher ends in [e].
     "pcd": ((r"\.", ""), ("oé", "oué"), ("oè", "ouè"), ("tcher", "tché")),
@@ -128,7 +129,7 @@ RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
     # consonant; z and tz are t͡s.
     "lld": (("sc(?=[eiéèëìí]|$)", "⟨ʃ⟩"), *_S_IMPURA, ("tz|z+", "⟨t͡s⟩")),
     # Jèrriais th is [ð]; aun is the nasal of French an; y before i is the glide.
-    "nrf": (("th", "⟨ð⟩"), ("aun", "an"), ("^y(?=[iî])", "⟨j⟩")),
+    "nrf": (("th", "⟨ð⟩"), ("aun", "an"), ("^y(?=[iî])", "⟨j⟩"), ("aie$", "è")),
     # Franco-Provençal in ORB: en is [ɛ̃], ue and oa begin with [w]; the r
     # of an infinitive in -ar, -ér, -ir is silent.
     "frp": _FRP, "frp:verb": (*_FRP, ("(?<=[aâéêiî])r$", "")),
