@@ -104,6 +104,8 @@ RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
     # Mirandese: ch is the affricate, x the sibilant.
     "mwl": (("ch", "tch"), ("x", "ch")),
     "scn": _Z_TS, "co": _Z_TS,
+    # Piedmontese u after a vowel is the glide of a diphthong (giàun).
+    "pms": (("(?<=[aàoòó])u", "⟨w⟩"),),
     # Milanese z is a plain sibilant today.
     "lmo": (("z+", "⟨s⟩"),),
     "ist": (("z", "⟨z⟩"),),
@@ -127,9 +129,9 @@ RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
     # gl before i or at the end of a word, and gli before a vowel, the
     # palatal l; s before a consonant is ʃ or ʒ and between vowels z; c
     # before e i, and z, are t͡s.
-    "rm": (("tsch", "⟨t͡ʃ⟩"), ("sch", "⟨ʃ⟩"), *_S_IMPURA, ("(?<=[aeiou])s(?=[aeiou])", "⟨z⟩"),
-           ("tg", "⟨t͡ɕ⟩"), ("ch(?=[aou])", "⟨t͡ɕ⟩"), ("gli(?=[aeou])", "⟨ʎ⟩"), ("gl(?=i|s?$)", "⟨ʎ⟩"),
-           ("c(?=[ei])", "⟨t͡s⟩"), ("z+", "⟨t͡s⟩")),
+    "rm": (("tsch", "⟨t͡ʃ⟩"), ("sch", "⟨ʃ⟩"), ("c(?=[ei])", "⟨t͡s⟩"), ("z+", "⟨t͡s⟩"), *_S_IMPURA,
+           ("(?<=[aeiou])s(?=[aeiou])", "⟨z⟩"), ("tg", "⟨t͡ɕ⟩"), ("ch(?=[aou])", "⟨t͡ɕ⟩"),
+           ("gli(?=[aeou])", "⟨ʎ⟩"), ("gl(?=i|s?$)", "⟨ʎ⟩")),
     # Romanian: a final i after a consonant is not a syllable (ochi [okʲ],
     # cinci [t͡ʃint͡ʃ]) unless it is the word's only vowel (zi) or follows a
     # consonant + l or r (negri). An infinitive's final i is stressed.
@@ -172,16 +174,22 @@ RULES_AFTER: dict[str, tuple[tuple[str, str], ...]] = {
 # read ɡw, and hi before a consonant as the glide alone.
 _FR_V = "aeiouyàâéèêëîïôöûüœ"
 BACKEND_RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
-    # French: c and g before e i are s and ʒ (the map voices that s between
-    # vowels); a final e after a consonant is silent in a word with another
-    # vowel, but keeps that consonant sounded (the map leaves a schwa after
-    # nasal vowel + consonant: crendre); the -er of a longer word is [e];
-    # a final consonant after a nasal vowel is silent (grant, sang, blanc).
-    "fra-Latn": (("c(?=[eiéèêîy])", "⟨s⟩"), ("g(?=[eiéèêîy])", "⟨ʒ⟩"), ("oeu|œu", "eu"),
+    # French: ail, eil, euil, ouil + l are a vowel + j, and ai in aile is
+    # ɛ (the map reads e, ɛjl, œjl); c and g before e i are s and ʒ (it
+    # voices that s between vowels), and a q without u is k; a final e
+    # after a consonant is silent in a word with another vowel, but keeps
+    # that consonant sounded (the map leaves a schwa after nasal vowel +
+    # consonant: crendre); the -er of a longer word is [e]; a final
+    # consonant after a nasal vowel is silent (grant, sang, blanc).
+    "fra-Latn": (("aill|ail$", "⟨aj⟩"), ("eill|eil$", "⟨ɛj⟩"), ("ouill", "⟨uj⟩"), ("(?:euill|ueill|œill|euil$)", "⟨œj⟩"),
+                 ("ail(?=e)", "èl"), ("c(?=[eiéèêîy])", "ç"), ("g(?=[eiéèêîy])", "j"), ("q(?!u)", "qu"),
+                 ("oeu|œu", "eu"),
                  (rf"^(.*[{_FR_V}].*[^{_FR_V}⟩])es?$", "\\1⟨⟩"), (rf"^(.*[{_FR_V}].*⟩)es?$", "\\1"),
                  (rf"^(.*[{_FR_V}].*)er$", "\\1é"), (rf"(?<=[aeioâêîôu][nm])[tdcgsp]+$", "")),
     "ita-Latn": (("sci(?=[aouàòù])", "⟨ʃ⟩"), ("sc(?=[eiéèêëìíî])", "⟨ʃ⟩"), ("sc(?=[aouàáâòóôùúûrl])", "⟨sk⟩")),
     "spa-Latn": (("gu(?=[^aeiouáéíóúü]|$)", "⟨ɡu⟩"), ("^h(?=[ií][^aeiouáéíóú])", "")),
+    # Sardinian: the i of gi, ci before a consonant is dropped (girare).
+    "sro-Latn": (("gi(?=[^aeiou])", "⟨d͡ʒi⟩"), ("ci(?=[^aeiou])", "⟨t͡ʃi⟩")),
 }
 # The voice's notation rewritten in the grid's, as regular expressions over
 # decomposed text, in order: stress and length dropped, affricates tied;
@@ -203,12 +211,14 @@ ESPEAK_NOTATION: dict[str, tuple[tuple[str, str], ...]] = {
               ("ejŋ(?=.)", "e\u0303"), ("ejm(?=[pb])", "e\u0303"),  # nasal e inside a word, a diphthong only at its end
               (rf"({_VOWEL})\u0303?([jw]?)ŋ", "\\1\u0303\\2"),
               ("(\u0303)u\u0303", "\\1w\u0303"), ("(\u0303)[ij]\u0303", "\\1j\u0303"),
-              (rf"(?<!{_VOWEL})(?<!\u0303)w$", "u")),
+              (rf"(?<!{_VOWEL})(?<!\u0303)w$", "u"),
+              ("^ʃ(?=[ptk])", "ɨʃ")),  # the voice drops the vowel of es- before a consonant
     "es": (*_ESPEAK_COMMON, *_IBERIAN, *_FIVE_VOWELS),
     "an": (*_ESPEAK_COMMON, *_IBERIAN, *_FIVE_VOWELS),
     "ca": (*_ESPEAK_COMMON, *_TIED, *_IBERIAN),
-    # The Italian voice writes an unstressed u as ʊ and a final i as ɪ.
-    "it": (*_ESPEAK_COMMON, *_TIED, ("ʊ", "u"), ("ɪ", "i"), ("ŋ", "n")),
+    # The Italian voice writes an unstressed u as ʊ and a final i as ɪ, and
+    # a long consonant double where it does not use the length mark.
+    "it": (*_ESPEAK_COMMON, *_TIED, ("ʊ", "u"), ("ɪ", "i"), ("ŋ", "n"), (r"([^\W\d_])\1", "\\1")),
 }
 
 
@@ -228,7 +238,7 @@ _RUO_LETTERS = {"š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "æ", "
                 "á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u"}
 BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "fr": {**_OIL_E, "ù": "u"},            # où
-    "frp": _OIL_E,
+    "frp": {**_OIL_E, "ù": "wɛ"},          # ouè
     # ao is the diphthong of dao, iao, chaod; oé and ouè are [we] and [wɛ].
     "gallo": {**_OIL_E, "ao": "aw", "aɔ": "aw", "œ́": "we", "ù": "wɛ"},
     "nrf": {**_OIL_E, "ù": "u", "â": "a"},  # oî read wa, circumflex left on a

@@ -670,7 +670,6 @@ def _diseux() -> tuple[list[Entry], list[tuple[str, str]]]:
 
 
 @functools.cache
-@functools.cache
 def wa_wiktionary() -> dict[str, dict]:
     """Headword → {"ipa": [...], "senses": [[pos, [French], [English]], ...]} from the Walloon Wiktionary."""
     if WA_ENTRIES.is_file():
@@ -715,6 +714,7 @@ def wa_wiktionary() -> dict[str, dict]:
     return entries
 
 
+@functools.cache
 def dictionaries(lect: str) -> tuple[tuple[str, tuple[Entry, ...]], ...]:
     """Every glossed entry on disk for the lect, by source."""
     found: list[tuple[str, list[Entry]]] = []
@@ -761,6 +761,7 @@ def dictionaries(lect: str) -> tuple[tuple[str, tuple[Entry, ...]], ...]:
     return tuple((label, tuple(entries)) for label, entries in merged.items() if entries)
 
 
+@functools.cache
 def dictionary(lect: str) -> tuple[Entry, ...]:
     return tuple(entry for _, entries in dictionaries(lect) for entry in entries)
 

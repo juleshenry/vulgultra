@@ -103,13 +103,55 @@ class BoundaryFixtures(unittest.TestCase):
         self.assertEqual(read_leftovers("soare", "ro"), "sware")
         self.assertEqual(read_leftovers("dao", "fr"), "dao")            # only where it is one sound
 
+    def test_a_lects_own_spellings_are_read_before_the_backend(self) -> None:
+        for lang, word, pos, ipa in (
+            ("rm", "tgi", "", "t͡ɕi"), ("rm", "chaun", "", "t͡ɕaun"), ("rm", "sulegl", "", "suleʎ"),
+            ("rm", "glina", "", "ʎina"), ("rm", "star", "", "ʃtar"), ("rm", "culiez", "", "kuliet͡s"),
+            ("lld", "scorza", "", "ʃkort͡sa"), ("fur", "cjan", "", "can"), ("fur", "zâl", "", "d͡ʒal"),
+            ("eml", "żâl", "", "ðal"), ("eml", "zénc", "", "θenk"), ("scn", "panza", "", "pant͡sa"),
+            ("pms", "giàun", "", "d͡ʒawn"), ("ast", "xelu", "", "ʃelu"), ("ast", "llombu", "", "ʎombu"),
+            ("ast", "cabeza", "", "kabeθa"), ("ext", "humu", "", "humu"), ("lad", "mujer", "", "muʒeɾ"),
+            ("lad", "kozer", "", "kozeɾ"), ("oc", "quatre", "", "katɾe"), ("nrf", "méthe", "", "með"),
+            ("frp", "dent", "", "dɛ̃"), ("frp", "fuè", "", "fwɛ"), ("frp", "chantar", "verb", "ʃɑ̃ta"),
+        ):
+            with self.subTest(word=word):
+                self.assertEqual(unicodedata.normalize("NFC", word_to_ipa(word, lang, pos)), ipa)
+
+    def test_a_borrowed_maps_faults_are_mended(self) -> None:
+        for lang, word, ipa in (
+            ("fur", "bosc", "bosk"), ("sc", "girare", "d͡ʒiraɾɛ"), ("ast", "gusanu", "ɡusanu"),
+            ("frp", "grant", "ɡʀɑ̃"), ("frp", "racena", "ʀasəna"), ("nrf", "mangi", "mɑ̃ʒi"),
+            ("nrf", "crendre", "kʀɑ̃dʀ"), ("gallo", "faille", "faj"), ("gallo", "cinqe", "sɛ̃k"),
+        ):
+            with self.subTest(word=word):
+                self.assertEqual(unicodedata.normalize("NFC", word_to_ipa(word, lang)), ipa)
+
+    def test_romanian_final_i_is_a_syllable_only_in_an_infinitive(self) -> None:
+        for word, pos, ipa in (("ochi", "noun", "okʲ"), ("cinci", "num", "t͡ʃint͡ʃ"), ("mulți", "det", "mult͡sʲ"),
+                               ("muri", "verb", "muri"), ("zi", "noun", "zi")):
+            with self.subTest(word=word):
+                self.assertEqual(unicodedata.normalize("NFC", word_to_ipa(word, "ro", pos)), ipa)
+        self.assertEqual(count_syllables(transcribe_and_repair("genunchi", "ro", "noun")[1]), 2)
+
+    def test_walloon_is_read_by_its_own_rules(self) -> None:
+        for word, pos, ipa in (
+            ("oujhea", "", "uʒja"), ("tchén", "", "t͡ʃẽ"), ("pexhon", "", "pɛʃɔ̃"), ("lådje", "", "lɔt͡ʃ"),
+            ("viker", "verb", "vike"), ("mer", "", "mɛʀ"), ("cwand", "", "kwɑ̃"), ("sonk", "", "sɔ̃k"),
+            ("anêye", "", "anɛj"), ("montinne", "", "mɔ̃tɛ̃n"), ("pô", "", "põ"), ("ome", "", "ɔm"),
+        ):
+            with self.subTest(word=word):
+                self.assertEqual(unicodedata.normalize("NFC", word_to_ipa(word, "wa", pos)), ipa)
+
     @unittest.skipUnless(shutil.which("espeak-ng"), "espeak-ng is not installed")
     def test_second_reader(self) -> None:
         for lang, word, ipa in (
             ("fr", "femme", "fam"), ("fr", "grand", "ɡʀɑ̃"), ("fr", "manger", "mɑ̃ʒe"), ("fr", "nuit", "nɥi"),
             ("pt", "chuva", "ʃuvɐ"), ("pt", "olho", "ɔʎu"), ("pt", "mão", "mɐ̃w̃"), ("pt", "perna", "pɛɾnɐ"),
             ("pcd", "grain.ne", "ɡʀɛ̃n"), ("pcd", "troés", "tʀwe"), ("pcd", "tchien", "t͡ʃjɛ̃"),
-            ("mwl", "chuba", "t͡ʃubɐ"), ("mwl", "lhago", "ʎaɡu"),
+            ("mwl", "chuba", "t͡ʃubɐ"), ("mwl", "lhago", "ʎaɡu"), ("pt", "estrela", "ɨʃtɾelɐ"),
+            ("es", "cabeza", "kabeθa"), ("es", "lluvia", "ʎubja"), ("es", "hígado", "iɡado"),
+            ("ca", "peix", "peʃ"), ("ca", "beure", "bɛwɾə"), ("ca", "aigua", "ajɡwə"),
+            ("it", "pesce", "peʃe"), ("it", "cuore", "kuɔre"), ("an", "xordo", "ʃoɾdo"),
         ):
             with self.subTest(word=word):
                 self.assertEqual(unicodedata.normalize("NFC", word_to_ipa(word, lang)), ipa)

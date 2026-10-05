@@ -22,11 +22,11 @@ Mode: *strict* empties every unconfirmed cell; *list* touches only cells a Swade
 | ast | report | 178 | 0 | 0 | 0 | 0 | 0 | 35 | 15 | 0 | 0 | Wiktionary (207), dictionary (92341 forms) |
 | ext | report | 129 | 0 | 0 | 0 | 0 | 0 | 84 | 21 | 0 | 0 | dictionary (41548 forms) |
 | lad | report | 111 | 0 | 0 | 0 | 0 | 0 | 102 | 48 | 0 | 0 | Wiktionary (31), dictionary (2923 forms) |
-| mwl | picked | 125 | 0 | 75 | 0 | 0 | 0 | 0 | 0 | 0 | 13 | dictionary (6294 forms), Wikipedia titles (23), Wikipedia text (3,441,662 words) |
+| mwl | picked | 125 | 0 | 75 | 0 | 0 | 0 | 0 | 0 | 0 | 13 | dictionary (6294 forms), Wikipedia titles (21), Wikipedia text (3,441,662 words) |
 | gsc | report | 136 | 0 | 0 | 0 | 0 | 0 | 77 | 39 | 0 | 0 | dictionary (16600 forms) |
-| wa | report | 134 | 0 | 0 | 0 | 0 | 0 | 79 | 9 | 0 | 0 | IE-CoR (170), dictionary (2925 forms) |
-| pcd | picked | 141 | 26 | 25 | 0 | 0 | 0 | 0 | 0 | 0 | 21 | dictionary (5967 forms), Wikipedia titles (30), examples (984), Wikipedia text (1,582,485 words) |
-| nrf | report | 97 | 0 | 0 | 0 | 0 | 0 | 116 | 42 | 0 | 0 | dictionary (11730 forms), Wikipedia titles (54), Wikipedia text (726,234 words) |
+| wa | picked | 212 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | IE-CoR (170), dictionary (26931 forms), Wikipedia titles (63), Wikipedia text (2,885,620 words) |
+| pcd | picked | 141 | 26 | 25 | 0 | 0 | 0 | 0 | 0 | 0 | 21 | dictionary (5967 forms), Wikipedia titles (29), examples (984), Wikipedia text (1,582,485 words) |
+| nrf | report | 97 | 0 | 0 | 0 | 0 | 0 | 116 | 42 | 0 | 0 | dictionary (11730 forms), Wikipedia titles (52), Wikipedia text (726,234 words) |
 | gallo | picked | 119 | 38 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 56 | dictionary (25106 forms), examples (3098) |
 | frp | list | 204 | 0 | 0 | 0 | 0 | 0 | 9 | 0 | 0 | 0 | Stich 2001 (204), IE-CoR (170), dictionary (18436 forms) |
 | lmo | report | 104 | 0 | 0 | 0 | 0 | 0 | 109 | 6 | 0 | 0 | Wiktionary (207), IE-CoR (170), dictionary (1477 forms) |
@@ -272,7 +272,7 @@ that *ake* (akel, ke, lo, קי); where *onde* (ande); how *kumo* (komo); many *m
 | stone | piedra | kept | en.wiktionary, pt.wiktionary, fr.wiktionary, Wikipedia text ×345 |
 | sand | arena | kept | en.wiktionary, Wikipedia text ×112 |
 | dust | puolo | kept | pt.wiktionary, Wikipedia text ×7 |
-| earth | tierra | kept | pt.wiktionary, fr.wiktionary, Wikipedia text ×2254 |
+| earth | tierra | kept | pt.wiktionary, fr.wiktionary, Wikipedia title, Wikipedia text ×2254 |
 | cloud | nubre | kept | en.wiktionary, Wikipedia text ×36 |
 | fog | nubrina | kept | pt.wiktionary, Wikipedia text ×38 |
 | sky | cielo | kept | en.wiktionary, pt.wiktionary, Wikipedia title, Wikipedia text ×286 |
@@ -332,11 +332,225 @@ Empty: worm, bite, suck, smell, split, stab, scratch, lie, tie, sharp, dull, wet
 
 we *nosauts* (nos, nosati, nosautres); you_pl *vosauts* (vosati, vosautres); they *eths*; this *aqueste* (aiçò, aquò, açò, çò); that *aqueth* (aiçò, açò); there *aquí* (ailà, aquiu); who *qui*; how *coma* (com, consí, cossí); many *plan*; some *qualques*=; few *pau* (pauc, pòc); wide *larg*= (ample); heavy *pesuc*=; short *cort*= (cuert); wife *molhèr*; husband *marit*= (espós); animal *animau* (animal); bird *aucèth* (aucèl, audèth, ausèl); louse *piolh*=; snake *sèrp*=; worm *vèrm*=; stick *baston*= (pal); fruit *frut* (frucha, fruta); seed *gran*= (grana, seme, semença); root *arrel* (arraïc, raïtz); bark *escòrça*= (pela, pèl, pèth, rusca); bone *òs*=; horn *còrn*=; hair *pèth* (pel); ear *auretha* (aurelha); guts *tripas*=; neck *còth* (còl); breast *pitre*= (popa); liver *gessèr* (fetge, hitge); spit *escopir*=; vomit *vomir*=; see *véder* (véser); smell *sentir*=; kill *tuar*=; fight *luchar*= (pelejar); split *héner* (bracar, espartir, partir); stab *apunhalar*=; scratch *gratar*=; come *víner*; sit *séder* (setiar, sèir); stand *estar*= (arturar, parar); fall *cáder* (quèir); hold *téner* (aver, tiéner); squeeze *prémer*= (estrénher); wash *lavar*= (ruscar); wipe *eishugar* (secar); pull *tirar*= (lançar); play *jugar* (jogar); float *flotar*=; flow *fluir*=; freeze *gelar*=; sun *sorelh* (solelh); rain *pluja* (ploja, pluèja); river *arriu* (riu); dust *polvera*= (polsa, polva, posca, povàs); cloud *nívol* (broma, bromalh); sky *cèu* (cèl); night *nueit* (net, nuèch); cold *hred* (fred, freg, heired); bad *marrit*= (dolent); rotten *porrit*=; dirty *salop*= (brut, lord); straight *dret* (drech, dreit); sharp *agut*=; dull *emós*=; smooth *lis*=; wet *molhat*= (moth); far *lhen* (lonh, luenh, luènh, luònh); copula *èster* (èsser); cat_f *gata*=; dog_f *canha*=; smile *sorrisèr* (arridolar)
 
-### wa: unconfirmed, left as they are
+## wa: picked by hand, verified here
 
-`=` marks a form identical to the sister lect's. In brackets: what the lists and dictionaries have for that concept, to pick from.
+| concept | form | status | attested by |
+|---|---|---|---|
+| i | dji | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×2208 |
+| you_sg | ti | kept | fr.wiktionary, wa.wiktionary, Wikipedia text ×440 |
+| he | i | kept | wa.wiktionary, Wikipedia text ×18362 |
+| we | nos | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×3815 |
+| you_pl | vos | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×2075 |
+| they | i | kept | wa.wiktionary, Wikipedia text ×18362 |
+| this | ci | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×3788 |
+| that | çoula | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×871 |
+| here | cial | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×593 |
+| there | la | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×13074 |
+| who | kî | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×179 |
+| what | cwè | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×271 |
+| where | wice | kept | wa.wiktionary, Wikipedia text ×432 |
+| when | cwand | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×2536 |
+| how | kimint | kept | wa.wiktionary, Wikipedia text ×138 |
+| not | nén | kept | fr.wiktionary, wa.wiktionary, Wikipedia text ×7745 |
+| all | tot | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×4598 |
+| many | bråmint | kept | wa.wiktionary, Wikipedia text ×2116 |
+| some | sacwants | kept | wa.wiktionary, Wikipedia text ×3351 |
+| few | pô | kept | wa.wiktionary, Wikipedia text ×526 |
+| other | ôte | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×2088 |
+| one | onk | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia text ×1731 |
+| two | deus | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia text ×3734 |
+| three | troes | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia text ×1580 |
+| four | cwate | kept | IE-CoR, en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia text ×867 |
+| five | cénk | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia text ×428 |
+| big | grand | kept | IE-CoR, en.wiktionary, Wikipedia text ×1696 |
+| long | long | kept | IE-CoR, wa.wiktionary, Wikipedia text ×717 |
+| wide | lådje | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×386 |
+| thick | spès | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×99 |
+| heavy | pezant | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×35 |
+| small | pitit | kept | wa.wiktionary, Wikipedia text ×762 |
+| short | court | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×216 |
+| narrow | stroet | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×59 |
+| thin | mwinre | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×18 |
+| woman | feme | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×449 |
+| man | ome | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×914 |
+| person | djin | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×1208 |
+| child | efant | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×566 |
+| wife | feme | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×449 |
+| husband | ome | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×914 |
+| mother | mame | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×307 |
+| father | pere | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×241 |
+| animal | biesse | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×802 |
+| fish | pexhon | kept | en.wiktionary, Wikipedia title, Wikipedia text ×185 |
+| bird | oujhea | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×400 |
+| dog | tchén | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×350 |
+| louse | piou | kept | IE-CoR, en.wiktionary, Wikipedia text ×8 |
+| snake | sierpint | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×33 |
+| worm | vier | kept | wa.wiktionary, Wikipedia text ×130 |
+| tree | åbe | kept | IE-CoR, en.wiktionary, Wikipedia title, Wikipedia text ×516 |
+| forest | bwès | kept | IE-CoR, en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×2028 |
+| stick | baston | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×53 |
+| fruit | frut | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×115 |
+| seed | grinne | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×37 |
+| leaf | foye | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×172 |
+| root | raecene | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×78 |
+| bark | schoice | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×98 |
+| flower | fleur | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×353 |
+| grass | yebe | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×235 |
+| rope | coide | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×62 |
+| skin | pea | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×348 |
+| meat | tchå | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×346 |
+| blood | sonk | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×310 |
+| bone | oxhea | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×124 |
+| fat | cråxhe | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×53 |
+| egg | oû | kept | IE-CoR, en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×242 |
+| horn | coine | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×168 |
+| tail | cawe | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×239 |
+| feather | plome | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×42 |
+| hair | tchivea | kept | wa.wiktionary, Wikipedia text ×8 |
+| head | tiesse | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×689 |
+| ear | oraye | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×134 |
+| eye | ouy | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×588 |
+| nose | nez | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×162 |
+| mouth | boke | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×197 |
+| tooth | dint | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×84 |
+| tongue | linwe | kept | IE-CoR, en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×135 |
+| fingernail | ongue | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×15 |
+| foot | pî | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×707 |
+| leg | djambe | kept | IE-CoR, en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia text ×154 |
+| knee | djino | kept | wa.wiktionary, Wikipedia title, Wikipedia text ×15 |
+| hand | mwin | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×406 |
+| wing | aiye | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×38 |
+| belly | vinte | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×194 |
+| guts | boyea | kept | wa.wiktionary, Wikipedia text ×116 |
+| neck | hatrea | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×81 |
+| back | dos | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×222 |
+| breast | pwetrene | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×40 |
+| heart | cour | kept | en.wiktionary, Wikipedia title, Wikipedia text ×450 |
+| liver | foete | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×106 |
+| drink | boere | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×149 |
+| eat | magnî | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×347 |
+| bite | hagnî | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×28 |
+| suck | sucî | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×10 |
+| spit | raetchî | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×8 |
+| vomit | vômi | kept | IE-CoR, wa.wiktionary, Wikipedia text ×1 |
+| blow | shofler | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×70 |
+| breathe | respirer | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×12 |
+| laugh | rire | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×156 |
+| see | vey | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×2683 |
+| hear | ôre | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×395 |
+| know | saveur | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×128 |
+| think | tuzer | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×70 |
+| smell | sinti | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×30 |
+| fear | crinde | kept | wa.wiktionary, Wikipedia text ×3 |
+| sleep | doirmi | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×37 |
+| live | viker | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×250 |
+| die | mori | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×228 |
+| kill | touwer | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×139 |
+| fight | bate | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×465 |
+| hunt | tchessî | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×94 |
+| hit | bouxhî | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×52 |
+| cut | côper | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×77 |
+| split | finde | kept | wa.wiktionary, Wikipedia text ×12 |
+| stab | souker | kept | wa.wiktionary, Wikipedia text ×6 |
+| scratch | greter | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×9 |
+| dig | foyî | kept | wa.wiktionary, Wikipedia text ×10 |
+| swim | naivyî | kept | wa.wiktionary, Wikipedia text ×26 |
+| fly | voler | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×44 |
+| walk | roter | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×74 |
+| come | vini | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×63 |
+| lie | coûtchî | kept | wa.wiktionary, Wikipedia text ×109 |
+| sit | ashir | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×38 |
+| stand | astamper | kept | en.wiktionary, Wikipedia text ×5 |
+| turn | tourner | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×168 |
+| fall | toumer | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×91 |
+| give | diner | kept | IE-CoR, wa.wiktionary, Wikipedia text ×70 |
+| hold | tini | kept | wa.wiktionary, Wikipedia text ×37 |
+| squeeze | strinde | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×1 |
+| rub | froter | kept | wa.wiktionary, Wikipedia text ×5 |
+| wash | laver | kept | IE-CoR, Wikipedia text ×25 |
+| wipe | rixhorbi | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×4 |
+| pull | saetchî | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×208 |
+| push | bouter | kept | IE-CoR, wa.wiktionary, Wikipedia text ×230 |
+| throw | taper | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×101 |
+| tie | loyî | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×57 |
+| sew | keude | kept | wa.wiktionary, Wikipedia text ×7 |
+| count | conter | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×79 |
+| say | dire | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×1191 |
+| sing | tchanter | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×110 |
+| play | djouwer | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×161 |
+| float | floter | kept | en.wiktionary, Wikipedia text ×3 |
+| flow | couler | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×1 |
+| freeze | djaler | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×5 |
+| swell | infler | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×3 |
+| sun | solea | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×643 |
+| moon | lune | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×181 |
+| star | stoele | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×73 |
+| water | aiwe | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×2227 |
+| rain | plouve | kept | en.wiktionary, Wikipedia title, Wikipedia text ×143 |
+| river | aiwe | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×2227 |
+| lake | lak | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×22 |
+| sea | mer | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×713 |
+| salt | sé | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×105 |
+| stone | pire | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×587 |
+| sand | såvlon | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×105 |
+| dust | poûssire | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×41 |
+| earth | tere | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×1058 |
+| cloud | nûlêye | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×64 |
+| fog | brouheur | kept | en.wiktionary, Wikipedia title, Wikipedia text ×17 |
+| sky | cir | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×174 |
+| wind | vint | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×361 |
+| snow | nive | kept | en.wiktionary, Wikipedia title, Wikipedia text ×188 |
+| ice | glaece | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×145 |
+| smoke | foumire | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×21 |
+| fire | feu | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×455 |
+| ash | cinde | kept | IE-CoR, en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia text ×10 |
+| burn | broûler | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×42 |
+| road | voye | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×1252 |
+| mountain | montinne | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×180 |
+| red | rodje | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×538 |
+| green | vert | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×86 |
+| yellow | djaene | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×297 |
+| white | blanc | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×506 |
+| black | noer | kept | en.wiktionary, fr.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×469 |
+| night | nute | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×565 |
+| day | djoû | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×2752 |
+| year | anêye | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×4151 |
+| warm | tchôd | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×125 |
+| cold | froed | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×113 |
+| full | plin | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×257 |
+| new | novea | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×333 |
+| old | vî | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×2595 |
+| good | bon | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×1154 |
+| bad | mwais | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×129 |
+| rotten | pouri | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×16 |
+| dirty | måssî | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×10 |
+| straight | droet | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×337 |
+| round | rond | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×102 |
+| sharp | côpant | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×8 |
+| dull | diswijhî | kept | en.wiktionary |
+| smooth | lisse | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×217 |
+| wet | frexh | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×20 |
+| dry | setch | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×93 |
+| correct | djusse | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×982 |
+| near | près | kept | IE-CoR, en.wiktionary, Wikipedia text ×501 |
+| far | lon | kept | IE-CoR, en.wiktionary, wa.wiktionary, Wikipedia text ×720 |
+| right | droete | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×438 |
+| left | hintche | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×239 |
+| at | a | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×56303 |
+| in | dins | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×17948 |
+| with | avou | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×16834 |
+| and | et | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×30729 |
+| if | si | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×8857 |
+| because | paski | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×443 |
+| name | no | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×4471 |
+| def_art | li | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×45888 |
+| copula | esse | kept | en.wiktionary, wa.wiktionary, Wikipedia text ×2412 |
+| cat | tchet | kept | en.wiktionary, wa.wiktionary, Wikipedia title, Wikipedia text ×199 |
+| cat_f | cate | kept | wa.wiktionary, Wikipedia text ×7 |
+| dog_f | lexhe | kept | wa.wiktionary, Wikipedia text ×25 |
+| smile | sorire | corpus | wa.wiktionary, Wikipedia text ×24 |
 
-he *i* (i/languages m to z); they *i* (i/languages m to z); this *cisse* (ci); that *cisse-la* (çoula); where *wice*; when *wince* (cwand); many *bråmint*; some *kékès*; few *pô*; two *deu* (deûs, deus); wide *lådj* (lådje); heavy *pejhe* (loûrd, pezant); small *pitit* (p(i)tit, ptit); narrow *estroet* (streût, stroet); thin *fin* (mwinre); husband *marî* (ome); mother *mere* (mame); dog *tchet* (tchin, tchén); louse *peu* (piou); snake *sierpe* (sièrpint, sierpint); worm *vèr* (vièr, halene); stick *båton* (baston); leaf *fowe* (foye); bark *scoice* (pèlote, schoice); fat *grèxhe* (cråxhe); tail *coye* (cowe, cawe); feather *pène* (pome, plome); hair *tcheveu* (dj'vè, poyaedje, tchvea); knee *genoy* (gngno, djno); neck *col* (cô, gozî, hatrea); breast *pétrin* (pwètrine, pwetrene); heart *coir* (coûr, cour); liver *foye* (feûte, foete); bite *mordre*= (hagnî, kihagnî); spit *cratchî* (raetchî); blow *sofler* (shofler); breathe *souffler* (rèspirer, respirer); think *penser*= (pinser, sondjî, tråculer, tuzer, waitî); smell *fleurer* (sinti); fear *crinde* (aveûr sogne, aveur peu); sleep *dormi* (dwèrmi, doirmi); die *mourî* (mori); fight *bater* (si bate, bate); hit *coyî* (bouhî, bouxhî, chlaker); split *finde* (pårti); stab *pougnarder*; scratch *grater* (greter, schôpyî); dig *creuser*= (tchaboter, schåvler); swim *nôzer* (noyî, nedjî); walk *tchessa* (aler, rinde, roter); lie *djumî* (coûkî); sit *s'ashir* (assîr, ashir); stand *ståner* (èsse so pî, astamper); fall *tcheur* (toumer, tchair, tchaire); squeeze *serrer* (strinde); rub *froter* (froyî); wipe *sitchî* (rixhorbi, xhorbi); pull *tîner* (sètchî, saetchî); tie *loymer* (noukî, loyî); sew *côde* (keûse, keuze); sing *chanter*= (tchanter); float *flotter*= (floter); freeze *djelé* (djaler); swell *gonfler* (infler, houzer); fog *broulård* (brouliård, brouheur, brouyård); wind *vent*= (vint); burn *brouî* (broûler); warm *tchaud* (tchôd); full *plein*= (plin); rotten *poerri* (poûri, pouri); dirty *soû* (måssî, mannet); straight *droit*= (dreût, droet); sharp *agu* (cwahant, awijhî, côpant); dull *moussî* (diswijhî); correct *djust* (djusse); in *e* (amon, dins); cat_f *tchete* (tchet); dog_f *tchete*; smile *sourire*=
+Empty: .
 
 ## pcd: picked by hand, verified here
 
@@ -541,7 +755,7 @@ Empty: louse, worm, bark, fat, knee, liver, blow, breathe, stab, scratch, swim, 
 
 `=` marks a form identical to the sister lect's. In brackets: what the lists and dictionaries have for that concept, to pick from.
 
-i *jé*; you_sg *tu*=; he *il*= (i', i’); we *nouos*; you_pl *vouos*; they *ils*=; that *ch'la* (chena, tchi); there *ilo* (iloc); who *qui*= (tchi); what *qué*; where *ioù*; when *quand*= (quaend); how *coume*; not *né* (âoqueun); many *byin*; some *tchiq's* (queuques, quiques, tchique); few *pou*; other *aute* (aoute, aut', âote); one *eun* (iun, un); two *deu* (daeux, deux, déeus); five *chîn* (chinq, chînq); wide *lârg* (large); heavy *lourd*= (b'sant); thin *minche* (maigre); husband *marri* (bouonhoumme, haomme); bird *oîsé* (mouissaon, ouaîsé, ouaîthé, ouésé, weze); louse *pou*= (bliu, crabe); snake *sépent* (sèrpent, tchilieuvre); worm *vê* (vèr); stick *bâton*= (badgette); fruit *fruit*= (frit); seed *graine*= (grainne); leaf *fueille* (fieille, fielle, fuule); root *racine*= (raichinne, rachène); meat *char* (viande, viànde, chaî); bone *os*=; horn *corne*= (cône); feather *pliume* (plleume); hair *cheveu*= (g'veu, keveu); ear *othelle* (oreille, orêle, ouothelle); mouth *bouche*= (bouoche); fingernail *ongle*= (cliou); leg *jambe*= (gambe, gaumbe, gàmbe, gãb); knee *génou* (g'nou, genouaï, jnu); wing *aile*=; guts *boyaux*; neck *cou*= (co, ko); breast *poitrine* (baheur, côffre); liver *foie*= (faie); drink *baîre* (baithe, beire); bite *mordre*=; suck *sucer*=; spit *crachi* (écopi, êcopi); vomit *vomi*; blow *souffli* (ventaïr); breathe *respirer*= (respither); know *savei* (connaître, saver); smell *senti*; fear *criendre* (croindre); hunt *quachi* (cache, cacher, cachier, cache (partie)); cut *couper*= (copaïr, coper, tailli); split *fendre*=; stab *poignardi* (pitchi); scratch *gratter*=; swim *nagier* (nagi); fly *voli* (voler); come *venin* (v'nir, v'nîn, venir); lie *gisi*; sit *s'assiéthe*; stand *se t'nin* (dréchier, mâter, stanner, sténer); fall *tomber*= (tchaie); give *dounner* (bailler, bailli, baillier, donner, douner, dounnaïr); hold *t'nin* (tcheindre, tenir); squeeze *sèrri* (prêssi); wipe *séchi* (torchi, êssuyer); pull *tirer*= (haler, tither, traire); throw *jeter*= (fliantchi, j'ter, jouôter, lanchi, pitchi, souîndgi); tie *lier*= (nouer); sew *coudre*= (couôtre); count *couompter*; sing *chaunter* (canter, chanter); play *jouaer* (joster, jouer, sonner); float *flotter*= (fliotter); flow *couler*= (d’puther); swell *gonfler* (enflier, r'sourdre); moon *lune*= (lantèrne d'pâraîsse, lantèrne des pouôrres gens, leune); star *étoîle* (etel, éteile, ételle, êtaile); water *iae* (iaoue, iau, ieau, iâo, yo); dust *poussiéthe* (poussière); earth *téthe* (terre, tèrrain, tèrre); cloud *nuage*= (nouage, nuée); fog *brouillard*= (bliâse, bliâsîn); ice *gllâche* (gllèche); smoke *fumée*= (feunmée, fumaïe); ash *chendres* (chendre); white *blaunc* (blianc, bllaunc, bllànc); day *jou* (jour, journaïe, journée, jouo); full *plyin* (compliet, pliein, plloin, rassassiaï); new *nouvé* (neu, neuf, nouvieau, nouviâo); rotten *pouôrri* (mucre); straight *dré* (drait); sharp *aigui* (aîdgu); dull *émoussé*= (tron); smooth *lisse*=; dry *sec*= (saec, sé); correct *juste* (dreit); near *près*= (près de); far *llioin* (llian); right *dréte* (drouait, drouaite); in *en* (dans); with *dauve* (avec, aveuc, d'aveuc, d'od); because *pasque* (passequé); def_art *lé* (l's, la, ès); cat_f *cate* (cat); dog_f *chienne*=; smile *souôri* (souôrithe)
+i *jé*; you_sg *tu*=; he *il*= (i', i’); we *nouos*; you_pl *vouos*; they *ils*=; that *ch'la* (chena, tchi); there *ilo* (iloc); who *qui*= (tchi); what *qué*; where *ioù*; when *quand*= (quaend); how *coume*; not *né* (âoqueun); many *byin*; some *tchiq's* (queuques, quiques, tchique); few *pou*; other *aute* (aoute, aut', âote); one *eun* (iun, un); two *deu* (daeux, deux, déeus); five *chîn* (chinq, chînq); wide *lârg* (large); heavy *lourd*= (b'sant); thin *minche* (maigre); husband *marri* (bouonhoumme, haomme); bird *oîsé* (mouissaon, ouaîsé, ouaîthé, ouésé, weze); louse *pou*= (bliu, crabe); snake *sépent* (sèrpent, tchilieuvre); worm *vê* (vèr); stick *bâton*= (badgette); fruit *fruit*= (frit); seed *graine*= (grainne); leaf *fueille* (fieille, fielle, fuule); root *racine*= (raichinne, rachène); meat *char* (viande, viànde, chaî); bone *os*=; horn *corne*= (cône); feather *pliume* (plleume); hair *cheveu*= (g'veu, keveu); ear *othelle* (oreille, orêle, ouothelle); mouth *bouche*= (bouoche); fingernail *ongle*= (cliou); leg *jambe*= (gambe, gaumbe, gàmbe, gãb); knee *génou* (g'nou, genouaï, jnu); wing *aile*=; guts *boyaux*; neck *cou*= (co, ko); breast *poitrine* (baheur, côffre); liver *foie*= (faie); drink *baîre* (baithe, beire); bite *mordre*=; suck *sucer*=; spit *crachi* (écopi, êcopi); vomit *vomi*; blow *souffli* (ventaïr); breathe *respirer*= (respither); know *savei* (connaître, saver); smell *senti*; fear *criendre* (croindre); hunt *quachi* (cache, cacher, cachier); cut *couper*= (copaïr, coper, tailli); split *fendre*=; stab *poignardi* (pitchi); scratch *gratter*=; swim *nagier* (nagi); fly *voli* (voler); come *venin* (v'nir, v'nîn, venir); lie *gisi*; sit *s'assiéthe*; stand *se t'nin* (dréchier, mâter, stanner, sténer); fall *tomber*= (tchaie); give *dounner* (bailler, bailli, baillier, donner, douner, dounnaïr); hold *t'nin* (tcheindre, tenir); squeeze *sèrri* (prêssi); wipe *séchi* (torchi, êssuyer); pull *tirer*= (haler, tither, traire); throw *jeter*= (fliantchi, j'ter, jouôter, lanchi, pitchi, souîndgi); tie *lier*= (nouer); sew *coudre*= (couôtre); count *couompter*; sing *chaunter* (canter, chanter); play *jouaer* (joster, jouer, sonner); float *flotter*= (fliotter); flow *couler*= (d’puther); swell *gonfler* (enflier, r'sourdre); moon *lune*= (lantèrne d'pâraîsse, lantèrne des pouôrres gens, leune); star *étoîle* (etel, éteile, ételle, êtaile); water *iae* (iaoue, iau, ieau, iâo, yo); dust *poussiéthe* (poussière); earth *téthe* (terre, tèrrain, tèrre); cloud *nuage*= (nouage, nuée); fog *brouillard*= (bliâse, bliâsîn); ice *gllâche* (gllèche); smoke *fumée*= (feunmée, fumaïe); ash *chendres* (chendre); white *blaunc* (blianc, bllaunc, bllànc); day *jou* (jour, journaïe, journée, jouo); full *plyin* (compliet, pliein, plloin, rassassiaï); new *nouvé* (neu, neuf, nouvieau, nouviâo); rotten *pouôrri* (mucre); straight *dré* (drait); sharp *aigui* (aîdgu); dull *émoussé*= (tron); smooth *lisse*=; dry *sec*= (saec, sé); correct *juste* (dreit); near *près*= (près de); far *llioin* (llian); right *dréte* (drouait, drouaite); in *en* (dans); with *dauve* (avec, aveuc, d'aveuc, d'od); because *pasque* (passequé); def_art *lé* (l's, la, ès); cat_f *cate* (cat); dog_f *chienne*=; smile *souôri* (souôrithe)
 
 ## gallo: picked by hand, verified here
 

@@ -23,8 +23,9 @@ source tags and the scripts below make the transformations reproducible.
 | `data/sources/pdf/motier_galo_francaez_2019.pdf` | Gallo: local glossary with IPA | none (read by hand) | Atelier de gallo, Résidence La Perrière, Héric |
 | `data/sources/pdf/ferreira_2004_dicionario_mirandes_portugues.pdf` | Mirandese: letter M only | none | Ferreira and Ferreira, edition 0.1, 2004 |
 | `data/sources/picard_diseux/mots/` | Picard of the Amiens area: 3,900-entry word list with French glosses and translated examples; the Picard column's reference | `scripts/audit_grid_sources.py fetch` | Chés Diseux, "mes mots à mi", ches.diseux.free.fr; 12 pages |
-| `data/sources/wikidata_sitelinks.json` | The title of each concept's article in the Mirandese, Picard and Norman Wikipedias | `scripts/audit_grid_sources.py fetch` | Wikidata, CC0 |
-| `data/sources/wikipedia/` | Mirandese, Picard and Norman Wikipedia dumps, read as running text | `scripts/audit_grid_sources.py fetch` | dumps.wikimedia.org, CC BY-SA |
+| `data/sources/wiktionary/wawiktionary-latest-pages-articles.xml.bz2` (+ `wa_entries.json`) | Walloon Wiktionary: 26,000 headwords in the unified spelling, with translations and a standard pronunciation; the Walloon column's reference and the Walloon reader's yardstick | `scripts/audit_grid_sources.py fetch` | dumps.wikimedia.org, CC BY-SA |
+| `data/sources/wikidata_sitelinks.json` | The title of each concept's article in the Mirandese, Picard, Norman and Walloon Wikipedias | `scripts/audit_grid_sources.py fetch` | Wikidata, CC0 |
+| `data/sources/wikipedia/` | Mirandese, Picard, Norman and Walloon Wikipedia dumps, read as running text | `scripts/audit_grid_sources.py fetch` | dumps.wikimedia.org, CC BY-SA |
 | `docs/assets/reference-screenshot.png` | Project reference image | documentation only | formerly a root-level screenshot |
 
 Generated `data/words/*_words.json`, candidates, and evaluations are derived

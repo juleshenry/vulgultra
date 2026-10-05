@@ -813,3 +813,36 @@ tried: it is a dialect inventory, and plain words appear in it only inside phras
 Also found and not yet used: fr.wiktionary gives a pronunciation for many Gallo and Picard entries,
 and the Motier of Héric gives IPA throughout.
 
+## Fifth pass: Walloon picked by hand
+
+The audit had 79 of the Walloon column's cells unconfirmed, and they were not spellings of the right
+word: *dog* held *tchet* (cat), *female dog* held *tchete*, and French stood in for Walloon in
+*mordre, penser, creuser, chanter, flotter, vent, plein, droit, sourire*. The column is rebuilt in one
+spelling, the unified *rifondou walon*, from the Walloon Wiktionary.
+
+| source | what it gives | size |
+|---|---|---:|
+| Walloon Wiktionary (dump) | headwords in rifondou, translated into French and English; a standard pronunciation for half of them | 26,092 entries, 17,800 with a translation |
+| Walloon Wikipedia (dump) | running text, and the title of each concept's article | 2.9 million words, 63 titles |
+| IE-CoR "Walloon" | 170 meanings, in a Liège spelling | 170 |
+| English and French Wiktionaries | Walloon entries with glosses | 2,658 and 333 |
+
+**How each cell was picked.** Every word a source gives for the concept was listed with the number of
+sources that give it and its count in the Walloon Wikipedia. The word with the most sources won, the
+more frequent one on a tie, and the Walloon Wiktionary's headword form over an elided spelling
+(*pitit* not *ptit*, *diner* not *dner*, *tchivea* not *tchvea*). Where the top word was not the plain
+sense of the concept it was passed over for the next: *tere* not *daegne* for earth (soil), *roter*
+not *aler* for walk, *tchivea* not *poyaedje* (a coat of hair) for hair, *floter* not *naivyî* for
+float, since *naivyî* is already swim.
+
+120 cells stand, 93 are replaced, none is empty. The audit confirms 212 cells from a glossed source
+and one, *sorire* for smile, from running text (the dictionary has it as the noun). 186 cells have two
+sources or more. These rest on one dictionary alone: *he, they* i; *where* wice; *how* kimint; *many*
+bråmint; *some* sacwants; *few* pô; *small* pitit; *worm* vier; *hair* tchivea; *guts* boyea; *fear*
+crinde; *split* finde; *stab* souker; *dig* foyî; *swim* naivyî; *lie* coûtchî; *stand* astamper;
+*hold* tini; *rub* froter; *wash* laver; *sew* keude; *float* floter; *dull* diswijhî; *female cat*
+cate; *female dog* lexhe. *Dull* is the weakest: one English Wiktionary gloss and no occurrence in the
+Wikipedia.
+
+*Water* and *river* are both *aiwe*, as in the sources. *He* and *they* are both the clitic *i*.
+
