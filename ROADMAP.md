@@ -134,11 +134,15 @@ Transcription, as fixed:
       ([`docs/eval/grid_sources.md`](docs/eval/grid_sources.md)).
       Franco-Provençal is re-sourced from Stich; Gascon went from no source
       to 136 confirmed cells.
-- [ ] **Picard, Mirandese and Gallo are padded from French and Portuguese**
-      (100, 90 and 89 of their unconfirmed cells are the sister's form). No
-      Swadesh list exists for them; the dictionaries give several candidates
-      per concept, listed per cell in the audit report. These three need
-      picking by hand, and for Gallo a choice of spelling system.
+- [x] **Picard, Mirandese and Gallo were padded from French and Portuguese**
+      (100, 90 and 89 of their unconfirmed cells were the sister's form). No
+      Swadesh list exists for them, so the three columns were picked by hand
+      from one reference source each and are verified cell by cell by the
+      audit: Mirandese from the Portuguese Wiktionary's Mirandese entries and
+      the Mirandese Wikipedia (200 cells, 13 empty); Picard from the Chés
+      Diseux word list of the Amiens area (192 cells, 21 empty); Gallo from
+      the French Wiktionary's entries and Ricaud's lexicon (157 cells, 56
+      empty). The record is in [`docs/sources_grid.md`](docs/sources_grid.md).
 - [ ] Norman and Ladino show the same signature more weakly (42 and 48
       cells). Ladin, Lombard, Romansh, Walloon and Venetan have many
       unconfirmed cells that are not the sister's form: spelling or variety,

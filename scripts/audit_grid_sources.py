@@ -12,9 +12,17 @@ rare synonym.
 What happens to an unconfirmed cell no list covers depends on the lect
 (MODES): emptied where the column was fabricated, left alone otherwise.
 
+Picard, Mirandese and Gallo have no list. Their columns were picked by hand
+(docs/sources_grid.md) and are only verified here, cell by cell, in three
+tiers: a glossed source (dictionary headword, or the lect's Wikipedia title
+for the concept), a translated example sentence, or the lect's Wikipedia as
+running text, where the meaning rests on the cognate.
+
   fetch    English Wiktionary Swadesh lists → data/sources/wikt_swadesh/
            Saenko 2015 (lexibank/saenkoromance, CC-BY-4.0) → data/sources/saenkoromance/
            IE-CoR (lexibank/iecor, CC-BY-4.0) → data/sources/iecor/
+           Wikidata sitelinks, three Wikipedia dumps, the Chés Diseux word list
+           → data/sources/{wikidata_sitelinks.json,wikipedia/,picard_diseux/mots/}
   extract  minority-lect entries of the local Wiktionary dumps (French,
            Spanish, Portuguese, Italian, Catalan), with their definitions
            → data/sources/wikt_sections.json
@@ -25,8 +33,11 @@ What happens to an unconfirmed cell no list covers depends on the lect
 from __future__ import annotations
 
 import argparse
+import bz2
+import collections
 import csv
 import functools
+import html
 import json
 import re
 import sys
@@ -143,15 +154,52 @@ STICH_IDS = {"ashes": "ash", "thou": "you_sg", "ye": "you_pl", "woods": "forest"
 CANEPIN = SOURCES / "pdf" / "ricaud_mon_canepin_de_galo.txt"      # Gallo, by theme
 CHTI = SOURCES / "pdf" / "tiot_diqchionnaire_chti.raw.txt"         # Picard of the Nord
 
+# Chés Diseux, "mes mots à mi": a 3,900-entry Picard–French word list of the
+# Amiens area with translated examples (ches.diseux.free.fr/vrac/mots_0.htm).
+DISEUX = SOURCES / "picard_diseux" / "mots"
+DISEUX_URL = "http://ches.diseux.free.fr/vrac/"
+# The lect's Wikipedia: its article title for a concept (Wikidata sitelinks),
+# and its text as a corpus.
+SITELINKS = SOURCES / "wikidata_sitelinks.json"
+WIKIPEDIA = SOURCES / "wikipedia"
+WIKI_OF = {"mwl": "mwlwiki", "pcd": "pcdwiki", "nrf": "nrmwiki"}
+DUMP_URL = "https://dumps.wikimedia.org/{wiki}/latest/{wiki}-latest-pages-articles.xml.bz2"
+# A form the lect shares with its big sister needs this many corpus tokens;
+# a form of its own needs one.
+CORPUS_MIN = 3
+# Concept → English Wikipedia article, for the sitelinks.
+ARTICLES = {
+    "woman": "Woman", "man": "Man", "person": "Person", "child": "Child", "wife": "Wife",
+    "husband": "Husband", "mother": "Mother", "father": "Father", "animal": "Animal", "fish": "Fish",
+    "bird": "Bird", "dog": "Dog", "louse": "Louse", "snake": "Snake", "worm": "Worm", "tree": "Tree",
+    "forest": "Forest", "fruit": "Fruit", "seed": "Seed", "leaf": "Leaf", "root": "Root",
+    "bark": "Bark (botany)", "flower": "Flower", "grass": "Poaceae", "rope": "Rope", "skin": "Skin",
+    "meat": "Meat", "blood": "Blood", "bone": "Bone", "fat": "Fat", "egg": "Egg",
+    "horn": "Horn (anatomy)", "tail": "Tail", "feather": "Feather", "hair": "Hair", "head": "Head",
+    "ear": "Ear", "eye": "Eye", "nose": "Nose", "mouth": "Mouth", "tooth": "Tooth", "tongue": "Tongue",
+    "fingernail": "Nail (anatomy)", "foot": "Foot", "leg": "Leg", "knee": "Knee", "hand": "Hand",
+    "wing": "Wing", "belly": "Abdomen", "guts": "Gastrointestinal tract", "neck": "Neck",
+    "back": "Human back", "breast": "Breast", "heart": "Heart", "liver": "Liver", "sun": "Sun",
+    "moon": "Moon", "star": "Star", "water": "Water", "rain": "Rain", "river": "River", "lake": "Lake",
+    "sea": "Sea", "salt": "Salt", "stone": "Rock (geology)", "sand": "Sand", "dust": "Dust",
+    "earth": "Earth", "cloud": "Cloud", "fog": "Fog", "sky": "Sky", "wind": "Wind", "snow": "Snow",
+    "ice": "Ice", "smoke": "Smoke", "fire": "Fire", "ash": "Ash", "road": "Road",
+    "mountain": "Mountain", "red": "Red", "green": "Green", "yellow": "Yellow", "white": "White",
+    "black": "Black", "night": "Night", "day": "Day", "year": "Year", "name": "Name", "cat": "Cat",
+}
+
 # strict: an unconfirmed cell with no list form is emptied (the column had
 #         invented forms: Istriot dormar, vivar; Dalmatian flotar, fluir).
 # list:   only cells a Swadesh list covers are touched; an empty cell a
 #         list covers is filled.
 # report: nothing changes (the default). Ladin stays here: its column is
 #         Val Badia, and the lists are other valleys.
+# picked: the column was picked by hand; nothing changes, each cell is
+#         only verified, and reported with the sources that attest it.
 MODES = {
     "ist": "strict", "dlm": "strict",
     "pms": "list", "lij": "list", "eml": "list", "ruo": "list", "frp": "list",
+    "mwl": "picked", "pcd": "picked", "gallo": "picked",
 }
 
 # The big lect a small one would be padded from. An unconfirmed cell that is
@@ -179,6 +227,31 @@ EN_KEYS = {
     "warm": ["warm", "hot"], "dull": ["dull", "blunt"], "correct": ["correct", "right"],
     "at": ["at", "to"], "def_art": ["the"], "copula": ["be"], "cat_f": ["cat", "female cat"],
     "dog_f": ["bitch", "female dog"],
+}
+# Words of the gloss language that count as the concept, beyond the grid's
+# own word in that language (the grid's French for "stand" is tenir).
+MORE_KEYS = {
+    "fr": {
+        "i": ["moi"], "you_sg": ["toi"], "he": ["lui"], "they": ["eux"], "this": ["celui-ci", "ce"],
+        "that": ["ça"], "not": ["pas", "ne pas"], "all": ["tous"], "some": ["quelque"],
+        "big": ["gros"], "heavy": ["pesant"], "thin": ["maigre", "fin"], "person": ["individu", "gens"],
+        "wife": ["femme"], "husband": ["époux"], "animal": ["bête"], "snake": ["couleuvre"],
+        "forest": ["bois"], "seed": ["semence"], "meat": ["chair"], "hair": ["cheveux"],
+        "guts": ["boyau", "boyaux", "tripes", "intestin"], "breast": ["poitrine"],
+        "suck": ["téter"], "hear": ["ouïr"], "smell": ["flairer"], "fight": ["se battre", "battre"],
+        "hit": ["battre", "taper", "cogner", "heurter"], "scratch": ["griffer"], "dig": ["bêcher", "fouir"],
+        "lie": ["coucher", "se coucher"], "sit": ["s'asseoir"], "stand": ["debout"], "fall": ["choir"],
+        "squeeze": ["serrer"], "throw": ["lancer"], "tie": ["attacher", "nouer"], "swell": ["gonfler"],
+        "river": ["fleuve"], "stone": ["caillou"], "fog": ["brume"], "ash": ["cendres"],
+        "road": ["chemin"], "year": ["an"], "new": ["neuf"], "bad": ["méchant"], "dirty": ["crasseux"],
+        "sharp": ["tranchant", "pointu", "coupant"], "wet": ["humide"], "correct": ["juste"],
+        "near": ["proche", "près de"], "in": ["en"], "because": ["parce que", "car"], "many": ["beaucoup"],
+        "eat": ["manger"], "wipe": ["essuyer"],
+    },
+    "pt": {
+        "snake": ["cobra"], "fog": ["neblina"], "belly": ["barriga"], "hair": ["pelo"],
+        "dirty": ["porco"], "wide": ["comprido"], "husband": ["homem"], "dust": ["poeira"],
+    },
 }
 POS_OF = {"noun": {"noun", "n"}, "verb": {"verb", "vblex", "vbser", "vbhaver", "vbmod"},
           "adj": {"adj", "adjective"}}
@@ -277,6 +350,48 @@ def fetch() -> None:
         for name in ("forms.csv", "languages.csv", "parameters.csv"):
             (SOURCES / repo / name).write_bytes(_get(LEXIBANK.format(repo=repo, name=name)))
         print(f"lexibank/{repo}: {SOURCES / repo}")
+    fetch_wikipedia()
+    fetch_diseux()
+
+
+def fetch_wikipedia() -> None:
+    """Sitelinks of the concepts' articles, and the three small Wikipedias."""
+    by_title: dict[str, dict[str, str]] = {}
+    titles = sorted(set(ARTICLES.values()))
+    sites = "|".join(sorted(set(WIKI_OF.values())))
+    for start in range(0, len(titles), 45):
+        query = urllib.parse.urlencode({
+            "action": "wbgetentities", "sites": "enwiki", "titles": "|".join(titles[start:start + 45]),
+            "props": "sitelinks", "sitefilter": sites + "|enwiki", "format": "json", "maxlag": "5"})
+        data = json.loads(_get(f"https://www.wikidata.org/w/api.php?{query}"))
+        for qid, entity in data.get("entities", {}).items():
+            links = {site: link["title"] for site, link in entity.get("sitelinks", {}).items()}
+            if "enwiki" in links:
+                by_title[links.pop("enwiki")] = {"qid": qid, **links}
+        time.sleep(1.5)
+    SITELINKS.write_text(json.dumps({cid: by_title.get(title) for cid, title in ARTICLES.items()},
+                                    ensure_ascii=False, indent=1), encoding="utf-8")
+    WIKIPEDIA.mkdir(parents=True, exist_ok=True)
+    for wiki in sorted(set(WIKI_OF.values())):
+        target = WIKIPEDIA / f"{wiki}-latest-pages-articles.xml.bz2"
+        if not target.is_file():
+            target.write_bytes(_get(DUMP_URL.format(wiki=wiki)))
+            time.sleep(2)
+    print(f"sitelinks: {SITELINKS}; dumps: {WIKIPEDIA}")
+
+
+def fetch_diseux() -> None:
+    """The word list is a chain of pages, each naming the next."""
+    DISEUX.mkdir(parents=True, exist_ok=True)
+    name = "mots_a.htm"
+    while name.startswith("mots_"):
+        target = DISEUX / name
+        if not target.is_file():
+            target.write_bytes(_get(DISEUX_URL + name))
+            time.sleep(3)
+        following = re.findall(r'navbas\([^)]*,"([^"]*)"\)', target.read_text(encoding="utf-8"))
+        name = following[-1] if following else ""
+    print(f"Chés Diseux: {DISEUX}")
 
 
 def extract(dumps: Path) -> None:
@@ -520,35 +635,128 @@ def _wikt_sections() -> dict:
 
 
 @functools.cache
-def dictionary(lect: str) -> tuple[Entry, ...]:
-    """Every glossed entry on disk for the lect."""
+def _diseux() -> tuple[list[Entry], list[tuple[str, str]]]:
+    """Chés Diseux: headwords with a French gloss, and Picard examples with their French."""
     entries: list[Entry] = []
+    pairs: list[tuple[str, str]] = []
+    for path in sorted(DISEUX.glob("mots_*.htm")) if DISEUX.is_dir() else []:
+        text = path.read_text(encoding="utf-8").replace("\u00ad", "")
+        for found in re.finditer(r'<span class="cab">(.*?)</span><span class="nb">.*?</span>(.*?)<p class="v">', text, re.S):
+            head = html.unescape(re.sub(r"<[^>]*>", "", found.group(1)))
+            head = re.sub(r"\s*\([^)]*\)", "", head.strip().split("\n")[-1]).strip()  # a letter's heading precedes its first word
+            body = html.unescape(found.group(2))
+            for picard, french in re.findall(r"<i>(.*?)</i>\s*\(([^)]*)\)", body, re.S):
+                pairs.append((re.sub(r"<[^>]*>", "", picard), french))
+            gloss = re.sub(r"<i>.*?</i>\s*(\([^)]*\))?|<[^>]*>|\[[^\]]*\]", " ", body, flags=re.S)
+            gloss = re.sub(r"^[^:]*:", "", gloss, count=1)  # the word class
+            parts = gloss_parts(re.sub(r"\bmais aussi\b", ",", gloss))
+            for index, form in enumerate(part.strip() for part in head.split(",")):
+                # tchien, tchien.ne: a feminine after the comma; blanc, blanque. An ending alone is skipped.
+                if form and parts and " " not in form and (index == 0 or len(form) > 3):
+                    entries.append((nfc(form), parts, frozenset(), "fr"))
+    return entries, pairs
+
+
+@functools.cache
+def dictionaries(lect: str) -> tuple[tuple[str, tuple[Entry, ...]], ...]:
+    """Every glossed entry on disk for the lect, by source."""
+    found: list[tuple[str, list[Entry]]] = []
     words = WORDS / f"{lect}_words.json"
     if lect in ES_KEYED and words.is_file():
-        for spanish, entry in json.loads(words.read_text(encoding="utf-8"))["entries"].items():
-            entries += [(nfc(form), frozenset({nfc(spanish)}), frozenset(), "es") for form in entry.get("ext") or []]
+        found.append(("word list", [
+            (nfc(form), frozenset({nfc(spanish)}), frozenset(), "es")
+            for spanish, entry in json.loads(words.read_text(encoding="utf-8"))["entries"].items()
+            for form in entry.get("ext") or []]))
     elif words.is_file():
         gloss_lang = "fr" if lect in FR_GLOSSED_WORDS else "en"
+        entries = []
         for head, entry in json.loads(words.read_text(encoding="utf-8"))["entries"].items():
             parts = frozenset().union(*(gloss_parts(g) for g in entry.get("glosses_en") or [""]))
             if parts:
                 entries.append((nfc(head), parts, frozenset(entry.get("pos") or []), gloss_lang))
+        found.append(("fr.wiktionary" if gloss_lang == "fr" else "en.wiktionary", entries))
     if lect in APERTIUM:
-        entries += _apertium(lect)
+        found.append(("Apertium", _apertium(lect)))
     if lect in OTHER_WIKTS and WIKT_SECTIONS.is_file():
         sections = _wikt_sections()
         for wiki, code in OTHER_WIKTS[lect]:
+            entries = []
             for head, senses in sections.get(wiki, {}).get(code, {}).items():
                 parts = frozenset().union(*(gloss_parts(text) for text in senses))
                 if parts:
                     entries.append((nfc(head), parts, frozenset(), wiki))
+            found.append((f"{wiki}.wiktionary", entries))
     if lect == "frp":
-        entries += _stich_dictionary()
+        found.append(("Stich 2001", _stich_dictionary()))
     if lect == "gallo":
-        entries += _canepin()
+        found.append(("Ricaud", _canepin()))
     if lect == "pcd":
-        entries += _chti()
-    return tuple(entries)
+        found.append(("Chés Diseux", _diseux()[0]))
+        found.append(("Tiot diqchionnaire", _chti()))
+    merged: dict[str, list[Entry]] = {}
+    for label, entries in found:
+        merged.setdefault(label, []).extend(entries)
+    return tuple((label, tuple(entries)) for label, entries in merged.items() if entries)
+
+
+def dictionary(lect: str) -> tuple[Entry, ...]:
+    return tuple(entry for _, entries in dictionaries(lect) for entry in entries)
+
+
+WORD = r"[^\W\d_]+(?:[-.][^\W\d_]+)*"
+
+
+def words_of(text: str) -> set[str]:
+    return set(re.findall(WORD, nfc(text).replace("’", "'")))
+
+
+@functools.cache
+def examples(lect: str) -> tuple[tuple[str, set[str], set[str]], ...]:
+    """Sentences in the lect with a French translation: source, its words, the French words."""
+    found: list[tuple[str, set[str], set[str]]] = []
+    if lect == "pcd":
+        found += [("Chés Diseux", words_of(picard), words_of(french)) for picard, french in _diseux()[1]]
+    if lect == "gallo" and CANEPIN.is_file():
+        for line in CANEPIN.read_text(encoding="utf-8").split("\n"):
+            columns = re.split(r"\s{2,}", line.strip())
+            if len(columns) == 2 and all(columns) and "Canepin de Galo" not in line:
+                found.append(("Ricaud", words_of(columns[0]), words_of(columns[1])))
+    return tuple(found)
+
+
+@functools.cache
+def sitelinks(lect: str) -> dict[str, str]:
+    """Concept → the title of its article in the lect's Wikipedia."""
+    wiki = WIKI_OF.get(lect)
+    if not wiki or not SITELINKS.is_file():
+        return {}
+    links = json.loads(SITELINKS.read_text(encoding="utf-8"))
+    return {cid: nfc(link[wiki]) for cid, link in links.items() if link and wiki in link}
+
+
+@functools.cache
+def corpus(lect: str) -> dict[str, int]:
+    """How often each word occurs in the articles of the lect's Wikipedia."""
+    wiki = WIKI_OF.get(lect)
+    dump = WIKIPEDIA / f"{wiki}-latest-pages-articles.xml.bz2"
+    counts_file = WIKIPEDIA / f"{wiki}_words.json"
+    if not wiki or not dump.is_file():
+        return {}
+    if counts_file.is_file():
+        return json.loads(counts_file.read_text(encoding="utf-8"))
+    counts: collections.Counter[str] = collections.Counter()
+    article = in_text = False
+    with bz2.open(dump, "rt", encoding="utf-8", errors="replace") as stream:
+        for line in stream:
+            if "<ns>" in line:
+                article = "<ns>0</ns>" in line
+            in_text = in_text or "<text" in line
+            if in_text and article:
+                line = re.sub(r"<[^>]*>|\{\{[^{}]*\}\}|\[\[(?:[^\]|]*\|)?|\]\]|https?://\S+", " ", html.unescape(line))
+                counts.update(re.findall(WORD, line.lower()))
+            in_text = in_text and "</text>" not in line
+    counts_file.write_text(json.dumps(counts, ensure_ascii=False), encoding="utf-8")
+    return counts
 
 
 def concept_keys(row: dict, gloss_lang: str) -> set[str]:
@@ -556,7 +764,8 @@ def concept_keys(row: dict, gloss_lang: str) -> set[str]:
     if gloss_lang == "en":
         return set(EN_KEYS.get(cid, [RESERVED_TABLES["en"][cid].lower()]))
     word = nfc(row[gloss_lang])
-    return {word, re.sub(r"^(se |s')", "", word), re.sub(r"se$", "", word)} - {""}
+    more = set(MORE_KEYS.get(gloss_lang, {}).get(cid, ()))
+    return ({word, re.sub(r"^(se |s')", "", word), re.sub(r"se$", "", word)} | more) - {""}
 
 
 # ---------------------------------------------------------------------------
@@ -584,30 +793,61 @@ def audit_lect(lect: str, rows: list[dict]) -> list[dict]:
             head for head, parts, pos, lang in dictionary(lect)
             if parts & keys[lang] and (not wanted_pos or not (pos - {""}) or pos & wanted_pos)
         })
+        title = sitelinks(lect).get(cid)
         attested = from_list + [head for head in from_dict if head not in from_list]
+        if title and title not in attested:
+            attested.append(title)
         same = grid if grid in attested else next(
             (form for form in attested if spelling_key(lect, form) == spelling_key(lect, grid)), None)
         if not grid:
             status, form = ("filled", usable[0]) if usable and mode != "report" else ("empty", "")
-        elif same:
+        elif same and (mode != "picked" or same == grid):
             status, form = ("kept" if same == grid or mode == "report" else "respelled"), (grid if mode == "report" else same)
         elif mode == "report":
             status, form = "unconfirmed", grid
+        elif mode == "picked":
+            status, form = picked_status(lect, grid, keys["fr"], grid == nfc(row.get(SISTER.get(lect, ""), ""))), grid
         elif usable:
             status, form = "replaced", usable[0]
         elif mode == "strict":
             status, form = "emptied", ""
         else:
             status, form = "unconfirmed", grid
+        evidence: list[str] = []
+        if mode == "picked" and grid:
+            evidence += [name for name, cells in lists(lect) if grid in cells.get(cid, [])]
+            evidence += [label for label, entries in dictionaries(lect) if any(
+                head == grid and parts & keys[lang] for head, parts, _, lang in entries)]
+            evidence += ["Wikipedia title"] * (title == grid)
+            evidence += sorted({f"example in {source}" for source, theirs, french in examples(lect)
+                                if in_example(grid, keys["fr"], theirs, french)})
+            if corpus(lect).get(grid):
+                evidence.append(f"Wikipedia text ×{corpus(lect)[grid]}")
         result.append({"id": cid, "grid": grid, "form": form, "status": status, "attested": attested[:6],
+                       "evidence": evidence,
                        "sister": bool(grid) and grid == nfc(row.get(SISTER.get(lect, ""), ""))})
     return result
+
+
+def in_example(form: str, french_keys: set[str], theirs: set[str], french: set[str]) -> bool:
+    """The form, or its plural, in a sentence whose French has the concept's word, or its plural."""
+    return bool({form, form + "s", form + "x"} & theirs) and bool(
+        french & (french_keys | {key + "s" for key in french_keys} | {key + "x" for key in french_keys}))
+
+
+def picked_status(lect: str, form: str, french_keys: set[str], same_as_sister: bool) -> str:
+    """A hand-picked form no glossed source has: a translated example, or running text."""
+    if any(in_example(form, french_keys, theirs, french) for _, theirs, french in examples(lect)):
+        return "example"
+    if corpus(lect).get(form, 0) >= (CORPUS_MIN if same_as_sister else 1):
+        return "corpus"
+    return "unconfirmed"
 
 
 def audit(output: Path, columns_path: Path) -> None:
     rows = concepts()
     assert [row["id"] for row in rows] == list(IDS)
-    statuses = ("kept", "respelled", "replaced", "emptied", "unconfirmed", "filled", "empty")
+    statuses = ("kept", "example", "corpus", "respelled", "replaced", "emptied", "unconfirmed", "filled", "empty")
     columns: dict[str, dict[str, str]] = {}
     lines = [
         "# Grid sources",
@@ -621,14 +861,20 @@ def audit(output: Path, columns_path: Path) -> None:
         "attests the form and no list has one to offer. **Unconfirmed** = no source attests the "
         "form and it was left as it is; that is a gap in the sources, not a known error.",
         "",
+        "A hand-picked column (mode *picked*) is only verified. Beyond **kept**, a cell may be "
+        "attested by an **example**: the form stands in a sentence of the lect whose French "
+        "translation has the concept's word; or by the **corpus**: the form occurs in the lect's "
+        "Wikipedia, and its meaning rests on the cognate. A form identical to the big sister "
+        f"lect's needs {CORPUS_MIN} corpus tokens, a form of the lect's own needs one.",
+        "",
         "Mode: *strict* empties every unconfirmed cell; *list* touches only cells a Swadesh "
         "list covers; *report* changes nothing and only counts. **= sister** counts the "
         "unconfirmed cells that are letter for letter the form of the big lect next door "
         "(French for Gallo, Portuguese for Mirandese): the signature of padding. The sources "
         "column gives the number of cells or forms each source has for the lect.",
         "",
-        "| lect | mode | kept | respelled | replaced | emptied | unconfirmed | = sister | filled | empty | sources |",
-        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|",
+        "| lect | mode | kept | example | corpus | respelled | replaced | emptied | unconfirmed | = sister | filled | empty | sources |",
+        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|",
     ]
     detail: list[str] = []
     for lect in [code for code in rows[0] if code not in ("id", "gloss_es", "pos")]:
@@ -638,10 +884,22 @@ def audit(output: Path, columns_path: Path) -> None:
         sources = [f"{name} ({len(found)})" for name, found in lists(lect)]
         if dictionary(lect):
             sources.append(f"dictionary ({len(dictionary(lect))} forms)")
+        if sitelinks(lect):
+            sources.append(f"Wikipedia titles ({len(sitelinks(lect))})")
+        if examples(lect):
+            sources.append(f"examples ({len(examples(lect))})")
+        if corpus(lect):
+            sources.append(f"Wikipedia text ({sum(corpus(lect).values()):,} words)")
         padded = sum(cell["status"] == "unconfirmed" and cell["sister"] for cell in cells)
-        numbers = [count[status] for status in statuses[:5]] + [padded] + [count[status] for status in statuses[5:]]
+        numbers = [count[status] for status in statuses[:7]] + [padded] + [count[status] for status in statuses[7:]]
         lines.append(f"| {lect} | {mode} | " + " | ".join(map(str, numbers)) + f" | {', '.join(sources) or 'none'} |")
-        if mode != "report":
+        if mode == "picked":
+            detail += [f"## {lect}: picked by hand, verified here", "",
+                       "| concept | form | status | attested by |", "|---|---|---|---|"]
+            detail += [f"| {cell['id']} | {cell['form']} | {cell['status']} | {', '.join(cell['evidence']) or '–'} |"
+                       for cell in cells if cell["form"]]
+            detail += ["", "Empty: " + ", ".join(cell["id"] for cell in cells if not cell["form"]) + ".", ""]
+        elif mode != "report":
             columns[lect] = {cell["id"]: cell["form"] for cell in cells if cell["form"]}
         changed = [cell for cell in cells if cell["status"] in ("respelled", "replaced", "emptied", "filled")]
         if changed:
@@ -653,7 +911,7 @@ def audit(output: Path, columns_path: Path) -> None:
                 for cell in changed
             ]
             detail.append("")
-        unconfirmed = [
+        unconfirmed = [] if mode == "picked" else [
             f"{cell['id']} *{cell['grid']}*" + ("=" if cell["sister"] else "")
             + (f" ({', '.join(cell['attested'])})" if cell["attested"] else "")
             for cell in cells if cell["status"] == "unconfirmed"
@@ -665,7 +923,7 @@ def audit(output: Path, columns_path: Path) -> None:
     output.write_text("\n".join(lines + [""] + detail), encoding="utf-8")
     columns_path.parent.mkdir(parents=True, exist_ok=True)
     columns_path.write_text(json.dumps(columns, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("\n".join(lines[16:]))
+    print("\n".join(line for line in lines if line.startswith("| ")))
     print(f"Wrote {output} and {columns_path}")
 
 

@@ -761,3 +761,55 @@ What the audit now shows and did not change:
 
 Also fetched and not used: *Dicionário de Mirandês-Português* (Ferreira and Ferreira, edition 0.1,
 2004), of which the PDF holds only the letter M.
+
+## Fourth pass: Picard, Mirandese and Gallo picked by hand
+
+No Swadesh list exists for these three, so each column was rebuilt from one reference source, cell by
+cell, and the audit now verifies every cell instead of changing any (mode *picked*). The per-cell
+evidence is in [`eval/grid_sources.md`](eval/grid_sources.md).
+
+Three tiers of evidence, strongest first:
+
+1. **Glossed.** A dictionary headword glossed with the concept, or the title of the concept's article
+   in the lect's Wikipedia (Wikidata sitelinks).
+2. **Example.** The form stands in a sentence of the lect whose French translation has the concept's
+   word.
+3. **Corpus.** The form occurs in the lect's Wikipedia. The text shows the word exists in the lect; the
+   meaning rests on the cognate. A form identical to the big sister lect's needs three tokens, a form
+   of the lect's own needs one.
+
+A cell with none of the three is empty.
+
+| lect | reference | glossed | example | corpus | empty |
+|---|---|---:|---:|---:|---:|
+| Mirandese | Portuguese Wiktionary's Mirandese entries (4,702); Mirandese Wikipedia (3.4 million words) | 125 | 0 | 75 | 13 |
+| Picard | Chés Diseux, "mes mots à mi": Amiens area, 3,900 entries with translated examples | 141 | 26 | 25 | 21 |
+| Gallo | French Wiktionary's Gallo entries, ABCD spelling first; Ricaud, *Mon canepin de galo* | 119 | 38 | 0 | 56 |
+
+**Mirandese.** 77 cells changed. The old column mixed Portuguese and Spanish guesses: *sangue, osso,
+ovo, flor, perna, fuego, bueno, vientre, pescuezo, can* where Mirandese has *sangre, uosso, uobo,
+frol, pierna, fuogo, buono, barriga, cachaço, perro*. The spelling is the 1999 convention throughout
+(*lh-* for Latin *l-*, the diphthongs *ie* and *uo*, *b* for *v*). The Mirandese Wikipedia was partly
+adapted from the Portuguese one and carries Portuguese spellings beside the Mirandese ones (*lago* 164
+times, *lhago* 155), which is why a form identical to Portuguese needs three tokens. Emptied for want
+of any attestation: *worm, bite, suck, smell, split, stab, scratch, lie, tie, sharp, dull, wet,
+smile*.
+
+**Picard.** The old column was already Amiens Picard (*troés, quoé, minger, vir, ichi*) with French
+filled in around it. Chés Diseux is one speaker's vocabulary of that area, which makes the column one
+variety in one spelling. He leaves out words spelled as in French, so those cells rest on his example
+sentences or on the Picard Wikipedia (*long, pied, nez, tête, sang, rire, dire, jour*). One cell is
+from the Nord and not from Amiens: *bone* oche (Tiot diqchionnaire). The word list writes a nasal
+vowel before *n* with a dot (*grain.ne, tchien.ne, gan.ne*); the grid keeps his spelling.
+
+**Gallo.** The thinnest of the three. The French Wiktionary's 11,400 Gallo entries name their spelling
+system (ABCD 7,284, ELG 2,085, MOGA 328), but are dense only for words in A and B; Ricaud's thematic
+lexicon covers the body, weather and everyday verbs in a spelling of his own. The column therefore
+mixes two French-like spellings, and 56 cells are empty, among them words that are probably the same
+as French (*sang, os, corde, lac*) but which no source at hand attests. ELG forms were passed over
+where the French reader would misread them (*saun, plum, naijae*). Chubri's ChuMétiv database was
+tried: it is a dialect inventory, and plain words appear in it only inside phrases.
+
+Also found and not yet used: fr.wiktionary gives a pronunciation for many Gallo and Picard entries,
+and the Motier of Héric gives IPA throughout.
+

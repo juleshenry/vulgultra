@@ -57,7 +57,49 @@ _AST = _pack("ast", "yo|tú|él|nosotros|vosotros|ellos|esti|esi|equí|ellí|qui
 
 _LAD = _pack("lad", "yo|tu|el|mozotros|vozotros|eyos|este|ake|aki|ayi|ken|ke|onde|kuando|kumo|no|todo|munchos|algunos|pokos|otro|uno|dos|tres|kuatro|sinko|grande|largo|ancho|gordo|pezgado|chiko|kurto|estrecho|fino|mujer|ombre|persona|kriatura|mujer|marido|madre|padre|animal|peche|paxaro|perro|piojo|kulevro|gizano|arvole|boske|palo|fruta|simiente|oja|raiz|kortesa|flor|erva|kuerda|piel|karne|sangre|ueso|grasa|uevo|kuerno|kola|pluma|kaveyo|kavesa|oreja|ojo|nariz|boka|diente|lingua|unya|pie|pierna|rodía|mano|ala|vientre|tripas|kuello|espalda|pecho|korason|igado|bever|komer|morder|chupar|eskupir|vomitar|soplar|respirar|reír|ver|oyir|saver|pensar|oler|temer|durmir|bivir|morir|matar|luchár|kasar|golpear|kortar|fender|apunyalár|rascar|kavar|nadar|volar|kaminar|venir|yazer|sentar|estar|girar|kaer|dar|tener|apretar|fregar|lavar|enxugar|tirar|empujar|lançar|atar|kozer|kontar|dezir|kantar|jugar|flotar|fluir|jelar|inchar|sol|luna|estreya|agua|luvya|rio|lago|mar|sal|piedra|arena|polvo|tierra|nube|niebla|syelo|viento|nieve|yelo|fumo|fuego|seniza|kemar|kamino|montanya|kolorado|vedre|amariyo|blanko|preto|noche|diya|anyo|kaliente|frio|pleno|muevo|viejo|bueno|malo|podrido|suzio|derecho|redondo|agudo|romo|liso|mojado|seko|korrekto|serka|lexos|derecha|sierda|a|en|kon|i|si|porke|nombre|el|ser|gato|gata|perra|sonreír")
 
-_MWL = _pack("mwl", "you|tu|el|nós|vós|eilhes|esto|esso|eiqui|alhá|quien|que|adonde|quando|cumo|nun|todo|muitos|alguns|poucos|outro|un|dous|trés|quatro|cinco|grande|longo|ancho|grosso|pesado|chico|curto|streito|fino|mulhier|home|pessoa|nina|mulhier|marido|mai|pai|animal|peixe|pássaro|can|piolho|serpe|gusan|arble|bosque|pau|fruta|semente|fuolha|raiz|casca|flor|yerba|corda|piel|carne|sangue|osso|gorda|oubo|corno|rabo|pena|cabelo|cabeça|orelha|uolho|nariz|boca|diente|léngua|unha|pié|perna|gionolho|mano|ala|vientre|tripas|pescuezo|costas|peito|coraçon|fígadu|beber|comer|morder|chupar|cuspir|vomitar|soprar|respirar|rir|ber|oubir|saber|pensar|cheirar|temer|dormir|bibir|morrer|matar|luitar|caçar|bater|cortar|fender|apunhalar|rascar|cabar|nadar|boar|andar|bir|jazer|sentar|star|girar|cair|dar|tener|apertar|fregar|labar|enxugar|puxar|empurrar|lançar|atar|coser|contar|dezir|cantar|jogar|flutuar|fluir|gelar|inchar|sol|lhuna|streilha|auga|chuba|río|lago|mar|sal|piedra|areia|pó|tierra|nubre|neblina|cielo|bento|nieve|gelo|fumo|fuego|cinza|queimar|camino|montanha|bermelho|berde|amarelo|branco|negro|nuite|die|anho|quente|frio|cheno|noubo|bielho|bueno|malo|podre|sujo|reto|redondo|afiado|romo|liso|molhado|seco|correto|cerca|lhonge|dreita|squierda|a|an|cun|i|se|porque|nome|l|ser|gato|gata|cadela|sorrir")
+_MWL = _hits("mwl", {
+    "i": "you", "you_sg": "tu", "he": "el", "we": "nós", "you_pl": "bós", "they": "eilhes",
+    "this": "esto", "that": "esso", "here": "eiqui", "there": "alhá", "who": "quien", "what": "que",
+    "where": "adonde", "when": "quando", "how": "cumo", "not": "nun", "all": "todo",
+    "many": "muitos", "some": "alguns", "few": "poucos", "other": "outro", "one": "un",
+    "two": "dous", "three": "trés", "four": "quatro", "five": "cinco", "big": "grande",
+    "long": "lhongo", "wide": "lhargo", "thick": "grosso", "heavy": "pesado", "small": "pequeinho",
+    "short": "cúrtio", "narrow": "streito", "thin": "fino", "woman": "mulhier", "man": "home",
+    "person": "pessona", "child": "nino", "wife": "mulhier", "husband": "marido", "mother": "mai",
+    "father": "pai", "animal": "animal", "fish": "peixe", "bird": "páixaro", "dog": "perro",
+    "louse": "piolho", "snake": "queluobra", "tree": "arble", "forest": "floresta", "stick": "palo",
+    "fruit": "fruita", "seed": "semiente", "leaf": "fuolha", "root": "raiç", "bark": "casca",
+    "flower": "frol", "grass": "yerba", "rope": "cuorda", "skin": "piel", "meat": "chicha",
+    "blood": "sangre", "bone": "uosso", "fat": "gordura", "egg": "uobo", "horn": "cuorno",
+    "tail": "rabo", "feather": "pruma", "hair": "pelo", "head": "cabeça", "ear": "oureilha",
+    "eye": "uolho", "nose": "nariç", "mouth": "boca", "tooth": "diente", "tongue": "léngua",
+    "fingernail": "unha", "foot": "pie", "leg": "pierna", "knee": "zinolho", "hand": "mano",
+    "wing": "ala", "belly": "barriga", "guts": "tripas", "neck": "cachaço", "back": "cuostas",
+    "breast": "peito", "heart": "coraçon", "liver": "fígado", "drink": "buber", "eat": "comer",
+    "spit": "cuçpir", "vomit": "bomitar", "blow": "soprar",
+    "breathe": "respirar", "laugh": "rir", "see": "ber", "hear": "oubir", "know": "saber",
+    "think": "pensar", "fear": "temer", "sleep": "drumir", "live": "bibir",
+    "die": "morrer", "kill": "matar", "fight": "lhuitar", "hunt": "caçar", "hit": "bater",
+    "cut": "cortar", "dig": "scabar", "swim": "nadar", "fly": "bolar", "walk": "andar",
+    "come": "benir", "sit": "sentar", "stand": "star", "turn": "girar", "fall": "caer",
+    "give": "dar", "hold": "tener", "squeeze": "apertar", "rub": "sfregar", "wash": "lhabar",
+    "wipe": "lhimpar", "pull": "puxar", "push": "ampurrar", "throw": "lhançar",
+    "sew": "coser", "count": "cuntar", "say": "dezir", "sing": "cantar", "play": "jogar",
+    "float": "flutuar", "flow": "fluir", "freeze": "cungelar", "swell": "anchar", "sun": "sol",
+    "moon": "lhuna", "star": "streilha", "water": "auga", "rain": "chuba", "river": "riu",
+    "lake": "lhago", "sea": "mar", "salt": "sal", "stone": "piedra", "sand": "arena",
+    "dust": "puolo", "earth": "tierra", "cloud": "nubre", "fog": "nubrina", "sky": "cielo",
+    "wind": "bento", "snow": "niebe", "ice": "carambelo", "smoke": "fumo", "fire": "fuogo",
+    "ash": "cinza", "burn": "queimar", "road": "camino", "mountain": "muntanha", "red": "burmeilho",
+    "green": "berde", "yellow": "amarielho", "white": "branco", "black": "negro", "night": "nuite",
+    "day": "die", "year": "anho", "warm": "caliente", "cold": "friu", "full": "cheno",
+    "new": "nuobo", "old": "bielho", "good": "buono", "bad": "malo", "rotten": "podre",
+    "dirty": "puorco", "straight": "dreito", "round": "redondo",
+    "smooth": "lhiso", "dry": "seco", "correct": "correto", "near": "cerca",
+    "far": "loinge", "right": "dreita", "left": "squierda", "at": "a", "in": "an", "with": "cun",
+    "and": "i", "if": "se", "because": "porque", "name": "nome", "def_art": "l", "copula": "ser",
+    "cat": "gato", "cat_f": "gata", "dog_f": "perra",
+})
 
 # Italo-Romance
 _SCN = _pack("scn", "iu|tu|iddu|nuàutri|vuàutri|iddi|chistu|chiddu|ccà|ddà|cu|chi|unni|quannu|comu|nun|tuttu|assai|arcuni|picca|àutru|unu|dui|tri|quattru|cincu|granni|longu|largu|grossu|pisanti|nicu|curtu|strittu|sutili|fimmina|omu|pirsuna|picciriddu|mugghieri|maritu|matri|patri|armali|pisci|aceddu|cani|pidocchiu|serpì|vermi|àrbulu|voscu|mazzu|fruttu|simenza|fogghia|ràdica|scorcia|ciuri|erva|corda|peddi|carni|sangu|ossu|gràssu|ovu|cornu|cuda|pinna|capiddu|testa|ricchia|occhiu|nasu|vucca|denti|lingua|unghia|pedi|gamma|ginocchiu|manu|ala|panza|budella|collu|schina|pettu|cori|fìcatu|bìviri|manciari|mòrdiri|sucari|spùtari|vòmmiri|sciusciari|rispirari|rìdiri|vìdiri|sèntiri|sapiri|pinsari|ananzari|tèmiri|dòrmiri|vìviri|mòriri|ammazzari|cummàttiri|cacciari|bàttiri|tagghiari|spàccari|pugnialari|grattari|cavari|natari|vulari|caminari|vèniri|giaciri|sèdiri|stari|girari|càdiri|dari|tèniri|strìnciri|frìcari|lavari|asciucari|tirari|spìnciri|jittari|ligari|cùsiri|cuntari|dìciri|cantari|jucari|galleggiri|scùrriri|gilari|nzuffari|suli|luna|stidda|acqua|chiuvuta|ciumi|lagu|mari|sali|petra|rena|pruvulazzu|terra|nùvula|nebbia|celu|ventu|nivi|ghiacciu|fumu|focu|cinniri|bruciari|strata|muntagna|russu|virdi|giarnu|jancu|niru|notti|jornu|annu|càudu|friddu|chinu|novu|vecchiu|bonu|malu|marciu|sùricu|drittu|tunnu|tagghienti|ottusu|lìsciu|bagnatu|siccu|giustu|vicinu|luntanu|dritta|manca|a|nni|cu|e|si|picchì|nomu|lu|èssiri|jattu|jatta|cagna|surrìdiri")
@@ -283,7 +325,47 @@ _IST = _hits("ist", {
 # Gallo-Romance oïl / occitan
 _WA = _pack("wa", "dji|vos|i|nozôtes|vozôtes|i|cisse|cisse-la|chal|la|kî|cwè|wice|wince|comint|nén|tot|bråmint|kékès|pô|ôte|on|deu|troes|cwate|cénk|grand|long|lådj|spès|pejhe|pitit|court|estroet|fin|femè|ome|djin|efant|femè|marî|mere|pere|biesse|pexhon|oujhea|tchet|peu|sierpe|vèr|åbe|bwès|båton|frut|grinne|fowe|raecene|scoice|fleur|yèbe|coide|pea|tchå|sonk|oxhea|grèxhe|ou|coine|coye|pène|tcheveu|tiesse|oraye|ouy|nez|boke|dint|linwe|ongue|pî|djambe|genoy|mwin|aile|vinte|boyeas|col|dos|pétrin|coir|foye|boere|magnî|mordre|sûcî|cratchî|vomî|sofler|souffler|rire|vey|oyî|saveur|penser|fleurer|crinde|dormi|viker|mourî|touwer|bater|tchessî|coyî|côper|finde|pougnarder|grater|creuser|nôzer|voler|tchessa|vini|djumî|s'ashir|ståner|tourner|tcheur|dner|tni|serrer|froter|laver|sitchî|tîner|poussî|taper|loymer|côde|conter|dire|chanter|djouwer|flotter|couler|djelé|gonfler|solea|lune|steule|aiwe|plouve|aiwe|lak|mer|sé|pîre|såvlon|poussire|tere|nûlêye|broulård|cir|vent|nive|glaece|foumire|feu|cinde|brouî|voye|montinne|rodje|vert|djaene|blanc|noer|nute|djoû|anêye|tchaud|froed|plein|novea|vî|bon|måva|poerri|soû|droit|rond|agu|moussî|lisse|mouyî|setch|djust|près|lon|droete|hintche|a|e|avou|et|si|paski|no|li|esse|tchet|tchete|tchete|sourire")
 
-_PCD = _pack("pcd", "mi|ti|him|nos|vos|eus|chu|cha|ichi|lo|qui|quoé|dousque|quand|commint|mie|tout|boin|queuques|peu|eute|un|deus|troés|quate|chonc|grand|long|large|épé|lourd|p'tit|court|étroét|mince|fanme|honme|ésonnes|éfant|fanme|mari|mére|père|bète|pésson|osiau|kien|pou|sérpent|vér|abe|bos|bâton|fruit|grainne|fuelle|racine|écorche|fleur|érbe|corde|pieu|char|sang|os|graisse|oeu|corne|keuwe|plume|chéveu|tiète|orelle|oeul|né|bouque|dint|langue|ongle|pié|jambe|génou|main|aile|vinte|boyau|cou|dos|poétrine|keur|foé|boére|minger|mordre|sucer|cracher|vomir|souffler|respirer|rire|vir|oïr|savoér|penser|flairer|crindre|dormir|vivre|mourir|tuer|bate|chèsser|battre|couper|fendre|poignarder|grater|creuser|nager|voler|marcher|venir|gisir|s'assir|s'tenir|tourner|tomber|donner|tenir|sérer|froter|laver|sécher|tirer|pousser|jeter|loyer|coudre|conter|dire|canter|jouer|flotter|couler|gler|gonfler|solé|lune|étoile|iau|pluie|rivière|lac|mer|sé|pierre|sable|poussiére|tére|nuage|brouillard|ciel|vent|nèche|glache|fumée|feu|chendres|brûler|route|montagne|rouche|vert|jone|blanc|noér|nuit|jou|année|chaud|froéd|plén|nouvieu|vieux|bon|méchant|poérri|sale|droét|rond|agu|émoussé|lisse|mouillé|sec|just|près|lon|droéte|gauche|à|in|avec|et|si|parché|nom|ch'|ète|cat|cate|chiène|sourire")
+_PCD = _hits("pcd", {
+    "i": "mi", "you_sg": "ti", "he": "li", "we": "nous", "you_pl": "vous", "they": "eux",
+    "this": "chtichi", "that": "cho", "here": "ichi", "there": "lò", "who": "tchéche",
+    "what": "quoé", "where": "doù", "when": "quanq", "how": "cmint", "not": "point", "all": "tout",
+    "many": "granmint", "some": "séquants", "few": "peu", "other": "eute", "one": "un",
+    "two": "deux", "three": "troés", "four": "quate", "five": "chonq", "big": "grand",
+    "long": "long", "wide": "lèrgue", "thick": "épais", "heavy": "lourd", "small": "tchot",
+    "short": "courteu", "narrow": "étroét", "thin": "maigue", "woman": "fenme", "man": "honme",
+    "person": "gin", "child": "éfant", "wife": "fenme", "husband": "mari", "mother": "mére",
+    "father": "pére", "animal": "bête", "fish": "pichon", "bird": "oésieu", "dog": "tchien",
+    "snake": "serpint", "tree": "abe", "forest": "bous", "stick": "bâton", "fruit": "fruit",
+    "seed": "grain.ne", "leaf": "feule", "root": "rachin.ne", "flower": "fleur", "grass": "herbe",
+    "rope": "corde", "skin": "pieu", "meat": "vian.ne", "blood": "sang", "bone": "oche", "egg": "u",
+    "horn": "corne", "tail": "tcheue", "feather": "pleume", "hair": "cavieu", "head": "tête",
+    "ear": "érelle", "eye": "ziu", "nose": "nez", "mouth": "bouque", "tooth": "dint",
+    "tongue": "langue", "fingernail": "ongue", "foot": "pied", "leg": "gambe", "hand": "main",
+    "wing": "aile", "belly": "panche", "guts": "boéyeu", "neck": "cou", "back": "dos",
+    "breast": "poétrin.ne", "heart": "tchœur", "drink": "boère", "eat": "minger", "bite": "morde",
+    "suck": "chucher", "spit": "ratcher", "vomit": "dégobiller",
+    "laugh": "rire", "see": "vir", "hear": "intinde", "know": "savoér", "think": "pinser",
+    "smell": "sintir", "fear": "crainde", "sleep": "dormir", "live": "vive", "die": "moérir",
+    "kill": "tuer", "fight": "batte", "hunt": "cacher", "hit": "butcher", "cut": "coper",
+    "split": "finde", "dig": "fouir", "fly": "voler", "walk": "mèrcher",
+    "come": "vnir", "lie": "coutcher", "sit": "assir", "turn": "torner", "fall": "tchair",
+    "give": "don.ner", "hold": "tnir", "rub": "frotter", "wipe": "échuer",
+    "pull": "tirer", "push": "pousser", "throw": "jter", "tie": "loéyer", "sew": "tcheude",
+    "count": "compter", "say": "dire", "sing": "canter", "play": "juer",
+    "sun": "solé", "moon": "leune", "star": "étoéle", "water": "ieu", "rain": "pleuve",
+    "river": "rivière", "lake": "lac", "sea": "mer", "salt": "sé", "stone": "pierre",
+    "sand": "sabe", "dust": "porette", "earth": "terre", "cloud": "neuèe", "fog": "brouillèrd",
+    "sky": "ciel", "wind": "vint", "snow": "neiges", "ice": "glache", "smoke": "feumée",
+    "fire": "fu", "ash": "chindes", "burn": "brûler", "road": "cmin", "mountain": "montaingne",
+    "red": "rouche", "green": "vert", "yellow": "gan.ne", "white": "blanc", "black": "noér",
+    "night": "nuit", "day": "jour", "year": "énnée", "warm": "cœud", "cold": "froéd",
+    "full": "plein", "new": "nouvieu", "old": "viu", "good": "boin", "bad": "mawais",
+    "rotten": "porri", "dirty": "crapé", "straight": "droét", "round": "rond", "sharp": "aidju",
+    "wet": "frais", "dry": "sec", "correct": "jusse", "near": "prés", "far": "lon",
+    "right": "droéte", "left": "gueuche", "at": "à", "in": "din", "with": "avuc", "and": "pi",
+    "if": "siq", "because": "pasqué", "name": "nom", "def_art": "éch", "copula": "ête",
+    "cat": "cot", "dog_f": "tchien.ne", "smile": "risoter",
+})
 
 _NRF = _pack("nrf", "jé|tu|il|nouos|vouos|ils|chu|ch'la|ichîn|ilo|qui|qué|ioù|quand|coume|né|touot|byin|tchiq's|pou|aute|eun|deu|treis|quate|chîn|graund|long|lârg|épais|lourd|p'tit|court|êtrait|minche|femme|houme|persoune|mousse|femme|marri|méthe|péthe|bête|peîsson|oîsé|tchian|pou|sépent|vê|arbre|bouais|bâton|fruit|graine|fueille|racine|êcorche|flieur|hèrbe|corde|pé|char|sang|os|graisse|oeu|corne|coue|pliume|cheveu|téte|othelle|yi|nez|bouche|dent|langue|ongle|pid|jambe|génou|main|aile|ventre|boyaux|cou|dos|poitrine|tchoeu|foie|baîre|mangi|mordre|sucer|crachi|vomi|souffli|respirer|rithe|vaie|ouï|savei|penser|senti|criendre|dormi|vivre|mouothi|tuer|battre|quachi|battre|couper|fendre|poignardi|gratter|creûser|nagier|voli|marchi|venin|gisi|s'assiéthe|se t'nin|touônner|tomber|dounner|t'nin|sèrri|frotter|laver|séchi|tirer|pousser|jeter|lier|coudre|couompter|dithe|chaunter|jouaer|flotter|couler|g'ler|gonfler|solé|lune|étoîle|iae|pllie|riviéthe|lac|mé|sé|pierre|sablion|poussiéthe|téthe|nuage|brouillard|ciel|vent|né|gllâche|fumée|feu|chendres|brûler|route|montangne|rouoge|vèrt|jaune|blaunc|neir|niet|jou|annaée|caud|fraid|plyin|nouvé|vyi|bouon|mauvais|pouôrri|sale|dré|rond|aigui|émoussé|lisse|mouoilli|sec|juste|près|llioin|dréte|gauche|à|en|dauve|et|si|pasque|nom|lé|être|cat|cate|chienne|souôri")
 
@@ -333,7 +415,39 @@ _FRP = _hits("frp", {
     "cat": "chat", "cat_f": "chata", "dog_f": "chinna", "smile": "sourîre",
 })
 
-_GALLO = _pack("gallo", "je|te|i|nozaut|vozaut|eus|ceu|cela|ichi|la|qi|qei|iou|qand|come|pas|tout|ben|qeqes|pou|aote|un|deou|treis|qate|cinq|grand|long|lârge|épé|louord|petit|court|étroet|mince|fenne|houme|persoune|éfant|fenne|mari|mére|pére|béte|peisson|ouésé|chien|pou|sérpent|vér|abe|bouéz|bâton|frut|graine|fuelle|racine|écorce|fleur|herbe|corde|pé|char|sang|os|graisse|oeu|corne|qeoue|plume|cheveu|téte|orelle|ueil|né|bouche|dent|langue|ongle|pié|jambe|génou|main|aile|ventre|boyaux|cou|dos|poitrine|queor|foie|beire|mangi|mordre|sucer|crachi|vomir|soufler|respirer|rire|veir|ouïr|saveir|penser|sentir|crindre|dormir|vivre|mouri|tuer|batre|chasser|batre|couper|fendre|poignarder|grater|creuser|nager|voler|marcher|venir|gisir|s'asseir|se tenir|tourner|tomber|donner|tenir|serrer|froter|laver|sécher|tirer|pousser|jeter|lier|coudre|conter|dire|chanter|jouer|flotter|couler|geler|gonfler|solei|lune|étoile|ewe|plleue|rivière|lac|mer|sé|piérre|sable|poussiére|terre|nuage|brouillard|ciel|vent|né|glace|fumée|feu|cendre|brûler|route|montagne|rouoge|vert|jaune|blanc|neir|net|jou|année|chaud|fraid|plen|noviau|vié|bon|mêchant|pourri|sâle|dret|rond|agu|émoussé|lisse|mouillé|sec|juste|près|llioin|drete|gauche|a|en|od|et|si|parce|nom|le|être|chat|chate|chienne|sourire")
+_GALLO = _hits("gallo", {
+    "i": "je", "you_sg": "tu", "he": "i", "we": "nouz", "you_pl": "vou", "they": "i",
+    "this": "ce-ci", "that": "ça", "here": "ici", "there": "la", "who": "qi", "what": "qei",
+    "where": "eyou", "how": "coument", "not": "pouint", "all": "tout", "many": "ben",
+    "some": "qheqe", "other": "aotr", "one": "un", "two": "deûz", "three": "traez", "four": "catr",
+    "five": "cinqe", "big": "grand", "long": "long", "thick": "epé", "heavy": "pezant",
+    "small": "petit", "thin": "mézelin", "woman": "fame", "man": "oume", "child": "enfant",
+    "wife": "fame", "husband": "mari", "mother": "mére", "father": "pére", "animal": "anima",
+    "fish": "paisson", "bird": "oézé", "dog": "chien", "louse": "poui", "snake": "couleuvr",
+    "worm": "vè", "tree": "arbr", "stick": "bâton", "fruit": "frut", "seed": "grene",
+    "leaf": "faille", "meat": "cherne", "horn": "cône", "tail": "qou", "hair": "pai",
+    "head": "téte", "ear": "oraille", "eye": "ail", "nose": "nez", "mouth": "goule",
+    "tooth": "dent", "fingernail": "ogne", "foot": "pied", "leg": "qhète", "knee": "jenouer",
+    "hand": "main", "wing": "ale", "belly": "beuille", "back": "dao", "breast": "paitra",
+    "heart": "qheur", "drink": "baire", "eat": "roucher", "suck": "super", "vomit": "vaomi",
+    "blow": "buffer", "breathe": "alainer", "laugh": "rirr", "see": "vair", "hear": "ouir",
+    "know": "savouèr", "think": "penser", "smell": "faomer", "sleep": "dormi", "live": "vesqi",
+    "kill": "tuer", "fight": "batr", "hit": "coti", "cut": "couper", "scratch": "grafigner",
+    "dig": "foui", "come": "veni", "sit": "assir", "fall": "chaire",
+    "give": "bayer", "hold": "teni", "wash": "lèver", "wipe": "torcher", "pull": "tirer",
+    "push": "pouesser", "throw": "jeter", "tie": "atacher", "say": "dirr", "sing": "chanter",
+    "play": "jouer", "flow": "erusser", "freeze": "guerouer", "sun": "soulai", "moon": "lene",
+    "water": "iao", "rain": "plée", "sea": "mée", "salt": "sé", "earth": "tére", "cloud": "nubl",
+    "fog": "berouée", "sky": "cié", "wind": "vent", "snow": "naije", "ice": "groe",
+    "smoke": "fumée", "fire": "feu", "ash": "sante", "burn": "arder", "road": "route",
+    "red": "rouje", "yellow": "jaone", "white": "bllanc", "black": "nair", "night": "net",
+    "day": "jou", "year": "année", "warm": "chaod", "cold": "fret", "full": "pllein", "old": "vieu",
+    "good": "bon", "bad": "fâilli", "rotten": "gâpi", "dirty": "crassouz", "straight": "dret",
+    "round": "rond", "sharp": "aghu", "smooth": "adoli", "wet": "cru", "dry": "sai",
+    "correct": "recta", "near": "perche", "at": "a", "in": "dans", "with": "o", "and": "e",
+    "if": "si", "name": "non", "def_art": "le", "copula": "étr", "cat": "chat", "dog_f": "chiene",
+    "smile": "chaorire",
+})
 
 _GSC = _pack("gsc", "jo|tu|eth|nosauts|vosauts|eths|aqueste|aqueth|ací|aquí|qui|qué|on|quan|coma|non|tot|plan|qualques|pau|aute|un|dus|tres|quatre|cinc|gran|long|larg|espés|pesuc|petit|cort|estret|prim|hemna|òme|persona|mainatge|molhèr|marit|mair|pair|animau|peish|aucèth|can|piolh|sèrp|vèrm|arbre|bòsc|baston|frut|gran|huelha|arrel|escòrça|flor|èrba|còrda|pèth|carn|sang|òs|grèish|uòu|còrn|coa|pluma|pèth|cap|auretha|uelh|nas|boca|dent|lenga|ongla|pè|cama|genolh|man|ala|ventre|tripas|còth|esquia|pitre|còr|gessèr|béver|minjar|mossegar|chucar|escopir|vomir|bufar|respirar|ríser|véder|ausir|saber|pensar|sentir|témer|dormir|víver|morir|tuar|luchar|caçar|tustar|talhar|héner|apunhalar|gratar|cavar|nadar|volar|caminar|víner|jaser|séder|estar|virar|cáder|dar|téner|prémer|fregar|lavar|eishugar|tirar|empénher|lançar|ligar|cósèr|comptar|díser|cantar|jugar|flotar|fluir|gelar|enflar|sorelh|lua|estela|aiga|pluja|arriu|lac|mar|sau|pèira|sabla|polvera|tèrra|nívol|bruma|cèu|vent|nèu|glaç|hum|huec|cendre|cremar|camin|montanha|roge|verd|jaune|blanc|negre|nueit|dia|an|caud|hred|plen|nau|vièlh|bon|marrit|porrit|salop|dret|redond|agut|emós|lis|molhat|sec|corrècte|près|lhen|dreta|esquèrra|a|en|damb|e|se|perqué|nom|eth|èster|gat|gata|canha|sorrisèr")
 
