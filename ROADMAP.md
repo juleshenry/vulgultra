@@ -126,21 +126,26 @@ Transcription, as fixed:
       held invented forms: 173 and 123 of their 213 cells were respelled,
       replaced or emptied. Ligurian, Emilian and Piedmontese had 124, 150
       and 62 cells respelled or replaced; Ladin 9.
-- [x] Second source added: Saenko 2015 (110 concepts for 20 lects, with
-      source spelling, transcription and stress). It filled 15 Istro-Romanian
-      cells and the audit now reports on all 36 columns
+- [x] More sources: Saenko 2015 and IE-CoR (scholarly Swadesh lists with
+      spelling, transcription and stress), the vendored Apertium bilingual
+      dictionaries, Stich 2001 for Franco-Provençal, the minority-lect
+      entries of the local Wiktionary dumps, and two PDF dictionaries. The
+      audit reports on all 36 columns
       ([`docs/eval/grid_sources.md`](docs/eval/grid_sources.md)).
-- [ ] Decide whether Saenko's transcriptions should enter the pipeline
-      directly. They would bypass the borrowed G2P backends for 20 lects and
+      Franco-Provençal is re-sourced from Stich; Gascon went from no source
+      to 136 confirmed cells.
+- [ ] **Picard, Mirandese and Gallo are padded from French and Portuguese**
+      (100, 90 and 89 of their unconfirmed cells are the sister's form). No
+      Swadesh list exists for them; the dictionaries give several candidates
+      per concept, listed per cell in the audit report. These three need
+      picking by hand, and for Gallo a choice of spelling system.
+- [ ] Norman and Ladino show the same signature more weakly (42 and 48
+      cells). Ladin, Lombard, Romansh, Walloon and Venetan have many
+      unconfirmed cells that are not the sister's form: spelling or variety,
+      to be settled per lect.
+- [ ] Decide whether Saenko's and IE-CoR's transcriptions should enter the
+      pipeline directly. They would bypass the borrowed G2P backends and
       carry the stress the new stress rule needs.
-- [ ] Columns still mostly unconfirmed: Gascon (no source at all), Picard,
-      Franco-Provençal, Gallo, Mirandese, Lombard, Ladin (Val Badia; the
-      lists are other valleys), Sardinian, Norman. Each needs a dictionary
-      of its own; the two PDFs found for Picard and Gallo are too thin.
-- [ ] Columns with 20 to 70 cells that no source confirms: Romanian,
-      Galician, Aragonese, Asturian, Occitan, Friulian, Sicilian, Venetan,
-      Aromanian, Corsican, Romansh, Walloon, Ladino, Extremaduran. Not yet
-      examined cell by cell.
 
 After the gate:
 
@@ -219,6 +224,11 @@ Needs from the verb work: final person labels, reflexive `se`, pro-drop.
 **Gate G3a, sourcing (before any download).** The five editions and their
 licences, the concept-ID spine, the first slice, the alignment method, and
 which derived words (adverbs, participles, numerals) are rows of their own.
+
+A possible spine and second lexicon for the anchors: the Intercontinental
+Dictionary Series and NorthEuraLex (both on lexibank, CC-BY) give about 1,300
+and 1,000 concepts for French, Spanish, Portuguese, Italian, Romanian and
+Catalan, keyed to Concepticon ids.
 
 Known before the gate:
 

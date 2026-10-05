@@ -13,9 +13,15 @@ source tags and the scripts below make the transformations reproducible.
 | `data/sources/jsonl/kaikki.org-dictionary-Romansh.jsonl` | Romansh Kaikki snapshot | `scripts/build_kaikki_corpus.py` | Kaikki/Wiktextract |
 | `data/sources/saenkoromance/*.csv` | Saenko 2015, annotated Swadesh lists, 43 Romance varieties | `scripts/audit_grid_sources.py` | lexibank/saenkoromance, CC-BY-4.0 |
 | `data/sources/wikt_swadesh/*.json` | English Wiktionary Swadesh lists, with revision ids | `scripts/audit_grid_sources.py` | en.wiktionary, CC BY-SA |
-| `data/sources/frwikt_sections.json` | Picard, Franco-Provençal and Gallo entries of the French Wiktionary dump | `scripts/audit_grid_sources.py` | fr.wiktionary, CC BY-SA |
+| `data/sources/iecor/*.csv` | IE-CoR, 170 meanings, 160 Indo-European varieties | `scripts/audit_grid_sources.py` | lexibank/iecor, CC-BY-4.0 |
+| `data/sources/wikt_sections.json` | Minority-lect entries of the local French, Spanish, Portuguese, Italian and Catalan Wiktionary dumps | `scripts/audit_grid_sources.py extract` | Wiktionary, CC BY-SA |
+| `data/sources/pdf/stich_2001_these_francoprovencal.pdf` (+ `.txt`) | Franco-Provençal: the thesis defining ORB, with a Swadesh list and dictionary | `scripts/audit_grid_sources.py` | Stich 2001, Université Paris V; arpitania.eu |
+| `data/sources/pdf/ricaud_mon_canepin_de_galo.pdf` (+ `.txt`) | Gallo: thematic Gallo–French lexicon | `scripts/audit_grid_sources.py` | Romain Ricaud; archive.org `galocanepin` |
+| `data/sources/pdf/tiot_diqchionnaire_chti.pdf` (+ `.raw.txt`) | Picard of the Nord: small dictionary | `scripts/audit_grid_sources.py` | paroledechti.com, via the Wayback Machine |
 | `data/sources/pdf/dawson_smirnova_2020_dffp_extract.pdf` | Picard: 33-page extract of the *Dictionnaire fondamental français-picard* | none (read by hand) | Agence régionale de la langue picarde, 2020; all rights reserved |
+| `data/sources/pdf/arlp_2018_vogabulaire_ecole_picard.pdf` | Picard: school vocabulary | none | Agence régionale de la langue picarde, 2018; CC BY-NC-ND |
 | `data/sources/pdf/motier_galo_francaez_2019.pdf` | Gallo: local glossary with IPA | none (read by hand) | Atelier de gallo, Résidence La Perrière, Héric |
+| `data/sources/pdf/ferreira_2004_dicionario_mirandes_portugues.pdf` | Mirandese: letter M only | none | Ferreira and Ferreira, edition 0.1, 2004 |
 | `docs/assets/reference-screenshot.png` | Project reference image | documentation only | formerly a root-level screenshot |
 
 Generated `data/words/*_words.json`, candidates, and evaluations are derived

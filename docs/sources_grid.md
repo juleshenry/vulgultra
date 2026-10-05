@@ -718,3 +718,46 @@ Dawson and Smirnova, *Dictionnaire fondamental français-picard* (Agence région
 picarde, 2020), and *Motier Galo-Françaez* (Atelier de gallo, Héric, 2019), a local glossary with
 IPA. 74 Picard and 83 Gallo grid forms occur somewhere in their text. That shows the words exist, not
 that they carry the grid's meaning, so neither column is counted as confirmed by them.
+
+## Third pass the same day: IE-CoR, Apertium, Stich 2001, the other Wiktionaries
+
+Sources added to `scripts/audit_grid_sources.py`:
+
+- **IE-CoR** (lexibank/iecor, CC-BY-4.0): 170 meanings with spelling and IPA for Franco-Provençal,
+  Milanese, Ladin, Walloon, Friulian, two Sardinian varieties, Dalmatian, Megleno-Romanian, French,
+  Portuguese, Italian, Spanish, Catalan and Romanian.
+- **Apertium bilingual dictionaries** already under `vendor/`: Occitan–Spanish, where the Occitan
+  dictionary marks which entries are Gascon; Spanish–Aragonese; Spanish–Asturian.
+- **Stich 2001**, *Francoprovençal: proposition d'une orthographe supra-dialectale standardisée*
+  (thesis, Paris V; PDF from arpitania.eu). It defines the ORB spelling the column uses, and holds a
+  Swadesh list in ORB with English glosses (204 cells) and an ORB–French dictionary (15,689 forms).
+- **Entries for these lects in other Wiktionaries**, from the local dumps: French (Gallo 11,422,
+  Franco-Provençal 2,771, Picard 1,927, Mirandese 964, Norman 577), Portuguese (Mirandese 4,702),
+  Spanish (Ladino 784, Extremaduran 467), Italian (Lombard 1,182). An earlier extraction missed
+  every page whose first section was the lect.
+- **Two dictionaries fetched as PDFs**: Ricaud, *Mon canepin de galo* (archive.org), a thematic
+  Gallo–French lexicon; *Tiot diqchionnaire chti* (paroledechti.com, via the Wayback Machine).
+
+What changed in the grid:
+
+- **Franco-Provençal** follows Stich's list: 129 cells kept, 14 respelled, 59 replaced, 11 left
+  unconfirmed. The old column had French calques (*lourd, cœur, vomir, tombar, brûlar, poussiére,
+  gôche*) where ORB has *pesent, cor, dègolar, chêre, broular, puça, gôcho*.
+- **Gascon** had no source at all; 136 of its cells are now confirmed.
+
+What the audit now shows and did not change:
+
+- **Picard, Mirandese and Gallo are padded from the big lect next door.** Of Picard's 195
+  unconfirmed cells, 100 are letter for letter French; of Mirandese's 138, 90 are Portuguese; of
+  Gallo's 174, 89 are French. The dictionaries have other words for those concepts (Mirandese *sangre,
+  uosso, frol, pierna, lhabar* where the grid has *sangue, osso, flor, perna, labar*; Gallo *graund,
+  saun, plum, coûe* where it has *grand, sang, plume, qeoue*). There is no Swadesh list for these
+  three, only dictionaries, which offer several candidates per concept in more than one spelling. The
+  candidates are listed per cell in [`eval/grid_sources.md`](eval/grid_sources.md) for picking by hand.
+- Norman (42 of 116 unconfirmed cells are French) and Ladino (48 of 102 are Spanish) show the same
+  signature more weakly; Ladino is close to Spanish anyway.
+- Ladin, Lombard, Romansh, Walloon, Venetan and Friulian have many unconfirmed cells but almost none
+  identical to the sister lect: there the gap is spelling or variety, not padding.
+
+Also fetched and not used: *Dicionário de Mirandês-Português* (Ferreira and Ferreira, edition 0.1,
+2004), of which the PDF holds only the letter M.
