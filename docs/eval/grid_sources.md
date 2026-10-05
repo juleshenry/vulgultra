@@ -51,7 +51,7 @@ Mode: *strict* empties every unconfirmed cell; *list* touches only cells a Swade
 
 `=` marks a form identical to the sister lect's. In brackets: what the lists and dictionaries have for that concept, to pick from.
 
-you_sg *tu*; he *il*; they *ils*; not *non* (ne pas); person *personne* (homme); guts *entrailles*; breast *sein* (poitrine); fight *combattre* (se battre); lie *gésir*; sit *asseoir* (être assis); stand *tenir* (être debout); squeeze *presser* (serrer); throw *jeter* (lancer); sharp *aigu* (tranchant, coupant); correct *correct* (juste); because *parce* (parce que); def_art *le*; copula *être*; cat *chat*; cat_f *chatte*; dog_f *chienne*; smile *sourire*
+you_sg *tu*; he *il*; they *ils*; not *non* (ne pas); person *personne* (homme); guts *entrailles*; breast *sein* (poitrine); fight *combattre* (se battre); lie *gésir*; sit *asseoir* (être assis); stand *tenir* (être debout); squeeze *presser* (serrer); throw *jeter* (lancer); sharp *aigu* (tranchant, coupant); correct *correct* (juste); because *car* (parce que); def_art *le*; copula *être*; cat *chat*; cat_f *chatte*; dog_f *chienne*; smile *sourire*
 
 ### es: unconfirmed, left as they are
 

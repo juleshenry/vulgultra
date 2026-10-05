@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 from vulgultra.candidate_prep import build_candidates
 from vulgultra.optimizer import Candidate, Genome, anneal, compute_energy, greedy_root_selections
-from vulgultra.pipeline import candidates_to_export
+from vulgultra.pipeline import candidates_to_export, overlay_word_glosses
 
 
 def candidate(concept: str, lang: str, word: str, phones: list[str], syllables: int, evidence: str) -> Candidate:
@@ -71,6 +71,18 @@ class ObjectiveFixtures(unittest.TestCase):
         self.assertEqual(export["schema"], "vulgultra.candidates.v2")
         self.assertEqual(export["concepts"]["one"][0]["evidence"], "es:one")
         self.assertEqual(export["algorithm"]["morpheme_uniformity"], "not scored")
+
+    def test_gloss_overlay_leaves_curated_cells_empty_and_respects_part_of_speech(self) -> None:
+        index = {"tie": [("cravatta", frozenset({"noun"})), ("ligà", frozenset({"verb"}))],
+                 "to tie": [("ligà", frozenset({"verb"}))], "egg": [("ovu", frozenset())]}
+        concepts = {"tie": {"__meta__": {"pos": "verb"}}, "egg": {"__meta__": {"pos": "noun"}},
+                    "bind": {"__meta__": {"pos": "verb"}}}
+        with patch("vulgultra.pipeline._gloss_index", return_value=index):
+            out = overlay_word_glosses(concepts, ("co",), {"tie": "verb", "egg": "noun", "bind": "verb"},
+                                       {"tie": "tie", "egg": "egg", "bind": "tie"}, curated=frozenset({"tie", "egg"}))
+        self.assertNotIn("co", out["tie"])   # the curated grid left the cell empty on purpose
+        self.assertNotIn("co", out["egg"])
+        self.assertEqual([record["form"] for record in out["bind"]["co"]], ["ligà"])  # not the necktie
 
 
 if __name__ == "__main__":

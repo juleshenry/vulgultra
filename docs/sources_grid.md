@@ -846,3 +846,7 @@ Wikipedia.
 
 *Water* and *river* are both *aiwe*, as in the sources. *He* and *they* are both the clitic *i*.
 
+One French cell changed the same day: *because* held *parce*, half of *parce que* and not a word on
+its own. It is now *car*, a coordinating conjunction that "introduit une explication, une raison,
+une cause" (French Wiktionary, local dump). The audit's lists have only the phrase, so the cell
+stays in its unconfirmed list.

@@ -113,6 +113,8 @@ class BoundaryFixtures(unittest.TestCase):
             ("ast", "cabeza", "", "kabeθa"), ("ext", "humu", "", "humu"), ("lad", "mujer", "", "muʒeɾ"),
             ("lad", "kozer", "", "kozeɾ"), ("oc", "quatre", "", "katɾe"), ("nrf", "méthe", "", "með"),
             ("frp", "dent", "", "dɛ̃"), ("frp", "fuè", "", "fwɛ"), ("frp", "chantar", "verb", "ʃɑ̃ta"),
+            ("oc", "còr", "", "kɔɾ"), ("oc", "carn", "", "kaɾ"), ("oc", "cantar", "verb", "kanta"),
+            ("gsc", "còr", "", "kɔ"), ("lij", "xoâ", "verb", "ʒuaː"), ("gallo", "sai", "", "sɛ"),
         ):
             with self.subTest(word=word):
                 self.assertEqual(unicodedata.normalize("NFC", word_to_ipa(word, lang, pos)), ipa)
@@ -122,6 +124,7 @@ class BoundaryFixtures(unittest.TestCase):
             ("fur", "bosc", "bosk"), ("sc", "girare", "d͡ʒiraɾɛ"), ("ast", "gusanu", "ɡusanu"),
             ("frp", "grant", "ɡʀɑ̃"), ("frp", "racena", "ʀasəna"), ("nrf", "mangi", "mɑ̃ʒi"),
             ("nrf", "crendre", "kʀɑ̃dʀ"), ("gallo", "faille", "faj"), ("gallo", "cinqe", "sɛ̃k"),
+            ("nrf", "pierre", "pjɛʀ"),
         ):
             with self.subTest(word=word):
                 self.assertEqual(unicodedata.normalize("NFC", word_to_ipa(word, lang)), ipa)

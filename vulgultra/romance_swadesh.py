@@ -269,7 +269,7 @@ _ROWS: tuple[tuple[str, str, str, str, str, str, str], ...] = (
     ("with", "con", "adp", "avec", "con", "con", "com"),
     ("and", "y", "conj", "et", "y", "e", "e"),
     ("if", "si", "conj", "si", "si", "se", "se"),
-    ("because", "porque", "conj", "parce", "porque", "perché", "porque"),
+    ("because", "porque", "conj", "car", "porque", "perché", "porque"),
     ("name", "nombre", "noun", "nom", "nombre", "nome", "nome"),
     # Closed class + pitch extras (sentence demos)
     ("def_art", "el", "det", "le", "el", "il", "o"),

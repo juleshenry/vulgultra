@@ -84,7 +84,8 @@ _WA_V = "aeiouàâåéèêëîïôöûü"   # Walloon vowel letters; y is a cons
 # s before a consonant in Romansh and Ladin.
 _S_IMPURA = (("s(?=[ptckqf])", "⟨ʃ⟩"), ("s(?=[bdgvlmnr])", "⟨ʒ⟩"))
 _Z_TS = (("z+", "⟨t͡s⟩"),)
-_FRP = ((rf"en(?![{_WA_V}yn])", "in"), ("(?<![qgo])u(?=[eèéê])", "ou"), ("oa", "oua"))
+_FRP = ((rf"en(?![{_WA_V}yn])", "in"), ("(?<![qgo])u(?=[eèéê])", "ou"), ("oa", "oua"), ("ouê", "ouè"),
+        ("ouy", "ou⟨j⟩"))
 # Spain's c, z and ll, which the Spanish map reads as American s and y.
 _CASTILIAN = (("z", "⟨θ⟩"), ("c(?=[eiéí])", "⟨θ⟩"), ("ll", "⟨ʎ⟩"))
 RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
@@ -96,8 +97,16 @@ RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
     # z = z, ny = ɲ, h = x, and g is always hard.
     "lad": (("sh|x", "⟨ʃ⟩"), ("dj", "⟨d͡ʒ⟩"), ("j", "⟨ʒ⟩"), ("z", "⟨z⟩"), ("ny", "⟨ɲ⟩"),
             ("(?<!c)h", "⟨x⟩"), ("g(?=[eiéí])", "⟨ɡ⟩")),
-    # Occitan and Gascon qu is k.
-    "oc": (("qu", "⟨k⟩"),), "gsc": (("qu", "⟨k⟩"),),
+    # Occitan and Gascon qu is k, and a final rn is r. The map drops every
+    # final r: right for an infinitive and for Gascon, but an Occitan word
+    # of one syllable keeps it (Saenko: cor [kɔɾ]).
+    "oc": (("qu", "⟨k⟩"), ("rn$", "⟨ɾ⟩"), ("^([^aeiouàèéíòóú]*[aeiouàèéíòóú]+)r$", "\\1⟨ɾ⟩")),
+    "oc:verb": (("qu", "⟨k⟩"),),
+    "gsc": (("qu", "⟨k⟩"), ("rn$", "⟨ɾ⟩")),
+    # Genoese x is ʒ and eu is ø (Saenko: xoâ [ʒoˈaː], euvu [œːvu]).
+    "lij": (("x", "⟨ʒ⟩"), ("[eêé]u", "⟨ø⟩")),
+    # Gallo in the ABCD spelling: eû is ø; ae, and a final ai, are ɛ.
+    "gallo": (("eû", "eu"), ("ai$|ae", "è")),
     # Picard: the dot of grain.ne is a spelling device, oé is [we], and an
     # infinitive in -tcher ends in [e].
     "pcd": ((r"\.", ""), ("oé", "oué"), ("oè", "ouè"), ("tcher", "tché")),
@@ -118,8 +127,8 @@ RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
     # Ladin: sc before e i and at the end of a word is ʃ, as is s before a
     # consonant; z and tz are t͡s.
     "lld": (("sc(?=[eiéèëìí]|$)", "⟨ʃ⟩"), *_S_IMPURA, ("tz|z+", "⟨t͡s⟩")),
-    # Jèrriais th is [ð]; aun is the nasal of French an.
-    "nrf": (("th", "⟨ð⟩"), ("aun", "an")),
+    # Jèrriais th is [ð]; aun is the nasal of French an; y before i is the glide.
+    "nrf": (("th", "⟨ð⟩"), ("aun", "an"), ("^y(?=[iî])", "⟨j⟩")),
     # Franco-Provençal in ORB: en is [ɛ̃], ue and oa begin with [w]; the r
     # of an infinitive in -ar, -ér, -ir is silent.
     "frp": _FRP, "frp:verb": (*_FRP, ("(?<=[aâéêiî])r$", "")),
@@ -183,7 +192,7 @@ BACKEND_RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
     # consonant after a nasal vowel is silent (grant, sang, blanc).
     "fra-Latn": (("aill|ail$", "⟨aj⟩"), ("eill|eil$", "⟨ɛj⟩"), ("ouill", "⟨uj⟩"), ("(?:euill|ueill|œill|euil$)", "⟨œj⟩"),
                  ("ail(?=e)", "èl"), ("c(?=[eiéèêîy])", "ç"), ("g(?=[eiéèêîy])", "j"), ("q(?!u)", "qu"),
-                 ("oeu|œu", "eu"),
+                 ("oeu|œu", "eu"), ("rr", "r"),
                  (rf"^(.*[{_FR_V}].*[^{_FR_V}⟩])es?$", "\\1⟨⟩"), (rf"^(.*[{_FR_V}].*⟩)es?$", "\\1"),
                  (rf"^(.*[{_FR_V}].*)er$", "\\1é"), (rf"(?<=[aeioâêîôu][nm])[tdcgsp]+$", "")),
     "ita-Latn": (("sci(?=[aouàòù])", "⟨ʃ⟩"), ("sc(?=[eiéèêëìíî])", "⟨ʃ⟩"), ("sc(?=[aouàáâòóôùúûrl])", "⟨sk⟩")),
@@ -199,8 +208,9 @@ BACKEND_RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
 _VOWEL = "[aeiouyɐɑɛɔœøəɨ]"
 _ESPEAK_COMMON = ((r"[ˈˌː\-]", ""), ("tʃ", "t͡ʃ"), ("dʒ", "d͡ʒ"))
 # Iberian b d ɡ are written as the approximants they become between vowels,
-# and n as ŋ before a velar; a falling diphthong ends in ɪ or ʊ.
-_IBERIAN = (("β", "b"), ("ð", "d"), ("ɣ", "ɡ"), ("ŋ(?=[ɡk])", "n"), ("ɪ", "j"), ("ʊ", "w"), ("ʰ", ""))
+# and n as ŋ before a velar and ɱ before f; a falling diphthong ends in ɪ
+# or ʊ.
+_IBERIAN = (("β", "b"), ("ð", "d"), ("ɣ", "ɡ"), ("ŋ(?=[ɡk])", "n"), ("ɱ", "m"), ("ɪ", "j"), ("ʊ", "w"), ("ʰ", ""))
 # The Spanish and Aragonese voices open e and o in places; neither lect
 # has the contrast.
 _FIVE_VOWELS = (("ɛ", "e"), ("ɔ", "o"))

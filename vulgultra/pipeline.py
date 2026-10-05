@@ -34,7 +34,11 @@ from vulgultra.pipeline_constants import (
 from vulgultra.candidate_prep import build_candidates as prepare_candidates
 from vulgultra.grid import form_records as normalize_form_records
 from vulgultra.serialization import format_genome as serialize_genome
-_GLOSS_INDEX: dict[str, dict[str, list[str]]] = {}
+_GLOSS_INDEX: dict[str, dict[str, list[tuple[str, frozenset[str]]]]] = {}
+# A concept's part of speech → the labels a word list may give the same class.
+_GLOSS_POS: dict[str, frozenset[str]] = {
+    "adp": frozenset({"adp", "prep", "postp"}), "det": frozenset({"det", "article", "pron", "adj"}),
+}
 
 
 # ---------------------------------------------------------------------------
@@ -118,7 +122,11 @@ def gold_concepts(
     English ids/glosses are labels only — never source forms. Each occupied
     cell carries one or more forms with evidence and relation metadata. The
     optional Bible grid can add Biblical concepts and attested alternatives;
-    exact English-gloss matches in per-lect dictionaries only fill empty cells.
+    exact English-gloss matches in per-lect dictionaries fill the empty cells
+    of those added concepts only. A cell the curated grid leaves empty stays
+    empty: its columns are audited cell by cell (docs/eval/grid_sources.md),
+    and a bare gloss match filled such cells with the wrong sense (Corsican
+    cravatta, a necktie, for the verb tie).
     """
     from vulgultra.romance_swadesh import SOURCE_LANGS, concepts as swadesh_concepts
 
@@ -151,10 +159,11 @@ def gold_concepts(
         if any(key != "__meta__" for key in forms):
             out[row["id"]] = forms
 
+    curated = frozenset(pos_of)
     grid_path = Path(bible_grid_path) if bible_grid_path else _BIBLE_GRID_PATH
     if grid_path.is_file():
         _merge_bible_grid(out, pos_of, gloss_of, grid_path, wanted)
-    return overlay_word_glosses(out, wanted, pos_of, gloss_of)
+    return overlay_word_glosses(out, wanted, pos_of, gloss_of, curated)
 
 
 def _merge_bible_grid(
@@ -212,8 +221,9 @@ def overlay_word_glosses(
     langs: tuple[str, ...],
     pos_of: dict[str, str] | None = None,
     gloss_of: dict[str, str] | None = None,
+    curated: frozenset[str] = frozenset(),
 ) -> dict[str, dict[str, list[dict[str, str]]]]:
-    """Fill empty concept cells from per-lect words.json exact glosses."""
+    """Fill empty cells from per-lect words.json exact glosses, except in curated concepts."""
     pos_of = pos_of or {}
     gloss_of = gloss_of or {}
     filled = 0
@@ -222,7 +232,7 @@ def overlay_word_glosses(
         if not index:
             continue
         for cid, forms in concepts.items():
-            if forms.get(lang):
+            if forms.get(lang) or cid in curated:
                 continue
             gloss = gloss_of.get(cid, cid)
             lemmas = _best_lemmas(index, cid, pos_of.get(cid, ""), gloss)
@@ -238,11 +248,12 @@ def overlay_word_glosses(
     return concepts
 
 
-def _gloss_index(lang: str) -> dict[str, list[str]]:
+def _gloss_index(lang: str) -> dict[str, list[tuple[str, frozenset[str]]]]:
+    """English gloss → the lect's words glossed so, each with the parts of speech its entry names."""
     if lang in _GLOSS_INDEX:
         return _GLOSS_INDEX[lang]
     path = _WORDS_DIR / f"{lang}_words.json"
-    index: dict[str, list[str]] = defaultdict(list)
+    index: dict[str, list[tuple[str, frozenset[str]]]] = defaultdict(list)
     if not path.is_file():
         _GLOSS_INDEX[lang] = {}
         return _GLOSS_INDEX[lang]
@@ -250,7 +261,7 @@ def _gloss_index(lang: str) -> dict[str, list[str]]:
     for lemma, rec in (data.get("entries") or {}).items():
         if not isinstance(rec, dict):
             continue
-        pos = rec.get("pos") or []
+        pos = frozenset(rec.get("pos") or [])
         # Proper names/characters are valid lexical concepts. They are kept
         # in the audit grid and are realized as invariant names downstream.
         raw = rec.get(lang) or lemma or ""
@@ -261,8 +272,8 @@ def _gloss_index(lang: str) -> dict[str, list[str]]:
             continue
         for g in rec.get("glosses_en") or []:
             for key in _gloss_keys(g):
-                if word not in index[key]:
-                    index[key].append(word)
+                if (word, pos) not in index[key]:
+                    index[key].append((word, pos))
     _GLOSS_INDEX[lang] = dict(index)
     return _GLOSS_INDEX[lang]
 
@@ -273,15 +284,18 @@ def _gloss_keys(gloss: str) -> list[str]:
 
 
 def _best_lemmas(
-    index: dict[str, list[str]], cid: str, pos: str = "", gloss: str = "",
+    index: dict[str, list[tuple[str, frozenset[str]]]], cid: str, pos: str = "", gloss: str = "",
 ) -> list[str]:
+    """Words glossed with the concept; an entry that names another part of speech is not one."""
     spaced = cid.replace("_", " ")
     keys = [cid, spaced, gloss.strip().lower()]
     if pos == "verb":
         keys.extend([f"to {cid}", f"to {spaced}", f"to {gloss.strip().lower()}"])
+    same_class = _GLOSS_POS.get(pos, frozenset({pos}))
     hits: list[str] = []
     for k in keys:
-        hits.extend(index.get(k, []))
+        hits.extend(word for word, entry_pos in index.get(k, [])
+                    if not pos or not entry_pos or entry_pos & same_class)
     if not hits:
         return []
     # Keep alternatives: the syllable shortlist, not spelling length, decides.

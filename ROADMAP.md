@@ -143,25 +143,60 @@ Transcription, as fixed:
       Diseux word list of the Amiens area (192 cells, 21 empty); Gallo from
       the French Wiktionary's entries and Ricaud's lexicon (157 cells, 56
       empty). The record is in [`docs/sources_grid.md`](docs/sources_grid.md).
-- [ ] Norman and Ladino show the same signature more weakly (42 and 48
-      cells). Ladin, Lombard, Romansh, Walloon and Venetan have many
-      unconfirmed cells that are not the sister's form: spelling or variety,
-      to be settled per lect.
+- [x] **Walloon** held the word for cat in its *dog* cell and French in
+      another dozen. The column was picked again in the unified spelling
+      from the Walloon Wiktionary (26,000 headwords with translations) and
+      the Walloon Wikipedia: 120 cells stand, 93 are replaced, none is empty,
+      all 213 verified by the audit
+      ([`docs/sources_grid.md`](docs/sources_grid.md), fifth pass).
+- [ ] Norman and Ladino show the padding signature more weakly (42 and 48
+      cells). Ladin, Lombard, Romansh, Sardinian, Extremaduran and Venetan
+      have many unconfirmed cells that are not the sister's form: spelling
+      or variety, to be settled per lect.
 - [x] Saenko's and IE-CoR's transcriptions are the yardstick, not the
       reader. `scripts/reader_check.py` compares the pipeline's reading of
       every grid form they also have
-      ([`docs/eval/readers.md`](docs/eval/readers.md)): syllable counts agree
-      for 97% of 1,345 cells. The sounds were wrong for most French and
-      Portuguese words on the borrowed Epitran maps (right for 56% and 13%),
-      so French, Picard, Portuguese and Mirandese are now read by espeak-ng
-      (92% and 73%), with Epitran as the fallback. Feeding the scholarly
+      ([`docs/eval/readers.md`](docs/eval/readers.md)). Feeding the scholarly
       transcriptions in directly was rejected: they cover half the grid, in
       two notations, and often another variety than the column's.
-- [ ] Reader faults measured and not yet fixed: Romansh *tg, gl, ch* (9 of
-      47 checked cells gain a syllable), Romanian final *-i*, the final
-      schwa of the French map in Walloon, Norman, Gallo and Franco-Provençal.
-      Stress is still not carried; espeak-ng marks it and could supply it
-      for the four lects it reads.
+- [x] **Every lect is read by the reader that measures best**
+      ([`docs/sources_orthography.md`](docs/sources_orthography.md)).
+      Epitran's borrowed maps read 56% of French and 13% of Portuguese words
+      with the right sounds, and had faults of the same kind in every
+      family. Now: an espeak-ng voice for French, Spanish, Italian,
+      Portuguese, Catalan and Aragonese (and, after respelling, Picard and
+      Mirandese); rules of its own for Walloon; Epitran for the rest, with
+      each lect's own letters read first and each map's faults mended.
+      Syllable counts agree with the scholarly transcriptions in 99% of
+      1,492 cells (97% before) and every sound in 79% (62%). Spanish is read
+      as Castilian (θ, ʎ), Catalan as Central Catalan.
+- [x] The three faults listed on 2026-10-05 are fixed: Romansh *tg, gl, ch*
+      (47 of 47 checked cells now have the right syllable count), Romanian
+      final *-i* (the reader is told the part of speech: *ochi* is one
+      syllable, *muri* two), and the stray final vowel of the French map.
+- [x] The gloss overlay no longer fills a cell the curated grid leaves
+      empty. It had put 51 forms back, most of them the wrong sense or part
+      of speech (Corsican *cravatta*, a necktie, for the verb *tie*;
+      Mirandese *mintira*, a lie, for *lie down*). It now applies only to
+      concepts added by a Bible grid, and respects part of speech there.
+- [x] Prep → Rust SA → join rerun on 2026-10-05 with all of the above (the
+      September files are in `data/backups/2026-10-05/`): 213 roots, Σσ 224
+      (230 before). **The roots are not stable yet.** 114 concepts have more
+      than one shortest candidate and nothing ranks them, so the annealer
+      picks among equals at random: the same candidates with seed 43 instead
+      of 42 give 138 different roots of 213, at the same Σσ. 168 roots
+      differ from September's. This is the tie-break decision of Gate G0,
+      now with a measured cost.
+- [ ] Still read wrongly, listed in `docs/sources_orthography.md`: forms
+      with an apostrophe (Norman *p'tit, t'nin*), the mixed spellings of the
+      Venetan, Istro-Romanian and Gallo columns, and stress, which no reader
+      carries into the pipeline although espeak-ng and the Walloon
+      Wiktionary mark it.
+- [ ] The readers added sounds the spelling map has no letter for: 62
+      segments are in the shortlist, 39 unspelled (57 and 34 before). New:
+      Romansh t͡ɕ, Friulian c and ɟ, Romanian kʲ and t͡sʲ, Castilian and
+      Bolognese θ. Each has a row in
+      [`docs/eval/orthography_gaps.md`](docs/eval/orthography_gaps.md).
 
 After the gate:
 
@@ -171,7 +206,8 @@ After the gate:
       not penultimate. Today stress marks are stripped, and most backends do
       not emit them, so the source of each word's stress has to be decided
       per lect.
-- [ ] Rerun prep → Rust SA → join, and refresh the scorecard.
+- [ ] Rerun prep → Rust SA → join, and refresh the scorecard (last run
+      2026-10-05, before the gate).
 - [ ] Tracked lexicon listing under `docs/lexicon/`, so every later change to
       the foundations shows up as a diff (`data/`, `*.json`, `*.csv`, `*.txt`
       and any `lexicons/` folder are ignored).

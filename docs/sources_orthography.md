@@ -80,11 +80,14 @@ The reader receives the concept's part of speech, because one rule needs it (Rom
 | Asturian | *x*; *ḥ*; *c, z*; *ll* | ʃ; h; θ; ʎ | Academia de la Llingua Asturiana, *Normes ortográfiques* |
 | Extremaduran | *h, j*, *g* before e i; *c, z*; *ll* | h; θ; ʎ | Carmona García's dictionary, whose spelling the column follows |
 | Ladino | *sh, x*; *dj*; *j*; *z*; *ny*; *h*; *g* before e i | ʃ; d͡ʒ; ʒ; z; ɲ; x; ɡ | Aki Yerushalayim spelling |
-| Occitan, Gascon | *qu* | k | [k] before every vowel; the map gave [ky] (*aquí*) |
+| Occitan, Gascon | *qu*; final *rn* | k; ɾ | [k] before every vowel, where the map gave [ky] (*aquí*); *carn, jorn* end in [r], where the map gave *ka, dʒu* |
+| Occitan | the final *r* of a one-syllable word that is not a verb | ɾ | Saenko: *cor* [kɔɾ]. The map drops every final r, which is right for an infinitive and for Gascon |
+| Genoese | *x*; *eu, êu* | ʒ; ø | Saenko: *xoâ* [ʒoˈaː], *euvu* [œːvu]. The map passed x through as the velar fricative |
+| Gallo | *eû*; *ae*, final *ai* | ø; ɛ | ABCD spelling; the map read *deûz* as [dəy] and *sai* as [sə] |
 | Aromanian, Megleno-Romanian | *nj* | ɲ | as *lj* is ʎ |
 | Romanian | final *-i* after a consonant | ʲ on the consonant; nothing after *c, g* | IE-CoR: *ochi* [okʲ], *vechi* [vekʲ], *cinci* [t͡ʃint͡ʃ]. Not in a verb (*muri, veni* end in a stressed i), not when it is the only vowel (*zi*), not after consonant + l, r |
-| Jèrriais | *th*; *aun* | ð; ɑ̃ | *méthe, péthe, téthe* for French *mère, père, terre* |
-| Franco-Provençal | *en*; *ue*, *oa*; the *-r* of an infinitive | ɛ̃; wɛ, wa; silent | Stich 2001 on ORB: *en* is "une fréquente réalisation [ẽ] et non [ã]"; *ue* is [ɥ/w] + vowel; in *-ar* "le r est très rarement prononcé" |
+| Jèrriais | *th*; *aun*; *y* before i | ð; ɑ̃; j | *méthe, péthe, téthe* for French *mère, père, terre*; *yi* (eye) was read as a bare [i] |
+| Franco-Provençal | *en*; *ue*, *ouê*, *oa*; *ouy*; the *-r* of an infinitive | ɛ̃; wɛ, wɛ, wa; u + j; silent | Stich 2001 on ORB: *en* is "une fréquente réalisation [ẽ] et non [ã]"; *ue* is [ɥ/w] + vowel; in *-ar* "le r est très rarement prononcé" |
 | Walloon | the *-er* of an infinitive | e | Walloon Wiktionary: [e] in 1,285 of 1,308 longer words in *-er*; *mer, vier, noer* keep r |
 
 ### Faults of a borrowed map, mended for every lect on it
@@ -95,7 +98,11 @@ The reader receives the concept's part of speech, because one rule needs it (Rom
 | Italian | *z* read s (left to each lect's table above, since its value differs) | *culiez* [kulies] |
 | Spanish | *gu* before a consonant or word-final read ɡw; *hi* + consonant read as a glide | *gusanu* [ɡewsanu], *llagu* [jaɡew], *hígado* [ʝɡado] |
 | Sardinian | the *i* of *gi, ci* dropped before a consonant | *girare* [d͡ʒrare] |
-| French | *c* before e, i read z between vowels; a final consonant sounded after a nasal vowel; a schwa left after nasal vowel + consonant; *-er* read əʀ; *ail, eil, euil, ouil* misread | *racena* [ʀazəna], *grant* [ɡʀɑ̃t], *crendre* [kʀɑ̃dʀə], *aile* [e], *faille* [fel] |
+| French | *c* before e, i read z between vowels; a final consonant sounded after a nasal vowel; a schwa left after nasal vowel + consonant; *-er* read əʀ; *ail, eil, euil, ouil* misread | *racena* [ʀazəna], *grant* [ɡʀɑ̃t], *crendre* [kʀɑ̃dʀə], *aile* [e], *faille* [fel]; *rr* left as two r |
+
+Several of these were found only after the optimizer was rerun, because the misreading had won a
+root by being short: Occitan *carn* as [ka], Franco-Provençal *bouêls* as [bul], Jèrriais *yi* as [i],
+Gallo *sai* as [sə].
 
 Earlier the same day, each a sound the map read as two:
 
