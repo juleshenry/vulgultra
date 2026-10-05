@@ -312,6 +312,21 @@ Needs from the verb work: final person labels, reflexive `se`, pro-drop.
 
 ## Stage 3. Bible-grid lexicon
 
+- [x] Six Bibles on disk, one verse per row (`scripts/fetch_bible_texts.py`,
+      [`docs/bible_sources.md`](docs/bible_sources.md)): the Clementine
+      Vulgate, Segond 1910, Reina-Valera 1909, Bíblia Livre, Riveduta 1927
+      and Cornilescu. The Romanian licence is not settled; the text is
+      local only. 30,261 verse keys are shared by all six, but the Vulgate
+      numbers the Psalms one behind, and no mapping table exists yet.
+- [x] Latin as the word list (proposed 2026-10-05, to confirm): the
+      Vulgate's 612,000 words traced to 8,134 dictionary words, each with
+      the daughter forms Wiktionary lists as its reflexes
+      (`scripts/fetch_latin_descendants.py`, `scripts/build_bible_lexicon.py`,
+      [`docs/eval/bible_lexicon.md`](docs/eval/bible_lexicon.md)). 5,209
+      have a reflex in at least one lect, 1,400 in ten or more.
+- [ ] The decisions this opens are queued in order in
+      [`docs/decisions.md`](docs/decisions.md).
+
 **Gate G3a, sourcing (before any download).** The five editions and their
 licences, the concept-ID spine, the first slice, the alignment method, and
 which derived words (adverbs, participles, numerals) are rows of their own.

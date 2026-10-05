@@ -8,8 +8,10 @@ occupy the same `dog` row without being treated as one etymological family.
 ## Data flow
 
 1. Obtain five licensed/allowed anchor lexicons: French, Spanish, Portuguese,
-   Italian, and Romanian. The repository does not download Bible text or
-   silently extract word meanings. Their forms must be aligned to stable
+   Italian, and Romanian. The six Bible texts are fetched into the untracked `data/bible/texts/`
+   by `scripts/fetch_bible_texts.py` (editions and licences in
+   [`bible_sources.md`](bible_sources.md)); the repository does not
+   silently extract word meanings from them. Their forms must be aligned to stable
    `concept_id`s, with edition, license, and Bible verse references recorded.
 2. Put them at `data/bible/lexicons/{fr,es,pt,it,ro}.tsv` and compile those
    files with `scripts/build_bible_grid.py`.
