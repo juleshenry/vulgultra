@@ -89,9 +89,11 @@ answer changes which roots win:
    **Decided: yes.** Done; see below.
 2. Inventory: merge or keep. **Decided: merge only what is documented, with
    its reason, in `grammar.tex` §2.4.** The draft of that section proposes
-   eleven merges on two grounds (not a contrast; reverse Vulgar Latin),
-   leaves /x/ and the rhotics open, and keeps everything some daughter uses
-   to tell words apart. Awaiting approval row by row; nothing is in code.
+   eleven merges on two grounds (not a contrast, applied only in the lects
+   named; reverse Vulgar Latin), leaves the rhotics open, and keeps
+   everything some daughter uses to tell words apart. The old /x/ → /k/
+   mapping is withdrawn; /x/ is kept. Awaiting approval row by row; nothing
+   is in code.
 3. Spelling: per kept segment, a letter, digraph or diacritic, or leave it bracketed.
 4. Selection among ties: what replaces lect-code order, whether homophones
    cost anything, and whether approved roots are pinned so that growing the
@@ -105,16 +107,21 @@ Transcription, as fixed:
 - [x] A form with an unread letter is rejected by name
       (`UntranscribedError`), counted per lect by prep and itemised in the
       orthography report.
-- [ ] Rulings still needed, 26 forms: Emilian `ṣ` (5); Romagnol `ẓ ș ş ọ`
-      and its `ë ö ã` (9); and 15 forms with an apostrophe (`s'assir`,
-      `p'tit`, `ch'la`), which need a different citation form in the grid,
-      not a reading.
-- [ ] Audit of forms that are accepted but misread by a borrowed backend.
-      Seen so far: Occitan and Gascon *qu* comes out as /ky/ (*aquí*);
-      Istro-Romanian *j* is read /ʒ/ where the spelling means /j/ (*jo, noj,
-      doj, trej*), and its column mixes two spellings (*înjunghia*);
-      Eastern *nj*; Walloon *xh* as /ks/; Picard *ti* as /sj/. A misreading
-      that drops or adds a vowel changes which form is shortest.
+- [x] Readings looked up and sourced in
+      [`docs/sources_orthography.md`](docs/sources_orthography.md): Romagnol
+      and Emilian letters, Ladin *ë*, and Istro-Romanian *j* (the glide in
+      its Croatian-based spelling). Rejected grid forms: 26 → 15.
+- [ ] The 15 left all contain an apostrophe (`s'assir`, `p'tit`, `ch'la`);
+      they need a different citation form in the grid, not a reading.
+- [ ] Rulings needed, listed with their sources in the same file: Walloon
+      *xh* (four dialect values, none of them the /ks/ it gets now);
+      Istro-Romanian *c* and its central vowel; Aromanian *nj*;
+      Piedmontese *o, u* (/u/, /y/, read as o, u); Occitan and Gascon *qu*
+      (/k/, read as /ky/). Each is accepted today with the wrong sound, and
+      one that drops or adds a vowel changes which form is shortest.
+- [ ] About 50 forms in the Istro-Romanian column are Romanian-spelled and
+      look like Daco-Romanian words (*niște, respira, corect, zâmbi*). To
+      check against axiom 3 (never pad a thin lect from a sister).
 
 After the gate:
 
