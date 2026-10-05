@@ -85,17 +85,41 @@ What the evidence shows:
 **Gate G0, inventory, spelling and selection.** In this order, because each
 answer changes which roots win:
 
-1. Transcription: fix the rejected forms and the untranscribed letters first, or not.
-2. Inventory: per segment, merge or keep.
+1. Transcription: fix the rejected forms and the untranscribed letters first.
+   **Decided: yes.** Done; see below.
+2. Inventory: merge or keep. **Decided: merge only what is documented, with
+   its reason, in `grammar.tex` §2.4.** The draft of that section proposes
+   eleven merges on two grounds (not a contrast; reverse Vulgar Latin),
+   leaves /x/ and the rhotics open, and keeps everything some daughter uses
+   to tell words apart. Awaiting approval row by row; nothing is in code.
 3. Spelling: per kept segment, a letter, digraph or diacritic, or leave it bracketed.
 4. Selection among ties: what replaces lect-code order, whether homophones
    cost anything, and whether approved roots are pinned so that growing the
    grid cannot change them.
 
+Transcription, as fixed:
+
+- [x] Readings for the letters a borrowed backend leaves untranscribed
+      (`BACKEND_LEFTOVERS` in `vulgultra/phonology_constants.py`). Rejected
+      grid forms: 260 → 26.
+- [x] A form with an unread letter is rejected by name
+      (`UntranscribedError`), counted per lect by prep and itemised in the
+      orthography report.
+- [ ] Rulings still needed, 26 forms: Emilian `ṣ` (5); Romagnol `ẓ ș ş ọ`
+      and its `ë ö ã` (9); and 15 forms with an apostrophe (`s'assir`,
+      `p'tit`, `ch'la`), which need a different citation form in the grid,
+      not a reading.
+- [ ] Audit of forms that are accepted but misread by a borrowed backend.
+      Seen so far: Occitan and Gascon *qu* comes out as /ky/ (*aquí*);
+      Istro-Romanian *j* is read /ʒ/ where the spelling means /j/ (*jo, noj,
+      doj, trej*), and its column mixes two spellings (*înjunghia*);
+      Eastern *nj*; Walloon *xh* as /ks/; Picard *ti* as /sj/. A misreading
+      that drops or adds a vowel changes which form is shortest.
+
 After the gate:
 
-- [ ] Encode: merges in `adapt_to_vulgultra`, the spelling map and a reader
-      that handles digraphs, transcriber failures reported per form.
+- [ ] Encode: approved merges in `adapt_to_vulgultra`, the spelling map and
+      a reader that handles digraphs.
 - [ ] Rerun prep → Rust SA → join, and refresh the scorecard.
 - [ ] Tracked lexicon listing under `docs/lexicon/`, so every later change to
       the foundations shows up as a diff (`data/`, `*.json`, `*.csv`, `*.txt`

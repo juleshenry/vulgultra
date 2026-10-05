@@ -211,8 +211,121 @@ syllabifier; they get better IPA. Donor G2P is a last resort.
   \item Still illegal $\to$ discard. Never keep it with a $500{,}000$ fine.
 \end{enumerate}
 
-Map the palatal fricative to /j/, Romanian /x/ to /k/ (not /ks/),
-and palatal nasals/laterals to /nj, lj/ (now legal onsets).
+Segment merges are not repair. They are listed, each with its reason, in
+section~\ref{sec:merges}.
+
+\section{Merges}
+\label{sec:merges}
+
+\emph{Status: proposed 5 October 2026. Nothing in this section is in code
+yet: the adaptation step is still an identity. Examples are from the
+213-concept grid; the counts behind each row are in the orthography gaps
+report under} \texttt{docs/eval/}.
+
+The inventory is emergent, so a merge is always a decision. Every merge is
+written here with its reason, and code merges nothing this section does not
+list. A merge needs one of two grounds.
+
+\begin{enumerate}
+  \item \textbf{Not a contrast.} In every lect that shows it, the segment
+        is a predictable variant of another sound. It is in the grid only
+        because that lect's transcription is narrower than the others'.
+        No daughter loses a distinction.
+  \item \textbf{Reverse Vulgar Latin.} The segment arose in Vulgar Latin
+        from a sequence, and Vulgultra restores the sequence. The
+        distinction survives as a cluster.
+\end{enumerate}
+
+A segment that some daughter uses to tell two words apart is kept,
+however rare it is. ``Another lect pronounces the same category
+differently'' is not a ground: French \textipa{\;R} and Italian $r$ are
+different sounds, and both stay.
+
+\subsection{Not a contrast}
+
+\begin{center}
+\small
+\begin{tabular}{@{}llp{0.62\textwidth}@{}}
+\toprule
+Segment & Becomes & Reason \\
+\midrule
+\textipa{B} & $b$ &
+  Occitan and Gascon pronounce /b/ between vowels as \textipa{[B]}
+  (\emph{sabla}). No lect in the grid contrasts the two. \\
+\textipa{M} & $n$ &
+  A nasal before /f, v/ is labiodental everywhere (\emph{enflar}). The
+  source spells $n$. \\
+\textipa{U} & $o$ &
+  The Galician transcription raises final unstressed /o/ (\emph{po}).
+  Galician spells $o$ and has no contrast there. \\
+\textipa{I} & $e$ &
+  The same for final unstressed /e/ (\emph{que}). \\
+\textipa{5} & $a$ &
+  Unstressed /a/ in Portuguese, Mirandese and Galician (\emph{lua}).
+  European Portuguese has one stressed contrast, in verb endings
+  (\emph{falamos} / \emph{fal\'amos}); no form in the grid carries it. \\
+\textipa{k\super w} & $kw$ &
+  Portuguese and Mirandese \emph{qu} before $a$, $o$ is the sequence /kw/.
+  Every other transcription writes it as two segments. \\
+\textipa{\~w}, \textipa{\~j} & $w$, $j$ &
+  The offglide of a Portuguese nasal diphthong (\emph{c\~ao},
+  \emph{m\~ae}). Its nasality follows from the vowel, which stays nasal. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Reverse Vulgar Latin}
+
+\begin{center}
+\small
+\begin{tabular}{@{}llp{0.62\textwidth}@{}}
+\toprule
+Segment & Becomes & Reason \\
+\midrule
+\textipa{L} & $lj$ &
+  Latin had no palatal lateral. The typical source is $l$ + yod
+  (\emph{filia}); $lj$ is a legal onset. This is a phoneme in most
+  daughters, so the merge is a rule of the language, not a transcription
+  fix. It applies by sound, not by etymology: Catalan \emph{lluny}
+  ($<$ \emph{longe}) also becomes $lj$-. \\
+\textipa{\textltailn} & $nj$ &
+  The same for the palatal nasal (\emph{vinea}), including the cases
+  that come from \emph{nn} or \emph{gn}. \\
+\textipa{J} & $j$ &
+  Spanish-type lects pronounce the glide as a fricative. They do not
+  contrast it with /j/. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Nothing is lost by these: $lj$ and $nj$ stay distinct from $l$ and $n$.
+In a coda the cluster follows the vowel (Catalan \emph{any}).
+
+\subsection{Open}
+
+\begin{itemize}
+  \item \textbf{/x/.} Version 3.0 mapped /x/ to /k/ and gave no reason.
+        The only source in the grid is Spanish, Extremaduran and Ladino
+        \emph{mujer}, where /x/ continues Latin \emph{li}
+        (\emph{mulier}); by the rule above that is $lj$, not $k$.
+  \item \textbf{Rhotics.} Spanish, Catalan, Portuguese and Galician
+        contrast a single \textipa{R} with a strong $r$ (\emph{caro} /
+        \emph{carro}); Portuguese pronounces the strong one
+        \textipa{[K]}. The O\"il lects have one rhotic,
+        \textipa{\;R}. The Italian-type transcriptions write $r$ for
+        both. Four symbols, two categories at most; no merge is made
+        until this is ruled on.
+\end{itemize}
+
+\subsection{Kept}
+
+Each of these separates words in at least one daughter, so none is merged:
+the open mid vowels \textipa{E O}; the front rounded vowels
+$y$ \textipa{\o} \textipa{\oe} and their glide \textipa{4}; the central
+vowels \textipa{@ 1}; Istro-Romanian \textipa{6}; French \textipa{A}; the
+nasal vowels; \textipa{Z}, \textipa{dZ}, $ts$, $dz$, $h$, \textipa{T}; and
+\textipa{N}, which is a variant of /n/ in Catalan and Occitan but a
+phoneme in Ligurian and Emilian.
 
 \section{Stress}
 
