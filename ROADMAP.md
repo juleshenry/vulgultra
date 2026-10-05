@@ -147,9 +147,21 @@ Transcription, as fixed:
       cells). Ladin, Lombard, Romansh, Walloon and Venetan have many
       unconfirmed cells that are not the sister's form: spelling or variety,
       to be settled per lect.
-- [ ] Decide whether Saenko's and IE-CoR's transcriptions should enter the
-      pipeline directly. They would bypass the borrowed G2P backends and
-      carry the stress the new stress rule needs.
+- [x] Saenko's and IE-CoR's transcriptions are the yardstick, not the
+      reader. `scripts/reader_check.py` compares the pipeline's reading of
+      every grid form they also have
+      ([`docs/eval/readers.md`](docs/eval/readers.md)): syllable counts agree
+      for 97% of 1,345 cells. The sounds were wrong for most French and
+      Portuguese words on the borrowed Epitran maps (right for 56% and 13%),
+      so French, Picard, Portuguese and Mirandese are now read by espeak-ng
+      (92% and 73%), with Epitran as the fallback. Feeding the scholarly
+      transcriptions in directly was rejected: they cover half the grid, in
+      two notations, and often another variety than the column's.
+- [ ] Reader faults measured and not yet fixed: Romansh *tg, gl, ch* (9 of
+      47 checked cells gain a syllable), Romanian final *-i*, the final
+      schwa of the French map in Walloon, Norman, Gallo and Franco-Provençal.
+      Stress is still not carried; espeak-ng marks it and could supply it
+      for the four lects it reads.
 
 After the gate:
 

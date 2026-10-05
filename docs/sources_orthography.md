@@ -26,6 +26,42 @@ spelling, for letters the borrowed G2P backend does not know. Checked
 | oc gsc gl | acute or grave left on a vowel → plain vowel | The accent marks stress; the backend has already transcribed quality (è → ɛ, ó → u). Not re-checked |
 | rup ruq | sh → ʃ, ts → ts, dz → dz, lj → ʎ | Standard Aromanian digraphs; not re-checked |
 
+## A second reader for four lects
+
+`scripts/reader_check.py` sets the pipeline's reading of each grid form beside IE-CoR's and Saenko's
+transcription of the same spelling ([`eval/readers.md`](eval/readers.md)). Syllable counts agree for
+97% of 1,345 cells. The sounds agree far less often for the two big lects on a borrowed Epitran map:
+Epitran read 56% of French words and 13% of Portuguese words with the right sounds (*grand* with a
+final d, *femme* in two syllables, *aile* as a bare e, *glace* with z; *chuva* with k, *olho* with l,
+*peixe* with ks, *poucos* in three syllables).
+
+French, Picard, Portuguese and Mirandese are therefore read by espeak-ng (`ESPEAK_VOICES`), with the
+French voice for Picard and the Portuguese voice for Mirandese. Against IE-CoR it reads 92% of French
+and 73% of Portuguese words with the right sounds, and 97% with the right syllable count. Where
+espeak-ng is not installed the Epitran map still reads these lects, as before.
+
+| lect | spelling | rewritten for the voice | why |
+|---|---|---|---|
+| Picard | *grain.ne* | *grainne* | the dot of the Chés Diseux spelling marks a nasal vowel before n |
+| Picard | *oé, oè* | *oué, ouè* | [we], [wɛ], the reflex of French *oi* |
+| Picard | *-tcher* | *-tché* | an infinitive, read by the voice as an English loan |
+| Mirandese | *ch* | *tch* | Mirandese keeps the affricate [tʃ] |
+| Mirandese | *x* | *ch* | [ʃ]; the voice reads x in an unknown word as [ks] |
+
+Readings added to the Epitran maps the same day, each a sound the map read as two:
+
+| lect | spelling | reading | source |
+|---|---|---|---|
+| Walloon, Norman, Gallo, Franco-Provençal | *dj, tch* | d͡ʒ, t͡ʃ | IE-CoR Walloon: *djambe* [d͡ʒãb] |
+| Gallo | *ao* | aw | fr.wiktionary: *aotr* [awt], *iao* [jaw], *jaone* [ʒawn] |
+| Gallo | *oé, ouè* | we, wɛ | fr.wiktionary: *savouèr*; the same reflex as Picard *oé* |
+| Romanian | *oa, ea* | wa, ja | IE-CoR: *soare* [so̯are], *stea* [ste̯a] |
+
+Why the scholarly transcriptions are a yardstick and not the reader: they cover 110 to 170 concepts
+of 213 and only two thirds of the lects, each in its own notation (affricates untied, long consonants
+doubled, Portuguese diphthongs as two vowels), and for several lects they record another valley than
+the column's.
+
 ## Not encoded, needs a ruling
 
 | Lect | Letter | Why |
@@ -43,3 +79,13 @@ The Istro-Romanian column still mixes spellings (Croatian-based from the
 Swadesh appendix, mixed and Romanian-based from other Wiktionary pages). A
 form with ă, î, ș or ț is read with Romanian values for *j*. The Romanian
 padding that used to sit in this column was removed; see `sources_ruo.md`.
+- **Romansh *tg, gl, ch***: the Italian map reads *tg* as t + g and final *gl* as g + l, so *notg, fegl,
+  sulegl* gain a syllable (9 of 47 checked cells). They are [tɕ] and [ʎ]. Needs a respelling step
+  before the map, which the Epitran path does not have.
+- **Romanian final *-i***: non-syllabic after a consonant in *cinci, ochi, vechi*, a full stressed
+  vowel in the infinitives *muri, veni*. The spelling does not tell them apart.
+- **Final schwa after a nasal vowel and a consonant** in the lects still on the French map (Walloon
+  *djambe* read in two syllables). French itself no longer goes through that map.
+- **Gallo ELG spellings** (*saun, plum, naijae*): not read correctly by either reader, which is why
+  the Gallo column avoids them.
+

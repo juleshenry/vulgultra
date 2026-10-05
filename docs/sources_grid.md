@@ -786,7 +786,7 @@ A cell with none of the three is empty.
 | Picard | Chés Diseux, "mes mots à mi": Amiens area, 3,900 entries with translated examples | 141 | 26 | 25 | 21 |
 | Gallo | French Wiktionary's Gallo entries, ABCD spelling first; Ricaud, *Mon canepin de galo* | 119 | 38 | 0 | 56 |
 
-**Mirandese.** 77 cells changed. The old column mixed Portuguese and Spanish guesses: *sangue, osso,
+**Mirandese.** 129 cells stand, 71 are replaced, 13 emptied. The old column mixed Portuguese and Spanish guesses: *sangue, osso,
 ovo, flor, perna, fuego, bueno, vientre, pescuezo, can* where Mirandese has *sangre, uosso, uobo,
 frol, pierna, fuogo, buono, barriga, cachaço, perro*. The spelling is the 1999 convention throughout
 (*lh-* for Latin *l-*, the diphthongs *ie* and *uo*, *b* for *v*). The Mirandese Wikipedia was partly
@@ -795,14 +795,14 @@ times, *lhago* 155), which is why a form identical to Portuguese needs three tok
 of any attestation: *worm, bite, suck, smell, split, stab, scratch, lie, tie, sharp, dull, wet,
 smile*.
 
-**Picard.** The old column was already Amiens Picard (*troés, quoé, minger, vir, ichi*) with French
+**Picard.** 67 cells stand, 125 are replaced, 21 emptied. The old column was already Amiens Picard (*troés, quoé, minger, vir, ichi*) with French
 filled in around it. Chés Diseux is one speaker's vocabulary of that area, which makes the column one
 variety in one spelling. He leaves out words spelled as in French, so those cells rest on his example
 sentences or on the Picard Wikipedia (*long, pied, nez, tête, sang, rire, dire, jour*). One cell is
 from the Nord and not from Amiens: *bone* oche (Tiot diqchionnaire). The word list writes a nasal
 vowel before *n* with a dot (*grain.ne, tchien.ne, gan.ne*); the grid keeps his spelling.
 
-**Gallo.** The thinnest of the three. The French Wiktionary's 11,400 Gallo entries name their spelling
+**Gallo.** 42 cells stand, 115 are replaced, 56 emptied. The thinnest of the three. The French Wiktionary's 11,400 Gallo entries name their spelling
 system (ABCD 7,284, ELG 2,085, MOGA 328), but are dense only for words in A and B; Ricaud's thematic
 lexicon covers the body, weather and everyday verbs in a spelling of his own. The column therefore
 mixes two French-like spellings, and 56 cells are empty, among them words that are probably the same

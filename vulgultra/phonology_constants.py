@@ -64,6 +64,37 @@ LANG_CODES: dict[str, str] = {
 # Occitan emits ASCII g for IPA ɡ; Galician puts the affricate tie bar last.
 BACKEND_TYPOS: tuple[tuple[str, str], ...] = (("g", "ɡ"), ("tʃ͡", "t͡ʃ"))
 
+# A second reader, espeak-ng, for the lects where the borrowed Epitran map
+# was measured wrong (docs/eval/readers.md): against IE-CoR's transcriptions
+# of the same words Epitran reads 93 of 165 French words and 19 of 168
+# Portuguese words segment for segment. Lect → voice. Used when the program
+# is installed; without it the Epitran backend below still reads the lect.
+ESPEAK_VOICES: dict[str, str] = {"fr": "fr-fr", "pcd": "fr-fr", "pt": "pt-pt", "mwl": "pt-pt"}
+# A lect's own spellings, rewritten as the voice's language spells that
+# sound, in order. Picard: the dot of grain.ne is a spelling device, oé is
+# [we], and an infinitive in -tcher ends in [e]. Mirandese: ch is the
+# affricate, x the sibilant.
+ESPEAK_RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
+    "pcd": ((".", ""), ("oé", "oué"), ("oè", "ouè"), ("tcher", "tché")),
+    "mwl": (("ch", "tch"), ("x", "ch")),
+}
+# The voice's notation rewritten in the grid's, as regular expressions over
+# decomposed text, in order: stress and length dropped, affricates tied;
+# French y before a vowel is the glide; the Portuguese voice writes a nasal
+# vowel as vowel + ŋ and a nasal diphthong as two nasal vowels, puts a schwa
+# after ɾ before a consonant, and writes ɹ ʊ ɪ ɑ for ɾ u j a.
+_VOWEL = "[aeiouyɐɑɛɔœøəɨ]"
+_ESPEAK_COMMON = ((r"[ˈˌː\-]", ""), ("tʃ", "t͡ʃ"), ("dʒ", "d͡ʒ"))
+ESPEAK_NOTATION: dict[str, tuple[tuple[str, str], ...]] = {
+    "fr-fr": (*_ESPEAK_COMMON, ("ʁ", "ʀ"), (rf"y(?={_VOWEL})", "ɥ")),
+    "pt-pt": (*_ESPEAK_COMMON, ("ɹ", "ɾ"), ("ʊ", "u"), ("ɪ", "j"), ("ɑ", "a"), ("ɾə", "ɾ"),
+              ("ejŋ(?=.)", "e\u0303"), ("ejm(?=[pb])", "e\u0303"),  # nasal e inside a word, a diphthong only at its end
+              (rf"({_VOWEL})\u0303?([jw]?)ŋ", "\\1\u0303\\2"),
+              ("(\u0303)u\u0303", "\\1w\u0303"), ("(\u0303)[ij]\u0303", "\\1j\u0303"),
+              (rf"(?<!{_VOWEL})(?<!\u0303)w$", "u")),
+}
+
+
 # What a borrowed backend leaves untranscribed, per lect: leftover → reading.
 # A leftover is a source letter the backend does not know, or the base
 # letter it did convert plus the diacritic it left behind (French è comes
@@ -71,7 +102,8 @@ BACKEND_TYPOS: tuple[tuple[str, str], ...] = (("g", "ɡ"), ("tʃ͡", "t͡ʃ"))
 # orthography; docs/sources_orthography.md gives the source for each. Only
 # leftovers seen in the grid are listed; anything else is rejected by name
 # in g2p.transcribe_and_repair, not guessed.
-_OIL_E = {"ə̀": "ɛ", "ə̂": "ɛ"}          # è, ê
+_OIL_E = {"ə̀": "ɛ", "ə̂": "ɛ",         # è, ê
+          "dʒ": "d͡ʒ", "tʃ": "t͡ʃ"}       # dj, tch: one sound, read as two
 _STRESS_ONLY = {"é": "e", "í": "i", "ú": "u", "à": "a", "á": "a"}
 # Istro-Romanian letters that mean the same in every one of its spellings.
 # The acute is a dictionary's stress mark.
@@ -80,7 +112,8 @@ _RUO_LETTERS = {"š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "æ", "
 BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "fr": {**_OIL_E, "ù": "u"},            # où
     "frp": _OIL_E,
-    "gallo": _OIL_E,
+    # ao is the diphthong of dao, iao, chaod; oé and ouè are [we] and [wɛ].
+    "gallo": {**_OIL_E, "ao": "aw", "aɔ": "aw", "œ́": "we", "ù": "wɛ"},
     "nrf": {**_OIL_E, "ù": "u", "â": "a"},  # oî read wa, circumflex left on a
     "pcd": {**_OIL_E, "œ́": "we"},          # oé, the Picard reflex of French oi
     "wa": {**_OIL_E, "å": "ɔ"},
@@ -91,6 +124,8 @@ BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "gl": {"ú": "u", "j́": "i"},           # í beside a vowel is a full vowel
     # Eastern digraphs the Romanian backend reads letter by letter (lj comes
     # out as l + ʒ). Listed before ž so a real l + ž is not caught.
+    # Romanian oa and ea are rising diphthongs, read as two vowels.
+    "ro": {"oa": "wa", "ea": "ja"},
     "rup": {"sh": "ʃ", "ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ"},
     "ruq": {"ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ"},
     # Istro-Romanian in its Croatian-based spelling: j is the glide, which

@@ -2,14 +2,15 @@
 
 from __future__ import annotations
 
+import shutil
 import unicodedata
 import unittest
 from unittest.mock import patch
 
 from vulgultra.g2p import UntranscribedError, transcribe_and_repair
 from vulgultra.phonology import (
-    configure_inventory, count_syllables, count_violations, read_leftovers, unknown_segments,
-    word_to_ipa,
+    configure_inventory, count_syllables, count_violations, espeak_reading, read_leftovers,
+    unknown_segments, word_to_ipa,
 )
 
 
@@ -95,6 +96,31 @@ class BoundaryFixtures(unittest.TestCase):
                 seq = transcribe_and_repair("x", lang)[1]
             configure_inventory(set(seq))
             self.assertEqual((count_syllables(seq), count_violations(seq)), (1, 0), ipa)
+
+    def test_one_sound_the_backend_reads_as_two(self) -> None:
+        self.assertEqual(read_leftovers("dʒɑ̃b", "wa"), "d͡ʒɑ̃b")       # djambe
+        self.assertEqual(read_leftovers("dao", "gallo"), "daw")
+        self.assertEqual(read_leftovers("soare", "ro"), "sware")
+        self.assertEqual(read_leftovers("dao", "fr"), "dao")            # only where it is one sound
+
+    @unittest.skipUnless(shutil.which("espeak-ng"), "espeak-ng is not installed")
+    def test_second_reader(self) -> None:
+        for lang, word, ipa in (
+            ("fr", "femme", "fam"), ("fr", "grand", "ɡʀɑ̃"), ("fr", "manger", "mɑ̃ʒe"), ("fr", "nuit", "nɥi"),
+            ("pt", "chuva", "ʃuvɐ"), ("pt", "olho", "ɔʎu"), ("pt", "mão", "mɐ̃w̃"), ("pt", "perna", "pɛɾnɐ"),
+            ("pcd", "grain.ne", "ɡʀɛ̃n"), ("pcd", "troés", "tʀwe"), ("pcd", "tchien", "t͡ʃjɛ̃"),
+            ("mwl", "chuba", "t͡ʃubɐ"), ("mwl", "lhago", "ʎaɡu"),
+        ):
+            with self.subTest(word=word):
+                self.assertEqual(unicodedata.normalize("NFC", word_to_ipa(word, lang)), ipa)
+
+    def test_without_the_second_reader_the_backend_reads(self) -> None:
+        with patch("vulgultra.phonology._espeak", return_value=None):
+            espeak_reading.cache_clear()
+            try:
+                self.assertEqual(word_to_ipa("père", "fr"), "pɛʀ")
+            finally:
+                espeak_reading.cache_clear()
 
     def test_clean_form_passes(self) -> None:
         with patch("vulgultra.g2p.word_to_ipa", return_value="pɛʀ"):

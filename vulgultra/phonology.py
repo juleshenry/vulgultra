@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import re
 import functools
+import shutil
+import subprocess
 import unicodedata
 from typing import Optional
 
@@ -16,8 +18,8 @@ import epitran
 import panphon
 from panphon.featuretable import FeatureTable
 from vulgultra.phonology_constants import (
-    BACKEND_LEFTOVERS, BACKEND_NATIVE_LETTERS, BACKEND_TYPOS, IPA_TO_ORTHO,
-    LANG_CODES, LECT_MERGES, ORTHO_TO_IPA, RHOTICS, SEGMENT_MERGES,
+    BACKEND_LEFTOVERS, BACKEND_NATIVE_LETTERS, BACKEND_TYPOS, ESPEAK_NOTATION, ESPEAK_RESPELL,
+    ESPEAK_VOICES, IPA_TO_ORTHO, LANG_CODES, LECT_MERGES, ORTHO_TO_IPA, RHOTICS, SEGMENT_MERGES,
 )
 
 # ---------------------------------------------------------------------------
@@ -119,9 +121,39 @@ def _get_g2p(lang: str) -> epitran.Epitran:
     return _g2p_cache[lang]
 
 
+@functools.cache
+def _espeak() -> str | None:
+    return shutil.which("espeak-ng")
+
+
+@functools.cache
+def espeak_reading(word: str, lang: str) -> str | None:
+    """The word as espeak-ng reads it, in the grid's notation; None if it cannot."""
+    voice = ESPEAK_VOICES.get(lang)
+    if not voice or not _espeak():
+        return None
+    for written, respelled in ESPEAK_RESPELL.get(lang, ()):
+        word = word.replace(written, respelled)
+    try:
+        spoken = subprocess.run([_espeak(), "-q", "--ipa", "-v", voice, "--", word],
+                                capture_output=True, text=True, timeout=20).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        return None
+    # A word the voice takes for another language comes back as (en)…(fr).
+    if not spoken or "(" in spoken or " " in spoken:
+        return None
+    ipa = unicodedata.normalize("NFD", spoken)
+    for pattern, replacement in ESPEAK_NOTATION[voice]:
+        ipa = re.sub(pattern, replacement, ipa)
+    return ipa
+
+
 def word_to_ipa(word: str, lang: str) -> str:
-    """Convert an orthographic word to IPA using epitran."""
+    """Convert an orthographic word to IPA: espeak-ng where it reads the lect, else epitran."""
     word = word.lower().strip()
+    spoken = espeak_reading(word, lang)
+    if spoken is not None:
+        return spoken
     ipa = _get_g2p(lang).transliterate(word)
     letters, native_table = BACKEND_NATIVE_LETTERS.get(lang, ("", lang))
     return read_leftovers(ipa, native_table if any(ch in letters for ch in word) else lang)
