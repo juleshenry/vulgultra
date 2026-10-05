@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 from vulgultra.g2p import UntranscribedError, transcribe_and_repair
-from vulgultra.phonology import read_leftovers, unknown_segments
+from vulgultra.phonology import read_leftovers, unknown_segments, word_to_ipa
 
 
 def nfd(text: str) -> str:
@@ -28,7 +28,20 @@ class LeftoverFixtures(unittest.TestCase):
     def test_digraph_read_letter_by_letter_becomes_one_segment(self) -> None:
         self.assertEqual(read_leftovers("tsintsi", "rup"), nfd("t͡sint͡si"))
         self.assertEqual(read_leftovers("mulʒari", "ruq"), "muʎari")
-        self.assertEqual(read_leftovers("žerunklʒu", "ruo"), "ʒerunkʎu")
+        self.assertEqual(read_leftovers("ʒerunklʒu", "ruo"), "jerunkʎu")
+
+    def test_a_reading_is_not_read_again_as_a_leftover(self) -> None:
+        # Croatian-based Istro-Romanian: ž is ʒ, and the ʒ the backend made of j is the glide.
+        self.assertEqual(read_leftovers("žut", "ruo"), "ʒut")
+        self.assertEqual(read_leftovers("noʒ", "ruo"), "noj")
+        self.assertEqual(read_leftovers("kurd͡ʒe", "ruo"), nfd("kurd͡ʒe"))
+
+    def test_form_in_the_backends_own_spelling_takes_no_readings(self) -> None:
+        with patch("vulgultra.phonology._get_g2p") as backend:
+            backend.return_value.transliterate.return_value = "ɨnʒunɡia"
+            self.assertEqual(word_to_ipa("înjunghia", "ruo"), "ɨnʒunɡia")
+            backend.return_value.transliterate.return_value = "noʒ"
+            self.assertEqual(word_to_ipa("noj", "ruo"), "noj")
 
     def test_backend_typos_are_fixed_for_every_lect(self) -> None:
         self.assertEqual(read_leftovers("ajga", "oc"), "ajɡa")

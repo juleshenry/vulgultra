@@ -46,8 +46,9 @@ BACKEND_TYPOS: tuple[tuple[str, str], ...] = (("g", "ɡ"), ("tʃ͡", "t͡ʃ"))
 # A leftover is a source letter the backend does not know, or the base
 # letter it did convert plus the diacritic it left behind (French è comes
 # out as ə + grave). Each reading is the letter's value in that lect's own
-# orthography. Only leftovers seen in the grid are listed; anything else is
-# rejected by name in g2p.transcribe_and_repair, not guessed.
+# orthography; docs/sources_orthography.md gives the source for each. Only
+# leftovers seen in the grid are listed; anything else is rejected by name
+# in g2p.transcribe_and_repair, not guessed.
 _OIL_E = {"ə̀": "ɛ", "ə̂": "ɛ"}          # è, ê
 _STRESS_ONLY = {"é": "e", "í": "i", "ú": "u", "à": "a", "á": "a"}
 BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
@@ -66,13 +67,26 @@ BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     # out as l + ʒ). Listed before ž so a real l + ž is not caught.
     "rup": {"sh": "ʃ", "ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ"},
     "ruq": {"ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ"},
-    # Istro-Romanian in its Croatian-based spelling.
-    "ruo": {"lʒ": "ʎ", "š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "ɛ"},
-    "eml": {"ṅ": "ŋ", "ḱ": "t͡ʃ", "ū": "u", "ī": "i", "ō": "o"},  # ć; macron = length
+    # Istro-Romanian in its Croatian-based spelling: j is the glide, which
+    # the Romanian backend reads ʒ; ž is the fricative. The affricate the
+    # backend makes of ge, gi is listed so its ʒ is left alone.
+    "ruo": {
+        "d͡ʒ": "d͡ʒ", "lʒ": "ʎ", "nʒ": "ɲ", "ʒ": "j",
+        "š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "æ",
+    },
+    # ć; a marked s is the voiced one; macron = length.
+    "eml": {"ṅ": "ŋ", "ḱ": "t͡ʃ", "ṣ": "z", "ū": "u", "ī": "i", "ō": "o"},
+    # ẓ comes out as s + dot. ë and ö are centring diphthongs, one syllable.
+    "rgn": {"ṣ": "ð", "ș": "z", "ş": "z", "ọ": "o", "ë": "ɛ", "ö": "ɔ", "ã": "ə̃"},
     "fur": {"ķ": "t͡ʃ"},                    # ç
     "ca": {"ķ": "s"},
     "lad": {"ķ": "s"},
     "lmo": {"ö": "ø", "ü": "y"},
-    "lld": {"ö": "ø", "ü": "y", "ë": "ə"},
+    "lld": {"ö": "ø", "ü": "y", "ë": "ɐ"},
     "pms": {"ë": "ə"},
 }
+
+# A column that mixes two spellings. A form with a letter only the backend's
+# own spelling has is already read correctly and takes no leftover readings.
+# The Istro-Romanian column is part Croatian-based, part Romanian.
+BACKEND_NATIVE_LETTERS: dict[str, str] = {"ruo": "ăîșț"}

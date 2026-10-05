@@ -16,7 +16,8 @@ import epitran
 import panphon
 from panphon.featuretable import FeatureTable
 from vulgultra.phonology_constants import (
-    BACKEND_LEFTOVERS, BACKEND_TYPOS, IPA_TO_ORTHO, LANG_CODES, ORTHO_TO_IPA,
+    BACKEND_LEFTOVERS, BACKEND_NATIVE_LETTERS, BACKEND_TYPOS, IPA_TO_ORTHO,
+    LANG_CODES, ORTHO_TO_IPA,
 )
 
 # ---------------------------------------------------------------------------
@@ -119,26 +120,28 @@ def _get_g2p(lang: str) -> epitran.Epitran:
 
 def word_to_ipa(word: str, lang: str) -> str:
     """Convert an orthographic word to IPA using epitran."""
-    epi = _get_g2p(lang)
-    return read_leftovers(epi.transliterate(word.lower().strip()), lang)
+    word = word.lower().strip()
+    ipa = _get_g2p(lang).transliterate(word)
+    native = any(ch in BACKEND_NATIVE_LETTERS.get(lang, "") for ch in word)
+    return read_leftovers(ipa, None if native else lang)
 
 
-# Decomposed, longest first, so a base letter plus its leftover diacritic is
-# matched before the bare letter.
-_LEFTOVERS = {
-    lang: sorted(
-        ((unicodedata.normalize("NFD", left), reading) for left, reading in table.items()),
-        key=lambda pair: -len(pair[0]),
-    )
-    for lang, table in BACKEND_LEFTOVERS.items()
-}
+def _leftover_reader(table: dict[str, str]) -> tuple[re.Pattern[str], dict[str, str]]:
+    """One pass, longest first: a reading is never re-read as a leftover."""
+    readings = {unicodedata.normalize("NFD", left): reading for left, reading in table.items()}
+    longest_first = sorted(readings, key=len, reverse=True)
+    return re.compile("|".join(map(re.escape, longest_first))), readings
 
 
-def read_leftovers(ipa: str, lang: str) -> str:
+_LEFTOVERS = {lang: _leftover_reader(table) for lang, table in BACKEND_LEFTOVERS.items()}
+
+
+def read_leftovers(ipa: str, lang: str | None) -> str:
     """Finish what a borrowed backend left untranscribed for this lect."""
     ipa = unicodedata.normalize("NFD", ipa)
-    for leftover, reading in _LEFTOVERS.get(lang, ()):
-        ipa = ipa.replace(leftover, reading)
+    if lang in _LEFTOVERS:
+        pattern, readings = _LEFTOVERS[lang]
+        ipa = pattern.sub(lambda match: readings[match.group()], ipa)
     for slip, fixed in BACKEND_TYPOS:
         ipa = ipa.replace(slip, fixed)
     return ipa

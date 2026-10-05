@@ -57,19 +57,14 @@ GROUPS = {
 # for Gate G0, not decisions; nothing in the pipeline reads this table.
 PROPOSALS: dict[str, tuple[str, tuple[str, ...] | None, str, str]] = {
     "ʝ": (SPEC, ("j",), "", "palatal fricative → /j/"),
-    "x": (SPEC, ("k",), "", "/x/ → /k/"),
     "ɲ": (SPEC, ("n", "j"), "", "palatal nasal → /nj/"),
     "ʎ": (SPEC, ("l", "j"), "", "palatal lateral → /lj/"),
-
-    "ë": (LEAK, None, "", "Romagnol ë"),
-    "ö": (LEAK, None, "", "Romagnol ö"),
-    "ã": (LEAK, None, "", "Romagnol ã"),
 
     "β": (ALLOPHONE, ("b",), "", "/b/ between vowels"),
     "ɱ": (ALLOPHONE, ("n",), "", "nasal before /f v/; the source spells n"),
     "ʊ": (ALLOPHONE, ("o",), "", "Galician final unstressed /o/"),
     "ɪ": (ALLOPHONE, ("e",), "", "Galician final unstressed /e/"),
-    "ɐ": (ALLOPHONE, ("a",), "", "unstressed /a/ in Portuguese, Mirandese, Galician"),
+    "ɐ": (ALLOPHONE, ("a",), "", "unstressed /a/ in pt mwl gl; Ladin ë is a phoneme and stays"),
     "kʷ": (ALLOPHONE, ("k", "w"), "", "Portuguese qu before a, o: /kw/"),
     "w̃": (ALLOPHONE, ("w",), "", "offglide of a nasal diphthong; nasality is on the vowel"),
     "j̃": (ALLOPHONE, ("j",), "", "offglide of a nasal diphthong; nasality is on the vowel"),
@@ -80,6 +75,10 @@ PROPOSALS: dict[str, tuple[str, tuple[str, ...] | None, str, str]] = {
     "ŋ": (CONTRAST, ("n",), "", "variant of /n/ in ca oc gsc; a phoneme in Ligurian and Emilian"),
     "ɑ": (CONTRAST, ("a",), "", "contrasts with a in conservative French (pâte/patte)"),
     "ɒ": (CONTRAST, ("a",), "å", "Istro-Romanian å, kept as its own letter"),
+    "æ": (CONTRAST, ("e",), "ę", "Istro-Romanian ę, kept as its own letter"),
+    "ð": (CONTRAST, ("z",), "", "Romagnol ẓ"),
+    "ə̃": (CONTRAST, ("e", "n"), "", "Romagnol ã"),
+    "x": (CONTRAST, None, "", "Spanish jota; the v3.0 mapping to k is withdrawn"),
     "ɛ": (CONTRAST, ("e",), "è", "open e; spec: expand only if noun cells collide"),
     "ɔ": (CONTRAST, ("o",), "ò", "open o; same clause"),
     "ə": (CONTRAST, ("e",), "ë", "schwa"),
@@ -103,8 +102,15 @@ PROPOSALS: dict[str, tuple[str, tuple[str, ...] | None, str, str]] = {
     "ũ": (CONTRAST, ("u", "n"), "ũ", ""),
 }
 
+# An allophone is merged only in the lects where it is one.
+ALLOPHONE_LECTS: dict[str, tuple[str, ...]] = {
+    "β": ("oc", "gsc"), "ɱ": ("oc", "gsc"), "ʊ": ("gl",), "ɪ": ("gl",),
+    "ɐ": ("pt", "mwl", "gl"), "kʷ": ("pt", "mwl"), "w̃": ("pt", "mwl"), "j̃": ("pt", "mwl"),
+}
+
 # PanPhon hands back decomposed segments; match them whatever form is typed here.
 PROPOSALS = {unicodedata.normalize("NFD", seg): row for seg, row in PROPOSALS.items()}
+ALLOPHONE_LECTS = {unicodedata.normalize("NFD", seg): lects for seg, lects in ALLOPHONE_LECTS.items()}
 
 SCENARIOS = (
     ("Today", ()),
@@ -145,7 +151,10 @@ def shortlist(
         ipa, seq = result
         if not table:
             return ipa, seq
-        return ipa, repair([out for seg in seq for out in table.get(seg, (seg,))])
+        return ipa, repair([
+            out for seg in seq
+            for out in (table.get(seg, (seg,)) if lang in ALLOPHONE_LECTS.get(seg, (lang,)) else (seg,))
+        ])
 
     return build_candidates(concepts, transcribe=transcribe)
 

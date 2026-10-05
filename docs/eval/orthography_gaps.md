@@ -16,18 +16,7 @@ Columns: **cands** = shortlisted candidates containing the segment; **concepts**
 |---|---|---:|---:|---:|---:|---|---|---|---|---|
 | ʎ | C | 25 | 16 | 2 | 8 | ca 12, ruo 3, oc 3 | l j | – | ca *lluny* → `⟨ʎ⟩u⟨ɲ⟩` | palatal lateral → /lj/ |
 | ɲ | C | 8 | 5 | 0 | 3 | fur 2, ca 2, lmo 1 | n j | – | ca *lluny* → `⟨ʎ⟩u⟨ɲ⟩` | palatal nasal → /nj/ |
-| x | C | 3 | 1 | 0 | 0 | es 1, ext 1, lad 1 | k | – | es *mujer* → `mu⟨x⟩e⟨ɾ⟩` | /x/ → /k/ |
 | ʝ | C | 2 | 2 | 0 | 1 | an 1, es 1 | j | – | an *muller* → `mu⟨ʝ⟩e⟨ɾ⟩` | palatal fricative → /j/ |
-
-## Source letters with no reading yet
-
-Not IPA. The lect is transcribed with a sister's backend, which passes the letter through, and PanPhon accepts letter plus diacritic as a segment. Each needs a reading in `BACKEND_LEFTOVERS` before it can be merged or spelled.
-
-| segment | | cands | concepts | forced | roots | lects | merge to | spell as | example | note |
-|---|---|---:|---:|---:|---:|---|---|---|---|---|
-| ö | V | 2 | 2 | 0 | 1 | rgn 2 | ? | – | rgn *öv* → `⟨ö⟩v` | Romagnol ö |
-| ã | V | 1 | 1 | 0 | 1 | rgn 1 | ? | – | rgn *grãnd* → `gr⟨ã⟩nd` | Romagnol ã |
-| ë | V | 1 | 1 | 0 | 1 | rgn 1 | ? | – | rgn *pël* → `p⟨ë⟩l` | Romagnol ë |
 
 ## Never contrastive in a lect that shows it
 
@@ -35,7 +24,7 @@ Predictable variants of another sound. They are separate segments only because o
 
 | segment | | cands | concepts | forced | roots | lects | merge to | spell as | example | note |
 |---|---|---:|---:|---:|---:|---|---|---|---|---|
-| ɐ | V | 31 | 15 | 0 | 1 | pt 14, mwl 13, gl 4 | a | – | pt *lua* → `lw⟨ɐ⟩` | unstressed /a/ in Portuguese, Mirandese, Galician |
+| ɐ | V | 49 | 32 | 0 | 1 | lld 18, pt 14, mwl 13 | a | – | lld *crëp* → `kr⟨ɐ⟩p` | unstressed /a/ in pt mwl gl; Ladin ë is a phoneme and stays |
 | ʊ | V | 5 | 5 | 0 | 1 | gl 5 | o | – | gl *po* → `p⟨ʊ⟩` | Galician final unstressed /o/ |
 | kʷ | C | 4 | 2 | 0 | 1 | pt 2, mwl 2 | k w | – | mwl *quien* → `⟨kʷ⟩y⟨ɛ̃⟩` | Portuguese qu before a, o: /kw/ |
 | w̃ | C | 3 | 3 | 0 | 1 | pt 3 | w | – | pt *cão* → `k⟨ɐ̃⟩⟨w̃⟩` | offglide of a nasal diphthong; nasality is on the vowel |
@@ -50,14 +39,14 @@ Merging any of these gives up a distinction some daughter makes.
 
 | segment | | cands | concepts | forced | roots | lects | merge to | spell as | example | note |
 |---|---|---:|---:|---:|---:|---|---|---|---|---|
-| ɾ | C | 237 | 49 | 1 | 36 | ca 29, ast 25, pt 24 | r | – | an *ser* → `se⟨ɾ⟩` | single r; es ca pt gl contrast it with the strong r (caro/carro) |
-| ɛ | V | 232 | 89 | 2 | 21 | ca 26, eml 24, fr 21 | e | è | fr *chienne* → `xy⟨ɛ⟩n` | open e; spec: expand only if noun cells collide |
+| ɾ | C | 237 | 49 | 0 | 36 | ca 29, ast 25, pt 24 | r | – | an *ser* → `se⟨ɾ⟩` | single r; es ca pt gl contrast it with the strong r (caro/carro) |
+| ɛ | V | 230 | 87 | 2 | 21 | ca 26, eml 25, fr 21 | e | è | fr *chienne* → `xy⟨ɛ⟩n` | open e; spec: expand only if noun cells collide |
 | ʀ | C | 198 | 49 | 2 | 16 | fr 38, pcd 37, gallo 37 | r | – | fr *parce* → `pa⟨ʀ⟩s` | the one rhotic of the Oïl lects; uvular, not a second category |
-| ɔ | V | 131 | 58 | 2 | 20 | ca 30, eml 16, pms 12 | o | ò | ca *nom* → `n⟨ɔ⟩m` | open o; same clause |
-| ə | V | 86 | 49 | 1 | 1 | lld 18, gallo 17, wa 11 | e | ë | lld *crëp* → `kr⟨ə⟩p` | schwa |
+| ɔ | V | 133 | 58 | 2 | 20 | ca 30, eml 16, pms 12 | o | ò | ca *nom* → `n⟨ɔ⟩m` | open o; same clause |
+| ə | V | 68 | 36 | 1 | 1 | gallo 17, wa 11, fr 8 | e | ë | rup *măc* → `m⟨ə⟩k` | schwa |
 | ɑ̃ | V | 56 | 17 | 0 | 1 | frp 13, fr 12, gallo 12 | a n | ã | fr *langue* → `l⟨ɑ̃⟩g` | nasal vowel; merge restores the nasal consonant |
-| ʒ | C | 56 | 22 | 0 | 9 | fr 9, gallo 9, nrf 8 | ʃ | j | ca *roig* → `⟨ɾ⟩⟨ɔ⟩⟨ʒ⟩c` | j is a free letter |
 | y | V | 50 | 23 | 0 | 1 | gsc 8, lmo 8, gallo 6 | u | ü | lmo *giüst* → `⟨d͡ʒ⟩⟨y⟩st` | front rounded high |
+| ʒ | C | 49 | 16 | 0 | 9 | fr 9, gallo 9, nrf 8 | ʃ | j | ca *roig* → `⟨ɾ⟩⟨ɔ⟩⟨ʒ⟩c` | j is a free letter |
 | ɔ̃ | V | 44 | 13 | 1 | 1 | wa 10, pcd 8, frp 7 | o n | õ | wa *ongue* → `⟨ɔ̃⟩g` |  |
 | ɛ̃ | V | 32 | 16 | 3 | 4 | wa 10, pcd 7, fr 5 | e n | ẽ | wa *cinde* → `s⟨ɛ̃⟩d` |  |
 | ø | V | 25 | 14 | 0 | 1 | lmo 8, gallo 3, fr 3 | o | ö | gallo *plleue* → `pl⟨ø⟩` | front rounded mid |
@@ -72,11 +61,15 @@ Merging any of these gives up a distinction some daughter makes.
 | ɐ̃ | V | 6 | 5 | 0 | 2 | pt 4, mwl 2 | a n | ã | pt *cão* → `k⟨ɐ̃⟩⟨w̃⟩` | one letter with ɑ̃ |
 | ũ | V | 5 | 4 | 0 | 1 | mwl 3, pt 1, rgn 1 | u n | ũ | rgn *fiũ* → `fy⟨ũ⟩` |  |
 | h | C | 4 | 4 | 0 | 1 | gsc 3, rup 1 | ∅ | h | gsc *hemna* → `⟨h⟩enna` | h is a free letter; merging means deleting it |
+| æ | V | 4 | 4 | 0 | 0 | ruo 4 | e | ę | ruo *bę* → `b⟨æ⟩` | Istro-Romanian ę, kept as its own letter |
 | œ̃ | V | 4 | 2 | 0 | 1 | fr 1, pcd 1, gallo 1 | e n | ẽ | frp *fum* → `f⟨œ̃⟩` | one letter with ɛ̃ |
 | ɑ | V | 4 | 1 | 0 | 0 | fr 1, pcd 1, nrf 1 | a | – | fr *femme* → `f⟨ɑ⟩m⟨ə⟩` | contrasts with a in conservative French (pâte/patte) |
+| x | C | 3 | 1 | 0 | 0 | es 1, ext 1, lad 1 | ? | – | es *mujer* → `mu⟨x⟩e⟨ɾ⟩` | Spanish jota; the v3.0 mapping to k is withdrawn |
 | õ | V | 2 | 2 | 0 | 1 | pt 2 | o n | õ | pt *bom* → `b⟨õ⟩` | one letter with ɔ̃ |
 | θ | C | 2 | 2 | 0 | 1 | gl 2 | s | – | gl *raíz* → `ray⟨θ⟩` | Galician |
 | d͡z | C | 1 | 1 | 0 | 0 | rup 1 | z | dz | rup *dzuă* → `⟨d͡z⟩w⟨ə⟩` | digraph, same caveat |
+| ð | C | 1 | 1 | 0 | 0 | rgn 1 | z | – | rgn *ẓal* → `⟨ð⟩al` | Romagnol ẓ |
+| ə̃ | V | 1 | 1 | 0 | 0 | rgn 1 | e n | – | rgn *grãnd* → `gr⟨ə̃⟩nd` | Romagnol ã |
 
 ## What each level of merging does to the shortlist
 
@@ -84,10 +77,10 @@ Each row rebuilds the minimum-σ shortlist with the merges applied before repair
 
 | Scenario | segments | unspelled | candidates | spellable | Σσ | no legal candidate | contested | forced homophones |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Today | 65 | 42 | 2719 | 193 | 228 | 0 | 116 | 1 |
-| Spec merges | 61 | 38 | 2717 | 196 | 228 | 0 | 116 | 1 |
-| Spec merges and allophones | 53 | 30 | 2716 | 197 | 228 | 0 | 119 | 1 |
-| Every segment that has a target merged | 26 | 3 | 2716 | 213 | 228 | 0 | 141 | 1 |
+| Today | 65 | 42 | 2722 | 193 | 228 | 0 | 116 | 1 |
+| Spec merges | 62 | 39 | 2720 | 196 | 228 | 0 | 116 | 1 |
+| Spec merges and allophones | 55 | 32 | 2719 | 197 | 228 | 0 | 119 | 1 |
+| Every segment that has a target merged | 25 | 2 | 2718 | 213 | 228 | 0 | 141 | 1 |
 
 ## Concepts with no spellable candidate today
 
@@ -99,14 +92,9 @@ The backend left a letter that is not IPA and `BACKEND_LEFTOVERS` has no reading
 
 | lect | leftover | forms | examples |
 |---|---|---:|---|
-| eml | `ṣ` | 5 | *bruṣèr* → bruṣɛr; *cuṣìr* → kuṣir; *otûṣ* → otuṣ; *rèdṣ* → rɛdṣ |
 | frp | `'` | 1 | *s'assêre* → s'asɛʀ |
 | gallo | `'` | 1 | *s'asseir* → s'asəiʀ |
 | nrf | `'` | 7 | *ch'la* → ʃ'la; *g'ler* → ɡ'lɛʀ; *p'tit* → p'ti; *s'assiéthe* → s'asjet |
 | pcd | `'` | 4 | *ch'* → ʃ'; *p'tit* → p'ti; *s'assir* → s'asiʀ; *s'tenir* → s'təniʀ |
-| rgn | `ṣ` | 2 | *alẓir* → alṣir; *ẓal* → ṣal |
-| rgn | `ș` | 2 | *calurôș* → kaluroș; *radìșa* → radișa |
-| rgn | `ọ` | 1 | *fọmm* → fọmː |
 | rgn | `'` | 1 | *l'* → l' |
-| rgn | `ş` | 1 | *uşël* → uşël |
 | wa | `'` | 1 | *s'ashir* → s'asiʀ |
