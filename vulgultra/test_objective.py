@@ -36,6 +36,20 @@ class ObjectiveFixtures(unittest.TestCase):
         self.assertEqual([c.source_word for c in prepared["water"]], ["corto"])
         self.assertEqual(prepared["water"][0].evidence, "grid:p1")
 
+    def test_preparation_keeps_each_concept_part_of_speech(self) -> None:
+        concepts = {
+            "water": {"__meta__": {"pos": "noun"}, "es": [{"form": "ka"}]},
+            "smile": {"__meta__": {"pos": "verb"}, "es": [{"form": "la"}]},
+        }
+
+        def fake_transcribe(word: str, _lang: str) -> tuple[str, list[str]]:
+            return word, list(word)
+
+        with patch("vulgultra.candidate_prep.transcribe_and_repair", side_effect=fake_transcribe):
+            prepared = build_candidates(concepts)
+        self.assertEqual(prepared["water"][0].pos, "noun")
+        self.assertEqual(prepared["smile"][0].pos, "verb")
+
     def test_inventory_term_rewards_distinct_root_segments(self) -> None:
         roots_a = {"one": [candidate("one", "es", "a", ["a"], 1, "a")]}
         roots_b = {"one": [candidate("one", "es", "ap", ["a", "p"], 1, "b")]}

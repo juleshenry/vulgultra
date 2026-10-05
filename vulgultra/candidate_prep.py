@@ -19,7 +19,7 @@ def build_candidates(concepts: dict[str, dict[str, Any]]) -> dict[str, list[Cand
     the shortlist is made. Selection itself never sees source spread or
     morpheme-uniformity scores.
     """
-    prepared: list[tuple[str, str, dict[str, str], str, list[str]]] = []
+    prepared: list[tuple[str, str, str, dict[str, str], str, list[str]]] = []
     observed: set[str] = set()
     errors = 0
     for concept_id, lang_forms in concepts.items():
@@ -32,14 +32,14 @@ def build_candidates(concepts: dict[str, dict[str, Any]]) -> dict[str, list[Cand
                 try:
                     ipa, seq = transcribe_and_repair(record["form"], lang)
                     if seq:
-                        prepared.append((concept_id, lang, record, ipa, seq))
+                        prepared.append((concept_id, pos, lang, record, ipa, seq))
                         observed.update(seq)
                 except Exception:
                     errors += 1
 
     configure_inventory(observed)
     candidates: dict[str, list[Candidate]] = {}
-    for concept_id, lang, record, ipa, seq in prepared:
+    for concept_id, pos, lang, record, ipa, seq in prepared:
         try:
             if not seq or count_violations(seq):
                 continue
