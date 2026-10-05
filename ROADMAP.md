@@ -171,11 +171,10 @@ Known before the gate:
 - Concept ids must be project-owned and never reused. A Bible id equal to a
   Swadesh id is merged silently and overwrites its part of speech and gloss
   (`right`, `lie`, `back` are already taken).
-- The TSV importer takes the five anchors only. The lects that win most roots
-  today (Catalan 48 of 213, Aragonese 40) have no way to receive a Bible
-  cell, and the word lists for es, pt, gl, ca, fr, it, ro, lmo have no
-  glosses for the overlay. Without a fill path the Bible layer is a
-  five-language lexicon.
+- The TSV importer takes the five anchors only; every other lect gets a
+  Bible cell only through the gloss overlay. Seven non-anchor lects have
+  word lists with no glosses at all (ca, gl, lmo, gsc, pcd, frp, ext), so
+  they cannot receive one. Catalan alone supplies 48 of the 213 roots today.
 - Selection is not incremental: adding or removing concepts changes roots
   already chosen. Pins (Gate G0) come first.
 
