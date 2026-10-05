@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from typing import Any
 
 from vulgultra.g2p import transcribe_and_repair
@@ -12,13 +13,18 @@ from vulgultra.phonology import (
 from vulgultra.grid import form_records
 
 
-def build_candidates(concepts: dict[str, dict[str, Any]]) -> dict[str, list[Candidate]]:
+def build_candidates(
+    concepts: dict[str, dict[str, Any]],
+    transcribe: Callable[[str, str], tuple[str, list[str]]] | None = None,
+) -> dict[str, list[Candidate]]:
     """Build auditable candidates, then keep only each concept's shortest legal forms.
 
     The observed inventory is configured from the complete input grid before
     the shortlist is made. Selection itself never sees source spread or
-    morpheme-uniformity scores.
+    morpheme-uniformity scores. ``transcribe`` lets a report shortlist the
+    same grid under a different transcription.
     """
+    transcribe = transcribe or transcribe_and_repair
     prepared: list[tuple[str, str, str, dict[str, str], str, list[str]]] = []
     observed: set[str] = set()
     errors = 0
@@ -30,7 +36,7 @@ def build_candidates(concepts: dict[str, dict[str, Any]]) -> dict[str, list[Cand
                 continue
             for record in form_records(raw_forms):
                 try:
-                    ipa, seq = transcribe_and_repair(record["form"], lang)
+                    ipa, seq = transcribe(record["form"], lang)
                     if seq:
                         prepared.append((concept_id, pos, lang, record, ipa, seq))
                         observed.update(seq)
