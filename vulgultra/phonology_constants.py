@@ -69,7 +69,9 @@ BACKEND_TYPOS: tuple[tuple[str, str], ...] = (("g", "ɡ"), ("tʃ͡", "t͡ʃ"))
 _OIL_E = {"ə̀": "ɛ", "ə̂": "ɛ"}          # è, ê
 _STRESS_ONLY = {"é": "e", "í": "i", "ú": "u", "à": "a", "á": "a"}
 # Istro-Romanian letters that mean the same in every one of its spellings.
-_RUO_LETTERS = {"š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "æ", "ľ": "ʎ", "ń": "ɲ"}
+# The acute is a dictionary's stress mark.
+_RUO_LETTERS = {"š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "æ", "ľ": "ʎ", "ń": "ɲ",
+                "á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u"}
 BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "fr": {**_OIL_E, "ù": "u"},            # où
     "frp": _OIL_E,

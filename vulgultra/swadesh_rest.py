@@ -182,27 +182,28 @@ _EML = _hits("eml", {
     "neck": "còl", "back": "schéṅna", "breast": "pèt", "heart": "côr", "liver": "fégghet",
     "drink": "bàvver", "eat": "magnèr", "bite": "muṡghèr", "suck": "sucèr", "spit": "spudèr",
     "vomit": "vumitèr", "blow": "supièr", "breathe": "respirèr", "laugh": "rédder", "see": "vàdder",
-    "hear": "sénter", "know": "savair", "think": "pinsèr", "smell": "naṡèr", "sleep": "durmîr",
-    "live": "vîver", "die": "murîr", "kill": "mazèr", "fight": "cunbâter", "hunt": "cazièr",
-    "hit": "bâter", "cut": "tajèr", "split": "divîder", "stab": "pugnalèr", "scratch": "ṡgranfgnèr",
-    "dig": "scavèr", "swim": "nudèr", "fly": "vulèr", "walk": "caminèr", "come": "vgnîr",
-    "lie": "dstànndres", "sit": "sêder", "turn": "girèr", "fall": "caschèr", "give": "dèr",
-    "hold": "tgnîr", "squeeze": "scuizèr", "rub": "sfarghèr", "wash": "lavèr", "wipe": "sughèr",
-    "pull": "tirèr", "push": "spénnżer", "throw": "trèr", "tie": "lighèr", "sew": "cûṡer",
-    "count": "cuntèr", "say": "dîr", "sing": "cantèr", "play": "żughèr", "float": "galegèr",
-    "flow": "pasèr", "freeze": "żlèr", "swell": "gunfièr", "sun": "sól", "moon": "lóṅna",
-    "star": "strèla", "water": "âcua", "rain": "piôva", "river": "fiómm", "lake": "lèg",
-    "sea": "mèr", "salt": "sèl", "stone": "sâs", "sand": "sâbia", "dust": "pólvra", "earth": "tèra",
-    "cloud": "nóvvla", "fog": "nèbia", "sky": "zîl", "wind": "vänt", "snow": "naiv", "ice": "giâz",
-    "smoke": "fómm", "fire": "fûg", "ash": "zànnder", "burn": "bruṡèr", "road": "strè",
-    "mountain": "muntâgna", "red": "råss", "green": "vaird", "yellow": "żâl", "white": "bianc",
-    "black": "naigher", "night": "nòt", "day": "dé", "year": "ân", "warm": "chèld", "cold": "fredd",
-    "full": "pén", "new": "nôv", "old": "vèc'", "good": "bón", "bad": "catîv", "rotten": "mèrz",
-    "dirty": "malnàtt", "straight": "drétt", "round": "tånnd", "sharp": "arfilè", "dull": "ṡmusè",
-    "smooth": "léss", "wet": "mói", "dry": "sacc", "correct": "giósst", "near": "avṡén",
-    "far": "luntàn", "right": "drétta", "left": "stanca", "at": "a", "in": "in", "with": "con",
-    "and": "e", "if": "se", "because": "parché", "name": "nómm", "def_art": "al", "copula": "èser",
-    "cat": "gât", "cat_f": "gâta", "dog_f": "càgna", "smile": "surìder",
+    "hear": "sénter", "know": "savair", "think": "pinsèr", "smell": "naṡèr", "fear": "tmèr",
+    "sleep": "durmîr", "live": "vîver", "die": "murîr", "kill": "mazèr", "fight": "cunbâter",
+    "hunt": "cazièr", "hit": "bâter", "cut": "tajèr", "split": "divîder", "stab": "pugnalèr",
+    "scratch": "ṡgranfgnèr", "dig": "scavèr", "swim": "nudèr", "fly": "vulèr", "walk": "caminèr",
+    "come": "vgnîr", "lie": "dstànndres", "sit": "sêder", "stand": "stèr", "turn": "girèr",
+    "fall": "caschèr", "give": "dèr", "hold": "tgnîr", "squeeze": "scuizèr", "rub": "sfarghèr",
+    "wash": "lavèr", "wipe": "sughèr", "pull": "tirèr", "push": "spénnżer", "throw": "trèr",
+    "tie": "lighèr", "sew": "cûṡer", "count": "cuntèr", "say": "dîr", "sing": "cantèr",
+    "play": "żughèr", "float": "galegèr", "flow": "pasèr", "freeze": "żlèr", "swell": "gunfièr",
+    "sun": "sól", "moon": "lóṅna", "star": "strèla", "water": "âcua", "rain": "piôva",
+    "river": "fiómm", "lake": "lèg", "sea": "mèr", "salt": "sèl", "stone": "sâs", "sand": "sâbia",
+    "dust": "pólvra", "earth": "tèra", "cloud": "nóvvla", "fog": "nèbia", "sky": "zîl",
+    "wind": "vänt", "snow": "naiv", "ice": "giâz", "smoke": "fómm", "fire": "fûg", "ash": "zànnder",
+    "burn": "bruṡèr", "road": "strè", "mountain": "muntâgna", "red": "råss", "green": "vaird",
+    "yellow": "żâl", "white": "bianc", "black": "naigher", "night": "nòt", "day": "dé",
+    "year": "ân", "warm": "chèld", "cold": "fredd", "full": "pén", "new": "nôv", "old": "vèc'",
+    "good": "bón", "bad": "catîv", "rotten": "mèrz", "dirty": "malnàtt", "straight": "drétt",
+    "round": "tånnd", "sharp": "arfilè", "dull": "ṡmusè", "smooth": "léss", "wet": "mói",
+    "dry": "sacc", "correct": "giósst", "near": "avṡén", "far": "luntàn", "right": "drétta",
+    "left": "stanca", "at": "a", "in": "in", "with": "con", "and": "e", "if": "se",
+    "because": "parché", "name": "nómm", "def_art": "al", "copula": "èser", "cat": "gât",
+    "cat_f": "gâta", "dog_f": "càgna", "smile": "surìder",
 })
 
 # The twelve cells Wiktionary's Ladin Swadesh list covers follow it.
@@ -319,35 +320,35 @@ _DLM = _hits("dlm", {
     "thick": "dais", "heavy": "pesunt", "small": "pedlo", "short": "kort", "woman": "dona",
     "man": "jomno", "person": "jomno", "child": "kratoir", "wife": "mulier", "husband": "marait",
     "mother": "njena", "father": "tuota", "animal": "biastia", "fish": "pasc", "bird": "paserain",
-    "dog": "cun", "louse": "pedoklo", "worm": "viarm", "tree": "iuarbol", "forest": "buask",
-    "stick": "stal", "fruit": "froit", "seed": "grun", "leaf": "fualja", "root": "radaica",
-    "bark": "dermun", "flower": "fiaur", "grass": "iarba", "rope": "kanapial", "skin": "pial",
-    "meat": "cuarne", "blood": "suang", "bone": "vuas", "fat": "gruas", "egg": "juv",
-    "horn": "cuarno", "tail": "cauda", "hair": "pail", "head": "cup", "ear": "oracla",
-    "eye": "uaclo", "nose": "nuos", "mouth": "buca", "tooth": "diant", "tongue": "langa",
-    "fingernail": "jongla", "foot": "pi", "leg": "guonb", "knee": "denaklo", "hand": "mun",
-    "wing": "jal", "belly": "viantro", "guts": "alaite", "neck": "cual", "back": "duas",
-    "breast": "tat", "heart": "cur", "liver": "fecuat", "drink": "bar", "eat": "mancur",
-    "bite": "moscuar", "suck": "zupigur", "spit": "spoit", "vomit": "gomituor", "blow": "sublar",
-    "breathe": "fiutar", "laugh": "redro", "see": "vedar", "hear": "senter", "know": "sapar",
-    "think": "piansar", "smell": "tufuor", "fear": "taimo", "sleep": "dormer", "live": "vivar",
-    "die": "morer", "kill": "masuor", "fight": "cuombatter", "hunt": "capur", "hit": "botur",
-    "cut": "taljur", "split": "spartar", "scratch": "gratuar", "dig": "pasnur", "fly": "svolur",
-    "walk": "kaminur", "come": "venir", "sit": "sentur", "stand": "stur", "fall": "kadar",
-    "give": "duor", "hold": "tenar", "squeeze": "shtrengar", "rub": "jongar", "wash": "lavuar",
-    "pull": "strasinur", "throw": "truar", "tie": "liguar", "sew": "koser", "count": "embruar",
-    "say": "dekro", "sing": "kantur", "play": "jukur", "freeze": "glazir", "sun": "saul",
-    "moon": "loina", "star": "stala", "water": "aqua", "rain": "pluaia", "river": "floim",
-    "lake": "lak", "sea": "mur", "salt": "suol", "stone": "pitra", "sand": "sablaun",
-    "dust": "pulvro", "earth": "tiara", "cloud": "neo", "sky": "cil", "wind": "viant",
-    "snow": "nai", "ice": "glas", "fire": "fuc", "ash": "kanaisa", "burn": "ardar", "road": "kale",
-    "mountain": "muant", "red": "ros", "green": "vert", "yellow": "zuola", "white": "blanc",
-    "black": "fosc", "night": "nuot", "day": "dai", "year": "jan", "warm": "cuald", "cold": "gelut",
-    "full": "plain", "new": "nuf", "old": "vieclo", "good": "bun", "bad": "ri", "rotten": "muas",
-    "dirty": "spuarc", "straight": "drat", "wet": "joit", "dry": "sak", "correct": "drat",
-    "near": "alic", "far": "distuont", "right": "diastro", "left": "zuonca", "at": "a", "in": "in",
-    "with": "kon", "and": "e", "if": "se", "because": "perko", "name": "naum", "def_art": "el",
-    "cat": "cuot",
+    "dog": "cun", "louse": "pedoklo", "snake": "serpiant", "worm": "viarm", "tree": "iuarbol",
+    "forest": "buask", "stick": "stal", "fruit": "froit", "seed": "grun", "leaf": "fualja",
+    "root": "radaica", "bark": "dermun", "flower": "fiaur", "grass": "iarba", "rope": "kanapial",
+    "skin": "pial", "meat": "cuarne", "blood": "suang", "bone": "vuas", "fat": "gruas",
+    "egg": "juv", "horn": "cuarno", "tail": "cauda", "feather": "paina", "hair": "pail",
+    "head": "cup", "ear": "oracla", "eye": "uaclo", "nose": "nuos", "mouth": "buca",
+    "tooth": "diant", "tongue": "langa", "fingernail": "jongla", "foot": "pi", "leg": "guonb",
+    "knee": "denaklo", "hand": "mun", "wing": "jal", "belly": "viantro", "guts": "alaite",
+    "neck": "cual", "back": "duas", "breast": "tat", "heart": "cur", "liver": "fecuat",
+    "drink": "bar", "eat": "mancur", "bite": "moscuar", "suck": "zupigur", "spit": "spoit",
+    "vomit": "gomituor", "blow": "sublar", "breathe": "fiutar", "laugh": "redro", "see": "vedar",
+    "hear": "senter", "know": "sapar", "think": "piansar", "smell": "tufuor", "fear": "taimo",
+    "sleep": "dormer", "live": "vivar", "die": "morer", "kill": "masuor", "fight": "cuombatter",
+    "hunt": "capur", "hit": "botur", "cut": "taljur", "split": "spartar", "scratch": "gratuar",
+    "dig": "pasnur", "fly": "svolur", "walk": "kaminur", "come": "venir", "sit": "sentur",
+    "stand": "stur", "fall": "kadar", "give": "duor", "hold": "tenar", "squeeze": "shtrengar",
+    "rub": "jongar", "wash": "lavuar", "pull": "strasinur", "throw": "truar", "tie": "liguar",
+    "sew": "koser", "count": "embruar", "say": "dekro", "sing": "kantur", "play": "jukur",
+    "freeze": "glazir", "sun": "saul", "moon": "loina", "star": "stala", "water": "aqua",
+    "rain": "pluaia", "river": "floim", "lake": "lak", "sea": "mur", "salt": "suol",
+    "stone": "pitra", "sand": "sablaun", "dust": "pulvro", "earth": "tiara", "cloud": "neo",
+    "sky": "cil", "wind": "viant", "snow": "nai", "ice": "glas", "fire": "fuc", "ash": "kanaisa",
+    "burn": "ardar", "road": "kale", "mountain": "muant", "red": "ros", "green": "vert",
+    "yellow": "zuola", "white": "blanc", "black": "fosc", "night": "nuot", "day": "dai",
+    "year": "jan", "warm": "cuald", "cold": "gelut", "full": "plain", "new": "nuf", "old": "vieclo",
+    "good": "bun", "bad": "ri", "rotten": "muas", "dirty": "spuarc", "straight": "drat",
+    "wet": "joit", "dry": "sak", "correct": "drat", "near": "alic", "far": "distuont",
+    "right": "diastro", "left": "zuonca", "at": "a", "in": "in", "with": "kon", "and": "e",
+    "if": "se", "because": "perko", "name": "naum", "def_art": "el", "cat": "cuot",
 })
 
 # Corsican: Appendix:Corsican_Swadesh_list first {{l|co|…}}; empty cells from Sicilian sister.
@@ -653,15 +654,22 @@ TABLES["ruo"].update(RUO_WIKT_SWADESH)
 # sense. Each is traced in docs/sources_ruo.md.
 RUO_WIKT_ENTRIES = {
     "thick": "gros",        # lemma entry, adjective "thick"
-    "liver": "ficåt",       # lemma entry; translation under "liver"
-    "bite": "mučcå",        # translation under "bite"
+    "bite": "mučcå",        # translation under "bite"; also Saenko
     "hold": "țire",         # translation under "hold" (spelled ţire there)
     "hit": "båte",          # translation under "beat", sense "to hit"
-    "fingernail": "ungľă",  # Latin ungula, descendants
-    "lie": "zåc",           # Latin iaceo, descendants; form as cited
     "copula": "fi",         # translation under "be"; fr.wiktionary entry
 }
 TABLES["ruo"].update(RUO_WIKT_ENTRIES)
+
+# Saenko 2015, Istro-Romanian, in the spelling of his sources (the acute
+# marks stress). Traced in docs/sources_ruo.md.
+RUO_SAENKO = {
+    "seed": "semínțę", "root": "córen", "bark": "córa", "fat": "måst", "horn": "corn",
+    "tail": "códę", "feather": "pęna", "fingernail": "úngľe", "liver": "ficåț", "swim": "pliví",
+    "fly": "letí", "lie": "začå", "sand": "salbún", "cloud": "oblåc", "smoke": "dim",
+    "dry": "uscåt", "far": "lårgo", "thin": "supțíre",
+}
+TABLES["ruo"].update(RUO_SAENKO)
 
 
 # Not a source. Same 213 rows, parked for a later English-as-source run.

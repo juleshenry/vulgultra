@@ -11,6 +11,11 @@ source tags and the scripts below make the transformations reproducible.
 | `data/sources/pdf/Il Dalmatico.pdf` | Dalmatian human reference | none (no text layer) | bibliography only; see `corpus.md` |
 | `data/sources/jsonl/kaikki.org-dictionary-Dalmatian.jsonl` | Dalmatian Kaikki snapshot | `scripts/build_dlm_corpus.py` | Kaikki/Wiktextract |
 | `data/sources/jsonl/kaikki.org-dictionary-Romansh.jsonl` | Romansh Kaikki snapshot | `scripts/build_kaikki_corpus.py` | Kaikki/Wiktextract |
+| `data/sources/saenkoromance/*.csv` | Saenko 2015, annotated Swadesh lists, 43 Romance varieties | `scripts/audit_grid_sources.py` | lexibank/saenkoromance, CC-BY-4.0 |
+| `data/sources/wikt_swadesh/*.json` | English Wiktionary Swadesh lists, with revision ids | `scripts/audit_grid_sources.py` | en.wiktionary, CC BY-SA |
+| `data/sources/frwikt_sections.json` | Picard, Franco-Provençal and Gallo entries of the French Wiktionary dump | `scripts/audit_grid_sources.py` | fr.wiktionary, CC BY-SA |
+| `data/sources/pdf/dawson_smirnova_2020_dffp_extract.pdf` | Picard: 33-page extract of the *Dictionnaire fondamental français-picard* | none (read by hand) | Agence régionale de la langue picarde, 2020; all rights reserved |
+| `data/sources/pdf/motier_galo_francaez_2019.pdf` | Gallo: local glossary with IPA | none (read by hand) | Atelier de gallo, Résidence La Perrière, Héric |
 | `docs/assets/reference-screenshot.png` | Project reference image | documentation only | formerly a root-level screenshot |
 
 Generated `data/words/*_words.json`, candidates, and evaluations are derived

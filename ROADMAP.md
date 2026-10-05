@@ -126,14 +126,21 @@ Transcription, as fixed:
       held invented forms: 173 and 123 of their 213 cells were respelled,
       replaced or emptied. Ligurian, Emilian and Piedmontese had 124, 150
       and 62 cells respelled or replaced; Ladin 9.
-- [ ] Gallo, Picard, Franco-Provençal and Extremaduran cannot be checked
-      with what is on disk: no usable Swadesh list, and dictionaries in
-      another spelling or too small. They need a source per lect (an ORB
-      dictionary for Franco-Provençal, the Carmona dictionary read with a
-      spelling map for Extremaduran).
-- [ ] The other columns have Wiktionary lists too and differ from them in a
-      fifth to two thirds of cells (Lombard 68%, Venetan 41%, Aromanian
-      40%). Not yet looked at: much of that is spelling or variety.
+- [x] Second source added: Saenko 2015 (110 concepts for 20 lects, with
+      source spelling, transcription and stress). It filled 15 Istro-Romanian
+      cells and the audit now reports on all 36 columns
+      ([`docs/eval/grid_sources.md`](docs/eval/grid_sources.md)).
+- [ ] Decide whether Saenko's transcriptions should enter the pipeline
+      directly. They would bypass the borrowed G2P backends for 20 lects and
+      carry the stress the new stress rule needs.
+- [ ] Columns still mostly unconfirmed: Gascon (no source at all), Picard,
+      Franco-Provençal, Gallo, Mirandese, Lombard, Ladin (Val Badia; the
+      lists are other valleys), Sardinian, Norman. Each needs a dictionary
+      of its own; the two PDFs found for Picard and Gallo are too thin.
+- [ ] Columns with 20 to 70 cells that no source confirms: Romanian,
+      Galician, Aragonese, Asturian, Occitan, Friulian, Sicilian, Venetan,
+      Aromanian, Corsican, Romansh, Walloon, Ladino, Extremaduran. Not yet
+      examined cell by cell.
 
 After the gate:
 

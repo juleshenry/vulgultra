@@ -6,6 +6,7 @@
 | En Wiktionary `Category:Istro-Romanian lemmas` | ~109 lemmas | Done (`wikt_category`). |
 | **[Appendix:Istro-Romanian Swadesh list](https://en.wiktionary.org/wiki/Appendix:Istro-Romanian_Swadesh_list)** | 207-concept list; 140 filled | **Done:** `RUO_WIKT_SWADESH` (first citation form). `sănze` blood kept over appendix `sânže`. Empty appendix cells stay empty. |
 | En Wiktionary translation tables and Latin descendant lists | 107 translations, 202 descendants citing an Istro-Romanian form | **Done:** `RUO_WIKT_ENTRIES`, 8 cells (table below). |
+| **Saenko 2015**, *Annotated Swadesh wordlists for the Romance group* (Global Lexicostatistical Database; CLDF at [lexibank/saenkoromance](https://github.com/lexibank/saenkoromance), CC-BY-4.0) | 110 concepts, with source spelling, transcription and stress | **Done:** `RUO_SAENKO`, 18 cells. Local copy in `data/sources/saenkoromance/`. |
 | Kaikki / Wikipedia | None | English-edition Kaikki 404; no `ruowiki`. |
 | Kovačec / Byhan / vlaski-zejanski | Dictionaries / site | Not bulk-open. Do not scrape. |
 | **Verbix Istro-Romanian docs** + scanned notes | Four conjugations + -éi/-úi; present/imperfect/future/perfect/conditional | **Done:** `scripts/harvest_ruo_verbix.py` → `data/conjugation/sources/ruo_diseux.json`, page `docs/conjugations/ruo.md`. Secondary summary — prefer Neiescu/Kovačec/Oxford for formal citation. See `docs/eval/ruo_conjugation_notes.md`. |
@@ -47,3 +48,15 @@ Not used:
 
 `data/words/ruo_words.json` had 185 entries whose only source was the old
 padded column. The 184 not in the attested column were dropped (519 → 335).
+
+## Saenko 2015, added 5 October 2026
+
+Saenko gives each word in the spelling of his sources, with a transcription
+and the stress. Eighteen cells now follow him: fourteen that were empty
+(*seed* semínțę, *root* córen, *bark* córa, *fat* måst, *horn* corn, *tail*
+códę, *swim* pliví, *fly* letí, *sand* salbún, *cloud* oblåc, *smoke* dim,
+*dry* uscåt, *far* lårgo, *thin* supțíre), *feather* pęna (his source marks
+the stress on ę with a glyph outside Unicode, dropped here), and three where
+his sense-aligned form replaces one taken from a descendant list: *fingernail*
+úngľe (was ungľă), *liver* ficåț (was ficåt), *lie* začå (was zåc). He also
+confirms *bite* mučcå. The column is now 163 attested cells and 50 empty.

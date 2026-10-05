@@ -696,3 +696,25 @@ which the French Wiktionary's Gallo entry glosses "Chien".
 | earth | tëra | tera | respelled |
 | mountain | crëp | crep | respelled |
 | green | vert | vërt | respelled |
+
+## Second pass the same day: Saenko 2015 and the Extremaduran dictionary
+
+`scripts/audit_grid_sources.py` now also reads Saenko's annotated Swadesh lists (110 concepts for 20 of
+the grid's lects) and compares Extremaduran through the spelling differences between the grid and the
+Carmona dictionary (*ombri*/*hombri*, *quatru*/*cuatru*, *yerva*/*yerba*). It reports on all 36 columns;
+the counts are in [`eval/grid_sources.md`](eval/grid_sources.md).
+
+- Istro-Romanian: 18 cells from Saenko (see `sources_ruo.md`).
+- Dalmatian: *snake* serpiant and one more cell filled from Saenko. Most of his Dalmatian spellings
+  are Bartoli's phonetic notation and are not used.
+- Emilian: *fear* tmèr and *stand* stèr restored. They had been emptied because the list cites both
+  only inside a phrase.
+- Extremaduran: 129 of 213 cells confirmed against the dictionary, none changed.
+- Ladin: 84 cells confirmed (Saenko's Gardenese and Fassano), none changed. The column is Val Badia
+  and the lists are other valleys, so the 129 unconfirmed cells are not known to be wrong.
+
+Two PDFs were fetched for Picard and Gallo and kept under `data/sources/pdf/`: a 33-page extract of
+Dawson and Smirnova, *Dictionnaire fondamental français-picard* (Agence régionale de la langue
+picarde, 2020), and *Motier Galo-Françaez* (Atelier de gallo, Héric, 2019), a local glossary with
+IPA. 74 Picard and 83 Gallo grid forms occur somewhere in their text. That shows the words exist, not
+that they carry the grid's meaning, so neither column is counted as confirmed by them.
