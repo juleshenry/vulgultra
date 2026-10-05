@@ -63,6 +63,23 @@ class BoundaryFixtures(unittest.TestCase):
         self.assertEqual((raised.exception.lang, raised.exception.word), ("eml", "cuṣìr"))
         self.assertEqual(raised.exception.leftovers, [nfd("ṣ")])
 
+    def test_reverse_vulgar_latin_merges_apply_in_every_lect(self) -> None:
+        with patch("vulgultra.g2p.word_to_ipa", return_value="ʎuɲ"):
+            self.assertEqual(transcribe_and_repair("lluny", "ca")[1], ["l", "j", "u", "n", "j"])
+        with patch("vulgultra.g2p.word_to_ipa", return_value="ʝo"):
+            self.assertEqual(transcribe_and_repair("yo", "es")[1], ["j", "o"])
+
+    def test_variant_is_merged_only_in_the_lects_where_it_is_one(self) -> None:
+        with patch("vulgultra.g2p.word_to_ipa", return_value="luɐ"):
+            self.assertEqual(transcribe_and_repair("lua", "pt")[1], ["l", "w", "a"])
+        with patch("vulgultra.g2p.word_to_ipa", return_value="krɐp"):
+            self.assertEqual(transcribe_and_repair("crëp", "lld")[1], ["k", "r", "ɐ", "p"])
+
+    def test_rhotics_are_all_kept(self) -> None:
+        for lang, ipa in (("es", "kaɾo"), ("es", "karo"), ("fr", "paʀ"), ("pt", "ʁato")):
+            with patch("vulgultra.g2p.word_to_ipa", return_value=ipa):
+                self.assertEqual("".join(transcribe_and_repair("x", lang)[1]), ipa)
+
     def test_clean_form_passes(self) -> None:
         with patch("vulgultra.g2p.word_to_ipa", return_value="pɛʀ"):
             self.assertEqual(transcribe_and_repair("père", "fr"), ("pɛʀ", ["p", "ɛ", "ʀ"]))

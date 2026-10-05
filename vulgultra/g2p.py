@@ -23,7 +23,7 @@ class UntranscribedError(ValueError):
 def transcribe_and_repair(word: str, lang: str) -> tuple[str, list[str]]:
     """Return source IPA and the repaired Vulgultra segment sequence."""
     ipa = word_to_ipa(word, lang)
-    seq = ipa_to_vulgultra(ipa)
+    seq = ipa_to_vulgultra(ipa, lang)
     leftovers = unknown_segments(seq)
     if leftovers:
         raise UntranscribedError(word, lang, ipa, leftovers)

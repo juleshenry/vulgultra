@@ -17,7 +17,7 @@ import panphon
 from panphon.featuretable import FeatureTable
 from vulgultra.phonology_constants import (
     BACKEND_LEFTOVERS, BACKEND_NATIVE_LETTERS, BACKEND_TYPOS, IPA_TO_ORTHO,
-    LANG_CODES, ORTHO_TO_IPA,
+    LANG_CODES, LECT_MERGES, ORTHO_TO_IPA, SEGMENT_MERGES,
 )
 
 # ---------------------------------------------------------------------------
@@ -195,13 +195,21 @@ def tokenize_ipa(ipa: str) -> list[str]:
     return [segment for segment in _FEATURES.segs_safe(_normalize_ipa(ipa)) if segment.strip()]
 
 
-def adapt_to_vulgultra(ipa_tokens: list[str]) -> list[str]:
+def _decomposed(table: dict[str, tuple[str, ...]]) -> dict[str, tuple[str, ...]]:
+    return {unicodedata.normalize("NFD", segment): target for segment, target in table.items()}
+
+
+_SEGMENT_MERGES = _decomposed(SEGMENT_MERGES)
+_LECT_MERGES = {lang: _decomposed(table) for lang, table in LECT_MERGES.items()}
+
+
+def adapt_to_vulgultra(ipa_tokens: list[str], lang: str | None = None) -> list[str]:
     """
-    Identity adaptation: candidate segments stay as transcribed. Phonological
-    adaptation/repair may change a sequence, but does not collapse a source
-    segment to a hand-picked target inventory.
+    Apply the merges listed in grammar.tex §2.4 and nothing else. Every other
+    segment stays as transcribed: there is no target inventory to collapse to.
     """
-    return list(ipa_tokens)
+    merges = {**_SEGMENT_MERGES, **_LECT_MERGES.get(lang or "", {})}
+    return [out for segment in ipa_tokens for out in merges.get(segment, (segment,))]
 
 
 def overlay_spelling_contrasts(word: str, phonemes: list[str]) -> list[str]:
@@ -229,16 +237,16 @@ def overlay_spelling_contrasts(word: str, phonemes: list[str]) -> list[str]:
     return out
 
 
-def ipa_to_vulgultra(ipa: str) -> list[str]:
+def ipa_to_vulgultra(ipa: str, lang: str | None = None) -> list[str]:
     """Full pipeline: raw IPA string → list of Vulgultra phonemes."""
     tokens = tokenize_ipa(ipa)
-    return adapt_to_vulgultra(tokens)
+    return adapt_to_vulgultra(tokens, lang)
 
 
 def word_to_vulgultra(word: str, lang: str) -> list[str]:
     """Convert orthographic word → Vulgultra phoneme sequence."""
     ipa = word_to_ipa(word, lang)
-    return overlay_spelling_contrasts(word, ipa_to_vulgultra(ipa))
+    return overlay_spelling_contrasts(word, ipa_to_vulgultra(ipa, lang))
 
 
 # ---------------------------------------------------------------------------

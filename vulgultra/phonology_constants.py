@@ -18,6 +18,23 @@ IPA_TO_ORTHO: dict[str, str] = {
 ORTHO_TO_IPA: dict[str, str] = {v: k for k, v in IPA_TO_ORTHO.items()}
 
 
+# grammar.tex §2.4, reverse Vulgar Latin: in every lect the segment becomes
+# the sequence it arose from. Code merges nothing that section does not list.
+SEGMENT_MERGES: dict[str, tuple[str, ...]] = {
+    "ʎ": ("l", "j"), "ɲ": ("n", "j"), "ʝ": ("j",),
+}
+
+# grammar.tex §2.4, not a contrast: a predictable variant of another sound,
+# merged only in the lects where it is one. Ladin ɐ is a phoneme and stays.
+_OC_VARIANTS = {"β": ("b",), "ɱ": ("n",)}
+_PT_VARIANTS = {"ɐ": ("a",), "kʷ": ("k", "w"), "w̃": ("w",), "j̃": ("j",)}
+LECT_MERGES: dict[str, dict[str, tuple[str, ...]]] = {
+    "oc": _OC_VARIANTS, "gsc": _OC_VARIANTS,
+    "gl": {"ʊ": ("o",), "ɪ": ("e",), "ɐ": ("a",)},
+    "pt": _PT_VARIANTS, "mwl": _PT_VARIANTS,
+}
+
+
 # Epitran backends used by the source-language evidence.  Sister lects use
 # branch G2P only as a transcription fallback; they do not become the source.
 LANG_CODES: dict[str, str] = {

@@ -101,7 +101,7 @@ post-root morphology objective.
 - Any single coda; `CC` if sonorant+C or `s`+stop
 - **Geminates are legal.** IPA vowel qualities remain distinct when they occur
 - Glides `/j w/` are consonants; syllable count = number of vowels
-- Penultimate stress: restoring a 1σ ending puts stress on the stem-final σ
+- Penultimate stress by default: restoring a 1σ ending puts stress on the stem-final σ. A word stressed elsewhere in its source lect keeps that stress, marked with an accent
 
 ## Morphology
 

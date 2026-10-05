@@ -217,10 +217,8 @@ section~\ref{sec:merges}.
 \section{Merges}
 \label{sec:merges}
 
-\emph{Status: proposed 5 October 2026. Nothing in this section is in code
-yet: the adaptation step is still an identity. Examples are from the
-213-concept grid; the counts behind each row are in the orthography gaps
-report under} \texttt{docs/eval/}.
+\emph{Approved 5 October 2026 and applied at transcription. Examples are
+from the 213-concept grid.}
 
 The inventory is emergent, so a merge is always a decision. Every merge is
 written here with its reason, and code merges nothing this section does not
@@ -303,21 +301,15 @@ Segment & Becomes & Reason \\
 Nothing is lost by these: $lj$ and $nj$ stay distinct from $l$ and $n$.
 In a coda the cluster follows the vowel (Catalan \emph{any}).
 
-\subsection{Open}
-
-\begin{itemize}
-  \item \textbf{Rhotics.} Spanish, Catalan, Portuguese and Galician
-        contrast a single \textipa{R} with a strong $r$ (\emph{caro} /
-        \emph{carro}); Portuguese pronounces the strong one
-        \textipa{[K]}. The O\"il lects have one rhotic,
-        \textipa{\;R}. The Italian-type transcriptions write $r$ for
-        both. Four symbols, two categories at most; no merge is made
-        until this is ruled on.
-\end{itemize}
-
 \subsection{Kept}
 
-Each of these separates words in at least one daughter, so none is merged:
+\textbf{All four rhotics.} Spanish, Catalan, Portuguese and Galician
+contrast a single \textipa{R} with a strong $r$ (\emph{caro} /
+\emph{carro}); Portuguese pronounces the strong one \textipa{[K]}; the
+O\"il lects have one rhotic, \textipa{\;R}. The Italian-type
+transcriptions write $r$ for both. None is merged into another.
+
+Each of these also separates words in at least one daughter and is kept:
 the open mid vowels \textipa{E O}; the front rounded vowels
 $y$ \textipa{\o} \textipa{\oe} and their glide \textipa{4}; the central
 vowels \textipa{@ 1} and Ladin \textipa{5}; Istro-Romanian \textipa{6}
@@ -328,13 +320,20 @@ Occitan but a phoneme in Ligurian and Emilian.
 
 \section{Stress}
 
-\textbf{Penultimate}, no exceptions, unmarked. Calculated, not
-aesthetic: Classical Latin was (mostly) penultimate; VL loss of the
-final syllable produced French oxytones; reverse VL restores a
-$1\sigma$ nominal ending, so stress lands on the last syllable of the stem
-$=$ penultimate of the word (a $2\sigma$ verb ending such as
-\texttt{amos} carries the penult itself). Consensus of the family that still has
-a final vowel.
+\textbf{Penultimate} by default, unmarked. A word whose source form is
+stressed elsewhere keeps the source lect's stress, and an accent on the
+stressed vowel marks it.
+
+The default is calculated, not aesthetic: Classical Latin was (mostly)
+penultimate; VL loss of the final syllable produced French oxytones;
+reverse VL restores a $1\sigma$ nominal ending, so stress lands on the
+last syllable of the stem $=$ penultimate of the word (a $2\sigma$ verb
+ending such as \texttt{amos} carries the penult itself). Consensus of the
+family that still has a final vowel.
+
+\emph{Not in code yet: transcription drops the source's stress, so no
+word carries an accent. Which accent mark is used is settled with the
+spelling of the kept vowels, since the open vowels may take one too.}
 
 \chapter{Morphology}
 \label{ch:morphology}

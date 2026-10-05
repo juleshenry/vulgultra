@@ -27,96 +27,66 @@ from vulgultra.phonology import is_vowel, repair
 from vulgultra.phonology_constants import IPA_TO_ORTHO
 from vulgultra.pipeline import gold_concepts
 
-SPEC, LEAK, ALLOPHONE, CONTRAST = "spec", "leak", "allophone", "contrast"
+LEAK, KEPT = "leak", "kept"
 
 GROUPS = {
-    SPEC: (
-        "Merges the spec already orders",
-        "`grammar.tex` §2.3 maps these; `adapt_to_vulgultra` is still an identity. "
-        "The palatals are phonemes in most daughters: the merge is a reverse-VL "
-        "rule, not a transcription repair.",
-    ),
     LEAK: (
         "Source letters with no reading yet",
         "Not IPA. The lect is transcribed with a sister's backend, which passes the "
         "letter through, and PanPhon accepts letter plus diacritic as a segment. "
-        "Each needs a reading in `BACKEND_LEFTOVERS` before it can be merged or spelled.",
+        "Each needs a reading in `BACKEND_LEFTOVERS` before it can be spelled.",
     ),
-    ALLOPHONE: (
-        "Never contrastive in a lect that shows it",
-        "Predictable variants of another sound. They are separate segments only "
-        "because one backend transcribes more narrowly than the rest.",
-    ),
-    CONTRAST: (
-        "Contrastive in at least one source lect",
-        "Merging any of these gives up a distinction some daughter makes.",
+    KEPT: (
+        "Kept segments without a spelling",
+        "Some daughter uses each of these to tell words apart (`grammar.tex` §2.4), so "
+        "none is merged. **Merge to** is only the target the last table uses to "
+        "measure what merging would cost.",
     ),
 }
 
-# segment → (group, merge target or None, spelling if kept, note). Proposals
-# for Gate G0, not decisions; nothing in the pipeline reads this table.
+# segment → (group, merge target or None, spelling if kept, note). The
+# spellings are proposals for Gate G0; nothing in the pipeline reads this.
 PROPOSALS: dict[str, tuple[str, tuple[str, ...] | None, str, str]] = {
-    "ʝ": (SPEC, ("j",), "", "palatal fricative → /j/"),
-    "ɲ": (SPEC, ("n", "j"), "", "palatal nasal → /nj/"),
-    "ʎ": (SPEC, ("l", "j"), "", "palatal lateral → /lj/"),
-
-    "β": (ALLOPHONE, ("b",), "", "/b/ between vowels"),
-    "ɱ": (ALLOPHONE, ("n",), "", "nasal before /f v/; the source spells n"),
-    "ʊ": (ALLOPHONE, ("o",), "", "Galician final unstressed /o/"),
-    "ɪ": (ALLOPHONE, ("e",), "", "Galician final unstressed /e/"),
-    "ɐ": (ALLOPHONE, ("a",), "", "unstressed /a/ in pt mwl gl; Ladin ë is a phoneme and stays"),
-    "kʷ": (ALLOPHONE, ("k", "w"), "", "Portuguese qu before a, o: /kw/"),
-    "w̃": (ALLOPHONE, ("w",), "", "offglide of a nasal diphthong; nasality is on the vowel"),
-    "j̃": (ALLOPHONE, ("j",), "", "offglide of a nasal diphthong; nasality is on the vowel"),
-
-    "ɾ": (CONTRAST, ("r",), "", "single r; es ca pt gl contrast it with the strong r (caro/carro)"),
-    "ʁ": (CONTRAST, ("r",), "", "Portuguese strong r, the counterpart of the Spanish trill"),
-    "ʀ": (CONTRAST, ("r",), "", "the one rhotic of the Oïl lects; uvular, not a second category"),
-    "ŋ": (CONTRAST, ("n",), "", "variant of /n/ in ca oc gsc; a phoneme in Ligurian and Emilian"),
-    "ɑ": (CONTRAST, ("a",), "", "contrasts with a in conservative French (pâte/patte)"),
-    "ɒ": (CONTRAST, ("a",), "å", "Istro-Romanian å, kept as its own letter"),
-    "æ": (CONTRAST, ("e",), "ę", "Istro-Romanian ę, kept as its own letter"),
-    "ð": (CONTRAST, ("z",), "", "Romagnol ẓ"),
-    "ə̃": (CONTRAST, ("e", "n"), "", "Romagnol ã"),
-    "x": (CONTRAST, None, "", "Spanish jota; the v3.0 mapping to k is withdrawn"),
-    "ɛ": (CONTRAST, ("e",), "è", "open e; spec: expand only if noun cells collide"),
-    "ɔ": (CONTRAST, ("o",), "ò", "open o; same clause"),
-    "ə": (CONTRAST, ("e",), "ë", "schwa"),
-    "ɨ": (CONTRAST, ("i",), "î", "Romanian î/â"),
-    "y": (CONTRAST, ("u",), "ü", "front rounded high"),
-    "ø": (CONTRAST, ("o",), "ö", "front rounded mid"),
-    "œ": (CONTRAST, ("o",), "ö", "front rounded mid, open; one letter with ø"),
-    "ɥ": (CONTRAST, ("w",), "", "front rounded glide; goes with y"),
-    "ʒ": (CONTRAST, ("ʃ",), "j", "j is a free letter"),
-    "d͡ʒ": (CONTRAST, ("t͡ʃ",), "dj", "digraph; the reader is one character at a time today"),
-    "t͡s": (CONTRAST, ("s",), "ts", "digraph, same caveat"),
-    "d͡z": (CONTRAST, ("z",), "dz", "digraph, same caveat"),
-    "h": (CONTRAST, (), "h", "h is a free letter; merging means deleting it"),
-    "θ": (CONTRAST, ("s",), "", "Galician"),
-    "ɑ̃": (CONTRAST, ("a", "n"), "ã", "nasal vowel; merge restores the nasal consonant"),
-    "ɐ̃": (CONTRAST, ("a", "n"), "ã", "one letter with ɑ̃"),
-    "ɔ̃": (CONTRAST, ("o", "n"), "õ", ""),
-    "õ": (CONTRAST, ("o", "n"), "õ", "one letter with ɔ̃"),
-    "ɛ̃": (CONTRAST, ("e", "n"), "ẽ", ""),
-    "œ̃": (CONTRAST, ("e", "n"), "ẽ", "one letter with ɛ̃"),
-    "ũ": (CONTRAST, ("u", "n"), "ũ", ""),
-}
-
-# An allophone is merged only in the lects where it is one.
-ALLOPHONE_LECTS: dict[str, tuple[str, ...]] = {
-    "β": ("oc", "gsc"), "ɱ": ("oc", "gsc"), "ʊ": ("gl",), "ɪ": ("gl",),
-    "ɐ": ("pt", "mwl", "gl"), "kʷ": ("pt", "mwl"), "w̃": ("pt", "mwl"), "j̃": ("pt", "mwl"),
+    "ɾ": (KEPT, ("r",), "", "single r; es ca pt gl contrast it with the strong r (caro/carro)"),
+    "ʁ": (KEPT, ("r",), "", "Portuguese strong r"),
+    "ʀ": (KEPT, ("r",), "", "the one rhotic of the Oïl lects"),
+    "ŋ": (KEPT, ("n",), "", "variant of /n/ in ca oc gsc; a phoneme in Ligurian and Emilian"),
+    "ɑ": (KEPT, ("a",), "", "contrasts with a in conservative French (pâte/patte)"),
+    "ɐ": (KEPT, ("a",), "", "Ladin ë"),
+    "ɒ": (KEPT, ("a",), "å", "Istro-Romanian å, kept as its own letter"),
+    "æ": (KEPT, ("e",), "ę", "Istro-Romanian ę, kept as its own letter"),
+    "ɛ": (KEPT, ("e",), "è", "open e"),
+    "ɔ": (KEPT, ("o",), "ò", "open o"),
+    "ə": (KEPT, ("e",), "ë", "schwa"),
+    "ɨ": (KEPT, ("i",), "î", "Romanian î/â"),
+    "y": (KEPT, ("u",), "ü", "front rounded high"),
+    "ø": (KEPT, ("o",), "ö", "front rounded mid"),
+    "œ": (KEPT, ("o",), "ö", "front rounded mid, open; one letter with ø"),
+    "ɥ": (KEPT, ("w",), "", "front rounded glide; goes with y"),
+    "ʒ": (KEPT, ("ʃ",), "j", "j is a free letter"),
+    "d͡ʒ": (KEPT, ("t͡ʃ",), "dj", "digraph; the reader is one character at a time today"),
+    "t͡s": (KEPT, ("s",), "ts", "digraph, same caveat"),
+    "d͡z": (KEPT, ("z",), "dz", "digraph, same caveat"),
+    "h": (KEPT, (), "h", "h is a free letter; merging means deleting it"),
+    "θ": (KEPT, ("s",), "", "Galician"),
+    "ð": (KEPT, ("z",), "", "Romagnol ẓ"),
+    "x": (KEPT, ("k",), "", "Spanish jota"),
+    "ɑ̃": (KEPT, ("a", "n"), "ã", "nasal vowel; merging restores the nasal consonant"),
+    "ɐ̃": (KEPT, ("a", "n"), "ã", "one letter with ɑ̃"),
+    "ə̃": (KEPT, ("e", "n"), "", "Romagnol ã"),
+    "ɔ̃": (KEPT, ("o", "n"), "õ", ""),
+    "õ": (KEPT, ("o", "n"), "õ", "one letter with ɔ̃"),
+    "ɛ̃": (KEPT, ("e", "n"), "ẽ", ""),
+    "œ̃": (KEPT, ("e", "n"), "ẽ", "one letter with ɛ̃"),
+    "ũ": (KEPT, ("u", "n"), "ũ", ""),
 }
 
 # PanPhon hands back decomposed segments; match them whatever form is typed here.
 PROPOSALS = {unicodedata.normalize("NFD", seg): row for seg, row in PROPOSALS.items()}
-ALLOPHONE_LECTS = {unicodedata.normalize("NFD", seg): lects for seg, lects in ALLOPHONE_LECTS.items()}
 
 SCENARIOS = (
-    ("Today", ()),
-    ("Spec merges", (SPEC,)),
-    ("Spec merges and allophones", (SPEC, ALLOPHONE)),
-    ("Every segment that has a target merged", (SPEC, ALLOPHONE, CONTRAST)),
+    ("As decided (grammar.tex §2.4)", ()),
+    ("If every kept segment were merged too", (KEPT,)),
 )
 
 
@@ -151,10 +121,7 @@ def shortlist(
         ipa, seq = result
         if not table:
             return ipa, seq
-        return ipa, repair([
-            out for seg in seq
-            for out in (table.get(seg, (seg,)) if lang in ALLOPHONE_LECTS.get(seg, (lang,)) else (seg,))
-        ])
+        return ipa, repair([out for seg in seq for out in table.get(seg, (seg,))])
 
     return build_candidates(concepts, transcribe=transcribe)
 
@@ -276,7 +243,7 @@ def render(concepts: dict, pools: list[tuple[str, dict[str, list[Candidate]]]],
         "Columns: **cands** = shortlisted candidates containing the segment; "
         "**concepts** = concepts with such a candidate; **forced** = concepts where every "
         "shortlisted candidate contains it; **roots** = roots in the lexicon file that use it. "
-        "**Merge to** and **Spell as** are proposals for Gate G0, not decisions.",
+        "**Spell as** is a proposal for Gate G0, not a decision.",
         "",
     ]
     for group, (title, blurb) in GROUPS.items():
@@ -308,10 +275,10 @@ def render(concepts: dict, pools: list[tuple[str, dict[str, list[Candidate]]]],
         out.append("")
 
     out += [
-        "## What each level of merging does to the shortlist",
+        "## What the kept segments cost and buy",
         "",
-        "Each row rebuilds the minimum-σ shortlist with the merges applied before repair "
-        "and the legality check. **Spellable** = concepts with at least one candidate the "
+        "The second row rebuilds the minimum-σ shortlist with every kept segment merged "
+        "into its target before repair and the legality check. **Spellable** = concepts with at least one candidate the "
         "current map can spell. **Σσ** = sum of each concept's minimum syllable count. "
         "**Contested** = concepts with a shortlisted form that is also shortlisted for "
         "another concept. **Forced homophones** = concepts left without a form of their own "

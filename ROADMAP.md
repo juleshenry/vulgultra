@@ -87,13 +87,10 @@ answer changes which roots win:
 
 1. Transcription: fix the rejected forms and the untranscribed letters first.
    **Decided: yes.** Done; see below.
-2. Inventory: merge or keep. **Decided: merge only what is documented, with
-   its reason, in `grammar.tex` §2.4.** The draft of that section proposes
-   eleven merges on two grounds (not a contrast, applied only in the lects
-   named; reverse Vulgar Latin), leaves the rhotics open, and keeps
-   everything some daughter uses to tell words apart. The old /x/ → /k/
-   mapping is withdrawn; /x/ is kept. Awaiting approval row by row; nothing
-   is in code.
+2. Inventory: merge or keep. **Decided and in code.** Eleven merges, each
+   with its ground, in `grammar.tex` §2.4 (`SEGMENT_MERGES`, `LECT_MERGES`).
+   All four rhotics are kept, /x/ is kept, and so is everything else some
+   daughter uses to tell words apart.
 3. Spelling: per kept segment, a letter, digraph or diacritic, or leave it bracketed.
 4. Selection among ties: what replaces lect-code order, whether homophones
    cost anything, and whether approved roots are pinned so that growing the
@@ -130,10 +127,18 @@ Transcription, as fixed:
       That does not show padding, only that the word lists cannot confirm
       the column.
 
+Also decided: **stress** is penultimate by default; a word stressed elsewhere
+in its source lect keeps that stress, marked with an accent (`grammar.tex`
+§2.5).
+
 After the gate:
 
-- [ ] Encode: approved merges in `adapt_to_vulgultra`, the spelling map and
-      a reader that handles digraphs.
+- [x] Encode the approved merges at transcription.
+- [ ] Encode the spelling map and a reader that handles digraphs.
+- [ ] Carry the source's stress through transcription and mark it when it is
+      not penultimate. Today stress marks are stripped, and most backends do
+      not emit them, so the source of each word's stress has to be decided
+      per lect.
 - [ ] Rerun prep → Rust SA → join, and refresh the scorecard.
 - [ ] Tracked lexicon listing under `docs/lexicon/`, so every later change to
       the foundations shows up as a diff (`data/`, `*.json`, `*.csv`, `*.txt`
