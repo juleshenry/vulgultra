@@ -6,17 +6,24 @@ Pronouns, possessives, articles, demonstratives, interrogatives, quantifiers, nu
 
 | lect | meanings with a form | forms | nouns with a plural |
 |---|---:|---:|---:|
+| [Spanish](es.md) | 154 of 162 | 446 | 52999 |
+| [Portuguese](pt.md) | 158 of 162 | 412 | 31170 |
+| [Galician](gl.md) | 145 of 162 | 331 | 9973 |
 | [Aragonese](an.md) | 74 of 162 | 128 | 817 |
 | [Asturian](ast.md) | 136 of 162 | 265 | 4263 |
 | [Ladino](lad.md) | 129 of 162 | 252 | 309 |
 | [Mirandese](mwl.md) | 62 of 162 | 72 | 261 |
 | [Occitan](oc.md) | 125 of 162 | 236 | 2369 |
+| [Catalan](ca.md) | 156 of 162 | 394 | 16677 |
+| [French](fr.md) | 158 of 162 | 526 | 38639 |
 | [Walloon](wa.md) | 70 of 162 | 83 | 433 |
 | [Norman](nrf.md) | 103 of 162 | 161 | 3858 |
+| [Lombard](lmo.md) | 51 of 162 | 76 | 91 |
 | [Piedmontese](pms.md) | 37 of 162 | 40 | 218 |
 | [Ligurian](lij.md) | 108 of 162 | 165 | 374 |
 | [Emilian](eml.md) | 81 of 162 | 148 | 1087 |
 | [Romagnol](rgn.md) | 51 of 162 | 72 | 514 |
+| [Italian](it.md) | 162 of 162 | 720 | 50598 |
 | [Sicilian](scn.md) | 93 of 162 | 164 | 1196 |
 | [Venetan](vec.md) | 92 of 162 | 176 | 1358 |
 | [Corsican](co.md) | 61 of 162 | 92 | 382 |
@@ -26,6 +33,7 @@ Pronouns, possessives, articles, demonstratives, interrogatives, quantifiers, nu
 | [Friulian](fur.md) | 97 of 162 | 148 | 910 |
 | [Ladin](lld.md) | 104 of 162 | 183 | 647 |
 | [Sardinian](sc.md) | 92 of 162 | 167 | 521 |
+| [Romanian](ro.md) | 146 of 162 | 367 | 39761 |
 | [Aromanian](rup.md) | 108 of 162 | 196 | 1541 |
 
-**No page yet.** The extract on disk holds verbs only, or there is none: es, pt, gl, ext, ca, gsc, fr, pcd, frp, lmo, it, ro, ruo, ruq. Glossed in French, which this harvest does not read yet: gallo.
+**No page yet.** The extract on disk holds verbs only, or there is none: ext, gsc, pcd, frp, ruo, ruq. Glossed in French, which this harvest does not read yet: gallo.

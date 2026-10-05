@@ -6,6 +6,15 @@ For every noun whose dictionary entry records a plural, the plural is compared w
 
 | lect | gender | nouns | commonest | second | third |
 |---|---|---:|---|---|---|
+| es | masculine | 33713 | +s 77% (pie → pies) | +es 12% (abdominal → abdominales) | other 6% (abdomen → abdómenes) |
+| es | feminine | 19170 | +s 69% (abada → abadas) | other 18% (pronunciación → pronunciaciones) | +es 8% (digital → digitales) |
+| es | gender not given | 116 | +s 81% (lente → lentes) | +es 6% (color → colores) | no change 6% (basis → basis) |
+| pt | masculine | 19041 | +s 79% (livre → livres) | +es 7% (abactor → abactores) | other 5% (juiz → juízes) |
+| pt | feminine | 12090 | +s 77% (abscissa → abscissas) | -ão +ões 15% (ação → ações) | other 3% (pêra → peras) |
+| pt | neuter | 16 | +s 62% (tie → ties) | -. +s. 12% (sre. → sres.) | -.e +es. 12% (sr.e → sres.) |
+| pt | gender not given | 23 | +s 86% (case → cases) | +es 4% (misturador → misturadores) | other 4% (chôco → chocos) |
+| gl | masculine | 5702 | +s 87% (trade → trades) | +es 6% (gas → gases) | -l +is 2% (numeral → numerais) |
+| gl | feminine | 4271 | +s 94% (abada → abadas) | -m +ns 3% (imagem → imagens) | -ão +ões 1% (ação → ações) |
 | an | masculine | 444 | +s 82% (can → cans) | -ón +ons 5% (corazón → corazons) | other 2% (francés → franceses) |
 | an | feminine | 372 | +s 86% (color → colors) | -ón +ons 7% (información → informacions) | +z 2% (paret → paretz) |
 | ast | masculine | 2507 | -u +os 60% (anu → anos) | +s 10% (pie → pies) | other 10% (colon → cólones) |
@@ -17,12 +26,19 @@ For every noun whose dictionary entry records a plural, the plural is compared w
 | mwl | feminine | 129 | +s 77% (uba → ubas) | +es 13% (catedral → catedrales) | other 4% (quarta-feira → quartas-feiras) |
 | oc | masculine | 1207 | +s 92% (plural → plurals) | no change 1% (autobus → autobus) | other 1% (país → païses) |
 | oc | feminine | 1158 | +s 98% (de → des) | -tz +ses 0% (lutz → luses) | +es 0% (nuèch → nuèches) |
+| ca | masculine | 9761 | +s 75% (verb → verbs) | -a +es 6% (llama → llames) | -ó +ons 4% (caló → calons) |
+| ca | feminine | 6914 | -a +es 66% (guerra → guerres) | -ó +ons 15% (pronunciació → pronunciacions) | +s 10% (de → des) |
+| fr | masculine | 22897 | +s 95% (livre → livres) | other 1% (œil → yeux) | +x 1% (ypréau → ypréaux) |
+| fr | feminine | 15732 | +s 99% (livre → livres) | other 0% (madame → mesdames) | +x 0% (eau → eaux) |
+| fr | gender not given | 10 | +s 70% (flagelle → flagelles) | +-s 20% (un-e → un-e-s) | no change 10% (étudianx → étudianx) |
 | wa | masculine | 215 | +s 97% (four → fours) | no change 2% (pés → pés) |  |
 | wa | feminine | 198 | +s 100% (five → fives) |  |  |
 | wa | gender not given | 20 | +s 100% (mer → mers) |  |  |
 | nrf | masculine | 1986 | +s 69% (cat → cats) | -x +rs 10% (venteux → venteurs) | other 7% (camel → camiaux) |
 | nrf | feminine | 1862 | +s 97% (livre → livres) | other 1% (tonné → tonnieaux) | no change 0% (faux → faux) |
 | nrf | gender not given | 10 | +s 100% (dare → dares) |  |  |
+| lmo | masculine | 41 | no change 58% (dia → dia) | +j 12% (client → clientj) | other 7% (jald → jâld) |
+| lmo | feminine | 47 | -a +e 42% (vita → vite) | -a 10% (acqua → acqu) | no change 8% (man → man) |
 | pms | masculine | 93 | no change 91% (vers → vers) | -l +j 8% (vel → vej) |  |
 | pms | feminine | 125 | -a +e 69% (torta → torte) | no change 15% (union → union) | -a +he 10% (nuca → nuche) |
 | lij | masculine | 200 | -o +i 37% (tempo → tempi) | no change 13% (ære → ære) | -o 7% (schéuggio → schéuggi) |
@@ -31,6 +47,8 @@ For every noun whose dictionary entry records a plural, the plural is compared w
 | eml | feminine | 475 | -a 41% (panna → pann) | -a +i 21% (stria → strii) | no change 18% (man → man) |
 | rgn | masculine | 295 | other 29% (sang → sẽng) | no change 17% (si → si) | -ôr +ùr 5% (côr → cùr) |
 | rgn | feminine | 218 | -a 56% (gata → gat) | other 18% (gàbia → ghëbi) | -a +i 9% (bòtta → bòtti) |
+| it | masculine | 29833 | -o +i 53% (zero → zeri) | -e +i 24% (abate → abati) | -o 11% (radio → radi) |
+| it | feminine | 20762 | -a +e 67% (aquila → aquile) | -e +i 25% (lente → lenti) | -a +he 5% (replica → repliche) |
 | scn | masculine | 640 | -u +i 51% (lippu → lippi) | -u +a 17% (piru → pira) | no change 13% (kimono → kimono) |
 | scn | feminine | 555 | -a +i 71% (guerra → guerri) | no change 9% (manu → manu) | -a +hi 9% (vacca → vacchi) |
 | vec | masculine | 764 | -o +i 48% (fero → feri) | +i 24% (can → cani) | -e +i 9% (sale → sali) |
@@ -50,6 +68,9 @@ For every noun whose dictionary entry records a plural, the plural is compared w
 | lld | feminine | 336 | -a +es 50% (zebra → zebres) | +s 37% (man → mans) | other 4% (università → universiteies) |
 | sc | masculine | 302 | -u +os 47% (gattu → gattos) | +s 41% (abate → abates) | other 5% (tzucaru → tzùcaros) |
 | sc | feminine | 217 | +s 93% (abba → abbas) | other 2% (arruga → erugas) | -a +i 1% (stella → stelli) |
+| ro | masculine | 8576 | +i 57% (acceptor → acceptori) | -t +ți 9% (robot → roboți) | -st +ști 9% (absolutist → absolutiști) |
+| ro | feminine | 22074 | -e +i 35% (facere → faceri) | -ă +e 28% (pară → pare) | other 24% (aflare → aflări) |
+| ro | neuter | 9108 | +e 38% (dialect → dialecte) | +uri 32% (cat → caturi) | -u +e 5% (agru → agre) |
 | rup | masculine | 424 | +i 24% (ver → veri) | +j 15% (aslan → aslanj) | no change 7% (bush → bush) |
 | rup | feminine | 838 | other 33% (vache → vets) | -ã +i 25% (mamã → mami) | no change 11% (luni → luni) |
 | rup | neuter | 255 | +i 29% (car → cari) | +uri 17% (son → sonuri) | +ri 10% (seu → seuri) |

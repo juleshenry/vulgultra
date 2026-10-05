@@ -28,13 +28,19 @@ Bible lexicon.
       [`docs/eval/building_block_candidates.md`](docs/eval/building_block_candidates.md),
       and plural patterns by gender in
       [`docs/eval/plural_formation.md`](docs/eval/plural_formation.md).
-      21 lects have a page.
-- [ ] 15 lects have none. The extracts on disk hold only verbs for Spanish,
-      Portuguese, Galician, Catalan, French, Italian, Romanian and Lombard,
-      which need a fetch of every part of speech; Gallo is glossed in
-      French; Extremaduran, Gascon, Picard, Franco-Provençal, Istro-Romanian
-      and Megleno-Romanian have no extract and need their own sources (Chés
-      Diseux, Stich 2001, Carmona García, the Wiktionary lists).
+      29 lects have a page. For Spanish, Portuguese, Galician, Catalan,
+      French, Italian, Romanian and Lombard the extract on disk held only
+      verbs, so every other word class was fetched into
+      `data/sources/kaikki_full/` (`scripts/fetch_kaikki_full.py`).
+- [ ] Seven lects have no page. Gallo is glossed in French; Extremaduran,
+      Gascon, Picard, Franco-Provençal, Istro-Romanian and Megleno-Romanian
+      have no English-glossed extract. The French Wiktionary dump in `xmls/`
+      has French-glossed entries for Gallo, Picard, Franco-Provençal and
+      Gascon; the others need their own sources (Carmona García, the
+      Wiktionary lists).
+- [ ] A form is matched on any sense of its entry, so a secondary sense
+      puts it in a row where it is not the plain word (French *à* and *en*
+      under *of*).
 - [ ] Object, indirect and reflexive pronouns, and gender and number of
       articles and possessives, are listed under one English gloss today
       (*you*, *the*); the pages show the dictionary's wording but do not
