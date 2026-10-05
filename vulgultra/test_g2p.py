@@ -7,7 +7,10 @@ import unittest
 from unittest.mock import patch
 
 from vulgultra.g2p import UntranscribedError, transcribe_and_repair
-from vulgultra.phonology import read_leftovers, unknown_segments, word_to_ipa
+from vulgultra.phonology import (
+    configure_inventory, count_syllables, count_violations, read_leftovers, unknown_segments,
+    word_to_ipa,
+)
 
 
 def nfd(text: str) -> str:
@@ -85,6 +88,13 @@ class BoundaryFixtures(unittest.TestCase):
         for lang, ipa in (("es", "kaɾo"), ("es", "karo"), ("fr", "paʀ"), ("pt", "ʁato")):
             with patch("vulgultra.g2p.word_to_ipa", return_value=ipa):
                 self.assertEqual("".join(transcribe_and_repair("x", lang)[1]), ipa)
+
+    def test_every_rhotic_is_a_liquid_in_an_onset(self) -> None:
+        for lang, ipa in (("fr", "tʀɛ"), ("fr", "ɡʀɑ̃d"), ("es", "tɾes"), ("it", "tre"), ("pt", "pʁa")):
+            with patch("vulgultra.g2p.word_to_ipa", return_value=ipa):
+                seq = transcribe_and_repair("x", lang)[1]
+            configure_inventory(set(seq))
+            self.assertEqual((count_syllables(seq), count_violations(seq)), (1, 0), ipa)
 
     def test_clean_form_passes(self) -> None:
         with patch("vulgultra.g2p.word_to_ipa", return_value="pɛʀ"):

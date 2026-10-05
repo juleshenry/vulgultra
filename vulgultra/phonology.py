@@ -17,7 +17,7 @@ import panphon
 from panphon.featuretable import FeatureTable
 from vulgultra.phonology_constants import (
     BACKEND_LEFTOVERS, BACKEND_NATIVE_LETTERS, BACKEND_TYPOS, IPA_TO_ORTHO,
-    LANG_CODES, LECT_MERGES, ORTHO_TO_IPA, SEGMENT_MERGES,
+    LANG_CODES, LECT_MERGES, ORTHO_TO_IPA, RHOTICS, SEGMENT_MERGES,
 )
 
 # ---------------------------------------------------------------------------
@@ -77,7 +77,8 @@ def _is_s_like(segment: str) -> bool:
 def _is_onset2(segment: str) -> bool:
     features = _segment_features(segment)
     return (
-        (features.get("cons") == "-" and features.get("syl") == "-")
+        segment in RHOTICS
+        or (features.get("cons") == "-" and features.get("syl") == "-")
         or features.get("lat") == "+"
         or (features.get("son") == "+" and features.get("cont") == "+"
             and features.get("cor") == "+")

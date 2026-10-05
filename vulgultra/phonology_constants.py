@@ -18,6 +18,11 @@ IPA_TO_ORTHO: dict[str, str] = {
 ORTHO_TO_IPA: dict[str, str] = {v: k for k, v in IPA_TO_ORTHO.items()}
 
 
+# grammar.tex §2.4 keeps all four rhotics, and §2.2 lets a liquid follow an
+# obstruent in an onset. PanPhon's features alone miss the uvular ones, so
+# French très came out with a repair vowel between t and ʀ.
+RHOTICS: tuple[str, ...] = ("r", "ɾ", "ʀ", "ʁ")
+
 # grammar.tex §2.4, reverse Vulgar Latin: in every lect the segment becomes
 # the sequence it arose from. Code merges nothing that section does not list.
 SEGMENT_MERGES: dict[str, tuple[str, ...]] = {
