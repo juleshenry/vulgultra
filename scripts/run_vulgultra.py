@@ -70,6 +70,12 @@ def main() -> None:
     ]
     subprocess.run(optimize, cwd=ROOT / "vulgultra-cli", check=True)
 
+    join_fields = [
+        sys.executable, "-m", "vulgultra.lexicon_fields",
+        "--lexicon", str(lexicon), "--grid", str(grid),
+    ]
+    subprocess.run(join_fields, cwd=ROOT, check=True)
+
     render = [
         sys.executable, str(ROOT / "scripts" / "es_pt_beta.py"),
         "--candidates", str(candidates), "--lexicon", str(lexicon),
