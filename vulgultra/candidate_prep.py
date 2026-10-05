@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections import Counter
 from collections.abc import Callable
 from typing import Any
 
@@ -27,7 +28,7 @@ def build_candidates(
     transcribe = transcribe or transcribe_and_repair
     prepared: list[tuple[str, str, str, dict[str, str], str, list[str]]] = []
     observed: set[str] = set()
-    errors = 0
+    rejected: Counter[str] = Counter()
     for concept_id, lang_forms in concepts.items():
         meta = lang_forms.get("__meta__", {})
         pos = str(meta.get("pos") or "") if isinstance(meta, dict) else ""
@@ -41,7 +42,7 @@ def build_candidates(
                         prepared.append((concept_id, pos, lang, record, ipa, seq))
                         observed.update(seq)
                 except Exception:
-                    errors += 1
+                    rejected[lang] += 1
 
     configure_inventory(observed)
     candidates: dict[str, list[Candidate]] = {}
@@ -64,11 +65,13 @@ def build_candidates(
             )
             candidates.setdefault(concept_id, []).append(candidate)
         except Exception:
-            errors += 1
+            rejected[lang] += 1
 
     for concept_id, values in list(candidates.items()):
         minimum = min(candidate.syllables for candidate in values)
         candidates[concept_id] = [candidate for candidate in values if candidate.syllables == minimum]
-    if errors:
-        print(f"  Warning: {errors} G2P errors skipped")
+    if rejected:
+        by_lect = ", ".join(f"{lang} {n}" for lang, n in rejected.most_common())
+        print(f"  Warning: {sum(rejected.values())} forms rejected by G2P ({by_lect}); "
+              "itemised in docs/eval/orthography_gaps.md")
     return candidates

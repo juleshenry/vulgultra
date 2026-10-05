@@ -15,7 +15,9 @@ from typing import Optional
 import epitran
 import panphon
 from panphon.featuretable import FeatureTable
-from vulgultra.phonology_constants import IPA_TO_ORTHO, LANG_CODES, ORTHO_TO_IPA
+from vulgultra.phonology_constants import (
+    BACKEND_LEFTOVERS, BACKEND_TYPOS, IPA_TO_ORTHO, LANG_CODES, ORTHO_TO_IPA,
+)
 
 # ---------------------------------------------------------------------------
 # Corpus-derived phone inventory
@@ -118,7 +120,42 @@ def _get_g2p(lang: str) -> epitran.Epitran:
 def word_to_ipa(word: str, lang: str) -> str:
     """Convert an orthographic word to IPA using epitran."""
     epi = _get_g2p(lang)
-    return epi.transliterate(word.lower().strip())
+    return read_leftovers(epi.transliterate(word.lower().strip()), lang)
+
+
+# Decomposed, longest first, so a base letter plus its leftover diacritic is
+# matched before the bare letter.
+_LEFTOVERS = {
+    lang: sorted(
+        ((unicodedata.normalize("NFD", left), reading) for left, reading in table.items()),
+        key=lambda pair: -len(pair[0]),
+    )
+    for lang, table in BACKEND_LEFTOVERS.items()
+}
+
+
+def read_leftovers(ipa: str, lang: str) -> str:
+    """Finish what a borrowed backend left untranscribed for this lect."""
+    ipa = unicodedata.normalize("NFD", ipa)
+    for leftover, reading in _LEFTOVERS.get(lang, ()):
+        ipa = ipa.replace(leftover, reading)
+    for slip, fixed in BACKEND_TYPOS:
+        ipa = ipa.replace(slip, fixed)
+    return ipa
+
+
+def unknown_segments(phoneme_seq: list[str]) -> list[str]:
+    """Segments PanPhon has no features for: letters that are not IPA.
+
+    A stray diacritic is reported with the letter it sits on.
+    """
+    unknown: list[str] = []
+    for i, segment in enumerate(phoneme_seq):
+        if _FEATURES.seg_known(segment):
+            continue
+        stray_mark = i > 0 and all(unicodedata.combining(ch) for ch in segment)
+        unknown.append(phoneme_seq[i - 1] + segment if stray_mark else segment)
+    return unknown
 
 
 # ---------------------------------------------------------------------------

@@ -21,63 +21,65 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from vulgultra.candidate_prep import build_candidates
-from vulgultra.g2p import transcribe_and_repair
+from vulgultra.g2p import UntranscribedError, transcribe_and_repair
 from vulgultra.optimizer import Candidate
 from vulgultra.phonology import is_vowel, repair
 from vulgultra.phonology_constants import IPA_TO_ORTHO
 from vulgultra.pipeline import gold_concepts
 
-SPEC, LEAK, NARROW, CONTRAST = "spec", "leak", "narrow", "contrast"
+SPEC, LEAK, ALLOPHONE, CONTRAST = "spec", "leak", "allophone", "contrast"
 
 GROUPS = {
     SPEC: (
         "Merges the spec already orders",
-        "`grammar.tex` §2.3 maps these; `adapt_to_vulgultra` is still an identity.",
+        "`grammar.tex` §2.3 maps these; `adapt_to_vulgultra` is still an identity. "
+        "The palatals are phonemes in most daughters: the merge is a reverse-VL "
+        "rule, not a transcription repair.",
     ),
     LEAK: (
-        "Source letters that leaked through a borrowed G2P backend",
-        "Not IPA. The lect is transcribed with a sister's backend, which passes "
-        "the letter through, and PanPhon accepts letter plus diacritic as a segment. "
-        "The target is the likely value, to be fixed in G2P before any spelling choice.",
+        "Source letters with no reading yet",
+        "Not IPA. The lect is transcribed with a sister's backend, which passes the "
+        "letter through, and PanPhon accepts letter plus diacritic as a segment. "
+        "Each needs a reading in `BACKEND_LEFTOVERS` before it can be merged or spelled.",
     ),
-    NARROW: (
-        "Narrow transcription detail from one backend",
-        "Allophones or backend conventions. Each one is a separate segment only "
-        "because its backend transcribes more narrowly than the others.",
+    ALLOPHONE: (
+        "Never contrastive in a lect that shows it",
+        "Predictable variants of another sound. They are separate segments only "
+        "because one backend transcribes more narrowly than the rest.",
     ),
     CONTRAST: (
-        "Contrasts in the source lects",
-        "Real distinctions somewhere in the family. Keep and spell, or merge.",
+        "Contrastive in at least one source lect",
+        "Merging any of these gives up a distinction some daughter makes.",
     ),
 }
 
-# segment → (group, merge target, spelling if kept, note). Proposals for
-# Gate G0, not decisions; nothing in the pipeline reads this table.
-PROPOSALS: dict[str, tuple[str, tuple[str, ...], str, str]] = {
+# segment → (group, merge target or None, spelling if kept, note). Proposals
+# for Gate G0, not decisions; nothing in the pipeline reads this table.
+PROPOSALS: dict[str, tuple[str, tuple[str, ...] | None, str, str]] = {
     "ʝ": (SPEC, ("j",), "", "palatal fricative → /j/"),
     "x": (SPEC, ("k",), "", "/x/ → /k/"),
     "ɲ": (SPEC, ("n", "j"), "", "palatal nasal → /nj/"),
     "ʎ": (SPEC, ("l", "j"), "", "palatal lateral → /lj/"),
 
-    "ë": (LEAK, ("ə",), "", "Ladin ë, a mid central vowel"),
-    "ö": (LEAK, ("ø",), "", "Lombard ö"),
-    "ü": (LEAK, ("y",), "", "Lombard ü"),
-    "ã": (LEAK, ("ɑ̃",), "", "Romagnol ã, a nasal a; quality unverified"),
+    "ë": (LEAK, None, "", "Romagnol ë"),
+    "ö": (LEAK, None, "", "Romagnol ö"),
+    "ã": (LEAK, None, "", "Romagnol ã"),
 
-    "ɾ": (NARROW, ("r",), "", "tap; Ibero backends write every single r this way"),
-    "ʀ": (NARROW, ("r",), "", "French-backend rhotic"),
-    "ʁ": (NARROW, ("r",), "", "Portuguese-backend strong r"),
-    "β": (NARROW, ("b",), "", "lenited /b/"),
-    "ɱ": (NARROW, ("m",), "", "/m/ before a labiodental"),
-    "ŋ": (NARROW, ("n",), "", "/n/ before a velar or word-finally"),
-    "ʊ": (NARROW, ("u",), "", "Galician-backend lax u"),
-    "ɪ": (NARROW, ("i",), "", "Galician-backend lax i"),
-    "ɐ": (NARROW, ("a",), "", "reduced a"),
-    "ɑ": (NARROW, ("a",), "", "back a"),
-    "kʷ": (NARROW, ("k", "w"), "", "labialized k"),
-    "w̃": (NARROW, ("w",), "", "nasal glide after a nasal vowel"),
-    "j̃": (NARROW, ("j",), "", "nasal glide after a nasal vowel"),
+    "β": (ALLOPHONE, ("b",), "", "/b/ between vowels"),
+    "ɱ": (ALLOPHONE, ("n",), "", "nasal before /f v/; the source spells n"),
+    "ʊ": (ALLOPHONE, ("o",), "", "Galician final unstressed /o/"),
+    "ɪ": (ALLOPHONE, ("e",), "", "Galician final unstressed /e/"),
+    "ɐ": (ALLOPHONE, ("a",), "", "unstressed /a/ in Portuguese, Mirandese, Galician"),
+    "kʷ": (ALLOPHONE, ("k", "w"), "", "Portuguese qu before a, o: /kw/"),
+    "w̃": (ALLOPHONE, ("w",), "", "offglide of a nasal diphthong; nasality is on the vowel"),
+    "j̃": (ALLOPHONE, ("j",), "", "offglide of a nasal diphthong; nasality is on the vowel"),
 
+    "ɾ": (CONTRAST, ("r",), "", "single r; es ca pt gl contrast it with the strong r (caro/carro)"),
+    "ʁ": (CONTRAST, ("r",), "", "Portuguese strong r, the counterpart of the Spanish trill"),
+    "ʀ": (CONTRAST, ("r",), "", "the one rhotic of the Oïl lects; uvular, not a second category"),
+    "ŋ": (CONTRAST, ("n",), "", "variant of /n/ in ca oc gsc; a phoneme in Ligurian and Emilian"),
+    "ɑ": (CONTRAST, ("a",), "", "contrasts with a in conservative French (pâte/patte)"),
+    "ɒ": (CONTRAST, ("a",), "å", "Istro-Romanian å, kept as its own letter"),
     "ɛ": (CONTRAST, ("e",), "è", "open e; spec: expand only if noun cells collide"),
     "ɔ": (CONTRAST, ("o",), "ò", "open o; same clause"),
     "ə": (CONTRAST, ("e",), "ë", "schwa"),
@@ -90,7 +92,7 @@ PROPOSALS: dict[str, tuple[str, tuple[str, ...], str, str]] = {
     "d͡ʒ": (CONTRAST, ("t͡ʃ",), "dj", "digraph; the reader is one character at a time today"),
     "t͡s": (CONTRAST, ("s",), "ts", "digraph, same caveat"),
     "h": (CONTRAST, (), "h", "h is a free letter; merging means deleting it"),
-    "θ": (CONTRAST, ("s",), "", "one candidate"),
+    "θ": (CONTRAST, ("s",), "", "Galician"),
     "ɑ̃": (CONTRAST, ("a", "n"), "ã", "nasal vowel; merge restores the nasal consonant"),
     "ɐ̃": (CONTRAST, ("a", "n"), "ã", "one letter with ɑ̃"),
     "ɔ̃": (CONTRAST, ("o", "n"), "õ", ""),
@@ -106,8 +108,8 @@ PROPOSALS = {unicodedata.normalize("NFD", seg): row for seg, row in PROPOSALS.it
 SCENARIOS = (
     ("Today", ()),
     ("Spec merges", (SPEC,)),
-    ("Spec merges, leaks fixed, narrow detail merged", (SPEC, LEAK, NARROW)),
-    ("Everything merged into the spelled segments", (SPEC, LEAK, NARROW, CONTRAST)),
+    ("Spec merges and allophones", (SPEC, ALLOPHONE)),
+    ("Every segment that has a target merged", (SPEC, ALLOPHONE, CONTRAST)),
 )
 
 
@@ -115,7 +117,7 @@ def merge_table(groups: tuple[str, ...]) -> dict[str, tuple[str, ...]]:
     """Targets for the chosen groups, with chains (ö → ø → o) followed."""
     direct = {
         seg: tuple(unicodedata.normalize("NFD", part) for part in row[1])
-        for seg, row in PROPOSALS.items() if row[0] in groups
+        for seg, row in PROPOSALS.items() if row[0] in groups and row[1] is not None
     }
 
     def expand(seg: str, seen: frozenset[str] = frozenset()) -> tuple[str, ...]:
@@ -225,19 +227,18 @@ def segment_rows(pool: dict[str, list[Candidate]], roots: dict[str, dict]) -> li
     ]
 
 
-def rejected_rows(concepts: dict, cache: dict) -> list[str]:
-    total: Counter[str] = Counter()
-    for forms in concepts.values():
-        for lang, cell in forms.items():
-            if lang != "__meta__":
-                total[lang] += len(cell)
-    rejected: dict[str, list[str]] = defaultdict(list)
+def rejected_rows(cache: dict) -> list[str]:
+    """One row per lect and leftover letter, with the words it blocks."""
+    blocked: dict[tuple[str, str], list[str]] = defaultdict(list)
     for (word, lang), result in sorted(cache.items()):
-        if isinstance(result, Exception):
-            rejected[lang].append(word)
+        if isinstance(result, UntranscribedError):
+            for leftover in sorted(set(result.leftovers)):
+                blocked[(lang, leftover)].append(f"*{word}* → {result.ipa}")
+        elif isinstance(result, Exception):
+            blocked[(lang, type(result).__name__)].append(f"*{word}*")
     return [
-        f"| {lang} | {len(words)} | {total[lang]} | {', '.join(f'*{w}*' for w in words[:5])} |"
-        for lang, words in sorted(rejected.items(), key=lambda item: (-len(item[1]), item[0]))
+        f"| {lang} | `{leftover}` | {len(words)} | {'; '.join(words[:4])} |"
+        for (lang, leftover), words in sorted(blocked.items(), key=lambda item: (item[0][0], -len(item[1])))
     ]
 
 
@@ -280,7 +281,8 @@ def render(concepts: dict, pools: list[tuple[str, dict[str, list[Candidate]]]],
             out.append(
                 f"| {row['segment']} | {row['kind']} | {row['candidates']} | {row['concepts']} "
                 f"| {row['forced']} | {row['roots']} | {row['lects']} "
-                f"| {' '.join(target) or '∅'} | {spelling or '–'} | {row['example']} | {note} |"
+                f"| {'?' if target is None else ' '.join(target) or '∅'} | {spelling or '–'} "
+                f"| {row['example']} | {note} |"
             )
         out.append("")
     unclassified = [row for row in rows if row["segment"] not in PROPOSALS]
@@ -321,12 +323,13 @@ def render(concepts: dict, pools: list[tuple[str, dict[str, list[Candidate]]]],
         "",
         "## Grid forms the transcriber rejects",
         "",
-        "These raise during G2P or segmentation and never reach the shortlist; prep only "
-        "prints their count. The segment counts above are therefore a floor for these lects.",
+        "The backend left a letter that is not IPA and `BACKEND_LEFTOVERS` has no reading "
+        "for it in that lect, so the form cannot compete. An apostrophe is an elision or a "
+        "clitic: the grid cell needs a different citation form, not a reading.",
         "",
-        "| lect | rejected | grid forms | examples |",
-        "|---|---:|---:|---|",
-        *(rejected or ["| – | 0 | | |"]),
+        "| lect | leftover | forms | examples |",
+        "|---|---|---:|---|",
+        *(rejected or ["| – | | 0 | |"]),
         "",
     ]
     return "\n".join(out)
@@ -355,7 +358,7 @@ def main() -> None:
 
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(render(concepts, pools, roots, lexicon_note, rejected_rows(concepts, cache)), encoding="utf-8")
+    out.write_text(render(concepts, pools, roots, lexicon_note, rejected_rows(cache)), encoding="utf-8")
     print(f"Wrote {out}")
 
 
