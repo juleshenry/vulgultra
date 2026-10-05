@@ -28,7 +28,7 @@ class ObjectiveFixtures(unittest.TestCase):
     def test_preparation_keeps_only_shortest_legal_forms_and_evidence(self) -> None:
         concepts = {"water": {"es": [{"form": "corto", "evidence": "grid:p1"}, {"form": "largo", "evidence": "grid:p2"}]}}
 
-        def fake_transcribe(word: str, _lang: str) -> tuple[str, list[str]]:
+        def fake_transcribe(word: str, _lang: str, _pos: str = "") -> tuple[str, list[str]]:
             return word, ["k", "a"] if word == "corto" else ["l", "a", "r", "ɡ", "o"]
 
         with patch("vulgultra.candidate_prep.transcribe_and_repair", side_effect=fake_transcribe):
@@ -42,7 +42,7 @@ class ObjectiveFixtures(unittest.TestCase):
             "smile": {"__meta__": {"pos": "verb"}, "es": [{"form": "la"}]},
         }
 
-        def fake_transcribe(word: str, _lang: str) -> tuple[str, list[str]]:
+        def fake_transcribe(word: str, _lang: str, _pos: str = "") -> tuple[str, list[str]]:
             return word, list(word)
 
         with patch("vulgultra.candidate_prep.transcribe_and_repair", side_effect=fake_transcribe):

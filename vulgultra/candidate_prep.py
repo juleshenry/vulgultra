@@ -16,7 +16,7 @@ from vulgultra.grid import form_records
 
 def build_candidates(
     concepts: dict[str, dict[str, Any]],
-    transcribe: Callable[[str, str], tuple[str, list[str]]] | None = None,
+    transcribe: Callable[[str, str, str], tuple[str, list[str]]] | None = None,
 ) -> dict[str, list[Candidate]]:
     """Build auditable candidates, then keep only each concept's shortest legal forms.
 
@@ -37,7 +37,7 @@ def build_candidates(
                 continue
             for record in form_records(raw_forms):
                 try:
-                    ipa, seq = transcribe(record["form"], lang)
+                    ipa, seq = transcribe(record["form"], lang, pos)
                     if seq:
                         prepared.append((concept_id, pos, lang, record, ipa, seq))
                         observed.update(seq)

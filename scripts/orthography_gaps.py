@@ -107,16 +107,16 @@ def merge_table(groups: tuple[str, ...]) -> dict[str, tuple[str, ...]]:
 
 
 def shortlist(
-    concepts: dict, cache: dict[tuple[str, str], tuple[str, list[str]] | Exception],
+    concepts: dict, cache: dict[tuple[str, str, str], tuple[str, list[str]] | Exception],
     table: dict[str, tuple[str, ...]],
 ) -> dict[str, list[Candidate]]:
-    def transcribe(word: str, lang: str) -> tuple[str, list[str]]:
-        if (word, lang) not in cache:
+    def transcribe(word: str, lang: str, pos: str = "") -> tuple[str, list[str]]:
+        if (word, lang, pos) not in cache:
             try:
-                cache[(word, lang)] = transcribe_and_repair(word, lang)
+                cache[(word, lang, pos)] = transcribe_and_repair(word, lang, pos)
             except Exception as error:
-                cache[(word, lang)] = error
-        result = cache[(word, lang)]
+                cache[(word, lang, pos)] = error
+        result = cache[(word, lang, pos)]
         if isinstance(result, Exception):
             raise result
         ipa, seq = result
@@ -208,7 +208,7 @@ def segment_rows(pool: dict[str, list[Candidate]], roots: dict[str, dict]) -> li
 def rejected_rows(cache: dict) -> list[str]:
     """One row per lect and leftover letter, with the words it blocks."""
     blocked: dict[tuple[str, str], list[str]] = defaultdict(list)
-    for (word, lang), result in sorted(cache.items()):
+    for (word, lang, _pos), result in sorted(cache.items()):
         if isinstance(result, UntranscribedError):
             for leftover in sorted(set(result.leftovers)):
                 blocked[(lang, leftover)].append(f"*{word}* → {result.ipa}")
@@ -320,7 +320,7 @@ def main() -> None:
     args = parser.parse_args()
 
     concepts = gold_concepts()
-    cache: dict[tuple[str, str], tuple[str, list[str]] | Exception] = {}
+    cache: dict[tuple[str, str, str], tuple[str, list[str]] | Exception] = {}
     pools = [(name, shortlist(concepts, cache, merge_table(groups))) for name, groups in SCENARIOS]
 
     lexicon_path = Path(args.lexicon)

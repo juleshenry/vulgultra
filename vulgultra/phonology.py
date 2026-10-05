@@ -18,8 +18,9 @@ import epitran
 import panphon
 from panphon.featuretable import FeatureTable
 from vulgultra.phonology_constants import (
-    BACKEND_LEFTOVERS, BACKEND_NATIVE_LETTERS, BACKEND_TYPOS, ESPEAK_NOTATION, ESPEAK_RESPELL,
-    ESPEAK_VOICES, IPA_TO_ORTHO, LANG_CODES, LECT_MERGES, ORTHO_TO_IPA, RHOTICS, SEGMENT_MERGES,
+    BACKEND_LEFTOVERS, BACKEND_NATIVE_LETTERS, BACKEND_RESPELL, BACKEND_TYPOS, ESPEAK_NOTATION,
+    ESPEAK_VOICES, IPA_TO_ORTHO, LANG_CODES, LECT_MERGES, ORTHO_TO_IPA, RESPELL, RHOTICS, RULES, RULES_AFTER,
+    SEGMENT_MERGES,
 )
 
 # ---------------------------------------------------------------------------
@@ -132,8 +133,6 @@ def espeak_reading(word: str, lang: str) -> str | None:
     voice = ESPEAK_VOICES.get(lang)
     if not voice or not _espeak():
         return None
-    for written, respelled in ESPEAK_RESPELL.get(lang, ()):
-        word = word.replace(written, respelled)
     try:
         spoken = subprocess.run([_espeak(), "-q", "--ipa", "-v", voice, "--", word],
                                 capture_output=True, text=True, timeout=20).stdout.strip()
@@ -148,15 +147,65 @@ def espeak_reading(word: str, lang: str) -> str | None:
     return ipa
 
 
-def word_to_ipa(word: str, lang: str) -> str:
-    """Convert an orthographic word to IPA: espeak-ng where it reads the lect, else epitran."""
-    word = word.lower().strip()
-    spoken = espeak_reading(word, lang)
+def respelled(word: str, lang: str, pos: str = "") -> str:
+    """The word with the lect's own spellings rewritten for its reader."""
+    for written, reading in RESPELL.get(f"{lang}:{pos}", RESPELL.get(lang, ())):
+        word = re.sub(written, reading, word)
+    return word
+
+
+_RULES = {lang: tuple((re.compile(pattern), sound) for pattern, sound in rules) for lang, rules in RULES.items()}
+
+
+def rule_reading(word: str, lang: str) -> str | None:
+    """The word read letter by letter with the lect's own rules; None if it has none."""
+    rules = _RULES.get(lang)
+    if rules is None:
+        return None
+    sounds: list[str] = []
+    at = 0
+    while at < len(word):
+        for pattern, sound in rules:
+            match = pattern.match(word, at)
+            if match and match.end() > at:
+                sounds.append(match.expand(sound))
+                at = match.end()
+                break
+        else:
+            sounds.append(word[at])  # a letter no rule knows is left, and rejected downstream
+            at += 1
+    ipa = "".join(sounds)
+    for pattern, sound in RULES_AFTER.get(lang, ()):
+        ipa = re.sub(pattern, sound, ipa)
+    return unicodedata.normalize("NFD", ipa)
+
+
+_KEPT_SOUND = re.compile("⟨([^⟩]*)⟩")
+
+
+def word_to_ipa(word: str, lang: str, pos: str = "") -> str:
+    """Convert an orthographic word to IPA: by the lect's own rules, a voice, or the Epitran backend."""
+    word = unicodedata.normalize("NFC", word.lower().strip())
+    reading = respelled(word, lang, pos)
+    spoken = rule_reading(reading, lang) or (None if "⟨" in reading else espeak_reading(reading, lang))
     if spoken is not None:
         return spoken
-    ipa = _get_g2p(lang).transliterate(word)
+    for written, sound in BACKEND_RESPELL.get(LANG_CODES.get(lang, ""), ()):
+        reading = re.sub(written, sound, reading)
+    # A sound the respelling already gives stands in the word as a private
+    # character while the backend reads the letters around it.
+    sounds: list[str] = []
+
+    def keep(match: re.Match[str]) -> str:
+        sounds.append(match.group(1))
+        return chr(0xE000 + len(sounds) - 1)
+
+    ipa = _get_g2p(lang).transliterate(_KEPT_SOUND.sub(keep, reading))
     letters, native_table = BACKEND_NATIVE_LETTERS.get(lang, ("", lang))
-    return read_leftovers(ipa, native_table if any(ch in letters for ch in word) else lang)
+    ipa = read_leftovers(ipa, native_table if any(ch in letters for ch in word) else lang)
+    for i, sound in enumerate(sounds):
+        ipa = ipa.replace(chr(0xE000 + i), unicodedata.normalize("NFD", sound))
+    return ipa
 
 
 def _leftover_reader(table: dict[str, str]) -> tuple[re.Pattern[str], dict[str, str]]:

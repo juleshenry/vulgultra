@@ -69,14 +69,119 @@ BACKEND_TYPOS: tuple[tuple[str, str], ...] = (("g", "ɡ"), ("tʃ͡", "t͡ʃ"))
 # of the same words Epitran reads 93 of 165 French words and 19 of 168
 # Portuguese words segment for segment. Lect → voice. Used when the program
 # is installed; without it the Epitran backend below still reads the lect.
-ESPEAK_VOICES: dict[str, str] = {"fr": "fr-fr", "pcd": "fr-fr", "pt": "pt-pt", "mwl": "pt-pt"}
-# A lect's own spellings, rewritten as the voice's language spells that
-# sound, in order. Picard: the dot of grain.ne is a spelling device, oé is
-# [we], and an infinitive in -tcher ends in [e]. Mirandese: ch is the
-# affricate, x the sibilant.
-ESPEAK_RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
-    "pcd": ((".", ""), ("oé", "oué"), ("oè", "ouè"), ("tcher", "tché")),
+ESPEAK_VOICES: dict[str, str] = {
+    "fr": "fr-fr", "pcd": "fr-fr", "pt": "pt-pt", "mwl": "pt-pt",
+    "es": "es", "an": "an", "ca": "ca", "it": "it",
+}
+# A lect's own spellings that its reader would misread, rewritten before it
+# reads: regular expressions, in order. The target is the reader language's
+# spelling of the sound or, between ⟨ ⟩, the sound itself, which is kept
+# from the reader; a word with a kept sound is read by Epitran, not by a
+# voice. A key lect:pos replaces the lect's table for that part of speech.
+# docs/sources_orthography.md gives the source for each table.
+_RO_VOWEL = "[aeiouăâî]"
+_WA_V = "aeiouàâåéèêëîïôöûü"   # Walloon vowel letters; y is a consonant
+# s before a consonant in Romansh and Ladin.
+_S_IMPURA = (("s(?=[ptckqf])", "⟨ʃ⟩"), ("s(?=[bdgvlmnr])", "⟨ʒ⟩"))
+_Z_TS = (("z+", "⟨t͡s⟩"),)
+_FRP = ((rf"en(?![{_WA_V}yn])", "in"), ("(?<![qgo])u(?=[eèéê])", "ou"), ("oa", "oua"))
+# Spain's c, z and ll, which the Spanish map reads as American s and y.
+_CASTILIAN = (("z", "⟨θ⟩"), ("c(?=[eiéí])", "⟨θ⟩"), ("ll", "⟨ʎ⟩"))
+RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
+    # Asturian x is ʃ and ḥ an aspirate.
+    "ast": (*_CASTILIAN, ("x", "⟨ʃ⟩"), ("ḥ", "⟨h⟩")),
+    # Extremaduran h, j, and g before e i, are the aspirate.
+    "ext": (*_CASTILIAN, ("(?<!c)h", "⟨h⟩"), ("j", "⟨h⟩"), ("g(?=[eiéí])", "⟨h⟩")),
+    # Ladino in the Aki Yerushalayim spelling: sh x = ʃ, dj = d͡ʒ, j = ʒ,
+    # z = z, ny = ɲ, h = x, and g is always hard.
+    "lad": (("sh|x", "⟨ʃ⟩"), ("dj", "⟨d͡ʒ⟩"), ("j", "⟨ʒ⟩"), ("z", "⟨z⟩"), ("ny", "⟨ɲ⟩"),
+            ("(?<!c)h", "⟨x⟩"), ("g(?=[eiéí])", "⟨ɡ⟩")),
+    # Occitan and Gascon qu is k.
+    "oc": (("qu", "⟨k⟩"),), "gsc": (("qu", "⟨k⟩"),),
+    # Picard: the dot of grain.ne is a spelling device, oé is [we], and an
+    # infinitive in -tcher ends in [e].
+    "pcd": ((r"\.", ""), ("oé", "oué"), ("oè", "ouè"), ("tcher", "tché")),
+    # Mirandese: ch is the affricate, x the sibilant.
     "mwl": (("ch", "tch"), ("x", "ch")),
+    "scn": _Z_TS, "co": _Z_TS,
+    # Milanese z is a plain sibilant today.
+    "lmo": (("z+", "⟨s⟩"),),
+    "ist": (("z", "⟨z⟩"),),
+    # Bolognese z and ż, and Romagnol z, are the dental fricatives.
+    "eml": (("z", "⟨θ⟩"), ("ż", "⟨ð⟩")),
+    "rgn": (("z", "⟨θ⟩"),),
+    # Friulian cj and gj are the palatal stops; z is voiced at the start
+    # of a word; a final sc is s + k.
+    "fur": (("cj", "⟨c⟩"), ("gj", "⟨ɟ⟩"), ("sc$", "⟨sk⟩"), ("^z", "⟨d͡ʒ⟩"), ("z", "⟨t͡s⟩")),
+    # Ladin: sc before e i and at the end of a word is ʃ, as is s before a
+    # consonant; z and tz are t͡s.
+    "lld": (("sc(?=[eiéèëìí]|$)", "⟨ʃ⟩"), *_S_IMPURA, ("tz|z+", "⟨t͡s⟩")),
+    # Jèrriais th is [ð]; aun is the nasal of French an.
+    "nrf": (("th", "⟨ð⟩"), ("aun", "an")),
+    # Franco-Provençal in ORB: en is [ɛ̃], ue and oa begin with [w]; the r
+    # of an infinitive in -ar, -ér, -ir is silent.
+    "frp": _FRP, "frp:verb": (*_FRP, ("(?<=[aâéêiî])r$", "")),
+    # Walloon: the -er of an infinitive is [e]; mer, vier and noer keep their r.
+    "wa": ((rf"^(.*[{_WA_V}].*[^{_WA_V}])er$", "\\1é"),),
+    # Rumantsch Grischun: tg, and ch before a o u, are the palatal affricate;
+    # gl before i or at the end of a word, and gli before a vowel, the
+    # palatal l; s before a consonant is ʃ or ʒ and between vowels z; c
+    # before e i, and z, are t͡s.
+    "rm": (("tsch", "⟨t͡ʃ⟩"), ("sch", "⟨ʃ⟩"), *_S_IMPURA, ("(?<=[aeiou])s(?=[aeiou])", "⟨z⟩"),
+           ("tg", "⟨t͡ɕ⟩"), ("ch(?=[aou])", "⟨t͡ɕ⟩"), ("gli(?=[aeou])", "⟨ʎ⟩"), ("gl(?=i|s?$)", "⟨ʎ⟩"),
+           ("c(?=[ei])", "⟨t͡s⟩"), ("z+", "⟨t͡s⟩")),
+    # Romanian: a final i after a consonant is not a syllable (ochi [okʲ],
+    # cinci [t͡ʃint͡ʃ]) unless it is the word's only vowel (zi) or follows a
+    # consonant + l or r (negri). An infinitive's final i is stressed.
+    "ro": ((rf"^(.*{_RO_VOWEL}.*)chi$", "\\1⟨kʲ⟩"), (rf"^(.*{_RO_VOWEL}.*)ghi$", "\\1⟨ɡʲ⟩"),
+           (rf"^(.*{_RO_VOWEL}.*)ci$", "\\1⟨t͡ʃ⟩"), (rf"^(.*{_RO_VOWEL}.*)gi$", "\\1⟨d͡ʒ⟩"),
+           (rf"^(.*{_RO_VOWEL}.*(?:(?<={_RO_VOWEL})[lr]|[^aeiouăâîlr]))i$", "\\1⟨ʲ⟩")),
+    "ro:verb": (),
+}
+# A lect whose spelling is regular enough to read by rule, with no borrowed
+# reader: at each letter the first pattern that matches there gives the
+# sound. Walloon in the unified spelling (rifondou), in the standard
+# pronunciation the Walloon Wiktionary gives (prononçaedje zero-cnoxhou):
+# ea = ja, oe = wɛ, oi = wa, ae = ɛ, å = ɔ, ô = õ, xh = ʃ, jh = ʒ, sch = sk;
+# a vowel is nasal before an n that no vowel follows, and before m at the
+# end of a word or before p b; a final e, and a final t d s x z p, are
+# silent.
+_WA_N = rf"(?:n(?![{_WA_V}y])|m(?=[pb]|$))"   # the n or m of a nasal vowel
+RULES: dict[str, tuple[tuple[str, str], ...]] = {
+    "wa": (
+        (rf"(?<=[^{_WA_V}])es?$", ""), ("gues?$", "ɡ"), ("ques?$", "k"), ("ez$", "e"),
+        ("[tdsxzp]+$", ""), ("(?<=n)[cg]$", ""),
+        ("tch", "t͡ʃ"), ("dj", "d͡ʒ"), ("sch", "sk"), ("xh", "ʃ"), ("jh", "ʒ"), ("sh", "ʃ"), ("ch", "ʃ"),
+        ("gn", "ɲ"), ("qu", "k"), ("gu(?=[eiéèêî])", "ɡ"),
+        ("ç|c(?=[eiéèêî])|ss", "s"), ("c", "k"), ("g(?=[eiéèêî])|j", "ʒ"), ("g", "ɡ"), ("x", "ks"),
+        ("y", "j"), ("r+", "ʀ"), (r"([bdfklmnptvz])\1", "\\1"),
+        ("ieu", "jø"), ("ea", "ja"), ("eu", "ø"), ("oe", "wɛ"), ("oi", "wa"), ("o[uû]", "u"), ("ae|ai|ei", "ɛ"),
+        ("ie", "jɛ"), ("i(?=[aàâåeéèêoôuû])", "j"),
+        (rf"é{_WA_N}", "ẽ"), (rf"i{_WA_N}", "ɛ̃"), (rf"[ae]{_WA_N}", "ɑ̃"), (rf"o{_WA_N}", "ɔ̃"), (rf"u{_WA_N}", "œ̃"),
+        ("å", "ɔ"), ("ô", "õ"), ("o", "ɔ"), ("[aàâ]", "a"), ("é", "e"), ("[eèêë]", "ɛ"), ("[iîï]", "i"), ("[uûü]", "y"),
+    ),
+}
+# What the rules leave to the end of the word: Walloon devoices a final
+# obstruent, and a glide beside its own vowel is one sound.
+RULES_AFTER: dict[str, tuple[tuple[str, str], ...]] = {
+    "wa": (("jj", "j"), ("d͡ʒ$", "t͡ʃ"), ("b$", "p"), ("d$", "t"), ("ɡ$", "k"), ("v$", "f"), ("z$", "s"), ("ʒ$", "ʃ")),
+}
+# Faults of a borrowed Epitran map, mended for every lect it reads, after
+# the lect's own table. Italian: sc is read ʃ before a o u and s + t͡ʃ
+# before e i. Spanish: gu before a consonant or at the end of a word is
+# read ɡw, and hi before a consonant as the glide alone.
+_FR_V = "aeiouyàâéèêëîïôöûüœ"
+BACKEND_RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
+    # French: c and g before e i are s and ʒ (the map voices that s between
+    # vowels); a final e after a consonant is silent in a word with another
+    # vowel, but keeps that consonant sounded (the map leaves a schwa after
+    # nasal vowel + consonant: crendre); the -er of a longer word is [e];
+    # a final consonant after a nasal vowel is silent (grant, sang, blanc).
+    "fra-Latn": (("c(?=[eiéèêîy])", "⟨s⟩"), ("g(?=[eiéèêîy])", "⟨ʒ⟩"), ("oeu|œu", "eu"),
+                 (rf"^(.*[{_FR_V}].*[^{_FR_V}⟩])es?$", "\\1⟨⟩"), (rf"^(.*[{_FR_V}].*⟩)es?$", "\\1"),
+                 (rf"^(.*[{_FR_V}].*)er$", "\\1é"), (rf"(?<=[aeioâêîôu][nm])[tdcgsp]+$", "")),
+    "ita-Latn": (("sci(?=[aouàòù])", "⟨ʃ⟩"), ("sc(?=[eiéèêëìíî])", "⟨ʃ⟩"), ("sc(?=[aouàáâòóôùúûrl])", "⟨sk⟩")),
+    "spa-Latn": (("gu(?=[^aeiouáéíóúü]|$)", "⟨ɡu⟩"), ("^h(?=[ií][^aeiouáéíóú])", "")),
 }
 # The voice's notation rewritten in the grid's, as regular expressions over
 # decomposed text, in order: stress and length dropped, affricates tied;
@@ -85,6 +190,13 @@ ESPEAK_RESPELL: dict[str, tuple[tuple[str, str], ...]] = {
 # after ɾ before a consonant, and writes ɹ ʊ ɪ ɑ for ɾ u j a.
 _VOWEL = "[aeiouyɐɑɛɔœøəɨ]"
 _ESPEAK_COMMON = ((r"[ˈˌː\-]", ""), ("tʃ", "t͡ʃ"), ("dʒ", "d͡ʒ"))
+# Iberian b d ɡ are written as the approximants they become between vowels,
+# and n as ŋ before a velar; a falling diphthong ends in ɪ or ʊ.
+_IBERIAN = (("β", "b"), ("ð", "d"), ("ɣ", "ɡ"), ("ŋ(?=[ɡk])", "n"), ("ɪ", "j"), ("ʊ", "w"), ("ʰ", ""))
+# The Spanish and Aragonese voices open e and o in places; neither lect
+# has the contrast.
+_FIVE_VOWELS = (("ɛ", "e"), ("ɔ", "o"))
+_TIED = (("ts", "t͡s"), ("dz", "d͡z"))
 ESPEAK_NOTATION: dict[str, tuple[tuple[str, str], ...]] = {
     "fr-fr": (*_ESPEAK_COMMON, ("ʁ", "ʀ"), (rf"y(?={_VOWEL})", "ɥ")),
     "pt-pt": (*_ESPEAK_COMMON, ("ɹ", "ɾ"), ("ʊ", "u"), ("ɪ", "j"), ("ɑ", "a"), ("ɾə", "ɾ"),
@@ -92,6 +204,11 @@ ESPEAK_NOTATION: dict[str, tuple[tuple[str, str], ...]] = {
               (rf"({_VOWEL})\u0303?([jw]?)ŋ", "\\1\u0303\\2"),
               ("(\u0303)u\u0303", "\\1w\u0303"), ("(\u0303)[ij]\u0303", "\\1j\u0303"),
               (rf"(?<!{_VOWEL})(?<!\u0303)w$", "u")),
+    "es": (*_ESPEAK_COMMON, *_IBERIAN, *_FIVE_VOWELS),
+    "an": (*_ESPEAK_COMMON, *_IBERIAN, *_FIVE_VOWELS),
+    "ca": (*_ESPEAK_COMMON, *_TIED, *_IBERIAN),
+    # The Italian voice writes an unstressed u as ʊ and a final i as ɪ.
+    "it": (*_ESPEAK_COMMON, *_TIED, ("ʊ", "u"), ("ɪ", "i"), ("ŋ", "n")),
 }
 
 
@@ -126,8 +243,8 @@ BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     # out as l + ʒ). Listed before ž so a real l + ž is not caught.
     # Romanian oa and ea are rising diphthongs, read as two vowels.
     "ro": {"oa": "wa", "ea": "ja"},
-    "rup": {"sh": "ʃ", "ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ"},
-    "ruq": {"ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ"},
+    "rup": {"sh": "ʃ", "ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ", "nʒ": "ɲ"},
+    "ruq": {"ts": "t͡s", "dz": "d͡z", "lʒ": "ʎ", "nʒ": "ɲ"},
     # Istro-Romanian in its Croatian-based spelling: j is the glide, which
     # the Romanian backend reads ʒ; ž is the fricative. The affricate the
     # backend makes of ge, gi is listed so its ʒ is left alone.

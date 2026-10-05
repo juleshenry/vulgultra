@@ -162,8 +162,19 @@ DISEUX_URL = "http://ches.diseux.free.fr/vrac/"
 # and its text as a corpus.
 SITELINKS = SOURCES / "wikidata_sitelinks.json"
 WIKIPEDIA = SOURCES / "wikipedia"
-WIKI_OF = {"mwl": "mwlwiki", "pcd": "pcdwiki", "nrf": "nrmwiki"}
+WIKI_OF = {"mwl": "mwlwiki", "pcd": "pcdwiki", "nrf": "nrmwiki", "wa": "wawiki"}
 DUMP_URL = "https://dumps.wikimedia.org/{wiki}/latest/{wiki}-latest-pages-articles.xml.bz2"
+# The Walloon Wiktionary, from its dump: headwords in the unified spelling
+# with translations into French and English, and for half of them the
+# standard pronunciation (prononçaedje zero-cnoxhou). Section name → the
+# grid's part of speech.
+WIKTIONARY = SOURCES / "wiktionary"
+WA_DUMP = WIKTIONARY / "wawiktionary-latest-pages-articles.xml.bz2"
+WA_ENTRIES = WIKTIONARY / "wa_entries.json"
+WA_POS = {"sustantif": "noun", "Su": "noun", "viebe": "verb", "Vi": "verb", "VE": "verb",
+          "addjectif": "adj", "Addj": "adj", "adviebe": "adv", "Adv": "adv", "prono": "pron", "Pro": "pron",
+          "nombe": "num", "No": "num", "divancete": "prep", "Div": "prep", "aloyrece": "conj", "Alo": "conj"}
+
 # A form the lect shares with its big sister needs this many corpus tokens;
 # a form of its own needs one.
 CORPUS_MIN = 3
@@ -199,7 +210,7 @@ ARTICLES = {
 MODES = {
     "ist": "strict", "dlm": "strict",
     "pms": "list", "lij": "list", "eml": "list", "ruo": "list", "frp": "list",
-    "mwl": "picked", "pcd": "picked", "gallo": "picked",
+    "mwl": "picked", "pcd": "picked", "gallo": "picked", "wa": "picked",
 }
 
 # The big lect a small one would be padded from. An unconfirmed cell that is
@@ -372,10 +383,11 @@ def fetch_wikipedia() -> None:
     SITELINKS.write_text(json.dumps({cid: by_title.get(title) for cid, title in ARTICLES.items()},
                                     ensure_ascii=False, indent=1), encoding="utf-8")
     WIKIPEDIA.mkdir(parents=True, exist_ok=True)
-    for wiki in sorted(set(WIKI_OF.values())):
-        target = WIKIPEDIA / f"{wiki}-latest-pages-articles.xml.bz2"
+    WIKTIONARY.mkdir(parents=True, exist_ok=True)
+    targets = [WIKIPEDIA / f"{wiki}-latest-pages-articles.xml.bz2" for wiki in sorted(set(WIKI_OF.values()))]
+    for target in [*targets, WA_DUMP]:
         if not target.is_file():
-            target.write_bytes(_get(DUMP_URL.format(wiki=wiki)))
+            target.write_bytes(_get(DUMP_URL.format(wiki=target.name.split("-")[0])))
             time.sleep(2)
     print(f"sitelinks: {SITELINKS}; dumps: {WIKIPEDIA}")
 
@@ -658,6 +670,51 @@ def _diseux() -> tuple[list[Entry], list[tuple[str, str]]]:
 
 
 @functools.cache
+@functools.cache
+def wa_wiktionary() -> dict[str, dict]:
+    """Headword → {"ipa": [...], "senses": [[pos, [French], [English]], ...]} from the Walloon Wiktionary."""
+    if WA_ENTRIES.is_file():
+        return json.loads(WA_ENTRIES.read_text(encoding="utf-8"))
+    if not WA_DUMP.is_file():
+        return {}
+    entries: dict[str, dict] = {}
+    with bz2.open(WA_DUMP, "rt", encoding="utf-8") as stream:
+        pages = re.findall(r"<page>.*?</page>", stream.read(), flags=re.S)
+    for page in pages:
+        if "<ns>0</ns>" not in page or "{{L|wa}}" not in page:
+            continue
+        title = nfc(html.unescape(re.search(r"<title>(.*?)</title>", page).group(1)))
+        body = html.unescape(re.search(r"<text[^>]*>(.*?)</text>", page, flags=re.S).group(1))
+        section = re.search(r"==\s*\{\{L\|wa\}\}\s*==(.*?)(?=\n==\s*\{\{L\||\Z)", body, flags=re.S)
+        if not section:
+            continue
+        ipa = [nfc(part) for line in section.group(1).split("\n") if "{{pzc}}" in line
+               for group in re.findall(r"\{\{AFE\|([^}]*)\}\}", line)
+               for part in group.split("|") if part and "=" not in part]
+        senses: list[list] = []
+        pos = ""
+        for chunk in re.split(r"\n(?==+\s*\{\{H\|)", section.group(1)):
+            header = re.match(r"=+\s*\{\{H\|([^|}]+)", chunk)
+            name = header.group(1) if header else ""
+            pos = WA_POS.get(name, pos)
+            if name in ("ratournaedjes", "Ra"):
+                found = {lang: re.findall(rf"\{{\{{t\+?\|{lang}\|([^|}}]+)", chunk) for lang in ("fr", "en")}
+                for line in chunk.split("\n"):
+                    row = re.match(r"\|\s*(fr|en)\s*=\s*(.*)", line)
+                    if row:
+                        found[row.group(1)] += re.findall(r"\[\[([^\]|#]+)", row.group(2))
+            else:  # a French gloss under the definition: F. chienne.
+                found = {"en": [], "fr": [
+                    part.strip(" .") for gloss in re.findall(r"\{\{lang\|fr\|F\.\s*([^}]*)\}\}", chunk)
+                    for part in re.split(r"[,;]", gloss) if part.strip(" .")]}
+            if found["fr"] or found["en"]:
+                senses.append([pos, sorted({nfc(word).lower() for word in found["fr"]}),
+                               sorted({nfc(word).lower() for word in found["en"]})])
+        entries[title] = {"ipa": ipa, "senses": senses}
+    WA_ENTRIES.write_text(json.dumps(entries, ensure_ascii=False), encoding="utf-8")
+    return entries
+
+
 def dictionaries(lect: str) -> tuple[tuple[str, tuple[Entry, ...]], ...]:
     """Every glossed entry on disk for the lect, by source."""
     found: list[tuple[str, list[Entry]]] = []
@@ -686,6 +743,11 @@ def dictionaries(lect: str) -> tuple[tuple[str, tuple[Entry, ...]], ...]:
                 if parts:
                     entries.append((nfc(head), parts, frozenset(), wiki))
             found.append((f"{wiki}.wiktionary", entries))
+    if lect == "wa":
+        found.append(("wa.wiktionary", [
+            (head, frozenset(words), frozenset({pos} - {""}), lang)
+            for head, entry in wa_wiktionary().items() for pos, french, english in entry["senses"]
+            for lang, words in (("fr", french), ("en", english)) if words]))
     if lect == "frp":
         found.append(("Stich 2001", _stich_dictionary()))
     if lect == "gallo":
@@ -731,7 +793,8 @@ def sitelinks(lect: str) -> dict[str, str]:
     if not wiki or not SITELINKS.is_file():
         return {}
     links = json.loads(SITELINKS.read_text(encoding="utf-8"))
-    return {cid: nfc(link[wiki]) for cid, link in links.items() if link and wiki in link}
+    # A title may carry a disambiguation: cawe (antomeye).
+    return {cid: re.sub(r"\s*\(.*\)$", "", nfc(link[wiki])) for cid, link in links.items() if link and wiki in link}
 
 
 @functools.cache

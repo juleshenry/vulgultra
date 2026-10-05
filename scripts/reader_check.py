@@ -91,7 +91,7 @@ def check(lect: str, rows: list[dict]) -> dict | None:
             continue
         cells += 1
         try:
-            ipa, mine = transcribe_and_repair(form, lect)
+            ipa, mine = transcribe_and_repair(form, lect, row["pos"])
         except Exception:
             differ.append(f"*{form}* rejected")
             continue

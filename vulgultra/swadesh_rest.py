@@ -323,7 +323,51 @@ _IST = _hits("ist", {
 })
 
 # Gallo-Romance oïl / occitan
-_WA = _pack("wa", "dji|vos|i|nozôtes|vozôtes|i|cisse|cisse-la|chal|la|kî|cwè|wice|wince|comint|nén|tot|bråmint|kékès|pô|ôte|on|deu|troes|cwate|cénk|grand|long|lådj|spès|pejhe|pitit|court|estroet|fin|femè|ome|djin|efant|femè|marî|mere|pere|biesse|pexhon|oujhea|tchet|peu|sierpe|vèr|åbe|bwès|båton|frut|grinne|fowe|raecene|scoice|fleur|yèbe|coide|pea|tchå|sonk|oxhea|grèxhe|ou|coine|coye|pène|tcheveu|tiesse|oraye|ouy|nez|boke|dint|linwe|ongue|pî|djambe|genoy|mwin|aile|vinte|boyeas|col|dos|pétrin|coir|foye|boere|magnî|mordre|sûcî|cratchî|vomî|sofler|souffler|rire|vey|oyî|saveur|penser|fleurer|crinde|dormi|viker|mourî|touwer|bater|tchessî|coyî|côper|finde|pougnarder|grater|creuser|nôzer|voler|tchessa|vini|djumî|s'ashir|ståner|tourner|tcheur|dner|tni|serrer|froter|laver|sitchî|tîner|poussî|taper|loymer|côde|conter|dire|chanter|djouwer|flotter|couler|djelé|gonfler|solea|lune|steule|aiwe|plouve|aiwe|lak|mer|sé|pîre|såvlon|poussire|tere|nûlêye|broulård|cir|vent|nive|glaece|foumire|feu|cinde|brouî|voye|montinne|rodje|vert|djaene|blanc|noer|nute|djoû|anêye|tchaud|froed|plein|novea|vî|bon|måva|poerri|soû|droit|rond|agu|moussî|lisse|mouyî|setch|djust|près|lon|droete|hintche|a|e|avou|et|si|paski|no|li|esse|tchet|tchete|tchete|sourire")
+# Walloon in the unified spelling (rifondou walon), picked by hand: for each concept the word the
+# Walloon Wiktionary translates by it, checked against IE-CoR, the English and French
+# Wiktionaries and the Walloon Wikipedia (docs/sources_grid.md, fifth pass).
+_WA = _hits("wa", {
+    "i": "dji", "you_sg": "ti", "he": "i", "we": "nos", "you_pl": "vos", "they": "i", "this": "ci",
+    "that": "çoula", "here": "cial", "there": "la", "who": "kî", "what": "cwè", "where": "wice",
+    "when": "cwand", "how": "kimint", "not": "nén", "all": "tot", "many": "bråmint", "some": "sacwants",
+    "few": "pô", "other": "ôte", "one": "onk", "two": "deus", "three": "troes", "four": "cwate",
+    "five": "cénk", "big": "grand", "long": "long", "wide": "lådje", "thick": "spès", "heavy": "pezant",
+    "small": "pitit", "short": "court", "narrow": "stroet", "thin": "mwinre", "woman": "feme",
+    "man": "ome", "person": "djin", "child": "efant", "wife": "feme", "husband": "ome",
+    "mother": "mame", "father": "pere", "animal": "biesse", "fish": "pexhon", "bird": "oujhea",
+    "dog": "tchén", "louse": "piou", "snake": "sierpint", "worm": "vier", "tree": "åbe",
+    "forest": "bwès", "stick": "baston", "fruit": "frut", "seed": "grinne", "leaf": "foye",
+    "root": "raecene", "bark": "schoice", "flower": "fleur", "grass": "yebe", "rope": "coide",
+    "skin": "pea", "meat": "tchå", "blood": "sonk", "bone": "oxhea", "fat": "cråxhe", "egg": "oû",
+    "horn": "coine", "tail": "cawe", "feather": "plome", "hair": "tchivea", "head": "tiesse",
+    "ear": "oraye", "eye": "ouy", "nose": "nez", "mouth": "boke", "tooth": "dint", "tongue": "linwe",
+    "fingernail": "ongue", "foot": "pî", "leg": "djambe", "knee": "djino", "hand": "mwin",
+    "wing": "aiye", "belly": "vinte", "guts": "boyea", "neck": "hatrea", "back": "dos",
+    "breast": "pwetrene", "heart": "cour", "liver": "foete", "drink": "boere", "eat": "magnî",
+    "bite": "hagnî", "suck": "sucî", "spit": "raetchî", "vomit": "vômi", "blow": "shofler",
+    "breathe": "respirer", "laugh": "rire", "see": "vey", "hear": "ôre", "know": "saveur",
+    "think": "tuzer", "smell": "sinti", "fear": "crinde", "sleep": "doirmi", "live": "viker",
+    "die": "mori", "kill": "touwer", "fight": "bate", "hunt": "tchessî", "hit": "bouxhî",
+    "cut": "côper", "split": "finde", "stab": "souker", "scratch": "greter", "dig": "foyî",
+    "swim": "naivyî", "fly": "voler", "walk": "roter", "come": "vini", "lie": "coûtchî", "sit": "ashir",
+    "stand": "astamper", "turn": "tourner", "fall": "toumer", "give": "diner", "hold": "tini",
+    "squeeze": "strinde", "rub": "froter", "wash": "laver", "wipe": "rixhorbi", "pull": "saetchî",
+    "push": "bouter", "throw": "taper", "tie": "loyî", "sew": "keude", "count": "conter", "say": "dire",
+    "sing": "tchanter", "play": "djouwer", "float": "floter", "flow": "couler", "freeze": "djaler",
+    "swell": "infler", "sun": "solea", "moon": "lune", "star": "stoele", "water": "aiwe",
+    "rain": "plouve", "river": "aiwe", "lake": "lak", "sea": "mer", "salt": "sé", "stone": "pire",
+    "sand": "såvlon", "dust": "poûssire", "earth": "tere", "cloud": "nûlêye", "fog": "brouheur",
+    "sky": "cir", "wind": "vint", "snow": "nive", "ice": "glaece", "smoke": "foumire", "fire": "feu",
+    "ash": "cinde", "burn": "broûler", "road": "voye", "mountain": "montinne", "red": "rodje",
+    "green": "vert", "yellow": "djaene", "white": "blanc", "black": "noer", "night": "nute",
+    "day": "djoû", "year": "anêye", "warm": "tchôd", "cold": "froed", "full": "plin", "new": "novea",
+    "old": "vî", "good": "bon", "bad": "mwais", "rotten": "pouri", "dirty": "måssî",
+    "straight": "droet", "round": "rond", "sharp": "côpant", "dull": "diswijhî", "smooth": "lisse",
+    "wet": "frexh", "dry": "setch", "correct": "djusse", "near": "près", "far": "lon",
+    "right": "droete", "left": "hintche", "at": "a", "in": "dins", "with": "avou", "and": "et",
+    "if": "si", "because": "paski", "name": "no", "def_art": "li", "copula": "esse", "cat": "tchet",
+    "cat_f": "cate", "dog_f": "lexhe", "smile": "sorire",
+})
 
 _PCD = _hits("pcd", {
     "i": "mi", "you_sg": "ti", "he": "li", "we": "nous", "you_pl": "vous", "they": "eux",
