@@ -59,21 +59,56 @@ paradigm or a closed set.
 ## Stage 0. Foundations
 
 - [x] Candidates keep their concept's part of speech (was `verb` on every root).
-- [ ] Tests that pin today's noun, adjective and sentence realisation.
-- [ ] Orthography evidence table: every unspelled segment, how many roots use
-      it, which merges the spec already orders but the code does not perform
-      (`grammar.tex` §2.3: ʝ→j, x→k, ɲ→nj, ʎ→lj), a proposed spelling for
-      each survivor.
-- [ ] Lexicon entries carry `gloss_en`, `pos`, `gender`, `decl_class`, `stem`.
+- [x] Tests that pin today's noun, adjective and sentence realisation
+      (`vulgultra/test_realize.py`).
+- [x] Orthography evidence: [`docs/eval/orthography_gaps.md`](docs/eval/orthography_gaps.md),
+      from `scripts/orthography_gaps.py`.
+- [x] `gloss_en` and `pos` joined onto roots after the optimizer
+      (`vulgultra/lexicon_fields.py`, no Rust change). `gender`, `decl_class`
+      and `stem` use the same join once Stage 1 produces them.
 
-**Gate G0, spelling.** Per segment: merge it, spell it (letter, digraph or
-diacritic), or leave it bracketed. Blocks any readable text.
+What the evidence shows:
+
+- 41 of the 64 segments in the shortlist have no spelling. 4 are merges the
+  spec already orders, 4 are source letters that were never transcribed
+  (`ë ö ü ã`), 13 are narrow detail from a single G2P backend (four different
+  r's), and 20 are real contrasts.
+- Merging costs nothing but inventory. At every level of merging the total
+  minimum syllable count stays 229, every concept keeps a legal candidate,
+  and exactly one homophone is forced (`fight`/`hit`).
+- The transcriber rejects 254 grid forms and prep only prints a count: ruo 68
+  of 213, gsc 33, frp 25, oc 24, pcd 24, and French *père, mère, où, forêt*.
+- Among equally short forms the root is decided by lect-code order: of 193
+  concepts with a choice of lect, 171 take the alphabetically first code, and
+  the anneal ends at the energy it started with.
+
+**Gate G0, inventory, spelling and selection.** In this order, because each
+answer changes which roots win:
+
+1. Transcription: fix the rejected forms and the untranscribed letters first, or not.
+2. Inventory: per segment, merge or keep.
+3. Spelling: per kept segment, a letter, digraph or diacritic, or leave it bracketed.
+4. Selection among ties: what replaces lect-code order, whether homophones
+   cost anything, and whether approved roots are pinned so that growing the
+   grid cannot change them.
+
+After the gate:
+
+- [ ] Encode: merges in `adapt_to_vulgultra`, the spelling map and a reader
+      that handles digraphs, transcriber failures reported per form.
+- [ ] Rerun prep → Rust SA → join, and refresh the scorecard.
+- [ ] Tracked lexicon listing under `docs/lexicon/`, so every later change to
+      the foundations shows up as a diff (`data/`, `*.json`, `*.csv`, `*.txt`
+      and any `lexicons/` folder are ignored).
 
 ## Stage 1. Nouns and adjectives
 
-- [ ] **Fetch.** `scripts/fetch_kaikki_nominals.py`: noun, adjective, pronoun,
-      determiner, article and numeral rows for es, pt, gl, ca, fr, it, ro, lmo
-      into `data/words/kaikki-{code}-nominal.jsonl` (verb dumps untouched).
+- [ ] **Fetch.** `scripts/fetch_kaikki_full.py`: every part of speech, with
+      form-of rows and IPA, for es, pt, gl, ca, fr, it, ro, lmo into
+      `data/sources/kaikki_full/{code}.jsonl`. Fetched once; it also feeds
+      the gloss overlay and Bible lemmatisation. Not under `data/words/`:
+      `scripts/build_kaikki_corpus.py` globs `kaikki-*.jsonl` there and would
+      overwrite the word tables.
 - [ ] **Harvest.** `vulgultra/declension_harvest.py`: gender, the four
       gender × number forms, plural-formation classes, adjective feminine and
       plural, and for Romanian and Aromanian the surviving case and definite
@@ -85,11 +120,16 @@ diacritic), or leave it bracketed. Blocks any readable text.
       spec's 12 cells, whether any daughter attests it.
 - [ ] **Junction table.** What hiatus, glide, dropping the root's final vowel,
       or a linking consonant each do to syllable count and homophones.
+- [ ] **Personal pronouns, harvested here** rather than in Stage 2: they are
+      the only place every daughter still shows case, so the case decision
+      below needs their pages.
 
 **Gate G1, nouns.** Endings; the case layer (keep the Latin-derived
-nom/acc/gen of the spec, use only what daughters attest, or drop case); one
-table or several classes; the junction rule; how a noun gets its gender;
-whether adjectives share the table.
+nom/acc/gen of the spec, use only what daughters attest, or drop case); how
+an indirect object is marked (the spec has no dative); one table or several
+classes; neuter or not (Aromanian has neuter nouns); whether a zero ending is
+allowed (it contradicts axiom 5 and the stress rule); the junction rule; how
+a noun gets its gender; whether adjectives share the table.
 
 - [ ] **Encode** the picks in `vulgultra/morphology_constants.py`; noun
       selection reads that table instead of searching; update `grammar.tex` §3.1–3.3.
@@ -100,7 +140,8 @@ whether adjectives share the table.
 ## Stage 2. Closed classes
 
 Same method, one paradigm at a time: personal pronouns by person, number and
-role (subject, object, indirect, possessive, reflexive); demonstratives;
+role (subject, object, indirect, possessive, reflexive; pages from Stage 1);
+demonstratives;
 interrogatives and relatives (`ke`); quantifiers; articles; numerals 0–10,
 tens, hundred, thousand; prepositions; conjunctions; particles (yes, not,
 also, only, very, more, already, still).
@@ -122,19 +163,36 @@ Needs from the verb work: final person labels, reflexive `se`, pro-drop.
 ## Stage 3. Bible-grid lexicon
 
 **Gate G3a, sourcing (before any download).** The five editions and their
-licences, the concept-ID spine, the first slice, and the alignment method.
+licences, the concept-ID spine, the first slice, the alignment method, and
+which derived words (adverbs, participles, numerals) are rows of their own.
+
+Known before the gate:
+
+- Concept ids must be project-owned and never reused. A Bible id equal to a
+  Swadesh id is merged silently and overwrites its part of speech and gloss
+  (`right`, `lie`, `back` are already taken).
+- The TSV importer takes the five anchors only. The lects that win most roots
+  today (Catalan 48 of 213, Aragonese 40) have no way to receive a Bible
+  cell, and the word lists for es, pt, gl, ca, fr, it, ro, lmo have no
+  glosses for the overlay. Without a fill path the Bible layer is a
+  five-language lexicon.
+- Selection is not incremental: adding or removing concepts changes roots
+  already chosen. Pins (Gate G0) come first.
 
 - [ ] Alignment tooling that turns verse-aligned editions into reviewable
       candidate rows, then writes accepted rows to
       `data/bible/lexicons/{fr,es,pt,it,ro}.tsv`.
 - [ ] First slice through `scripts/build_bible_grid.py` → prep → Rust SA → lexicon.
-- [ ] Fill the other 31 lects with cited forms only; make the gloss overlay
-      respect part of speech (`vulgultra/pipeline.py`).
-- [ ] Homophone audit as the lexicon grows.
+- [ ] Fill path for the other 31 lects, cited forms only (the full Kaikki
+      fetch, Apertium bilingual dictionaries under `vendor/`), run before
+      selection; the gloss overlay respects part of speech (`vulgultra/pipeline.py`).
+- [ ] Homophone count reported with every slice.
 
-**Gate G3b, homophones.** The objective has no collision term and 196 of 213
-roots are one syllable. Policy is decided before the lexicon passes a few
-hundred concepts.
+**Gate G3b, homophones at scale.** The policy is set at Gate G0; this gate
+checks it against the first slice. 196 of 213 roots are one syllable, and a
+review estimate puts roughly a tenth of words in a homophone pair at 1,000
+concepts under the present policy, and far more when most cells come from a
+few lects.
 
 Verb entries wait on the verb outcome.
 
@@ -152,7 +210,8 @@ map to case, negation, questions, `ke` clauses, pronoun placement,
 coordination, comparison, possession. Sentence realisation takes
 role-labelled input so case comes from the role, not from word position.
 Demo sentences cover plural, genitive, negation, question and subordinate
-clause. **Gate G5.**
+clause. Blocked on the verb table: every demo sentence has a verb or the
+copula. **Gate G5.**
 
 ## Stage 6. Dictionary, texts, primer
 
@@ -163,9 +222,9 @@ clause. **Gate G5.**
 ## Order
 
 ```
-Stage 0 ──G0──┐
-              ├─> Stage 1 ──G1──> encode + realise ──> Stage 2 ──G2──┐
-G3a ──> Stage 3 tooling (alongside Stage 1) ──────────> first slice ──G3b──> Stages 4, 5 ──> Stage 6
+Stage 0 ──G0──> encode, rerun, tracked listing ──┐
+                                                 ├─> Stage 1 ──G1──> encode + realise ──> Stage 2 ──G2──┐
+G3a ──> Stage 3 tooling (alongside Stage 1) ─────────────────────────> first slice ──G3b──> Stages 4, 5 ──> Stage 6
 ```
 
 ## Handoffs from the verb work
@@ -177,3 +236,11 @@ G3a ──> Stage 3 tooling (alongside Stage 1) ──────────> 
 | Whether participles decline like adjectives | Stage 1 encode, Stage 4 |
 | Reflexive and subject-pronoun conventions | Stage 2 |
 | Full copula paradigm | Stage 5 |
+| One format for hand-picked tables, nouns and verbs alike (several classes, any number of cells); today both sides hard-code one class | Stage 1 encode |
+
+Shared with the verb work, so changes are announced first: `add_ending` in
+`vulgultra/realize.py` joins endings for verbs and nouns alike;
+`enumerate_endings`, `ending_catalog` and the Rust output writer handle both
+tables together; and `romance_swadesh.py`, `realize.py` and `optimizer.py`
+import `PERSONS` and `VERB_TEMPLATES`, so reshaping those stops everything
+non-verbal from importing.
