@@ -79,7 +79,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | an | *un* | ũ | 1 | a, an |
 | this | *este* | ɛʃtɨ | 2 | this |
 | this | *isto* | iʃtu | 2 | this (the thing here) |
-| this | *aqueste* | akɛʃtɨ | 3 | this (masculine thing) |
 | this | *aquisto* | akiʃtu | 3 | this (the thing here) |
 | that | | | | |
 | these | | | | |

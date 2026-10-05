@@ -8,15 +8,15 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 
 | | subject | object | indirect | stressed | reflexive |
 |---|---|---|---|---|---|
-| 1sg | *eu* ew (1) | *me* mɨ (1) | *me* mɨ (1) | *eu* ew (1) | *me* mɨ (1), *se* sɨ (1) |
-| 2sg | *te* tɨ (1), *tu* tu (1), *você* vose (2), *cê* se (1) | *te* tɨ (1) |  | *vós* vɔʃ (1) | *si* si (1), *se* sɨ (1) |
-| 2 | *você* vose (2), *amecê* amɨse (3) |  |  |  |  |
-| 3sg m | *ele* elɨ (2) | *ele* elɨ (2) | *o* ɔ (1) | *ele* elɨ (2) | *si* si (1), *se* sɨ (1) |
-| 3sg f |  | *ela* ɛla (2) | *a* a (1) |  | *si* si (1), *se* sɨ (1) |
-| 3sg n | *ele* elɨ (2), *ela* ɛla (2), *elas* elaʃ (2) |  | *o* ɔ (1), *a* a (1) | *ele* elɨ (2) |  |
-| 1pl | *nós* nɔʃ (1), *gente* ʒẽtɨ (2), *nosoutros* nuzowtɾuʃ (3) | *nós* nɔʃ (1) |  | *nós* nɔʃ (1), *nosoutros* nuzowtɾuʃ (3) |  |
-| 2pl | *vocês* vuseʃ (2) |  |  | *vós* vɔʃ (1) |  |
-| 3pl | *ile* ilɨ (2), *elu* ɨlu (2), *elo* ɛlu (2) | *os* uʃ (1), *ile* ilɨ (2), *elu* ɨlu (2), *elo* ɛlu (2) |  |  | *si* si (1) |
+| 1sg | *eu* ew (1) | *me* mɨ (1) | *me* mɨ (1) |  | *me* mɨ (1) |
+| 2sg | *te* tɨ (1), *você* vose (2), *cê* se (1) | *te* tɨ (1) |  |  | *si* si (1), *se* sɨ (1) |
+| 2 | *você* vose (2), *amecê* amɨse (3) |  | *lhe* ljɨ (1) |  |  |
+| 3sg m | *ele* elɨ (2) | *ele* elɨ (2) | *o* ɔ (1), *lhe* ljɨ (1) | *ele* elɨ (2) | *si* si (1), *se* sɨ (1) |
+| 3sg f |  | *ela* ɛla (2) | *a* a (1), *lhe* ljɨ (1) |  | *si* si (1), *se* sɨ (1) |
+| 3sg n | *ele* elɨ (2), *ela* ɛla (2), *elas* elaʃ (2) |  | *o* ɔ (1), *a* a (1), *lhe* ljɨ (1) | *ele* elɨ (2) |  |
+| 1pl | *nós* nɔʃ (1), *gente* ʒẽtɨ (2) |  |  | *nós* nɔʃ (1) |  |
+| 2pl | *vocês* vuseʃ (2) |  |  |  |  |
+| 3pl |  | *os* uʃ (1) |  |  | *si* si (1) |
 | 3pl m | *eles* elɨʃ (2) | *eles* elɨʃ (2) |  | *eles* elɨʃ (2) |  |
 | 3pl f | *elas* elaʃ (2) | *elas* elaʃ (2) | *as* aʃ (1) |  | *se* sɨ (1) |
 | 3 reflexive |  |  |  |  | *si* si (1), *se* sɨ (1) |
@@ -36,52 +36,44 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 |---|---|---|---:|---|
 | I | *eu* | ew | 1 | I (first-person singular personal pronoun) |
 | me | *me* | mɨ | 1 | first-person singular objective direct personal pronoun; me |
-| me | *eu* | ew | 1 | first-person singular prepositional pronoun; me |
 | you | *te* | tɨ | 1 | you (singular), thee |
-| you | *tu* | tu | 1 | you; thou (singular second person pronoun) |
 | you | *você* | vose | 2 | second-person singular personal pronoun, formal or informal in Brazil, formal or semi-form |
 | you | *vocês* | vuseʃ | 2 | you (second-person plural personal pronoun) |
-| you | *vós* | vɔʃ | 1 | you, ye (second-person plural nominative and prepositional personal pronoun) |
 | you | *seu* | sew | 1 | you (used before epithets for emphasis) |
+| you | *lhe* | ljɨ | 1 | dative of você, o senhor, and a senhora: (to) you |
 | you | *cê* | se | 1 | you (singular, subject) |
 | you | *amecê* | amɨse | 3 | you (formal) |
-| thou | *tu* | tu | 1 | you; thou (singular second person pronoun) |
-| thou | *vós* | vɔʃ | 1 | you, thou (second-person singular nominative and prepositional pronoun used when addressin |
+| thou | | | | |
 | thee | *te* | tɨ | 1 | you (singular), thee |
 | he | *ele* | elɨ | 2 | third-person masculine singular nominative personal pronoun; he; it |
 | him | *o* | ɔ | 1 | him, it (as a direct object; as an indirect object, see lhe; after prepositions, see ele) |
 | him | *ele* | elɨ | 2 | third-person masculine singular prepositional pronoun; him; it |
+| him | *lhe* | ljɨ | 1 | dative of ele and ela: (to) him/her/it |
 | she | | | | |
 | her | *ela* | ɛla | 2 | third-person feminine singular pronoun used in all positions she; it; her |
 | her | *a* | a | 1 | her, it (as a direct object; as an indirect object, see lhe; after prepositions, see ela) |
 | her | *seu* | sew | 1 | her (belonging to, associated with, related to, or in the possession of her) |
+| her | *lhe* | ljɨ | 1 | dative of ele and ela: (to) him/her/it |
 | it | *o* | ɔ | 1 | him, it (as a direct object; as an indirect object, see lhe; after prepositions, see ele) |
 | it | *ele* | elɨ | 2 | third-person masculine singular nominative personal pronoun; he; it |
 | it | *ela* | ɛla | 2 | third-person feminine singular nominative pronoun she; it |
 | it | *elas* | elaʃ | 2 | third-person feminine plural personal pronoun used in all positions; they; them; it |
 | it | *a* | a | 1 | her, it (as a direct object; as an indirect object, see lhe; after prepositions, see ela) |
+| it | *lhe* | ljɨ | 1 | dative of ele and ela: (to) him/her/it |
 | we | *nós* | nɔʃ | 1 | first-person plural nominative personal pronoun: we |
 | we | *gente* | ʒẽtɨ | 2 | we |
-| we | *nosoutros* | nuzowtɾuʃ | 3 | we (masculine plural) |
 | us | *nós* | nɔʃ | 1 | first-person plural prepositional pronoun: us |
-| they | *ile* | ilɨ | 2 | they, them (singular). A gender-neutral or genderqueer singular third-person personal pron |
 | they | *eles* | elɨʃ | 2 | masculine third-person plural nominative personal pronoun; they |
 | they | *elas* | elaʃ | 2 | they (a group of people other than the speaker, entirely female) |
-| they | *elu* | ɨlu | 2 | they, them (singular) (a gender-neutral or genderqueer singular third-person personal pron |
-| they | *elo* | ɛlu | 2 | they, them (singular) (a gender-neutral or genderqueer singular third-person personal pron |
 | them | *os* | uʃ | 1 | third-person plural direct objective personal pronoun; them |
 | them | *as* | aʃ | 1 | them (as a direct object; the corresponding indirect object is lhes; the form used after p |
-| them | *ile* | ilɨ | 2 | they, them (singular). A gender-neutral or genderqueer singular third-person personal pron |
 | them | *eles* | elɨʃ | 2 | masculine third-person plural prepositional pronoun; them |
 | them | *elas* | elaʃ | 2 | third-person feminine plural personal pronoun used in all positions; they; them; it |
-| them | *elu* | ɨlu | 2 | they, them (singular) (a gender-neutral or genderqueer singular third-person personal pron |
-| them | *elo* | ɛlu | 2 | they, them (singular) (a gender-neutral or genderqueer singular third-person personal pron |
 | oneself | *si* | si | 1 | oneself, yourself, himself, herself, itself, yourselves, themselves |
 | oneself | *se* | sɨ | 1 | impersonal pronominal verb; oneself |
 | himself | *si* | si | 1 | oneself, yourself, himself, herself, itself, yourselves, themselves |
 | himself | *se* | sɨ | 1 | third-person singular and plural reflexive pronoun; himself; herself; itself; themselves |
 | myself | *me* | mɨ | 1 | first-person singular reflexive pronoun; myself |
-| myself | *se* | sɨ | 1 | first-person singular reflexive pronoun; myself |
 | yourself | *si* | si | 1 | oneself, yourself, himself, herself, itself, yourselves, themselves |
 | yourself | *se* | sɨ | 1 | second-person singular and plural reflexive and reciprocal pronoun, when used with second- |
 
@@ -90,7 +82,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | my | *meu* | mew | 1 | my (belonging to, associated with, related to, or in the possession of me) |
-| my | *enha* | enja | 2 | first-person feminine singular possessive determiner: my |
 | mine | *meu* | mew | 1 | mine (used predicatively) |
 | your | *seu* | sew | 1 | your (equivalent to de você) |
 | your | *teu* | tew | 1 | your (singular) (belonging to, associated with, related to, or in the possession of you) |
@@ -122,6 +113,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | that | *que* | kɨ | 1 | which; that; who (of those mentioned) |
 | that | *este* | ɛʃtɨ | 2 | that (indicates something or someone just mentioned) |
 | that | *quem* | kem | 1 | who; whom; that (the person who[m] or that) |
+| that | *aquilo* | akilu | 3 | neuter singular of aquele; that, that thing (demonstrative) |
 | that | *isso* | isu | 2 | that (the thing near you; the thing mentioned that concerns you) |
 | that | *aquele* | akelɨ | 3 | that (far from the speaker and listener) |
 | that | *destoante* | dɨʃtwɐ̃tɨ | 3 | that or who does not agree; divergent |
@@ -143,7 +135,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | which | *que* | kɨ | 1 | which; that; who (of those mentioned) |
 | which | *qual* | kwal | 1 | which |
 | whose | *que* | kɨ | 1 | whose |
-| whose | *onde* | õdɨ | 2 | whose |
 | whose | *cujo* | kuʒu | 2 | whose (of whom) |
 | where | *u* | u | 1 | where (interrogative adverb) |
 | where | *onde* | õdɨ | 2 | where; wherever (in or at what place; in or at a/any/the place that, in what situation) |
@@ -209,13 +200,12 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | much | *bastante* | baʃtɐ̃tɨ | 3 | many; much; a lot of; a large amount or number of |
 | much | *afu* | afu | 2 | much; many; a lot of; lots of |
 | few | *pouco* | powku | 2 | little; few (not many) |
-| few | *poucos* | powkuʃ | 2 | few (not many things or people) |
+| few | *poucos* | powkuʃ | 2 | masculine plural of pouco: few |
 | little | *pouco* | powku | 2 | little; few (not many) |
 | little | *mirim* | miɾĩ | 2 | tiny, little, wee; often in compound animal names of Tupi origin |
 | little | *mirrado* | miʁadu | 3 | of inexpressive size: little, small, tiny |
 | little | *petiz* | pɨtiʃ | 2 | small; little |
 | more | *mais* | majʃ | 1 | used to form the comparative of adjectives and adverbs; more; -er |
-| more | *chus* | ʃuʃ | 1 | more |
 | more | *sensivelmente* | sẽsivɨlmẽtɨ | 5 | approximately, more or less |
 | less | *menos* | menuʃ | 2 | less (in lower degree) |
 | less | *sensivelmente* | sẽsivɨlmẽtɨ | 5 | approximately, more or less |
@@ -311,7 +301,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | for | *durante* | duɾɐ̃tɨ | 3 | for (introduces the duration of an occurrence) |
 | from | *de* | dɨ | 1 | from (born in or coming out of) |
 | from | *desde* | deʒdɨ | 2 | from |
-| from | *dês* | deʃ | 1 | from |
 | by | *de* | dɨ | 1 | by means of; by |
 | by | *por* | puɾ | 1 | by (through the action or presence of) |
 | by | *a* | a | 1 | by, using the specified measurement; in the specified quantity |
@@ -323,7 +312,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | over | *sobre* | sobɾɨ | 2 | over; above (in or through the space above) |
 | above | *sobre* | sobɾɨ | 2 | over; above (in or through the space above) |
 | above | *riba* | ʁiba | 2 | above |
-| before | *ante* | ɐ̃tɨ | 2 | before (in front of in space) |
 | before | *antes* | ɐ̃tɨʃ | 2 | before (at an earlier time) |
 | before | *anteriormente* | ɐ̃tɨɾjuɾmẽtɨ | 5 | previously, before |
 | before | *perante* | peɾɐ̃tɨ | 3 | before, in front of |
@@ -331,7 +319,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | after | *detrás* | dɨtɾaʃ | 2 | after |
 | after | *atrás* | atɾaʃ | 2 | after (looking for) |
 | after | *após* | apɔʃ | 2 | after (later in time) |
-| after | *acabante* | akabɐ̃tɨ | 4 | after |
 | until | *até* | atɛ | 2 | until (up to the time of something happening) |
 | against | *com* | kom | 1 | with; against |
 | against | *contra* | kõtɾa | 2 | against |
@@ -347,7 +334,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | near | *próximo* | pɾɔsimu | 3 | near, close |
 | behind | *detrás* | dɨtɾaʃ | 2 | behind, at the rear |
 | behind | *atrás* | atɾaʃ | 2 | behind (at the back) |
-| behind | *trás* | tɾaʃ | 1 | behind |
 | during | *em* | ẽj | 1 | in; during (within a period of time) |
 | during | *durante* | duɾɐ̃tɨ | 3 | during (for all of a given time interval) |
 | about | *de* | dɨ | 1 | of; about (on the subject of) |
@@ -356,7 +342,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | about | *uns* | ũʃ | 1 | about, some (indicating an approximate amount) |
 | about | *aproximadamente* | apɾusimadamẽtɨ | 7 | approximately, about, circa |
 | since | *desde* | deʒdɨ | 2 | since |
-| since | *dês* | deʃ | 1 | since |
 | inside | *em* | ẽj | 1 | in; inside; within (contained by) |
 | inside | *dentro* | dẽtɾu | 2 | inside (within or into something’s interior) |
 | inside | *internamente* | intɛɾnamẽtɨ | 5 | inside, within, internally |
@@ -405,7 +390,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | then | *pois* | pojʃ | 1 | so; then (in that case) |
 | then | *então* | ẽtɐ̃w | 2 | then (at that time) |
 | then | *aí* | aj | 1 | then (soon afterwards) |
-| therefore | *ergo* | eɾɡu | 2 | ergo, therefore |
 | therefore | *logo* | lɔɡu | 2 | thus, therefore (for this reason) |
 | therefore | *então* | ẽtɐ̃w | 2 | thus; therefore (as a result) |
 | therefore | *portanto* | puɾtɐ̃tu | 3 | hence; therefore |
@@ -449,10 +433,8 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | very | *mó* | mɔ | 1 | very |
 | very | *bem* | bẽj | 1 | very; really (to a high degree) |
 | very | *bué* | bwɛ | 1 | to a great extent or degree; extremely; exceedingly; very |
-| very | *mui* | muj | 1 | very |
 | very | *afu* | afu | 2 | very; a lot; very much (to a great extent or degree) |
 | very | *sobejamente* | subɨʒamẽtɨ | 5 | very; a lot |
-| very | *assaz* | asaʃ | 2 | very |
 | already | *logo* | lɔɡu | 2 | already (used to emphasize impatience) |
 | already | *já* | ʒa | 1 | already (indicating that something has happened before) |
 | still | *ainda* | ajĩda | 3 | still, yet (up to a time) |
@@ -487,7 +469,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | perhaps | *seica* | sejka | 2 | so they say; apparently, reportedly; probably; perhaps, perchance |
 | maybe | *acaso* | akazu | 3 | maybe |
 | maybe | *talvez* | talveʃ | 2 | perhaps; maybe (indicates possibility or doubt) |
-| maybe | *samicas* | samikaʃ | 3 | maybe (indicates lack of certainty) |
 | almost | *meio* | meju | 2 | almost |
 | almost | *quase* | kwazɨ | 2 | almost (very close to) |
 

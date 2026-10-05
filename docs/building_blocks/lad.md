@@ -8,16 +8,16 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 
 | | subject | object | indirect | stressed | reflexive |
 |---|---|---|---|---|---|
-| 1sg | *yo* jo (1) | *mi* mi (1) |  |  |  |
+| 1sg | *yo* jo (1) | *mi* mi (1), *me* me (1) | *me* me (1) |  | *me* me (1) |
 | 2sg | *tu* tu (1), *tú* tu (1), *טו* (not read) | *vos* vos (1) |  |  |  |
 | 3sg m | *el* el (1) |  | *le* le (1) |  | *si* si (1), *se* se (1) |
 | 3sg f | *eya* eja (2) |  | *le* le (1) |  | *si* si (1), *se* se (1) |
 | 3sg n | *el* el (1), *eya* eja (2) |  | *le* le (1) |  |  |
 | 1pl | *mozotros* mozotɾos (3), *mozotras* mozotɾas (3), *mozós* mozos (2), *mozás* mozas (2) |  |  |  |  |
 | 2pl | *vozotros* vozotɾos (3), *vozotras* vozotɾas (3), *vozós* vozos (2), *vozás* vozas (2) |  |  |  |  |
-| 3pl |  |  |  |  | *si* si (1) |
+| 3pl |  | *los* los (1) |  |  | *si* si (1) |
 | 3pl m | *eyos* ejos (2) |  |  |  |  |
-| 3pl f | *eyas* ejas (2) |  |  |  |  |
+| 3pl f | *eyas* ejas (2) |  | *les* les (1) |  |  |
 | 3 reflexive |  |  |  |  | *si* si (1) |
 
 A pronoun glossed only *you*, with no number, is in row 2. The role is taken from the gloss (*me* is object, *to him* indirect, *disjunctive* stressed); where the dictionary does not say, the form sits in the column of its gloss word.
@@ -35,6 +35,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 |---|---|---|---:|---|
 | I | *yo* | jo | 1 | I (myself) |
 | me | *mi* | mi | 1 | me (declined form of yo used as the object of a preposition) |
+| me | *me* | me | 1 | accusative of yo: me |
 | you | *tu* | tu | 1 | you (singular) |
 | you | *vos* | vos | 1 | you (formal singular, nominative and accusative) |
 | you | *tú* | tu | 1 | you (singular) |
@@ -60,18 +61,19 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | us | | | | |
 | they | *eyas* | ejas | 2 | they (feminine plural) |
 | they | *eyos* | ejos | 2 | they |
-| them | | | | |
+| them | *los* | los | 1 | accusative of eyos; them |
+| them | *les* | les | 1 | dative of eyos and eyas; (to) them, (for) them |
 | oneself | *si* | si | 1 | oneself; herself; itself; himself; themselves (form of se used after prepositions) |
 | himself | *si* | si | 1 | oneself; herself; itself; himself; themselves (form of se used after prepositions) |
 | himself | *se* | se | 1 | third person reflexive direct or indirect object oneself, herself, himself, itself; each o |
-| myself | | | | |
+| myself | *me* | me | 1 | reflexive of yo: myself |
 | yourself | | | | |
 
 ## Possessives
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
-| my | | | | |
+| my | *mi* | mi | 1 | apocopic form of mío, my |
 | mine | | | | |
 | your | *tu* | tu | 1 | your |
 | your | *vuestro* | vwestɾo | 2 | yours; your; to you |

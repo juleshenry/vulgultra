@@ -11,8 +11,8 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 | 1sg | *eo* ɛjɔ (2), *deo* dɛjɔ (2) |  | *mie* mjɛ (1) |  |  |
 | 2sg | *tue* twɛ (1) |  | *tibi* tiβi (2) |  |  |
 | 3sg m | *issu* isu (2) |  |  |  |  |
-| 3sg f |  | *suu* su (1), *sou* sɔw (1), *suo* swɔ (1) |  |  |  |
-| 3sg n | *issu* isu (2) |  |  |  |  |
+| 3sg f | *issa* isa (2) | *suu* su (1), *sou* sɔw (1), *suo* swɔ (1) |  |  |  |
+| 3sg n | *issu* isu (2), *issa* isa (2) |  |  |  |  |
 | 1pl | *nos* nɔs (1), *nois* nɔjs (1), *nosateros* nɔzatɛɾɔs (4) | *nos* nɔs (1) |  |  |  |
 | 2pl | *vos* vɔs (1), *bos* bɔs (1), *bois* bɔjs (1), *vois* vɔjs (1), *vosateros* vɔzatɛɾɔs (4), *bosateros* bɔzatɛɾɔs (4) |  |  |  |  |
 
@@ -22,8 +22,8 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
-| definite | *su* su (1) | *sa* sa (1) |  | *sos* sɔs (1), *is* is (1) |  |  | *sas* sas (1), *is* is (1) |  |
-| indefinite | *unu* unu (2) | *una* una (2) |  |  |  |  |  |  |
+| definite | *su* su (1), *s'* (not read) | *sa* sa (1), *sas* sas (1) |  | *is* is (1), *sos* sɔs (1) | *sas* sas (1) |  | *sas* sas (1), *is* is (1) |  |
+| indefinite | *unu* unu (2), *un'* (not read) | *una* una (2) |  |  |  |  |  |  |
 
 ## Personal pronouns
 
@@ -45,11 +45,12 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | thee | | | | |
 | he | *issu* | isu | 2 | he |
 | him | | | | |
-| she | | | | |
+| she | *issa* | isa | 2 | feminine singular of issu: she, it |
 | her | *suu* | su | 1 | his, her, hers |
 | her | *sou* | sɔw | 1 | his, her, hers |
 | her | *suo* | swɔ | 1 | his, her, hers |
 | it | *issu* | isu | 2 | it |
+| it | *issa* | isa | 2 | feminine singular of issu: she, it |
 | we | *nos* | nɔs | 1 | we |
 | we | *nois* | nɔjs | 1 | we (first person pronoun) |
 | we | *nosateros* | nɔzatɛɾɔs | 4 | we (first person pronoun) |
@@ -92,12 +93,18 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
+| the | *is* | is | 1 | plural of su: the (masculine plural definite article) |
 | the | *sa* | sa | 1 | the (feminine singular definite article) |
 | the | *su* | su | 1 | the (masculine singular definite article) |
+| the | *sas* | sas | 1 | plural of sa: the (feminine plural definite article) |
+| the | *sos* | sɔs | 1 | plural of su: the (masculine plural definite article) |
+| the | *s'* | not read |  | apocopic form of su, used before a vowel: the (masculine singular definite article) |
 | a | *una* | una | 2 | a, an (indefinite article) |
 | a | *unu* | unu | 2 | a, an (indefinite article) |
+| a | *un'* | not read |  | apocopic form of unu, used before a vowel: a, an (masculine singular indefinite article) |
 | an | *una* | una | 2 | a, an (indefinite article) |
 | an | *unu* | unu | 2 | a, an (indefinite article) |
+| an | *un'* | not read |  | apocopic form of unu, used before a vowel: a, an (masculine singular indefinite article) |
 | this | *custu* | kustu | 2 | this |
 | this | *istu* | istu | 2 | this, these |
 | this | *cussu* | kusu | 2 | this, these (referring to an object close to the addressee) |
@@ -144,8 +151,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | no one | *nemos* | nɛmɔs | 2 | no one, nobody |
 | nothing | | | | |
 | something | | | | |
-| someone | *alicunu* | alikunu | 4 | someone |
-| someone | *alcunu* | alkunu | 3 | someone |
 | someone | *algunu* | alɡunu | 3 | someone |
 | somebody | | | | |
 | everything | *tottu* | totu | 2 | everything, all |

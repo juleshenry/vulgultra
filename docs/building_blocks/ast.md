@@ -9,11 +9,11 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 | | subject | object | indirect | stressed | reflexive |
 |---|---|---|---|---|---|
 | 1sg | *yo* jo (1) | *me* me (1), *min* min (1) | *me* me (1), *min* min (1) |  |  |
-| 2sg | *te* te (1), *tu* tu (1), *vós* vos (1), *vusté* vuste (2) | *vós* vos (1) | *te* te (1) |  |  |
+| 2sg | *te* te (1), *tu* tu (1), *vusté* vuste (2) |  | *te* te (1) |  |  |
 | 2 | *vós* vos (1) |  |  |  |  |
-| 3sg m | *elli* elji (2) |  |  |  |  |
-| 3sg f | *ella* elja (2) | *la* la (1) |  |  |  |
-| 3sg n | *lo* lo (1) |  |  |  |  |
+| 3sg m | *elli* elji (2) |  | *-y* i (1) |  |  |
+| 3sg f | *ella* elja (2) | *la* la (1) | *-y* i (1) |  |  |
+| 3sg n | *lo* lo (1) | *lu* lu (1) | *-y* i (1) |  |  |
 | 1pl | *nós* nos (1), *nosotros* nosotɾos (3), *nosotras* nosotɾas (3) |  | *nos* nos (1) |  |  |
 | 2pl | *vosotros* vosotɾos (3), *vosotres* vosotɾes (3) |  |  |  |  |
 | 3pl |  |  | *-yos* jos (1) |  |  |
@@ -41,12 +41,15 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | you | *vosotros* | vosotɾos | 3 | you (the group being addressed) |
 | you | *vusté* | vuste | 2 | you (second-person singular pronoun) |
 | you | *vosotres* | vosotɾes | 3 | you (female plural) |
-| thou | *vós* | vos | 1 | thou, thee (an elevated form of you, singular) |
-| thee | *vós* | vos | 1 | thou, thee (an elevated form of you, singular) |
+| thou | | | | |
+| thee | | | | |
 | he | *elli* | elji | 2 | he (male personal pronoun) |
-| him | | | | |
+| him | *-y* | i | 1 | dative of elli, ella, and ello: (to) him/her/it |
 | she | *ella* | elja | 2 | she |
 | her | *la* | la | 1 | her (third-person singular feminine direct pronoun) |
+| her | *-y* | i | 1 | dative of elli, ella, and ello: (to) him/her/it |
+| it | *lu* | lu | 1 | accusative of elli (third-person singular direct object) him, it |
+| it | *-y* | i | 1 | dative of elli, ella, and ello: (to) him/her/it |
 | it | *lo* | lo | 1 | it (third-person singular neuter direct pronoun) |
 | we | *nós* | nos | 1 | we |
 | we | *nosotros* | nosotɾos | 3 | we (masculine plural) |
@@ -99,10 +102,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | a | | | | |
 | an | | | | |
 | this | *esti* | esti | 2 | this |
-| this | *aquesti* | akesti | 3 | this, this here |
-| this | *aqueste* | akeste | 3 | this, this here |
 | that | *que* | ke | 1 | that, what, which |
-| that | *aquesi* | akesi | 3 | that |
 | these | | | | |
 | those | | | | |
 
@@ -212,6 +212,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | of | *de* | de | 1 | of; from |
+| of | *d'* | not read |  | apocopic form of de: of, from |
 | to | *a* | a | 1 | to, towards |
 | in | *en* | en | 1 | in |
 | in | *ente* | ente | 2 | in, into |
@@ -228,6 +229,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | for | *por* | poɾ | 1 | for, because of |
 | for | *p'* | not read |  | for |
 | from | *de* | de | 1 | of; from |
+| from | *d'* | not read |  | apocopic form of de: of, from |
 | from | *dende* | dende | 2 | from (indicates the origin or initiation of an activity, either in space or time) |
 | by | *per* | peɾ | 1 | by means of, by way of, by, via |
 | by | *por* | poɾ | 1 | by (someone) |

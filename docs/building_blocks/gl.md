@@ -9,10 +9,11 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 | | subject | object | indirect | stressed | reflexive |
 |---|---|---|---|---|---|
 | 1sg | *eu* ew (1) |  |  |  |  |
-| 2sg | *ti* ti (1), *tu* tu (1), *você* (not read), *vós* vɔs (1), *vostede* vostede (3) | *vós* vɔs (1) |  |  |  |
-| 3sg m | *el* el (1) |  |  |  | *si* si (1), *se* se (1) |
-| 3sg f | *ela* ela (2) |  |  |  | *si* si (1), *se* se (1) |
-| 3sg n | *el* el (1) |  |  |  |  |
+| 2sg | *ti* ti (1), *tu* tu (1), *você* (not read), *vostede* vostede (3) |  |  |  |  |
+| 2 |  |  | *lle* lje (1) |  |  |
+| 3sg m | *el* el (1) |  | *lle* lje (1) |  | *si* si (1), *se* se (1) |
+| 3sg f | *ela* ela (2) |  | *lle* lje (1) |  | *si* si (1), *se* se (1) |
+| 3sg n | *el* el (1) |  | *lle* lje (1) |  |  |
 | 1pl | *nós* nɔs (1), *nosoutros* nosowtɾos (3), *nosoutras* nosowtɾas (3) | *nós* nɔs (1), *nosoutros* nosowtɾos (3), *nosoutras* nosowtɾas (3) |  |  |  |
 | 2pl | *vós* vɔs (1), *vosoutros* vosowtɾos (3), *vosoutras* vosowtɾas (3), *vostedes* vostedes (3) |  |  |  |  |
 | 3pl |  |  |  |  | *si* si (1), *se* se (1) |
@@ -39,17 +40,20 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | you | *tu* | tu | 1 | you (singular) |
 | you | *você* | not read |  | second-person singular personal pronoun; you |
 | you | *vós* | vɔs | 1 | second-person plural nominative personal pronoun; you |
+| you | *lle* | lje | 1 | dative of vostede: (to) you |
 | you | *vosoutros* | vosowtɾos | 3 | you (plural) |
 | you | *vosoutras* | vosowtɾas | 3 | you (plural) |
 | you | *vostede* | vostede | 3 | you |
 | you | *vostedes* | vostedes | 3 | you |
-| thou | *vós* | vɔs | 1 | thou, thee (an elevated form of you, singular) |
-| thee | *vós* | vɔs | 1 | thou, thee (an elevated form of you, singular) |
+| thou | | | | |
+| thee | | | | |
 | he | *el* | el | 1 | he |
-| him | | | | |
+| him | *lle* | lje | 1 | dative of el and ela: (to) him/her/it |
 | she | *ela* | ela | 2 | she |
 | her | *seu* | sew | 1 | her (belonging to, associated with, related to, or in the possession of her) |
+| her | *lle* | lje | 1 | dative of el and ela: (to) him/her/it |
 | it | *el* | el | 1 | it (impersonal pronoun, optative subject of impersonal verbs) |
+| it | *lle* | lje | 1 | dative of el and ela: (to) him/her/it |
 | we | *nós* | nɔs | 1 | we, us |
 | we | *nosoutros* | nosowtɾos | 3 | we, us |
 | we | *nosoutras* | nosowtɾas | 3 | we, us |
@@ -69,6 +73,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
+| my | *mi* | mi | 1 | unstressed form of meu and miña: my |
 | my | *meu* | mew | 1 | my (belonging to, associated with, related to, or in the possession of me) |
 | my | *miña* | minja | 2 | mine, my |
 | mine | *meu* | mew | 1 | mine (used predicatively) |
@@ -124,6 +129,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | that | *que* | ke | 1 | that, which |
 | that | *esa* | esa | 2 | that |
 | that | *aquel* | akel | 2 | that (far from the speaker and listener) |
+| that | *aquilo* | akilo | 3 | neuter singular of aquel; that, that thing (demonstrative) |
 | these | *estas* | estas | 2 | these |
 | these | *estes* | estes | 2 | these |
 | those | *esas* | esas | 2 | those |
@@ -173,9 +179,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | no one | *ninguén* | ninɡɛn | 2 | no one, nobody |
 | nothing | *nada* | nada | 2 | nothing |
 | nothing | *ren* | ren | 1 | nothing |
-| nothing | *res* | res | 1 | nothing (in negative sentences) |
 | nothing | *nente* | nente | 2 | nothing, no |
-| nothing | *nimigalla* | nimiɡalja | 4 | nothing; nothing at all; absolutely nothing |
 | something | *algo* | alɡo | 2 | something |
 | something | *daqué* | dakɛ | 2 | something |
 | someone | *alguén* | alɡɛn | 2 | someone |
@@ -286,7 +290,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | before | *antes* | antes | 2 | before, prior to |
 | before | *perante* | peɾante | 3 | before, in front of |
 | before | *diante* | djante | 2 | before |
-| after | *pus* | pus | 1 | after, behind |
 | after | *tras* | tɾas | 1 | after |
 | after | *após* | apɔs | 2 | after (subsequent; following in time; later than) |
 | after | *baixo* | bajʃo | 2 | after, following in time |
@@ -302,7 +305,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | toward | *a* | a | 1 | to, toward; indicating direction of motion |
 | near | *cerca* | keɾθa | 2 | near |
 | near | *preto* | pɾeto | 2 | near, nearby |
-| behind | *pus* | pus | 1 | after, behind |
 | behind | *tras* | tɾas | 1 | behind |
 | behind | *detrás* | detɾas | 2 | behind; at the back |
 | behind | *atrás* | atɾas | 2 | behind, in back of |
@@ -329,11 +331,9 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | but | *nembargantes* | nembaɾɡantes | 4 | but; however; notwithstanding |
 | but | *orasme* | oɾasme | 3 | but; however; notwithstanding |
 | if | *se* | se | 1 | if |
-| because | *ca* | ka | 1 | because, since |
 | because | *pois* | pojs | 1 | because; for (by or for the cause that) |
 | because | *como* | komo | 2 | since, because |
 | because | *porque* | poɾke | 2 | because |
-| because | *alor* | aloɾ | 2 | because |
 | that | *que* | ke | 1 | that |
 | while | *pouco* | powθo | 2 | for a short duration, while |
 | while | *mentres* | mentɾes | 2 | while, as |
@@ -395,13 +395,11 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | there | *aló* | alɔ | 2 | there |
 | there | *alá* | ala | 2 | there |
 | there | *alí* | ali | 2 | there, then (at that place or time) |
-| never | *ar* | aɾ | 1 | never |
 | never | *nunca* | nunθa | 2 | never |
 | never | *xamais* | ʃamajs | 2 | never |
 | always | *sempre* | sempɾe | 2 | always |
 | again | | | | |
 | well | *ben* | ben | 1 | well |
-| well | *bueno* | bweno | 2 | well |
 | today | *hoxe* | oʃe | 2 | today |
 | yesterday | *onte* | onte | 2 | yesterday |
 | tomorrow | *mañá* | manja | 2 | tomorrow |

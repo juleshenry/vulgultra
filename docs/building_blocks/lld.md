@@ -24,7 +24,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
-| definite | *l* l (1) | *la* la (1) |  |  | *les* les (1) |  |  |  |
+| definite | *l* l (1) | *la* la (1), *l'* (not read) |  |  | *les* les (1) |  |  |  |
 | indefinite | *n* n (1) | *na* na (1), *n'* (not read) |  |  |  |  |  |  |
 
 ## Personal pronouns
@@ -76,6 +76,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | the | *l* | l | 1 | the |
 | the | *la* | la | 1 | the |
 | the | *les* | les | 1 | the |
+| the | *l'* | not read |  | apocopic form of la: the |
 | a | *n* | n | 1 | a (+ masculine noun) |
 | a | *na* | na | 1 | an, a |
 | a | *n'* | not read |  | an, a |

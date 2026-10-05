@@ -11,12 +11,12 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 | 1sg | *eiu* eju (2) |  | *mi* mi (1) | *mè* mɛ (1) |  |
 | 2sg | *tù* tu (1) |  | *ti* ti (1) | *tè* tɛ (1) |  |
 | 2 |  |  |  | *tè* tɛ (1) |  |
-| 3sg m | *ellu* elu (2) | *u* u (1) | *li* li (1) | *ellu* elu (2) |  |
-| 3sg f | *ella* ela (2) | *a* a (1) | *li* li (1) | *ella* ela (2) |  |
+| 3sg m | *ellu* elu (2) | *u* u (1), *l'* (not read) | *li* li (1) | *ellu* elu (2) |  |
+| 3sg f | *ella* ela (2) | *l'* (not read), *a* a (1) | *li* li (1) | *ella* ela (2) |  |
 | 3sg n |  | *u* u (1), *a* a (1) |  |  |  |
 | 1pl | *noi* noj (1) |  | *ci* t͡ʃi (1) | *noi* noj (1) |  |
 | 2pl | *voi* voj (1) |  | *vi* vi (1) |  |  |
-| 3pl |  |  | *li* li (1) |  |  |
+| 3pl |  | *l'* (not read) | *li* li (1) |  |  |
 | 3pl m | *elli* eli (2) |  |  | *elli* eli (2) |  |
 | 3pl f | *elle* ele (2) | *e* e (1) |  | *elle* ele (2) |  |
 
@@ -26,7 +26,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
-| definite | *u* u (1) | *a* a (1) |  | *i* i (1) | *e* e (1) |  |  |  |
+| definite | *u* u (1) | *a* a (1) |  | *i* i (1) | *e* e (1) |  |  | *l'* (not read) |
 | indefinite | *un* un (1) | *una* una (2) |  |  |  |  |  |  |
 
 ## Personal pronouns
@@ -47,10 +47,12 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | he | *ellu* | elu | 2 | he |
 | him | *u* | u | 1 | him, it (direct object) |
 | him | *li* | li | 1 | him, her (indirect object) |
+| him | *l'* | not read |  | apocopic form of u, lu: him |
 | him | *ellu* | elu | 2 | him (disjunctive) |
 | she | *ella* | ela | 2 | she |
 | her | *so* | so | 1 | his, her, their |
 | her | *li* | li | 1 | him, her (indirect object) |
+| her | *l'* | not read |  | apocopic form of a, la: her |
 | her | *a* | a | 1 | her, it (direct object) |
 | her | *ella* | ela | 2 | her (disjunctive) |
 | it | *u* | u | 1 | him, it (direct object) |
@@ -62,6 +64,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | they | *elli* | eli | 2 | they (masculine) |
 | them | *e* | e | 1 | them (feminine direct object) |
 | them | *li* | li | 1 | them (indirect object) |
+| them | *l'* | not read |  | apocopic form of i, li: them |
 | them | *elle* | ele | 2 | them (disjunctive) |
 | them | *elli* | eli | 2 | them (disjunctive) |
 | oneself | | | | |
@@ -90,11 +93,13 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 |---|---|---|---:|---|
 | the | *e* | e | 1 | the (feminine plural) |
 | the | *u* | u | 1 | the |
+| the | *l'* | not read |  | apocopic form of u, lu: the |
 | the | *a* | a | 1 | the (feminine) |
 | a | *un* | un | 1 | an; a |
 | an | *un* | un | 1 | an; a |
 | this | *què* | kwɛ | 1 | this, that |
 | this | *istu* | istu | 2 | this, those |
+| this | *stu* | stu | 1 | contraction of istu; this |
 | this | *questu* | kwestu | 2 | this, these |
 | that | *issu* | isu | 2 | that, those |
 | that | *chè* | kɛ | 1 | that, which |
@@ -102,6 +107,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | that | *què* | kwɛ | 1 | this, that |
 | that | *quellu* | kwelu | 2 | that, those |
 | that | *quissu* | kwisu | 2 | that, those |
+| that | *ssu* | su | 1 | contraction of quissu; that |
 | these | *questu* | kwestu | 2 | this, these |
 | those | *issu* | isu | 2 | that, those |
 | those | *istu* | istu | 2 | this, those |

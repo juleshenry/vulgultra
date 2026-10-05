@@ -74,7 +74,8 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | an | *vun* | vun | 1 | a, an |
 | this | *chest* | kest | 1 | this |
 | that | | | | |
-| these | | | | |
+| these | *cheste* | keste | 2 | feminine plural of chest (“this”): these |
+| these | *chestj* | kestj | 1 | masculine plural of chest (“this”): these |
 | those | | | | |
 
 ## Interrogatives and relatives
@@ -144,6 +145,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | six | *ses* | ses | 1 | six. |
 | seven | *set* | set | 1 | seven |
 | eight | *vòt* | vɔt | 1 | eight |
+| nine | *nöf* | nøf | 1 | Alternative spelling of neuv, nine. |
 | nine | *neuv* | newv | 1 | nine |
 | ten | *des* | des | 1 | ten |
 | ten | *dex* | dex | 1 | ten |

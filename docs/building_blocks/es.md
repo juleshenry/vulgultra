@@ -8,16 +8,16 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 
 | | subject | object | indirect | stressed | reflexive |
 |---|---|---|---|---|---|
-| 1sg | *yo* jo (1) | *mí* mi (1) |  | *nos* nos (1) |  |
-| 2sg | *vos* vos (1), *tú* tu (1), *usted* usted (2), *vusted* vusted (2), *usencia* usenθja (3), *usía* usja (2) |  |  |  | *te* te (1), *se* se (1), *sí* si (1) |
-| 2 | *usarced* usaɾθed (3), *usarcé* usaɾθe (3) | *le* le (1) | *os* os (1), *le* le (1) |  |  |
-| 3sg m |  | *le* le (1) | *le* le (1) | *él* el (1) | *se* se (1), *sí* si (1) |
-| 3sg f | *ella* elja (2) | *le* le (1), *ella* elja (2) | *le* le (1) |  | *se* se (1), *sí* si (1) |
-| 3sg n | *ella* elja (2) | *la* la (1), *le* le (1) | *le* le (1) | *él* el (1), *ello* eljo (2) |  |
-| 1pl | *nosotros* nosotɾos (3), *nosotras* nosotɾas (3), *nosotres* nosotɾes (3) |  |  | *nosotros* nosotɾos (3) |  |
-| 2pl | *usted* usted (2), *vosotros* vosotɾos (3), *uds* udes (2), *vosotras* vosotɾas (3), *ustedes* ustedes (3), *vosotres* vosotɾes (3) |  |  |  |  |
-| 3pl | *elle* elje (2), *elles* eljes (2), *ellxs* eljkss (1) | *elle* elje (2), *ellxs* eljkss (1) | *le* le (1) |  | *sí* si (1) |
-| 3pl f | *ellas* eljas (2) | *ellas* eljas (2) |  |  | *se* se (1) |
+| 1sg | *yo* jo (1) | *me* me (1), *mí* mi (1) | *me* me (1) |  | *me* me (1) |
+| 2sg | *vos* vos (1), *tú* tu (1), *usted* usted (2), *vusted* vusted (2) |  |  |  | *te* te (1), *se* se (1), *sí* si (1) |
+| 2 |  | *te* te (1), *la* la (1), *lo* lo (1), *le* le (1) | *te* te (1), *os* os (1), *le* le (1) |  |  |
+| 3sg m |  | *lo* lo (1), *le* le (1) | *le* le (1) | *él* el (1) | *se* se (1), *sí* si (1) |
+| 3sg f | *ella* elja (2) | *la* la (1), *le* le (1), *ella* elja (2) | *le* le (1) |  | *se* se (1), *sí* si (1) |
+| 3sg n | *ella* elja (2), *aquello* akeljo (3) | *la* la (1), *lo* lo (1), *le* le (1) | *le* le (1) | *él* el (1), *ello* eljo (2) |  |
+| 1pl | *nosotros* nosotɾos (3), *nosotras* nosotɾas (3) | *nos* nos (1) | *nos* nos (1) | *nosotros* nosotɾos (3) | *nos* nos (1) |
+| 2pl | *usted* usted (2), *uds* udes (2), *vosotras* vosotɾas (3), *ustedes* ustedes (3) | *las* las (1), *les* les (1) | *les* les (1) |  |  |
+| 3pl | *ellxs* eljkss (1) | *los* los (1), *les* les (1), *ellxs* eljkss (1) | *les* les (1) |  | *sí* si (1) |
+| 3pl f | *ellas* eljas (2) | *las* las (1), *ellas* eljas (2) |  |  | *se* se (1) |
 | 3 reflexive |  |  |  |  | *se* se (1) |
 
 A pronoun glossed only *you*, with no number, is in row 2. The role is taken from the gloss (*me* is object, *to him* indirect, *disjunctive* stressed); where the dictionary does not say, the form sits in the column of its gloss word.
@@ -26,22 +26,24 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
-| definite | *el* el (1), *cuanto* kwanto (2) | *la* la (1), *cuanta* kwanta (2) | *lo* lo (1) | *los* los (1), *cuantos* kwantos (2) | *las* las (1), *cuantas* kwantas (2) |  | *las* las (1), *les* les (1), *lxs* elekisese (5) |  |
-| indefinite | *un* un (1) | *el* el (1), *una* una (2) |  | *unos* unos (2) | *las* las (1), *unas* unas (2) |  |  | *unx* unks (1) |
+| definite | *el* el (1), *cuanto* kwanto (2) | *la* la (1), *cuanta* kwanta (2) | *lo* lo (1) | *los* los (1), *cuantos* kwantos (2) | *las* las (1), *cuantas* kwantas (2) |  | *las* las (1) |  |
+| indefinite | *un* un (1) | *el* el (1), *una* una (2) |  | *unos* unos (2) | *las* las (1), *unas* unas (2) |  |  |  |
 
 ## Personal pronouns
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
-| I | *nos* | nos | 1 | first person (except in vocative, and in the oblique it requires a preposition); I (singul |
 | I | *yo* | jo | 1 | first-person singular pronoun in the nominative case; I |
+| me | *me* | me | 1 | accusative of yo: me |
 | me | *mí* | mi | 1 | me; (declined form of yo used as the object of a preposition) |
+| you | *te* | te | 1 | dative of tú and vos: to you, for you |
 | you | *os* | os | 1 | you, to you, for you; dative and accusative of vosotros |
+| you | *la* | la | 1 | accusative of ella, ello (when the antecedent's implied gender is feminine), and usted (wh |
 | you | *vos* | vos | 1 | you, familiar form of the second-person singular pronoun |
+| you | *lo* | lo | 1 | accusative of él and usted (when referring to a man), and a variant of ello in many constr |
 | you | *le* | le | 1 | to you, for you (formal); dative of usted |
 | you | *tú* | tu | 1 | you (second-person singular pronoun) |
 | you | *usted* | usted | 2 | second person formal; you (singular) |
-| you | *vosotros* | vosotɾos | 3 | you, you guys; second person plural personal pronoun |
 | you | *uds* | udes | 2 | you (plural) |
 | you | *vosotras* | vosotɾas | 3 | you; second person feminine plural personal pronoun |
 | you | *ustedes* | ustedes | 3 | you (plural), you guys, y'all, yous, yinz, ye |
@@ -49,36 +51,37 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | you | *suyo* | sujo | 2 | yours, your, to you |
 | you | *suyos* | sujos | 2 | yours, your, to you |
 | you | *suyas* | sujas | 2 | yours, your, to you |
+| you | *vuestros* | vwestɾos | 2 | plural of vuestro: yours, your, to you |
+| you | *vuestras* | vwestɾas | 2 | feminine plural of vuestro: yours, your, to you |
 | you | *vusted* | vusted | 2 | second person formal; you (singular) |
-| you | *usencia* | usenθja | 3 | second person; your Excellency; you (singular) |
-| you | *usía* | usja | 2 | second person; your honor; you (singular) |
-| you | *vosotres* | vosotɾes | 3 | you (plural) |
-| you | *usarced* | usaɾθed | 3 | your grace; your mercy; you |
-| you | *usarcé* | usaɾθe | 3 | your grace; your mercy; you |
 | thou | | | | |
 | thee | | | | |
 | he | *él* | el | 1 | he, him, masculine personal third person subject and disjunctive pronoun (used as a subjec |
 | him | *él* | el | 1 | he, him, masculine personal third person subject and disjunctive pronoun (used as a subjec |
+| him | *lo* | lo | 1 | accusative of él and usted (when referring to a man), and a variant of ello in many constr |
 | him | *le* | le | 1 | to him, for him; dative of él |
 | she | *ella* | elja | 2 | she, her (used subjectively and after prepositions) |
+| her | *la* | la | 1 | accusative of ella, ello (when the antecedent's implied gender is feminine), and usted (wh |
 | her | *le* | le | 1 | to her, for her; dative of ella |
+| her | *sus* | sus | 1 | plural of su; one's, his, her, its, their (with plural possessee) |
 | her | *ella* | elja | 2 | she, her (used subjectively and after prepositions) |
 | her | *suyo* | sujo | 2 | his, hers, its, to her |
-| it | *la* | la | 1 | impersonal neuter pronoun (accusative) in certain colloquial phrases: it, this |
+| it | *la* | la | 1 | accusative of ella, ello (when the antecedent's implied gender is feminine), and usted (wh |
 | it | *él* | el | 1 | it, masculine non-personal third-person subject and disjunctive pronoun (usually used afte |
+| it | *lo* | lo | 1 | accusative of él and usted (when referring to a man), and a variant of ello in many constr |
 | it | *le* | le | 1 | to it, for it; dative of ello |
 | it | *ello* | eljo | 2 | it, neuter third-person subject and disjunctive pronoun |
 | it | *ella* | elja | 2 | it (used subjectively and after prepositions to refer to feminine nouns) |
+| it | *aquello* | akeljo | 3 | neuter singular of aquél; that (over there); it |
 | we | *nosotros* | nosotɾos | 3 | we (masculine plural) |
 | we | *nosotras* | nosotɾas | 3 | we (feminine plural) |
-| we | *nosotres* | nosotɾes | 3 | we |
+| us | *nos* | nos | 1 | dative of nosotros: to us, for us |
 | us | *nuestro* | nwestɾo | 2 | our, ours, to us |
-| they | *elle* | elje | 2 | they, them (singular); a gender-neutral singular third-person personal pronoun |
-| they | *elles* | eljes | 2 | they; a gender-neutral plural third-person personal pronoun |
 | they | *ellas* | eljas | 2 | they, them (used subjectively and after prepositions; can refer to women and feminine noun |
 | they | *ellxs* | eljkss | 1 | they, them |
-| them | *le* | le | 1 | to them, for them (singular); dative of elle |
-| them | *elle* | elje | 2 | they, them (singular); a gender-neutral singular third-person personal pronoun |
+| them | *las* | las | 1 | accusative of ellas; them |
+| them | *los* | los | 1 | accusative of ellos; them |
+| them | *les* | les | 1 | dative of ellos and ellas; to them, for them |
 | them | *ellas* | eljas | 2 | they, them (used subjectively and after prepositions; can refer to women and feminine noun |
 | them | *suyo* | sujo | 2 | theirs, their, to them |
 | them | *suyos* | sujos | 2 | theirs, their, to them |
@@ -87,7 +90,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | oneself | *se* | se | 1 | A reflexive or reciprocal pronoun: oneself, himself, herself, itself, yourself; themselves |
 | himself | *se* | se | 1 | A reflexive or reciprocal pronoun: oneself, himself, herself, itself, yourself; themselves |
 | himself | *sí* | si | 1 | himself, herself, itself, themself, themselves |
-| myself | | | | |
+| myself | *me* | me | 1 | reflexive of yo: myself |
 | yourself | *te* | te | 1 | yourself |
 | yourself | *se* | se | 1 | A reflexive or reciprocal pronoun: oneself, himself, herself, itself, yourself; themselves |
 | yourself | *sí* | si | 1 | yourself, yourselves |
@@ -96,27 +99,44 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
+| my | *mi* | mi | 1 | apocopic form of mío, my |
 | my | *mío* | mjo | 1 | mine, my; of mine |
+| my | *mías* | mjas | 1 | feminine plural of mío: mine, my |
 | mine | *mío* | mjo | 1 | mine; of mine |
+| mine | *mías* | mjas | 1 | feminine plural of mío: mine, my |
+| your | *tu* | tu | 1 | apocopic form of tuyo, your |
 | your | *sus* | sus | 1 | your (with plural possessee) |
 | your | *vuestro* | vwestɾo | 2 | yours, your, to you |
+| your | *tuyas* | tujas | 2 | feminine plural of tuyo: yours, your |
+| your | *tuyos* | tujos | 2 | plural of tuyo: yours, your |
 | your | *tuyo* | tujo | 2 | yours, your |
 | your | *suyo* | sujo | 2 | yours, your, to you |
 | your | *suyos* | sujos | 2 | yours, your, to you |
 | your | *suyas* | sujas | 2 | yours, your, to you |
-| your | *vueso* | vweso | 2 | your |
-| your | *vuesa* | vwesa | 2 | your |
-| your | *vuesos* | vwesos | 2 | your |
-| your | *vuesas* | vwesas | 2 | your |
+| your | *vuestros* | vwestɾos | 2 | plural of vuestro: yours, your, to you |
+| your | *vuestras* | vwestɾas | 2 | feminine plural of vuestro: yours, your, to you |
 | yours | *vuestro* | vwestɾo | 2 | yours |
+| yours | *tuyas* | tujas | 2 | feminine plural of tuyo: yours, your |
+| yours | *tuyos* | tujos | 2 | plural of tuyo: yours, your |
 | yours | *tuyo* | tujo | 2 | yours |
 | yours | *suyo* | sujo | 2 | yours |
 | yours | *suyos* | sujos | 2 | yours, your, to you |
 | yours | *suyas* | sujas | 2 | yours, your, to you |
+| yours | *vuestros* | vwestɾos | 2 | plural of vuestro: yours, your, to you |
+| yours | *vuestras* | vwestɾas | 2 | feminine plural of vuestro: yours, your, to you |
+| his | *sus* | sus | 1 | plural of su; one's, his, her, its, their (with plural possessee) |
 | his | *suyo* | sujo | 2 | his, hers, its |
+| his | *suyos* | sujos | 2 | plural of suyo: his, hers, its |
+| his | *suyas* | sujas | 2 | feminine plural of suyo: his, hers, its |
+| its | *sus* | sus | 1 | plural of su; one's, his, her, its, their (with plural possessee) |
 | its | *suyo* | sujo | 2 | his, hers, its |
+| its | *suyos* | sujos | 2 | plural of suyo: his, hers, its |
+| its | *suyas* | sujas | 2 | feminine plural of suyo: his, hers, its |
 | our | *nuestro* | nwestɾo | 2 | our, ours, to us |
 | ours | *nuestro* | nwestɾo | 2 | ours |
+| ours | *nuestras* | nwestɾas | 2 | feminine plural of nuestro: ours |
+| ours | *nuestros* | nwestɾos | 2 | plural of nuestro: ours |
+| their | *sus* | sus | 1 | plural of su; one's, his, her, its, their (with plural possessee) |
 | their | *suyo* | sujo | 2 | theirs, their, to them |
 | their | *suyos* | sujos | 2 | theirs, their, to them |
 | their | *suyas* | sujas | 2 | theirs, their, to them |
@@ -132,22 +152,24 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | the | *las* | las | 1 | feminine plural definite article; the |
 | the | *la* | la | 1 | feminine singular definite article; the |
 | the | *lo* | lo | 1 | neuter definite article used only before nominalized adjectives: the, that which is |
-| the | *les* | les | 1 | the (plural) |
 | the | *cuanto* | kwanto | 2 | however much; however many; (constructing parallel comparatives) “the..., the...” |
-| the | *lxs* | elekisese | 5 | the (plural) |
 | a | *el* | el | 1 | feminine singular definite article used before nouns which start with a stressed /a/ |
 | a | *un* | un | 1 | an; a |
-| a | *unx* | unks | 1 | a/an |
 | an | *un* | un | 1 | an; a |
-| an | *unx* | unks | 1 | a/an |
 | this | *la* | la | 1 | impersonal neuter pronoun (accusative) in certain colloquial phrases: it, this |
 | this | *este* | este | 2 | this |
 | this | *presente* | pɾesente | 3 | this |
 | that | *ese* | ese | 2 | that |
+| that | *lo* | lo | 1 | accusative of él and usted (when referring to a man), and a variant of ello in many constr |
 | that | *que* | ke | 1 | who; that |
+| that | *eso* | eso | 2 | neuter singular of ése; that |
 | that | *aquel* | akel | 2 | that (over there; implying some distance) |
+| that | *aquello* | akeljo | 3 | neuter singular of aquél; that (over there); it |
 | these | | | | |
-| those | | | | |
+| those | *esos* | esos | 2 | plural of ese; those |
+| those | *esas* | esas | 2 | feminine plural of ese; those |
+| those | *aquellas* | akeljas | 3 | feminine plural of aquel; those (over there; implying some distance) |
+| those | *aquellos* | akeljos | 3 | masculine plural of aquel; those (over there; implying some distance) |
 
 ## Interrogatives and relatives
 
@@ -163,12 +185,9 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | which | *qué* | ke | 1 | what; which |
 | which | *cuál* | kwal | 1 | what; which |
 | whose | *cuyo* | kujo | 2 | whose |
-| where | *ande* | ande | 2 | where |
 | where | *donde* | donde | 2 | where, in what place |
-| where | *onde* | onde | 2 | whence, where |
 | where | *adonde* | adonde | 3 | to where, whither |
 | where | *adónde* | adonde | 3 | to where, whither, whereto |
-| when | *when* | wen | 1 | (that feeling) when |
 | when | *cuando* | kwando | 2 | when |
 | when | *cuándo* | kwando | 2 | when |
 | how | *qué* | ke | 1 | how |
@@ -178,23 +197,27 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | how much | *cuánto* | kwanto | 2 | how much; how many |
 | how much | *bajux* | baxukes | 3 | how much |
 | how many | *cuánto* | kwanto | 2 | how much; how many |
-| how many | *cuántas* | kwantas | 2 | how many |
+| how many | *cuántos* | kwantos | 2 | masculine plural of cuánto, how many |
+| how many | *cuántas* | kwantas | 2 | feminine plural of cuánto, how many |
 
 ## Quantifiers and indefinites
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | all | *todo* | todo | 2 | all; every |
-| all | *todx* | todeks | 2 | all, every |
 | every | *todo* | todo | 2 | all; every |
 | every | *cada* | kada | 2 | each; every |
-| every | *todx* | todeks | 2 | all, every |
 | each | *todo* | todo | 2 | each; every |
 | each | *cada* | kada | 2 | each; every |
 | each | *sendos* | sendos | 2 | each, each one, both |
 | some | *alguno* | alɡuno | 3 | some, any |
+| some | *algún* | alɡun | 2 | apocopic form of alguno; some, any |
+| some | *unos* | unos | 2 | plural of uno: some, a few |
+| some | *algunas* | alɡunas | 3 | feminine plural of alguno; some (some people) |
+| any | *cualquier* | kwalkjeɾ | 2 | apocopic form of cualquiera; any; whatever; whichever |
 | any | *cualquiera* | kwalkjeɾa | 3 | any, whatever, whichever |
 | any | *alguno* | alɡuno | 3 | some, any |
+| any | *algún* | alɡun | 2 | apocopic form of alguno; some, any |
 | any | *ninguno* | ninɡuno | 3 | no; none; (no/not…) at all, whatsoever, in the slightest; any (negative) |
 | no | *nel* | nel | 1 | no; no way; nope |
 | no | *ninguno* | ninɡuno | 3 | no; none; (no/not…) at all, whatsoever, in the slightest; any (negative) |
@@ -207,6 +230,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | nothing | *mierda* | mjeɾda | 2 | nothing |
 | nothing | *verga* | veɾɡa | 2 | nothing, used in valer verga |
 | nothing | *naranjas* | naɾaŋxas | 3 | nothing |
+| nothing | *nadota* | nadota | 3 | augmentative of nada (“nothing”), nothing, not a single thing, nothing at all |
 | something | *algo* | alɡo | 2 | something, anything |
 | something | *homónimo* | omonimo | 4 | having the same name as someone or something |
 | someone | *alguien* | alɡjen | 2 | someone, somebody |
@@ -220,12 +244,14 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | many | *ene* | ene | 2 | a huge amount of, lots of, many |
 | many | *pechá* | pet͡ʃa | 2 | Much, a lot of, many. |
 | much | *mucho* | mut͡ʃo | 2 | much, a lot of |
+| much | *muchísimo* | mut͡ʃisimo | 4 | superlative degree of mucho: much, a great deal, a lot |
 | much | *plen* | plen | 1 | much, a lot |
 | much | *asaz* | asaθ | 2 | much, a lot of |
 | much | *pechá* | pet͡ʃa | 2 | Much, a lot of, many. |
 | few | *poco* | poko | 2 | few, not many |
 | few | *alguno* | alɡuno | 3 | one (thing); a few |
 | few | *cuanto* | kwanto | 2 | few; quite a few; a handful |
+| few | *unos* | unos | 2 | plural of uno: some, a few |
 | few | *contado* | kontado | 3 | few |
 | little | *poco* | poko | 2 | little, not much |
 | little | *pequeño* | pekenjo | 3 | small; little |
@@ -328,10 +354,8 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | by | *a* | a | 1 | by |
 | by | *donde* | donde | 2 | by, near to |
 | by | *veces* | veθes | 2 | by, times (multiplication) |
-| by | *vegadas* | veɡadas | 3 | times, by (multiplication) |
 | between | *entre* | entɾe | 2 | between |
 | among | *entre* | entɾe | 2 | among, amongst, from |
-| under | *so* | so | 1 | under |
 | under | *sub* | sub | 1 | under |
 | under | *bajo* | baxo | 2 | under (in both literal and figurative senses) |
 | under | *debajo* | debaxo | 3 | under, underneath, beneath, (more, loosely) below |
@@ -404,7 +428,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | if | *si* | si | 1 | if, whether |
 | if | *como* | komo | 2 | if, unless (under the condition that) |
 | if | *donde* | donde | 2 | if |
-| because | *car* | kaɾ | 1 | because |
 | because | *pues* | pwes | 1 | because, since |
 | because | *que* | ke | 1 | indicates reason; because, for |
 | because | *donde* | donde | 2 | because |
@@ -431,7 +454,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | so | *total* | total | 2 | basically, so, in short (used to summarise) |
 | so | *así* | asi | 2 | like this; like that; as such; thus; so; thereby; this way, that way |
 | so | *también* | tambjen | 2 | so |
-| so | *onde* | onde | 2 | whence; therefore; so; consequently; as a result |
 | so | *talmente* | talmente | 3 | so |
 | so | *conque* | konke | 2 | consequently, thus, hence, so |
 | then | *allá* | alja | 2 | then; back then (in time) |
@@ -442,7 +464,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | therefore | *ergo* | eɾɡo | 2 | ergo, therefore |
 | therefore | *entonces* | entonθes | 3 | then, therefore, so, thus; in that case |
 | therefore | *luego* | lweɡo | 2 | therefore (consequently) |
-| therefore | *onde* | onde | 2 | whence; therefore; so; consequently; as a result |
 
 ## Adverbs and particles
 
@@ -483,12 +504,10 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | very | *fleje* | flexe | 2 | very |
 | already | *ya* | ja | 1 | already |
 | still | *siempre* | sjempɾe | 2 | in spite of it, still...at least |
-| still | *aun* | awn | 1 | still, yet |
 | still | *aún* | awn | 1 | still, yet |
 | still | *todavía* | todavja | 3 | still, yet |
 | still | *encima* | enθima | 3 | nevertheless, still |
 | yet | *ya* | ja | 1 | yet (in questions) |
-| yet | *aun* | awn | 1 | still, yet |
 | yet | *aún* | awn | 1 | still, yet |
 | yet | *todavía* | todavja | 3 | still, yet |
 | now | *ea* | eja | 2 | so, and so, now (expressing resolution, preceding a willful resolution) |
@@ -500,7 +519,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | there | *allí* | alji | 2 | there (away from the speaker and the listener) |
 | there | *allá* | alja | 2 | there, over there, thither, yonder (in a direction away from the speaker and the listener) |
 | there | *ahí* | aj | 1 | there (away from the speaker) |
-| there | *ende* | ende | 2 | there |
 | never | *nunca* | nunka | 2 | never |
 | never | *jamás* | xamas | 2 | never |
 | always | *siempre* | sjempɾe | 2 | always |

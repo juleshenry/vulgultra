@@ -10,11 +10,11 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 |---|---|---|---|---|---|
 | 1sg | *eu* ew (1), *ju* ju (1) |  |  |  |  |
 | 2sg | *tu* tu (1), *vuscenza* vuʃent͡sa (3), *vussìa* vusja (2) |  |  |  |  |
-| 3sg m | *iḍḍu* (not read) | *u* u (1), *lu* lu (1), *iḍḍu* (not read) |  |  |  |
-| 3sg f | *idda* ida (2) | *la* la (1), *a* a (1), *idda* ida (2) |  |  |  |
+| 3sg m | *iḍḍu* (not read) | *u* u (1), *lu* lu (1), *iḍḍu* (not read) | *ci* t͡ʃi (1) |  |  |
+| 3sg f | *idda* ida (2) | *la* la (1), *a* a (1), *idda* ida (2) | *ci* t͡ʃi (1) |  |  |
 | 3sg n |  | *u* u (1), *la* la (1), *lu* lu (1), *a* a (1) |  |  |  |
 | 1pl | *nui* nwi (1), *nuàutri* nwawtri (2) | *ni* ni (1) | *ni* ni (1) |  | *ni* ni (1) |
-| 3pl | *iddi* idi (2) | *iddi* idi (2) |  |  |  |
+| 3pl | *iddi* idi (2) | *iddi* idi (2) | *ci* t͡ʃi (1) |  |  |
 | 3pl f |  | *li* li (1) |  |  |  |
 
 A pronoun glossed only *you*, with no number, is in row 2. The role is taken from the gloss (*me* is object, *to him* indirect, *disjunctive* stressed); where the dictionary does not say, the form sits in the column of its gloss word.
@@ -39,10 +39,12 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | thou | *tu* | tu | 1 | you (informal); thou |
 | thee | | | | |
 | he | *iḍḍu* | not read |  | he |
+| him | *ci* | t͡ʃi | 1 | dative of iḍḍu (“he”); to him |
 | him | *u* | u | 1 | him |
 | him | *lu* | lu | 1 | him |
 | him | *iḍḍu* | not read |  | him (used as the object of a preposition) |
 | she | *idda* | ida | 2 | she |
+| her | *ci* | t͡ʃi | 1 | dative of iḍḍa (“she”); to her |
 | her | *la* | la | 1 | her |
 | her | *a* | a | 1 | her |
 | her | *idda* | ida | 2 | her (used as the object of a preposition) |
@@ -54,6 +56,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | we | *nuàutri* | nwawtri | 2 | we |
 | us | *ni* | ni | 1 | us, accusative of nuàutri |
 | they | *iddi* | idi | 2 | they |
+| them | *ci* | t͡ʃi | 1 | dative of iḍḍi (“they”); to them |
 | them | *li* | li | 1 | them |
 | them | *iddi* | idi | 2 | them (used as the object of a preposition) |
 | oneself | | | | |
@@ -71,7 +74,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | yours | | | | |
 | his | | | | |
 | its | | | | |
-| our | | | | |
+| our | *nostru* | nostru | 2 | genitive of nuàutri (“we”); our |
 | ours | | | | |
 | their | | | | |
 | theirs | | | | |
@@ -99,7 +102,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | this | *a* | a | 1 | it, this or that thing |
 | this | *chistu* | kistu | 2 | this |
 | this | *stu* | stu | 1 | this; this one. |
-| this | *zò* | t͡sɔ | 1 | this; what |
 | that | *ddu* | du | 1 | that |
 | that | *chiḍḍu* | not read |  | that |
 | that | *ḍḍu* | not read |  | that |
@@ -114,7 +116,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 |---|---|---|---:|---|
 | who | *cui* | kwi | 1 | who, whom |
 | whom | *cui* | kwi | 1 | who, whom |
-| what | *zò* | t͡sɔ | 1 | this; what |
+| what | | | | |
 | which | | | | |
 | whose | | | | |
 | where | *unni* | uni | 2 | where |

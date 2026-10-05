@@ -11,14 +11,14 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 | 1sg | *je* ʒə (1) | *me* mə (1), *moi* mwa (1), *mézigue* meziɡ (2) | *me* mə (1) | *moi* mwa (1), *moi-même* mwamɛm (2) |  |
 | 2sg | *tu* ty (1), *tézigue* teziɡ (2) | *toé* tɔje (2) |  | *toi* twa (1), *toi-même* twamɛm (2), *vous-même* vumɛm (2), *oit* wa (1) | *te* tə (1), *toi* twa (1), *oit* wa (1) |
 | 2 | *te* tə (1), *toé* tɔje (2) |  | *te* tə (1) |  |  |
-| 3sg m | *ce* sə (1), *il* il (1), *ça* sa (1) | *li* li (1), *le* lə (1), *ça* sa (1), *cézigue* seziɡ (2) | *lui* lɥi (1) | *lui* lɥi (1), *lui-même* lɥimɛm (2) | *se* sə (1), *soi* swa (1) |
-| 3sg f | *ce* sə (1), *alle* al (1), *elle* ɛl (1), *ça* sa (1) | *la* la (1), *le* lə (1), *ça* sa (1), *cézigue* seziɡ (2) | *lui* lɥi (1) | *elle-même* ɛlmɛm (2) | *se* sə (1), *soi* swa (1) |
-| 3sg n | *ce* sə (1), *il* il (1), *le* lə (1), *elle* ɛl (1), *ça* sa (1) | *li* li (1), *la* la (1), *ça* sa (1) |  | *lui* lɥi (1) |  |
+| 3sg m | *y* iɡʀɛk (2), *ce* sə (1), *il* il (1), *ça* sa (1) | *li* li (1), *le* lə (1), *l'* ɛl (1), *ça* sa (1), *cézigue* seziɡ (2) | *lui* lɥi (1) | *lui* lɥi (1), *lui-même* lɥimɛm (2) | *se* sə (1) |
+| 3sg f | *ce* sə (1), *alle* al (1), *elle* ɛl (1), *ça* sa (1) | *la* la (1), *le* lə (1), *l'* ɛl (1), *ça* sa (1), *cézigue* seziɡ (2) | *lui* lɥi (1) | *elle* ɛl (1), *elle-même* ɛlmɛm (2) | *se* sə (1) |
+| 3sg n | *ce* sə (1), *il* il (1), *le* lə (1), *l'* ɛl (1), *elle* ɛl (1), *ça* sa (1) | *li* li (1), *la* la (1), *ça* sa (1) |  | *lui* lɥi (1), *elle* ɛl (1) |  |
 | 1pl | *on* ɔ̃ (1), *nous* nu (1) |  | *nous* nu (1) | *nous-mêmes* numɛm (2) | *soi* swa (1) |
 | 2pl | *on* ɔ̃ (1), *vous* vu (1) |  | *vous* vu (1) |  |  |
-| 3pl | *al* al (1), *ça* sa (1), *iel* jɛl (1), *iels* jɛl (1) | *lea* ləja (2), *ça* sa (1), *læ* la (1) |  | *ellui* ɛlɥi (2), *elleux* ɛlø (2) |  |
-| 3pl m | *ils* il (1) | *le* lə (1) |  | *eux-mêmes* ømɛm (2) |  |
-| 3pl f | *ce* sə (1), *elles* ɛl (1), *eux-autres* øzoteʀ (3) |  | *leur* lœʀ (1) | *elles-mêmes* ɛlmɛm (2) | *se* sə (1) |
+| 3pl | *y* iɡʀɛk (2), *ça* sa (1) | *ça* sa (1) |  |  |  |
+| 3pl m | *ils* il (1) | *le* lə (1) |  | *eux* ø (1), *eux-mêmes* ømɛm (2) |  |
+| 3pl f | *ce* sə (1), *elles* ɛl (1), *eux-autres* øzoteʀ (3) | *les* le (1) | *leur* lœʀ (1) | *elles* ɛl (1), *elles-mêmes* ɛlmɛm (2) | *se* sə (1) |
 | 3 reflexive |  |  |  | *soi-même* swamɛm (2) | *se* sə (1), *soi* swa (1) |
 
 A pronoun glossed only *you*, with no number, is in row 2. The role is taken from the gloss (*me* is object, *to him* indirect, *disjunctive* stressed); where the dictionary does not say, the form sits in the column of its gloss word.
@@ -27,7 +27,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
-| definite | *le* lə (1) | *la* la (1) | *læ* la (1) | *les* le (1) |  |  | *les* le (1) | *lea* ləja (2) |
+| definite | *le* lə (1), *l'* ɛl (1) | *la* la (1) |  | *les* le (1) |  |  | *les* le (1) |  |
 | indefinite | *un* œ̃ (1), *le* lə (1) | *une* yn (1), *la* la (1) |  | *des* de (1), *les* le (1) |  |  |  |  |
 
 ## Personal pronouns
@@ -48,6 +48,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | you | *tézigue* | teziɡ | 2 | you (second-person singular personal pronoun) |
 | thou | | | | |
 | thee | *toé* | tɔje | 2 | you, thee: alternative form of toi |
+| he | *y* | iɡʀɛk | 2 | alternative form of il; he |
 | he | *lui* | lɥi | 1 | him, he, it; the third-person masculine singular personal pronoun used after a preposition |
 | he | *ce* | sə | 1 | he, she, it, they |
 | he | *il* | il | 1 | he (third-person singular masculine subject pronoun for human subject) |
@@ -55,6 +56,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | him | *lui* | lɥi | 1 | him, he, it; the third-person masculine singular personal pronoun used after a preposition |
 | him | *li* | li | 1 | him |
 | him | *le* | lə | 1 | him, her, it, them |
+| him | *l'* | ɛl | 1 | apocopic form of le, la: him, her, it |
 | him | *ça* | sa | 1 | him, her, it (third-person singular object pronoun) |
 | him | *cézigue* | seziɡ | 2 | him, her (third-person singular personal pronoun) |
 | she | *ce* | sə | 1 | he, she, it, they |
@@ -62,12 +64,13 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | she | *elle* | ɛl | 1 | she |
 | she | *ça* | sa | 1 | he, she, it (third-person singular subject pronoun) |
 | her | *son* | sɔ̃ | 1 | his, her, their, its (used to qualify masculine nouns and before a vowel) |
-| her | *san* | sɑ̃ | 1 | his, her, their, its |
 | her | *lui* | lɥi | 1 | him, her; the third-person singular personal pronoun used as an indirect object |
 | her | *la* | la | 1 | her, it (direct object) |
 | her | *sa* | sa | 1 | his, her, its, their, one's |
 | her | *le* | lə | 1 | him, her, it, them |
+| her | *l'* | ɛl | 1 | apocopic form of le, la: him, her, it |
 | her | *ses* | se | 1 | his, her, its, their, one's (when referring to a plural noun) |
+| her | *elle* | ɛl | 1 | disjunctive form of elle; her, it; à elle = hers, its |
 | her | *ça* | sa | 1 | him, her, it (third-person singular object pronoun) |
 | her | *cézigue* | seziɡ | 2 | him, her (third-person singular personal pronoun) |
 | it | *lui* | lɥi | 1 | him, he, it; the third-person masculine singular personal pronoun used after a preposition |
@@ -76,31 +79,28 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | it | *ce* | sə | 1 | it, this, that (see § Usage notes) |
 | it | *il* | il | 1 | it (third-person singular subject pronoun for grammatically masculine objects) |
 | it | *le* | lə | 1 | him, her, it, them |
+| it | *l'* | ɛl | 1 | apocopic form of le, la: him, her, it |
 | it | *elle* | ɛl | 1 | it (feminine gender third-person singular subject pronoun) |
 | it | *ça* | sa | 1 | it (alternative form of ce as a subject of être in tenses other than the present and imper |
 | we | *on* | ɔ̃ | 1 | we |
 | we | *nous* | nu | 1 | we |
 | us | *nous* | nu | 1 | us, to us |
-| they | *al* | al | 1 | they (singular). A gender-neutral singular third-person subject personal pronoun. |
+| they | *y* | iɡʀɛk | 2 | alternative form of ils; they (male) |
 | they | *ce* | sə | 1 | he, she, it, they |
 | they | *ils* | il | 1 | they (male or mixed group) |
 | they | *elles* | ɛl | 1 | they (female) |
 | they | *ça* | sa | 1 | it, that, they, them (reduplicated pronoun referring to an indefinite or generic noun phra |
-| they | *iel* | jɛl | 1 | they (singular): a gender-neutral singular third-person subject personal pronoun |
 | they | *eux-autres* | øzoteʀ | 3 | they |
-| they | *iels* | jɛl | 1 | They. A gender-neutral personal pronoun (third-person plural subject). |
+| them | *les* | le | 1 | plural of le: them |
 | them | *le* | lə | 1 | him, her, it, them |
-| them | *lea* | ləja | 2 | them (direct object) |
+| them | *eux* | ø | 1 | disjunctive form of ils; them |
 | them | *leur* | lœʀ | 1 | (to) them |
+| them | *elles* | ɛl | 1 | disjunctive form of elles; them (female) |
 | them | *ça* | sa | 1 | it, that, they, them (reduplicated pronoun referring to an indefinite or generic noun phra |
-| them | *læ* | la | 1 | them |
-| them | *ellui* | ɛlɥi | 2 | (disjunctive of iel) them |
-| them | *elleux* | ɛlø | 2 | Them. A gender-neutral personal pronoun (third-person plural disjunctive). |
 | oneself | *se* | sə | 1 | oneself |
 | oneself | *soi* | swa | 1 | oneself |
 | oneself | *soi-même* | swamɛm | 2 | oneself |
 | himself | *se* | sə | 1 | himself |
-| himself | *soi* | swa | 1 | himself, herself, itself |
 | himself | *lui-même* | lɥimɛm | 2 | himself, itself |
 | myself | *moi-même* | mwamɛm | 2 | myself |
 | yourself | *te* | tə | 1 | yourself |
@@ -113,45 +113,40 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
-| my | *man* | man | 1 | my |
 | my | *mes* | me | 1 | my (when referring to a plural noun) |
 | my | *mon* | mɔ̃ | 1 | my (used to qualify masculine nouns and vowel-initial words regardless of gender) |
-| mine | *mien* | mjɛ̃ | 1 | (of) mine, my own |
-| your | *tan* | tɑ̃ | 1 | your |
+| mine | | | | |
 | your | *ta* | ta | 1 | your |
-| your | *tien* | tjɛ̃ | 1 | your; belonging to you (singular) |
 | your | *ton* | tɔ̃ | 1 | your |
+| your | *vos* | vo | 1 | plural of votre; your (plural or formal you) |
 | your | *tes* | te | 1 | your (when referring to a plural noun) |
 | your | *votre* | voteʀ | 2 | your, belonging to you (plural or formal) |
-| your | *vôtre* | voteʀ | 2 | your; yours |
-| your | *vôtres* | voteʀ | 2 | your (belonging to you, plural or formal) |
-| yours | *vôtre* | voteʀ | 2 | your; yours |
+| yours | | | | |
 | his | *son* | sɔ̃ | 1 | his, her, their, its (used to qualify masculine nouns and before a vowel) |
-| his | *san* | sɑ̃ | 1 | his, her, their, its |
 | his | *sa* | sa | 1 | his, her, its, their, one's |
 | his | *ses* | se | 1 | his, her, its, their, one's (when referring to a plural noun) |
-| his | *sien* | sjɛ̃ | 1 | his (that which belongs to him); her (that which belongs to her) |
 | its | *son* | sɔ̃ | 1 | his, her, their, its (used to qualify masculine nouns and before a vowel) |
-| its | *san* | sɑ̃ | 1 | his, her, their, its |
 | its | *sa* | sa | 1 | his, her, its, their, one's |
 | its | *ses* | se | 1 | his, her, its, their, one's (when referring to a plural noun) |
+| its | *elle* | ɛl | 1 | disjunctive form of elle; her, it; à elle = hers, its |
+| our | *nos* | no | 1 | plural of notre; our |
 | our | *notre* | noteʀ | 2 | our |
-| our | *nôtre* | noteʀ | 2 | our; ours |
-| ours | *nôtre* | noteʀ | 2 | our; ours |
+| ours | | | | |
 | their | *son* | sɔ̃ | 1 | his, her, their, its (used to qualify masculine nouns and before a vowel) |
-| their | *san* | sɑ̃ | 1 | his, her, their, its |
 | their | *sa* | sa | 1 | his, her, its, their, one's |
 | their | *ses* | se | 1 | his, her, its, their, one's (when referring to a plural noun) |
 | their | *leur* | lœʀ | 1 | their |
+| their | *leurs* | lœʀ | 1 | plural of leur: their (used before a plural noun) |
 | theirs | | | | |
 
 ## Articles and demonstratives
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
+| the | *la* | la | 1 | feminine of le: the |
+| the | *les* | le | 1 | plural of le: the |
 | the | *le* | lə | 1 | the (definite article) |
-| the | *lea* | ləja | 2 | the |
-| the | *læ* | la | 1 | the (referring to a person of unknown or non-binary gender) |
+| the | *l'* | ɛl | 1 | apocopic form of le, la: the |
 | a | *un* | œ̃ | 1 | an, a |
 | a | *le* | lə | 1 | a, an, per |
 | a | *dénommé* | denɔme | 3 | a, a certain, someone named |
@@ -166,8 +161,11 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | that | *ça* | sa | 1 | that (distal demonstrative pronoun) |
 | that | *cela* | səla | 2 | that |
 | that | *lequel* | ləkɛl | 2 | which, that, whom |
-| these | | | | |
-| those | *celleux* | sɛlø | 2 | those |
+| that | *lesquels* | lekɛl | 2 | masculine plural of lequel: (following a preposition) which, that, whom |
+| these | *ces* | se | 1 | masculine/feminine plural of ce: these, those |
+| those | *ceux* | sø | 1 | masculine plural of celui: those |
+| those | *ces* | se | 1 | masculine/feminine plural of ce: these, those |
+| those | *celles* | sɛl | 1 | feminine plural of celui: those |
 
 ## Interrogatives and relatives
 
@@ -176,6 +174,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | who | *qui* | ki | 1 | who, whom |
 | whom | *qui* | ki | 1 | who, whom |
 | whom | *lequel* | ləkɛl | 2 | which, that, whom |
+| whom | *lesquels* | lekɛl | 2 | masculine plural of lequel: (following a preposition) which, that, whom |
 | what | *qui* | ki | 1 | what |
 | what | *que* | kə | 1 | The inanimate direct-object or predicative interrogative pronoun: what |
 | what | *quoi* | kwa | 1 | what |
@@ -187,6 +186,9 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | which | *quel* | kɛl | 1 | which |
 | which | *lequel* | ləkɛl | 2 | which, that, whom |
 | which | *auquel* | okɛl | 2 | to which, at which, of which |
+| which | *lesquels* | lekɛl | 2 | masculine plural of lequel: (following a preposition) which, that, whom |
+| which | *auxquels* | okɛl | 2 | masculine plural of auquel: to which, at which |
+| which | *auxquelles* | okɛl | 2 | feminine plural of auquel: to which, at which |
 | whose | *dont* | dɔ̃ | 1 | of/from whom/which, whose; whereof |
 | where | *où* | u | 1 | where (interrogative) |
 | where | *éyoù* | eju | 2 | where |
@@ -194,6 +196,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | when | *que* | kə | 1 | when, no sooner |
 | when | *quand* | kɑ̃ | 1 | when (at what time) |
 | when | *lorsque* | lɔʀskə | 2 | when (at a time when) |
+| when | *lorsqu'* | lɔʀsk | 1 | apocopic form of lorsque; when |
 | when | *équand* | ekwan | 2 | when |
 | how | *comment* | kɔmɑ̃ | 2 | how |
 | how | *que* | kə | 1 | how (in rhetorical interjections) |
@@ -212,12 +215,15 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | all | *tous* | tus | 1 | all |
 | every | *chaque* | ʃak | 1 | every |
 | every | *chacun* | ʃakœ̃ | 2 | every, everyone |
+| every | *chacune* | ʃakyn | 2 | feminine singular of chacun: each, each one, every, every one |
 | each | *chaque* | ʃak | 1 | each |
 | each | *chacun* | ʃakœ̃ | 2 | each, each one |
+| each | *chacune* | ʃakyn | 2 | feminine singular of chacun: each, each one, every, every one |
 | some | *certain* | sɛʀtɛ̃ | 2 | certain: a determined but unspecified amount of; some |
 | some | *quelque* | kɛlkə | 2 | some (singular) |
 | some | *quelqu'un* | kɛlkœ̃ | 2 | some |
 | some | *quelconque* | kɛlkɔ̃k | 2 | indeterminate; some, any |
+| some | *certains* | sɛʀtɛ̃ | 2 | plural of certain: some, some people |
 | some | *l'un* | lœ̃ | 1 | some |
 | some | *d'aucuns* | dokœ̃ | 2 | certain people, some |
 | some | *quelques-uns* | kɛlkəzœ̃ | 3 | some, a few |
@@ -247,20 +253,17 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | somebody | *quelqu'un* | kɛlkœ̃ | 2 | someone, somebody, anyone, anybody |
 | everything | *tout* | tu | 1 | everything |
 | everyone | *chacun* | ʃakœ̃ | 2 | every, everyone |
-| many | *force* | fɔʀs | 1 | many; a lot of; a great quantity of |
 | many | *peu* | pø | 1 | little; not very much/many |
 | many | *plein* | plɛ̃ | 1 | a lot, lots of, many |
 | many | *plusieurs* | plyzjœʀ | 2 | several, many, a lot |
 | many | *moult* | mult | 1 | many; a lot of |
 | many | *nombreux* | nɔ̃bʀø | 2 | numerous, many |
-| many | *maint* | mɛ̃ | 1 | many |
 | many | *bougrement* | buɡʀəmɑ̃ | 3 | much, many |
 | many | *whatmille* | watmij | 2 | many, a large number or amount |
 | much | *bien* | bjɛ̃ | 1 | much (more, less, better, etc.) |
 | much | *grave* | ɡʀav | 1 | much; a lot |
 | much | *beaucoup* | boku | 2 | much, very much, a lot |
 | much | *fort* | fɔʀ | 1 | much, a lot |
-| much | *moult* | mult | 1 | much; a lot |
 | much | *guère* | ɡɛʀ | 1 | hardly, barely, (not) much |
 | much | *grand-chose* | ɡʀɑ̃ʃɔz | 2 | much, (not) a lot |
 | much | *terriblement* | tɛʀibləmɑ̃ | 4 | much; a lot |
@@ -318,7 +321,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | eight | *huit* | ɥit | 1 | eight |
 | nine | *neuf* | nœf | 1 | nine |
 | ten | *dix* | dis | 1 | ten |
-| ten | *dénaire* | denɛʀ | 2 | ten; denary |
 | eleven | *onze* | ɔ̃z | 1 | eleven |
 | twelve | *douze* | duz | 1 | twelve |
 | twelve | *douzaine* | duzɛn | 2 | twelve; dozen |
@@ -332,7 +334,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | thousand | *millier* | milje | 2 | thousand; a number of about a thousand |
 | first | *premier* | pʀəmje | 2 | first |
 | first | *première* | pʀəmjɛʀ | 2 | first (new event, something never done before) |
-| first | *prime* | pʀim | 1 | first |
 | first | *preu* | pʀø | 1 | the first |
 | second | *second* | səɡɔ̃ | 2 | second |
 | second | *seconde* | səɡɔ̃d | 2 | second (for indicating time) |
@@ -341,7 +342,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | second | *secondant* | səɡɔ̃dɑ̃ | 3 | second (attendant of a duel or boxing match standing in for a contestant) |
 | third | *tierce* | tjɛʀs | 1 | third |
 | third | *troisième* | teʀwazjɛm | 3 | third |
-| third | *tiers* | tjɛʀ | 1 | third |
+| third | *tiers* | tjɛʀ | 1 | a third (one of three equal parts) |
 | half | *moitié* | mwatje | 2 | half |
 | half | *demi* | dəmi | 2 | half |
 
@@ -352,6 +353,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | of | *de* | də | 1 | of (indicates possession, association or relationship) |
 | of | *en* | ɑ̃ | 1 | of, made of (used to describe composition) |
 | of | *à* | a | 1 | of (belonging to) |
+| of | *d'* | de | 1 | apocopic form of de: of |
 | of | *d'entre* | dɑ̃teʀ | 2 | of, among |
 | to | *en* | ɑ̃ | 1 | to (indicates direction towards certain very large locations, see usage notes) |
 | to | *vers* | vɛʀ | 1 | to |
@@ -423,22 +425,18 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | through | *via* | vja | 1 | via, through, by way of |
 | through | *par* | paʀ | 1 | through |
 | towards | *vers* | vɛʀ | 1 | towards |
-| towards | *devers* | dəvɛʀ | 2 | towards |
 | toward | *envers* | ɑ̃vɛʀ | 2 | in relation to, toward |
 | near | *près* | pʀɛ | 1 | near (a time or a place); close (to a time or a place) |
-| near | *jouxte* | ʒukest | 2 | near, next to |
 | behind | *derrière* | dɛʀjɛʀ | 2 | behind |
 | behind | *arrière* | aʀjɛʀ | 2 | rear, behind, hinter- |
 | during | *dans* | dɑ̃ | 1 | during |
 | during | *pendant* | pɑ̃dɑ̃ | 2 | during, throughout, for the duration of |
-| during | *tandis* | tɑ̃di | 2 | during |
 | during | *durant* | dyʀɑ̃ | 2 | during, while |
 | about | *autour* | otuʀ | 2 | around, about |
 | about | *circa* | siʀka | 2 | approximately, about |
 | about | *sur* | syʀ | 1 | about, concerning |
 | about | *environ* | ɑ̃viʀɔ̃ | 3 | about, close to, around |
 | about | *touchant* | tuʃɑ̃ | 2 | about, relating to |
-| about | *devers* | dəvɛʀ | 2 | about, around |
 | since | *depuis* | dəpɥi | 2 | since |
 | inside | *dans* | dɑ̃ | 1 | in, inside (enclosed in a physical space, a group, a state) |
 | inside | *dedans* | dədɑ̃ | 2 | inside, in, within |
@@ -514,13 +512,10 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | not | *point* | pwɛ̃ | 1 | not |
 | not | *ne* | nə | 1 | not (used alone to negate a verb, now chiefly with only a few particular verbs; see usage  |
 | not | *plus* | ply | 1 | not ... any more, no more, no longer |
-| not | *mie* | mi | 1 | not |
 | not | *guèze* | ɡɛz | 1 | not |
 | also | *aussi* | osi | 2 | too, also, as well |
 | also | *avec* | avɛk | 2 | too, also |
 | also | *également* | eɡalmɑ̃ | 3 | too; also |
-| also | *sinon* | sinɔ̃ | 2 | also; additionally; furthermore; anyway |
-| also | *itou* | itu | 2 | likewise, also |
 | also | *pareillement* | paʀɛjmɑ̃ | 3 | too; also |
 | also | *aussitte* | osit | 2 | also, too |
 | too | *trop* | tʀo | 1 | too; too much |
@@ -548,14 +543,11 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | very | *hautement* | otmɑ̃ | 2 | highly, very |
 | very | *méga* | meɡa | 2 | very |
 | very | *méchamment* | meʃamɑ̃ | 3 | very |
-| very | *fameusement* | famøzmɑ̃ | 3 | very |
 | very | *bigrement* | biɡʀəmɑ̃ | 3 | very, darn |
 | very | *crissement* | kʀismɑ̃ | 2 | damn, very |
 | very | *fichtrement* | fiʃtʀəmɑ̃ | 3 | very, terribly, awfully, darned, damn |
-| very | *foutument* | futym | 2 | very |
 | very | *tarpin* | taʀpɛ̃ | 2 | very |
 | already | *déjà* | deʒa | 2 | already, before |
-| already | *jà* | ʒa | 1 | already |
 | still | *toujours* | tuʒuʀ | 2 | still |
 | still | *encore* | ɑ̃kɔʀ | 2 | still |
 | still | *n'empêche* | nɑ̃pɛʃ | 2 | despite all, nevertheless, still |
@@ -565,11 +557,9 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | now | *live* | liv | 1 | now, at the moment. |
 | now | *maintenant* | mɛ̃tnɑ̃ | 2 | now, currently |
 | now | *ores* | oʀ | 1 | now |
-| now | *méshui* | meʃɥi | 2 | now, at present |
 | here | *là* | la | 1 | here; present (used with être) |
 | here | *ici* | isi | 2 | here |
 | here | *tiens* | tjɛ̃ | 1 | said when giving something to someone; here |
-| here | *céans* | sejɑ̃ | 2 | (in) here |
 | here | *icitte* | isit | 2 | here; around here |
 | here | *là-dessus* | ladəsy | 3 | on this, here |
 | there | *là* | la | 1 | there |
@@ -591,7 +581,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | well | *impec* | ɛ̃pɛk | 2 | good; great; well; brilliantly |
 | today | *hui* | ɥi | 1 | today |
 | today | *aujourd'hui* | oʒuʀdɥi | 3 | today |
-| today | *méshui* | meʃɥi | 2 | today |
 | yesterday | *hier* | jɛʀ | 1 | yesterday |
 | tomorrow | *demain* | dəmɛ̃ | 2 | tomorrow |
 | perhaps | *éventuellement* | evɑ̃tɥɛlmɑ̃ | 4 | possibly, maybe, perhaps; if you want |

@@ -11,7 +11,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | jo | 7 | es *yo*, an *yo*, ast *yo*, lad *yo*, it *io*, fur *jo*, ruo *io* | I, where |
-| 1 | ew | 4 | pt *eu*, gl *eu*, scn *eu*, ro *eu* | 1sg, stressed, I, me |
+| 1 | ew | 4 | pt *eu*, gl *eu*, scn *eu*, ro *eu* | I |
 | 1 | a | 2 | eml *a*, rgn *a* | 1pl, subject, 2pl, subject, 3sg f, indirect, 3sg f, object |
 | 1 | jow | 2 | mwl *you*, rup *iou* | 1sg, object, I, me |
 | 1 | ju | 2 | scn *ju*, dlm *ju* | I, where |
@@ -23,156 +23,170 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | mi | 5 | es *mí*, lad *mi*, ca *mi*, wa *mi*, lij *mi* | 1sg, indirect, 1sg, reflexive, 1sg, subject, I |
-| 1 | me | 2 | ast *me*, nrf *mé* | 1sg, indirect, 1sg, stressed, 1sg, subject, I |
-| 1 | mə | 2 | fr *me*, gallo *me* | 1sg, indirect, me |
+| 1 | mi | 6 | es *mí*, lad *mi*, ca *mi*, wa *mi*, lij *mi*, it *mi* | 1sg, indirect, 1sg, reflexive, 1sg, subject, I |
+| 1 | me | 4 | es *me*, ast *me*, lad *me*, nrf *mé* | 1sg, indirect, 1sg, reflexive, 1sg, stressed, 1sg, subject |
+| 1 | mə | 2 | fr *me*, gallo *me* | 1sg, indirect, 1sg, reflexive, me, myself |
 | 1 | jew | 1 | oc *ieu* | 1sg, subject, I, me |
 | 1 | jow | 1 | rup *iou* | 1sg, subject, I, me |
 | 1 | majn | 1 | dlm *main* | me |
 | 1 | min | 1 | ast *min* | 1sg, indirect, me |
 | 1 | mwa | 1 | fr *moi* | 1sg, stressed, me |
 
-**1sg, indirect** (lects with a form: 10)
+**1sg, indirect** (lects with a form: 14)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | me | 3 | an *me*, ast *me*, ist *me* | 1sg, object, 1sg, stressed, 1sg, subject, I |
-| 1 | mə | 3 | ca *me*, fr *me*, gallo *me* | 1sg, object, me |
-| 1 | mi | 2 | co *mi*, fur *mi* | 1sg, object, 1sg, reflexive, 1sg, subject, I |
+| 1 | me | 5 | es *me*, an *me*, ast *me*, lad *me*, ist *me* | 1sg, object, 1sg, reflexive, 1sg, stressed, 1sg, subject |
+| 1 | mi | 3 | it *mi*, co *mi*, fur *mi* | 1sg, object, 1sg, reflexive, 1sg, subject, I |
+| 1 | mə | 3 | ca *me*, fr *me*, gallo *me* | 1sg, object, 1sg, reflexive, me, myself |
 | 1 | min | 1 | ast *min* | 1sg, object, me |
+| 1 | mje | 1 | ro *mie* | me, thousand |
 | 1 | mjɛ | 1 | sc *mie* | me |
 | 1 | məj | 1 | gallo *mei* | 1sg, stressed, me |
 | 1 | mɨ | 1 | pt *me* | 1sg, object, 1sg, reflexive, me, myself |
-| 1 | əm | 1 | ca *em* | me, with |
 
-**1sg, stressed** (lects with a form: 8)
+**1sg, stressed** (lects with a form: 7)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | me | 2 | eml *mé*, it *me* | 1sg, indirect, 1sg, object, 1sg, subject, I |
+| 1 | me | 2 | eml *mé*, it *me* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, subject |
 | 1 | mɛ | 2 | eml *mè*, co *mè* | I, although, but, me |
-| 1 | ew | 1 | pt *eu* | 1sg, subject, I, me |
 | 1 | mwa | 1 | fr *moi* | 1sg, object, me |
 | 1 | məj | 1 | gallo *mei* | 1sg, indirect, me |
-| 1 | nos | 1 | es *nos* | 1pl, indirect, 1pl, subject, I, us |
 | 2 | deʒu | 1 | gsc *jo* | 1sg, subject, I, me |
+| 2 | mine | 1 | ro *mine* | me |
 | 2 | mwamɛm | 1 | fr *moi-même* | myself |
 
-**1sg, reflexive** (lects with a form: 5)
+**1sg, reflexive** (lects with a form: 7)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | mi | 1 | fur *mi* | 1sg, indirect, 1sg, object, 1sg, subject, I |
+| 1 | me | 2 | es *me*, lad *me* | 1sg, indirect, 1sg, object, 1sg, stressed, 1sg, subject |
+| 1 | mi | 2 | fur *mi*, rup *mi* | 1sg, indirect, 1sg, object, 1sg, subject, I |
+| 1 | mə | 1 | ro *mă* | 1sg, indirect, 1sg, object, me, myself |
 | 1 | mɨ | 1 | pt *me* | 1sg, indirect, 1sg, object, me, myself |
-| 1 | sɨ | 1 | pt *se* | 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive, 3sg f, reflexive |
 | 2 | ɨnsumʲ | 1 | ro *însumi* | myself |
 | 2 | ɨnsəmʲ | 1 | ro *însămi* | myself |
 | 3 | memɛsem | 1 | nrf *mé-mesme* | myself |
-| 3 | mjɔdine | 1 | it *miodine* | 1sg, object, 1sg, subject, I, me |
 
 **2sg, subject** (lects with a form: 26)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | tu | 14 | es *tú*, pt *tu*, gl *tu*, an *tú*, ast *tu*, lad *tu*, lad *tú*, mwl *tu* | 2, subject, all, everything, in |
-| 1 | ti | 5 | gl *ti*, pcd *ti*, lij *ti*, ist *ti*, rm *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
-| 1 | te | 4 | ast *te*, eml *té*, it *te*, dlm *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | tu | 13 | es *tú*, gl *tu*, an *tú*, ast *tu*, lad *tu*, lad *tú*, mwl *tu*, ca *tu* | 2, subject, all, everything, in |
+| 1 | ti | 6 | gl *ti*, pcd *ti*, lij *ti*, it *ti*, ist *ti*, rm *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, indirect |
+| 1 | te | 4 | ast *te*, eml *té*, it *te*, dlm *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
 | 1 | ty | 3 | oc *tu*, fr *tu*, gallo *tu* | thou, you |
-| 1 | vos | 2 | es *vos*, ast *vós* | 2, subject, 2pl, indirect, 2pl, subject, 2sg, object |
 | 1 | et | 1 | eml *et* | you |
 | 1 | it | 1 | pms *it* | you |
-| 1 | lɛj | 1 | it *lei* | 3pl, subject, 3sg f, object, 3sg f, subject, 3sg m, subject |
+| 1 | lɛj | 1 | it *lei* | 3sg f, object, 3sg f, subject, 3sg n, subject, her |
+| 1 | se | 1 | pt *cê* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 
-**2sg, object** (lects with a form: 10)
+**2sg, object** (lects with a form: 8)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | vos | 2 | ast *vós*, lad *vos* | 2, subject, 2pl, indirect, 2pl, subject, 2sg, subject |
-| 1 | la | 1 | it *la* | 3pl, object, 3sg f, object, 3sg f, subject, 3sg n, object |
-| 1 | te | 1 | oc *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, reflexive |
-| 1 | ti | 1 | pms *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, reflexive |
+| 1 | la | 1 | it *la* | 2, object, 3sg f, object, 3sg f, subject, 3sg n, object |
+| 1 | te | 1 | oc *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
+| 1 | ti | 1 | pms *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, indirect |
 | 1 | toj | 1 | dlm *toi* | 2sg, subject, thee, you |
 | 1 | tə | 1 | gallo *te* | 2, indirect, 2, subject, 2sg, indirect, 2sg, reflexive |
 | 1 | tɨ | 1 | pt *te* | 2sg, subject, thee, you |
-| 1 | vɔs | 1 | gl *vós* | 2pl, subject, 2sg, subject, thee, thou |
+| 1 | vos | 1 | lad *vos* | 2, subject, 2pl, indirect, 2pl, subject, 2sg, subject |
+| 2 | tɔje | 1 | fr *toé* | 2, subject, thee, you |
 
-**2sg, indirect** (lects with a form: 9)
+**2sg, indirect** (lects with a form: 10)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | te | 3 | an *te*, ast *te*, oc *te* | 2, stressed, 2, subject, 2sg, object, 2sg, reflexive |
+| 1 | te | 3 | an *te*, ast *te*, oc *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
 | 1 | tə | 2 | ca *te*, gallo *te* | 2, indirect, 2, subject, 2sg, object, 2sg, reflexive |
-| 1 | ti | 1 | co *ti* | 2, indirect, 2, subject, 2sg, object, 2sg, reflexive |
+| 1 | ti | 1 | co *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, object |
 | 1 | to | 1 | fur *to* | thee, your, yours |
 | 1 | təj | 1 | gallo *tei* | 2sg, stressed, thee, you |
 | 1 | vi | 1 | it *vi* | 2, indirect, 2pl, indirect, 2pl, subject, 3sg n, subject |
 | 1 | ət | 1 | ca *et* | thee, you |
 | 2 | tiβi | 1 | sc *tibi* | you |
 
-**2sg, stressed** (lects with a form: 7)
+**2sg, stressed** (lects with a form: 6)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | tɛ | 2 | eml *tè*, co *tè* | 2, stressed, thee, you, your |
 | 1 | ta | 1 | gallo *ta* | at, thee, to, toward |
-| 1 | te | 1 | it *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, object |
-| 1 | ti | 1 | pcd *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | te | 1 | it *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
+| 1 | ti | 1 | pcd *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, indirect |
 | 1 | twa | 1 | fr *toi* | 2sg, reflexive, three, you, yours |
 | 1 | təj | 1 | gallo *tei* | 2sg, indirect, thee, you |
-| 1 | vɔʃ | 1 | pt *vós* | 2pl, stressed, thou, you |
 | 1 | wa | 1 | fr *oit* | 2sg, reflexive, indefinite, f sg, you, yourself |
+| 2 | tizot | 1 | pcd *tizaute* | thee, you |
 
 **2sg, reflexive** (lects with a form: 6)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | si | 2 | es *sí*, pt *si* | 1pl, subject, 2, subject, 3 reflexive, reflexive, 3pl, reflexive |
+| 1 | te | 2 | es *te*, ro *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
 | 1 | tə | 2 | ca *te*, fr *te* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
 | 1 | se | 1 | es *se* | 1pl, subject, 2, subject, 2sg, subject, 3 reflexive, reflexive |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive, 3sg f, reflexive |
-| 1 | te | 1 | es *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, object |
-| 1 | ti | 1 | fur *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | sɨ | 1 | pt *se* | 3 reflexive, reflexive, 3pl f, reflexive, 3sg f, reflexive, 3sg m, reflexive |
+| 1 | ti | 1 | fur *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, indirect |
 | 1 | twa | 1 | fr *toi* | 2sg, stressed, three, you, yours |
 | 1 | wa | 1 | fr *oit* | 2sg, stressed, indefinite, f sg, you, yourself |
 
-**2, subject** (lects with a form: 12)
+**2, subject** (lects with a form: 11)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | se | 2 | lld *se*, ro *se* | 1pl, subject, 2sg, reflexive, 2sg, subject, 3 reflexive, reflexive |
-| 1 | voj | 2 | ro *voi*, rup *voi* | 2pl, subject, 2sg, subject, you |
+| 1 | voj | 2 | ro *voi*, rup *voi* | 2, stressed, 2pl, subject, 2sg, subject, you |
 | 1 | vos | 2 | ast *vós*, ca *vós* | 2pl, indirect, 2pl, subject, 2sg, object, 2sg, subject |
 | 1 | je | 1 | fur *jê* | 1sg, subject, 3sg f, subject, I, and |
 | 1 | lwi | 1 | fur *lui* | 3sg m, indirect, 3sg m, stressed, 3sg m, subject, 3sg n, subject |
 | 1 | si | 1 | it *si* | 1pl, subject, 2sg, reflexive, 3 reflexive, reflexive, 3pl, reflexive |
-| 1 | te | 1 | it *te* | 2, stressed, 2sg, indirect, 2sg, object, 2sg, reflexive |
-| 1 | ti | 1 | pms *ti* | 2, indirect, 2sg, indirect, 2sg, object, 2sg, reflexive |
+| 1 | te | 1 | it *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
+| 1 | ti | 1 | pms *ti* | 2, indirect, 2, reflexive, 2sg, indirect, 2sg, object |
 
 **2, object** (lects with a form: 1)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | le | 1 | es *le* | 2, indirect, 3pl f, object, 3pl, indirect, 3sg f, indirect |
+| 1 | la | 1 | es *la* | 2sg, object, 3sg f, object, 3sg f, subject, 3sg n, object |
+| 1 | le | 1 | es *le* | 2, indirect, 3pl f, indirect, 3pl f, object, 3pl f, stressed |
+| 1 | lo | 1 | es *lo* | 3sg m, object, 3sg m, stressed, 3sg n, object, 3sg n, subject |
+| 1 | te | 1 | es *te* | 2, indirect, 2, reflexive, 2, stressed, 2, subject |
 
-**2, indirect** (lects with a form: 6)
+**2, indirect** (lects with a form: 9)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | le | 2 | es *le*, it *le* | 2, object, 3pl f, object, 3pl, indirect, 3sg f, indirect |
+| 1 | le | 2 | es *le*, it *le* | 2, object, 3pl f, indirect, 3pl f, object, 3pl f, stressed |
+| 1 | ti | 2 | it *ti*, fur *ti* | 2, reflexive, 2, subject, 2sg, indirect, 2sg, object |
 | 1 | tə | 2 | ca *te*, fr *te* | 2, subject, 2sg, indirect, 2sg, object, 2sg, reflexive |
+| 1 | vi | 2 | ro *vi*, rup *vi* | 2pl, indirect, 2pl, subject, 2sg, indirect, 3sg n, subject |
+| 1 | lje | 1 | gl *lle* | 3sg f, indirect, 3sg m, indirect, 3sg n, indirect, her |
+| 1 | ljɨ | 1 | pt *lhe* | 3sg f, indirect, 3sg m, indirect, 3sg n, indirect, her |
 | 1 | os | 1 | es *os* | definite, m pl, the, you |
-| 1 | ti | 1 | fur *ti* | 2, subject, 2sg, indirect, 2sg, object, 2sg, reflexive |
-| 1 | vã | 1 | rup *vã* | 2pl, subject, you |
-| 1 | vi | 1 | rup *vi* | 2pl, indirect, 2pl, subject, 2sg, indirect, 3sg n, subject |
+| 1 | te | 1 | es *te* | 2, object, 2, reflexive, 2, stressed, 2, subject |
 
-**2, stressed** (lects with a form: 3)
+**2, stressed** (lects with a form: 4)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | te | 2 | eml *té*, it *te* | 2, subject, 2sg, indirect, 2sg, object, 2sg, reflexive |
+| 1 | te | 2 | eml *té*, it *te* | 2, indirect, 2, object, 2, reflexive, 2, subject |
 | 1 | tɛ | 1 | co *tè* | 2sg, stressed, thee, you, your |
 | 1 | vo | 1 | eml *vó* | 2pl, subject, you, your |
+| 1 | voj | 1 | ro *voi* | 2, subject, 2pl, subject, 2sg, subject, you |
+| 2 | tine | 1 | ro *tine* | you |
 | 2 | vwɛter | 1 | eml *vuèter* | 2pl, subject, you |
+
+**2, reflexive** (lects with a form: 2)
+
+| σ | sounds | lects | attested as | also |
+|---:|---|---:|---|---|
+| 1 | te | 1 | ro *te* | 2, indirect, 2, object, 2, stressed, 2, subject |
+| 1 | ti | 1 | rup *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | və | 1 | ro *vă* | 2pl, reflexive, you |
 
 **3sg m, subject** (lects with a form: 28)
 
@@ -182,9 +196,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | il | 2 | fr *il*, gallo *il* | 3pl f, subject, 3pl m, subject, 3sg f, subject, 3sg n, subject |
 | 1 | ki | 2 | eml *chi*, it *chi* | 3sg f, subject, he, if, she |
 | 1 | lwi | 2 | it *lui*, fur *lui* | 2, subject, 3sg m, indirect, 3sg m, stressed, 3sg n, subject |
-| 1 | al | 1 | eml *al* | 3pl f, subject, 3pl, subject, 3sg f, subject, 3sg m, object |
+| 1 | al | 1 | eml *al* | 3pl f, subject, 3sg f, subject, 3sg m, object, definite, m sg |
 | 1 | elj | 1 | ca *ell* | 3pl m, object, 3pl m, subject, he, them |
-| 1 | i | 1 | gallo *i* | 3pl f, subject, 3pl m, subject, 3sg m, indirect, 3sg m, stressed |
+| 1 | i | 1 | gallo *i* | 3pl f, subject, 3pl m, subject, 3sg f, indirect, 3sg m, indirect |
 | 1 | jal | 1 | dlm *jal* | he |
 
 **3sg m, object** (lects with a form: 20)
@@ -192,35 +206,35 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | lu | 4 | ca *lo*, scn *lu*, ist *lù*, fur *lu* | 3pl, subject, 3sg m, subject, 3sg n, object, definite, m sg |
-| 1 | li | 3 | fr *li*, wa *li*, nrf *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | li | 3 | fr *li*, wa *li*, nrf *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | lo | 3 | es *lo*, an *lo*, it *lo* | 2, object, 3sg m, stressed, 3sg n, object, 3sg n, subject |
 | 1 | el | 2 | an *el*, rup *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, stressed |
-| 1 | le | 2 | es *le*, lij *lê* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
-| 1 | lo | 2 | an *lo*, it *lo* | 3sg m, stressed, 3sg n, object, 3sg n, subject, definite, m sg |
+| 1 | le | 2 | es *le*, lij *lê* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | lə | 2 | fr *le*, gallo *le* | 3pl m, object, 3sg f, object, 3sg n, subject, a |
 | 1 | u | 2 | scn *u*, co *u* | 3sg f, object, 3sg n, object, definite, m sg, her |
 | 1 | ak | 1 | gsc *ac* | him, the |
 
-**3sg m, indirect** (lects with a form: 15)
+**3sg m, indirect** (lects with a form: 19)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | li | 5 | an *li*, ca *li*, gallo *li*, it *li*, co *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | le | 3 | es *le*, an *le*, lad *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | li | 4 | an *li*, ca *li*, gallo *li*, co *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | le | 3 | es *le*, an *le*, lad *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3pl f, indirect, 3sg f, indirect, 3sg n, indirect, her |
+| 1 | i | 2 | ast *-y*, gallo *yi* | 3pl f, subject, 3pl m, subject, 3sg f, indirect, 3sg m, stressed |
 | 1 | lji | 2 | wa *lyi*, it *gli* | 3pl f, indirect, 3sg f, indirect, 3sg n, indirect, 3sg n, subject |
+| 1 | lwi | 2 | ro *lui*, rup *lui* | 2, subject, 3sg m, stressed, 3sg m, subject, 3sg n, subject |
 | 1 | ãlj | 1 | rup *ãlj* | 3pl, object, 3sg f, indirect, her, him |
 | 1 | d͡ʒe | 1 | eml *ge* | 3pl, indirect, 3sg f, indirect, her, him |
-| 1 | i | 1 | gallo *yi* | 3pl f, subject, 3pl m, subject, 3sg m, stressed, 3sg m, subject |
-| 1 | lwi | 1 | rup *lui* | 2, subject, 3sg m, stressed, 3sg m, subject, 3sg n, subject |
 
-**3sg m, stressed** (lects with a form: 9)
+**3sg m, stressed** (lects with a form: 10)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | li | 2 | pcd *li*, gallo *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | el | 1 | es *él* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
-| 1 | i | 1 | gallo *i* | 3pl f, subject, 3pl m, subject, 3sg m, indirect, 3sg m, subject |
-| 1 | lo | 1 | eml *ló* | 3sg m, object, 3sg n, object, 3sg n, subject, definite, m sg |
+| 1 | el | 2 | es *él*, ro *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
+| 1 | li | 2 | pcd *li*, gallo *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | i | 1 | gallo *i* | 3pl f, subject, 3pl m, subject, 3sg f, indirect, 3sg m, indirect |
+| 1 | lo | 1 | eml *ló* | 2, object, 3sg m, object, 3sg n, object, 3sg n, subject |
 | 1 | lwi | 1 | it *lui* | 2, subject, 3sg m, indirect, 3sg m, subject, 3sg n, subject |
 | 1 | ly | 1 | gallo *lu* | he, him |
 | 1 | lɥi | 1 | fr *lui* | 3sg f, indirect, 3sg m, indirect, 3sg n, stressed, he |
@@ -232,58 +246,61 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | si | 7 | es *sí*, pt *si*, gl *si*, lad *si*, ca *si*, it *si*, fur *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 | 1 | se | 5 | es *se*, gl *se*, lad *se*, lld *se*, lld *sé*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
-| 1 | sje | 1 | ro *sie* | 3pl, reflexive, 3sg f, reflexive, himself, six |
-| 1 | sjeʃʲ | 1 | ro *sieși* | 3pl, reflexive, 3sg f, reflexive, himself |
-| 1 | swa | 1 | fr *soi* | 1pl, reflexive, 3 reflexive, reflexive, 3sg f, reflexive, himself |
 | 1 | sə | 1 | fr *se* | 3 reflexive, indirect, 3 reflexive, reflexive, 3pl f, reflexive, 3pl f, subject |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive |
+| 1 | sɨ | 1 | pt *se* | 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive, 3sg f, reflexive |
+| 1 | ɨʃʲ | 1 | ro *își* | 3pl, reflexive, 3sg f, reflexive, himself |
 | 2 | sine | 1 | ro *sine* | 3pl, reflexive, 3sg f, reflexive, himself |
+| 2 | ɨnsuʃʲ | 1 | ro *însuși* | himself |
+| 3 | limɛsem | 1 | nrf *li-mesme* | himself |
 
-**3sg f, subject** (lects with a form: 24)
+**3sg f, subject** (lects with a form: 25)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | al | 3 | fr *alle*, pcd *al*, gallo *al* | 3pl f, subject, 3pl, subject, 3sg m, object, 3sg m, subject |
+| 1 | al | 3 | fr *alle*, pcd *al*, gallo *al* | 3pl f, subject, 3sg m, object, 3sg m, subject, definite, m sg |
 | 1 | ki | 2 | eml *chi*, it *chi* | 3sg m, subject, he, if, she |
 | 1 | el | 1 | vec *el* | 3pl f, object, 3pl f, subject, 3sg m, object, 3sg m, stressed |
 | 1 | il | 1 | gallo *yèll* | 3pl f, subject, 3pl m, subject, 3sg m, subject, 3sg n, subject |
-| 1 | ja | 1 | ro *ea* | 1sg, subject, I, already, as |
+| 1 | ja | 1 | ro *ea* | 1sg, subject, 3sg f, stressed, I, already |
 | 1 | je | 1 | fur *jê* | 1sg, subject, 2, subject, I, and |
-| 1 | la | 1 | eml *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg n, object |
-| 1 | li | 1 | rgn *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | la | 1 | eml *la* | 2, object, 2sg, object, 3sg f, object, 3sg n, object |
+| 1 | li | 1 | rgn *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
 
-**3sg f, object** (lects with a form: 18)
+**3sg f, object** (lects with a form: 19)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | la | 7 | an *la*, ast *la*, fr *la*, gallo *la*, eml *la*, it *la*, scn *la* | 2sg, object, 3pl, object, 3sg f, subject, 3sg n, object |
-| 1 | le | 3 | es *le*, lij *lê*, fur *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | la | 8 | es *la*, an *la*, ast *la*, fr *la*, gallo *la*, eml *la*, it *la*, scn *la* | 2, object, 2sg, object, 3sg f, subject, 3sg n, object |
+| 1 | le | 3 | es *le*, lij *lê*, fur *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | a | 2 | scn *a*, co *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 | lə | 2 | ca *la*, fr *le* | 3pl m, object, 3sg m, object, 3sg n, subject, a |
-| 1 | li | 1 | wa *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | lɛj | 1 | it *lei* | 2sg, subject, 3pl, subject, 3sg f, subject, 3sg m, subject |
-| 1 | sa | 1 | fr *ça* | 3pl, object, 3pl, subject, 3sg f, subject, 3sg m, object |
-| 1 | sew | 1 | ca *seu* | her, his, its, their |
+| 1 | ej | 1 | ro *ei* | 3pl m, stressed, 3pl m, subject, 3sg f, indirect, her |
+| 1 | li | 1 | wa *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | ljej | 1 | rup *ljei* | 3sg f, indirect, her |
+| 1 | lɛj | 1 | it *lei* | 2sg, subject, 3sg f, subject, 3sg n, subject, her |
 
-**3sg f, indirect** (lects with a form: 14)
+**3sg f, indirect** (lects with a form: 18)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | le | 3 | es *le*, lad *le*, it *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | le | 3 | es *le*, lad *le*, it *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3pl f, indirect, 3sg m, indirect, 3sg n, indirect, her |
-| 1 | li | 2 | ca *li*, co *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | lji | 2 | wa *lyi*, it *gli* | 3pl f, indirect, 3sg m, indirect, 3sg n, indirect, 3sg n, subject |
+| 1 | li | 2 | ca *li*, co *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, object |
 | 1 | a | 1 | pt *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, object |
 | 1 | ãlj | 1 | rup *ãlj* | 3pl, object, 3sg m, indirect, her, him |
 | 1 | d͡ʒe | 1 | eml *ge* | 3pl, indirect, 3sg m, indirect, her, him |
-| 1 | lɥi | 1 | fr *lui* | 3sg m, indirect, 3sg m, stressed, 3sg n, stressed, he |
+| 1 | ej | 1 | ro *ei* | 3pl m, stressed, 3pl m, subject, 3sg f, object, her |
+| 1 | i | 1 | ast *-y* | 3pl f, subject, 3pl m, subject, 3sg m, indirect, 3sg m, stressed |
 
-**3sg f, stressed** (lects with a form: 4)
+**3sg f, stressed** (lects with a form: 5)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | le | 1 | eml *lê* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | ja | 1 | ro *ea* | 1sg, subject, 3sg f, subject, I, already |
+| 1 | le | 1 | eml *lê* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
+| 1 | o | 1 | ro *o* | a, an, definite, m sg, her |
 | 1 | se | 1 | it *sé* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
+| 1 | ɛl | 1 | fr *elle* | 3pl f, stressed, 3pl f, subject, 3sg f, object, 3sg f, subject |
 | 2 | ela | 1 | co *ella* | 3sg f, subject, her, she |
 | 2 | ɛlmɛm | 1 | fr *elle-même* | 3pl f, stressed |
 
@@ -293,14 +310,14 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | si | 7 | es *sí*, pt *si*, gl *si*, lad *si*, ca *si*, it *si*, fur *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 | 1 | se | 5 | es *se*, gl *se*, lad *se*, lld *se*, lld *sé*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
-| 1 | sje | 1 | ro *sie* | 3pl, reflexive, 3sg m, reflexive, himself, six |
-| 1 | sjeʃʲ | 1 | ro *sieși* | 3pl, reflexive, 3sg m, reflexive, himself |
-| 1 | swa | 1 | fr *soi* | 1pl, reflexive, 3 reflexive, reflexive, 3sg m, reflexive, himself |
 | 1 | sə | 1 | fr *se* | 3 reflexive, indirect, 3 reflexive, reflexive, 3pl f, reflexive, 3pl f, subject |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive |
+| 1 | sɨ | 1 | pt *se* | 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive, 3sg m, reflexive |
+| 1 | ɨʃʲ | 1 | ro *își* | 3pl, reflexive, 3sg m, reflexive, himself |
 | 2 | sine | 1 | ro *sine* | 3pl, reflexive, 3sg m, reflexive, himself |
+| 2 | ɨnsəʃʲ | 1 | ro *însăși* |  |
+| 4 | jɛləmɛsem | 1 | nrf *ielle-mesme* |  |
 
-**3sg n, subject** (lects with a form: 18)
+**3sg n, subject** (lects with a form: 17)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
@@ -308,36 +325,36 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | si | 2 | wa *ci*, it *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 | 1 | a | 1 | eml *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 | il | 1 | fr *il* | 3pl f, subject, 3pl m, subject, 3sg f, subject, 3sg m, subject |
-| 1 | le | 1 | lij *lê* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | le | 1 | lij *lê* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | lji | 1 | wa *lyi* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
-| 1 | lo | 1 | ast *lo* | 3sg m, object, 3sg m, stressed, 3sg n, object, definite, m sg |
+| 1 | lo | 1 | ast *lo* | 2, object, 3sg m, object, 3sg m, stressed, 3sg n, object |
 | 1 | lwi | 1 | it *lui* | 2, subject, 3sg m, indirect, 3sg m, stressed, 3sg m, subject |
 
-**3sg n, object** (lects with a form: 7)
+**3sg n, object** (lects with a form: 8)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | la | 4 | es *la*, fr *la*, it *la*, scn *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
+| 1 | la | 4 | es *la*, fr *la*, it *la*, scn *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
 | 1 | u | 3 | ca *ho*, scn *u*, co *u* | 3sg f, object, 3sg m, object, definite, m sg, her |
 | 1 | a | 2 | scn *a*, co *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
-| 1 | li | 2 | fr *li*, wa *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | le | 1 | es *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
-| 1 | lo | 1 | it *lo* | 3sg m, object, 3sg m, stressed, 3sg n, subject, definite, m sg |
-| 1 | lu | 1 | scn *lu* | 3pl, subject, 3sg m, object, 3sg m, subject, definite, m sg |
+| 1 | li | 2 | fr *li*, wa *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | lo | 2 | es *lo*, it *lo* | 2, object, 3sg m, object, 3sg m, stressed, 3sg n, subject |
+| 1 | lu | 2 | ast *lu*, scn *lu* | 3pl, subject, 3sg m, object, 3sg m, subject, definite, m sg |
+| 1 | le | 1 | es *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | sa | 1 | fr *ça* | 3pl, object, 3pl, subject, 3sg f, object, 3sg f, subject |
 
-**3sg n, indirect** (lects with a form: 9)
+**3sg n, indirect** (lects with a form: 11)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, her |
-| 1 | le | 2 | es *le*, lad *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | le | 2 | es *le*, lad *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | a | 1 | pt *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
-| 1 | li | 1 | ca *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | i | 1 | ast *-y* | 3pl f, subject, 3pl m, subject, 3sg f, indirect, 3sg m, indirect |
+| 1 | li | 1 | ca *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | lje | 1 | gl *lle* | 2, indirect, 3sg f, indirect, 3sg m, indirect, her |
 | 1 | lji | 1 | it *gli* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, subject |
-| 1 | sjej | 1 | fur *siei* | 3sg f, indirect, 3sg f, object, her, his |
-| 1 | so | 1 | fur *so*, fur *sô* | 3sg f, indirect, 3sg f, object, her, his |
-| 1 | sos | 1 | fur *sôs* | 3sg f, indirect, 3sg f, object, her, his |
+| 1 | ljɨ | 1 | pt *lhe* | 2, indirect, 3sg f, indirect, 3sg m, indirect, her |
 
 **3sg n, stressed** (lects with a form: 3)
 
@@ -345,6 +362,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | el | 1 | es *él* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
 | 1 | lɥi | 1 | fr *lui* | 3sg f, indirect, 3sg m, indirect, 3sg m, stressed, he |
+| 1 | ɛl | 1 | fr *elle* | 3pl f, stressed, 3pl f, subject, 3sg f, object, 3sg f, stressed |
 | 2 | eljo | 1 | es *ello* | it |
 | 2 | elɨ | 1 | pt *ele* | 3sg m, object, 3sg m, stressed, 3sg m, subject, 3sg n, subject |
 
@@ -356,10 +374,10 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | nwi | 4 | pms *noi*, lij *noî*, scn *nui*, ist *nui* | 1pl, object, us, we |
 | 1 | no | 2 | eml *nó*, fur *nô* | 1pl, stressed, no, not, our |
 | 1 | nu | 2 | fr *nous*, dlm *nu* | 1pl, indirect, a, an, indefinite, m sg |
-| 1 | nus | 2 | ca *nos*, rm *nus* | 1pl, indirect, 1pl, reflexive, us, we |
 | 1 | nɔs | 2 | gl *nós*, sc *nos* | 1pl, object, us, we |
-| 1 | nɔʃ | 2 | pt *nós*, mwl *nós* | 1pl, object, 1pl, stressed, us, we |
+| 1 | nɔʃ | 2 | pt *nós*, mwl *nós* | 1pl, stressed, us, we |
 | 1 | a | 1 | eml *a* | 1sg, subject, 2pl, subject, 3sg f, indirect, 3sg f, object |
+| 1 | nos | 1 | ast *nós* | 1pl, indirect, 1pl, object, 1pl, reflexive, us |
 
 **1pl, object** (lects with a form: 9)
 
@@ -369,124 +387,135 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | nwi | 2 | pms *noi*, lij *noî* | 1pl, subject, us, we |
 | 1 | nɔs | 2 | gl *nós*, sc *nos* | 1pl, subject, us, we |
 | 1 | ni | 1 | scn *ni* | 1pl, indirect, 1pl, reflexive, nor, or |
-| 1 | nɔʃ | 1 | pt *nós* | 1pl, stressed, 1pl, subject, us, we |
-| 1 | t͡ʃi | 1 | it *ci* | 1pl, indirect, 1pl, reflexive, 3sg n, subject, but |
+| 1 | nos | 1 | es *nos* | 1pl, indirect, 1pl, reflexive, 1pl, subject, us |
+| 1 | t͡ʃi | 1 | it *ci* | 1pl, indirect, 1pl, reflexive, 3pl, indirect, 3sg f, indirect |
 | 2 | njatri | 1 | lij *niâtri* | 1pl, subject, us, we |
 | 3 | nojaltri | 1 | it *noialtri* | 1pl, subject, us, we |
 
-**1pl, indirect** (lects with a form: 10)
+**1pl, indirect** (lects with a form: 12)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | nos | 2 | an *nos*, ast *nos* | 1pl, subject, 1sg, stressed, I, us |
+| 1 | nos | 3 | es *nos*, an *nos*, ast *nos* | 1pl, object, 1pl, reflexive, 1pl, subject, us |
+| 1 | ni | 2 | scn *ni*, ro *ni* | 1pl, object, 1pl, reflexive, nor, or |
 | 1 | nus | 2 | oc *nos*, ca *nos* | 1pl, reflexive, 1pl, subject, us, we |
-| 1 | t͡ʃi | 2 | it *ci*, co *ci* | 1pl, object, 1pl, reflexive, 3sg n, subject, but |
+| 1 | t͡ʃi | 2 | it *ci*, co *ci* | 1pl, object, 1pl, reflexive, 3pl, indirect, 3sg f, indirect |
 | 1 | mos | 1 | ca *mos* | us |
-| 1 | ni | 1 | scn *ni* | 1pl, object, 1pl, reflexive, nor, or |
 | 1 | nu | 1 | fr *nous* | 1pl, subject, a, an, indefinite, m sg |
 | 1 | əns | 1 | ca *ens* | before, but, us |
 | 3 | nojawã | 1 | rup *noauã* | nine, us |
 
-**1pl, stressed** (lects with a form: 5)
+**1pl, stressed** (lects with a form: 6)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | noj | 2 | co *noi*, ro *noi* | 1pl, object, 1pl, subject, us, we |
 | 1 | no | 1 | eml *nó* | 1pl, subject, no, not, our |
-| 1 | noj | 1 | co *noi* | 1pl, object, 1pl, subject, us, we |
-| 1 | nɔʃ | 1 | pt *nós* | 1pl, object, 1pl, subject, us, we |
+| 1 | nɔʃ | 1 | pt *nós* | 1pl, subject, us, we |
 | 2 | numɛm | 1 | fr *nous-mêmes* |  |
 | 2 | nwɛter | 1 | eml *nuèter* | 1pl, subject, us, we |
 | 3 | nosotɾos | 1 | es *nosotros* | 1pl, subject, we |
-| 3 | nuzowtɾuʃ | 1 | pt *nosoutros* | 1pl, subject, we |
 
-**1pl, reflexive** (lects with a form: 5)
+**1pl, reflexive** (lects with a form: 7)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | ni | 1 | scn *ni* | 1pl, indirect, 1pl, object, nor, or |
+| 1 | ni | 2 | scn *ni*, rup *ni* | 1pl, indirect, 1pl, object, nor, or |
+| 1 | nã | 1 | rup *nã* | us |
+| 1 | ne | 1 | ro *ne* | from, nor, not, us |
+| 1 | nos | 1 | es *nos* | 1pl, indirect, 1pl, object, 1pl, subject, us |
 | 1 | nus | 1 | oc *nos* | 1pl, indirect, 1pl, subject, us, we |
-| 1 | swa | 1 | fr *soi* | 3 reflexive, reflexive, 3sg f, reflexive, 3sg m, reflexive, himself |
-| 1 | t͡ʃi | 1 | it *ci* | 1pl, indirect, 1pl, object, 3sg n, subject, but |
-| 3 | ɨnʃine | 1 | ro *înșine* |  |
+| 1 | swa | 1 | fr *soi* | 3 reflexive, reflexive, his, its, oneself |
+| 1 | t͡ʃi | 1 | it *ci* | 1pl, indirect, 1pl, object, 3pl, indirect, 3sg f, indirect |
+| 2 | nowə | 1 | ro *nouă* | nine, us |
 
 **2pl, subject** (lects with a form: 25)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | voj | 4 | it *voi*, co *voi*, dlm *voi*, rup *voi* | 2, subject, 2sg, subject, you |
+| 1 | voj | 4 | it *voi*, co *voi*, dlm *voi*, rup *voi* | 2, stressed, 2, subject, 2sg, subject, you |
 | 1 | vu | 3 | fr *vous*, gallo *vou*, dlm *vu* | 2pl, indirect, you |
 | 1 | vo | 2 | eml *vó*, fur *vô* | 2, stressed, you, your |
 | 1 | vwi | 2 | pms *voi*, lij *voî* | you |
-| 1 | vɔs | 2 | gl *vós*, sc *vos* | 2sg, object, 2sg, subject, thee, thou |
+| 1 | vɔs | 2 | gl *vós*, sc *vos* | you |
 | 1 | a | 1 | eml *a* | 1pl, subject, 1sg, subject, 3sg f, indirect, 3sg f, object |
 | 1 | bɔjs | 1 | sc *bois* | you |
 | 1 | bɔs | 1 | sc *bos* | you |
 
-**2pl, indirect** (lects with a form: 8)
+**2pl, object** (lects with a form: 1)
+
+| σ | sounds | lects | attested as | also |
+|---:|---|---:|---|---|
+| 1 | las | 1 | es *las* | 3pl f, object, definite, f pl, definite, pl, indefinite, f pl |
+| 1 | les | 1 | es *les* | 2pl, indirect, 3pl f, indirect, 3pl, indirect, 3pl, object |
+
+**2pl, indirect** (lects with a form: 9)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | vi | 2 | it *vi*, co *vi* | 2, indirect, 2pl, subject, 2sg, indirect, 3sg n, subject |
 | 1 | vus | 2 | oc *vos*, ca *vos* | 2pl, subject, you |
+| 1 | les | 1 | es *les* | 2pl, object, 3pl f, indirect, 3pl, indirect, 3pl, object |
 | 1 | tos | 1 | an *tos* | you, your, yours |
 | 1 | us | 1 | ca *us* | you |
 | 1 | vos | 1 | an *vos* | 2, subject, 2pl, subject, 2sg, object, 2sg, subject |
 | 1 | vu | 1 | fr *vous* | 2pl, subject, you |
 | 3 | vojawã | 1 | rup *voauã* | you |
 
-**2pl, stressed** (lects with a form: 2)
+**2pl, stressed**: no form on disk.
+
+**2pl, reflexive** (lects with a form: 1)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | vɔʃ | 1 | pt *vós* | 2sg, stressed, thou, you |
+| 1 | və | 1 | ro *vă* | 2, reflexive, you |
+| 2 | vowə | 1 | ro *vouă* | you |
 
-**3pl, subject** (lects with a form: 12)
+**3pl, subject** (lects with a form: 10)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | se | 2 | lld *se*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
-| 1 | al | 1 | fr *al* | 3pl f, subject, 3sg f, subject, 3sg m, object, 3sg m, subject |
 | 1 | eljkss | 1 | es *ellxs* | 3pl, object, them, they |
-| 1 | jɛl | 1 | fr *iel*, fr *iels* | they |
 | 1 | lor | 1 | fur *lôr* | 3pl, indirect, 3pl, object, 3pl, stressed, their |
 | 1 | lu | 1 | lij *lô* | 3sg m, object, 3sg m, subject, 3sg n, object, definite, m sg |
-| 1 | lɛj | 1 | it *ləi* | 2sg, subject, 3sg f, object, 3sg f, subject, 3sg m, subject |
 | 1 | lʌwr | 1 | eml *låur* | 3pl, stressed, them, they |
+| 1 | sa | 1 | fr *ça* | 3pl, object, 3sg f, object, 3sg f, subject, 3sg m, object |
+| 1 | si | 1 | it *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
+| 2 | idi | 1 | scn *iddi* | 3pl, object, them, they |
 
-**3pl, object** (lects with a form: 11)
+**3pl, object** (lects with a form: 12)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | los | 2 | es *los*, lad *los* | 3pl m, object, definite, m pl, the, them |
 | 1 | ãlj | 1 | rup *ãlj* | 3sg f, indirect, 3sg m, indirect, her, him |
 | 1 | eljkss | 1 | es *ellxs* | 3pl, subject, them, they |
-| 1 | la | 1 | fr *læ* | 2sg, object, 3sg f, object, 3sg f, subject, 3sg n, object |
+| 1 | les | 1 | es *les* | 2pl, indirect, 2pl, object, 3pl f, indirect, 3pl, indirect |
 | 1 | lor | 1 | fur *lôr* | 3pl, indirect, 3pl, stressed, 3pl, subject, their |
 | 1 | lɛ | 1 | gallo *lez* | definite, f pl, definite, m pl, the, them |
 | 1 | sa | 1 | fr *ça* | 3pl, subject, 3sg f, object, 3sg f, subject, 3sg m, object |
 | 1 | uʃ | 1 | pt *os* | definite, m pl, them |
-| 2 | elje | 1 | es *elle* | 3pl, subject, them, they |
 
-**3pl, indirect** (lects with a form: 9)
+**3pl, indirect** (lects with a form: 11)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | les | 2 | es *les*, an *les* | 2pl, indirect, 2pl, object, 3pl f, indirect, 3pl, object |
+| 1 | li | 2 | co *li*, ro *li* | 3pl f, object, 3pl m, object, 3sg f, indirect, 3sg f, object |
+| 1 | lor | 2 | ro *lor*, rup *lor* | 3pl, object, 3pl, stressed, 3pl, subject, their |
 | 1 | d͡ʒe | 1 | eml *ge* | 3sg f, indirect, 3sg m, indirect, her, him |
 | 1 | jos | 1 | ast *-yos* | them |
-| 1 | le | 1 | es *le* | 2, indirect, 2, object, 3pl f, object, 3sg f, indirect |
-| 1 | les | 1 | an *les* | definite, f pl, definite, pl, the, them |
-| 1 | li | 1 | co *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3sg f, indirect |
 | 1 | lis | 1 | an *lis* | definite, f pl, definite, pl, the, them |
-| 1 | lor | 1 | rup *lor* | 3pl, object, 3pl, stressed, 3pl, subject, their |
 | 1 | sə | 1 | ca *se* | 3 reflexive, indirect, 3 reflexive, reflexive, 3pl f, reflexive, 3pl f, subject |
+| 1 | t͡ʃi | 1 | scn *ci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3sg f, indirect |
 
-**3pl, stressed** (lects with a form: 2)
+**3pl, stressed** (lects with a form: 1)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | lor | 1 | eml *lôr* | 3pl, indirect, 3pl, object, 3pl, subject, their |
 | 1 | lʌwr | 1 | eml *låur* | 3pl, subject, them, they |
-| 2 | ɛlø | 1 | fr *elleux* | them |
-| 2 | ɛlɥi | 1 | fr *ellui* | them |
 
 **3pl, reflexive** (lects with a form: 8)
 
@@ -494,8 +523,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | si | 6 | es *sí*, pt *si*, gl *si*, lad *si*, ca *si*, it *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 | 1 | se | 3 | gl *se*, lld *se*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
-| 1 | sje | 1 | ro *sie* | 3sg f, reflexive, 3sg m, reflexive, himself, six |
-| 1 | sjeʃʲ | 1 | ro *sieși* | 3sg f, reflexive, 3sg m, reflexive, himself |
+| 1 | ɨʃʲ | 1 | ro *își* | 3sg f, reflexive, 3sg m, reflexive, himself |
 | 2 | sine | 1 | ro *sine* | 3sg f, reflexive, 3sg m, reflexive, himself |
 
 **3pl m, subject** (lects with a form: 18)
@@ -504,10 +532,10 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | els | 2 | an *els*, rm *els* | they |
 | 1 | il | 2 | fr *ils*, gallo *il* | 3pl f, subject, 3sg f, subject, 3sg m, subject, 3sg n, subject |
-| 1 | ej | 1 | ro *ei* | then, there, they, yes |
+| 1 | ej | 1 | ro *ei* | 3pl m, stressed, 3sg f, indirect, 3sg f, object, her |
 | 1 | elj | 1 | rup *elj* | 3pl m, object, 3sg m, subject, he, them |
 | 1 | eljs | 1 | ca *ells* | they |
-| 1 | i | 1 | gallo *i* | 3pl f, subject, 3sg m, indirect, 3sg m, stressed, 3sg m, subject |
+| 1 | i | 1 | gallo *i* | 3pl f, subject, 3sg f, indirect, 3sg m, indirect, 3sg m, stressed |
 | 1 | nãʃ | 1 | rup *nãsh* | they |
 | 1 | neʃ | 1 | rup *nesh* | they |
 
@@ -517,25 +545,29 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | elj | 1 | rup *elj* | 3pl m, subject, 3sg m, subject, he, them |
 | 1 | es | 1 | an *es* | them |
-| 1 | li | 1 | it *li* | 3pl f, object, 3pl m, indirect, 3pl, indirect, 3sg f, indirect |
-| 1 | los | 1 | an *los* | definite, m pl, the, them |
+| 1 | li | 1 | it *li* | 3pl f, object, 3pl, indirect, 3sg f, indirect, 3sg f, object |
+| 1 | los | 1 | an *los* | 3pl, object, definite, m pl, the, them |
 | 1 | lə | 1 | fr *le* | 3sg f, object, 3sg m, object, 3sg n, subject, a |
 | 2 | eli | 1 | vec *eli* | 3pl m, stressed, 3pl m, subject, them, they |
 | 2 | elɨʃ | 1 | pt *eles* | 3pl m, stressed, 3pl m, subject, them, they |
+| 2 | ɛsi | 1 | it *essi* | 3pl m, subject, them, they |
 
 **3pl m, indirect** (lects with a form: 3)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | lã | 1 | rup *lã* | 3pl f, indirect, them |
-| 1 | li | 1 | it *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | le | 1 | ro *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | lus | 1 | ca *los* | 3pl f, indirect, definite, m pl, the, them |
 | 1 | əls | 1 | ca *els* | 3pl f, indirect, definite, m pl, the, them |
 
-**3pl m, stressed** (lects with a form: 4)
+**3pl m, stressed** (lects with a form: 5)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | ej | 1 | ro *ei* | 3pl m, subject, 3sg f, indirect, 3sg f, object, her |
+| 1 | ø | 1 | fr *eux* | them |
+| 1 | ɨj | 1 | ro *îi* | 3sg f, indirect, 3sg m, indirect, her, him |
 | 2 | eli | 1 | co *elli* | 3pl m, object, 3pl m, subject, them, they |
 | 2 | elɨʃ | 1 | pt *eles* | 3pl m, object, 3pl m, subject, them, they |
 | 2 | jɔjɛ | 1 | gallo *yoez* | them, they |
@@ -551,46 +583,48 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | al | 1 | gallo *al* | 3pl, subject, 3sg f, subject, 3sg m, object, 3sg m, subject |
+| 1 | al | 1 | gallo *al* | 3sg f, subject, 3sg m, object, 3sg m, subject, definite, m sg |
 | 1 | as | 1 | gallo *as* | definite, f pl, definite, pl, the, they |
 | 1 | el | 1 | eml *el* | 3pl f, object, 3sg f, subject, 3sg m, object, 3sg m, stressed |
-| 1 | i | 1 | gallo *i* | 3pl m, subject, 3sg m, indirect, 3sg m, stressed, 3sg m, subject |
+| 1 | i | 1 | gallo *i* | 3pl m, subject, 3sg f, indirect, 3sg m, indirect, 3sg m, stressed |
 | 1 | il | 1 | gallo *yèll* | 3pl m, subject, 3sg f, subject, 3sg m, subject, 3sg n, subject |
 | 1 | sə | 1 | fr *ce* | 3 reflexive, indirect, 3 reflexive, reflexive, 3pl f, reflexive, 3pl, indirect |
 | 1 | ɔl | 1 | gallo *ol* | 3sg f, subject, she, they |
-| 1 | ɛl | 1 | fr *elles* | 3sg f, subject, 3sg m, subject, 3sg n, subject, definite, f sg |
+| 1 | ɛl | 1 | fr *elles* | 3pl f, stressed, 3sg f, object, 3sg f, stressed, 3sg f, subject |
 
-**3pl f, object** (lects with a form: 11)
+**3pl f, object** (lects with a form: 12)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | li | 2 | scn *li*, rup *li* | 3pl m, indirect, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | las | 2 | es *las*, an *las* | 2pl, object, definite, f pl, definite, pl, indefinite, f pl |
+| 1 | le | 2 | fr *les*, it *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, stressed |
+| 1 | li | 2 | scn *li*, rup *li* | 3pl m, object, 3pl, indirect, 3sg f, indirect, 3sg f, object |
 | 1 | e | 1 | co *e* | and, but, definite, f pl, definite, pl |
 | 1 | el | 1 | eml *el* | 3pl f, subject, 3sg f, subject, 3sg m, object, 3sg m, stressed |
 | 1 | jaj | 1 | dlm *jai* | them |
-| 1 | las | 1 | an *las* | definite, f pl, definite, pl, indefinite, f pl, the |
-| 1 | le | 1 | it *le* | 2, indirect, 2, object, 3pl, indirect, 3sg f, indirect |
 | 1 | ləs | 1 | ca *les* | definite, f pl, definite, m pl, definite, pl, the |
 | 2 | elaʃ | 1 | pt *elas* | 3pl f, subject, 3sg n, subject, it, them |
 
-**3pl f, indirect** (lects with a form: 8)
+**3pl f, indirect** (lects with a form: 10)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3sg f, indirect, 3sg m, indirect, 3sg n, indirect, her |
 | 1 | aʃ | 1 | pt *as* | definite, f pl, them |
 | 1 | lã | 1 | rup *lã* | 3pl m, indirect, them |
+| 1 | le | 1 | ro *le* | 2, indirect, 2, object, 3pl f, object, 3pl f, stressed |
+| 1 | les | 1 | lad *les* | 2pl, indirect, 2pl, object, 3pl, indirect, 3pl, object |
 | 1 | lji | 1 | it *gli* | 3sg f, indirect, 3sg m, indirect, 3sg n, indirect, 3sg n, subject |
 | 1 | lus | 1 | ca *los* | 3pl m, indirect, definite, m pl, the, them |
 | 1 | lœʀ | 1 | fr *leur* | their, them |
-| 1 | əls | 1 | ca *els* | 3pl m, indirect, definite, m pl, the, them |
-| 1 | ɡa | 1 | lmo *ga* | 3sg f, indirect, 3sg m, indirect, 3sg n, indirect, her |
 
-**3pl f, stressed** (lects with a form: 3)
+**3pl f, stressed** (lects with a form: 4)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 2 | ele | 1 | co *elle* | 3pl f, subject, them, they |
+| 1 | le | 1 | ro *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
+| 1 | ɛl | 1 | fr *elles* | 3pl f, subject, 3sg f, object, 3sg f, stressed, 3sg f, subject |
+| 2 | ele | 2 | co *elle*, ro *ele* | 3pl f, subject, them, they |
 | 2 | lɔro | 1 | it *loro* | 2pl, subject, 3pl f, indirect, their, theirs |
 | 2 | ɛlmɛm | 1 | fr *elles-mêmes* | 3sg f, stressed |
 
@@ -600,7 +634,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | se | 1 | es *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | sə | 1 | fr *se* | 3 reflexive, indirect, 3 reflexive, reflexive, 3pl f, subject, 3pl, indirect |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 2sg, reflexive, 3 reflexive, reflexive, 3sg f, reflexive |
+| 1 | sɨ | 1 | pt *se* | 2sg, reflexive, 3 reflexive, reflexive, 3sg f, reflexive, 3sg m, reflexive |
 | 3 | ɨnsele | 1 | ro *însele* |  |
 
 **3 reflexive, indirect** (lects with a form: 1)
@@ -624,8 +658,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | se | 5 | es *se*, gl *se*, dlm *se*, lld *se*, lld *sé*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | si | 4 | pt *si*, lad *si*, ca *si*, it *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3pl, reflexive |
 | 1 | sə | 2 | fr *se*, gallo *se* | 3 reflexive, indirect, 3pl f, reflexive, 3pl f, subject, 3pl, indirect |
-| 1 | swa | 1 | fr *soi* | 1pl, reflexive, 3sg f, reflexive, 3sg m, reflexive, himself |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 2sg, reflexive, 3pl f, reflexive, 3sg f, reflexive |
+| 1 | swa | 1 | fr *soi* | 1pl, reflexive, his, its, oneself |
+| 1 | sɨ | 1 | pt *se* | 2sg, reflexive, 3pl f, reflexive, 3sg f, reflexive, 3sg m, reflexive |
 
 ## Articles, by gender and number
 
@@ -634,57 +668,55 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | el | 6 | es *el*, ast *el*, lad *el*, vec *el*, ist *el*, dlm *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
-| 1 | lu | 4 | oc *lo*, ca *lo*, frp *lou*, scn *lu* | 3pl, subject, 3sg m, object, 3sg m, subject, 3sg n, object |
+| 1 | lu | 3 | oc *lo*, frp *lou*, scn *lu* | 3pl, subject, 3sg m, object, 3sg m, subject, 3sg n, object |
 | 1 | u | 3 | lij *o*, scn *u*, co *u* | 3sg f, object, 3sg m, object, 3sg n, object, her |
+| 1 | ɛl | 3 | pt *el*, mwl *l*, fr *l'* | 3pl f, stressed, 3pl f, subject, 3sg f, object, 3sg f, stressed |
 | 1 | il | 2 | it *il*, fur *il* | 3pl f, subject, 3pl m, subject, 3sg f, subject, 3sg m, subject |
 | 1 | lə | 2 | fr *le*, gallo *le* | 3pl m, object, 3sg f, object, 3sg m, object, 3sg n, subject |
-| 1 | o | 2 | gl *o*, an *o* | indefinite, f sg, or, the, with |
+| 1 | o | 2 | gl *o*, an *o* | 3sg f, stressed, a, an, her |
 | 1 | əl | 2 | ca *el*, ro *ăl* | 3sg m, object, him, that, the |
-| 1 | ɛl | 2 | pt *el*, mwl *l* | 3pl f, subject, 3sg f, subject, 3sg m, subject, 3sg n, subject |
 
 **definite, f sg** (lects with a form: 27)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | la | 16 | es *la*, ast *la*, lad *la*, mwl *la*, oc *la*, fr *la*, nrf *la*, gallo *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
+| 1 | la | 16 | es *la*, ast *la*, lad *la*, mwl *la*, oc *la*, fr *la*, nrf *la*, gallo *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
 | 1 | a | 7 | pt *a*, gl *a*, an *a*, lij *a*, scn *a*, scn *â*, co *a*, ro *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 |  | 1 | ro *-* | definite, f pl, definite, m pl, definite, pl |
 | 1 | lə | 1 | ca *la* | 3pl m, object, 3sg f, object, 3sg m, object, 3sg n, subject |
 | 1 | na | 1 | scn *na* | a, an, indefinite, f sg, no |
 | 1 | sa | 1 | sc *sa* | 3pl, object, 3pl, subject, 3sg f, object, 3sg f, subject |
+| 1 | sas | 1 | sc *sas* | definite, f pl, definite, pl, the |
 | 1 | sə | 1 | ca *sa* | 3 reflexive, indirect, 3 reflexive, reflexive, 3pl f, reflexive, 3pl f, subject |
-| 1 | t͡ʃja | 1 | ro *cea* |  |
 
-**definite, n sg** (lects with a form: 5)
+**definite, n sg** (lects with a form: 3)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | lo | 3 | es *lo*, ast *lo*, lad *lo* | 3sg m, object, 3sg m, stressed, 3sg n, object, 3sg n, subject |
-| 1 | la | 1 | fr *læ* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
-| 1 | lu | 1 | ca *lo* | 3pl, subject, 3sg m, object, 3sg m, subject, 3sg n, object |
+| 1 | lo | 3 | es *lo*, ast *lo*, lad *lo* | 2, object, 3sg m, object, 3sg m, stressed, 3sg n, object |
 
 **definite, m pl** (lects with a form: 22)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | i | 7 | lij *i*, eml *i*, it *i*, scn *i*, scn *î*, vec *i*, co *i*, fur *i* | 3pl f, subject, 3pl m, subject, 3sg m, indirect, 3sg m, stressed |
-| 1 | li | 3 | frp *li*, it *li*, scn *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | los | 3 | es *los*, ast *los*, lad *los* | 3pl m, object, the, them |
+| 1 | i | 7 | lij *i*, eml *i*, it *i*, scn *i*, scn *î*, vec *i*, co *i*, fur *i* | 3pl f, subject, 3pl m, subject, 3sg f, indirect, 3sg m, indirect |
+| 1 | li | 3 | frp *li*, it *li*, scn *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | los | 3 | es *los*, ast *los*, lad *los* | 3pl m, object, 3pl, object, the, them |
 | 1 |  | 2 | scn *-*, ro *-* | definite, f pl, definite, f sg, definite, pl |
-| 1 | le | 2 | fr *les*, gallo *lé* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
-| 1 | lus | 2 | oc *los*, ca *los* | 3pl f, indirect, 3pl m, indirect, the, them |
+| 1 | le | 2 | fr *les*, gallo *lé* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | ləs | 2 | nrf *les*, gallo *les* | 3pl f, object, definite, f pl, definite, pl, the |
 | 1 | os | 2 | gl *os*, an *os* | 2, indirect, the, you |
+| 1 | sɔs | 2 | ca *sos*, sc *sos* | the |
 
-**definite, f pl** (lects with a form: 19)
+**definite, f pl** (lects with a form: 20)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | las | 3 | es *las*, lad *las*, oc *las* | 3pl f, object, definite, pl, indefinite, f pl, the |
-| 1 | le | 3 | gallo *lé*, it *le*, dlm *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | las | 3 | es *las*, lad *las*, oc *las* | 2pl, object, 3pl f, object, definite, pl, indefinite, f pl |
+| 1 | le | 3 | gallo *lé*, it *le*, dlm *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | ləs | 3 | ca *les*, nrf *les*, gallo *les* | 3pl f, object, definite, m pl, definite, pl, the |
 | 1 | e | 2 | lij *e*, co *e* | 3pl f, object, and, but, definite, pl |
-| 1 | les | 2 | ast *les*, lld *les* | 3pl, indirect, definite, pl, the, them |
+| 1 | les | 2 | ast *les*, lld *les* | 2pl, indirect, 2pl, object, 3pl f, indirect, 3pl, indirect |
 | 1 |  | 1 | ro *-* | definite, f sg, definite, m pl, definite, pl |
 | 1 | as | 1 | gl *as* | 3pl f, subject, definite, pl, the, they |
 | 1 | aʃ | 1 | pt *as* | 3pl f, indirect, them |
@@ -693,10 +725,10 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | al | 2 | frp *al*, eml *al* | 3pl f, subject, 3pl, subject, 3sg f, subject, 3sg m, object |
-| 1 | las | 2 | es *las*, lad *las* | 3pl f, object, definite, f pl, indefinite, f pl, the |
-| 1 | le | 2 | fr *les*, it *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
-| 1 | li | 2 | eml *li*, scn *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | al | 2 | frp *al*, eml *al* | 3pl f, subject, 3sg f, subject, 3sg m, object, 3sg m, subject |
+| 1 | las | 2 | es *las*, lad *las* | 2pl, object, 3pl f, object, definite, f pl, indefinite, f pl |
+| 1 | le | 2 | fr *les*, it *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
+| 1 | li | 2 | eml *li*, scn *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
 | 1 |  | 1 | scn *-* | definite, f pl, definite, f sg, definite, m pl |
 | 1 | as | 1 | an *as* | 3pl f, subject, definite, f pl, the, they |
 | 1 | e | 1 | lij *e* | 3pl f, object, and, but, definite, f pl |
@@ -707,14 +739,13 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | a | 3 | gl *a*, an *a*, lij *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
-| 1 | li | 1 | wa *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 2 | ləja | 1 | fr *lea* | 3pl, object, the, them |
+| 1 | li | 1 | wa *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
 
 **indefinite, m sg** (lects with a form: 24)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | un | 10 | es *un*, gl *un*, lad *un*, ca *un*, rgn *un*, scn *un*, vec *un*, co *un* | a, an, indefinite, not given, not |
+| 1 | un | 11 | es *un*, gl *un*, lad *un*, ca *un*, rgn *un*, it *un*, scn *un*, vec *un* | a, an, indefinite, not given, not |
 | 1 | œ̃ | 3 | fr *un*, nrf *un*, gallo *un* | a, an, one, someone |
 | 1 | on | 2 | lmo *on*, vec *on* | a, an, one, where |
 | 1 | ajn | 1 | pcd *ein* | a |
@@ -728,13 +759,13 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | na | 3 | scn *na*, vec *na*, lld *na* | a, an, definite, f sg, no |
-| 1 | yn | 2 | fr *une*, gallo *ûne* | a, an, indefinite, m sg, one |
+| 1 | yn | 2 | fr *une*, gallo *ûne*, gallo *une* | a, an, indefinite, m sg, one |
 | 1 | œn | 2 | nrf *eune*, gallo *unn* | a, an |
 | 1 | el | 1 | es *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
 | 1 | in | 1 | wa *ine* | a, an, by, in |
 | 1 | jyn | 1 | gallo *yun* | a, indefinite, m sg, one |
-| 1 | la | 1 | fr *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
-| 1 | o | 1 | ro *o* | definite, m sg, or, the, with |
+| 1 | la | 1 | fr *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
+| 1 | o | 1 | ro *o* | 3sg f, stressed, a, an, definite, m sg |
 
 **indefinite, m pl** (lects with a form: 11)
 
@@ -745,9 +776,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | a | 1 | scn *â-* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 | di | 1 | lmo *di* | about, by, from, in |
 | 1 | dɛ | 1 | gallo *dez* | from, indefinite, f pl, of |
-| 1 | le | 1 | fr *les* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | le | 1 | fr *les* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | ũʃ | 1 | pt *uns* | about, some |
-| 2 | unos | 2 | es *unos*, lad *unos* |  |
+| 2 | unos | 2 | es *unos*, lad *unos* | few, some |
 
 **indefinite, f pl** (lects with a form: 5)
 
@@ -755,17 +786,18 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | de | 1 | gallo *dé* | about, by, for, from |
 | 1 | dɛ | 1 | gallo *dez* | from, indefinite, m pl, of |
-| 1 | las | 1 | es *las* | 3pl f, object, definite, f pl, definite, pl, the |
+| 1 | las | 1 | es *las* | 2pl, object, 3pl f, object, definite, f pl, definite, pl |
 | 2 | umas | 1 | gl *umhas* |  |
 | 2 | umaʃ | 1 | pt *umas* |  |
 | 2 | unas | 1 | es *unas* |  |
 | 2 | unəs | 1 | ca *unes* |  |
 | 2 | uŋas | 1 | gl *unhas* |  |
 
-**indefinite, pl** (lects with a form: 2)
+**indefinite, pl** (lects with a form: 3)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | dəs | 1 | gallo *des* | a |
 | 1 | ũ | 1 | pt *um* | a, an, indefinite, f sg, indefinite, m sg |
 
 **indefinite, not given** (lects with a form: 6)
@@ -774,10 +806,11 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | iŋ | 1 | lij *in* | a, an, in |
 | 1 | un | 1 | rup *un* | a, an, indefinite, m sg, not |
-| 1 | unks | 1 | es *unx* | a, an |
 | 1 | ũ | 1 | pt *um* | a, an, indefinite, f sg, indefinite, m sg |
 | 1 | vun | 1 | lmo *vun* | a, an, one |
 | 1 | ɔ̃ | 1 | wa *on* | 1pl, subject, 2pl, subject, 3sg n, subject, a |
+| 2 | unej | 1 | ro *unei* | a, indefinite, f sg |
+| 2 | unwi | 1 | ro *unui* | a |
 | 2 | yna | 1 | lij *ùnn-a* | a, an, indefinite, f sg, someone |
 
 ## Personal pronouns
@@ -787,7 +820,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | jo | 7 | es *yo*, an *yo*, ast *yo*, lad *yo*, it *io*, fur *jo*, ruo *io* | 1sg, subject, where |
-| 1 | ew | 4 | pt *eu*, gl *eu*, scn *eu*, ro *eu* | 1sg, stressed, 1sg, subject, me |
+| 1 | ew | 4 | pt *eu*, gl *eu*, scn *eu*, ro *eu* | 1sg, subject |
 | 1 | a | 2 | eml *a*, rgn *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 | jow | 2 | mwl *you*, rup *iou* | 1sg, object, 1sg, subject, me |
 | 1 | ju | 2 | scn *ju*, dlm *ju* | 1sg, subject, where |
@@ -795,53 +828,50 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | ʒə | 2 | fr *je*, gallo *je* | 1pl, subject, 1sg, subject, us, we |
 | 1 | d͡ʒi | 1 | wa *dji* | 1sg, subject, ten |
 
-**me** (lects with a form: 21)
+**me** (lects with a form: 22)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | mi | 7 | es *mí*, lad *mi*, ca *mi*, wa *mi*, lij *mi*, co *mi*, fur *mi* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, subject |
-| 1 | me | 6 | an *me*, ast *me*, nrf *mé*, eml *mé*, it *me*, ist *me* | 1sg, indirect, 1sg, object, 1sg, stressed, 1sg, subject |
-| 1 | mə | 3 | ca *me*, fr *me*, gallo *me* | 1sg, indirect, 1sg, object |
+| 1 | mi | 9 | es *mí*, lad *mi*, ca *mi*, wa *mi*, lij *mi*, it *mi*, co *mi*, fur *mi* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, subject |
+| 1 | me | 8 | es *me*, an *me*, ast *me*, lad *me*, nrf *mé*, eml *mé*, it *me*, ist *me* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, stressed |
+| 1 | mə | 4 | ca *me*, fr *me*, gallo *me*, ro *mă* | 1sg, indirect, 1sg, object, 1sg, reflexive, myself |
 | 1 | mɛ | 2 | eml *mè*, co *mè* | 1sg, stressed, I, although, but |
-| 1 | ew | 1 | pt *eu* | 1sg, stressed, 1sg, subject, I |
 | 1 | jew | 1 | oc *ieu* | 1sg, object, 1sg, subject, I |
 | 1 | jow | 1 | rup *iou* | 1sg, object, 1sg, subject, I |
 | 1 | majn | 1 | dlm *main* | 1sg, object |
+| 1 | min | 1 | ast *min* | 1sg, indirect, 1sg, object |
 
 **you** (lects with a form: 29)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | tu | 15 | es *tú*, pt *tu*, gl *tu*, an *tú*, ast *tu*, lad *tu*, lad *tú*, mwl *tu* | 2, subject, 2sg, subject, all, everything |
-| 1 | ti | 8 | gl *ti*, pcd *ti*, pms *ti*, lij *ti*, co *ti*, ist *ti*, rm *ti*, fur *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
-| 1 | te | 6 | an *te*, ast *te*, oc *te*, eml *té*, it *te*, dlm *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, object |
-| 1 | voj | 5 | it *voi*, co *voi*, dlm *voi*, ro *voi*, rup *voi* | 2, subject, 2pl, subject, 2sg, subject |
+| 1 | tu | 14 | es *tú*, gl *tu*, an *tú*, ast *tu*, lad *tu*, lad *tú*, mwl *tu*, ca *tu* | 2, subject, 2sg, subject, all, everything |
+| 1 | ti | 10 | gl *ti*, pcd *ti*, pms *ti*, lij *ti*, it *ti*, co *ti*, ist *ti*, rm *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, indirect |
+| 1 | te | 8 | es *te*, an *te*, ast *te*, oc *te*, eml *té*, it *te*, dlm *te*, ro *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
+| 1 | voj | 5 | it *voi*, co *voi*, dlm *voi*, ro *voi*, rup *voi* | 2, stressed, 2, subject, 2pl, subject, 2sg, subject |
 | 1 | vos | 5 | es *vos*, an *vos*, ast *vós*, lad *vos*, ca *vós* | 2, subject, 2pl, indirect, 2pl, subject, 2sg, object |
+| 1 | vi | 4 | it *vi*, co *vi*, ro *vi*, rup *vi* | 2, indirect, 2pl, indirect, 2pl, subject, 2sg, indirect |
 | 1 | se | 3 | pt *cê*, lld *se*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | ty | 3 | oc *tu*, fr *tu*, gallo *tu* | 2sg, subject, thou |
-| 1 | vi | 3 | it *vi*, co *vi*, rup *vi* | 2, indirect, 2pl, indirect, 2pl, subject, 2sg, indirect |
 
-**thou** (lects with a form: 13)
+**thou** (lects with a form: 10)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | tu | 7 | pt *tu*, ca *tu*, it *tu*, scn *tu*, co *tù*, ro *tu*, ruo *tu* | 2, subject, 2sg, subject, all, everything |
-| 1 | te | 2 | it *te*, dlm *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, object |
-| 1 | ti | 1 | pcd *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | tu | 6 | ca *tu*, it *tu*, scn *tu*, co *tù*, ro *tu*, ruo *tu* | 2, subject, 2sg, subject, all, everything |
+| 1 | te | 2 | it *te*, dlm *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
+| 1 | ti | 1 | pcd *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, indirect |
 | 1 | twɛ | 1 | sc *tue* | 2sg, subject, you |
 | 1 | ty | 1 | gallo *tu* | 2sg, subject, you |
-| 1 | vos | 1 | ast *vós* | 2, subject, 2pl, indirect, 2pl, subject, 2sg, object |
-| 1 | vɔs | 1 | gl *vós* | 2pl, subject, 2sg, object, 2sg, subject, thee |
-| 1 | vɔʃ | 1 | pt *vós* | 2pl, stressed, 2sg, stressed, you |
 
-**thee** (lects with a form: 12)
+**thee** (lects with a form: 10)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | ti | 3 | pcd *ti*, pms *ti*, co *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | ti | 3 | pcd *ti*, pms *ti*, co *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, indirect |
 | 1 | tə | 2 | ca *te*, gallo *te* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
 | 1 | ta | 1 | gallo *ta* | 2sg, stressed, at, to, toward |
-| 1 | te | 1 | it *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | te | 1 | it *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
 | 1 | to | 1 | fur *to* | 2sg, indirect, your, yours |
 | 1 | toj | 1 | dlm *toi* | 2sg, object, 2sg, subject, you |
 | 1 | təj | 1 | gallo *tei* | 2sg, indirect, 2sg, stressed, you |
@@ -854,63 +884,63 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | el | 9 | es *él*, gl *el*, an *él*, lad *el*, oc *el*, vec *el*, rm *el*, ro *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
 | 1 | il | 2 | fr *il*, gallo *il* | 3pl f, subject, 3pl m, subject, 3sg f, subject, 3sg m, subject |
 | 1 | ki | 2 | eml *chi*, it *chi* | 3sg f, subject, 3sg m, subject, if, she |
-| 1 | li | 2 | pcd *li*, gallo *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | li | 2 | pcd *li*, gallo *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
 | 1 | lwi | 2 | it *lui*, fur *lui* | 2, subject, 3sg m, indirect, 3sg m, stressed, 3sg m, subject |
-| 1 | al | 1 | eml *al* | 3pl f, subject, 3pl, subject, 3sg f, subject, 3sg m, object |
+| 1 | al | 1 | eml *al* | 3pl f, subject, 3sg f, subject, 3sg m, object, 3sg m, subject |
 | 1 | elj | 1 | ca *ell* | 3pl m, object, 3pl m, subject, 3sg m, subject, them |
-| 1 | i | 1 | gallo *yi*, gallo *i* | 3pl f, subject, 3pl m, subject, 3sg m, indirect, 3sg m, stressed |
+| 1 | i | 1 | gallo *yi*, gallo *i* | 3pl f, subject, 3pl m, subject, 3sg f, indirect, 3sg m, indirect |
 
-**him** (lects with a form: 23)
+**him** (lects with a form: 26)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | li | 9 | an *li*, ca *li*, fr *li*, wa *li*, pcd *li*, nrf *li*, gallo *li*, it *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | le | 4 | es *le*, an *le*, lad *le*, lij *lê* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | li | 8 | an *li*, ca *li*, fr *li*, wa *li*, pcd *li*, nrf *li*, gallo *li*, co *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | el | 4 | es *él*, an *el*, ro *el*, rup *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
+| 1 | le | 4 | es *le*, an *le*, lad *le*, lij *lê* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
+| 1 | lo | 4 | es *lo*, an *lo*, eml *ló*, it *lo* | 2, object, 3sg m, object, 3sg m, stressed, 3sg n, object |
 | 1 | lu | 4 | ca *lo*, scn *lu*, ist *lù*, fur *lu* | 3pl, subject, 3sg m, object, 3sg m, subject, 3sg n, object |
-| 1 | el | 3 | es *él*, an *el*, rup *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
-| 1 | lo | 3 | an *lo*, eml *ló*, it *lo* | 3sg m, object, 3sg m, stressed, 3sg n, object, 3sg n, subject |
+| 1 | lwi | 3 | it *lui*, ro *lui*, rup *lui* | 2, subject, 3sg m, indirect, 3sg m, stressed, 3sg m, subject |
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
-| 1 | lji | 2 | wa *lyi*, it *gli* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
-| 1 | lwi | 2 | it *lui*, rup *lui* | 2, subject, 3sg m, indirect, 3sg m, stressed, 3sg m, subject |
+| 1 | i | 2 | ast *-y*, gallo *yi*, gallo *i* | 3pl f, subject, 3pl m, subject, 3sg f, indirect, 3sg m, indirect |
 
-**she** (lects with a form: 25)
+**she** (lects with a form: 26)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | al | 3 | fr *alle*, pcd *al*, gallo *al* | 3pl f, subject, 3pl, subject, 3sg f, subject, 3sg m, object |
+| 1 | al | 3 | fr *alle*, pcd *al*, gallo *al* | 3pl f, subject, 3sg f, subject, 3sg m, object, 3sg m, subject |
 | 1 | ki | 2 | eml *chi*, it *chi* | 3sg f, subject, 3sg m, subject, he, if |
-| 1 | le | 2 | lij *lê*, eml *lê* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | le | 2 | lij *lê*, eml *lê* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | el | 1 | vec *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
 | 1 | il | 1 | gallo *yèll* | 3pl f, subject, 3pl m, subject, 3sg f, subject, 3sg m, subject |
-| 1 | ja | 1 | ro *ea* | 1sg, subject, 3sg f, subject, I, already |
+| 1 | ja | 1 | ro *ea* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
 | 1 | je | 1 | fur *jê* | 1sg, subject, 2, subject, 3sg f, subject, I |
-| 1 | la | 1 | eml *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
+| 1 | la | 1 | eml *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
 
 **her** (lects with a form: 24)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | la | 7 | an *la*, ast *la*, fr *la*, gallo *la*, eml *la*, it *la*, scn *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
-| 1 | le | 6 | es *le*, lad *le*, lij *lê*, eml *lê*, it *le*, fur *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | la | 8 | es *la*, an *la*, ast *la*, fr *la*, gallo *la*, eml *la*, it *la*, scn *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
+| 1 | le | 6 | es *le*, lad *le*, lij *lê*, eml *lê*, it *le*, fur *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 | 1 | a | 3 | pt *a*, scn *a*, co *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
-| 1 | li | 3 | ca *li*, wa *li*, co *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | li | 3 | ca *li*, wa *li*, co *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
 | 1 | sew | 3 | pt *seu*, gl *seu*, ca *seu* | 3sg f, object, his, its, their |
 | 1 | so | 3 | eml *sô*, co *so*, fur *so*, fur *sô* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, his |
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
-| 1 | lji | 2 | wa *lyi*, it *gli* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
+| 1 | lə | 2 | ca *la*, fr *le* | 3pl m, object, 3sg f, object, 3sg m, object, 3sg n, subject |
 
-**it** (lects with a form: 23)
+**it** (lects with a form: 22)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | el | 5 | es *él*, gl *el*, lad *el*, oc *el*, vec *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
 | 1 | a | 4 | pt *a*, eml *a*, scn *a*, co *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
-| 1 | la | 4 | es *la*, fr *la*, it *la*, scn *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
-| 1 | le | 3 | es *le*, lad *le*, lij *lê* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
-| 1 | li | 3 | ca *li*, fr *li*, wa *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | la | 4 | es *la*, fr *la*, it *la*, scn *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
+| 1 | le | 3 | es *le*, lad *le*, lij *lê* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
+| 1 | li | 3 | ca *li*, fr *li*, wa *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | lo | 3 | es *lo*, ast *lo*, it *lo* | 2, object, 3sg m, object, 3sg m, stressed, 3sg n, object |
 | 1 | u | 3 | ca *ho*, scn *u*, co *u* | 3sg f, object, 3sg m, object, 3sg n, object, definite, m sg |
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
-| 1 | lji | 2 | wa *lyi*, it *gli* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
 
 **we** (lects with a form: 28)
 
@@ -922,47 +952,47 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | nu | 2 | fr *nous*, dlm *nu* | 1pl, indirect, 1pl, subject, a, an |
 | 1 | nus | 2 | ca *nos*, rm *nus* | 1pl, indirect, 1pl, reflexive, 1pl, subject, us |
 | 1 | nɔs | 2 | gl *nós*, sc *nos* | 1pl, object, 1pl, subject, us |
-| 1 | nɔʃ | 2 | pt *nós*, mwl *nós* | 1pl, object, 1pl, stressed, 1pl, subject, us |
+| 1 | nɔʃ | 2 | pt *nós*, mwl *nós* | 1pl, stressed, 1pl, subject, us |
 | 1 | ɔ̃ | 2 | fr *on*, gallo *on* | 1pl, subject, 2pl, subject, 3sg n, subject, a |
 
-**us** (lects with a form: 19)
+**us** (lects with a form: 20)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | noj | 4 | it *noi*, co *noi*, dlm *noi*, rup *noi* | 1pl, object, 1pl, stressed, 1pl, subject, we |
-| 1 | nos | 2 | an *nos*, ast *nos* | 1pl, indirect, 1pl, subject, 1sg, stressed, I |
+| 1 | noj | 5 | it *noi*, co *noi*, dlm *noi*, ro *noi*, rup *noi* | 1pl, object, 1pl, stressed, 1pl, subject, we |
+| 1 | ni | 3 | scn *ni*, ro *ni*, rup *ni* | 1pl, indirect, 1pl, object, 1pl, reflexive, nor |
+| 1 | nos | 3 | es *nos*, an *nos*, ast *nos* | 1pl, indirect, 1pl, object, 1pl, reflexive, 1pl, subject |
 | 1 | nus | 2 | oc *nos*, ca *nos* | 1pl, indirect, 1pl, reflexive, 1pl, subject, we |
 | 1 | nwi | 2 | pms *noi*, lij *noî* | 1pl, object, 1pl, subject, we |
 | 1 | nɔs | 2 | gl *nós*, sc *nos* | 1pl, object, 1pl, subject, we |
-| 1 | t͡ʃi | 2 | it *ci*, co *ci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3sg n, subject |
+| 1 | t͡ʃi | 2 | it *ci*, co *ci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3pl, indirect |
 | 1 | mos | 1 | ca *mos* | 1pl, indirect |
-| 1 | ni | 1 | scn *ni* | 1pl, indirect, 1pl, object, 1pl, reflexive, nor |
 
 **they** (lects with a form: 24)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | al | 2 | fr *al*, gallo *al* | 3pl f, subject, 3pl, subject, 3sg f, subject, 3sg m, object |
 | 1 | els | 2 | an *els*, rm *els* | 3pl m, subject |
 | 1 | il | 2 | fr *ils*, gallo *il*, gallo *yèll* | 3pl f, subject, 3pl m, subject, 3sg f, subject, 3sg m, subject |
 | 1 | lor | 2 | eml *lôr*, fur *lôr* | 3pl, indirect, 3pl, object, 3pl, stressed, 3pl, subject |
 | 1 | se | 2 | lld *se*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
+| 1 | al | 1 | gallo *al* | 3pl f, subject, 3sg f, subject, 3sg m, object, 3sg m, subject |
 | 1 | as | 1 | gallo *as* | 3pl f, subject, definite, f pl, definite, pl, the |
-| 1 | ej | 1 | ro *ei* | 3pl m, subject, then, there, yes |
+| 1 | ej | 1 | ro *ei* | 3pl m, stressed, 3pl m, subject, 3sg f, indirect, 3sg f, object |
 | 1 | el | 1 | eml *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
 
-**them** (lects with a form: 18)
+**them** (lects with a form: 20)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | li | 4 | it *li*, scn *li*, co *li*, rup *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | lor | 3 | eml *lôr*, fur *lôr*, rup *lor* | 3pl, indirect, 3pl, object, 3pl, stressed, 3pl, subject |
+| 1 | li | 5 | it *li*, scn *li*, co *li*, ro *li*, rup *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | lor | 4 | eml *lôr*, fur *lôr*, ro *lor*, rup *lor* | 3pl, indirect, 3pl, object, 3pl, stressed, 3pl, subject |
+| 1 | le | 3 | fr *les*, it *le*, ro *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
+| 1 | les | 3 | es *les*, an *les*, lad *les* | 2pl, indirect, 2pl, object, 3pl f, indirect, 3pl, indirect |
+| 1 | los | 3 | es *los*, an *los*, lad *los* | 3pl m, object, 3pl, object, definite, m pl, the |
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
-| 1 | le | 2 | es *le*, it *le* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
+| 1 | las | 2 | es *las*, an *las* | 2pl, object, 3pl f, object, definite, f pl, definite, pl |
 | 1 | aʃ | 1 | pt *as* | 3pl f, indirect, definite, f pl |
-| 1 | ãlj | 1 | rup *ãlj* | 3pl, object, 3sg f, indirect, 3sg m, indirect, her |
-| 1 | d͡ʒe | 1 | eml *ge* | 3pl, indirect, 3sg f, indirect, 3sg m, indirect, her |
-| 1 | e | 1 | co *e* | 3pl f, object, and, but, definite, f pl |
 
 **oneself** (lects with a form: 12)
 
@@ -971,8 +1001,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | se | 6 | es *se*, gl *se*, it *sé*, dlm *se*, lld *se*, lld *sé*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | si | 4 | pt *si*, lad *si*, ca *si*, it *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 | 1 | sə | 3 | ca *se*, fr *se*, gallo *se* | 3 reflexive, indirect, 3 reflexive, reflexive, 3pl f, reflexive, 3pl f, subject |
-| 1 | swa | 1 | fr *soi* | 1pl, reflexive, 3 reflexive, reflexive, 3sg f, reflexive, 3sg m, reflexive |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive |
+| 1 | swa | 1 | fr *soi* | 1pl, reflexive, 3 reflexive, reflexive, his, its |
+| 1 | sɨ | 1 | pt *se* | 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive, 3sg f, reflexive |
 | 1 | əs | 1 | ca *es* | 3 reflexive, indirect, 3pl, indirect, 3sg f, indirect, 3sg m, indirect |
 | 2 | swamɛm | 1 | fr *soi-même* | 3 reflexive, stressed |
 
@@ -983,80 +1013,80 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | si | 7 | es *sí*, pt *si*, gl *si*, lad *si*, ca *si*, it *si*, fur *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 | 1 | se | 6 | es *se*, gl *se*, lad *se*, it *sé*, lld *se*, lld *sé*, ro *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | sə | 2 | ca *se*, fr *se* | 3 reflexive, indirect, 3 reflexive, reflexive, 3pl f, reflexive, 3pl f, subject |
-| 1 | sje | 1 | ro *sie* | 3pl, reflexive, 3sg f, reflexive, 3sg m, reflexive, six |
-| 1 | sjeʃʲ | 1 | ro *sieși* | 3pl, reflexive, 3sg f, reflexive, 3sg m, reflexive |
-| 1 | swa | 1 | fr *soi* | 1pl, reflexive, 3 reflexive, reflexive, 3sg f, reflexive, 3sg m, reflexive |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive |
+| 1 | sɨ | 1 | pt *se* | 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive, 3sg f, reflexive |
 | 1 | əs | 1 | ca *es* | 3 reflexive, indirect, 3pl, indirect, 3sg f, indirect, 3sg m, indirect |
+| 1 | ɨʃʲ | 1 | ro *își* | 3pl, reflexive, 3sg f, reflexive, 3sg m, reflexive |
+| 2 | lɥimɛm | 1 | fr *lui-même* | 3sg m, stressed |
+| 2 | sine | 1 | ro *sine* | 3pl, reflexive, 3sg f, reflexive, 3sg m, reflexive |
 
-**myself** (lects with a form: 6)
+**myself** (lects with a form: 9)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | mi | 1 | fur *mi* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, subject |
+| 1 | me | 2 | es *me*, lad *me* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, stressed |
+| 1 | mi | 2 | fur *mi*, rup *mi* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, subject |
+| 1 | mə | 1 | ro *mă* | 1sg, indirect, 1sg, object, 1sg, reflexive, me |
 | 1 | mɨ | 1 | pt *me* | 1sg, indirect, 1sg, object, 1sg, reflexive, me |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive |
 | 2 | mwamɛm | 1 | fr *moi-même* | 1sg, stressed |
 | 2 | steso | 1 | it *stesso* | himself, same, yourself |
 | 2 | ɨnsumʲ | 1 | ro *însumi* | 1sg, reflexive |
 | 2 | ɨnsəmʲ | 1 | ro *însămi* | 1sg, reflexive |
-| 3 | memɛsem | 1 | nrf *mé-mesme* | 1sg, reflexive |
 
 **yourself** (lects with a form: 7)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | si | 2 | es *sí*, pt *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
+| 1 | te | 2 | es *te*, ro *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
 | 1 | tə | 2 | ca *te*, fr *te* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
 | 1 | se | 1 | es *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
-| 1 | sɨ | 1 | pt *se* | 1sg, reflexive, 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive |
-| 1 | te | 1 | es *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, object |
-| 1 | ti | 1 | fur *ti* | 2, indirect, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | sɨ | 1 | pt *se* | 2sg, reflexive, 3 reflexive, reflexive, 3pl f, reflexive, 3sg f, reflexive |
+| 1 | ti | 1 | fur *ti* | 2, indirect, 2, reflexive, 2, subject, 2sg, indirect |
 | 1 | twa | 1 | fr *toi* | 2sg, reflexive, 2sg, stressed, three, you |
 | 1 | vi | 1 | it *vi* | 2, indirect, 2pl, indirect, 2pl, subject, 2sg, indirect |
 
 ## Possessives
 
-**my** (lects with a form: 21)
+**my** (lects with a form: 22)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | mi | 6 | es *mi*, gl *mi*, lad *mi*, wa *mi*, eml *mî*, dlm *mi* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, subject |
 | 1 | mew | 5 | pt *meu*, gl *meu*, ca *meu*, ro *meu*, rup *meu* | mine |
-| 1 | mi | 3 | wa *mi*, eml *mî*, dlm *mi* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, subject |
 | 1 | mjo | 3 | es *mío*, ast *mio*, it *mio* | mine |
-| 1 | me | 2 | fr *mes*, fur *mê* | 1sg, indirect, 1sg, object, 1sg, stressed, 1sg, subject |
+| 1 | me | 2 | fr *mes*, fur *mê* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, stressed |
 | 1 | mes | 2 | rm *mes*, fur *mês* | but, mine, more |
 | 1 | mju | 2 | ast *míu*, mwl *miu* |  |
 | 1 | mun | 2 | oc *mon*, ca *mon* |  |
 | 1 | mɔ̃ | 2 | fr *mon*, gallo *mon* |  |
 
-**mine** (lects with a form: 15)
+**mine** (lects with a form: 14)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | mew | 4 | pt *meu*, gl *meu*, ca *meu*, ro *meu* | my |
 | 1 | mjo | 3 | es *mío*, ast *mio*, it *mio* | my |
-| 1 | me | 2 | vec *mé*, fur *mê* | 1sg, indirect, 1sg, object, 1sg, stressed, 1sg, subject |
+| 1 | me | 2 | vec *mé*, fur *mê* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, stressed |
 | 1 | mi | 2 | eml *mî*, dlm *mi* | 1sg, indirect, 1sg, object, 1sg, reflexive, 1sg, subject |
 | 1 | mes | 1 | fur *mês* | but, more, my |
 | 1 | mews | 1 | gl *meus* |  |
 | 1 | mja | 1 | ro *mea* | my, not |
-| 1 | mjej | 1 | fur *miei* | half, my |
+| 1 | mjas | 1 | es *mías* | my |
 
 **your** (lects with a form: 19)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | to | 4 | ast *to*, eml *tô*, dlm *to*, fur *to*, fur *tô* | 2sg, indirect, thee, yours |
+| 1 | tu | 3 | es *tu*, lad *tu*, sc *tuu* | 2, subject, 2sg, subject, all, everything |
 | 1 | sew | 2 | pt *seu*, ca *seu* | 3sg f, object, her, his, its |
 | 1 | ta | 2 | fr *ta*, gallo *ta* | 2sg, stressed, at, thee, to |
 | 1 | tew | 2 | pt *teu*, ca *teu* | yours |
-| 1 | tu | 2 | lad *tu*, sc *tuu* | 2, subject, 2sg, subject, all, everything |
 | 1 | tɔ̃ | 2 | fr *ton*, gallo *ton* |  |
+| 1 | vo | 2 | fr *vos*, gallo *voz* | 2, stressed, 2pl, subject, you |
 | 1 | lor | 1 | fur *lôr* | 3pl, indirect, 3pl, object, 3pl, stressed, 3pl, subject |
-| 1 | so | 1 | ast *so* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, her |
 
-**yours** (lects with a form: 18)
+**yours** (lects with a form: 17)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
@@ -1069,15 +1099,15 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | swo | 1 | it *suo* | her, his, its, under |
 | 1 | ta | 1 | ro *ta* | 2sg, stressed, at, thee, to |
 
-**his** (lects with a form: 18)
+**his** (lects with a form: 19)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | so | 4 | ast *so*, eml *sô*, co *so*, fur *so*, fur *sô* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, her |
 | 1 | sa | 3 | fr *sa*, gallo *sa*, ro *sa* | 3pl, object, 3pl, subject, 3sg f, object, 3sg f, subject |
 | 1 | sew | 3 | pt *seu*, gl *seu*, ca *seu* | 3sg f, object, her, its, their |
+| 1 | lwi | 2 | ro *lui*, rup *lui* | 2, subject, 3sg m, indirect, 3sg m, stressed, 3sg m, subject |
 | 1 | su | 2 | lad *su*, sc *suu* | 3sg f, object, about, above, definite, m sg |
-| 1 | sɑ̃ | 2 | fr *san*, nrf *san* | her, hundred, its, their |
 | 1 | sɔ̃ | 2 | fr *son*, gallo *son* | her, its, their |
 | 1 | se | 1 | fr *ses* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | sews | 1 | gl *seus* | its, their |
@@ -1088,27 +1118,27 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | sew | 3 | pt *seu*, gl *seu*, ca *seu* | 3sg f, object, her, his, their |
 | 1 | so | 3 | ast *so*, eml *sô*, fur *so*, fur *sô* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, her |
-| 1 | sɑ̃ | 2 | fr *san*, nrf *san* | her, his, hundred, their |
 | 1 | sɔ̃ | 2 | fr *son*, gallo *son* | her, his, their |
 | 1 | sa | 1 | fr *sa* | 3pl, object, 3pl, subject, 3sg f, object, 3sg f, subject |
 | 1 | se | 1 | fr *ses* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | sews | 1 | gl *seus* | his, their |
 | 1 | si | 1 | lld *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
+| 1 | sjej | 1 | fur *siei* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, her |
 
-**our** (lects with a form: 19)
+**our** (lects with a form: 20)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | no | 1 | gallo *noz* | 1pl, stressed, 1pl, subject, no, not |
+| 1 | no | 2 | fr *nos*, gallo *noz* | 1pl, stressed, 1pl, subject, no, not |
 | 1 | nu | 1 | gallo *nous* | 1pl, indirect, 1pl, subject, a, an |
 | 1 | nɔstʀ | 1 | gallo *nostr* |  |
-| 2 | nostru | 2 | sc *nostru*, ro *nostru* | ours |
+| 2 | nostru | 3 | scn *nostru*, sc *nostru*, ro *nostru* | ours |
 | 2 | mwestɾo | 1 | lad *muestro* | ours |
 | 2 | nestre | 1 | fur *nestre* | ours |
 | 2 | nestri | 1 | fur *nestri* | ours |
 | 2 | nestris | 1 | fur *nestris* | ours |
 
-**ours** (lects with a form: 14)
+**ours** (lects with a form: 13)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
@@ -1121,16 +1151,16 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 2 | nosas | 1 | gl *nosas* |  |
 | 2 | noso | 1 | gl *noso* | our |
 
-**their** (lects with a form: 18)
+**their** (lects with a form: 20)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | lor | 3 | fur *lôr*, ro *lor*, rup *lor* | 3pl, indirect, 3pl, object, 3pl, stressed, 3pl, subject |
 | 1 | sew | 3 | pt *seu*, gl *seu*, ca *seu* | 3sg f, object, her, his, its |
 | 1 | so | 3 | ast *so*, eml *sô*, co *so* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, her |
 | 1 | ljur | 1 | ca *llur* | theirs |
-| 1 | lor | 1 | fur *lôr* | 3pl, indirect, 3pl, object, 3pl, stressed, 3pl, subject |
 | 1 | lur | 1 | rm *lur* |  |
-| 1 | lœʀ | 1 | fr *leur* | 3pl f, indirect, them |
+| 1 | lœʀ | 1 | fr *leur*, fr *leurs* | 3pl f, indirect, them |
 | 1 | sa | 1 | fr *sa* | 3pl, object, 3pl, subject, 3sg f, object, 3sg f, subject |
 | 1 | se | 1 | fr *ses* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 
@@ -1142,10 +1172,10 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | ljur | 1 | ca *llur* | their |
 | 1 | lor | 1 | fur *lôr* | 3pl, indirect, 3pl, object, 3pl, stressed, 3pl, subject |
 | 1 | so | 1 | eml *sô* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, her |
-| 1 | sow | 1 | ca *sou* | 3sg f, object, her, his, its |
-| 1 | sø | 1 | lij *seu* | his, its, their |
+| 1 | sø | 1 | lij *seu* | his, its, their, those |
 | 1 | sɔ | 1 | lij *sò* | his, its, only, their |
 | 2 | luri | 1 | ist *luri* | 3pl, object, 3pl, subject, their, them |
+| 2 | lɔro | 1 | it *loro* | 2pl, subject, 3pl f, indirect, 3pl f, stressed, their |
 
 ## Articles and demonstratives
 
@@ -1153,33 +1183,33 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | la | 15 | es *la*, ast *la*, lad *la*, mwl *la*, oc *la*, fr *læ*, nrf *la*, gallo *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
+| 1 | la | 15 | es *la*, ast *la*, lad *la*, mwl *la*, oc *la*, fr *la*, nrf *la*, gallo *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
 | 1 | el | 6 | es *el*, ast *el*, lad *el*, vec *el*, ist *el*, dlm *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
 | 1 | a | 5 | gl *a*, an *a*, lij *a*, scn *a*, scn *â-*, co *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
-| 1 | li | 4 | wa *li*, frp *li*, it *li*, scn *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
-| 1 | lo | 4 | es *lo*, ast *lo*, lad *lo*, it *lo* | 3sg m, object, 3sg m, stressed, 3sg n, object, 3sg n, subject |
-| 1 | lu | 4 | oc *lo*, ca *lo*, frp *lou*, scn *lu* | 3pl, subject, 3sg m, object, 3sg m, subject, 3sg n, object |
-| 1 | las | 3 | es *las*, lad *las*, oc *las* | 3pl f, object, definite, f pl, definite, pl, indefinite, f pl |
-| 1 | les | 3 | es *les*, ast *les*, lld *les* | 3pl, indirect, definite, f pl, definite, pl, them |
+| 1 | li | 4 | wa *li*, frp *li*, it *li*, scn *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | lo | 4 | es *lo*, ast *lo*, lad *lo*, it *lo* | 2, object, 3sg m, object, 3sg m, stressed, 3sg n, object |
+| 1 | ɛl | 4 | pt *el*, mwl *l*, fr *l'*, pcd *el* | 3pl f, stressed, 3pl f, subject, 3sg f, object, 3sg f, stressed |
+| 1 | las | 3 | es *las*, lad *las*, oc *las* | 2pl, object, 3pl f, object, definite, f pl, definite, pl |
+| 1 | le | 3 | fr *les*, it *le*, dlm *le* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
 
 **a** (lects with a form: 25)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | un | 10 | es *un*, gl *un*, lad *un*, rgn *un*, scn *un*, vec *un*, co *un*, fur *un* | an, indefinite, m sg, indefinite, not given, not |
+| 1 | un | 11 | es *un*, gl *un*, lad *un*, rgn *un*, it *un*, scn *un*, vec *un*, co *un* | an, indefinite, m sg, indefinite, not given, not |
 | 1 | na | 3 | scn *na*, vec *na*, lld *na* | an, definite, f sg, indefinite, f sg, no |
 | 1 | œ̃ | 3 | fr *un*, nrf *un*, gallo *un* | an, indefinite, m sg, one, someone |
 | 1 | on | 2 | lmo *on*, vec *on* | an, indefinite, m sg, one, where |
 | 1 | ũ | 2 | pt *um*, mwl *un* | an, indefinite, f sg, indefinite, m sg, indefinite, not given |
 | 1 | a | 1 | scn *â-* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 | ajn | 1 | pcd *ein* | indefinite, m sg |
-| 1 | el | 1 | es *el* | 3pl f, object, 3pl f, subject, 3sg f, subject, 3sg m, object |
+| 1 | dəs | 1 | gallo *des* | indefinite, pl |
 
 **an** (lects with a form: 24)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | un | 10 | es *un*, gl *un*, ca *un*, rgn *un*, scn *un*, vec *un*, co *un*, fur *un* | a, indefinite, m sg, indefinite, not given, not |
+| 1 | un | 11 | es *un*, gl *un*, ca *un*, rgn *un*, it *un*, scn *un*, vec *un*, co *un* | a, indefinite, m sg, indefinite, not given, not |
 | 1 | na | 3 | scn *na*, vec *na*, lld *na* | a, definite, f sg, indefinite, f sg, no |
 | 1 | ũ | 2 | pt *um*, mwl *un* | a, indefinite, f sg, indefinite, m sg, indefinite, not given |
 | 1 | œ̃ | 2 | fr *un*, nrf *un* | a, indefinite, m sg, one, someone |
@@ -1192,11 +1222,11 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | stu | 3 | lij *sto*, scn *stu*, co *stu* | these |
 | 1 | a | 2 | gallo *ad*, scn *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 | kest | 2 | lmo *chest*, fur *chest* |  |
-| 1 | la | 2 | es *la*, scn *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
+| 1 | la | 2 | es *la*, scn *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
 | 1 | ste | 2 | eml *sté*, rgn *ste* |  |
-| 1 | stu | 2 | lij *sto*, scn *stu* | these |
 | 1 | keʃt | 1 | lld *chest* | these |
 | 1 | kwast | 1 | eml *kwàst*, eml *quasst* | that |
 | 1 | kwest | 1 | rgn *quest* |  |
@@ -1208,37 +1238,37 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | ke | 6 | es *que*, gl *que*, ast *que*, lad *ke*, oc *que*, oc *qué*, it *ke*, it *che* | as, because, how, some |
 | 1 | ki | 3 | fr *qui*, gallo *qi*, co *chì* | 3sg f, subject, 3sg m, subject, he, if |
 | 1 | kɛ | 2 | ca *què*, co *chè* | what, which |
+| 1 | lo | 2 | es *lo*, lad *lo* | 2, object, 3sg m, object, 3sg m, stressed, 3sg n, object |
 | 1 | du | 1 | scn *ddu* | two |
 | 1 | k | 1 | gallo *q* | what, whose |
 | 1 | kaj | 1 | rup *cai* | which, who |
 | 1 | kel | 1 | fur *chel* |  |
-| 1 | kem | 1 | pt *quem* | who, whom |
 
-**these** (lects with a form: 10)
+**these** (lects with a form: 12)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | kestj | 1 | lmo *chestj* |  |
 | 1 | keʃt | 1 | lld *chest* | this |
-| 1 | li | 1 | scn *li* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | li | 1 | scn *li* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
+| 1 | se | 1 | fr *ces* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | stu | 1 | lij *sto* | this |
 | 2 | kwestu | 2 | lij *quésto*, co *questu* | this |
 | 2 | estas | 1 | gl *estas* |  |
 | 2 | estes | 1 | gl *estes* |  |
-| 2 | estə | 1 | ca *este* | this |
-| 2 | istu | 1 | sc *istu* | this, those |
 
-**those** (lects with a form: 9)
+**those** (lects with a form: 11)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
+| 1 | se | 1 | fr *ces* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
+| 1 | sø | 1 | fr *ceux* | his, its, their, theirs |
+| 1 | sɛl | 1 | fr *celles* |  |
+| 2 | esas | 2 | es *esas*, gl *esas* |  |
 | 2 | kwelu | 2 | lij *quéllo*, co *quellu* | that |
-| 2 | esas | 1 | gl *esas* |  |
+| 2 | alja | 1 | ro *alea* | then, there |
 | 2 | eses | 1 | gl *eses* |  |
-| 2 | istu | 1 | co *istu* | these, this |
-| 2 | isu | 1 | co *issu* | 3sg m, subject, 3sg n, subject, he, it |
-| 2 | kozi | 1 | it *così* | so, that |
-| 2 | kuɖu | 1 | sc *cuddu* | that |
-| 2 | kwelo | 1 | it *quello* | that |
+| 2 | esos | 1 | es *esos* |  |
 
 ## Interrogatives and relatives
 
@@ -1250,7 +1280,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | ke | 4 | es *que*, lad *ke*, it *ke*, it *che*, rm *che* | as, because, how, some |
 | 1 | ken | 2 | gl *quen*, lad *ken* | whom |
 | 1 | kjen | 2 | es *quien*, ast *quien*, ast *quién* | whom |
-| 1 | t͡ʃi | 2 | nrf *tchi*, dlm *ci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3sg n, subject |
+| 1 | t͡ʃi | 2 | nrf *tchi*, dlm *ci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3pl, indirect |
 | 1 | de | 1 | ro *de* | about, by, for, from |
 | 1 | kaj | 1 | rup *cai* | that, which |
 | 1 | kem | 1 | pt *quem* | that, whom |
@@ -1262,13 +1292,13 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | ki | 8 | an *qui*, ca *qui*, fr *qui*, wa *kî*, eml *chi*, it *chi*, co *chì*, sc *chi* | 3sg f, subject, 3sg m, subject, he, if |
 | 1 | ke | 4 | es *que*, lad *ke*, it *che*, rm *che* | as, because, how, some |
 | 1 | ken | 2 | gl *quen*, lad *ken* | who |
+| 1 | kwi | 2 | scn *cui*, ro *cui* | here, who, whose |
 | 1 | de | 1 | ro *de* | about, by, for, from |
 | 1 | kem | 1 | pt *quem* | that, who |
 | 1 | kjen | 1 | es *quien* | who |
-| 1 | kwi | 1 | scn *cui* | here, who |
-| 1 | kə | 1 | ca *que* | as, because, but, how |
+| 1 | kuj | 1 | it *cui* | which, whose |
 
-**what** (lects with a form: 22)
+**what** (lects with a form: 21)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
@@ -1292,26 +1322,26 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | dɔ̃ | 1 | fr *dont* | so, therefore, whose |
 | 1 | kaj | 1 | rup *cai* | that, who |
 | 1 | kal | 1 | gl *cal* | as |
-| 1 | kwa | 1 | fr *quoi* | enough, here, nothing, what |
+| 1 | kuj | 1 | it *cui* | whom, whose |
 
-**whose** (lects with a form: 7)
+**whose** (lects with a form: 8)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | dɔ̃ | 1 | fr *dont* | so, therefore, which |
 | 1 | k | 1 | gallo *q* | that, what |
-| 1 | kuj | 1 | it *cui* |  |
+| 1 | kuj | 1 | it *cui* | which, whom |
+| 1 | kwi | 1 | ro *cui* | here, who, whom |
 | 1 | kɨ | 1 | pt *que* | and, because, how, than |
 | 2 | donde | 1 | lad *donde* | because, by, if, where |
 | 2 | kujo | 1 | es *cuyo* |  |
 | 2 | kuʃo | 1 | gl *cuxo* |  |
-| 2 | kuʒu | 1 | pt *cujo* |  |
 
 **where** (lects with a form: 22)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | u | 5 | pt *u*, gl *u*, ast *u*, ast *ú*, fr *où*, it *u'* | 3sg f, object, 3sg m, object, 3sg n, object, definite, m sg |
+| 1 | u | 4 | pt *u*, gl *u*, ast *u*, ast *ú*, fr *où* | 3sg f, object, 3sg m, object, 3sg n, object, definite, m sg |
 | 1 | un | 2 | oc *on*, oc *ont*, gsc *on* | a, an, indefinite, m sg, indefinite, not given |
 | 1 | dov | 1 | eml *dóvv* |  |
 | 1 | dun | 1 | oc *dont* | at, in, while |
@@ -1325,13 +1355,13 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | kwan | 2 | an *cuán*, an *quan*, ca *quan* | how |
-| 1 | u | 2 | fr *où*, it *u'* | 3sg f, object, 3sg m, object, 3sg n, object, definite, m sg |
 | 1 | kan | 1 | oc *quan* | how many, how much |
 | 1 | kand | 1 | dlm *cand* |  |
 | 1 | ke | 1 | it *che* | as, because, how, some |
 | 1 | ko | 1 | vec *có* | how, than, what, with |
 | 1 | kon | 1 | gallo *caun* | and, with |
 | 1 | kont | 1 | dlm *cont* | with |
+| 1 | kwand | 1 | eml *quand* |  |
 
 **how** (lects with a form: 18)
 
@@ -1383,7 +1413,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 2 | kantos | 1 | gl *cantos* |  |
 | 2 | kibẽ | 1 | wa *kibén* | how much |
 | 2 | kwantas | 1 | es *cuántas* | definite, f pl |
-| 2 | kwɐ̃tu | 1 | pt *quanto* | how, how much |
+| 2 | kwantos | 1 | es *cuántos* | definite, m pl |
 
 ## Quantifiers and indefinites
 
@@ -1423,8 +1453,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 2 | kada | 5 | es *cada*, pt *cada*, gl *cada*, ast *cada*, lad *kada* | every |
 | 2 | kaða | 2 | oc *cada*, gsc *cada* | every |
 | 2 | todo | 2 | es *todo*, lad *todo* | all, every, everything |
+| 2 | ʃakyn | 2 | fr *chacune*, gallo *chaqhun* | every |
 | 2 | dond͡zi | 1 | sc *donzi* | every |
-| 2 | kadyn | 1 | oc *cadun* |  |
 
 **some** (lects with a form: 22)
 
@@ -1448,9 +1478,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | kap | 1 | ca *cap* | no, none, to, toward |
 | 1 | vrewn | 1 | ro *vreun* | some |
 | 1 | ʒens | 1 | ca *gens* |  |
-| 2 | kwalke | 3 | an *qualque*, it *qualche*, vec *qualke* | about, few, some |
+| 2 | kwalke | 3 | an *qualque*, it *qualche*, vec *qualke* | few, some |
+| 2 | alɡun | 2 | es *algún*, gl *algún* | some |
 | 2 | alɡũ | 2 | pt *algum*, mwl *algun* | some |
-| 2 | alɡun | 1 | gl *algún* | some |
 
 **no** (lects with a form: 23)
 
@@ -1508,12 +1538,12 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | res | 2 | gl *res*, an *res* |  |
 | 1 | jok | 1 | ro *ioc* | no |
 | 1 | kwa | 1 | fr *quoi* | enough, here, what, which |
 | 1 | nen | 1 | pcd *nén* | not, some |
 | 1 | nja | 1 | lld *nia* | my, no |
 | 1 | ren | 1 | gl *ren* |  |
+| 1 | res | 1 | an *res* |  |
 | 1 | rɛs | 1 | ca *res* |  |
 | 1 | vis | 1 | gallo *vice* |  |
 
@@ -1541,7 +1571,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | œ̃ | 1 | fr *un* | a, an, indefinite, m sg, one |
 | 1 | ɔm | 1 | ca *hom* |  |
 | 1 | ɔ̃ | 1 | fr *on* | 1pl, subject, 2pl, subject, 3sg n, subject, a |
-| 2 | altri | 1 | it *altri* | 3sg f, subject, 3sg m, subject, he, other |
+| 2 | alɡẽj | 1 | pt *alguém* | somebody |
 
 **somebody** (lects with a form: 15)
 
@@ -1549,12 +1579,12 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | t͡ʃik | 1 | dlm *cic* | some, someone |
 | 1 | von | 1 | eml *vón* | one, someone |
-| 2 | altri | 1 | it *altri* | 3sg f, subject, 3sg m, subject, he, other |
 | 2 | alɡẽj | 1 | pt *alguém* | someone |
 | 2 | alɡjen | 1 | es *alguien* | someone |
 | 2 | alɡjẽj | 1 | mwl *alguien* | someone |
 | 2 | dakjen | 1 | ast *daquién* | someone |
 | 2 | kakyn | 1 | frp *cacùn* | someone |
+| 2 | katsœ̃ | 1 | frp *quatsun* | someone |
 
 **everything** (lects with a form: 17)
 
@@ -1588,25 +1618,25 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | mult | 4 | fr *moult*, dlm *mult*, ro *mult*, rup *mult* | much |
 | 1 | bɑ̃ | 1 | gallo *ben* | much, well |
-| 1 | fɔʀs | 1 | fr *force* |  |
 | 1 | mol | 1 | ca *molt* | much, very |
-| 1 | mɛ̃ | 1 | fr *maint* | less |
 | 1 | pler | 1 | ca *pler* | much |
 | 1 | plɛ̃ | 1 | fr *plein* | in |
 | 1 | pø | 1 | fr *peu* | little, then |
+| 1 | tant | 1 | eml *tant* | much, very |
+| 1 | twant | 1 | dlm *tuant* | much, very |
 
 **much** (lects with a form: 24)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | mult | 3 | fr *moult*, ro *mult*, rup *mult* | many |
+| 1 | mult | 2 | ro *mult*, rup *mult* | many |
 | 1 | tant | 2 | pms *tant*, eml *tant* | many, very |
 | 1 | bja | 1 | rm *bia* |  |
 | 1 | bjɛ̃ | 1 | fr *bien* | so, very, well |
 | 1 | bler | 1 | rm *bler* |  |
 | 1 | bɑ̃ | 1 | gallo *ben* | many, well |
 | 1 | fɔʀ | 1 | fr *fort* | very |
-| 1 | man | 1 | ca *mant* | my |
+| 1 | man | 1 | ca *mant* |  |
 
 **few** (lects with a form: 20)
 
@@ -1655,7 +1685,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | mens | 1 | oc *mens* |  |
 | 1 | menʃ | 1 | gsc *mensh* |  |
 | 1 | mɛnjʃ | 1 | ca *menys* |  |
-| 1 | mɛ̃ | 1 | gallo *mein* | many |
+| 1 | mɛ̃ | 1 | gallo *mein* |  |
 | 2 | menos | 4 | es *menos*, gl *menos*, ast *menos*, lad *menos* |  |
 | 2 | manko | 3 | lad *manko*, it *manco*, vec *manco* |  |
 | 2 | manku | 1 | ca *manco* |  |
@@ -1671,7 +1701,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | awtʀ | 1 | gallo *aotr* |  |
 | 1 | ot | 1 | pcd *aute* | eight |
 | 1 | õt | 1 | wa *ôte* |  |
-| 2 | altri | 2 | it *altri*, fur *altri* | 3sg f, subject, 3sg m, subject, he, she |
+| 2 | altro | 2 | it *altro*, ist *altro* | more |
 
 **same** (lects with a form: 20)
 
@@ -1690,14 +1720,14 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | tɑ̃ | 1 | fr *tant* | and, your |
-| 1 | ɨmbʲ | 1 | ro *îmbi* |  |
+| 1 | tɑ̃ | 1 | fr *tant* | and |
 | 2 | ambos | 3 | es *ambos*, gl *ambos*, lad *ambos* |  |
 | 2 | ambi | 1 | ro *ambii* |  |
 | 2 | ambo | 1 | it *ambo* |  |
 | 2 | ambɔs | 1 | sc *ambos* |  |
 | 2 | dambos | 1 | ast *dambos* |  |
 | 2 | sendos | 1 | es *sendos* | each |
+| 2 | ɐ̃mbuʃ | 1 | pt *ambos* |  |
 
 **enough** (lects with a form: 16)
 
@@ -1744,7 +1774,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | un | 7 | gl *un*, ast *un*, ca *un*, rgn *un*, vec *un*, fur *un*, lld *un* | a, an, indefinite, m sg, indefinite, not given |
+| 1 | un | 8 | gl *un*, ast *un*, ca *un*, rgn *un*, it *un*, vec *un*, fur *un*, lld *un* | a, an, indefinite, m sg, indefinite, not given |
 | 1 | ũ | 2 | pt *um*, rgn *ũ* | a, an, indefinite, f sg, indefinite, m sg |
 | 1 | yn | 2 | oc *un*, pms *un* | a, an, indefinite, f sg, indefinite, m sg |
 | 1 | œ̃ | 2 | fr *un*, nrf *un* | a, an, indefinite, m sg, someone |
@@ -1868,7 +1898,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | djeʃ | 2 | rm *diesch*, lld *diesc* |  |
 | 1 | d͡ʒi | 2 | nrf *dgix*, frp *dji*, frp *djyè* | 1sg, subject, I |
 | 1 | dex | 1 | lmo *dex* |  |
-| 1 | deʃ | 1 | rm *desch* | from, since |
+| 1 | deʃ | 1 | rm *desch* |  |
 
 **eleven** (lects with a form: 26)
 
@@ -1956,7 +1986,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | t͡ʃent | 2 | lmo *cent*, fur *cent* |  |
 | 1 | sent | 1 | pms *sent* |  |
 | 1 | slɛ̃ | 1 | frp *çhlin* |  |
-| 1 | sɑ̃ | 1 | fr *cent* | her, his, its, their |
+| 1 | sɑ̃ | 1 | fr *cent* | her, his, its, without |
 | 1 | sɛn | 1 | frp *sèn* |  |
 | 1 | sɛ̃ | 1 | wa *cint* | five, without |
 | 1 | t͡ʃant | 1 | dlm *ciant* |  |
@@ -1970,7 +2000,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | mel | 1 | dlm *mel* |  |
 | 1 | mĕl | 1 | rgn *mĕl* |  |
 | 1 | mij | 1 | nrf *mille* |  |
-| 1 | mje | 1 | ro *mie* |  |
+| 1 | mje | 1 | ro *mie* | 1sg, indirect, me |
 | 2 | mile | 3 | it *mille*, vec *mìle*, co *mille* |  |
 | 2 | miljaɾ | 2 | pt *milhar*, gl *millar* |  |
 
@@ -1983,9 +2013,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | prem | 1 | eml *prémm* |  |
 | 1 | prin | 1 | fur *prin* | by, through |
 | 1 | prɛm | 1 | rgn *prèm* |  |
-| 1 | pʀim | 1 | fr *prime* |  |
 | 1 | pʀø | 1 | fr *preu* |  |
 | 2 | pɾimo | 3 | es *primo*, gl *primo*, lad *primo* |  |
+| 2 | prima | 2 | lmo *prima*, it *prima* | before |
 
 **second** (lects with a form: 20)
 
@@ -2009,9 +2039,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | terθ | 1 | eml *têrz* |  |
 | 1 | tjɛʀ | 1 | fr *tiers* |  |
 | 1 | tjɛʀs | 1 | fr *tierce* |  |
-| 1 | tretʲ | 1 | ro *treti* |  |
 | 1 | tɛrs | 1 | ca *terç* |  |
 | 1 | tɾeʃ | 1 | pt *três* | three |
+| 2 | terso | 2 | lmo *terzo*, vec *terso* |  |
 
 **half** (lects with a form: 22)
 
@@ -2032,7 +2062,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | de | 11 | es *de*, gl *de*, ast *de*, lad *de*, oc *de*, lmo *de*, lij *de*, dlm *de* | about, by, for, from |
+| 1 | de | 13 | es *de*, gl *de*, ast *de*, lad *de*, oc *de*, ca *d'*, fr *d'*, lmo *de* | about, by, for, from |
 | 1 | di | 5 | wa *di*, it *di*, scn *di*, fur *di*, rup *di* | about, by, from, in |
 | 1 | a | 3 | fr *à*, gallo *à*, gallo *a*, ro *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 | də | 3 | ca *de*, fr *de*, gallo *de* | by, from |
@@ -2050,9 +2080,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | di | 2 | it *di*, scn *di* | about, by, from, in |
 | 1 | dɑ̃ | 2 | fr *dans*, gallo *dans*, gallo *dan* | at, during, from, in |
 | 1 | poɾ | 2 | es *por*, lad *por* | about, against, by, for |
+| 1 | ad | 1 | it *ad* | at, in |
 | 1 | de | 1 | sc *de* | about, by, for, from |
 | 1 | fins | 1 | ca *fins* | until |
-| 1 | in | 1 | it *in* | a, an, by, in |
 
 **in** (lects with a form: 29)
 
@@ -2076,7 +2106,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | dɛ̃ | 1 | pcd *dins* | among, in, inside |
 | 1 | ẽj | 1 | pt *em* | at, during, in, inside |
 | 1 | hens | 1 | gsc *hens* | in |
-| 1 | te | 1 | lld *te* | 2, stressed, 2, subject, 2sg, indirect, 2sg, object |
+| 1 | te | 1 | lld *te* | 2, indirect, 2, object, 2, reflexive, 2, stressed |
 | 1 | tu | 1 | rup *tu* | 2, subject, 2sg, subject, all, everything |
 | 1 | ɨn | 1 | ro *în* | in, on |
 
@@ -2098,13 +2128,13 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | a | 14 | es *a*, pt *a*, lad *a*, oc *a*, fr *à*, wa *a*, pcd *à*, nrf *à* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
-| 1 | la | 2 | ro *la*, rup *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
+| 1 | la | 2 | ro *la*, rup *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
+| 1 | ad | 1 | it *ad* | in, to |
 | 1 | aj | 1 | lld *ai* | that, then, there, yes |
 | 1 | da | 1 | it *da* | about, by, for, from |
 | 1 | dun | 1 | oc *dont* | in, where, while |
 | 1 | dɑ̃ | 1 | gallo *dans*, gallo *dan* | during, from, in, inside |
 | 1 | en | 1 | es *en* | after, in, on |
-| 1 | ẽj | 1 | pt *em* | during, in, inside, into |
 
 **with** (lects with a form: 29)
 
@@ -2115,7 +2145,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | ku | 4 | scn *cu*, co *cù*, ro *cu*, rup *cu* | than |
 | 1 | kun | 4 | ist *cun*, fur *cun*, lld *cun*, sc *cun* |  |
 | 1 | per | 2 | it *per*, lld *per* | by, for, in, on |
-| 1 | al | 1 | it *al* | 3pl f, subject, 3pl, subject, 3sg f, subject, 3sg m, object |
+| 1 | al | 1 | it *al* | 3pl f, subject, 3sg f, subject, 3sg m, object, 3sg m, subject |
 | 1 | amp | 1 | oc *amb* |  |
 | 1 | ap | 1 | oc *ab* |  |
 
@@ -2125,12 +2155,12 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | sin | 2 | es *sin*, lad *sin* |  |
 | 1 | sɑ̃ | 2 | fr *sans*, nrf *sans* | her, his, hundred, its |
-| 1 | bez | 1 | ro *bez* |  |
 | 1 | sen | 1 | gl *sen* | five, hundred |
 | 1 | senʃ | 1 | gsc *sensh* |  |
 | 1 | sẽj | 1 | pt *sem* |  |
 | 1 | sjẽj | 1 | mwl *sien* |  |
 | 1 | son | 1 | gallo *saun* |  |
+| 1 | sɛ̃ | 1 | wa *sins* | five, hundred |
 
 **for** (lects with a form: 21)
 
@@ -2195,20 +2225,20 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | ʃe | 1 | fr *chez* | at, if, in, to |
 | 2 | entɾe | 3 | es *entre*, gl *entre*, lad *entre* | between, from, inside |
 | 2 | ɑ̃teʀ | 2 | fr *entre*, nrf *entre* | between |
-| 2 | apo | 1 | it *appo* | after, at, before, behind |
+| 2 | danter | 1 | lld *danter* | between |
 
 **under** (lects with a form: 21)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | so | 3 | es *so*, gl *so*, ast *so* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, her |
+| 1 | so | 2 | gl *so*, ast *so* | 3sg f, indirect, 3sg f, object, 3sg n, indirect, her |
 | 1 | sot | 2 | fur *sot*, lld *sot* |  |
 | 1 | sub | 2 | es *sub*, ro *sub* |  |
 | 1 | sob | 1 | pt *sob* |  |
 | 1 | su | 1 | fr *sous* | 3sg f, object, about, above, definite, m sg |
 | 1 | sum | 1 | rup *sum* |  |
 | 1 | swo | 1 | nrf *souôs* | her, his, its, your |
-| 1 | sɔ | 1 | it *so* | his, its, only, their |
+| 2 | baʃo | 3 | an *baixo*, ast *baxo*, lad *basho* |  |
 
 **over** (lects with a form: 17)
 
@@ -2246,8 +2276,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | do | 1 | lld *do* | behind, two |
 | 1 | maj | 1 | ro *mai* | again, always, but, more |
 | 1 | əns | 1 | ca *ans* | 1pl, indirect, but, us |
-| 2 | ante | 4 | es *ante*, gl *ante*, ast *ante*, it *ante* | against |
 | 2 | antes | 4 | es *antes*, gl *antes*, ast *antes*, lad *antes* |  |
+| 2 | ante | 3 | es *ante*, gl *ante*, ast *ante* | against |
 
 **after** (lects with a form: 24)
 
@@ -2257,10 +2287,10 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | dʌp | 1 | eml *dåpp* | then |
 | 1 | en | 1 | ast *en* | at, in, on |
 | 1 | pos | 1 | es *pos* | behind, so, then |
-| 1 | pus | 1 | gl *pus* | behind, more |
 | 1 | pɥi | 1 | fr *puis* | and, then |
 | 1 | tɾes | 1 | ast *tres* | behind, three |
 | 2 | apʀe | 2 | gallo *aprés*, frp *apré* |  |
+| 2 | apʀɛ | 2 | fr *après*, nrf *après* |  |
 
 **until** (lects with a form: 17)
 
@@ -2309,7 +2339,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | kap | 2 | ca *cap*, gsc *cap* | any, no, none, to |
 | 1 | ta | 2 | an *ta*, gsc *tà* | 2sg, stressed, at, thee, to |
 | 1 | vɛʀ | 2 | fr *vers*, gallo *vèrs* | to, toward, yes |
-| 1 | la | 1 | ro *la* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
+| 1 | la | 1 | ro *la* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
 | 1 | spre | 1 | ro *spre* | for, to |
 | 1 | tad | 1 | gsc *tad* | for, toward |
 | 1 | vɛrs | 1 | ca *vers* |  |
@@ -2350,8 +2380,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | do | 1 | lld *do* | before, two |
 | 1 | dre | 1 | pms *dré* |  |
 | 1 | pos | 1 | es *pos* | after, so, then |
-| 1 | pus | 1 | gl *pus* | after, more |
-| 1 | tɾaʃ | 1 | pt *trás* |  |
+| 1 | tɾes | 1 | ast *tres* | after, three |
+| 2 | atɾas | 3 | es *atrás*, gl *atrás*, lad *atrás* |  |
 
 **during** (lects with a form: 12)
 
@@ -2387,10 +2417,10 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | dal | 1 | it *dal* | above, on, over |
 | 1 | de | 1 | ro *de* | about, by, for, from |
 | 1 | des | 1 | gl *des* | from, ten |
-| 1 | deʃ | 1 | pt *dês* | from, ten |
-| 1 | ja | 1 | ast *yá* | 1sg, subject, 3sg f, subject, I, already |
+| 1 | ja | 1 | ast *yá* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
 | 1 | zdɨ | 1 | mwl *zde* |  |
 | 2 | dende | 3 | gl *dende*, an *dende*, ast *dende* | from |
+| 2 | desde | 2 | es *desde*, gl *desde* | from |
 
 **inside** (lects with a form: 26)
 
@@ -2413,9 +2443,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | fur | 1 | fur *fûr* |  |
 | 1 | ord | 1 | rm *ord* |  |
 | 1 | ɔʀ | 1 | fr *hors* |  |
-| 2 | fora | 3 | it *fora*, scn *fora*, vec *fora* |  |
 | 2 | fɔɾa | 3 | pt *fora*, gl *fóra*, oc *fòra* |  |
 | 2 | dəvɑ̃ | 2 | fr *devant*, nrf *devaunt* | before |
+| 2 | fora | 2 | scn *fora*, vec *fora* |  |
 | 2 | fweɾa | 2 | es *fuera*, lad *fuera* |  |
 
 ## Conjunctions
@@ -2426,25 +2456,25 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | e | 13 | es *e*, gl *e*, oc *e*, fr *et*, gallo *e*, lij *e*, eml *e*, it *e* | 3pl f, object, but, definite, f pl, definite, pl |
 | 1 | ɛ | 5 | pt *e*, wa *et*, nrf *et*, co *è*, sc *e* | yes |
-| 1 | i | 3 | es *y*, ast *y*, gsc *i* | 3pl f, subject, 3pl m, subject, 3sg m, indirect, 3sg m, stressed |
+| 1 | i | 3 | es *y*, ast *y*, gsc *i* | 3pl f, subject, 3pl m, subject, 3sg f, indirect, 3sg m, indirect |
 | 1 | ʃi | 2 | ro *și*, rup *shi* | already, also, yes |
 | 1 | a | 1 | gallo *a* | 1pl, subject, 1sg, subject, 2pl, subject, 3sg f, indirect |
 | 1 | an | 1 | rm *an* | no, not |
-| 1 | jar | 1 | ro *iar* | again, also, but |
+| 1 | jar | 1 | ro *iar* | again |
 | 1 | je | 1 | an *y* | 1sg, subject, 2, subject, 3sg f, subject, I |
 
 **or** (lects with a form: 21)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | o | 6 | es *o*, ast *o*, lad *o*, scn *o*, co *o*, lld *o* | definite, m sg, indefinite, f sg, the, with |
+| 1 | o | 6 | es *o*, ast *o*, lad *o*, scn *o*, co *o*, lld *o* | 3sg f, stressed, a, an, definite, m sg |
 | 1 | u | 6 | es *u*, an *u*, oc *o*, fr *ou*, nrf *ou*, rm *u* | 3sg f, object, 3sg m, object, 3sg n, object, definite, m sg |
 | 1 | ɔ | 4 | ca *o*, lij *ò*, it *o*, sc *o* | 3sg m, indirect, 3sg n, indirect, definite, m sg, him |
 | 1 | ow | 2 | pt *ou*, gl *ou* |  |
-| 1 | aw | 1 | ro *au* | definite, m sg, now, the, with |
 | 1 | bjen | 1 | es *bien* | very, well |
 | 1 | e | 1 | rup *e* | 3pl f, object, and, but, definite, f pl |
 | 1 | ni | 1 | lij *ni* | 1pl, indirect, 1pl, object, 1pl, reflexive, nor |
+| 1 | od | 1 | it *od* |  |
 
 **but** (lects with a form: 20)
 
@@ -2455,9 +2485,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | mes | 2 | ca *mes*, gsc *mes* | mine, more, my |
 | 1 | dar | 1 | ro *dar* |  |
 | 1 | e | 1 | rup *e* | 3pl f, object, and, definite, f pl, definite, pl |
-| 1 | jar | 1 | ro *iar* | again, also, and |
 | 1 | kə | 1 | fr *que* | as, because, how, than |
 | 1 | maj | 1 | oc *mai* | again, always, before, more |
+| 1 | majs | 1 | gl *mais* | and, more |
 
 **if** (lects with a form: 19)
 
@@ -2476,14 +2506,14 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | ka | 4 | gl *ca*, ast *ca*, it *ca*, scn *ca* | as, here, than, that |
+| 1 | ka | 2 | ast *ca*, scn *ca* | as, here, than, that |
 | 1 | ke | 2 | es *que*, lad *ke* | as, how, some, than |
-| 1 | kar | 1 | ca *car* | as |
-| 1 | kaɾ | 1 | es *car* |  |
 | 1 | kaʀ | 1 | fr *car* | as |
 | 1 | kã | 1 | rup *cã* |  |
 | 1 | kɔm | 1 | fr *comme* | as, how, than, that |
 | 1 | kə | 1 | ro *că* | as, but, how, than |
+| 1 | kət͡ʃ | 1 | ro *căci* |  |
+| 1 | kɨ | 1 | pt *que* | and, how, than, that |
 
 **that** (lects with a form: 19)
 
@@ -2491,18 +2521,17 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | ke | 9 | es *que*, gl *que*, lad *ke*, oc *que*, rgn *che*, it *che*, ist *che*, rm *che* | as, because, how, some |
 | 1 | kə | 4 | ca *que*, fr *que*, gallo *qe*, ro *că* | as, because, but, how |
-| 1 | ka | 2 | it *ca*, scn *ca* | as, because, here, than |
 | 1 | ki | 2 | gsc *qui*, sc *chi* | 3sg f, subject, 3sg m, subject, he, if |
-| 1 | la | 2 | pt *lá*, fr *-là* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
+| 1 | la | 2 | pt *lá*, fr *-là* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
 | 1 | aj | 1 | es *ahí* | at, then, there, yes |
 | 1 | de | 1 | ro *de* | about, by, for, from |
+| 1 | ka | 1 | scn *ca* | as, because, here, than |
 | 1 | kɔm | 1 | gallo *come* | as, because, how, than |
 
 **while** (lects with a form: 10)
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | de | 1 | ro *de* | about, by, for, from |
 | 1 | dun | 1 | ast *dun* | at, in, where |
 | 1 | orʲ | 1 | ro *ori* | or |
 | 1 | si | 1 | fr *si* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
@@ -2510,6 +2539,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 2 | finke | 1 | it *finché* |  |
 | 2 | mentre | 1 | it *mentre* | as |
 | 2 | mentɾes | 1 | gl *mentres* | as |
+| 2 | mentɾə | 1 | ca *mentre* |  |
 
 **as** (lects with a form: 19)
 
@@ -2519,10 +2549,10 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | tan | 3 | es *tan*, gl *tan*, ca *tan* | and, so, very |
 | 1 | kum | 2 | nrf *coumme*, ro *cum* | how |
 | 1 | fa | 1 | vec *fa* |  |
-| 1 | ja | 1 | ast *yá* | 1sg, subject, 3sg f, subject, I, already |
+| 1 | ja | 1 | ast *yá* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
 | 1 | ka | 1 | ro *ca* | because, here, than, that |
 | 1 | kal | 1 | dlm *cal* | which |
-| 1 | kar | 1 | ca *car* | because |
+| 1 | kaʀ | 1 | fr *car* | because |
 
 **than** (lects with a form: 12)
 
@@ -2542,7 +2572,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | ni | 3 | ca *ni*, fr *ni*, lij *ni* | 1pl, indirect, 1pl, object, 1pl, reflexive, or |
-| 1 | ne | 2 | it *né*, vec *né* | from, not |
+| 1 | ne | 2 | it *né*, vec *né* | 1pl, reflexive, from, not, us |
 | 1 | nin | 2 | gl *nin*, ast *nin* |  |
 | 1 | nẽj | 1 | pt *nem* | no |
 | 1 | nit͡ʃ | 1 | ro *nici* |  |
@@ -2568,13 +2598,13 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | tan | 3 | es *tan*, gl *tan*, ca *tan* | and, as, very |
-| 1 | si | 2 | fr *si*, it *sì* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 | 1 | bjɛ̃ | 1 | fr *bien* | much, very, well |
 | 1 | det͡ʃ | 1 | ro *deci* | therefore |
 | 1 | duŋk | 1 | oc *donc* | then |
 | 1 | dwank | 1 | dlm *duanc* | therefore |
 | 1 | dɔŋs | 1 | ca *doncs* | then, therefore, well |
 | 1 | dɔ̃ | 1 | gallo *don* | therefore, which, whose |
+| 1 | pojs | 1 | gl *pois* | because, then |
 
 **then** (lects with a form: 26)
 
@@ -2584,8 +2614,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | duŋk | 1 | oc *donc* | so |
 | 1 | dɔŋs | 1 | ca *doncs* | so, therefore, well |
 | 1 | dʌp | 1 | eml *dåpp* | after |
-| 1 | ej | 1 | ast *ehí* | 3pl m, subject, there, they, yes |
-| 1 | ja | 1 | es *ya* | 1sg, subject, 3sg f, subject, I, already |
+| 1 | ej | 1 | ast *ehí* | 3pl m, stressed, 3pl m, subject, 3sg f, indirect, 3sg f, object |
+| 1 | ja | 1 | es *ya* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
 | 1 | lɔʀ | 1 | fr *lors* |  |
 | 1 | pojs | 1 | gl *pois* | because, so |
 
@@ -2611,11 +2641,11 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | si | 10 | es *sí*, pt *si*, gl *si*, ast *sí*, lad *si*, ca *sí*, fr *si*, it *sì* | 1pl, subject, 2, subject, 2sg, reflexive, 3 reflexive, reflexive |
 | 1 | se | 3 | es *sé*, rgn *sé*, scn *se* | 1pl, subject, 2, subject, 2sg, reflexive, 2sg, subject |
 | 1 | wi | 3 | fr *oui*, nrf *oui*, it *uì* |  |
-| 1 | ja | 2 | pt *iá*, ast *yá* | 1sg, subject, 3sg f, subject, I, already |
-| 1 | je | 2 | ro *ie*, rup *ie* | 1sg, subject, 2, subject, 3sg f, subject, I |
+| 1 | ja | 2 | pt *iá*, ast *yá* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
 | 1 | ʃi | 2 | rm *schi*, lld *sci* | already, also, and |
 | 1 | aj | 1 | rm *hai* | at, that, then, there |
 | 1 | bajn | 1 | rm *bain* | well |
+| 1 | banj | 1 | rm *bagn* | well |
 
 **no** (lects with a form: 19)
 
@@ -2638,7 +2668,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 1 | non | 4 | gl *non*, lad *non*, it *non*, scn *non* | no |
 | 1 | nun | 3 | gl *nun*, ast *nun*, scn *nun* | 1pl, subject, no, we |
 | 1 | nɔ | 3 | mwl *nó*, lmo *nò*, it *no* | 1pl, subject, nine, no, we |
-| 1 | ne | 2 | gsc *ne*, lld *ne* | from, nor |
+| 1 | ne | 2 | gsc *ne*, lld *ne* | 1pl, reflexive, from, nor, us |
 | 1 | nu | 2 | ro *nu*, rup *nu* | 1pl, indirect, 1pl, subject, a, an |
 | 1 | pas | 2 | oc *pas*, gallo *pas* |  |
 | 1 | an | 1 | eml *an* | and, no |
@@ -2647,14 +2677,14 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | jar | 1 | ro *iar* | again, and, but |
 | 1 | nenk | 1 | rgn *nench* |  |
 | 1 | ʃi | 1 | ro *și* | already, and, yes |
 | 2 | anka | 4 | lmo *anca*, vec *anca*, ist *anca*, dlm *anca* | too |
-| 2 | itu | 2 | fr *itou*, nrf *itou* |  |
 | 2 | tambjen | 2 | es *también*, lad *tambien* | so, too |
 | 2 | tamjen | 2 | an *tamién*, ast *tamién* | too |
 | 2 | ajnda | 1 | gl *aínda* | almost, still, yet |
+| 2 | aka | 1 | lmo *aca* | here, too |
+| 2 | aljen | 1 | ast *allén* |  |
 
 **too** (lects with a form: 22)
 
@@ -2675,7 +2705,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | sɔ | 2 | pt *só*, gl *só* | his, its, their, theirs |
 | 1 | dwar | 1 | ro *doar* |  |
-| 1 | ja | 1 | es *ya* | 1sg, subject, 3sg f, subject, I, already |
+| 1 | ja | 1 | es *ya* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
 | 1 | jɛ̃k | 1 | fr *yinque* |  |
 | 1 | sɔls | 1 | ca *sols* |  |
 | 1 | tot | 1 | ro *tot* | about, all, every, everyone |
@@ -2699,9 +2729,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | ja | 3 | es *ya*, ast *yá*, lad *ya* | 1sg, subject, 3sg f, subject, I, as |
-| 1 | ʒa | 3 | pt *já*, ca *ja*, fr *jà* | now |
+| 1 | ja | 3 | es *ya*, ast *yá*, lad *ya* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
 | 1 | d͡ʒa | 2 | it *già*, fur *za* | yes, yet |
+| 1 | ʒa | 2 | pt *já*, ca *ja* | now |
 | 1 | sa | 1 | vec *zà* | 3pl, object, 3pl, subject, 3sg f, object, 3sg f, subject |
 | 1 | ʃa | 1 | gl *xa* |  |
 | 1 | ʃi | 1 | ro *și* | also, and, yes |
@@ -2713,7 +2743,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | kɔʀ | 2 | pcd *core*, gallo *core*, gallo *corr* | again, yet |
-| 1 | awn | 1 | es *aun*, es *aún* | yet |
+| 1 | awn | 1 | es *aún* | yet |
 | 1 | kwaʀ | 1 | pcd *coire* | again, yet |
 | 1 | kwɛʀ | 1 | pcd *coère* | again, yet |
 | 1 | tot | 1 | ro *tot* | about, all, every, everyone |
@@ -2726,9 +2756,9 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | kɔʀ | 2 | pcd *core*, gallo *core*, gallo *corr* | again, still |
-| 1 | awn | 1 | es *aun*, es *aún* | still |
+| 1 | awn | 1 | es *aún* | still |
 | 1 | d͡ʒa | 1 | it *già* | already, yes |
-| 1 | ja | 1 | es *ya* | 1sg, subject, 3sg f, subject, I, already |
+| 1 | ja | 1 | es *ya* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
 | 1 | kwaʀ | 1 | pcd *coire* | again, still |
 | 1 | kwɛʀ | 1 | pcd *coère* | again, still |
 | 2 | ajnda | 3 | gl *aínda*, ast *aínda*, lad *ainda*, lad *aínda* | almost, also, still |
@@ -2738,8 +2768,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | ja | 3 | es *ya*, ast *yá*, ro *ia* | 1sg, subject, 3sg f, subject, I, already |
-| 1 | aw | 2 | an *au*, ca *au* | definite, m sg, or, the, with |
+| 1 | ja | 3 | es *ya*, ast *yá*, ro *ia* | 1sg, subject, 3sg f, stressed, 3sg f, subject, I |
+| 1 | aw | 2 | an *au*, ca *au* | definite, m sg, the, with |
 | 1 | ʒa | 2 | pt *já*, ca *ja* | already |
 | 1 | liv | 1 | fr *live* |  |
 | 1 | mo | 1 | it *mo* |  |
@@ -2753,8 +2783,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | ka | 3 | pt *cá*, scn *cca*, lld *ca* | as, because, than, that |
 | 1 | kwa | 3 | it *qua*, rm *qua*, ro *coa* | enough, nothing, what, which |
-| 1 | kwi | 2 | it *qui*, vec *qûi* | who, whom |
-| 1 | t͡ʃi | 2 | it *ci*, scn *cci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3sg n, subject |
+| 1 | kwi | 2 | it *qui*, vec *qûi* | who, whom, whose |
+| 1 | t͡ʃi | 2 | it *ci*, scn *cci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3pl, indirect |
 | 1 | ajt͡ʃ | 1 | ro *aici* |  |
 | 1 | kawk | 1 | dlm *cauc* |  |
 | 1 | kjɔ | 1 | lld *chiò* |  |
@@ -2764,13 +2794,13 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | la | 6 | pt *lá*, fr *là*, wa *la*, eml *là*, it *là*, rm *là* | 2sg, object, 3pl, object, 3sg f, object, 3sg f, subject |
-| 1 | t͡ʃi | 3 | it *ci*, scn *cci*, co *ci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3sg n, subject |
+| 1 | la | 6 | pt *lá*, fr *là*, wa *la*, eml *là*, it *là*, rm *là* | 2, object, 2sg, object, 3sg f, object, 3sg f, subject |
+| 1 | t͡ʃi | 3 | it *ci*, scn *cci*, co *ci* | 1pl, indirect, 1pl, object, 1pl, reflexive, 3pl, indirect |
 | 1 | ɡe | 3 | lmo *ghe*, lij *ghe*, vec *ghe* | 3pl f, indirect, 3sg f, indirect, 3sg m, indirect, 3sg n, indirect |
 | 1 | aj | 2 | es *ahí*, lad *aí* | at, that, then, yes |
-| 1 | ej | 1 | ast *ehí* | 3pl m, subject, then, they, yes |
-| 1 | le | 1 | eml *lé* | 2, indirect, 2, object, 3pl f, object, 3pl, indirect |
-| 1 | li | 1 | it *lì* | 3pl f, object, 3pl m, indirect, 3pl m, object, 3pl, indirect |
+| 1 | ej | 1 | ast *ehí* | 3pl m, stressed, 3pl m, subject, 3sg f, indirect, 3sg f, object |
+| 1 | le | 1 | eml *lé* | 2, indirect, 2, object, 3pl f, indirect, 3pl f, object |
+| 1 | li | 1 | it *lì* | 3pl f, object, 3pl m, object, 3pl, indirect, 3sg f, indirect |
 | 1 | luk | 1 | dlm *luc* |  |
 
 **never** (lects with a form: 16)
@@ -2778,13 +2808,13 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
 | 1 | maj | 4 | ca *mai*, it *mai*, ist *mai*, fur *mai* | again, always, before, but |
-| 1 | aɾ | 1 | gl *ar* |  |
 | 2 | nunka | 3 | es *nunca*, ast *nunca*, lad *nunka* |  |
 | 2 | ʒamɛ | 2 | fr *jamais*, frp *jamê* |  |
 | 2 | d͡ʒamaj | 1 | it *giammai* |  |
 | 2 | nunθa | 1 | gl *nunca* |  |
 | 2 | nũka | 1 | pt *nunca* |  |
 | 2 | samaj | 1 | lmo *zamai* |  |
+| 2 | xamas | 1 | es *jamás* |  |
 
 **always** (lects with a form: 23)
 
@@ -2796,8 +2826,8 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 | 2 | sempɾe | 2 | gl *sempre*, oc *sempre* |  |
 | 2 | tudi | 2 | fr *toudis*, pcd *toudis* | still |
 | 2 | merew | 1 | ro *mereu* |  |
-| 2 | pururʲ | 1 | ro *pururi* |  |
 | 2 | sempor | 1 | eml *sémpor* | still |
+| 2 | sempɾə | 1 | ca *sempre* |  |
 
 **again** (lects with a form: 16)
 
@@ -2805,7 +2835,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 |---:|---|---:|---|---|
 | 1 | bis | 2 | ca *bis*, fr *bis* |  |
 | 1 | kɔʀ | 2 | pcd *core*, gallo *core*, gallo *corr* | still, yet |
-| 1 | jar | 1 | ro *iar* | also, and, but |
+| 1 | jar | 1 | ro *iar* | and |
 | 1 | kwaʀ | 1 | pcd *coire* | still, yet |
 | 1 | kwɛʀ | 1 | pcd *coère* | still, yet |
 | 1 | maj | 1 | ro *mai* | always, before, but, more |
@@ -2855,7 +2885,7 @@ For each meaning, every lect's forms are read and grouped by their sounds. A row
 
 | σ | sounds | lects | attested as | also |
 |---:|---|---:|---|---|
-| 1 | kraj | 2 | it *crai*, scn *crai* |  |
+| 1 | kraj | 1 | scn *crai* |  |
 | 1 | kras | 1 | sc *cras* |  |
 | 2 | doman | 4 | lmo *doman*, vec *doman*, fur *doman*, lld *doman* |  |
 | 2 | deman | 2 | oc *deman*, eml *dman* |  |

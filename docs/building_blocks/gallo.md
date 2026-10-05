@@ -27,7 +27,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
 | definite | *le* lə (1), *l’* (not read), *ao* aw (1) | *la* la (1) |  | *les* ləs (1), *lez* lɛ (1), *lé* le (1) | *les* ləs (1), *lez* lɛ (1), *lé* le (1) |  |  |  |
-| indefinite | *un* œ̃ (1), *in* ɛ̃ (1), *enn* ɑn (1), *yun* jyn (1) | *ûne* yn (1), *unn* œn (1), *enn* ɑn (1), *yun* jyn (1), *ùm* ym (1) |  | *dez* dɛ (1), *dé* de (1) | *dez* dɛ (1), *dé* de (1) |  |  |  |
+| indefinite | *un* œ̃ (1), *in* ɛ̃ (1), *enn* ɑn (1), *yun* jyn (1) | *ûne* yn (1), *unn* œn (1), *une* yn (1), *ene* ɛn (1), *enn* ɑn (1), *yun* jyn (1), *ùm* ym (1) |  | *dez* dɛ (1), *dé* de (1) | *dez* dɛ (1), *dé* de (1) |  | *des* dəs (1) |  |
 
 ## Personal pronouns
 
@@ -128,6 +128,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | the | *ao* | aw | 1 | Le (précède alors un nom désignant une partie de la journée). |
 | the | *ilë* | not read |  | Ce, cette, ces. Note d’usage : il est alors précédé de l’article défini le, la ou les et d |
 | a | *un* | œ̃ | 1 | Un, une. |
+| a | *des* | dəs | 1 | Pluriel de un, une, ene et ine. |
 | a | *in* | ɛ̃ | 1 | Un. |
 | a | *enn* | ɑn | 1 | Un. |
 | a | *yun* | jyn | 1 | Un. Note d’usage : cette forme est une forme dite isolée, dont le féminin est yune ou yeun |
@@ -198,7 +199,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | many | *beleben* | bələbɑ̃ | 3 | Beaucoup. |
 | many | *belebin* | bələbɛ̃ | 3 | Beaucoup. |
 | many | *belchozz* | bɛlʃɔz | 2 | Beaucoup. |
-| many | *baocoup* | bawku | 2 | Beaucoup. |
 | many | *berchouze* | bɛʀʃuz | 2 | Beaucoup. |
 | many | *berchôze* | bɛʀʃoz | 2 | Beaucoup. |
 | much | *ben* | bɑ̃ | 1 | Beaucoup. |
@@ -208,7 +208,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | much | *beleben* | bələbɑ̃ | 3 | Beaucoup. |
 | much | *belebin* | bələbɛ̃ | 3 | Beaucoup. |
 | much | *belchozz* | bɛlʃɔz | 2 | Beaucoup. |
-| much | *baocoup* | bawku | 2 | Beaucoup. |
 | much | *berchouze* | bɛʀʃuz | 2 | Beaucoup. |
 | much | *berchôze* | bɛʀʃoz | 2 | Beaucoup. |
 | few | *mouéch* | mweʃ | 1 | Peu. |

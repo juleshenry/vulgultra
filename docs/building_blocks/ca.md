@@ -14,9 +14,9 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 | 3sg m | *ell* elj (1) | *el* əl (1), *lo* lu (1) | *li* li (1), *se* sə (1), *es* əs (1) |  | *si* si (1) |
 | 3sg f | *ella* eljə (2) | *la* lə (1), *sou* sow (1), *seu* sew (1) | *li* li (1), *se* sə (1), *es* əs (1) |  | *si* si (1) |
 | 3sg n | *això* əʃɔ (2), *allò* əljɔ (2), *açò* əsɔ (2) | *ho* u (1) | *li* li (1) |  |  |
-| 1pl | *nos* nus (1), *nosaltres* nuzaltɾəs (3), *nosaltros* nuzaltɾus (3) |  | *nos* nus (1), *mos* mos (1), *ens* əns (1) |  |  |
+| 1pl | *nosaltres* nuzaltɾəs (3), *nosaltros* nuzaltɾus (3) |  | *nos* nus (1), *mos* mos (1), *ens* əns (1) |  |  |
 | 2pl | *vosaltres* vuzaltɾəs (3), *vostès* vustɛs (2), *vostés* vustes (2), *vosaltros* vuzaltɾus (3) |  | *us* us (1), *vos* vus (1) |  |  |
-| 3pl | *elli* elji (2) | *elli* elji (2) | *se* sə (1), *es* əs (1) |  | *si* si (1) |
+| 3pl |  |  | *se* sə (1), *es* əs (1) |  | *si* si (1) |
 | 3pl m | *ellos* eljus (2), *ells* eljs (1) |  | *los* lus (1), *els* əls (1) |  |  |
 | 3pl f | *elles* eljəs (2) | *les* ləs (1) | *los* lus (1), *els* əls (1) |  |  |
 | 3 reflexive |  |  | *se* sə (1), *es* əs (1) |  | *si* si (1) |
@@ -27,7 +27,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
-| definite | *el* əl (1), *es* əs (1), *lo* lu (1) | *la* lə (1), *sa* sə (1) | *lo* lu (1) | *els* əls (1), *es* əs (1), *sos* sɔs (1), *los* lus (1) | *les* ləs (1), *ses* sɛs (1) |  |  |  |
+| definite | *el* əl (1), *es* əs (1), *l'* elə (2) | *la* lə (1), *sa* sə (1) |  | *els* əls (1), *es* əs (1), *sos* sɔs (1) | *les* ləs (1), *ses* sɛs (1) |  |  |  |
 | indefinite | *un* un (1) | *una* unə (2) |  | *uns* uns (1) | *unes* unəs (2) |  |  |  |
 
 ## Personal pronouns
@@ -69,7 +69,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | it | *això* | əʃɔ | 2 | that, it |
 | it | *allò* | əljɔ | 2 | that, that over there, it |
 | it | *açò* | əsɔ | 2 | this, it |
-| we | *nos* | nus | 1 | we |
+| we | *nos* | nus | 1 | we (the so-called royal we, used by a king or queen to refer to themselves in the first pe |
 | we | *nosaltres* | nuzaltɾəs | 3 | we |
 | we | *nosaltros* | nuzaltɾus | 3 | we |
 | us | *nos* | nus | 1 | us (direct or indirect object) |
@@ -77,11 +77,9 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | us | *ens* | əns | 1 | us (direct or indirect object) |
 | they | *elles* | eljəs | 2 | they (feminine) |
 | they | *ellos* | eljus | 2 | they (masculine or mixed group) |
-| they | *elli* | elji | 2 | they, them (singular); a gender-neutral singular third-person personal pronoun |
 | they | *ells* | eljs | 1 | they (masculine or mixed group) |
 | them | *los* | lus | 1 | them (masculine, direct or indirect object) |
 | them | *les* | ləs | 1 | them (feminine, direct object) |
-| them | *elli* | elji | 2 | they, them (singular); a gender-neutral singular third-person personal pronoun |
 | them | *els* | əls | 1 | them (masculine, direct or indirect object) |
 | oneself | *si* | si | 1 | oneself |
 | oneself | *se* | sə | 1 | oneself (direct or indirect object) |
@@ -125,10 +123,8 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | ours | *nostre* | nɔstɾə | 2 | our, ours |
 | ours | *nostrat* | nustɾat | 2 | ours, belonging to our nation |
 | their | *son* | sɔn | 1 | their |
-| their | *sou* | sow | 1 | their, theirs |
 | their | *seu* | sew | 1 | their, theirs |
 | their | *llur* | ljur | 1 | their |
-| theirs | *sou* | sow | 1 | their, theirs |
 | theirs | *seu* | sew | 1 | their, theirs |
 | theirs | *llur* | ljur | 1 | theirs |
 
@@ -139,8 +135,8 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | the | *el* | əl | 1 | the; definite article |
 | the | *la* | lə | 1 | the; feminine singular definite article |
 | the | *es* | əs | 1 | the |
-| the | *lo* | lu | 1 | the (definite article) |
 | the | *les* | ləs | 1 | the; feminine plural definite article |
+| the | *l'* | elə | 2 | contraction of el: the |
 | the | *ses* | sɛs | 1 | feminine plural definite article; the |
 | the | *els* | əls | 1 | the; masculine plural definite article |
 | a | | | | |
@@ -237,7 +233,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | little | *petit* | pətit | 2 | small, little |
 | little | *poc* | pɔk | 1 | little, not much |
 | little | *escàs* | əskas | 2 | little |
-| more | *pus* | pus | 1 | more |
+| more | *pus* | pus | 1 | more (in negative sentences) |
 | more | *més* | mes | 1 | more (used to form comparatives) |
 | less | *manco* | manku | 2 | less |
 | less | *menys* | mɛnjʃ | 1 | less (not as much) |
@@ -293,6 +289,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | of | *de* | də | 1 | of; from |
+| of | *d'* | de | 1 | apocopic form of de: of |
 | of | *d'el* | dəl | 1 | of/from the |
 | to | *cap* | kap | 1 | towards, to |
 | to | *a* | ə | 1 | to; indicating movement towards a particular place |
@@ -381,15 +378,12 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | but | *però* | pəɾɔ | 2 | but |
 | but | *sinó* | sino | 2 | but (on the contrary) |
 | if | *si* | si | 1 | if |
-| because | *car* | kar | 1 | as, since, because, for |
-| because | *pues* | pwəs | 1 | because, since |
 | because | *perquè* | pərkɛ | 2 | why, because |
 | because | *puix* | puʃ | 1 | since, because |
 | because | *percosa* | pərkozə | 3 | because |
 | that | *que* | kə | 1 | that |
 | while | *mentre* | mentɾə | 2 | while |
 | while | *malgrat* | məlɡɾat | 2 | while |
-| as | *car* | kar | 1 | as, since, because, for |
 | as | *tan* | tan | 1 | as ... as |
 | as | *com* | kɔm | 1 | as ... as |
 | than | *que* | kə | 1 | than |
@@ -397,13 +391,11 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | although | *malgrat* | məlɡɾat | 2 | although |
 | although | *baldament* | bəldəmen | 3 | even though, although |
 | so | *tan* | tan | 1 | so, such |
-| so | *pues* | pwəs | 1 | so, then; in that case |
 | so | *llavors* | ljəvors | 2 | then, in that case, so |
 | so | *doncs* | dɔŋs | 1 | so, therefore |
 | so | *així* | əʃi | 2 | so, thus, in this way |
 | so | *aleshores* | ələʃɔɾəs | 4 | so, then, in that case |
 | so | *idò* | idɔ | 2 | then, so |
-| then | *pues* | pwəs | 1 | so, then; in that case |
 | then | *llavors* | ljəvors | 2 | then, at that time |
 | then | *doncs* | dɔŋs | 1 | then |
 | then | *després* | dəspɾes | 2 | then, following that |
@@ -442,7 +434,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | now | *ja* | ʒa | 1 | now, immediately, at once |
 | now | *ara* | aɾə | 2 | now (at the present time) |
 | here | *aquí* | əki | 2 | here |
-| here | *ça* | sa | 1 | here; in this place |
 | here | *ací* | əsi | 2 | here |
 | here | *ençà* | ənsa | 2 | here, this way, towards here (indicating motion towards the speaker) |
 | there | *allí* | əlji | 2 | there, over there |
@@ -451,12 +442,9 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | there | *allà* | əlja | 2 | there, over there |
 | never | *mai* | maj | 1 | never |
 | always | *sempre* | sempɾə | 2 | always |
-| always | *totjorn* | tud͡ʒɔrn | 2 | always |
 | always | *tothora* | totɔɾə | 3 | always |
-| always | *tostemps* | tostems | 2 | always |
 | again | *bis* | bis | 1 | again |
 | again | *novament* | nɔvəmen | 3 | again, newly |
-| well | *bueno* | bwɛnu | 2 | well, okay |
 | well | *bé* | be | 1 | well |
 | well | *doncs* | dɔŋs | 1 | well; so |
 | today | *avui* | əvuj | 2 | today |

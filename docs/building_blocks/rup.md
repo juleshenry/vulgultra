@@ -8,12 +8,12 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 
 | | subject | object | indirect | stressed | reflexive |
 |---|---|---|---|---|---|
-| 1sg | *mini* mini (2), *iou* jow (1) | *mini* mini (2), *iou* jow (1) |  |  |  |
+| 1sg | *mini* mini (2), *iou* jow (1) | *mini* mini (2), *iou* jow (1) |  |  | *mi* mi (1) |
 | 2sg | *tu* tu (1) |  |  |  |  |
-| 2 | *voi* voj (1), *tini* tini (2) |  | *vi* vi (1), *vã* vã (1) |  |  |
+| 2 | *voi* voj (1), *tini* tini (2) |  | *vi* vi (1), *vã* vã (1) |  | *ti* ti (1) |
 | 3sg m | *el* el (1), *elu* elu (2), *nes* nes (1), *nãs* nãs (1) | *el* el (1), *ãl* ãl (1) | *lui* lwi (1), *ãlj* ãlj (1) |  |  |
-| 3sg f | *ea* eja (2), *nãsã* nãsã (2) | *u* u (1), *ea* eja (2) | *ãlj* ãlj (1) |  |  |
-| 1pl | *noi* noj (1) | *noi* noj (1) | *noauã* nojawã (3) |  |  |
+| 3sg f | *ea* eja (2), *nãsã* nãsã (2) | *u* u (1), *ea* eja (2), *ljei* ljej (1) | *ljei* ljej (1), *ãlj* ãlj (1) |  |  |
+| 1pl | *noi* noj (1) | *noi* noj (1) | *noauã* nojawã (3) |  | *ni* ni (1), *nã* nã (1) |
 | 2pl | *vi* vi (1), *voi* voj (1), *vã* vã (1) |  | *voauã* vojawã (3) |  |  |
 | 3pl |  | *ãlj* ãlj (1) | *lor* lor (1) |  |  |
 | 3pl m | *nesh* neʃ (1), *nãsh* nãʃ (1), *elj* elj (1) | *elj* elj (1) | *lã* lã (1) |  |  |
@@ -33,9 +33,11 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 |---|---|---|---:|---|
 | I | *mini* | mini | 2 | I |
 | I | *iou* | jow | 1 | I |
+| me | *mi* | mi | 1 | me (accusative) |
 | me | *mini* | mini | 2 | me |
 | me | *iou* | jow | 1 | me |
 | you | *vi* | vi | 1 | you (group being addressed) |
+| you | *ti* | ti | 1 | you |
 | you | *tu* | tu | 1 | you (singular) |
 | you | *voi* | voj | 1 | you (plural), you all (group being addressed) |
 | you | *vã* | vã | 1 | you (group being addressed) |
@@ -55,11 +57,14 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | she | *nãsã* | nãsã | 2 | she |
 | her | *u* | u | 1 | her |
 | her | *ea* | eja | 2 | her |
+| her | *ljei* | ljej | 1 | her |
 | her | *ãlj* | ãlj | 1 | (to) her |
 | it | | | | |
 | we | *noi* | noj | 1 | we |
+| us | *ni* | ni | 1 | us |
 | us | *noi* | noj | 1 | us |
 | us | *noauã* | nojawã | 3 | (to) us |
+| us | *nã* | nã | 1 | us |
 | they | *nesh* | neʃ | 1 | they (all male or mixed group) |
 | they | *nãsh* | nãʃ | 1 | they (all male or mixed group) |
 | they | *elj* | elj | 1 | they (all male or mixed group) |
@@ -73,7 +78,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | them | *ãlj* | ãlj | 1 | them (all-male or mixed group) |
 | oneself | | | | |
 | himself | | | | |
-| myself | | | | |
+| myself | *mi* | mi | 1 | myself |
 | yourself | | | | |
 
 ## Possessives
@@ -87,11 +92,11 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | mine | | | | |
 | your | *voastrã* | vojastrã | 3 | your; second-person masculine plural possessive pronoun |
 | yours | | | | |
-| his | | | | |
+| his | *lui* | lwi | 1 | his |
 | its | | | | |
 | our | *noastrã* | nojastrã | 3 | our; first-person masculine plural possessive pronoun |
 | ours | | | | |
-| their | | | | |
+| their | *lor* | lor | 1 | their (third-personal plural possessor) |
 | theirs | | | | |
 
 ## Articles and demonstratives

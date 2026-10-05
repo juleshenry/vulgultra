@@ -115,6 +115,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 |---|---|---|---:|---|
 | who | | | | |
 | whom | | | | |
+| what | *cösa* | kɔsa | 2 | alternative form of cöse; what (interrogative) |
 | what | *cöse* | kɔse | 2 | what |
 | which | | | | |
 | whose | | | | |

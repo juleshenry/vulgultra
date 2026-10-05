@@ -8,17 +8,16 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 
 | | subject | object | indirect | stressed | reflexive |
 |---|---|---|---|---|---|
-| 1sg | *eu* ew (1) |  |  |  | *însumi* ɨnsumʲ (2), *însămi* ɨnsəmʲ (2) |
-| 2sg | *tu* tu (1), *mata* mata (2), *dumneata* dumnjata (3), *matale* matale (3) |  |  |  | *însuți* ɨnsut͡sʲ (2), *însăți* ɨnsət͡sʲ (2) |
-| 2 | *se* se (1), *voi* voj (1) |  |  |  |  |
-| 3sg m | *el* el (1), *îns* ɨns (1), *dânsul* dɨnsul (2), *dumnealui* dumnjalwi (3) |  |  |  | *se* se (1), *sine* sine (2), *sie* sje (1), *sieși* sjeʃʲ (1), *însuși* ɨnsuʃʲ (2) |
-| 3sg f | *ea* ja (1), *dânsa* dɨnsa (2), *dumneaei* dumnjajej (3) |  |  |  | *se* se (1), *sine* sine (2), *sie* sje (1), *sieși* sjeʃʲ (1), *însăși* ɨnsəʃʲ (2) |
-| 3sg n | *îns* ɨns (1) |  |  |  |  |
-| 1pl | *noi* noj (1) |  |  |  | *înșine* ɨnʃine (3) |
-| 2pl | *unu* unu (2), *dumneavoastră* dumnjavwastrə (4) |  |  |  |  |
-| 3pl | *se* se (1), *dumnealor* dumnjalor (3) |  |  |  | *se* se (1), *sine* sine (2), *sie* sje (1), *sieși* sjeʃʲ (1) |
-| 3pl m | *ei* ej (1) |  |  |  | *înșiși* ɨnʃiʃʲ (2) |
-| 3pl f | *ele* ele (2) |  |  |  | *însele* ɨnsele (3) |
+| 1sg | *eu* ew (1) |  | *mie* mje (1), *îmi* ɨmʲ (1) | *mine* mine (2) | *mă* mə (1), *însumi* ɨnsumʲ (2), *însămi* ɨnsəmʲ (2) |
+| 2sg | *tu* tu (1), *mata* mata (2), *dumneata* dumnjata (3), *matale* matale (3) |  | *dumitale* dumitale (4) |  | *te* te (1), *însuți* ɨnsut͡sʲ (2), *însăți* ɨnsət͡sʲ (2) |
+| 2 | *se* se (1), *voi* voj (1) |  | *vi* vi (1), *îți* ɨt͡sʲ (1), *ție* t͡sje (1) | *voi* voj (1), *tine* tine (2) | *te* te (1), *vă* və (1) |
+| 3sg m | *el* el (1), *dânsul* dɨnsul (2), *dumnealui* dumnjalwi (3) |  | *lui* lwi (1), *îi* ɨj (1) | *el* el (1), *îl* ɨl (1) | *se* se (1), *sine* sine (2), *își* ɨʃʲ (1), *însuși* ɨnsuʃʲ (2) |
+| 3sg f | *ea* ja (1), *dânsa* dɨnsa (2), *dumneaei* dumnjajej (3) | *ei* ej (1) | *ei* ej (1), *îi* ɨj (1) | *o* o (1), *ea* ja (1) | *se* se (1), *sine* sine (2), *își* ɨʃʲ (1), *însăși* ɨnsəʃʲ (2) |
+| 1pl | *noi* noj (1) |  | *ni* ni (1) | *noi* noj (1) | *ne* ne (1), *nouă* nowə (2), *înșine* ɨnʃine (3) |
+| 2pl | *unu* unu (2), *dumneavoastră* dumnjavwastrə (4) |  |  |  | *vă* və (1), *vouă* vowə (2) |
+| 3pl | *se* se (1), *dumnealor* dumnjalor (3) |  | *li* li (1), *lor* lor (1) |  | *se* se (1), *sine* sine (2), *își* ɨʃʲ (1) |
+| 3pl m | *ei* ej (1) |  | *le* le (1) | *ei* ej (1), *îi* ɨj (1) | *înșiși* ɨnʃiʃʲ (2) |
+| 3pl f | *ele* ele (2) |  | *le* le (1) | *ele* ele (2), *le* le (1) | *însele* ɨnsele (3) |
 | 3 reflexive |  |  |  |  | *se* se (1) |
 
 A pronoun glossed only *you*, with no number, is in row 2. The role is taken from the gloss (*me* is object, *to him* indirect, *disjunctive* stressed); where the dictionary does not say, the form sits in the column of its gloss word.
@@ -28,49 +27,76 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
 | definite | *cel* t͡ʃel (1), *ăl* əl (1) | *cea* t͡ʃja (1), *-*  (1), *a* a (1) |  | *cei* t͡ʃej (1), *-*  (1), *ăi* əj (1) | *cele* t͡ʃele (2), *-*  (1), *ale* ale (2) |  |  |  |
-| indefinite | *un* un (1) | *o* o (1), *unei* unej (2) |  | *niște* niʃte (2), *unor* unor (2) |  |  |  |  |
+| indefinite | *un* un (1) | *o* o (1), *unei* unej (2) |  | *niște* niʃte (2), *unor* unor (2) |  |  |  | *unui* unwi (2), *unei* unej (2) |
 
 ## Personal pronouns
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | I | *eu* | ew | 1 | I |
-| me | | | | |
+| me | *mine* | mine | 2 | me |
+| me | *mie* | mje | 1 | (to) me |
+| me | *mă* | mə | 1 | me (accusative) |
+| me | *îmi* | ɨmʲ | 1 | (to) me |
+| you | *te* | te | 1 | you |
+| you | *vi* | vi | 1 | to you |
 | you | *se* | se | 1 | indefinite or impersonal subject marker used with third-person verbs, expressing actions d |
 | you | *tu* | tu | 1 | you (singular), thou |
 | you | *voi* | voj | 1 | you (group being addressed) |
+| you | *tine* | tine | 2 | you |
 | you | *mata* | mata | 2 | you (singular) |
 | you | *unu* | unu | 2 | you (second person plural pronoun) |
 | you | *dumneavoastră* | dumnjavwastrə | 4 | you (singular and plural, polite) |
+| you | *vă* | və | 1 | you (group being addressed) |
+| you | *îți* | ɨt͡sʲ | 1 | to you |
+| you | *ție* | t͡sje | 1 | to you |
+| you | *vouă* | vowə | 2 | (to) you (group being addressed) |
 | you | *dumneata* | dumnjata | 3 | you (singular, polite) |
 | you | *matale* | matale | 3 | you (singular) |
+| you | *dumitale* | dumitale | 4 | (to) you |
 | thou | *tu* | tu | 1 | you (singular), thou |
 | thee | | | | |
 | he | *el* | el | 1 | he |
-| he | *îns* | ɨns | 1 | he, it |
 | he | *dânsul* | dɨnsul | 2 | he |
 | he | *dumnealui* | dumnjalwi | 3 | he |
-| him | | | | |
+| him | *el* | el | 1 | him |
+| him | *lui* | lwi | 1 | to him |
+| him | *îl* | ɨl | 1 | him |
+| him | *îi* | ɨj | 1 | to him |
 | she | *ea* | ja | 1 | she |
 | she | *dânsa* | dɨnsa | 2 | she |
 | she | *dumneaei* | dumnjajej | 3 | she |
+| her | *o* | o | 1 | her |
+| her | *ea* | ja | 1 | her |
+| her | *ei* | ej | 1 | her |
+| her | *sa* | sa | 1 | feminine singular of său: his/her |
 | her | *său* | səw | 1 | his / her |
-| it | *îns* | ɨns | 1 | he, it |
+| her | *îi* | ɨj | 1 | to her |
+| it | | | | |
 | we | *noi* | noj | 1 | we |
-| us | | | | |
+| us | *ni* | ni | 1 | alternative form of ne (dative of noi): to us |
+| us | *ne* | ne | 1 | us |
+| us | *noi* | noj | 1 | us |
+| us | *nouă* | nowə | 2 | (to) us |
 | they | *se* | se | 1 | indefinite or impersonal subject marker used with third-person verbs, expressing actions d |
 | they | *ei* | ej | 1 | they (used for an all-male or mixed-sex group) |
 | they | *ele* | ele | 2 | they (for a group composed completely of females) |
 | they | *dumnealor* | dumnjalor | 3 | they |
-| them | | | | |
+| them | *li* | li | 1 | to them |
+| them | *ei* | ej | 1 | them (all-male or mixed-sex group) |
+| them | *ele* | ele | 2 | them (all-female group) |
+| them | *le* | le | 1 | to them (all-male or mixed group) |
+| them | *lor* | lor | 1 | to them |
+| them | *îi* | ɨj | 1 | them |
 | oneself | *se* | se | 1 | oneself, himself, herself, itself, themselves |
 | himself | *se* | se | 1 | oneself, himself, herself, itself, themselves |
 | himself | *sine* | sine | 2 | himself, herself, itself, themselves |
-| himself | *sie* | sje | 1 | (to) himself/herself/itself/themselves (stressed reflexive-dative form of el, ea, ei and e |
-| himself | *sieși* | sjeʃʲ | 1 | (to) himself/herself/itself/themselves (stressed reflexive-dative form of el, ea, ei and e |
+| himself | *își* | ɨʃʲ | 1 | unstressed reflexive dative of el, ea, ei and ele: (to) himself/herself/themselves |
 | himself | *însuși* | ɨnsuʃʲ | 2 | himself, itself |
+| myself | *mă* | mə | 1 | myself |
 | myself | *însumi* | ɨnsumʲ | 2 | myself |
 | myself | *însămi* | ɨnsəmʲ | 2 | myself |
+| yourself | *te* | te | 1 | yourself |
 | yourself | *însuți* | ɨnsut͡sʲ | 2 | yourself, thyself |
 | yourself | *însăți* | ɨnsət͡sʲ | 2 | yourself, thyself |
 
@@ -83,14 +109,17 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | mine | *mea* | mja | 1 | mine |
 | your | *tău* | təw | 1 | your (singular) |
 | your | *vostru* | vostru | 2 | your (second-person plural) |
+| your | *dumitale* | dumitale | 4 | your |
 | yours | *ta* | ta | 1 | yours (singular) |
 | yours | *tău* | təw | 1 | yours (singular) |
-| his | *sa* | sa | 1 | his/hers (that which is his or hers) |
+| his | *lui* | lwi | 1 | his |
+| his | *sa* | sa | 1 | feminine singular of său: his/her |
 | his | *său* | səw | 1 | his / her |
 | its | | | | |
 | our | *nostru* | nostru | 2 | our |
+| our | *noastră* | nwastrə | 2 | feminine singular of nostru; our |
 | ours | *nostru* | nostru | 2 | ours |
-| their | | | | |
+| their | *lor* | lor | 1 | their |
 | theirs | | | | |
 
 ## Articles and demonstratives
@@ -98,12 +127,18 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | the | *cel* | t͡ʃel | 1 | the |
+| the | *cea* | t͡ʃja | 1 | feminine singular of cel: the (one that is) |
 | the | *ăl* | əl | 1 | the |
+| a | *o* | o | 1 | feminine singular nominative/accusative of un: a/an (indefinite article) |
 | a | *un* | un | 1 | a, an (indefinite article) |
+| a | *unui* | unwi | 2 | to a |
+| a | *unei* | unej | 2 | to a |
+| an | *o* | o | 1 | feminine singular nominative/accusative of un: a/an (indefinite article) |
 | an | *un* | un | 1 | a, an (indefinite article) |
 | this | *acest* | at͡ʃest | 2 | this |
 | this | *ăsta* | əsta | 2 | this |
 | this | *acesta* | at͡ʃesta | 3 | this |
+| this | *această* | at͡ʃjastə | 3 | nominative feminine singular of acest: this |
 | this | *ăst* | əst | 1 | this |
 | this | *aiest* | ajest | 2 | this |
 | that | *care* | kare | 2 | which, that, who |
@@ -115,7 +150,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | that | *cutare* | kutare | 3 | that |
 | that | *ceea* | t͡ʃeja | 2 | that (relative pronoun) |
 | these | | | | |
-| those | | | | |
+| those | *alea* | alja | 2 | nominative/accusative feminine/neuter plural of ăla: those |
 
 ## Interrogatives and relatives
 
@@ -125,9 +160,10 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | who | *care* | kare | 2 | which, that, who |
 | who | *cine* | t͡ʃine | 2 | who |
 | whom | *de* | de | 1 | Relative pronoun: who, whom, to whom. |
+| whom | *cui* | kwi | 1 | to whom |
 | what | *ce* | t͡ʃe | 1 | what |
 | which | *care* | kare | 2 | which |
-| whose | | | | |
+| whose | *cui* | kwi | 1 | whose |
 | where | *unde* | unde | 2 | where |
 | when | *când* | kɨnd | 1 | when |
 | how | *cum* | kum | 1 | how |
@@ -166,10 +202,8 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | something | *ceva* | t͡ʃeva | 2 | something |
 | something | *niscai* | niskaj | 2 | something, some (of an undetermined quantity) |
 | someone | *cineva* | t͡ʃineva | 3 | someone, somebody (often with the implication that the someone or somebody is unknown to t |
-| someone | *neștine* | neʃtine | 3 | someone, somebody |
 | someone | *vreunul* | vrewnul | 2 | one, someone, anyone |
 | somebody | *cineva* | t͡ʃineva | 3 | someone, somebody (often with the implication that the someone or somebody is unknown to t |
-| somebody | *neștine* | neʃtine | 3 | someone, somebody |
 | everything | *tot* | tot | 1 | everything |
 | everyone | *tot* | tot | 1 | everyone |
 | everyone | *fiecare* | fjekare | 3 | everyone, each one |
@@ -200,7 +234,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | same | *același* | at͡ʃelaʃʲ | 3 | the same |
 | both | *ambii* | ambi | 2 | both |
 | both | *amândoi* | amɨndoj | 3 | both |
-| both | *îmbi* | ɨmbʲ | 1 | both |
 | both | *deopotrivă* | dejopotrivə | 5 | both |
 | enough | *basta* | basta | 2 | enough |
 | enough | *destul* | destul | 2 | enough, plenty, sufficient |
@@ -213,6 +246,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 |---|---|---|---:|---|
 | zero | *zero* | zero | 2 | zero |
 | zero | *nul* | nul | 1 | null, zero |
+| one | *una* | una | 2 | feminine of unu: one |
 | one | *unu* | unu | 2 | one |
 | two | *doi* | doj | 1 | two |
 | two | *două* | dowə | 2 | two |
@@ -245,7 +279,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | second | *secund* | sekund | 2 | second |
 | second | *secundant* | sekundant | 3 | second (helper) |
 | second | *clipită* | klipitə | 3 | moment, instant, second, blink of an eye |
-| third | *treti* | tretʲ | 1 | third (preceding a medieval rank in Wallachia or Moldavia) |
 | third | *treime* | trejme | 2 | a third |
 | third | *terț* | tert͡s | 1 | third |
 | third | *terță* | tert͡sə | 2 | third |
@@ -279,7 +312,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | on | *în* | ɨn | 1 | in, on |
 | at | *la* | la | 1 | at, in |
 | with | *cu* | ku | 1 | with |
-| without | *bez* | bez | 1 | without |
 | without | *fără* | fərə | 2 | without |
 | for | *de* | de | 1 | for (intended for a certain destination) |
 | for | *pentru* | pentru | 2 | for |
@@ -336,15 +368,11 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | and | *plus* | plus | 1 | plus, and |
 | and | *iar* | jar | 1 | and |
 | and | *și* | ʃi | 1 | and |
-| or | *au* | aw | 1 | or |
-| or | *oare* | ware | 2 | or |
 | or | *ori* | orʲ | 1 | or |
 | or | *sau* | saw | 1 | or |
 | or | *să* | sə | 1 | Forms the informal future tense together with the auxiliary o/or. |
 | but | *ci* | t͡ʃi | 1 | but; so that; on the contrary, opposite |
 | but | *dar* | dar | 1 | but |
-| but | *iar* | jar | 1 | but |
-| but | *numai* | numaj | 2 | but |
 | but | *însă* | ɨnsə | 2 | but, yet, however |
 | if | *de* | de | 1 | if |
 | if | *dacă* | dakə | 2 | if |
@@ -360,7 +388,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | that | *așa* | aʃa | 2 | that, so (to such a degree) |
 | that | *într-atât* | ɨntratɨt | 3 | that, so (to such a degree) |
 | that | *încât* | ɨnkɨt | 2 | that (to the effect that) |
-| while | *de* | de | 1 | while (whereas, despite the fact that) |
 | while | *ori* | orʲ | 1 | while, whereas, on the other hand, on the contrary |
 | as | *cum* | kum | 1 | as, since, seeing that |
 | as | *ca* | ka | 1 | as |
@@ -379,7 +406,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | then | *atunci* | atunt͡ʃ | 2 | then (at that time), next |
 | then | *apoi* | apoj | 2 | subsequently, afterwards, next, then |
 | therefore | *deci* | det͡ʃ | 1 | so, therefore |
-| therefore | *lipon* | lipon | 2 | therefore |
 | therefore | *așadar* | aʃadar | 3 | therefore (for that or this reason, referring to something previously stated; for that) |
 
 ## Adverbs and particles
@@ -387,11 +413,9 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | yes | *da* | da | 1 | yes |
-| yes | *ie* | je | 1 | yes |
 | no | *nu* | nu | 1 | no |
 | no | *ioc* | jok | 1 | no, nothing, not at all |
 | not | *nu* | nu | 1 | not |
-| also | *iar* | jar | 1 | also |
 | also | *și* | ʃi | 1 | also |
 | also | *așijderea* | aʃiʒderja | 4 | also |
 | too | *prea* | perja | 2 | too (to an excessive degree) |
@@ -404,7 +428,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | very | *tare* | tare | 2 | very |
 | very | *rău* | rəw | 1 | very (colloquial) |
 | very | *foarte* | fwarte | 2 | very |
-| very | *prea* | perja | 2 | most, very, highly |
 | very | *deosebit* | dejosebit | 4 | especially, remarkably, very |
 | very | *grozav* | ɡrozav | 2 | very, bloody, extremely |
 | very | *hăt* | hət | 1 | very |
@@ -426,18 +449,15 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | here | *aici* | ajt͡ʃ | 1 | here |
 | here | *coa* | kwa | 1 | here |
 | here | *încoace* | ɨnkwat͡ʃe | 3 | hither, here, this way, in my direction |
-| here | *auace* | awat͡ʃe | 3 | here, over here |
 | here | *acoace* | akwat͡ʃe | 3 | hither, here, this way, in my direction |
 | there | *colo* | kolo | 2 | there |
 | there | *acolo* | akolo | 3 | there |
-| there | *aoace* | awat͡ʃe | 3 | there, over there |
 | there | *acolea* | akolja | 3 | there |
 | never | *niciodată* | nit͡ʃjodatə | 4 | never |
 | never | *niciodinioară* | nit͡ʃjodiniwarə | 6 | never |
 | never | *șohan* | ʃohan | 2 | never |
 | always | *întotdeauna* | ɨntotdjawna | 4 | always |
 | always | *totdeauna* | totdjawna | 3 | always, ever, all the time, at all times |
-| always | *pururi* | pururʲ | 2 | always |
 | always | *mereu* | merew | 2 | always, ever, continuously, constantly |
 | again | *mai* | maj | 1 | again |
 | again | *iar* | jar | 1 | again |

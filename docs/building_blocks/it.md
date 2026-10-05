@@ -8,17 +8,17 @@ Each form is a dictionary headword of this lect that the English Wiktionary glos
 
 | | subject | object | indirect | stressed | reflexive |
 |---|---|---|---|---|---|
-| 1sg | *io* jo (1), *miodine* mjɔdine (3) | *meve* mɛve (2), *miodine* mjɔdine (3) |  | *me* me (1) | *miodine* mjɔdine (3) |
-| 2sg | *te* te (1), *tu* tu (1), *lei* lɛj (1), *voi* voj (1) | *la* la (1) | *vi* vi (1) | *te* te (1) |  |
-| 2 | *te* te (1), *si* si (1) |  | *le* le (1) | *te* te (1) |  |
-| 3sg m | *lui* lwi (1), *chi* ki (1), *egli* elji (2), *ello* ɛlo (2), *esso* eso (2), *colui* kolwi (2), *costui* kostwi (2), *altri* altri (2), *cotestui* kotɛstwi (3), *ləi* lɛj (1) | *lo* lo (1), *colui* kolwi (2), *costui* kostwi (2), *cotestui* kotɛstwi (3) | *li* li (1), *gli* lji (1) | *lui* lwi (1), *sé* se (1), *esso* eso (2) | *si* si (1) |
-| 3sg f | *chi* ki (1), *lei* lɛj (1), *essa* esa (2), *colei* kolɛj (2), *costei* kostej (2), *ella* ɛla (2), *altri* altri (2), *cotestei* kotestej (3) | *la* la (1), *lei* lɛj (1), *essa* esa (2), *colei* kolɛj (2), *costei* kostej (2), *proprio* prɔprjo (2), *cotestei* kotestej (3) | *gli* lji (1), *le* le (1), *gliela* ljɛla (2), *gliele* ljɛle (2), *glieli* ljɛli (2), *glielo* ljɛlo (2), *gliene* ljɛne (2) | *sé* se (1) | *si* si (1) |
-| 3sg n | *ci* t͡ʃi (1), *vi* vi (1), *lui* lwi (1), *si* si (1), *lei* lɛj (1), *quanto* kwanto (2), *esso* eso (2), *essa* esa (2) | *la* la (1), *lo* lo (1) | *gli* lji (1), *gliene* ljɛne (2) |  |  |
+| 1sg | *io* jo (1) | *mi* mi (1) | *mi* mi (1) | *me* me (1) |  |
+| 2sg | *te* te (1), *ti* ti (1), *tu* tu (1), *lei* lɛj (1), *voi* voj (1) | *la* la (1) | *vi* vi (1) | *te* te (1) |  |
+| 2 | *te* te (1), *si* si (1) |  | *ti* ti (1), *le* le (1) | *te* te (1) |  |
+| 3sg m | *lui* lwi (1), *chi* ki (1), *egli* elji (2), *colui* kolwi (2), *costui* kostwi (2) | *lo* lo (1), *l'* ɛle (2), *colui* kolwi (2), *costui* kostwi (2) | *gli* lji (1) | *lui* lwi (1), *sé* se (1) | *si* si (1) |
+| 3sg f | *chi* ki (1), *lei* lɛj (1), *essa* esa (2), *colei* kolɛj (2), *costei* kostej (2), *ella* ɛla (2) | *la* la (1), *l'* ɛle (2), *lei* lɛj (1), *essa* esa (2), *colei* kolɛj (2), *costei* kostej (2), *proprio* prɔprjo (2) | *le* le (1), *gliela* ljɛla (2), *gliele* ljɛle (2), *glieli* ljɛli (2), *glielo* ljɛlo (2), *gliene* ljɛne (2) | *sé* se (1) | *si* si (1) |
+| 3sg n | *ci* t͡ʃi (1), *vi* vi (1), *lui* lwi (1), *si* si (1), *l'* ɛle (2), *lei* lɛj (1), *quanto* kwanto (2), *esso* eso (2), *essa* esa (2) | *la* la (1), *lo* lo (1) | *gli* lji (1), *gliene* ljɛne (2) |  |  |
 | 1pl | *si* si (1), *noi* noj (1), *noialtri* nojaltri (3) | *ci* t͡ʃi (1), *noi* noj (1), *noialtri* nojaltri (3) | *ci* t͡ʃi (1) |  | *ci* t͡ʃi (1) |
 | 2pl | *voi* voj (1), *voialtri* vojaltri (3), *loro* lɔro (2) |  | *vi* vi (1) |  |  |
-| 3pl | *si* si (1), *coloro* koloro (3), *costoro* kostɔro (3), *ləi* lɛj (1) | *coloro* koloro (3), *costoro* kostɔro (3) | *gliela* ljɛla (2), *gliele* ljɛle (2), *glieli* ljɛli (2), *glielo* ljɛlo (2), *gliene* ljɛne (2) |  | *si* si (1) |
-| 3pl m | *elli* ɛli (2), *eglino* eljino (3) | *li* li (1) | *li* li (1) |  |  |
-| 3pl f | *elleno* elɛno (3), *cotestoro* kotestɔro (4) | *le* le (1), *cotestoro* kotestɔro (4) | *gli* lji (1), *loro* lɔro (2) | *loro* lɔro (2) |  |
+| 3pl | *si* si (1), *coloro* koloro (3), *costoro* kostɔro (3) | *coloro* koloro (3), *costoro* kostɔro (3) | *gliela* ljɛla (2), *gliele* ljɛle (2), *glieli* ljɛli (2), *glielo* ljɛlo (2), *gliene* ljɛne (2) |  | *si* si (1) |
+| 3pl m | *essi* ɛsi (2), *eglino* eljino (3), *ellino* elino (3) | *li* li (1), *essi* ɛsi (2) |  |  |  |
+| 3pl f | *esse* ɛse (2), *elleno* elɛno (3) | *esse* ɛse (2), *le* le (1) | *gli* lji (1), *loro* lɔro (2) | *loro* lɔro (2) |  |
 | 3 reflexive |  |  |  | *sé* se (1) | *si* si (1) |
 
 A pronoun glossed only *you*, with no number, is in row 2. The role is taken from the gloss (*me* is object, *to him* indirect, *disjunctive* stressed); where the dictionary does not say, the form sits in the column of its gloss word.
@@ -27,21 +27,20 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | | m sg | f sg | n sg | m pl | f pl | n pl | pl | not given |
 |---|---|---|---|---|---|---|---|---|
-| definite | *lo* lo (1), *il* il (1) | *la* la (1) |  | *li* li (1), *i* i (1), *gli* lji (1) | *le* le (1) |  | *le* le (1) |  |
-| indefinite | *uno* uno (2) |  |  | *degli* delji (2) |  |  |  |  |
+| definite | *lo* lo (1), *il* il (1), *l'* ɛle (2) | *la* la (1) |  | *li* li (1), *i* i (1), *gli* lji (1) | *le* le (1) |  | *le* le (1) |  |
+| indefinite | *un* un (1), *uno* uno (2) |  |  | *degli* delji (2) |  |  |  |  |
 
 ## Personal pronouns
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | I | *io* | jo | 1 | I (the first-person singular nominative pronoun) |
-| I | *miodine* | mjɔdine | 3 | the undersigned, I, me, myself |
+| me | *mi* | mi | 1 | clitic accusative of io. me |
 | me | *me* | me | 1 | me |
-| me | *meve* | mɛve | 2 | me (1ˢᵗ-person singular personal pronoun) |
-| me | *miodine* | mjɔdine | 3 | the undersigned, I, me, myself |
 | you | *te* | te | 1 | you, thee |
 | you | *vi* | vi | 1 | second-person personal plural object pronoun: you, to you |
 | you | *si* | si | 1 | one, you, we, they, people |
+| you | *ti* | ti | 1 | accusative/dative of tu; you |
 | you | *la* | la | 1 | you (term of respect) |
 | you | *tu* | tu | 1 | you (singular); thou |
 | you | *voi* | voj | 1 | you (second person plural) |
@@ -55,32 +54,23 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | he | *lui* | lwi | 1 | he |
 | he | *chi* | ki | 1 | he/she/they who, those who, the ones who; (archaic) whom |
 | he | *egli* | elji | 2 | he |
-| he | *ello* | ɛlo | 2 | he |
-| he | *esso* | eso | 2 | he |
 | he | *colui* | kolwi | 2 | he, him; that man |
 | he | *costui* | kostwi | 2 | he, him; this man |
-| he | *altri* | altri | 2 | the other, he/she |
-| he | *cotestui* | kotɛstwi | 3 | he; him; this man (used to indicate a person close to the speaker) |
-| he | *ləi* | lɛj | 1 | (s)he, they (singular), gender-neutral third person singular pronoun (exclusively in writi |
 | him | *lui* | lwi | 1 | him |
-| him | *li* | li | 1 | him |
 | him | *lo* | lo | 1 | him |
 | him | *gli* | lji | 1 | him, to him; it; to it |
-| him | *esso* | eso | 2 | him |
+| him | *l'* | ɛle | 2 | apocopic form of lo, la: him, her, it |
 | him | *colui* | kolwi | 2 | he, him; that man |
 | him | *costui* | kostwi | 2 | he, him; this man |
-| him | *cotestui* | kotɛstwi | 3 | he; him; this man (used to indicate a person close to the speaker) |
 | she | *chi* | ki | 1 | he/she/they who, those who, the ones who; (archaic) whom |
 | she | *lei* | lɛj | 1 | she |
 | she | *essa* | esa | 2 | it, she, her |
 | she | *colei* | kolɛj | 2 | she |
 | she | *costei* | kostej | 2 | she |
 | she | *ella* | ɛla | 2 | she |
-| she | *altri* | altri | 2 | the other, he/she |
-| she | *cotestei* | kotestej | 3 | she; her; this woman (used to indicate a person close to the speaker) |
 | her | *la* | la | 1 | her, it |
-| her | *gli* | lji | 1 | her, to her |
 | her | *le* | le | 1 | her, to her |
+| her | *l'* | ɛle | 2 | apocopic form of lo, la: him, her, it |
 | her | *lei* | lɛj | 1 | her |
 | her | *suo* | swo | 1 | his, her, its |
 | her | *gliela* | ljɛla | 2 | it to him, her or them |
@@ -92,7 +82,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | her | *colei* | kolɛj | 2 | her |
 | her | *costei* | kostej | 2 | her |
 | her | *proprio* | prɔprjo | 2 | one's, one's own, her (own), its (own), their (own) |
-| her | *cotestei* | kotestej | 3 | she; her; this woman (used to indicate a person close to the speaker) |
 | it | *ci* | t͡ʃi | 1 | it, to it |
 | it | *vi* | vi | 1 | it; about it, of it, on it |
 | it | *lui* | lwi | 1 | it |
@@ -100,6 +89,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | it | *la* | la | 1 | her, it |
 | it | *lo* | lo | 1 | it, this or that thing |
 | it | *gli* | lji | 1 | him, to him; it; to it |
+| it | *l'* | ɛle | 2 | apocopic form of lo, la: him, her, it |
 | it | *lei* | lɛj | 1 | it |
 | it | *quanto* | kwanto | 2 | it, all |
 | it | *gliene* | ljɛne | 2 | of it/them to him/her/it/them |
@@ -112,18 +102,20 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | us | *noi* | noj | 1 | we; us |
 | us | *noialtri* | nojaltri | 3 | we, us |
 | they | *si* | si | 1 | one, you, we, they, people |
+| they | *esse* | ɛse | 2 | plural of ella and essa; they, them (female) |
 | they | *loro* | lɔro | 2 | they, them |
-| they | *elli* | ɛli | 2 | they |
+| they | *essi* | ɛsi | 2 | plural of egli and esso: they, them |
 | they | *coloro* | koloro | 3 | they |
 | they | *costoro* | kostɔro | 3 | they, them |
 | they | *eglino* | eljino | 3 | they (3ʳᵈ-person-plural masculine personal pronoun) |
 | they | *elleno* | elɛno | 3 | they (3ʳᵈ-person-plural feminine personal pronoun) |
-| they | *cotestoro* | kotestɔro | 4 | they; them; these people (used to indicate people close to the speaker) |
-| they | *ləi* | lɛj | 1 | (s)he, they (singular), gender-neutral third person singular pronoun (exclusively in writi |
+| they | *ellino* | elino | 3 | alternative form of eglino: they (3ʳᵈ-person-plural masculine personal pronoun) |
 | them | *li* | li | 1 | them (masculine) |
+| them | *esse* | ɛse | 2 | plural of ella and essa; they, them (female) |
 | them | *gli* | lji | 1 | them, to them |
 | them | *le* | le | 1 | them (third-person plural feminine) |
 | them | *loro* | lɔro | 2 | they, them |
+| them | *essi* | ɛsi | 2 | plural of egli and esso: they, them |
 | them | *gliela* | ljɛla | 2 | it to him, her or them |
 | them | *gliele* | ljɛle | 2 | them to him, her or them |
 | them | *glieli* | ljɛli | 2 | them to him, her or them |
@@ -131,14 +123,12 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | them | *gliene* | ljɛne | 2 | of it/them to him/her/it/them |
 | them | *coloro* | koloro | 3 | them |
 | them | *costoro* | kostɔro | 3 | they, them |
-| them | *cotestoro* | kotestɔro | 4 | they; them; these people (used to indicate people close to the speaker) |
 | oneself | *si* | si | 1 | oneself, himself, herself, itself, themselves |
 | oneself | *sé* | se | 1 | oneself, himself, herself |
 | himself | *si* | si | 1 | oneself, himself, herself, itself, themselves |
 | himself | *sé* | se | 1 | oneself, himself, herself |
 | himself | *stesso* | steso | 2 | -self, myself, yourself, himself, itself, myself |
 | myself | *stesso* | steso | 2 | -self, myself, yourself, himself, itself, myself |
-| myself | *miodine* | mjɔdine | 3 | the undersigned, I, me, myself |
 | yourself | *vi* | vi | 1 | you (in the singular), to you (singular), yourself |
 | yourself | *stesso* | steso | 2 | -self, myself, yourself, himself, itself, myself |
 
@@ -156,7 +146,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | yours | *vostro* | vɔstro | 2 | yours |
 | yours | *suo* | swo | 1 | yours (polite singular form) |
 | his | *suo* | swo | 1 | his, her, its |
-| his | *colui* | kolwi | 2 | his |
 | its | *suo* | swo | 1 | his, her, its |
 | its | *proprio* | prɔprjo | 2 | one's, one's own, her (own), its (own), their (own) |
 | our | *nostro* | nɔstro | 2 | our |
@@ -169,26 +158,27 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
-| the | *li* | li | 1 | the (masculine plural definite article), sometimes untranslated, depending on context |
+| the | *li* | li | 1 | the (used in dates in letters, although usually substituted by lì) |
 | the | *la* | la | 1 | the |
 | the | *lo* | lo | 1 | the form of il that is used before the so-called impure consonants, that is, s+consonant ( |
+| the | *gli* | lji | 1 | form of the article i (“the”) used before a vowel, impure s, gn, pn, ps, sc, x, y, and z,  |
 | the | *il* | il | 1 | the |
 | the | *le* | le | 1 | the |
+| the | *l'* | ɛle | 2 | apocopic form of il/lo, la: the |
+| a | *un* | un | 1 | apocopic form of uno: a, an |
 | a | *uno* | uno | 2 | an; a |
+| an | *un* | un | 1 | apocopic form of uno: a, an |
 | an | *uno* | uno | 2 | an; a |
 | this | *lo* | lo | 1 | it, this or that thing |
 | this | *questo* | kwesto | 2 | this, these |
-| this | *esto* | ɛsto | 2 | this |
 | this | *presente* | prezɛnte | 3 | this |
 | this | *ciò* | t͡ʃɔ | 1 | this |
-| this | *codesto* | kodɛsto | 3 | this, that (referring to an object close to the addressee) |
 | that | *ke* | ke | 1 | who; which; what; that; than |
 | that | *che* | ke | 1 | who, whom, which, that |
 | that | *questo* | kwesto | 2 | this, that |
 | that | *quello* | kwelo | 2 | that, those |
 | that | *ciò* | t͡ʃɔ | 1 | that |
 | that | *quegli* | kwelji | 2 | used to refer to someone distant in terms of space or time from the speaker; that (person) |
-| that | *codesto* | kodɛsto | 3 | this, that (referring to an object close to the addressee) |
 | these | *questo* | kwesto | 2 | this, these |
 | those | *quello* | kwelo | 2 | that, those |
 | those | *così* | kozi | 2 | like that one, like those; similar to that/those |
@@ -202,6 +192,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | who | *che* | ke | 1 | who, whom, which, that |
 | whom | *chi* | ki | 1 | who, whom; whoever |
 | whom | *che* | ke | 1 | who, whom, which, that |
+| whom | *cui* | kuj | 1 | prepositional of che: whom, which |
 | what | *ke* | ke | 1 | who; which; what; that; than |
 | what | *che* | ke | 1 | what; which |
 | what | *quale* | kwale | 2 | what |
@@ -209,19 +200,16 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | which | *ke* | ke | 1 | who; which; what; that; than |
 | which | *che* | ke | 1 | what; which |
 | which | *quale* | kwale | 2 | which ... ? |
-| which | *donde* | donde | 2 | whence; from where or which |
-| which | *onde* | onde | 2 | whence; from where or which |
+| which | *cui* | kuj | 1 | prepositional of che: whom, which |
 | whose | *cui* | kuj | 1 | whose |
 | where | *dove* | dove | 2 | where |
 | where | *ove* | ove | 2 | where |
 | where | *laddove* | ladove | 3 | where (in the place where) |
 | where | *indove* | indove | 3 | where (especially in questions) |
-| where | *u'* | u | 1 | where |
 | when | *che* | ke | 1 | when |
 | when | *quando* | kwando | 2 | when |
 | when | *allorché* | alorke | 3 | when |
 | when | *allorquando* | alorkwando | 4 | when |
-| when | *u'* | u | 1 | when |
 | how | *come* | kome | 2 | how |
 | how | *quanto* | kwanto | 2 | how ...! ... so much! |
 | how | *qualmente* | kwalmente | 3 | how (in what way) |
@@ -255,7 +243,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | some | *qualche* | kwalke | 2 | some, any |
 | some | *qualcuno* | kwalkuno | 3 | some (of them) |
 | some | *certo* | t͡ʃɛrto | 2 | some, certain |
-| some | *alquanto* | alkwanto | 3 | an amount of; some |
 | some | *taluno* | taluno | 3 | some; a few |
 | some | *certuni* | t͡ʃertuni | 3 | some (people) |
 | some | *certuno* | t͡ʃertuno | 3 | some |
@@ -271,20 +258,15 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | no | *niente* | njɛnte | 2 | no, (after a negative) any |
 | no | *no* | nɔ | 1 | no, anti-; found in numerous expressions borrowed from English, such as no comment, and in |
 | no | *nossignore* | nosinjore | 4 | no, Sir |
-| no | *nullo* | nulo | 2 | no, not any |
-| no | *veruno* | veruno | 3 | no, not any |
 | no | *niuno* | njuno | 2 | no, any |
 | no | *nossignora* | nosinjɔra | 4 | no, Madam |
 | none | *nessuno* | nesuno | 3 | none |
 | none | *nisba* | nizba | 2 | nix, none |
 | nobody | *nessuno* | nesuno | 3 | no one, nobody |
 | nobody | *chicchessia* | kikesja | 3 | nobody, no one |
-| nobody | *veruno* | veruno | 3 | no one, nobody |
 | nobody | *niuno* | njuno | 2 | no one, nobody |
-| nobody | *nimo* | nimo | 2 | nobody |
 | no one | *nessuno* | nesuno | 3 | no one, nobody |
 | no one | *chicchessia* | kikesja | 3 | nobody, no one |
-| no one | *veruno* | veruno | 3 | no one, nobody |
 | no one | *niuno* | njuno | 2 | no one, nobody |
 | nothing | *punto* | punto | 2 | nothing |
 | nothing | *niente* | njɛnte | 2 | nothing |
@@ -295,13 +277,11 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | something | *qualcosa* | kwalkɔza | 3 | something |
 | someone | *uno* | uno | 2 | somebody; someone; a person |
 | someone | *qualcuno* | kwalkuno | 3 | someone, somebody |
-| someone | *altri* | altri | 2 | someone, somebody |
 | someone | *taluno* | taluno | 3 | somebody, someone |
 | someone | *certuno* | t͡ʃertuno | 3 | someone, somebody |
 | someone | *qualchessia* | kwalkesja | 3 | someone, somebody |
 | somebody | *uno* | uno | 2 | somebody; someone; a person |
 | somebody | *qualcuno* | kwalkuno | 3 | someone, somebody |
-| somebody | *altri* | altri | 2 | someone, somebody |
 | somebody | *taluno* | taluno | 3 | somebody, someone |
 | somebody | *certuno* | t͡ʃertuno | 3 | someone, somebody |
 | somebody | *qualchessia* | kwalkesja | 3 | someone, somebody |
@@ -329,9 +309,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | little | *ristretto* | ristreto | 3 | small, little |
 | little | *piccino* | pit͡ʃino | 3 | little, small, tiny |
 | little | *tantino* | tantino | 3 | a little |
-| little | *stremo* | strɛmo | 2 | small, little |
 | little | *pusillo* | puzilo | 3 | small, little |
-| more | *maggio* | mad͡ʒo | 2 | more |
 | more | *ancora* | ankora | 3 | more |
 | more | *più* | pju | 1 | more |
 | more | *altro* | altro | 2 | other, another, more, further, else |
@@ -347,7 +325,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | less | *minormente* | minormente | 4 | less |
 | less | *tarabaralla* | taɾabaɾala | 5 | more or less |
 | other | *altro* | altro | 2 | other, another, more, further, else |
-| other | *altri* | altri | 2 | the other, he/she |
 | other | *ambigenere* | ambid͡ʒɛnere | 5 | that can be one gender or the other; common-gender |
 | same | *uguale* | uɡwale | 3 | equal, identical, alike, like, same |
 | same | *idem* | idem | 2 | ditto, the same |
@@ -358,6 +335,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | same | *istessamente* | istesamente | 5 | equally, the same, invariably |
 | both | *ambo* | ambo | 2 | both |
 | both | *entrambi* | entrambi | 3 | both |
+| both | *entrambe* | entrambe | 3 | feminine of entrambi: both |
 | both | *ambedue* | ambedwe | 3 | both |
 | both | *ambodue* | ambodwe | 3 | both |
 | enough | *abbastanza* | abastant͡sa | 4 | enough, sufficiently |
@@ -374,6 +352,7 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | zero | *zero* | d͡zɛro | 2 | zero |
+| one | *un* | un | 1 | apocopic form of uno: one |
 | one | *uno* | uno | 2 | one |
 | one | *unico* | uniko | 3 | only, sole, one, single |
 | two | *due* | dwe | 1 | two |
@@ -388,14 +367,12 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | nine | *nove* | nɔve | 2 | nine |
 | ten | *dieci* | djɛt͡ʃi | 2 | ten |
 | ten | *diecina* | djet͡ʃina | 3 | ten (or so) (things) |
-| ten | *decenario* | det͡ʃenarjo | 4 | ten (the number 10) |
 | eleven | *undici* | undit͡ʃi | 3 | eleven |
 | twelve | *dodici* | dodit͡ʃi | 3 | twelve |
 | twenty | *venti* | vɛnti | 2 | twenty |
 | thirty | *trenta* | trenta | 2 | thirty |
 | forty | *quaranta* | kwaɾanta | 3 | forty |
 | fifty | *cinquanta* | t͡ʃinkwanta | 3 | fifty |
-| fifty | *quinquaginta* | kwinkwad͡ʒinta | 4 | fifty |
 | hundred | *centinaio* | t͡ʃentinajo | 4 | hundred, about a hundred, about one hundred |
 | hundred | *cento* | t͡ʃɛnto | 2 | hundred, one hundred |
 | thousand | *migliaio* | miljajo | 3 | thousand, about a thousand, about one thousand |
@@ -407,7 +384,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | first | *primario* | primarjo | 3 | primary, first, principal, main, chief |
 | first | *iniziale* | init͡sjale | 4 | initial, opening, first, starting, beginning |
 | first | *primiero* | primjɛro | 3 | first: |
-| first | *primaio* | primajo | 3 | first, earliest |
 | second | *secondo* | sekondo | 3 | second |
 | second | *seconda* | sekonda | 3 | second (gear in a car) |
 | second | *attimo* | atimo | 3 | moment, instant, second |
@@ -429,19 +405,21 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | of | *di* | di | 1 | used to indicate possession, after the thing owned and before the owner; of; ’s |
+| of | *d'* | d̪i | 1 | apocopic form of di: of |
 | to | *in* | in | 1 | to |
+| to | *ad* | ad | 1 | alternative form of a for euphony, especially before /a/; to, at, in |
 | to | *da* | da | 1 | to (implying necessity) |
 | to | *per* | per | 1 | to, in order to |
 | to | *di* | di | 1 | to or omitted |
 | to | *a* | a | 1 | Indicates the indirect object. to |
 | in | *in* | in | 1 | in |
+| in | *ad* | ad | 1 | alternative form of a for euphony, especially before /a/; to, at, in |
 | in | *da* | da | 1 | Used to indicate a scope, purpose, or goal of; used to/for; in/with which to |
 | in | *per* | per | 1 | in or on |
 | in | *di* | di | 1 | used in superlative forms; in, of |
 | in | *su* | su | 1 | in, out of |
 | in | *tra* | tra | 1 | in (expression of time) |
 | in | *fra* | fra | 1 | in (expression of time) |
-| in | *entro* | entro | 2 | within, in, inside |
 | in | *a* | a | 1 | Indicates the place, used in some contexts, in others in is used. in, to |
 | in | *dentro* | dentro | 2 | in |
 | in | *indentro* | indentro | 3 | inwards, in |
@@ -456,9 +434,9 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | on | *oltre* | oltre | 2 | farther, further, past, by, on |
 | on | *dinanzi* | dinant͡si | 3 | forward, onward, on |
 | on | *indosso* | indɔso | 3 | on (especially with reference to clothes or jewelry etc.) |
+| at | *ad* | ad | 1 | alternative form of a for euphony, especially before /a/; to, at, in |
 | at | *da* | da | 1 | Used to indicate the house, place, or establishment of; at/to + -'s |
 | at | *presso* | prɛso | 2 | at, with |
-| at | *appo* | apo | 2 | at, nearby |
 | with | *al* | al | 1 | with (an ingredient) |
 | with | *con* | kon | 1 | with, together |
 | with | *per* | per | 1 | with |
@@ -468,7 +446,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | without | *senza* | sɛnt͡sa | 2 | without, -less |
 | for | *da* | da | 1 | Used to indicate a scope, purpose, or goal of; used to/for; in/with which to |
 | for | *per* | per | 1 | for |
-| for | *pro* | pro | 1 | for, in favor of/in favour of |
 | from | *da* | da | 1 | from (all senses) |
 | from | *di* | di | 1 | from |
 | by | *in* | in | 1 | by |
@@ -489,8 +466,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | among | *fra* | fra | 1 | among |
 | among | *presso* | prɛso | 2 | among, with |
 | among | *framezzo* | framed͡zo | 3 | among |
-| among | *appo* | apo | 2 | denotes a sharing of a common feature in a group; among |
-| under | *so* | sɔ | 1 | under, beneath, underneath |
 | under | *sotto* | soto | 2 | under, beneath, underneath |
 | over | *su* | su | 1 | over |
 | over | *sopra* | sopra | 2 | over |
@@ -500,19 +475,13 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | above | *sopra* | sopra | 2 | above |
 | above | *oltre* | oltre | 2 | upward, over, above |
 | above | *superiormente* | superjormente | 5 | in the upper part; above; superiorly |
-| before | *ante* | ante | 2 | afore, ere; before, earlier |
 | before | *prima* | prima | 2 | before |
-| before | *pria* | perja | 2 | before, previously |
 | before | *addietro* | adjɛtro | 3 | before |
-| before | *avanti* | avanti | 3 | before, ere (followed by di or che) |
 | before | *innanzi* | inant͡si | 3 | before |
 | before | *precedentemente* | pret͡ʃedentemente | 6 | previously, before, formerly |
-| before | *appo* | apo | 2 | before; in comparison to |
 | before | *antecedentemente* | antet͡ʃedentemente | 7 | previously, before |
 | after | *dopo* | dopo | 2 | after |
 | after | *dietro* | djɛtro | 2 | after, next |
-| after | *appo* | apo | 2 | after |
-| after | *poscia* | poʃa | 2 | after, afterwards |
 | after | *dappoi* | dapɔj | 2 | then, after, afterwards, subsequently |
 | until | *fino* | fino | 2 | till, until, as far as |
 | until | *insino* | insino | 3 | until |
@@ -523,24 +492,21 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | through | *mediante* | medjante | 3 | by, through, by means of, using |
 | through | *attraverso* | atravɛrso | 4 | through |
 | through | *tramite* | tramite | 3 | by means of, by, through, using, by way of |
-| towards | *nosco* | nosko | 2 | towards or against us |
 | towards | *incontro* | inkontro | 3 | towards |
 | toward | *verso* | vɛrso | 2 | toward |
 | near | *vicino* | vit͡ʃino | 3 | near |
 | near | *verso* | vɛrso | 2 | in the vicinity of; near; by |
-| near | *presso* | prɛso | 2 | nearby, near, close |
+| near | *presso* | prɛso | 2 | near |
 | near | *accosto* | akɔsto | 3 | near |
 | near | *appresso* | aprɛso | 3 | near |
 | behind | *retro* | rɛtro | 2 | behind |
 | behind | *indietro* | indjɛtro | 3 | back, behind, backwards |
 | behind | *dietro* | djɛtro | 2 | behind, at the back |
 | behind | *didietro* | didjɛtro | 3 | behind |
-| behind | *appo* | apo | 2 | behind |
 | during | *durante* | durante | 3 | during |
 | about | *di* | di | 1 | about, on, concerning |
 | about | *su* | su | 1 | about, on |
 | about | *circa* | t͡ʃirka | 2 | about, approximately |
-| about | *qualche* | kwalke | 2 | some, about |
 | about | *all'incirca* | alint͡ʃirka | 4 | about, approximately, roughly, more or less, odd |
 | about | *incirca* | int͡ʃirka | 3 | about, approximately |
 | about | *dintorno* | dintɔrno | 3 | round, around, about, round about |
@@ -549,28 +515,23 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | about | *grossolanamente* | ɡrosolanamente | 6 | roughly, approximately, about |
 | since | *dal* | dal | 1 | since |
 | since | *da* | da | 1 | since; from |
-| inside | *entro* | entro | 2 | within, in, inside |
 | inside | *dentro* | dentro | 2 | inside; indoors |
 | inside | *internamente* | internamente | 5 | inside, within, internally |
 | inside | *didentro* | didentro | 3 | inside, indoors |
 | inside | *addentro* | adentro | 3 | inside, internally |
 | inside | *all'interno* | alintɛrno | 4 | inside, within, on the inside |
 | inside | *dall'interno* | dalintɛrno | 4 | inside |
-| outside | *fore* | fore | 2 | out, outside, outwards (towards the outside) |
 | outside | *fuori* | fwori | 2 | outside |
-| outside | *fora* | fora | 2 | out, outside, outwards (towards the outside) |
 | outside | *all'infuori* | alinfwori | 4 | outside (of), except, apart (from) |
 | outside | *all'aperto* | alapɛrto | 4 | outdoors, outside, in the open |
 | outside | *esternamente* | esternamente | 5 | externally, outside |
-| outside | *fuore* | fwore | 2 | outside, beyond |
-| outside | *fuora* | fwɔra | 2 | outside (in the outer part) |
 
 ## Conjunctions
 
 | meaning | form | sounds | σ | glossed as |
 |---|---|---|---:|---|
 | and | *e* | e | 1 | and |
-| and | *sì* | si | 1 | both ... and ... |
+| and | *ed* | ɛd | 1 | alternative form of e for euphony, especially before /e/ or /ɛ/; and |
 | and | *sia* | sja | 1 | both ... and .. |
 | and | *e/o* | not read |  | and/or |
 | or | *o* | ɔ | 1 | or |
@@ -595,24 +556,18 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | if | *se* | se | 1 | if |
 | if | *salvo* | salvo | 2 | except that; save that, unless, if... not |
 | if | *secondoché* | sekondoke | 4 | if, in the case that |
-| because | *ca* | ka | 1 | that, because |
 | because | *poiché* | pojke | 2 | since, because, as |
 | because | *perché* | perke | 2 | because, why |
 | because | *perocché* | peroke | 3 | since, because |
-| because | *poscia* | poʃa | 2 | since, because (followed by che) |
 | because | *avvegnaché* | avenjake | 4 | because |
 | because | *perciocché* | pert͡ʃoke | 3 | because |
-| that | *ca* | ka | 1 | that, because |
 | that | *che* | ke | 1 | that |
 | that | *così* | kozi | 2 | like this/that |
-| that | *onde* | onde | 2 | with which; that... with |
 | while | *punto* | punto | 2 | a while, shortly, momentarily |
 | while | *poco* | pɔko | 2 | a little, a while, a short time |
 | while | *finché* | finke | 2 | as long as, while |
 | while | *mentre* | mentre | 2 | while; as (during the same time that) |
 | while | *intanto* | intanto | 3 | in the meantime, (in the) meanwhile, while |
-| while | *ove* | ove | 2 | whereas, while |
-| while | *laddove* | ladove | 3 | whereas, while |
 | as | *come* | kome | 2 | as, like |
 | as | *poiché* | pojke | 2 | since, because, as |
 | as | *quale* | kwale | 2 | as |
@@ -621,9 +576,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | as | *siccome* | sikome | 3 | as, since (causality) |
 | as | *intanto* | intanto | 3 | while, as |
 | as | *giacché* | d͡ʒake | 2 | since, as |
-| as | *conciossiaché* | kont͡ʃosjake | 4 | as, for, since |
-| as | *dappoiché* | dapojke | 3 | as, for, since |
-| as | *conciossiacosaché* | kont͡ʃosjakozake | 6 | as, for, since |
 | than | *che* | ke | 1 | than |
 | nor | *né* | ne | 1 | nor |
 | although | *pure* | pure | 2 | even though, even if, although |
@@ -631,18 +583,12 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | although | *sebbene* | sebɛne | 3 | although, though |
 | although | *seppure* | sepure | 3 | although, though, despite that |
 | although | *malgrado* | malɡrado | 3 | even though, although |
-| although | *ancorché* | ankorke | 3 | although, though |
-| although | *quantunque* | kwantunkwe | 3 | although, even though |
-| although | *conciossiaché* | kont͡ʃosjake | 4 | although, though |
+| although | *quantunque* | kwantunkwe | 3 | although, but |
 | although | *financo* | finanko | 3 | even though, even if, although, even, also |
 | although | *tuttoché* | tutoke | 3 | though, although |
 | although | *puranco* | puranko | 3 | even though, even if, although |
 | although | *ancorquando* | ankorkwando | 4 | although, though, even if |
 | although | *avvegnaché* | avenjake | 4 | although, though, despite |
-| although | *conciossiacosaché* | kont͡ʃosjakozake | 6 | although, though |
-| although | *sebbenché* | sebenke | 3 | although, even though |
-| so | *sì* | si | 1 | so, thus, thuswise |
-| so | *tam* | tam | 1 | so |
 | so | *perché* | perke | 2 | so, so that, in order that |
 | so | *allora* | alora | 3 | so; well, then |
 | so | *così* | kozi | 2 | so |
@@ -659,7 +605,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | then | *poi* | pɔj | 1 | then |
 | then | *ora* | ora | 2 | first... then...; one moment... the next.. |
 | then | *allora* | alora | 3 | then (at that time) |
-| then | *quindi* | kwindi | 2 | then, afterwards, thenceforth |
 | then | *dunque* | dunkwe | 2 | then, afterwards |
 | then | *insomma* | insoma | 3 | then, well, after all |
 | then | *successivamente* | sut͡ʃesivamente | 6 | afterwards, then, later |
@@ -672,7 +617,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | therefore | *perciò* | pert͡ʃɔ | 2 | so, therefore, consequently, thus |
 | therefore | *pertanto* | pertanto | 3 | so, therefore, thus |
 | therefore | *sicché* | sike | 2 | therefore |
-| therefore | *quinci* | kwint͡ʃi | 2 | thus, therefore |
 
 ## Adverbs and particles
 
@@ -694,7 +638,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | also | *idem* | idem | 2 | ditto, and so, likewise, also |
 | also | *inoltre* | inoltre | 3 | moreover, also, besides, in addition, furthermore |
 | also | *financo* | finanko | 3 | even though, even if, although, even, also |
-| also | *oltracciò* | oltrat͡ʃɔ | 3 | besides that; also; moreover |
 | too | *pure* | pure | 2 | too, also, as well |
 | too | *anche* | anke | 2 | also, too, as well, besides |
 | too | *eccessivamente* | et͡ʃesivamente | 6 | excessively, too |
@@ -714,7 +657,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | very | *proprio* | prɔprjo | 2 | (intensifier) very, right, at all |
 | very | *talmente* | talmente | 3 | so; very |
 | very | *guari* | ɡwari | 2 | very, much |
-| very | *eminentemente* | eminentemente | 6 | very, highly |
 | already | *già* | d͡ʒa | 1 | already, yet |
 | already | *ormai* | ormaj | 2 | already, yet |
 | still | *ancora* | ankora | 3 | still |
@@ -729,7 +671,6 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | now | *adesso* | adɛso | 3 | now |
 | now | *ora* | ora | 2 | now |
 | now | *mo* | mo | 1 | now |
-| now | *testé* | teste | 2 | now, right now; forthwith |
 | now | *ormai* | ormaj | 2 | by now, by this time, now, at this point, by then |
 | now | *immediatamente* | imedjatamente | 6 | now |
 | now | *attualmente* | atwalmente | 4 | currently, now, at present, nowadays, at the moment |
@@ -743,20 +684,15 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | there | *là* | la | 1 | there |
 | there | *lì* | li | 1 | there, in that place |
 | there | *ivi* | ivi | 2 | there, therein |
-| there | *colà* | kola | 2 | there |
 | there | *costà* | kosta | 2 | there |
 | there | *costì* | kosti | 2 | there |
-| there | *linci* | lint͡ʃi | 2 | there, from that place |
-| there | *lici* | lit͡ʃi | 2 | there, therein, thence |
 | never | *mai* | maj | 1 | never |
 | never | *giammai* | d͡ʒamaj | 2 | never |
-| never | *unqua* | unkwa | 2 | never |
 | never | *unquanco* | unkwanko | 3 | never, never before |
 | never | *unquemai* | unkwemaj | 3 | never |
 | always | *mai* | maj | 1 | ever, always |
 | always | *sempre* | sɛmpre | 2 | always |
 | always | *immancabilmente* | imankabilmente | 6 | invariably, always |
-| always | *tuttavolta* | tutavɔlta | 4 | always, continually |
 | always | *puntualmente* | puntwalmente | 4 | invariably, always, regularly |
 | always | *perennemente* | perenemente | 5 | perennially, always |
 | always | *sistematicamente* | sistematikamente | 7 | always |
@@ -770,18 +706,14 @@ A pronoun glossed only *you*, with no number, is in row 2. The role is taken fro
 | well | *allora* | alora | 3 | so; well, then |
 | well | *beh* | bɛ | 1 | well (used at the start of a sentence) |
 | well | *ebbene* | ebɛne | 3 | well |
-| well | *cioè* | t͡ʃojɛ | 2 | a meaningless filler; like, well, I mean |
 | well | *insomma* | insoma | 3 | then, well, after all |
 | well | *perbene* | perbɛne | 3 | well, properly |
 | well | *ammodo* | amodo | 3 | well, properly |
 | well | *perbenino* | perbenino | 4 | properly, well, nicely |
 | well | *perlaquale* | perlakwale | 4 | smoothly, well |
-| well | *buonamente* | bwonamente | 4 | well |
 | today | *oggi* | ɔd͡ʒi | 2 | today |
 | yesterday | *ieri* | jɛri | 2 | yesterday |
 | tomorrow | *domani* | domani | 3 | tomorrow |
-| tomorrow | *crai* | kraj | 1 | tomorrow |
-| tomorrow | *dimane* | dimane | 3 | tomorrow |
 | perhaps | *forse* | forse | 2 | maybe, perhaps, possibly, may, might |
 | perhaps | *magari* | maɡari | 3 | maybe, perhaps |
 | maybe | *forse* | forse | 2 | maybe, perhaps, possibly, may, might |
