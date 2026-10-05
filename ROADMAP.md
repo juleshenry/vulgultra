@@ -108,14 +108,15 @@ Transcription, as fixed:
       [`docs/sources_orthography.md`](docs/sources_orthography.md): Romagnol
       and Emilian letters, Ladin *ë*, and Istro-Romanian *j* (the glide in
       its Croatian-based spelling). Rejected grid forms: 26 → 15.
-- [ ] The 15 left all contain an apostrophe (`s'assir`, `p'tit`, `ch'la`);
-      they need a different citation form in the grid, not a reading.
-- [ ] Rulings needed, listed with their sources in the same file: Walloon
-      *xh* (four dialect values, none of them the /ks/ it gets now);
-      Istro-Romanian *c* and its central vowel; Aromanian *nj*;
-      Piedmontese *o, u* (/u/, /y/, read as o, u); Occitan and Gascon *qu*
-      (/k/, read as /ky/). Each is accepted today with the wrong sound, and
-      one that drops or adds a vowel changes which form is shortest.
+- [ ] Ten forms are still rejected. Nine contain an apostrophe (`s'assêre`,
+      `p'tit`, `ch'la`) and need a different citation form in the grid, not
+      a reading; one has a letter no source explains (Emilian `źnòć`).
+- [x] Rulings on letters read with the wrong sound, each with its source in
+      the same file: Walloon *xh* is ʃ (the Walloon Wiktionary's standard
+      pronunciation), Aromanian *nj* is ɲ, Occitan and Gascon *qu* is k,
+      Bolognese *z, ż* are θ, ð, Piedmontese *o, u* are u, y.
+- [ ] Not ruled: Istro-Romanian *c* and its central vowel, because the
+      column mixes two spellings.
 - [x] Istro-Romanian column re-sourced. 73 of its 213 cells were a
       Daco-Romanian list left in place wherever the Swadesh appendix was
       empty. 8 now carry an attested form, 65 are empty; see
