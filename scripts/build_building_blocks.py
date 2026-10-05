@@ -4,17 +4,19 @@
 Pronouns, numerals, prepositions, conjunctions, determiners and the small
 adverbs come before any lexicon: every sentence needs them, and they are
 picked by hand from what the daughters attest. This script gathers the
-evidence for that pick from the Wiktionary extracts on disk
-(`data/sources/kaikki_full/{lect}.jsonl` for the big lects, else
-`data/words/kaikki-{lect}.jsonl`; English glosses) and writes
+evidence for that pick from the dictionary extracts on disk and writes
 
     docs/building_blocks/{lect}.md          what one lect attests
     docs/eval/building_block_candidates.md  each meaning's shortest forms across lects
     docs/eval/plural_formation.md           plural patterns, lect by lect
+    data/building_blocks/options.json       the top forms per meaning, for the pick
 
-A form is listed only where a dictionary entry of that lect glosses it with
-the meaning. Nothing is filled in from a sister lect; a lect with no extract
-on disk is named as missing.
+A lect's extract is, in this order: `data/sources/kaikki_full/{lect}.jsonl`
+(scripts/fetch_kaikki_full.py), `data/sources/frwikt_blocks/{lect}.jsonl`
+(scripts/extract_frwikt_blocks.py, French glosses), or
+`data/words/kaikki-{lect}.jsonl`. A form is listed only where a dictionary
+entry of that lect glosses it with the meaning. Nothing is filled in from a
+sister lect; a lect with no extract on disk is named as missing.
 
     python3 scripts/build_building_blocks.py
 """
@@ -22,6 +24,7 @@ on disk is named as missing.
 from __future__ import annotations
 
 import collections
+import functools
 import json
 import sys
 from pathlib import Path
@@ -36,13 +39,15 @@ from vulgultra.phonology import count_syllables  # noqa: E402
 from vulgultra.romance_swadesh import LECT_NAMES, SOURCE_LANGS  # noqa: E402
 
 WORDS = ROOT / "data" / "words"
-FULL = ROOT / "data" / "sources" / "kaikki_full"   # scripts/fetch_kaikki_full.py
+FULL = ROOT / "data" / "sources" / "kaikki_full"      # scripts/fetch_kaikki_full.py
+FRWIKT = ROOT / "data" / "sources" / "frwikt_blocks"  # scripts/extract_frwikt_blocks.py
 PAGES = ROOT / "docs" / "building_blocks"
 SHORTLIST = ROOT / "docs" / "eval" / "building_block_candidates.md"
 PLURALS = ROOT / "docs" / "eval" / "plural_formation.md"
+OPTIONS = ROOT / "data" / "building_blocks" / "options.json"
 # The extract of a lect, where its file is not named by the lect's code.
 EXTRACT = {"eml": "egl"}
-# Extracts glossed in French, which the English keys below cannot read yet.
+# Extracts beside the word lists whose glosses are French.
 FRENCH_GLOSSED = ("gallo",)
 
 # class → (the parts of speech an entry of that class may carry, its meanings).
@@ -77,25 +82,118 @@ CLASSES: dict[str, tuple[frozenset[str], tuple[str, ...]]] = {
         "there", "never", "always", "again", "well", "today", "yesterday", "tomorrow", "perhaps",
         "maybe", "almost")),
 }
+# The French words a French-glossed extract uses for each meaning.
+FRENCH: dict[str, tuple[str, ...]] = {
+    "I": ("je",), "me": ("me", "moi"), "you": ("tu", "vous", "toi"), "thou": ("tu",), "thee": ("te", "toi"),
+    "he": ("il", "lui"), "him": ("le", "lui"), "she": ("elle",), "her": ("la",), "it": ("cela", "ça", "ce"),
+    "we": ("nous", "on"), "us": ("nous",), "they": ("ils", "elles", "eux"), "them": ("les", "leur", "eux"),
+    "oneself": ("se", "soi"), "himself": ("lui-même",), "myself": ("moi-même",), "yourself": ("toi-même",),
+    "my": ("mon", "ma", "mes"), "mine": ("mien", "le mien"), "your": ("ton", "ta", "tes", "votre", "vos"),
+    "yours": ("tien", "vôtre"), "his": ("son", "sa", "ses"), "its": ("son",), "our": ("notre", "nos"),
+    "ours": ("nôtre",), "their": ("leur", "leurs"), "theirs": ("le leur",),
+    "the": ("le", "la", "les", "l’", "l'"), "a": ("un", "une"), "an": (),
+    "this": ("ce", "cet", "cette", "ceci", "celui-ci"), "that": ("cela", "ça", "celui-là", "celui"),
+    "these": ("ces", "ceux-ci"), "those": ("ceux-là", "ceux"),
+    "who": ("qui",), "whom": (), "what": ("que", "quoi", "quel"), "which": ("quel", "lequel"), "whose": ("dont",),
+    "where": ("où",), "when": ("quand",), "how": ("comment",), "why": ("pourquoi",), "how much": ("combien",),
+    "how many": ("combien",),
+    "all": ("tout", "tous"), "every": ("chaque",), "each": ("chacun", "chaque"), "some": ("quelque", "quelques"),
+    "any": ("n’importe quel", "aucun"), "no": ("aucun", "nul", "non"), "none": ("aucun",), "nobody": ("personne",),
+    "no one": ("personne",), "nothing": ("rien",), "something": ("quelque chose",),
+    "someone": ("quelqu’un", "quelqu'un"), "somebody": ("quelqu’un", "quelqu'un"), "everything": ("tout",),
+    "everyone": ("tout le monde",), "many": ("beaucoup", "plusieurs"), "much": ("beaucoup",), "few": ("peu",),
+    "little": ("peu",), "more": ("plus", "davantage"), "less": ("moins",), "other": ("autre",), "same": ("même",),
+    "both": ("tous les deux", "les deux"), "enough": ("assez",), "too much": ("trop",),
+    "zero": ("zéro",), "one": ("un",), "two": ("deux",), "three": ("trois",), "four": ("quatre",), "five": ("cinq",),
+    "six": ("six",), "seven": ("sept",), "eight": ("huit",), "nine": ("neuf",), "ten": ("dix",), "eleven": ("onze",),
+    "twelve": ("douze",), "twenty": ("vingt",), "thirty": ("trente",), "forty": ("quarante",),
+    "fifty": ("cinquante",), "hundred": ("cent",), "thousand": ("mille",), "first": ("premier",),
+    "second": ("deuxième", "second"), "third": ("troisième",), "half": ("demi", "moitié"),
+    "of": ("de",), "to": ("à",), "in": ("dans", "en"), "into": ("dans",), "on": ("sur",), "at": ("à", "chez"),
+    "with": ("avec",), "without": ("sans",), "for": ("pour",), "from": ("de", "depuis"), "by": ("par",),
+    "between": ("entre",), "among": ("parmi",), "under": ("sous",), "over": ("par-dessus",),
+    "above": ("au-dessus",), "before": ("avant", "devant"), "after": ("après",),
+    "until": ("jusque", "jusqu’à", "jusqu'à"), "against": ("contre",), "through": ("à travers",),
+    "towards": ("vers",), "toward": ("vers",), "near": ("près", "près de"), "behind": ("derrière",),
+    "during": ("pendant", "durant"), "about": ("environ", "à propos de"), "since": ("depuis",),
+    "inside": ("dedans",), "outside": ("dehors", "hors"),
+    "and": ("et",), "or": ("ou",), "but": ("mais",), "if": ("si",), "because": ("parce que", "car"),
+    "that": ("que",), "while": ("pendant que", "tandis que"), "as": ("comme",), "than": ("que",), "nor": ("ni",),
+    "although": ("bien que", "quoique"), "so": ("donc", "alors"), "then": ("puis", "alors", "ensuite"),
+    "therefore": ("donc",),
+    "yes": ("oui",), "not": ("ne", "pas", "ne pas", "point"), "also": ("aussi",), "too": ("aussi", "trop"),
+    "only": ("seulement",), "very": ("très",), "already": ("déjà",), "still": ("encore", "toujours"),
+    "yet": ("encore",), "now": ("maintenant",), "here": ("ici",), "there": ("là",), "never": ("jamais",),
+    "always": ("toujours",), "again": ("encore", "de nouveau"), "well": ("bien",),
+    "today": ("aujourd’hui", "aujourd'hui"), "yesterday": ("hier",), "tomorrow": ("demain",),
+    "perhaps": ("peut-être",), "maybe": ("peut-être",), "almost": ("presque",),
+}
+
+# A personal pronoun's cell: gloss word → (person, role), per gloss language.
+ROLES = ("subject", "object", "indirect", "stressed", "reflexive")
+PERSONS = ("1sg", "2sg", "2", "3sg m", "3sg f", "3sg n", "1pl", "2pl", "3pl", "3pl m", "3pl f", "3 reflexive")
+PRONOUN_CELL: dict[str, dict[str, tuple[str, str]]] = {
+    "en": {"i": ("1sg", "subject"), "me": ("1sg", "object"), "myself": ("1sg", "reflexive"),
+           "thou": ("2sg", "subject"), "thee": ("2sg", "object"), "yourself": ("2sg", "reflexive"),
+           "you": ("2", "subject"), "ye": ("2pl", "subject"), "you all": ("2pl", "subject"),
+           "he": ("3sg m", "subject"), "him": ("3sg m", "object"), "himself": ("3sg m", "reflexive"),
+           "she": ("3sg f", "subject"), "her": ("3sg f", "object"), "herself": ("3sg f", "reflexive"),
+           "it": ("3sg n", "subject"), "we": ("1pl", "subject"), "us": ("1pl", "object"),
+           "ourselves": ("1pl", "reflexive"), "they": ("3pl", "subject"), "them": ("3pl", "object"),
+           "themselves": ("3pl", "reflexive"), "oneself": ("3 reflexive", "reflexive")},
+    "fr": {"je": ("1sg", "subject"), "me": ("1sg", "object"), "moi": ("1sg", "stressed"),
+           "tu": ("2sg", "subject"), "te": ("2sg", "object"), "toi": ("2sg", "stressed"),
+           "il": ("3sg m", "subject"), "le": ("3sg m", "object"), "lui": ("3sg m", "stressed"),
+           "elle": ("3sg f", "subject"), "la": ("3sg f", "object"), "nous": ("1pl", "subject"),
+           "vous": ("2pl", "subject"), "ils": ("3pl m", "subject"), "elles": ("3pl f", "subject"),
+           "les": ("3pl", "object"), "leur": ("3pl", "indirect"), "eux": ("3pl m", "stressed"),
+           "se": ("3 reflexive", "reflexive"), "soi": ("3 reflexive", "stressed"), "on": ("3sg n", "subject")},
+}
+# Words in a gloss or its tags that move a pronoun to another role.
+ROLE_WORDS = (
+    ("reflexive", ("reflexive", "réfléchi")),
+    ("indirect", ("dative", "indirect", "to me", "to you", "to him", "to her", "to us", "to them", "datif")),
+    ("stressed", ("disjunctive", "stressed", "emphatic", "tonic", "prepositional", "oblique", "tonique", "disjoint")),
+    ("object", ("accusative", "direct object", "objective", "object pronoun", "complément d’objet direct")),
+)
+# An article's kind: gloss word → kind, per gloss language.
+ARTICLE_KIND = {"en": {"the": "definite", "a": "indefinite", "an": "indefinite"},
+                "fr": {"le": "definite", "la": "definite", "les": "definite", "l’": "definite", "l'": "definite",
+                       "un": "indefinite", "une": "indefinite", "des": "indefinite"}}
+ARTICLE_CELLS = ("m sg", "f sg", "n sg", "m pl", "f pl", "n pl", "pl", "not given")
+FRENCH_SHAPE = {"la": "f sg", "une": "f sg", "le": "m sg", "un": "m sg", "les": "pl", "des": "pl"}
 # Forms of a noun that are a plain plural: nothing but number and gender.
 PLAIN = {"plural", "masculine", "feminine", "neuter", "indefinite", "nominative", "accusative", "canonical"}
 GENDERS = ("masculine", "feminine", "neuter")
+CLOSED = {"pron", "det", "article", "prep", "postp", "conj", "particle", "contraction", "num"}
+# Senses that are not the lect's plain current word.
+SKIPPED = {"misspelling", "obsolete", "archaic", "dated", "rare", "neologism", "nonstandard", "proscribed",
+           "humorous", "gender-neutral"}
+EXAMPLES: dict[tuple[str, str, str], str] = {}
 
 
 def extract_of(lect: str) -> Path:
-    """The lect's extract: the full one fetched for the big lects, else the one beside the word lists."""
-    full = FULL / f"{lect}.jsonl"
-    return full if full.is_file() else WORDS / f"kaikki-{EXTRACT.get(lect, lect)}.jsonl"
+    """The lect's extract: the full one, the French Wiktionary's, else the one beside the word lists."""
+    for path in (FULL / f"{lect}.jsonl", FRWIKT / f"{lect}.jsonl"):
+        if path.is_file():
+            return path
+    return WORDS / f"kaikki-{EXTRACT.get(lect, lect)}.jsonl"
 
 
-def entries(lect: str) -> list[dict]:
+def gloss_language(lect: str) -> str:
+    return "fr" if lect in FRENCH_GLOSSED or extract_of(lect).parent == FRWIKT else "en"
+
+
+@functools.cache
+def entries(lect: str) -> tuple[dict, ...]:
     path = extract_of(lect)
     if not path.is_file():
-        return []
+        return ()
     with path.open(encoding="utf-8") as stream:
-        return [json.loads(line) for line in stream if line.strip()]
+        return tuple(json.loads(line) for line in stream if line.strip())
 
 
+@functools.cache
 def reading(form: str, lect: str, pos: str) -> tuple[str, int] | None:
     """The form's sounds and syllable count, or None if the reader rejects it."""
     try:
@@ -105,27 +203,93 @@ def reading(form: str, lect: str, pos: str) -> tuple[str, int] | None:
     return "".join(seq), count_syllables(seq)
 
 
-def harvest(lect: str) -> dict[str, dict[str, list[tuple[str, str, str]]]]:
-    """class → meaning → [(form, part of speech, the gloss as the dictionary gives it)]."""
-    found: dict[str, dict[str, list[tuple[str, str, str]]]] = {name: {} for name in CLASSES}
+def senses(lect: str):
+    """Every (form, part of speech, gloss, gloss parts, gloss and tags as one lowercase text, entry)."""
     for entry in entries(lect):
         form, pos = audit.nfc(entry.get("word", "")), entry.get("pos", "")
         if not form or " " in form or form[:1].isupper() and form != "I":
             continue
         for sense in entry.get("senses") or []:
-            if {"form-of", "alt-of", "misspelling", "obsolete"} & set(sense.get("tags") or []):
+            tags = list(sense.get("tags") or []) + list(entry.get("tags") or [])
+            # me is entered as "accusative of yo": a closed-class word keeps such a sense.
+            if SKIPPED & set(tags) or pos not in CLOSED and {"form-of", "alt-of"} & set(tags):
                 continue
             for gloss in sense.get("glosses") or []:
-                parts = audit.gloss_parts(gloss)
-                for name, (allowed, meanings) in CLASSES.items():
-                    if pos not in allowed:
-                        continue
-                    for meaning in meanings:
-                        if meaning.lower() in parts:
-                            rows = found[name].setdefault(meaning, [])
-                            if not any(row[0] == form for row in rows):
-                                rows.append((form, pos, gloss[:90]))
+                yield form, pos, gloss, audit.gloss_parts(gloss), f"{gloss} {' '.join(tags)}".lower(), entry
+
+
+def keys(meaning: str, language: str) -> tuple[str, ...]:
+    return (meaning.lower(),) if language == "en" else FRENCH.get(meaning, ())
+
+
+def harvest(lect: str) -> dict[str, dict[str, list[tuple[str, str, str]]]]:
+    """class → meaning → [(form, part of speech, the gloss as the dictionary gives it)]."""
+    language = gloss_language(lect)
+    found: dict[str, dict[str, list[tuple[str, str, str]]]] = {name: {} for name in CLASSES}
+    for form, pos, gloss, parts, _, _ in senses(lect):
+        for name, (allowed, meanings) in CLASSES.items():
+            if pos not in allowed:
+                continue
+            for meaning in meanings:
+                if any(key in parts for key in keys(meaning, language)):
+                    rows = found[name].setdefault(meaning, [])
+                    if not any(row[0] == form for row in rows):
+                        rows.append((form, pos, gloss[:90]))
     return found
+
+
+@functools.cache
+def pronouns(lect: str) -> dict[tuple[str, str], list[str]]:
+    """(person, role) → the lect's personal pronouns for that cell."""
+    language = gloss_language(lect)
+    table: dict[tuple[str, str], list[str]] = collections.defaultdict(list)
+    for form, pos, _, parts, text, _ in senses(lect):
+        if pos != "pron":
+            continue
+        for word, (person, role) in PRONOUN_CELL[language].items():
+            if word not in parts:
+                continue
+            role = next((name for name, words in ROLE_WORDS if any(w in text for w in words)), role)
+            if person == "2":
+                person = "2pl" if any(w in text for w in ("plural", "pluriel", "you all")) else (
+                    "2sg" if any(w in text for w in ("singular", "singulier")) else "2")
+            if person == "3pl" and ("feminine" in text or "masculine" in text):
+                person = "3pl f" if "feminine" in text else "3pl m"
+            if form not in table[(person, role)]:
+                table[(person, role)].append(form)
+    return dict(table)
+
+
+def shape(text: str, default: str = "not given") -> str:
+    """Gender and number named in a gloss or a list of tags: m sg, f pl, pl."""
+    gender = next((g[0] for g in GENDERS if g in text or g[:7] in text), "")
+    number = "pl" if "plural" in text or "pluriel" in text else ("sg" if gender else "")
+    return f"{gender} {number}".strip() or default
+
+
+@functools.cache
+def articles(lect: str) -> dict[tuple[str, str], list[str]]:
+    """(definite or indefinite, gender and number) → the lect's articles for that cell."""
+    language = gloss_language(lect)
+    table: dict[tuple[str, str], list[str]] = collections.defaultdict(list)
+    for form, pos, _, parts, text, entry in senses(lect):
+        if pos not in ("article", "det"):
+            continue
+        for word, kind in ARTICLE_KIND[language].items():
+            if word not in parts:
+                continue
+            cell = shape(text, FRENCH_SHAPE.get(word, "not given") if language == "fr" else "not given")
+            if form not in table[(kind, cell)]:
+                table[(kind, cell)].append(form)
+            for other in entry.get("forms") or []:  # the feminine and plural an entry records for its headword
+                tags = " ".join(other.get("tags") or [])
+                inflected = audit.nfc(other.get("form", ""))
+                if inflected and " " not in inflected and ("plural" in tags or "feminine" in tags):
+                    gendered = any(g in tags for g in GENDERS)
+                    other_cell = shape(tags if gendered else f"{'masculine' if cell.startswith('m') else ''} {tags}")
+                    if inflected not in table[(kind, other_cell)]:
+                        table[(kind, other_cell)].append(inflected)
+    return dict(table)
 
 
 def plural_pattern(singular: str, plural: str) -> str:
@@ -149,7 +313,7 @@ def plurals(lect: str) -> dict[str, collections.Counter]:
     for entry in entries(lect):
         if entry.get("pos") != "noun" or " " in entry.get("word", ""):
             continue
-        tags = {tag for sense in entry.get("senses") or [] for tag in sense.get("tags") or []}
+        tags = {tag for sense in entry.get("senses") or [] for tag in sense.get("tags") or []} | set(entry.get("tags") or [])
         tags |= {arg for head in entry.get("head_templates") or [] for arg in (head.get("args") or {}).values()
                  if isinstance(arg, str)}
         gender = next((g for g in GENDERS if g in tags or g[0] in tags or f"{g[0]}-p" in tags), "gender not given")
@@ -164,15 +328,36 @@ def plurals(lect: str) -> dict[str, collections.Counter]:
     return table
 
 
-EXAMPLES: dict[tuple[str, str, str], str] = {}
+def shown(form: str, lect: str, pos: str) -> str:
+    read = reading(form, lect, pos)
+    return f"*{form}* {read[0]} ({read[1]})" if read else f"*{form}* (not read)"
+
+
+def grid(title: str, rows: tuple[str, ...], columns: tuple[str, ...], table: dict, lect: str, pos: str) -> list[str]:
+    """A paradigm table: one row per first key, one column per second, forms with sounds and syllables."""
+    used = [row for row in rows if any(table.get((row, column)) for column in columns)]
+    if not used:
+        return [f"## {title}", "", "Nothing on disk sorts into this table.", ""]
+    lines = [f"## {title}", "", "| | " + " | ".join(columns) + " |", "|---|" + "---|" * len(columns)]
+    for row in used:
+        cells = [", ".join(shown(form, lect, pos) for form in table.get((row, column), [])) for column in columns]
+        lines.append(f"| {row} | " + " | ".join(cells) + " |")
+    return lines + [""]
 
 
 def page(lect: str, found: dict, plural_table: dict) -> str:
+    source = "French" if gloss_language(lect) == "fr" else "English"
     lines = [f"# {LECT_NAMES.get(lect, lect)} ({lect}): building blocks", "",
              "Generated by `scripts/build_building_blocks.py`. Do not edit by hand.", "",
-             "Each form is a dictionary headword of this lect that the English Wiktionary glosses with the "
-             "meaning. **Sounds** is the pipeline's reading of the spelling, **σ** its syllable count. "
+             f"Each form is a dictionary headword of this lect that the {source} Wiktionary glosses with the "
+             "meaning. **Sounds** is the pipeline's reading of the spelling, **σ** its syllable count; in the "
+             "two paradigm tables a form is followed by its sounds and, in brackets, its syllable count. "
              "An empty row means no entry on disk has that gloss, not that the lect lacks the word.", ""]
+    lines += grid("Personal pronouns, by person and role", PERSONS, ROLES, pronouns(lect), lect, "pron")
+    lines += ["A pronoun glossed only *you*, with no number, is in row 2. The role is taken from the gloss "
+              "(*me* is object, *to him* indirect, *disjunctive* stressed); where the dictionary does not say, "
+              "the form sits in the column of its gloss word.", ""]
+    lines += grid("Articles, by gender and number", ("definite", "indefinite"), ARTICLE_CELLS, articles(lect), lect, "det")
     for name, (_, meanings) in CLASSES.items():
         lines += [f"## {name}", "", "| meaning | form | sounds | σ | glossed as |", "|---|---|---|---:|---|"]
         for meaning in meanings:
@@ -199,36 +384,70 @@ def page(lect: str, found: dict, plural_table: dict) -> str:
     return "\n".join(lines)
 
 
-def shortlist(all_found: dict[str, dict]) -> str:
+def candidates(all_found: dict[str, dict]) -> list[tuple[str, str, int, list]]:
+    """(section, meaning or cell, lects with a form, ranked sound shapes) for every row of the shortlist."""
+    tables: list[tuple[str, str, int, list]] = []
+
+    def add(section: str, label: str, attested: list[tuple[str, str, str]]) -> None:
+        shapes: dict[tuple[int, str], list[str]] = collections.defaultdict(list)
+        for lect, form, pos in attested:
+            read = reading(form, lect, pos)
+            if read:
+                shapes[(read[1], read[0])].append(f"{lect} *{form}*")
+        ranked = sorted(shapes.items(), key=lambda item: (item[0][0], -len({a.split()[0] for a in item[1]}), item[0][1]))
+        tables.append((section, label, len({lect for lect, _, _ in attested}), ranked))
+
+    for person in PERSONS:
+        for role in ROLES:
+            attested = [(lect, form, "pron") for lect in all_found for form in pronouns(lect).get((person, role), [])]
+            if attested:
+                add("Personal pronouns, by person and role", f"{person}, {role}", attested)
+    for kind in ("definite", "indefinite"):
+        for cell in ARTICLE_CELLS:
+            attested = [(lect, form, "det") for lect in all_found for form in articles(lect).get((kind, cell), [])]
+            if attested:
+                add("Articles, by gender and number", f"{kind}, {cell}", attested)
+    for name, (_, meanings) in CLASSES.items():
+        for meaning in meanings:
+            add(name, meaning, [(lect, form, pos) for lect, found in all_found.items()
+                                for form, pos, _ in found[name].get(meaning, [])])
+    return tables
+
+
+def shortlist(tables: list, harvested: int) -> tuple[str, dict]:
+    """The cross-lect page, and the same top rows as data for the pick."""
+    meanings_of: dict[str, set[str]] = collections.defaultdict(set)
+    for _, label, _, ranked in tables:
+        for (_, sounds), _ in ranked:
+            meanings_of[sounds].add(label)
     lines = ["# Building blocks: the shortest attested forms, meaning by meaning", "",
              "Generated by `scripts/build_building_blocks.py`. Do not edit by hand.", "",
              "For each meaning, every lect's forms are read and grouped by their sounds. A row is one sound "
              "shape, with the lects and spellings that attest it; rows are ordered by syllable count, then by "
-             "the number of lects. Up to eight rows are shown. **Lects with a form** counts the lects whose "
-             f"extract has the gloss at all, out of {len(all_found)} harvested. This is evidence for a pick "
-             "by hand, not a pick.", ""]
-    for name, (_, meanings) in CLASSES.items():
-        lines += [f"## {name}", ""]
-        for meaning in meanings:
-            shapes: dict[tuple[int, str], list[str]] = collections.defaultdict(list)
-            lects_with = 0
-            for lect, found in all_found.items():
-                rows = found[name].get(meaning, [])
-                lects_with += bool(rows)
-                for form, pos, _ in rows:
-                    read = reading(form, lect, pos)
-                    if read:
-                        shapes[(read[1], read[0])].append(f"{lect} *{form}*")
-            if not shapes:
-                lines += [f"**{meaning}**: no form on disk.", ""]
-                continue
-            lines += [f"**{meaning}** (lects with a form: {lects_with})", "", "| σ | sounds | lects | attested as |",
-                      "|---:|---|---:|---|"]
-            ranked = sorted(shapes.items(), key=lambda item: (item[0][0], -len({a.split()[0] for a in item[1]}), item[0][1]))
-            for (sigma, sounds), attested in ranked[:8]:
-                lines.append(f"| {sigma} | {sounds} | {len({a.split()[0] for a in attested})} | {', '.join(attested[:8])} |")
-            lines.append("")
-    return "\n".join(lines)
+             "the number of lects. Up to eight rows are shown. **Also** lists other meanings on this page that "
+             "some lect expresses with the same sounds: picking both would make a homophone. **Lects with a "
+             f"form** counts the lects whose extract has the gloss at all, out of {harvested} harvested. This "
+             "is evidence for a pick by hand, not a pick.", ""]
+    options: dict[str, dict[str, list[dict]]] = collections.defaultdict(dict)
+    section = None
+    for name, label, lects_with, ranked in tables:
+        if name != section:
+            lines += [f"## {name}", ""]
+            section = name
+        if not ranked:
+            lines += [f"**{label}**: no form on disk.", ""]
+            continue
+        lines += [f"**{label}** (lects with a form: {lects_with})", "", "| σ | sounds | lects | attested as | also |",
+                  "|---:|---|---:|---|---|"]
+        options[name][label] = []
+        for (sigma, sounds), attested in ranked[:8]:
+            lects = len({a.split()[0] for a in attested})
+            also = sorted(meanings_of[sounds] - {label})[:4]
+            lines.append(f"| {sigma} | {sounds} | {lects} | {', '.join(attested[:8])} | {', '.join(also)} |")
+            options[name][label].append({"sigma": sigma, "sounds": sounds, "lects": lects,
+                                         "attested": attested[:8], "also": also})
+        lines.append("")
+    return "\n".join(lines), options
 
 
 def plural_overview(tables: dict[str, dict]) -> str:
@@ -255,18 +474,14 @@ def main() -> None:
     PAGES.mkdir(parents=True, exist_ok=True)
     harvested: dict[str, dict] = {}
     plural_tables: dict[str, dict] = {}
-    missing, french = [], []
+    missing = []
     for lect in SOURCE_LANGS:
-        rows = entries(lect)
-        closed = [e for e in rows if e.get("pos") not in ("verb", None)]
-        if lect in FRENCH_GLOSSED:
-            french.append(lect)
-        elif not closed:
+        if not any(entry.get("pos") not in ("verb", None) for entry in entries(lect)):
             missing.append(lect)
-        else:
-            harvested[lect] = harvest(lect)
-            plural_tables[lect] = plurals(lect)
-            (PAGES / f"{lect}.md").write_text(page(lect, harvested[lect], plural_tables[lect]), encoding="utf-8")
+            continue
+        harvested[lect] = harvest(lect)
+        plural_tables[lect] = plurals(lect)
+        (PAGES / f"{lect}.md").write_text(page(lect, harvested[lect], plural_tables[lect]), encoding="utf-8")
     index = ["# Building blocks", "",
              "Generated by `scripts/build_building_blocks.py`. Do not edit by hand.", "",
              "Pronouns, possessives, articles, demonstratives, interrogatives, quantifiers, numerals, "
@@ -274,20 +489,24 @@ def main() -> None:
              "them, and how its nouns form the plural. Cross-lect views: "
              "[shortest forms per meaning](../eval/building_block_candidates.md), "
              "[plural formation](../eval/plural_formation.md).", "",
-             "| lect | meanings with a form | forms | nouns with a plural |", "|---|---:|---:|---:|"]
+             "| lect | glossed in | meanings with a form | forms | pronoun cells | nouns with a plural |",
+             "|---|---|---:|---:|---:|---:|"]
     wanted = sum(len(meanings) for _, meanings in CLASSES.values())
     for lect, found in harvested.items():
         filled = sum(1 for by_meaning in found.values() for rows in by_meaning.values() if rows)
         forms = sum(len(rows) for by_meaning in found.values() for rows in by_meaning.values())
         nouns = sum(sum(counts.values()) for counts in plural_tables[lect].values())
-        index.append(f"| [{LECT_NAMES.get(lect, lect)}]({lect}.md) | {filled} of {wanted} | {forms} | {nouns} |")
-    index += ["", f"**No page yet.** The extract on disk holds verbs only, or there is none: {', '.join(missing)}. "
-              f"Glossed in French, which this harvest does not read yet: {', '.join(french)}.", ""]
+        index.append(f"| [{LECT_NAMES.get(lect, lect)}]({lect}.md) | {'French' if gloss_language(lect) == 'fr' else 'English'} "
+                     f"| {filled} of {wanted} | {forms} | {len(pronouns(lect))} | {nouns} |")
+    index += ["", f"**No page.** No extract on disk for: {', '.join(missing) or 'none'}.", ""]
     (PAGES / "README.md").write_text("\n".join(index), encoding="utf-8")
-    SHORTLIST.write_text(shortlist(harvested), encoding="utf-8")
+    text, options = shortlist(candidates(harvested), len(harvested))
+    SHORTLIST.write_text(text, encoding="utf-8")
+    OPTIONS.parent.mkdir(parents=True, exist_ok=True)
+    OPTIONS.write_text(json.dumps(options, ensure_ascii=False, indent=1), encoding="utf-8")
     PLURALS.write_text(plural_overview(plural_tables), encoding="utf-8")
     print("\n".join(index[6:]))
-    print(f"Wrote {PAGES}/, {SHORTLIST.name}, {PLURALS.name}")
+    print(f"Wrote {PAGES}/, {SHORTLIST.name}, {PLURALS.name}, {OPTIONS.name}")
 
 
 if __name__ == "__main__":

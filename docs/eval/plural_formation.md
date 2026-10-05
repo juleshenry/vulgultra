@@ -37,6 +37,9 @@ For every noun whose dictionary entry records a plural, the plural is compared w
 | nrf | masculine | 1986 | +s 69% (cat → cats) | -x +rs 10% (venteux → venteurs) | other 7% (camel → camiaux) |
 | nrf | feminine | 1862 | +s 97% (livre → livres) | other 1% (tonné → tonnieaux) | no change 0% (faux → faux) |
 | nrf | gender not given | 10 | +s 100% (dare → dares) |  |  |
+| gallo | masculine | 992 | +s 76% (juin → juins) | other 11% (ail → yeûs) | -er +érs 5% (bananier → bananiérs) |
+| gallo | feminine | 1002 | +s 83% (armée → armées) | other 11% (belle-fille → belles-filles) | -es +s 2% (malouines → malouins) |
+| gallo | gender not given | 13 | +s 92% (catalan → catalans) | other 7% (ûne → dez) |  |
 | lmo | masculine | 41 | no change 58% (dia → dia) | +j 12% (client → clientj) | other 7% (jald → jâld) |
 | lmo | feminine | 47 | -a +e 42% (vita → vite) | -a 10% (acqua → acqu) | no change 8% (man → man) |
 | pms | masculine | 93 | no change 91% (vers → vers) | -l +j 8% (vel → vej) |  |
