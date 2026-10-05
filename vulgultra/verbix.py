@@ -7,6 +7,7 @@ data/sources/verbix/{lect}/.
 from __future__ import annotations
 
 import json
+import os
 import re
 import time
 import urllib.error
@@ -15,7 +16,6 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
-VERBIX_API_KEY = "6153a464-b4f0-11ed-9ece-ee3761609078"
 USER_AGENT = "vulgultra-research/0.1 (+noncommercial; cite Verbix)"
 
 PERSON_BY_ID = {
@@ -168,10 +168,24 @@ def normalize_class(lect: str, lemma: str, current: str | None = None) -> str:
     return class_from_infinitive(lect, lemma)
 
 
+def api_key() -> str:
+    """The Verbix API key: the VERBIX_API_KEY environment variable, else that line of .env."""
+    key = os.environ.get("VERBIX_API_KEY", "")
+    env_file = Path(__file__).resolve().parents[1] / ".env"
+    if not key and env_file.is_file():
+        for line in env_file.read_text(encoding="utf-8").splitlines():
+            name, _, value = line.partition("=")
+            if name.strip() == "VERBIX_API_KEY":
+                key = value.strip().strip("\"'")
+    if not key:
+        raise RuntimeError("Set VERBIX_API_KEY in the environment, or in .env at the repository root")
+    return key
+
+
 def conj_url(lect: str, lemma: str) -> str:
     iso = LECT_CONFIG[lect]["iso"]
     return (
-        f"https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/"
+        f"https://api.verbix.com/conjugator/iv1/{api_key()}/"
         f"{iso}/{urllib.parse.quote(lemma)}/json"
     )
 
