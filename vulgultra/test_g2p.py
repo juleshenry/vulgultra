@@ -45,6 +45,12 @@ class LeftoverFixtures(unittest.TestCase):
             backend.return_value.transliterate.return_value = nfd("unɡľə")
             self.assertEqual(word_to_ipa("ungľă", "ruo"), "unɡʎə")
 
+    def test_a_letter_can_take_the_value_another_letter_had(self) -> None:
+        # Piedmontese: o is /u/ and u is /y/, read in one pass.
+        self.assertEqual(read_leftovers("tut", "pms"), "tyt")
+        self.assertEqual(read_leftovers("mond", "pms"), "mund")
+        self.assertEqual(read_leftovers("feu", "pms"), "fø")
+
     def test_backend_typos_are_fixed_for_every_lect(self) -> None:
         self.assertEqual(read_leftovers("ajga", "oc"), "ajɡa")
         self.assertEqual(read_leftovers("antʃ͡ʊ", "gl"), nfd("ant͡ʃʊ"))

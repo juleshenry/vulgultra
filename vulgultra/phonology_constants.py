@@ -92,8 +92,10 @@ BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "ruo": {"d͡ʒ": "d͡ʒ", "lʒ": "ʎ", "nʒ": "ɲ", "ʒ": "j", **_RUO_LETTERS},
     # The same column in Romanian-based or mixed spelling: j is ʒ there.
     "ruo-ro": _RUO_LETTERS,
-    # ć; a marked s is the voiced one; macron = length.
-    "eml": {"ṅ": "ŋ", "ḱ": "t͡ʃ", "ṣ": "z", "ū": "u", "ī": "i", "ō": "o"},
+    # Bolognese spelling: å and ä are vowels of their own, ṡ is the voiced
+    # s, final c' and g' are affricates. ć is the same affricate in the
+    # Mirandolese spelling.
+    "eml": {"ṅ": "ŋ", "ṡ": "z", "å": "ʌ", "ä": "æ", "k'": "t͡s", "ɡ'": "d͡z", "ḱ": "t͡ʃ"},
     # ẓ comes out as s + dot. ë and ö are centring diphthongs, one syllable.
     "rgn": {"ṣ": "ð", "ș": "z", "ş": "z", "ọ": "o", "ë": "ɛ", "ö": "ɔ", "ã": "ə̃"},
     "fur": {"ķ": "t͡ʃ"},                    # ç
@@ -101,7 +103,8 @@ BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "lad": {"ķ": "s"},
     "lmo": {"ö": "ø", "ü": "y"},
     "lld": {"ö": "ø", "ü": "y", "ë": "ɐ"},
-    "pms": {"ë": "ə"},
+    # Piedmontese writes /u/ as o, /y/ as u and /ø/ as eu; ò is the open o.
+    "pms": {"ë": "ə", "eu": "ø", "o": "u", "u": "y"},
 }
 
 # A column that mixes two spellings: lect → (letters only the backend's own

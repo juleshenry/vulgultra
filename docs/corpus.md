@@ -51,7 +51,7 @@ Do not scrape Pledari, DRG, TalkBank, Verbix site-wide, or vlaski-zejanski.
 | Sardinian | sc | Sardinian | 103702 | 183635 | both |
 | Eastern | ro | Romanian | 25000 | 0 | lemmas |
 | Eastern | rup | Aromanian | 5337 | 65489 | wiki |
-| Eastern | ruo | Istro-Romanian | ~519 | 0 | **thin** |
+| Eastern | ruo | Istro-Romanian | 335 | 0 | **thin** |
 | Eastern | ruq | Megleno-Romanian | ~212 | 0 | **thin** |
 
 Reserved (not sources): `la` Latin, `en` English.

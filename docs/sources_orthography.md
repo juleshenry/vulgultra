@@ -13,11 +13,10 @@ spelling, for letters the borrowed G2P backend does not know. Checked
 | rgn | ș → z, ọ → o, ë → ɛ, ö → ɔ | Wiktionary *radìșa* [ɾɐˈdiːzɐ], *calurôș* [kɐluˈɾoə̯z], *fọmm* [ˈfomm], *pël* [ˈpɛːl], *öv* [ˈɔːv] (local Kaikki dump). Wikipedia "Romagnol" (Vitali 2008) gives ë [ɛə̯], ö [ɔə̯]: one syllable either way |
 | rgn | ã → ə̃ | Wikipedia "Romagnol", vowel table (Vitali 2008): ã/â [ə̃] |
 | rgn | ş → z | Inferred: cedilla form of ș. *uşël* is not in the dump |
+| eml | ṡ → z, å → ʌ, ä → æ, final c' → ts, final g' → dz | Wikipedia "Bolognese dialect", orthography table: ṡ /z/, å /ʌ/, ä /æ/, c' /ts/, g' /dz/. The column now follows Wiktionary's Emilian Swadesh list, which is in this spelling |
 | eml | ṅ → ŋ, ć → tʃ | Italian Wikipedia "Dialetto mirandolese": ‹ṅ ń› [ŋ], ‹ć c'› [tʃ]. Wikipedia "Bolognese dialect": ṅ is the velar nasal |
-| eml | ṣ → z | Inferred from the shared convention that a marked s is the voiced one: Mirandolese ‹ś ş› [z], Bolognese ṡ /z/, Romagnol ș [z]. No source found for this exact letter |
-| eml | ū ī ō → u i o | Inferred: macron taken as length, which the pipeline drops. No source found |
 | lld | ë → ɐ, ö → ø, ü → y | Wikipedia "Ladin language", Vowels: "[ɐ] vowel, spelled ⟨ë⟩, as in Urtijëi"; front rounded [ø y] spelled ⟨ö, ü⟩ |
-| pms | ë → ə | Wikipedia "Piedmontese language", alphabet table: Ë ë /ə/ |
+| pms | ë → ə, o → u, u → y, eu → ø | Wikipedia "Piedmontese language", alphabet table: Ë ë /ə/, O o /u/, U u /y/, eu /ø/, Ò ò /ɔ/ |
 | wa | å → ɔ | Wikipedia "Walloon orthography": Feller å [ɔː], rifondou [ɔː/oː/ɑː]; Wiktionary *åbe* /ɔːp/ (local Kaikki dump) |
 | wa pcd fr frp nrf gallo | è, ê → ɛ | Wikipedia "Walloon orthography": è [ɛ], ê [ɛː]. Wikiversité "Graphie picarde/Feller-Carton": è /ɛ/, ê /eː, ɛː/. Standard French for the rest |
 | pcd | oé → we | Wikiversité "Graphie picarde/Feller-Carton" lists *oé* as a diphthong; the glide is how the pipeline keeps a diphthong to one syllable |
@@ -35,7 +34,9 @@ spelling, for letters the borrowed G2P backend does not know. Checked
 | ruo | c | Croatian-based spelling has ‹c› for /ts/ and ‹k› for /k/ (Vrzić, table 5); the mixed spelling has ‹c/k› for /k/. The backend reads Romanian values. *gljåcę* comes out with tʃ |
 | ruo | â, ă | Vrzić writes one central vowel /ɘ/ (‹â› in Croatian-based, ‹ă› in Romanian-based). The backend gives ɨ and ə |
 | rup | nj | *njic* should be ɲ, but *înjunghii* in the same column is Romanian-spelled |
-| pms | o, u | Wikipedia "Piedmontese language": O o /u/, U u /y/. The Italian backend reads o, u |
+| eml | z, ż | Wikipedia "Bolognese dialect": z /θ/, ż /ð/. The Italian backend reads an affricate |
+| eml | ź | *źnòć* in Wiktionary's list; no source for the letter. The form is rejected |
+| ist | ſ | *buſia*; no source for the letter. The form is rejected |
 | oc gsc | qu | /k/ before e, i; the backend gives /ky/ (*aquí*) |
 
 The Istro-Romanian column still mixes spellings (Croatian-based from the

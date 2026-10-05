@@ -45,6 +45,5 @@ Not used:
 - *uscu* (Latin *exsuco*, descendants) is the verb; the concept *dry* is the adjective.
 - *frikę* "fear" (Romanian Wikipedia) is a noun; the concept is the verb.
 
-Still open: `data/words/ruo_words.json` has 185 entries (of 519) whose only
-source is the old padded column. They carry no gloss, so the gloss overlay
-cannot use them, but they count as Istro-Romanian lemmas.
+`data/words/ruo_words.json` had 185 entries whose only source was the old
+padded column. The 184 not in the attested column were dropped (519 → 335).
