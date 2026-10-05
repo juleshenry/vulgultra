@@ -51,6 +51,8 @@ BACKEND_TYPOS: tuple[tuple[str, str], ...] = (("g", "ɡ"), ("tʃ͡", "t͡ʃ"))
 # in g2p.transcribe_and_repair, not guessed.
 _OIL_E = {"ə̀": "ɛ", "ə̂": "ɛ"}          # è, ê
 _STRESS_ONLY = {"é": "e", "í": "i", "ú": "u", "à": "a", "á": "a"}
+# Istro-Romanian letters that mean the same in every one of its spellings.
+_RUO_LETTERS = {"š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "æ", "ľ": "ʎ", "ń": "ɲ"}
 BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "fr": {**_OIL_E, "ù": "u"},            # où
     "frp": _OIL_E,
@@ -70,10 +72,9 @@ BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     # Istro-Romanian in its Croatian-based spelling: j is the glide, which
     # the Romanian backend reads ʒ; ž is the fricative. The affricate the
     # backend makes of ge, gi is listed so its ʒ is left alone.
-    "ruo": {
-        "d͡ʒ": "d͡ʒ", "lʒ": "ʎ", "nʒ": "ɲ", "ʒ": "j",
-        "š": "ʃ", "ž": "ʒ", "ǩ": "t͡ʃ", "å": "ɒ", "ę": "æ",
-    },
+    "ruo": {"d͡ʒ": "d͡ʒ", "lʒ": "ʎ", "nʒ": "ɲ", "ʒ": "j", **_RUO_LETTERS},
+    # The same column in Romanian-based or mixed spelling: j is ʒ there.
+    "ruo-ro": _RUO_LETTERS,
     # ć; a marked s is the voiced one; macron = length.
     "eml": {"ṅ": "ŋ", "ḱ": "t͡ʃ", "ṣ": "z", "ū": "u", "ī": "i", "ō": "o"},
     # ẓ comes out as s + dot. ë and ö are centring diphthongs, one syllable.
@@ -86,7 +87,7 @@ BACKEND_LEFTOVERS: dict[str, dict[str, str]] = {
     "pms": {"ë": "ə"},
 }
 
-# A column that mixes two spellings. A form with a letter only the backend's
-# own spelling has is already read correctly and takes no leftover readings.
-# The Istro-Romanian column is part Croatian-based, part Romanian.
-BACKEND_NATIVE_LETTERS: dict[str, str] = {"ruo": "ăîșț"}
+# A column that mixes two spellings: lect → (letters only the backend's own
+# spelling has, the leftover table for a form that has one). The
+# Istro-Romanian column is part Croatian-based, part Romanian-based.
+BACKEND_NATIVE_LETTERS: dict[str, tuple[str, str]] = {"ruo": ("ăîșț", "ruo-ro")}

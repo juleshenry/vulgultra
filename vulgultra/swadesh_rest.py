@@ -102,7 +102,9 @@ _SC = _pack("sc", "deo|tue|isse|nois|bois|issos|custu|cussu|inoghe|inie|chie|ite
 
 _RUP = _pack("rup", "eu|tine|năs|noi|voi|năsh|aistu|atsel|aoa|aclo|tsine|tse|iu|cându|cum|nu|tut|multsă|niscăts|putsăni|altu|un|doi|trei|patru|tsintsi|mari|lungu|largu|greasu|greu|njic|scurtu|strimtu|sutil|muljari|bărbat|persoană|ficior|sotsă|sot|mamă|tată|animal|pesku|pulj|căni|piduclju|sharpi|viermi|arburi|păduri|băts|fructu|sămintsă|frândză|rădătsină|scoarță|floari|earbă|frânghie|cheali|carni|sândzi|os|grăsimi|ou|cornu|coadă|peană|per|cap|ureaclji|oaclji|nari|gură|dinti|limbă|unghie|cicior|cicior|genuchi|mână|aripă|burtă|măruntaie|gushi|spati|sân|inimă|hicat|beau|măc|muscu|sug|scuip|vomit|suflu|respiru|râdu|ved|avdu|shtiu|gândescu|mirosescu|mi-e frică|dormu|trăescu|mor|ucid|luptu|avănescu|lovescu|talji|despic|înjunghii|zgârii|sap|înot|zbor|umblu|yin|zac|shed|stau|întorcu|cad|dau|tsăn|strângu|frec|spel|shterg|trag|impingu|arunc|leg|cos|număr|zic|cântu|gioc|plutescu|curgu|înghets|umflu|soari|lună|steauă|apă|ploai|arâu|lac|amari|sari|cheatră|nisip|praf|loc|nor|ceatsă|tser|vîntu|neauă|gheatsă|fum|foc|tseanushă|ard|cale|munti|arosh|veardi|galbin|albu|negru|noapti|dzuă|an|cald|aratsi|plin|nau|veclju|bun|arău|putred|murdar|ndreptu|rotund|ascutsit|tutsea|neted|ud|uscat|ndreptu|aproape|diparti|ndreapta|stânga|la|tu|cu|shi|ma|tră|numă|lu|hii|pisică|pisică|cătea|zâmbeascâ")
 
-_RUO = _pack("ruo", "io|tu|el|noi|voi|ei|ăst|ăl|aici|acolo|cari|ce|iu|când|cum|nu|tot|mult|niște|puțin|alt|un|doi|trei|patru|cinci|mare|lung|larg|gros|greu|mic|scurt|strâmt|subțire|muľare|bărbat|om|fečor|muľare|soț|mame|tate|animal|pește|pasăre|câre|păduche|șarpe|vierme|copac|pădure|băț|fruct|sămânță|frunză|rădăcină|scoarță|floare|iarbă|frânghie|piele|carne|sânge|os|grăsime|ou|corn|coadă|pană|păr|cap|ureche|ochi|nas|gură|dinte|limbă|unghie|picior|picior|genunche|mână|aripă|burtă|măruntaie|gât|spate|sân|inimă|ficat|bea|mânca|mușca|suge|scuipa|vomita|sufla|respira|râde|vedea|auzi|ști|gândi|mirosi|teme|dormi|trăi|muri|ucide|lupta|vâna|lovi|tăia|despica|înjunghia|zgâria|săpa|înota|zbura|umbla|veni|zăcea|ședea|sta|întoarce|cădea|da|ține|strânge|freca|spăla|șterge|trage|împinge|arunca|lega|coase|număra|zice|cânta|juca|pluti|curge|îngheța|umfla|sore|lură|ste|åpę|ploaie|râu|lac|mare|sare|čatrę|nisip|praf|pământ|nor|ceață|cer|vânt|zăpadę|gheață|fum|foc|cenușę|arde|drum|munte|roș|verde|galben|alb|negru|noapte|zi|an|cald|rece|plin|nou|več|bur|rău|putred|murdar|drept|rotund|ascuțit|tocit|neted|ud|uscat|corect|aproape|departe|dreapta|stânga|la|în|cu|și|deca|pentru|nume|lu|fi|pisire|pisire|cățea|zâmbi")
+# Attested cells only; filled below from RUO_WIKT_SWADESH and RUO_WIKT_ENTRIES.
+# The Daco-Romanian list that used to pad this column is gone.
+_RUO = _hits("ruo", {})
 
 _DLM = _pack("dlm", "ju|te|jal|nu|vu|jali|cest|cal|kai|la|ki|ce|do|kand|ko|na|tot|multe|nek|pok|ater|join|doi|tra|kuatara|cenk|veira|long|larg|gros|pesant|muc|curt|strent|fin|femra|hom|om|feto|muier|marit|mama|tata|animal|pisk|gial|kuan|pedoc|saip|viarm|jakla|bosk|bak|fruta|samen|fuia|raisa|skorza|fior|erba|fune|piel|karn|sank|suos|gruass|jauo|korn|kua|pena|kapel|kap|oreia|vakl|nas|buka|dent|langa|ongla|pi|gamba|zenucl|mun|ala|vintar|budel|kuol|dos|pet|kuor|figat|beivre|mangur|muarder|sucer|spuar|vomitar|bufar|spirar|ridur|veder|sentir|savir|pensar|odur|temer|durmir|vivar|murir|ucider|punar|cazar|bater|taiar|fender|puinal|gratar|cavar|nadar|volar|kaminar|venur|jacer|seder|star|virar|kader|dar|tener|smechar|fregar|lavar|sukar|tirar|spinger|jitar|ligar|kusir|kuntar|dikar|kantar|jugar|flotar|fluir|gelar|gonfiar|saul|loina|stela|aku|pluja|fium|lak|mar|sal|putra|sabia|pulvar|tiara|nuba|nebla|ciel|vint|nai|jak|fum|fuk|cenisa|ardur|via|mont|ruber|viart|gialt|blonk|nier|nuat|di|ain|kald|fred|plin|nov|veklo|bon|mal|putrid|sordid|drit|rotund|akut|otuz|lis|moliat|sek|korekt|vesin|lontan|dret|sanc|a|in|kon|e|se|perke|nom|el|sar|giat|giata|kuana|somiar")
 
@@ -344,7 +346,7 @@ TABLES["dlm"].update(DLM_KAIKKI_OVERRIDES)
 TABLES["ruq"].update({"road": "drum"})
 
 # Appendix:Istro-Romanian Swadesh list (en.wiktionary). First citation form.
-# blood: user sănze (appendix sânže). Empty appendix cells keep _RUO.
+# blood: user sănze (appendix sânže). Empty appendix cells stay empty.
 RUO_WIKT_SWADESH = {
     "i": "jo",
     "you_sg": "tu",
@@ -488,6 +490,20 @@ RUO_WIKT_SWADESH = {
     "name": "lume",
 }
 TABLES["ruo"].update(RUO_WIKT_SWADESH)
+
+# Cells the appendix leaves empty, attested elsewhere on Wiktionary with the
+# sense. Each is traced in docs/sources_ruo.md.
+RUO_WIKT_ENTRIES = {
+    "thick": "gros",        # lemma entry, adjective "thick"
+    "liver": "ficåt",       # lemma entry; translation under "liver"
+    "bite": "mučcå",        # translation under "bite"
+    "hold": "țire",         # translation under "hold" (spelled ţire there)
+    "hit": "båte",          # translation under "beat", sense "to hit"
+    "fingernail": "ungľă",  # Latin ungula, descendants
+    "lie": "zåc",           # Latin iaceo, descendants; form as cited
+    "copula": "fi",         # translation under "be"; fr.wiktionary entry
+}
+TABLES["ruo"].update(RUO_WIKT_ENTRIES)
 
 # Attested Istriot (kaikki.org / Wiktextract). Skip dubious first-hits.
 IST_KAIKKI_OVERRIDES = {

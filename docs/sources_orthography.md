@@ -7,6 +7,7 @@ spelling, for letters the borrowed G2P backend does not know. Checked
 
 | Lect | Letter → reading | Source |
 |---|---|---|
+| ruo | ľ → ʎ, ń → ɲ | Same article, tables 3 and 4: the Romanian-based and mixed spellings write /ʎ/ ‹l'›/‹ľ› and /ɲ/ ‹n'›/‹ń› |
 | ruo | j → j, ž → ʒ, š → ʃ, č → tʃ, lj → ʎ, nj → ɲ, å → ɒ, ę → æ | Vrzić, "Orthographic practices and social meanings: writing Istro-Romanian", *Sociolinguistica* 39(2), 2025, table 5 (Croatian-based orthography, after Vrzić 2010): /ʒ/ ‹ž›, glide ‹j›, /ɲ/ ‹nj›, /ʎ/ ‹lj›, /æ/ ‹ę›, /ɒ/ ‹å›. <https://d-nb.info/1381267149/34> |
 | rgn | ẓ → ð | Wiktionary *alẓir* /al.ˈðir/ (local Kaikki dump); Wikipedia "Romagnol": z is [θ] or [ð], never an affricate |
 | rgn | ș → z, ọ → o, ë → ɛ, ö → ɔ | Wiktionary *radìșa* [ɾɐˈdiːzɐ], *calurôș* [kɐluˈɾoə̯z], *fọmm* [ˈfomm], *pël* [ˈpɛːl], *öv* [ˈɔːv] (local Kaikki dump). Wikipedia "Romagnol" (Vitali 2008) gives ë [ɛə̯], ö [ɔə̯]: one syllable either way |
@@ -37,7 +38,7 @@ spelling, for letters the borrowed G2P backend does not know. Checked
 | pms | o, u | Wikipedia "Piedmontese language": O o /u/, U u /y/. The Italian backend reads o, u |
 | oc gsc | qu | /k/ before e, i; the backend gives /ky/ (*aquí*) |
 
-About 50 forms in the Istro-Romanian column are in Romanian spelling and
-look like Daco-Romanian words (*niște, respira, corect, zâmbi, animal*).
-They are read with Romanian values. Whether they are attested
-Istro-Romanian is a question for the grid, not for transcription.
+The Istro-Romanian column still mixes spellings (Croatian-based from the
+Swadesh appendix, mixed and Romanian-based from other Wiktionary pages). A
+form with ă, î, ș or ț is read with Romanian values for *j*. The Romanian
+padding that used to sit in this column was removed; see `sources_ruo.md`.

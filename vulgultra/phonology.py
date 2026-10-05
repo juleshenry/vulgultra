@@ -122,8 +122,8 @@ def word_to_ipa(word: str, lang: str) -> str:
     """Convert an orthographic word to IPA using epitran."""
     word = word.lower().strip()
     ipa = _get_g2p(lang).transliterate(word)
-    native = any(ch in BACKEND_NATIVE_LETTERS.get(lang, "") for ch in word)
-    return read_leftovers(ipa, None if native else lang)
+    letters, native_table = BACKEND_NATIVE_LETTERS.get(lang, ("", lang))
+    return read_leftovers(ipa, native_table if any(ch in letters for ch in word) else lang)
 
 
 def _leftover_reader(table: dict[str, str]) -> tuple[re.Pattern[str], dict[str, str]]:

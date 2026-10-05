@@ -119,9 +119,16 @@ Transcription, as fixed:
       Piedmontese *o, u* (/u/, /y/, read as o, u); Occitan and Gascon *qu*
       (/k/, read as /ky/). Each is accepted today with the wrong sound, and
       one that drops or adds a vowel changes which form is shortest.
-- [ ] About 50 forms in the Istro-Romanian column are Romanian-spelled and
-      look like Daco-Romanian words (*niște, respira, corect, zâmbi*). To
-      check against axiom 3 (never pad a thin lect from a sister).
+- [x] Istro-Romanian column re-sourced. 73 of its 213 cells were a
+      Daco-Romanian list left in place wherever the Swadesh appendix was
+      empty. 8 now carry an attested form, 65 are empty; see
+      [`docs/sources_ruo.md`](docs/sources_ruo.md).
+- [ ] The same check for the other thin columns. Franco-Provençal, Picard,
+      Istriot, Gallo, Piedmontese, Ladin, Emilian, Ligurian, Extremaduran
+      and Dalmatian have all 213 cells filled, and under a third of those
+      forms (under half for Dalmatian) appear in the lect's own word list.
+      That does not show padding, only that the word lists cannot confirm
+      the column.
 
 After the gate:
 

@@ -36,12 +36,14 @@ class LeftoverFixtures(unittest.TestCase):
         self.assertEqual(read_leftovers("noʒ", "ruo"), "noj")
         self.assertEqual(read_leftovers("kurd͡ʒe", "ruo"), nfd("kurd͡ʒe"))
 
-    def test_form_in_the_backends_own_spelling_takes_no_readings(self) -> None:
+    def test_form_in_the_backends_own_spelling_keeps_its_reading_of_j(self) -> None:
         with patch("vulgultra.phonology._get_g2p") as backend:
             backend.return_value.transliterate.return_value = "ɨnʒunɡia"
             self.assertEqual(word_to_ipa("înjunghia", "ruo"), "ɨnʒunɡia")
             backend.return_value.transliterate.return_value = "noʒ"
             self.assertEqual(word_to_ipa("noj", "ruo"), "noj")
+            backend.return_value.transliterate.return_value = nfd("unɡľə")
+            self.assertEqual(word_to_ipa("ungľă", "ruo"), "unɡʎə")
 
     def test_backend_typos_are_fixed_for_every_lect(self) -> None:
         self.assertEqual(read_leftovers("ajga", "oc"), "ajɡa")
