@@ -8,6 +8,38 @@ syntax, and the first real texts.
 Canonical spec stays [`docs/grammar/grammar.tex`](docs/grammar/grammar.tex).
 A stage changes the spec only after its gate.
 
+## Goal and order (stated 2026-10-05)
+
+The goal is a lexicon at the level of the Bible, annealed word by word. The
+213-meaning Swadesh grid is an illustration and a test bed for the readers
+and the optimizer, not the product: no more work goes into polishing its
+columns for their own sake.
+
+First come the building blocks every sentence needs, picked by hand from
+what the daughters attest: personal pronouns, possessives, articles and
+demonstratives, interrogatives, quantifiers, numerals, prepositions,
+conjunctions, the small adverbs, and how a noun forms its plural. Then the
+Bible lexicon.
+
+- [x] First harvest of the building blocks, from the Wiktionary extracts on
+      disk (`scripts/build_building_blocks.py`): one page per lect under
+      [`docs/building_blocks/`](docs/building_blocks/README.md), the
+      shortest attested forms for each of 162 meanings in
+      [`docs/eval/building_block_candidates.md`](docs/eval/building_block_candidates.md),
+      and plural patterns by gender in
+      [`docs/eval/plural_formation.md`](docs/eval/plural_formation.md).
+      21 lects have a page.
+- [ ] 15 lects have none. The extracts on disk hold only verbs for Spanish,
+      Portuguese, Galician, Catalan, French, Italian, Romanian and Lombard,
+      which need a fetch of every part of speech; Gallo is glossed in
+      French; Extremaduran, Gascon, Picard, Franco-Provençal, Istro-Romanian
+      and Megleno-Romanian have no extract and need their own sources (Chés
+      Diseux, Stich 2001, Carmona García, the Wiktionary lists).
+- [ ] Object, indirect and reflexive pronouns, and gender and number of
+      articles and possessives, are listed under one English gloss today
+      (*you*, *the*); the pages show the dictionary's wording but do not
+      sort the forms into a paradigm yet.
+
 ## Method (every class)
 
 Each grammatical class goes through the same four steps as the verbs. Nothing
