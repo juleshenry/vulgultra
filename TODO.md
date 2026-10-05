@@ -1,5 +1,7 @@
 # TODO
 
+Remaining work outside verb conjugation: [`ROADMAP.md`](ROADMAP.md).
+
 Corpus bibliography and 10k counts: [`docs/corpus.md`](docs/corpus.md).
 Hole-lect notes: `docs/sources_romansh.md`, `docs/sources_istriot.md`, `docs/sources_ruo.md`.
 
