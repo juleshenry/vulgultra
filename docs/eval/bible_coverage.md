@@ -50,8 +50,8 @@ Each word is counted once, under the strongest route. A gloss or bridge match is
 | Romansh (rm) | 742 | 85 | 10 | 1,073 | 215 | 2,265 | 9 | 708 | 5,107 | 3,029 | 933 | 96% |
 | Emilian (eml) | 490 | 207 | 0 | 160 | 77 | 2,400 | 613 | 771 | 4,718 | 1,222 | 872 | 92% |
 | Mirandese (mwl) | 355 | 61 | 3 | 593 | 57 | 1,989 | 261 | 971 | 4,290 | 2,164 | 900 | 94% |
-| Dalmatian (dlm) | 526 | 110 | 4 | 428 | 32 | 2,257 | 0 | 534 | 3,891 | 2,075 | 825 | 90% |
-| Istro-Romanian (ruo) | 160 | 0 | 2 | 85 | 0 | 1,675 | 0 | 1,156 | 3,078 | 542 | 760 | 87% |
+| Dalmatian (dlm) | 526 | 110 | 4 | 428 | 32 | 2,276 | 0 | 536 | 3,912 | 2,102 | 829 | 90% |
+| Istro-Romanian (ruo) | 160 | 0 | 2 | 85 | 0 | 1,675 | 118 | 1,197 | 3,237 | 565 | 777 | 88% |
 | Romagnol (rgn) | 259 | 81 | 0 | 344 | 356 | 1,495 | 297 | 12 | 2,844 | 1,453 | 767 | 88% |
 | Megleno-Romanian (ruq) | 249 | 98 | 7 | 108 | 0 | 1,546 | 0 | 614 | 2,622 | 737 | 611 | 78% |
 
@@ -61,7 +61,7 @@ Each word is counted once, under the strongest route. A gloss or bridge match is
 
 - **In no lect at all:** 291 of the 8,069 words, 0% of the text. Among the 1,000 commonest: 0.
 - **In fewer than five lects**, among the 1,000 commonest: 0.
-- **In thirty lects or more:** 4,825 words; in ten or more: 7,377.
+- **In thirty lects or more:** 4,838 words; in ten or more: 7,377.
 
 ### The commonest words with a form in no lect
 
@@ -107,7 +107,7 @@ Each word is counted once, under the strongest route. A gloss or bridge match is
 | rm | 67 | coram, christus, altare, quicumque, unusquisque, tribus, tecum, reliquus, nuntio, sanctifico, statim, immolo, primogenitus, similiter, vae |
 | eml | 128 | usque, quoniam, exercitus, cumque, offero, inter, iniquitas, timeo, mors, inimicus, altare, sapientia, sub, donec, aeternus |
 | mwl | 100 | iniquitas, sub, impius, converto, libero, simul, murus, habitator, iuro, sion, nuntio, dux, statim, sanctuarium, rectus |
-| dlm | 175 | servus, coram, exercitus, aegyptus, habito, christus, offero, iudaeus, iniquitas, tabernaculum, propheta, conspectus, benedico, multitudo, virtus |
-| ruo | 240 | populus, mitto, opus, coram, facies, ascendo, exercitus, nolo, aegyptus, christus, iudicium, regnum, iudaeus, gloria, iniquitas |
+| dlm | 171 | servus, coram, exercitus, aegyptus, habito, christus, offero, iudaeus, iniquitas, tabernaculum, propheta, conspectus, benedico, multitudo, virtus |
+| ruo | 223 | populus, mitto, opus, coram, facies, ascendo, exercitus, aegyptus, christus, iudicium, regnum, iudaeus, gloria, iniquitas, tabernaculum |
 | rgn | 233 | quasi, exercitus, cunctus, cumque, atque, conspectus, ac, multitudo, itaque, interficio, adduco, at, impius, converto, unusquisque |
 | ruq | 389 | tuus, meus, rex, me, populus, vester, factus, mitto, quasi, voco, respondeo, opus, coram, peccatum, medius |

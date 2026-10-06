@@ -18,14 +18,14 @@ words by reflex and etymology, and 34 once dictionary glosses were read. All
 
 | lect | 5 October | now | of which firm |
 |---|---:|---:|---:|
-| Istro-Romanian | 811 | 3,078 | 542 |
+| Istro-Romanian | 811 | 3,237 | 565 |
 | Megleno-Romanian | 1,297 | 2,622 | 737 |
 | Romagnol | 2,118 | 2,844 | 1,453 |
 | Piedmontese | 2,399 | 6,726 | 5,019 |
 | Ligurian | 2,488 | 5,479 | 2,534 |
 | Istriot | 2,603 | 5,752 | 1,900 |
 | Sardinian | 2,649 | 7,020 | 4,347 |
-| Dalmatian | 2,802 | 3,891 | 2,075 |
+| Dalmatian | 2,802 | 3,912 | 2,102 |
 | Ladin | 2,952 | 6,018 | 2,744 |
 | Lombard | 3,089 | 6,771 | 3,933 |
 | Emilian | 3,153 | 4,718 | 1,222 |
@@ -125,9 +125,10 @@ Provenance, sample checks and rejected sources:
 | Lect | Source | Rows | Licence basis | Checked |
 |---|---|---:|---|---|
 | Istro-Romanian | Pușcariu, glossary to *Studii istroromâne* I (1929), 23 of 33 pages read from the page images | 1,214 | public domain (d. 1948) | 13 of 13 on one column; no 50-row sample |
-| Istro-Romanian | Glavina's two word lists of 1904, in the same book, 11 of 32 pages read | 272 | public domain | not checked; 59 footnoted forms set aside |
+| Istro-Romanian | Glavina's two word lists of 1904, in the same book: 11 pages read from the images, 19 by machine | 272 and 363 | public domain | the machine reading agrees with the eye reading on the page compared; it is counted as scan. Footnoted forms set aside |
 | Megleno-Romanian | Capidan, *Dicționar meglenoromân* (1935), machine reading | 1,832, of which 361 name a Latin source | public domain where the term is life + 70 (d. 1953) | one page compared; 951 entries with his special letters set aside |
 | Dalmatian | Bartoli, *Das Dalmatische* II (1906), the Vegliote word list | 2,585 | public domain (d. 1946) | not sampled; 1,486 uncertain rows set aside |
+| Dalmatian | Ive, *L'antico dialetto di Veglia* (1886), the word index | 266 | public domain (d. 1937, from memory) | not sampled; 663 uncertain rows set aside |
 | Istriot | Dalla Zonca, *Vocabolario dignanese-italiano* (written before 1857, printed 1978), whole book | 15,527 | see open questions | reproduces the earlier A-D table row for row; not sampled |
 | Aromanian | Cunia, *Dictsiunar a limbãljei armãneascã* (2008): English, Romanian and French glosses | 42,784 each | author's waiver; see open questions | not measured |
 | Emilian | Ferrari, *Vocabolario bolognese-italiano* (1835), machine reading | 4,045 | Public Domain Mark | headwords right on the page compared, but accents on capitals are lost: counted as scan |
@@ -185,9 +186,9 @@ footing is soft.
 
 In order of what it would buy:
 
-- **Istro-Romanian.** Ten pages finish Pușcariu's glossary. Glavina's other
-  21 pages and Maiorescu's 1,350-word vocabulary (German glosses) can be read
-  by machine. Popovici 1909 (72 pages, 2,748 words) and Byhan 1899 (224 pages)
+- **Istro-Romanian.** Ten pages finish Pușcariu's glossary. Maiorescu's
+  1,350-word vocabulary (German glosses) can be read by machine: 6 of its 42
+  pages are read, and it has no parser. Popovici 1909 (72 pages, 2,748 words) and Byhan 1899 (224 pages)
   can only be read from the page images.
 - **Megleno-Romanian.** The 951 Capidan entries set aside need reading from
   the page. Papahagi 1902 has a machine reading of its glossary pages and no
@@ -196,8 +197,8 @@ In order of what it would buy:
   gets the Italian side right and the Romagnol headwords wrong. They need a
   person, or a reader, on the page images.
 - **Emilian.** Ferrari's accents: the same.
-- **Dalmatian.** Ive 1886, a 19-page index: page images are on disk, the
-  reading was not run.
+- **Dalmatian.** The 2,100 rows set aside from Bartoli and Ive need reading
+  from the page.
 - **Mirandese.** Leite de Vasconcelos's etymological vocabulary (700 entries,
   each with its Latin source): the long s defeats one reading; two would do.
 - **Ladin.** The Videsott dictionary names the Latin source of most entries;
