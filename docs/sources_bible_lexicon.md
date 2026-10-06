@@ -18,7 +18,7 @@ words by reflex and etymology, and 34 once dictionary glosses were read. All
 
 | lect | 5 October | now | of which firm |
 |---|---:|---:|---:|
-| Istro-Romanian | 811 | 3,237 | 565 |
+| Istro-Romanian | 811 | 3,615 | 619 |
 | Megleno-Romanian | 1,297 | 2,622 | 737 |
 | Romagnol | 2,118 | 2,844 | 1,453 |
 | Piedmontese | 2,399 | 6,726 | 5,019 |
@@ -124,7 +124,8 @@ Provenance, sample checks and rejected sources:
 
 | Lect | Source | Rows | Licence basis | Checked |
 |---|---|---:|---|---|
-| Istro-Romanian | Pușcariu, glossary to *Studii istroromâne* I (1929), 23 of 33 pages read from the page images | 1,214 | public domain (d. 1948) | 13 of 13 on one column; no 50-row sample |
+| Istro-Romanian | Pușcariu, glossary to *Studii istroromâne* I (1929), all 32 pages read from the page images | 1,630 | public domain (d. 1948) | 13 of 13 on one column; no 50-row sample; 25 headwords the readers marked unsure set aside |
+| Istro-Romanian | Maiorescu, *Itinerar în Istria și vocabular istriano-român* (1900), machine reading, German meanings | 936 | public domain (d. 1864) | not checked; counted as scan, and his spelling is made to look like Romanian |
 | Istro-Romanian | Glavina's two word lists of 1904, in the same book: 11 pages read from the images, 19 by machine | 272 and 363 | public domain | the machine reading agrees with the eye reading on the page compared; it is counted as scan. Footnoted forms set aside |
 | Megleno-Romanian | Capidan, *Dicționar meglenoromân* (1935), machine reading | 1,832, of which 361 name a Latin source | public domain where the term is life + 70 (d. 1953) | one page compared; 951 entries with his special letters set aside |
 | Dalmatian | Bartoli, *Das Dalmatische* II (1906), the Vegliote word list | 2,585 | public domain (d. 1946) | not sampled; 1,486 uncertain rows set aside |
@@ -186,10 +187,10 @@ footing is soft.
 
 In order of what it would buy:
 
-- **Istro-Romanian.** Ten pages finish Pușcariu's glossary. Maiorescu's
-  1,350-word vocabulary (German glosses) can be read by machine: 6 of its 42
-  pages are read, and it has no parser. Popovici 1909 (72 pages, 2,748 words) and Byhan 1899 (224 pages)
-  can only be read from the page images.
+- **Istro-Romanian.** Popovici 1909 (72 pages, 2,748 words) and Byhan 1899
+  (224 pages) can only be read from the page images. Ten pages of Pușcariu
+  cost about 240,000 tokens of reading, so Popovici would be about 1.7
+  million and Byhan about 5 million.
 - **Megleno-Romanian.** The 951 Capidan entries set aside need reading from
   the page. Papahagi 1902 has a machine reading of its glossary pages and no
   parser. Weigand 1892 is a PDF only.

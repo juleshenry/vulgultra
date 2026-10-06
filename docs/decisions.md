@@ -42,9 +42,9 @@ The order follows the Bible: the Latin text was counted word by word
     A seventh, the Société Jersiaise's Jèrriais vocabulary, states no licence at all and is not read.
 2c. **Paying for page readings.** Istro-Romanian and Megleno-Romanian are the two lects whose
     dictionaries exist only as printed pages that a machine misreads. Reading them from the page
-    images works (Pușcariu's glossary: 23 of 33 pages done, right on the column I compared) and costs
-    usage: about 10 pages finish Pușcariu, 72 more are Popovici, 224 Byhan; Capidan has 951 entries
-    to re-read. Say how far to go.
+    images works (Pușcariu's glossary is now read in full, and was right on the column I compared) and costs
+    usage: ten pages took about 240,000 tokens. Popovici is 72 pages, Byhan 224, and Capidan has 951
+    entries to re-read. Say how far to go.
 
 ## B. The shape of the grammar
 
