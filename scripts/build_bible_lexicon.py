@@ -45,6 +45,11 @@ SHOWN = 150       # rows of the main table
 READ_TOP = 400    # words whose reflexes are read aloud for the shortest-form column
 ENCLITICS = ("que", "ne", "ve")
 VARIANT = re.compile(r"(?:alternative (?:form|spelling)|apocopic form|medieval spelling|archaic form) of (\S+)", re.I)
+# An entry that is only a case form of another word: fili, "genitive/vocative singular of fīlius".
+CASE_FORM = re.compile(r"(?:(?:nominative|genitive|dative|accusative|ablative|vocative)[/ ])+(?:singular|plural) of (\S+)", re.I)
+# Words that do not inflect: where one of them is spelt like a form of a rare word, it is the likelier reading.
+FUNCTION_WORDS = {"prep", "conj", "particle", "pron", "det", "adv", "intj", "postp"}
+RELATIVE_FORMS = {"quod", "quo", "qua", "cuius"}   # these stay with qui
 
 
 def plain(text: str) -> str:
@@ -82,15 +87,15 @@ def inflected() -> dict[str, set[str]]:
     return forms
 
 
-def count_words(words: dict, forms: dict) -> tuple[collections.Counter, collections.Counter, int]:
-    """Dictionary words counted over the text, the tokens no entry explains, and the token total."""
+def token_words(words: dict, forms: dict) -> tuple[dict[str, str], collections.Counter, collections.Counter]:
+    """(Token of the Latin text → the dictionary word it is counted under, token counts, unexplained tokens)."""
     tokens: collections.Counter[str] = collections.Counter()
     with TEXT.open(encoding="utf-8") as stream:
         for row in csv.DictReader(stream, delimiter="\t"):
             tokens.update(re.findall(r"[^\W\d_]+", plain(row["text"])))
 
     def readings(token: str) -> set[str]:
-        found = set(forms.get(token, ())) & set(words) | ({token} if token in words else set())
+        found = set(forms.get(token, ())) & words.keys() | ({token} if token in words else set())
         if not found:
             for enclitic in ENCLITICS:
                 if token.endswith(enclitic) and len(token) > len(enclitic) + 1:
@@ -98,23 +103,49 @@ def count_words(words: dict, forms: dict) -> tuple[collections.Counter, collecti
         return found
 
     counts: collections.Counter[str] = collections.Counter()
+    word_of: dict[str, str] = {}
     open_tokens: dict[str, set[str]] = {}
     unknown: collections.Counter[str] = collections.Counter()
     for token, n in tokens.items():
         found = readings(token)
         if len(found) == 1:
-            counts[next(iter(found))] += n
+            word_of[token] = next(iter(found))
+            counts[word_of[token]] += n
         elif found:
             open_tokens[token] = found
         else:
             unknown[token] = n
-    for token, found in open_tokens.items():  # a form of two words goes to the commoner one
-        counts[max(sorted(found), key=lambda word: counts[word])] += tokens[token]
-    for word in list(counts):  # the Vulgate's quatuor, haereditas, praelium are the dictionary's quattuor, ...
-        variant = VARIANT.match(words[word]["gloss"])
+    # A form that is itself a dictionary word, where nothing much speaks for the other reading:
+    # coram is the preposition, not a form of cora; mare is the sea, not a form of mas.
+    for token, found in list(open_tokens.items()):
+        if token not in found or token in RELATIVE_FORMS:
+            continue
+        rival = max(counts[word] for word in found if word != token)
+        function_word = words[token]["pos"][0] in FUNCTION_WORDS
+        if rival < (0.15 if function_word else 0.05) * tokens[token]:
+            word_of[token] = token
+            del open_tokens[token]
+    for token in set(word_of) - counts.keys():   # counted only now, so that one of these does not sway another
+        if word_of[token] == token:
+            counts[token] += tokens[token]
+    for token, found in open_tokens.items():  # otherwise a form of two words goes to the commoner one
+        word_of[token] = max(sorted(found), key=lambda word: counts[word])
+        counts[word_of[token]] += tokens[token]
+    main_of: dict[str, str] = {}
+    for word in set(word_of.values()):  # the Vulgate's quatuor, haereditas, praelium are the dictionary's quattuor, ...
+        variant = VARIANT.match(words[word]["gloss"]) or CASE_FORM.match(words[word]["gloss"])
         main = plain(variant.group(1)).strip(".,;:") if variant else ""
         if main and main != word and main in words:
-            counts[main] += counts.pop(word)
+            main_of[word] = main
+    return {token: main_of.get(word, word) for token, word in word_of.items()}, tokens, unknown
+
+
+def count_words(words: dict, forms: dict) -> tuple[collections.Counter, collections.Counter, int]:
+    """Dictionary words counted over the text, the tokens no entry explains, and the token total."""
+    word_of, tokens, unknown = token_words(words, forms)
+    counts: collections.Counter[str] = collections.Counter()
+    for token, word in word_of.items():
+        counts[word] += tokens[token]
     return counts, unknown, sum(tokens.values())
 
 
@@ -169,7 +200,9 @@ def main() -> None:
         f"- The 100 commonest words are {share(100)} of the text, the 500 commonest {share(500)}, "
         f"the 1,000 commonest {share(1000)}, the 2,000 commonest {share(2000)}.",
         "- By part of speech: " + ", ".join(f"{pos} {n:,}" for pos, n in by_pos.most_common(8)) + ".",
-        "- A form that belongs to two words (*est* of *sum* and of *edo*) is counted for the commoner word.", "",
+        "- A form that belongs to two words (*est* of *sum* and of *edo*) is counted for the commoner word; "
+        "a word that does not inflect (*coram*, *ne*, *sine*) is preferred to a form of a rare word spelt "
+        "the same.", "",
         f"## The {SHOWN} commonest words", "",
         "| rank | Latin | part of speech | count | gloss | lects with a reflex | shortest reflex |",
         "|---:|---|---|---:|---|---:|---|",

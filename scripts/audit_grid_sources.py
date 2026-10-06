@@ -114,23 +114,6 @@ OCI_MONODIX = VENDOR / "apertium-oci" / "apertium-oci.oci.metadix"
 # Lects whose own word list is glossed in French or keyed by Spanish headword.
 FR_GLOSSED_WORDS = ("gallo",)
 ES_KEYED = ("ext",)
-# Entries for a lect in another language's Wiktionary, extracted from the
-# local dumps: lect → (wiki, the code that wiki uses). The definitions are
-# in the wiki's language.
-WIKT_SECTIONS = SOURCES / "wikt_sections.json"
-OTHER_WIKTS = {
-    "pcd": [("fr", "pcd")], "frp": [("fr", "frp")], "gallo": [("fr", "gallo")],
-    "nrf": [("fr", "normand")], "wa": [("fr", "wa")],
-    "mwl": [("pt", "mwl"), ("es", "mwl"), ("fr", "mwl")], "lad": [("es", "lad"), ("fr", "lad")],
-    "ext": [("es", "ext")], "an": [("es", "an"), ("fr", "an")], "ast": [("es", "ast"), ("fr", "ast")],
-    "gl": [("pt", "gl"), ("es", "gl"), ("fr", "gl"), ("it", "gl"), ("ca", "gl")],
-    "oc": [("fr", "oc"), ("ca", "oc"), ("es", "oc")],
-    "sc": [("fr", "sc"), ("it", "sc"), ("it", "sro"), ("es", "sc")], "co": [("fr", "co"), ("it", "co")],
-    "lmo": [("fr", "lmo"), ("it", "lmo")], "pms": [("fr", "pms"), ("it", "pms")],
-    "lij": [("fr", "lij"), ("it", "lij")], "vec": [("fr", "vec"), ("it", "vec")],
-    "scn": [("fr", "scn"), ("it", "scn")], "fur": [("fr", "fur"), ("it", "fur")],
-    "rm": [("fr", "rm")], "lld": [("fr", "lld"), ("it", "lld")], "rup": [("fr", "rup")],
-}
 # How each wiki opens a language section, and how it starts a definition.
 WIKI_SECTION = {
     "fr": r"==\s*\{\{langue\|([^}|]+)\}\}\s*==",
@@ -138,8 +121,23 @@ WIKI_SECTION = {
     "pt": r"=\s*\{\{-([a-z-]{2,12})-\}\}\s*=",
     "it": r"==\s*\{\{-([a-z-]{2,12})-\}\}\s*==",
     "ca": r"==\s*\{\{-([a-z-]{2,12})-\}\}\s*==",
+    "ro": r"==\s*\{\{limba\|([^}|]+)\}\}\s*==",
 }
 WIKI_DEFINITION = {wiki: r"#(?![*:#])\s*(.*)" for wiki in WIKI_SECTION} | {"es": r";\s*\d+[^:]*:\s*(.*)"}
+# Entries for a lect in another language's Wiktionary, extracted from the
+# local dumps: lect → (wiki, the code that wiki uses). The definitions are
+# in the wiki's language. The editions do not agree on a lect's code, so
+# every code an edition may use is asked of every edition.
+WIKT_SECTIONS = SOURCES / "wikt_sections.json"
+WIKT_CODES = {
+    "pcd": ("pcd",), "frp": ("frp",), "gallo": ("gallo",), "nrf": ("normand", "nrf", "roa-nor"),
+    "wa": ("wa", "wln"), "mwl": ("mwl",), "lad": ("lad",), "ext": ("ext",), "an": ("an", "arg"),
+    "ast": ("ast",), "gl": ("gl",), "oc": ("oc",), "sc": ("sc", "sro", "src", "srd"), "co": ("co", "cos"),
+    "lmo": ("lmo",), "pms": ("pms",), "lij": ("lij",), "vec": ("vec",), "scn": ("scn",), "fur": ("fur",),
+    "rm": ("rm", "roh"), "lld": ("lld",), "rup": ("rup", "roa-rup"), "dlm": ("dlm",), "ist": ("ist",),
+    "eml": ("eml", "egl"), "rgn": ("rgn",), "ruo": ("ruo",), "ruq": ("ruq",),
+}
+OTHER_WIKTS = {lect: [(wiki, code) for wiki in WIKI_SECTION for code in codes] for lect, codes in WIKT_CODES.items()}
 
 # Stich 2001, the thesis that defines the ORB spelling of Franco-Provençal
 # (text of the PDF from arpitania.eu, via pdftotext -layout). It holds a

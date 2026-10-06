@@ -10,6 +10,12 @@ fields the harvest reads, in `data/sources/kaikki_full/{code}.jsonl`.
 
     python3 scripts/fetch_kaikki_full.py            # every lect not yet on disk
     python3 scripts/fetch_kaikki_full.py es it      # these lects
+
+With `--forms` it keeps something else from the same stream: every inflected
+form with its headword, verbs included, as `{code}_forms.tsv`. That is what
+brings a word of running text (*dirent*, *casei*) to its dictionary entry.
+
+    python3 scripts/fetch_kaikki_full.py --forms fr es pt it ro
 """
 
 from __future__ import annotations
@@ -81,11 +87,47 @@ def fetch(code: str, name: str) -> tuple[int, int]:
     return read, kept
 
 
+def fetch_forms(code: str, name: str) -> int:
+    """Write (form, headword) for every inflected form the extract names, by table or by its own entry."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    partial = OUT / f"{code}_forms.tsv.part"
+    kept = 0
+    request = urllib.request.Request(url(name), headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(request, timeout=120) as response, partial.open("w", encoding="utf-8") as out:
+        for line in response:
+            if b'"pos": "name"' in line:
+                continue
+            entry = json.loads(line)
+            word = entry.get("word", "")
+            if not word or " " in word or entry.get("pos") not in KEEP | {"verb"}:
+                continue
+            pairs = {(named["word"], word) for sense in entry.get("senses") or []
+                     for named in sense.get("form_of") or [] if named.get("word")}
+            pairs = {(word, head) for head, _ in pairs}   # an entry that is a form of its headword
+            for form in entry.get("forms") or []:
+                if {"table-tags", "inflection-template", "class"} & set(form.get("tags") or []):
+                    continue
+                # A table may mark the stress (Italian dièdi); the link under the form is the plain spelling.
+                for spelling in [form.get("form", "")] + [link[1] for link in form.get("links") or [] if len(link) > 1]:
+                    pairs.add((spelling, word))
+            for form, head in sorted(pairs):
+                if form and head and form != head and " " not in form and " " not in head and form != "-":
+                    out.write(f"{form}\t{head}\n")
+                    kept += 1
+    partial.rename(OUT / f"{code}_forms.tsv")
+    return kept
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("lects", nargs="*", help="lect codes; default: every lect not yet on disk")
     parser.add_argument("--force", action="store_true", help="fetch again what is already on disk")
+    parser.add_argument("--forms", action="store_true", help="keep each inflected form with its headword instead")
     args = parser.parse_args()
+    if args.forms:
+        for code in args.lects or LECTS:
+            print(f"{code}: {fetch_forms(code, LECTS[code]):,} forms → {OUT / f'{code}_forms.tsv'}", flush=True)
+        return
     for code in args.lects or LECTS:
         target = OUT / f"{code}.jsonl"
         if target.is_file() and not args.force:
