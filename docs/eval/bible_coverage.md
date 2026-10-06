@@ -8,64 +8,64 @@ The Latin Bible has 8,069 distinct dictionary words ([`bible_lexicon.md`](bible_
 - an **etymology**: an entry of the lect says it comes from that Latin word;
 - a **cognate**: an entry of a sister lect that comes from that Latin word names the form as its cognate;
 - a **translation**: the form and the Latin word stand in one translation table of a Wiktionary, so they translate the same sense; or the form titles the lect's Wikipedia article on what the Latin Wikipedia treats under the word;
-- its **Bible**: the lect's own Bible text has the form in the verses where the Latin has the word;
+- its **Bible**: the lect's own Bible text has the form in the verses where the Latin has the word (**scan**, counted apart: the text is an unproofread machine reading of a printed page and no dictionary has the form, so the word is there but its spelling needs checking against the page);
 - a **gloss**: a dictionary entry of the lect is glossed with a key of the Latin word (in English, one of the word's first senses; in any language, a headword whose translation table lists the Latin word, or a sense that language's Wiktionary gives it; in French, Spanish, Portuguese, Italian, Catalan and Romanian, also that language's reflex of the word and the word its Bible uses for it);
 - a **bridge**: the same in two steps, the key being a French or Spanish word that is itself only a gloss match for the Latin word.
 
 Each word is counted once, under the strongest route. A gloss or bridge match is a candidate to check, not a confirmed translation, so the table also counts the words that are **firm**: a form that a reflex, an etymology, a cognate note, a translation table or the lect's Bible gives, or that two separate sources give by a gloss (a bridge does not count). **Share of the text** weighs each word by how often the Bible uses it. The forms, each with its sources, are in `data/bible/lexicon/forms/{lect}.tsv`.
 
-34 of 36 lects have a form for 2,000 words or more; 24 have 2,000 firm.
+36 of 36 lects have a form for 2,000 words or more; 24 have 2,000 firm.
 
-| lect | reflex | etymology | cognate | translation | Bible | gloss | bridge | words with a form | firm | of the 1,000 commonest | share of the text |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Italian (it) | 4,777 | 101 | 53 | 175 | 878 | 1,565 | 0 | 7,549 | 5,984 | 999 | 100% |
-| Spanish (es) | 4,351 | 63 | 69 | 238 | 1,027 | 1,711 | 0 | 7,459 | 5,748 | 1000 | 100% |
-| French (fr) | 3,514 | 171 | 104 | 389 | 1,357 | 1,902 | 0 | 7,437 | 5,535 | 1000 | 100% |
-| Occitan (oc) | 1,595 | 352 | 20 | 2,056 | 0 | 3,213 | 192 | 7,428 | 6,331 | 997 | 100% |
-| Galician (gl) | 2,806 | 84 | 34 | 2,208 | 0 | 2,161 | 101 | 7,394 | 6,685 | 998 | 100% |
-| Portuguese (pt) | 4,187 | 80 | 48 | 251 | 1,111 | 1,686 | 0 | 7,363 | 5,677 | 1000 | 100% |
-| Romanian (ro) | 2,754 | 117 | 38 | 375 | 1,593 | 2,417 | 0 | 7,294 | 4,877 | 1000 | 100% |
-| Gascon (gsc) | 0 | 0 | 0 | 5 | 0 | 5,403 | 1,874 | 7,282 | 3,258 | 996 | 99% |
-| Asturian (ast) | 1,388 | 269 | 8 | 1,579 | 0 | 3,430 | 538 | 7,212 | 4,771 | 995 | 99% |
-| Catalan (ca) | 3,525 | 99 | 30 | 352 | 0 | 3,028 | 0 | 7,034 | 4,006 | 982 | 99% |
-| Sardinian (sc) | 874 | 105 | 10 | 1,035 | 0 | 3,918 | 1,071 | 7,013 | 3,686 | 992 | 99% |
-| Walloon (wa) | 250 | 131 | 3 | 1,660 | 0 | 3,908 | 1,006 | 6,958 | 3,949 | 990 | 99% |
-| Sicilian (scn) | 1,754 | 395 | 16 | 1,126 | 0 | 2,962 | 651 | 6,904 | 4,524 | 989 | 99% |
-| Aromanian (rup) | 776 | 115 | 11 | 952 | 0 | 4,692 | 348 | 6,894 | 4,942 | 992 | 99% |
-| Aragonese (an) | 537 | 211 | 3 | 994 | 0 | 3,497 | 1,556 | 6,798 | 2,543 | 985 | 99% |
-| Lombard (lmo) | 438 | 73 | 6 | 865 | 0 | 4,740 | 600 | 6,722 | 2,712 | 976 | 98% |
-| Extremaduran (ext) | 162 | 0 | 0 | 397 | 0 | 3,622 | 2,447 | 6,628 | 724 | 974 | 98% |
-| Norman (nrf) | 496 | 636 | 2 | 1,373 | 0 | 3,100 | 747 | 6,354 | 4,208 | 972 | 98% |
-| Franco-Provençal (frp) | 633 | 42 | 1 | 264 | 0 | 3,484 | 1,827 | 6,251 | 1,338 | 970 | 98% |
-| Venetan (vec) | 911 | 141 | 10 | 1,071 | 0 | 3,879 | 220 | 6,232 | 3,530 | 960 | 97% |
-| Corsican (co) | 449 | 73 | 4 | 830 | 0 | 3,814 | 983 | 6,153 | 2,763 | 963 | 97% |
-| Friulian (fur) | 1,150 | 99 | 3 | 1,333 | 0 | 3,327 | 172 | 6,084 | 4,143 | 964 | 97% |
-| Ladin (lld) | 372 | 69 | 3 | 527 | 0 | 4,070 | 1,016 | 6,057 | 4,250 | 973 | 98% |
-| Ladino (lad) | 303 | 234 | 3 | 762 | 0 | 4,139 | 468 | 5,909 | 2,901 | 961 | 97% |
-| Picard (pcd) | 82 | 0 | 14 | 508 | 0 | 2,379 | 2,611 | 5,594 | 1,048 | 911 | 95% |
-| Gallo (gallo) | 22 | 0 | 14 | 465 | 0 | 2,325 | 2,719 | 5,545 | 1,733 | 896 | 94% |
-| Ligurian (lij) | 399 | 142 | 2 | 428 | 0 | 4,330 | 27 | 5,328 | 1,635 | 922 | 95% |
-| Romansh (rm) | 742 | 85 | 10 | 1,073 | 0 | 2,424 | 727 | 5,061 | 2,742 | 907 | 94% |
-| Mirandese (mwl) | 355 | 61 | 3 | 593 | 0 | 2,040 | 1,038 | 4,090 | 1,994 | 836 | 91% |
-| Piedmontese (pms) | 1,059 | 30 | 14 | 696 | 0 | 1,507 | 551 | 3,857 | 2,221 | 767 | 81% |
-| Istriot (ist) | 357 | 89 | 0 | 281 | 0 | 2,384 | 695 | 3,806 | 1,436 | 755 | 87% |
-| Emilian (eml) | 490 | 207 | 0 | 160 | 0 | 2,469 | 55 | 3,381 | 1,048 | 743 | 85% |
-| Dalmatian (dlm) | 526 | 110 | 4 | 428 | 0 | 1,806 | 65 | 2,939 | 1,944 | 705 | 85% |
-| Romagnol (rgn) | 259 | 81 | 0 | 344 | 0 | 1,644 | 14 | 2,342 | 1,068 | 510 | 70% |
-| Megleno-Romanian (ruq) | 249 | 0 | 8 | 112 | 0 | 1,112 | 28 | 1,509 ↓ | 553 | 411 | 62% |
-| Istro-Romanian (ruo) | 160 | 0 | 2 | 85 | 0 | 815 | 134 | 1,196 ↓ | 380 | 382 | 65% |
+| lect | reflex | etymology | cognate | translation | Bible | gloss | scan | bridge | words with a form | firm | of the 1,000 commonest | share of the text |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Italian (it) | 4,777 | 101 | 53 | 175 | 902 | 1,547 | 0 | 0 | 7,555 | 6,008 | 999 | 100% |
+| Spanish (es) | 4,351 | 63 | 69 | 238 | 1,057 | 1,687 | 0 | 0 | 7,465 | 5,778 | 1000 | 100% |
+| Occitan (oc) | 1,595 | 352 | 20 | 2,056 | 358 | 2,880 | 0 | 187 | 7,448 | 6,395 | 999 | 100% |
+| French (fr) | 3,514 | 171 | 104 | 389 | 1,405 | 1,861 | 0 | 0 | 7,444 | 5,583 | 1000 | 100% |
+| Galician (gl) | 2,806 | 84 | 34 | 2,208 | 0 | 2,169 | 0 | 100 | 7,401 | 6,693 | 998 | 100% |
+| Portuguese (pt) | 4,187 | 80 | 48 | 251 | 1,146 | 1,660 | 0 | 0 | 7,372 | 5,712 | 1000 | 100% |
+| Romanian (ro) | 2,754 | 117 | 38 | 375 | 1,697 | 2,319 | 0 | 0 | 7,300 | 4,981 | 1000 | 100% |
+| Gascon (gsc) | 0 | 0 | 0 | 5 | 103 | 5,335 | 0 | 1,848 | 7,291 | 3,143 | 996 | 99% |
+| Asturian (ast) | 1,388 | 269 | 8 | 1,579 | 0 | 3,440 | 0 | 537 | 7,221 | 4,779 | 995 | 99% |
+| Catalan (ca) | 3,525 | 99 | 30 | 352 | 0 | 3,028 | 0 | 0 | 7,034 | 4,006 | 982 | 99% |
+| Sardinian (sc) | 874 | 105 | 10 | 1,035 | 85 | 3,859 | 0 | 1,052 | 7,020 | 3,734 | 992 | 99% |
+| Walloon (wa) | 250 | 131 | 3 | 1,660 | 607 | 3,357 | 0 | 985 | 6,993 | 4,212 | 995 | 99% |
+| Aromanian (rup) | 776 | 115 | 11 | 952 | 835 | 3,920 | 0 | 341 | 6,950 | 4,582 | 996 | 99% |
+| Sicilian (scn) | 1,754 | 395 | 16 | 1,126 | 13 | 2,965 | 0 | 645 | 6,914 | 4,540 | 989 | 99% |
+| Aragonese (an) | 537 | 211 | 3 | 994 | 0 | 3,503 | 0 | 1,554 | 6,802 | 2,541 | 987 | 99% |
+| Lombard (lmo) | 438 | 73 | 6 | 865 | 748 | 4,064 | 0 | 577 | 6,771 | 3,179 | 988 | 99% |
+| Piedmontese (pms) | 1,059 | 30 | 14 | 696 | 2,821 | 1,035 | 0 | 1,071 | 6,726 | 4,791 | 999 | 99% |
+| Extremaduran (ext) | 162 | 0 | 0 | 397 | 0 | 3,633 | 0 | 2,435 | 6,627 | 715 | 976 | 98% |
+| Norman (nrf) | 496 | 636 | 2 | 1,373 | 28 | 3,051 | 0 | 725 | 6,311 | 4,206 | 968 | 98% |
+| Venetan (vec) | 911 | 141 | 10 | 1,071 | 482 | 3,482 | 0 | 213 | 6,310 | 3,809 | 978 | 98% |
+| Franco-Provençal (frp) | 633 | 42 | 1 | 264 | 41 | 3,471 | 0 | 1,810 | 6,262 | 1,363 | 971 | 98% |
+| Friulian (fur) | 1,150 | 99 | 3 | 1,333 | 195 | 3,171 | 58 | 166 | 6,175 | 4,250 | 981 | 98% |
+| Corsican (co) | 449 | 291 | 3 | 763 | 0 | 3,687 | 0 | 973 | 6,166 | 2,814 | 964 | 98% |
+| Ladin (lld) | 372 | 69 | 3 | 527 | 83 | 3,975 | 0 | 989 | 6,018 | 1,798 | 975 | 98% |
+| Ladino (lad) | 303 | 234 | 3 | 762 | 0 | 4,141 | 0 | 468 | 5,911 | 2,891 | 958 | 97% |
+| Istriot (ist) | 357 | 89 | 0 | 281 | 0 | 3,665 | 0 | 1,360 | 5,752 | 1,300 | 927 | 96% |
+| Picard (pcd) | 82 | 0 | 14 | 508 | 36 | 2,388 | 201 | 2,481 | 5,710 | 1,067 | 955 | 97% |
+| Gallo (gallo) | 22 | 0 | 14 | 465 | 0 | 2,432 | 0 | 2,731 | 5,664 | 1,794 | 900 | 94% |
+| Ligurian (lij) | 399 | 142 | 2 | 428 | 423 | 3,976 | 83 | 26 | 5,479 | 1,962 | 961 | 97% |
+| Romansh (rm) | 742 | 85 | 10 | 1,073 | 215 | 2,265 | 9 | 708 | 5,107 | 2,824 | 933 | 96% |
+| Emilian (eml) | 490 | 207 | 0 | 160 | 77 | 2,400 | 613 | 771 | 4,718 | 1,121 | 872 | 92% |
+| Mirandese (mwl) | 355 | 61 | 3 | 593 | 57 | 1,989 | 261 | 971 | 4,290 | 2,022 | 900 | 94% |
+| Dalmatian (dlm) | 526 | 110 | 4 | 428 | 32 | 2,257 | 0 | 534 | 3,891 | 1,904 | 825 | 90% |
+| Istro-Romanian (ruo) | 160 | 0 | 2 | 85 | 0 | 1,675 | 0 | 1,156 | 3,078 | 381 | 760 | 87% |
+| Romagnol (rgn) | 259 | 81 | 0 | 344 | 356 | 1,495 | 297 | 12 | 2,844 | 1,381 | 767 | 88% |
+| Megleno-Romanian (ruq) | 249 | 98 | 7 | 108 | 0 | 1,546 | 0 | 614 | 2,622 | 658 | 611 | 78% |
 
 ↓ marks a lect below 2,000.
 
 ## What is missing
 
-- **In no lect at all:** 315 of the 8,069 words, 0% of the text. Among the 1,000 commonest: 0.
+- **In no lect at all:** 291 of the 8,069 words, 0% of the text. Among the 1,000 commonest: 0.
 - **In fewer than five lects**, among the 1,000 commonest: 0.
-- **In thirty lects or more:** 3,821 words; in ten or more: 7,330.
+- **In thirty lects or more:** 4,825 words; in ten or more: 7,377.
 
 ### The commonest words with a form in no lect
 
-*superexalto* (36; to exalt above others), *tryphon* (14; Any wasp of the genus Tryphon.), *nequeo* (12; to be unable, cannot), *videndus* (11; which is to be seen), *quoadusque* (10; until that), *illucesco* (7; to begin to dawn), *quaerendus* (7; which is to be sought for), *confitendus* (7; which is to be acknowledged or confessed), *ostensus* (7; alternative form of ostentus), *biduum* (6; A period of two days), *providens* (6; foreseeing), *occidendus* (6; which is to be felled, which is to be cu), *pugnantia* (5; contradictions, inconsistencies, things ), *iacebunt* (5; third-person plural future active indica), *expectans* (5; alternative form of exspectans), *superspero* (5; to hope exceedingly), *ambulandus* (4; which is to be traversed, traveled), *stacta* (4; oil of myrrh), *iacet* (4; third-person singular present active ind), *agitur* (4; third-person singular present passive in), *repropitio* (4; to propitiate again), *pertimeo* (4; to fear greatly, to be very timid), *annuntiatus* (4; alternative form of adnūntiātus), *consistens* (4; halting, pausing etc.), *siquis* (4; if any), *deciens* (4; ten times), *gaudent* (4; third-person plural present active indic), *intuere* (4; second-person singular present active im), *gaudebunt* (4; third-person plural future active indica), *intuemini* (4; second-person plural present active indi), *gaudebo* (4; first-person singular future active indi), *gaudet* (4; third-person singular present active ind), *scenopegia* (4; Sukkot (Jewish feast)), *aguntur* (4; third-person plural present passive indi), *deprecare* (4; second-person singular present active im), *delendus* (3; which is to be destroyed), *benedicendus* (3; which is to be spoken well of, commended), *mittendus* (3; which is to be sent, which is to be caus), *superabat* (3; third-person singular imperfect active i), *negligens* (3; alternative form of neglegēns), *elevamini* (3; second-person plural present passive ind), *ventilatus* (3; brandished), *confitere* (3; second-person singular present active im), *dormiendus* (3; which is to be slept through (spent in s), *contribulis* (3; Of the same tribe), *pelta* (3; a small crescent-shaped shield of Thraci), *quorumdam* (3; alternative form of quōrundam), *supergaudeo* (3; to rejoice over), *aperiendus* (3; which is to be opened), *diripiendus* (3; which is to be torn apart), *resistendus* (3; which is to be continued), *quantumcumque* (3; how high soever, however dear, as dear s), *superabit* (2; third-person singular future active indi), *theristrum* (2; A summer garment), *colligendus* (2; which is to be gathered, assembled etc.), *servandus* (2; which is to be maintained, saved, watche), *ponendus* (2; which is to be placed; which is to be pu), *suscipiendus* (2; which is to be taken up, which is to be ), *coronula* (2; The ornament on a mitre), *obtinendus* (2; which is to be occupied), *dominare* (2; second-person singular present active im), *fugiendus* (2; which is to be hastened), *carica* (2; a type of fig from Caria), *accingimini* (2; second-person plural present passive ind), *millenus* (2; one thousand each; one thousand at a tim), *hira* (2; empty gut), *superaverunt* (2; third-person plural perfect active indic), *quinquies* (2; five times), *docendus* (2; which is to be taught, instructed), *supplantatio* (2; hypocritical deceit), *annuntiandus* (2; alternative form of adnūntiandus), *decachordum* (2; A musical instrument that had ten string), *exprobrabilis* (2; worthy of reproach), *gaudeas* (2; second-person singular present active su), *flendus* (2; worth weeping, crying for.), *centiens* (2; a hundred times), *expergiscimini* (2; second-person plural present active indi), *confundimini* (2; second-person plural present passive ind), *tradendus* (2; which is to be delivered or surrendered ), *superextendo* (2; To stretch over something, or to cover i)
+*nequeo* (12; to be unable, cannot), *quoadusque* (10; until that), *quaerendus* (7; which is to be sought for), *ostensus* (7; alternative form of ostentus), *biduum* (6; A period of two days), *providens* (6; foreseeing), *occidendus* (6; which is to be felled, which is to be cu), *pugnantia* (5; contradictions, inconsistencies, things ), *iacebunt* (5; third-person plural future active indica), *ambulandus* (4; which is to be traversed, traveled), *iacet* (4; third-person singular present active ind), *agitur* (4; third-person singular present passive in), *pertimeo* (4; to fear greatly, to be very timid), *annuntiatus* (4; alternative form of adnūntiātus), *consistens* (4; halting, pausing etc.), *siquis* (4; if any), *deciens* (4; ten times), *gaudent* (4; third-person plural present active indic), *intuemini* (4; second-person plural present active indi), *gaudebo* (4; first-person singular future active indi), *gaudet* (4; third-person singular present active ind), *scenopegia* (4; Sukkot (Jewish feast)), *aguntur* (4; third-person plural present passive indi), *deprecare* (4; second-person singular present active im), *delendus* (3; which is to be destroyed), *mittendus* (3; which is to be sent, which is to be caus), *superabat* (3; third-person singular imperfect active i), *negligens* (3; alternative form of neglegēns), *elevamini* (3; second-person plural present passive ind), *ventilatus* (3; brandished), *confitere* (3; second-person singular present active im), *dormiendus* (3; which is to be slept through (spent in s), *contribulis* (3; Of the same tribe), *pelta* (3; a small crescent-shaped shield of Thraci), *quorumdam* (3; alternative form of quōrundam), *aperiendus* (3; which is to be opened), *diripiendus* (3; which is to be torn apart), *resistendus* (3; which is to be continued), *gaudeatis* (3; second-person plural present active subj), *quantumcumque* (3; how high soever, however dear, as dear s), *superabit* (2; third-person singular future active indi), *theristrum* (2; A summer garment), *colligendus* (2; which is to be gathered, assembled etc.), *servandus* (2; which is to be maintained, saved, watche), *ponendus* (2; which is to be placed; which is to be pu), *suscipiendus* (2; which is to be taken up, which is to be ), *coronula* (2; The ornament on a mitre), *obtinendus* (2; which is to be occupied), *fugiendus* (2; which is to be hastened), *accingimini* (2; second-person plural present passive ind), *millenus* (2; one thousand each; one thousand at a tim), *hira* (2; empty gut), *superaverunt* (2; third-person plural perfect active indic), *quinquies* (2; five times), *annumeratus* (2; alternative form of adnumerātus), *docendus* (2; which is to be taught, instructed), *nitimini* (2; second-person plural present active indi), *supplantatio* (2; hypocritical deceit), *exprobrabilis* (2; worthy of reproach), *gaudeas* (2; second-person singular present active su), *flendus* (2; worth weeping, crying for.), *centiens* (2; a hundred times), *confundimini* (2; second-person plural present passive ind), *tradendus* (2; which is to be delivered or surrendered ), *superextendo* (2; To stretch over something, or to cover i), *galeatus* (2; helmeted), *comburendum* (2; cremating, burning, consuming by fire), *sabath* (2; alternative letter-case form of Sabāth), *gaudebat* (2; third-person singular imperfect active i), *perliniens* (2; alternative form of perlinēns), *acedior* (2; to be morose or peevish), *implemini* (2; second-person plural present passive ind), *aliquotiens* (2; several times), *tollendus* (2; which is to be raised, which is to be li), *oppugnandus* (2; which is to be attacked or besieged), *recipiendus* (2; which is to be retaken), *pastophorium* (2; A small chapel in a temple containing an), *curandus* (2; which is to be cured, or used in healing), *gregatim* (2; in flocks, in crowds, in herds), *appropians* (2; approaching, nearing)
 
 ### Among the 1,000 commonest, in fewer than five lects
 
@@ -77,8 +77,8 @@ Each word is counted once, under the strongest route. A gloss or bridge match is
 |---|---:|---|
 | it | 1 | desuper |
 | es | 0 |  |
+| oc | 1 | christus |
 | fr | 0 |  |
-| oc | 3 | christus, siclus, chananaeus |
 | gl | 2 | pharisaeus, chananaeus |
 | pt | 0 |  |
 | ro | 0 |  |
@@ -86,28 +86,28 @@ Each word is counted once, under the strongest route. A gloss or bridge match is
 | ast | 5 | numquid, simul, sion, siclus, suburbanus |
 | ca | 18 | numquid, tecum, tamquam, mecum, idcirco, vobiscum, plurimus, pharisaeus, parco, oportet, sin, primitia, nobiscum, desuper, nequaquam |
 | sc | 8 | christus, sion, idcirco, vae, pharisaeus, siclus, amorrhaeus, desuper |
-| wa | 10 | christus, numquid, holocaustum, sion, sanctuarium, pharisaeus, syrius, chaldaeus, siclus, chananaeus |
+| wa | 5 | numquid, holocaustum, sanctuarium, chaldaeus, siclus |
+| rup | 4 | habitator, septimus, siclus, decimo |
 | scn | 11 | christus, generatio, sion, sanctifico, primogenitus, pharisaeus, siclus, redimo, cherub, decimo, chananaeus |
-| rup | 8 | habitator, sion, septimus, pharisaeus, syrius, siclus, decimo, chananaeus |
-| an | 15 | mecum, primogenitus, ancilla, aegyptius, pharisaeus, psalmus, incensus, cherub, evangelium, despicio, spolio, omnipotens, chananaeus, laqueus, pontifex |
-| lmo | 24 | christus, iniquitas, impius, tecum, sion, mecum, idcirco, septimus, benedictio, peccator, aegyptius, pharisaeus, quartus, psalmus, syrius |
-| ext | 26 | servus, christus, holocaustum, sine, praeceptum, absque, possessio, sion, paulus, mando, peccator, pharisaeus, psalmus, thronus, sin |
-| nrf | 28 | iniquitas, tabernaculum, propheta, numquid, gratia, holocaustum, castra, servio, generatio, tribus, sion, sanctifico, sanctuarium, induo, aegyptius |
-| frp | 30 | peccatum, christus, numquid, impius, holocaustum, mandatum, sion, mecum, solitudo, iniquus, benedictio, peccator, exsulto, aegyptius, syrius |
-| vec | 40 | usque, coram, christus, iniquitas, propheta, impius, converto, tribus, reliquus, immolo, idcirco, primogenitus, vae, benedictio, laeto |
-| co | 37 | christus, testimonium, impius, holocaustum, tribus, sion, misereo, sepelio, primogenitus, similiter, iratus, benedictio, peccator, laeto, induo |
-| fur | 36 | christus, impius, converto, holocaustum, tecum, nescio, tamquam, sion, mecum, immolo, rursus, iniquus, primogenitus, vae, benedictio |
-| lld | 27 | iniquitas, propheta, intro, coepi, tribus, sion, primogenitus, similiter, vae, iratus, induo, aegyptius, captivitas, syrius, siclus |
-| lad | 39 | christus, numquid, altare, pecco, impius, tribus, sion, immolo, iniquus, maledico, vae, peccator, dispergo, pacificus, aegyptius |
-| pcd | 89 | ecce, peccatum, christus, iudaeus, iniquitas, tabernaculum, propheta, benedico, altare, iustitia, septem, misericordia, scribo, aurum, pecco |
-| gallo | 104 | rex, usque, sanctus, aegyptus, christus, mare, regnum, iudaeus, tabernaculum, gladius, propheta, numquid, septem, misericordia, fugio |
-| lij | 78 | usque, coram, iniquitas, propheta, numquid, impius, converto, holocaustum, castra, nisi, excelsus, tribus, tecum, nescio, tamquam |
-| rm | 93 | quoniam, coram, christus, iudaeus, trado, iniquitas, aedifico, altare, quicumque, unusquisque, vas, circuitus, libero, generatio, tribus |
-| mwl | 164 | voco, servus, christus, iudicium, percutio, gloria, iniquitas, propheta, numquid, inimicus, altare, multitudo, custodio, misericordia, sub |
-| pms | 233 | qui, suus, de, super, quia, populus, per, usque, quoniam, quasi, sacerdos, coram, quis, propter, peccatum |
-| ist | 245 | rex, pater, sui, nec, multus, servus, quid, sacerdos, neque, quis, mille, nolo, aegyptus, lex, christus |
-| eml | 257 | super, si, usque, factus, quoniam, ecce, quid, coram, propter, ascendo, exercitus, nolo, iuxta, christus, cumque |
-| dlm | 295 | usque, sui, servus, coram, exercitus, nolo, aegyptus, lex, habito, christus, vero, iudicium, offero, iudaeus, iniquitas |
-| rgn | 490 | suus, tuus, meus, tu, vos, me, populus, sed, sicut, vester, tibi, ergo, verbum, usque, factus |
-| ruq | 589 | suus, tuus, autem, deus, de, meus, super, rex, vos, me, enim, populus, per, sed, sicut |
-| ruo | 618 | dominus, suus, deus, meus, super, rex, populus, sicut, verbum, usque, pro, mitto, noster, quasi, universus |
+| an | 13 | mecum, primogenitus, ancilla, aegyptius, pharisaeus, incensus, cherub, evangelium, despicio, spolio, omnipotens, chananaeus, pontifex |
+| lmo | 12 | iniquitas, impius, mecum, idcirco, benedictio, aegyptius, psalmus, siclus, cherub, suburbanus, desuper, samarium |
+| pms | 1 | etenim |
+| ext | 24 | servus, christus, holocaustum, sine, praeceptum, absque, possessio, sion, paulus, mando, pharisaeus, thronus, sin, siclus, amorrhaeus |
+| nrf | 32 | iniquitas, tabernaculum, propheta, numquid, gratia, holocaustum, castra, generatio, tribus, sion, sanctifico, sanctuarium, primogenitus, induo, aegyptius |
+| vec | 22 | impius, tribus, reliquus, immolo, idcirco, benedictio, laeto, malitia, dispergo, aegyptius, indignatio, siclus, glorior, cherub, dissipo |
+| frp | 29 | peccatum, christus, numquid, impius, holocaustum, mandatum, sion, mecum, solitudo, benedictio, peccator, exsulto, aegyptius, syrius, chaldaeus |
+| fur | 19 | impius, holocaustum, tecum, tamquam, sion, immolo, iniquus, benedictio, laeto, aegyptius, syrius, siclus, glorior, cherub, despicio |
+| co | 36 | christus, impius, holocaustum, tribus, sion, misereo, sepelio, primogenitus, similiter, iratus, benedictio, peccator, laeto, induo, dispergo |
+| lld | 25 | iniquitas, propheta, intro, tribus, sion, primogenitus, similiter, vae, iratus, aegyptius, captivitas, syrius, siclus, glorior, incensus |
+| lad | 42 | christus, numquid, altare, pecco, impius, tribus, sion, immolo, iniquus, maledico, vae, peccator, dispergo, pacificus, aegyptius |
+| ist | 73 | mille, aegyptus, christus, iniquitas, tabernaculum, propheta, viginti, impius, holocaustum, tribus, tertius, sacrificium, sabbatum, duodecim, habitator |
+| pcd | 45 | tabernaculum, pecco, holocaustum, castra, laudo, tribus, murus, habitator, sanctuarium, immolo, solitudo, aquilo, septimus, benedictio, laeto |
+| gallo | 100 | rex, sanctus, aegyptus, christus, mare, regnum, iudaeus, tabernaculum, gladius, propheta, numquid, septem, misericordia, fugio, pecco |
+| lij | 39 | impius, holocaustum, castra, tribus, tecum, tamquam, cognatio, sanctuarium, contero, immolo, idcirco, iniquus, currus, benedictio, laeto |
+| rm | 67 | coram, christus, altare, quicumque, unusquisque, tribus, tecum, reliquus, nuntio, sanctifico, statim, immolo, primogenitus, similiter, vae |
+| eml | 128 | usque, quoniam, exercitus, cumque, offero, inter, iniquitas, timeo, mors, inimicus, altare, sapientia, sub, donec, aeternus |
+| mwl | 100 | iniquitas, sub, impius, converto, libero, simul, murus, habitator, iuro, sion, nuntio, dux, statim, sanctuarium, rectus |
+| dlm | 175 | servus, coram, exercitus, aegyptus, habito, christus, offero, iudaeus, iniquitas, tabernaculum, propheta, conspectus, benedico, multitudo, virtus |
+| ruo | 240 | populus, mitto, opus, coram, facies, ascendo, exercitus, nolo, aegyptus, christus, iudicium, regnum, iudaeus, gloria, iniquitas |
+| rgn | 233 | quasi, exercitus, cunctus, cumque, atque, conspectus, ac, multitudo, itaque, interficio, adduco, at, impius, converto, unusquisque |
+| ruq | 389 | tuus, meus, rex, me, populus, vester, factus, mitto, quasi, voco, respondeo, opus, coram, peccatum, medius |

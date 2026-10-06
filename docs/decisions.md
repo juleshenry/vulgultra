@@ -16,13 +16,35 @@ The order follows the Bible: the Latin text was counted word by word
    none. The modern French, Spanish, Portuguese, Italian and Romanian Bibles show, verse by verse,
    what the daughters say where no Latin word survived (*autem, enim, ut, sed, is*) and give the
    model for word order. *Suggestion: yes.* Limits: a reflex may have drifted in meaning (*dominus*
-   gives Portuguese *Dom*, a title), and the Vulgate numbers the Psalms one behind the others, so
-   verse alignment needs a mapping table that is not built yet.
+   gives Portuguese *Dom*, a title). The five are now lined up with the Latin verse by verse, so each
+   Latin word shows the word every Bible uses for it
+   ([`eval/bible_anchor_words.md`](eval/bible_anchor_words.md)).
 2. **The Romanian text.** No public-domain Romanian Bible in Latin script could be verified. The one
    on disk is Cornilescu from a repository that calls it public domain; another source says the 1924
    copyright still holds. It stays on your machine and is never committed. Keep it as a working
    text, or leave Romanian out until a clean edition turns up?
    ([`bible_sources.md`](bible_sources.md))
+
+2a. **What counts as a daughter's form.** Sourcing the thin lects turned up four kinds of material
+    I have set aside rather than count, pending your word
+    ([`sources_bible_lexicon.md`](sources_bible_lexicon.md)):
+    - *an earlier stage of a lect*: medieval Béarnais, Gascon charters (and, from 5 October, Old
+      French, Old Occitan, Old Spanish);
+    - *a written standard that is nobody's speech*: Ladin Dolomitan, Micurà de Rü's common Ladin of
+      1833; Rumantsch Grischun raises the same question and is counted today;
+    - *forms from an unproofread scan*: counted apart as "scan", never as firm;
+    - *"shared" Occitan* from Apertium, which I count for Gascon as the earlier audit did.
+    *Suggestion: keep all four out of root-picking; the first two are yours to rule on.*
+2b. **Soft licence footing.** Six sources are used locally and rest on an argument rather than a
+    stated licence: Cunia's Aromanian dictionary, Dalla Zonca's Istriot dictionary, the Piedmontese
+    Bible's Old Testament, the Walloon Matthew and Mark, the e-text of Mistral's Genesis, and
+    Capidan's Megleno-Romanian dictionary. Nothing is committed or published. Use them, or drop any?
+    A seventh, the Société Jersiaise's Jèrriais vocabulary, states no licence at all and is not read.
+2c. **Paying for page readings.** Istro-Romanian and Megleno-Romanian are the two lects whose
+    dictionaries exist only as printed pages that a machine misreads. Reading them from the page
+    images works (Pușcariu's glossary: 23 of 33 pages done, right on the column I compared) and costs
+    usage: about 10 pages finish Pușcariu, 72 more are Popovici, 224 Byhan; Capidan has 951 entries
+    to re-read. Say how far to go.
 
 ## B. The shape of the grammar
 

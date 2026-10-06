@@ -316,14 +316,29 @@ Needs from the verb work: final person labels, reflexive `se`, pro-drop.
       [`docs/bible_sources.md`](docs/bible_sources.md)): the Clementine
       Vulgate, Segond 1910, Reina-Valera 1909, Bíblia Livre, Riveduta 1927
       and Cornilescu. The Romanian licence is not settled; the text is
-      local only. 30,261 verse keys are shared by all six, but the Vulgate
-      numbers the Psalms one behind, and no mapping table exists yet.
+      local only. 30,261 verse keys are shared by all six; the Psalms are
+      brought to the Vulgate's numbering when the texts are aligned.
 - [x] Latin as the word list (proposed 2026-10-05, to confirm): the
-      Vulgate's 612,000 words traced to 8,134 dictionary words, each with
+      Vulgate's 612,000 words traced to 8,069 dictionary words, each with
       the daughter forms Wiktionary lists as its reflexes
       (`scripts/fetch_latin_descendants.py`, `scripts/build_bible_lexicon.py`,
-      [`docs/eval/bible_lexicon.md`](docs/eval/bible_lexicon.md)). 5,209
-      have a reflex in at least one lect, 1,400 in ten or more.
+      [`docs/eval/bible_lexicon.md`](docs/eval/bible_lexicon.md)). 5,263
+      have a reflex in at least one lect, 1,417 in ten or more.
+- [x] The five modern Bibles aligned to the Latin verse by verse
+      (`scripts/align_bible.py anchors`,
+      [`docs/eval/bible_anchor_words.md`](docs/eval/bible_anchor_words.md)):
+      about 3,700 Latin words get the word each Bible uses for them.
+- [x] Every lect has a form for 2,000 or more of the Bible's 8,069 words
+      (`scripts/bible_coverage.py`,
+      [`docs/eval/bible_coverage.md`](docs/eval/bible_coverage.md)), from
+      translation tables, the lects' own Wiktionaries and Bible texts, and
+      some forty dictionaries and glossaries
+      ([`docs/sources_bible_lexicon.md`](docs/sources_bible_lexicon.md)).
+      24 lects have 2,000 firm; the weakest are Istro-Romanian (381 firm),
+      Megleno-Romanian (658) and Extremaduran (715).
+- [ ] Check the gloss and two-step candidates by sense before they compete
+      for a root; finish the page readings listed under "What is left to do"
+      in `docs/sources_bible_lexicon.md`.
 - [ ] The decisions this opens are queued in order in
       [`docs/decisions.md`](docs/decisions.md).
 

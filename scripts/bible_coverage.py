@@ -13,9 +13,13 @@ has a form by one of these routes, strongest first:
                  form is the title of the lect's Wikipedia article on what
                  the Latin Wikipedia treats under the word
     bible        the lect's own Bible text has the form in the verses where
-                 the Latin Bible has the word (`scripts/align_bible_lects.py`)
+                 the Latin Bible has the word (`scripts/align_bible.py`)
     gloss        a dictionary entry of the lect is glossed with a key of the
                  Latin word in the gloss's language
+    scan         as bible or gloss, but the text or the dictionary is a
+                 machine reading of a printed page that nobody has proofread
+                 and no other source has the form: the word is there, its
+                 spelling may not be (a glossary table named *.scan.tsv)
     bridge       as gloss, but the key is a word of French (Spanish, ...) that
                  is itself only a gloss match for the Latin word: two steps
 
@@ -73,7 +77,19 @@ TOP = 1000
 TARGET = 2000
 LATIN_CODES = {"la", "la-vul", "la-lat", "la-med", "la-ecc", "la-cla", "LL.", "VL.", "ML."}
 ETYMOLOGY = {"inh", "inh+", "bor", "bor+", "der", "der+", "lbor", "slbor", "uder", "inh-lite"}
-ROUTES = ("reflex", "etymology", "cognate", "translation", "bible", "gloss", "bridge")
+ROUTES = ("reflex", "etymology", "cognate", "translation", "bible", "gloss", "scan", "bridge")
+# Bible texts that are a scan's text layer, not proofread (data/bible/lects/SOURCES-*.md). Where the reading
+# is clean but for stray slips (Genoese and Friulian Matthew, Sursilvan John, Sicilian Song of Songs), a
+# form read the same way in two verses is taken as read right. Where it goes wrong the same way every time
+# (Romagnol Matthew after 7:2 loses the dots of ṡ ż ṅ, Mirandese Luke turns nasal vowels into other
+# letters, Picard Matthew is a phonetic spelling the reader garbles), repetition proves nothing.
+UNPROOFREAD = {"lij", "fur", "rm-sursilvan", "scn"}
+MISREAD = {"rgn", "pcd-amienois", "mwl-monteiro1894"}
+SCANNED = " (scan)"   # marks the source name of a glossary table read by machine and not proofread
+# Glossary tables on disk that are not counted until their standing is decided (docs/decisions.md): an
+# earlier stage of the lect (medieval Béarnais, Gascon charters), and written standards that are nobody's
+# speech (Ladin Dolomitan, Micurà de Rü's common Ladin of 1833).
+SET_ASIDE = ("-old.", "-charters.", ".ladin-dolomitan.", ".micura-de-ru.")
 # One of these alone is a statement about the word; a gloss or a bridge wants a second witness.
 STATED = ("reflex", "etymology", "cognate", "translation", "bible")
 # The lects other dictionaries are glossed in; read first, so their forms can serve as keys.
@@ -101,8 +117,14 @@ NOT_WORDS = {"character", "symbol", "suffix", "prefix", "interfix", "infix", "af
 COPIES = {"zh", "ku", "ja"}
 
 
+# Romanian as older books print it: a cedilla for the comma, and a grave accent on an infinitive (a apucà).
+OLD_ROMANIAN = str.maketrans("şţŞŢàìèù", "șțȘȚaieu")
+
+
 def parts(gloss: str, language: str) -> set[str]:
     """The senses a gloss names, without the article its language puts before a word."""
+    if language == "ro":
+        gloss = gloss.translate(OLD_ROMANIAN)
     article = ARTICLE.get(language)
     found = {re.sub(article, "", part).strip() if article else part for part in audit.gloss_parts(gloss)}
     return {part for part in found if part}
@@ -222,6 +244,21 @@ def anchor_bible_keys() -> dict[str, dict[str, set[str]]]:
     return found
 
 
+def glossary_source(stem: str, language: str) -> str:
+    """The name a glossary table's rows are counted under: one per work, whatever its varieties and languages."""
+    stem = stem.split(".")[0]
+    if stem.startswith("wiktionary-kaikki"):   # other editions' entries, a second copy of data/sources/wikt_entries
+        return f"{language}.wiktionary"
+    for prefix, name in (("wiktionary-ro", "ro.wiktionary"), ("dewiktionary", "de.wiktionary"),
+                         ("cowiktionary", "co.wiktionary"), ("kantoniko", "kantoniko")):
+        if stem.startswith(prefix):
+            return name
+    dated = re.match(r".*?-(?:1[5-9]|20)\d\d", stem)   # author-year, then the variety: lespy-raymond-1887-bearnais-old
+    if dated:
+        return dated.group(0)
+    return "-".join(stem.split("-")[:3]) if stem.startswith("apertium-") else stem
+
+
 def named_cognates(forms: dict, words: dict) -> dict[str, dict[str, set[str]]]:
     """Lect → Latin word → the forms a sister lect's entry names as cognates."""
     found: dict[str, dict[str, set[str]]] = collections.defaultdict(lambda: collections.defaultdict(set))
@@ -296,23 +333,32 @@ def lect_evidence(lect: str, forms: dict, words: dict, foreign: list):
                         else:
                             senses[language][gloss.lower()].add((head, word_class(entry["pos"]), f"{lect}.wiktionary"))
     for path in sorted((GLOSSARIES / lect).glob("*.tsv")) if (GLOSSARIES / lect).is_dir() else ():
+        if ".doubtful" in path.name or any(mark in path.name for mark in SET_ASIDE):
+            continue    # rows their parser could not vouch for, or a table set aside
         with path.open(encoding="utf-8") as stream:
             for row in csv.DictReader(stream, delimiter="\t", quoting=csv.QUOTE_NONE):
                 head = audit.nfc(row.get("headword") or "")
-                if head and " " not in head:
-                    for part in parts(row.get("gloss") or "", row.get("gloss_lang") or ""):
-                        senses[row.get("gloss_lang") or ""][part].add((head, word_class(row.get("pos") or ""), path.stem))
+                if not head or " " in head:
+                    continue
+                for word in latin_words(row.get("latin_etymon") or "", forms, words) if row.get("latin_etymon") else ():
+                    cited[word].add(head)
+                language = row.get("gloss_lang") or ""
+                source = glossary_source(path.stem, language) + (SCANNED if ".scan" in path.name else "")
+                for part in parts(row.get("gloss") or "", language):
+                    senses[language][part].add((head, word_class(row.get("pos") or ""), source))
     return cited, own_latin, senses
 
 
-def aligned(lect: str) -> dict[str, set[str]]:
-    """Latin word → the forms the lect's own Bible text has for it."""
-    found: dict[str, set[str]] = collections.defaultdict(set)
+def aligned(lect: str) -> dict[str, dict[str, bool]]:
+    """Latin word → the forms the lect's own Bible text has for it, each with whether its spelling can be trusted."""
+    found: dict[str, dict[str, bool]] = collections.defaultdict(dict)
     path = ALIGNED / f"{lect}.tsv"
     if path.is_file():
         with path.open(encoding="utf-8") as stream:
             for row in csv.DictReader(stream, delimiter="\t"):
-                found[row["latin"]].add(row["form"])
+                sound = (row["text"] not in UNPROOFREAD | MISREAD or row.get("proofread") == "1"
+                         or row["text"] in UNPROOFREAD and int(row["links"]) >= 2)
+                found[row["latin"]][row["form"]] = found[row["latin"]].get(row["form"], False) or sound
     return found
 
 
@@ -362,8 +408,6 @@ def main() -> None:
                 if "N" in latin_class[word]:   # an article is titled with a noun
                     for form in titles.get(lect, {}).get(word, ()):
                         given[form].add("translation:wikipedia")
-                for form in from_text.get(word, ()):
-                    given[form].add("bible:text")
                 for language in (set(senses) | set(tables.listed)) - COPIES:
                     keys = keys_of(word, language)
                     stand_ins = set() if lect in ANCHORS else anchor_forms.get(language, {}).get(word, set()) - keys
@@ -371,10 +415,15 @@ def main() -> None:
                         for key in wanted:
                             for form, entry_class, source in senses.get(language, {}).get(key, ()):
                                 if agree(entry_class, latin_class[word]):
-                                    given[form].add(f"{route}:{language}:{source}")
+                                    kind = "scan" if route == "gloss" and source.endswith(SCANNED) else route
+                                    given[form].add(f"{kind}:{language}:{source}")
                             if agree(tables.classes.get(language, {}).get(key, frozenset()), latin_class[word]):
                                 for form in tables.listed.get(language, {}).get(lect, {}).get(key, ()):
                                     given[form].add(f"{route}:{language}:table")
+                # Last, so that a form read off an unproofread scan can be checked against the dictionaries.
+                for form, proofread in from_text.get(word, {}).items():
+                    label = "bible:text" if proofread or form in given else "scan:text"   # before given[form] makes the key
+                    given[form].add(label)
                 by_route = {route: {form for form, via in given.items() if any(v.startswith(route + ":") for v in via)}
                             for route in ROUTES}
                 if lect in ANCHORS:   # the anchor's own forms, strongest first, as keys for the others
@@ -407,7 +456,9 @@ def main() -> None:
         "- a **translation**: the form and the Latin word stand in one translation table of a Wiktionary, "
         "so they translate the same sense; or the form titles the lect's Wikipedia article on what the Latin "
         "Wikipedia treats under the word;",
-        "- its **Bible**: the lect's own Bible text has the form in the verses where the Latin has the word;",
+        "- its **Bible**: the lect's own Bible text has the form in the verses where the Latin has the word "
+        "(**scan**, counted apart: the text is an unproofread machine reading of a printed page and no "
+        "dictionary has the form, so the word is there but its spelling needs checking against the page);",
         "- a **gloss**: a dictionary entry of the lect is glossed with a key of the Latin word (in English, "
         "one of the word's first senses; in any language, a headword whose translation table lists the Latin "
         "word, or a sense that language's Wiktionary gives it; in French, Spanish, Portuguese, Italian, Catalan and Romanian, also that language's reflex of "
@@ -421,9 +472,9 @@ def main() -> None:
         "each with its sources, are in `data/bible/lexicon/forms/{lect}.tsv`.", "",
         f"{len(reached)} of {len(SOURCE_LANGS)} lects have a form for {TARGET:,} words or more; "
         f"{len(firmly)} have {TARGET:,} firm.", "",
-        f"| lect | reflex | etymology | cognate | translation | Bible | gloss | bridge | words with a form | firm "
+        f"| lect | reflex | etymology | cognate | translation | Bible | gloss | scan | bridge | words with a form | firm "
         f"| of the {TOP:,} commonest | share of the text |",
-        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     table_start = len(lines) - 2
     order = sorted(SOURCE_LANGS, key=lambda lect: -len(has[lect]))

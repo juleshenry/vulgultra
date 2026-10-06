@@ -60,6 +60,19 @@ class AlignerTests(unittest.TestCase):
     def test_text_is_split_at_apostrophes_and_hyphens(self) -> None:
         self.assertEqual(align.tokens("L’aghe dit-il"), ["l", "aghe", "dit", "il"])
 
+    def test_the_romanian_cedilla_is_read_as_the_comma(self) -> None:
+        self.assertEqual(align.tokens("şi ţara"), ["și", "țara"])
+
+    def test_psalms_take_the_vulgates_numbers(self) -> None:
+        # The Vulgate's Psalm 22 is the Hebrew 23rd, and counts the title as verse 1.
+        latin = {("PSA", "22", str(verse)): "x" for verse in (1, 2, 3)} | {("GEN", "1", "1"): "x"}
+        other = {("PSA", "23", "1"): "first", ("PSA", "23", "2"): "second", ("GEN", "1", "1"): "beginning"}
+        renumbered = align.psalms_renumbered(latin, other)
+        self.assertEqual(renumbered[("PSA", "22", "2")], "first")
+        self.assertEqual(renumbered[("PSA", "22", "3")], "second")
+        self.assertEqual(renumbered[("GEN", "1", "1")], "beginning")
+        self.assertNotIn(("PSA", "23", "1"), renumbered)
+
 
 class WitnessTests(unittest.TestCase):
     def test_an_edition_is_one_witness_however_it_gives_the_form(self) -> None:
@@ -85,6 +98,19 @@ class WitnessTests(unittest.TestCase):
     def test_a_gloss_loses_its_article(self) -> None:
         self.assertEqual(coverage.parts("la casa, il cane", "it"), {"casa", "cane"})
         self.assertEqual(coverage.parts("das Haus", "de"), {"haus"})
+
+    def test_old_romanian_spelling_is_read_as_todays(self) -> None:
+        self.assertEqual(coverage.parts("a apucà; şarpe", "ro"), {"apuca", "șarpe"})
+
+    def test_a_work_is_one_source_whatever_its_tables(self) -> None:
+        self.assertEqual(coverage.glossary_source("lespy-raymond-1887-bearnais-old", "fr"), "lespy-raymond-1887")
+        self.assertEqual(coverage.glossary_source("videsott-2020-vll1.badia", "de"), "videsott-2020")
+        self.assertEqual(coverage.glossary_source("apertium-oci-fra-gascon", "fr"), "apertium-oci-fra")
+        self.assertEqual(coverage.glossary_source("wiktionary-kaikki", "pl"), "pl.wiktionary")
+
+    def test_a_scan_is_a_witness_but_a_bridge_is_not(self) -> None:
+        self.assertEqual(coverage.witnesses({"scan:text"}), 1)
+        self.assertEqual(coverage.witnesses({"scan:it:ferrari-1835 (scan)", "gloss:en:en.wiktionary"}), 2)
 
 
 if __name__ == "__main__":
