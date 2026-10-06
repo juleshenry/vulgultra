@@ -40,6 +40,8 @@ For every noun whose dictionary entry records a plural, the plural is compared w
 | gallo | masculine | 992 | +s 76% (juin → juins) | other 11% (ail → yeûs) | -er +érs 5% (bananier → bananiérs) |
 | gallo | feminine | 1002 | +s 83% (armée → armées) | other 11% (belle-fille → belles-filles) | -es +s 2% (malouines → malouins) |
 | gallo | gender not given | 13 | +s 92% (catalan → catalans) | other 7% (ûne → dez) |  |
+| frp | masculine | 213 | +s 92% (ami → amis) | no change 4% (lis → lis) | other 1% (chôd-temps → chôds-temps) |
+| frp | feminine | 209 | -a +es 54% (via → vies) | +s 44% (man → mans) | -a +ues 0% (èga → ègues) |
 | lmo | masculine | 41 | no change 58% (dia → dia) | +j 12% (client → clientj) | other 7% (jald → jâld) |
 | lmo | feminine | 47 | -a +e 42% (vita → vite) | -a 10% (acqua → acqu) | no change 8% (man → man) |
 | pms | masculine | 93 | no change 91% (vers → vers) | -l +j 8% (vel → vej) |  |

@@ -44,6 +44,7 @@ CODE = {"egl": "eml", "roa-gal": "gallo"}
 SHOWN = 150       # rows of the main table
 READ_TOP = 400    # words whose reflexes are read aloud for the shortest-form column
 ENCLITICS = ("que", "ne", "ve")
+VARIANT = re.compile(r"(?:alternative (?:form|spelling)|apocopic form|medieval spelling|archaic form) of (\S+)", re.I)
 
 
 def plain(text: str) -> str:
@@ -58,10 +59,12 @@ def dictionary() -> dict[str, dict]:
     with LATIN.open(encoding="utf-8") as stream:
         for line in stream:
             row = json.loads(line)
-            entry = words.setdefault(row["word"], {"pos": [], "gloss": "", "reflexes": collections.defaultdict(list)})
+            entry = words.setdefault(row["word"], {"pos": [], "gloss": "", "glosses": [],
+                                                   "reflexes": collections.defaultdict(list)})
             if row["pos"] not in entry["pos"]:
                 entry["pos"].append(row["pos"])
             entry["gloss"] = entry["gloss"] or (row["glosses"][0] if row["glosses"] else "")
+            entry["glosses"] += row["glosses"][:2]
             for code, form in row["descendants"]:
                 lect = CODE.get(code, code)
                 if lect in SOURCE_LANGS and form not in entry["reflexes"][lect]:
@@ -107,6 +110,11 @@ def count_words(words: dict, forms: dict) -> tuple[collections.Counter, collecti
             unknown[token] = n
     for token, found in open_tokens.items():  # a form of two words goes to the commoner one
         counts[max(sorted(found), key=lambda word: counts[word])] += tokens[token]
+    for word in list(counts):  # the Vulgate's quatuor, haereditas, praelium are the dictionary's quattuor, ...
+        variant = VARIANT.match(words[word]["gloss"])
+        main = plain(variant.group(1)).strip(".,;:") if variant else ""
+        if main and main != word and main in words:
+            counts[main] += counts.pop(word)
     return counts, unknown, sum(tokens.values())
 
 

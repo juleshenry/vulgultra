@@ -22,7 +22,7 @@ Pronouns, possessives, articles, demonstratives, interrogatives, quantifiers, nu
 | [Picard](pcd.md) | French | 41 of 162 | 59 | 5 | 0 |
 | [Norman](nrf.md) | English | 103 of 162 | 161 | 8 | 3858 |
 | [Gallo](gallo.md) | French | 119 of 162 | 305 | 25 | 2007 |
-| [Franco-Provençal](frp.md) | French | 56 of 162 | 98 | 0 | 0 |
+| [Franco-Provençal](frp.md) | English | 74 of 162 | 99 | 24 | 422 |
 | [Lombard](lmo.md) | English | 52 of 162 | 79 | 5 | 91 |
 | [Piedmontese](pms.md) | English | 37 of 162 | 40 | 9 | 218 |
 | [Ligurian](lij.md) | English | 108 of 162 | 166 | 16 | 374 |

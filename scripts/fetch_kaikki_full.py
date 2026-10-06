@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -23,7 +24,9 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "sources" / "kaikki_full"
 USER_AGENT = "vulgultra-research/0.1 (+noncommercial morphology corpus)"
 LECTS = {"es": "Spanish", "pt": "Portuguese", "gl": "Galician", "ca": "Catalan", "fr": "French",
-         "it": "Italian", "ro": "Romanian", "lmo": "Lombard"}
+         "it": "Italian", "ro": "Romanian", "lmo": "Lombard", "frp": "Franco-Provençal"}
+# Lects with no verb extract beside the word lists: their verbs are kept here too.
+WITH_VERBS = {"frp"}
 KEEP = {"pron", "det", "article", "num", "prep", "postp", "conj", "adv", "particle", "intj", "contraction",
         "noun", "adj"}
 CLOSED = {"pron", "det", "article", "prep", "postp", "conj", "particle", "contraction", "num"}
@@ -32,7 +35,8 @@ FORM_TAGS = {"plural", "feminine", "masculine", "neuter"}
 
 
 def url(name: str) -> str:
-    return f"https://kaikki.org/dictionary/{name}/kaikki.org-dictionary-{name}.jsonl"
+    folder, stem = urllib.parse.quote(name), urllib.parse.quote(name.replace("-", "").replace(" ", ""))
+    return f"https://kaikki.org/dictionary/{folder}/kaikki.org-dictionary-{stem}.jsonl"
 
 
 def trimmed(entry: dict) -> dict | None:
@@ -49,8 +53,11 @@ def trimmed(entry: dict) -> dict | None:
              if form.get("form") and FORM_TAGS & set(form.get("tags") or [])][:12]
     sounds = [sound["ipa"] for sound in entry.get("sounds") or [] if sound.get("ipa")][:2]
     heads = [{"args": head.get("args") or {}} for head in entry.get("head_templates") or []][:1]
+    etymology = [{"name": template.get("name"), "args": {key: (template.get("args") or {}).get(key) for key in ("2", "3")}}
+                 for template in entry.get("etymology_templates") or []
+                 if (template.get("args") or {}).get("2") in ("la", "la-vul", "la-lat", "la-med", "LL.", "VL.", "ML.")][:3]
     return {"word": entry["word"], "pos": entry["pos"], "senses": senses, "forms": forms,
-            "head_templates": heads, "sounds": [{"ipa": ipa} for ipa in sounds]}
+            "head_templates": heads, "sounds": [{"ipa": ipa} for ipa in sounds], "etymology_templates": etymology}
 
 
 def fetch(code: str, name: str) -> tuple[int, int]:
@@ -61,10 +68,10 @@ def fetch(code: str, name: str) -> tuple[int, int]:
     with urllib.request.urlopen(request, timeout=120) as response, partial.open("w", encoding="utf-8") as out:
         for line in response:
             read += 1
-            if b'"pos": "verb"' in line or b'"pos": "name"' in line:
+            if b'"pos": "name"' in line or code not in WITH_VERBS and b'"pos": "verb"' in line:
                 continue
             entry = json.loads(line)
-            if entry.get("pos") not in KEEP or " " in entry.get("word", " "):
+            if entry.get("pos") not in KEEP | ({"verb"} if code in WITH_VERBS else set()) or " " in entry.get("word", " "):
                 continue
             row = trimmed(entry)
             if row:
