@@ -12,48 +12,48 @@ The Latin Bible has 8,069 distinct dictionary words ([`bible_lexicon.md`](bible_
 - a **gloss**: a dictionary entry of the lect is glossed with a key of the Latin word (in English, one of the word's first senses; in any language, a headword whose translation table lists the Latin word, or a sense that language's Wiktionary gives it; in French, Spanish, Portuguese, Italian, Catalan and Romanian, also that language's reflex of the word and the word its Bible uses for it);
 - a **bridge**: the same in two steps, the key being a French or Spanish word that is itself only a gloss match for the Latin word.
 
-Each word is counted once, under the strongest route. A gloss or bridge match is a candidate to check, not a confirmed translation, so the table also counts the words that are **firm**: a form that a reflex, an etymology, a cognate note, a translation table or the lect's Bible gives, or that two separate sources give by a gloss (a bridge does not count). **Share of the text** weighs each word by how often the Bible uses it. The forms, each with its sources, are in `data/bible/lexicon/forms/{lect}.tsv`.
+Each word is counted once, under the strongest route. A gloss or bridge match is a candidate to check, not a confirmed translation, so the table also counts the words that are **firm**: a form that a reflex, an etymology, a cognate note, a translation table or the lect's Bible gives; or that two separate sources give by a gloss; or that one source gives by a gloss and that has the shape of the word's reflexes in the other lects (a bridge alone never counts). **Share of the text** weighs each word by how often the Bible uses it. The forms, each with its sources, are in `data/bible/lexicon/forms/{lect}.tsv`.
 
-36 of 36 lects have a form for 2,000 words or more; 24 have 2,000 firm.
+36 of 36 lects have a form for 2,000 words or more; 29 have 2,000 firm.
 
 | lect | reflex | etymology | cognate | translation | Bible | gloss | scan | bridge | words with a form | firm | of the 1,000 commonest | share of the text |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Italian (it) | 4,777 | 101 | 53 | 175 | 902 | 1,547 | 0 | 0 | 7,555 | 6,008 | 999 | 100% |
-| Spanish (es) | 4,351 | 63 | 69 | 238 | 1,057 | 1,687 | 0 | 0 | 7,465 | 5,778 | 1000 | 100% |
-| Occitan (oc) | 1,595 | 352 | 20 | 2,056 | 358 | 2,880 | 0 | 187 | 7,448 | 6,395 | 999 | 100% |
-| French (fr) | 3,514 | 171 | 104 | 389 | 1,405 | 1,861 | 0 | 0 | 7,444 | 5,583 | 1000 | 100% |
-| Galician (gl) | 2,806 | 84 | 34 | 2,208 | 0 | 2,169 | 0 | 100 | 7,401 | 6,693 | 998 | 100% |
-| Portuguese (pt) | 4,187 | 80 | 48 | 251 | 1,146 | 1,660 | 0 | 0 | 7,372 | 5,712 | 1000 | 100% |
-| Romanian (ro) | 2,754 | 117 | 38 | 375 | 1,697 | 2,319 | 0 | 0 | 7,300 | 4,981 | 1000 | 100% |
-| Gascon (gsc) | 0 | 0 | 0 | 5 | 103 | 5,335 | 0 | 1,848 | 7,291 | 3,143 | 996 | 99% |
-| Asturian (ast) | 1,388 | 269 | 8 | 1,579 | 0 | 3,440 | 0 | 537 | 7,221 | 4,779 | 995 | 99% |
-| Catalan (ca) | 3,525 | 99 | 30 | 352 | 0 | 3,028 | 0 | 0 | 7,034 | 4,006 | 982 | 99% |
-| Sardinian (sc) | 874 | 105 | 10 | 1,035 | 85 | 3,859 | 0 | 1,052 | 7,020 | 3,734 | 992 | 99% |
-| Walloon (wa) | 250 | 131 | 3 | 1,660 | 607 | 3,357 | 0 | 985 | 6,993 | 4,212 | 995 | 99% |
-| Aromanian (rup) | 776 | 115 | 11 | 952 | 835 | 3,920 | 0 | 341 | 6,950 | 4,582 | 996 | 99% |
-| Sicilian (scn) | 1,754 | 395 | 16 | 1,126 | 13 | 2,965 | 0 | 645 | 6,914 | 4,540 | 989 | 99% |
-| Aragonese (an) | 537 | 211 | 3 | 994 | 0 | 3,503 | 0 | 1,554 | 6,802 | 2,541 | 987 | 99% |
-| Lombard (lmo) | 438 | 73 | 6 | 865 | 748 | 4,064 | 0 | 577 | 6,771 | 3,179 | 988 | 99% |
-| Piedmontese (pms) | 1,059 | 30 | 14 | 696 | 2,821 | 1,035 | 0 | 1,071 | 6,726 | 4,791 | 999 | 99% |
-| Extremaduran (ext) | 162 | 0 | 0 | 397 | 0 | 3,633 | 0 | 2,435 | 6,627 | 715 | 976 | 98% |
-| Norman (nrf) | 496 | 636 | 2 | 1,373 | 28 | 3,051 | 0 | 725 | 6,311 | 4,206 | 968 | 98% |
-| Venetan (vec) | 911 | 141 | 10 | 1,071 | 482 | 3,482 | 0 | 213 | 6,310 | 3,809 | 978 | 98% |
-| Franco-Provençal (frp) | 633 | 42 | 1 | 264 | 41 | 3,471 | 0 | 1,810 | 6,262 | 1,363 | 971 | 98% |
-| Friulian (fur) | 1,150 | 99 | 3 | 1,333 | 195 | 3,171 | 58 | 166 | 6,175 | 4,250 | 981 | 98% |
-| Corsican (co) | 449 | 291 | 3 | 763 | 0 | 3,687 | 0 | 973 | 6,166 | 2,814 | 964 | 98% |
-| Ladin (lld) | 372 | 69 | 3 | 527 | 83 | 3,975 | 0 | 989 | 6,018 | 1,798 | 975 | 98% |
-| Ladino (lad) | 303 | 234 | 3 | 762 | 0 | 4,141 | 0 | 468 | 5,911 | 2,891 | 958 | 97% |
-| Istriot (ist) | 357 | 89 | 0 | 281 | 0 | 3,665 | 0 | 1,360 | 5,752 | 1,300 | 927 | 96% |
-| Picard (pcd) | 82 | 0 | 14 | 508 | 36 | 2,388 | 201 | 2,481 | 5,710 | 1,067 | 955 | 97% |
-| Gallo (gallo) | 22 | 0 | 14 | 465 | 0 | 2,432 | 0 | 2,731 | 5,664 | 1,794 | 900 | 94% |
-| Ligurian (lij) | 399 | 142 | 2 | 428 | 423 | 3,976 | 83 | 26 | 5,479 | 1,962 | 961 | 97% |
-| Romansh (rm) | 742 | 85 | 10 | 1,073 | 215 | 2,265 | 9 | 708 | 5,107 | 2,824 | 933 | 96% |
-| Emilian (eml) | 490 | 207 | 0 | 160 | 77 | 2,400 | 613 | 771 | 4,718 | 1,121 | 872 | 92% |
-| Mirandese (mwl) | 355 | 61 | 3 | 593 | 57 | 1,989 | 261 | 971 | 4,290 | 2,022 | 900 | 94% |
-| Dalmatian (dlm) | 526 | 110 | 4 | 428 | 32 | 2,257 | 0 | 534 | 3,891 | 1,904 | 825 | 90% |
-| Istro-Romanian (ruo) | 160 | 0 | 2 | 85 | 0 | 1,675 | 0 | 1,156 | 3,078 | 381 | 760 | 87% |
-| Romagnol (rgn) | 259 | 81 | 0 | 344 | 356 | 1,495 | 297 | 12 | 2,844 | 1,381 | 767 | 88% |
-| Megleno-Romanian (ruq) | 249 | 98 | 7 | 108 | 0 | 1,546 | 0 | 614 | 2,622 | 658 | 611 | 78% |
+| Italian (it) | 4,777 | 101 | 53 | 175 | 902 | 1,547 | 0 | 0 | 7,555 | 6,351 | 999 | 100% |
+| Spanish (es) | 4,351 | 63 | 69 | 238 | 1,057 | 1,687 | 0 | 0 | 7,465 | 6,102 | 1000 | 100% |
+| Occitan (oc) | 1,595 | 352 | 20 | 2,056 | 358 | 2,880 | 0 | 187 | 7,448 | 6,616 | 999 | 100% |
+| French (fr) | 3,514 | 171 | 104 | 389 | 1,405 | 1,861 | 0 | 0 | 7,444 | 5,915 | 1000 | 100% |
+| Galician (gl) | 2,806 | 84 | 34 | 2,208 | 0 | 2,169 | 0 | 100 | 7,401 | 6,804 | 998 | 100% |
+| Portuguese (pt) | 4,187 | 80 | 48 | 251 | 1,146 | 1,660 | 0 | 0 | 7,372 | 5,989 | 1000 | 100% |
+| Romanian (ro) | 2,754 | 117 | 38 | 375 | 1,697 | 2,319 | 0 | 0 | 7,300 | 5,479 | 1000 | 100% |
+| Gascon (gsc) | 0 | 0 | 0 | 5 | 103 | 5,335 | 0 | 1,848 | 7,291 | 4,328 | 996 | 99% |
+| Asturian (ast) | 1,388 | 269 | 8 | 1,579 | 0 | 3,440 | 0 | 537 | 7,221 | 5,403 | 995 | 99% |
+| Catalan (ca) | 3,525 | 99 | 30 | 352 | 0 | 3,028 | 0 | 0 | 7,034 | 4,566 | 982 | 99% |
+| Sardinian (sc) | 874 | 105 | 10 | 1,035 | 85 | 3,859 | 0 | 1,052 | 7,020 | 4,347 | 992 | 99% |
+| Walloon (wa) | 250 | 131 | 3 | 1,660 | 607 | 3,357 | 0 | 985 | 6,993 | 4,411 | 995 | 99% |
+| Aromanian (rup) | 776 | 115 | 11 | 952 | 835 | 3,920 | 0 | 341 | 6,950 | 4,689 | 996 | 99% |
+| Sicilian (scn) | 1,754 | 395 | 16 | 1,126 | 13 | 2,965 | 0 | 645 | 6,914 | 4,660 | 989 | 99% |
+| Aragonese (an) | 537 | 211 | 3 | 994 | 0 | 3,503 | 0 | 1,554 | 6,802 | 3,820 | 987 | 99% |
+| Lombard (lmo) | 438 | 73 | 6 | 865 | 748 | 4,064 | 0 | 577 | 6,771 | 3,933 | 988 | 99% |
+| Piedmontese (pms) | 1,059 | 30 | 14 | 696 | 2,821 | 1,035 | 0 | 1,071 | 6,726 | 5,019 | 999 | 99% |
+| Extremaduran (ext) | 162 | 0 | 0 | 397 | 0 | 3,633 | 0 | 2,435 | 6,627 | 2,487 | 976 | 98% |
+| Norman (nrf) | 496 | 636 | 2 | 1,373 | 28 | 3,051 | 0 | 725 | 6,311 | 4,338 | 968 | 98% |
+| Venetan (vec) | 911 | 141 | 10 | 1,071 | 482 | 3,482 | 0 | 213 | 6,310 | 4,140 | 978 | 98% |
+| Franco-Provençal (frp) | 633 | 42 | 1 | 264 | 41 | 3,471 | 0 | 1,810 | 6,262 | 2,456 | 971 | 98% |
+| Friulian (fur) | 1,150 | 99 | 3 | 1,333 | 195 | 3,171 | 58 | 166 | 6,175 | 4,503 | 981 | 98% |
+| Corsican (co) | 449 | 291 | 3 | 763 | 0 | 3,687 | 0 | 973 | 6,166 | 3,266 | 964 | 98% |
+| Ladin (lld) | 372 | 69 | 3 | 527 | 83 | 3,975 | 0 | 989 | 6,018 | 2,744 | 975 | 98% |
+| Ladino (lad) | 303 | 234 | 3 | 762 | 0 | 4,141 | 0 | 468 | 5,911 | 3,304 | 958 | 97% |
+| Istriot (ist) | 357 | 89 | 0 | 281 | 0 | 3,665 | 0 | 1,360 | 5,752 | 1,900 | 927 | 96% |
+| Picard (pcd) | 82 | 0 | 14 | 508 | 36 | 2,388 | 201 | 2,481 | 5,710 | 1,557 | 955 | 97% |
+| Gallo (gallo) | 22 | 0 | 14 | 465 | 0 | 2,432 | 0 | 2,731 | 5,664 | 1,975 | 900 | 94% |
+| Ligurian (lij) | 399 | 142 | 2 | 428 | 423 | 3,976 | 83 | 26 | 5,479 | 2,534 | 961 | 97% |
+| Romansh (rm) | 742 | 85 | 10 | 1,073 | 215 | 2,265 | 9 | 708 | 5,107 | 3,029 | 933 | 96% |
+| Emilian (eml) | 490 | 207 | 0 | 160 | 77 | 2,400 | 613 | 771 | 4,718 | 1,222 | 872 | 92% |
+| Mirandese (mwl) | 355 | 61 | 3 | 593 | 57 | 1,989 | 261 | 971 | 4,290 | 2,164 | 900 | 94% |
+| Dalmatian (dlm) | 526 | 110 | 4 | 428 | 32 | 2,257 | 0 | 534 | 3,891 | 2,075 | 825 | 90% |
+| Istro-Romanian (ruo) | 160 | 0 | 2 | 85 | 0 | 1,675 | 0 | 1,156 | 3,078 | 542 | 760 | 87% |
+| Romagnol (rgn) | 259 | 81 | 0 | 344 | 356 | 1,495 | 297 | 12 | 2,844 | 1,453 | 767 | 88% |
+| Megleno-Romanian (ruq) | 249 | 98 | 7 | 108 | 0 | 1,546 | 0 | 614 | 2,622 | 737 | 611 | 78% |
 
 ↓ marks a lect below 2,000.
 

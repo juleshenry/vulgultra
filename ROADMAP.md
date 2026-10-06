@@ -334,8 +334,8 @@ Needs from the verb work: final person labels, reflexive `se`, pro-drop.
       translation tables, the lects' own Wiktionaries and Bible texts, and
       some forty dictionaries and glossaries
       ([`docs/sources_bible_lexicon.md`](docs/sources_bible_lexicon.md)).
-      24 lects have 2,000 firm; the weakest are Istro-Romanian (381 firm),
-      Megleno-Romanian (658) and Extremaduran (715).
+      29 lects have 2,000 firm; the weakest are Istro-Romanian (542 firm),
+      Megleno-Romanian (737) and Emilian (1,222).
 - [ ] Check the gloss and two-step candidates by sense before they compete
       for a root; finish the page readings listed under "What is left to do"
       in `docs/sources_bible_lexicon.md`.

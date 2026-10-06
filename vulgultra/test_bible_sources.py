@@ -108,6 +108,11 @@ class WitnessTests(unittest.TestCase):
         self.assertEqual(coverage.glossary_source("apertium-oci-fra-gascon", "fr"), "apertium-oci-fra")
         self.assertEqual(coverage.glossary_source("wiktionary-kaikki", "pl"), "pl.wiktionary")
 
+    def test_a_family_likeness_is_a_witness(self) -> None:
+        self.assertEqual(coverage.witnesses({"gloss:en:en.wiktionary", "shape:family"}), 2)
+        self.assertGreaterEqual(align.resemblance(align.shape("sèmpar"), align.shape("sempre")), coverage.COGNATE_SHAPE)
+        self.assertLess(align.resemblance(align.shape("avér"), align.shape("tenere")), coverage.COGNATE_SHAPE)
+
     def test_a_scan_is_a_witness_but_a_bridge_is_not(self) -> None:
         self.assertEqual(coverage.witnesses({"scan:text"}), 1)
         self.assertEqual(coverage.witnesses({"scan:it:ferrari-1835 (scan)", "gloss:en:en.wiktionary"}), 2)

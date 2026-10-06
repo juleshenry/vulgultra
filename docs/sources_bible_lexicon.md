@@ -18,25 +18,28 @@ words by reflex and etymology, and 34 once dictionary glosses were read. All
 
 | lect | 5 October | now | of which firm |
 |---|---:|---:|---:|
-| Istro-Romanian | 811 | 3,078 | 381 |
-| Megleno-Romanian | 1,297 | 2,622 | 658 |
-| Romagnol | 2,118 | 2,844 | 1,381 |
-| Piedmontese | 2,399 | 6,726 | 4,791 |
-| Ligurian | 2,488 | 5,479 | 1,962 |
-| Istriot | 2,603 | 5,752 | 1,300 |
-| Sardinian | 2,649 | 7,020 | 3,734 |
-| Dalmatian | 2,802 | 3,891 | 1,904 |
-| Ladin | 2,952 | 6,018 | 1,798 |
-| Lombard | 3,089 | 6,771 | 3,179 |
-| Emilian | 3,153 | 4,718 | 1,121 |
-| Romansh | 3,481 | 5,107 | 2,824 |
-| Mirandese | 3,493 | 4,290 | 2,022 |
+| Istro-Romanian | 811 | 3,078 | 542 |
+| Megleno-Romanian | 1,297 | 2,622 | 737 |
+| Romagnol | 2,118 | 2,844 | 1,453 |
+| Piedmontese | 2,399 | 6,726 | 5,019 |
+| Ligurian | 2,488 | 5,479 | 2,534 |
+| Istriot | 2,603 | 5,752 | 1,900 |
+| Sardinian | 2,649 | 7,020 | 4,347 |
+| Dalmatian | 2,802 | 3,891 | 2,075 |
+| Ladin | 2,952 | 6,018 | 2,744 |
+| Lombard | 3,089 | 6,771 | 3,933 |
+| Emilian | 3,153 | 4,718 | 1,222 |
+| Romansh | 3,481 | 5,107 | 3,029 |
+| Mirandese | 3,493 | 4,290 | 2,164 |
 
 "Firm" is the honest column: a form that a reflex, an etymology, a cognate
-note, a translation table or the lect's own Bible gives, or that two separate
-sources give by gloss. The rest are candidates found through one dictionary
-gloss or through a two-step match, and need a sense check before they compete
-for a root.
+note, a translation table or the lect's own Bible gives; or that two separate
+sources give by gloss; or that one source gives by gloss and that has the
+shape of the word's reflexes in the other lects (Romagnol *sèmpar*, glossed
+"always", beside *sempre* and *siempre*). The rest are candidates found
+through one dictionary gloss or through a two-step match, and need a sense
+check before they compete for a root. In a sample of 25 Romagnol forms the
+shape test passed, about 20 were the right word.
 
 ## The kinds of source
 

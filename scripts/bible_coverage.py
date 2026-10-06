@@ -58,6 +58,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 
+import align_bible as align  # noqa: E402
 import audit_grid_sources as audit  # noqa: E402
 import build_bible_lexicon as bible  # noqa: E402
 import build_building_blocks as blocks  # noqa: E402
@@ -95,6 +96,10 @@ STATED = ("reflex", "etymology", "cognate", "translation", "bible")
 # The lects other dictionaries are glossed in; read first, so their forms can serve as keys.
 ANCHORS = ("fr", "es", "pt", "it", "ca", "ro")
 BRIDGE_KEYS = 6   # at most this many forms of an anchor lect stand in for a Latin word
+# A form a gloss gives is also a witness to itself when it has the shape of the word's reflexes in the
+# other lects (Romagnol sèmpar, glossed "always", beside sempre, siempre, semper): the dictionary speaks
+# for the meaning and the shape for the descent. How alike two shapes must be, as `align_bible.resemblance`.
+COGNATE_SHAPE = 0.55
 ARTICLE = {
     "it": r"^(?:il|lo|la|i|gli|le|un|uno|una)\s+|^(?:l|un)'\s*", "es": r"^(?:el|la|los|las|un|una)\s+",
     "pt": r"^(?:o|a|os|as|um|uma)\s+", "ca": r"^(?:el|la|els|les|un|una)\s+|^l'\s*",
@@ -420,6 +425,17 @@ def main() -> None:
                             if agree(tables.classes.get(language, {}).get(key, frozenset()), latin_class[word]):
                                 for form in tables.listed.get(language, {}).get(lect, {}).get(key, ()):
                                     given[form].add(f"{route}:{language}:table")
+                # A candidate with one witness gets a second from its shape, if it looks like the family.
+                family = None
+                for form, via in given.items():
+                    if any(label.startswith(STATED) for label in via) or witnesses(via) != 1:
+                        continue
+                    if family is None:
+                        stem = word[:-2] if len(word) > 4 else word
+                        family = [align.shape(stem)] + [align.shape(reflex) for reflexes in words[word]["reflexes"].values()
+                                                        for reflex in reflexes[:2]]
+                    if max(align.resemblance(align.shape(form), seen) for seen in family) >= COGNATE_SHAPE:
+                        via.add("shape:family")
                 # Last, so that a form read off an unproofread scan can be checked against the dictionaries.
                 for form, proofread in from_text.get(word, {}).items():
                     label = "bible:text" if proofread or form in given else "scan:text"   # before given[form] makes the key
@@ -434,7 +450,9 @@ def main() -> None:
                     for form in sorted(by_route[route] - seen):
                         via = sorted(label.replace(" ", "_") for label in given[form])
                         out.write(f"{rank}\t{word}\t{route}\t{form}\t{witnesses(given[form])}\t{' '.join(via)}\n")
-                        if route in STATED or witnesses(given[form]) >= 2:
+                        # Two witnesses make a form firm only if one of them is a dictionary's gloss in a
+                        # trusted spelling: a scan and a family likeness do not add up to one.
+                        if route in STATED or witnesses(given[form]) >= 2 and any(v.startswith("gloss:") for v in given[form]):
                             firm[lect].add(word)
                     seen |= by_route[route]
                     if by_route[route]:
@@ -467,8 +485,9 @@ def main() -> None:
         "gloss match for the Latin word.", "",
         "Each word is counted once, under the strongest route. A gloss or bridge match is a candidate to "
         "check, not a confirmed translation, so the table also counts the words that are **firm**: a form "
-        "that a reflex, an etymology, a cognate note, a translation table or the lect's Bible gives, or that two separate "
-        "sources give by a gloss (a bridge does not count). **Share of the text** weighs each word by how often the Bible uses it. The forms, "
+        "that a reflex, an etymology, a cognate note, a translation table or the lect's Bible gives; or that two separate "
+        "sources give by a gloss; or that one source gives by a gloss and that has the shape of the word's reflexes "
+        "in the other lects (a bridge alone never counts). **Share of the text** weighs each word by how often the Bible uses it. The forms, "
         "each with its sources, are in `data/bible/lexicon/forms/{lect}.tsv`.", "",
         f"{len(reached)} of {len(SOURCE_LANGS)} lects have a form for {TARGET:,} words or more; "
         f"{len(firmly)} have {TARGET:,} firm.", "",
