@@ -49,10 +49,12 @@ need, so they come before the forms. The number after a word is its Latin word's
 
 ## Step 3. Nouns and adjectives
 
-- **3.1 How a noun forms its plural.** Seventeen lects add *-s* to a masculine noun (Spanish,
-  Portuguese, Catalan, French, Occitan, Sardinian, Romansh...); nine change the final vowel
-  (Italian, Romanian, Sicilian, Venetan, Corsican...); three leave it unchanged (Lombard,
-  Piedmontese, Emilian). For feminines it is sixteen against thirteen.
+- **3.1 How a noun forms its plural.** By each lect's commonest pattern, in the 31 lects whose
+  nouns record a plural: eighteen form the masculine plural in *-s* (Spanish, Portuguese, Catalan,
+  French, Occitan, Sardinian, Romansh...); nine change or add a vowel (Italian, Romanian, Sicilian,
+  Venetan, Corsican...); three leave it unchanged (Lombard, Piedmontese, Emilian); Romagnol has no
+  one pattern. For feminines it is eighteen in *-s* against twelve with a vowel, and Aromanian has
+  no one pattern.
   ([`eval/plural_formation.md`](eval/plural_formation.md))
 - **3.2 Gender.** Two genders or three (Romanian and Aromanian have a neuter)?
 

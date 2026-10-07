@@ -285,7 +285,7 @@ Selection, not started:
       (decision 6.5; the list is in `docs/sources_bible_lexicon.md`).
 
 **Gate G6, homophones at scale.** The policy is set at Gate G0; this gate
-checks it against the first slice. 196 of the 213 roots are one syllable, and
+checks it against the first slice. 202 of the 213 roots are one syllable, and
 a review estimate puts roughly a tenth of words in a homophone pair at 1,000
 meanings under the present policy, and far more when most cells come from a
 few lects.
