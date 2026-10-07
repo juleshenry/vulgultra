@@ -77,12 +77,14 @@ Verse alignment is useful evidence and context, but it does not itself
 identify which word in one verse translates which word in another. The
 lexical concept alignment must remain reviewable.
 
-The five TSV lexicons do not exist yet. Until they are supplied, the
-grid-default pipeline uses the existing 36-lect core grid; it does not claim
-Bible coverage for an unfilled cell. What exists instead is the evidence a
-reviewer would write them from: the Vulgate's 8,069 dictionary words with
-their daughter reflexes ([`eval/bible_lexicon.md`](eval/bible_lexicon.md)),
-the word each modern Bible uses for them
-([`eval/bible_anchor_words.md`](eval/bible_anchor_words.md)), and each lect's
-candidate forms ([`eval/bible_coverage.md`](eval/bible_coverage.md)). Whether
-Latin is the word list is the first entry in [`decisions.md`](decisions.md).
+The five TSV lexicons do not exist, and the plan no longer writes them by
+hand: step 6 of [`../ROADMAP.md`](../ROADMAP.md) replaces this importer with
+rows built from each lect's candidate forms
+(`data/bible/lexicon/forms/{lect}.tsv`). Until then the grid-default pipeline
+uses the existing 36-lect core grid; it does not claim Bible coverage for an
+unfilled cell. The pool those rows will come from is on disk: the Vulgate's
+8,069 dictionary words with their daughter reflexes
+([`eval/bible_lexicon.md`](eval/bible_lexicon.md)), the word each modern
+Bible uses for them ([`eval/bible_anchor_words.md`](eval/bible_anchor_words.md)),
+and each lect's candidate forms ([`eval/bible_coverage.md`](eval/bible_coverage.md)).
+Whether Latin is the word list is decision 6.1 in [`decisions.md`](decisions.md).

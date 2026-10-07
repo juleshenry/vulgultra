@@ -40,7 +40,9 @@ is a hard shortlist, so Rust SA cannot buy a shorter word with extra sounds.
 The command also refreshes the phrase report from that exact annealed
 lexicon. An optional five-language Bible lexicon grid can be compiled as
 described in [`docs/bible_grid.md`](docs/bible_grid.md), then passed with
-`--bible-grid data/bible/concept_grid.json`.
+`--bible-grid data/bible/concept_grid.json`. This importer is the one on
+disk; step 6 of [`ROADMAP.md`](ROADMAP.md) replaces it with rows built from
+each lect's candidate forms.
 Once the five aligned TSVs exist, the complete Bible-to-lexicon run is:
 
 ```bash
