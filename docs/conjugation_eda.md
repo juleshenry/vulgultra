@@ -23,9 +23,20 @@ boundaries from a compact string.
   representative 6-slot grids)
 - normalized JSON under `data/conjugation/sources/{lect}.json`
 
-`data/conjugation/source_manifest.json` marks harvested lects. Lects without a
-local Kaikki dump remain `pending`. Extremaduran stays `raw-unaligned` until
-its flattened tables get six-slot labels.
+`data/conjugation/source_manifest.json` marks harvested lects; all 36 are
+marked today. Sources other than Kaikki come through their own harvesters:
+`scripts/harvest_verbix.py` writes `{lect}_verbix.json`, and the per-lect
+ones (`harvest_dlm_verbix.py`, `harvest_ist_verbix.py`,
+`harvest_ruo_verbix.py`, `harvest_ruq_rvid.py`, `harvest_gallo_frwikt.py`,
+`harvest_picard_diseux.py`, `harvest_rgn_templates.py`,
+`harvest_ext_recursos.py`) write `{lect}_diseux.json`. The page builder
+merges both into `{lect}.json`.
+
+The tracked reports lag the data. [`eval/conjugation_eda.md`](eval/conjugation_eda.md)
+was last written with 20 lects. [`conjugations/gsc.md`](conjugations/gsc.md)
+and the index say Gascon has no source, while
+`data/conjugation/sources/gsc.json` holds 100 paradigms from Verbix. The
+commands below rewrite both.
 
 Orthographic ending inventories live in each JSON file's
 `metadata.ending_inventories`. Candidate phoneme links need explicit

@@ -2,13 +2,14 @@
 
 | Source | Status | Ingest |
 |---|---|---|
-| **Cantemir 2020 thesis** [`data/sources/pdf/Cantemir_Thesis_Final_Draft-converted.pdf`](../data/sources/pdf/Cantemir_Thesis_Final_Draft-converted.pdf) | Southern IR/Vlashki vs Daco-Romanian; appendix wordlist + numbered examples (p. 40–41 word-final `/l/` deletion, etc.) | **Done:** IR IPA → practical spelling in `ruo_words.json` (`cantemir2020`). Swadesh overlays in `RUO_OVERRIDES` (incl. attested `sănze` blood). |
+| **Cantemir 2020 thesis** [`data/sources/pdf/Cantemir_Thesis_Final_Draft-converted.pdf`](../data/sources/pdf/Cantemir_Thesis_Final_Draft-converted.pdf) | Southern IR/Vlashki vs Daco-Romanian; appendix wordlist + numbered examples (p. 40–41 word-final `/l/` deletion, etc.) | **Done:** IR IPA → practical spelling in `ruo_words.json` (`cantemir2020`). No grid cell is taken from it: the column is `RUO_WIKT_SWADESH`, `RUO_WIKT_ENTRIES` and `RUO_SAENKO` below. |
 | En Wiktionary `Category:Istro-Romanian lemmas` | ~109 lemmas | Done (`wikt_category`). |
 | **[Appendix:Istro-Romanian Swadesh list](https://en.wiktionary.org/wiki/Appendix:Istro-Romanian_Swadesh_list)** | 207-concept list; 140 filled | **Done:** `RUO_WIKT_SWADESH` (first citation form). `sănze` blood kept over appendix `sânže`. Empty appendix cells stay empty. |
 | En Wiktionary translation tables and Latin descendant lists | 107 translations, 202 descendants citing an Istro-Romanian form | **Done:** `RUO_WIKT_ENTRIES`, 8 cells (table below). |
 | **Saenko 2015**, *Annotated Swadesh wordlists for the Romance group* (Global Lexicostatistical Database; CLDF at [lexibank/saenkoromance](https://github.com/lexibank/saenkoromance), CC-BY-4.0) | 110 concepts, with source spelling, transcription and stress | **Done:** `RUO_SAENKO`, 18 cells. Local copy in `data/sources/saenkoromance/`. |
 | Kaikki / Wikipedia | None | English-edition Kaikki 404; no `ruowiki`. |
 | Kovačec / Byhan / vlaski-zejanski | Dictionaries / site | Not bulk-open. Do not scrape. |
+| Pușcariu 1929, Maiorescu 1900, Glavina 1904 | Glossaries, read from the page images or by machine | Bible lexicon only: `data/sources/glossaries/ruo/`, recorded in [`sources_bible_lexicon.md`](sources_bible_lexicon.md). Not in `ruo_words.json` or the grid. |
 | **Verbix Istro-Romanian docs** + scanned notes | Four conjugations + -éi/-úi; present/imperfect/future/perfect/conditional | **Done:** `scripts/harvest_ruo_verbix.py` → `data/conjugation/sources/ruo_diseux.json`, page `docs/conjugations/ruo.md`. Secondary summary — prefer Neiescu/Kovačec/Oxford for formal citation. See `docs/eval/ruo_conjugation_notes.md`. |
 
 Cantemir appendix columns are Daco-Romanian orthography, DR IPA, **IR IPA**, English. IR lemmas are the IPA column, not the Romanian spelling. Example (p. 40, ex. 27): DR `['fo.kul]` ~ IR `['fo.ku]` ‘the fire’ → `foku`.

@@ -1,6 +1,6 @@
 # Corpus status
 
-Bibliography and counts. Remaining *work* is in [`TODO.md`](../TODO.md).
+Bibliography and counts. Remaining *work* is in [`ROADMAP.md`](../ROADMAP.md).
 Hole-lect notes: [`sources_romansh.md`](sources_romansh.md),
 [`sources_istriot.md`](sources_istriot.md),
 [`sources_ruo.md`](sources_ruo.md).
@@ -22,7 +22,7 @@ Do not scrape Pledari, DRG, TalkBank, Verbix site-wide, or vlaski-zejanski.
 | Ibero | gl | Galician | 48775 | 0 | lemmas |
 | Ibero | an | Aragonese | 58746 | 488318 | both |
 | Ibero | ast | Asturian | 59792 | 0 | lemmas |
-| Ibero | ext | Extremaduran | book | 0 | lemmas (Carmona / GitHub) |
+| Ibero | ext | Extremaduran | 19910 | 0 | lemmas (Carmona / GitHub) |
 | Ibero | lad | Ladino | 2612 | 97202 | wiki |
 | Ibero | mwl | Mirandese | 60207 | 177906 | both |
 | Occitano | oc | Occitan | 235721 | 0 | lemmas |
@@ -52,11 +52,18 @@ Do not scrape Pledari, DRG, TalkBank, Verbix site-wide, or vlaski-zejanski.
 | Eastern | ro | Romanian | 25000 | 0 | lemmas |
 | Eastern | rup | Aromanian | 5337 | 65489 | wiki |
 | Eastern | ruo | Istro-Romanian | 335 | 0 | **thin** |
-| Eastern | ruq | Megleno-Romanian | ~212 | 0 | **thin** |
+| Eastern | ruq | Megleno-Romanian | 498 | 0 | **thin** |
 
 Reserved (not sources): `la` Latin, `en` English.
 
-## Thin lects (open-source ceiling)
+## Thin lects
+
+Where each word table (`{code}_words.json`) stops. The dictionaries and
+glossaries read since for the Bible lexicon (Dalla Zonca for Istriot, Bartoli
+and Ive for Dalmatian, Pușcariu, Maiorescu and Glavina for Istro-Romanian,
+Capidan for Megleno-Romanian) are under `data/sources/glossaries/` and
+recorded in [`sources_bible_lexicon.md`](sources_bible_lexicon.md); they are
+not counted in the table above.
 
 | code | why it stops |
 |---|---|
@@ -64,7 +71,7 @@ Reserved (not sources): `la` Latin, `en` English.
 | `dlm` | Kaikki max. No Wikipedia. [`data/sources/pdf/Il Dalmatico.pdf`](../data/sources/pdf/Il%20Dalmatico.pdf) has no text layer. |
 | `rgn` | Kaikki max. No Wikipedia. |
 | `ruo` | Cantemir 2020 appendix. No Kaikki/wiki. Do not scrape vlaski-zejanski. |
-| `ruq` | Swadesh appendix + category. No Kaikki/wiki. |
+| `ruq` | Swadesh appendix + category + ASJP. No Kaikki/wiki. |
 
 ## Incubator `Wt/` (extracted 2026-09-20)
 

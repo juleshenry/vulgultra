@@ -8,5 +8,6 @@
 | Kaikki / Wikipedia | None | English-edition Kaikki 404; no `ruqwiki` |
 | **Capidan 1925** *Meglenoromânii* I ([Wikisource Vol. I](https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I)) | Foundational grammar + conjugation; a fi often via pp. 172–74 in secondary cites | **Done (tables):** class exemplars + `iri/sam` on `docs/conjugations/ruq.md` |
 | **RVID 2.0 / ODRVM** ([GitLab](https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset)) | 37 lexemes, 2293 IPA forms; Capidan-based, border-generalized | **Done:** `data/sources/rvid_megleno/` → `scripts/harvest_ruq_rvid.py` → `ruq_diseux.json` |
+| Capidan 1935 *Dicționar meglenoromân* | Machine reading, 1,832 rows; 951 entries with his special letters set aside | Bible lexicon only: `data/sources/glossaries/ruq/`, recorded in [`sources_bible_lexicon.md`](sources_bible_lexicon.md). Not in `ruq_words.json` or the grid. |
 | Atanasov 2002 *Meglenoromâna astăzi* | Modern qualification | Cite for dialectal/modern caveats (not bulk-ingested) |
 | Notes | | `docs/eval/ruq_conjugation_notes.md` |

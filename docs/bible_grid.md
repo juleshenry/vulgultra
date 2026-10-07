@@ -71,13 +71,18 @@ five TSV lexicons
 ```
 
 The generated JSON contains only lexicon forms and references, not Bible
-verse text. The verse-aligned [BibleNLP/eBible corpus](https://github.com/BibleNLP/ebible)
-is a candidate source: its translations align to canonical book/chapter/verse
-references, and translation-level licensing must be retained. Verse alignment
-is useful evidence and context, but it does not itself identify which word in
-one verse translates which word in another. The lexical concept alignment
-must remain reviewable.
+verse text. The six texts on disk are keyed by book, chapter and verse, and
+each edition's licence is recorded with it ([`bible_sources.md`](bible_sources.md)).
+Verse alignment is useful evidence and context, but it does not itself
+identify which word in one verse translates which word in another. The
+lexical concept alignment must remain reviewable.
 
-The repository currently has no imported Bible editions/lexicons. Until those
-are supplied, the grid-default pipeline uses the existing 36-lect core grid;
-it does not claim Bible coverage for an unfilled cell.
+The five TSV lexicons do not exist yet. Until they are supplied, the
+grid-default pipeline uses the existing 36-lect core grid; it does not claim
+Bible coverage for an unfilled cell. What exists instead is the evidence a
+reviewer would write them from: the Vulgate's 8,069 dictionary words with
+their daughter reflexes ([`eval/bible_lexicon.md`](eval/bible_lexicon.md)),
+the word each modern Bible uses for them
+([`eval/bible_anchor_words.md`](eval/bible_anchor_words.md)), and each lect's
+candidate forms ([`eval/bible_coverage.md`](eval/bible_coverage.md)). Whether
+Latin is the word list is the first entry in [`decisions.md`](decisions.md).
