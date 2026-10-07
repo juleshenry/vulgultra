@@ -14,6 +14,6 @@ lect coverage bonus, and a same-stem support term. Its recorded mixed run was:
 
 The current rule is instead a hard legal minimum-syllable shortlist followed by
 root inventory maximization; source spread and morpheme uniformity are audit
-fields only. See [`34_romance_scorecard.md`](34_romance_scorecard.md) for the
+fields only. See [`romance_scorecard.md`](romance_scorecard.md) for the
 current generated report and [`../grammar/grammar.tex`](../grammar/grammar.tex)
 for the specification.

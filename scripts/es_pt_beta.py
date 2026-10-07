@@ -583,7 +583,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Render the selected lexicon and phrase examples")
     parser.add_argument("-c", "--candidates", default="data/candidates.json")
     parser.add_argument("-l", "--lexicon", default="data/vulgultra_lexicon.json")
-    parser.add_argument("-o", "--output", default="docs/eval/34_romance_scorecard.md")
+    parser.add_argument("-o", "--output", default="docs/eval/romance_scorecard.md")
     parser.add_argument("--init-energy", type=float, default=None,
                         help="Initial energy from Rust SA stdout")
     parser.add_argument("--check", action="store_true",

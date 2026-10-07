@@ -67,7 +67,7 @@ five TSV lexicons
     → IPA candidates + minimum-σ shortlist
     → Rust root annealing + ending selection
     → data/vulgultra_lexicon.json
-    → docs/eval/34_romance_scorecard.md
+    → docs/eval/romance_scorecard.md
 ```
 
 The generated JSON contains only lexicon forms and references, not Bible

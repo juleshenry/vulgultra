@@ -28,7 +28,7 @@ def main() -> None:
     parser.add_argument("--grid", type=Path, default=Path("data/concept_grid.json"))
     parser.add_argument("--lexicon", type=Path, default=Path("data/vulgultra_lexicon.json"))
     parser.add_argument("--report", type=Path,
-                        default=Path("docs/eval/34_romance_scorecard.md"))
+                        default=Path("docs/eval/romance_scorecard.md"))
     args = parser.parse_args()
 
     def absolute(path: Path) -> str:
