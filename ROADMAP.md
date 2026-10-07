@@ -1,63 +1,50 @@
-# Roadmap: everything except verb conjugation
+# Roadmap
 
-Verb conjugation is being built by hand (harvest → per-lect pages → shortlist
-→ manual picks). This roadmap covers the rest of the language so it can move
-in parallel: noun and adjective declension, closed classes, the lexicon,
-syntax, and the first real texts.
+Vulgultra is built class by class, in the order below, and the lexicon comes
+last because every word in it needs the classes before it: a letter for each
+of its sounds, endings to take, small words to stand beside. The order was
+set on 7 October 2026.
 
-Canonical spec stays [`docs/grammar/grammar.tex`](docs/grammar/grammar.tex).
-A stage changes the spec only after its gate.
+Verb conjugation is built by hand (harvest → per-lect pages → shortlist →
+manual picks) and its files are not touched from this roadmap; everything
+else is. Canonical spec stays [`docs/grammar/grammar.tex`](docs/grammar/grammar.tex).
+A step changes the spec only after its gate. The decisions each gate needs
+are queued, step by step, in [`docs/decisions.md`](docs/decisions.md).
 
-## Goal and order (stated 2026-10-05)
+## The order
 
-The goal is a lexicon at the level of the Bible, annealed word by word. The
-213-meaning Swadesh grid is an illustration and a test bed for the readers
-and the optimizer, not the product: no more work goes into polishing its
-columns for their own sake.
+| Step | What | Harvested | Picked | Waits on |
+|---:|---|---|---|---|
+| 0 | Spelling, and choosing among equally short forms | the evidence is in | nothing | two decisions |
+| 1 | Verbs | per-lect pages and a shortlist | by hand, outside this roadmap | — |
+| 2 | Small words: prepositions, conjunctions, pronouns, articles | 162 meanings in all 36 lects | nothing | the case decision; person labels from the verbs |
+| 3 | Nouns and adjectives | plural patterns only | nothing | a harvest that is not built yet |
+| 4 | Numerals | 23 meanings in all 36 lects | nothing | step 3, for the ordinals |
+| 5 | Proper nouns | nothing | nothing | a rule for where a name's form comes from |
+| 6 | Lexicon, the Bible first | 8,069 Bible words, with candidate forms in every lect | nothing | steps 0 to 5 |
 
-First come the building blocks every sentence needs, picked by hand from
-what the daughters attest: personal pronouns, possessives, articles and
-demonstratives, interrogatives, quantifiers, numerals, prepositions,
-conjunctions, the small adverbs, and how a noun forms its plural. Then the
-Bible lexicon.
+After the lexicon: derivation, syntax, then a dictionary, texts and the
+primer.
 
-- [x] First harvest of the building blocks, from the Wiktionary extracts on
-      disk (`scripts/build_building_blocks.py`): one page per lect under
-      [`docs/building_blocks/`](docs/building_blocks/README.md), the
-      shortest attested forms for each of 162 meanings in
-      [`docs/eval/building_block_candidates.md`](docs/eval/building_block_candidates.md),
-      and plural patterns by gender in
-      [`docs/eval/plural_formation.md`](docs/eval/plural_formation.md).
-      29 lects have a page. For Spanish, Portuguese, Galician, Catalan,
-      French, Italian, Romanian and Lombard the extract on disk held only
-      verbs, so every other word class was fetched into
-      `data/sources/kaikki_full/` (`scripts/fetch_kaikki_full.py`).
-- [ ] Seven lects have no page. Gallo is glossed in French; Extremaduran,
-      Gascon, Picard, Franco-Provençal, Istro-Romanian and Megleno-Romanian
-      have no English-glossed extract. The French Wiktionary dump in `xmls/`
-      has French-glossed entries for Gallo, Picard, Franco-Provençal and
-      Gascon; the others need their own sources (Carmona García, the
-      Wiktionary lists).
-- [ ] A form is matched on any sense of its entry, so a secondary sense
-      puts it in a row where it is not the plain word (French *à* and *en*
-      under *of*).
-- [ ] Object, indirect and reflexive pronouns, and gender and number of
-      articles and possessives, are listed under one English gloss today
-      (*you*, *the*); the pages show the dictionary's wording but do not
-      sort the forms into a paradigm yet.
+```
+0 spelling ──┐
+1 verbs ─────┼─> 2 small words ──> 3 nouns, adjectives ──> 4 numerals ──> 5 proper nouns ──> 6 lexicon ──> derivation, syntax, texts
+```
+
+Steps 0 and 1 run side by side. Sourcing for step 6 was done ahead of its
+turn (5 and 6 October) and is finished for now; selection has not started.
 
 ## Method (every class)
 
 Each grammatical class goes through the same four steps as the verbs. Nothing
 grammatical is selected automatically.
 
-1. **Harvest.** Attested forms per lect, with source, into
-   `data/<class>/sources/{lect}.json`.
+1. **Harvest.** Attested forms per lect, with source.
 2. **Pages.** One comparison page per lect under `docs/<class>/`.
-3. **Cross-lect minimal shortlist.** For each cell or concept, every attested
+3. **Cross-lect minimal shortlist.** For each cell or meaning, every attested
    candidate ranked by phonemic syllables, with lect support and the
-   collisions a choice would create. One HTML page under `docs/eval/`.
-4. **Manual pick.** The choice is made by hand at the stage gate, then encoded
+   collisions a choice would create.
+4. **Manual pick.** The choice is made by hand at the step's gate, then encoded
    in a `*_constants.py` table with rationale and written into `grammar.tex`.
 
 Open-class roots keep the enshrined algorithm (shortest legal attested form,
@@ -74,27 +61,262 @@ paradigm or a closed set.
   `vulgultra/optimizer.py`. Helpers are imported from them, never changed.
 - **New files by default.** Shared files (`paradigms.py`, `optimizer.py`,
   `realize.py`, `morphology_constants.py`, `lib.rs`, `grammar.tex`) are edited
-  only in a stage's encode step, after its gate.
-- **One branch per stage.**
+  only in a step's encode stage, after its gate.
+- **Work is committed on `main`.** No branch per step.
 - **Axioms hold.** Daughters only, attested only, no padding a thin lect from
   a sister. A lect with no data for a class gets an empty page.
-- **Downloads are confirmed each time** (Kaikki re-fetch, Bible editions).
+- **Sources.** Open sources are fetched as needed. Never scraped: Pledari,
+  DRG, TalkBank, Verbix site-wide, vlaski-zejanski. A text whose licence is
+  not settled stays under `data/` and is never committed. Reading scanned
+  pages by eye costs usage and is asked first.
 
-## Where things stand (5 October 2026)
+## What the code does today
 
 | Area | State |
 |---|---|
+| Spelling | 62 sounds are in use among the shortlisted forms; 39 have no letter and print in `⟨IPA⟩` brackets. |
+| Roots | 213 Swadesh meanings, Σσ 224, all under the ignored `data/` folder. Not stable: another random seed changes 138 of them. |
 | Noun table | One 12-ending table from the spec (`grammar.tex` §3.1), chosen as a block by the optimizer. No per-noun gender, stem or class. |
 | Noun realisation | `vulgultra/realize.py` only produces singulars, assigns case by word position, and takes gender from a 25-noun hand list (everything else is masculine). |
-| Root + ending junction | Endings are glued onto spelling strings with an ASCII vowel test. 40 of 213 roots end in a vowel and every noun ending starts with one. |
-| Spelling | The spelling map covers 23 segments; the inventory has 64. 117 of 213 roots print with `⟨IPA⟩` brackets. |
-| Closed classes | Six subject pronouns, numerals 1–5, three prepositions, three conjunctions, `o/a/os/as`, a present-only copula. No object or possessive pronouns, no `ke`. |
-| Lexicon | 213 concepts, all in the gitignored `data/` folder. No tracked dictionary. |
-| Bible grid | Importer exists (`scripts/build_bible_grid.py`); the five input TSVs do not. |
-| Nominal source data | 25 smaller lects have nouns with gender and plurals in local Kaikki dumps. The dumps for es, pt, gl, ca, fr, it, ro, lmo, eml are verb-only. No local data for ext, gsc, pcd, frp, ruo, ruq. |
+| Root + ending junction | Endings are glued onto spelling strings with an ASCII vowel test. Every noun ending starts with a vowel, and many roots end in one. |
+| Small words in code | Six subject pronouns, numerals 1–5, three prepositions, three conjunctions, `o/a/os/as`, a present-only copula. No object or possessive pronouns, no `ke`. |
+| Proper nouns | None. |
 | Syntax | One paragraph in the spec (`grammar.tex` ch. 5). |
 
-## Stage 0. Foundations
+## Step 0. Spelling, and choosing among equally short forms
+
+Nothing picked in any later step can be written down, or stay picked, until
+these two are settled. The transcription and the sound inventory are already
+decided and in code (the record is at the end of this file).
+
+**Gate G0** (decisions 0.1 and 0.2):
+
+1. **Spelling.** Per sound, a letter, a digraph or a diacritic, or leave it
+   in brackets. Evidence and a proposal per sound:
+   [`docs/eval/orthography_gaps.md`](docs/eval/orthography_gaps.md).
+2. **Selection among ties.** 114 of the 213 meanings have several equally
+   short candidates and nothing ranks them. What replaces chance, whether a
+   homophone costs anything, and whether an approved root is pinned so that
+   growing the lexicon cannot change it.
+
+After the gate:
+
+- [ ] Encode the spelling map and a reader that handles digraphs.
+- [ ] Carry the source's stress through transcription and mark it when it is
+      not penultimate. Today stress marks are stripped, and most readers do
+      not emit them, so the source of each word's stress has to be decided
+      per lect.
+- [ ] Rerun prep → Rust SA → join, and refresh the scorecard (last run
+      2026-10-05, before the gate).
+- [ ] Tracked lexicon listing under `docs/lexicon/`, so every later change
+      shows up as a diff (`data/` is ignored).
+
+Loose ends in the readers, none of which blocks the gate: ten grid forms are
+still rejected (nine have an apostrophe, one a letter no source explains);
+Istro-Romanian *c* and its central vowel are not ruled; the Venetan,
+Istro-Romanian and Gallo columns mix spellings; Norman and Ladino may still
+hold some French and Spanish.
+
+## Step 1. Verbs
+
+Built by hand, outside this roadmap. The harvest, one page per lect
+([`docs/conjugations/`](docs/conjugations/)) and the shortlist
+(`docs/eval/verb_ending_candidates.html`) exist; the picks are being made.
+
+What the later steps need from it:
+
+| Needed | For |
+|---|---|
+| Final tense/mood and person slot names | lexicon schema, realiser |
+| Reflexive and subject-pronoun conventions; whether the subject pronoun can be dropped | step 2 |
+| Whether participles decline like adjectives | step 3, derivation |
+| One format for hand-picked tables, nouns and verbs alike (several classes, any number of cells); today both sides hard-code one class | step 3 |
+| What a verb's lexicon entry is (which attested form is the root; its theme) | Bible verbs in step 6 |
+| Full copula paradigm | syntax |
+
+Shared with the verb work, so changes are announced first: `add_ending` in
+`vulgultra/realize.py` joins endings for verbs and nouns alike;
+`enumerate_endings`, `ending_catalog` and the Rust output writer handle both
+tables together; and `romance_swadesh.py`, `realize.py` and `optimizer.py`
+import `PERSONS` and `VERB_TEMPLATES`, so reshaping those stops everything
+non-verbal from importing.
+
+## Step 2. Small words
+
+Prepositions, conjunctions, personal pronouns by person and role (subject,
+object, indirect, possessive, reflexive), articles, demonstratives,
+interrogatives and the relative, quantifiers, and the small adverbs (yes,
+not, also, only, very, more, already, still). One paradigm at a time.
+
+- [x] Harvest (`scripts/build_building_blocks.py`): one page per lect, all 36,
+      under [`docs/building_blocks/`](docs/building_blocks/README.md), and the
+      shortest attested forms for each of 162 meanings in
+      [`docs/eval/building_block_candidates.md`](docs/eval/building_block_candidates.md).
+- [ ] A form is matched on any sense of its entry, so a secondary sense puts
+      it in a row where it is not the plain word (French *à* and *en* under
+      *of*).
+- [ ] The pronoun and article tables are sorted by the dictionary's wording
+      and are noisy (Spanish *ellos* is missing from its row; neologisms
+      appear). They need sorting into clean paradigms.
+- [ ] The shortlist does not show collisions yet: every clash of a candidate
+      with an existing root, ending, article or copula form (today `o`
+      water/article, `e` wing/copula, `a` at/article).
+
+**Gate G2** (decisions 2.1 to 2.7). First whether a noun or pronoun changes by
+role: if nouns have no case, prepositions do that work, as in every daughter;
+if they keep one, each preposition needs a case to govern. Then articles
+(both, one or none), then the words themselves, each paradigm picked by hand.
+
+- [ ] **Encode** the picks in a `*_constants.py` table; update `grammar.tex`.
+
+## Step 3. Nouns and adjectives
+
+- [x] Every word class fetched for the eight large lects whose extract held
+      only verbs (`scripts/fetch_kaikki_full.py`, into
+      `data/sources/kaikki_full/`).
+- [x] Plural patterns by gender, tallied per lect
+      ([`docs/eval/plural_formation.md`](docs/eval/plural_formation.md)).
+- [ ] **Harvest.** `vulgultra/declension_harvest.py`: gender, the four
+      gender × number forms, plural-formation classes, adjective feminine and
+      plural, and for Romanian and Aromanian the surviving case and definite
+      forms. Apertium `.dix` paradigms under `vendor/` as a second source.
+      Output `data/declension/sources/{lect}.json` (`vulgultra.declension.v1`).
+- [ ] **Pages.** `scripts/build_declension_pages.py` → `docs/declensions/{lect}.md`.
+- [ ] **Shortlist.** `scripts/noun_ending_candidates.py` →
+      `docs/eval/noun_ending_candidates.html`. Also marks, for each of the
+      spec's 12 cells, whether any daughter attests it.
+- [ ] **Junction table.** What hiatus, a glide, dropping the root's final
+      vowel, or a linking consonant each do to syllable count and homophones.
+
+**Gate G3** (decisions 3.1 and 3.2, and the endings once the shortlist
+exists). How the plural is formed; two genders or three (Aromanian and
+Romanian have a neuter); one table or several classes; whether a zero ending
+is allowed (it contradicts axiom 5 and the stress rule); the junction rule;
+how a noun gets its gender; whether adjectives share the table. The case
+question is settled at step 2.
+
+- [ ] **Encode** the picks in `vulgultra/morphology_constants.py`; noun
+      selection reads that table instead of searching; update `grammar.tex` §3.1–3.3.
+- [ ] **Realise** on segment lists (`is_vowel`, `repair`, `count_violations`,
+      `to_orthography`), with the plural reachable, gender from the lexicon
+      entry, and penultimate stress assigned. `gender`, `decl_class` and
+      `stem` are joined onto roots the way `gloss_en` and `pos` are today
+      (`vulgultra/lexicon_fields.py`).
+
+## Step 4. Numerals
+
+- [x] Harvested with the small words: zero to twelve, the tens to fifty,
+      hundred, thousand, first to third, half, in all 36 lects
+      ([`docs/eval/building_block_candidates.md`](docs/eval/building_block_candidates.md),
+      *Numerals*).
+- [ ] The rest of the tens, and how each daughter builds the numbers above
+      ten (a fused word, or ten-and-one).
+- [ ] The Bible's own numerals: 69 of its 8,069 words are numerals, many of
+      them ordinals and distributives (*quinquagenus*, fifty each).
+
+**Gate G4** (decision 4.1). One to ten, the tens, hundred, thousand; the rule
+for building the numbers between; whether ordinals are words of their own or
+built, and that they inflect like the adjectives of step 3.
+
+## Step 5. Proper nouns
+
+Not started, and absent from every earlier plan. The Vulgate has about 4,000
+name forms that are no dictionary word (*Israel*, *David*, *Ierusalem*,
+*Iesus, Iesu, Iesum*): 29,500 words of running text, one in twenty. About a
+hundred more are in the dictionary as words (*Aegyptus*, *Iudaeus*,
+*Galilaeus*). The dictionary fetches so far left names out on purpose.
+
+- [ ] **Names table.** Bring the Vulgate's name forms to one entry each, with
+      counts (*Moyses, Moysen, Moysi* are one name).
+- [ ] **Harvest.** Each name as the five modern Bibles and the lects' own
+      Bible texts write it (`scripts/align_bible.py` already pairs a Latin
+      word it cannot trace with the word that looks like it), and
+      Wiktionary's proper-noun entries as a second source.
+- [ ] **Pages and shortlist**, like any class.
+
+**Gate G5** (decisions 5.1 and 5.2). Where a name's form comes from: the
+daughters, like any other word, or one fixed source adapted by rule. Whether
+a name inflects. What happens to a sound the inventory lacks.
+
+## Step 6. Lexicon, the Bible first
+
+Sourcing, done:
+
+- [x] Six Bibles on disk, one verse per row (`scripts/fetch_bible_texts.py`,
+      [`docs/bible_sources.md`](docs/bible_sources.md)): the Clementine
+      Vulgate, Segond 1910, Reina-Valera 1909, Bíblia Livre, Riveduta 1927
+      and Cornilescu. The Romanian licence is not settled; the text is local
+      only.
+- [x] Latin as the word list (decision 6.1, to confirm): the Vulgate's
+      612,000 words traced to 8,069 dictionary words, each with the daughter
+      forms Wiktionary lists as its reflexes (`scripts/build_bible_lexicon.py`,
+      [`docs/eval/bible_lexicon.md`](docs/eval/bible_lexicon.md)).
+- [x] The five modern Bibles aligned to the Latin verse by verse
+      (`scripts/align_bible.py anchors`,
+      [`docs/eval/bible_anchor_words.md`](docs/eval/bible_anchor_words.md)):
+      about 3,700 Latin words get the word each Bible uses for them.
+- [x] Every lect has a form for 2,000 or more of the 8,069 words
+      (`scripts/bible_coverage.py`,
+      [`docs/eval/bible_coverage.md`](docs/eval/bible_coverage.md)), from
+      translation tables, the lects' own Wiktionaries and Bible texts, and
+      some forty dictionaries and glossaries
+      ([`docs/sources_bible_lexicon.md`](docs/sources_bible_lexicon.md)).
+      29 lects have 2,000 firm; the weakest are Istro-Romanian (619 firm),
+      Megleno-Romanian (737) and Emilian (1,222).
+
+Selection, not started:
+
+- [ ] Check the gloss and two-step candidates by sense before they compete
+      for a root.
+- [ ] From the pool to the optimizer. Each Bible word becomes a row whose
+      cells are the pool's forms (`data/bible/lexicon/forms/{lect}.tsv`). The
+      importer on disk (`scripts/build_bible_grid.py`) takes five hand-made
+      spreadsheets for the anchors only and has to be replaced. Row ids must
+      be project-owned and never reused: an id equal to a Swadesh id is
+      merged silently and overwrites its part of speech and gloss (`right`,
+      `lie`, `back` are already taken).
+- [ ] Pins. Selection is not incremental: adding words changes roots already
+      chosen (decision 0.2).
+- [ ] First slice: the commonest words that are not small words, numerals or
+      names, through prep → Rust SA → join. The homophone count is reported
+      with every slice.
+- [ ] Verb entries wait on what a verb's lexicon entry is (step 1).
+- [ ] The page readings still open for the thinnest lects, if wanted
+      (decision 6.5; the list is in `docs/sources_bible_lexicon.md`).
+
+**Gate G6, homophones at scale.** The policy is set at Gate G0; this gate
+checks it against the first slice. 196 of the 213 roots are one syllable, and
+a review estimate puts roughly a tenth of words in a homophone pair at 1,000
+meanings under the present policy, and far more when most cells come from a
+few lects.
+
+After the Bible, a second word list for the anchors if one is wanted: the
+Intercontinental Dictionary Series and NorthEuraLex (both on lexibank, CC-BY)
+give about 1,300 and 1,000 meanings for French, Spanish, Portuguese, Italian,
+Romanian and Catalan.
+
+## After the lexicon
+
+- **Derivation.** Adverb formation, comparison, participles used as
+  adjectives, numeral composition if step 4 left any, nominalised
+  infinitives, by the same method. Kept small: morpheme uniformity is not a
+  goal, so each meaning keeps its own shortest attested form.
+- **Syntax.** Expand `grammar.tex` ch. 5 into a specification: noun-phrase
+  order, how roles are marked, negation, questions, `ke` clauses, pronoun
+  placement, coordination, comparison, possession. Sentence realisation takes
+  role-labelled input instead of going by word position. Needs the verb table:
+  every demo sentence has a verb or the copula.
+- **Dictionary, texts, primer.** A tracked dictionary export under
+  `docs/lexicon/`; sample texts with a report of what cannot yet be produced;
+  a refreshed `books/beginners-guide/`.
+
+## Record: the foundations, to 5 October 2026
+
+Kept as written at the time; a later entry supersedes an earlier figure.
+Decided at Gate G0 and in code: the transcription is fixed first, and the
+inventory has eleven merges, each with its ground, in `grammar.tex` §2.4
+(`SEGMENT_MERGES`, `LECT_MERGES`). All four rhotics are kept, /x/ is kept,
+and so is everything else some daughter uses to tell words apart.
 
 - [x] Candidates keep their concept's part of speech (was `verb` on every root).
 - [x] Tests that pin today's noun, adjective and sentence realisation
@@ -103,9 +325,10 @@ paradigm or a closed set.
       from `scripts/orthography_gaps.py`.
 - [x] `gloss_en` and `pos` joined onto roots after the optimizer
       (`vulgultra/lexicon_fields.py`, no Rust change). `gender`, `decl_class`
-      and `stem` use the same join once Stage 1 produces them.
+      and `stem` use the same join once step 3 produces them.
+- [x] Encode the approved merges at transcription.
 
-What the evidence shows:
+The first evidence run (September), which set the gate's questions:
 
 - 41 of the 64 segments in the shortlist have no spelling. 4 are merges the
   spec already orders, 4 are source letters that were never transcribed
@@ -120,21 +343,7 @@ What the evidence shows:
   concepts with a choice of lect, 171 take the alphabetically first code, and
   the anneal ends at the energy it started with.
 
-**Gate G0, inventory, spelling and selection.** In this order, because each
-answer changes which roots win:
-
-1. Transcription: fix the rejected forms and the untranscribed letters first.
-   **Decided: yes.** Done; see below.
-2. Inventory: merge or keep. **Decided and in code.** Eleven merges, each
-   with its ground, in `grammar.tex` §2.4 (`SEGMENT_MERGES`, `LECT_MERGES`).
-   All four rhotics are kept, /x/ is kept, and so is everything else some
-   daughter uses to tell words apart.
-3. Spelling: per kept segment, a letter, digraph or diacritic, or leave it bracketed.
-4. Selection among ties: what replaces lect-code order, whether homophones
-   cost anything, and whether approved roots are pinned so that growing the
-   grid cannot change them.
-
-Transcription, as fixed:
+Transcription and sourcing of the Swadesh grid:
 
 - [x] Readings for the letters a borrowed backend leaves untranscribed
       (`BACKEND_LEFTOVERS` in `vulgultra/phonology_constants.py`). Rejected
@@ -236,195 +445,3 @@ Transcription, as fixed:
       Romansh t͡ɕ, Friulian c and ɟ, Romanian kʲ and t͡sʲ, Castilian and
       Bolognese θ. Each has a row in
       [`docs/eval/orthography_gaps.md`](docs/eval/orthography_gaps.md).
-
-After the gate:
-
-- [x] Encode the approved merges at transcription.
-- [ ] Encode the spelling map and a reader that handles digraphs.
-- [ ] Carry the source's stress through transcription and mark it when it is
-      not penultimate. Today stress marks are stripped, and most backends do
-      not emit them, so the source of each word's stress has to be decided
-      per lect.
-- [ ] Rerun prep → Rust SA → join, and refresh the scorecard (last run
-      2026-10-05, before the gate).
-- [ ] Tracked lexicon listing under `docs/lexicon/`, so every later change to
-      the foundations shows up as a diff (`data/`, `*.json`, `*.csv`, `*.txt`
-      and any `lexicons/` folder are ignored).
-
-## Stage 1. Nouns and adjectives
-
-- [ ] **Fetch.** `scripts/fetch_kaikki_full.py`: every part of speech, with
-      form-of rows and IPA, for es, pt, gl, ca, fr, it, ro, lmo into
-      `data/sources/kaikki_full/{code}.jsonl`. Fetched once; it also feeds
-      the gloss overlay and Bible lemmatisation. Not under `data/words/`:
-      `scripts/build_kaikki_corpus.py` globs `kaikki-*.jsonl` there and would
-      overwrite the word tables.
-- [ ] **Harvest.** `vulgultra/declension_harvest.py`: gender, the four
-      gender × number forms, plural-formation classes, adjective feminine and
-      plural, and for Romanian and Aromanian the surviving case and definite
-      forms. Apertium `.dix` paradigms under `vendor/` as a second source.
-      Output `data/declension/sources/{lect}.json` (`vulgultra.declension.v1`).
-- [ ] **Pages.** `scripts/build_declension_pages.py` → `docs/declensions/{lect}.md`.
-- [ ] **Shortlist.** `scripts/noun_ending_candidates.py` →
-      `docs/eval/noun_ending_candidates.html`. Also marks, for each of the
-      spec's 12 cells, whether any daughter attests it.
-- [ ] **Junction table.** What hiatus, glide, dropping the root's final vowel,
-      or a linking consonant each do to syllable count and homophones.
-- [ ] **Personal pronouns, harvested here** rather than in Stage 2: they are
-      the only place every daughter still shows case, so the case decision
-      below needs their pages.
-
-**Gate G1, nouns.** Endings; the case layer (keep the Latin-derived
-nom/acc/gen of the spec, use only what daughters attest, or drop case); how
-an indirect object is marked (the spec has no dative); one table or several
-classes; neuter or not (Aromanian has neuter nouns); whether a zero ending is
-allowed (it contradicts axiom 5 and the stress rule); the junction rule; how
-a noun gets its gender; whether adjectives share the table.
-
-- [ ] **Encode** the picks in `vulgultra/morphology_constants.py`; noun
-      selection reads that table instead of searching; update `grammar.tex` §3.1–3.3.
-- [ ] **Realise** on segment lists (`is_vowel`, `repair`, `count_violations`,
-      `to_orthography`), with plural and genitive reachable, gender from the
-      lexicon entry, and penultimate stress assigned.
-
-## Stage 2. Closed classes
-
-Same method, one paradigm at a time: personal pronouns by person, number and
-role (subject, object, indirect, possessive, reflexive; pages from Stage 1);
-demonstratives;
-interrogatives and relatives (`ke`); quantifiers; articles; numerals 0–10,
-tens, hundred, thousand; prepositions; conjunctions; particles (yes, not,
-also, only, very, more, already, still).
-
-- [ ] **Harvest** each paradigm per lect into `data/closed_class/sources/{lect}.json`.
-- [ ] **Pages.** `docs/closed_class/{lect}.md`, laid out as paradigm tables.
-- [ ] **Shortlist.** `docs/eval/closed_class_candidates.html`: per cell, the
-      attested candidates by syllables, and every collision with an existing
-      root, ending, article or copula form (today: `o` water/article, `e`
-      wing/copula, `a` at/article).
-
-**Gate G2, closed classes.** Each paradigm picked by hand: pronouns (the one
-place every daughter still shows case), possessives, demonstratives, numeral
-composition above ten, which case each preposition governs, indefinite
-article yes or no.
-
-Needs from the verb work: final person labels, reflexive `se`, pro-drop.
-
-## Stage 3. Bible-grid lexicon
-
-- [x] Six Bibles on disk, one verse per row (`scripts/fetch_bible_texts.py`,
-      [`docs/bible_sources.md`](docs/bible_sources.md)): the Clementine
-      Vulgate, Segond 1910, Reina-Valera 1909, Bíblia Livre, Riveduta 1927
-      and Cornilescu. The Romanian licence is not settled; the text is
-      local only. 30,261 verse keys are shared by all six; the Psalms are
-      brought to the Vulgate's numbering when the texts are aligned.
-- [x] Latin as the word list (proposed 2026-10-05, to confirm): the
-      Vulgate's 612,000 words traced to 8,069 dictionary words, each with
-      the daughter forms Wiktionary lists as its reflexes
-      (`scripts/fetch_latin_descendants.py`, `scripts/build_bible_lexicon.py`,
-      [`docs/eval/bible_lexicon.md`](docs/eval/bible_lexicon.md)). 5,263
-      have a reflex in at least one lect, 1,417 in ten or more.
-- [x] The five modern Bibles aligned to the Latin verse by verse
-      (`scripts/align_bible.py anchors`,
-      [`docs/eval/bible_anchor_words.md`](docs/eval/bible_anchor_words.md)):
-      about 3,700 Latin words get the word each Bible uses for them.
-- [x] Every lect has a form for 2,000 or more of the Bible's 8,069 words
-      (`scripts/bible_coverage.py`,
-      [`docs/eval/bible_coverage.md`](docs/eval/bible_coverage.md)), from
-      translation tables, the lects' own Wiktionaries and Bible texts, and
-      some forty dictionaries and glossaries
-      ([`docs/sources_bible_lexicon.md`](docs/sources_bible_lexicon.md)).
-      29 lects have 2,000 firm; the weakest are Istro-Romanian (619 firm),
-      Megleno-Romanian (737) and Emilian (1,222).
-- [ ] Check the gloss and two-step candidates by sense before they compete
-      for a root; finish the page readings listed under "What is left to do"
-      in `docs/sources_bible_lexicon.md`.
-- [ ] The decisions this opens are queued in order in
-      [`docs/decisions.md`](docs/decisions.md).
-
-**Gate G3a, sourcing (before any download).** The five editions and their
-licences, the concept-ID spine, the first slice, the alignment method, and
-which derived words (adverbs, participles, numerals) are rows of their own.
-
-A possible spine and second lexicon for the anchors: the Intercontinental
-Dictionary Series and NorthEuraLex (both on lexibank, CC-BY) give about 1,300
-and 1,000 concepts for French, Spanish, Portuguese, Italian, Romanian and
-Catalan, keyed to Concepticon ids.
-
-Known before the gate:
-
-- Concept ids must be project-owned and never reused. A Bible id equal to a
-  Swadesh id is merged silently and overwrites its part of speech and gloss
-  (`right`, `lie`, `back` are already taken).
-- The TSV importer takes the five anchors only; every other lect gets a
-  Bible cell only through the gloss overlay. Seven non-anchor lects have
-  word lists with no glosses at all (ca, gl, lmo, gsc, pcd, frp, ext), so
-  they cannot receive one. Catalan alone supplies 48 of the 213 roots today.
-- Selection is not incremental: adding or removing concepts changes roots
-  already chosen. Pins (Gate G0) come first.
-
-- [ ] Alignment tooling that turns verse-aligned editions into reviewable
-      candidate rows, then writes accepted rows to
-      `data/bible/lexicons/{fr,es,pt,it,ro}.tsv`.
-- [ ] First slice through `scripts/build_bible_grid.py` → prep → Rust SA → lexicon.
-- [ ] Fill path for the other 31 lects, cited forms only (the full Kaikki
-      fetch, Apertium bilingual dictionaries under `vendor/`), run before
-      selection; the gloss overlay respects part of speech (`vulgultra/pipeline.py`).
-- [ ] Homophone count reported with every slice.
-
-**Gate G3b, homophones at scale.** The policy is set at Gate G0; this gate
-checks it against the first slice. 196 of 213 roots are one syllable, and a
-review estimate puts roughly a tenth of words in a homophone pair at 1,000
-concepts under the present policy, and far more when most cells come from a
-few lects.
-
-Verb entries wait on the verb outcome.
-
-## Stage 4. Grammatical derivation
-
-Adverb formation, comparison, participles used as adjectives, numeral
-composition, nominalised infinitives, by the same method. Kept small:
-morpheme uniformity is not a goal, so each concept keeps its own shortest
-attested form. **Gate G4.**
-
-## Stage 5. Syntax
-
-Expand `grammar.tex` ch. 5 into a specification: noun-phrase order, how roles
-map to case, negation, questions, `ke` clauses, pronoun placement,
-coordination, comparison, possession. Sentence realisation takes
-role-labelled input so case comes from the role, not from word position.
-Demo sentences cover plural, genitive, negation, question and subordinate
-clause. Blocked on the verb table: every demo sentence has a verb or the
-copula. **Gate G5.**
-
-## Stage 6. Dictionary, texts, primer
-
-- [ ] Tracked dictionary export under `docs/lexicon/` (`data/` is ignored).
-- [ ] Sample texts with a coverage report of what cannot yet be produced.
-- [ ] Refresh `books/beginners-guide/`.
-
-## Order
-
-```
-Stage 0 ──G0──> encode, rerun, tracked listing ──┐
-                                                 ├─> Stage 1 ──G1──> encode + realise ──> Stage 2 ──G2──┐
-G3a ──> Stage 3 tooling (alongside Stage 1) ─────────────────────────> first slice ──G3b──> Stages 4, 5 ──> Stage 6
-```
-
-## Handoffs from the verb work
-
-| Needed | For |
-|---|---|
-| Final tense/mood and person slot names | lexicon schema, realiser |
-| What a verb's lexicon entry is (which attested form is the root; its theme) | Bible verbs in Stage 3 |
-| Whether participles decline like adjectives | Stage 1 encode, Stage 4 |
-| Reflexive and subject-pronoun conventions | Stage 2 |
-| Full copula paradigm | Stage 5 |
-| One format for hand-picked tables, nouns and verbs alike (several classes, any number of cells); today both sides hard-code one class | Stage 1 encode |
-
-Shared with the verb work, so changes are announced first: `add_ending` in
-`vulgultra/realize.py` joins endings for verbs and nouns alike;
-`enumerate_endings`, `ending_catalog` and the Rust output writer handle both
-tables together; and `romance_swadesh.py`, `realize.py` and `optimizer.py`
-import `PERSONS` and `VERB_TEMPLATES`, so reshaping those stops everything
-non-verbal from importing.
