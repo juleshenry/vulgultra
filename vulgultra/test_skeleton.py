@@ -1,4 +1,4 @@
-"""Skeleton and frame-split checks for plano_novo."""
+"""Skeleton and frame-split checks for docs/notes/plano_novo.md."""
 
 from __future__ import annotations
 

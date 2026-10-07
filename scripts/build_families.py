@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Low-hanging slice of plano_novo: lemma families + one-shot únicos."""
+"""Low-hanging slice of docs/notes/plano_novo.md: lemma families + one-shot únicos."""
 
 from __future__ import annotations
 

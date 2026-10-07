@@ -1,8 +1,9 @@
 # Architecture and evidence flow
 
-The durable specification is [`docs/grammar/grammar.tex`](grammar/grammar.tex);
-the dated thoughts file remains a working note. The implementations share
-this boundary:
+The durable specification is [`docs/grammar/grammar.tex`](grammar/grammar.tex).
+The dated note behind it is kept as written in
+[`notes/2026-09-24-thoughts.md`](notes/2026-09-24-thoughts.md). The
+implementations share this boundary:
 
 ```text
 source snapshots → meaning grid → G2P/repair → σ-shortlist → root SA
@@ -27,7 +28,8 @@ helpers while keeping the JSON schema and CLI exports stable.
 The complete aligned grid is retained for evidence. For each concept, Python
 keeps only legal candidates with the minimum repaired phonemic syllable count.
 Root annealing moves only inside that slice and maximizes the union of selected
-root segments. Morphology is enumerated afterward; its legality, collision,
-distance, and one-syllable costs are separate from lexical root selection.
+root segments. Morphology is enumerated afterward; its legality, collision
+and per-syllable ending costs are separate from lexical root selection, and
+there is no distance term.
 Source spread and inferred morpheme uniformity remain audit fields, never
 objective terms.
