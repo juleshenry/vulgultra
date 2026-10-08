@@ -36,6 +36,7 @@ source tags and the scripts below make the transformations reproducible.
 | `data/bible/lexicon/anchor_keys.tsv`, `aligned/{lect}.tsv` | Each Latin word's counterpart in the five modern Bibles and in the lects' own texts | `scripts/align_bible.py` | derived |
 | `data/sources/glossaries/{lect}/*.tsv` | Dictionaries and glossaries of the lects as headword, gloss, gloss language, part of speech; each with its parser | read by `scripts/bible_coverage.py` | [`sources_bible_lexicon.md`](sources_bible_lexicon.md) |
 | `docs/assets/reference-screenshot.png` | Project reference image | documentation only | formerly a root-level screenshot |
+| `data/sources/apprendeneolatino/` | The Neolatin lesson site, 187 pages as HTML: the model for the layout and lesson tree of `site/` | `scripts/scrape_apprendeneolatino.py` (structure only; see `site/README.md`) | apprendeneolatino.com, fetched with Scrapling on 7 October 2026; all rights with its authors |
 
 Generated `data/words/*_words.json`, candidates, and evaluations are derived
 artifacts. Source snapshots may be regenerated without changing the grammar or

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="">
+  <!-- Nine branches from one root; the root itself is not a source. -->
+  <g fill="none" stroke="#b9b2c6" stroke-width="3" stroke-linecap="round">
+    <path d="M100 160L22 92M100 160L38 58M100 160L64 36M100 160L100 28M100 160L136 36M100 160L162 58M100 160L178 92M100 160L52 112M100 160L148 112"/>
+  </g>
+  <circle cx="100" cy="160" r="15" fill="none" stroke="#b9b2c6" stroke-width="3" stroke-dasharray="5 5"/>
+  <g fill="#8a5cc0">
+    <circle cx="22" cy="92" r="11"/><circle cx="64" cy="36" r="11"/><circle cx="136" cy="36" r="11"/><circle cx="178" cy="92" r="11"/><circle cx="52" cy="112" r="11"/>
+  </g>
+  <g fill="#f2c230">
+    <circle cx="38" cy="58" r="11"/><circle cx="100" cy="28" r="11"/><circle cx="162" cy="58" r="11"/><circle cx="148" cy="112" r="11"/>
+  </g>
+</svg>

@@ -1,0 +1,277 @@
+# The lesson tree, in sidebar order. It mirrors the tree of apprendeneolatino.com
+# (scripts/scrape_apprendeneolatino.py prints the original); titles that named
+# Neolatin's own words are made neutral.
+#
+# Numbers are not written here: a numbered category gets the next number, its
+# lessons get N.1, N.2, ... and a lesson's second-level headings N.M.1, ...
+#
+# A lesson's body is site/content/lessons/<dir>/<slug>.md. Until that file
+# exists the page says it is under construction. `done: true` marks a lesson
+# as finished (a check mark after its title); `es:` is its Spanish title.
+
+lessons:
+  - title: Introduction
+    es: Introducción
+    dir: introduction
+    numbered: false
+    lessons:
+      - {slug: history, title: A History of Vulgultra}
+      - {slug: criteria, title: Design Criteria}
+      - {slug: comparisons, title: Comparisons to Other Languages}
+  - title: Pronunciation
+    es: Pronunciación
+    dir: pronunciation
+    lessons:
+      - {slug: alphabet, title: Alphabet}
+      - {slug: vowels, title: Vowels}
+      - {slug: consonants, title: Consonants}
+      - {slug: segmental-phonology, title: Segmental Phonology}
+      - {slug: graphemes, title: Graphemes}
+      - {slug: theory, title: Theory}
+      - {slug: stress-rhythm-intonation, title: "Stress, Rhythm and Intonation"}
+      - {slug: syllables, title: Syllables}
+      - {slug: connected-speech, title: Connected Speech}
+  - title: Nouns and Gender
+    es: Sustantivos y género
+    dir: nouns-and-gender
+    lessons:
+      - {slug: introduction, title: Introduction}
+      - {slug: plurals, title: Plural of Nouns}
+      - {slug: othertopics, title: Other Topics}
+      - {slug: genderpatterns, title: Gender Patterns}
+      - {slug: alterations, title: Alterations}
+      - {slug: easy-cognates, title: Easy Cognates}
+  - title: Articles
+    es: Artículos
+    dir: articles
+    lessons:
+      - {slug: indefinite-definite-articles, title: Indefinite Articles and Definite Articles}
+      - {slug: uses-articles, title: Uses of Indefinite Articles and Definite Articles}
+      - {slug: articulated-prepositions, title: Articulated Prepositions}
+      - {slug: neuter-article, title: The Neuter Article}
+  - title: Pronouns
+    es: Pronombres
+    dir: pronouns
+    lessons:
+      - {slug: subject-pronouns, title: Subject Pronouns}
+      - {slug: object-pronouns, title: Object Pronouns}
+      - {slug: prepositional-pronouns, title: Prepositional Pronouns}
+      - {slug: other-pronouns, title: Other Pronouns}
+  - title: Possessives and Demonstratives
+    es: Posesivos y demostrativos
+    dir: possessives-and-demonstratives
+    lessons:
+      - {slug: possessives, title: Possessives}
+      - {slug: demonstratives, title: Demonstratives}
+  - title: Indefinite Words
+    es: Indefinidos
+    dir: indefinite-words
+    lessons:
+      - {slug: indefinite-adjectives, title: Indefinite Adjectives}
+      - {slug: indefinite-pronouns, title: Indefinite Pronouns}
+      - {slug: expressions-indefinite, title: Expressions with Indefinite Words}
+  - title: Adjectives
+    es: Adjetivos
+    dir: adjectives
+    lessons:
+      - {slug: introduction-adjectives, title: "What Are Adjectives?"}
+      - {slug: types-adjectives, title: "Agreement: Types of Adjectives"}
+      - {slug: position-adjectives, title: The Position of Adjectives}
+      - {slug: adjectives-as-nouns, title: Adjectives as Nouns}
+      - {slug: past-participles-as-adjectives, title: Past Participles as Adjectives}
+      - {slug: negative-prefixes, title: Negative Prefixes}
+      - {slug: intensity, title: Intensity}
+  - title: Adverbs
+    es: Adverbios
+    dir: adverbs
+    lessons:
+      - {slug: introduction-adverbs, title: "What Are Adverbs?"}
+      - {slug: forming-adverbs, title: Forming Adverbs}
+      - {slug: adverbs-position, title: The Position of Adverbs}
+      - {slug: adverb-lists, title: Lists of Adverbs}
+  - title: Comparatives and Superlatives
+    es: Comparativos y superlativos
+    dir: comparatives-and-superlatives
+    lessons:
+      - {slug: comparatives, title: Comparatives}
+      - {slug: superlatives, title: Superlatives}
+      - {slug: irregular-comparative-superlative, title: Irregular Comparatives and Superlatives}
+  - title: Prepositions
+    es: Preposiciones
+    dir: prepositions
+    lessons:
+      - {slug: simple-prepositions, title: Simple Prepositions}
+      - {slug: more-explanations, title: More Explanations}
+      - {slug: cause-and-purpose, title: Prepositions of Cause and Purpose}
+      - {slug: prepositions-place, title: Prepositions of Place}
+      - {slug: prepositions-time, title: Prepositions of Time}
+      - {slug: compound-prepositions, title: Compound Prepositions}
+      - {slug: verbs-with-prepositions, title: Verbs with Prepositions}
+      - {slug: adjectives-with-prepositions, title: Adjectives with Prepositions}
+  - title: Conjunctions and Connectors
+    es: Conjunciones y conectores
+    dir: conjunctions-and-connectors
+    lessons:
+      - {slug: conjunctions, title: Conjunctions}
+      - {slug: connectors, title: Sentence Connectors}
+      - {slug: filler-words, title: Filler Words}
+      - {slug: relative-clauses, title: Relative Clauses}
+  - title: Questions and Exclamations
+    es: Preguntas y exclamaciones
+    dir: questions-and-exclamations
+    lessons:
+      - {slug: direct-questions, title: Direct Questions}
+      - {slug: interrogative-words-and-expressions, title: Interrogative Words and Expressions}
+      - {slug: indirect-questions, title: Indirect Questions}
+      - {slug: exclamations, title: Exclamations}
+      - {slug: sample-questions, title: Sample Questions}
+  - title: Negative Words and Negation
+    es: Palabras negativas y negación
+    dir: negative-words-and-negation
+    lessons:
+      - {slug: simple-negation, title: Simple Negation}
+      - {slug: double-negation, title: Double Negation}
+      - {slug: omitting-the-particle, title: Omitting the Negative Particle}
+      - {slug: negative-words, title: Negative Words}
+      - {slug: negative-words-expressions, title: Expressions With Negative Words}
+  - title: Syntax and Word Order
+    es: Sintaxis y orden de las palabras
+    dir: syntax-and-word-order
+    lessons:
+      - {slug: affirmative-sentences, title: Affirmative Sentences}
+      - {slug: negative-sentences, title: Negative Sentences}
+      - {slug: questions, title: Questions}
+      - {slug: syntax-relative-clauses, title: Relative Clauses}
+      - {slug: sentence-elements, title: Sentence Elements}
+      - {slug: misc-rules, title: Miscellaneous Rules}
+  - title: Capitalization and Punctuation
+    es: Mayúsculas y puntuación
+    dir: capitalization-and-punctuation
+    lessons:
+      - {slug: capitalization, title: Capitalization}
+      - {slug: punctuation, title: Punctuation}
+  - title: The Present Tense and Conjugation
+    es: El presente y la conjugación
+    dir: present-tense-and-conjugation
+    lessons:
+      - {slug: what-is-conjugation, title: "What Is Conjugation?"}
+      - {slug: present-tense, title: The Present Tense}
+      - {slug: fully-irregular, title: Fully Irregular Verbs}
+      - {slug: stem-changing-verbs, title: Stem-Changing Verbs and Root Stress}
+      - {slug: irregular-first-person, title: Irregular First Person Singular}
+      - {slug: irregular-first-person-and-stem-changing, title: Irregular First Person Singular and Stem-Changing}
+      - {slug: inchoative-verbs, title: Inchoative Verbs}
+      - {slug: change-in-stress, title: Change in Stress}
+      - {slug: other-considerations, title: Other Considerations}
+  - title: The Past
+    es: El pasado
+    dir: the-past
+    lessons:
+      - {slug: preterite, title: The Preterite Past}
+      - {slug: preterite-irregular, title: Irregularities of the Preterite Past Tense}
+      - {slug: imperfect, title: The Imperfect Past}
+      - {slug: past-comparisons, title: Comparing the Simple Past and the Imperfect Past}
+      - {slug: past-compound-tenses, title: Compound Tenses of the Past}
+  - title: The Gerund and the Progressive Tense
+    es: El gerundio y los tiempos progresivos
+    dir: gerund-and-progressive-tense
+    lessons:
+      - {slug: present-participle, title: The Present Participle}
+      - {slug: gerund-uses, title: Uses of the Gerund}
+      - {slug: placement-pronouns-gerund, title: Placement of Reflexive Pronouns and Object Pronouns}
+      - {slug: progressive-tenses, title: Progressive Tenses}
+  - title: The Future and the Conditional Tenses
+    es: El futuro y el condicional
+    dir: future-and-conditional
+    lessons:
+      - {slug: future-tense, title: The Future Tense}
+      - {slug: other-ways-future, title: Other Ways of Expressing The Future}
+      - {slug: conditional-tense, title: The Conditional Tense}
+      - {slug: compound-tenses-future, title: Compound Tenses}
+  - title: If Clauses and Hypothetical Sentences
+    es: Oraciones condicionales e hipotéticas
+    dir: if-clauses
+    lessons:
+      - {slug: if-clauses, title: If Clauses and Conditional Sentences}
+      - {slug: other-expressions, title: Other Expressions}
+  - title: The Subjunctive Mood
+    es: El modo subjuntivo
+    dir: subjunctive
+    lessons:
+      - {slug: subjunctive-intro, title: "What Is the Subjunctive Mood?"}
+      - {slug: subjunctive-tenses, title: Tenses}
+      - {slug: subjunctive-uses, title: Uses of the Subjunctive Mood}
+      - {slug: subjunctive-exceptions, title: Exceptions}
+      - {slug: subjunctive-contamination, title: Subjunctive Contamination}
+      - {slug: subjunctive-activators, title: Activators of the Subjunctive}
+  - title: The Imperative
+    es: El imperativo
+    dir: imperative
+    lessons:
+      - {slug: affirmative-commands, title: Affirmative Commands}
+      - {slug: negative-commands, title: Negative Commands}
+      - {slug: commands-positions-pronouns, title: The Position of Reflexive and Object Pronouns With Commands}
+      - {slug: infinitive-as-imperative, title: The Infinitive as an Imperative}
+      - {slug: first-person-plural-imperative, title: "The “First Person Plural” Imperative"}
+      - {slug: imperatives-with-complementizer, title: Imperatives With a Complementizer}
+      - {slug: present-indicative-as-imperative, title: The Present Indicative as an Imperative}
+  - title: The Infinitive
+    es: El infinitivo
+    dir: infinitive
+    lessons:
+      - {slug: what-is-infinitive, title: "What Is the Infinitive?"}
+      - {slug: other-uses-infinitive, title: Other Uses of the Infinitive}
+      - {slug: infinitive-verbal-periphrasis-without-preposition, title: The Infinitive in Verbal Periphrasis (Verbs Without Prepositions)}
+      - {slug: infinitive-verbal-periphrasis-with-preposition, title: The Infinitive in Verbal Periphrasis (Verbs With Prepositions)}
+      - {slug: infinitive-verbal-periphrasis-after, title: The Infinitive After Prepositions and Subordinators}
+  - title: Pronominal Verbs and Related Topics
+    es: Verbos pronominales y temas afines
+    dir: pronominal-verbs
+    lessons:
+      - {slug: pronominal-intro, title: "What Are Pronominal Verbs?"}
+      - {slug: reflexive, title: Reflexive Verbs and Reflexive Constructions}
+      - {slug: passive-voice, title: The Passive Voice and Passive Constructions}
+      - {slug: impersonal-voice, title: The Impersonal Voice}
+      - {slug: accidental-reflexive, title: The Accidental Reflexive}
+      - {slug: special-construction, title: "Special Construction: Reflexive + Transitive Verb"}
+  - title: Numbers
+    es: Números
+    dir: numbers
+    lessons:
+      - {slug: cardinal-numbers, title: Cardinal Numbers}
+      - {slug: ordinal-numbers, title: Ordinal Numbers}
+      - {slug: fractions-percentages-multiples, title: "Fractions, Percentages and Multiples"}
+      - {slug: operations-expressions, title: Arithmetic Operations and Numerical Expressions}
+  - title: Dates and Time
+    es: Fechas y horas
+    dir: dates-and-time
+    lessons:
+      - {slug: days-dates-years, title: "Days, Dates and Years"}
+      - {slug: telling-time, title: Telling Time}
+  - title: The Copula
+    es: La cópula
+    dir: copula
+    lessons:
+      - {slug: introduction-copula, title: A History of Copulative Verbs}
+      - {slug: copula-uses, title: Uses of the Copula}
+      - {slug: location-and-state, title: Location and State}
+      - {slug: optional-uses, title: Optional Uses}
+  - title: Miscellaneous Topics
+    es: Temas varios
+    dir: miscellaneous-topics
+    lessons:
+      - {slug: presence-verbs, title: Verbs of Presence}
+      - {slug: change-verbs, title: Verbs of Change and Transformation}
+      - {slug: causative-verbs, title: Causative Verbs}
+      - {slug: expressions, title: Idiomatic Expressions and Verbal Expressions}
+      - {slug: collocations, title: Collocations}
+
+# Pages listed in the sidebar after the categories.
+pages:
+  - {slug: faq, title: Frequently Asked Questions (FAQ), es: Preguntas frecuentes}
+
+# The Resources section has a sidebar of its own. Bodies: site/content/resources/<slug>.md.
+resources:
+  - {slug: list_resources, title: Resources, es: Recursos}
+  - {slug: presentations, title: Presentations, es: Presentaciones}
+  - {slug: printable_materials, title: Printable Materials, es: Materiales imprimibles}

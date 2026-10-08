@@ -1,0 +1,73 @@
+# Learn Vulgultra: names, navigation and the home page.
+# The lesson tree is in sidebar.yml; Spanish wording is in i18n/es.yml.
+#
+# `to:` is a page of this site, written as its path without .html
+# (index, blog, lessons/pronouns/subject-pronouns); `href:` is an outside link.
+
+title: Learn Vulgultra
+language: Vulgultra
+description: >-
+  A free website to learn Vulgultra, the constructed language that runs the
+  Vulgar Latin process in reverse.
+repository: https://github.com/juleshenry/vulgultra
+copyright: Learn Vulgultra
+
+# The first locale is the default and is built at the root; the others in a
+# folder named after their code.
+locales:
+  en: English
+  es: Español
+
+navbar:
+  - {label: Lessons, to: category/introduction}
+  - {label: Resources, to: resources/list_resources}
+  - {label: Blog, to: blog}
+  - {label: Conjugator, to: tools/conjugator}
+  - {label: Dictionary, to: tools/dictionary}
+
+home:
+  title: Welcome! 👋
+  subtitle: >-
+    Welcome to Learn Vulgultra, a free website to learn Vulgultra, the
+    constructed language that runs the Vulgar Latin process in reverse.
+  button: {label: Learn now!, to: lessons/pronunciation/alphabet}
+  features:
+    - image: feature-short.svg
+      title: As Short as Attested
+      text: >-
+        Each word takes the shortest form the Romance languages attest,
+        counted in syllables.
+    - image: feature-daughters.svg
+      title: Daughters Only
+      text: >-
+        Every word comes from one of 36 Romance languages, in nine branches.
+        Latin is the process being reversed, not a source.
+    - image: feature-open.svg
+      title: Open
+      text: >-
+        The grammar, the word lists and the evidence behind each choice are
+        public.
+
+footer:
+  - title: Sitemap
+    links:
+      - {label: Home, to: index}
+      - {label: Lessons, to: lessons/pronunciation/alphabet}
+      - {label: Resources, to: resources/list_resources}
+      - {label: FAQ, to: lessons/faq}
+  - title: Community
+    links:
+      - {label: Source Repository, href: https://github.com/juleshenry/vulgultra}
+  - title: More
+    links:
+      - {label: Blog, to: blog}
+      - {label: About, to: about}
+      - {label: Contact, to: contact}
+
+# Pages outside the lesson tree. Bodies: site/content/<path>.md.
+pages:
+  - {path: about, title: About}
+  - {path: contact, title: Contact}
+  - {path: markdown-page, title: Markdown Page Example}
+  - {path: tools/conjugator, title: Conjugator}
+  - {path: tools/dictionary, title: Dictionary}

@@ -131,6 +131,7 @@ vulgultra/                  Python package
 
 vulgultra-cli/         Rust SA (root ties; endings enumerated from catalog)
 scripts/               fetch, harvest, audit and report scripts
+site/                  lesson site skeleton; built by scripts/build_site.py (site/README.md)
 docs/grammar/grammar.tex
 docs/eval/romance_scorecard.md      # generated; run is |L| daughters
 data/words/             per-lect corpora

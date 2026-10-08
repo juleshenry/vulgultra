@@ -1,0 +1,94 @@
+# Spanish wording for the site's own text.
+#
+# `strings` maps an English label to Spanish; a label that is not listed
+# stays in English. `site` overrides values of site.yml, in the same shape.
+# A page with no translated body under i18n/es/ (same path as in content/)
+# shows the English one.
+
+site:
+  title: Aprende Vulgultra
+  description: >-
+    Un sitio web gratuito para aprender vulgultra, la lengua construida que
+    recorre en sentido inverso el proceso del latín vulgar.
+  copyright: Aprende Vulgultra
+  home:
+    title: ¡Bienvenido! 👋
+    subtitle: >-
+      Bienvenido a Aprende Vulgultra, un sitio web gratuito para aprender
+      vulgultra, la lengua construida que recorre en sentido inverso el
+      proceso del latín vulgar.
+    button: {label: ¡Aprende ya!}
+    features:
+      - title: Tan corto como lo atestiguado
+        text: >-
+          Cada palabra toma la forma más corta que atestiguan las lenguas
+          romances, contada en sílabas.
+      - title: Solo las hijas
+        text: >-
+          Cada palabra viene de una de 36 lenguas romances, en nueve ramas.
+          El latín es el proceso que se invierte, no una fuente.
+      - title: Abierto
+        text: >-
+          La gramática, las listas de palabras y la evidencia de cada
+          elección son públicas.
+
+strings:
+  # Navigation
+  Lessons: Lecciones
+  Resources: Recursos
+  Conjugator: Conjugador
+  Dictionary: Diccionario
+  Search: Buscar
+  Skip to main content: Saltar al contenido principal
+  Toggle navigation bar: Abrir o cerrar el menú
+  Close navigation bar: Cerrar el menú
+  Switch between dark and light mode: Cambiar entre modo oscuro y claro
+  Languages: Idiomas
+  Main: Principal
+  Docs sidebar: Barra lateral
+  Breadcrumbs: Ruta de navegación
+  Home page: Página de inicio
+  Collapse sidebar: Contraer la barra lateral
+  Expand sidebar: Expandir la barra lateral
+  Expand or collapse this category: Expandir o contraer esta categoría
+  Direct link to this heading: Enlace directo a este encabezado
+  On this page: En esta página
+  Previous: Anterior
+  Next: Siguiente
+  Docs pages: Páginas de documentación
+
+  # Search
+  Search the lessons: Buscar en las lecciones
+  Type to search: Escribe para buscar
+  No results for: Sin resultados para
+  to select: para seleccionar
+  to navigate: para navegar
+  to close: para cerrar
+
+  # Placeholders
+  Under construction: En construcción
+  This page has not been written yet.: Esta página todavía no está escrita.
+  Page Not Found: Página no encontrada
+  We could not find what you were looking for.: No pudimos encontrar lo que buscabas.
+  Back to the home page: Volver al inicio
+  Footnotes: Notas
+
+  # Footer
+  Sitemap: Mapa del sitio
+  Community: Comunidad
+  More: Más
+  Home: Inicio
+  FAQ: Preguntas frecuentes
+  Source Repository: Repositorio del proyecto
+  About: Acerca de
+  Contact: Contacto
+
+  # Blog
+  Recent posts: Entradas recientes
+  Read more: Leer más
+  No posts yet.: Todavía no hay entradas.
+  Newer post: Entrada más reciente
+  Older post: Entrada más antigua
+
+  # Pages outside the lesson tree
+  Markdown Page Example: Ejemplo de página Markdown

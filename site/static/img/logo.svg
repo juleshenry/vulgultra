@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 32" width="44" height="32">
+  <!-- The meaning grid: one row per meaning, one column per lect, one form taken per row. -->
+  <g fill="#ffffff" fill-opacity="0.38">
+    <rect x="1" y="2" width="9" height="8" rx="1.5"/><rect x="23" y="2" width="9" height="8" rx="1.5"/><rect x="34" y="2" width="9" height="8" rx="1.5"/>
+    <rect x="1" y="12" width="9" height="8" rx="1.5"/><rect x="12" y="12" width="9" height="8" rx="1.5"/><rect x="23" y="12" width="9" height="8" rx="1.5"/>
+    <rect x="12" y="22" width="9" height="8" rx="1.5"/><rect x="23" y="22" width="9" height="8" rx="1.5"/><rect x="34" y="22" width="9" height="8" rx="1.5"/>
+  </g>
+  <g fill="#f2c230">
+    <rect x="12" y="2" width="9" height="8" rx="1.5"/><rect x="34" y="12" width="9" height="8" rx="1.5"/><rect x="1" y="22" width="9" height="8" rx="1.5"/>
+  </g>
+</svg>
