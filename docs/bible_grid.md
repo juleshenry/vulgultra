@@ -78,7 +78,7 @@ identify which word in one verse translates which word in another. The
 lexical concept alignment must remain reviewable.
 
 The five TSV lexicons do not exist, and the plan no longer writes them by
-hand: step 6 of [`../ROADMAP.md`](../ROADMAP.md) replaces this importer with
+hand: step 6 of [`../TODO.md`](../TODO.md) replaces this importer with
 rows built from each lect's candidate forms
 (`data/bible/lexicon/forms/{lect}.tsv`). Until then the grid-default pipeline
 uses the existing 36-lect core grid; it does not claim Bible coverage for an

@@ -41,7 +41,7 @@ The command also refreshes the phrase report from that exact annealed
 lexicon. An optional five-language Bible lexicon grid can be compiled as
 described in [`docs/bible_grid.md`](docs/bible_grid.md), then passed with
 `--bible-grid data/bible/concept_grid.json`. This importer is the one on
-disk; step 6 of [`ROADMAP.md`](ROADMAP.md) replaces it with rows built from
+disk; step 6 of [`TODO.md`](TODO.md) replaces it with rows built from
 each lect's candidate forms.
 Once the five aligned TSVs exist, the complete Bible-to-lexicon run is:
 
@@ -161,6 +161,6 @@ defaults to the curated core list and can be extended with the five anchor
 Bible lexicons.
 
 Corpus counts: [`docs/corpus.md`](docs/corpus.md). Remaining work, in order:
-[`ROADMAP.md`](ROADMAP.md). Decisions waiting: [`docs/decisions.md`](docs/decisions.md).
+[`TODO.md`](TODO.md). Decisions waiting: [`docs/decisions.md`](docs/decisions.md).
 
 If you want to grow the thin lects, the [Wikimedia Incubator](https://incubator.wikimedia.org/) takes entries.

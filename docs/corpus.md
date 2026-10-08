@@ -1,6 +1,6 @@
 # Corpus status
 
-Bibliography and counts. Remaining *work* is in [`ROADMAP.md`](../ROADMAP.md).
+Bibliography and counts. Remaining *work* is in [`TODO.md`](../TODO.md).
 Hole-lect notes: [`sources_romansh.md`](sources_romansh.md),
 [`sources_istriot.md`](sources_istriot.md),
 [`sources_ruo.md`](sources_ruo.md).

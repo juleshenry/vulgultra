@@ -4,7 +4,7 @@ Hand-written; updated as you answer. Each entry says what is being decided, why 
 point, and where the evidence is. Nothing here is picked yet. Where I have a view it is marked
 *Suggestion* and is only that.
 
-The order is the roadmap's ([`../ROADMAP.md`](../ROADMAP.md), set on 7 October 2026), and a
+The order is the roadmap's ([`../TODO.md`](../TODO.md), set on 7 October 2026), and a
 decision is numbered by its step. Within the small words the order follows the Bible: the Latin
 text was counted word by word ([`eval/bible_lexicon.md`](eval/bible_lexicon.md)), and its commonest
 words are the small ones. *Et* is 1 word in 12 of the text; the 100 commonest words are 56% of it.
