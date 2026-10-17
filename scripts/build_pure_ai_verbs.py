@@ -676,11 +676,19 @@ def manual_stare(named: dict) -> dict:
     return out
 
 
-def paradigm_table(name: str, forms: dict, mine: dict, attrib: dict) -> str:
+def worded(stem: str, form: str) -> str:
+    """The whole word, the stem highlighted and the ending in brackets:
+    kant[ei]; a verb with no stem shows ∅[ai]."""
+    if not form.startswith(stem):
+        return html.escape(form)
+    return f'<span class="stem">{html.escape(stem) or "∅"}</span>[{html.escape(form[len(stem):])}]'
+
+
+def paradigm_table(name: str, forms: dict, mine: dict, attrib: dict, stems: dict) -> str:
+    """`stems` is tense → the stem the forms are built on."""
     groups: dict = defaultdict(list)
     for k, f in forms.items():
         groups[f].append(k)
-    stem = SAMPLE_STEM.get(name)
     rows = []
     for tam in TAMS:
         if not any((tam, s) in forms for s in SLOTS):
@@ -691,7 +699,7 @@ def paradigm_table(name: str, forms: dict, mine: dict, attrib: dict) -> str:
                 tds.append('<td class="na"><span class="none">n/a</span></td>')
                 continue
             form = forms[(tam, slot)]
-            parts = [f'<div class="pick">{html.escape("-" + form[len(stem):] if stem else form)}</div>']
+            parts = [f'<div class="pick">{worded(stems[tam], form)}</div>']
             whole, pieces = attrib[(tam, slot)]
             if whole:
                 parts.append(f'<div class="src">{chips(whole, 4)}</div>')
@@ -774,8 +782,10 @@ def render(system: System, sol: dict, strict: str) -> str:
         title = vec.THEME_TITLE.get(name) or vec.NAMED_TITLE[name]
         forms = paras[name]
         n_alike = alike_pairs(forms)
-        note = (f"Shown after the sample stem <i>{SAMPLE_STEM[name]}-</i>; every form is also checked on "
-                f"<i>{CHECK_STEMS[name][1]}-</i>." if name in SAMPLE_STEM else "Full forms.")
+        note = (f"Shown on the sample stem <i>{SAMPLE_STEM[name]}</i> (highlighted), the ending in brackets; every "
+                f"form is also checked on <i>{CHECK_STEMS[name][1]}-</i>." if name in SAMPLE_STEM else
+                "The stem highlighted, the ending in brackets; ∅ is no stem at all, so the word is the ending "
+                "alone.")
         extra = ""
         if name == "stare" and mine:
             agree = sum(1 for k, form in mine.items() if k in forms and norm(form) == forms[k])
@@ -787,7 +797,9 @@ def render(system: System, sol: dict, strict: str) -> str:
             f'<section class="verb"><h2>{html.escape(title)}</h2>'
             f'<p class="tally">{len(forms)} forms, {n_alike} pair{"s" if n_alike != 1 else ""} alike '
             f"(at most {system.budget} allowed). {note}{extra}</p>"
-            + paradigm_table(name, forms, mine if name == "stare" else {}, attribs[name])
+            + paradigm_table(name, forms, mine if name == "stare" else {}, attribs[name],
+                             defaultdict(lambda n=name: SAMPLE_STEM[n]) if name in SAMPLE_STEM
+                             else irregular[name]["stems"])
             + "</section>"
         )
     checks = "".join(f'<li>{"✓" if ok else "✗"} {html.escape(label)}</li>' for label, ok in system.checks(sol, paras))
@@ -847,6 +859,7 @@ def render(system: System, sol: dict, strict: str) -> str:
 
 
 EXTRA_STYLE = """
+.stem { background: var(--line); border-radius: 3px; padding: 0 2px; font-weight: 400; }
 table.pieces { width: 100%; border-collapse: collapse; }
 table.pieces th, table.pieces td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left;
   vertical-align: top; }
