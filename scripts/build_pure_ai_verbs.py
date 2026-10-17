@@ -1,25 +1,22 @@
 #!/usr/bin/env python3
 """Pure AI build: the verb system chosen by rule, next to the hand picks.
 
-Hermetic: no usage counts. Every form is stem + marker(theme, tense) + person
-ending, and every piece is cut from the daughters' harvested endings. The
-goals, in rank order:
+Hermetic: no usage counts. Every cell is a form a daughter has for that very
+cell (an ending after the stem for the four regular themes, the whole word for
+esse, stare and habere), so nothing is invented. Over those forms the system is
+base plus variation: six person endings serve every tense and verb, each tense
+of each verb has one base (a theme marker, or an irregular verb's stem), and a
+cell that is not base + person ending is the verb's own form, a variation
+asset. The rules are hard constraints; what passes is ranked by
 
-1. every form legal, on a stem ending in one consonant and on one ending in
-   two; no person ending that the daughters give mostly to another person;
-   the persons of each tense distinct, except that 1sg and 3sg may agree in a
-   tense where most of the daughters' rows have them alike; a
-   subjunctive 1sg never alike with a form of another tense; at most BUDGET
-   other pairs of forms alike in a paradigm; esse, stare and habere never
-   alike;
-2. as few variation assets as possible (a tense's own person ending, an
-   irregular verb's second stem);
-3. the shortest forms: fewest letters after the stem, every cell counted once.
+1. the letters of the distinct pieces (the person endings, the bases, and each
+   own form whole), plus one per own form;
+2. then the letters of all the forms;
+3. then the number of lects that have each form.
 
-For a given set of person endings, each theme's markers are found exactly (a
-bounded search). The person endings themselves are found by local search from
-fixed starting sets; the page says whether the starts agree. The irregular
-verbs are fitted to the base afterwards. Writes docs/eval/pure-ai-build.html.
+The whole system is one exact model, solved with OR-Tools CP-SAT; the page says
+whether the result is proven optimal. Writes docs/eval/pure-ai-build.html.
+Needs OR-Tools: .venv/bin/python3 -m pip install ortools
 """
 
 from __future__ import annotations
@@ -28,11 +25,14 @@ import argparse
 import html
 import re
 import sys
+import time
 import unicodedata
 from collections import Counter, defaultdict
 from functools import lru_cache
-from itertools import product
+from itertools import combinations
 from pathlib import Path
+
+from ortools.sat.python import cp_model
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -46,29 +46,23 @@ DEFAULT_OUTPUT = ROOT / "docs" / "eval" / "pure-ai-build.html"
 SLOTS = vec.PERSON_SLOTS
 THEMES = vec.THEMES
 TAMS = vec.TAMS
-IRREGULAR_THEME = {"esse": "re", "stare": "a", "habere": "e"}
+IRREGULAR = ("esse", "stare", "habere")
+NAMES = THEMES + IRREGULAR
 SAMPLE_STEM = {"a": "kant", "e": "tem", "i": "dorm", "re": "vend"}
-# Every regular form is also checked on a second stem, so that each theme is
-# tried with a stem ending in one consonant and with one ending in two: a
-# piece that leaves -nd- or -rm- bare before a consonant fails (respond-t).
+# Every regular ending is checked on two stems, one ending in one consonant and
+# one in two, so that no ending leaves a cluster bare (respond-t).
 CHECK_STEMS = {"a": ("kant", "lav"), "e": ("tem", "respond"), "i": ("dorm", "fin"), "re": ("vend", "kred")}
 # No false friends: a person cannot take an ending that the daughters give the
-# other persons, together, at least this many times as often (-s is 2sg in 17
-# lects and 1sg in 3, so it cannot be the 1sg; -e is 3pl in 2 lects and another
-# person's in 6, so it cannot be the 3pl).
+# other persons, together, at least this many times as often.
 FALSE_FRIEND = 2
 BUDGET = 2
-TIE = 1e-4  # per attesting lect: ties in length go to the better-attested pieces
-# A variation asset (a marker a theme borrows from another theme for the same
-# tense) costs as much as 20 letters: it is taken where it makes a tense legal or
-# saves more than about three letters on each of the tense's six forms.
-BORROW = 20.0
-VOWELS = frozenset("aeiou")
+# Ranks of the objective, each far above the most the next can add up to.
+PIECE, FORM, LECT = 10**9, 10**5, 1
 LETTERS = {"ț": "ts", "ţ": "ts", "ș": "x", "ş": "x", "ç": "s", "ñ": "ny", "ă": "e", "ß": "ss"}
 
 
 # ---------------------------------------------------------------------------
-# Pieces from the harvest
+# The daughters' forms
 # ---------------------------------------------------------------------------
 
 def norm(text: str) -> str | None:
@@ -84,8 +78,8 @@ def norm(text: str) -> str | None:
 
 
 def cut(row: dict[str, str]) -> tuple[str, dict[str, str | None]]:
-    """Marker = the longest prefix at least four endings share; the rest of
-    each ending is its person ending (None where it does not share it)."""
+    """The longest prefix at least four endings of a row share, and the rest of
+    each ending (None where it does not share it)."""
     ends = list(row.values())
     marker = ""
     for size in range(max(map(len, ends), default=0), 0, -1):
@@ -96,45 +90,56 @@ def cut(row: dict[str, str]) -> tuple[str, dict[str, str | None]]:
     return marker, {s: (e[len(marker):] if e.startswith(marker) else None) for s, e in row.items()}
 
 
+@lru_cache(maxsize=None)
+def legal(form: str) -> bool:
+    if not form:
+        return False
+    try:
+        return is_phonotactically_legal(from_orthography(form))
+    except Exception:
+        return False
+
+
+def is_subjunctive(tam: str) -> bool:
+    return tam.startswith("subjunctive.")
+
+
 def harvest() -> dict:
-    """Candidate pieces, each mapped to the lects that attest it."""
     regular, _ = vec.load_regular()
     named, _ = vec.load_named()
+    # Each lect's rows: plain letters for the pieces, accents kept for the
+    # daughters' own syncretism (pt cantará is not cantara).
     rows: dict = defaultdict(dict)
-    by_lect: dict = defaultdict(lambda: defaultdict(set))
+    accented: dict = defaultdict(dict)
     for theme, tams in regular.items():
         for tam, slots in tams.items():
             for slot, endings in slots.items():
                 for ending, sources in endings.items():
                     e = norm(ending)
-                    if e is None:
-                        continue
                     for lect, cls, support in sources:
-                        if support >= vec.THIN:
+                        if support < vec.THIN:
+                            continue
+                        accented[(theme, lect, cls)][(tam, slot)] = unicodedata.normalize(
+                            "NFC", ending.lower().strip("-"))
+                        if e is not None:
                             rows[(theme, tam, lect, cls)][slot] = e
-                            by_lect[(lect, tam)][slot].add(e)
-    # By tense: the daughters' rows with a 1sg and a 3sg, and how many of them
-    # have the two alike (cantaba, cante).
-    agree = {}
-    for tam in TAMS:
-        both = [r for (_t, t, _l, _c), r in rows.items() if t == tam and "1sg" in r and "3sg" in r]
-        agree[tam] = (sum(1 for r in both if r["1sg"] == r["3sg"]), len(both))
-    marker: dict = defaultdict(lambda: defaultdict(set))
+    # Which persons a tense has: those in at least half the daughters' rows.
+    # No Romance imperative has a first person singular, whatever the tables fill in.
     slots_of: dict = defaultdict(Counter)
-    person_tenses: dict = defaultdict(set)
-    for (theme, tam, lect, _cls), row in rows.items():
-        for slot in row:
-            slots_of[tam][slot] += 1
+    for (_theme, tam, _lect, _cls), row in rows.items():
+        slots_of[tam].update(list(row))
         slots_of[tam][None] += 1
+    slots_of = {tam: [s for s in SLOTS if 2 * slots_of[tam][s] >= slots_of[tam][None]
+                      and (tam, s) != ("imperative", "1sg")] for tam in TAMS}
+    # Person endings: what follows a row's shared front, and only if its lect
+    # uses it for that person in at least two tenses.
+    person_tenses: dict = defaultdict(set)
+    for (_theme, tam, lect, _cls), row in rows.items():
         if len(row) < 4:
             continue
-        m, persons = cut(row)
-        marker[(theme, tam)][m].add(lect)
-        for slot, p in persons.items():
+        for slot, p in cut(row)[1].items():
             if p is not None:
                 person_tenses[(slot, p, lect)].add(tam)
-    # A person ending must be one in its lect: the same ending for the same
-    # person in at least two tenses (Emilian conditional -are-v is not).
     person = {s: defaultdict(set) for s in SLOTS}
     for (slot, p, lect), tenses in person_tenses.items():
         if len(tenses) >= 2:
@@ -148,501 +153,193 @@ def harvest() -> dict:
     for s in SLOTS:
         for p in barred[s]:
             del person[s][p]
-    seen: dict = defaultdict(lambda: defaultdict(set))
-    for verb in IRREGULAR_THEME:
-        for tam, slots in named.get(verb, {}).items():
-            for slot, forms in slots.items():
-                for form, lects in forms.items():
-                    f = norm(form)
-                    if not f:
-                        continue
-                    for lect in lects:
-                        for e in by_lect.get((lect, tam), {}).get(slot, ()):
-                            if f.endswith(e):
-                                seen[verb][f[: len(f) - len(e)]].add((lect, tam))
-    # A stem must recur: in two lects, or in two tenses of one.
-    stems = {
-        verb: {s: {lect for lect, _t in where} for s, where in by.items() if len(where) >= 2}
-        for verb, by in seen.items()
-    }
-    return {
-        "person": person, "barred": barred, "marker": marker, "stems": stems, "named": named,
-        "regular": regular, "agree": agree,
-        # A person a tense has in at least half the daughters' rows. No Romance
-        # imperative has a first person singular, whatever the tables fill in.
-        "slots_of": {
-            tam: [s for s in SLOTS if 2 * slots_of[tam][s] >= slots_of[tam][None]
-                  and (tam, s) != ("imperative", "1sg")]
-            for tam in TAMS
-        },
-    }
-
-
-def ranked(pool: dict) -> list[str]:
-    return sorted(pool, key=lambda p: (len(p), -len(pool[p]), p))
-
-
-# ---------------------------------------------------------------------------
-# Forms
-# ---------------------------------------------------------------------------
-
-def join(left: str, right: str) -> str:
-    """Pieces are written together. Two vowels that meet stay, read as the
-    spec's repair reads them (i or u beside a vowel is a glide: io /jo/, ai
-    /aj/); only two identical vowels merge (a-a → a)."""
-    if left and right and left[-1] in VOWELS and left[-1] == right[0]:
-        right = right[1:]
-    return left + right
-
-
-@lru_cache(maxsize=None)
-def compose(stem: str, marker: str, ending: str) -> str:
-    return join(join(stem, marker), ending)
-
-
-def is_subjunctive(tam: str) -> bool:
-    return tam.startswith("subjunctive.")
-
-
-def subjunctive_1sg_apart(cells: dict) -> bool:
-    """No subjunctive 1sg is alike with a form of another tense."""
-    return all(
-        not any(g == f and t != tam for (t, _s), g in cells.items())
-        for (tam, s), f in cells.items() if s == "1sg" and is_subjunctive(tam)
-    )
-
-
-@lru_cache(maxsize=None)
-def legal(form: str) -> bool:
-    if not form:
-        return False
-    try:
-        return is_phonotactically_legal(from_orthography(form))
-    except Exception:
-        return False
-
-
-def persons_apart(slots, forms, agree: bool) -> bool:
-    """The persons of a tense differ, except that 1sg and 3sg may agree where
-    the tense allows it (cantaba, cante)."""
-    first: dict = {}
-    for s, f in zip(slots, forms):
-        if f in first and not (agree and {first[f], s} == {"1sg", "3sg"}):
-            return False
-        first.setdefault(f, s)
-    return True
-
-
-def alike_pairs(cells: dict) -> int:
-    """Pairs of cells alike, not counting a tense's 1sg and 3sg agreeing."""
-    pairs = sum(n * (n - 1) // 2 for n in Counter(cells.values()).values())
-    return pairs - sum(1 for (tam, s), f in cells.items() if s == "1sg" and cells.get((tam, "3sg")) == f)
-
-
-# ---------------------------------------------------------------------------
-# The search
-# ---------------------------------------------------------------------------
-
-class System:
-    def __init__(self, pools: dict, budget: int) -> None:
-        self.pools = pools
-        self.budget = budget
-        self.slots_of = pools["slots_of"]
-        # Every theme needs every tense; where its own rows give no marker, it
-        # can only borrow one.
-        self.markers = {(t, tam): ranked(pools["marker"].get((t, tam), {})) for t in THEMES for tam in TAMS}
-        self.tams_of = {t: list(TAMS) for t in THEMES}
-        # Markers a theme may borrow: another theme's, for the same tense.
-        self.borrowable = {
-            (t, tam): [m for m in ranked(self.lects_of_marker(tam)) if m not in self.markers[(t, tam)]]
-            for (t, tam) in self.markers
-        }
-        # Tenses where more than half of the daughters' rows have 1sg = 3sg.
-        self.agree_tams = {tam for tam, (same, rows) in pools["agree"].items() if 2 * same > rows}
-        self.tried = 0
-        self._themes: dict = {}
-
-    def tense_endings(self, endings: dict, tam: str) -> dict:
-        """The person endings a tense uses: where 1sg and 3sg may agree, the
-        1sg takes the 3sg's ending if that is shorter."""
-        if tam in self.agree_tams and len(endings["3sg"]) < len(endings["1sg"]):
-            return {**endings, "1sg": endings["3sg"]}
-        return endings
-
-    def lects_of_marker(self, tam: str) -> dict[str, set[str]]:
-        """marker → lects, over every theme's rows for this tense."""
-        out: dict = defaultdict(set)
-        for t in THEMES:
-            for m, lects in self.pools["marker"].get((t, tam), {}).items():
-                out[m] |= lects
-        return out
-
-    def marker_lects(self, theme: str, tam: str, m: str) -> set[str]:
-        own = self.pools["marker"].get((theme, tam), {})
-        return own[m] if m in own else self.lects_of_marker(tam).get(m, set())
-
-    def support(self, kind: str, key, value: str) -> int:
-        if kind == "M":
-            return len(self.marker_lects(key[0], key[1], value))
-        pool = {"E": self.pools["person"], "S": self.pools["stems"]}[kind]
-        return len(pool[key].get(value, ()))
-
-    def whole_lects(self, name: str, tam: str, slot: str, text: str) -> set[str]:
-        """Lects whose own form of this cell is `text` whole: the ending after
-        the stem for a regular theme, the full form for an irregular verb."""
-        if name in THEMES:
-            pool = self.pools["regular"].get(name, {}).get(tam, {}).get(slot, {})
-            return {lect for e, sources in pool.items() if norm(e) == text for lect, _c, _n in sources}
-        pool = self.pools["named"].get(name, {}).get(tam, {}).get(slot, {})
-        return {lect for f, lects in pool.items() if norm(f) == text for lect in lects}
-
-    def attribution(self, sol: dict, name: str, forms: dict) -> dict:
-        """(tam, slot) → (lects with the cell whole, or None, and the pieces
-        with the lects of each)."""
-        out = {}
-        for (tam, slot), f in forms.items():
-            if name in THEMES:
-                theme, stem = name, SAMPLE_STEM[name]
-                text = f[len(stem):]
-            else:
-                fit = sol["irregular"][name]
-                theme, stem, text = fit["theme"], fit["stems"][tam], f
-            m, e = sol["markers"][(theme, tam)], self.tense_endings(sol["endings"], tam)[slot]
-            own = e == sol["endings"][slot]
-            pieces = [("-" + m + "-", self.marker_lects(theme, tam, m)),
-                      (("-" + e if e else "∅") + ("" if own else " (the 3sg's)"),
-                       self.pools["person"][slot if own else "3sg"].get(e, set()))]
-            if name not in THEMES:
-                pieces.insert(0, ((stem or "∅") + "-", self.pools["stems"][name].get(stem, set())))
-            out[(tam, slot)] = (self.whole_lects(name, tam, slot, text) or None, pieces)
-        return out
-
-    # The base -------------------------------------------------------------
-
-    def row(self, stem: str, marker: str, endings: dict, tam: str, also: tuple = ()) -> list[str] | None:
-        """The forms of one tense, or None if one is illegal (on `stem` or on any
-        of the stems `also`) or two persons meet."""
-        endings = self.tense_endings(endings, tam)
-        forms = [compose(stem, marker, endings[s]) for s in self.slots_of[tam]]
-        if not all(legal(f) for f in forms) or not persons_apart(self.slots_of[tam], forms, tam in self.agree_tams):
-            return None
-        if not all(legal(compose(other, marker, endings[s])) for other in also for s in self.slots_of[tam]):
-            return None
-        return forms
-
-    def solve_theme(self, theme: str, endings: dict):
-        """The theme's markers with the least cost (letters after the stem, plus
-        BORROW per borrowed marker), at most `budget` pairs alike:
-        (cost, {tam: marker}) or None."""
-        key = (theme, tuple(endings[s] for s in SLOTS))
-        if key in self._themes:
-            return self._themes[key]
-        stem = SAMPLE_STEM[theme]
-        ids: dict = {}
-        opts = {}
+    # Pairs of cells that more than half the daughters' rows having both have alike.
+    same: Counter = Counter()
+    both: Counter = Counter()
+    for row in accented.values():
+        for k1, k2 in combinations(sorted(row), 2):
+            both[(k1, k2)] += 1
+            same[(k1, k2)] += row[k1] == row[k2]
+    allowed = {frozenset(k): (same[k], both[k]) for k in both if 2 * same[k] > both[k]}
+    # The cells: every form a daughter has for it, legal, with its lects.
+    cells: dict = {}
+    for name in NAMES:
         for tam in TAMS:
-            found = []
-            for borrowed, pool in ((False, self.markers[(theme, tam)]), (True, self.borrowable[(theme, tam)])):
-                for m in pool:
-                    forms = self.row(stem, m, endings, tam, CHECK_STEMS[theme])
-                    if forms is not None:
-                        cost = sum(len(f) - len(stem) for f in forms) + (BORROW if borrowed else 0)
-                        cost -= TIE * self.support("M", (theme, tam), m)
-                        fids = tuple(ids.setdefault(f, len(ids)) for f in forms)
-                        # Forms no other cell may share: a subjunctive's 1sg.
-                        locked = tuple(i for s, i in zip(self.slots_of[tam], fids)
-                                       if s == "1sg" and is_subjunctive(tam))
-                        found.append((cost, m, fids, locked))
-            if not found:
-                self._themes[key] = None
-                return None
-            opts[tam] = sorted(found)
-        order = sorted(opts, key=lambda t: len(opts[t]))
-        rest = [0.0] * (len(order) + 1)
-        for i in range(len(order) - 1, -1, -1):
-            rest[i] = rest[i + 1] + opts[order[i]][0][0]
-        used = [0] * len(ids)
-        lock = [0] * len(ids)
+            for slot in slots_of[tam]:
+                forms: dict = defaultdict(set)
+                if name in THEMES:
+                    for ending, sources in regular.get(name, {}).get(tam, {}).get(slot, {}).items():
+                        w = norm(ending)
+                        lects = {lect for lect, _c, n in sources if n >= vec.THIN}
+                        if w is not None and lects and all(legal(st + w) for st in CHECK_STEMS[name]):
+                            forms[w] |= lects
+                else:
+                    for form, lects in named.get(name, {}).get(tam, {}).get(slot, {}).items():
+                        w = norm(form)
+                        if w and legal(w):
+                            forms[w] |= set(lects)
+                if forms:
+                    cells[(name, tam, slot)] = dict(forms)
+    return {"cells": cells, "person": person, "barred": barred, "allowed": allowed,
+            "slots_of": slots_of, "named": named}
 
-        def clash(forms, locked) -> bool:
-            return any(lock[f] for f in forms) or any(used[f] for f in locked)
 
-        # A first answer, greedily, so the exact search has something to beat.
-        best: list = [float("inf"), None]
-        chosen: dict = {}
-        pairs = cost = 0
-        for tam in order:
-            for c, m, forms, locked in opts[tam]:
-                add = sum(used[f] for f in forms)
-                if pairs + add <= self.budget and not clash(forms, locked):
-                    for f in forms:
-                        used[f] += 1
-                    for f in locked:
-                        lock[f] += 1
-                    chosen[tam], pairs, cost = m, pairs + add, cost + c
-                    break
-            else:
-                break
-        else:
-            best = [cost + 1e-9, dict(chosen)]
-        used = [0] * len(ids)
-        lock = [0] * len(ids)
-        chosen = {}
+# ---------------------------------------------------------------------------
+# The model
+# ---------------------------------------------------------------------------
 
-        def dfs(i: int, pairs: int, cost: float) -> None:
-            if cost + rest[i] >= best[0] - 1e-9:
-                return
-            if i == len(order):
-                best[0], best[1] = cost, dict(chosen)
-                return
-            tam = order[i]
-            for c, m, forms, locked in opts[tam]:
-                if cost + c + rest[i + 1] >= best[0] - 1e-9:
-                    break
-                add = sum(used[f] for f in forms)
-                if pairs + add > self.budget or clash(forms, locked):
-                    continue
-                for f in forms:
-                    used[f] += 1
-                for f in locked:
-                    lock[f] += 1
-                chosen[tam] = m
-                dfs(i + 1, pairs + add, cost + c)
-                for f in forms:
-                    used[f] -= 1
-                for f in locked:
-                    lock[f] -= 1
-                del chosen[tam]
+class Build:
+    def __init__(self, data: dict, budget: int) -> None:
+        self.data = data
+        self.budget = budget
+        self.cells = data["cells"]
+        self.allowed = data["allowed"]
+        self.agree_tams = {t for t in TAMS if frozenset({(t, "1sg"), (t, "3sg")}) in self.allowed}
 
-        dfs(0, 0, 0.0)
-        result = None if best[1] is None else (best[0], best[1])
-        self._themes[key] = result
-        return result
+    def may_agree(self, k1, k2) -> bool:
+        return frozenset({k1[1:], k2[1:]}) in self.allowed
 
-    def evaluate(self, endings: dict):
-        """(cost, markers) of a person-ending set, or None if it cannot pass."""
-        if len(set(endings.values())) < len(endings):
-            return None
-        self.tried += 1
-        cost = -TIE * sum(self.support("E", s, e) for s, e in endings.items())
-        markers = {}
-        for theme in THEMES:
-            solved = self.solve_theme(theme, endings)
-            if solved is None:
-                return None
-            cost += solved[0]
-            markers.update({(theme, tam): m for tam, m in solved[1].items()})
-        return cost, markers
+    def person_slots(self, tam: str, slot: str) -> list[str]:
+        """A 1sg may take the 3sg's ending where the two may agree."""
+        return [slot, "3sg"] if slot == "1sg" and tam in self.agree_tams else [slot]
 
-    def candidates(self) -> dict[str, list[str]]:
-        """Per person, the endings that some marker can make legal in every
-        theme and tense, by how cheaply they can be."""
-        out = {}
+    def solve(self, seconds: float) -> dict | None:
+        cells, person = self.cells, self.data["person"]
+        m = cp_model.CpModel()
+        q = {(s, p): m.NewBoolVar(f"p{s}{p}") for s in SLOTS for p in person[s]}
         for s in SLOTS:
-            weight = {}
-            for e in self.pools["person"][s]:
-                total = 0
-                for theme in THEMES:
-                    stem = SAMPLE_STEM[theme]
-                    for tam in TAMS:
-                        if s not in self.slots_of[tam]:
-                            continue
-                        lens = [len(compose(stem, m, e)) - len(stem)
-                                for m in self.markers[(theme, tam)] + self.borrowable[(theme, tam)]
-                                if all(legal(compose(st, m, e)) for st in CHECK_STEMS[theme])]
-                        if not lens:
-                            total = None
-                            break
-                        total += min(lens)
-                    if total is None:
-                        break
-                if total is not None:
-                    weight[e] = (total, -self.support("E", s, e), e)
-            out[s] = sorted(weight, key=weight.get)
-        return out
-
-    def climb(self, endings: dict, cands: dict):
-        """Best-improvement local search: change one person's ending, or swap
-        two persons' endings, while that lowers the cost. A start that cannot
-        pass moves first to its cheapest neighbour that can."""
-        current = self.evaluate(endings)
-        while True:
-            best = (current[0] if current else float("inf"), None)
-            moves = [{s: e} for s in SLOTS for e in cands[s] if e != endings[s]]
-            moves += [{a: endings[b], b: endings[a]} for i, a in enumerate(SLOTS) for b in SLOTS[i + 1:]
-                      if endings[b] in cands[a] and endings[a] in cands[b]]
-            for move in moves:
-                trial = {**endings, **move}
-                got = self.evaluate(trial)
-                if got is not None and got[0] < best[0] - 1e-9:
-                    best = (got[0], trial, got[1])
-            if best[1] is None:
-                return None if current is None else (current[0], endings, current[1])
-            endings, current = best[1], (best[0], best[2])
-
-    def starts(self, cands: dict) -> list[dict]:
-        """Fixed starting sets, made distinct: each person's cheapest endings
-        (and rotations of that order), its best-attested ones, and its
-        consonant-initial or vowel-initial ones first, so both families of
-        endings are explored."""
-        def distinct(pick) -> dict | None:
-            out, taken = {}, set()
-            for s in SLOTS:
-                options = [e for e in pick(s) if e not in taken]
-                if not options:
-                    return None
-                out[s] = options[0]
-                taken.add(out[s])
-            return out
-
-        by_support = {s: sorted(cands[s], key=lambda e: -self.support("E", s, e)) for s in SLOTS}
-        found = [distinct(lambda s, k=k: cands[s][k:] + cands[s][:k]) for k in range(4)]
-        found += [distinct(lambda s, k=k: by_support[s][k:] + by_support[s][:k]) for k in range(2)]
-        found += [distinct(lambda s, v=v: sorted(cands[s], key=lambda e: (e[:1] in VOWELS) == v)) for v in (False, True)]
-        return [f for i, f in enumerate(found) if f is not None and f not in found[:i]]
-
-    def kick(self, best: tuple, cands: dict, top: int = 8) -> tuple:
-        """From the best base, try changing two persons at once (each to one of
-        its `top` cheapest endings); take any improvement and climb again."""
-        self.kicked = 0
-        while True:
-            cost, endings, _markers = best
-            found = None
-            for i, a in enumerate(SLOTS):
-                for b in SLOTS[i + 1:]:
-                    for ea in cands[a][:top]:
-                        for eb in cands[b][:top]:
-                            if ea == endings[a] or eb == endings[b]:
-                                continue
-                            got = self.evaluate({**endings, a: ea, b: eb})
-                            if got is not None and got[0] < (found or best)[0] - 1e-9:
-                                found = (got[0], {**endings, a: ea, b: eb}, got[1])
-            if found is None:
-                return best
-            self.kicked += 1
-            best = self.climb(found[1], cands) or found
-
-    def solve_base(self):
-        """(cost, endings, markers) for the best base found, or None."""
-        cands = self.candidates()
-        results = [r for r in (self.climb(start, cands) for start in self.starts(cands)) if r is not None]
-        if not results:
-            self.agree = False
+            m.AddExactlyOne(q[(s, p)] for p in person[s])
+        for p in {p for s in SLOTS for p in person[s]}:
+            m.AddAtMostOne(q[(s, p)] for s in SLOTS if p in person[s])
+        x = {(k, w): m.NewBoolVar("") for k, forms in cells.items() for w in forms}
+        for k, forms in cells.items():
+            m.AddExactlyOne(x[(k, w)] for w in forms)
+        # Base + person ending: y says this form is that, for this base.
+        z: dict = {}
+        y: dict = defaultdict(list)
+        for k, forms in cells.items():
+            name, tam, slot = k
+            for w in forms:
+                for i in range(len(w) + 1):
+                    base, p = w[:i], w[i:]
+                    for ps in self.person_slots(tam, slot):
+                        if p in person[ps]:
+                            zb = z.setdefault((name, tam, base), m.NewBoolVar(""))
+                            v = m.NewBoolVar("")
+                            m.AddImplication(v, zb)
+                            m.AddImplication(v, q[(ps, p)])
+                            m.AddImplication(v, x[(k, w)])
+                            y[(k, w)].append(v)
+        by_tense: dict = defaultdict(list)
+        for (name, tam, _b), v in z.items():
+            by_tense[(name, tam)].append(v)
+        for vs in by_tense.values():
+            m.AddExactlyOne(vs)
+        used: dict = {}
+        for (name, tam, base), v in z.items():
+            u = used.setdefault((name, base), m.NewBoolVar(""))
+            m.AddImplication(v, u)
+        own = {}
+        for (k, w), xv in x.items():
+            e = m.NewBoolVar("")
+            m.Add(e >= xv - sum(y[(k, w)]))
+            own[(k, w)] = e
+        # Rules
+        by_name: dict = defaultdict(list)
+        for k in cells:
+            by_name[k[0]].append(k)
+        alike: dict = defaultdict(list)
+        for name, ks in by_name.items():
+            for k1, k2 in combinations(ks, 2):
+                shared = cells[k1].keys() & cells[k2].keys()
+                if not shared or self.may_agree(k1, k2):
+                    continue
+                forbidden = k1[1] == k2[1] or any(
+                    k[2] == "1sg" and is_subjunctive(k[1]) for k in (k1, k2))
+                for w in shared:
+                    if forbidden:
+                        m.AddBoolOr([x[(k1, w)].Not(), x[(k2, w)].Not()])
+                    else:
+                        a = m.NewBoolVar("")
+                        m.AddBoolOr([x[(k1, w)].Not(), x[(k2, w)].Not(), a])
+                        alike[name].append(a)
+        for vs in alike.values():
+            m.Add(sum(vs) <= self.budget)
+        for v1, v2 in combinations(IRREGULAR, 2):
+            for k1 in by_name[v1]:
+                k2 = (v2, *k1[1:])
+                for w in cells[k1].keys() & cells.get(k2, {}).keys():
+                    m.AddBoolOr([x[(k1, w)].Not(), x[(k2, w)].Not()])
+        # Objective
+        terms = [PIECE * len(p) * v for (s, p), v in q.items()]
+        terms += [PIECE * len(base) * u for (_n, base), u in used.items() if base]
+        for (k, w), xv in x.items():
+            terms.append(PIECE * (len(w) + 1) * own[(k, w)])
+            terms.append((FORM * len(w) - LECT * len(cells[k][w])) * xv)
+        m.Minimize(sum(terms))
+        solver = cp_model.CpSolver()
+        solver.parameters.max_time_in_seconds = seconds
+        solver.parameters.num_workers = 8
+        solver.parameters.random_seed = 0
+        started = time.time()
+        status = solver.Solve(m)
+        if status not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
             return None
-        best = self.kick(min(results, key=lambda r: r[0]), cands)
-        self.starts_run = len(results)
-        self.reached = sum(1 for r in results if r[1] == best[1])
-        self.agree = self.reached == len(results)
-        optima: dict = {}
-        for cost, endings, markers in results:
-            key = tuple(endings[s] for s in SLOTS)
-            optima.setdefault(key, [cost, endings, markers, 0])[3] += 1
-        self.optima = sorted(optima.values(), key=lambda o: o[0])
-        return best
+        return {
+            "status": solver.StatusName(status),
+            "seconds": time.time() - started,
+            "pieces": round(solver.ObjectiveValue()) // PIECE,
+            "bound": round(solver.BestObjectiveBound()) // PIECE,
+            "endings": {s: p for (s, p), v in q.items() if solver.Value(v)},
+            "bases": {(n, t): b for (n, t, b), v in z.items() if solver.Value(v)},
+            "forms": {k: next(w for w in forms if solver.Value(x[(k, w)])) for k, forms in cells.items()},
+            "own": {k: bool(solver.Value(own[(k, w)])) for (k, w), xv in x.items() if solver.Value(xv)},
+        }
 
-    # The irregular verbs ---------------------------------------------------
+    # Checks, on the result alone --------------------------------------------
 
-    def verb_forms(self, theme: str, stems: dict, endings: dict, markers: dict):
-        """(tam, slot) → form, or None if a tense breaks the rules."""
-        cells = {}
-        for tam in self.tams_of[theme]:
-            forms = self.row(stems[tam], markers[(theme, tam)], endings, tam)
-            if forms is None:
-                return None
-            cells.update({(tam, s): f for s, f in zip(self.slots_of[tam], forms)})
-        if alike_pairs(cells) > self.budget or not subjunctive_1sg_apart(cells):
-            return None
-        return cells
+    def paradigm(self, sol: dict, name: str) -> dict:
+        return {k[1:]: w for k, w in sol["forms"].items() if k[0] == name}
 
-    def fit_irregulars(self, endings: dict, markers: dict):
-        """A theme and one stem per verb, all three verbs apart in every cell;
-        where one stem cannot do it, a second stem for the clashing tenses."""
-        full = [t for t in THEMES if len(self.tams_of[t]) == len(TAMS)]
-        options = {}
-        for verb in IRREGULAR_THEME:
-            found = []
-            for theme in full:
-                for stem in ranked(self.pools["stems"].get(verb, {})):
-                    cells = self.verb_forms(theme, defaultdict(lambda s=stem: s), endings, markers)
-                    if cells is not None:
-                        cost = sum(len(f) for f in cells.values()) - TIE * self.support("S", verb, stem)
-                        found.append((cost, theme, stem, cells))
-            options[verb] = sorted(found, key=lambda o: o[0])[:40]
-        verbs = list(IRREGULAR_THEME)
-        best = None
-        for combo in product(*(options[v] for v in verbs)):
-            cost = sum(o[0] for o in combo)
-            if best is not None and cost >= best[0]:
-                continue
-            if any(combo[i][3].get(k) == combo[j][3].get(k) and k in combo[i][3]
-                   for i in range(3) for j in range(i + 1, 3) for k in combo[i][3]):
-                continue
-            best = (cost, combo)
-        if best is None:
-            return None
-        return {v: {"theme": o[1], "stems": {tam: o[2] for tam in TAMS}} for v, o in zip(verbs, best[1])}
+    def extra_alike(self, forms: dict) -> int:
+        groups = defaultdict(list)
+        for k, w in forms.items():
+            groups[w].append(k)
+        return sum(1 for ks in groups.values() for a, b in combinations(ks, 2)
+                   if frozenset({a, b}) not in self.allowed)
 
-    def solve(self):
-        base = self.solve_base()
-        if base is None:
-            return None
-        _cost, endings, markers = base
-        irregular = self.fit_irregulars(endings, markers)
-        return {"endings": endings, "markers": markers, "irregular": irregular}
-
-    # Reading a solution ----------------------------------------------------
-
-    def paradigms(self, sol: dict) -> dict[str, dict[tuple[str, str], str]]:
-        out = {}
-        for theme in THEMES:
-            out[theme] = {
-                (tam, s): compose(SAMPLE_STEM[theme], sol["markers"][(theme, tam)],
-                                  self.tense_endings(sol["endings"], tam)[s])
-                for tam in self.tams_of[theme] for s in self.slots_of[tam]
-            }
-        for verb, fit in (sol["irregular"] or {}).items():
-            out[verb] = {
-                (tam, s): compose(fit["stems"][tam], sol["markers"][(fit["theme"], tam)],
-                                  self.tense_endings(sol["endings"], tam)[s])
-                for tam in self.tams_of[fit["theme"]] for s in self.slots_of[tam]
-            }
-        return out
-
-    def letters(self, paras: dict) -> tuple[int, int]:
-        """(letters after the stem over all forms, number of forms)."""
-        total = cells = 0
-        for name, forms in paras.items():
-            cut_at = len(SAMPLE_STEM.get(name, ""))
-            total += sum(len(f) - cut_at for f in forms.values())
-            cells += len(forms)
-        return total, cells
-
-    def checks(self, sol: dict, paras: dict) -> list[tuple[str, bool]]:
-        attested = all(self.support("E", s, e) for s, e in sol["endings"].items()) and all(
-            self.support("M", k, m) for k, m in sol["markers"].items()) and all(
-            self.support("S", v, s) for v, fit in (sol["irregular"] or {}).items() for s in fit["stems"].values())
-        legal_all = all(legal(f) for forms in paras.values() for f in forms.values()) and all(
-            legal(compose(st, sol["markers"][(t, tam)], self.tense_endings(sol["endings"], tam)[sl]))
-            for t in THEMES for st in CHECK_STEMS[t] for tam in TAMS for sl in self.slots_of[tam])
-        distinct = all(
-            persons_apart(*zip(*[(s, forms[(tam, s)]) for s in self.slots_of[tam] if (tam, s) in forms]),
-                          tam in self.agree_tams)
-            for forms in paras.values() for tam in TAMS if any((tam, s) in forms for s in SLOTS)
-        )
-        budget = all(alike_pairs(forms) <= self.budget for forms in paras.values())
-        subjunctive = all(subjunctive_1sg_apart(forms) for forms in paras.values())
-        verbs = [v for v in IRREGULAR_THEME if v in paras]
+    def checks(self, sol: dict) -> list[tuple[str, bool]]:
+        forms = sol["forms"]
+        attested = all(w in self.cells[k] for k, w in forms.items())
+        legal_all = all(
+            all(legal(st + w) for st in CHECK_STEMS[k[0]]) if k[0] in THEMES else legal(w)
+            for k, w in forms.items())
         apart = all(
-            paras[a][k] != paras[b][k]
-            for i, a in enumerate(verbs) for b in verbs[i + 1:] for k in paras[a] if k in paras[b]
-        )
+            forms[a] != forms[b] or self.may_agree(a, b)
+            for a, b in combinations(forms, 2) if a[:2] == b[:2])
+        subj = all(
+            forms[a] != forms[b]
+            for a in forms if a[2] == "1sg" and is_subjunctive(a[1])
+            for b in forms if b[0] == a[0] and b[1] != a[1] and not self.may_agree(a, b))
+        budget = all(self.extra_alike(self.paradigm(sol, n)) <= self.budget for n in NAMES)
+        aux = all(forms[(a, *k[1:])] != forms.get((b, *k[1:]))
+                  for a, b in combinations(IRREGULAR, 2) for k in forms if k[0] == a)
+        endings = sol["endings"]
+        persons = len(set(endings.values())) == 6 and all(
+            e in self.data["person"][s] for s, e in endings.items())
+        base = all(
+            sol["own"][k] or any(w == sol["bases"].get(k[:2], "") + endings[ps]
+                                 for ps in self.person_slots(k[1], k[2]))
+            for k, w in forms.items())
         return [
-            ("every piece attested in a daughter", attested),
-            ("every form legal, on both test stems", legal_all),
-            ("the persons of every tense distinct, but for 1sg and 3sg where the daughters allow", distinct),
-            ("no subjunctive 1sg alike with a form of another tense", subjunctive),
-            (f"at most {self.budget} pairs alike in any paradigm", budget),
-            ("esse, stare and habere never alike", apart and sol["irregular"] is not None),
+            ("every form is a daughter's own form for that cell", attested),
+            ("every form legal (regular endings on both test stems)", legal_all),
+            ("six different person endings, none a false friend", persons),
+            ("every cell not marked as an own form is base + person ending", base),
+            ("the persons of every tense differ, but for 1sg and 3sg where the daughters allow", apart),
+            ("no subjunctive 1sg alike with a form of another tense, but where the daughters allow", subj),
+            (f"at most {self.budget} pairs alike in any paradigm beyond the daughters' own", budget),
+            ("esse, stare and habere never alike", aux),
         ]
 
 
@@ -676,184 +373,128 @@ def manual_stare(named: dict) -> dict:
     return out
 
 
-def worded(stem: str, form: str) -> str:
-    """The whole word, the stem highlighted and the ending in brackets:
-    kant[ei]; a verb with no stem shows ∅[ai]."""
-    if not form.startswith(stem):
-        return html.escape(form)
-    return f'<span class="stem">{html.escape(stem) or "∅"}</span>[{html.escape(form[len(stem):])}]'
+def worded(lead: str, rest: str) -> str:
+    """The word with its lead highlighted (the sample stem, or an irregular
+    verb's base) and the rest in brackets."""
+    return f'<span class="stem">{html.escape(lead) or "∅"}</span>[{html.escape(rest)}]'
 
 
-def paradigm_table(name: str, forms: dict, mine: dict, attrib: dict, stems: dict) -> str:
-    """`stems` is tense → the stem the forms are built on."""
+def paradigm_table(build: Build, sol: dict, name: str, mine: dict) -> str:
+    forms = build.paradigm(sol, name)
     groups: dict = defaultdict(list)
-    for k, f in forms.items():
-        groups[f].append(k)
+    for k, w in forms.items():
+        groups[w].append(k)
     rows = []
     for tam in TAMS:
         if not any((tam, s) in forms for s in SLOTS):
+            if name in THEMES:
+                rows.append((tam, ['<td class="na"><span class="none">no daughter has it</span></td>'] * 6))
             continue
+        base = sol["bases"].get((name, tam))
         tds = []
         for slot in SLOTS:
+            k = (name, tam, slot)
             if (tam, slot) not in forms:
                 tds.append('<td class="na"><span class="none">n/a</span></td>')
                 continue
-            form = forms[(tam, slot)]
-            parts = [f'<div class="pick">{worded(stems[tam], form)}</div>']
-            whole, pieces = attrib[(tam, slot)]
-            if whole:
-                parts.append(f'<div class="src">{chips(whole, 4)}</div>')
+            w = forms[(tam, slot)]
+            own = sol["own"][k]
+            if name in THEMES:
+                word = worded(SAMPLE_STEM[name], w)
+            elif not own and base is not None and w.startswith(base):
+                word = worded(base, w[len(base):])
             else:
-                parts.append('<div class="src"><span class="flag var">new</span></div>' + "".join(
-                    f'<div class="src"><span class="mine">{html.escape(text)}</span> {chips(lects, 3)}</div>'
-                    for text, lects in pieces))
-            others = [k for k in groups[form] if k != (tam, slot)]
+                word = html.escape(w)
+            parts = [f'<div class="pick">{word}</div>', f'<div class="src">{chips(build.cells[k][w], 4)}</div>']
+            if own:
+                parts.append('<div class="src"><span class="flag var">own form</span></div>')
+            others = [o for o in groups[w] if o != (tam, slot)]
             if others:
                 parts.append('<div class="mine">alike: ' + ", ".join(
-                    f"{picks.SHORT[t]} {s}" for t, s in others) + "</div>")
+                    f"{picks.SHORT[t]} {s}" + (" (daughters')" if build.may_agree((name, tam, slot), (name, t, s))
+                                               else "")
+                    for t, s in others) + "</div>")
             if (tam, slot) in mine:
                 theirs = mine[(tam, slot)]
                 parts.append(f'<div class="mine">yours: {html.escape(theirs)}'
-                             f'{" ✓" if norm(theirs) == form else ""}</div>')
+                             f'{" ✓" if norm(theirs) == w else ""}</div>')
             tds.append(f'<td{" class=alike" if others else ""}>{"".join(parts)}</td>')
         rows.append((tam, tds))
     return picks.table(rows)
 
 
-def render(system: System, sol: dict, strict: str) -> str:
-    paras = system.paradigms(sol)
-    letters, cells = system.letters(paras)
-    endings, markers = sol["endings"], sol["markers"]
+def render(build: Build, sol: dict) -> str:
+    data, endings = build.data, sol["endings"]
+    forms = sol["forms"]
+    n_forms = len(forms)
+    n_own = sum(sol["own"].values())
+    letters = sum(len(w) for w in forms.values())
     persons = "".join(
         f'<tr><th scope="row">{s}</th><td><span class="pick">{piece(endings[s])}</span></td>'
-        f'<td>{chips(system.pools["person"][s].get(endings[s], ()))}</td></tr>'
+        f'<td>{chips(data["person"][s].get(endings[s], ()))}</td></tr>'
+        for s in SLOTS)
+    barred = "; ".join(
+        f'{s} <span class="pick">{piece(e)}</span> (other persons {n_other}, {s} {n_own_})'
         for s in SLOTS
-    )
-    barred = system.pools["barred"]
-    barred_line = "; ".join(
-        f"{s} <span class=\"pick\">{piece(e)}</span> (other persons {n_other}, {s} {n_own})"
-        for s in SLOTS for e, (n_other, n_own) in sorted(barred[s].items(), key=lambda kv: (len(kv[0]), kv[0]))
+        for e, (n_other, n_own_) in sorted(data["barred"][s].items(), key=lambda kv: (len(kv[0]), kv[0]))
     ) or "none"
-    marker_rows = []
+    base_rows = []
     for tam in TAMS:
         tds = []
-        for theme in THEMES:
-            m = markers.get((theme, tam))
-            borrowed = m not in system.markers[(theme, tam)]
-            tds.append(
-                f'<td><span class="pick">{piece(m)}</span>'
-                + (' <span class="flag var">borrowed</span>' if borrowed else "")
-                + f'<div class="src">{chips(system.marker_lects(theme, tam, m))}</div></td>'
-            )
-        marker_rows.append(f'<tr><th scope="row">{tam.replace(".", " · ")}</th>{"".join(tds)}</tr>')
-    irregular = sol["irregular"] or {}
-    stem_lines = []
-    for verb, fit in irregular.items():
-        by_stem: dict = defaultdict(list)
-        for tam in system.tams_of[fit["theme"]]:
-            by_stem[fit["stems"][tam]].append(tam)
-        stem_lines.append(
-            f'<li><b>{verb}</b> takes the markers of the {vec.THEME_TITLE[fit["theme"]]}; stem '
-            + "; ".join(
-                f'<span class="pick">{piece(s)}</span>'
-                + ("" if len(by_stem) == 1 else " (" + ", ".join(picks.SHORT[t] for t in tams) + ")")
-                + f' {chips(system.pools["stems"][verb].get(s, ()))}'
-                for s, tams in by_stem.items()
-            ) + "</li>"
-        )
-    extra_stems = sum(max(0, len(set(fit["stems"].values())) - 1) for fit in irregular.values())
-    borrowed = sorted(k for k, m in markers.items() if m not in system.markers[k])
-    assets = (f"<b>{len(borrowed) + extra_stems}</b>: "
-              + ("borrowed markers for " + ", ".join(f"the {t} theme's {picks.SHORT[tam]}" for t, tam in borrowed)
-                 if borrowed else "no borrowed markers")
-              + f"; {extra_stems} extra stem{'s' if extra_stems != 1 else ''} for the irregular verbs.")
-    mine = manual_stare(system.pools["named"])
-    attribs = {name: system.attribution(sol, name, paras[name]) for name in paras}
-    whole_regular = sum(1 for t in THEMES for w, _p in attribs[t].values() if w)
-    cells_regular = sum(len(attribs[t]) for t in THEMES)
-    whole_irregular = sum(1 for v in irregular for w, _p in attribs[v].values() if w)
-    cells_irregular = sum(len(attribs[v]) for v in irregular)
-    whole = (f"<b>{whole_regular}</b> of the {cells_regular} regular cells, and <b>{whole_irregular}</b> of the "
-             f"{cells_irregular} irregular ones, are a daughter's own form whole; the rest (marked "
-             '<span class="flag var">new</span>) are new combinations of attested pieces, each shown with '
-             "the lects it comes from.")
+        for name in NAMES:
+            b = sol["bases"].get((name, tam))
+            own = sum(1 for k, v in sol["own"].items() if k[:2] == (name, tam) and v)
+            total = sum(1 for k in forms if k[:2] == (name, tam))
+            if b is None and not total:
+                tds.append('<td><span class="none">—</span></td>')
+                continue
+            tds.append(f'<td><span class="pick">{piece(b)}</span>'
+                       + (f'<div class="mine">{own} own</div>' if own else "") + "</td>")
+        base_rows.append(f'<tr><th scope="row">{tam.replace(".", " · ")}</th>{"".join(tds)}</tr>')
+    agree = "; ".join(
+        f"{picks.SHORT[a[0]]} {a[1]} = {picks.SHORT[b[0]]} {b[1]} ({s} of {n})"
+        for pair, (s, n) in sorted(build.allowed.items(), key=lambda kv: sorted(kv[0]))
+        for a, b in [sorted(pair)] if ("imperative", "1sg") not in pair)
+    mine = manual_stare(data["named"])
     sections = []
-    for name in list(THEMES) + list(irregular):
+    for name in NAMES:
         title = vec.THEME_TITLE.get(name) or vec.NAMED_TITLE[name]
-        forms = paras[name]
-        n_alike = alike_pairs(forms)
-        note = (f"Shown on the sample stem <i>{SAMPLE_STEM[name]}</i> (highlighted), the ending in brackets; every "
-                f"form is also checked on <i>{CHECK_STEMS[name][1]}-</i>." if name in SAMPLE_STEM else
-                "The stem highlighted, the ending in brackets; ∅ is no stem at all, so the word is the ending "
-                "alone.")
+        para = build.paradigm(sol, name)
+        own = sum(1 for k, v in sol["own"].items() if k[0] == name and v)
+        note = (f"Shown on the sample stem <i>{SAMPLE_STEM[name]}</i> (highlighted), the daughters' ending in "
+                "brackets." if name in THEMES else
+                "Where a form is base + person ending, the base is highlighted and the ending is in brackets.")
         extra = ""
         if name == "stare" and mine:
-            agree = sum(1 for k, form in mine.items() if k in forms and norm(form) == forms[k])
-            extra = f" {agree} of your {len(mine)} stare forms are the same as the build's."
-        missing = [picks.SHORT[t] for t in TAMS if t not in system.tams_of.get(name, TAMS)]
-        if missing:
-            extra += " No daughter's row gives this theme a marker for: " + ", ".join(missing) + "."
+            same = sum(1 for k, form in mine.items() if k in para and norm(form) == para[k])
+            extra = f" {same} of your {len(mine)} stare forms are the same as the build's."
         sections.append(
             f'<section class="verb"><h2>{html.escape(title)}</h2>'
-            f'<p class="tally">{len(forms)} forms, {n_alike} pair{"s" if n_alike != 1 else ""} alike '
-            f"(at most {system.budget} allowed). {note}{extra}</p>"
-            + paradigm_table(name, forms, mine if name == "stare" else {}, attribs[name],
-                             defaultdict(lambda n=name: SAMPLE_STEM[n]) if name in SAMPLE_STEM
-                             else irregular[name]["stems"])
-            + "</section>"
-        )
-    checks = "".join(f'<li>{"✓" if ok else "✗"} {html.escape(label)}</li>' for label, ok in system.checks(sol, paras))
-    optima_rows = []
-    for cost, ends, marks, starts in system.optima:
-        regular = {t: {(tam, sl): compose(SAMPLE_STEM[t], marks[(t, tam)], system.tense_endings(ends, tam)[sl])
-                       for tam in TAMS for sl in system.slots_of[tam]} for t in THEMES}
-        reg_letters, reg_cells = system.letters(regular)
-        n_borrowed = sum(1 for k, m in marks.items() if m not in system.markers[k])
-        mark = " (this build)" if ends == endings else ""
-        optima_rows.append(
-            "<tr>" + "".join(f'<td><span class="pick">{piece(ends[sl])}</span></td>' for sl in SLOTS)
-            + f"<td>{reg_letters / reg_cells:.2f}</td><td>{n_borrowed}</td><td>{starts}{mark}</td></tr>"
-        )
-    optima = (
-        '<h2>Other bases the search stopped on</h2>'
-        '<p class="tally">Each start climbs until no single change of one person\'s ending (or swap of two) helps. '
-        "Where starts stop on different sets, those are real alternatives: to get from one to another, several "
-        "persons have to change at once. Letters are averaged over the four regular themes' forms.</p>"
-        '<div class="wrap"><table class="pieces"><thead><tr>'
-        + "".join(f"<th>{sl}</th>" for sl in SLOTS)
-        + "<th>Letters per form</th><th>Borrowed markers</th><th>Starts that end here</th></tr></thead><tbody>"
-        + "".join(optima_rows) + "</tbody></table></div>"
-    ) if len(system.optima) > 1 else ""
-    search = (
-        f"Person endings found by local search from {system.starts_run} fixed starting sets "
-        f"({system.tried:,} sets weighed, each with its best markers found exactly). "
-        + ("All of them end on the same base. "
-           if system.agree else
-           f"{system.reached} of them end on this base; the others stop on costlier ones. ")
-        + ("No change of two persons' endings at once improves on it either. " if not system.kicked else
-           f"Changing two persons' endings at once then improved it {system.kicked} time(s). ")
-        + "Nothing random is involved: the same result on every run."
-    )
+            f'<p class="tally">{len(para)} forms, {own} own forms, {build.extra_alike(para)} pairs alike beyond '
+            f"the daughters' own (at most {build.budget}). {note}{extra}</p>"
+            + paradigm_table(build, sol, name, mine if name == "stare" else {})
+            + "</section>")
+    checks = "".join(f'<li>{"✓" if ok else "✗"} {html.escape(label)}</li>' for label, ok in build.checks(sol))
+    proof = ("proven optimal" if sol["status"] == "OPTIMAL" else
+             f"the best found in {sol['seconds']:.0f} s; no system can cost less than {sol['bound']:,} letters of "
+             "pieces")
     return PAGE.format(
         style=picks.STYLE + EXTRA_STYLE,
-        budget=system.budget,
-        mean=f"{letters / cells:.2f}",
-        letters=f"{letters:,}",
-        cells=f"{cells:,}",
-        assets=assets,
-        whole=whole,
-        agree="; ".join(
-            f"{picks.SHORT[tam]} {same} of {rows}" + ("" if tam in system.agree_tams else ", so apart")
-            for tam in TAMS if tam != "imperative" for same, rows in [system.pools["agree"][tam]]),
-        strict=strict,
-        search=search,
+        budget=build.budget,
+        thin=vec.THIN,
+        agree=agree,
+        pieces=f"{sol['pieces']:,}",
+        proof=proof,
+        seconds=f"{sol['seconds']:.0f}",
+        own=n_own,
+        regular=n_forms - n_own,
+        cells=n_forms,
+        mean=f"{letters / n_forms:.2f}",
         checks=checks,
-        optima=optima,
         persons=persons,
-        barred=barred_line,
-        theme_head="".join(f"<th>{vec.THEME_TITLE[t]}</th>" for t in THEMES),
-        markers="".join(marker_rows),
-        stems="".join(stem_lines) or "<li>No fit found.</li>",
+        barred=barred,
+        name_head="".join(f"<th>{html.escape(vec.THEME_TITLE.get(n) or n)}</th>" for n in NAMES),
+        bases="".join(base_rows),
         sections="".join(sections),
     )
 
@@ -889,58 +530,46 @@ by hand, and no usage counts are used. Rebuild with
 
 <h2>The rules</h2>
 <ol class="rules">
-<li><b>Built from pieces.</b> Every form is stem + marker (one per theme and tense) + person ending.
-Pieces are written together. Two vowels that meet stay, read as the spec reads them: <i>i</i> or <i>u</i>
-beside a vowel is a glide (<i>io</i> /jo/, <i>ai</i> /aj/), one syllable; only identical vowels merge
-(<i>a-a</i> → <i>a</i>).</li>
-<li><b>Attested only.</b> Every piece is cut from a daughter's endings. A marker is what at least four
-of a row's six endings share at the front; a person ending is what follows it, and counts only if its
-lect uses it for that person in two tenses or more; an irregular stem is the verb's form minus that
-lect's own ending, found at least twice.</li>
-<li><b>Legal, and no false friends.</b> Every form passes the spec's syllable rules, checked for each
-theme on a stem ending in one consonant and on one ending in two (<i>tem-</i> and <i>respond-</i>), so no
-piece leaves a cluster bare. A person never takes an ending the daughters give the other persons, together,
-at least twice as often: <i>-s</i> is the 2sg in most lects, so it cannot be the 1sg. Counted by lect and
-person: a lect with <i>-s</i> for two persons counts twice.</li>
-<li><b>Unique, with minor overloading.</b> The persons of a tense always differ, except that 1sg and 3sg
-may agree in a tense where more than half of the daughters' rows have them alike ({agree}); there the 1sg
-takes the 3sg's ending if it is shorter, and that is not counted as overloading; a subjunctive 1sg is never alike with
-a form of another tense; otherwise at most {budget} pairs of forms in a paradigm may be alike; esse, stare and
-habere never share a form.</li>
-<li><b>Base plus variation.</b> One set of person endings serves every tense and every theme. A theme may
-borrow another theme's marker for a tense (as Spanish folded <i>-ere</i> into <i>-er</i>), and must where
-its own rows give none or none that works; an irregular verb may take a second stem. Each such variation
-costs as much as 20 letters, so it is taken only where it makes a tense possible or saves more than about
-three letters on each of its forms.</li>
-<li><b>Minimal.</b> Of what passes, the forms with the fewest letters after the stem, every cell counted
-once, plus the cost of the variations. Ties go to the pieces more daughters use.</li>
+<li><b>Only the daughters' own forms.</b> Every cell is a form some daughter has for that very cell: for the
+four regular themes, an ending after the stem that the lect uses on at least {thin} verbs of the class; for
+esse, stare and habere, the whole word. Nothing is cut and glued: no form is new. Letters are compared without
+accents.</li>
+<li><b>Legal.</b> Every form passes the spec's syllable rules; a regular ending is checked on a stem ending in
+one consonant and on one ending in two (<i>kant-</i>, <i>lav-</i>; <i>tem-</i>, <i>respond-</i>; …).</li>
+<li><b>Base plus variation.</b> Six person endings serve every tense and every verb. Each tense of each verb has
+one base: a theme marker, or an irregular verb's stem. A cell that is not its base + its person ending is the
+verb's <span class="flag var">own form</span>, a variation asset. A person ending must be one its lect uses
+for that person in at least two tenses, and never a false friend: an ending the daughters give the other
+persons, together, at least twice as often.</li>
+<li><b>Unique, with minor overloading.</b> The persons of a tense differ. Two cells may be alike where more than
+half of the daughters' rows that have both have them alike: {agree}. A subjunctive 1sg is never alike with a
+form of another tense, but where the daughters allow it. Beyond that, at most {budget} pairs of forms in a
+paradigm may be alike. Esse, stare and habere never share a form.</li>
+<li><b>Minimal.</b> Of what passes, the system whose distinct pieces have the fewest letters: the six person
+endings, each base once, and each own form whole plus one. Then the fewest letters over all the forms; then
+the forms more daughters have.</li>
 </ol>
 
 <h2>Result</h2>
 <ul class="facts">
-<li><b>{mean}</b> letters after the stem per form, on average ({letters} letters over {cells} forms).</li>
-<li>Variation assets: {assets}</li>
-<li>{whole}</li>
-<li>{strict}</li>
-<li>{search}</li>
+<li><b>{pieces}</b> letters of pieces: {proof} (CP-SAT, {seconds} s).</li>
+<li><b>{regular}</b> of the {cells} cells are base + person ending; <b>{own}</b> are own forms.</li>
+<li><b>{mean}</b> letters per form on average (after the stem, for the regular themes).</li>
 {checks}
 </ul>
 
 <h2>Person endings</h2>
-<p class="tally">The same six in every tense and every theme.</p>
+<p class="tally">The same six in every tense and every verb.</p>
 <div class="wrap"><table class="pieces"><thead><tr><th>Person</th><th>Ending</th><th>Attested in</th></tr></thead>
 <tbody>{persons}</tbody></table></div>
 <p class="tally">Barred as false friends (lects that give the ending to the other persons, against those that
 give it to this one): {barred}.</p>
 
-{optima}
-
-<h2>Markers, by tense and theme</h2>
-<div class="wrap"><table class="pieces"><thead><tr><th>Tense</th>{theme_head}</tr></thead>
-<tbody>{markers}</tbody></table></div>
-
-<h2>The irregular verbs</h2>
-<ul class="facts">{stems}</ul>
+<h2>Bases, by tense</h2>
+<p class="tally">The theme marker or the irregular stem each tense is built on, and how many of its cells are
+own forms instead.</p>
+<div class="wrap"><table class="pieces"><thead><tr><th>Tense</th>{name_head}</tr></thead>
+<tbody>{bases}</tbody></table></div>
 
 {sections}
 </main>
@@ -953,32 +582,30 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--budget", type=int, default=BUDGET)
+    parser.add_argument("--seconds", type=float, default=300.0, help="time limit for the solver")
     args = parser.parse_args()
 
-    pools = harvest()
-    system = System(pools, args.budget)
-    sol = system.solve()
+    build = Build(harvest(), args.budget)
+    sol = build.solve(args.seconds)
     if sol is None:
-        print("no base passes the rules", file=sys.stderr)
+        print("no system passes the rules", file=sys.stderr)
         return 1
-    strict_system = System(pools, 0)
-    strict_base = strict_system.evaluate(sol["endings"])
-    strict_irregular = strict_base and strict_system.fit_irregulars(sol["endings"], strict_base[1])
-    if not strict_irregular:
-        strict = "With these person endings and no pairs alike at all, no set of markers passes."
-    else:
-        strict_sol = {"endings": sol["endings"], "markers": strict_base[1], "irregular": strict_irregular}
-        s_letters, s_cells = strict_system.letters(strict_system.paradigms(strict_sol))
-        strict = (f"With these person endings and no pairs alike at all, the forms would average "
-                  f"<b>{s_letters / s_cells:.2f}</b> letters after the stem.")
-    args.output.write_text(render(system, sol, strict), encoding="utf-8")
-    paras = system.paradigms(sol)
-    letters, cells = system.letters(paras)
+    args.output.write_text(render(build, sol), encoding="utf-8")
     print(f"endings {sol['endings']}")
-    print(f"{letters / cells:.2f} letters per form over {cells} forms; {system.tried:,} sets weighed; "
-          f"{system.reached} of {system.starts_run} starts reach it")
-    for label, ok in system.checks(sol, paras):
+    print(f"{sol['pieces']} letters of pieces, {sol['status'].lower()} (bound {sol['bound']}), "
+          f"{sum(sol['own'].values())} own forms of {len(sol['forms'])}, {sol['seconds']:.0f} s")
+    for label, ok in build.checks(sol):
         print(f"  {'ok ' if ok else 'FAIL'} {label}")
+    having = Counter(lect for k, w in sol["forms"].items() for lect in build.cells[k][w])
+    print("cells each lect has:", ", ".join(f"{lect} {n}" for lect, n in having.most_common(12)))
+    for name in NAMES:
+        print(name)
+        for tam in TAMS:
+            row = [sol["forms"].get((name, tam, s)) for s in SLOTS]
+            if any(w is not None for w in row):
+                print(f"  {picks.SHORT[tam]:>10} [{piece(sol['bases'].get((name, tam)))}] " + " ".join(
+                    "-" if w is None else (w or "∅") + ("*" if sol["own"][(name, tam, s)] else "")
+                    for s, w in zip(SLOTS, row)))
     print(args.output.relative_to(ROOT))
     return 0
 
