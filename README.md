@@ -1,3 +1,5 @@
+<p align="center"><img src="site/static/img/flag.svg" width="720" alt="Flag of Vulgultra: thirty-six coloured rays, one per Romance lect, converge through a prism into one beam of light"></p>
+
 # Vulgultra
 
 *Vulgus* + *ultra*: beyond Vulgar Latin. A constructed language that
