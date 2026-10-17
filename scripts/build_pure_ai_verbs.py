@@ -7,9 +7,10 @@ goals, in rank order:
 
 1. every form legal, on a stem ending in one consonant and on one ending in
    two; no person ending that the daughters give mostly to another person;
-   the persons of each tense distinct; a subjunctive 1sg never alike with
-   another form; at most BUDGET pairs of forms alike in a paradigm; esse,
-   stare and habere never alike;
+   the persons of each tense distinct, except that 1sg and 3sg may agree; a
+   subjunctive 1sg never alike with a form of another tense; at most BUDGET
+   other pairs of forms alike in a paradigm; esse, stare and habere never
+   alike;
 2. as few variation assets as possible (a tense's own person ending, an
    irregular verb's second stem);
 3. the shortest forms: fewest letters after the stem, every cell counted once.
@@ -179,9 +180,11 @@ def ranked(pool: dict) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def join(left: str, right: str) -> str:
-    """Where two pieces meet vowel to vowel, the first one's vowel drops."""
-    if left and right and left[-1] in VOWELS and right[0] in VOWELS:
-        left = left[:-1]
+    """Pieces are written together. Two vowels that meet stay, read as the
+    spec's repair reads them (i or u beside a vowel is a glide: io /jo/, ai
+    /aj/); only two identical vowels merge (a-a → a)."""
+    if left and right and left[-1] in VOWELS and left[-1] == right[0]:
+        right = right[1:]
     return left + right
 
 
@@ -195,9 +198,11 @@ def is_subjunctive(tam: str) -> bool:
 
 
 def subjunctive_1sg_apart(cells: dict) -> bool:
-    """No subjunctive 1sg is alike with another form of the paradigm."""
-    counts = Counter(cells.values())
-    return all(counts[f] == 1 for (tam, s), f in cells.items() if s == "1sg" and is_subjunctive(tam))
+    """No subjunctive 1sg is alike with a form of another tense."""
+    return all(
+        not any(g == f and t != tam for (t, _s), g in cells.items())
+        for (tam, s), f in cells.items() if s == "1sg" and is_subjunctive(tam)
+    )
 
 
 @lru_cache(maxsize=None)
@@ -210,8 +215,21 @@ def legal(form: str) -> bool:
         return False
 
 
-def alike_pairs(forms) -> int:
-    return sum(n * (n - 1) // 2 for n in Counter(forms).values())
+def persons_apart(slots, forms) -> bool:
+    """The persons of a tense differ, except that 1sg and 3sg may agree
+    (cantaba, cante)."""
+    first: dict = {}
+    for s, f in zip(slots, forms):
+        if f in first and {first[f], s} != {"1sg", "3sg"}:
+            return False
+        first.setdefault(f, s)
+    return True
+
+
+def alike_pairs(cells: dict) -> int:
+    """Pairs of cells alike, not counting a tense's 1sg and 3sg agreeing."""
+    pairs = sum(n * (n - 1) // 2 for n in Counter(cells.values()).values())
+    return pairs - sum(1 for (tam, s), f in cells.items() if s == "1sg" and cells.get((tam, "3sg")) == f)
 
 
 # ---------------------------------------------------------------------------
@@ -287,7 +305,7 @@ class System:
         """The forms of one tense, or None if one is illegal (on `stem` or on any
         of the stems `also`) or two persons meet."""
         forms = [compose(stem, marker, endings[s]) for s in self.slots_of[tam]]
-        if not all(legal(f) for f in forms) or len(set(forms)) < len(forms):
+        if not all(legal(f) for f in forms) or not persons_apart(self.slots_of[tam], forms):
             return None
         if not all(legal(compose(other, marker, endings[s])) for other in also for s in self.slots_of[tam]):
             return None
@@ -384,7 +402,8 @@ class System:
 
     def evaluate(self, endings: dict):
         """(cost, markers) of a person-ending set, or None if it cannot pass."""
-        if len(set(endings.values())) < len(endings):
+        others = [e for s, e in endings.items() if s != "1sg"]
+        if len(set(others)) < len(others) or (endings["1sg"] in others and endings["1sg"] != endings["3sg"]):
             return None
         self.tried += 1
         cost = -TIE * sum(self.support("E", s, e) for s, e in endings.items())
@@ -513,7 +532,7 @@ class System:
             if forms is None:
                 return None
             cells.update({(tam, s): f for s, f in zip(self.slots_of[tam], forms)})
-        if alike_pairs(cells.values()) > self.budget or not subjunctive_1sg_apart(cells):
+        if alike_pairs(cells) > self.budget or not subjunctive_1sg_apart(cells):
             return None
         return cells
 
@@ -586,11 +605,10 @@ class System:
             legal(compose(st, sol["markers"][(t, tam)], sol["endings"][sl]))
             for t in THEMES for st in CHECK_STEMS[t] for tam in TAMS for sl in self.slots_of[tam])
         distinct = all(
-            len({forms[(tam, s)] for s in self.slots_of[tam] if (tam, s) in forms}) ==
-            sum(1 for s in self.slots_of[tam] if (tam, s) in forms)
-            for forms in paras.values() for tam in TAMS
+            persons_apart(*zip(*[(s, forms[(tam, s)]) for s in self.slots_of[tam] if (tam, s) in forms]))
+            for forms in paras.values() for tam in TAMS if any((tam, s) in forms for s in SLOTS)
         )
-        budget = all(alike_pairs(forms.values()) <= self.budget for forms in paras.values())
+        budget = all(alike_pairs(forms) <= self.budget for forms in paras.values())
         subjunctive = all(subjunctive_1sg_apart(forms) for forms in paras.values())
         verbs = [v for v in IRREGULAR_THEME if v in paras]
         apart = all(
@@ -600,8 +618,8 @@ class System:
         return [
             ("every piece attested in a daughter", attested),
             ("every form legal, on both test stems", legal_all),
-            ("the persons of every tense distinct", distinct),
-            ("no subjunctive 1sg alike with another form", subjunctive),
+            ("the persons of every tense distinct, but for 1sg and 3sg", distinct),
+            ("no subjunctive 1sg alike with a form of another tense", subjunctive),
             (f"at most {self.budget} pairs alike in any paradigm", budget),
             ("esse, stare and habere never alike", apart and sol["irregular"] is not None),
         ]
@@ -734,7 +752,7 @@ def render(system: System, sol: dict, strict: str) -> str:
     for name in list(THEMES) + list(irregular):
         title = vec.THEME_TITLE.get(name) or vec.NAMED_TITLE[name]
         forms = paras[name]
-        n_alike = alike_pairs(forms.values())
+        n_alike = alike_pairs(forms)
         note = (f"Shown after the sample stem <i>{SAMPLE_STEM[name]}-</i>; every form is also checked on "
                 f"<i>{CHECK_STEMS[name][1]}-</i>." if name in SAMPLE_STEM else "Full forms.")
         extra = ""
@@ -835,8 +853,9 @@ by hand, and no usage counts are used. Rebuild with
 <h2>The rules</h2>
 <ol class="rules">
 <li><b>Built from pieces.</b> Every form is stem + marker (one per theme and tense) + person ending.
-Where two pieces meet vowel to vowel, the first one's vowel drops (<i>kant-a-o</i> → <i>kanto</i>), so no
-junction adds a syllable.</li>
+Pieces are written together. Two vowels that meet stay, read as the spec reads them: <i>i</i> or <i>u</i>
+beside a vowel is a glide (<i>io</i> /jo/, <i>ai</i> /aj/), one syllable; only identical vowels merge
+(<i>a-a</i> → <i>a</i>).</li>
 <li><b>Attested only.</b> Every piece is cut from a daughter's endings. A marker is what at least four
 of a row's six endings share at the front; a person ending is what follows it, and counts only if its
 lect uses it for that person in two tenses or more; an irregular stem is the verb's form minus that
@@ -846,9 +865,10 @@ theme on a stem ending in one consonant and on one ending in two (<i>tem-</i> an
 piece leaves a cluster bare. A person never takes an ending the daughters give the other persons, together,
 at least twice as often: <i>-s</i> is the 2sg in most lects, so it cannot be the 1sg. Counted by lect and
 person: a lect with <i>-s</i> for two persons counts twice.</li>
-<li><b>Unique, with minor overloading.</b> The persons of a tense always differ; a subjunctive 1sg is never
-alike with another form; otherwise at most {budget} pairs
-of forms in a paradigm may be alike; esse, stare and habere never share a form.</li>
+<li><b>Unique, with minor overloading.</b> The persons of a tense always differ, except that 1sg and 3sg
+may agree (<i>cantaba, cante</i>), which is not counted as overloading; a subjunctive 1sg is never alike with
+a form of another tense; otherwise at most {budget} pairs of forms in a paradigm may be alike; esse, stare and
+habere never share a form.</li>
 <li><b>Base plus variation.</b> One set of person endings serves every tense and every theme. A theme may
 borrow another theme's marker for a tense (as Spanish folded <i>-ere</i> into <i>-er</i>), and must where
 its own rows give none or none that works; an irregular verb may take a second stem. Each such variation
