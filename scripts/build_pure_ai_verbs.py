@@ -159,6 +159,7 @@ def harvest() -> dict:
     }
     return {
         "person": person, "barred": barred, "marker": marker, "stems": stems, "named": named,
+        "regular": regular,
         # A person a tense has in at least half the daughters' rows. No Romance
         # imperative has a first person singular, whatever the tables fill in.
         "slots_of": {
@@ -184,25 +185,19 @@ def join(left: str, right: str) -> str:
     return left + right
 
 
-def keeps_marker(tam: str) -> bool:
-    """The subjunctive keeps its marker whole before a vowel (kant-i-o → kantio,
-    not kanto), so that its 1sg stays apart from the indicative's."""
-    return tam.startswith("subjunctive.")
-
-
 @lru_cache(maxsize=None)
-def compose(stem: str, marker: str, ending: str, whole: bool = False) -> str:
-    return join(stem, marker) + ending if whole else join(join(stem, marker), ending)
+def compose(stem: str, marker: str, ending: str) -> str:
+    return join(join(stem, marker), ending)
 
 
-def form(stem: str, marker: str, ending: str, tam: str) -> str:
-    return compose(stem, marker, ending, keeps_marker(tam))
+def is_subjunctive(tam: str) -> bool:
+    return tam.startswith("subjunctive.")
 
 
 def subjunctive_1sg_apart(cells: dict) -> bool:
     """No subjunctive 1sg is alike with another form of the paradigm."""
     counts = Counter(cells.values())
-    return all(counts[f] == 1 for (tam, s), f in cells.items() if s == "1sg" and keeps_marker(tam))
+    return all(counts[f] == 1 for (tam, s), f in cells.items() if s == "1sg" and is_subjunctive(tam))
 
 
 @lru_cache(maxsize=None)
@@ -258,15 +253,43 @@ class System:
         pool = {"E": self.pools["person"], "S": self.pools["stems"]}[kind]
         return len(pool[key].get(value, ()))
 
+    def whole_lects(self, name: str, tam: str, slot: str, text: str) -> set[str]:
+        """Lects whose own form of this cell is `text` whole: the ending after
+        the stem for a regular theme, the full form for an irregular verb."""
+        if name in THEMES:
+            pool = self.pools["regular"].get(name, {}).get(tam, {}).get(slot, {})
+            return {lect for e, sources in pool.items() if norm(e) == text for lect, _c, _n in sources}
+        pool = self.pools["named"].get(name, {}).get(tam, {}).get(slot, {})
+        return {lect for f, lects in pool.items() if norm(f) == text for lect in lects}
+
+    def attribution(self, sol: dict, name: str, forms: dict) -> dict:
+        """(tam, slot) → (lects with the cell whole, or None, and the pieces
+        with the lects of each)."""
+        out = {}
+        for (tam, slot), f in forms.items():
+            if name in THEMES:
+                theme, stem = name, SAMPLE_STEM[name]
+                text = f[len(stem):]
+            else:
+                fit = sol["irregular"][name]
+                theme, stem, text = fit["theme"], fit["stems"][tam], f
+            m, e = sol["markers"][(theme, tam)], sol["endings"][slot]
+            pieces = [("-" + m + "-", self.marker_lects(theme, tam, m)),
+                      ("-" + e if e else "∅", self.pools["person"][slot].get(e, set()))]
+            if name not in THEMES:
+                pieces.insert(0, ((stem or "∅") + "-", self.pools["stems"][name].get(stem, set())))
+            out[(tam, slot)] = (self.whole_lects(name, tam, slot, text) or None, pieces)
+        return out
+
     # The base -------------------------------------------------------------
 
     def row(self, stem: str, marker: str, endings: dict, tam: str, also: tuple = ()) -> list[str] | None:
         """The forms of one tense, or None if one is illegal (on `stem` or on any
         of the stems `also`) or two persons meet."""
-        forms = [form(stem, marker, endings[s], tam) for s in self.slots_of[tam]]
+        forms = [compose(stem, marker, endings[s]) for s in self.slots_of[tam]]
         if not all(legal(f) for f in forms) or len(set(forms)) < len(forms):
             return None
-        if not all(legal(form(other, marker, endings[s], tam)) for other in also for s in self.slots_of[tam]):
+        if not all(legal(compose(other, marker, endings[s])) for other in also for s in self.slots_of[tam]):
             return None
         return forms
 
@@ -291,7 +314,7 @@ class System:
                         fids = tuple(ids.setdefault(f, len(ids)) for f in forms)
                         # Forms no other cell may share: a subjunctive's 1sg.
                         locked = tuple(i for s, i in zip(self.slots_of[tam], fids)
-                                       if s == "1sg" and keeps_marker(tam))
+                                       if s == "1sg" and is_subjunctive(tam))
                         found.append((cost, m, fids, locked))
             if not found:
                 self._themes[key] = None
@@ -387,9 +410,9 @@ class System:
                     for tam in TAMS:
                         if s not in self.slots_of[tam]:
                             continue
-                        lens = [len(form(stem, m, e, tam)) - len(stem)
+                        lens = [len(compose(stem, m, e)) - len(stem)
                                 for m in self.markers[(theme, tam)] + self.borrowable[(theme, tam)]
-                                if all(legal(form(st, m, e, tam)) for st in CHECK_STEMS[theme])]
+                                if all(legal(compose(st, m, e)) for st in CHECK_STEMS[theme])]
                         if not lens:
                             total = None
                             break
@@ -536,12 +559,12 @@ class System:
         out = {}
         for theme in THEMES:
             out[theme] = {
-                (tam, s): form(SAMPLE_STEM[theme], sol["markers"][(theme, tam)], sol["endings"][s], tam)
+                (tam, s): compose(SAMPLE_STEM[theme], sol["markers"][(theme, tam)], sol["endings"][s])
                 for tam in self.tams_of[theme] for s in self.slots_of[tam]
             }
         for verb, fit in (sol["irregular"] or {}).items():
             out[verb] = {
-                (tam, s): form(fit["stems"][tam], sol["markers"][(fit["theme"], tam)], sol["endings"][s], tam)
+                (tam, s): compose(fit["stems"][tam], sol["markers"][(fit["theme"], tam)], sol["endings"][s])
                 for tam in self.tams_of[fit["theme"]] for s in self.slots_of[tam]
             }
         return out
@@ -560,7 +583,7 @@ class System:
             self.support("M", k, m) for k, m in sol["markers"].items()) and all(
             self.support("S", v, s) for v, fit in (sol["irregular"] or {}).items() for s in fit["stems"].values())
         legal_all = all(legal(f) for forms in paras.values() for f in forms.values()) and all(
-            legal(form(st, sol["markers"][(t, tam)], sol["endings"][sl], tam))
+            legal(compose(st, sol["markers"][(t, tam)], sol["endings"][sl]))
             for t in THEMES for st in CHECK_STEMS[t] for tam in TAMS for sl in self.slots_of[tam])
         distinct = all(
             len({forms[(tam, s)] for s in self.slots_of[tam] if (tam, s) in forms}) ==
@@ -592,9 +615,11 @@ def piece(text: str | None) -> str:
     return "∅" if text == "" else html.escape(text or "")
 
 
-def chips(lects) -> str:
+def chips(lects, limit: int = 5) -> str:
     order = {lect: i for i, lect in enumerate(vec.SOURCE_LANGS)}
-    return picks.chips(sorted(lects, key=lambda lect: order.get(lect, 99)))
+    lects = sorted(lects, key=lambda lect: order.get(lect, 99))
+    more = f'<span class="mine">+{len(lects) - limit}</span>' if len(lects) > limit else ""
+    return "".join(vec._lect(lect) for lect in lects[:limit]) + more
 
 
 def manual_stare(named: dict) -> dict:
@@ -612,7 +637,7 @@ def manual_stare(named: dict) -> dict:
     return out
 
 
-def paradigm_table(name: str, forms: dict, mine: dict) -> str:
+def paradigm_table(name: str, forms: dict, mine: dict, attrib: dict) -> str:
     groups: dict = defaultdict(list)
     for k, f in forms.items():
         groups[f].append(k)
@@ -628,6 +653,13 @@ def paradigm_table(name: str, forms: dict, mine: dict) -> str:
                 continue
             form = forms[(tam, slot)]
             parts = [f'<div class="pick">{html.escape("-" + form[len(stem):] if stem else form)}</div>']
+            whole, pieces = attrib[(tam, slot)]
+            if whole:
+                parts.append(f'<div class="src">{chips(whole, 4)}</div>')
+            else:
+                parts.append('<div class="src"><span class="flag var">new</span></div>' + "".join(
+                    f'<div class="src"><span class="mine">{html.escape(text)}</span> {chips(lects, 3)}</div>'
+                    for text, lects in pieces))
             others = [k for k in groups[form] if k != (tam, slot)]
             if others:
                 parts.append('<div class="mine">alike: ' + ", ".join(
@@ -689,6 +721,15 @@ def render(system: System, sol: dict, strict: str) -> str:
                  if borrowed else "no borrowed markers")
               + f"; {extra_stems} extra stem{'s' if extra_stems != 1 else ''} for the irregular verbs.")
     mine = manual_stare(system.pools["named"])
+    attribs = {name: system.attribution(sol, name, paras[name]) for name in paras}
+    whole_regular = sum(1 for t in THEMES for w, _p in attribs[t].values() if w)
+    cells_regular = sum(len(attribs[t]) for t in THEMES)
+    whole_irregular = sum(1 for v in irregular for w, _p in attribs[v].values() if w)
+    cells_irregular = sum(len(attribs[v]) for v in irregular)
+    whole = (f"<b>{whole_regular}</b> of the {cells_regular} regular cells, and <b>{whole_irregular}</b> of the "
+             f"{cells_irregular} irregular ones, are a daughter's own form whole; the rest (marked "
+             '<span class="flag var">new</span>) are new combinations of attested pieces, each shown with '
+             "the lects it comes from.")
     sections = []
     for name in list(THEMES) + list(irregular):
         title = vec.THEME_TITLE.get(name) or vec.NAMED_TITLE[name]
@@ -707,13 +748,13 @@ def render(system: System, sol: dict, strict: str) -> str:
             f'<section class="verb"><h2>{html.escape(title)}</h2>'
             f'<p class="tally">{len(forms)} forms, {n_alike} pair{"s" if n_alike != 1 else ""} alike '
             f"(at most {system.budget} allowed). {note}{extra}</p>"
-            + paradigm_table(name, forms, mine if name == "stare" else {})
+            + paradigm_table(name, forms, mine if name == "stare" else {}, attribs[name])
             + "</section>"
         )
     checks = "".join(f'<li>{"✓" if ok else "✗"} {html.escape(label)}</li>' for label, ok in system.checks(sol, paras))
     optima_rows = []
     for cost, ends, marks, starts in system.optima:
-        regular = {t: {(tam, sl): form(SAMPLE_STEM[t], marks[(t, tam)], ends[sl], tam)
+        regular = {t: {(tam, sl): compose(SAMPLE_STEM[t], marks[(t, tam)], ends[sl])
                        for tam in TAMS for sl in system.slots_of[tam]} for t in THEMES}
         reg_letters, reg_cells = system.letters(regular)
         n_borrowed = sum(1 for k, m in marks.items() if m not in system.markers[k])
@@ -749,6 +790,7 @@ def render(system: System, sol: dict, strict: str) -> str:
         letters=f"{letters:,}",
         cells=f"{cells:,}",
         assets=assets,
+        whole=whole,
         strict=strict,
         search=search,
         checks=checks,
@@ -793,9 +835,8 @@ by hand, and no usage counts are used. Rebuild with
 <h2>The rules</h2>
 <ol class="rules">
 <li><b>Built from pieces.</b> Every form is stem + marker (one per theme and tense) + person ending.
-Where two pieces meet vowel to vowel, the first one's vowel drops (<i>kant-a-o</i> → <i>kanto</i>), except
-that the subjunctive keeps its marker whole (<i>kant-i-o</i> → <i>kantio</i>), so its 1sg shows the mood like
-its other persons.</li>
+Where two pieces meet vowel to vowel, the first one's vowel drops (<i>kant-a-o</i> → <i>kanto</i>), so no
+junction adds a syllable.</li>
 <li><b>Attested only.</b> Every piece is cut from a daughter's endings. A marker is what at least four
 of a row's six endings share at the front; a person ending is what follows it, and counts only if its
 lect uses it for that person in two tenses or more; an irregular stem is the verb's form minus that
@@ -821,6 +862,7 @@ once, plus the cost of the variations. Ties go to the pieces more daughters use.
 <ul class="facts">
 <li><b>{mean}</b> letters after the stem per form, on average ({letters} letters over {cells} forms).</li>
 <li>Variation assets: {assets}</li>
+<li>{whole}</li>
 <li>{strict}</li>
 <li>{search}</li>
 {checks}
