@@ -5,8 +5,10 @@ Hermetic: no usage counts. Every form is stem + marker(theme, tense) + person
 ending, and every piece is cut from the daughters' harvested endings. The
 goals, in rank order:
 
-1. every form legal; the persons of each tense distinct; at most BUDGET pairs
-   of forms alike in a paradigm; esse, stare and habere never alike;
+1. every form legal, on a stem ending in one consonant and on one ending in
+   two; no person ending that the daughters give mostly to another person;
+   the persons of each tense distinct; at most BUDGET pairs of forms alike in
+   a paradigm; esse, stare and habere never alike;
 2. as few variation assets as possible (a tense's own person ending, an
    irregular verb's second stem);
 3. the shortest forms: fewest letters after the stem, every cell counted once.
@@ -43,6 +45,14 @@ THEMES = vec.THEMES
 TAMS = vec.TAMS
 IRREGULAR_THEME = {"esse": "re", "stare": "a", "habere": "e"}
 SAMPLE_STEM = {"a": "kant", "e": "tem", "i": "dorm", "re": "vend"}
+# Every regular form is also checked on a second stem, so that each theme is
+# tried with a stem ending in one consonant and with one ending in two: a
+# piece that leaves -nd- or -rm- bare before a consonant fails (respond-t).
+CHECK_STEMS = {"a": ("kant", "lav"), "e": ("tem", "respond"), "i": ("dorm", "fin"), "re": ("vend", "kred")}
+# No false friends: a person cannot take an ending that the daughters give
+# another person at least this many times as often (-s is 2sg in 17 lects and
+# 1sg in 3, so it cannot be the 1sg).
+FALSE_FRIEND = 2
 BUDGET = 2
 TIE = 1e-4  # per attesting lect: ties in length go to the better-attested pieces
 # A variation asset (a marker a theme borrows from another theme for the same
@@ -119,6 +129,15 @@ def harvest() -> dict:
     for (slot, p, lect), tenses in person_tenses.items():
         if len(tenses) >= 2:
             person[slot][p].add(lect)
+    barred: dict = {s: {} for s in SLOTS}
+    for s in SLOTS:
+        for p, lects in person[s].items():
+            rival = max((o for o in SLOTS if o != s), key=lambda o: len(person[o].get(p, ())))
+            if len(person[rival].get(p, ())) >= FALSE_FRIEND * len(lects):
+                barred[s][p] = (rival, len(person[rival][p]), len(lects))
+    for s in SLOTS:
+        for p in barred[s]:
+            del person[s][p]
     seen: dict = defaultdict(lambda: defaultdict(set))
     for verb in IRREGULAR_THEME:
         for tam, slots in named.get(verb, {}).items():
@@ -137,7 +156,7 @@ def harvest() -> dict:
         for verb, by in seen.items()
     }
     return {
-        "person": person, "marker": marker, "stems": stems, "named": named,
+        "person": person, "barred": barred, "marker": marker, "stems": stems, "named": named,
         # A person a tense has in at least half the daughters' rows. No Romance
         # imperative has a first person singular, whatever the tables fill in.
         "slots_of": {
@@ -223,10 +242,13 @@ class System:
 
     # The base -------------------------------------------------------------
 
-    def row(self, stem: str, marker: str, endings: dict, tam: str) -> list[str] | None:
-        """The forms of one tense, or None if one is illegal or two persons meet."""
+    def row(self, stem: str, marker: str, endings: dict, tam: str, also: tuple = ()) -> list[str] | None:
+        """The forms of one tense, or None if one is illegal (on `stem` or on any
+        of the stems `also`) or two persons meet."""
         forms = [compose(stem, marker, endings[s]) for s in self.slots_of[tam]]
         if not all(legal(f) for f in forms) or len(set(forms)) < len(forms):
+            return None
+        if not all(legal(compose(other, marker, endings[s])) for other in also for s in self.slots_of[tam]):
             return None
         return forms
 
@@ -244,7 +266,7 @@ class System:
             found = []
             for borrowed, pool in ((False, self.markers[(theme, tam)]), (True, self.borrowable[(theme, tam)])):
                 for m in pool:
-                    forms = self.row(stem, m, endings, tam)
+                    forms = self.row(stem, m, endings, tam, CHECK_STEMS[theme])
                     if forms is not None:
                         cost = sum(len(f) - len(stem) for f in forms) + (BORROW if borrowed else 0)
                         cost -= TIE * self.support("M", (theme, tam), m)
@@ -334,7 +356,7 @@ class System:
                             continue
                         lens = [len(compose(stem, m, e)) - len(stem)
                                 for m in self.markers[(theme, tam)] + self.borrowable[(theme, tam)]
-                                if legal(compose(stem, m, e))]
+                                if all(legal(compose(st, m, e)) for st in CHECK_STEMS[theme])]
                         if not lens:
                             total = None
                             break
@@ -504,7 +526,9 @@ class System:
         attested = all(self.support("E", s, e) for s, e in sol["endings"].items()) and all(
             self.support("M", k, m) for k, m in sol["markers"].items()) and all(
             self.support("S", v, s) for v, fit in (sol["irregular"] or {}).items() for s in fit["stems"].values())
-        legal_all = all(legal(f) for forms in paras.values() for f in forms.values())
+        legal_all = all(legal(f) for forms in paras.values() for f in forms.values()) and all(
+            legal(compose(st, sol["markers"][(t, tam)], sol["endings"][sl]))
+            for t in THEMES for st in CHECK_STEMS[t] for tam in TAMS for sl in self.slots_of[tam])
         distinct = all(
             len({forms[(tam, s)] for s in self.slots_of[tam] if (tam, s) in forms}) ==
             sum(1 for s in self.slots_of[tam] if (tam, s) in forms)
@@ -518,7 +542,7 @@ class System:
         )
         return [
             ("every piece attested in a daughter", attested),
-            ("every form legal", legal_all),
+            ("every form legal, on both test stems", legal_all),
             ("the persons of every tense distinct", distinct),
             (f"at most {self.budget} pairs alike in any paradigm", budget),
             ("esse, stare and habere never alike", apart and sol["irregular"] is not None),
@@ -591,6 +615,11 @@ def render(system: System, sol: dict, strict: str) -> str:
         f'<td>{chips(system.pools["person"][s].get(endings[s], ()))}</td></tr>'
         for s in SLOTS
     )
+    barred = system.pools["barred"]
+    barred_line = "; ".join(
+        f"{s} <span class=\"pick\">{piece(e)}</span> ({rival} in {n_rival} lects, {s} in {n_own})"
+        for s in SLOTS for e, (rival, n_rival, n_own) in sorted(barred[s].items(), key=lambda kv: (len(kv[0]), kv[0]))
+    ) or "none"
     marker_rows = []
     for tam in TAMS:
         tds = []
@@ -630,8 +659,8 @@ def render(system: System, sol: dict, strict: str) -> str:
         title = vec.THEME_TITLE.get(name) or vec.NAMED_TITLE[name]
         forms = paras[name]
         n_alike = alike_pairs(forms.values())
-        note = (f"Shown after the sample stem <i>{SAMPLE_STEM[name]}-</i>, used to check that every form is legal."
-                if name in SAMPLE_STEM else "Full forms.")
+        note = (f"Shown after the sample stem <i>{SAMPLE_STEM[name]}-</i>; every form is also checked on "
+                f"<i>{CHECK_STEMS[name][1]}-</i>." if name in SAMPLE_STEM else "Full forms.")
         extra = ""
         if name == "stare" and mine:
             agree = sum(1 for k, form in mine.items() if k in forms and norm(form) == forms[k])
@@ -690,6 +719,7 @@ def render(system: System, sol: dict, strict: str) -> str:
         checks=checks,
         optima=optima,
         persons=persons,
+        barred=barred_line,
         theme_head="".join(f"<th>{vec.THEME_TITLE[t]}</th>" for t in THEMES),
         markers="".join(marker_rows),
         stems="".join(stem_lines) or "<li>No fit found.</li>",
@@ -733,6 +763,10 @@ Where two pieces meet vowel to vowel, the first one's vowel drops (<i>kant-a-o</
 of a row's six endings share at the front; a person ending is what follows it, and counts only if its
 lect uses it for that person in two tenses or more; an irregular stem is the verb's form minus that
 lect's own ending, found at least twice.</li>
+<li><b>Legal, and no false friends.</b> Every form passes the spec's syllable rules, checked for each
+theme on a stem ending in one consonant and on one ending in two (<i>tem-</i> and <i>respond-</i>), so no
+piece leaves a cluster bare. A person never takes an ending the daughters give another person at least
+twice as often: <i>-s</i> is the 2sg in most lects, so it cannot be the 1sg.</li>
 <li><b>Unique, with minor overloading.</b> The persons of a tense always differ; at most {budget} pairs
 of forms in a paradigm may be alike; esse, stare and habere never share a form.</li>
 <li><b>Base plus variation.</b> One set of person endings serves every tense and every theme. A theme may
@@ -757,6 +791,7 @@ once, plus the cost of the variations. Ties go to the pieces more daughters use.
 <p class="tally">The same six in every tense and every theme.</p>
 <div class="wrap"><table class="pieces"><thead><tr><th>Person</th><th>Ending</th><th>Attested in</th></tr></thead>
 <tbody>{persons}</tbody></table></div>
+<p class="tally">Barred as false friends: {barred}.</p>
 
 {optima}
 
