@@ -7,7 +7,8 @@ goals, in rank order:
 
 1. every form legal, on a stem ending in one consonant and on one ending in
    two; no person ending that the daughters give mostly to another person;
-   the persons of each tense distinct, except that 1sg and 3sg may agree; a
+   the persons of each tense distinct, except that 1sg and 3sg may agree in a
+   tense where most of the daughters' rows have them alike; a
    subjunctive 1sg never alike with a form of another tense; at most BUDGET
    other pairs of forms alike in a paradigm; esse, stare and habere never
    alike;
@@ -112,6 +113,12 @@ def harvest() -> dict:
                         if support >= vec.THIN:
                             rows[(theme, tam, lect, cls)][slot] = e
                             by_lect[(lect, tam)][slot].add(e)
+    # By tense: the daughters' rows with a 1sg and a 3sg, and how many of them
+    # have the two alike (cantaba, cante).
+    agree = {}
+    for tam in TAMS:
+        both = [r for (_t, t, _l, _c), r in rows.items() if t == tam and "1sg" in r and "3sg" in r]
+        agree[tam] = (sum(1 for r in both if r["1sg"] == r["3sg"]), len(both))
     marker: dict = defaultdict(lambda: defaultdict(set))
     slots_of: dict = defaultdict(Counter)
     person_tenses: dict = defaultdict(set)
@@ -160,7 +167,7 @@ def harvest() -> dict:
     }
     return {
         "person": person, "barred": barred, "marker": marker, "stems": stems, "named": named,
-        "regular": regular,
+        "regular": regular, "agree": agree,
         # A person a tense has in at least half the daughters' rows. No Romance
         # imperative has a first person singular, whatever the tables fill in.
         "slots_of": {
@@ -215,12 +222,12 @@ def legal(form: str) -> bool:
         return False
 
 
-def persons_apart(slots, forms) -> bool:
-    """The persons of a tense differ, except that 1sg and 3sg may agree
-    (cantaba, cante)."""
+def persons_apart(slots, forms, agree: bool) -> bool:
+    """The persons of a tense differ, except that 1sg and 3sg may agree where
+    the tense allows it (cantaba, cante)."""
     first: dict = {}
     for s, f in zip(slots, forms):
-        if f in first and {first[f], s} != {"1sg", "3sg"}:
+        if f in first and not (agree and {first[f], s} == {"1sg", "3sg"}):
             return False
         first.setdefault(f, s)
     return True
@@ -250,8 +257,17 @@ class System:
             (t, tam): [m for m in ranked(self.lects_of_marker(tam)) if m not in self.markers[(t, tam)]]
             for (t, tam) in self.markers
         }
+        # Tenses where more than half of the daughters' rows have 1sg = 3sg.
+        self.agree_tams = {tam for tam, (same, rows) in pools["agree"].items() if 2 * same > rows}
         self.tried = 0
         self._themes: dict = {}
+
+    def tense_endings(self, endings: dict, tam: str) -> dict:
+        """The person endings a tense uses: where 1sg and 3sg may agree, the
+        1sg takes the 3sg's ending if that is shorter."""
+        if tam in self.agree_tams and len(endings["3sg"]) < len(endings["1sg"]):
+            return {**endings, "1sg": endings["3sg"]}
+        return endings
 
     def lects_of_marker(self, tam: str) -> dict[str, set[str]]:
         """marker → lects, over every theme's rows for this tense."""
@@ -291,9 +307,11 @@ class System:
             else:
                 fit = sol["irregular"][name]
                 theme, stem, text = fit["theme"], fit["stems"][tam], f
-            m, e = sol["markers"][(theme, tam)], sol["endings"][slot]
+            m, e = sol["markers"][(theme, tam)], self.tense_endings(sol["endings"], tam)[slot]
+            own = e == sol["endings"][slot]
             pieces = [("-" + m + "-", self.marker_lects(theme, tam, m)),
-                      ("-" + e if e else "∅", self.pools["person"][slot].get(e, set()))]
+                      (("-" + e if e else "∅") + ("" if own else " (the 3sg's)"),
+                       self.pools["person"][slot if own else "3sg"].get(e, set()))]
             if name not in THEMES:
                 pieces.insert(0, ((stem or "∅") + "-", self.pools["stems"][name].get(stem, set())))
             out[(tam, slot)] = (self.whole_lects(name, tam, slot, text) or None, pieces)
@@ -304,8 +322,9 @@ class System:
     def row(self, stem: str, marker: str, endings: dict, tam: str, also: tuple = ()) -> list[str] | None:
         """The forms of one tense, or None if one is illegal (on `stem` or on any
         of the stems `also`) or two persons meet."""
+        endings = self.tense_endings(endings, tam)
         forms = [compose(stem, marker, endings[s]) for s in self.slots_of[tam]]
-        if not all(legal(f) for f in forms) or not persons_apart(self.slots_of[tam], forms):
+        if not all(legal(f) for f in forms) or not persons_apart(self.slots_of[tam], forms, tam in self.agree_tams):
             return None
         if not all(legal(compose(other, marker, endings[s])) for other in also for s in self.slots_of[tam]):
             return None
@@ -402,8 +421,7 @@ class System:
 
     def evaluate(self, endings: dict):
         """(cost, markers) of a person-ending set, or None if it cannot pass."""
-        others = [e for s, e in endings.items() if s != "1sg"]
-        if len(set(others)) < len(others) or (endings["1sg"] in others and endings["1sg"] != endings["3sg"]):
+        if len(set(endings.values())) < len(endings):
             return None
         self.tried += 1
         cost = -TIE * sum(self.support("E", s, e) for s, e in endings.items())
@@ -578,12 +596,14 @@ class System:
         out = {}
         for theme in THEMES:
             out[theme] = {
-                (tam, s): compose(SAMPLE_STEM[theme], sol["markers"][(theme, tam)], sol["endings"][s])
+                (tam, s): compose(SAMPLE_STEM[theme], sol["markers"][(theme, tam)],
+                                  self.tense_endings(sol["endings"], tam)[s])
                 for tam in self.tams_of[theme] for s in self.slots_of[tam]
             }
         for verb, fit in (sol["irregular"] or {}).items():
             out[verb] = {
-                (tam, s): compose(fit["stems"][tam], sol["markers"][(fit["theme"], tam)], sol["endings"][s])
+                (tam, s): compose(fit["stems"][tam], sol["markers"][(fit["theme"], tam)],
+                                  self.tense_endings(sol["endings"], tam)[s])
                 for tam in self.tams_of[fit["theme"]] for s in self.slots_of[tam]
             }
         return out
@@ -602,10 +622,11 @@ class System:
             self.support("M", k, m) for k, m in sol["markers"].items()) and all(
             self.support("S", v, s) for v, fit in (sol["irregular"] or {}).items() for s in fit["stems"].values())
         legal_all = all(legal(f) for forms in paras.values() for f in forms.values()) and all(
-            legal(compose(st, sol["markers"][(t, tam)], sol["endings"][sl]))
+            legal(compose(st, sol["markers"][(t, tam)], self.tense_endings(sol["endings"], tam)[sl]))
             for t in THEMES for st in CHECK_STEMS[t] for tam in TAMS for sl in self.slots_of[tam])
         distinct = all(
-            persons_apart(*zip(*[(s, forms[(tam, s)]) for s in self.slots_of[tam] if (tam, s) in forms]))
+            persons_apart(*zip(*[(s, forms[(tam, s)]) for s in self.slots_of[tam] if (tam, s) in forms]),
+                          tam in self.agree_tams)
             for forms in paras.values() for tam in TAMS if any((tam, s) in forms for s in SLOTS)
         )
         budget = all(alike_pairs(forms) <= self.budget for forms in paras.values())
@@ -618,7 +639,7 @@ class System:
         return [
             ("every piece attested in a daughter", attested),
             ("every form legal, on both test stems", legal_all),
-            ("the persons of every tense distinct, but for 1sg and 3sg", distinct),
+            ("the persons of every tense distinct, but for 1sg and 3sg where the daughters allow", distinct),
             ("no subjunctive 1sg alike with a form of another tense", subjunctive),
             (f"at most {self.budget} pairs alike in any paradigm", budget),
             ("esse, stare and habere never alike", apart and sol["irregular"] is not None),
@@ -772,7 +793,7 @@ def render(system: System, sol: dict, strict: str) -> str:
     checks = "".join(f'<li>{"✓" if ok else "✗"} {html.escape(label)}</li>' for label, ok in system.checks(sol, paras))
     optima_rows = []
     for cost, ends, marks, starts in system.optima:
-        regular = {t: {(tam, sl): compose(SAMPLE_STEM[t], marks[(t, tam)], ends[sl])
+        regular = {t: {(tam, sl): compose(SAMPLE_STEM[t], marks[(t, tam)], system.tense_endings(ends, tam)[sl])
                        for tam in TAMS for sl in system.slots_of[tam]} for t in THEMES}
         reg_letters, reg_cells = system.letters(regular)
         n_borrowed = sum(1 for k, m in marks.items() if m not in system.markers[k])
@@ -809,6 +830,9 @@ def render(system: System, sol: dict, strict: str) -> str:
         cells=f"{cells:,}",
         assets=assets,
         whole=whole,
+        agree="; ".join(
+            f"{picks.SHORT[tam]} {same} of {rows}" + ("" if tam in system.agree_tams else ", so apart")
+            for tam in TAMS if tam != "imperative" for same, rows in [system.pools["agree"][tam]]),
         strict=strict,
         search=search,
         checks=checks,
@@ -866,7 +890,8 @@ piece leaves a cluster bare. A person never takes an ending the daughters give t
 at least twice as often: <i>-s</i> is the 2sg in most lects, so it cannot be the 1sg. Counted by lect and
 person: a lect with <i>-s</i> for two persons counts twice.</li>
 <li><b>Unique, with minor overloading.</b> The persons of a tense always differ, except that 1sg and 3sg
-may agree (<i>cantaba, cante</i>), which is not counted as overloading; a subjunctive 1sg is never alike with
+may agree in a tense where more than half of the daughters' rows have them alike ({agree}); there the 1sg
+takes the 3sg's ending if it is shorter, and that is not counted as overloading; a subjunctive 1sg is never alike with
 a form of another tense; otherwise at most {budget} pairs of forms in a paradigm may be alike; esse, stare and
 habere never share a form.</li>
 <li><b>Base plus variation.</b> One set of person endings serves every tense and every theme. A theme may
