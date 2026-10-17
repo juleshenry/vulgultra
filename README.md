@@ -1,4 +1,4 @@
-<p align="center"><img src="site/static/img/flag.svg" width="720" alt="Flag of Vulgultra: thirty-six coloured rays, one per Romance lect, converge through a prism into one beam of light"></p>
+<p align="center"><img src="site/static/img/flag.svg" width="720" alt="Flag of Vulgultra: thirty-six ribbons of coloured light, one per Romance lect, merge through ten spheres into one white beam"></p>
 
 # Vulgultra
 

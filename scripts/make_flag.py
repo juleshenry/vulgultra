@@ -1,9 +1,13 @@
 """Generate the Vulgultra flag, site/static/img/flag.svg: a reverse prism.
 
-36 rays, one per lect of the Romance grid, converge on a prism and leave it
-as one beam. Behind it, three rings (the veils above the Tree of Life) and a
-rain of letters taken from the lexicon's spellings. The 22 ticks and 10 dots
-on the rings are the paths and spheres of the Tree of Life.
+A prism splits white light into colours; this runs it backwards with additive
+light. The 36 lects of the Romance grid rise from the bottom edge as 36 hues
+round the colour wheel. They merge six by six into the six tertiary colours,
+two by two into the three pillars (red, green, blue), and the three into
+white at the crown, which leaves the flag as one beam. The ten meeting points
+are the ten spheres of the Tree of Life; the crown carries the three veils
+above it. Behind, letters from the lexicon's spellings fall the other way,
+the way Latin went.
 
     python3 scripts/make_flag.py
 """
@@ -12,222 +16,215 @@ import colorsys
 import json
 import math
 import random
+import sys
 import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LEXICON = ROOT / "data" / "vulgultra_lexicon.json"
-OUT = ROOT / "site" / "static" / "img" / "flag.svg"
+LEXICON = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "data" / "vulgultra_lexicon.json"
+OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "site" / "static" / "img" / "flag.svg"
 W, H = 1500, 1000
 rng = random.Random(36)
 
-# ---- letters for the rain -------------------------------------------------
+f = lambda v: f"{v:.1f}"
+
+
+def hexcol(h, l, s=1.0):
+    r, g, b = colorsys.hls_to_rgb((h % 360) / 360, l, s)
+    return f"#{round(r*255):02x}{round(g*255):02x}{round(b*255):02x}"
+
+
+# ---- the tree ------------------------------------------------------------------
+# A node is (x, y, hue, lightness, radius); a ribbon joins a child to its parent.
+N = 36
+Y0, Y1, Y2, Y3 = H + 30, 720, 470, 250
+x_left, x_right = 70, W - 70
+leaves = []
+for i in range(N):
+    x = x_left + (x_right - x_left) * i / (N - 1)
+    hue = 305 + i * 10  # 36 hues round the wheel, magenta to magenta
+    leaves.append({"x": x, "y": Y0, "hue": hue, "l": 0.58})
+
+
+def parent_of(children, y, l, r):
+    x = sum(c["x"] for c in children) / len(children)
+    # mean hue of a run of neighbours on the wheel
+    hue = sum(c["hue"] for c in children) / len(children)
+    return {"x": x, "y": y, "hue": hue, "l": l, "r": r, "children": children}
+
+
+tier1 = [parent_of(leaves[6 * j : 6 * j + 6], Y1, 0.64, 17) for j in range(6)]
+tier2 = [parent_of(tier1[2 * j : 2 * j + 2], Y2, 0.72, 24) for j in range(3)]
+crown = parent_of(tier2, Y3, 1.0, 32)
+
+# ---- letters for the rain ---------------------------------------------------------
 roots = json.load(open(LEXICON, encoding="utf-8"))["roots"].values()
-letters = []
-for r in roots:
-    for ch in r["orthography"]:
-        if ch in "⟨⟩" or unicodedata.combining(ch) or ch == "ʲ":
-            continue
-        letters.append(ch)
+letters = [
+    ch
+    for r in roots
+    for ch in r["orthography"]
+    if ch not in "⟨⟩ʲ" and not unicodedata.combining(ch)
+]
 words = "".join(letters)
-
-
-def rain_run(n):
-    i = rng.randrange(len(words) - n)
-    return words[i : i + n]
 
 
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;")
 
 
-# ---- geometry ----------------------------------------------------------------
-C = (750.0, 500.0)  # prism centroid
-side = 400.0
-h = side * math.sqrt(3) / 2
-A = (C[0], C[1] - 2 * h / 3)
-BL = (C[0] - side / 2, C[1] + h / 3)
-BR = (C[0] + side / 2, C[1] + h / 3)
-
-
-def lerp(p, q, t):
-    return (p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t)
-
-
-E = lerp(BL, A, 0.5)  # rays enter the left face here
-X = lerp(BR, A, 0.56)  # the beam leaves the right face here
-beam_end = (W + 20, X[1] - (W + 20 - X[0]) * math.tan(math.radians(5.5)))
-
-f = lambda v: f"{v:.1f}"
-pt = lambda p: f"{f(p[0])},{f(p[1])}"
-
 out = []
 o = out.append
+gid = 0
 
-o(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Flag of Vulgultra: thirty-six coloured rays converge through a prism into one beam of light">')
+o(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
+  'aria-label="Flag of Vulgultra: thirty-six coloured ribbons of light rise and merge through ten spheres into one white beam">')
 o("<title>Flag of Vulgultra</title>")
 o("<defs>")
-o('<radialGradient id="bg" cx="750" cy="480" r="900" gradientUnits="userSpaceOnUse">'
-  '<stop offset="0" stop-color="#2a0f4d"/><stop offset=".45" stop-color="#12062a"/>'
-  '<stop offset="1" stop-color="#030108"/></radialGradient>')
-o('<radialGradient id="veil" cx="750" cy="500" r="380" gradientUnits="userSpaceOnUse">'
-  '<stop offset="0" stop-color="#c9a6ff" stop-opacity=".22"/>'
-  '<stop offset=".6" stop-color="#7b3fc4" stop-opacity=".10"/>'
+o('<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">'
+  '<stop offset="0" stop-color="#010006"/><stop offset=".45" stop-color="#0a0420"/>'
+  '<stop offset=".8" stop-color="#160934"/><stop offset="1" stop-color="#1d0b3d"/></linearGradient>')
+o(f'<radialGradient id="aura" cx="{crown["x"]}" cy="{Y3}" r="560" gradientUnits="userSpaceOnUse">'
+  '<stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>'
+  '<stop offset=".35" stop-color="#9d7bff" stop-opacity=".08"/>'
   '<stop offset="1" stop-color="#4b1f73" stop-opacity="0"/></radialGradient>')
 o('<linearGradient id="rain" x1="0" y1="0" x2="0" y2="1">'
-  '<stop offset="0" stop-color="#3dffb4" stop-opacity="0"/>'
-  '<stop offset=".85" stop-color="#3dffb4" stop-opacity=".8"/>'
-  '<stop offset="1" stop-color="#e9fff6" stop-opacity="1"/></linearGradient>')
-o('<linearGradient id="rainGold" x1="0" y1="0" x2="0" y2="1">'
-  '<stop offset="0" stop-color="#f2c230" stop-opacity="0"/>'
-  '<stop offset=".8" stop-color="#f2c230" stop-opacity=".85"/>'
-  '<stop offset="1" stop-color="#fff7d6" stop-opacity="1"/></linearGradient>')
-o('<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">'
-  '<stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>'
-  '<stop offset=".55" stop-color="#b9e6ff" stop-opacity=".05"/>'
-  '<stop offset="1" stop-color="#ffffff" stop-opacity=".12"/></linearGradient>')
-o(f'<linearGradient id="beamFade" x1="{f(X[0])}" y1="0" x2="{W}" y2="0" gradientUnits="userSpaceOnUse">'
-  '<stop offset="0" stop-color="#fffdf0"/><stop offset=".55" stop-color="#ffe9a3"/>'
-  '<stop offset="1" stop-color="#f2c230"/></linearGradient>')
-# rays arrive as packets of data and become light near the prism
-o('<linearGradient id="solidRamp" x1="0" y1="0" x2="1500" y2="0" gradientUnits="userSpaceOnUse">'
-  '<stop offset=".12" stop-color="#000"/><stop offset=".3" stop-color="#fff"/></linearGradient>')
-o('<linearGradient id="dashRamp" x1="0" y1="0" x2="1500" y2="0" gradientUnits="userSpaceOnUse">'
-  '<stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".14" stop-color="#fff"/>'
-  '<stop offset=".3" stop-color="#000"/></linearGradient>')
-o(f'<mask id="solidMask" maskUnits="userSpaceOnUse" x="0" y="0" width="{W}" height="{H}"><rect width="{W}" height="{H}" fill="url(#solidRamp)"/></mask>')
-o(f'<mask id="dashMask" maskUnits="userSpaceOnUse" x="0" y="0" width="{W}" height="{H}"><rect width="{W}" height="{H}" fill="url(#dashRamp)"/></mask>')
-# the rain turns gold inside the beam
-o(f'<mask id="beamMask" maskUnits="userSpaceOnUse" x="0" y="0" width="{W}" height="{H}">'
-  f'<polygon points="{pt((X[0], X[1] - 6))} {pt((W + 20, beam_end[1] - 90))} {pt((W + 20, beam_end[1] + 90))} {pt((X[0], X[1] + 6))}" fill="#fff" filter="url(#soft)"/></mask>')
-o('<filter id="soft" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>')
-o('<filter id="glow" x="-20%" y="-20%" width="140%" height="140%">'
-  '<feGaussianBlur stdDeviation="5" result="b"/>'
+  '<stop offset="0" stop-color="#46e8c8" stop-opacity="0"/>'
+  '<stop offset=".85" stop-color="#46e8c8" stop-opacity=".75"/>'
+  '<stop offset="1" stop-color="#eafff9"/></linearGradient>')
+o(f'<linearGradient id="beam" x1="0" y1="{Y3}" x2="0" y2="0" gradientUnits="userSpaceOnUse">'
+  '<stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffffff" stop-opacity=".85"/></linearGradient>')
+o('<radialGradient id="glass" cx=".35" cy=".3" r=".75">'
+  '<stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>'
+  '<stop offset=".35" stop-color="#ffffff" stop-opacity=".25"/>'
+  '<stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>')
+o('<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">'
+  '<feGaussianBlur stdDeviation="4" result="b"/>'
   '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>')
-o('<filter id="bloom" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="24"/></filter>')
-o('<pattern id="scan" width="6" height="6" patternUnits="userSpaceOnUse">'
-  '<rect width="6" height="2" fill="#000" fill-opacity=".18"/></pattern>')
-o('<radialGradient id="vignette" cx="750" cy="500" r="920" gradientUnits="userSpaceOnUse">'
+o('<filter id="bloom" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>')
+o('<filter id="haze" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>')
+o('<pattern id="scan" width="5" height="5" patternUnits="userSpaceOnUse">'
+  '<rect width="5" height="1.6" fill="#000" fill-opacity=".22"/></pattern>')
+o('<pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">'
+  '<circle cx="15" cy="15" r="1.1" fill="#b7a6ff" fill-opacity=".16"/></pattern>')
+o(f'<radialGradient id="vignette" cx="750" cy="430" r="950" gradientUnits="userSpaceOnUse">'
   '<stop offset=".55" stop-color="#000" stop-opacity="0"/>'
-  '<stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient>')
+  '<stop offset="1" stop-color="#000" stop-opacity=".65"/></radialGradient>')
+
+
+def ribbon_gradient(child, parent):
+    """Colour runs from the child's hue into the parent's mix."""
+    global gid
+    gid += 1
+    c0 = hexcol(child["hue"], child["l"])
+    c1 = "#ffffff" if parent is crown else hexcol(parent["hue"], parent["l"])
+    o(f'<linearGradient id="g{gid}" x1="0" y1="{f(child["y"])}" x2="0" y2="{f(parent["y"])}" gradientUnits="userSpaceOnUse">'
+      f'<stop offset=".25" stop-color="{c0}"/><stop offset="1" stop-color="{c1}"/></linearGradient>')
+    return f"url(#g{gid})"
+
+
+edges = []
+for node, w_in, w_out in ((tier1, 9, 7), (tier2, 26, 15), ([crown], 30, 22)):
+    for p in node:
+        n = len(p["children"])
+        for k, c in enumerate(p["children"]):
+            # children land side by side across the sphere they feed
+            land = p["x"] + (k - (n - 1) / 2) * w_out * 0.9
+            edges.append((c, p, land, w_in, w_out, ribbon_gradient(c, p)))
 o("</defs>")
 
-o(f'<rect width="{W}" height="{H}" fill="url(#bg)"/>')
 
-# ---- rain --------------------------------------------------------------------
-STEP, FS, LH = 30, 21, 25
-cols = []
+def ribbon(c, p, land, w0, w1):
+    x0, y0, x1, y1 = c["x"], c["y"], land, p["y"]
+    k = (y0 - y1) * 0.6
+    l0, r0, l1, r1 = x0 - w0 / 2, x0 + w0 / 2, x1 - w1 / 2, x1 + w1 / 2
+    return (f"M{f(l0)},{f(y0)} C{f(l0)},{f(y0 - k)} {f(l1)},{f(y1 + k)} {f(l1)},{f(y1)} "
+            f"L{f(r1)},{f(y1)} C{f(r1)},{f(y1 + k)} {f(r0)},{f(y0 - k)} {f(r0)},{f(y0)}Z")
+
+
+def spine(c, p, land):
+    x0, y0, x1, y1 = c["x"], c["y"], land, p["y"]
+    k = (y0 - y1) * 0.6
+    return f"M{f(x0)},{f(y0)} C{f(x0)},{f(y0 - k)} {f(x1)},{f(y1 + k)} {f(x1)},{f(y1)}"
+
+
+# ---- ground -------------------------------------------------------------------------
+o(f'<rect width="{W}" height="{H}" fill="url(#sky)"/>')
+o(f'<rect width="{W}" height="{H}" fill="url(#dots)"/>')
+o(f'<rect width="{W}" height="{H}" fill="url(#aura)"/>')
+# the colours glow up from below the edge
+o('<g filter="url(#haze)" opacity=".7">')
+for c in leaves:
+    o(f'<ellipse cx="{f(c["x"])}" cy="{H + 10}" rx="34" ry="120" fill="{hexcol(c["hue"], 0.5)}"/>')
+o("</g>")
+
+# ---- rain, falling the way Latin went -----------------------------------------------
+STEP, FS, LH = 30, 19, 23
+o('<g font-family="Menlo, \'SF Mono\', Consolas, \'DejaVu Sans Mono\', monospace" '
+  f'font-size="{FS}" text-anchor="middle">')
 for cx in range(15, W, STEP):
     for _ in range(rng.choice([1, 1, 2])):
-        n = rng.randint(6, 22)
-        y0 = rng.randint(-200, H - 80)
-        op = rng.uniform(0.25, 0.7)
-        cols.append((cx, y0, rain_run(n), op))
-
-
-def rain_text(fill, xmin=0):
-    o(f'<g font-family="Menlo, \'SF Mono\', Consolas, \'DejaVu Sans Mono\', monospace" font-size="{FS}" text-anchor="middle">')
-    for cx, y0, s, op in cols:
-        if cx < xmin:
-            continue
-        spans = "".join(f'<tspan x="{cx}" y="{y0 + i * LH}">{esc(c)}</tspan>' for i, c in enumerate(s))
-        o(f'<text fill="url(#{fill})" opacity="{op:.2f}">{spans}</text>')
-    o("</g>")
-
-
-rain_text("rain")
-o('<g mask="url(#beamMask)">')
-rain_text("rainGold", X[0] - 40)
+        n = rng.randint(5, 18)
+        y0 = rng.randint(-150, H - 120)
+        i = rng.randrange(len(words) - n)
+        s = words[i : i + n]
+        op = rng.uniform(0.18, 0.5)
+        spans = "".join(f'<tspan x="{cx}" y="{y0 + j * LH}">{esc(ch)}</tspan>' for j, ch in enumerate(s))
+        o(f'<text fill="url(#rain)" opacity="{op:.2f}">{spans}</text>')
 o("</g>")
 
-# ---- the three veils ------------------------------------------------------------
-o(f'<circle cx="{C[0]}" cy="{C[1]}" r="380" fill="url(#veil)"/>')
-o(f'<g fill="none" transform="translate({C[0]} {C[1]})">')
-o('<circle r="232" stroke="#f2c230" stroke-opacity=".45" stroke-width="1.6"/>')
-o('<circle r="300" stroke="#5ef2ff" stroke-opacity=".45" stroke-width="7" stroke-dasharray="1.5 9"/>')
-o('<circle r="372" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.2"/>')
-# 22 ticks for the 22 paths, 10 marks for the 10 spheres
-for i in range(22):
+# ---- the three veils ------------------------------------------------------------------
+cx, cy = crown["x"], crown["y"]
+for r, op in ((168, 0.05), (120, 0.07), (80, 0.1)):
+    o(f'<circle cx="{f(cx)}" cy="{cy}" r="{r}" fill="#ffffff" fill-opacity="{op}"/>')
+o(f'<g fill="none" transform="translate({f(cx)} {cy})">')
+o('<circle r="168" stroke="#ffffff" stroke-opacity=".25" stroke-width="1.2"/>')
+o('<circle r="120" stroke="#ffffff" stroke-opacity=".5" stroke-width="5" stroke-dasharray="1.4 7.6"/>')
+o('<circle r="80" stroke="#ffffff" stroke-opacity=".35" stroke-width="1.2"/>')
+for i in range(22):  # the 22 paths
     a = math.radians(-90 + i * 360 / 22)
-    r1, r2 = 362, 384
-    o(f'<line x1="{f(r1*math.cos(a))}" y1="{f(r1*math.sin(a))}" x2="{f(r2*math.cos(a))}" y2="{f(r2*math.sin(a))}" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/>')
-for i in range(10):
-    a = math.radians(-90 + i * 36)
-    o(f'<circle cx="{f(232*math.cos(a))}" cy="{f(232*math.sin(a))}" r="4.5" fill="#f2c230" fill-opacity=".8"/>')
-o("</g>")
-
-# ---- 36 rays --------------------------------------------------------------------------
-N = 36
-y_top, y_bot = 150, 850
-rays = []
-for i in range(N):
-    t = i / (N - 1)
-    y = y_top + (y_bot - y_top) * t
-    r, g, b = colorsys.hls_to_rgb(t * 0.80, 0.60, 1.0)
-    col = f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
-    rays.append(((-20.0, y), col))
-
-
-def ray_poly(p0, w0, w1):
-    dx, dy = E[0] - p0[0], E[1] - p0[1]
-    L = math.hypot(dx, dy)
-    nx, ny = -dy / L, dx / L
-    pts = [
-        (p0[0] + nx * w0, p0[1] + ny * w0),
-        (E[0] + nx * w1, E[1] + ny * w1),
-        (E[0] - nx * w1, E[1] - ny * w1),
-        (p0[0] - nx * w0, p0[1] - ny * w0),
-    ]
-    return " ".join(pt(p) for p in pts)
-
-
-# bloom under the fan
-o('<g filter="url(#bloom)" opacity=".55" style="mix-blend-mode:screen">')
-for p0, col in rays:
-    o(f'<polygon points="{ray_poly(p0, 9, 2)}" fill="{col}"/>')
-o("</g>")
-# solid light near the prism
-o('<g mask="url(#solidMask)" style="isolation:isolate">')
-o('<g filter="url(#glow)" style="mix-blend-mode:screen">')
-for p0, col in rays:
-    o(f'<polygon points="{ray_poly(p0, 3.6, 0.7)}" fill="{col}" style="mix-blend-mode:screen"/>')
-o("</g></g>")
-# packets of data near the hoist
-o('<g mask="url(#dashMask)" stroke-width="5" stroke-linecap="butt" fill="none">')
-for i, (p0, col) in enumerate(rays):
-    dash = rng.choice(["16 10", "8 8", "22 6 4 6", "4 6", "12 4"])
-    off = rng.randint(0, 30)
-    o(f'<line x1="{f(p0[0])}" y1="{f(p0[1])}" x2="{f(E[0])}" y2="{f(E[1])}" stroke="{col}" stroke-dasharray="{dash}" stroke-dashoffset="{off}"/>')
+    o(f'<line x1="{f(160*math.cos(a))}" y1="{f(160*math.sin(a))}" x2="{f(178*math.cos(a))}" y2="{f(178*math.sin(a))}" '
+      'stroke="#ffffff" stroke-opacity=".5" stroke-width="2"/>')
 o("</g>")
 
 # ---- the beam -------------------------------------------------------------------------------
-def beam_poly(w0, w1):
-    return f"{pt((X[0], X[1] - w0))} {pt((beam_end[0], beam_end[1] - w1))} {pt((beam_end[0], beam_end[1] + w1))} {pt((X[0], X[1] + w0))}"
+o(f'<rect x="{f(cx - 60)}" y="-40" width="120" height="{cy + 40}" fill="#ffffff" opacity=".35" filter="url(#bloom)"/>')
+o(f'<rect x="{f(cx - 11)}" y="-10" width="22" height="{cy + 10}" fill="url(#beam)" filter="url(#glow)"/>')
+# chromatic fringe
+o(f'<rect x="{f(cx - 15)}" y="-10" width="2" height="{cy + 10}" fill="#00f0ff" opacity=".8"/>')
+o(f'<rect x="{f(cx + 13)}" y="-10" width="2" height="{cy + 10}" fill="#ff2bd6" opacity=".8"/>')
 
-
-o(f'<polygon points="{beam_poly(14, 70)}" fill="#f2c230" opacity=".55" filter="url(#bloom)"/>')
-o(f'<polygon points="{beam_poly(9, 26)}" fill="#f2c230" opacity=".55" filter="url(#glow)"/>')
-o(f'<polygon points="{beam_poly(4.5, 9)}" fill="url(#beamFade)" filter="url(#glow)"/>')
-
-# ---- the prism ------------------------------------------------------------------------------
-tri = f"{pt(A)} {pt(BR)} {pt(BL)}"
-o(f'<polygon points="{tri}" fill="#05020c" fill-opacity=".8"/>')
-o(f'<polygon points="{tri}" fill="url(#glass)"/>')
-# the colours sum to white inside the glass
-o(f'<polygon points="{pt((E[0], E[1] - 2.5))} {pt((X[0], X[1] - 4.5))} {pt((X[0], X[1] + 4.5))} {pt((E[0], E[1] + 2.5))}" fill="#ffffff" filter="url(#glow)"/>')
-o(f'<circle cx="{f(E[0])}" cy="{f(E[1])}" r="9" fill="#ffffff" filter="url(#glow)"/>')
-o(f'<circle cx="{f(X[0])}" cy="{f(X[1])}" r="8" fill="#fff7d6" filter="url(#glow)"/>')
-# chromatic aberration on the edges
-o('<g fill="none" stroke-width="3" stroke-linejoin="round" style="mix-blend-mode:screen">')
-o(f'<polygon points="{tri}" stroke="#00f0ff" stroke-opacity=".8" transform="translate(-5 1)"/>')
-o(f'<polygon points="{tri}" stroke="#ff2bd6" stroke-opacity=".8" transform="translate(5 -1)"/>')
+# ---- ribbons ----------------------------------------------------------------------------------
+o('<g filter="url(#bloom)" opacity=".75">')
+for c, p, land, w0, w1, fill in edges:
+    o(f'<path d="{ribbon(c, p, land, w0 * 1.6, w1 * 1.6)}" fill="{fill}"/>')
 o("</g>")
-o(f'<polygon points="{tri}" fill="none" stroke="#f4fbff" stroke-width="3.5" stroke-linejoin="round" filter="url(#glow)"/>')
+o('<g filter="url(#glow)">')
+for c, p, land, w0, w1, fill in edges:
+    o(f'<path d="{ribbon(c, p, land, w0, w1)}" fill="{fill}"/>')
+o("</g>")
+# pulses of data climbing each ribbon
+o('<g fill="none" stroke="#ffffff" stroke-linecap="round">')
+for c, p, land, w0, w1, fill in edges:
+    dash = rng.choice(["2 18", "6 26", "2 9 2 30", "10 40"])
+    o(f'<path d="{spine(c, p, land)}" stroke-width="{2 if w0 < 20 else 3}" stroke-opacity=".6" '
+      f'stroke-dasharray="{dash}" stroke-dashoffset="{rng.randint(0, 40)}"/>')
+o("</g>")
 
-# ---- screen ---------------------------------------------------------------------------------
+# ---- the ten spheres ----------------------------------------------------------------------------
+for p in tier1 + tier2 + [crown]:
+    col = "#ffffff" if p is crown else hexcol(p["hue"], p["l"])
+    r = p["r"]
+    o(f'<circle cx="{f(p["x"])}" cy="{f(p["y"])}" r="{r * 2.2}" fill="{col}" opacity=".45" filter="url(#bloom)"/>')
+    o(f'<circle cx="{f(p["x"])}" cy="{f(p["y"])}" r="{r}" fill="{col}"/>')
+    o(f'<circle cx="{f(p["x"])}" cy="{f(p["y"])}" r="{r}" fill="url(#glass)"/>')
+    o(f'<circle cx="{f(p["x"])}" cy="{f(p["y"])}" r="{r}" fill="none" stroke="#ffffff" stroke-opacity=".9" stroke-width="2"/>')
+    o(f'<circle cx="{f(p["x"])}" cy="{f(p["y"])}" r="{r + 9}" fill="none" stroke="{col}" stroke-opacity=".7" '
+      f'stroke-width="1.5" stroke-dasharray="{f(r * 0.5)} {f(r * 0.4)}"/>')
+
+# ---- screen ---------------------------------------------------------------------------------------
 o(f'<rect width="{W}" height="{H}" fill="url(#scan)"/>')
 o(f'<rect width="{W}" height="{H}" fill="url(#vignette)"/>')
 o("</svg>")
 
 OUT.write_text("\n".join(out) + "\n", encoding="utf-8")
-print(OUT.relative_to(ROOT))
+print(OUT, OUT.stat().st_size, "bytes")
