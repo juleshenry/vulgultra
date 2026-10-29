@@ -182,10 +182,10 @@ def api_key() -> str:
     return key
 
 
-def conj_url(lect: str, lemma: str) -> str:
+def conj_url(lect: str, lemma: str, key: str | None = None) -> str:
     iso = LECT_CONFIG[lect]["iso"]
     return (
-        f"https://api.verbix.com/conjugator/iv1/{api_key()}/"
+        f"https://api.verbix.com/conjugator/iv1/{key or api_key()}/"
         f"{iso}/{urllib.parse.quote(lemma)}/json"
     )
 
@@ -233,7 +233,8 @@ def load_or_fetch(
     record = {
         "lect": lect,
         "lemma": lemma,
-        "fetched_from": url,
+        # The cache is in git: record the URL without the key.
+        "fetched_from": conj_url(lect, lemma, key="{VERBIX_API_KEY}"),
         "page_url": page_url(lect, lemma),
         "license": "CC BY-NC 3.0",
         "attribution": "Verbix (https://www.verbix.com)",
