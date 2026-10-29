@@ -1,0 +1,649 @@
+{
+  "lect": "gsc",
+  "lemma": "Lancàster",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/oci/Lanc%C3%A0ster/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=8&T1=Lanc%C3%A0ster",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 8,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "lancàsti"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "lancàstes"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "lancàst"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "lancàstèm"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "lancàstètz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "lancàston"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "lancàsta"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "lancàstas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "lancàsta"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "lancàstam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "lancàstatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "lancàstan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "lancàstiái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "lancàstiás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "lancàstiá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "lancàstiam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "lancàstiatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "lancàstián"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "lancàstèsse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "lancàstèsses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "lancàstèsse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "lancàstèssem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "lancàstèssetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "lancàstèsson"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "lancàstèri"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "lancàstères"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "lancàstèt"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "lancàstèrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "lancàstèretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "lancàstèron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "lancàsterai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "lancàsteràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "lancàsterà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "lancàsterem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "lancàsteretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "lancàsteràn"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "lancàsteriái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "lancàsteriás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "lancàsteriá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "lancàsteriam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "lancàsteriatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "lancàsterián"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "lancàst"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "lancàstam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "lancàstètz"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "ai lancàstut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "as lancàstut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a lancàstut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "avèm lancàstut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "avètz lancàstut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "an lancàstut"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aja lancàstut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ajas lancàstut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aja lancàstut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "ajam lancàstut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "ajatz lancàstut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "ajan lancàstut"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aviái lancàstut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aviás lancàstut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aviá lancàstut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aviam lancàstut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aviatz lancàstut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "avián lancàstut"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèsse lancàstut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguèsses lancàstut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèsse lancàstut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèssem lancàstut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèssetz lancàstut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèsson lancàstut"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèri lancàstut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguères lancàstut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèt lancàstut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèrem lancàstut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèretz lancàstut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèron lancàstut"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aurai lancàstut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auràs lancàstut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aurà lancàstut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aurem lancàstut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auretz lancàstut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "auràn lancàstut"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "auriái lancàstut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auriás lancàstut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "auriá lancàstut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "auriam lancàstut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auriatz lancàstut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aurián lancàstut"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "lancàster"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "lancàstent"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "lancàstut"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "aver"
+    ],
+    "examples": null,
+    "verb": "lancàster"
+  }
+}

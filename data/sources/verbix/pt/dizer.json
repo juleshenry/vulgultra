@@ -1,0 +1,845 @@
+{
+  "lect": "pt",
+  "lemma": "dizer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/por/dizer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=2&T1=dizer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 2,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "digo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "dizes"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "diz"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "dizemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "dizeis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "dizem"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "diga"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "digas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "diga"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "digamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "digais"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "digam"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "dizia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "dizias"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "dizia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "dizíamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "dizíeis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "diziam"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "dissesse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "dissesses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "dissesse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "disséssemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "dissésseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "dissessem"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "disse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "disseste"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "disse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "dissemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "dissestes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "disseram"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "direi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "dirás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "dirá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "diremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "direis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "dirão"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "disser"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "disseres"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "disser"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "dissermos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "disserdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "disserem"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "diria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "dirias"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "diria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "diríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "diríeis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "diriam"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "diz"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "dize"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "diga"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "digamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "dizei"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "digam"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "dissera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "disseras"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "dissera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "disséramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "disséreis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "disseram"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenho dito"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tens dito"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tem dito"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "temos dito"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tendes dito"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "têm dito"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenha dito"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tenhas dito"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tenha dito"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tenhamos dito"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tenhais dito"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tenham dito"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tinha dito"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tinhas dito"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tinha dito"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tínhamos dito"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tínheis dito"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tinham dito"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tivesse dito"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tivesses dito"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tivesse dito"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivéssemos dito"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tivésseis dito"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tivessem dito"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "terei dito"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terás dito"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "terá dito"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teremos dito"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tereis dito"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "terão dito"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tiver dito"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tiveres dito"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tiver dito"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivermos dito"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tiverdes dito"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tiverem dito"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "teria dito"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terias dito"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "teria dito"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teríamos dito"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "teríeis dito"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "teriam dito"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "dizer"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "dizeres"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "dizer"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "dizermos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "dizerdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "dizerem"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "dizer"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "dizendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "dito"
+          }
+        ]
+      },
+      "28": {
+        "name": "Personal Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter dito"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "teres dito"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter dito"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "termos dito"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "terdes dito"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "terem dito"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "Foi com muita satisfação que este notou a simpatia que o Miranda manifestava pela moça, e pulou de contente quando o rapaz, um dia, na repartição, se abriu com ele, <b>dizendo</b> -lhe que ser seu genro era o que mais ambicionava neste mundo.",
+      "Por lei fatidica dos contrates, havia recebido na pia baptismal o nome, que nunca devêra confirmar, de Angelica – d’ahi Gêgéca ou Gégéca, como costumava <b>dizer</b> a mãe, abrindo os ee de modo especial e descançado, e accrescentando sempre com languido suspiro de pezar:",
+      " -- Continue, <b>disse</b> eu accordando.",
+      "— Sabes, Henriqueta ? O Miranda confessou -me hoje que gosta da Adelaide e quer casar -se com ela. Estou satisfeitíssimo, porque nossa filha não poderia encontrar melhor marido ! Que me <b>dizes</b> ?",
+      "\" Bem ! \", pensou Alice consigo mesma. \" Depois de uma queda como essa, eu não devo mais me preocupar em tropeçar das escadas ! Como todos irão me achar corajosa lá em casa ! Bem, eu não <b>diria</b> nada sobre isso, mesmo se caísse do telhado da casa ! \" (O que era provavelmente verdade. )",
+      "-- São muito bonitos.  Vi -lhe fazer um gesto para tiral -os outra vez do bolso, mas não passou do gesto; estava amuado.  No dia seguinte entrou a <b>dizer</b> de mim nomes feios, e acabou alcunhando -me <i>Dom Casmurro.</i> Os visinhos, que não gostam dos meus habitos reclusos e calados, deram curso á alcunha, que afinal pegou.  Nem por isso me zanguei.  [...]",
+      "[...]  não importava muito o modo como as colocava. Ela sentiu que estava cochilando e começou a sonhar que estava andando de mãos dadas com Diná, falando para ela muito seriamente, — \" Agora, Diná, <b>diga</b> -me a verdade: você já comeu um morcego ? \", quando subitamente, puf ! puf !, ela acertou uma pilha de gravetos e folhas secas e a queda havia acabado.",
+      "[...]  de vidro que estava debaixo da mesa: ela a abriu e achou dentro dela um bolo muito pequeno no qual as palavras \" COMA -ME \" estavam lindamente escritas em groselhas. — \" Bom, eu vou comê -lo \", <b>disse</b> Alice, \" e se isso me fizer crescer, poderei alcançar a chave; e se me fizer encolher, posso deslizar por debaixo da porta; então de qualquer modo eu chegarei ao jardim e não me importo com o que [...]",
+      "[...]  que perde; mas falto eu mesmo, e esta lacuna é tudo.  O que aqui está é, mal comparando, semelhante á pintura que se põe na barba e nos cabellos, e que apenas conserva o habito externo, como se <b>diz</b> nas autopsias; o interno não aguenta tinta.  Uma certidão que me desse vinte annos de edade poderia enganar os extranhos, como todos os documentos falsos, mas não a mim.  Os amigos que me restam são [...]",
+      " Entretanto, vida differente não quer <b>dizer</b> vida peor; é outra cousa.  A certos respeitos, aquella vida antiga apparece -me despida de muitos encantos que lhe achei; mas é tambem exacto que perdeu muito espinho que a fez molesta, e, de [...]",
+      "Gostaria de começar já. O Carl <b>disse</b> -me ao telefone",
+      "Ele <b>disse</b> que era ilegal.",
+      "Ele <b>diz</b> -me \" apara -o um pouco \".",
+      "Sempre ansiosos. <b>Diz</b> -se que a princesa de Alamut é uma beldade sem igual.",
+      "- Papá! - John! Vai ter com os miúdos. Eu trato <b>disto</b>."
+    ],
+    "verb": "dizer"
+  }
+}

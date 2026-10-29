@@ -1,0 +1,823 @@
+{
+  "lect": "pt",
+  "lemma": "abaluartar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/por/abaluartar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=2&T1=abaluartar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 2,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluarto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluarta"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartais"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartam"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluarte"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartes"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluarte"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluarteis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartem"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluartava"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartavas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluartava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartávamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartáveis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartavam"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluartasse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartasses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluartasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartássemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartásseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartassem"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluartei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartaste"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluartou"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartámos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartastes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartaram"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluartarei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartarás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluartará"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartaremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartareis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartarão"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluartar"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartares"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluartar"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartarmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartardes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartarem"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluartaria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartarias"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluartaria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartaríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartaríeis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartariam"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluarta"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluarte"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartai"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartem"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abaluartara"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abaluartaras"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abaluartara"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abaluartáramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abaluartáreis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abaluartaram"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenho abaluartado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tens abaluartado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tem abaluartado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "temos abaluartado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tendes abaluartado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "têm abaluartado"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenha abaluartado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tenhas abaluartado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tenha abaluartado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tenhamos abaluartado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tenhais abaluartado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tenham abaluartado"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tinha abaluartado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tinhas abaluartado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tinha abaluartado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tínhamos abaluartado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tínheis abaluartado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tinham abaluartado"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tivesse abaluartado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tivesses abaluartado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tivesse abaluartado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivéssemos abaluartado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tivésseis abaluartado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tivessem abaluartado"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "terei abaluartado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terás abaluartado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "terá abaluartado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teremos abaluartado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tereis abaluartado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "terão abaluartado"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tiver abaluartado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tiveres abaluartado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tiver abaluartado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivermos abaluartado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tiverdes abaluartado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tiverem abaluartado"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "teria abaluartado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terias abaluartado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "teria abaluartado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teríamos abaluartado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "teríeis abaluartado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "teriam abaluartado"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartar"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartares"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartar"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartarmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartardes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartarem"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartar"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abaluartado"
+          }
+        ]
+      },
+      "28": {
+        "name": "Personal Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter abaluartado"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "teres abaluartado"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter abaluartado"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "termos abaluartado"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "terdes abaluartado"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "terem abaluartado"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "abaluartar"
+  }
+}

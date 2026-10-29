@@ -1,0 +1,787 @@
+{
+  "lect": "ca",
+  "lemma": "aconseguir",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/cat/aconseguir/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=7&T1=aconseguir",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 7,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "aconsegueixo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aconsegueixes"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "aconsegueix"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "aconseguïm"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "aconseguïu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "aconsegueixen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "aconsegueixi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aconsegueixis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "aconsegueixi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "aconseguïm"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "aconseguïu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "aconsegueixin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "aconseguïa"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "aconseguïes"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "aconseguïa"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "aconseguíem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "aconseguíeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "aconseguïen"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "aconseguís"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "aconseguïssis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "aconseguís"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "aconseguíssim"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "aconseguíssiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "aconseguïssin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "aconseguí"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "aconseguïres"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "aconseguí"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "aconseguírem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "aconseguíreu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "aconseguíren"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "aconseguiré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aconseguiràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "aconseguirà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "aconseguirem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "aconseguireu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "aconseguiran"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "aconseguiria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aconseguiries"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "aconseguiria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "aconseguiríem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "aconseguiríeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "aconseguirien"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aconsegueix"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "aconsegueixi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "aconseguïm"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "aconseguïu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "aconsegueixin"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig aconseguir"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas aconseguir"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va aconseguir"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam aconseguir"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau aconseguir"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van aconseguir"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "he aconseguït"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has aconseguït"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha aconseguït"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hem aconseguït"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "heu aconseguït"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han aconseguït"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagi aconseguït"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagis aconseguït"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagi aconseguït"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hàgim aconseguït"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hàgiu aconseguït"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagin aconseguït"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "havia aconseguït"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havies aconseguït"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "havia aconseguït"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "havíem aconseguït"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "havíeu aconseguït"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "havien aconseguït"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagués aconseguït"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haguessis aconseguït"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagués aconseguït"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguéssim aconseguït"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéssiu aconseguït"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguessin aconseguït"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguí aconseguït"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres aconseguït"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagué aconseguït"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem aconseguït"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu aconseguït"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguéren aconseguït"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauré aconseguït"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauràs aconseguït"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haurà aconseguït"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haurem aconseguït"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haureu aconseguït"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hauran aconseguït"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguera aconseguït"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauries"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres aconseguït"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haguera aconseguït"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hauríem"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem aconseguït"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hauríeu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu aconseguït"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haurien"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagueren aconseguït"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig haver aconseguït"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver aconseguït"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver aconseguït"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam haver aconseguït"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau haver aconseguït"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver aconseguït"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconseguir"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "aconseguït"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconseguint"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "Amb el temps, després de diverses premsades, Tom <b>aconseguí</b> signar amb les seves inicials, servint -se del capciró de son dit xic com a ploma.",
+      "S' assegué i féu per manera de semblar joiós, pero era una tasca endiastrada. No va <b>aconseguir</b> un somriure ni una resposta: així és que recaigué en el silenci i deixa que son cor anés capbussant -se fins a les darreres fondaries.",
+      "Quin és el truc ? No n' hi ha cap, ho he <b>aconseguit</b> després d' anys d' entrenament.",
+      "- Traïdora! - Escurçó! Escòria! Vaig <b>aconseguir</b> arribar a la llançadora.",
+      "Provaré d' <b>aconseguir</b> -ne més si no podeu continuar.",
+      "Per què coi triguen tant ? - Mingus? - Sí. Escolta. Estem intentant <b>aconseguir</b> els plànols, però encara no els tenim.",
+      "El Donnie ja quasi ho té. He d' <b>aconseguir</b> la clau.",
+      "Saps com va <b>aconseguir</b> tants seguidors ?",
+      "He <b>aconseguit</b> els cinc anells."
+    ],
+    "verb": "aconseguir"
+  }
+}

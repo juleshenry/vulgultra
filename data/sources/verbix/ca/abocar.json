@@ -1,0 +1,779 @@
+{
+  "lect": "ca",
+  "lemma": "abocar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/cat/abocar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=7&T1=abocar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 7,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "aboco"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "aboques"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "aboca"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "aboquem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "aboqueu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "aboquen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "aboqui"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "aboquis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "aboqui"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "aboquem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "aboqueu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "aboquin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "abocava"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abocaves"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abocava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "abocàvem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "abocàveu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "abocaven"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "aboqués"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "aboquessis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "aboqués"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "aboquéssim"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "aboquéssiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "aboquessin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "aboquí"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abocares"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abocà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "abocàrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "abocàreu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "abocaren"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "abocaré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abocaràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abocarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "abocarem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "abocareu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "abocaran"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "abocaria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abocaries"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abocaria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "abocaríem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "abocaríeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "abocarien"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aboca"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "aboqui"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "aboquem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "aboqueu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "aboquin"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig abocar"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas abocar"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va abocar"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam abocar"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau abocar"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van abocar"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "he abocat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has abocat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha abocat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hem abocat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "heu abocat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han abocat"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagi abocat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagis abocat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagi abocat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hàgim abocat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hàgiu abocat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagin abocat"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "havia abocat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havies abocat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "havia abocat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "havíem abocat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "havíeu abocat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "havien abocat"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagués abocat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haguessis abocat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagués abocat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguéssim abocat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéssiu abocat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguessin abocat"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguí abocat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres abocat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagué abocat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem abocat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu abocat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguéren abocat"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauré abocat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauràs abocat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haurà abocat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haurem abocat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haureu abocat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hauran abocat"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguera abocat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauries"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres abocat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haguera abocat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hauríem"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem abocat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hauríeu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu abocat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haurien"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagueren abocat"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig haver abocat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver abocat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver abocat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam haver abocat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau haver abocat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver abocat"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abocar"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abocat"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abocant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      " L' andalús, al veure -ho, posa mans a la barana, s' <b>aboca</b>... i tot plegat se para... es repensa... i no s' hi tira."
+    ],
+    "verb": "abocar"
+  }
+}

@@ -1,0 +1,805 @@
+{
+  "lemma": "distrayer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/arg/distrayer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=52&T1=distrayer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 52,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "distraigo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "distrayes"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "distrais"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "distraye"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "distrai"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "distrayemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "distrayetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "distrayen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "distraiga"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "distraigas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "distraiga"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "distraigamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "distraigatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "distraigan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "distrayeba"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "distrayebas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "distrayeba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "distrayebanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "distrayebatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "distrayeban"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "distrayese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "distrayeses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "distrayese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "distrayesenos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "distrayesetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "distrayesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "distrayié"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "distrayiés"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "distrayó"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 1,
+            "form": "distrayemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 1,
+            "form": "distrayetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "distrayioron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "distrayeré"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "distrairé"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "distrayerás"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "distrairás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "distrayerá"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "distrairá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "distrayeremos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "distrairemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "distrayeretz"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "distrairetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "distrayerán"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "distrairán"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "distrayería"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "distrairía"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "distrayerías"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "distrairías"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "distrayería"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "distrairía"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "distrayeríanos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "distrairíanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "distrayeríatz"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "distrairíatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "distrayerían"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "distrairían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "distraye"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "distrayetz"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va distrayer"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas distrayer"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va distrayer"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos distrayer"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz distrayer"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van distrayer"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he distrayiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has distrayiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha distrayiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hemos distrayiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hetz distrayiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han distrayiu"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haiga distrayiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haigas distrayiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haiga distrayiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "haigamos distrayiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "haigatz distrayiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haigan distrayiu"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "heba distrayiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hebas distrayiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "heba distrayiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hebanos distrayiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hebatz distrayiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "heban distrayiu"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hese distrayiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "heses distrayiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hese distrayiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hesenos distrayiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hesetz distrayiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hesen distrayiu"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré distrayiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrás distrayiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habrá distrayiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habremos distrayiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habretz distrayiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrán distrayiu"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría distrayiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrías distrayiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habría distrayiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habríanos distrayiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habríatz distrayiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrían distrayiu"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va haver distrayiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver distrayiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver distrayiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos haver distrayiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz haver distrayiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver distrayiu"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "distrayer"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "distrayendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 0,
+            "form": "distrayiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 0,
+            "form": "distrayida"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 0,
+            "form": "distrayius"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 0,
+            "form": "distrayidas"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber distrayiu"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habendo distrayiu"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "distrayer"
+  }
+}

@@ -1,0 +1,931 @@
+{
+  "lect": "ca",
+  "lemma": "haver",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/cat/haver/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=7&T1=haver",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 7,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "he"
+          },
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "hec"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "has"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "heus"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "ha"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "heu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "hem"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "havem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "heu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "haveu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "han"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "heuen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "hagi"
+          },
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "hegui"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "hagis"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "heguis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "hagi"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "hegui"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "hàgim"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "haguem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "hàgiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "hagueu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "hagin"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "heguin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "havia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havies"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "havia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "havíem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "havíeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "havien"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "hagués"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "haguessis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "hagués"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "haguéssim"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "haguéssiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "haguessin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "haguí"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "hagueres"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "hagué"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "haguérem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "haguéreu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "haguéren"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "hauré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "hauràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "haurà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "haurem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "haureu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "hauran"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "hauria"
+          },
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 2,
+            "form": "haguera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "hauries"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "hagueres"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "hauria"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "haguera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "hauríem"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "haguérem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "hauríeu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "haguéreu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "haurien"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "hagueren"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "haig"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "heu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "haig"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "hegui"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "haig"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 2,
+            "form": "haguem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "haig"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 2,
+            "form": "haveu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "haig"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "heguin"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig haver"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam haver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau haver"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "he hagut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has hagut"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha hagut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hem hagut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "heu hagut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han hagut"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagi hagut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagis hagut"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagi hagut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hàgim hagut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hàgiu hagut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagin hagut"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "havia hagut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havies hagut"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "havia hagut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "havíem hagut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "havíeu hagut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "havien hagut"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagués hagut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haguessis hagut"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagués hagut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguéssim hagut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéssiu hagut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguessin hagut"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguí hagut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres hagut"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagué hagut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem hagut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu hagut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguéren hagut"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauré hagut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauràs hagut"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haurà hagut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haurem hagut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haureu hagut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hauran hagut"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguera hagut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauries"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres hagut"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haguera hagut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hauríem"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem hagut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hauríeu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu hagut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haurien"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagueren hagut"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig haver hagut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver hagut"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver hagut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam haver hagut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau haver hagut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver hagut"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haver"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "hagut"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "havent"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "CAPÍTOL I -Tom! Cap resposta. -Tom! Cap resposta. -Que s' <b>ha</b> fet aquest noi ? em demano.",
+      "-Mai no l' <b>he</b> vist atrapat, aquest noi !",
+      "No m' <b>ha</b> fet prou martingales, perque ara m' emprengui de sotjar -lo ?",
+      "Tanmateix, en nom de Déu, ell no s' empesca mai les mateixes coses dues vegades seguides; i com pot coneixer un hom la que <b>ha</b> de venir ?",
+      " De tots ells porta dol, a l' ensems que es complau a guardar -ne ferma recordança, el vell narraire a qui l' EDITORIAL CATALANA <b>ha</b> volgut honrar confiant -li la presentació d' aquest volum, sense altre mèrit, de part meva, si de mèrit mereix el nom, que ésser l' únic supervivent d' aquella colla d' humoristes que qualsevol d' [...]",
+      "[...]  fiar, perquè estaven farcits de castellanades, ni cap obra de les publicades aleshores ens podia servir de norma.  Així, cada escriptor escrivia com bé li semblava, i en la impremta, on tampoc hi <b>havia</b> cap corrector que sapigués un borrall del nostre idioma, el qual feia un sens fi d' anys que no era conreat, estampaven cada original al peu de la lletra de les quartilles, i els números de la [...]",
+      "[...]  un borrall del nostre idioma, el qual feia un sens fi d' anys que no era conreat, estampaven cada original al peu de la lletra de les quartilles, i els números de la publicació sortien... com <b>havien</b> de sortir.",
+      " Referent a aquest recull, cal una advertència.  S' hi troba en ell algun article firmat amb altre nom dels que <b>he</b> consignat en el paràgraf anterior, en el qual anomeno els redactors i col·laboradors del setmanari.  És que en la redacció rebíem per correu escrits amb pseudònim, i els que ens plaïen es [...]",
+      " CONRAD ROURE  LES QUATRE RAMBLES  Hi <b>ha</b> afició, a Barcelona, a partir les coses en quatre.",
+      "-Tom: no us calgué pas d' arrencar el coll de la camisa d' alla on jo l' <b>havia</b> cosit, per mullar-vos el cap: oi ?",
+      "Disculpi, el catàleg. <i>Signore</i>, benvingut a Venècia. Gràcies. Em prova <b>haver</b> tornat.",
+      "Us <b>he</b> de demanar que seieu en posició recta.",
+      "Li <b>han</b> caigut deu anys més al teu germà.",
+      "Per què <b>has</b> traït la pàtria ?",
+      "Pensa que <b>ha</b> d' heretar tot un regne."
+    ],
+    "verb": "haver"
+  }
+}

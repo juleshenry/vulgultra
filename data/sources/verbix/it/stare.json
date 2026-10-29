@@ -1,0 +1,727 @@
+{
+  "lect": "it",
+  "lemma": "stare",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/stare/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=stare",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sta"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "stiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "state"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "stanno"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "stia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stia"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "stia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "stiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "stiate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "stiano"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "stavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "stavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "stava"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "stavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "stavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "stavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "stessi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stessi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "stesse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "stessimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "steste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "stessero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "stetti"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stesti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "stette"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "stemmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "steste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "stettero"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "starò"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "starai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "starà"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "staremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "starete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "staranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "starei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "staresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "starebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "staremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "stareste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "starebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sta'"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "stia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "stiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "state"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "stiano"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sono stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sei stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "è stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "siamo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "siete stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "sono stati"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sia stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sia stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sia stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "siamo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "siate stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "siano stati"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ero stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eri stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "era stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "eravamo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "eravate stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "erano stati"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "fossi stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fossi stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "fosse stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fossimo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "foste stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "fossero stati"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "fui stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fosti stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "fu stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fummo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "foste stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "furono stati"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sarò stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sarai stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sarà stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "saremo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "sarete stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "saranno stati"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sarei stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "saresti stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sarebbe stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "saremmo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "sareste stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "sarebbero stati"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "stare"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "stando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "stato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "stante"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere stato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo stato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente stato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "essere"
+    ],
+    "examples": [
+      "[...]  padre, e dopo sì tenere ed amorose espressioni che adoperò teco; perchè io so qual discorso ti ha tenuto. Figliuolo caro, se vuoi rovinarti da te medesimo, non sarò io quella che t’aiuti a farlo; <b>sta</b> pur sicuro che l' assenso de ’ tuoi genitori non l' otterrai in eterno. Quanto a me, certamente non voglio il rimorso di aver prestata mano alla tua distruzione, nè che tu abbi mai a dire un giorno: [...]",
+      "[...]  il mare si accavallava in montagne che si rompevano sopra di noi ad ogni tre o quattro minuti. Quando potei guardare all' intorno, mi trovai circondato dalla desolazione per ogni dove; due navi che <b>stavano</b> all' âncora presso di noi avevano, per alleggerirsi di carico, tagliato i loro alberi rasente la coperta; la nostra ciurma gridava che una nave ancorata un miglio all' incirca dinanzi a noi era [...]",
+      "[...]  L' acqua è alta quattro piedi sopra la stiva ! Allora le braccia d' ognuno furono chiamate alle trombe. A questo comando mi sentii agghiadare il cuore, e caddi a spalle addietro sul mio letto ove <b>stava</b> seduto. Ma gli altri vennero a scuotermi da quel la specie di letargo dicendomi: — « Olà ! voi che non eravate buono a far nulla poc’anzi, sarete almeno buono a tirar su acqua al pari di un altro; » [...]",
+      "[...]  eravate buono a far nulla poc’anzi, sarete almeno buono a tirar su acqua al pari di un altro; » alla quale chiamata io mi mossi; e andato alla tromba lavorai col massimo buon volere. Mentre ciò si <b>stava</b> facendo, il capitano vedendo alcuni leggeri palischermi che impotenti a difendersi dalla burrasca e costretti ad abbandonarsi in balía dell' onde non poterono avvicinarsi a noi per soccorrerci, [...]",
+      "[...]  Lorena sua ava. Queste devote principesse, alle quali premeva ascrivere un loro cadetto nel numero de ’ cardinali colla bella speranza, che un dì esser dovesse il quinto papa della casa de ’ Medici, <b>stavano</b> attaccate santamente alla corte di Roma, pur nulla curando che il loro astronomo e primario matematico e filosofo, quell’uomo anzi, che rinnovò nel mondo le stesse matematiche e le vere dottrine [...]",
+      "[...]  abbandonare la nave, fui gettato nella barca più di quanto potessi dire d' esserci entrato. Il mio cuore era come morto, parte per l' atterrimento del presente, parte per la paura di quanto mi <b>stava</b> tuttavia d' innanzi agli occhi.",
+      "[...]  le vele; intanto standomi io al timone spinsi la scialuppa una lega più innanzi, ed allora misi in panna come se volessi fermarmi a pescare; indi lasciando il ragazzo al timone, m’avanzai laddove <b>stava</b> il Moro, ed abbassatomi come se avessi voluto cogliere qualche cosa cadutami, lo presi per sorpresa, cacciandogli un braccio fra le gambe, e di netto lo feci saltare dal bordo della scialuppa nel [...]",
+      "[...]  turba che, presso alla chiesa di Sant'Ambrogino in Solariolo, affollavasi al mercato, o come dicevano, alla <i>Balla</i> degli olj e dei laticinj, cominciò a fissare gli occhi sopra una signora, che <b>stava</b> sur un terrazzino, sporgente dalla torre in angolo della via che di là mette a Sant'Alessandro.  Questa era Margherita Pusterla, anch' ella di casa Visconti e cugina del principe, ma troppo da lui [...]",
+      "[...]  fosse andata la cosa, non potevamo dispensarci dallo sbarcare d' un modo o dell' altro, perchè non ci rimaneva un boccale d' acqua nella scialuppa: quando, e da che parte eseguire lo sbarco, qui <b>stava</b> la difficoltà. — « Se voi lasciare andar me con orcio a spiaggia, io veder bene se esservi acqua dolce, e portarvene alcun poco. — Ma perchè andarci tu, e non piuttosto io, e tu rimanere nella [...]",
+      "Per dir vero scoprimmo in appresso, che non avremmo avuto bisogno di prenderci tanti fastidi per trovare acqua dolce, perchè un poco al di sopra del seno ove <b>stavamo</b>, ne scorgemmo una sorgente al calare della marea; così pertanto potemmo empire tutti i nostri orci e, acceso il fuoco, facemmo onore al lepre che avevamo predato; indi ci accingemmo a riprendere la [...]",
+      "Kong si <b>sta</b> ambientando nella Terra Cava.",
+      "Ahi ! Mi lasci <b>stare</b> !",
+      "... Soraya <b>sta</b> con De Laurentis... Insomma come mi devo comportare ? Eh ?",
+      "E visto che <b>sto</b> esaminando il suo curriculum vitae …",
+      "Andiamo ! - La tua canzone preferita ? - Phil, <b>sta</b> aspettando qualcuno."
+    ],
+    "verb": "stare"
+  }
+}

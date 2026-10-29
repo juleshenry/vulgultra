@@ -1,0 +1,2835 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "rm",
+    "purpose": "Verbix conjugation harvest",
+    "provider": "Verbix",
+    "license": "CC BY-NC 3.0",
+    "attribution": "Verbix (https://www.verbix.com)",
+    "stats": {
+      "fetched": 80,
+      "attested": 11,
+      "generated": 66,
+      "empty": 3
+    },
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "rm",
+      "lemma": "arver",
+      "class_source": "-er",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:arver",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "arvel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2sg": {
+            "form": "arvas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3sg": {
+            "form": "arva",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "1pl": {
+            "form": "arvein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2pl": {
+            "form": "arveis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3pl": {
+            "form": "arvan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "arvi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2sg": {
+            "form": "arvies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3sg": {
+            "form": "arvi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "1pl": {
+            "form": "arveien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2pl": {
+            "form": "arveies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3pl": {
+            "form": "arvien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "arvavel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2sg": {
+            "form": "arvavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3sg": {
+            "form": "arvava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "1pl": {
+            "form": "arvavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2pl": {
+            "form": "arvavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3pl": {
+            "form": "arvavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "arvevi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2sg": {
+            "form": "arvevies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3sg": {
+            "form": "arvevi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "1pl": {
+            "form": "arvevien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2pl": {
+            "form": "arvevies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3pl": {
+            "form": "arvevien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "arva",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2pl": {
+            "form": "arvei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          }
+        },
+        "indicative.pluperfect": {
+          "1sg": {
+            "form": "aviarts",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Pluperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2sg": {
+            "form": "aviarts",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Pluperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3sg": {
+            "form": "aviarts",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Pluperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "1pl": {
+            "form": "aviarts",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Pluperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2pl": {
+            "form": "aviarts",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Pluperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3pl": {
+            "form": "aviarts",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Pluperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "arvess",
+            "variants": [
+              "arvessi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2sg": {
+            "form": "arvesses",
+            "variants": [
+              "arvessies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3sg": {
+            "form": "arvess",
+            "variants": [
+              "arvessi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "1pl": {
+            "form": "arvessen",
+            "variants": [
+              "arvessien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "2pl": {
+            "form": "arvesses",
+            "variants": [
+              "arvessies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          },
+          "3pl": {
+            "form": "arvessen",
+            "variants": [
+              "arvessien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=arver"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "beiber",
+      "class_source": "-er",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:beiber",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "beibel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2sg": {
+            "form": "beibas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3sg": {
+            "form": "beiba",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "1pl": {
+            "form": "buein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2pl": {
+            "form": "bueis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3pl": {
+            "form": "beiban",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "beibi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2sg": {
+            "form": "beibies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3sg": {
+            "form": "beibi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "1pl": {
+            "form": "bueien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2pl": {
+            "form": "bueies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3pl": {
+            "form": "beibien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "beibavel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2sg": {
+            "form": "beibavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3sg": {
+            "form": "beibava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "1pl": {
+            "form": "beibavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2pl": {
+            "form": "beibavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3pl": {
+            "form": "beibavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "beibevi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2sg": {
+            "form": "beibevies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3sg": {
+            "form": "beibevi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "1pl": {
+            "form": "beibevien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2pl": {
+            "form": "beibevies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3pl": {
+            "form": "beibevien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "beiba",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2pl": {
+            "form": "buei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "buess",
+            "variants": [
+              "buessi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2sg": {
+            "form": "buesses",
+            "variants": [
+              "buessies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3sg": {
+            "form": "buess",
+            "variants": [
+              "buessi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "1pl": {
+            "form": "buessen",
+            "variants": [
+              "buessien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "2pl": {
+            "form": "buesses",
+            "variants": [
+              "buessies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          },
+          "3pl": {
+            "form": "buessen",
+            "variants": [
+              "buessien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=beiber"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "cantar",
+      "class_source": "-ar",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:cantar",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "contel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2sg": {
+            "form": "contas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3sg": {
+            "form": "conta",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "1pl": {
+            "form": "cantein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2pl": {
+            "form": "canteis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3pl": {
+            "form": "contan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "conti",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2sg": {
+            "form": "conties",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3sg": {
+            "form": "conti",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "1pl": {
+            "form": "canteien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2pl": {
+            "form": "canteies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3pl": {
+            "form": "contien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "cantavel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2sg": {
+            "form": "cantavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3sg": {
+            "form": "cantava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "1pl": {
+            "form": "cantavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2pl": {
+            "form": "cantavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3pl": {
+            "form": "cantavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "cantavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2sg": {
+            "form": "cantavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3sg": {
+            "form": "cantavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "1pl": {
+            "form": "cantavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2pl": {
+            "form": "cantavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3pl": {
+            "form": "cantavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "conta",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2pl": {
+            "form": "cantei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "cantass",
+            "variants": [
+              "cantassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2sg": {
+            "form": "cantasses",
+            "variants": [
+              "cantassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3sg": {
+            "form": "cantass",
+            "variants": [
+              "cantassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "1pl": {
+            "form": "cantassen",
+            "variants": [
+              "cantassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "2pl": {
+            "form": "cantasses",
+            "variants": [
+              "cantassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          },
+          "3pl": {
+            "form": "cantassen",
+            "variants": [
+              "cantassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cantar"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "cavar",
+      "class_source": "-ar",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:cavar",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "cavel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2sg": {
+            "form": "cavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3sg": {
+            "form": "cava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "1pl": {
+            "form": "cavein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2pl": {
+            "form": "caveis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3pl": {
+            "form": "cavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "cavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2sg": {
+            "form": "cavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3sg": {
+            "form": "cavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "1pl": {
+            "form": "caveien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2pl": {
+            "form": "caveies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3pl": {
+            "form": "cavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "cavavel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2sg": {
+            "form": "cavavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3sg": {
+            "form": "cavava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "1pl": {
+            "form": "cavavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2pl": {
+            "form": "cavavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3pl": {
+            "form": "cavavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "cavavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2sg": {
+            "form": "cavavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3sg": {
+            "form": "cavavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "1pl": {
+            "form": "cavavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2pl": {
+            "form": "cavavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3pl": {
+            "form": "cavavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "cava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2pl": {
+            "form": "cavei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "cavass",
+            "variants": [
+              "cavassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2sg": {
+            "form": "cavasses",
+            "variants": [
+              "cavassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3sg": {
+            "form": "cavass",
+            "variants": [
+              "cavassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "1pl": {
+            "form": "cavassen",
+            "variants": [
+              "cavassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "2pl": {
+            "form": "cavasses",
+            "variants": [
+              "cavassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          },
+          "3pl": {
+            "form": "cavassen",
+            "variants": [
+              "cavassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=cavar"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "clamar",
+      "class_source": "-ar",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:clamar",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "clomel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2sg": {
+            "form": "clomas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3sg": {
+            "form": "cloma",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "1pl": {
+            "form": "clamein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2pl": {
+            "form": "clameis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3pl": {
+            "form": "cloman",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "clomi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2sg": {
+            "form": "clomies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3sg": {
+            "form": "clomi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "1pl": {
+            "form": "clameien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2pl": {
+            "form": "clameies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3pl": {
+            "form": "clomien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "clamavel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2sg": {
+            "form": "clamavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3sg": {
+            "form": "clamava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "1pl": {
+            "form": "clamavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2pl": {
+            "form": "clamavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3pl": {
+            "form": "clamavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "clamavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2sg": {
+            "form": "clamavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3sg": {
+            "form": "clamavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "1pl": {
+            "form": "clamavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2pl": {
+            "form": "clamavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3pl": {
+            "form": "clamavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "cloma",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2pl": {
+            "form": "clamei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "clamass",
+            "variants": [
+              "clamassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2sg": {
+            "form": "clamasses",
+            "variants": [
+              "clamassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3sg": {
+            "form": "clamass",
+            "variants": [
+              "clamassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "1pl": {
+            "form": "clamassen",
+            "variants": [
+              "clamassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "2pl": {
+            "form": "clamasses",
+            "variants": [
+              "clamassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          },
+          "3pl": {
+            "form": "clamassen",
+            "variants": [
+              "clamassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=clamar"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "curdar",
+      "class_source": "-ar",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:curdar",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "crodel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2sg": {
+            "form": "crodas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3sg": {
+            "form": "croda",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "1pl": {
+            "form": "curdein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2pl": {
+            "form": "curdeis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3pl": {
+            "form": "crodan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "crodi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2sg": {
+            "form": "crodies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3sg": {
+            "form": "crodi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "1pl": {
+            "form": "curdeien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2pl": {
+            "form": "curdeies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3pl": {
+            "form": "crodien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "curdavel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2sg": {
+            "form": "curdavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3sg": {
+            "form": "curdava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "1pl": {
+            "form": "curdavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2pl": {
+            "form": "curdavas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3pl": {
+            "form": "curdavan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "curdavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2sg": {
+            "form": "curdavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3sg": {
+            "form": "curdavi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "1pl": {
+            "form": "curdavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2pl": {
+            "form": "curdavies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3pl": {
+            "form": "curdavien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "croda",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2pl": {
+            "form": "curdei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "curdass",
+            "variants": [
+              "curdassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2sg": {
+            "form": "curdasses",
+            "variants": [
+              "curdassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3sg": {
+            "form": "curdass",
+            "variants": [
+              "curdassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "1pl": {
+            "form": "curdassen",
+            "variants": [
+              "curdassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "2pl": {
+            "form": "curdasses",
+            "variants": [
+              "curdassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          },
+          "3pl": {
+            "form": "curdassen",
+            "variants": [
+              "curdassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=curdar"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "dar",
+      "class_source": "-ar",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:dar",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "dun",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2sg": {
+            "form": "das",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3sg": {
+            "form": "dat",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "1pl": {
+            "form": "dein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2pl": {
+            "form": "deis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3pl": {
+            "form": "dattan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "detti",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2sg": {
+            "form": "detties",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3sg": {
+            "form": "detti",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "1pl": {
+            "form": "deien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2pl": {
+            "form": "deies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3pl": {
+            "form": "dettien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "davel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2sg": {
+            "form": "davas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3sg": {
+            "form": "dava",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "1pl": {
+            "form": "davan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2pl": {
+            "form": "davas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3pl": {
+            "form": "davan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "davi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2sg": {
+            "form": "davies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3sg": {
+            "form": "davi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "1pl": {
+            "form": "davien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2pl": {
+            "form": "davies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3pl": {
+            "form": "davien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "dai",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2pl": {
+            "form": "dei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "dass",
+            "variants": [
+              "dassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2sg": {
+            "form": "dasses",
+            "variants": [
+              "dassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3sg": {
+            "form": "dass",
+            "variants": [
+              "dassi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "1pl": {
+            "form": "dassen",
+            "variants": [
+              "dassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "2pl": {
+            "form": "dasses",
+            "variants": [
+              "dassies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          },
+          "3pl": {
+            "form": "dassen",
+            "variants": [
+              "dassien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dar"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "dir",
+      "class_source": "-ir",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:dir",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ditgel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2sg": {
+            "form": "dias",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3sg": {
+            "form": "di",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "1pl": {
+            "form": "schein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2pl": {
+            "form": "scheis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3pl": {
+            "form": "dian",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "ditgi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2sg": {
+            "form": "ditgies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3sg": {
+            "form": "ditgi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "1pl": {
+            "form": "scheien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2pl": {
+            "form": "scheies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3pl": {
+            "form": "ditgien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "devel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2sg": {
+            "form": "devas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3sg": {
+            "form": "deva",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "1pl": {
+            "form": "devan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2pl": {
+            "form": "devas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3pl": {
+            "form": "devan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "devi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2sg": {
+            "form": "devies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3sg": {
+            "form": "devi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "1pl": {
+            "form": "devien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2pl": {
+            "form": "devies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3pl": {
+            "form": "devien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "di",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2pl": {
+            "form": "schei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "schess",
+            "variants": [
+              "schessi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2sg": {
+            "form": "schesses",
+            "variants": [
+              "schessies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3sg": {
+            "form": "schess",
+            "variants": [
+              "schessi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "1pl": {
+            "form": "schessen",
+            "variants": [
+              "schessien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "2pl": {
+            "form": "schesses",
+            "variants": [
+              "schessies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          },
+          "3pl": {
+            "form": "schessen",
+            "variants": [
+              "schessien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=dir"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "esser",
+      "class_source": "-er",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:esser",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "sun",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2sg": {
+            "form": "eis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3sg": {
+            "form": "ei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "1pl": {
+            "form": "essan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2pl": {
+            "form": "essas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3pl": {
+            "form": "ein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "seigi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2sg": {
+            "form": "seigies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3sg": {
+            "form": "seigi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "1pl": {
+            "form": "seigien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2pl": {
+            "form": "seigies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3pl": {
+            "form": "seigien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "erel",
+            "variants": [
+              "fuvel"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2sg": {
+            "form": "eras",
+            "variants": [
+              "fuvas"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3sg": {
+            "form": "era",
+            "variants": [
+              "fuva"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "1pl": {
+            "form": "eran",
+            "variants": [
+              "fuvan"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2pl": {
+            "form": "eras",
+            "variants": [
+              "fuvas"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3pl": {
+            "form": "eran",
+            "variants": [
+              "fuvan"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "eri",
+            "variants": [
+              "fuvi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2sg": {
+            "form": "eries",
+            "variants": [
+              "fuvies"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3sg": {
+            "form": "eri",
+            "variants": [
+              "fuvi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "1pl": {
+            "form": "erien",
+            "variants": [
+              "fuvien"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2pl": {
+            "form": "eries",
+            "variants": [
+              "fuvies"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3pl": {
+            "form": "erien",
+            "variants": [
+              "fuvien"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "seigies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2pl": {
+            "form": "seigies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "fuss",
+            "variants": [
+              "fussi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2sg": {
+            "form": "fusses",
+            "variants": [
+              "fussies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3sg": {
+            "form": "fuss",
+            "variants": [
+              "fussi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "1pl": {
+            "form": "fussen",
+            "variants": [
+              "fussien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "2pl": {
+            "form": "fusses",
+            "variants": [
+              "fussies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          },
+          "3pl": {
+            "form": "fussen",
+            "variants": [
+              "fussien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=esser"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "haver",
+      "class_source": "-er",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:haver",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "hai",
+            "variants": [
+              "vai"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "2sg": {
+            "form": "has",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "3sg": {
+            "form": "ha",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "1pl": {
+            "form": "havein",
+            "variants": [
+              "vein"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "2pl": {
+            "form": "haveis",
+            "variants": [
+              "veis"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "3pl": {
+            "form": "han",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "hagi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "2sg": {
+            "form": "hagies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "3sg": {
+            "form": "hagi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "1pl": {
+            "form": "haveien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "2pl": {
+            "form": "haveies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          },
+          "3pl": {
+            "form": "hagien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "hagies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rm",
+      "lemma": "ir",
+      "class_source": "-ir",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix rm:ir",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "mon",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2sg": {
+            "form": "vas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3sg": {
+            "form": "va",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "1pl": {
+            "form": "mein",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2pl": {
+            "form": "meis",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3pl": {
+            "form": "van",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "mondi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2sg": {
+            "form": "mondies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3sg": {
+            "form": "mondi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "1pl": {
+            "form": "meien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2pl": {
+            "form": "meies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3pl": {
+            "form": "mondien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "evel",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2sg": {
+            "form": "evas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3sg": {
+            "form": "eva",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "1pl": {
+            "form": "evan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2pl": {
+            "form": "evas",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3pl": {
+            "form": "evan",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "evi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2sg": {
+            "form": "evies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3sg": {
+            "form": "evi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "1pl": {
+            "form": "evien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2pl": {
+            "form": "evies",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3pl": {
+            "form": "evien",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Past",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "va",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2pl": {
+            "form": "mei",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "mass",
+            "variants": [
+              "massi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2sg": {
+            "form": "masses",
+            "variants": [
+              "massies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3sg": {
+            "form": "mass",
+            "variants": [
+              "massi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "1pl": {
+            "form": "massen",
+            "variants": [
+              "massien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "2pl": {
+            "form": "masses",
+            "variants": [
+              "massies"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          },
+          "3pl": {
+            "form": "massen",
+            "variants": [
+              "massien"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional Present, direct",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=ir"
+          }
+        }
+      }
+    }
+  ]
+}

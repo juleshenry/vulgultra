@@ -1,0 +1,649 @@
+{
+  "lect": "gsc",
+  "lemma": "Eléazar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/oci/El%C3%A9azar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=8&T1=El%C3%A9azar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 8,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 1,
+            "form": "eléàzi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "eléàzas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "eléàza"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "eléazam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "eléazatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "eléàzan"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 1,
+            "form": "eléàze"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "eléàzes"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "eléàze"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "eléazem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "eléazetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "eléàzen"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "eléazavi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eléazavas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "eléazava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "eléazàvem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "eléazàvetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "eléazavan"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "eléazèsse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eléazèsses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "eléazèsse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "eléazèssem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "eléazèssetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "eléazèsson"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "eléazèri"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eléazères"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "eléazèt"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "eléazèrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "eléazèretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "eléazèron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "eléazarai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eléazaràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "eléazarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "eléazarem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "eléazaretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "eléazaràn"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "eléazariái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eléazariás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "eléazariá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "eléazariam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "eléazariatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "eléazarián"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "eléàza"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "eléazem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "eléazatz"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "ai eléazat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "as eléazat"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a eléazat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "avèm eléazat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "avètz eléazat"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "an eléazat"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aja eléazat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ajas eléazat"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aja eléazat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "ajam eléazat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "ajatz eléazat"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "ajan eléazat"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aviái eléazat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aviás eléazat"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aviá eléazat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aviam eléazat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aviatz eléazat"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "avián eléazat"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèsse eléazat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguèsses eléazat"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèsse eléazat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèssem eléazat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèssetz eléazat"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèsson eléazat"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèri eléazat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguères eléazat"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèt eléazat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèrem eléazat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèretz eléazat"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèron eléazat"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aurai eléazat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auràs eléazat"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aurà eléazat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aurem eléazat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auretz eléazat"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "auràn eléazat"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "auriái eléazat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auriás eléazat"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "auriá eléazat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "auriam eléazat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auriatz eléazat"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aurián eléazat"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "eléazar"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "eléazant"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "eléazat"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "aver"
+    ],
+    "examples": null,
+    "verb": "eléazar"
+  }
+}

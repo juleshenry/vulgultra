@@ -1,0 +1,499 @@
+{
+  "lect": "gl",
+  "lemma": "aconchegar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/glg/aconchegar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=6&T1=aconchegar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 6,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aconchego"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchegas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aconchega"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "aconchegamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aconchegan"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "aconchegue"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "aconchegues"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "aconchegue"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "aconcheguemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "aconcheguedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "aconcheguen"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aconchegaba"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchegabas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aconchegaba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "aconchegabamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegabades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aconchegaban"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aconchegase"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchegases"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aconchegase"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "aconchegasemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegasedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aconchegasen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "aconcheguei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchegache"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aconchegou"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "aconchegamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegastes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aconchegaron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aconchegarei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchegarás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aconchegará"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "aconchegaremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegaredes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aconchegarán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aconchegar"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchegares"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aconchegar"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "aconchegarmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegardes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aconchegaren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aconchegaría"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchegarías"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aconchegaría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "aconchegariamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegariades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aconchegarían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchega"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "aconchegue"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "aconcheguemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegade"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "aconcheguen"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aconchegara"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "aconchegaras"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aconchegara"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "aconchegaramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "aconchegarades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aconchegaran"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegar"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegares"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegar"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegarmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegardes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegaren"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegar"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "aconchegado"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "e deben ser cousas íntemas das que baixiño conversan,",
+      "pois están aconchegadas case falandose á orella (<i>they must be private things those that they talk about in low voice,",
+      "because they are close together almost whispering</i>) [1917, Juan Pla, A tola de Covas:]"
+    ],
+    "verb": "aconchegar"
+  }
+}

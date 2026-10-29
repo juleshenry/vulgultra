@@ -1,0 +1,739 @@
+{
+  "lect": "ro",
+  "lemma": "vorbi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ron/vorbi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=5&T1=vorbi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 5,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "vorbesc"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vorbeşti"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vorbeşte"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vorbim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "vorbiţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vorbesc"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "vorbesc"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vorbeşti"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vorbească"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vorbim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "vorbiţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vorbească"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "vorbeam"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vorbeai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vorbea"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vorbeam"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "vorbeaţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vorbeau"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "vorbire"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "vorbiru"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "vorbirim"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 3,
+            "form": "vorbiri"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "vorbire"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "vorbirim"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "vorbirem"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "vorbiremu"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 3,
+            "form": "vorbiret"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "vorbire"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "vorbirim"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "vorbii"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vorbişi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vorbi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vorbirăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "vorbirăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vorbiră"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future I",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi vorbi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei vorbi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va vorbi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom vorbi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi vorbi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor vorbi"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş vorbi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai vorbi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar vorbi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am vorbi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi vorbi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar vorbi"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vorbeşte"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "vorbiţi"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am vorbit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai vorbit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a vorbit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am vorbit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi vorbit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au vorbit"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "fi vorbit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fi vorbit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "fi vorbit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fi vorbit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "fi vorbit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "fi vorbit"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "vorbisem"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vorbiseşi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vorbise"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vorbiserăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "vorbiserăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vorbiseră"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi fi vorbit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei fi vorbit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va fi vorbit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom fi vorbit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi fi vorbit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor fi vorbit"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş fi vorbit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai fi vorbit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar fi vorbit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am fi vorbit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi fi vorbit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar fi vorbit"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a vorbi"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "vorbind"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "vorbit"
+          }
+        ]
+      },
+      "25": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "o să vorbesc"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "o să vorbeşti"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "o să vorbească"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "o să vorbim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "o să vorbiţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "o să vorbească"
+          }
+        ]
+      },
+      "26": {
+        "name": "Indicative Future II (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am să fi vorbit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai să fi vorbit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "are să fi vorbit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avem să fi vorbit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveţi să fi vorbit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au să fi vorbit"
+          }
+        ]
+      },
+      "27": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "oi vorbi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "îi vorbi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a vorbi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "om vorbi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "îţi vorbi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "or vorbi"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a fi vorbit"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "nu cereți ca eu să hotărăsc pentru voi. — Atunci să nu mai pierdem vorba degeaba: mă duc să <b>vorbesc</b> cu arândașul, și de la Sf. Gheorghe cârciuma de la Moara cu noroc e",
+      "În acea caldă dimineață de vară de care <b>vorbesc</b>, am căutat să scap o clipă de năvălitoarele mele din cale-afară de prietenoase, așa încât să mă pot furișa într'o colibă mică a cării ușă era larg deschisă.",
+      "[...]  catului de sus se răzima pe stâlpi de lemn și numai jumătate pe cel de jos, cerdacuri înalte, înaintite sub șandramale lungi, apăsate, pline de mușchi negru-verde; iar în cerdacuri șed bătrânii <b>vorbind</b> de ale lor; fetele tinere ivesc fețele rumene ca mărul prin obloanele deschise ale ferestrelor cu gratii, prin care vezi oale cu flori galbene ca de aur. Numai pe ici pe colo luna revarsă câte-o [...]",
+      "[...]  — azi sunt încredințat că vremea nemărginită este făptură a nemuritorului nostru suflet. Am trăit în viitor. Îți spun, acuma am doi oameni cu totului deosebiți în mine — unul, călugărul Dan, care <b>vorbește</b> cu tine și trăiește în vremile domniei lui Alexandru-vodă, altul cu alt nume, trăind peste cinci sute de ani de acum înainte.",
+      "Învățături nu-ți mai dau, căci e de prisos; când umbra ta, ca umbră încă, va începe a <b>vorbi</b>, ea va fi atotștiutoare și-ți va spune ce trebuie să faci; când te vei muta tu în firea ei, atunci vei fi tu atotștiutor și în orice caz nu mai ai nevoie de mine. Dar vei fi băgat de samă o [...]",
+      "[...]  cifrelor lui. Acea carte a lui Zoroastru, care cuprinde toate tainele științei lui, stă deschisă înaintea ta. Veacuri au stat s-o dezlege și n-au putut pe deplin, numai eu pot s-o dezleg, pentru că <b>vorbeam</b> din perete cu Zoroastru cum <b>vorbesc</b> astăzi cu tine.",
+      "[...]  care cuprinde toate tainele științei lui, stă deschisă înaintea ta. Veacuri au stat s-o dezlege și n-au putut pe deplin, numai eu pot s-o dezleg, pentru că <b>vorbeam</b> din perete cu Zoroastru cum <b>vorbesc</b> astăzi cu tine.",
+      "Nu pot <b>vorbi</b>, vai ! de toate mănăstirile ce am văzut, dar de una trebuie să pomenesc, căci în adevăr e un rar colțișor de lume.",
+      "— Noi suntem, răspunse bătrâna ridicându-se. — Știu, grăi Lică, dar cred că vor fi și oameni pe aici. Eu întreb de cârciumarul; cu el vreau să <b>vorbesc</b>.",
+      "* * * * * Trebuie să <b>vorbesc</b> puțin de aceste ciudate cruci vechi pe care, pe toate drumurile ce le-am străbătut, le-am întâlnit, în orice parte a țerii.",
+      "Nu <b>vorbi</b> cu mine ! - Bine. - Știți ce? Încetați cu lipsa de respect !",
+      "Unde ți-e tactul ? N-ai <b>vorbi</b> așa cu un client.",
+      "- Da. - Deschideți gura ! Mergeți ! Și nu <b>vorbiți</b> ! Gândiți !",
+      "Părea să sufere de ceva ? Nu am auzit-o <b>vorbind</b> nimic legat de condiţia ei.",
+      "Iată care e planul, momentan ! Nu <b>vorbim</b> cu nimeni."
+    ],
+    "verb": "vorbi"
+  }
+}

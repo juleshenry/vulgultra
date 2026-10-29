@@ -1,0 +1,649 @@
+{
+  "lect": "gsc",
+  "lemma": "Isidòre",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/oci/Isid%C3%B2re/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=8&T1=Isid%C3%B2re",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 8,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "isidoi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "isidoes"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "isido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "isidoèm"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "isidoètz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "isidoon"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "isidoa"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "isidoas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "isidoa"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "isidoam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "isidoatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "isidoan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "isidoiái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "isidoiás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "isidoiá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "isidoiam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "isidoiatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "isidoián"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "isidoèsse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "isidoèsses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "isidoèsse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "isidoèssem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "isidoèssetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "isidoèsson"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "isidoèri"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "isidoères"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "isidoèt"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "isidoèrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "isidoèretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "isidoèron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "isidorai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "isidoràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "isidorà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "isidorem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "isidoretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "isidoràn"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "isidoriái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "isidoriás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "isidoriá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "isidoriam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "isidoriatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "isidorián"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "isido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "isidoam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "isidoètz"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "ai isidout"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "as isidout"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a isidout"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "avèm isidout"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "avètz isidout"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "an isidout"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aja isidout"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ajas isidout"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aja isidout"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "ajam isidout"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "ajatz isidout"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "ajan isidout"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aviái isidout"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aviás isidout"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aviá isidout"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aviam isidout"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aviatz isidout"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "avián isidout"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèsse isidout"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguèsses isidout"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèsse isidout"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèssem isidout"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèssetz isidout"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèsson isidout"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèri isidout"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguères isidout"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèt isidout"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèrem isidout"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèretz isidout"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèron isidout"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aurai isidout"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auràs isidout"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aurà isidout"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aurem isidout"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auretz isidout"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "auràn isidout"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "auriái isidout"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auriás isidout"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "auriá isidout"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "auriam isidout"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auriatz isidout"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aurián isidout"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "isidòre"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "isidoent"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "isidout"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "aver"
+    ],
+    "examples": null,
+    "verb": "isidòre"
+  }
+}

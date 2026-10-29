@@ -1,0 +1,504 @@
+{
+  "lect": "gl",
+  "lemma": "acaer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/glg/acaer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=6&T1=acaer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 6,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "acaio"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "acaes"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acae"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "acaímos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "acaídes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "acaen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "acaia"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "acaias"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "acaia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "acaiamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "acaiades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "acaian"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acaía"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "acaías"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acaía"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "acaïamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "acaïades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "acaían"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "acaíse"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "acaíses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "acaíse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "acaísemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "acaísedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "acaísen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acaín"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "acaíche"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "acaíu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "acaímos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "acaístes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "acaíron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acairei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "acairás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acairá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "acairemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "acairedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "acairán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "acaír"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "acaíres"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "acaír"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "acaírmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "acaírdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "acaíren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acairía"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "acairías"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acairía"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "acairiamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "acairiades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "acairían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "acae"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "acaia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "acaiamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "acaíde"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "acaian"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "acaíra"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "acaíras"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 1,
+            "form": "acaíra"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "acaíramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "acaírades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "acaíran"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "acair"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "acaires"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "acair"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "acairmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "acairdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "acairen"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "acaír"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "acaíracaer"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "acaíndo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "acaído"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "Ese vestido éche ben acaído. (<i>That dress suits you well.</i>)\r",
+      "Somos poucos e mal acaídos. (<i>We are few and don't even get along.</i>)"
+    ],
+    "verb": "acaer"
+  }
+}

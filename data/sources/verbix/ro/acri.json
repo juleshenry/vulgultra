@@ -1,0 +1,725 @@
+{
+  "lect": "ro",
+  "lemma": "acri",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ron/acri/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=5&T1=acri",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 5,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acresc"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "acreşti"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acreşte"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "acrim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "acriţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "acresc"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acresc"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "acreşti"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acrească"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "acrim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "acriţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "acrească"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acream"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "acreai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acrea"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "acream"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "acreaţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "acreau"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "acrire"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "acriru"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "acririm"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 3,
+            "form": "acriri"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "acrire"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "acririm"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "acrirem"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "acriremu"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 3,
+            "form": "acriret"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "acrire"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "acririm"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acrii"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "acrişi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acri"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "acrirăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "acrirăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "acriră"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future I",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi acri"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei acri"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va acri"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom acri"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi acri"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor acri"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş acri"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai acri"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar acri"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am acri"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi acri"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar acri"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "acreşte"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "acriţi"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am acrit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai acrit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a acrit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am acrit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi acrit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au acrit"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "fi acrit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fi acrit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "fi acrit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fi acrit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "fi acrit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "fi acrit"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "acrisem"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "acriseşi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "acrise"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "acriserăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "acriserăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "acriseră"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi fi acrit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei fi acrit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va fi acrit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom fi acrit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi fi acrit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor fi acrit"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş fi acrit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai fi acrit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar fi acrit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am fi acrit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi fi acrit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar fi acrit"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a acri"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "acrind"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "acrit"
+          }
+        ]
+      },
+      "25": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "o să acresc"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "o să acreşti"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "o să acrească"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "o să acrim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "o să acriţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "o să acrească"
+          }
+        ]
+      },
+      "26": {
+        "name": "Indicative Future II (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am să fi acrit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai să fi acrit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "are să fi acrit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avem să fi acrit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveţi să fi acrit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au să fi acrit"
+          }
+        ]
+      },
+      "27": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "oi acri"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "îi acri"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a acri"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "om acri"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "îţi acri"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "or acri"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a fi acrit"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "Stai jos! Mi s-a <b>acrit</b> de asta. Alo? Timpul zboară, obrăznicătură"
+    ],
+    "verb": "acri"
+  }
+}

@@ -1,0 +1,665 @@
+{
+  "lect": "fr",
+  "lemma": "aller",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fra/aller/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=3&T1=aller",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 3,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "vais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vas"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "va"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "allons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "allez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "vont"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "aille"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "ailles"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "aille"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "allions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "alliez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "aillent"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "allais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "allais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "allait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "allions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "alliez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "allaient"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "allasse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "allasses"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "allât"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "allassions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "allassiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "allassent"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "allai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "allas"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "alla"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "allâmes"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "allâtes"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "allèrent"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "irai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "iras"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "ira"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "irons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "irez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "iront"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "irais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "irais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "irait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "irions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "iriez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "iraient"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "va"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "allons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "allez"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "suis allé(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "es allé(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "est allé(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "sommes allé(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "êtes allé(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "sont allé(e)s"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "sois allé(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sois allé(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "soit allé(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "soyons allé(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "soyez allé(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "soient allé(e)s"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "étais allé(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "étais allé(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "était allé(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "étions allé(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "étiez allé(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "étaient allé(e)s"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "fusse allé(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fusses allé(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "fût allé(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "fussions allé(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "fussiez allé(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "fussent allé(e)s"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "fus allé(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fus allé(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "fut allé(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "fûmes allé(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "fûtes allé(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "furent allé(e)s"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "serai allé(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "seras allé(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "sera allé(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "serons allé(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "serez allé(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "seront allé(e)s"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "serais allé(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "serais allé(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "serait allé(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "serions allé(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "seriez allé(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "seraient allé(e)s"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "aller"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "allé"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "allant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "être"
+    ],
+    "examples": [
+      "[...]  d' aussi près peut-être qu' un savant peut étudier avec un microscope les créatures transitoires qui pullulent et se multiplient dans une goutte d' eau. Avec une suffisance infinie, les hommes <b>allaient</b> de ci de là par le monde, vaquant à leurs petites affaires, dans la sereine sécurité de leur empire sur la matière. Il est possible que, sous le microscope, les infusoires fassent de même. Personne [...]",
+      "[...]  histoire de Louis XIV, je tombai par hasard sur les Mémoires de M. d' Artagnan, imprimés -- comme la plus grande partie des ouvrages de cette époque, où les auteurs tenaient à dire la vérité sans <b>aller</b> faire un tour plus ou moins long à la Bastille -- à Amsterdam, chez Pierre Rouge.",
+      "[...]  Il doit sa religion à une mission ambulante[2 ], qui passait il y a quatre ans par ici; je crois sa religion vraie. Je lui ai confié depuis tout ce que j' ai, argent, maison, chevaux; je le laisse <b>aller</b> et venir dans le pays; toujours et partout je l' ai trouvé exact et fidèle.",
+      "« Viens ça, maître Corbeau ! dit M. Shelby en sifflant; et il lui jeta une grappe de raisin.... <b>Allons</b> ! attrape. »",
+      "[...]  Il faisait chaud et une bande d' excursionnistes revenant de Chertsey ou d' Isleworth passa en chantant et en jouant des instruments. Les fenêtres hautes des maisons s' éclairaient quand les gens <b>allaient</b> se coucher. De la station, venait dans la distance le bruit des trains changeant de ligne, grondement retentissant que la distance adoucissait presque en une mélodie. Ma femme me fit remarquer l' [...]",
+      "Puis vint la nuit où tomba le premier météore. On le vit, dans le petit matin, passer au-dessus de Winchester, ligne de flamme <b>allant</b> vers l' est, très haut dans l' atmosphère. Des centaines de gens qui l' aperçurent durent le prendre pour une étoile filante ordinaire. Albin le décrivit comme laissant derrière lui une traînée [...]",
+      "Puis vint la nuit où tomba le premier météore. On le vit, dans le petit matin, passer au-dessus de Winchester, ligne de flamme <b>allant</b> vers l' est, très haut dans l' atmosphère. ~~~ (CHAPITRE II )",
+      "[...]  avaient été de l' autre, non pas que M. d' Artagnan n' aimât son fils, qui était sa seule progéniture, mais M. d' Artagnan était un homme, et il eût regardé comme indigne d' un homme de se laisser <b>aller</b> à son émotion, tandis que Mme d' Artagnan était femme et, de plus, était mère. -- Elle pleura abondamment, et, disons -le à la louange de M. d' Artagnan fils, quelques efforts qu' il tentât pour [...]",
+      "-- Je <b>vais</b> y réfléchir et en parler avec ma femme, dit M. Shelby. Cependant, Haley, si vous voulez que cette affaire soit menée avec la discrétion dont vous parlez, ne laissez rien transpirer dans le [...]",
+      "[...]  de vendre Tom à un de ces damnés marchands, j' aurais répondu: « Votre serviteur est -il un chien pour en agir ainsi ?.... » Et maintenant cela doit être... je le vois.... Et l' enfant d' Élisa ! Je <b>vais</b> avoir maille à partir avec ma femme à ce sujet -là.... et pour Tom aussi.... Oh ! les dettes ! les dettes ! Le drôle sait ses avantages.... il en profite. »",
+      "Merci ! C' est très bien. Cher Maxime, comment ça <b>va</b>. toi ? Je suis tellement heureux. te voir !",
+      "Unité, grimpez. Exécution ! Cherchez le signe du ver. Tout <b>va</b> bien.",
+      "Par ici ! On remballe, grand bro ? Ça <b>va</b> me faire plein de likes.",
+      "-Salut, Petit Oncle. -Bonsoir, Dominique. Bonsoir, petit Louison. Dominique ! <b>-Allez</b>, <b>vas</b> -y.",
+      "(FEMME CRIE) (SINGES GROGNENT, HALÈTENT) NOA: Il <b>va</b> s' échapper."
+    ],
+    "verb": "aller"
+  }
+}

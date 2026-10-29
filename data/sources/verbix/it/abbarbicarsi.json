@@ -1,0 +1,705 @@
+{
+  "lect": "it",
+  "lemma": "abbarbicarsi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/abbarbicarsi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=abbarbicarsi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbarbico"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbarbichi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbarbica"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbarbichiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbarbicate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbarbicano"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 1,
+            "form": "abbarbichi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbarbichi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbarbichi"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbarbichiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 1,
+            "form": "abbarbichiate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbarbichino"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbarbicavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbarbicavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbarbicava"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbarbicavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbarbicavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbarbicavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbarbicassi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbarbicassi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbarbicasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbarbicassimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbarbicaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbarbicassero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbarbicai"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbarbicasti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbarbicò"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbarbicammo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbarbicaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbarbicarono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 1,
+            "form": "abbarbicherò"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbarbicherai"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbarbicherà"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbarbicheremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 1,
+            "form": "abbarbicherete"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbarbicheranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 1,
+            "form": "abbarbicherei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbarbicheresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbarbicherebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbarbicheremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 1,
+            "form": "abbarbichereste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbarbicherebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbarbicati"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbarbichi"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbarbichiamoci"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbarbicatevi"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbarbichino"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sono abbarbicato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sei abbarbicato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "è abbarbicato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbarbicati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siete abbarbicati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sono abbarbicati"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sia abbarbicato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sia abbarbicato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sia abbarbicato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbarbicati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siate abbarbicati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "siano abbarbicati"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "ero abbarbicato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "eri abbarbicato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "era abbarbicato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "eravamo abbarbicati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "eravate abbarbicati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "erano abbarbicati"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fossi abbarbicato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fossi abbarbicato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fosse abbarbicato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fossimo abbarbicati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbarbicati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fossero abbarbicati"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fui abbarbicato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fosti abbarbicato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fu abbarbicato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fummo abbarbicati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbarbicati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "furono abbarbicati"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarò abbarbicato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sarai abbarbicato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarà abbarbicato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremo abbarbicati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sarete abbarbicati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "saranno abbarbicati"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarei abbarbicato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "saresti abbarbicato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbe abbarbicato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremmo abbarbicati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sareste abbarbicati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbero abbarbicati"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbarbicarsi"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbarbicandosi"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 4,
+            "form": "abbarbicato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbarbicantesi"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere abbarbicato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo abbarbicato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente abbarbicato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "essere"
+    ],
+    "examples": null,
+    "verb": "abbarbicare"
+  }
+}

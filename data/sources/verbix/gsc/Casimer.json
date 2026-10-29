@@ -1,0 +1,649 @@
+{
+  "lect": "gsc",
+  "lemma": "Casimer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/oci/Casimer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=8&T1=Casimer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 8,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "casimi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "casimes"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "casim"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "casimèm"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "casimètz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "casimon"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "casima"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "casimas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "casima"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "casimam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "casimatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "casiman"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "casimiái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "casimiás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "casimiá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "casimiam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "casimiatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "casimián"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "casimèsse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "casimèsses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "casimèsse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "casimèssem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "casimèssetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "casimèsson"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "casimèri"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "casimères"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "casimèt"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "casimèrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "casimèretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "casimèron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "casimerai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "casimeràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "casimerà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "casimerem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "casimeretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "casimeràn"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "casimeriái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "casimeriás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "casimeriá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "casimeriam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "casimeriatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "casimerián"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "casim"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "casimam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "casimètz"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "ai casimut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "as casimut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a casimut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "avèm casimut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "avètz casimut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "an casimut"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aja casimut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ajas casimut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aja casimut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "ajam casimut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "ajatz casimut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "ajan casimut"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aviái casimut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aviás casimut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aviá casimut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aviam casimut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aviatz casimut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "avián casimut"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèsse casimut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguèsses casimut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèsse casimut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèssem casimut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèssetz casimut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèsson casimut"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèri casimut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguères casimut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèt casimut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèrem casimut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèretz casimut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèron casimut"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aurai casimut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auràs casimut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aurà casimut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aurem casimut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auretz casimut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "auràn casimut"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "auriái casimut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auriás casimut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "auriá casimut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "auriam casimut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auriatz casimut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aurián casimut"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "casimer"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "casiment"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "casimut"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "aver"
+    ],
+    "examples": null,
+    "verb": "casimer"
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "lect": "it",
+  "lemma": "fare",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/fare/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=fare",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "faccio"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "fa"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "facciamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "fate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "fanno"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "faccia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "faccia"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "faccia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "facciamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "facciate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "facciano"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "facevo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "facevi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "faceva"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "facevamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "facevate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "facevano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "facessi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "facessi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "facesse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "facessimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "faceste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "facessero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "feci"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "facesti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "fece"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "facemmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "faceste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "fecero"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "farò"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "farai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "farà"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "faremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "farete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "faranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "farei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "faresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "farebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "faremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "fareste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "farebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fa'"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "faccia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "facciamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "fate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "facciano"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ho fatto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hai fatto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ha fatto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo fatto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avete fatto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "hanno fatto"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbia fatto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbia fatto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbia fatto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo fatto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbiate fatto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbiano fatto"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avevo fatto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avevi fatto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "aveva fatto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avevamo fatto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avevate fatto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avevano fatto"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avessi fatto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avessi fatto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avesse fatto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avessimo fatto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste fatto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avessero fatto"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ebbi fatto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avesti fatto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ebbe fatto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avemmo fatto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste fatto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "ebbero fatto"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrò fatto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avrai fatto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrà fatto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremo fatto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avrete fatto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avranno fatto"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrei fatto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avresti fatto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrebbe fatto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremmo fatto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avreste fatto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avrebbero fatto"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "fare"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "facendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "fatto"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "facente"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avere fatto"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avendo fatto"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avente fatto"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avere"
+    ],
+    "examples": [
+      "[...]  concorsi a quella festa con grande sfoggio d' abiti, colle più belle armadure che uscissero dalle fucine di Milano, con destrieri ferrati persino d' argento, v'erano comparsi molti Milanesi per <b>fare</b> la corte al giovinetto Bruzio, figliuolo naturale di Luchino Visconti, signor di Milano.  Sono fra essi ricordati Giacomo Aliprando, Matteo Visconti fratello di Galeazzo e di Bernabò, che poi [...]",
+      "[...]  e mi si mostrava la speranza di aumentare il mio stato, l' applicazione e l' industria, e ad un tempo la sicurezza di una vita agiata e piacevole. « Sol per due sorte d' uomini, egli mi diceva, è <b>fatto</b> il cercare innalzamento e fama per imprese poste fuori della strada comune: per quelli che non hanno ove cascar morti, e per coloro ai quali ogni ricchezza, ogni ingrandimento sembrano pochi. Or tu [...]",
+      "[...]  Cremona, Piacenza e Pavia, donde s' erano vôlti dalla patria, appunto il 20 Marzo dell' anno predetto.  Liete accoglienze ricevevano per tutto, poichè un istinto dominante e pericoloso dell' uomo <b>fece</b> al valore fortunato tributare rispetto ed ammirazione in ogni tempo, ma più ancora in quello, tutto di forza materiale.  I signorotti poi vedeano volontieri che il coraggio si esercitasse in tornei [...]",
+      "Per così <b>fatti</b> ritrovamenti, e perchè liberamente e sensatamente filosofava, s' acquistò fama di alto ingegno. Strinse quindi amicizia per lettere con Guidubaldo de ’ Marchesi dal Monte, gran matematico di que ’",
+      "Ciò pose mia madre nella massima agitazione. — « Non vedo, ella disse, come una tal proposta possa mai esser <b>fatta</b> a tuo padre. Egli sa troppo bene qual sia il tuo vero scopo per prestare giammai il suo assenso ad un partito di tanto tuo scapito; non capisco nemmeno come tu possa pensar tuttavia a cose di simil [...]",
+      "[...]  matematica in Pisa, vi fu promosso, ed ivi entrò l' anno 1589, e dell' età sua vigesimo sesto. Qui egli essendo, vòlse la mente ad altissime cose; imperciocchè alle prime osservazioni della lampana <b>fece</b> seguire le pubbliche esperienze della caduta de ’ corpi gravi dalla cima del campanile, e cominciò quindi ad attaccare e battere in ogni parte la fisica peripatetica; e si fu questo il principio [...]",
+      "[...]  uno di gnomonica, un compendio di sfera, un trattato di meccanica, ritrovò il termometro, e nell' anno 1597 inventò il suo ingegnosissimo compasso geometrico e militare, insegnandone l' uso; e <b>fatta</b> particolar osservazione sopra la virtù della calamita, ottenne con esperienze di armare qualunque pezzo, che sostenesse di ferro cento volte più che disarmato.",
+      "[...]  questo nome il principe gran ciambellano fratello del re. Dopo il pranzo S. M. disse al veneziano che avrebbe piacere di udire cosa egli pensasse della commedia polacca che per la prima volta avea <b>fatto</b> che in quel giorno con attori, come già s' intende, polacchi, venisse rappresentata sul suo teatro di Varsavia. Il veneziano promise al re di essere tra ' spettatori, supplicandolo a non voler poi [...]",
+      "[...]  attenzione ad indirizzare una qualche domanda a tutti quelli che vogliono che sieno sicuri che la maestà loro si avvede che trovansi a lei presenti; quindi pensano a quale specie di questione possan <b>fare</b> a questo o a quello cui vogliono <b>fare</b> l' onore del colloquio, la quale sia non suscettibile di seria riflessione, non equivoca, non tale che l' interrogato possa rispondere che non sa; e [...]",
+      "[...]  a tutti quelli che vogliono che sieno sicuri che la maestà loro si avvede che trovansi a lei presenti; quindi pensano a quale specie di questione possan <b>fare</b> a questo o a quello cui vogliono <b>fare</b> l' onore del colloquio, la quale sia non suscettibile di seria riflessione, non equivoca, non tale che l' interrogato possa rispondere che non sa; e sopratutto parlano schietto e preciso, poiché non [...]",
+      "Così. Respiri. Ora <b>faccia</b> resistenza. E apra. Ottimo. Un bel respiro.",
+      "È in partenza dal quarto binario il diretto per Pisa. Ugo, cosa <b>fai</b> ? Che ti è successo ? Il treno parte.",
+      "Dai, è interessante. Ok, ma <b>faccia</b> in fretta.",
+      "< Focherello! < Fuoco! Brucia! Eccolo! Ma che <b>fai</b> ? Metti a posto la scala !",
+      "Ma cosa <b>fai</b> ? Infermiera, che succede ?"
+    ],
+    "verb": "fare"
+  }
+}

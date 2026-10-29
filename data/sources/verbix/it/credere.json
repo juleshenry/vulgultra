@@ -1,0 +1,739 @@
+{
+  "lect": "it",
+  "lemma": "credere",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/credere/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=credere",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "credo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "credi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "crede"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "crediamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "credete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "credono"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "creda"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "creda"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "creda"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "crediamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "crediate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "credano"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "credevo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "credevi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "credeva"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "credevamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "credevate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "credevano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "credessi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "credessi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "credesse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "credessimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "credeste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "credessero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "credei"
+          },
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "credetti"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "credesti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "credé"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "credette"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "credemmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "credeste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "crederono"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "credettero"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "crederò"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "crederai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "crederà"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "crederemo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "crederete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "crederanno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "crederei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "crederesti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "crederebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "crederemmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "credereste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "crederebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "credi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "creda"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "crediamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "credete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "credano"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ho creduto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hai creduto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ha creduto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo creduto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avete creduto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "hanno creduto"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbia creduto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbia creduto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbia creduto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo creduto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbiate creduto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbiano creduto"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avevo creduto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avevi creduto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "aveva creduto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avevamo creduto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avevate creduto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avevano creduto"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avessi creduto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avessi creduto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avesse creduto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avessimo creduto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste creduto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avessero creduto"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ebbi creduto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avesti creduto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ebbe creduto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avemmo creduto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste creduto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "ebbero creduto"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrò creduto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avrai creduto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrà creduto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremo creduto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avrete creduto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avranno creduto"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrei creduto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avresti creduto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrebbe creduto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremmo creduto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avreste creduto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avrebbero creduto"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "credere"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "credendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "creduto"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "credente"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avere creduto"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avendo creduto"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avente creduto"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avere"
+    ],
+    "examples": [
+      "[...]  quantunque d' essa assai curioso, non vide mai. Ciò non ostante molte persone a Roma, a Napoli, a Firenze, a Milano mi dissero di averlo trattato nelle loro case, e lasciai che così dicessero e <b>credessero</b>, poiché corre gran pericolo a questo mondo chi intraprende il difficil mestiere di disingannar gl'ingannati.",
+      "[...]  tutti, e quello forse al quale solo era a lei conveniente di fare tanto onore, dissegli in chiara voce: ' ' Je crois, monsieur de Lowendal, que rien n'est meilleur d' une fricassée de poulets. - Io <b>credo</b>, signor Lowendal, che una fricassea di polli sia il migliore di tutti i cibi.<i> Egli (avanzatosi già di tre passi tosto che udì la regina a pronunziar il suo nome ), rispose con voce sommessa, [...]",
+      "[...]  se pensava alla propria vita, non vi fu chi mi badasse o cercasse che cosa mi fosse avvenuto. Un altro uomo venne in mia vece alla tromba, e spintomi da una banda con un calcio, mi lasciò lì, <b>credendo</b> che fossi morto; ci volle un gran tempo prima ch’io ricuperassi i miei sensi.",
+      "[...]  fierezza: spie, giudici comprati, forza armata davano tratto tratto dei buoni esempj: cioè accusando, incarcerando, ammazzando, insegnavano agli altri a dimenticare le libertà un tempo godute, a <b>credere</b> unico dovere del capo il comandare, unico diritto dei sudditi l' obbedire.",
+      "[...]  in quella di abbietto schiavo, rimasi come percosso dalla folgore, e rimembrai le parole profetiche di mio padre: Tu sarai miserabile, e non avrai alcuno che corra in tuo scampo: la qual profezia io <b>credeva</b> avverata ad un punto di cui non potesse immaginarsi il più tristo; io <b>credea</b> che la mano di Dio mi avesse percosso oltre ad ogni possibile limite; io mi vedea perduto senza riscatto; ma ohimè [...]",
+      "[...]  profetiche di mio padre: Tu sarai miserabile, e non avrai alcuno che corra in tuo scampo: la qual profezia io <b>credeva</b> avverata ad un punto di cui non potesse immaginarsi il più tristo; io <b>credea</b> che la mano di Dio mi avesse percosso oltre ad ogni possibile limite; io mi vedea perduto senza riscatto; ma ohimè ! ciò non era se non un preludio della miseria cui soggiacqui in appresso, come [...]",
+      " Che i sudditi lo amassero glielo ripetevano cagnotti, ambasciatori e poeti: quanto egli sel <b>credesse</b> potevasi argomentare dal giaco di maglia che mai non deponeva, dalle raddoppiate guardie, e da due enormi alani, che, come i soli non capaci di desiderare miglioramento nè libertà purchè [...]",
+      "[...]  diedi al povero Xury un pezzo di pane di rusk e del liquore tolto dalla cassetta de ’ fiaschetti del mio padrone rammentata poc’anzi; poi tirata la scialuppa tanto vicino alla spiaggia, quanto <b>credemmo</b> opportuno, guadammo sino alla riva non portando altro con noi, che i nostri moschetti e due orci per empirli d' acqua.",
+      "[...]  di Marocco e le terre abitate dai Negri, paese deserto e popolato soltanto di fiere. I Negri lo avevano abbandonato, andando a stanziarsi più verso mezzogiorno per paura dei Mori; e i Mori nol <b>credettero</b> degno di essere abitato a cagione della sua sterilità; e veramente non se ne saranno nemmeno curati atteso il prodigioso numero di tigri, di leoni, di leopardi e d' altre formidabili fiere che vi [...]",
+      "[...]  otri con la bocca all' ingiù, affinchè vedessero che aveva bisogno di essere empiuto. Essi chiamarono prestamente uno de ’ loro famigliari, onde comparvero due donne portando un gran vaso di terra, <b>credo</b> io, cotta al sole, che venne deposto, come dianzi le vettovaglie, sul lido, indi mandai Xury su la spiaggia co ’ miei orci che mi tornarono pieni d' acqua dolce tutti e tre. Le donne erano affatto [...]",
+      "Sì. Il più l' ha portato la mia sorellastra, <b>credo</b>.",
+      "Ex allenatore È molto gentile. Non <b>credo</b> sia così.",
+      "Ti sembrerà assurdo, ma <b>credo</b> che la mia malattia sia arrivata per un motivo.",
+      "che la sua stessa vita pareva in costante pericolo. Io non ho mai <b>creduto</b>",
+      "Guarda, come sei bello. Puttana e bugiarda! Ma davvero <b>credevi</b> che fossi così... ?"
+    ],
+    "verb": "credere"
+  }
+}

@@ -1,0 +1,949 @@
+{
+  "lect": "es",
+  "lemma": "estar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/spa/estar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=1&T1=estar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 1,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "estoy"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 1,
+            "form": "estás"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 1,
+            "form": "está"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "estamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "estáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 1,
+            "form": "están"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 1,
+            "form": "esté"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 1,
+            "form": "estés"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 1,
+            "form": "esté"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "estemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "estéis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 1,
+            "form": "estén"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "estaba"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "estabas"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "estaba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "estábamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "estabais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "estaban"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "estuviera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "estuvieras"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "estuviera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "estuviéramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "estuvierais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "estuvieran"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "estuviese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "estuvieses"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "estuviese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "estuviésemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "estuvieseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "estuviesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "estuve"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "estuviste"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "estuvo"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "estuvimos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "estuvisteis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "estuvieron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "estaré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "estarás"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "estará"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "estaremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "estaréis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "estarán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "estuviere"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "estuvieres"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "estuviere"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "estuviéremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "estuviereis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "estuvieren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "estaría"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "estarías"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "estaría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "estaríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "estaríais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "estarían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 1,
+            "form": "está"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 1,
+            "form": "esté"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "estemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "estad"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 1,
+            "form": "estén"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "has estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "ha estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hemos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habéis estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "han estado"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haya estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hayas estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "haya estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hayamos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hayáis estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hayan estado"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "había estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habías estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "había estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habíamos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habíais estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habían estado"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiera estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieras estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiera estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéramos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubierais estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieran estado"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiese estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieses estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiese estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiésemos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubieseis estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubiesen estado"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hube estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubiste estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubo estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubimos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubisteis estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieron estado"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrás estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habrá estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habremos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habréis estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrán estado"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiere estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieres estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiere estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéremos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubiereis estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieren estado"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría estado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrías estado"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habría estado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habríamos estado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habríais estado"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrían estado"
+          }
+        ]
+      },
+      "18": {
+        "name": "Negative Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 1,
+            "form": "no estés"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 1,
+            "form": "no esté"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "no estemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "no estéis"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 1,
+            "form": "no estén"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "estar"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "estando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "estado"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber estado"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habiendo estado"
+          }
+        ]
+      },
+      "60": {
+        "name": "Indicative Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "General",
+            "use": 0,
+            "form": "estás"
+          },
+          {
+            "id": 2,
+            "pronoun": "Venezuelan",
+            "use": 0,
+            "form": "estáis"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 0,
+            "form": "estái"
+          }
+        ]
+      },
+      "61": {
+        "name": "Subjunctive Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Central America, Bolivia",
+            "use": 0,
+            "form": "estés"
+          },
+          {
+            "id": 2,
+            "pronoun": "Río de la Plata region",
+            "use": 1,
+            "form": "estés"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 0,
+            "form": "estís"
+          },
+          {
+            "id": 4,
+            "pronoun": "Venezuela, Panama",
+            "use": 0,
+            "form": "estéis"
+          }
+        ]
+      },
+      "68": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "está"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "[...]  como un esparto, ajena de invención, menguada de estilo, pobre de concetos y falta de toda erudición y doctrina; sin acotaciones en las márgenes y sin anotaciones en el fin del libro, como veo que <b>están</b> otros libros, aunque sean fabulosos y profanos, tan llenos de sentencias de Aristóteles, de Platón y de toda la caterva de filósofos, que admiran a los leyentes y tienen a sus autores por hombres [...]",
+      "-Por Dios, hermano, que agora me acabo de desengañar de un engaño en que he <b>estado</b> todo el mucho tiempo que ha que os conozco, en el cual siempre os he tenido por discreto y prudente en todas vuestras aciones. Pero agora veo que estáis tan lejos de serlo como lo <b>está</b> el [...]",
+      "[...]  he <b>estado</b> todo el mucho tiempo que ha que os conozco, en el cual siempre os he tenido por discreto y prudente en todas vuestras aciones. Pero agora veo que estáis tan lejos de serlo como lo <b>está</b> el cielo de la tierra. ¿Cómo que es posible que cosas de tan poco momento y tan fáciles de remediar puedan tener fuerzas de suspender y absortar un ingenio tan maduro como el vuestro, y tan hecho a [...]",
+      "[...]  los muros de la famosa ciudad de Lisboa; y es opinión que tiene las arenas de oro, etc. Si tratáredes de ladrones, yo os diré la historia de Caco, que la sé de coro; si de mujeres rameras, ahí <b>está</b> el obispo de Mondoñedo, que os prestará a Lamia, Laida y Flora, cuya anotación os dará gran crédito; si de crueles, Ovidio os entregará a Medea; si de encantadores y hechiceras, Homero tiene a [...]",
+      " -- Y Fulanito, ¿qué hace ?  Y Fulanito ¿dónde <b>está</b> ?  con otras indagatorias del mismo jaez, que tampoco tuvieron respuesta cumplida.",
+      "Con silencio grande <b>estuve</b> escuchando lo que mi amigo me decía, y de tal manera se imprimieron en mí sus razones que, sin ponerlas en disputa, las aprobé por buenas y de ellas mismas quise hacer este prólogo; en el cual [...]",
+      "[...]  el conocimiento que tendrás del famoso Sancho Panza, su escudero, en quien, a mi parecer, te doy cifradas todas las gracias escuderiles que en la caterva de los libros vanos de caballerías <b>están</b> esparcidas. Y con esto, Dios te dé salud, y a mí no olvide. Vale.",
+      "Es, pues, de saber que este sobredicho hidalgo, los ratos que <b>estaba</b> ocioso, que eran los más del año, se daba a leer libros de caballerías, con tanta afición y gusto, que olvidó casi de todo punto el ejercicio de la caza, y aun la administración de su hacienda. Y [...]",
+      "[...]  razones perdía el pobre caballero el juicio, y desvelábase por entenderlas y desentrañarles el sentido, que no se lo sacara ni las entendiera el mesmo Aristóteles, si resucitara para sólo ello. No <b>estaba</b> muy bien con las heridas que don Belianís daba y recebía, porque se imaginaba que, por grandes maestros que le hubiesen curado, no dejaría de tener el rostro y todo el cuerpo lleno de cicatrices y [...]",
+      "[...]  Cid con él se igualaban. Cuatro días se le pasaron en imaginar qué nombre le pondría; porque, según se decía él a sí mesmo, no era razón que caballo de caballero tan famoso, y tan bueno él por sí, <b>estuviese</b> sin nombre conocido; y ansí, procuraba acomodársele de manera que declarase quién había sido, antes que fuese de caballero andante, y lo que era entonces; pues <b>estaba</b> muy puesto en razón que, [...]",
+      "Y luego podremos irnos. \"mi querida despensa\". Ahí <b>estás</b>, mi querida despensa.",
+      "¡Duncan! ¿Qué fue eso ? <b>Estoy</b> triste, papá. ¿No ves lo triste que <b>estoy</b> ?",
+      "¡Que <b>estás</b> en una misión ! Pero no me pagáis. ¿A ti te pagan ?",
+      "<b>Está</b> vivo. Lo <b>está</b>. Apenas.",
+      "- ¿<b>Está</b> vivo ? - Así es."
+    ],
+    "verb": "estar"
+  }
+}

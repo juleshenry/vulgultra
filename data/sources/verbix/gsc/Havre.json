@@ -1,0 +1,649 @@
+{
+  "lect": "gsc",
+  "lemma": "Havre",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/oci/Havre/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=8&T1=Havre",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 8,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "havi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haves"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "hav"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "havèm"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "havètz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "havon"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "hava"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "hava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "havam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "havatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "havan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "haviái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haviás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "haviá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "haviam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "haviatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "havián"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "havèsse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havèsses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "havèsse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "havèssem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "havèssetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "havèsson"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "havèri"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havères"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "havèt"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "havèrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "havèretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "havèron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "havrai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "havrà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "havrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "havretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "havràn"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "havriái"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havriás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "havriá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "havriam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "havriatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "havrián"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hav"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "havam"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "havètz"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "ai havut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "as havut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a havut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "avèm havut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "avètz havut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "an havut"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aja havut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ajas havut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aja havut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "ajam havut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "ajatz havut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "ajan havut"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aviái havut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aviás havut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aviá havut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aviam havut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aviatz havut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "avián havut"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèsse havut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguèsses havut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèsse havut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèssem havut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèssetz havut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèsson havut"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aguèri havut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aguères havut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aguèt havut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aguèrem havut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "aguèretz havut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aguèron havut"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "aurai havut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auràs havut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aurà havut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "aurem havut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auretz havut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "auràn havut"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "ieu",
+            "use": 0,
+            "form": "auriái havut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auriás havut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "auriá havut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosautres",
+            "use": 0,
+            "form": "auriam havut"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosautres",
+            "use": 0,
+            "form": "auriatz havut"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "aurián havut"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "havre"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "havent"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "havut"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "aver"
+    ],
+    "examples": null,
+    "verb": "havre"
+  }
+}

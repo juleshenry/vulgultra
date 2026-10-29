@@ -1,0 +1,777 @@
+{
+  "lect": "ca",
+  "lemma": "abrogar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/cat/abrogar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=7&T1=abrogar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 7,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "abrogo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abrogues"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abroga"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "abroguem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "abrogueu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "abroguen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "abroguï"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abroguïs"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "abroguï"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "abroguem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "abrogueu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "abroguïn"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "abrogava"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abrogaves"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abrogava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "abrogàvem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "abrogàveu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "abrogaven"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "abrogués"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abroguessis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "abrogués"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "abroguéssim"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "abroguéssiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "abroguessin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "abroguí"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abrogares"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abrogà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "abrogàrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "abrogàreu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "abrogaren"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "abrogaré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abrogaràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abrogarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "abrogarem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "abrogareu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "abrogaran"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "abrogaria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abrogaries"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "abrogaria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "abrogaríem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "abrogaríeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "abrogarien"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abroga"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "abroguï"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "abroguem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "abrogueu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "abroguïn"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig abrogar"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas abrogar"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va abrogar"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam abrogar"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau abrogar"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van abrogar"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "he abrogat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has abrogat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha abrogat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hem abrogat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "heu abrogat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han abrogat"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagi abrogat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagis abrogat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagi abrogat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hàgim abrogat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hàgiu abrogat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagin abrogat"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "havia abrogat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havies abrogat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "havia abrogat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "havíem abrogat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "havíeu abrogat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "havien abrogat"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagués abrogat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haguessis abrogat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagués abrogat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguéssim abrogat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéssiu abrogat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguessin abrogat"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguí abrogat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres abrogat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagué abrogat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem abrogat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu abrogat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguéren abrogat"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauré abrogat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauràs abrogat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haurà abrogat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haurem abrogat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haureu abrogat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hauran abrogat"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguera abrogat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauries"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres abrogat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haguera abrogat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hauríem"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem abrogat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hauríeu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu abrogat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haurien"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagueren abrogat"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig haver abrogat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver abrogat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver abrogat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam haver abrogat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau haver abrogat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver abrogat"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abrogar"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abrogat"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abrogant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "abrogar"
+  }
+}

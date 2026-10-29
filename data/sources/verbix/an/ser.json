@@ -1,0 +1,811 @@
+{
+  "lemma": "ser",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/arg/ser/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=52&T1=ser",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 52,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "soi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "yes"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "ye"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "somos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "semos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "sotz"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "setz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "son"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "siga"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "sía"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sigas"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sías"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "siga"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "sía"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "sigamos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "siamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "sigatz"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "siatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "sigan"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "sían"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "yera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "yeras"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "yera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "yeranos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "yeratz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "yeran"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "fuese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fueses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "fuese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "fuesenos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "fuesetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "fuesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "estié"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "fue"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "estiés"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fues"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "estió"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "fue"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "estiemos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "fuemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "estietz"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "fuetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "estioron"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "fueron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "seré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "serás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "será"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "seremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "seretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "serán"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "sería"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "serías"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "sería"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "seríanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "seríatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "serían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "sé"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "está"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 2,
+            "form": "sestatz"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va ser"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas ser"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va ser"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos ser"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz ser"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van ser"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he siu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has siu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha siu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hemos siu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hetz siu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han siu"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haiga siu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haigas siu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haiga siu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "haigamos siu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "haigatz siu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haigan siu"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "heba siu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hebas siu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "heba siu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hebanos siu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hebatz siu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "heban siu"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hese siu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "heses siu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hese siu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hesenos siu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hesetz siu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hesen siu"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré siu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrás siu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habrá siu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habremos siu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habretz siu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrán siu"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría siu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrías siu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habría siu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habríanos siu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habríatz siu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrían siu"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va haver siu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver siu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver siu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos haver siu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz haver siu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver siu"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ser"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "sendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 0,
+            "form": "siu"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 0,
+            "form": "sida"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 0,
+            "form": "sius"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 0,
+            "form": "sidas"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber siu"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habendo siu"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "ser"
+  }
+}

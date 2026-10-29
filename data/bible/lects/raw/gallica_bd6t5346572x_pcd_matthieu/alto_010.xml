@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SCHEMAVERSION="alto_bnf-v2_0" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v3# http://bibnum.bnf.fr/schema/alto_bnf-v2_0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<sourceImageInformation>
+<fileName>00000010.jp2</fileName>
+<fileIdentifier>ark:/12148/bd6t5346572x/f10</fileIdentifier>
+<documentIdentifier documentIdentifierLocation="NUM">100346572</documentIdentifier>
+</sourceImageInformation>
+<OCRProcessing ID="OCR_1">
+<ocrProcessingStep>
+<processingDateTime>2023-08-16</processingDateTime>
+<processingStepDescription>[001_OCR_BRUT]OCR BRUT 67.5 %</processingStepDescription>
+<processingStepDescription>[002_CHARS]{6}</processingStepDescription>
+<processingStepDescription>[007_STRINGS]{2}</processingStepDescription>
+<processingSoftware>
+<softwareCreator>ABBYY</softwareCreator>
+<softwareName>ABBYY FineReader Engine</softwareName>
+<softwareVersion>12</softwareVersion>
+</processingSoftware>
+</ocrProcessingStep>
+</OCRProcessing>
+</Description>
+<Styles>
+<TextStyle FONTFAMILY="Default Metrics Font" FONTSIZE="7" ID="TXT_1"/>
+</Styles>
+<Layout>
+<Page ACCURACY="67.5" HEIGHT="3668" ID="PAG_00000010" PHYSICAL_IMG_NR="10" QUALITY="OK" WIDTH="2755">
+<LeftMargin HEIGHT="3668" HPOS="0" ID="PAG_00000010_LeftMargin" VPOS="0" WIDTH="170">
+</LeftMargin>
+<PrintSpace HEIGHT="3668" HPOS="170" ID="PAG_00000010_PrintSpace" VPOS="0" WIDTH="2585">
+<Illustration HEIGHT="3668" HPOS="170" ID="PAG_00000010_IL000001" VPOS="0" WIDTH="2585">
+<Shape>
+<Polygon POINTS="170,0 2755,0 2755,2828 2686,2828 2686,3668 170,3668 170,0"/>
+</Shape>
+</Illustration>
+<TextBlock HEIGHT="156" HPOS="2676" ID="PAG_00000010_TB000001" STYLEREFS="TXT_1" VPOS="2818" WIDTH="79" language="fr">
+<TextLine HEIGHT="49" HPOS="2688" ID="PAG_00000010_TL000001" VPOS="2830" WIDTH="62">
+<String CONTENT="AL" HEIGHT="49" HPOS="2688" ID="PAG_00000010_ST000001" VPOS="2830" WC="0.36000001430511475" WIDTH="62"/>
+</TextLine>
+<TextLine HEIGHT="52" HPOS="2689" ID="PAG_00000010_TL000002" VPOS="2910" WIDTH="59">
+<String CONTENT="Infl" HEIGHT="52" HPOS="2689" ID="PAG_00000010_ST000002" VPOS="2910" WC="1" WIDTH="59"/>
+</TextLine>
+</TextBlock>
+<GraphicalElement HEIGHT="18" HPOS="1198" ID="PAG_00000010_GE000001" VPOS="192" WIDTH="1420"/>
+<GraphicalElement HEIGHT="4" HPOS="774" ID="PAG_00000010_GE000002" VPOS="210" WIDTH="258"/>
+<GraphicalElement HEIGHT="6" HPOS="258" ID="PAG_00000010_GE000003" VPOS="212" WIDTH="472"/>
+<GraphicalElement HEIGHT="18" HPOS="258" ID="PAG_00000010_GE000004" VPOS="3448" WIDTH="1306"/>
+<GraphicalElement HEIGHT="3016" HPOS="214" ID="PAG_00000010_GE000005" VPOS="218" WIDTH="26"/>
+<GraphicalElement HEIGHT="1930" HPOS="228" ID="PAG_00000010_GE000006" VPOS="1510" WIDTH="24"/>
+<GraphicalElement HEIGHT="3668" HPOS="2550" ID="PAG_00000010_GE000007" VPOS="0" WIDTH="68"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

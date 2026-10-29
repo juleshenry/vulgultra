@@ -1,0 +1,889 @@
+{
+  "lect": "rm",
+  "lemma": "avrir",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/roh/avrir/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=avrir",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 56,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "avreschel"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "avreschas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avrescha"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "avrin"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "avris"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "avreschan"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "avreschi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "avreschies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avreschi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "avrîen"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "avrîes"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "avreschien"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "avrevel"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "avrevas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avreva"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "avrevan"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "avrevas"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "avrevan"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "avrevi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "avrevies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avrevi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "avrevien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "avrevies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "avrevien"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnel ad avrir"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegns ad avrir"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegn ad avrir"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnin ad avrir"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnis ad avrir"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnan ad avrir"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegni ad avrir"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnies ad avrir"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegni ad avrir"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnîen ad avrir"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnîes ad avrir"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnien ad avrir"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "avrescha"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "avri"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "hai avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "has avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ha avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vein avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)veis avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "han avriu"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "hagi avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "hagies avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "hagi avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)veien avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)veies avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "hagien avriu"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevel avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevas avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)veva avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevan avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevas avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevan avriu"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevi avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevies avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vevi avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevien avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevies avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevien avriu"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnel ad haver avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegns ad haver avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegn ad haver avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnin ad haver avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnis ad haver avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnan ad haver avriu"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegni ad haver avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnies ad haver avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegni ad haver avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnîen ad haver avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnîes ad haver avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnien ad haver avriu"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avrir"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avrend"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avriu"
+          }
+        ]
+      },
+      "41": {
+        "name": "Conditional Present, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "avress"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "avresses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avress"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "avressen"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "avresses"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "avressen"
+          }
+        ]
+      },
+      "42": {
+        "name": "Conditional Perfect, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vess avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vesses avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vess avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessen avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vesses avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessen avriu"
+          }
+        ]
+      },
+      "43": {
+        "name": "Conditional Present, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "avressi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "avressies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avressi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "avressien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "avressies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "avressien"
+          }
+        ]
+      },
+      "44": {
+        "name": "Conditional Perfect, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vessi avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vessies avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vessi avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessien avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vessies avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessien avriu"
+          }
+        ]
+      },
+      "45": {
+        "name": "Conditional Future, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegness ad avrir"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnesses ad avrir"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegness ad avrir"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessen ad avrir"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnesses ad avrir"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessen ad avrir"
+          }
+        ]
+      },
+      "46": {
+        "name": "Conditional Future Perfect, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegness ad haver avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnesses ad haver avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegness ad haver avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessen ad haver avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnesses ad haver avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessen ad haver avriu"
+          }
+        ]
+      },
+      "47": {
+        "name": "Conditional Future, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnessi ad avrir"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnessies ad avrir"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegnessi ad avrir"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessien ad avrir"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnessies ad avrir"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessien ad avrir"
+          }
+        ]
+      },
+      "48": {
+        "name": "Conditional Future Perfect, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnessi ad haver avriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnessies ad haver avriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegnessi ad haver avriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessien ad haver avriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnessies ad haver avriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessien ad haver avriu"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "haver"
+    ],
+    "examples": null,
+    "verb": "avrir"
+  }
+}

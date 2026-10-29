@@ -1,0 +1,793 @@
+{
+  "lect": "ca",
+  "lemma": "menjar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/cat/menjar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=7&T1=menjar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 7,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "menjo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "menges"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "menja"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "mengem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "mengeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "mengen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "mengi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "mengis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "mengi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "mengem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "mengeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "mengin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "menjava"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "menjaves"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "menjava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "menjàvem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "menjàveu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "menjaven"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "mengés"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "mengessis"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "mengés"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "mengéssim"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "mengéssiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "mengessin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 1,
+            "form": "mengí"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "menjares"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "menjà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "menjàrem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "menjàreu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "menjaren"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "menjaré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "menjaràs"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "menjarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "menjarem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "menjareu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "menjaran"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "menjaria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "menjaries"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "menjaria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "menjaríem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "menjaríeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "menjarien"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "menja"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "mengi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 1,
+            "form": "mengem"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 1,
+            "form": "mengeu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 1,
+            "form": "mengin"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig menjar"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas menjar"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va menjar"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam menjar"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau menjar"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van menjar"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "he menjat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has menjat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha menjat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hem menjat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "heu menjat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han menjat"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagi menjat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagis menjat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagi menjat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hàgim menjat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hàgiu menjat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagin menjat"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "havia menjat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "havies menjat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "havia menjat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "havíem menjat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "havíeu menjat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "havien menjat"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hagués menjat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haguessis menjat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagués menjat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguéssim menjat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéssiu menjat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguessin menjat"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguí menjat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres menjat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hagué menjat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem menjat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu menjat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haguéren menjat"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauré menjat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauràs menjat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haurà menjat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haurem menjat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haureu menjat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hauran menjat"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "haguera menjat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hauries"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hagueres menjat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hauria"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haguera menjat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "hauríem"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "haguérem menjat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "hauríeu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "haguéreu menjat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haurien"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hagueren menjat"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo",
+            "use": 0,
+            "form": "vaig haver menjat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver menjat"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver menjat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nos.",
+            "use": 0,
+            "form": "vam haver menjat"
+          },
+          {
+            "id": 5,
+            "pronoun": "vos.",
+            "use": 0,
+            "form": "vau haver menjat"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver menjat"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "menjar"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "menjat"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "menjant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      " Allí es <b>mengen</b> taronges i es beu orxata de xufles, s' enamora amb marcialitat i es concebeixen els transports de les passions més pures entre les indigestions infantils i els ferums del ranxo que surten per les [...]",
+      "[...]  he vist passar mitja hora al carrer, aturat i mirant en l' aire, i no per a contemplar la immensitat del firmament o el majestuós curs dels astres, sinó per a veure una mona amb capa vermella, que <b>menjava</b> sucre sentada en la barana d' un balcó de segon pis.",
+      " Las hay muy saladas, muy... !  Creient que la impressió fóra menos forta, torno a agafar el gambeto, que la calor m' havia fet deixar mentres <b>menjava</b> un bocí al restaurant i (que per cert és a comodo, si bé tenen uns mossos... ei !  no de l' Esquadra... que compten un de pa i tres i mig de peix, que fan cinc, i un i mig de rabes... diguem set, i [...]",
+      "Ja està dit.  Però, això sí, només ne direm quatre cosetes, perquè, si us ho havia de dir tot, per avui ja es podien consolar de <b>menjar</b> l' arròs covat.",
+      " -Ditxosos ells!  -Per què?  -Perquè deuen <b>menjar</b> el gall barato.",
+      " -No me 'n parli, que m' hi torno boja i ja no sé a on girar -me.  Afiguri 's que a casa, ¡bah, ja ho sap !  som set; tres criatures que no sé d' on han sortit, que mai tenen prou de res, capassos de <b>menjar</b> -se l' <i>espritatuo</i>.  Miri, anava a comprar un quarto de gallina magre, i me 'n volien trenta dos quartos, trenta dos quartos, filla !  que jo no sé com el govern no hi posa mà, caramba !  que [...]",
+      "<i>El petit</i>.  -Jo cada dia <b>menjo</b> tita !  <i>Tots tres</i>.  -Per mort del còlera !  eh, eh, eh!",
+      " -Ara vegi vostè; abans per esmorzar <b>menjava</b> una llesca de pa amb sis figues aixafades a sobre, i ell voldria que n' hi donés: no, senyor; que esperi l' any vinent !",
+      "[...]  i allí no parlem més que del còlera, d' Europa, dels Estats Units, res: tonteries.  Després juguem un rato al billar per fer algo, i sortim a dar un passeig.  Dinem, i ara és un fàstic; mai podem <b>menjar</b> porqueries, sinó sopa caldosa, olla, rostits i bestieses així.  Després de dinar, què faràs ?  Un rato al cafè, a veure les mateixes cares; un rato al casino, a fullejar quatre revistes, llegir els [...]",
+      "[...]  això no deuen estranyar que els tingui tan presents; no me 'ls puc treure del cap d' ençà que he vist que mentre alguns pobres pateixen fam, els senyors porcells, godaiets, garrins i porcs, s' estan <b>menjant</b> el blat d' Urgell, que per mor de les humitats s' ha podrit a la planta.",
+      "T' ho has de <b>menjar</b>. Menja.",
+      "No pot ser. No tinc <b>menjar</b> !",
+      "L'Sverre…? Sí, el rei. Ja hi vaig jo. El rei ha <b>menjat</b> llaminadures de postres.",
+      "Tots respirem i <b>mengem</b>, però, a banda d' això, res.",
+      "Espero no haver <b>menjat</b> massa. Avui hi haurà un banquet."
+    ],
+    "verb": "menjar"
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "lect": "pms",
+  "lemma": "esse",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/pms/esse/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=12034&T1=esse",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 12034,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "sun"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "ses"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "è"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "suma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "seve"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "sun"
+          }
+        ]
+      },
+      "1": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "era"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "ere"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "era"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "ero"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "ere"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "ero"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "sarai"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "saras"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "sarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "saruma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "sareve"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "saran"
+          }
+        ]
+      },
+      "3": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "sarìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "sarìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "sarìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "sarìo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "sarìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "sarìo"
+          }
+        ]
+      },
+      "4": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "esse"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "sìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "sìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "suma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "esse"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "sìo"
+          }
+        ]
+      },
+      "5": {
+        "name": "Conjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "sìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "sìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "sìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "sìo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "sìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "sìo"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "füssa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "füsse"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "füssa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "füsso"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "füsse"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "füsso"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "esse"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essent"
+          }
+        ]
+      },
+      "22": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essend"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "stait"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "esse"
+  }
+}

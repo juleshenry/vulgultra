@@ -1,0 +1,652 @@
+{
+  "lect": "fr",
+  "lemma": "abstenir",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fra/abstenir/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=3&T1=abstenir",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 3,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "abstiens"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abstiens"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "abstient"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "abstenons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "abstenez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "abstiennent"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "abstienne"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abstiennes"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "abstienne"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "abstenions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "absteniez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "abstiennent"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "abstenais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abstenais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "abstenait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "abstenions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "absteniez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "abstenaient"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "abstinsse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abstinsses"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "abstînt"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "abstinssions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "abstinssiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "abstinssent"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "abstins"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abstins"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "abstint"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "abstînmes"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "abstîntes"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "abstinrent"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "abstiendrai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abstiendras"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "abstiendra"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "abstiendrons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "abstiendrez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "abstiendront"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "abstiendrais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abstiendrais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "abstiendrait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "abstiendrions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "abstiendriez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "abstiendraient"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abstiens"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "abstenons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "abstenez"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "suis abstenu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "es abstenu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "est abstenu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "sommes abstenu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "êtes abstenu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "sont abstenu(e)s"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "sois abstenu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sois abstenu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "soit abstenu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "soyons abstenu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "soyez abstenu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "soient abstenu(e)s"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "étais abstenu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "étais abstenu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "était abstenu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "étions abstenu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "étiez abstenu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "étaient abstenu(e)s"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "fusse abstenu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fusses abstenu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "fût abstenu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "fussions abstenu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "fussiez abstenu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "fussent abstenu(e)s"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "fus abstenu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fus abstenu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "fut abstenu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "fûmes abstenu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "fûtes abstenu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "furent abstenu(e)s"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "serai abstenu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "seras abstenu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "sera abstenu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "serons abstenu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "serez abstenu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "seront abstenu(e)s"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "serais abstenu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "serais abstenu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "serait abstenu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "serions abstenu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "seriez abstenu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "seraient abstenu(e)s"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abstenir"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "abstenu"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abstenant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "être"
+    ],
+    "examples": [
+      "[...]  qu' on manufacturait et qu' on distribuait rapidement. Nul doute, continuait le compte rendu, que la situation ne fût des plus insolites et des plus graves, mais le public était exhorté à s' <b>abstenir</b> de toute panique et à se rassurer. Certes, les Marsiens étaient déconcertants et terribles à l' extrême, mais ils ne pouvaient être guère plus d' une vingtaine contre des millions d' humains.",
+      "[...]  que, même ici-bas, la nature paraît avoir dédaigné la roue ou qu' elle lui ait préféré d' autres moyens. Non seulement les Marsiens ne connaissent pas la roue- -ce qui est incroyable--ou s' <b>abstenaient</b> de l' employer, mais même ils se servaient singulièrement peu, dans leurs appareils, du pivot mobile avec des mouvements circulaires dans un seul plan. Presque tous les joints de leurs mécanismes [...]"
+    ],
+    "verb": "abstenir"
+  }
+}

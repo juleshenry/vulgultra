@@ -1,0 +1,649 @@
+{
+  "lect": "fr",
+  "lemma": "accélérer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fra/acc%C3%A9l%C3%A9rer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=3&T1=acc%C3%A9l%C3%A9rer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 3,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 1,
+            "form": "accélère"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "accélères"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 1,
+            "form": "accélère"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "accélérons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "accélérez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 1,
+            "form": "accélèrent"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 1,
+            "form": "accélère"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "accélères"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 1,
+            "form": "accélère"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "accélérions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "accélériez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 1,
+            "form": "accélèrent"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "accélérais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "accélérais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "accélérait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "accélérions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "accélériez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "accéléraient"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "accélérasse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "accélérasses"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "accélérât"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "accélérassions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "accélérassiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "accélérassent"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "accélérai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "accéléras"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "accéléra"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "accélérâmes"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "accélérâtes"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "accélérèrent"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "accélérerai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "accéléreras"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "accélérera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "accélérerons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "accélérerez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "accéléreront"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "accélérerais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "accélérerais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "accélérerait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "accélérerions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "accéléreriez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "accéléreraient"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "accélère"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "accélérons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "accélérez"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "ai accéléré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "as accéléré"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "a accéléré"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "avons accéléré"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "avez accéléré"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "ont accéléré"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "aie accéléré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aies accéléré"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "ait accéléré"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "ayons accéléré"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "ayez accéléré"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "aient accéléré"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "avais accéléré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avais accéléré"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "avait accéléré"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "avions accéléré"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "aviez  accéléré"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "avaient accéléré"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "eusse accéléré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eusses accéléré"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "eût accéléré"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "eussions accéléré"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "eussiez accéléré"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "eussent accéléré"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "eus accéléré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eus accéléré"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "eut accéléré"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "eûmes accéléré"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "eûtes accéléré"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "eurent accéléré"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "aurai accéléré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auras accéléré"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "aura accéléré"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "aurons accéléré"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "aurez accéléré"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "auront accéléré"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "aurais accéléré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aurais accéléré"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "aurait accéléré"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "aurions accéléré"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "auriez accéléré"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "auraient accéléré"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "accélérer"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "accéléré"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "accélérant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avoir"
+    ],
+    "examples": null,
+    "verb": "accélérer"
+  }
+}

@@ -1,0 +1,665 @@
+{
+  "lect": "fr",
+  "lemma": "venir",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fra/venir/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=3&T1=venir",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 3,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "viens"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "viens"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "vient"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "venons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "venez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "viennent"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "vienne"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "viennes"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "vienne"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "venions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "veniez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "viennent"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "venais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "venais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "venait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "venions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "veniez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "venaient"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "vinsse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vinsses"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "vînt"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "vinssions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "vinssiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "vinssent"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "vins"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vins"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "vint"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "vînmes"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "vîntes"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "vinrent"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "viendrai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "viendras"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "viendra"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "viendrons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "viendrez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "viendront"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "viendrais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "viendrais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "viendrait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "viendrions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "viendriez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "viendraient"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "viens"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "venons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "venez"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "suis venu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "es venu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "est venu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "sommes venu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "êtes venu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "sont venu(e)s"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "sois venu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sois venu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "soit venu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "soyons venu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "soyez venu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "soient venu(e)s"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "étais venu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "étais venu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "était venu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "étions venu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "étiez venu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "étaient venu(e)s"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "fusse venu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fusses venu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "fût venu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "fussions venu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "fussiez venu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "fussent venu(e)s"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "fus venu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fus venu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "fut venu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "fûmes venu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "fûtes venu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "furent venu(e)s"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "serai venu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "seras venu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "sera venu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "serons venu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "serez venu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "seront venu(e)s"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "serais venu(e)"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "serais venu(e)"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "serait venu(e)"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "serions venu(e)s"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "seriez venu(e)(s)"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "seraient venu(e)s"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "venir"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "venu"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "venant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "être"
+    ],
+    "examples": [
+      "[...]  et impitoyables, considéraient cette terre avec des yeux envieux, dressaient lentement et sûrement leurs plans pour la conquête de notre monde. Et dans les premières années du vingtième siècle <b>vint</b> la grande désillusion.",
+      "[...]  sa religion à une mission ambulante[2 ], qui passait il y a quatre ans par ici; je crois sa religion vraie. Je lui ai confié depuis tout ce que j' ai, argent, maison, chevaux; je le laisse aller et <b>venir</b> dans le pays; toujours et partout je l' ai trouvé exact et fidèle.",
+      "[...]  excursionnistes revenant de Chertsey ou d' Isleworth passa en chantant et en jouant des instruments. Les fenêtres hautes des maisons s' éclairaient quand les gens allaient se coucher. De la station, <b>venait</b> dans la distance le bruit des trains changeant de ligne, grondement retentissant que la distance adoucissait presque en une mélodie. Ma femme me fit remarquer l' éclat des feux rouges, verts et [...]",
+      "[...]  M. D'ARTAGNAN PÈRE Le premier lundi du mois d' avril 1625, le bourg de Meung, où naquit l' auteur du Roman de la Rose, semblait être dans une révolution aussi entière que si les huguenots en fussent <b>venus</b> faire une seconde Rochelle.",
+      "Puis <b>vint</b> la nuit où tomba le premier météore. On le vit, dans le petit matin, passer au-dessus de Winchester, ligne de flamme allant vers l' est, très haut dans l' atmosphère. Des centaines de gens qui l' [...]",
+      " Elle se dirigeait cependant par le travers de nous; mais, quoiqu' on la hélât, rien n' y était visible.  À mesure que nous avancions, nous entendions seulement <b>venir</b> avec la brise un son doux et paisible, si modulé qu' il ne pouvait être confondu avec la plainte de la mer ou la vibration des cordes tendues à nos voiles.  Ce son, d' une tristesse calme, attira [...]",
+      "Puis <b>vint</b> la nuit où tomba le premier météore. On le vit, dans le petit matin, passer au-dessus de Winchester, ligne de flamme allant vers l' est, très haut dans l' atmosphère. ~~~ (CHAPITRE II )",
+      "Tout à coup le son de la flûte fut un vagissement; on entendit la lamentation des enfants qui <b>viennent</b> au monde, un cri si faible et si plaintif qu' il y eut un hurlement d' horreur.  Car nous voyions d' un même moment, les yeux subitement éclairés de l' avenir, ce que nous ne pouvions plus avoir et [...]",
+      "[...]  les boussoles avaient été rompues dans la dernière tempête, nous ne savions plus notre route ni la terre qui s' allongeait devant nous.  L' Océan était si vert que nous aurions pu croire qu' elle <b>venait</b> de pousser en pleine eau par un enchantement.  Mais la vue de la falaise obscure nous troublait; ceux qui avaient remué les tarots dans la nuit et ceux qui étaient ivres de la plante de leur [...]",
+      "Il fut à ce moment absolument clair dans mon esprit que la Chose était <b>venue</b> de la planète Mars; mais je jugeais improbable qu' elle contînt une créature vivante quelconque. Je pensais que le dévissement était automatique. Malgré Ogilvy, je croyais à des habitants dans Mars. [...]",
+      "On dirait que je suis jamais <b>venu</b>.",
+      "Brookman. -Enchanté. Je <b>venais</b> de commander du salami",
+      "[sanglot] OK. Je prends le premier vol. Je <b>viens</b> avec toi, on part demain matin.",
+      "Je ne suis pas <b>venu</b> chercher des problèmes.",
+      "Les parents des autres <b>venaient</b> parfois les voir."
+    ],
+    "verb": "venir"
+  }
+}

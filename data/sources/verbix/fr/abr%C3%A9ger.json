@@ -1,0 +1,654 @@
+{
+  "lect": "fr",
+  "lemma": "abréger",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fra/abr%C3%A9ger/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=3&T1=abr%C3%A9ger",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 3,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 1,
+            "form": "abrège"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abrèges"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 1,
+            "form": "abrège"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 1,
+            "form": "abrégeons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "abrégez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 1,
+            "form": "abrègent"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 1,
+            "form": "abrège"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abrèges"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 1,
+            "form": "abrège"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "abrégions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "abrégiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 1,
+            "form": "abrègent"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 1,
+            "form": "abrégeais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abrégeais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 1,
+            "form": "abrégeait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "abrégions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "abrégiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 1,
+            "form": "abrégeaient"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 1,
+            "form": "abrégeasse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abrégeasses"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 1,
+            "form": "abrégeât"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 1,
+            "form": "abrégeassions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 1,
+            "form": "abrégeassiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 1,
+            "form": "abrégeassent"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 1,
+            "form": "abrégeai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abrégeas"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 1,
+            "form": "abrégea"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 1,
+            "form": "abrégeâmes"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 1,
+            "form": "abrégeâtes"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "abrégèrent"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "abrégerai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abrégeras"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "abrégera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "abrégerons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "abrégerez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "abrégeront"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "abrégerais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abrégerais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "abrégerait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "abrégerions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "abrégeriez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "abrégeraient"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abrège"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 1,
+            "form": "abrégeons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "abrégez"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "ai abrégé"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "as abrégé"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "a abrégé"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "avons abrégé"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "avez abrégé"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "ont abrégé"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "aie abrégé"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aies abrégé"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "ait abrégé"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "ayons abrégé"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "ayez abrégé"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "aient abrégé"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "avais abrégé"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avais abrégé"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "avait abrégé"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "avions abrégé"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "aviez  abrégé"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "avaient abrégé"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "eusse abrégé"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eusses abrégé"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "eût abrégé"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "eussions abrégé"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "eussiez abrégé"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "eussent abrégé"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "eus abrégé"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eus abrégé"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "eut abrégé"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "eûmes abrégé"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "eûtes abrégé"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "eurent abrégé"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "aurai abrégé"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "auras abrégé"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "aura abrégé"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "aurons abrégé"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "aurez abrégé"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "auront abrégé"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 0,
+            "form": "aurais abrégé"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aurais abrégé"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "aurait abrégé"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "aurions abrégé"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "auriez abrégé"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "auraient abrégé"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abréger"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abrégé"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "abrégeant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avoir"
+    ],
+    "examples": [
+      "Mais M. de Tréville promit cette faveur après un noviciat de deux ans, noviciat qui pouvait être <b>abrégé</b> au reste, si l' occasion se présentait pour d' Artagnan de rendre quelque service au roi ou de faire quelque action d' éclat.",
+      "[...]  sur le sein de sa mère. La pauvre vieille négresse oublia ses craintes, et, vers le point du jour, Élisa elle-même ferma les yeux. Phinéas était le plus gai de la compagnie; il sifflait, pour <b>abréger</b> la route, certains airs un peu profanes... pour un quaker.",
+      "Rien ne fait marcher le temps et n' <b>abrège</b> la route comme une pensée qui absorbe en elle-même toutes les facultés de l' organisation de celui qui pense.",
+      "Le blessé se laissa glisser à genoux et baisa de nouveau les pieds de son sauveur; mais d' Artagnan, qui n' avait plus aucun motif de rester si près de l' ennemi, <b>abrégea</b> lui-même les témoignages de sa reconnaissance."
+    ],
+    "verb": "abréger"
+  }
+}

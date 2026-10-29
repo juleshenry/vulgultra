@@ -1,0 +1,1351 @@
+{
+  "lemma": "poder",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/arg/poder/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=52&T1=poder",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 52,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puedo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puetz"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puedes"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puet"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puede"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "podemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "podetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "pueden"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "pueda"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puedas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "pueda"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "podamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "podatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puedan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "podeba"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "podebas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "podeba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "podebanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "podebatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "podeban"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "podese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "podeses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "podese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "podesenos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "podesetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "podesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "podié"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "pude"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "podiés"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "pudes"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "podió"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "pudo"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "podiemos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "pudemos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "pudenos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "podietz"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "pudetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "podioron"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puden"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "podré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "podrás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "podrá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "podremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "podretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "podrán"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "podría"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "podrías"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "podría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "podríanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "podríatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "podrían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "pueda"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "podetz"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va poder"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas poder"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va poder"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos poder"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz poder"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van poder"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has podiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha podiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hemos podiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hetz podiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han podiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haiga podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haigas podiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haiga podiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "haigamos podiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "haigatz podiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haigan podiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "heba podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hebas podiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "heba podiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hebanos podiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hebatz podiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "heban podiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hese podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "heses podiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hese podiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hesenos podiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hesetz podiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hesen podiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrás podiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habrá podiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habremos podiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habretz podiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrán podiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrías podiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habría podiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habríanos podiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habríatz podiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrían podiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va haver podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver podiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver podiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos haver podiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz haver podiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver podiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "poder"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "podendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 0,
+            "form": "podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 2,
+            "form": "puisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 0,
+            "form": "podida"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 2,
+            "form": "puesta"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 2,
+            "form": "puista"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 0,
+            "form": "podius"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 2,
+            "form": "puestos"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 2,
+            "form": "puistos"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 0,
+            "form": "podidas"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 2,
+            "form": "puestas"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 2,
+            "form": "puistas"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habendo podiu"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "puesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "puisto"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "poder"
+  }
+}

@@ -1,0 +1,721 @@
+{
+  "lemma": "mover",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/arg/mover/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=52&T1=mover",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 52,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "muevo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "mueves"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "mueve"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "movemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "movetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "mueven"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "mueva"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "muevas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "mueva"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "movamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "movatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "muevan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "moveba"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "movebas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "moveba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "movebanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "movebatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "moveban"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "movese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "moveses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "movese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "movesenos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "movesetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "movesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "movié"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "moviés"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "movió"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "moviemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "movietz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "movioron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "moveré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "moverás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "moverá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "moveremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "moveretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "moverán"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "movería"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "moverías"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "movería"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "moveríanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "moveríatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "moverían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "mueve"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "movetz"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va mover"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas mover"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va mover"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos mover"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz mover"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van mover"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he moviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has moviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha moviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hemos moviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hetz moviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han moviu"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haiga moviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haigas moviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haiga moviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "haigamos moviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "haigatz moviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haigan moviu"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "heba moviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hebas moviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "heba moviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hebanos moviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hebatz moviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "heban moviu"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hese moviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "heses moviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hese moviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hesenos moviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hesetz moviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hesen moviu"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré moviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrás moviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habrá moviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habremos moviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habretz moviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrán moviu"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría moviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrías moviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habría moviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habríanos moviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habríatz moviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrían moviu"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va haver moviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver moviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver moviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos haver moviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz haver moviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver moviu"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "mover"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "movendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 0,
+            "form": "moviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 0,
+            "form": "movida"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 0,
+            "form": "movius"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 0,
+            "form": "movidas"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber moviu"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habendo moviu"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "mover"
+  }
+}

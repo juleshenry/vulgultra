@@ -1,0 +1,727 @@
+{
+  "lect": "it",
+  "lemma": "andare",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/andare/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=andare",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "vado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "va"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "andiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "andate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "vanno"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "vada"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vada"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "vada"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "andiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "andiate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "vadano"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "andavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "andavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "andava"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "andavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "andavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "andavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "andassi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "andassi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "andasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "andassimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "andaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "andassero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "andai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "andasti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "andò"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "andammo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "andaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "andarono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "andrò"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "andrai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "andrà"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "andremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "andrete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "andranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "andrei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "andresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "andrebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "andremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "andreste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "andrebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "va'"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "vada"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "andiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "andate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "vadano"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sono andato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sei andato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "è andato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "siamo andati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "siete andati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "sono andati"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sia andato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sia andato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sia andato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "siamo andati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "siate andati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "siano andati"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ero andato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eri andato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "era andato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "eravamo andati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "eravate andati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "erano andati"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "fossi andato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fossi andato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "fosse andato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fossimo andati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "foste andati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "fossero andati"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "fui andato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fosti andato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "fu andato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fummo andati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "foste andati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "furono andati"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sarò andato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sarai andato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sarà andato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "saremo andati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "sarete andati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "saranno andati"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sarei andato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "saresti andato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sarebbe andato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "saremmo andati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "sareste andati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "sarebbero andati"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "andare"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "andando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "andato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "andante"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere andato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo andato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente andato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "essere"
+    ],
+    "examples": [
+      "[...]  essere il mio disegno. Mi chiamò una mattina nella sua stanza ove lo confinava la gotta, e lagnatosi fortemente meco su questo proposito, mi chiese quali motivi, oltre ad un mero desiderio di <b>andar</b> vagando attorno, io m’avessi per abbandonare la mia casa ed il mio nativo paese; ove io poteva essere onorevolmente presentato in ogni luogo, e mi si mostrava la speranza di aumentare il mio stato, [...]",
+      "[...]  che non intende un re che gli parla. Il cortigiano, nel caso che non abbia inteso, o abbassa con un gesto di riconoscenza il capo, o risponde ciò che gli viene in bocca, e, a proposito o no, <b>va</b> sempre bene.",
+      "Saturno, scoperse le fasi di Venere e di Marte, e nell' aprile dell' anno 1611, desiderato a Roma, vi <b>andò</b>; ed ivi fatti vedere i nuovi spettacoli del cielo, riputato da molto, venne ascritto nella famosissima Accademia de ’ Lincei.",
+      "[...]  cardinale, il quale fu sorpreso non per le tante addotte e fondate ragioni, ma per la tanta audacia di un filosofo; quindi acerrimamente riprendendolo, la cosa era divenuta molto seria, e certo <b>andava</b> a finire colla peggio del filosofo Pisano, se il gran duca Cosimo II non lo avesse tantosto levato di là, e fatto entrare in Toscana.",
+      "[...]  provetti marinai confessavano di non averne veduta mai una peggiore. Certo avevamo una buona nave, ma enormemente carica, e si abbassava tanto che i marinai gridavano ad ogni momento: E lì lì per <b>andare</b> per occhio. Fu mia fortuna per una parte il non capire che <b>andar</b> per occhio presso i marinai equivalesse a sommergersi, cosa che domandai solamente in appresso. Pure la tempesta era sì [...]",
+      "[...]  avevamo una buona nave, ma enormemente carica, e si abbassava tanto che i marinai gridavano ad ogni momento: E lì lì per <b>andare</b> per occhio. Fu mia fortuna per una parte il non capire che <b>andar</b> per occhio presso i marinai equivalesse a sommergersi, cosa che domandai solamente in appresso. Pure la tempesta era sì violenta che vidi, cosa non solita a vedersi di frequente, il capitano, il [...]",
+      "[...]  da quel la specie di letargo dicendomi: — « Olà ! voi che non eravate buono a far nulla poc’anzi, sarete almeno buono a tirar su acqua al pari di un altro; » alla quale chiamata io mi mossi; e <b>andato</b> alla tromba lavorai col massimo buon volere. Mentre ciò si stava facendo, il capitano vedendo alcuni leggeri palischermi che impotenti a difendersi dalla burrasca e costretti ad abbandonarsi in [...]",
+      "[...]  della sua disgrazia, che avrebbe desiderato che potesse rimanere occulta a tutta la terra, allorquando a mezza la cena arrivò il principe Gaspare Lubomirski generale al servigio di Russia, che <b>andò</b> a sedere al capo opposto della tavola, alla quale trenta in circa potevano esser quelli che mangiavano. Quando questo principe si vide in faccia di lui all' altro capo, gli disse ad alta voce che [...]",
+      "[...]  Quando questo principe si vide in faccia di lui all' altro capo, gli disse ad alta voce che gli dispiacea della lacrimevole avventura ch'eragli sopravvenuta al teatro; a tal complimento, che <b>andò</b> a ferirgli l' anima, e ch'egli buonamente sperava che non avesse ad essergli fatto da alcuno, per non essersi l' affare ancora divulgato, non ebbe la forza di rispondere, ma nulla di meno il [...]",
+      "Non era passato un quarto d' ora da che eravamo fuori della nostra nave, quando la vedemmo affondarsi, e allora intesi per la prima volta che cosa volesse dire <b>andare</b> per occhio. Devo confessare che mi era poco accorto allorchè i marinai mi dissero che le sovrastava questo pericolo, perchè era sì fuor di me, che quando si dovette abbandonare la nave, fui gettato [...]",
+      "Quando arriva il camion, l' avviso. <b>Va</b> bene. Aspetterò in macchina.",
+      "... se volete <b>andare</b> a Las Vegas senza di me, non c' è problema.",
+      "... se volete <b>andare</b> a Las Vegas senza di me, non c' è problema.",
+      "Goditelo finché puoi. È versatile, <b>va</b> bene per tutto.",
+      "Buona fortuna. <b>Vai</b> anche tu con lei. Mamma. Signor Gustafson, ha già deciso che cosa suoneremo ?"
+    ],
+    "verb": "andare"
+  }
+}

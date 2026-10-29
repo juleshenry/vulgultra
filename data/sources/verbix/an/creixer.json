@@ -1,0 +1,727 @@
+{
+  "lemma": "creixer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/arg/creixer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=52&T1=creixer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 52,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "creixco"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "creixes"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "creixe"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "creix"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "creixemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "creixetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "creixen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "creixca"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "creixcas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "creixca"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "creixcamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "creixcatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "creixcan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "creixeba"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "creixebas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "creixeba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "creixebanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "creixebatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "creixeban"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "creixese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "creixeses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "creixese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "creixesenos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "creixesetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "creixesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "creixié"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "creixiés"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 1,
+            "form": "creixó"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 1,
+            "form": "creixemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 1,
+            "form": "creixetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "creixioron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "creixeré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "creixerás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "creixerá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "creixeremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "creixeretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "creixerán"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "creixería"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "creixerías"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "creixería"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "creixeríanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "creixeríatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "creixerían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "creixe"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "creixetz"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va creixer"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas creixer"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va creixer"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos creixer"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz creixer"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van creixer"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he creixiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "has creixiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "ha creixiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hemos creixiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hetz creixiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "han creixiu"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haiga creixiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haigas creixiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "haiga creixiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "haigamos creixiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "haigatz creixiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "haigan creixiu"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "heba creixiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hebas creixiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "heba creixiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hebanos creixiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hebatz creixiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "heban creixiu"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hese creixiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "heses creixiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "hese creixiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "hesenos creixiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "hesetz creixiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "hesen creixiu"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré creixiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrás creixiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habrá creixiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habremos creixiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habretz creixiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrán creixiu"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría creixiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habrías creixiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "habría creixiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "habríanos creixiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "habríatz creixiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "habrían creixiu"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va haver creixiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas haver creixiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va haver creixiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos haver creixiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz haver creixiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van haver creixiu"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "creixer"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "creixendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 0,
+            "form": "creixiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 0,
+            "form": "creixida"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 0,
+            "form": "creixius"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 0,
+            "form": "creixidas"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber creixiu"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habendo creixiu"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "creixer"
+  }
+}

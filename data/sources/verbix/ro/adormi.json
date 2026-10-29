@@ -1,0 +1,730 @@
+{
+  "lect": "ro",
+  "lemma": "adormi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ron/adormi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=5&T1=adormi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 5,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "adorm"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "adormi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "adoarme"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "adormim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "adormiţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "adorm"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "adorm"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "adormi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "adoarmă"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "adormim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "adormiţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 2,
+            "form": "adoarmă"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "adormeam"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "adormeai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "adormea"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "adormeam"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "adormeaţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "adormeau"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "adormire"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "adormiru"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "adormirim"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 3,
+            "form": "adormiri"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "adormire"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "adormirim"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "adormirem"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "adormiremu"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 3,
+            "form": "adormiret"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "adormire"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "adormirim"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "adormii"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "adormişi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "adormi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "adormirăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "adormirăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "adormiră"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future I",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi adormi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei adormi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va adormi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom adormi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi adormi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor adormi"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş adormi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai adormi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar adormi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am adormi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi adormi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar adormi"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "adoarme"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "adormiţi"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am adormit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai adormit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a adormit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am adormit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi adormit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au adormit"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "fi adormit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fi adormit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "fi adormit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fi adormit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "fi adormit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "fi adormit"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "adormisem"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "adormiseşi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "adormise"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "adormiserăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "adormiserăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "adormiseră"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi fi adormit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei fi adormit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va fi adormit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom fi adormit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi fi adormit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor fi adormit"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş fi adormit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai fi adormit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar fi adormit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am fi adormit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi fi adormit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar fi adormit"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a adormi"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "adormind"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "adormit"
+          }
+        ]
+      },
+      "25": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "o să adorm"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "o să adormi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "o să adoarmă"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "o să adormim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "o să adormiţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "o să adoarmă"
+          }
+        ]
+      },
+      "26": {
+        "name": "Indicative Future II (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am să fi adormit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai să fi adormit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "are să fi adormit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avem să fi adormit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveţi să fi adormit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au să fi adormit"
+          }
+        ]
+      },
+      "27": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "oi adormi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "îi adormi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a adormi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "om adormi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "îţi adormi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "or adormi"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a fi adormit"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "[...]  zâmbind, apoi capul ei, palid de suflarea îndulcită a nopții, cădea pe perine. Cine ar fi văzut-o astfel ! Nimene — numai el, ce acoperea brațul ei, atârnând pe marginea patului, cu sărutări. El <b>adormea</b> în genunchi. Visau amândoi același vis. Ceruri de oglinzi, [ îngeri ] plutind cu înălțatele aripi albe și cu brâie de curcubeu, portale nalte, galerii de-o marmură ca ceara, straturi de stele [...]",
+      "El se scutură oarecum din somn. Soarele se înălța ca un glob de aur arzător pe un cer adânc albastru; grădina de desubtul ferestrei în care <b>adormise</b> Dionis era de un verde umed și răcorit după noaptea cu ploaie, florile împrospătate ridicau în soare cochetele capete copilăroase și ochii lor plini de reci și zadarnice lacrimi. În casa de peste [...]",
+      "[...]  supt bolta luminoasă. O melancolie de nedescris plutește asupra luminii; melancolia lucrurilor care au ajuns la capăt. O mare sforțare pare îndeplinită, și acum anul nu mai are ce face decât să <b>adoarmă</b> încet... ~~~ * * * ~~~ Dar nimic nu e mai glorios decât toamna romănească. Natura vrea să se îmbrace într'o ultimă mantie de frumuseță înainte de a se mărturisi învinsă de înnaintarea iernii.",
+      "știe de ce, și mai ales seara, după ce Ghiță și bătrâna <b>adormiră</b>, capul",
+      "Da, ţi-e foame... Ai <b>adormit</b> sau ce ? Virginie!",
+      "Hei, Gwen. Gwen, trezește-te. A <b>adormit</b> din greșeală."
+    ],
+    "verb": "adormi"
+  }
+}

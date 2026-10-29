@@ -1,0 +1,401 @@
+{
+  "lect": "frp",
+  "lemma": "parlar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/frp/parlar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 261,
+    "tenses": {
+      "0": {
+        "name": "Glossary lookup",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "parlar"
+          }
+        ]
+      },
+      "2": {
+        "name": "infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "parlar"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "haveir  parlá"
+          }
+        ]
+      },
+      "3": {
+        "name": "gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "parlánt"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "hayent  parlá"
+          }
+        ]
+      },
+      "4": {
+        "name": "Participles",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.m",
+            "use": 0,
+            "form": "parlá"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.f",
+            "use": 0,
+            "form": "parláe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Pl.m",
+            "use": 0,
+            "form": "parlás"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.f",
+            "use": 0,
+            "form": "parláes"
+          }
+        ]
+      },
+      "5": {
+        "name": "Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "parlo"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "parles"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "parlet"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "parlems"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "parlads"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "parlont"
+          }
+        ]
+      },
+      "6": {
+        "name": "Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "parlavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "parlaves"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "parlavet"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "parlavams"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "parlavads"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "parlavant"
+          }
+        ]
+      },
+      "7": {
+        "name": "Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "parlei"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "parlés"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "parlét"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "parlémos"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "parlêtes"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "parléront"
+          }
+        ]
+      },
+      "8": {
+        "name": "Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "parlerai"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "parlerés"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "parlerat"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "parlerems"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "parlereds"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "parleránt"
+          }
+        ]
+      },
+      "9": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "parlerim"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "parleries"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "parleriet"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "parleriams"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "parleriads"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "parleriant"
+          }
+        ]
+      },
+      "10": {
+        "name": "Subj.present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "parlo"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "parles"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "parlet"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "parlams"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "parlads"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "parlant"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subj.imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "parlesso"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "parlesses"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "parlesset"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "parlessams"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "parlessads"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "parlessant"
+          }
+        ]
+      },
+      "12": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "parla"
+          },
+          {
+            "id": 2,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "parlams"
+          },
+          {
+            "id": 3,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "parlads"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "parlar"
+  }
+}

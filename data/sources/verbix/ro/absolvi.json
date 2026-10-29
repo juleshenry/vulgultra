@@ -1,0 +1,795 @@
+{
+  "lect": "ro",
+  "lemma": "absolvi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ron/absolvi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=5&T1=absolvi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 5,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "absolvesc"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "absolv"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "absolveşti"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 3,
+            "form": "absolvi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "absolveşte"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "absolvă"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "absolvim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "absolviţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "absolvesc"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "absolvă"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "absolvesc"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "absolv"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "absolveşti"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 3,
+            "form": "absolvi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "absolvească"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "absolve"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "absolvim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "absolviţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "absolvească"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "absolve"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "absolveam"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "absolveai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "absolvea"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "absolveam"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "absolveaţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "absolveau"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "absolvire"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "absolviru"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "absolvirim"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 3,
+            "form": "absolviri"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "absolvire"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "absolvirim"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "absolvirem"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "absolviremu"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 3,
+            "form": "absolviret"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "absolvire"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "absolvirim"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "absolvii"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "absolvişi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "absolvi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "absolvirăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "absolvirăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "absolviră"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future I",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi absolvi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei absolvi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va absolvi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom absolvi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi absolvi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor absolvi"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş absolvi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai absolvi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar absolvi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am absolvi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi absolvi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar absolvi"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "absolveşte"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "absolviţi"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am absolvit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai absolvit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a absolvit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am absolvit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi absolvit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au absolvit"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "fi absolvit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fi absolvit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "fi absolvit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fi absolvit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "fi absolvit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "fi absolvit"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "absolvisem"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "absolviseşi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "absolvise"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "absolviserăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "absolviserăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "absolviseră"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi fi absolvit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei fi absolvit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va fi absolvit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom fi absolvit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi fi absolvit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor fi absolvit"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş fi absolvit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai fi absolvit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar fi absolvit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am fi absolvit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi fi absolvit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar fi absolvit"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a absolvi"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "absolvind"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "absolvit"
+          }
+        ]
+      },
+      "25": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "o să absolvesc"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "absolv"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "o să absolveşti"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "absolvi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "o să absolvească"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "absolve"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "o să absolvim"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "o să absolviţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "o să absolvească"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "absolve"
+          }
+        ]
+      },
+      "26": {
+        "name": "Indicative Future II (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am să fi absolvit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai să fi absolvit"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "are să fi absolvit"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avem să fi absolvit"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveţi să fi absolvit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au să fi absolvit"
+          }
+        ]
+      },
+      "27": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "oi absolvi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "îi absolvi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a absolvi"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "om absolvi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "îţi absolvi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "or absolvi"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a fi absolvit"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "absolvi"
+  }
+}

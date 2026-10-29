@@ -1,0 +1,348 @@
+{
+  "lect": "pms",
+  "lemma": "facé",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/pms/fac%C3%A9/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=12034&T1=fac%C3%A9",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 12034,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "facio"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "face"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "facia"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "faciuma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "face"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "facio"
+          }
+        ]
+      },
+      "1": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "faciava"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 1,
+            "form": "faciave"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "faciava"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "faciavo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 1,
+            "form": "faciave"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "faciavo"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "facerai"
+          },
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "facerö"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "faceras"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "facerà"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "faceruma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "facereve"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "faceran"
+          }
+        ]
+      },
+      "3": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "facerìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "facerìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "facerìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "facerìo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "facerìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "facerìo"
+          }
+        ]
+      },
+      "4": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 1,
+            "form": "facia"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "facia"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "faciuma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "facé"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "facio"
+          }
+        ]
+      },
+      "5": {
+        "name": "Conjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "facia"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "face"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "facia"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "facio"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "face"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "facio"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "faceissa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "faceisse"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "faceissa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "faceisso"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "faceisse"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "faceisso"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "facé"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "faciant"
+          }
+        ]
+      },
+      "22": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "faciand"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "facià"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "facé"
+  }
+}

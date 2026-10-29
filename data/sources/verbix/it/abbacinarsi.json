@@ -1,0 +1,707 @@
+{
+  "lect": "it",
+  "lemma": "abbacinarsi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/abbacinarsi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=abbacinarsi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacino"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacini"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacina"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbaciniamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacinate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinano"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacini"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacini"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacini"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbaciniamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbaciniate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinino"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacinavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacinavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinava"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacinavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacinavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacinassi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacinassi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacinassimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacinaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinassero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacinai"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacinasti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinò"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacinammo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacinaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinarono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacinerò"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacinerai"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinerà"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacineremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacinerete"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacineranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacinerei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacineresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinerebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacineremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacinereste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinerebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacinati"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacini"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbaciniamoci"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacinatevi"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacinino"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sono abbacinato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sei abbacinato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "è abbacinato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbacinati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siete abbacinati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sono abbacinati"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sia abbacinato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sia abbacinato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sia abbacinato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbacinati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siate abbacinati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "siano abbacinati"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "ero abbacinato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "eri abbacinato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "era abbacinato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "eravamo abbacinati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "eravate abbacinati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "erano abbacinati"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fossi abbacinato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fossi abbacinato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fosse abbacinato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fossimo abbacinati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbacinati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fossero abbacinati"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fui abbacinato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fosti abbacinato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fu abbacinato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fummo abbacinati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbacinati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "furono abbacinati"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarò abbacinato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sarai abbacinato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarà abbacinato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremo abbacinati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sarete abbacinati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "saranno abbacinati"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarei abbacinato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "saresti abbacinato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbe abbacinato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremmo abbacinati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sareste abbacinati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbero abbacinati"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbacinarsi"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbacinandosi"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 4,
+            "form": "abbacinato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbacinantesi"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere abbacinato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo abbacinato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente abbacinato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "essere"
+    ],
+    "examples": [
+      " L' occhio sbattuto e <b>abbacinato</b> della Margherita lampeggiò d' una gioja speranzosa; sopra il volto esangue le si diffuse un rossore così gentile, come quello onde l' immaginazione dipinge all' esule montanaro un tramonto di [...]"
+    ],
+    "verb": "abbacinare"
+  }
+}

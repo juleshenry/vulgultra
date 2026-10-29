@@ -1,0 +1,419 @@
+{
+  "lect": "fur",
+  "lemma": "amâ",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fur/am%C3%A2/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=132&T1=am%C3%A2",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 132,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "ami"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "amis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "ame"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amais"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "amin"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "ami"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "amis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "ami"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amais"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "amin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "amavi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "amavis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "amave"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amavin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amavis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "amavin"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "amàs"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "amassis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "amàs"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amassin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amassis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "amassin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "amai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "amaris"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "amà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amarin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amaris"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "amarin"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "amarai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "amarâs"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "amarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amarìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amarês"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "amaran"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conditional Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "amarès"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "amaressis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "amarès"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amaressin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amaressis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "amaressin"
+          }
+        ]
+      },
+      "7": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "ame"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amait"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Present II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "amedi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "amedis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "amedi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "amedin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "amedis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "amedin"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "amâ"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "amant"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.m",
+            "use": 0,
+            "form": "amât"
+          },
+          {
+            "id": 2,
+            "pronoun": "Pl.m",
+            "use": 0,
+            "form": "amâts"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.f",
+            "use": 0,
+            "form": "amade"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.f",
+            "use": 0,
+            "form": "amadis"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "amâ"
+  }
+}

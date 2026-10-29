@@ -1,0 +1,1345 @@
+{
+  "lemma": "querer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/arg/querer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=52&T1=querer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 52,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quiero"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quiers"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quieres"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "quiere"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quieren"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quiera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quieras"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quiera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queratz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quieran"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "quereba"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "querebas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "quereba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "querebanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "querebatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "quereban"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "querese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "quereses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "querese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queresenos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queresetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "queresen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "querié"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quise"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "queriés"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quises"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "querió"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quiso"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queriemos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisemos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisenos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "querietz"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "quisetz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "querioron"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quisen"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "querré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "querrás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "querrá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "querremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "querretz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "querrán"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "querría"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "querrías"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "querría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "querríanos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "querríatz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "querrían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "quiere"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "queretz"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Perifrastic Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "va querer"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vas querer"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "va querer"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "vamos querer"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "vatz querer"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "van querer"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "he quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "has quiesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "ha quiesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "hemos quiesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "hetz quiesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "han quiesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "haiga quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "haigas quiesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "haiga quiesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "haigamos quiesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "haigatz quiesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "haigan quiesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "heba quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "hebas quiesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "heba quiesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "hebanos quiesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "hebatz quiesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "heban quiesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hese quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "heses quiesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "hese quiesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "hesenos quiesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "hesetz quiesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "hesen quiesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "habré quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "habrás quiesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "habrá quiesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "habremos quiesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "habretz quiesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "habrán quiesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "habría quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "habrías quiesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "habría quiesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "habríanos quiesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "habríatz quiesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "habrían quiesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      },
+      "19": {
+        "name": "Indicative Perifrastic Past Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "va haver quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vas haver quiesto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "va haver quiesto"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 3,
+            "pronoun": "ell",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "vamos haver quiesto"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "vatz haver quiesto"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vusatros",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "van haver quiesto"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 6,
+            "pronoun": "ells",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "querer"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "querendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 2,
+            "form": "quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "Singular masculine",
+            "use": 2,
+            "form": "quisto"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 2,
+            "form": "quiesta"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 0,
+            "form": "querida"
+          },
+          {
+            "id": 2,
+            "pronoun": "Singular femenine",
+            "use": 2,
+            "form": "quista"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 2,
+            "form": "quiestos"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 0,
+            "form": "querius"
+          },
+          {
+            "id": 3,
+            "pronoun": "Plural masculine",
+            "use": 2,
+            "form": "quistos"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 2,
+            "form": "quiestas"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 0,
+            "form": "queridas"
+          },
+          {
+            "id": 4,
+            "pronoun": "Plural femenine",
+            "use": 2,
+            "form": "quistas"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "haber quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "habendo quiesto"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "queriu"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "quisto"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "querer"
+  }
+}

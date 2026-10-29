@@ -1,0 +1,2361 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "co",
+    "purpose": "Verbix conjugation harvest",
+    "provider": "Verbix",
+    "license": "CC BY-NC 3.0",
+    "attribution": "Verbix (https://www.verbix.com)",
+    "stats": {
+      "fetched": 80,
+      "attested": 5,
+      "generated": 0,
+      "empty": 75
+    },
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "co",
+      "lemma": "Pisa",
+      "class_source": "-a",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix co:Pisa",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "pesu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2sg": {
+            "form": "pesi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3sg": {
+            "form": "pesa",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "1pl": {
+            "form": "pisemu",
+            "variants": [
+              "pisemi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2pl": {
+            "form": "pisate",
+            "variants": [
+              "piseti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3pl": {
+            "form": "pesanu",
+            "variants": [
+              "pesani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "pisava",
+            "variants": [
+              "pisavu",
+              "pisaiu",
+              "pisaia"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2sg": {
+            "form": "pisavi",
+            "variants": [
+              "pisai"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3sg": {
+            "form": "pisava",
+            "variants": [
+              "pisaia"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "1pl": {
+            "form": "pisavamu",
+            "variants": [
+              "pisavami",
+              "pisaiamu",
+              "pisaiami"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2pl": {
+            "form": "pisavate",
+            "variants": [
+              "pisavati",
+              "pisaiati"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3pl": {
+            "form": "pisavanu",
+            "variants": [
+              "pisavani",
+              "pisaiani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "pisai",
+            "variants": [
+              "piseti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2sg": {
+            "form": "pisasti",
+            "variants": [
+              "pisesti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3sg": {
+            "form": "pisò",
+            "variants": [
+              "pisete",
+              "piseti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "1pl": {
+            "form": "pisaimu",
+            "variants": [
+              "pisetimu",
+              "pisaimi",
+              "pisetimi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2pl": {
+            "form": "pisaste",
+            "variants": [
+              "piseste",
+              "pisasti",
+              "pisesti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3pl": {
+            "form": "pisonu",
+            "variants": [
+              "pisetenu",
+              "pisoni",
+              "pisetini"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "piseraghju",
+            "variants": [
+              "pisaraghju"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2sg": {
+            "form": "piserai",
+            "variants": [
+              "piserè",
+              "pisarai",
+              "pisarè"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3sg": {
+            "form": "piserà",
+            "variants": [
+              "pisarà"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "1pl": {
+            "form": "piseremu",
+            "variants": [
+              "pisaremu",
+              "pisaremi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2pl": {
+            "form": "piserete",
+            "variants": [
+              "pisareti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3pl": {
+            "form": "piseranu",
+            "variants": [
+              "pisarani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "pesi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2sg": {
+            "form": "pesi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3sg": {
+            "form": "pesi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "1pl": {
+            "form": "pesimu",
+            "variants": [
+              "pesimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2pl": {
+            "form": "pesite",
+            "variants": [
+              "pesiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3pl": {
+            "form": "pesinu",
+            "variants": [
+              "pesini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "pisassi",
+            "variants": [
+              "pisessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2sg": {
+            "form": "pisassi",
+            "variants": [
+              "pisessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3sg": {
+            "form": "pisassi",
+            "variants": [
+              "pisessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "1pl": {
+            "form": "pisassimu",
+            "variants": [
+              "pisessimu",
+              "pisassimi",
+              "pisessimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2pl": {
+            "form": "pisassite",
+            "variants": [
+              "pisessite",
+              "pisassiti",
+              "pisessiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3pl": {
+            "form": "pisassinu",
+            "variants": [
+              "pisessinu",
+              "pisassini",
+              "pisessini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "piseria",
+            "variants": [
+              "piserebbi",
+              "pisariu",
+              "pisaria",
+              "pisarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2sg": {
+            "form": "piserii",
+            "variants": [
+              "piseristi",
+              "piseresti",
+              "pisarii",
+              "pisaristi",
+              "pisaresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3sg": {
+            "form": "piseria",
+            "variants": [
+              "piserebbe",
+              "pisaria",
+              "pisarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "1pl": {
+            "form": "piseriamu",
+            "variants": [
+              "piserebbimu",
+              "pisariamu",
+              "pisariami",
+              "pisarebbimu",
+              "pisarebbimi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2pl": {
+            "form": "piseriate",
+            "variants": [
+              "piseriste",
+              "pisereste",
+              "pisariati",
+              "pisaristi",
+              "pisaresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "3pl": {
+            "form": "piserianu",
+            "variants": [
+              "piserebbenu",
+              "pisariani",
+              "pisarebbini"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "pesa",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "1pl": {
+            "form": "pisemu",
+            "variants": [
+              "pisemi"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          },
+          "2pl": {
+            "form": "pisate",
+            "variants": [
+              "piseti"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=Pisa"
+          }
+        }
+      }
+    },
+    {
+      "lect": "co",
+      "lemma": "andà",
+      "class_source": "-à",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix co:andà",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "vò",
+            "variants": [
+              "vocu",
+              "vacu"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2sg": {
+            "form": "vai",
+            "variants": [
+              "và"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3sg": {
+            "form": "và",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "1pl": {
+            "form": "andemu",
+            "variants": [
+              "andemi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2pl": {
+            "form": "andate",
+            "variants": [
+              "andeti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3pl": {
+            "form": "vanu",
+            "variants": [
+              "vani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "andava",
+            "variants": [
+              "andavu",
+              "andaiu",
+              "andaia"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2sg": {
+            "form": "andavi",
+            "variants": [
+              "andai"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3sg": {
+            "form": "andava",
+            "variants": [
+              "andaia"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "1pl": {
+            "form": "andavamu",
+            "variants": [
+              "andavami",
+              "andaiamu",
+              "andaiami"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2pl": {
+            "form": "andavate",
+            "variants": [
+              "andavati",
+              "andaiati"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3pl": {
+            "form": "andavanu",
+            "variants": [
+              "andavani",
+              "andaiani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "andai",
+            "variants": [
+              "andeti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2sg": {
+            "form": "andasti",
+            "variants": [
+              "andesti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3sg": {
+            "form": "andò",
+            "variants": [
+              "andete",
+              "andeti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "1pl": {
+            "form": "andaimu",
+            "variants": [
+              "andetimu",
+              "andaimi",
+              "andetimi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2pl": {
+            "form": "andaste",
+            "variants": [
+              "andeste",
+              "andasti",
+              "andesti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3pl": {
+            "form": "andonu",
+            "variants": [
+              "andetenu",
+              "andoni",
+              "andetini"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "anderaghju",
+            "variants": [
+              "andaraghju"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2sg": {
+            "form": "anderai",
+            "variants": [
+              "anderè",
+              "andarai",
+              "andarè"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3sg": {
+            "form": "anderà",
+            "variants": [
+              "andarà"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "1pl": {
+            "form": "anderemu",
+            "variants": [
+              "andaremu",
+              "andaremi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2pl": {
+            "form": "anderete",
+            "variants": [
+              "andareti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3pl": {
+            "form": "anderanu",
+            "variants": [
+              "andarani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "vochi",
+            "variants": [
+              "voca",
+              "vachi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2sg": {
+            "form": "vochi",
+            "variants": [
+              "voca",
+              "vachi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3sg": {
+            "form": "vochi",
+            "variants": [
+              "voca",
+              "vachi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "1pl": {
+            "form": "vochimu",
+            "variants": [
+              "vocamu",
+              "vochimi",
+              "vachimu",
+              "vachimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2pl": {
+            "form": "vocate",
+            "variants": [
+              "vochite",
+              "vochiti",
+              "vachiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3pl": {
+            "form": "vocanu",
+            "variants": [
+              "vochinu",
+              "vochini",
+              "vachini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "andassi",
+            "variants": [
+              "andessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2sg": {
+            "form": "andassi",
+            "variants": [
+              "andessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3sg": {
+            "form": "andassi",
+            "variants": [
+              "andessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "1pl": {
+            "form": "andassimu",
+            "variants": [
+              "andessimu",
+              "andassimi",
+              "andessimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2pl": {
+            "form": "andassite",
+            "variants": [
+              "andessite",
+              "andassiti",
+              "andessiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3pl": {
+            "form": "andassinu",
+            "variants": [
+              "andessinu",
+              "andassini",
+              "andessini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "anderia",
+            "variants": [
+              "anderebbi",
+              "andariu",
+              "andaria",
+              "andarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2sg": {
+            "form": "anderii",
+            "variants": [
+              "anderisti",
+              "anderesti",
+              "andarii",
+              "andaristi",
+              "andaresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3sg": {
+            "form": "anderia",
+            "variants": [
+              "anderebbe",
+              "andaria",
+              "andarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "1pl": {
+            "form": "anderiamu",
+            "variants": [
+              "anderebbimu",
+              "andariamu",
+              "andariami",
+              "andarebbimu",
+              "andarebbimi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2pl": {
+            "form": "anderiate",
+            "variants": [
+              "anderiste",
+              "andereste",
+              "andariati",
+              "andaristi",
+              "andaresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "3pl": {
+            "form": "anderianu",
+            "variants": [
+              "anderebbenu",
+              "andariani",
+              "andarebbini"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "và",
+            "variants": [
+              "vai"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "1pl": {
+            "form": "andemu",
+            "variants": [
+              "andemi"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          },
+          "2pl": {
+            "form": "andate",
+            "variants": [
+              "andeti"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=and%C3%A0"
+          }
+        }
+      }
+    },
+    {
+      "lect": "co",
+      "lemma": "avè",
+      "class_source": "other",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix co:avè",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "aghju",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2sg": {
+            "form": "ai",
+            "variants": [
+              "à"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "1pl": {
+            "form": "avemu",
+            "variants": [
+              "avemi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2pl": {
+            "form": "avete",
+            "variants": [
+              "aveti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3pl": {
+            "form": "anu",
+            "variants": [
+              "ani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "avia",
+            "variants": [
+              "aviu"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2sg": {
+            "form": "avii",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3sg": {
+            "form": "avia",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "1pl": {
+            "form": "aviamu",
+            "variants": [
+              "aviami"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2pl": {
+            "form": "aviate",
+            "variants": [
+              "aviati"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3pl": {
+            "form": "avianu",
+            "variants": [
+              "aviani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ebbi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2sg": {
+            "form": "avisti",
+            "variants": [
+              "avesti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3sg": {
+            "form": "ebbe",
+            "variants": [
+              "ebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "1pl": {
+            "form": "ebbimu",
+            "variants": [
+              "ebbimi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2pl": {
+            "form": "aveste",
+            "variants": [
+              "aviste",
+              "avisti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3pl": {
+            "form": "ebbenu",
+            "variants": [
+              "ebbini"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "averaghju",
+            "variants": [
+              "avaraghju"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2sg": {
+            "form": "averai",
+            "variants": [
+              "averè",
+              "avarai",
+              "avarè"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3sg": {
+            "form": "averà",
+            "variants": [
+              "avarà"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "1pl": {
+            "form": "averemu",
+            "variants": [
+              "avaremu",
+              "avaremi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2pl": {
+            "form": "averete",
+            "variants": [
+              "avareti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3pl": {
+            "form": "averanu",
+            "variants": [
+              "avarani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "abbia",
+            "variants": [
+              "aghja",
+              "abbii",
+              "aghji"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2sg": {
+            "form": "abbia",
+            "variants": [
+              "aghja",
+              "abbii",
+              "aghji"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3sg": {
+            "form": "abbia",
+            "variants": [
+              "aghja",
+              "abbii",
+              "aghji"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "1pl": {
+            "form": "abbiamu",
+            "variants": [
+              "aghjamu",
+              "abbiimu",
+              "abbiimi",
+              "aghjimu",
+              "aghjimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2pl": {
+            "form": "abbiate",
+            "variants": [
+              "aghjate",
+              "abbiiti",
+              "aghjiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3pl": {
+            "form": "abbianu",
+            "variants": [
+              "aghjanu",
+              "abbiini",
+              "aghjini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "avessi",
+            "variants": [
+              "avissi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2sg": {
+            "form": "avessi",
+            "variants": [
+              "avissi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3sg": {
+            "form": "avessi",
+            "variants": [
+              "avissi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "1pl": {
+            "form": "avessimu",
+            "variants": [
+              "avissimu",
+              "avessimi",
+              "avissimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2pl": {
+            "form": "avessite",
+            "variants": [
+              "avissite",
+              "avessiti",
+              "avissiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3pl": {
+            "form": "avessinu",
+            "variants": [
+              "avissinu",
+              "avessini",
+              "avissini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "averia",
+            "variants": [
+              "averebbi",
+              "avariu",
+              "avaria",
+              "avarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2sg": {
+            "form": "averii",
+            "variants": [
+              "averisti",
+              "averesti",
+              "avarii",
+              "avaristi",
+              "avaresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3sg": {
+            "form": "averia",
+            "variants": [
+              "averebbe",
+              "avaria",
+              "avarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "1pl": {
+            "form": "averiamu",
+            "variants": [
+              "averebbimu",
+              "avariamu",
+              "avariami",
+              "avarebbimu",
+              "avarebbimi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2pl": {
+            "form": "averiate",
+            "variants": [
+              "averiste",
+              "avereste",
+              "avariati",
+              "avaristi",
+              "avaresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "3pl": {
+            "form": "averianu",
+            "variants": [
+              "averebbenu",
+              "avariani",
+              "avarebbini"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "abbia",
+            "variants": [
+              "aghja",
+              "abbii",
+              "aghji"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "1pl": {
+            "form": "abbiamu",
+            "variants": [
+              "aghjamu",
+              "abbiimu",
+              "abbiimi",
+              "aghjimu",
+              "aghjimi"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          },
+          "2pl": {
+            "form": "abbiate",
+            "variants": [
+              "aghjate",
+              "abbiiti",
+              "aghjiti"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=av%C3%A8"
+          }
+        }
+      }
+    },
+    {
+      "lect": "co",
+      "lemma": "esse",
+      "class_source": "-e",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix co:esse",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "sò",
+            "variants": [
+              "socu"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2sg": {
+            "form": "sì",
+            "variants": [
+              "sè"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3sg": {
+            "form": "ghjè",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "1pl": {
+            "form": "simu",
+            "variants": [
+              "semu",
+              "semi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2pl": {
+            "form": "site",
+            "variants": [
+              "seti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3pl": {
+            "form": "sò",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "era",
+            "variants": [
+              "eru"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2sg": {
+            "form": "eri",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3sg": {
+            "form": "era",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "1pl": {
+            "form": "eramu",
+            "variants": [
+              "erami"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2pl": {
+            "form": "erate",
+            "variants": [
+              "erati"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3pl": {
+            "form": "eranu",
+            "variants": [
+              "erani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "fubbi",
+            "variants": [
+              "fui"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2sg": {
+            "form": "fusti",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3sg": {
+            "form": "fù",
+            "variants": [
+              "fubbe",
+              "fubbi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "1pl": {
+            "form": "fubbimu",
+            "variants": [
+              "fuimu",
+              "fubbimi",
+              "fuimi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2pl": {
+            "form": "fuste",
+            "variants": [
+              "fusti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3pl": {
+            "form": "fubbenu",
+            "variants": [
+              "fubbinu",
+              "fubbini"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "seraghju",
+            "variants": [
+              "saraghju"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2sg": {
+            "form": "serai",
+            "variants": [
+              "serè",
+              "sarai",
+              "sarè"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3sg": {
+            "form": "serà",
+            "variants": [
+              "sarà"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "1pl": {
+            "form": "seremu",
+            "variants": [
+              "saremu",
+              "saremi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2pl": {
+            "form": "serete",
+            "variants": [
+              "sareti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3pl": {
+            "form": "seranu",
+            "variants": [
+              "sarani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "sia",
+            "variants": [
+              "sii",
+              "sichi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2sg": {
+            "form": "sia",
+            "variants": [
+              "sii",
+              "sichi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3sg": {
+            "form": "sia",
+            "variants": [
+              "sii",
+              "sichi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "1pl": {
+            "form": "siamu",
+            "variants": [
+              "siimu",
+              "siimi",
+              "sichimu",
+              "sichimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2pl": {
+            "form": "siate",
+            "variants": [
+              "siiti",
+              "sichiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3pl": {
+            "form": "sianu",
+            "variants": [
+              "siini",
+              "sichini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "fussi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2sg": {
+            "form": "fussi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3sg": {
+            "form": "fussi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "1pl": {
+            "form": "fussimu",
+            "variants": [
+              "fussimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2pl": {
+            "form": "fussite",
+            "variants": [
+              "fussiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3pl": {
+            "form": "fussinu",
+            "variants": [
+              "fussini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "seria",
+            "variants": [
+              "serebbi",
+              "sariu",
+              "saria",
+              "sarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2sg": {
+            "form": "serii",
+            "variants": [
+              "seristi",
+              "seresti",
+              "sarii",
+              "saristi",
+              "saresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3sg": {
+            "form": "seria",
+            "variants": [
+              "serebbe",
+              "saria",
+              "sarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "1pl": {
+            "form": "seriamu",
+            "variants": [
+              "serebbimu",
+              "sariamu",
+              "sariami",
+              "sarebbimu",
+              "sarebbimi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2pl": {
+            "form": "seriate",
+            "variants": [
+              "seriste",
+              "sereste",
+              "sariati",
+              "saristi",
+              "saresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "3pl": {
+            "form": "serianu",
+            "variants": [
+              "serebbenu",
+              "sariani",
+              "sarebbini"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "sia",
+            "variants": [
+              "sii",
+              "sichi"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "1pl": {
+            "form": "siamu",
+            "variants": [
+              "siimu",
+              "siimi",
+              "sichimu",
+              "sichimi"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          },
+          "2pl": {
+            "form": "siate",
+            "variants": [
+              "siiti",
+              "sichiti"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=esse"
+          }
+        }
+      }
+    },
+    {
+      "lect": "co",
+      "lemma": "parlà",
+      "class_source": "-à",
+      "regularity": "attested",
+      "source": {
+        "attested": true,
+        "title": "Verbix co:parlà",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0",
+        "provider": "Verbix",
+        "license": "CC BY-NC 3.0"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "parlu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2sg": {
+            "form": "parli",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3sg": {
+            "form": "parla",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "1pl": {
+            "form": "parlemu",
+            "variants": [
+              "parlemi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2pl": {
+            "form": "parlate",
+            "variants": [
+              "parleti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3pl": {
+            "form": "parlanu",
+            "variants": [
+              "parlani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "parlava",
+            "variants": [
+              "parlavu",
+              "parlaiu",
+              "parlaia"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2sg": {
+            "form": "parlavi",
+            "variants": [
+              "parlai"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3sg": {
+            "form": "parlava",
+            "variants": [
+              "parlaia"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "1pl": {
+            "form": "parlavamu",
+            "variants": [
+              "parlavami",
+              "parlaiamu",
+              "parlaiami"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2pl": {
+            "form": "parlavate",
+            "variants": [
+              "parlavati",
+              "parlaiati"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3pl": {
+            "form": "parlavanu",
+            "variants": [
+              "parlavani",
+              "parlaiani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "parlai",
+            "variants": [
+              "parleti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2sg": {
+            "form": "parlasti",
+            "variants": [
+              "parlesti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3sg": {
+            "form": "parlò",
+            "variants": [
+              "parlete",
+              "parleti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "1pl": {
+            "form": "parlaimu",
+            "variants": [
+              "parletimu",
+              "parlaimi",
+              "parletimi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2pl": {
+            "form": "parlaste",
+            "variants": [
+              "parleste",
+              "parlasti",
+              "parlesti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3pl": {
+            "form": "parlonu",
+            "variants": [
+              "parletenu",
+              "parloni",
+              "parletini"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Preterite",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "parleraghju",
+            "variants": [
+              "parlaraghju"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2sg": {
+            "form": "parlerai",
+            "variants": [
+              "parlerè",
+              "parlarai",
+              "parlarè"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3sg": {
+            "form": "parlerà",
+            "variants": [
+              "parlarà"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "1pl": {
+            "form": "parleremu",
+            "variants": [
+              "parlaremu",
+              "parlaremi"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2pl": {
+            "form": "parlerete",
+            "variants": [
+              "parlareti"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3pl": {
+            "form": "parleranu",
+            "variants": [
+              "parlarani"
+            ],
+            "phonemes": [],
+            "source_label": "Indicative Future",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "parli",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2sg": {
+            "form": "parli",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3sg": {
+            "form": "parli",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "1pl": {
+            "form": "parlimu",
+            "variants": [
+              "parlimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2pl": {
+            "form": "parlite",
+            "variants": [
+              "parliti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3pl": {
+            "form": "parlinu",
+            "variants": [
+              "parlini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Present",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "parlassi",
+            "variants": [
+              "parlessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2sg": {
+            "form": "parlassi",
+            "variants": [
+              "parlessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3sg": {
+            "form": "parlassi",
+            "variants": [
+              "parlessi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "1pl": {
+            "form": "parlassimu",
+            "variants": [
+              "parlessimu",
+              "parlassimi",
+              "parlessimi"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2pl": {
+            "form": "parlassite",
+            "variants": [
+              "parlessite",
+              "parlassiti",
+              "parlessiti"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3pl": {
+            "form": "parlassinu",
+            "variants": [
+              "parlessinu",
+              "parlassini",
+              "parlessini"
+            ],
+            "phonemes": [],
+            "source_label": "Subjunctive Imperfect",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "parleria",
+            "variants": [
+              "parlerebbi",
+              "parlariu",
+              "parlaria",
+              "parlarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2sg": {
+            "form": "parlerii",
+            "variants": [
+              "parleristi",
+              "parleresti",
+              "parlarii",
+              "parlaristi",
+              "parlaresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3sg": {
+            "form": "parleria",
+            "variants": [
+              "parlerebbe",
+              "parlaria",
+              "parlarebbi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "1pl": {
+            "form": "parleriamu",
+            "variants": [
+              "parlerebbimu",
+              "parlariamu",
+              "parlariami",
+              "parlarebbimu",
+              "parlarebbimi"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2pl": {
+            "form": "parleriate",
+            "variants": [
+              "parleriste",
+              "parlereste",
+              "parlariati",
+              "parlaristi",
+              "parlaresti"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "3pl": {
+            "form": "parlerianu",
+            "variants": [
+              "parlerebbenu",
+              "parlariani",
+              "parlarebbini"
+            ],
+            "phonemes": [],
+            "source_label": "Conditional",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "parla",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "1pl": {
+            "form": "parlemu",
+            "variants": [
+              "parlemi"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          },
+          "2pl": {
+            "form": "parlate",
+            "variants": [
+              "parleti"
+            ],
+            "phonemes": [],
+            "source_label": "Imperative",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=129&T1=parl%C3%A0"
+          }
+        }
+      }
+    }
+  ]
+}

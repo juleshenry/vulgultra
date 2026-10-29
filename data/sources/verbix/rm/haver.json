@@ -1,0 +1,907 @@
+{
+  "lect": "rm",
+  "lemma": "haver",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/roh/haver/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=haver",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 56,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 2,
+            "form": "hai"
+          },
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 2,
+            "form": "vai"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "has"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "ha"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "havein"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 2,
+            "form": "vein"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "haveis"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 2,
+            "form": "veis"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 2,
+            "form": "han"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 2,
+            "form": "hagi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "hagies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "hagi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "haveien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "haveies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 2,
+            "form": "hagien"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevel"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)veva"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevan"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevas"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevan"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vevi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevien"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnel a haver"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegns a haver"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegn a haver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnin a haver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnis a haver"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnan a haver"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegni a haver"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnies a haver"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegni a haver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnîen a haver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnîes a haver"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnien a haver"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "hagies"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 2,
+            "form": "(ha)veies"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "hai giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "has giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ha giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vein giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)veis giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "han giu"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "hagi giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "hagies giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "hagi giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)veien giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)veies giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "hagien giu"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevel giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevas giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)veva giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevan giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevas giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevan giu"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevi giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevies giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vevi giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevien giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevies giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevien giu"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnel ad haver giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegns ad haver giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegn ad haver giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnin ad haver giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnis ad haver giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnan ad haver giu"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegni ad haver giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnies ad haver giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegni ad haver giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnîen ad haver giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnîes ad haver giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnien ad haver giu"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haver"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "havend"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "giu"
+          }
+        ]
+      },
+      "41": {
+        "name": "Conditional Present, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vess"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vesses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vess"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessen"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vesses"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessen"
+          }
+        ]
+      },
+      "42": {
+        "name": "Conditional Perfect, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vess giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vesses giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vess giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessen giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vesses giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessen giu"
+          }
+        ]
+      },
+      "43": {
+        "name": "Conditional Present, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vessi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vessies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vessi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vessies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessien"
+          }
+        ]
+      },
+      "44": {
+        "name": "Conditional Perfect, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vessi giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vessies giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vessi giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessien giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vessies giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessien giu"
+          }
+        ]
+      },
+      "45": {
+        "name": "Conditional Future, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegness a haver"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnesses a haver"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegness a haver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessen a haver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnesses a haver"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessen a haver"
+          }
+        ]
+      },
+      "46": {
+        "name": "Conditional Future Perfect, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegness ad haver giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnesses ad haver giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegness ad haver giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessen ad haver giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnesses ad haver giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessen ad haver giu"
+          }
+        ]
+      },
+      "47": {
+        "name": "Conditional Future, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnessi a haver"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnessies a haver"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegnessi a haver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessien a haver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnessies a haver"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessien a haver"
+          }
+        ]
+      },
+      "48": {
+        "name": "Conditional Future Perfect, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnessi ad haver giu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnessies ad haver giu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegnessi ad haver giu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessien ad haver giu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnessies ad haver giu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessien ad haver giu"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "haver"
+    ],
+    "examples": null,
+    "verb": "haver"
+  }
+}

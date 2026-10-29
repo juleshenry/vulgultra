@@ -1,0 +1,889 @@
+{
+  "lect": "rm",
+  "lemma": "chaminer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/roh/chaminer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=chaminer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 56,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "chaminel"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "chaminas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "chamina"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "chaminein"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "chamineis"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "chaminan"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "chamini"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "chaminies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "chamini"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "chamineien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "chamineies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "chaminien"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "chaminavel"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "chaminavas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "chaminava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "chaminavan"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "chaminavas"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "chaminavan"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "chaminevi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "chaminevies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "chaminevi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "chaminevien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "chaminevies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "chaminevien"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnel a chaminer"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegns a chaminer"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegn a chaminer"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnin a chaminer"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnis a chaminer"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnan a chaminer"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegni a chaminer"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnies a chaminer"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegni a chaminer"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnîen a chaminer"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnîes a chaminer"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnien a chaminer"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "chamina"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "chaminei"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "hai chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "has chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ha chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vein chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)veis chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "han chaminiu"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "hagi chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "hagies chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "hagi chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)veien chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)veies chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "hagien chaminiu"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevel chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevas chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)veva chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevan chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevas chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevan chaminiu"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevi chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevies chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vevi chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevien chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevies chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevien chaminiu"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnel ad haver chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegns ad haver chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegn ad haver chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnin ad haver chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnis ad haver chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnan ad haver chaminiu"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegni ad haver chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnies ad haver chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegni ad haver chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnîen ad haver chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnîes ad haver chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnien ad haver chaminiu"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "chaminer"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "chaminend"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "chaminiu"
+          }
+        ]
+      },
+      "41": {
+        "name": "Conditional Present, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "chaminess"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "chaminesses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "chaminess"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "chaminessen"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "chaminesses"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "chaminessen"
+          }
+        ]
+      },
+      "42": {
+        "name": "Conditional Perfect, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vess chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vesses chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vess chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessen chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vesses chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessen chaminiu"
+          }
+        ]
+      },
+      "43": {
+        "name": "Conditional Present, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "chaminessi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "chaminessies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "chaminessi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "chaminessien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "chaminessies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "chaminessien"
+          }
+        ]
+      },
+      "44": {
+        "name": "Conditional Perfect, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vessi chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vessies chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vessi chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessien chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vessies chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessien chaminiu"
+          }
+        ]
+      },
+      "45": {
+        "name": "Conditional Future, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegness a chaminer"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnesses a chaminer"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegness a chaminer"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessen a chaminer"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnesses a chaminer"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessen a chaminer"
+          }
+        ]
+      },
+      "46": {
+        "name": "Conditional Future Perfect, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegness ad haver chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnesses ad haver chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegness ad haver chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessen ad haver chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnesses ad haver chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessen ad haver chaminiu"
+          }
+        ]
+      },
+      "47": {
+        "name": "Conditional Future, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnessi a chaminer"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnessies a chaminer"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegnessi a chaminer"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessien a chaminer"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnessies a chaminer"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessien a chaminer"
+          }
+        ]
+      },
+      "48": {
+        "name": "Conditional Future Perfect, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnessi ad haver chaminiu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnessies ad haver chaminiu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegnessi ad haver chaminiu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessien ad haver chaminiu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnessies ad haver chaminiu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessien ad haver chaminiu"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "haver"
+    ],
+    "examples": null,
+    "verb": "chaminer"
+  }
+}

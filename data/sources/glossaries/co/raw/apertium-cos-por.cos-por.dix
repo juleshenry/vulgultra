@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+   <!-- Define the alphabet below. -->
+  <alphabet>aAáÁăảạÆbBcCčdDÐeEéèễệfFgGhHiIíjJkKlLmMnNoOóöớpPqQrRsSšştTŢuUúüưvVwWxXyYzZ</alphabet>
+
+  <sdefs>
+    <!-- Define symbol definitions within <sdef> here. -->
+    <sdef n="n"               c="Noun"/>
+    <sdef n="np"              c="Proper noun"/>
+    <sdef n="vblex"           c="Verb, lexical"/>
+    <sdef n="vbmod"           c="Modal verb"/>
+    <sdef n="vaux"            c="Auxiliary verb"/>
+    <sdef n="vbser"           c="'To be' verb"/>
+    <sdef n="vbhaver"         c="'To have' verb"/>
+    <sdef n="cnjsub"          c="Subordinating conjunction"/>
+    <sdef n="cnjcoo"          c="Co-ordinating conjunction"/>
+    <sdef n="cnjadv"          c="Adverbial conjunction"/>
+    <sdef n="pr"              c="Preposition"/>
+    <sdef n="adv"             c="Adverb"/>
+    <sdef n="ij"              c="Interjection"/>
+    <sdef n="adj"             c="Adjective"/>
+    <sdef n="prn"             c="Pronoun"/>
+
+    <sdef n="attr"            c="Attributive"/>
+    <sdef n="top"             c="Toponym"/>
+    <sdef n="ant"             c="Anthroponym"/>
+    <sdef n="cog"             c="Cognomen"/>
+    <sdef n="org"             c="Organisation"/>
+    <sdef n="al"              c="Altres / misc proper nouns"/>
+
+    <sdef n="pers"            c="Personal pronoun"/>
+    <sdef n="ref"             c="Reflexive pronoun"/>
+    <sdef n="res"             c="Reciprocal pronoun"/>
+
+    <sdef n="det"             c="Determiner"/>
+    <sdef n="pos"             c="Possessive"/>
+
+    <sdef n="p1"              c="1st person"/>
+    <sdef n="p2"              c="2nd person"/>
+    <sdef n="p3"              c="3rd person"/>
+
+    <sdef n="nt"              c="Neuter"/>
+    <sdef n="ut"              c="Utrum"/>
+    <sdef n="f"               c="Feminine"/>
+    <sdef n="m"               c="Masculine"/>
+    <sdef n="un"              c="No gender"/>
+    <sdef n="mf"              c="Masculine or Feminine"/>
+
+    <sdef n="sg"              c="Singular"/>
+    <sdef n="du"              c="Dual"/>
+    <sdef n="pl"              c="Plural"/>
+    <sdef n="sp"              c="Singular / plural"/>
+
+    <sdef n="ind"             c="Indefinite"/>
+    <sdef n="def"             c="Definite"/>
+
+    <sdef n="nom"             c="Nominative"/>
+    <sdef n="acc"             c="Accusative"/>
+    <sdef n="gen"             c="Genitive"/>
+
+    <sdef n="dem"             c="Demonstrative"/>
+    <sdef n="itg"             c="Question word / interrogative"/>
+    <sdef n="qnt"             c="Quantifier"/>
+    <sdef n="neg"             c="Negative"/>
+    <sdef n="emph"            c="Emphatic"/>
+
+    <sdef n="inf"             c="Infinitive"/>
+    <sdef n="pres"            c="Present"/>
+    <sdef n="imp"             c="Imperative"/>
+    <sdef n="pret"            c="Preterite"/>
+    <sdef n="pp"              c="Perfect participle"/>
+    <sdef n="pprs"            c="Present participle"/>
+    <sdef n="pasv"            c="Passive"/>
+    <sdef n="actv"            c="Active voice"/>
+
+    <sdef n="sint"            c="Synthetic (of adjectives)"/>
+    <sdef n="pst"             c="Positive"/>
+    <sdef n="comp"            c="Comparative"/>
+    <sdef n="sup"             c="Superlative"/>
+
+    <sdef n="ord"             c="Ordinal"/>
+    <sdef n="acr"             c="Acronym"/>
+    <sdef n="unc"             c="Uncountable"/>
+
+    <sdef n="num"             c="Numeral"/>
+    <sdef n="sent"            c="Sentence end"/>
+    <sdef n="cm"              c="Comma"/>
+    <sdef n="apos"            c="Apostrophe"/>
+    <sdef n="guio"            c="Dash"/>
+    <sdef n="lpar"            c="Left parenthesis"/>
+    <sdef n="rpar"            c="Right parenthesis"/>
+    <sdef n="lquot"           c="Left quote"/>
+    <sdef n="rquot"           c="Right quote"/>
+
+    <sdef n="compound-only-L" c="May only be the left-side of a compound"/>
+    <sdef n="compound-R"      c="May be the right-side of a compound, or a full word"/>
+  </sdefs>
+
+   <section id="main" type="standard">
+      <!-- Define entries within <e> here. -->
+      <e><p><l>passaghju<s n="n"/><s n="m"/></l><r>passagem<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>libru<s n="n"/><s n="m"/></l><r>livro<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>viaghju<s n="n"/><s n="m"/></l><r>viagem<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>religione<s n="n"/><s n="f"/></l><r>religião<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>fruttu<s n="n"/><s n="m"/></l><r>fruta<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>numaru<s n="n"/><s n="m"/></l><r>número<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>legnu<s n="n"/><s n="m"/></l><r>madeira<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>cusinu<s n="n"/><s n="m"/></l><r>cosseno<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>seculu<s n="n"/><s n="m"/></l><r>século<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>elementu<s n="n"/><s n="m"/></l><r>elemento<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>trasportu<s n="n"/><s n="m"/></l><r>transporte<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>triangulu<s n="n"/><s n="m"/></l><r>triângulo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>catalogu<s n="n"/><s n="m"/></l><r>catálogo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>portu<s n="n"/><s n="m"/></l><r>porta<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>nomu<s n="n"/><s n="m"/></l><r>nome<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>documentu<s n="n"/><s n="m"/></l><r>documento<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>urbanisimu<s n="n"/><s n="m"/></l><r>urbanismo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>capitalismu<s n="n"/><s n="m"/></l><r>capitalismo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>cunfurmisimu<s n="n"/><s n="m"/></l><r>longevidade<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>postu<s n="n"/><s n="m"/></l><r>lugar<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>turisimu<s n="n"/><s n="m"/></l><r>turismo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>santuariu<s n="n"/><s n="m"/></l><r>santuário<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>rapimentu<s n="n"/><s n="m"/></l><r>sequestro<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>parsunaghju<s n="n"/><s n="m"/></l><r>personagem<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>museiu<s n="n"/><s n="m"/></l><r>museu<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>fundatore<s n="n"/><s n="m"/></l><r>fundador<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>fiancu<s n="n"/><s n="m"/></l><r>próximo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>filmu<s n="n"/><s n="m"/></l><r>filme<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>cuntinutu<s n="n"/><s n="m"/></l><r>conteúdo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>coddu<s n="n"/><s n="m"/></l><r>pescoço<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>problemu<s n="n"/><s n="m"/></l><r>problema<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>zafranu<s n="n"/><s n="m"/></l><r>tosse<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>termine<s n="n"/><s n="m"/></l><r>final<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>sughjettu<s n="n"/><s n="m"/></l><r>sujeito<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>stradellu<s n="n"/><s n="m"/></l><r>caminho<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>aspettu<s n="n"/><s n="m"/></l><r>aspecto<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>stagnu<s n="n"/><s n="m"/></l><r>lagoa<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>metallu<s n="n"/><s n="m"/></l><r>metal<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>prufilu<s n="n"/><s n="m"/></l><r>perfil<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>suldatu<s n="n"/><s n="m"/></l><r>soldado<s n="n"/><s n="mf"/></r></p></e>
+      <e><p><l>prufilu<s n="n"/><s n="m"/></l><r>perfil<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>prubitariu<s n="n"/><s n="m"/></l><r>roupa<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>periculu<s n="n"/><s n="m"/></l><r>perigo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>parlamentariu<s n="n"/><s n="m"/></l><r>parlamentar<s n="n"/><s n="mf"/></r></p></e>
+      <e><p><l>sensu<s n="n"/><s n="m"/></l><r>sentido<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>nucleu<s n="n"/><s n="m"/></l><r>núcleo<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>vulcanu<s n="n"/><s n="m"/></l><r>vulcão<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>statutu<s n="n"/><s n="m"/></l><r>estatuto<s n="n"/><s n="m"/></r></p></e>
+      <e><p><l>avvinimentu<s n="n"/><s n="m"/></l><r>aceitação<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>anglismu<s n="n"/><s n="m"/></l><r>anglicismo<s n="n"/><s n="m"/></r></p></e>
+       
+
+
+      <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+      <e><re>,</re>          <p><l><s n="cm"/></l>  <r><s n="cm"/></r></p></e>
+   </section>
+</dictionary>
+
+<!--
+Resources:
+    https://wiki.apertium.org/wiki/Bilingual_dictionary
+    https://wiki.apertium.org/wiki/Apertium_New_Language_Pair_HOWTO#Bilingual_dictionary
+-->

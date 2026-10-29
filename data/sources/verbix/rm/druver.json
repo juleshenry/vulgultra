@@ -1,0 +1,889 @@
+{
+  "lect": "rm",
+  "lemma": "druver",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/roh/druver/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=56&T1=druver",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 56,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "druvel"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "druvas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "druva"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "druvein"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "druveis"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "druvan"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "druvi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "druvies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "druvi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "druveien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "druveies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "druvien"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "druvavel"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "druvavas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "druvava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "druvavan"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "druvavas"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "druvavan"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "druvevi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "druvevies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "druvevi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "druvevien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "druvevies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "druvevien"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnel a druver"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegns a druver"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegn a druver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnin a druver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnis a druver"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnan a druver"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegni a druver"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnies a druver"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegni a druver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnîen a druver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnîes a druver"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnien a druver"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "druva"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "druvei"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "hai druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "has druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ha druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vein druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)veis druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "han druviu"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "hagi druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "hagies druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "hagi druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)veien druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)veies druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "hagien druviu"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevel druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevas druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)veva druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevan druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevas druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevan druviu"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vevi druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vevies druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vevi druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vevien druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vevies druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vevien druviu"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnel ad haver druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegns ad haver druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegn ad haver druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnin ad haver druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnis ad haver druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnan ad haver druviu"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegni ad haver druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnies ad haver druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegni ad haver druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnîen ad haver druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnîes ad haver druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnien ad haver druviu"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "druver"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "druvend"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "druviu"
+          }
+        ]
+      },
+      "41": {
+        "name": "Conditional Present, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "druvess"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "druvesses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "druvess"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "druvessen"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "druvesses"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "druvessen"
+          }
+        ]
+      },
+      "42": {
+        "name": "Conditional Perfect, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vess druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vesses druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vess druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessen druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vesses druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessen druviu"
+          }
+        ]
+      },
+      "43": {
+        "name": "Conditional Present, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "druvessi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "druvessies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "druvessi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "druvessien"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "druvessies"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "druvessien"
+          }
+        ]
+      },
+      "44": {
+        "name": "Conditional Perfect, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "(ha)vessi druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "(ha)vessies druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "(ha)vessi druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "(ha)vessien druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "(ha)vessies druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "(ha)vessien druviu"
+          }
+        ]
+      },
+      "45": {
+        "name": "Conditional Future, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegness a druver"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnesses a druver"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegness a druver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessen a druver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnesses a druver"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessen a druver"
+          }
+        ]
+      },
+      "46": {
+        "name": "Conditional Future Perfect, direct",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegness ad haver druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnesses ad haver druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegness ad haver druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessen ad haver druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnesses ad haver druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessen ad haver druviu"
+          }
+        ]
+      },
+      "47": {
+        "name": "Conditional Future, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnessi a druver"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnessies a druver"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegnessi a druver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessien a druver"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnessies a druver"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessien a druver"
+          }
+        ]
+      },
+      "48": {
+        "name": "Conditional Future Perfect, indirect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jeu",
+            "use": 0,
+            "form": "vegnessi ad haver druviu"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "vegnessies ad haver druviu"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "vegnessi ad haver druviu"
+          },
+          {
+            "id": 4,
+            "pronoun": "nus",
+            "use": 0,
+            "form": "vegnessien ad haver druviu"
+          },
+          {
+            "id": 5,
+            "pronoun": "vus",
+            "use": 0,
+            "form": "vegnessies ad haver druviu"
+          },
+          {
+            "id": 6,
+            "pronoun": "els",
+            "use": 0,
+            "form": "vegnessien ad haver druviu"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "haver"
+    ],
+    "examples": null,
+    "verb": "druver"
+  }
+}

@@ -1,0 +1,973 @@
+{
+  "lect": "es",
+  "lemma": "haber",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/spa/haber/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=1&T1=haber",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 1,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "he"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "has"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "ha"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hay"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hemos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 3,
+            "form": "habemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habéis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "han"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "haya"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hayas"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "haya"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hayamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hayáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hayan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "había"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habías"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "había"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habíamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habíais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habían"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hubiera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hubieras"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hubiera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hubiéramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hubierais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hubieran"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hubiese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hubieses"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hubiese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hubiésemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hubieseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hubiesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hube"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hubiste"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hubo"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hubimos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hubisteis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hubieron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "habré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "habrás"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "habrá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "habremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "habréis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "habrán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hubiere"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hubieres"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hubiere"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hubiéremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hubiereis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hubieren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "habría"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "habrías"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "habría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "habríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "habríais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "habrían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "he"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hé"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "haya"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hayamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habed"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hayan"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "has habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "ha habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hemos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habéis habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "han habido"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haya habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hayas habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "haya habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hayamos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hayáis habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hayan habido"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "había habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habías habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "había habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habíamos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habíais habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habían habido"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiera habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieras habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiera habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéramos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubierais habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieran habido"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiese habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieses habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiese habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiésemos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubieseis habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubiesen habido"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hube habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubiste habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubo habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubimos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubisteis habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieron habido"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrás habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habrá habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habremos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habréis habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrán habido"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiere habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieres habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiere habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéremos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubiereis habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieren habido"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría habido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrías habido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habría habido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habríamos habido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habríais habido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrían habido"
+          }
+        ]
+      },
+      "18": {
+        "name": "Negative Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "no hayas"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 2,
+            "form": "no haya"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 2,
+            "form": "no hayamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 2,
+            "form": "no hayáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 2,
+            "form": "no hayan"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habiendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habido"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber habido"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habiendo habido"
+          }
+        ]
+      },
+      "60": {
+        "name": "Indicative Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "General",
+            "use": 0,
+            "form": "habés"
+          },
+          {
+            "id": 2,
+            "pronoun": "Venezuelan",
+            "use": 0,
+            "form": "habéis"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 2,
+            "form": "habís"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 2,
+            "form": "hai"
+          }
+        ]
+      },
+      "61": {
+        "name": "Subjunctive Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Central America, Bolivia",
+            "use": 2,
+            "form": "hayás"
+          },
+          {
+            "id": 2,
+            "pronoun": "Río de la Plata region",
+            "use": 2,
+            "form": "hayas"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 2,
+            "form": "hayái"
+          },
+          {
+            "id": 4,
+            "pronoun": "Venezuela, Panama",
+            "use": 2,
+            "form": "hayáis"
+          }
+        ]
+      },
+      "68": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habé"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "-Porque, ¿cómo queréis vos que no me tenga confuso el qué dirá el antiguo legislador que llaman vulgo cuando vea que, al cabo de tantos años como <b>ha</b> que duermo en el silencio del olvido, salgo ahora, con todos mis años a cuestas, con una leyenda seca como un esparto, ajena de invención, menguada de estilo, pobre de concetos y falta de toda [...]",
+      "[...]  y elocuentes ? ¡Pues qué, cuando citan la Divina Escritura ! No dirán sino que son unos santos Tomases y otros doctores de la Iglesia; guardando en esto un decoro tan ingenioso, que en un renglón <b>han</b> pintado un enamorado destraído y en otro hacen un sermoncico cristiano, que es un contento y un regalo oílle o leelle. De todo esto ha de carecer mi libro, porque ni tengo qué acotar en el margen, [...]",
+      " Nuestro inesperado choque no <b>había</b> tenido consecuencias de consideración, si se exceptúa la abolladura parcial de cierto sombrero de paja puesto en la extremidad de una cabeza de mujer inglesa, que tras de mi amigo intentaba subir, y [...]",
+      "-Por Dios, hermano, que agora me acabo de desengañar de un engaño en que <b>he</b> estado todo el mucho tiempo que <b>ha</b> que os conozco, en el cual siempre os <b>he</b> tenido por discreto y prudente en todas vuestras aciones. Pero agora veo que estáis tan lejos de serlo como [...]",
+      "-Por Dios, hermano, que agora me acabo de desengañar de un engaño en que <b>he</b> estado todo el mucho tiempo que <b>ha</b> que os conozco, en el cual siempre os <b>he</b> tenido por discreto y prudente en todas vuestras aciones. Pero agora veo que estáis tan lejos de serlo como lo está el cielo de la tierra. ¿Cómo que [...]",
+      "-Por Dios, hermano, que agora me acabo de desengañar de un engaño en que <b>he</b> estado todo el mucho tiempo que <b>ha</b> que os conozco, en el cual siempre os <b>he</b> tenido por discreto y prudente en todas vuestras aciones. Pero agora veo que estáis tan lejos de serlo como lo está el cielo de la tierra. ¿Cómo que es posible que cosas de tan poco momento y tan [...]",
+      "[...]  vos mesmo toméis algún trabajo en hacerlos, y después los podéis bautizar y poner el nombre que quisiéredes, ahijándolos al Preste Juan de las Indias o al Emperador de Trapisonda, de quien yo sé que <b>hay</b> noticia que fueron famosos poetas; y cuando no lo <b>hayan</b> sido y hubiere algunos pedantes y bachilleres que por detrás os muerdan y murmuren desta verdad, no se os dé dos maravedís; porque, ya [...]",
+      "[...]  bautizar y poner el nombre que quisiéredes, ahijándolos al Preste Juan de las Indias o al Emperador de Trapisonda, de quien yo sé que <b>hay</b> noticia que fueron famosos poetas; y cuando no lo <b>hayan</b> sido y hubiere algunos pedantes y bachilleres que por detrás os muerdan y murmuren desta verdad, no se os dé dos maravedís; porque, ya que os averigüen la mentira, no os han de cortar la mano con [...]",
+      "[...]  si no queréis andaros por tierras extrañas, en vuestra casa tenéis a Fonseca, Del amor de Dios, donde se cifra todo lo que vos y el más ingenioso acertare a desear en tal materia. En resolución, no <b>hay</b> más sino que vos procuréis nombrar estos nombres, o tocar estas historias en la vuestra, que aquí <b>he</b> dicho, y dejadme a mí el cargo de poner las anotaciones y acotaciones; que yo os voto a [...]",
+      "[...]  todo lo que vos y el más ingenioso acertare a desear en tal materia. En resolución, no <b>hay</b> más sino que vos procuréis nombrar estos nombres, o tocar estas historias en la vuestra, que aquí <b>he</b> dicho, y dejadme a mí el cargo de poner las anotaciones y acotaciones; que yo os voto a tal de llenaros las márgenes y de gastar cuatro pliegos en el fin del libro.",
+      "Os doy 40 por el oro y tres por el cebo. Yo <b>había</b> pensado en 50.",
+      "Me parece increíble que <b>haya</b> logrado aterrizar esa chatarra",
+      "Me imagino que a Terry le <b>hubiese</b> gustado",
+      "¿Cuántas veces te <b>he</b> dicho que no hablamos español ?",
+      "que se <b>ha</b> pasado por el forro el que se <b>haya</b> comido mi plato."
+    ],
+    "verb": "haber"
+  }
+}

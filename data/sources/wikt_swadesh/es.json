@@ -1,0 +1,666 @@
+{
+ "lect": "es",
+ "title": "Module:Swadesh/data/es",
+ "revid": 88706918,
+ "timestamp": "2025-12-23T17:55:47Z",
+ "cells": {
+  "1": [
+   "yo"
+  ],
+  "2": [
+   "tú",
+   "vos",
+   "usted"
+  ],
+  "3": [
+   "él",
+   "ella"
+  ],
+  "4": [
+   "nosotros",
+   "nosotras"
+  ],
+  "5": [
+   "vosotros",
+   "vosotras",
+   "ustedes"
+  ],
+  "6": [
+   "ellos",
+   "ellas"
+  ],
+  "7": [
+   "este"
+  ],
+  "8": [
+   "ese",
+   "aquel"
+  ],
+  "9": [
+   "aquí",
+   "acá"
+  ],
+  "10": [
+   "ahí"
+  ],
+  "11": [
+   "quién"
+  ],
+  "12": [
+   "qué"
+  ],
+  "13": [
+   "dónde"
+  ],
+  "14": [
+   "cuándo"
+  ],
+  "15": [
+   "cómo"
+  ],
+  "16": [
+   "no"
+  ],
+  "17": [
+   "todo"
+  ],
+  "18": [
+   "mucho"
+  ],
+  "19": [
+   "alguno"
+  ],
+  "20": [
+   "poco"
+  ],
+  "21": [
+   "otro"
+  ],
+  "22": [
+   "uno"
+  ],
+  "23": [
+   "dos"
+  ],
+  "24": [
+   "tres"
+  ],
+  "25": [
+   "cuatro"
+  ],
+  "26": [
+   "cinco"
+  ],
+  "27": [
+   "grande"
+  ],
+  "28": [
+   "largo"
+  ],
+  "29": [
+   "ancho"
+  ],
+  "30": [
+   "grueso"
+  ],
+  "31": [
+   "pesado"
+  ],
+  "32": [
+   "pequeño"
+  ],
+  "33": [
+   "corto"
+  ],
+  "34": [
+   "estrecho",
+   "angosto"
+  ],
+  "35": [
+   "delgado",
+   "flaco"
+  ],
+  "36": [
+   "mujer"
+  ],
+  "37": [
+   "varón"
+  ],
+  "38": [
+   "hombre"
+  ],
+  "39": [
+   "niño"
+  ],
+  "40": [
+   "esposa",
+   "mujer"
+  ],
+  "41": [
+   "esposo",
+   "marido"
+  ],
+  "42": [
+   "madre"
+  ],
+  "43": [
+   "padre"
+  ],
+  "44": [
+   "animal"
+  ],
+  "45": [
+   "pez",
+   "pescado"
+  ],
+  "46": [
+   "pájaro"
+  ],
+  "47": [
+   "perro"
+  ],
+  "48": [
+   "piojo"
+  ],
+  "49": [
+   "serpiente",
+   "víbora",
+   "culebra"
+  ],
+  "50": [
+   "gusano"
+  ],
+  "51": [
+   "árbol"
+  ],
+  "52": [
+   "bosque"
+  ],
+  "53": [
+   "palo"
+  ],
+  "54": [
+   "fruta"
+  ],
+  "55": [
+   "semilla"
+  ],
+  "56": [
+   "hoja"
+  ],
+  "57": [
+   "raíz"
+  ],
+  "58": [
+   "corteza"
+  ],
+  "59": [
+   "flor"
+  ],
+  "60": [
+   "hierba",
+   "grama"
+  ],
+  "61": [
+   "cuerda"
+  ],
+  "62": [
+   "piel"
+  ],
+  "63": [
+   "carne"
+  ],
+  "64": [
+   "sangre"
+  ],
+  "65": [
+   "hueso"
+  ],
+  "66": [
+   "grasa"
+  ],
+  "67": [
+   "huevo"
+  ],
+  "68": [
+   "cuerno"
+  ],
+  "69": [
+   "cola"
+  ],
+  "70": [
+   "pluma"
+  ],
+  "71": [
+   "pelo",
+   "cabello"
+  ],
+  "72": [
+   "cabeza"
+  ],
+  "73": [
+   "oreja"
+  ],
+  "74": [
+   "ojo"
+  ],
+  "75": [
+   "nariz"
+  ],
+  "76": [
+   "boca"
+  ],
+  "77": [
+   "diente"
+  ],
+  "78": [
+   "lengua"
+  ],
+  "79": [
+   "uña"
+  ],
+  "80": [
+   "pie"
+  ],
+  "81": [
+   "pierna"
+  ],
+  "82": [
+   "rodilla"
+  ],
+  "83": [
+   "mano"
+  ],
+  "84": [
+   "ala"
+  ],
+  "85": [
+   "barriga",
+   "vientre"
+  ],
+  "86": [
+   "tripas"
+  ],
+  "87": [
+   "cuello"
+  ],
+  "88": [
+   "espalda"
+  ],
+  "89": [
+   "pecho"
+  ],
+  "90": [
+   "corazón"
+  ],
+  "91": [
+   "hígado"
+  ],
+  "92": [
+   "beber"
+  ],
+  "93": [
+   "comer"
+  ],
+  "94": [
+   "morder"
+  ],
+  "95": [
+   "chupar"
+  ],
+  "96": [
+   "escupir"
+  ],
+  "97": [
+   "vomitar"
+  ],
+  "98": [
+   "soplar"
+  ],
+  "99": [
+   "respirar"
+  ],
+  "100": [
+   "reír"
+  ],
+  "101": [
+   "ver"
+  ],
+  "102": [
+   "oír"
+  ],
+  "103": [
+   "saber"
+  ],
+  "104": [
+   "pensar"
+  ],
+  "105": [
+   "oler"
+  ],
+  "106": [
+   "temer"
+  ],
+  "107": [
+   "dormir"
+  ],
+  "108": [
+   "vivir"
+  ],
+  "109": [
+   "morir"
+  ],
+  "110": [
+   "matar"
+  ],
+  "111": [
+   "pelear"
+  ],
+  "112": [
+   "cazar"
+  ],
+  "113": [
+   "golpear"
+  ],
+  "114": [
+   "cortar"
+  ],
+  "115": [
+   "partir"
+  ],
+  "116": [
+   "apuñalar"
+  ],
+  "117": [
+   "arañar",
+   "rascar"
+  ],
+  "118": [
+   "cavar",
+   "excavar"
+  ],
+  "119": [
+   "nadar"
+  ],
+  "120": [
+   "volar"
+  ],
+  "121": [
+   "caminar"
+  ],
+  "122": [
+   "venir"
+  ],
+  "123": [
+   "echarse",
+   "yacer",
+   "[[estar]] [[en]] [[el]] [[suelo]]"
+  ],
+  "124": [
+   "sentarse",
+   "[[estar]] [[sentado]]"
+  ],
+  "125": [
+   "levantarse",
+   "estar de pie"
+  ],
+  "126": [
+   "girar",
+   "[[dar]] [[una]] [[vuelta]]"
+  ],
+  "127": [
+   "caer"
+  ],
+  "128": [
+   "dar"
+  ],
+  "129": [
+   "tener"
+  ],
+  "130": [
+   "apretar"
+  ],
+  "131": [
+   "frotar"
+  ],
+  "132": [
+   "lavar"
+  ],
+  "133": [
+   "limpiar"
+  ],
+  "134": [
+   "[[tirar]] [[de]]",
+   "jalar",
+   "halar"
+  ],
+  "135": [
+   "empujar"
+  ],
+  "136": [
+   "tirar",
+   "arrojar"
+  ],
+  "137": [
+   "atar"
+  ],
+  "138": [
+   "coser"
+  ],
+  "139": [
+   "contar"
+  ],
+  "140": [
+   "decir"
+  ],
+  "141": [
+   "cantar"
+  ],
+  "142": [
+   "jugar"
+  ],
+  "143": [
+   "flotar"
+  ],
+  "144": [
+   "fluir"
+  ],
+  "145": [
+   "congelarse",
+   "helar"
+  ],
+  "146": [
+   "hincharse"
+  ],
+  "147": [
+   "sol"
+  ],
+  "148": [
+   "luna"
+  ],
+  "149": [
+   "estrella"
+  ],
+  "150": [
+   "agua"
+  ],
+  "151": [
+   "lluvia"
+  ],
+  "152": [
+   "río"
+  ],
+  "153": [
+   "lago"
+  ],
+  "154": [
+   "mar"
+  ],
+  "155": [
+   "sal"
+  ],
+  "156": [
+   "piedra"
+  ],
+  "157": [
+   "arena"
+  ],
+  "158": [
+   "polvo"
+  ],
+  "159": [
+   "tierra"
+  ],
+  "160": [
+   "nube"
+  ],
+  "161": [
+   "niebla"
+  ],
+  "162": [
+   "cielo"
+  ],
+  "163": [
+   "viento"
+  ],
+  "164": [
+   "nieve"
+  ],
+  "165": [
+   "hielo"
+  ],
+  "166": [
+   "humo"
+  ],
+  "167": [
+   "fuego"
+  ],
+  "168": [
+   "ceniza"
+  ],
+  "169": [
+   "quemar"
+  ],
+  "170": [
+   "camino"
+  ],
+  "171": [
+   "montaña"
+  ],
+  "172": [
+   "rojo"
+  ],
+  "173": [
+   "verde"
+  ],
+  "174": [
+   "amarillo"
+  ],
+  "175": [
+   "blanco"
+  ],
+  "176": [
+   "negro"
+  ],
+  "177": [
+   "noche"
+  ],
+  "178": [
+   "día"
+  ],
+  "179": [
+   "año"
+  ],
+  "180": [
+   "caliente",
+   "cálido"
+  ],
+  "181": [
+   "frío"
+  ],
+  "182": [
+   "lleno"
+  ],
+  "183": [
+   "nuevo"
+  ],
+  "184": [
+   "viejo"
+  ],
+  "185": [
+   "bueno"
+  ],
+  "186": [
+   "malo"
+  ],
+  "187": [
+   "podrido"
+  ],
+  "188": [
+   "sucio"
+  ],
+  "189": [
+   "recto"
+  ],
+  "190": [
+   "redondo"
+  ],
+  "191": [
+   "agudo",
+   "afilado"
+  ],
+  "192": [
+   "sin filo",
+   "desafilado",
+   "embotado",
+   "romo"
+  ],
+  "193": [
+   "liso"
+  ],
+  "194": [
+   "mojado"
+  ],
+  "195": [
+   "seco"
+  ],
+  "196": [
+   "correcto"
+  ],
+  "197": [
+   "cerca"
+  ],
+  "198": [
+   "lejos"
+  ],
+  "199": [
+   "derecha"
+  ],
+  "200": [
+   "izquierda"
+  ],
+  "201": [
+   "en",
+   "a"
+  ],
+  "202": [
+   "en"
+  ],
+  "203": [
+   "con"
+  ],
+  "204": [
+   "y",
+   "e"
+  ],
+  "205": [
+   "si"
+  ],
+  "206": [
+   "porque"
+  ],
+  "207": [
+   "nombre"
+  ]
+ }
+}

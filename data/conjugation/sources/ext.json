@@ -1,0 +1,3181 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "ext",
+    "purpose": "sourced Kaikki/Wiktextract conjugation harvest",
+    "ending_inventories": {
+      "-al": {
+        "conditional": {
+          "endings": {
+            "1sg": "aría",
+            "2sg": "arías",
+            "3sg": "aría",
+            "1pl": "ariamus",
+            "2pl": "ariais",
+            "3pl": "arían"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "aré",
+            "2sg": "arás",
+            "3sg": "ará",
+            "1pl": "aremus",
+            "2pl": "areis",
+            "3pl": "arán"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "ava",
+            "2sg": "avas",
+            "3sg": "ava",
+            "1pl": "avamus",
+            "2pl": "avais",
+            "3pl": "avan"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "u",
+            "2sg": "as",
+            "3sg": "a",
+            "1pl": "amus",
+            "2pl": "ais",
+            "3pl": "an"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "é",
+            "2sg": "asti",
+            "3sg": "ó",
+            "1pl": "émus",
+            "2pl": "aistis",
+            "3pl": "arun"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "subjunctive.future": {
+          "endings": {
+            "1sg": "ari",
+            "2sg": "aris",
+            "3sg": "ari",
+            "1pl": "árimus",
+            "2pl": "aris",
+            "3pl": "arin"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "ara",
+            "2sg": "aras",
+            "3sg": "ara",
+            "1pl": "áramus",
+            "2pl": "árais",
+            "3pl": "aran"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "i",
+            "2sg": "is",
+            "3sg": "i",
+            "1pl": "emus",
+            "2pl": "eis",
+            "3pl": "in"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        }
+      },
+      "-el": {
+        "conditional": {
+          "endings": {
+            "1sg": "ería",
+            "2sg": "erías",
+            "3sg": "ería",
+            "1pl": "eriamus",
+            "2pl": "eriais",
+            "3pl": "erían"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "eré",
+            "2sg": "erás",
+            "3sg": "erá",
+            "1pl": "eremus",
+            "2pl": "ereis",
+            "3pl": "erán"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "ía",
+            "2sg": "ías",
+            "3sg": "ía",
+            "1pl": "iamus",
+            "2pl": "iais",
+            "3pl": "ían"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "u",
+            "2sg": "is",
+            "3sg": "i",
+            "1pl": "emus",
+            "2pl": "eis",
+            "3pl": "in"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "í",
+            "2sg": "isti",
+            "3sg": "ió",
+            "1pl": "imus",
+            "2pl": "istis",
+            "3pl": "ierun"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "subjunctive.future": {
+          "endings": {
+            "1sg": "ieri",
+            "2sg": "ieris",
+            "3sg": "ieri",
+            "1pl": "iérimus",
+            "2pl": "ieris",
+            "3pl": "ierin"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "iera",
+            "2sg": "ieras",
+            "3sg": "iera",
+            "1pl": "ieramus",
+            "2pl": "ierais",
+            "3pl": "ieran"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "a",
+            "2sg": "as",
+            "3sg": "a",
+            "1pl": "amus",
+            "2pl": "ais",
+            "3pl": "an"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        }
+      },
+      "estar": {
+        "conditional": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "é",
+            "2sg": "ás",
+            "3sg": "á",
+            "1pl": "emus",
+            "2pl": "eis",
+            "3pl": "án"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "ava",
+            "2sg": "avas",
+            "3sg": "avas",
+            "1pl": "ávamus",
+            "2pl": "ávais",
+            "3pl": "avan"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "oi",
+            "2sg": "ás",
+            "3sg": "á",
+            "1pl": "amus",
+            "2pl": "áis",
+            "3pl": "án"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i",
+            "2sg": "isti",
+            "3sg": "u",
+            "1pl": "imus",
+            "2pl": "istis",
+            "3pl": "un"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "era",
+            "2sg": "eras",
+            "3sg": "era",
+            "1pl": "éramus",
+            "2pl": "érais",
+            "3pl": "eran"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "é",
+            "2sg": "és",
+            "3sg": "é",
+            "1pl": "emus",
+            "2pl": "eis",
+            "3pl": "én"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "haber": {
+        "conditional": {
+          "endings": {
+            "1sg": "ía",
+            "2sg": "ías",
+            "3sg": "ía",
+            "1pl": "iamus",
+            "2pl": "iais",
+            "3pl": "ían"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "á",
+            "2sg": "ás",
+            "3sg": "ás",
+            "1pl": "emus",
+            "2pl": "eis",
+            "3pl": "án"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "ía",
+            "2sg": "ías",
+            "3sg": "ía",
+            "1pl": "iamus",
+            "2pl": "iais",
+            "3pl": "ían"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "u",
+            "2sg": "isti",
+            "3sg": "u",
+            "1pl": "imus",
+            "2pl": "istis",
+            "3pl": "un"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "era",
+            "2sg": "eras",
+            "3sg": "era",
+            "1pl": "éramus",
+            "2pl": "erais",
+            "3pl": "eran"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "ir": {
+        "conditional": {
+          "endings": {
+            "1sg": "ía",
+            "2sg": "ías",
+            "3sg": "ía",
+            "1pl": "iamus",
+            "2pl": "iais",
+            "3pl": "ían"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "é",
+            "2sg": "ás",
+            "3sg": "ás",
+            "1pl": "emus",
+            "2pl": "eis",
+            "3pl": "án"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i",
+            "2sg": "isti",
+            "3sg": "e",
+            "1pl": "imus",
+            "2pl": "istis",
+            "3pl": "erun"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "era",
+            "2sg": "eras",
+            "3sg": "era",
+            "1pl": "éramus",
+            "2pl": "erais",
+            "3pl": "eran"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "ser": {
+        "conditional": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "é",
+            "2sg": "ás",
+            "3sg": "á",
+            "1pl": "emus",
+            "2pl": "eis",
+            "3pl": "án"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i",
+            "2sg": "isti",
+            "3sg": "e",
+            "1pl": "imus",
+            "2pl": "istis",
+            "3pl": "erun"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "era",
+            "2sg": "eras",
+            "3sg": "era",
+            "1pl": "éramus",
+            "2pl": "érais",
+            "3pl": "eran"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "venir": {
+        "conditional": {
+          "endings": {
+            "1sg": "ía",
+            "2sg": "ías",
+            "3sg": "ía",
+            "1pl": "iamus",
+            "2pl": "iais",
+            "3pl": "ían"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "é",
+            "2sg": "ás",
+            "3sg": "á",
+            "1pl": "emus",
+            "2pl": "eis",
+            "3pl": "án"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "ía",
+            "2sg": "ías",
+            "3sg": "ía",
+            "1pl": "iamus",
+            "2pl": "íais",
+            "3pl": "ían"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "engu",
+            "2sg": "ienis",
+            "3sg": "ien",
+            "1pl": "enimus",
+            "2pl": "enís",
+            "3pl": "ienin"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i",
+            "2sg": "isti",
+            "3sg": "u",
+            "1pl": "imus",
+            "2pl": "istis",
+            "3pl": "un"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "∅",
+            "1pl": "mus",
+            "2pl": "is",
+            "3pl": "n"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      }
+    },
+    "lemma_count": 8,
+    "serialized_paradigms": 8,
+    "max_paradigms_per_class": 40,
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "ext",
+      "lemma": "habral",
+      "class_source": "-al",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:habral",
+        "url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "habru",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "habras",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habra",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "habramus",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habrais",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habran",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "habré",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "habrasti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habró",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "habrémus",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habraistis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habrarun",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "habrava",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "habravas",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habrava",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "habravamus",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habravais",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habravan",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "habraré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "habrarás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habrará",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "habraremus",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habrareis",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habrarán",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "habraría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "habrarías",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habraría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "habrariamus",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habrariais",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habrarían",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "habri",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "habris",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habri",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "habremus",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habreis",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habrin",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "habrara",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "habraras",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habrara",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "habráramus",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habrárais",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habraran",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.future": {
+          "1sg": {
+            "form": "habrari",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "habraris",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habrari",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "habrárimus",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habraris",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habrarin",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "habra",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "habri",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "habrai",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "habrin",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ext",
+      "lemma": "cantal",
+      "class_source": "-al",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:cantal",
+        "url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "cantu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "cantas",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "canta",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "cantamus",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "cantais",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantan",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "canté",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "cantasti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "cantó",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "cantémus",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "cantaistis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantarun",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "cantava",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "cantavas",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "cantava",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "cantavamus",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "cantavais",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantavan",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "cantaré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "cantarás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "cantará",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "cantaremus",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "cantareis",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantarán",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "cantaría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "cantarías",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "cantaría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "cantariamus",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "cantariais",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantarían",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "canti",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "cantis",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "canti",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "cantemus",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "canteis",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantin",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "cantara",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "cantaras",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "cantara",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "cantáramus",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "cantárais",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantaran",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.future": {
+          "1sg": {
+            "form": "cantari",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "cantaris",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "cantari",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "cantárimus",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "cantaris",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantarin",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "canta",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "canti",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "cantai",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "cantin",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ext",
+      "lemma": "comel",
+      "class_source": "-el",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:comel",
+        "url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "comu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "comis",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "comi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "comemus",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comeis",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "comin",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "comí",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "comisti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "comió",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "comimus",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comistis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "comierun",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "comía",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "comías",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "comía",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "comiamus",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comiais",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "comían",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "comeré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "comerás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "comerá",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "comeremus",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comereis",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "comerán",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "comería",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "comerías",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "comería",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "comeriamus",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comeriais",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "comerían",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "coma",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "comas",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "coma",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "comamus",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comais",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "coman",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "comiera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "comieras",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "comiera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "comieramus",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comierais",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "comieran",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.future": {
+          "1sg": {
+            "form": "comieri",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "comieris",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "comieri",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "comiérimus",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comieris",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "comierin",
+            "phonemes": [],
+            "source_label": "subjunctive, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "comi",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "coma",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "comei",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "coman",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ext",
+      "lemma": "estal",
+      "class_source": "estar",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:estal",
+        "url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "estoi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "estás",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "está",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "estamus",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "estáis",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "están",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "estuvi",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "estuvisti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "estuvu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "estuvimus",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "estuvistis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "estuvun",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "estava",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "estavas",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "estavas",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "estávamus",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "estávais",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "estavan",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "estaré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "estarás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "estará",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "estaremus",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "estareis",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "estarán",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "estaría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "estarías",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "estaría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "estaríamus",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "estaríais",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "estarían",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "esté",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "estés",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "esté",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "estemus",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "esteis",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "estén",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "estuviera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "estuvieras",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "estuviera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "estuviéramus",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "estuviérais",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "estuvieran",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ext",
+      "lemma": "avel",
+      "class_source": "haber",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:avel",
+        "url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ei",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "ás",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "á",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "avemus",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "aveis",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "án",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "uvu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "uvisti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "uvu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "uvimus",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "uvistis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "uvun",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "avía",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "avías",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "avía",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "aviamus",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "aviais",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "avían",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "averá",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "averás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "averás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "averemus",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "avereis",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "averán",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "avería",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "averías",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "avería",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "averiamus",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "averiais",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "averían",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "aiga",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "aigas",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "aiga",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "aigamus",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "aigais",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "aigan",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "uviera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "uvieras",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "uviera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "uviéramus",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "uvierais",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "uvieran",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ext",
+      "lemma": "dil",
+      "class_source": "ir",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:dil",
+        "url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "vo",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "vás",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "vá",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "dimus",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "vais",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "ván",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "hui",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "huisti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "hue",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "huimus",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "huistis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "huerun",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "diva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "divas",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "diva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "divamus",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "divais",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "divan",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "diré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "dirás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "dirás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "diremus",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "direis",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "dirán",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "diría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "dirías",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "diría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "diriamus",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "diriais",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "dirían",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "vaiga",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "vaigas",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "vaiga",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "vaigamus",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "vaigais",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "vaigan",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "huera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "hueras",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "huera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "huéramus",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "huerais",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "hueran",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ext",
+      "lemma": "sel",
+      "class_source": "ser",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:sel",
+        "url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "soi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "eris",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "es",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "semus",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "seis",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "son",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "hui",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "huisti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "hue",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "huimus",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "huistis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "huerun",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "era",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "eras",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "era",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "eramus",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "erais",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "eran",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "sedré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "sedrás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "sedrá",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "sedremus",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "sedreis",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "sedrán",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "sedría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "sedrías",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "sedría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "sedríamus",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "sedríais",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "sedrían",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "sea",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "seas",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "sea",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "seamus",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "seais",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "sean",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "huera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "hueras",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "huera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "huéramus",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "huérais",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "hueran",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ext",
+      "lemma": "venir",
+      "class_source": "venir",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:venir",
+        "url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "vengu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "vienis",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "vien",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "venimus",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "venís",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "vienin",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "vini",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "vinisti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "vinu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "vinimus",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "vinistis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "vinun",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "venía",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "venías",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "venía",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "veniamus",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "veníais",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "venían",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "vendré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "vendrás",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "vendrá",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "vendremus",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "vendreis",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "vendrán",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "vendría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "vendrías",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "vendría",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "vendriamus",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "vendriais",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "vendrían",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "venga",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "vengas",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "venga",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "vengamus",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "vengais",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "vengan",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "viniera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2sg": {
+            "form": "vinieras",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3sg": {
+            "form": "viniera",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "1pl": {
+            "form": "vinieramus",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "2pl": {
+            "form": "vinierais",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          },
+          "3pl": {
+            "form": "vinieran",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://github.com/juanro49/recursos_es-ext/tree/master/Conjugacion%20verbos"
+          }
+        }
+      }
+    }
+  ]
+}

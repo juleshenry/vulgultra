@@ -1,0 +1,823 @@
+{
+  "lect": "pt",
+  "lemma": "abjudicar",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/por/abjudicar/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=2&T1=abjudicar",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 2,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abjudico"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudicas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abjudica"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abjudicamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicais"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abjudicam"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "abjudique"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abjudiques"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 1,
+            "form": "abjudique"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "abjudiquemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 1,
+            "form": "abjudiqueis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "abjudiquem"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abjudicava"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudicavas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abjudicava"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abjudicávamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicáveis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abjudicavam"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abjudicasse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudicasses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abjudicasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abjudicássemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicásseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abjudicassem"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 1,
+            "form": "abjudiquei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudicaste"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abjudicou"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abjudicámos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicastes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abjudicaram"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abjudicarei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudicarás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abjudicará"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abjudicaremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicareis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abjudicarão"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abjudicar"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudicares"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abjudicar"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abjudicarmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicardes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abjudicarem"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abjudicaria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudicarias"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abjudicaria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abjudicaríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicaríeis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abjudicariam"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudica"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 1,
+            "form": "abjudique"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 1,
+            "form": "abjudiquemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicai"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 1,
+            "form": "abjudiquem"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "abjudicara"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abjudicaras"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "abjudicara"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "abjudicáramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "abjudicáreis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "abjudicaram"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenho abjudicado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tens abjudicado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tem abjudicado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "temos abjudicado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tendes abjudicado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "têm abjudicado"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenha abjudicado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tenhas abjudicado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tenha abjudicado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tenhamos abjudicado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tenhais abjudicado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tenham abjudicado"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tinha abjudicado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tinhas abjudicado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tinha abjudicado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tínhamos abjudicado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tínheis abjudicado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tinham abjudicado"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tivesse abjudicado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tivesses abjudicado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tivesse abjudicado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivéssemos abjudicado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tivésseis abjudicado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tivessem abjudicado"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "terei abjudicado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terás abjudicado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "terá abjudicado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teremos abjudicado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tereis abjudicado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "terão abjudicado"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tiver abjudicado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tiveres abjudicado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tiver abjudicado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivermos abjudicado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tiverdes abjudicado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tiverem abjudicado"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "teria abjudicado"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terias abjudicado"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "teria abjudicado"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teríamos abjudicado"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "teríeis abjudicado"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "teriam abjudicado"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicar"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicares"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicar"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicarmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicardes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicarem"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicar"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abjudicado"
+          }
+        ]
+      },
+      "28": {
+        "name": "Personal Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter abjudicado"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "teres abjudicado"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter abjudicado"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "termos abjudicado"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "terdes abjudicado"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "terem abjudicado"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "abjudicar"
+  }
+}

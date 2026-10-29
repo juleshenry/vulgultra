@@ -1,0 +1,348 @@
+{
+  "lect": "pms",
+  "lemma": "forgé",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/pms/forg%C3%A9/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=12034&T1=forg%C3%A9",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 12034,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "forgio"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "forge"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "forgia"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "forgiuma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "forge"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "forgio"
+          }
+        ]
+      },
+      "1": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "forgiava"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 1,
+            "form": "forgiave"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "forgiava"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "forgiavo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 1,
+            "form": "forgiave"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "forgiavo"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "forgerai"
+          },
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "forgerö"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "forgeras"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "forgerà"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "forgeruma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "forgereve"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "forgeran"
+          }
+        ]
+      },
+      "3": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "forgerìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "forgerìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "forgerìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "forgerìo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "forgerìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "forgerìo"
+          }
+        ]
+      },
+      "4": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 1,
+            "form": "forgia"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "forgia"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "forgiuma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "forgé"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "forgio"
+          }
+        ]
+      },
+      "5": {
+        "name": "Conjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "forgia"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "forge"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "forgia"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "forgio"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "forge"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "forgio"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "forgeissa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "forgeisse"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "forgeissa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "forgeisso"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "forgeisse"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "forgeisso"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "forgé"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "forgiant"
+          }
+        ]
+      },
+      "22": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "forgiand"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "forgià"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "forgé"
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "lect": "fur",
+  "lemma": "caglâ",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fur/cagl%C3%A2/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=132&T1=cagl%C3%A2",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 132,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "cagli"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "caglis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "cagle"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "caglìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "caglais"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "caglin"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "cagli"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "caglis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "cagli"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "caglìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "caglais"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "caglin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "caglavi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "caglavis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "caglave"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "caglavin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "caglavis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "caglavin"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "caglàs"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "caglassis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "caglàs"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "caglassin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "caglassis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "caglassin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "caglai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "caglaris"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "caglà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "caglarin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "caglaris"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "caglarin"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "caglarai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "caglarâs"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "caglarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "caglarìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "caglarês"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "caglaran"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conditional Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "caglarès"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "caglaressis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "caglarès"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "caglaressin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "caglaressis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "caglaressin"
+          }
+        ]
+      },
+      "7": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "cagle"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "caglìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "caglait"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Present II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "cagledi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "cagledis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "cagledi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "cagledin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "cagledis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "cagledin"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "caglâ"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "caglant"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.m",
+            "use": 0,
+            "form": "caglât"
+          },
+          {
+            "id": 2,
+            "pronoun": "Pl.m",
+            "use": 0,
+            "form": "caglâts"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.f",
+            "use": 0,
+            "form": "caglade"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.f",
+            "use": 0,
+            "form": "cagladis"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "caglâ"
+  }
+}

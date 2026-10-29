@@ -1,0 +1,501 @@
+{
+  "lect": "fur",
+  "lemma": "jessi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fur/jessi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=132&T1=jessi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 132,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jes"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jes"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessîs"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessin"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessîs"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessivi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessivis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessive"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessivin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessivis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessivin"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessìs"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessissis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessìs"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessissin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessissis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessissin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessii"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessiris"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessì"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessirin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessiris"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessirin"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessirai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessirâs"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessirà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessirìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessirês"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessiran"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conditional Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessirès"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessiressis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessirès"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessiressin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessiressis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessiressin"
+          }
+        ]
+      },
+      "7": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jes"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessît"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Present II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessedi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessedis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessedi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessedin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessedis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessedin"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessarai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessarâs"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessarìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessarês"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessaran"
+          }
+        ]
+      },
+      "16": {
+        "name": "Conditional Present II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "jessarès"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "jessaressis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "jessarès"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "jessaressin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "jessaressis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "jessaressin"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "jessî"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "jessint"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.m",
+            "use": 0,
+            "form": "jessût"
+          },
+          {
+            "id": 2,
+            "pronoun": "Pl.m",
+            "use": 0,
+            "form": "jessûts"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.f",
+            "use": 0,
+            "form": "jessude"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.f",
+            "use": 0,
+            "form": "jessudis"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "jessî"
+  }
+}

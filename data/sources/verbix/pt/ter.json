@@ -1,0 +1,839 @@
+{
+  "lect": "pt",
+  "lemma": "ter",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/por/ter/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=2&T1=ter",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 2,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "tenho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "tens"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "tem"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "temos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "tendes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "têm"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "tenha"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "tenhas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "tenha"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "tenhamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "tenhais"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "tenham"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "tinha"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "tinhas"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "tinha"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "tínhamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "tínheis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "tinham"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "tivesse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "tivesses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "tivesse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "tivéssemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "tivésseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "tivessem"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "tive"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "tiveste"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "teve"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "tivemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "tivestes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "tiveram"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "terei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "terá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tereis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "terão"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "tiver"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "tiveres"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "tiver"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "tivermos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "tiverdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "tiverem"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "teria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terias"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "teria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "teríeis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "teriam"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "tem"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "tenha"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "tenhamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "tende"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "tenham"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "tivera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "tiveras"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "tivera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "tivéramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "tivéreis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "tiveram"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenho tido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tens tido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tem tido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "temos tido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tendes tido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "têm tido"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenha tido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tenhas tido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tenha tido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tenhamos tido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tenhais tido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tenham tido"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tinha tido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tinhas tido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tinha tido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tínhamos tido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tínheis tido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tinham tido"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tivesse tido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tivesses tido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tivesse tido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivéssemos tido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tivésseis tido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tivessem tido"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "terei tido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terás tido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "terá tido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teremos tido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tereis tido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "terão tido"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tiver tido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tiveres tido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tiver tido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivermos tido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tiverdes tido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tiverem tido"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "teria tido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terias tido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "teria tido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teríamos tido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "teríeis tido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "teriam tido"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "teres"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "termos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "terdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "terem"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "tendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "tido"
+          }
+        ]
+      },
+      "28": {
+        "name": "Personal Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter tido"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "teres tido"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter tido"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "termos tido"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "terdes tido"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "terem tido"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "[...]  vulgo de homem calado e mettido comsigo.  <i>Dom</i> veiu por ironia, para attribuir -me fumos de fidalgo.  Tudo por estar cochilando !  Tambem não achei melhor titulo para a minha narração; se não <b>tiver</b> outro d'aqui até ao fim do livro, vae este mesmo.  O meu poeta do trem ficará sabendo que não lhe guardo rancor.  E com pequeno esforço, sendo o titulo seu, poderá cuidar que a obra é sua.  Ha [...]",
+      "[...]  até ao fim do livro, vae este mesmo.  O meu poeta do trem ficará sabendo que não lhe guardo rancor.  E com pequeno esforço, sendo o titulo seu, poderá cuidar que a obra é sua.  Ha livros que apenas <b>terão</b> isso dos seus autores; alguns nem tanto.",
+      "— Minha filha, numa terra de maldizentes como este Rio de Janeiro, a reputação de uma viúva moça e bonita corre tantos perigos, que a melhor resolução que <b>tens</b> a tomar, para fazer respeitar a memória honrada do teu Estanislau, é casares -te em segundas núpcias. Uma única dificuldade haveria para isso: o marido; mas neste particular, minha filha, foste de [...]",
+      "[...]  é casares -te em segundas núpcias. Uma única dificuldade haveria para isso: o marido; mas neste particular, minha filha, foste de uma fortuna fenomenal. O Miranda caiu -te do céu ! Olha, eu, se <b>tivesse</b> que escolher um genro, não escolheria outro -, e tu, se te casares com ele, darás muito prazer a tua mãe, e tornarás feliz a minha velhice.",
+      "Casaram -se, e hoje, que estão unidos há um ano, podem gabar -se - ela de <b>ter</b> <b>tido</b> verdadeiras surpresas fisiológicas, e ele de ser amado como o Estanislau nunca o foi.",
+      "[...]  já ella estava assim decorada; vinha do decennio anterior.  Naturalmente era gosto do tempo metter sabor classico e figuras antigas em pinturas americanas.  O mais é tambem analogo e parecido.  <b>Tenho</b> chacarinha, flôres, legume, uma casuarina, um poço e lavadouro.  Uso louça velha e mobilia velha.  Emfim, agora, como outr'ora, ha aqui o mesmo contraste da vida interior, que é pacata, com a [...]",
+      "[...]  com tom plangente e arrastado a pobre da mãe, isto lá são modos de raparigas ? Onde vai vance parar ? Que <i>désgosto</i>s me esperam mais n’esta vida de <i>sópplicios</i> ? Não basta o que <b>tenho</b> soffrido ?",
+      "- \" Eu <b>tenho</b> certeza de que não sou Ada \", ela disse, \" porque o cabelo dela forma longos caracóis e o meu não forma caracóis de jeito nenhum; e <b>tenho</b> certeza de que não posso ser Mabel, pois eu sei todos [...]",
+      "- \" Eu <b>tenho</b> certeza de que não sou Ada \", ela disse, \" porque o cabelo dela forma longos caracóis e o meu não forma caracóis de jeito nenhum; e <b>tenho</b> certeza de que não posso ser Mabel, pois eu sei todos os tipos de coisas, e ela, oh ! Ela sabe tão poucas ! Além disso, ela é ela e eu sou eu, e -- Puxa, quão misterioso é tudo isso ! Vou testar se [...]",
+      "[...]  ! Eu nunca chegarei a vinte desse jeito ! Contudo, a tabuada não significa nada: vamos tentar Geografia. Londres é a capital de Paris, e Paris é a capital de Roma, e Roma... Não, está tudo errado, <b>tenho</b> certeza ! Devo <b>ter</b> sido mudada por Mabel ! Vou tentar recitar um poema... \" e ela cruzou as mãos sobre o colo como se estivesse recitando lições e começou a repetir, mas sua voz pareceu rouca [...]",
+      "Aí em baixo, não. Só em cima. Mas viemos para a quinta. Podíamos <b>ter</b> ido ao cinema.",
+      "Já viram algo assim tão maravilhoso ? Chamo-me Rudger. <b>Tenho</b> três meses, três semanas e três dias.",
+      "Se eu não <b>tiver</b> guardanapo num restaurante, o Alex dá -me o dele.",
+      "Mostra -me uma foto do pai em criança. Gostava, mas não <b>temos</b> nenhumas.",
+      "CONNECTICUT, EUA SEIS SEMANAS ANTES Lindo! A luz do sol! Quem me dera estar sempre ao ar livre, mas <b>tenho</b> de trabalhar."
+    ],
+    "verb": "ter"
+  }
+}

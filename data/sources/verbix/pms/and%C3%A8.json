@@ -1,0 +1,360 @@
+{
+  "lect": "pms",
+  "lemma": "andè",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/pms/and%C3%A8/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=12034&T1=and%C3%A8",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 12034,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "vado"
+          },
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "vad"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "vade"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "vas"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "va"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "anduma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "andeve"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "van"
+          }
+        ]
+      },
+      "1": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "andasìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "andasìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "andasìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "andasìo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "andasìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "andasìo"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "andrai"
+          },
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "andrö"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "andras"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "andrà"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "andruma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "andreve"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "andran"
+          }
+        ]
+      },
+      "3": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "andrìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "andrìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "andrìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "andrìo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "andrìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "andrìo"
+          }
+        ]
+      },
+      "4": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "va"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "vada"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "anduma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "andé"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "vado"
+          }
+        ]
+      },
+      "5": {
+        "name": "Conjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 2,
+            "form": "vada"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 2,
+            "form": "vade"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 2,
+            "form": "vada"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 2,
+            "form": "vado"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 2,
+            "form": "vade"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 2,
+            "form": "vado"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "andeissa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "andeisse"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "andeissa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "andeisso"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "andeisse"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "andeisso"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "andé"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "andasent"
+          }
+        ]
+      },
+      "22": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "andasend"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "andait"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "andé"
+  }
+}

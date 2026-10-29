@@ -1,0 +1,256 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "ist",
+    "purpose": "Istriot avì from Verbix docs (one-page capture)",
+    "provider": "docs.verbix.com",
+    "attribution": "Verbix Istriot docs (https://docs.verbix.com/Languages/Istriot)",
+    "ending_inventories": {},
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "ist",
+      "lemma": "avì",
+      "class_source": "avì",
+      "regularity": "irregular",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istriot:avì",
+        "url": "https://docs.verbix.com/Languages/Istriot",
+        "provider": "docs.verbix.com",
+        "citation_note": "One-page Verbix docs capture; feminine 3rd-person as alternates."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "iè",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "iè",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "uò",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "vèmo",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "vì(de)",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "uò",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "vìvo",
+            "phonemes": [],
+            "source_label": "indicative.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "vìvi",
+            "phonemes": [],
+            "source_label": "indicative.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "vìva",
+            "phonemes": [],
+            "source_label": "indicative.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "vièmi",
+            "phonemes": [],
+            "source_label": "indicative.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "vì(de)",
+            "phonemes": [],
+            "source_label": "indicative.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "vìva",
+            "phonemes": [],
+            "source_label": "indicative.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "ièbio",
+            "phonemes": [],
+            "source_label": "subjunctive.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "ièbi",
+            "phonemes": [],
+            "source_label": "subjunctive.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "ièbio",
+            "phonemes": [],
+            "source_label": "subjunctive.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "vèmo",
+            "phonemes": [],
+            "source_label": "subjunctive.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "vì(de)",
+            "phonemes": [],
+            "source_label": "subjunctive.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "ièbio",
+            "phonemes": [],
+            "source_label": "subjunctive.present",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "vìso",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "vìsi",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "vìso",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "vìsimo",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "vìsi",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "vìso",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "varàvi",
+            "phonemes": [],
+            "source_label": "conditional",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "varàvi",
+            "phonemes": [],
+            "source_label": "conditional",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "varàvo",
+            "phonemes": [],
+            "source_label": "conditional",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "variènsi",
+            "phonemes": [],
+            "source_label": "conditional",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "varìsi",
+            "phonemes": [],
+            "source_label": "conditional",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "varàvo",
+            "phonemes": [],
+            "source_label": "conditional",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "variè",
+            "phonemes": [],
+            "source_label": "indicative.future",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "variè",
+            "phonemes": [],
+            "source_label": "indicative.future",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "varuò",
+            "phonemes": [],
+            "source_label": "indicative.future",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "varèmo",
+            "phonemes": [],
+            "source_label": "indicative.future",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "varì(de)",
+            "phonemes": [],
+            "source_label": "indicative.future",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "varuò",
+            "phonemes": [],
+            "source_label": "indicative.future",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        }
+      }
+    }
+  ]
+}

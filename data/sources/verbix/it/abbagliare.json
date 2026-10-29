@@ -1,0 +1,708 @@
+{
+  "lect": "it",
+  "lemma": "abbagliare",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/abbagliare/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=abbagliare",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbaglio"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abbagli"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbaglia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 1,
+            "form": "abbagliamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbagliate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbagliano"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 1,
+            "form": "abbagli"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abbagli"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 1,
+            "form": "abbagli"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 1,
+            "form": "abbagliamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 1,
+            "form": "abbagliate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 1,
+            "form": "abbaglino"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbagliavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbagliavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbagliava"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbagliavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbagliavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbagliavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbagliassi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbagliassi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbagliasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbagliassimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbagliaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbagliassero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbagliai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbagliasti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbagliò"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbagliammo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbagliaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbagliarono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbaglierò"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbaglierai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbaglierà"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbaglieremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbaglierete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbaglieranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbaglierei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbaglieresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbaglierebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbaglieremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbagliereste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbaglierebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbaglia"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 1,
+            "form": "abbagli"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 1,
+            "form": "abbagliamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbagliate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 1,
+            "form": "abbaglino"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ho abbagliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hai abbagliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ha abbagliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo abbagliato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avete abbagliato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "hanno abbagliato"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbia abbagliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbia abbagliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbia abbagliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo abbagliato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbiate abbagliato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbiano abbagliato"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avevo abbagliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avevi abbagliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "aveva abbagliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avevamo abbagliato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avevate abbagliato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avevano abbagliato"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avessi abbagliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avessi abbagliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avesse abbagliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avessimo abbagliato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste abbagliato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avessero abbagliato"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ebbi abbagliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avesti abbagliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ebbe abbagliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avemmo abbagliato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste abbagliato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "ebbero abbagliato"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrò abbagliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avrai abbagliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrà abbagliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremo abbagliato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avrete abbagliato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avranno abbagliato"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrei abbagliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avresti abbagliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrebbe abbagliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremmo abbagliato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avreste abbagliato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avrebbero abbagliato"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbagliare"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbagliando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbagliato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbagliante"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avere abbagliato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avendo abbagliato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avente abbagliato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avere"
+    ],
+    "examples": [
+      "[...]  buffoni, fontane che sprizzavano vino, tutta insomma la pompa colla quale i tirannelli, surrogatisi ai liberi governi in Lombardia, procuravano di stordire i generosi, allettare i vani, ed <b>abbagliare</b> la plebe, sempre ingorda dietro a queste luccicanti apparenze.",
+      " Anche la storia doveva, come spesso, offrire l' umile servigio della sua penna alla prepotenza; talchè, o prezzolata, od <b>abbagliata</b>, o trovando più comodo il credere che l' esaminare, affogando sotto pompose parole il vero, e mentendo l' eloquente semplicità dell' affetto, scrisse qualmente lo sciagurato Francesco Pusterla, [...]"
+    ],
+    "verb": "abbagliare"
+  }
+}

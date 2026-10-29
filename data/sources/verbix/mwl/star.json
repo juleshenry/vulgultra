@@ -1,0 +1,495 @@
+{
+  "lect": "mwl",
+  "lemma": "star",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/mwl/star/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=54&T1=star",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 54,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "stou"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "stas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "sta"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "stamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 0,
+            "form": "stais"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 0,
+            "form": "stan"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "steia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "steias"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "steia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "stéiamos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "stemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "stéiades"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "stedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "stéian"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "sten"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "staba"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "stabas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "staba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "stábamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 0,
+            "form": "stábades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 0,
+            "form": "stában"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "stubisse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stubisses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "stubisse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "stubíssemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "stubíssedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "stubíssen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "stube"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stubiste"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "stubo"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "stubimos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "stubistes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "stubírun"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "starei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "starás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "stará"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "staremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 0,
+            "form": "stareis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 0,
+            "form": "staran"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "stubir"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stubires"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "stubir"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "stubirmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "stubirdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "stubíren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "starie"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "staries"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "starie"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "stariemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 0,
+            "form": "stariedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 0,
+            "form": "starien"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "stá"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "stai"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "stubira"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "stubiras"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "stubira"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "stubíramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "stubírades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "stubíran"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "star"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "stares"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "star"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "starmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "stardes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "staren"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "star"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "stando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "stado"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "star"
+  }
+}

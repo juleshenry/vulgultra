@@ -1,0 +1,961 @@
+{
+  "lect": "es",
+  "lemma": "ir",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/spa/ir/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=1&T1=ir",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 1,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "voy"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "vas"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "va"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "vamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "vais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "van"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "vaya"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "vayas"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "vaya"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "vayamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "vayáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "vayan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "iba"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "ibas"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "iba"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "íbamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "ibais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "iban"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "fuera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "fueras"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "fuera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "fuéramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "fuerais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "fueran"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "fuese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "fueses"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "fuese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "fuésemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "fueseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "fuesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "fui"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "fuiste"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "fue"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "fuimos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "fuisteis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "fueron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "iré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "irás"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "irá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "iremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "iréis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "irán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "fuere"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "fueres"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "fuere"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "fuéremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "fuereis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "fueren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "iría"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "irías"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "iría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "iríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "iríais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "irían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "ve"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "vaya"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "vamos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "vayamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "id"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "vayan"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "has ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "ha ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hemos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habéis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "han ido"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haya ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hayas ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "haya ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hayamos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hayáis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hayan ido"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "había ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habías ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "había ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habíamos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habíais ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habían ido"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiera ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieras ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiera ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéramos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubierais ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieran ido"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiese ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieses ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiese ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiésemos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubieseis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubiesen ido"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hube ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubiste ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubo ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubimos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubisteis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieron ido"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrás ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habrá ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habremos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habréis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrán ido"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiere ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieres ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiere ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéremos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubiereis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieren ido"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrías ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habría ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habríamos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habríais ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrían ido"
+          }
+        ]
+      },
+      "18": {
+        "name": "Negative Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "no vayas"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 2,
+            "form": "no vaya"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 2,
+            "form": "no vayamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 2,
+            "form": "no vayáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 2,
+            "form": "no vayan"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ir"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "yendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ido"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber ido"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habiendo ido"
+          }
+        ]
+      },
+      "60": {
+        "name": "Indicative Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "General",
+            "use": 2,
+            "form": "vais"
+          },
+          {
+            "id": 2,
+            "pronoun": "Venezuelan",
+            "use": 2,
+            "form": "vais"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 2,
+            "form": "vais"
+          }
+        ]
+      },
+      "61": {
+        "name": "Subjunctive Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Central America, Bolivia",
+            "use": 2,
+            "form": "vayás"
+          },
+          {
+            "id": 2,
+            "pronoun": "Río de la Plata region",
+            "use": 2,
+            "form": "vayas"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 2,
+            "form": "vayái"
+          },
+          {
+            "id": 4,
+            "pronoun": "Venezuela, Panama",
+            "use": 2,
+            "form": "vayáis"
+          }
+        ]
+      },
+      "68": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "id"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "ite"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "Este hombre, amigo mío, como lo es de todo el mundo, era el que sentado <b>iba</b> junto a mí cuando el coche, resbalando suavemente por su calzada de hierro, bajaba la calle de Serrano, deteniéndose alguna vez para llenar los pocos asientos que quedaban ya vacíos.  <b>Ibamos</b> [...]",
+      "[...]  <b>iba</b> junto a mí cuando el coche, resbalando suavemente por su calzada de hierro, bajaba la calle de Serrano, deteniéndose alguna vez para llenar los pocos asientos que quedaban ya vacíos.  <b>Ibamos</b> tan estrechos que me molestaba grandemente el paquete de libros que conmigo llevaba, y ya le ponía sobre esta rodilla, ya sobre la otra, ya por fin me resolví a sentarme sobre él, temiendo molestar [...]",
+      " -- ¿Y usted adónde <b>va</b> ? -- me preguntó Cascajares, mirándome por encima de sus espejuelos azules, lo que me hacía el efecto de ser examinado por cuatro ojos.",
+      "[...]  estraño pensamiento que jamás dio loco en el mundo; y fue que le pareció convenible y necesario, así para el aumento de su honra como para el servicio de su república, hacerse caballero andante, y <b>irse</b> por todo el mundo con sus armas y caballo a buscar las aventuras y a ejercitarse en todo aquello que él había leído que los caballeros andantes se ejercitaban, deshaciendo todo género de agravio, y [...]",
+      "Yendo, pues, caminando nuestro flamante aventurero, <b>iba</b> hablando consigo mesmo y diciendo:",
+      "[...]  mirando a todas partes por ver si descubriría algún castillo o alguna majada de pastores donde recogerse y adonde pudiese remediar su mucha hambre y necesidad, vio, no lejos del camino por donde <b>iba</b>, una venta, que fue como si viera una estrella que, no a los portales, sino a los alcázares de su redención le encaminaba. Diose priesa a caminar, y llegó a ella a tiempo que anochecía.",
+      "-Bien parece la mesura en las fermosas, y es mucha sandez además la risa que de leve causa procede; pero no <b>vos</b> lo digo porque os acuitedes ni mostredes mal talante; que el mío non es de ál que de serviros.",
+      "[...]  con la vista el interior del coche, examiné uno por uno a mis compañeros de viaje.  ¡Cuán distintas caras y cuán diversas expresiones!  Unos parecen no inquietarse ni lo más mínimo de los que <b>van</b> a su lado; otros pasan revista al corrillo con impertinente curiosidad; unos están alegres, otros tristes, aquel bosteza, el de más allá ríe, y a pesar de la brevedad del trayecto, no hay uno que no [...]",
+      "[...]  no hemos visto y que probablemente no volveremos a ver.  Al entrar, ya encontramos a alguien; otros vienen después que estamos allí; unos se marchan, quedándonos nosotros, y por último también nos <b>vamos</b>.  Imitación es esto de la vida humana, en que el nacer y el morir son como las entradas y salidas a que me refiero, pues <b>van</b> renovando sin cesar en generaciones de viajeros el pequeño mundo [...]",
+      "[...]  unos se marchan, quedándonos nosotros, y por último también nos <b>vamos</b>.  Imitación es esto de la vida humana, en que el nacer y el morir son como las entradas y salidas a que me refiero, pues <b>van</b> renovando sin cesar en generaciones de viajeros el pequeño mundo que allí dentro vive.  Entran, salen; nacen, mueren... ¡Cuántos han pasado por aquí antes que nosotros !",
+      "¡Ábreme la puerta! Llevas cinco meses sin pagar el arriendo. ¡Álex! ¡Si no me abres, te <b>vas</b> a arrepentir !",
+      "...pero conseguirás un trabajo... ...porque te aseguro algo... ... no <b>vas</b> a quedarte aquí mantenido por tu madre.",
+      "Te lo <b>iba</b> a decir antes, pero...",
+      "Tu eres un hijo de ramera. ¡Mike! - Vamos, todos nos <b>vamos</b> donde Charlie. - No puedo, tengo que trabajar.",
+      "!¡No, no me digas! !¡Qué dicha! Anette, sírvale el desayuno a esta niñita que se <b>va</b> para el colegio."
+    ],
+    "verb": "ir"
+  }
+}

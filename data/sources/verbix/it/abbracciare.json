@@ -1,0 +1,716 @@
+{
+  "lect": "it",
+  "lemma": "abbracciare",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/abbracciare/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=abbracciare",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbraccio"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abbracci"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbraccia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 1,
+            "form": "abbracciamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbracciate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbracciano"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 1,
+            "form": "abbracci"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abbracci"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 1,
+            "form": "abbracci"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 1,
+            "form": "abbracciamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 1,
+            "form": "abbracciate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 1,
+            "form": "abbraccino"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbracciavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbracciavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbracciava"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbracciavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbracciavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbracciavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbracciassi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbracciassi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbracciasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbracciassimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbracciaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbracciassero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbracciai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbracciasti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbracciò"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbracciammo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbracciaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbracciarono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 1,
+            "form": "abbraccerò"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abbraccerai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 1,
+            "form": "abbraccerà"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 1,
+            "form": "abbracceremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 1,
+            "form": "abbraccerete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 1,
+            "form": "abbracceranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 1,
+            "form": "abbraccerei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 1,
+            "form": "abbracceresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 1,
+            "form": "abbraccerebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 1,
+            "form": "abbracceremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 1,
+            "form": "abbraccereste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 1,
+            "form": "abbraccerebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbraccia"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 1,
+            "form": "abbracci"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 1,
+            "form": "abbracciamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbracciate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 1,
+            "form": "abbraccino"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ho abbracciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hai abbracciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ha abbracciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo abbracciato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avete abbracciato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "hanno abbracciato"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbia abbracciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbia abbracciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbia abbracciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo abbracciato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbiate abbracciato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbiano abbracciato"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avevo abbracciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avevi abbracciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "aveva abbracciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avevamo abbracciato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avevate abbracciato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avevano abbracciato"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avessi abbracciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avessi abbracciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avesse abbracciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avessimo abbracciato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste abbracciato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avessero abbracciato"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ebbi abbracciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avesti abbracciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ebbe abbracciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avemmo abbracciato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste abbracciato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "ebbero abbracciato"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrò abbracciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avrai abbracciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrà abbracciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremo abbracciato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avrete abbracciato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avranno abbracciato"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrei abbracciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avresti abbracciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrebbe abbracciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremmo abbracciato"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avreste abbracciato"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avrebbero abbracciato"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbracciare"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbracciando"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbracciato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbracciante"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avere abbracciato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avendo abbracciato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avente abbracciato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avere"
+    ],
+    "examples": [
+      "[...]  vennero da me acconciati e tenuti in serbo pel ritorno della flotta da Lisbona. In questo aumento di affari e di ricchezze, la mia testa cominciò ad empirsi di divisamenti oltre a quanti ne potessi <b>abbracciare</b>; e veramente sta in ciò, il più delle volte, la rovina dei più abili speculatori. Se mi fossi limitato a mantenermi nella posizione cui era giunto, ora vi sarebbe stato luogo per me a tutte quelle [...]",
+      "[...]  dividendosi in oziosi che godono e faticanti che stentano, in ribaldi che ingannano e sopraffanno, e leali che beneficano e soffrono, non che prendere odio per gli uni, disprezzo per gli altri, gli <b>abbracciava</b> tutti in generosa benevolenza, e nell' intento di amicarli, di concordarne gli sforzi a quella che è prima condizione di ogni sociale progresso: la moralità.",
+      "[...]  della sua salvezza, tanto lo confortavano che potè mettersi a sedere nella barca. Ma appena Venerdì lo udì parlare, e gli guardò in faccia, fu un singolare spettacolo il vedere come lo baciasse, lo <b>abbracciasse</b>, lo accarezzasse. Esclamava, ridea, mettea grida, gli saltava attorno, ballava, cantava; indi tornava a gridare, si contorcea le mani, si batteva il capo ed il volto; e ricominciava di bel nuovo a [...]",
+      "[...]  Saltato già dal letto, udiva gridare: Governatore ! governatore ! e riconobbi tosto la voce del capitano che mi chiamava dalla cima del monte della mia fortezza. Salitovi tosto anch' io, egli mi <b>abbracciava</b> additandomi il bastimento. — « Mio amico e liberatore, egli dicea, è il vostro vascello, perchè è tutto vostro, e vostri siam noi e vostro quanto ad esso appartiene. » Mi voltai a guardare il [...]",
+      " Così rinvesciava e ciò che sapeva, e ciò che immaginavasi; ed esponeva come fatti veri e successi quei che erano sogni di sua fantasia.  Poi, contento di aver conosciuto un nuovo apostolo, <b>abbracciatolo</b> con un movimento generoso e cordiale, voltava via per cercarne altri, mentre Ramengo si difilava al palazzo, e faceva dire al Signor Luchino d' avere a comunicargli cosa della più grave urgenza.  [...]",
+      "[...]  alla portella di soccorso che conosci.  Quante cose ti dirò !  Sai ?  il mio seno è fecondo.  Possa quel che nascerà somigliare a te !  Addio, addio!  Come tripudio al solo pensare che tra poco <b>abbraccerò</b> il mio diletto ! _ #/",
+      "[...]  una madre?  Si slanciò alla volta di quello; ma neppure di raggiungerlo ebbe tempo; giacchè l' incognito, non appena la scorse, diede un guizzo d' infernale compiacenza, che fece guaire il fanciullo <b>abbracciato</b>; e additando la donna a Sfolcada Melik,--Eccola: è dessa; legatela ».",
+      "[...]  che veda tornar sicuro nella camera un fanciulletto, il quale per isconsiderata vivezza erasi condotto a passeggiare sull' orlo d' un tetto.  Precipitossi dunque a terra, baciò il limitare, poi <b>abbracciando</b> le ginocchia al suo signore, e bagnandole di copiose lagrime, si accingeva a contargli la colpa sua e il tradimento di Ramengo, quando il Pusterla lo interruppe dicendogli:",
+      "[...]  potesse notare, gli consegna il piccolo Venturino.  Un lampo di fulgidissimo sereno tra la fitta tenebria d' un uragano potrebbe appena assomigliarsi alla gioja che irradiò il volto di Buonvicino; <b>abbracciò</b> il fanciulletto, strinse al seno e baciò in fronte Alpinolo, il quale tristamente esclamava:--O padre, non lo merito.... Salvate questo fanciullo.... salvate il Pusterla... Ditegli... la colpa di [...]",
+      "[...]  e con essi il fanciullo; -- povero fanciullo, già abbastanza intelligente per comprendere la paterna afflizione; non abbastanza ragionevole per conoscere l' arte di non esacerbarla.  Egli si <b>abbracciava</b> a suo padre, e il padre a lui, coll'impeto onde, nella perdita di una persona cara, più ci attacchiamo a quelle che sopravanzano, più proviamo il bisogno di sapere che le amiamo, che ne siamo amati, [...]"
+    ],
+    "verb": "abbracciare"
+  }
+}

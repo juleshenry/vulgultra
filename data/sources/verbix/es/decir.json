@@ -1,0 +1,961 @@
+{
+  "lect": "es",
+  "lemma": "decir",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/spa/decir/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=1&T1=decir",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 1,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "digo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "dices"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "dice"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "decimos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "decís"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "dicen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "diga"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "digas"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "diga"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "digamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "digáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "digan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "decía"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "decías"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "decía"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "decíamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "decíais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "decían"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "dijera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "dijeras"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "dijera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "dijéramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "dijerais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "dijeran"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "dijese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "dijeses"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "dijese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "dijésemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "dijeseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "dijesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "dije"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "dijiste"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "dijo"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "dijimos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "dijisteis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "dijeron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "diré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "dirás"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "dirá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "diremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "diréis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "dirán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "dijere"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "dijeres"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "dijere"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "dijéremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "dijereis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "dijeren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "diría"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "dirías"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "diría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "diríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "diríais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "dirían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "di"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "dice"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "diga"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "digamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "decid"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "digan"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "has dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "ha dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hemos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habéis dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "han dicho"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haya dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hayas dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "haya dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hayamos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hayáis dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hayan dicho"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "había dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habías dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "había dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habíamos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habíais dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habían dicho"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiera dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieras dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiera dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéramos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubierais dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieran dicho"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiese dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieses dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiese dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiésemos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubieseis dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubiesen dicho"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hube dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubiste dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubo dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubimos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubisteis dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieron dicho"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrás dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habrá dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habremos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habréis dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrán dicho"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiere dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieres dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiere dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéremos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubiereis dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieren dicho"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría dicho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrías dicho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habría dicho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habríamos dicho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habríais dicho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrían dicho"
+          }
+        ]
+      },
+      "18": {
+        "name": "Negative Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "no digas"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 2,
+            "form": "no diga"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 2,
+            "form": "no digamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 2,
+            "form": "no digáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 2,
+            "form": "no digan"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "decir"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "diciendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "dicho"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 3,
+            "form": "dito"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber dicho"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habiendo dicho"
+          }
+        ]
+      },
+      "60": {
+        "name": "Indicative Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "General",
+            "use": 0,
+            "form": "decís"
+          },
+          {
+            "id": 2,
+            "pronoun": "Venezuelan",
+            "use": 0,
+            "form": "decís"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 0,
+            "form": "decís"
+          }
+        ]
+      },
+      "61": {
+        "name": "Subjunctive Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Central America, Bolivia",
+            "use": 2,
+            "form": "digás"
+          },
+          {
+            "id": 2,
+            "pronoun": "Río de la Plata region",
+            "use": 2,
+            "form": "digas"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 2,
+            "form": "digái"
+          },
+          {
+            "id": 4,
+            "pronoun": "Venezuela, Panama",
+            "use": 2,
+            "form": "digáis"
+          }
+        ]
+      },
+      "68": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "decí"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "-Porque, ¿cómo queréis vos que no me tenga confuso el qué <b>dirá</b> el antiguo legislador que llaman vulgo cuando vea que, al cabo de tantos años como ha que duermo en el silencio del olvido, salgo ahora, con todos mis años a cuestas, con una leyenda seca como un [...]",
+      "[...]  de Platón y de toda la caterva de filósofos, que admiran a los leyentes y tienen a sus autores por hombres leídos, eruditos y elocuentes ? ¡Pues qué, cuando citan la Divina Escritura ! No <b>dirán</b> sino que son unos santos Tomases y otros doctores de la Iglesia; guardando en esto un decoro tan ingenioso, que en un renglón han pintado un enamorado destraído y en otro hacen un sermoncico [...]",
+      "[...]  le adorne de tantas cosas como le faltan; porque yo me hallo incapaz de remediarlas, por mi insuficiencia y pocas letras, y porque naturalmente soy poltrón y perezoso de andarme buscando autores que <b>digan</b> lo que yo me sé <b>decir</b> sin ellos. De aquí nace la suspensión y elevamiento, amigo, en que me hallastes; bastante causa para ponerme en ella la que de mí habéis oído.",
+      "[...]  le faltan; porque yo me hallo incapaz de remediarlas, por mi insuficiencia y pocas letras, y porque naturalmente soy poltrón y perezoso de andarme buscando autores que <b>digan</b> lo que yo me sé <b>decir</b> sin ellos. De aquí nace la suspensión y elevamiento, amigo, en que me hallastes; bastante causa para ponerme en ella la que de mí habéis oído.",
+      "[...]  y tan hecho a romper y atropellar por otras dificultades mayores ? A la fe, esto no nace de falta de habilidad, sino de sobra de pereza y penuria de discurso. ¿Queréis ver si es verdad lo que <b>digo</b> ? Pues estadme atento y veréis cómo, en un abrir y cerrar de ojos, confundo todas vuestras dificultades y remedio todas las faltas que decís que os suspenden y acobardan para dejar de sacar a la luz [...]",
+      "[...]  exagerada importancia, y empezamos a charlar.  El Sr.  D.  Dionisio Cascajares es un médico afamado, aunque no por la profundidad de sus conocimientos patológicos, y un hombre de bien, pues jamás se <b>dijo</b> de él que fuera inclinado a tomar lo ajeno, ni a matar a sus semejantes por otros medios que por los de su peligrosa y científica profesión.  Bien puede asegurarse que la amenidad de su trato y el [...]",
+      "A lo cual él <b>dijo</b>: -Lo primero en que reparáis de los sonetos, epigramas o elogios que os faltan para el principio, y que sean de personajes graves y de título, se puede remediar en que vos mesmo toméis algún trabajo [...]",
+      "[...]  que no pertenecen al dominio público, ni ninguno tiene en más estupendo grado la manía de preguntar, si bien este vicio de exagerada inquisitividad se compensa en él por la prontitud con que <b>dice</b> cuanto sabe, sin que los demás se tomen el trabajo de preguntárselo.  Júzguese por esto si la compañía de tan hermoso ejemplar de la ligereza humana será solicitada por los curiosos y por los [...]",
+      "Non bene pro toto libertas venditur auro. Y luego, en el margen, citar a Horacio, o a quien lo <b>dijo</b>. Si tratáredes del poder de la muerte, acudir luego con:",
+      "Contestéle evasivamente, y él, deseando sin duda no perder aquel rato sin hacer alguna útil investigación, insistió en sus preguntas <b>diciendo</b>:",
+      "¿Cuántas veces te he <b>dicho</b> que no hablamos español ?",
+      "Le <b>dije</b> que usara lentes de contacto.",
+      "Te lo iba a <b>decir</b> antes, pero...",
+      "Vale. Pido disculpas de antemano por lo que pueda <b>decir</b>.",
+      "Total, navega por medio mundo y sólo <b>dice</b> que esto es lo mejor del planeta."
+    ],
+    "verb": "decir"
+  }
+}

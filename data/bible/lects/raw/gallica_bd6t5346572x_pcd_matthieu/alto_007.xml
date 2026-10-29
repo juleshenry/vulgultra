@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SCHEMAVERSION="alto_bnf-v2_0" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v3# http://bibnum.bnf.fr/schema/alto_bnf-v2_0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<sourceImageInformation>
+<fileName>00000007.jp2</fileName>
+<fileIdentifier>ark:/12148/bd6t5346572x/f7</fileIdentifier>
+<documentIdentifier documentIdentifierLocation="NUM">100346572</documentIdentifier>
+</sourceImageInformation>
+<OCRProcessing ID="OCR_1">
+<ocrProcessingStep>
+<processingDateTime>2023-08-16</processingDateTime>
+<processingStepDescription>[001_OCR_BRUT]OCR BRUT 90 %</processingStepDescription>
+<processingStepDescription>[002_CHARS]{42}</processingStepDescription>
+<processingStepDescription>[007_STRINGS]{9}</processingStepDescription>
+<processingSoftware>
+<softwareCreator>ABBYY</softwareCreator>
+<softwareName>ABBYY FineReader Engine</softwareName>
+<softwareVersion>12</softwareVersion>
+</processingSoftware>
+</ocrProcessingStep>
+</OCRProcessing>
+</Description>
+<Styles>
+<TextStyle FONTFAMILY="Default Metrics Font" FONTSIZE="5" ID="TXT_1"/>
+<TextStyle FONTFAMILY="Default Metrics Font" FONTSIZE="11" ID="TXT_2"/>
+<TextStyle FONTFAMILY="Default Metrics Font" FONTSIZE="15" ID="TXT_3"/>
+</Styles>
+<Layout>
+<Page ACCURACY="90" HEIGHT="3656" ID="PAG_00000007" PHYSICAL_IMG_NR="7" QUALITY="OK" WIDTH="2749">
+<TopMargin HEIGHT="354" HPOS="0" ID="PAG_00000007_TopMargin" VPOS="0" WIDTH="2749">
+</TopMargin>
+<LeftMargin HEIGHT="3009" HPOS="0" ID="PAG_00000007_LeftMargin" VPOS="354" WIDTH="596">
+</LeftMargin>
+<RightMargin HEIGHT="3009" HPOS="2304" ID="PAG_00000007_RightMargin" VPOS="354" WIDTH="445">
+</RightMargin>
+<BottomMargin HEIGHT="293" HPOS="0" ID="PAG_00000007_BottomMargin" VPOS="3363" WIDTH="2749">
+</BottomMargin>
+<PrintSpace HEIGHT="3009" HPOS="596" ID="PAG_00000007_PrintSpace" VPOS="354" WIDTH="1708">
+<Illustration HEIGHT="886" HPOS="596" ID="PAG_00000007_IL000001" VPOS="354" WIDTH="1708"/>
+<TextBlock HEIGHT="492" HPOS="720" ID="PAG_00000007_TB000001" STYLEREFS="TXT_1" VPOS="1466" WIDTH="1174" language="fr">
+<TextLine HEIGHT="90" HPOS="835" ID="PAG_00000007_TL000001" STYLEREFS="TXT_2" VPOS="1479" WIDTH="964">
+<String CONTENT="LE" HEIGHT="62" HPOS="835" ID="PAG_00000007_ST000001" VPOS="1495" WC="0.54000002145767212" WIDTH="118"/>
+<SP HPOS="954" ID="PAG_00000007_SP000001" VPOS="1495" WIDTH="48"/>
+<String CONTENT="SAINT" HEIGHT="68" HPOS="1003" ID="PAG_00000007_ST000002" VPOS="1495" WC="0.68599998950958252" WIDTH="272"/>
+<SP HPOS="1276" ID="PAG_00000007_SP000002" VPOS="1479" WIDTH="44"/>
+<String CONTENT="ÉVANGILE" HEIGHT="90" HPOS="1321" ID="PAG_00000007_ST000003" VPOS="1479" WC="0.49000000953674316" WIDTH="478"/>
+</TextLine>
+<TextLine HEIGHT="32" HPOS="1235" ID="PAG_00000007_TL000002" VPOS="1686" WIDTH="171">
+<String CONTENT="SELON" HEIGHT="32" HPOS="1235" ID="PAG_00000007_ST000004" STYLE="bold" VPOS="1686" WC="0.54600000381469727" WIDTH="171"/>
+</TextLine>
+<TextLine HEIGHT="108" HPOS="733" ID="PAG_00000007_TL000003" STYLEREFS="TXT_3" VPOS="1841" WIDTH="1150">
+<String CONTENT="ST." HEIGHT="98" HPOS="733" ID="PAG_00000007_ST000005" VPOS="1841" WC="1" WIDTH="136"/>
+<SP HPOS="870" ID="PAG_00000007_SP000003" VPOS="1841" WIDTH="88"/>
+<String CONTENT="MATTHIEU." HEIGHT="104" HPOS="959" ID="PAG_00000007_ST000006" VPOS="1845" WC="0.74333333969116211" WIDTH="924"/>
+</TextLine>
+</TextBlock>
+<TextBlock HEIGHT="124" HPOS="842" ID="PAG_00000007_TB000002" STYLEREFS="TXT_2" VPOS="3234" WIDTH="586" language="fr">
+<TextLine HEIGHT="96" HPOS="855" ID="PAG_00000007_TL000004" VPOS="3247" WIDTH="564">
+<String CONTENT="(" HEIGHT="86" HPOS="855" ID="PAG_00000007_ST000007" VPOS="3257" WC="1" WIDTH="26"/>
+<SP HPOS="882" ID="PAG_00000007_SP000004" VPOS="3247" WIDTH="22"/>
+<String CONTENT="A." HEIGHT="72" HPOS="905" ID="PAG_00000007_ST000008" VPOS="3247" WC="0.63499999046325684" WIDTH="78"/>
+<SP HPOS="984" ID="PAG_00000007_SP000005" VPOS="3251" WIDTH="14"/>
+<String CONTENT="JANVIER" HEIGHT="90" HPOS="999" ID="PAG_00000007_ST000009" VPOS="3251" WC="0.41857144236564636" WIDTH="420"/>
+</TextLine>
+</TextBlock>
+<GraphicalElement HEIGHT="18" HPOS="964" ID="PAG_00000007_GE000001" VPOS="1144" WIDTH="1022"/>
+<GraphicalElement HEIGHT="22" HPOS="1230" ID="PAG_00000007_GE000002" VPOS="1186" WIDTH="320"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

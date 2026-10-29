@@ -1,0 +1,354 @@
+{
+  "lect": "pms",
+  "lemma": "esclude",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/pms/esclude/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=12034&T1=esclude",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 12034,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "escludo"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "esclude"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "esclud"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "escluduma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "esclude"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "escludo"
+          }
+        ]
+      },
+      "1": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "escludìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "escludìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "escludìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "escludio"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "escludìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "escludìo"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "escludrai"
+          },
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "escludrö"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "escludras"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "escludrà"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "escludruma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "escludreve"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "escludran"
+          }
+        ]
+      },
+      "3": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "escludrìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "escludrìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "escludrìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "escludrìo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "escludrìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "escludrìo"
+          }
+        ]
+      },
+      "4": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "esclud"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "escluda"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "escluduma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "esclude"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "escludo"
+          }
+        ]
+      },
+      "5": {
+        "name": "Conjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "escluda"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "esclude"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "escluda"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "escludo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "esclude"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "escludo"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "escludeissa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "escludeisse"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "escludeissa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "escludeisso"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "escludeisse"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "escludeisso"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "esclude"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "escludent"
+          }
+        ]
+      },
+      "22": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "escludend"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "escludü"
+          },
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "esclüs"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "esclude"
+  }
+}

@@ -1,0 +1,1928 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "frp",
+    "purpose": "sourced Kaikki/Wiktextract conjugation harvest",
+    "ending_inventories": {
+      "-ir": {
+        "conditional": {
+          "endings": {
+            "1sg": "iren",
+            "2sg": "irias",
+            "3sg": "irêt",
+            "1pl": "irians",
+            "2pl": "iriâds",
+            "3pl": "iriant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 2
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "iré",
+            "2sg": "irés",
+            "3sg": "irat",
+            "1pl": "irens",
+            "2pl": "iréds",
+            "3pl": "iront"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 2
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "ien",
+            "2sg": "ias",
+            "3sg": "iêt",
+            "1pl": "ians",
+            "2pl": "iâds",
+            "3pl": "iant"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "to",
+            "2sg": "s",
+            "3sg": "t",
+            "1pl": "tens",
+            "2pl": "tids",
+            "3pl": "tont"
+          },
+          "support": 1,
+          "variants": 2,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 2
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i",
+            "2sg": "is",
+            "3sg": "it",
+            "1pl": "irons",
+            "2pl": "ites",
+            "3pl": "iront"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "issen",
+            "2sg": "issias",
+            "3sg": "isse",
+            "1pl": "issians",
+            "2pl": "issiâds",
+            "3pl": "issant"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "o",
+            "2sg": "es",
+            "3sg": "e",
+            "1pl": "ans",
+            "2pl": "iâds",
+            "3pl": "ant"
+          },
+          "support": 2,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 2,
+          "rows": 2
+        }
+      },
+      "-ar": {
+        "conditional": {
+          "endings": {
+            "1sg": "erim",
+            "2sg": "eries",
+            "3sg": "eriet",
+            "1pl": "eriams",
+            "2pl": "eriads",
+            "3pl": "eriant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "erai",
+            "2sg": "erés",
+            "3sg": "erat",
+            "1pl": "erems",
+            "2pl": "ereds",
+            "3pl": "eránt"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "avo",
+            "2sg": "aves",
+            "3sg": "avet",
+            "1pl": "avams",
+            "2pl": "avads",
+            "3pl": "avant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "o",
+            "2sg": "es",
+            "3sg": "et",
+            "1pl": "ems",
+            "2pl": "ads",
+            "3pl": "ont"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "ei",
+            "2sg": "és",
+            "3sg": "ét",
+            "1pl": "émos",
+            "2pl": "êtes",
+            "3pl": "éront"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "esso",
+            "2sg": "esses",
+            "3sg": "esset",
+            "1pl": "essams",
+            "2pl": "essads",
+            "3pl": "essant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "o",
+            "2sg": "es",
+            "3sg": "et",
+            "1pl": "ams",
+            "2pl": "ads",
+            "3pl": "ant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        }
+      },
+      "-re": {
+        "conditional": {
+          "endings": {
+            "1sg": "rim",
+            "2sg": "riés",
+            "3sg": "riet",
+            "1pl": "riams",
+            "2pl": "riaz",
+            "3pl": "ríont"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "rai",
+            "2sg": "rés",
+            "3sg": "ra",
+            "1pl": "rems",
+            "2pl": "reiz",
+            "3pl": "rant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 1,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "èvo",
+            "2sg": "èves",
+            "3sg": "ève",
+            "1pl": "évams",
+            "2pl": "évaz",
+            "3pl": "èvant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "no",
+            "2sg": "ds",
+            "3sg": "d",
+            "1pl": "ems",
+            "2pl": "tes",
+            "3pl": "nont"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i",
+            "2sg": "is",
+            "3sg": "it",
+            "1pl": "îmos",
+            "2pl": "îtes",
+            "3pl": "iront"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "isso",
+            "2sg": "isses",
+            "3sg": "ît",
+            "1pl": "issams",
+            "2pl": "issaz",
+            "3pl": "issant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "igno",
+            "2sg": "ignes",
+            "3sg": "igne",
+            "1pl": "nams",
+            "2pl": "naz",
+            "3pl": "ignant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "other": {
+        "conditional": {
+          "endings": {
+            "1sg": "ê",
+            "2sg": "ês",
+            "3sg": "êt",
+            "1pl": "ans",
+            "2pl": "âds",
+            "3pl": "ant"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "é",
+            "2sg": "és",
+            "3sg": "at",
+            "1pl": "ens",
+            "2pl": "éds",
+            "3pl": "ont"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "o",
+            "2sg": "es",
+            "3sg": "e",
+            "1pl": "ans",
+            "2pl": "âds",
+            "3pl": "ont"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "s",
+            "3sg": "t",
+            "1pl": "rens",
+            "2pl": "tes",
+            "3pl": "ront"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "o",
+            "2sg": "es",
+            "3sg": "e",
+            "1pl": "ens",
+            "2pl": "éds",
+            "3pl": "ont"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "o",
+            "2sg": "es",
+            "3sg": "e",
+            "1pl": "ens",
+            "2pl": "éds",
+            "3pl": "ont"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      }
+    },
+    "lemma_count": 5,
+    "serialized_paradigms": 5,
+    "max_paradigms_per_class": 40,
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "frp",
+      "lemma": "venir",
+      "class_source": "-ir",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:venir",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "veno",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2sg": {
+            "form": "vins",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3sg": {
+            "form": "vint",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "1pl": {
+            "form": "venens",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2pl": {
+            "form": "venids",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3pl": {
+            "form": "venont",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "venien",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2sg": {
+            "form": "venias",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3sg": {
+            "form": "veniêt",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "1pl": {
+            "form": "venians",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2pl": {
+            "form": "veniâds",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3pl": {
+            "form": "veniant",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "veni",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2sg": {
+            "form": "venis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3sg": {
+            "form": "venit",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "1pl": {
+            "form": "venirons",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2pl": {
+            "form": "venites",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3pl": {
+            "form": "veniront",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "vindré",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2sg": {
+            "form": "vindrés",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3sg": {
+            "form": "vindrat",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "1pl": {
+            "form": "vindrens",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2pl": {
+            "form": "vindréds",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3pl": {
+            "form": "vindront",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "vindren",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2sg": {
+            "form": "vindrias",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3sg": {
+            "form": "vindrêt",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "1pl": {
+            "form": "vindrians",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2pl": {
+            "form": "vindriâds",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3pl": {
+            "form": "vindriant",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "veno",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2sg": {
+            "form": "venes",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3sg": {
+            "form": "vene",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "1pl": {
+            "form": "venans",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2pl": {
+            "form": "veniâds",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3pl": {
+            "form": "venant",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "venissen",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2sg": {
+            "form": "venissias",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3sg": {
+            "form": "venisse",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "1pl": {
+            "form": "venissians",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2pl": {
+            "form": "venissiâds",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "3pl": {
+            "form": "venissant",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "vin",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "1pl": {
+            "form": "venens",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          },
+          "2pl": {
+            "form": "venids",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=venir"
+          }
+        }
+      }
+    },
+    {
+      "lect": "frp",
+      "lemma": "partir",
+      "class_source": "-ir",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:partir",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "parto",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2sg": {
+            "form": "pars",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3sg": {
+            "form": "part",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "1pl": {
+            "form": "partens",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2pl": {
+            "form": "partids",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3pl": {
+            "form": "partont",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "partien",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2sg": {
+            "form": "partias",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3sg": {
+            "form": "partiêt",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "1pl": {
+            "form": "partians",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2pl": {
+            "form": "partiâds",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3pl": {
+            "form": "partiant",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "parti",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2sg": {
+            "form": "partis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3sg": {
+            "form": "partit",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "1pl": {
+            "form": "partirons",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2pl": {
+            "form": "partites",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3pl": {
+            "form": "partiront",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "partiré",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2sg": {
+            "form": "partirés",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3sg": {
+            "form": "partirat",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "1pl": {
+            "form": "partirens",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2pl": {
+            "form": "partiréds",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3pl": {
+            "form": "partiront",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "partiren",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2sg": {
+            "form": "partirias",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3sg": {
+            "form": "partirêt",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "1pl": {
+            "form": "partirians",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2pl": {
+            "form": "partiriâds",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3pl": {
+            "form": "partiriant",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "parto",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2sg": {
+            "form": "partes",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3sg": {
+            "form": "parte",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "1pl": {
+            "form": "partans",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2pl": {
+            "form": "partiâds",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3pl": {
+            "form": "partant",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "partissen",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2sg": {
+            "form": "partissias",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3sg": {
+            "form": "partisse",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "1pl": {
+            "form": "partissians",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2pl": {
+            "form": "partissiâds",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "3pl": {
+            "form": "partissant",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "pars",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "1pl": {
+            "form": "partens",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          },
+          "2pl": {
+            "form": "partids",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=partir"
+          }
+        }
+      }
+    },
+    {
+      "lect": "frp",
+      "lemma": "parlar",
+      "class_source": "-ar",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:parlar",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "parlo",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2sg": {
+            "form": "parles",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3sg": {
+            "form": "parlet",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "1pl": {
+            "form": "parlems",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2pl": {
+            "form": "parlads",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3pl": {
+            "form": "parlont",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "parlavo",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2sg": {
+            "form": "parlaves",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3sg": {
+            "form": "parlavet",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "1pl": {
+            "form": "parlavams",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2pl": {
+            "form": "parlavads",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3pl": {
+            "form": "parlavant",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "parlei",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2sg": {
+            "form": "parlés",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3sg": {
+            "form": "parlét",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "1pl": {
+            "form": "parlémos",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2pl": {
+            "form": "parlêtes",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3pl": {
+            "form": "parléront",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "parlerai",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2sg": {
+            "form": "parlerés",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3sg": {
+            "form": "parlerat",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "1pl": {
+            "form": "parlerems",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2pl": {
+            "form": "parlereds",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3pl": {
+            "form": "parleránt",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "parlerim",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2sg": {
+            "form": "parleries",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3sg": {
+            "form": "parleriet",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "1pl": {
+            "form": "parleriams",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2pl": {
+            "form": "parleriads",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3pl": {
+            "form": "parleriant",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "parlo",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2sg": {
+            "form": "parles",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3sg": {
+            "form": "parlet",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "1pl": {
+            "form": "parlams",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2pl": {
+            "form": "parlads",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3pl": {
+            "form": "parlant",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "parlesso",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2sg": {
+            "form": "parlesses",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3sg": {
+            "form": "parlesset",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "1pl": {
+            "form": "parlessams",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2pl": {
+            "form": "parlessads",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "3pl": {
+            "form": "parlessant",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "parla",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "1pl": {
+            "form": "parlams",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          },
+          "2pl": {
+            "form": "parlads",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=parlar"
+          }
+        }
+      }
+    },
+    {
+      "lect": "frp",
+      "lemma": "prendre",
+      "class_source": "-re",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:prendre",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "prenno",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2sg": {
+            "form": "prends",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3sg": {
+            "form": "prend",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "1pl": {
+            "form": "prenems",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2pl": {
+            "form": "prentes",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3pl": {
+            "form": "prennont",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "prenèvo",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2sg": {
+            "form": "prenèves",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3sg": {
+            "form": "prenève",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "1pl": {
+            "form": "prenévams",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2pl": {
+            "form": "prenévaz",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3pl": {
+            "form": "prenèvant",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "preisi",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2sg": {
+            "form": "preisis",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3sg": {
+            "form": "preisit",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "1pl": {
+            "form": "preisîmos",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2pl": {
+            "form": "preisîtes",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3pl": {
+            "form": "preisiront",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "prendrai",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2sg": {
+            "form": "prendrés",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3sg": {
+            "form": "prendra",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "1pl": {
+            "form": "prendrems",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2pl": {
+            "form": "prendreiz",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3pl": {
+            "form": "prendrant",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "prendrim",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2sg": {
+            "form": "prendriés",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3sg": {
+            "form": "prendriet",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "1pl": {
+            "form": "prendriams",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2pl": {
+            "form": "prendriaz",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3pl": {
+            "form": "prendríont",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "preigno",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2sg": {
+            "form": "preignes",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3sg": {
+            "form": "preigne",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "1pl": {
+            "form": "prenams",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2pl": {
+            "form": "prenaz",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3pl": {
+            "form": "preignant",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "preisisso",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2sg": {
+            "form": "preisisses",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3sg": {
+            "form": "preisît",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "1pl": {
+            "form": "preisissams",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2pl": {
+            "form": "preisissaz",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "3pl": {
+            "form": "preisissant",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "prends",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "1pl": {
+            "form": "prenems",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          },
+          "2pl": {
+            "form": "prentes",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre"
+          }
+        }
+      }
+    },
+    {
+      "lect": "frp",
+      "lemma": "avêr",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:avêr",
+        "url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "é",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2sg": {
+            "form": "âs",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3sg": {
+            "form": "at",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "1pl": {
+            "form": "ens",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2pl": {
+            "form": "éds",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3pl": {
+            "form": "ant",
+            "phonemes": [],
+            "source_label": "indicative, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "avévo",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2sg": {
+            "form": "avéves",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3sg": {
+            "form": "avéve",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "1pl": {
+            "form": "avévans",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2pl": {
+            "form": "avévâds",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3pl": {
+            "form": "avévont",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "u",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2sg": {
+            "form": "us",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3sg": {
+            "form": "ut",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "1pl": {
+            "form": "urens",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2pl": {
+            "form": "utes",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3pl": {
+            "form": "uront",
+            "phonemes": [],
+            "source_label": "indicative, preterite,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "aré",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2sg": {
+            "form": "arés",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3sg": {
+            "form": "arat",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "1pl": {
+            "form": "arens",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2pl": {
+            "form": "aréds",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3pl": {
+            "form": "aront",
+            "phonemes": [],
+            "source_label": "indicative, future,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "arê",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2sg": {
+            "form": "arês",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3sg": {
+            "form": "arêt",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "1pl": {
+            "form": "arans",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2pl": {
+            "form": "arâds",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3pl": {
+            "form": "arant",
+            "phonemes": [],
+            "source_label": "conditional,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "èyo",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2sg": {
+            "form": "èyes",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3sg": {
+            "form": "èye",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "1pl": {
+            "form": "èyens",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2pl": {
+            "form": "èyéds",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3pl": {
+            "form": "èyont",
+            "phonemes": [],
+            "source_label": "subjunctive, present,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "usso",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2sg": {
+            "form": "usses",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3sg": {
+            "form": "usse",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "1pl": {
+            "form": "ussens",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2pl": {
+            "form": "usséds",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "3pl": {
+            "form": "ussont",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "èye",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "1pl": {
+            "form": "èyens",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          },
+          "2pl": {
+            "form": "èyéds",
+            "phonemes": [],
+            "source_label": "imperative,verbix",
+            "source_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=av%C3%AAr"
+          }
+        }
+      }
+    }
+  ]
+}

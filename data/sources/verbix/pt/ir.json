@@ -1,0 +1,851 @@
+{
+  "lect": "pt",
+  "lemma": "ir",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/por/ir/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=2&T1=ir",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 2,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "vou"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vais"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "vai"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "vamos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "imos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "ides"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 3,
+            "form": "is"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "vão"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "vá"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "vá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "vamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "vades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "vão"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "ia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ias"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "ia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "íamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "íeis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "iam"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "fosse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fosses"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "fosse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "fôssemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "fôsseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "fossem"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "fui"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "foste"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "foi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "fomos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "fostes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "foram"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "irei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "irás"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "irá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "iremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "ireis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "irão"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "for"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fores"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "for"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "formos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "fordes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "forem"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "iria"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "irias"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "iria"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "iríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "iríeis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "iriam"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "vai"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "vá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "vamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "ide"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "vão"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "fora"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "foras"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 2,
+            "form": "fora"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "fôramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "fôreis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "foram"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenho ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tens ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tem ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "temos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tendes ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "têm ido"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tenha ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tenhas ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tenha ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tenhamos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tenhais ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tenham ido"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tinha ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tinhas ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tinha ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tínhamos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tínheis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tinham ido"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tivesse ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tivesses ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tivesse ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivéssemos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tivésseis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tivessem ido"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "terei ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terás ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "terá ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teremos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tereis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "terão ido"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "tiver ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "tiveres ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "tiver ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "tivermos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "tiverdes ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "tiverem ido"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "teria ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "terias ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "ele",
+            "use": 0,
+            "form": "teria ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "teríamos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "teríeis ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "teriam ido"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ir"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "ires"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "ir"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "irmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "irdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "irem"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ir"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "indo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ido"
+          }
+        ]
+      },
+      "28": {
+        "name": "Personal Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter ido"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "teres ido"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "ter ido"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "termos ido"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "terdes ido"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "terem ido"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "\" Bem ! \", pensou Alice consigo mesma. \" Depois de uma queda como essa, eu não devo mais me preocupar em tropeçar das escadas ! Como todos <b>irão</b> me achar corajosa lá em casa ! Bem, eu não diria nada sobre isso, mesmo se caísse do telhado da casa ! \" (O que era provavelmente verdade. )",
+      "[...]  um sagui, leve que nem miudo e gracioso caxinguelê, eram de ver -se o geito e a firmeza com que sabia agarrar -se ao tronco liso e escorregadio das jaboticabeiras do matto e descascadas goiabeiras, <b>indo</b> sem vacillar pelos galhos abertos até aos ramos mais finos, que sacudia com vigor, para fazer tombar alguma goiaba teimosa e longe da mão avida, impaciente.",
+      "[...]  calados, deram curso á alcunha, que afinal pegou.  Nem por isso me zanguei.  Contei a anecdota aos amigos da cidade, e elles, por graça, chamam -me assim, alguns em bilhetes: « Dom Casmurro, domingo <b>vou</b> jantar com você.»--«Vou para Petropolis, Dom Casmurro; a casa é a mesma da Rhenania; vê se deixas essa caverna do Engenho Novo, e vae lá passar uns quinze dias commigo.»--«Meu caro Dom Casmurro, não [...]",
+      "Caindo, caindo, caindo. Não havia mais nada para fazer, então Alice logo começou a falar de novo. — \" Diná <b>vai</b> sentir muito a minha falta esta noite, eu acho ! \" (Diná era sua gata ). \" Eu espero que eles se lembrem do pires de leite dela na hora do chá. Diná, minha querida ! Eu queria que você estivesse [...]",
+      "Casaram -se, e hoje, que estão unidos há um ano, podem gabar -se - ela de ter tido verdadeiras surpresas fisiológicas, e ele de ser amado como o Estanislau nunca o <b>foi</b>.",
+      "Após algum tempo, percebendo que nada mais aconteceu, ela decidiu <b>ir</b> ao jardim de uma vez; mas, <b>ai</b> da pobre Alice ! Quando ela chegou à porta, descobriu que havia esquecido a chavinha dourada e quando voltou à mesa para apanhá -la, ela descobriu que não podia [...]",
+      "Após algum tempo, percebendo que nada mais aconteceu, ela decidiu <b>ir</b> ao jardim de uma vez; mas, <b>ai</b> da pobre Alice ! Quando ela chegou à porta, descobriu que havia esquecido a chavinha dourada e quando voltou à mesa para apanhá -la, ela descobriu que não podia alcançá -la: podia vê -la muito bem [...]",
+      "[...]  uma pequena caixa de vidro que estava debaixo da mesa: ela a abriu e achou dentro dela um bolo muito pequeno no qual as palavras \" COMA -ME \" estavam lindamente escritas em groselhas. — \" Bom, eu <b>vou</b> comê -lo \", disse Alice, \" e se isso me fizer crescer, poderei alcançar a chave; e se me fizer encolher, posso deslizar por debaixo da porta; então de qualquer modo eu chegarei ao jardim e não me [...]",
+      "— Mas, menina, observava com tom plangente e arrastado a pobre da mãe, isto lá são modos de raparigas ? Onde <b>vai</b> vance parar ? Que <i>désgosto</i>s me esperam mais n’esta vida de <i>sópplicios</i> ? Não basta o que tenho soffrido ?",
+      "[...]  da vida, e restaurar na velhice a adolescencia.  Pois, senhor, não consegui recompor o que foi nem o que fui.  Em tudo, se o rosto é egual, a physionomia é differente.  Se só me faltassem os outros, <b>vá</b>; um homem consola -se mais ou menos das pessoas que perde; mas falto eu mesmo, e esta lacuna é tudo.  O que aqui está é, mal comparando, semelhante á pintura que se põe na barba e nos cabellos, e [...]",
+      "Aí em baixo, não. Só em cima. Mas viemos para a quinta. Podíamos ter <b>ido</b> ao cinema.",
+      "Não ouviram ? Eu tenho de <b>ir</b> !",
+      "- Adoro -te muito. Tenho de <b>ir</b>, sim ? - Também te adoro.",
+      "- Adoro -te muito. Tenho de <b>ir</b>, sim ? - Também te adoro.",
+      "Abençoai-nos, Senhor, e a estas dádivas que <b>vamos</b> receber …"
+    ],
+    "verb": "ir"
+  }
+}

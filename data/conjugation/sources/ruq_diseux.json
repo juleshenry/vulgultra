@@ -1,0 +1,5524 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "ruq",
+    "purpose": "Megleno-Romanian conjugations from Capidan/RVID",
+    "provider": "Capidan 1925 + Romance Verbal Inflection Dataset 2.0",
+    "attribution": "Capidan, Theodor. 1925. Meglenoromânii I. Digitized morphology: Beniamine, Maiden & Round 2020 (RVID 2.0 / ODRVM).",
+    "license_notes": "RVID GPLv3; Capidan text via Wikisource where available",
+    "scholarly_prefer": [
+      "Capidan 1925 (exact page for published claims)",
+      "Atanasov 2002 Meglenoromâna astăzi",
+      "Oxford Handbook Eastern Romance chapter"
+    ],
+    "ending_inventories": {},
+    "optimizer_involved": false,
+    "n_paradigms": 37,
+    "gaps": "Analytic future/conditional largely absent in RVID (Ø). Infinitive rows are citation/lexical labels, not productive verbal infinitives."
+  },
+  "paradigms": [
+    {
+      "lect": "ruq",
+      "lemma": "iri / sam",
+      "class_source": "fi",
+      "regularity": "irregular",
+      "source": {
+        "attested": true,
+        "title": "Capidan 1925 a fi (Megleno-Romanian)",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "provider": "Capidan 1925 (+ RVID IPA)",
+        "gloss_en": "to be",
+        "etymon": "esse~fieri",
+        "page_hint": "often cited via Capidan 1925, pp. 172–74 for FIERI/a fi material",
+        "rvid_license": "GPLv3"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "sam",
+            "variants": [
+              "sunt",
+              "esku",
+              "jes"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsam"
+          },
+          "2sg": {
+            "form": "jeʃ",
+            "variants": [
+              "eʃʧə",
+              "jeʃʧə",
+              "jești"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjeʃ"
+          },
+          "3sg": {
+            "form": "jasti",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjasti"
+          },
+          "1pl": {
+            "form": "im",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈim"
+          },
+          "2pl": {
+            "form": "iʦ",
+            "variants": [
+              "iț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈiʦ"
+          },
+          "3pl": {
+            "form": "sa",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsa"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "̯ram",
+            "variants": [
+              "əi̯ram",
+              "ăi̯ram"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "̯ˈram"
+          },
+          "2sg": {
+            "form": "rai̯",
+            "variants": [
+              "əi̯̯rai̯",
+              "ăi̯rai̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrai̯"
+          },
+          "3sg": {
+            "form": "ra",
+            "variants": [
+              "əi̯ra",
+              "ăi̯ra"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈra"
+          },
+          "1pl": {
+            "form": "̯ram",
+            "variants": [
+              "əi̯ram",
+              "ăi̯ram"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "̯ˈram"
+          },
+          "2pl": {
+            "form": "rats",
+            "variants": [
+              "əi̯̯rats",
+              "ăi̯raț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrats"
+          },
+          "3pl": {
+            "form": "̯rau̯",
+            "variants": [
+              "əi̯̯rau̯",
+              "ăi̯rau̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "̯ˈrau̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "fui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfui̯"
+          },
+          "2sg": {
+            "form": "fuʃ",
+            "variants": [
+              "fuș"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfuʃ"
+          },
+          "3sg": {
+            "form": "fu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfu"
+          },
+          "1pl": {
+            "form": "fum",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfum"
+          },
+          "2pl": {
+            "form": "fuʦ",
+            "variants": [
+              "fuț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfuʦ"
+          },
+          "3pl": {
+            "form": "furə",
+            "variants": [
+              "fură"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfurə"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "sɔm",
+            "variants": [
+              "iju",
+              "jes",
+              "esku"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsɔm"
+          },
+          "2sg": {
+            "form": "jeʃ",
+            "variants": [
+              "jeș"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjeʃ"
+          },
+          "3sg": {
+            "form": "ijə",
+            "variants": [
+              "ibə",
+              "jaskə",
+              "jască"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈijə"
+          },
+          "1pl": {
+            "form": "im",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈim"
+          },
+          "2pl": {
+            "form": "iʦ",
+            "variants": [
+              "iț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈiʦ"
+          },
+          "3pl": {
+            "form": "ijə",
+            "variants": [
+              "ijă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈijə"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "iri",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈiri"
+          },
+          "2pl": {
+            "form": "ireʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈireʦ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "căntári",
+      "class_source": "I",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Capidan/RVID Megleno:căntári",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "provider": "Capidan 1925 via RVID/ODRVM + Capidan-tradition tables",
+        "gloss_en": "to sing",
+        "etymon": "cantare",
+        "rvid_license": "GPLv3",
+        "caveat": "ODRVM/RVID generalizes Capidan across border varieties; short infinitive virtually extinct as a verbal form."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "kɔnt",
+            "variants": [
+              "cǫ́nt"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔnt"
+          },
+          "2sg": {
+            "form": "kɔnʦ",
+            "variants": [
+              "cǫ́nț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔnʦ"
+          },
+          "3sg": {
+            "form": "kɔntə",
+            "variants": [
+              "cǫ́ntă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔntə"
+          },
+          "1pl": {
+            "form": "kəntɔm",
+            "variants": [
+              "căntǫ́m"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtɔm"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "variants": [
+              "căntáț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtaʦ"
+          },
+          "3pl": {
+            "form": "kɔntə",
+            "variants": [
+              "cǫ́ntă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔntə"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "kəntam",
+            "variants": [
+              "căntám"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtam"
+          },
+          "2sg": {
+            "form": "kəntai̯",
+            "variants": [
+              "căntái̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtai̯"
+          },
+          "3sg": {
+            "form": "kənta",
+            "variants": [
+              "căntá"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈta"
+          },
+          "1pl": {
+            "form": "kəntam",
+            "variants": [
+              "căntám"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtam"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "variants": [
+              "căntáț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtaʦ"
+          },
+          "3pl": {
+            "form": "kəntau̯",
+            "variants": [
+              "căntáu̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtau̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "kəntai̯",
+            "variants": [
+              "căntái̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtai̯"
+          },
+          "2sg": {
+            "form": "kəntaʃ",
+            "variants": [
+              "căntáș"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtaʃ"
+          },
+          "3sg": {
+            "form": "kəntɔ",
+            "variants": [
+              "căntǫ́"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtɔ"
+          },
+          "1pl": {
+            "form": "kəntɔm",
+            "variants": [
+              "căntǫ́m"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtɔm"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "variants": [
+              "căntáț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtaʦ"
+          },
+          "3pl": {
+            "form": "kəntarə",
+            "variants": [
+              "căntáră"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtarə"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "kɔnt",
+            "variants": [
+              "să cǫ́nt"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔnt"
+          },
+          "2sg": {
+            "form": "kɔnʦ",
+            "variants": [
+              "să cǫ́nț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔnʦ"
+          },
+          "3sg": {
+            "form": "kɔntə",
+            "variants": [
+              "să cǫ́ntă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔntə"
+          },
+          "1pl": {
+            "form": "kəntɔm",
+            "variants": [
+              "să căntǫ́m"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtɔm"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "variants": [
+              "să căntáț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtaʦ"
+          },
+          "3pl": {
+            "form": "kɔntə",
+            "variants": [
+              "să cǫ́ntă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔntə"
+          }
+        },
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[kənˈtari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA citation form (infinitive restricted)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtari"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[kənˈtat]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA citation form (infinitive restricted)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtat"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "kɔntə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkɔntə"
+          },
+          "1pl": {
+            "form": "kəntəm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtəm"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kənˈtaʦ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "lucrári",
+      "class_source": "I-ez",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Capidan/RVID Megleno:lucrári",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "provider": "Capidan 1925 via RVID/ODRVM + Capidan-tradition tables",
+        "gloss_en": "to work",
+        "etymon": "lucrari",
+        "rvid_license": "GPLv3",
+        "caveat": "ODRVM/RVID generalizes Capidan across border varieties; short infinitive virtually extinct as a verbal form."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "lukrez",
+            "variants": [
+              "lucréz"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkrez"
+          },
+          "2sg": {
+            "form": "lukrez",
+            "variants": [
+              "lucréz"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkrez"
+          },
+          "3sg": {
+            "form": "lukre̯azə",
+            "variants": [
+              "lucre̯áză"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkre̯azə"
+          },
+          "1pl": {
+            "form": "lukrɔm",
+            "variants": [
+              "lucrǫ́m"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkrɔm"
+          },
+          "2pl": {
+            "form": "lukraʦ",
+            "variants": [
+              "lucráț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkraʦ"
+          },
+          "3pl": {
+            "form": "lukre̯azə",
+            "variants": [
+              "lucre̯áză"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkre̯azə"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "lukrez",
+            "variants": [
+              "să lucréz"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkrez"
+          },
+          "2sg": {
+            "form": "lukrez",
+            "variants": [
+              "să lucréz"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkrez"
+          },
+          "3sg": {
+            "form": "lukre̯azə",
+            "variants": [
+              "să lucre̯áză"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkre̯azə"
+          },
+          "1pl": {
+            "form": "lukrɔm",
+            "variants": [
+              "să lucrǫ́m"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkrɔm"
+          },
+          "2pl": {
+            "form": "lukraʦ",
+            "variants": [
+              "să lucráț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkraʦ"
+          },
+          "3pl": {
+            "form": "lukre̯azə",
+            "variants": [
+              "să lucre̯áză"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkre̯azə"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "lukre̯azə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkre̯azə"
+          },
+          "1pl": {
+            "form": "lukrɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkrɔm"
+          },
+          "2pl": {
+            "form": "lukraʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "luˈkraʦ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "cădeári",
+      "class_source": "II",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Capidan/RVID Megleno:cădeári",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "provider": "Capidan 1925 via RVID/ODRVM + Capidan-tradition tables",
+        "gloss_en": "to fall",
+        "etymon": "cadere",
+        "rvid_license": "GPLv3",
+        "caveat": "ODRVM/RVID generalizes Capidan across border varieties; short infinitive virtually extinct as a verbal form."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "kad",
+            "variants": [
+              "cad"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkad"
+          },
+          "2sg": {
+            "form": "kaz",
+            "variants": [
+              "caz"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkaz"
+          },
+          "3sg": {
+            "form": "kadi",
+            "variants": [
+              "cádi"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkadi"
+          },
+          "1pl": {
+            "form": "kədem",
+            "variants": [
+              "cădém"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈdem"
+          },
+          "2pl": {
+            "form": "kədeʦ",
+            "variants": [
+              "cădéț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈdeʦ"
+          },
+          "3pl": {
+            "form": "kad",
+            "variants": [
+              "cad"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkad"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "kəde̯am",
+            "variants": [
+              "căde̯ám"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈde̯am"
+          },
+          "2sg": {
+            "form": "kəde̯ai̯",
+            "variants": [
+              "căde̯ái̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈde̯ai̯"
+          },
+          "3sg": {
+            "form": "kəde̯a",
+            "variants": [
+              "căde̯á"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈde̯a"
+          },
+          "1pl": {
+            "form": "kəde̯am",
+            "variants": [
+              "căde̯ám"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈde̯am"
+          },
+          "2pl": {
+            "form": "kəde̯a",
+            "variants": [
+              "căde̯áț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈde̯a"
+          },
+          "3pl": {
+            "form": "kəde̯au̯",
+            "variants": [
+              "căde̯áu̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈde̯au̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "kəzui̯",
+            "variants": [
+              "căzúi̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈzui̯"
+          },
+          "2sg": {
+            "form": "kəzuʃ",
+            "variants": [
+              "căzúș"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈzuʃ"
+          },
+          "3sg": {
+            "form": "kəzu",
+            "variants": [
+              "căzú"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈzu"
+          },
+          "1pl": {
+            "form": "kəzum",
+            "variants": [
+              "căzúm"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈzum"
+          },
+          "2pl": {
+            "form": "kəzuʦ",
+            "variants": [
+              "căzúț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈzuʦ"
+          },
+          "3pl": {
+            "form": "kəzurə",
+            "variants": [
+              "căzúră"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈzurə"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "kad",
+            "variants": [
+              "să cád"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkad"
+          },
+          "2sg": {
+            "form": "kaz",
+            "variants": [
+              "să cáz"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkaz"
+          },
+          "3sg": {
+            "form": "kadə",
+            "variants": [
+              "să cádă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkadə"
+          },
+          "1pl": {
+            "form": "kədem",
+            "variants": [
+              "să cădém"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈdem"
+          },
+          "2pl": {
+            "form": "kədeʦ",
+            "variants": [
+              "să cădéț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈdeʦ"
+          },
+          "3pl": {
+            "form": "kadə",
+            "variants": [
+              "să cádă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkadə"
+          }
+        },
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[kəˈde̯ari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA citation form (infinitive restricted)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈde̯ari"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[kəˈzut]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA citation form (infinitive restricted)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈzut"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "kad",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkad"
+          },
+          "1pl": {
+            "form": "kədem",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈdem"
+          },
+          "2pl": {
+            "form": "kədeʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "kəˈdeʦ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "bátiri",
+      "class_source": "III",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Capidan/RVID Megleno:bátiri",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "provider": "Capidan 1925 via RVID/ODRVM + Capidan-tradition tables",
+        "gloss_en": "to beat",
+        "etymon": "battuere",
+        "rvid_license": "GPLv3",
+        "caveat": "ODRVM/RVID generalizes Capidan across border varieties; short infinitive virtually extinct as a verbal form."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "bat",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbat"
+          },
+          "2sg": {
+            "form": "baʦ",
+            "variants": [
+              "baț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbaʦ"
+          },
+          "3sg": {
+            "form": "bati",
+            "variants": [
+              "báti"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbati"
+          },
+          "1pl": {
+            "form": "batim",
+            "variants": [
+              "bátim"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatim"
+          },
+          "2pl": {
+            "form": "batiʦ",
+            "variants": [
+              "bátiț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatiʦ"
+          },
+          "3pl": {
+            "form": "bat",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbat"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "bəte̯am",
+            "variants": [
+              "băte̯ám"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈte̯am"
+          },
+          "2sg": {
+            "form": "bəte̯ai̯",
+            "variants": [
+              "băte̯ái̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈte̯ai̯"
+          },
+          "3sg": {
+            "form": "bəte̯a",
+            "variants": [
+              "băte̯á"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈte̯a"
+          },
+          "1pl": {
+            "form": "bəte̯am",
+            "variants": [
+              "băte̯ám"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈte̯am"
+          },
+          "2pl": {
+            "form": "bəte̯aʦ",
+            "variants": [
+              "băte̯áț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈte̯aʦ"
+          },
+          "3pl": {
+            "form": "bəte̯au̯",
+            "variants": [
+              "băte̯áu̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈte̯au̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "bətui̯",
+            "variants": [
+              "bătúi̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈtui̯"
+          },
+          "2sg": {
+            "form": "bətuʃ",
+            "variants": [
+              "bătúș"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈtuʃ"
+          },
+          "3sg": {
+            "form": "bətu",
+            "variants": [
+              "bătú"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈtu"
+          },
+          "1pl": {
+            "form": "bətum",
+            "variants": [
+              "bătúm"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈtum"
+          },
+          "2pl": {
+            "form": "bətut",
+            "variants": [
+              "bătúț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈtut"
+          },
+          "3pl": {
+            "form": "bəturə",
+            "variants": [
+              "bătúră"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈturə"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "bat",
+            "variants": [
+              "să bát"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbat"
+          },
+          "2sg": {
+            "form": "baʦ",
+            "variants": [
+              "să báț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbaʦ"
+          },
+          "3sg": {
+            "form": "batə",
+            "variants": [
+              "să bátă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatə"
+          },
+          "1pl": {
+            "form": "batim",
+            "variants": [
+              "să bátim"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatim"
+          },
+          "2pl": {
+            "form": "batiʦ",
+            "variants": [
+              "să bátiț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatiʦ"
+          },
+          "3pl": {
+            "form": "batə",
+            "variants": [
+              "să bátă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatə"
+          }
+        },
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ˈbatiri]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA citation form (infinitive restricted)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatiri"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[bəˈtut]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA citation form (infinitive restricted)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "bəˈtut"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "bati",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbati"
+          },
+          "1pl": {
+            "form": "batim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatim"
+          },
+          "2pl": {
+            "form": "batiʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbatiʦ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "durmíri",
+      "class_source": "IV",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Capidan/RVID Megleno:durmíri",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "provider": "Capidan 1925 via RVID/ODRVM + Capidan-tradition tables",
+        "gloss_en": "to sleep",
+        "etymon": "dormire",
+        "rvid_license": "GPLv3",
+        "caveat": "ODRVM/RVID generalizes Capidan across border varieties; short infinitive virtually extinct as a verbal form."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "dorm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdorm"
+          },
+          "2sg": {
+            "form": "dorm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdorm"
+          },
+          "3sg": {
+            "form": "do̯armi",
+            "variants": [
+              "do̯ármi"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdo̯armi"
+          },
+          "1pl": {
+            "form": "durmim",
+            "variants": [
+              "durmím"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmim"
+          },
+          "2pl": {
+            "form": "durmiʦ",
+            "variants": [
+              "durmíț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmiʦ"
+          },
+          "3pl": {
+            "form": "dorm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdorm"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "durme̯am",
+            "variants": [
+              "durme̯ám"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈme̯am"
+          },
+          "2sg": {
+            "form": "durme̯ai̯",
+            "variants": [
+              "durme̯ái̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈme̯ai̯"
+          },
+          "3sg": {
+            "form": "durme̯a",
+            "variants": [
+              "durme̯á"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈme̯a"
+          },
+          "1pl": {
+            "form": "durme̯am",
+            "variants": [
+              "durme̯ám"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈme̯am"
+          },
+          "2pl": {
+            "form": "durme̯aʦ",
+            "variants": [
+              "durme̯áț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈme̯aʦ"
+          },
+          "3pl": {
+            "form": "durmeau̯",
+            "variants": [
+              "durme̯áu̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmeau̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "durmii̯",
+            "variants": [
+              "durmíi̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmii̯"
+          },
+          "2sg": {
+            "form": "durmiʃ",
+            "variants": [
+              "durmíș"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmiʃ"
+          },
+          "3sg": {
+            "form": "durmi",
+            "variants": [
+              "durmí"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmi"
+          },
+          "1pl": {
+            "form": "durmim",
+            "variants": [
+              "durmím"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmim"
+          },
+          "2pl": {
+            "form": "durmiʦ",
+            "variants": [
+              "durmíț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmiʦ"
+          },
+          "3pl": {
+            "form": "durmirə",
+            "variants": [
+              "durmíră"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmirə"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "să dórm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "capidan-tradition orthography",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "să dárm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "capidan-tradition orthography",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "să do̯ármă",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "capidan-tradition orthography",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "să durmím",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "capidan-tradition orthography",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "să durmíț",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "capidan-tradition orthography",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "să do̯ármă",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "capidan-tradition orthography",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[durˈmiri̯]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA citation form (infinitive restricted)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmiri̯"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[durˈmit]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA citation form (infinitive restricted)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmit"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "dorm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdorm"
+          },
+          "1pl": {
+            "form": "durmim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmim"
+          },
+          "2pl": {
+            "form": "durmiʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "durˈmiʦ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "sirbíri",
+      "class_source": "IV-esc",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Capidan/RVID Megleno:sirbíri",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "provider": "Capidan 1925 via RVID/ODRVM + Capidan-tradition tables",
+        "gloss_en": "to serve / work",
+        "etymon": "seruire",
+        "rvid_license": "GPLv3",
+        "caveat": "ODRVM/RVID generalizes Capidan across border varieties; short infinitive virtually extinct as a verbal form."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "sirbes",
+            "variants": [
+              "sirbés"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbes"
+          },
+          "2sg": {
+            "form": "sirbeʃ",
+            "variants": [
+              "sirbéș"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbeʃ"
+          },
+          "3sg": {
+            "form": "sirbe̯aʃti",
+            "variants": [
+              "sirbe̯áști"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbe̯aʃti"
+          },
+          "1pl": {
+            "form": "sirbim",
+            "variants": [
+              "sirbím"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbim"
+          },
+          "2pl": {
+            "form": "sirbiʦ",
+            "variants": [
+              "sirbíț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbiʦ"
+          },
+          "3pl": {
+            "form": "sirbes",
+            "variants": [
+              "sirbés"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbes"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "sirbes",
+            "variants": [
+              "să sirbés"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbes"
+          },
+          "2sg": {
+            "form": "sirbeʃ",
+            "variants": [
+              "să sirbéș"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbeʃ"
+          },
+          "3sg": {
+            "form": "sirbe̯askə",
+            "variants": [
+              "să sirbe̯áscă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbe̯askə"
+          },
+          "1pl": {
+            "form": "sirbim",
+            "variants": [
+              "să sirbím"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbim"
+          },
+          "2pl": {
+            "form": "sirbiʦ",
+            "variants": [
+              "să sirbíț"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbiʦ"
+          },
+          "3pl": {
+            "form": "sirbe̯askə",
+            "variants": [
+              "să sirbe̯áscă"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA (capidan spelling as variant)",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbe̯askə"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "sirbe̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbe̯a"
+          },
+          "1pl": {
+            "form": "sirbim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbim"
+          },
+          "2pl": {
+            "form": "sirbiʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sirˈbiʦ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "adunare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:adunare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "gather",
+        "etymon": "adunare",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[duˈnari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnari"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "dunə",
+            "variants": [
+              "donə"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdunə"
+          },
+          "1pl": {
+            "form": "dunɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnɔm"
+          },
+          "2pl": {
+            "form": "dunaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnaʦ"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "dun",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdun"
+          },
+          "2sg": {
+            "form": "duɲ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈduɲ"
+          },
+          "3sg": {
+            "form": "dunə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdunə"
+          },
+          "1pl": {
+            "form": "dunɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnɔm"
+          },
+          "2pl": {
+            "form": "dunaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnaʦ"
+          },
+          "3pl": {
+            "form": "dunə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdunə"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "dun",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdun"
+          },
+          "2sg": {
+            "form": "duɲ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈduɲ"
+          },
+          "3sg": {
+            "form": "dunə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdunə"
+          },
+          "1pl": {
+            "form": "dunɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnɔm"
+          },
+          "2pl": {
+            "form": "dunaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnaʦ"
+          },
+          "3pl": {
+            "form": "dunə",
+            "variants": [
+              "donə"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdunə"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "dunai̯",
+            "variants": [
+              "dənai̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnai̯"
+          },
+          "2sg": {
+            "form": "dunaʃ",
+            "variants": [
+              "dənaʃ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnaʃ"
+          },
+          "3sg": {
+            "form": "dunɔ",
+            "variants": [
+              "dənɔ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnɔ"
+          },
+          "1pl": {
+            "form": "dunɔm",
+            "variants": [
+              "dənɔm"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnɔm"
+          },
+          "2pl": {
+            "form": "dunaʦ",
+            "variants": [
+              "dənats"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnaʦ"
+          },
+          "3pl": {
+            "form": "dunarə",
+            "variants": [
+              "dənarə"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "duˈnarə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "afflare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:afflare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "find",
+        "etymon": "afflare",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ˈflari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈflari"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "aflu",
+            "variants": [
+              "aflum"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈaflu"
+          },
+          "2sg": {
+            "form": "afli",
+            "variants": [
+              "afliʃ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈafli"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "aflu",
+            "variants": [
+              "aflum"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈaflu"
+          },
+          "2sg": {
+            "form": "afli",
+            "variants": [
+              "afliʃ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈafli"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "flam",
+            "variants": [
+              "fləjam"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈflam"
+          },
+          "2sg": {
+            "form": "flai̯",
+            "variants": [
+              "fləjai̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈflai̯"
+          },
+          "3sg": {
+            "form": "fla",
+            "variants": [
+              "fləja",
+              "fləjau̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfla"
+          },
+          "1pl": {
+            "form": "flam",
+            "variants": [
+              "fləjam"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈflam"
+          },
+          "2pl": {
+            "form": "flaʦ",
+            "variants": [
+              "fləjaʦ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈflaʦ"
+          },
+          "3pl": {
+            "form": "flau̯",
+            "variants": [
+              "fləjau"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈflau̯"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "ambulare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:ambulare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "walk",
+        "etymon": "ambulare",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[amˈnari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "amˈnari"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "amnə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈamnə"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "amnu",
+            "variants": [
+              "amnum"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈamnu"
+          },
+          "2sg": {
+            "form": "amɲi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈamɲi"
+          },
+          "3sg": {
+            "form": "amnə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈamnə"
+          },
+          "1pl": {
+            "form": "ɐmnɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈnɔm"
+          },
+          "2pl": {
+            "form": "ɐmnats",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈnats"
+          },
+          "3pl": {
+            "form": "amnə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈamnə"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ɐmnam",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈnam"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ɐmnai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmnˈai̯"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "ardere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:ardere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "burn",
+        "etymon": "ardere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈars]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈars"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "ard",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈard"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "arʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈarʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "bibere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:bibere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "drink",
+        "etymon": "bibere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ˈbe̯ari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯ari"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[biˈut]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "biˈut"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "be̯au̯",
+            "variants": [
+              "bi̯au̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯au̯"
+          },
+          "2sg": {
+            "form": "be̯ai̯",
+            "variants": [
+              "bi̯ai̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯ai̯"
+          },
+          "3sg": {
+            "form": "be̯a",
+            "variants": [
+              "bi̯au̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯a"
+          },
+          "1pl": {
+            "form": "bem",
+            "variants": [
+              "bi̯əm"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbem"
+          },
+          "2pl": {
+            "form": "bi̯əʦ",
+            "variants": [
+              "beʦ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbi̯əʦ"
+          },
+          "3pl": {
+            "form": "be̯au̯",
+            "variants": [
+              "bi̯au̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯au̯"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "be̯am",
+            "variants": [
+              "bi̯am"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯am"
+          },
+          "2sg": {
+            "form": "be̯ai̯",
+            "variants": [
+              "bi̯ai̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯ai̯"
+          },
+          "3sg": {
+            "form": "be̯a",
+            "variants": [
+              "bi̯a"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯a"
+          },
+          "1pl": {
+            "form": "be̯am",
+            "variants": [
+              "bi̯am"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯am"
+          },
+          "2pl": {
+            "form": "be̯ats",
+            "variants": [
+              "bi̯ats"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯ats"
+          },
+          "3pl": {
+            "form": "be̯au̯",
+            "variants": [
+              "bi̯au̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbe̯au̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "bi̯ui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbi̯ui̯"
+          },
+          "2sg": {
+            "form": "bi̯uʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbi̯uʃ"
+          },
+          "3sg": {
+            "form": "bi̯u",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbi̯u"
+          },
+          "1pl": {
+            "form": "bi̯um",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbi̯um"
+          },
+          "2pl": {
+            "form": "bi̯uʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbi̯uʦ"
+          },
+          "3pl": {
+            "form": "bi̯urə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈbi̯urə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "conspuere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:conspuere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "spit",
+        "etymon": "conspuere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[skuˈpari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpari"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈskupt]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈskupt"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "skup",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈskup"
+          },
+          "2sg": {
+            "form": "skup",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈskup"
+          },
+          "3sg": {
+            "form": "skupə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈskupə"
+          },
+          "1pl": {
+            "form": "skupɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpɔm"
+          },
+          "2pl": {
+            "form": "skupaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpaʦ"
+          },
+          "3pl": {
+            "form": "skupə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈskupə"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "skupe̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpe̯am"
+          },
+          "2sg": {
+            "form": "skupe̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpe̯ai̯"
+          },
+          "3sg": {
+            "form": "skupe̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpe̯a"
+          },
+          "1pl": {
+            "form": "skupe̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpe̯am"
+          },
+          "2pl": {
+            "form": "skupe̯aʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpe̯aʦ"
+          },
+          "3pl": {
+            "form": "skupeau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpeau̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "skupai̯",
+            "variants": [
+              "skupii̯",
+              "skupʃ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpai̯"
+          },
+          "2sg": {
+            "form": "skupaʃ",
+            "variants": [
+              "skupiʃ",
+              "skupsiʃ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpaʃ"
+          },
+          "3sg": {
+            "form": "skupɔ",
+            "variants": [
+              "skupi",
+              "skupsi"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpɔ"
+          },
+          "1pl": {
+            "form": "skupɔm",
+            "variants": [
+              "skupim",
+              "skupsim"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpɔm"
+          },
+          "2pl": {
+            "form": "skupats",
+            "variants": [
+              "skupiʦ",
+              "skupsiʦ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈpats"
+          },
+          "3pl": {
+            "form": "skuparə",
+            "variants": [
+              "skupirə",
+              "skupsirə"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "skuˈparə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "coquere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:coquere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "cook, bake",
+        "etymon": "coquere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈkopt]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkopt"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "kok",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkok"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "kopʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈkopʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "dare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:dare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "give",
+        "etymon": "dare",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ˈdari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdari"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "dɔ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdɔ"
+          },
+          "1pl": {
+            "form": "dɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdɔm"
+          },
+          "2pl": {
+            "form": "daʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdaʦ"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "dau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdau̯"
+          },
+          "2sg": {
+            "form": "dai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdai̯"
+          },
+          "3sg": {
+            "form": "da",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈda"
+          },
+          "1pl": {
+            "form": "dɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdɔm"
+          },
+          "2pl": {
+            "form": "daʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdaʦ"
+          },
+          "3pl": {
+            "form": "dau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈdau̯"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "dəde̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "dəˈde̯am"
+          },
+          "2sg": {
+            "form": "dəde̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "dəˈde̯ai̯"
+          },
+          "3sg": {
+            "form": "dəde̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "dəˈde̯a"
+          },
+          "1pl": {
+            "form": "dəde̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "dəˈde̯am"
+          },
+          "2pl": {
+            "form": "dəde̯aʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "dəˈde̯aʦ"
+          },
+          "3pl": {
+            "form": "dədeau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "dəˈdeau̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ded",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈded"
+          },
+          "2sg": {
+            "form": "de̯adiʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈde̯adiʃ"
+          },
+          "3sg": {
+            "form": "de̯adi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈde̯adi"
+          },
+          "1pl": {
+            "form": "de̯adim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈde̯adim"
+          },
+          "2pl": {
+            "form": "de̯adiʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈde̯adiʦ"
+          },
+          "3pl": {
+            "form": "de̯adirə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈde̯adirə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "dicere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:dicere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "say",
+        "etymon": "dicere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈzis]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈzis"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "zik",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈzik"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ziʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈziʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "expauere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:expauere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "frighten",
+        "etymon": "expauere",
+        "comment": "The etymon is extremely problematic.; The preterite is appears to belong to the first conjugation in the dialects of Huma and Ţărnareca.",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[spəˈre̯ari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈre̯ari"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "spar",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈspar"
+          },
+          "2sg": {
+            "form": "spar",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈspar"
+          },
+          "3sg": {
+            "form": "sparə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsparə"
+          },
+          "1pl": {
+            "form": "spərɔm",
+            "variants": [
+              "sparim"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈrɔm"
+          },
+          "2pl": {
+            "form": "spərɔʦ",
+            "variants": [
+              "spariʦ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈrɔʦ"
+          },
+          "3pl": {
+            "form": "spar",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈspar"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "spəram",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈram"
+          },
+          "2sg": {
+            "form": "spərai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈrai̯"
+          },
+          "3sg": {
+            "form": "spəra",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈra"
+          },
+          "1pl": {
+            "form": "spəram",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈram"
+          },
+          "2pl": {
+            "form": "spəraʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈraʦ"
+          },
+          "3pl": {
+            "form": "spərau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈrau̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "spərui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈrui̯"
+          },
+          "2sg": {
+            "form": "spəruʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈruʃ"
+          },
+          "3sg": {
+            "form": "spəru",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈru"
+          },
+          "1pl": {
+            "form": "spərum",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈrum"
+          },
+          "2pl": {
+            "form": "spəruʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈruʦ"
+          },
+          "3pl": {
+            "form": "spərurə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "spəˈrurə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "facere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:facere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "make",
+        "etymon": "facere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈfat]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfat"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "fɔ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfɔ"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "fak",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfak"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "feʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfeʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "feruere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:feruere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "boil",
+        "etymon": "feruere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ˈjarbiri]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarbiri"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈjert]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjert"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "jerb",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjerb"
+          },
+          "2sg": {
+            "form": "jerb",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjerb"
+          },
+          "3sg": {
+            "form": "jarbi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarbi"
+          },
+          "1pl": {
+            "form": "jarbim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarbim"
+          },
+          "2pl": {
+            "form": "jarbiʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarbiʦ"
+          },
+          "3pl": {
+            "form": "jerb",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjerb"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "irbe̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "irˈbe̯am"
+          },
+          "2sg": {
+            "form": "irbe̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "irˈbe̯ai̯"
+          },
+          "3sg": {
+            "form": "irbe̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "irˈbe̯a"
+          },
+          "1pl": {
+            "form": "irbe̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "irˈbe̯am"
+          },
+          "2pl": {
+            "form": "irbe̯aʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "irˈbe̯aʦ"
+          },
+          "3pl": {
+            "form": "irbe̯au̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "irˈbe̯au̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "jerʃ",
+            "variants": [
+              "jerʃu"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjerʃ"
+          },
+          "2sg": {
+            "form": "jarsiʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarsiʃ"
+          },
+          "3sg": {
+            "form": "jarsi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarsi"
+          },
+          "1pl": {
+            "form": "jarsim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarsim"
+          },
+          "2pl": {
+            "form": "jarsiʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarsiʦ"
+          },
+          "3pl": {
+            "form": "jarsirə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈjarsirə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "fugere",
+      "class_source": "IV",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:fugere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "flee, run",
+        "etymon": "fugere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[fuˈziri]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "fuˈziri"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "fui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈfui̯"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "habere",
+      "class_source": "II",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:habere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "have",
+        "etymon": "habere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈvut]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvut"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈam"
+          },
+          "2sg": {
+            "form": "ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈai̯"
+          },
+          "3sg": {
+            "form": "ari",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈari"
+          },
+          "1pl": {
+            "form": "vem",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvem"
+          },
+          "2pl": {
+            "form": "veʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈveʦ"
+          },
+          "3pl": {
+            "form": "au̯u",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "au̯u"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈam"
+          },
+          "2sg": {
+            "form": "ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈai̯"
+          },
+          "3sg": {
+            "form": "ai̯bə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈai̯bə"
+          },
+          "1pl": {
+            "form": "vem",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvem"
+          },
+          "2pl": {
+            "form": "veʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈveʦ"
+          },
+          "3pl": {
+            "form": "ai̯bə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈai̯bə"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ve̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈve̯am"
+          },
+          "2sg": {
+            "form": "ve̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈve̯ai̯"
+          },
+          "3sg": {
+            "form": "ve̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈve̯a"
+          },
+          "1pl": {
+            "form": "ve̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈve̯a"
+          },
+          "2pl": {
+            "form": "ve̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈve̯am"
+          },
+          "3pl": {
+            "form": "ve̯au̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈve̯au̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "vui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvui̯"
+          },
+          "2sg": {
+            "form": "vuʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvuʃ"
+          },
+          "3sg": {
+            "form": "vu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvu"
+          },
+          "1pl": {
+            "form": "vum",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvum"
+          },
+          "2pl": {
+            "form": "vuʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvuʦ"
+          },
+          "3pl": {
+            "form": "vurə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvurə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "implere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:implere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "fill",
+        "etymon": "implere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[amˈpʎari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "amˈpʎari"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "ampʎu",
+            "variants": [
+              "ampʎum"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈampʎu"
+          },
+          "3sg": {
+            "form": "ampʎə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈampʎə"
+          },
+          "1pl": {
+            "form": "ɐmpʎɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈpʎɔm"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "ampʎu",
+            "variants": [
+              "ampʎum"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈampʎu"
+          },
+          "2sg": {
+            "form": "ampʎi",
+            "variants": [
+              "ampʎiʃ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈampʎi"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ɐmpʎai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈpʎai̯"
+          },
+          "2sg": {
+            "form": "ɐmpʎaʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈpʎaʃ"
+          },
+          "3sg": {
+            "form": "ɐmpʎɔ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈpʎɔ"
+          },
+          "1pl": {
+            "form": "ɐmpʎɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈpʎɔm"
+          },
+          "2pl": {
+            "form": "ɐmpʎaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈpʎaʦ"
+          },
+          "3pl": {
+            "form": "ɐmpʎarə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐmˈpʎarə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "intelligere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:intelligere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "understand",
+        "etymon": "intelligere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ɐnʦiˈles]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐnʦiˈles"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "ɐnʦileg",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐnʦiˈleg"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ɐnʦilepʃu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐnʦiˈlepʃu"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "intrare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:intrare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "enter",
+        "etymon": "intrare",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ɐnˈtrari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐnˈtrari"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "antru",
+            "variants": [
+              "antrum"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈantru"
+          },
+          "2sg": {
+            "form": "antri",
+            "variants": [
+              "antriʃ"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈantri"
+          },
+          "3sg": {
+            "form": "antrə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈantrə"
+          },
+          "1pl": {
+            "form": "ɐntrɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐnˈtrɔm"
+          },
+          "2pl": {
+            "form": "ɐntraʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐnˈtraʦ"
+          },
+          "3pl": {
+            "form": "antrə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈantrə"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ɐntram",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐnˈtram"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ɐntrai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ɐnˈtrai̯"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "leuare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:leuare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "take",
+        "etymon": "leuare",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ˈlari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlari"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈlat]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlat"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "le̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈle̯a"
+          },
+          "1pl": {
+            "form": "lɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlɔm"
+          },
+          "2pl": {
+            "form": "laʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlaʦ"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "le̯au̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈle̯au̯"
+          },
+          "2sg": {
+            "form": "le̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈle̯ai̯"
+          },
+          "3sg": {
+            "form": "le̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈle̯a"
+          },
+          "1pl": {
+            "form": "lɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlɔm"
+          },
+          "2pl": {
+            "form": "laʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlaʦ"
+          },
+          "3pl": {
+            "form": "le̯au",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈle̯au"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ləjam",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ləˈjam"
+          },
+          "2sg": {
+            "form": "ləjai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ləˈjai̯"
+          },
+          "3sg": {
+            "form": "ləja",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ləˈja"
+          },
+          "1pl": {
+            "form": "ləjam",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ləˈjam"
+          },
+          "2pl": {
+            "form": "ləjaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ləˈjaʦ"
+          },
+          "3pl": {
+            "form": "ləjau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ləˈjau̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "lai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlai̯"
+          },
+          "2sg": {
+            "form": "laʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlaʃ"
+          },
+          "3sg": {
+            "form": "lɔ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlɔ"
+          },
+          "1pl": {
+            "form": "lɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlɔm"
+          },
+          "2pl": {
+            "form": "laʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlaʦ"
+          },
+          "3pl": {
+            "form": "larə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈlarə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "mergere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:mergere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "go",
+        "etymon": "mergere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ˈme̯arʣiri]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈme̯arʣiri"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "merg",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈmerg"
+          },
+          "2sg": {
+            "form": "merʣ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈmerʣ"
+          },
+          "3sg": {
+            "form": "me̯arʣi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈme̯arʣi"
+          },
+          "1pl": {
+            "form": "me̯arʣim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈme̯arʣim"
+          },
+          "2pl": {
+            "form": "me̯arʣiʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈme̯arʣiʦ"
+          },
+          "3pl": {
+            "form": "merg",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈmerg"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "merʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈmerʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "plangere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:plangere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "weep",
+        "etymon": "plangere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.gerund": {
+          "inv": {
+            "form": "[plənˈgɔndərə]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "plənˈgɔndərə"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈplɔns]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈplɔns"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "plɔng",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈplɔng"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "plɔnʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈplɔnʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "posse",
+      "class_source": "II",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:posse",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "be able",
+        "etymon": "posse",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[puˈte̯ari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈte̯ari"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "pot",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈpot"
+          },
+          "2sg": {
+            "form": "poʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈpoʦ"
+          },
+          "3sg": {
+            "form": "po̯ati",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈpo̯ati"
+          },
+          "1pl": {
+            "form": "putem",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈtem"
+          },
+          "2pl": {
+            "form": "puteʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈteʦ"
+          },
+          "3pl": {
+            "form": "pot",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈpot"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "pute̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈte̯am"
+          },
+          "2sg": {
+            "form": "pute̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈte̯ai̯"
+          },
+          "3sg": {
+            "form": "pute̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈte̯a"
+          },
+          "1pl": {
+            "form": "pute̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈte̯am"
+          },
+          "2pl": {
+            "form": "pute̯aʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈte̯aʦ"
+          },
+          "3pl": {
+            "form": "pute̯au̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈte̯au̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "putui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈtui̯"
+          },
+          "2sg": {
+            "form": "putuʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈtuʃ"
+          },
+          "3sg": {
+            "form": "putu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈtu"
+          },
+          "1pl": {
+            "form": "putum",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈtum"
+          },
+          "2pl": {
+            "form": "putuʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈtuʦ"
+          },
+          "3pl": {
+            "form": "puturə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "puˈturə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "remanere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:remanere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "stay",
+        "etymon": "remanere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[rəˈmas]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "rəˈmas"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "rəmaʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "rəˈmaʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "rumpere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:rumpere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "break",
+        "etymon": "rumpere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈrupt]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrupt"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "rup",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrup"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "rupʃu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrupʃu"
+          },
+          "2sg": {
+            "form": "rupʦiʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrupʦiʃ"
+          },
+          "3sg": {
+            "form": "rupʦi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrupʦi"
+          },
+          "1pl": {
+            "form": "rupʦim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrupʦim"
+          },
+          "2pl": {
+            "form": "rupʦiʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrupʦiʦ"
+          },
+          "3pl": {
+            "form": "rupʦirə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈrupʦirə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "sedere",
+      "class_source": "II",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:sedere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "sit",
+        "etymon": "sedere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ʃəˈde̯ari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈde̯ari"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ʃəˈzut]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈzut"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "ʃɔz",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈʃɔz"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "ʃɔd",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈʃɔd"
+          },
+          "2sg": {
+            "form": "ʃɔz",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈʃɔz"
+          },
+          "3sg": {
+            "form": "ʃadi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈʃadi"
+          },
+          "1pl": {
+            "form": "ʃədem",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈdem"
+          },
+          "2pl": {
+            "form": "ʃədeʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈdeʦ"
+          },
+          "3pl": {
+            "form": "ʃɔd",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈʃɔd"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ʃəde̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈde̯am"
+          },
+          "2sg": {
+            "form": "ʃəde̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈde̯ai̯"
+          },
+          "3sg": {
+            "form": "ʃəde̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈde̯a"
+          },
+          "1pl": {
+            "form": "ʃəde̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈde̯am"
+          },
+          "2pl": {
+            "form": "ʃəde̯aʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈde̯aʦ"
+          },
+          "3pl": {
+            "form": "ʃəde̯au̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈde̯au̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ʃəzui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ʃəˈzui̯"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "stare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:stare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "stand, stay",
+        "etymon": "stare",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[ˈstari]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈstari"
+          }
+        },
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈstat]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈstat"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "stoi̯",
+            "variants": [
+              "toi̯"
+            ],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈstoi̯"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "stau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈstau̯"
+          },
+          "2sg": {
+            "form": "stai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈstai̯"
+          },
+          "3sg": {
+            "form": "sta",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsta"
+          },
+          "1pl": {
+            "form": "stɔm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈstɔm"
+          },
+          "2pl": {
+            "form": "staʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈstaʦ"
+          },
+          "3pl": {
+            "form": "stau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈstau̯"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "stəte̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈte̯am"
+          },
+          "2sg": {
+            "form": "stəte̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈte̯ai̯"
+          },
+          "3sg": {
+            "form": "stəte̯a",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈte̯a"
+          },
+          "1pl": {
+            "form": "stəte̯am",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈte̯am"
+          },
+          "2pl": {
+            "form": "stəte̯aʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈte̯aʦ"
+          },
+          "3pl": {
+            "form": "stəte̯ai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈte̯ai̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "stətui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈtui̯"
+          },
+          "2sg": {
+            "form": "stətuʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈtuʃ"
+          },
+          "3sg": {
+            "form": "stətu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈtu"
+          },
+          "1pl": {
+            "form": "stətum",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈtum"
+          },
+          "2pl": {
+            "form": "stətuʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈtuʦ"
+          },
+          "3pl": {
+            "form": "stəturə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "stəˈturə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "subire",
+      "class_source": "IV",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:subire",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "mount, go up",
+        "etymon": "subire",
+        "comment": "Forms given are specified as being from Țârnareca.",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "cit": {
+            "form": "[suˈi]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈi"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "sui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsui̯"
+          },
+          "2sg": {
+            "form": "sui̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsui̯"
+          },
+          "3sg": {
+            "form": "sujə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsujə"
+          },
+          "1pl": {
+            "form": "sujəm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjəm"
+          },
+          "2pl": {
+            "form": "sujaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjaʦ"
+          },
+          "3pl": {
+            "form": "sujə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsujə"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "sujam",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "sujˈam"
+          },
+          "2sg": {
+            "form": "sujai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjai̯"
+          },
+          "3sg": {
+            "form": "suja",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈja"
+          },
+          "1pl": {
+            "form": "sujam",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjam"
+          },
+          "2pl": {
+            "form": "sujaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjaʦ"
+          },
+          "3pl": {
+            "form": "sujau̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjau̯"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "sujai̯",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjai̯"
+          },
+          "2sg": {
+            "form": "sujaʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjaʃ"
+          },
+          "3sg": {
+            "form": "sujə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjə"
+          },
+          "1pl": {
+            "form": "sujəm",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjəm"
+          },
+          "2pl": {
+            "form": "sujaʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjaʦ"
+          },
+          "3pl": {
+            "form": "sujarə",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "suˈjarə"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "sugere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:sugere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "suck",
+        "etymon": "sugere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈsupt]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsupt"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "sug",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsug"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "suptʃu",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsuptʃu"
+          },
+          "2sg": {
+            "form": "supʦiʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsupʦiʃ"
+          },
+          "3sg": {
+            "form": "supʦi",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈsupʦi"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "tondere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:tondere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "shear, cut",
+        "etymon": "tondere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈtuns]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈtuns"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "tund",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈtund"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "tunʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈtunʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "trahere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:trahere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "draw, pull",
+        "etymon": "trahere",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "nonfinite.participle": {
+          "msg": {
+            "form": "[ˈtras]",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈtras"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "trag",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈtrag"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "traʃ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈtraʃ"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "uenire",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "RVID Megleno:uenire",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "provider": "Romance Verbal Inflection Dataset 2.0 (from ODRVM/Capidan)",
+        "gloss_en": "come",
+        "etymon": "uenire",
+        "comment": "",
+        "rvid_license": "GPLv3",
+        "caveat": "IPA phonemic forms. Capidan 1925 is the descriptive base; Atanasov 2002 for modern qualification."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "vin",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvin"
+          },
+          "2sg": {
+            "form": "viɲ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈviɲ"
+          },
+          "3sg": {
+            "form": "vini",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvini"
+          },
+          "1pl": {
+            "form": "vinim",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "viˈnim"
+          },
+          "2pl": {
+            "form": "viniʦ",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "viˈniʦ"
+          },
+          "3pl": {
+            "form": "vin",
+            "variants": [],
+            "phonemes": [],
+            "source_label": "rvid IPA",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+            "ipa": "ˈvin"
+          }
+        }
+      }
+    }
+  ]
+}

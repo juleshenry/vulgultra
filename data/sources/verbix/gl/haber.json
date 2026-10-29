@@ -1,0 +1,511 @@
+{
+  "lect": "gl",
+  "lemma": "haber",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/glg/haber/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=6&T1=haber",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 6,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "hei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "has"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "ha"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "habemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "habedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "han"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "haxa"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "haxas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "haxa"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "haxamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "haxades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "haxan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "había"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "habías"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "había"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "habiamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "habiades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "habían"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "houbese"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "houbeses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "houbese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "houbesemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "houbesedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "houbesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "houben"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "houbeche"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "houbo"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "houbemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "houbestes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "houberon"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "haberei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "haberás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "haberá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "haberemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "haberedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "haberán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "houber"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "houberes"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "houber"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "houbermos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "houberdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "houberen"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "habería"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "haberías"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "habería"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "haberiamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "haberiades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "haberían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "ha"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "haxa"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "haxamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "habede"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "haxan"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "houbera"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "houberas"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "houbera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "houberamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "houberades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "houberan"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "haberes"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "habermos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "haberdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "haberen"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habido"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "Ei, ola. Son eu. Chameite <b>hai</b> un anaco, pero non collías.",
+      "- Agora chos traio. - Grazas. Sabes o mellor dos bufetes libres ? Que <b>hai</b> comida dabondo.",
+      "Tamén <b>hai</b> que sacrificar unha cabra ? Por min ben, pero asustaría a Vincenzo.",
+      "Por atletismo, 200 pavos. Corres rápido? Quítame o monitor do nocello e verás. <b>Ha</b>, <b>ha</b>, <b>ha</b>. Iso non vai pasar.",
+      "comprometería a súa seguridade … enormemente. Se cadra <b>hai</b> algún tío …",
+      "<b>Hai</b> moito tempo pinteilles outros retratos. E só pintastes? Excelencia, por quen me tomades?",
+      "Claro que non! A vitoria… ou a morte. Non <b>hai</b> outra opción. Pedinlle que conseguise provisións.",
+      "COMENTAR Non creo que <b>haxa</b> unha cura infalible cando nos rompen o corazón.",
+      "Recórdolles que é unha investigación en curso, así que non <b>haberá</b> moito do que poidamos falar,",
+      "<b>Hai</b> que falar de cousas máis importantes. Como a rapaza.",
+      "Para mellorar <b>hai</b> que gastar.",
+      "<b>Hai</b> que apurar. <b>Hai</b> problemas na Lúa.",
+      "<b>Hai</b> unha escaleira ! Non saltes ! Si! Algo, algo e fóra. Lume! Ei, xefe!",
+      "Vixía a todos. E tráeme novas cando as <b>haxa</b>. - Estás ferido ? - Nada que non cure.",
+      "Claro, papá. Vai máis amodo. Para alá. <b>Hai</b> que facer algo antes de chegarmos."
+    ],
+    "verb": "haber"
+  }
+}

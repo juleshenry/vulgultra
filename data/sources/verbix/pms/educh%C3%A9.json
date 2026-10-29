@@ -1,0 +1,348 @@
+{
+  "lect": "pms",
+  "lemma": "eduché",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/pms/educh%C3%A9/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=12034&T1=educh%C3%A9",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 12034,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "educo"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "eduche"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "educa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "educuma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "eduche"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "educo"
+          }
+        ]
+      },
+      "1": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "educava"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 1,
+            "form": "educave"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "educava"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "educavo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 1,
+            "form": "educave"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "educavo"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "educherai"
+          },
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "educherö"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "educheras"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "educherà"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "educheruma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "educhereve"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "educheran"
+          }
+        ]
+      },
+      "3": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "educherìa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "educherìe"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "educherìa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "educherìo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "educherìe"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "educherìo"
+          }
+        ]
+      },
+      "4": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 1,
+            "form": "educa"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "educa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "educuma"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "eduché"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "educo"
+          }
+        ]
+      },
+      "5": {
+        "name": "Conjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 1,
+            "form": "educa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "eduche"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 1,
+            "form": "educa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 1,
+            "form": "educo"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "eduche"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 1,
+            "form": "educo"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.1",
+            "use": 0,
+            "form": "educheissa"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.2",
+            "use": 0,
+            "form": "educheisse"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.3",
+            "use": 0,
+            "form": "educheissa"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.1",
+            "use": 0,
+            "form": "educheisso"
+          },
+          {
+            "id": 5,
+            "pronoun": "Pl.2",
+            "use": 0,
+            "form": "educheisse"
+          },
+          {
+            "id": 6,
+            "pronoun": "Pl.3",
+            "use": 0,
+            "form": "educheisso"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "eduché"
+          }
+        ]
+      },
+      "21": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "educant"
+          }
+        ]
+      },
+      "22": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "educand"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 1,
+            "form": "educà"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "eduché"
+  }
+}

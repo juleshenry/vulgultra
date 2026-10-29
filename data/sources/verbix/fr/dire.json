@@ -1,0 +1,665 @@
+{
+  "lect": "fr",
+  "lemma": "dire",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fra/dire/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=3&T1=dire",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 3,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "dis"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "dis"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "disons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "dites"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "disent"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "dise"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "dises"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "dise"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "disions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "disiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "disent"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "disais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "disais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "disait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "disions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "disiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "disaient"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "disse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "disses"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "dît"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "dissions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "dissiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "dissent"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "dis"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "dis"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "dîmes"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "dîtes"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "dirent"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "dirai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "diras"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "dira"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "dirons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "direz"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "diront"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "dirais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "dirais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "dirait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "dirions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "diriez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "diraient"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "dis"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "disons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "dites"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "ai dit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "as dit"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "a dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "avons dit"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "avez dit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "ont dit"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "aie dit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "aies dit"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "ait dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "ayons dit"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "ayez dit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "aient dit"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "avais dit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "avais dit"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "avait dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "avions dit"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "aviez  dit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "avaient dit"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "eusse dit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "eusses dit"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "eût dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "eussions dit"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "eussiez dit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "eussent dit"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "eus dit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "eus dit"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "eut dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "eûmes dit"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "eûtes dit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "eurent dit"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "aurai dit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "auras dit"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "aura dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "aurons dit"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "aurez dit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "auront dit"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "aurais dit"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "aurais dit"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "aurait dit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "aurions dit"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "auriez dit"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "auraient dit"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "dire"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "dit"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "disant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avoir"
+    ],
+    "examples": [
+      "[...]  recherches pour mon histoire de Louis XIV, je tombai par hasard sur les Mémoires de M. d' Artagnan, imprimés -- comme la plus grande partie des ouvrages de cette époque, où les auteurs tenaient à <b>dire</b> la vérité sans aller faire un tour plus ou moins long à la Bastille -- à Amsterdam, chez Pierre Rouge.",
+      "[ 1 ] On sait que dans une bouche anglaise _gentleman_ veut <b>dire</b> _homme comme il faut_. On ne _naît_ pas gentleman, on le _devient_. (_Note du traducteur._ )",
+      "« Voilà comme j' entends arranger l' affaire, <b>disait</b> M. Shelby.",
+      "[...]  on aurait pu, longtemps avant la fin du dix-neuvième siècle, apercevoir des signes des prochaines perturbations. Des hommes comme Schiaparelli observèrent la planète rouge,- -il est curieux, soit <b>dit</b> en passant, que, pendant d' innombrables siècles, Mars ait été l' étoile de la guerre,--mais ne surent pas interpréter les fluctuations apparentes des phénomènes qu' ils enregistraient si [...]",
+      "-- Non, je veux <b>dire</b> réellement honnête, rangé, sensible et pieux. Il doit sa religion à une mission ambulante[2 ], qui passait il y a quatre ans par ici; je crois sa religion vraie. Je lui ai confié depuis tout ce que [...]",
+      "[...]  tranquille et menue, faiblement marquée de bandes transversales et sa circonférence légèrement aplatie. Mais qu' elle paraissait petite ! une tête d' épingle brillant d' un éclat si vif ! On aurait <b>dit</b> qu' elle tremblotait un peu, mais c' étaient en réalité les vibrations qu' imprimait au télescope le mouvement d' horlogerie qui gardait la planète en vue.",
+      "« Eh bien ! Haley, quelles sont vos dernières conditions ? <b>dit</b> M. Shelby après un moment de pénible silence.",
+      "Cette permission, nous devons le <b>dire</b>, nous fut gracieusement accordée; ce que nous consignons ici pour donner un démenti public aux malveillants qui prétendent que nous vivons sous un gouvernement assez médiocrement disposé à l' [...]",
+      "-- Eh mais, personne dont je puisse me passer; à <b>dire</b> vrai, quand je vends, il faut qu' une dure nécessité m' y pousse. Je n' aime pas à me séparer de mes travailleurs: c' est un fait. »",
+      "« Viens ça, maître Corbeau ! <b>dit</b> M. Shelby en sifflant; et il lui jeta une grappe de raisin.... Allons ! attrape. »",
+      "Vous êtes incroyables ! Faut que je vous <b>dise</b> la vérité.",
+      "On <b>dirait</b> que je suis jamais venu.",
+      "Cette semaine nous aidera peut-être à lui <b>dire</b> au revoir pour de bon.",
+      "- Une cuisine, vous <b>dites</b> ? - Hum-hum. Oh, <b>dites</b> donc ! En tous cas, les gens ont une bonne tête à ce que je vois.",
+      "Bon. Ce bruit sourd que tu entends ? Notre survie en dépend. Si tu entends ce bruit, ça veut <b>dire</b> que tout va bien."
+    ],
+    "verb": "dire"
+  }
+}

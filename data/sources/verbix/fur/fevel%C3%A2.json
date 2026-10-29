@@ -1,0 +1,419 @@
+{
+  "lect": "fur",
+  "lemma": "fevelâ",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fur/fevel%C3%A2/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=132&T1=fevel%C3%A2",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": false,
+    "langid": 132,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "feveli"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "fevelis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "fevele"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "fevelìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "fevelais"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "fevelin"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "feveli"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "fevelis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "feveli"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "fevelìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "fevelais"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "fevelin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "fevelavi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "fevelavis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "fevelave"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "fevelavin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "fevelavis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "fevelavin"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "fevelàs"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "fevelassis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "fevelàs"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "fevelassin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "fevelassis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "fevelassin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "fevelai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "fevelaris"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "fevelà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "fevelarin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "fevelaris"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "fevelarin"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "fevelarai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "fevelarâs"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "fevelarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "fevelarìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "fevelarês"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "fevelaran"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conditional Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "fevelarès"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "fevelaressis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "fevelarès"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "fevelaressin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "fevelaressis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "fevelaressin"
+          }
+        ]
+      },
+      "7": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "fevele"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "fevelìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "fevelait"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Present II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "feveledi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "feveledis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "feveledi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "feveledin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "feveledis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "feveledin"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "fevelâ"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "fevelant"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.m",
+            "use": 0,
+            "form": "fevelât"
+          },
+          {
+            "id": 2,
+            "pronoun": "Pl.m",
+            "use": 0,
+            "form": "fevelâts"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.f",
+            "use": 0,
+            "form": "fevelade"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.f",
+            "use": 0,
+            "form": "feveladis"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "fevelâ"
+  }
+}

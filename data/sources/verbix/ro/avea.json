@@ -1,0 +1,847 @@
+{
+  "lect": "ro",
+  "lemma": "avea",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ron/avea/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=5&T1=avea",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 5,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "am"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "ai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "are"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "a"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avem"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "am"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveţi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "aţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 2,
+            "form": "au"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "am"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "ai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "aibă"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "aibe"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "aivă"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avem"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 2,
+            "form": "aibă"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "aibe"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "aivă"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aveam"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "aveai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avea"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "aveam"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveaţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "aveau"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "avure"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "avuru"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 3,
+            "form": "avurim"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 3,
+            "form": "avuri"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "avure"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 3,
+            "form": "avurim"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "avurem"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 3,
+            "form": "avuremu"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 3,
+            "form": "avuret"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "avure"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 3,
+            "form": "avurim"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "avusei"
+          },
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "avui"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "avuseşi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avuşi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "avuse"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avu"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "avuserăm"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avurăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "avuserăţi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avurăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 2,
+            "form": "avuseră"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "avură"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future I",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi avea"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei avea"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va avea"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom avea"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi avea"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor avea"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş avea"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai avea"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar avea"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am avea"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi avea"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar avea"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "ai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 3,
+            "form": "aibi"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveţi"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am avut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai avut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a avut"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am avut"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi avut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au avut"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "fi avut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fi avut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "fi avut"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fi avut"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "fi avut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "fi avut"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "avusem"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avuseşi"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "avuse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avuserăm"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avuserăţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "avuseră"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "voi fi avut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "vei fi avut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "va fi avut"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "vom fi avut"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "veţi fi avut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "vor fi avut"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "aş fi avut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai fi avut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ar fi avut"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "am fi avut"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aţi fi avut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "ar fi avut"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a avea"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "având"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avut"
+          }
+        ]
+      },
+      "25": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "o să am"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "o să ai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "o să aibă"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aibe"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "aivă"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "o să avem"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "o să aveţi"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "o să aibă"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "aibe"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "aivă"
+          }
+        ]
+      },
+      "26": {
+        "name": "Indicative Future II (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "am să fi avut"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "ai să fi avut"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "are să fi avut"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avem să fi avut"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveţi să fi avut"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "au să fi avut"
+          }
+        ]
+      },
+      "27": {
+        "name": "Indicative Future I (Popular)",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "oi avea"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "îi avea"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "a avea"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "om avea"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "îţi avea"
+          },
+          {
+            "id": 6,
+            "pronoun": "ei",
+            "use": 0,
+            "form": "or avea"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "a fi avut"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "[...]  — ele sunt numai în sufletul nostru. Trecut și viitor e în sufletul meu, ca pădurea într-un sâmbure de ghindă, și infinitul asemenea, ca reflectarea cerului înstelat într-un strop de rouă. Dacă <b>am</b> afla misterul prin care să ne punem în legătură cu aceste două ordini de lucruri care sunt ascunse în noi, mister pe care <b>l-au</b> posedat poate magii egipteni și asirieni, atuncea în adâncurile [...]",
+      "[...]  ca reflectarea cerului înstelat într-un strop de rouă. Dacă <b>am</b> afla misterul prin care să ne punem în legătură cu aceste două ordini de lucruri care sunt ascunse în noi, mister pe care <b>l-au</b> posedat poate magii egipteni și asirieni, atuncea în adâncurile sufletului coborându-ne, <b>am</b> putea trăi aievea în trecut și <b>am</b> putea locui lumea stelelor și a soarelui. Păcat că știința [...]",
+      "[...]  să ne punem în legătură cu aceste două ordini de lucruri care sunt ascunse în noi, mister pe care <b>l-au</b> posedat poate magii egipteni și asirieni, atuncea în adâncurile sufletului coborându-ne, <b>am</b> putea trăi aievea în trecut și <b>am</b> putea locui lumea stelelor și a soarelui. Păcat că știința necromanției și acea a astrologiei s-au pierdut -cine știe câte mistere ne-ar fi descoperit în [...]",
+      "[...]  de lucruri care sunt ascunse în noi, mister pe care <b>l-au</b> posedat poate magii egipteni și asirieni, atuncea în adâncurile sufletului coborându-ne, <b>am</b> putea trăi aievea în trecut și <b>am</b> putea locui lumea stelelor și a soarelui. Păcat că știința necromanției și acea a astrologiei s-au pierdut -cine știe câte mistere ne-ar fi descoperit în această privință ! Dacă lumea este un vis — [...]",
+      "[...]  locui lumea stelelor și a soarelui. Păcat că știința necromanției și acea a astrologiei s-au pierdut -cine știe câte mistere ne-ar fi descoperit în această privință ! Dacă lumea este un vis — de ce <b>n-am</b> putea să coordonăm șirul fenomenelor sale cum voim noi ? Nu e adevărat că există un trecut — consecutivitatea e în cugetarea noastră — cauzele fenomenelor, consecutive pentru noi, aceleași [...]",
+      "cum vă trage inima, și Dumnezeu să vă ajute și să vă acopere cu aripa bunătății sale. Eu sunt acum bătrână, și fiindcă <b>am</b> <b>avut</b> și <b>am</b> atât",
+      "Înseamnă muncă și griji și nădejde, și multă trudă pentru slabă ispravă. Dar larg e câmpul, și, dacă inima <b>are</b> voie bună, mare e opera.",
+      "[...]  . . . . . . . . . . . . . . . . . . . . . . Cu drept cuvânt cititorul va fi clătit din cap și va fi întrebat — prin mintea cărui muritor treceau aceste idei ? Existența ideală a acestor reflecțiuni <b>avea</b> de izvor de emanațiune un cap cu plete de o sălbătăcită neregularitate, înfundat într-o căciulă de miel. Era noapte și ploaia cădea măruntă pe stradele nepavate, strâmte și noroioase ce trec prin [...]",
+      "[...]  a capitalei României, și prin bălțile de noroi ce împroșcau pe cutezătorul ce se încredea perfidelor unde treceau niște ciubote mari cărora nu le-ar fi păsat nici de potop, cu atât mai vârtos că <b>aveau</b> turetci care îngropau în ele pantalonii individului conținut îndată ce timpul devenea problematic. Umbra eroului nostru dispărea prin șiroaiele ploii, care dederă capului său aspectul unui berbec [...]",
+      "[...]  un cap urât acela a lui Dionis. Fața era de acea dulceață vânătă albă ca și marmura în umbră, cam trasă fără a fi uscată, și ochii tăiați în forma migdalei erau de acea intensivă voluptate pe care o <b>are</b> catifeaua neagră. Ei înotau în orbitele lor — un zâmbet fin și cu toate astea atât de inocent trecu peste fața lui la spectacolul ce-l privea. — Ce era adică: Un băiet de țigan cu capul mic într-o [...]",
+      "Străinul acela te ținea rece în brațele sale. N-am <b>avut</b> de ales. <b>A</b> trebuit să te fur.",
+      "Din câte îmi amintesc, nu cu un bărbat. <b>A</b> suferit destul înşelându-şi soţia. Trebuie să-l ducem repede la spital.",
+      "Când nu <b>ai</b> mâncare și te stingi de foame ? Răspunsul se află în munți.",
+      "- <b>Au</b> făcut sex în toate ? - E vorba despre erotismul voracității,",
+      "Dacă improvizez, nici nu le-am mai gândit. Și <b>am</b> niște gânduri îngrozitoare."
+    ],
+    "verb": "avea"
+  }
+}

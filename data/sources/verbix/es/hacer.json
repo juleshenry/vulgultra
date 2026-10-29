@@ -1,0 +1,949 @@
+{
+  "lect": "es",
+  "lemma": "hacer",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/spa/hacer/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=1&T1=hacer",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 1,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hago"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "haces"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hace"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hacemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hacéis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hacen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "haga"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hagas"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "haga"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hagamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hagáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hagan"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hacía"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hacías"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hacía"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hacíamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hacíais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hacían"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hiciera"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hicieras"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hiciera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hiciéramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hicierais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hicieran"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hiciese"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hicieses"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hiciese"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hiciésemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hicieseis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hiciesen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hice"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hiciste"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hizo"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hicimos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hicisteis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hicieron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "haré"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "harás"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hará"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "haremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "haréis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "harán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hiciere"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "hicieres"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "hiciere"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hiciéremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "hiciereis"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hicieren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "haría"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "harías"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "haría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "haríamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 2,
+            "form": "haríais"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "harían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 2,
+            "form": "haz"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 2,
+            "form": "haga"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 2,
+            "form": "hagamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "haced"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 2,
+            "form": "hagan"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "he hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "has hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "ha hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hemos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habéis hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "han hecho"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haya hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hayas hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "haya hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hayamos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hayáis hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hayan hecho"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "había hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habías hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "había hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habíamos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habíais hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habían hecho"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiera hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieras hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiera hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéramos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubierais hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieran hecho"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiese hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieses hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiese hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiésemos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubieseis hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubiesen hecho"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hube hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubiste hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubo hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubimos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubisteis hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieron hecho"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habré hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrás hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habrá hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habremos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habréis hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrán hecho"
+          }
+        ]
+      },
+      "16": {
+        "name": "Subjunctive Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "hubiere hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "hubieres hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "hubiere hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "hubiéremos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "hubiereis hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "hubieren hecho"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habría hecho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tú",
+            "use": 0,
+            "form": "habrías hecho"
+          },
+          {
+            "id": 3,
+            "pronoun": "él",
+            "use": 0,
+            "form": "habría hecho"
+          },
+          {
+            "id": 4,
+            "pronoun": "nosotros",
+            "use": 0,
+            "form": "habríamos hecho"
+          },
+          {
+            "id": 5,
+            "pronoun": "vosotros",
+            "use": 0,
+            "form": "habríais hecho"
+          },
+          {
+            "id": 6,
+            "pronoun": "ellos",
+            "use": 0,
+            "form": "habrían hecho"
+          }
+        ]
+      },
+      "18": {
+        "name": "Negative Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 2,
+            "form": "no hagas"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 2,
+            "form": "no haga"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 2,
+            "form": "no hagamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 2,
+            "form": "no hagáis"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 2,
+            "form": "no hagan"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "hacer"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haciendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "hecho"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber hecho"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habiendo hecho"
+          }
+        ]
+      },
+      "60": {
+        "name": "Indicative Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "General",
+            "use": 0,
+            "form": "hacés"
+          },
+          {
+            "id": 2,
+            "pronoun": "Venezuelan",
+            "use": 0,
+            "form": "hacéis"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 0,
+            "form": "hacís"
+          }
+        ]
+      },
+      "61": {
+        "name": "Subjunctive Present Voseo",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Central America, Bolivia",
+            "use": 2,
+            "form": "hagás"
+          },
+          {
+            "id": 2,
+            "pronoun": "Río de la Plata region",
+            "use": 2,
+            "form": "hagas"
+          },
+          {
+            "id": 3,
+            "pronoun": "Chilean",
+            "use": 2,
+            "form": "hagái"
+          },
+          {
+            "id": 4,
+            "pronoun": "Venezuela, Panama",
+            "use": 2,
+            "form": "hagáis"
+          }
+        ]
+      },
+      "68": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "hacé"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "[...]  Divina Escritura ! No dirán sino que son unos santos Tomases y otros doctores de la Iglesia; guardando en esto un decoro tan ingenioso, que en un renglón han pintado un enamorado destraído y en otro <b>hacen</b> un sermoncico cristiano, que es un contento y un regalo oílle o leelle. De todo esto ha de carecer mi libro, porque ni tengo qué acotar en el margen, ni qué anotar en el fin, ni menos sé qué autores [...]",
+      "[...]  un regalo oílle o leelle. De todo esto ha de carecer mi libro, porque ni tengo qué acotar en el margen, ni qué anotar en el fin, ni menos sé qué autores sigo en él, para ponerlos al principio, como <b>hacen</b> todos, por las letras del A.B.C., comenzando en Aristóteles y acabando en Xenofonte y en Zoílo o Zeuxis, aunque fue maldiciente el uno y pintor el otro. También ha de carecer mi libro de sonetos al [...]",
+      " -- ¿Y usted adónde va ? -- me preguntó Cascajares, mirándome por encima de sus espejuelos azules, lo que me <b>hacía</b> el efecto de ser examinado por cuatro ojos.",
+      "Contestéle evasivamente, y él, deseando sin duda no perder aquel rato sin <b>hacer</b> alguna útil investigación, insistió en sus preguntas diciendo:",
+      "» En lo que toca el poner anotaciones al fin del libro, seguramente lo podéis <b>hacer</b> desta manera: si nombráis algún gigante en vuestro libro, hacelde que sea el gigante Golías, y con sólo esto, que os costará casi nada, tenéis una grande anotación, pues podéis poner: El gigante [...]",
+      " -- Y Fulanito, ¿qué <b>hace</b> ?  Y Fulanito ¿dónde está ?  con otras indagatorias del mismo jaez, que tampoco tuvieron respuesta cumplida.",
+      "Con silencio grande estuve escuchando lo que mi amigo me decía, y de tal manera se imprimieron en mí sus razones que, sin ponerlas en disputa, las aprobé por buenas y de ellas mismas quise <b>hacer</b> este prólogo; en el cual verás, lector suave, la discreción de mi amigo, la buena ventura mía en hallar en tiempo tan necesitado tal consejero, y el alivio tuyo en hallar tan sincera y tan sin [...]",
+      "[...]  distrito del campo de Montiel, que fue el más casto enamorado y el más valiente caballero que de muchos años a esta parte se vio en aquellos contornos. Yo no quiero encarecerte el servicio que te <b>hago</b> en darte a conocer tan noble y tan honrado caballero, pero quiero que me agradezcas el conocimiento que tendrás del famoso Sancho Panza, su escudero, en quien, a mi parecer, te doy cifradas todas [...]",
+      "[...]  razones suyas le parecían de perlas, y más cuando llegaba a leer aquellos requiebros y cartas de desafíos, donde en muchas partes hallaba escrito: La razón de la sinrazón que a mi razón se <b>hace</b>, de tal manera mi razón enflaquece, que con razón me quejo de la vuestra fermosura. Y también cuando leía:... los altos cielos que de vuestra divinidad divinamente con las estrellas os fortifican, y [...]",
+      "[...]  tal manera mi razón enflaquece, que con razón me quejo de la vuestra fermosura. Y también cuando leía:... los altos cielos que de vuestra divinidad divinamente con las estrellas os fortifican, y os <b>hacen</b> merecedora del merecimiento que merece la vuestra grandeza. Con estas razones perdía el pobre caballero el juicio, y desvelábase por entenderlas y desentrañarles el sentido, que no se lo sacara ni [...]",
+      "Para vencer el mundo, <b>hace</b> falta volver al mundo.",
+      "AMOR Hola, llamé, me gustaría <b>hacer</b> el check-in.",
+      "Camina de noche. Si no usas tu máscara, lo inhalarás y te <b>hará</b> <b>hacer</b> cosas terribles \".",
+      "Sería genial. Yo me puedo hinchar a <b>hacerme</b> fotos para el Instagram.",
+      "¡No, gracias! Y... ¿qué hay de Nick ? - ¿Él ? - No puede <b>hacer</b> nada."
+    ],
+    "verb": "hacer"
+  }
+}

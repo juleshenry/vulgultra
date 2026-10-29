@@ -1,0 +1,2501 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "rgn",
+    "purpose": "sourced Kaikki/Wiktextract conjugation harvest",
+    "ending_inventories": {
+      "-êr": {
+        "conditional": {
+          "endings": {
+            "1sg": "arèb",
+            "2sg": "arès",
+            "3sg": "arèb",
+            "1pl": "arèsum",
+            "2pl": "arèsuv",
+            "3pl": "arèb"
+          },
+          "support": 4,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 4,
+          "rows": 5
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "arò",
+            "2sg": "aré",
+            "3sg": "arà",
+            "1pl": "arẽn",
+            "2pl": "arì",
+            "3pl": "arà"
+          },
+          "support": 4,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 4,
+          "rows": 5
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "éva",
+            "2sg": "ìvtia",
+            "3sg": "éva",
+            "1pl": "imia",
+            "2pl": "ìvia",
+            "3pl": "éva"
+          },
+          "support": 4,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 4,
+          "rows": 5
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "ùn",
+            "2sg": "ùn",
+            "3sg": "öna",
+            "1pl": "unẽn",
+            "2pl": "unì",
+            "3pl": "öna"
+          },
+          "support": 1,
+          "variants": 4,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 4
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "èt",
+            "2sg": "ès",
+            "3sg": "èt",
+            "1pl": "èsum",
+            "2pl": "èsuv",
+            "3pl": "èt"
+          },
+          "support": 4,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 4,
+          "rows": 5
+        }
+      },
+      "rgn-conj-avér": {
+        "conditional": {
+          "endings": {
+            "1sg": "b",
+            "2sg": "s",
+            "3sg": "b",
+            "1pl": "sum",
+            "2pl": "suv",
+            "3pl": "b"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "ò",
+            "2sg": "é",
+            "3sg": "à",
+            "1pl": "ẽn",
+            "2pl": "ì",
+            "3pl": "à"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "éva",
+            "2sg": "ìvtia",
+            "3sg": "éva",
+            "1pl": "ìmia",
+            "2pl": "ìvia",
+            "3pl": "éva"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "t",
+            "2sg": "s",
+            "3sg": "t",
+            "1pl": "sum",
+            "2pl": "suv",
+            "3pl": "t"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "rgn-conj-vlér": {
+        "conditional": {
+          "endings": {
+            "1sg": "éb",
+            "2sg": "ès",
+            "3sg": "èb",
+            "1pl": "èsum",
+            "2pl": "èsuv",
+            "3pl": "èb"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "ó",
+            "2sg": "é",
+            "3sg": "à",
+            "1pl": "ẽn",
+            "2pl": "ì",
+            "3pl": "à"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "éva",
+            "2sg": "ìvia",
+            "3sg": "éva",
+            "1pl": "ìmia",
+            "2pl": "ìvia",
+            "3pl": "éva"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "ój",
+            "2sg": "u",
+            "3sg": "ö",
+            "1pl": "lén",
+            "2pl": "lè",
+            "3pl": "ö"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "ét",
+            "2sg": "ès",
+            "3sg": "ét",
+            "1pl": "èsum",
+            "2pl": "èsuv",
+            "3pl": "ét"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      }
+    },
+    "lemma_count": 49,
+    "serialized_paradigms": 10,
+    "max_paradigms_per_class": 40,
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "rgn",
+      "lemma": "truvêr",
+      "class_source": "-êr",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:truvêr",
+        "url": "https://en.wiktionary.org/wiki/truv%C3%AAr",
+        "stem": "truv"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "trùv",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2sg": {
+            "form": "trùv",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3sg": {
+            "form": "trôva",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "1pl": {
+            "form": "truvẽn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2pl": {
+            "form": "truvì",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3pl": {
+            "form": "trôva",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "truvéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2sg": {
+            "form": "truvìvtia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3sg": {
+            "form": "truvéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "1pl": {
+            "form": "truvimia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2pl": {
+            "form": "truvìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3pl": {
+            "form": "truvéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "truvèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2sg": {
+            "form": "truvès",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3sg": {
+            "form": "truvèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "1pl": {
+            "form": "truvèsum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2pl": {
+            "form": "truvèsuv",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3pl": {
+            "form": "truvèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "truvarò",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2sg": {
+            "form": "truvaré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3sg": {
+            "form": "truvarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "1pl": {
+            "form": "truvarẽn",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2pl": {
+            "form": "truvarì",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3pl": {
+            "form": "truvarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          }
+        },
+        "conditional.preterite": {
+          "1sg": {
+            "form": "arèb truvê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,singular",
+            "source_url": "https://en.wiktionary.org/wiki/truv%C3%AAr"
+          },
+          "2sg": {
+            "form": "arès truvê",
+            "phonemes": [],
+            "source_label": "conditional,past,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/truv%C3%AAr"
+          },
+          "1pl": {
+            "form": "arèsum truvê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,plural",
+            "source_url": "https://en.wiktionary.org/wiki/truv%C3%AAr"
+          },
+          "2pl": {
+            "form": "arèsuv truvê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/truv%C3%AAr"
+          },
+          "3pl": {
+            "form": "arèb truvê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/truv%C3%AAr"
+          }
+        },
+        "imperative": {
+          "1sg": {
+            "form": "trôva",
+            "phonemes": [],
+            "source_label": "first-person,imperative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/truv%C3%AAr"
+          },
+          "2sg": {
+            "form": "trôv",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "1pl": {
+            "form": "truvẽn",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2pl": {
+            "form": "truvì",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "truvarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2sg": {
+            "form": "truvarès",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3sg": {
+            "form": "truvarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "1pl": {
+            "form": "truvarèsum",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2pl": {
+            "form": "truvarèsuv",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3pl": {
+            "form": "truvarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "truva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2sg": {
+            "form": "truva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "3sg": {
+            "form": "truva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "1pl": {
+            "form": "truvègna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          },
+          "2pl": {
+            "form": "truvìva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/truvêr"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "lavêr",
+      "class_source": "-êr",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:lavêr",
+        "url": "https://en.wiktionary.org/wiki/lav%C3%AAr",
+        "stem": "lav"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "lév",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2sg": {
+            "form": "lév",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3sg": {
+            "form": "lêva",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "1pl": {
+            "form": "lavẽn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2pl": {
+            "form": "lavì",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3pl": {
+            "form": "lêva",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "lavéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2sg": {
+            "form": "lavìvtia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3sg": {
+            "form": "lavéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "1pl": {
+            "form": "lavimia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2pl": {
+            "form": "lavìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3pl": {
+            "form": "lavéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "lavèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2sg": {
+            "form": "lavès",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3sg": {
+            "form": "lavèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "1pl": {
+            "form": "lavèsum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2pl": {
+            "form": "lavèsuv",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3pl": {
+            "form": "lavèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "lavarò",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2sg": {
+            "form": "lavaré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3sg": {
+            "form": "lavarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "1pl": {
+            "form": "lavarẽn",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2pl": {
+            "form": "lavarì",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3pl": {
+            "form": "lavarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          }
+        },
+        "conditional.preterite": {
+          "1sg": {
+            "form": "arèb lavê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lav%C3%AAr"
+          },
+          "2sg": {
+            "form": "arès lavê",
+            "phonemes": [],
+            "source_label": "conditional,past,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lav%C3%AAr"
+          },
+          "1pl": {
+            "form": "arèsum lavê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,plural",
+            "source_url": "https://en.wiktionary.org/wiki/lav%C3%AAr"
+          },
+          "2pl": {
+            "form": "arèsuv lavê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lav%C3%AAr"
+          },
+          "3pl": {
+            "form": "arèb lavê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lav%C3%AAr"
+          }
+        },
+        "imperative": {
+          "1sg": {
+            "form": "lêva",
+            "phonemes": [],
+            "source_label": "first-person,imperative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lav%C3%AAr"
+          },
+          "2sg": {
+            "form": "lêv",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "1pl": {
+            "form": "lavẽn",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2pl": {
+            "form": "lavì",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "lavarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2sg": {
+            "form": "lavarès",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3sg": {
+            "form": "lavarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "1pl": {
+            "form": "lavarèsum",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2pl": {
+            "form": "lavarèsuv",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3pl": {
+            "form": "lavarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "lava",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2sg": {
+            "form": "lava",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "3sg": {
+            "form": "lava",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "1pl": {
+            "form": "lavègna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          },
+          "2pl": {
+            "form": "lavìva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lavêr"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "abivrêr",
+      "class_source": "-êr",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:abivrêr",
+        "url": "https://en.wiktionary.org/wiki/abivr%C3%AAr",
+        "stem": "abriv"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "abrìv",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2sg": {
+            "form": "abrìv",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3sg": {
+            "form": "abréva",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "1pl": {
+            "form": "abrivẽn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2pl": {
+            "form": "abrivì",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3pl": {
+            "form": "abréva",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "abrivéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2sg": {
+            "form": "abrivìvtia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3sg": {
+            "form": "abrivéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "1pl": {
+            "form": "abrivimia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2pl": {
+            "form": "abrivìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3pl": {
+            "form": "abrivéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "abrivèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2sg": {
+            "form": "abrivès",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3sg": {
+            "form": "abrivèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "1pl": {
+            "form": "abrivèsum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2pl": {
+            "form": "abrivèsuv",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3pl": {
+            "form": "abrivèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "abrivarò",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2sg": {
+            "form": "abrivaré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3sg": {
+            "form": "abrivarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "1pl": {
+            "form": "abrivarẽn",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2pl": {
+            "form": "abrivarì",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3pl": {
+            "form": "abrivarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          }
+        },
+        "conditional.preterite": {
+          "1sg": {
+            "form": "arèb abrivê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abivr%C3%AAr"
+          },
+          "2sg": {
+            "form": "arès abrivê",
+            "phonemes": [],
+            "source_label": "conditional,past,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abivr%C3%AAr"
+          },
+          "1pl": {
+            "form": "arèsum abrivê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,plural",
+            "source_url": "https://en.wiktionary.org/wiki/abivr%C3%AAr"
+          },
+          "2pl": {
+            "form": "arèsuv abrivê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/abivr%C3%AAr"
+          },
+          "3pl": {
+            "form": "arèb abrivê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/abivr%C3%AAr"
+          }
+        },
+        "imperative": {
+          "1sg": {
+            "form": "abrév",
+            "phonemes": [],
+            "source_label": "first-person,imperative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abivr%C3%AAr"
+          },
+          "2sg": {
+            "form": "abrév",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "1pl": {
+            "form": "abrivẽn",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2pl": {
+            "form": "abrivì",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "abrivarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2sg": {
+            "form": "abrivarès",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3sg": {
+            "form": "abrivarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "1pl": {
+            "form": "abrivarèsum",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2pl": {
+            "form": "abrivarèsuv",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3pl": {
+            "form": "abrivarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "abriva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2sg": {
+            "form": "abriva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "3sg": {
+            "form": "abriva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "1pl": {
+            "form": "abrivègna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          },
+          "2pl": {
+            "form": "abrivìva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abivrêr"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "abandunêr",
+      "class_source": "-êr",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:abandunêr",
+        "url": "https://en.wiktionary.org/wiki/abandun%C3%AAr",
+        "stem": "abandun"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "abandùn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2sg": {
+            "form": "abandùn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3sg": {
+            "form": "abandöna",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "1pl": {
+            "form": "abandunẽn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2pl": {
+            "form": "abandunì",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3pl": {
+            "form": "abandöna",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "abandunéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2sg": {
+            "form": "abandunìvtia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3sg": {
+            "form": "abandunéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "1pl": {
+            "form": "abandunimia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2pl": {
+            "form": "abandunìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3pl": {
+            "form": "abandunéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "abandunèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2sg": {
+            "form": "abandunès",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3sg": {
+            "form": "abandunèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "1pl": {
+            "form": "abandunèsum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2pl": {
+            "form": "abandunèsuv",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3pl": {
+            "form": "abandunèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "abandunarò",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2sg": {
+            "form": "abandunaré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3sg": {
+            "form": "abandunarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "1pl": {
+            "form": "abandunarẽn",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2pl": {
+            "form": "abandunarì",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3pl": {
+            "form": "abandunarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          }
+        },
+        "conditional.preterite": {
+          "1sg": {
+            "form": "arèb abandunê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abandun%C3%AAr",
+            "ipa": "[ɐbɐnduˈneə̯ɾ]"
+          },
+          "2sg": {
+            "form": "arès abandunê",
+            "phonemes": [],
+            "source_label": "conditional,past,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abandun%C3%AAr",
+            "ipa": "[ɐbɐnduˈneə̯ɾ]"
+          },
+          "1pl": {
+            "form": "arèsum abandunê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,plural",
+            "source_url": "https://en.wiktionary.org/wiki/abandun%C3%AAr",
+            "ipa": "[ɐbɐnduˈneə̯ɾ]"
+          },
+          "2pl": {
+            "form": "arèsuv abandunê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/abandun%C3%AAr",
+            "ipa": "[ɐbɐnduˈneə̯ɾ]"
+          },
+          "3pl": {
+            "form": "arèb abandunê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/abandun%C3%AAr",
+            "ipa": "[ɐbɐnduˈneə̯ɾ]"
+          }
+        },
+        "imperative": {
+          "1sg": {
+            "form": "abandön",
+            "phonemes": [],
+            "source_label": "first-person,imperative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abandun%C3%AAr",
+            "ipa": "[ɐbɐnduˈneə̯ɾ]"
+          },
+          "2sg": {
+            "form": "abandön",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "1pl": {
+            "form": "abandunẽn",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2pl": {
+            "form": "abandunì",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "abandunarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2sg": {
+            "form": "abandunarès",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3sg": {
+            "form": "abandunarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "1pl": {
+            "form": "abandunarèsum",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2pl": {
+            "form": "abandunarèsuv",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3pl": {
+            "form": "abandunarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "abanduna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2sg": {
+            "form": "abanduna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "3sg": {
+            "form": "abanduna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "1pl": {
+            "form": "abandunègna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          },
+          "2pl": {
+            "form": "abandunìva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abandunêr"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "abrughêr",
+      "class_source": "-êr",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:abrughêr",
+        "url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr",
+        "stem": "abrugh"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "Term?",
+            "phonemes": [],
+            "source_label": "first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          },
+          "2sg": {
+            "form": "a",
+            "phonemes": [],
+            "source_label": "present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          },
+          "3sg": {
+            "form": "abrög",
+            "phonemes": [],
+            "source_label": "form-of,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/abr%C3%B6g"
+          },
+          "1pl": {
+            "form": "abrughẽn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2pl": {
+            "form": "abrughì",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3pl": {
+            "form": "a",
+            "phonemes": [],
+            "source_label": "plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "abrughéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2sg": {
+            "form": "abrughìvtia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3sg": {
+            "form": "abrughéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "1pl": {
+            "form": "abrughimia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2pl": {
+            "form": "abrughìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3pl": {
+            "form": "abrughéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "abrughèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2sg": {
+            "form": "abrughès",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3sg": {
+            "form": "abrughèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "1pl": {
+            "form": "abrughèsum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2pl": {
+            "form": "abrughèsuv",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3pl": {
+            "form": "abrughèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "abrugharò",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2sg": {
+            "form": "abrugharé",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3sg": {
+            "form": "abrugharà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "1pl": {
+            "form": "abrugharẽn",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2pl": {
+            "form": "abrugharì",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3pl": {
+            "form": "abrugharà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          }
+        },
+        "conditional.preterite": {
+          "1sg": {
+            "form": "arèb abrughê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          },
+          "2sg": {
+            "form": "arès abrughê",
+            "phonemes": [],
+            "source_label": "conditional,past,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          },
+          "1pl": {
+            "form": "arèsum abrughê",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,plural",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          },
+          "2pl": {
+            "form": "arèsuv abrughê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          },
+          "3pl": {
+            "form": "arèb abrughê",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          }
+        },
+        "imperative": {
+          "1sg": {
+            "form": "Term?",
+            "phonemes": [],
+            "source_label": "first-person,imperative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/abrugh%C3%AAr"
+          },
+          "1pl": {
+            "form": "abrughẽn",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2pl": {
+            "form": "abrughì",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "abrugharèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2sg": {
+            "form": "abrugharès",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3sg": {
+            "form": "abrugharèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "1pl": {
+            "form": "abrugharèsum",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2pl": {
+            "form": "abrugharèsuv",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3pl": {
+            "form": "abrugharèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "abrugha",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2sg": {
+            "form": "abrugha",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "3sg": {
+            "form": "abrugha",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "1pl": {
+            "form": "abrughègna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          },
+          "2pl": {
+            "form": "abrughìva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/abrughêr"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "es",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:es",
+        "url": "https://en.wiktionary.org/wiki/es",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "3sg": {
+            "form": "l'è",
+            "phonemes": [],
+            "source_label": "form-of,indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/l%27%C3%A8"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "lèẓar",
+      "class_source": "-ar",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:lèẓar",
+        "url": "https://en.wiktionary.org/wiki/l%C3%A8%E1%BA%93ar",
+        "stem": "leẓ"
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "leẓa",
+            "phonemes": [],
+            "source_label": "first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/l%C3%A8%E1%BA%93ar"
+          },
+          "1pl": {
+            "form": "leẓẽn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2pl": {
+            "form": "leẓì",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3pl": {
+            "form": "leẓa",
+            "phonemes": [],
+            "source_label": "plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/l%C3%A8%E1%BA%93ar"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "leẓéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2sg": {
+            "form": "leẓìvtia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3sg": {
+            "form": "leẓéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "1pl": {
+            "form": "leẓìmia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2pl": {
+            "form": "leẓìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3pl": {
+            "form": "leẓéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "leẓèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2sg": {
+            "form": "leẓès",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3sg": {
+            "form": "leẓèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "1pl": {
+            "form": "leẓèsum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2pl": {
+            "form": "leẓèsuv",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3pl": {
+            "form": "leẓèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "leẓaró",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2sg": {
+            "form": "leẓaré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3sg": {
+            "form": "leẓarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "1pl": {
+            "form": "leẓarẽn",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2pl": {
+            "form": "leẓarì",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3pl": {
+            "form": "leẓarà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          }
+        },
+        "conditional.preterite": {
+          "1sg": {
+            "form": "arèb lèt",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,singular",
+            "source_url": "https://en.wiktionary.org/wiki/l%C3%A8%E1%BA%93ar"
+          },
+          "2sg": {
+            "form": "arès lèt",
+            "phonemes": [],
+            "source_label": "conditional,past,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/l%C3%A8%E1%BA%93ar"
+          },
+          "1pl": {
+            "form": "arèsum lèt",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,plural",
+            "source_url": "https://en.wiktionary.org/wiki/l%C3%A8%E1%BA%93ar"
+          },
+          "2pl": {
+            "form": "arèsuv lèt",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/l%C3%A8%E1%BA%93ar"
+          },
+          "3pl": {
+            "form": "arèb lèt",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/l%C3%A8%E1%BA%93ar"
+          }
+        },
+        "imperative": {
+          "1pl": {
+            "form": "leẓẽn",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2pl": {
+            "form": "leẓì",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "leẓarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2sg": {
+            "form": "leẓarès",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3sg": {
+            "form": "leẓarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "1pl": {
+            "form": "leẓarèsum",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2pl": {
+            "form": "leẓarèsuv",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3pl": {
+            "form": "leẓarèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          }
+        },
+        "subjunctive.present": {
+          "1pl": {
+            "form": "leẓègna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "2pl": {
+            "form": "leẓìva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          },
+          "3pl": {
+            "form": "leẓa",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/lèẓar"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "ësar",
+      "class_source": "-ar",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:ësar",
+        "url": "https://en.wiktionary.org/wiki/%C3%ABsar",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "so",
+            "phonemes": [],
+            "source_label": "first-person,form-of,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/so"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "avér",
+      "class_source": "rgn-conj-avér",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:avér",
+        "url": "https://en.wiktionary.org/wiki/av%C3%A9r",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ò",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2sg": {
+            "form": "é",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3sg": {
+            "form": "à",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "1pl": {
+            "form": "avẽn",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2pl": {
+            "form": "avì",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3pl": {
+            "form": "à",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "arò",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2sg": {
+            "form": "aré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3sg": {
+            "form": "arà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "1pl": {
+            "form": "arẽn",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2pl": {
+            "form": "arì",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3pl": {
+            "form": "arà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "avèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2sg": {
+            "form": "avès",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3sg": {
+            "form": "avèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "1pl": {
+            "form": "avèsum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2pl": {
+            "form": "avèsuv",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3pl": {
+            "form": "avèt",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "avéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2sg": {
+            "form": "avìvtia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3sg": {
+            "form": "avéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "1pl": {
+            "form": "avìmia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2pl": {
+            "form": "avìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3pl": {
+            "form": "avéva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          }
+        },
+        "conditional.preterite": {
+          "1sg": {
+            "form": "arèb avù",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,singular",
+            "source_url": "https://en.wiktionary.org/wiki/av%C3%A9r"
+          },
+          "2sg": {
+            "form": "arès avù",
+            "phonemes": [],
+            "source_label": "conditional,past,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/av%C3%A9r"
+          },
+          "1pl": {
+            "form": "arèsum avù",
+            "phonemes": [],
+            "source_label": "conditional,first-person,past,plural",
+            "source_url": "https://en.wiktionary.org/wiki/av%C3%A9r"
+          },
+          "2pl": {
+            "form": "arèsuv avù",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/av%C3%A9r"
+          },
+          "3pl": {
+            "form": "arèb avù",
+            "phonemes": [],
+            "source_label": "conditional,past,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/av%C3%A9r"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "éva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2sg": {
+            "form": "éva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3sg": {
+            "form": "éva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "1pl": {
+            "form": "avègna",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2pl": {
+            "form": "avìva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3pl": {
+            "form": "éva",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          }
+        },
+        "conditional.present": {
+          "2sg": {
+            "form": "arès",
+            "phonemes": [],
+            "source_label": "conditional,form-of,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ar%C3%A8s"
+          },
+          "1pl": {
+            "form": "arèsom",
+            "phonemes": [],
+            "source_label": "conditional,first-person,form-of,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ar%C3%A8som"
+          },
+          "2pl": {
+            "form": "arèsuv",
+            "phonemes": [],
+            "source_label": "conditional,form-of,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ar%C3%A8suv"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "arèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2sg": {
+            "form": "arès",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3sg": {
+            "form": "arèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "1pl": {
+            "form": "arèsum",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "2pl": {
+            "form": "arèsuv",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          },
+          "3pl": {
+            "form": "arèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/avér"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rgn",
+      "lemma": "vlér",
+      "class_source": "rgn-conj-vlér",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:vlér",
+        "url": "https://en.wiktionary.org/wiki/vl%C3%A9r",
+        "stem": null
+      },
+      "cells": {
+        "indicative.future": {
+          "1sg": {
+            "form": "vró",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2sg": {
+            "form": "vré",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3sg": {
+            "form": "vrà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "1pl": {
+            "form": "vrẽn",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2pl": {
+            "form": "vrì",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3pl": {
+            "form": "vrà",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "vój",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2sg": {
+            "form": "vu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3sg": {
+            "form": "vö",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "1pl": {
+            "form": "vlén",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2pl": {
+            "form": "vlè",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3pl": {
+            "form": "vö",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "vléva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2sg": {
+            "form": "vlìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3sg": {
+            "form": "vléva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "1pl": {
+            "form": "vlìmia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2pl": {
+            "form": "vlìvia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3pl": {
+            "form": "vléva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "vlét",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2sg": {
+            "form": "vlès",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3sg": {
+            "form": "vlét",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "1pl": {
+            "form": "vlèsum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2pl": {
+            "form": "vlèsuv",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3pl": {
+            "form": "vlét",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "vréb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2sg": {
+            "form": "vrès",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3sg": {
+            "form": "vrèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "1pl": {
+            "form": "vrèsum",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "2pl": {
+            "form": "vrèsuv",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          },
+          "3pl": {
+            "form": "vrèb",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://en.wiktionary.org/wiki/vlér"
+          }
+        }
+      }
+    }
+  ]
+}

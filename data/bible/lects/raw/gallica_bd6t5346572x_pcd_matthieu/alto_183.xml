@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SCHEMAVERSION="alto_bnf-v2_0" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v3# http://bibnum.bnf.fr/schema/alto_bnf-v2_0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<sourceImageInformation>
+<fileName>00000183.jp2</fileName>
+<fileIdentifier>ark:/12148/bd6t5346572x/f183</fileIdentifier>
+<documentIdentifier documentIdentifierLocation="NUM">100346572</documentIdentifier>
+</sourceImageInformation>
+<OCRProcessing ID="OCR_1">
+<ocrProcessingStep>
+<processingDateTime>2023-08-16</processingDateTime>
+<processingStepDescription>[001_OCR_BRUT]OCR BRUT 16.36 %</processingStepDescription>
+<processingStepDescription>[002_CHARS]{7}</processingStepDescription>
+<processingStepDescription>[007_STRINGS]{1}</processingStepDescription>
+<processingSoftware>
+<softwareCreator>ABBYY</softwareCreator>
+<softwareName>ABBYY FineReader Engine</softwareName>
+<softwareVersion>12</softwareVersion>
+</processingSoftware>
+</ocrProcessingStep>
+</OCRProcessing>
+</Description>
+<Styles>
+<TextStyle FONTFAMILY="Default Metrics Font" FONTSIZE="10" ID="TXT_1"/>
+<TextStyle FONTFAMILY="Default Metrics Font" FONTSIZE="15" ID="TXT_2"/>
+</Styles>
+<Layout>
+<Page ACCURACY="16.36" HEIGHT="3648" ID="PAG_00000183" PHYSICAL_IMG_NR="183" QUALITY="OK" WIDTH="2799">
+<BottomMargin HEIGHT="3648" HPOS="0" ID="PAG_00000183_BottomMargin" VPOS="0" WIDTH="2799">
+<TextBlock HEIGHT="132" HPOS="916" ID="PAG_00000183_TB000001" VPOS="188" WIDTH="646" language="fr">
+<TextLine HEIGHT="53" HPOS="921" ID="PAG_00000183_TL000001" VPOS="200" WIDTH="636">
+<String CONTENT="&quot;-==05=" HEIGHT="53" HPOS="921" ID="PAG_00000183_ST000001" STYLE="underline" STYLEREFS="TXT_2" VPOS="200" WC="0.97142857313156128" WIDTH="636"/>
+</TextLine>
+</TextBlock>
+<GraphicalElement HEIGHT="22" HPOS="262" ID="PAG_00000183_GE000001" VPOS="194" WIDTH="2304"/>
+<GraphicalElement HEIGHT="18" HPOS="240" ID="PAG_00000183_GE000002" VPOS="3434" WIDTH="2354"/>
+<GraphicalElement HEIGHT="1218" HPOS="160" ID="PAG_00000183_GE000003" VPOS="2430" WIDTH="82"/>
+<GraphicalElement HEIGHT="1658" HPOS="184" ID="PAG_00000183_GE000004" VPOS="772" WIDTH="64"/>
+<GraphicalElement HEIGHT="820" HPOS="186" ID="PAG_00000183_GE000005" VPOS="2024" WIDTH="14"/>
+<GraphicalElement HEIGHT="1516" HPOS="2582" ID="PAG_00000183_GE000006" VPOS="194" WIDTH="20"/>
+<GraphicalElement HEIGHT="1438" HPOS="2592" ID="PAG_00000183_GE000007" VPOS="2000" WIDTH="16"/>
+<GraphicalElement HEIGHT="90" HPOS="2576" ID="PAG_00000183_GE000008" VPOS="248" WIDTH="6"/>
+</BottomMargin>
+</Page>
+</Layout>
+</alto>

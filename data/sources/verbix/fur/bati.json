@@ -1,0 +1,419 @@
+{
+  "lect": "fur",
+  "lemma": "bati",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fur/bati/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=132&T1=bati",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 132,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "bat"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "batis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "bat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "batìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "batês"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "batin"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "bati"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "batis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "bati"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "batìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "batês"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "batin"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "batevi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "batevis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "bateve"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "batevin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "batevis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "batevin"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "batès"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "batessis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "batès"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "batessin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "batessis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "batessin"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "batei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "bateris"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "batè"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "baterin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "bateris"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "baterin"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "batarai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "batarâs"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "batarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "batarìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "batarês"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "bataran"
+          }
+        ]
+      },
+      "6": {
+        "name": "Conditional Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "batarès"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "bataressis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "batarès"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "bataressin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "bataressis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "bataressin"
+          }
+        ]
+      },
+      "7": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "bat"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "batìn"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "batêt"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Present II",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "jo o",
+            "use": 0,
+            "form": "batedi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu tu",
+            "use": 0,
+            "form": "batedis"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui al;jê e",
+            "use": 0,
+            "form": "batedi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nô;noaltris o",
+            "use": 0,
+            "form": "batedin"
+          },
+          {
+            "id": 5,
+            "pronoun": "voaltris;Vô o",
+            "use": 0,
+            "form": "batedis"
+          },
+          {
+            "id": 6,
+            "pronoun": "lôr a",
+            "use": 0,
+            "form": "batedin"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "bati"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "batint"
+          }
+        ]
+      },
+      "23": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.m",
+            "use": 0,
+            "form": "batût"
+          },
+          {
+            "id": 2,
+            "pronoun": "Pl.m",
+            "use": 0,
+            "form": "batûts"
+          },
+          {
+            "id": 3,
+            "pronoun": "Sg.f",
+            "use": 0,
+            "form": "batude"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.f",
+            "use": 0,
+            "form": "batudis"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "bati"
+  }
+}

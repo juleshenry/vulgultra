@@ -1,0 +1,974 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "ruo",
+    "purpose": "Istro-Romanian four-class Verbix docs harvest",
+    "provider": "docs.verbix.com + Verbix scanned notes",
+    "attribution": "https://docs.verbix.com/Languages/Istroromanian",
+    "license": "Verbix site terms (CC BY-NC for API/site content)",
+    "scholarly_prefer": [
+      "Neiescu (Istro-Romanian descriptive tradition)",
+      "Kovačec 1998",
+      "Oxford Eastern Romance chapters (Istro-/Megleno-/Aromanian)",
+      "Oxford ORA: Istro-Romanian verbs in -[ɛi] and -[ui]"
+    ],
+    "ending_inventories": {
+      "I-å": {
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "iam",
+            "2sg": "iai",
+            "3sg": "ia",
+            "1pl": "ian",
+            "2pl": "iat",
+            "3pl": "ia"
+          },
+          "support": 1,
+          "stem_mode": "lemma-rugå"
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "r",
+            "2sg": "ri",
+            "3sg": "re",
+            "1pl": "rno",
+            "2pl": "ret",
+            "3pl": "ru"
+          },
+          "support": 1,
+          "stem_mode": "lemma-rugå"
+        }
+      }
+    },
+    "optimizer_involved": false,
+    "gaps": "Present 1sg/2sg/3sg/2pl empty on Verbix HTML summary for some classes filled from scanned notes; analytic perfect/conditional shown as particle+participle/infinitive strings."
+  },
+  "paradigms": [
+    {
+      "lect": "ruo",
+      "lemma": "rugå",
+      "class_source": "I-å",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:rugå",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "to pray / call (class I model)",
+        "notes": "Infinitive class example also clămå; siblings stå, turnå, zucå",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "rugå",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        },
+        "nonfinite.gerund": {
+          "?": {
+            "form": "rugánda",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "gerund"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "rog",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "róži",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "róga",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "rugån",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "rugåţ",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "rógu",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "rugåiam",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "rugåiai",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "rugåia",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "rugåian",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "rugåiat",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "rugåia",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "rugår",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "rugåri",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "rugåre",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "rugårno",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "rugåret",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "rugåru",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "res rugå",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "rei rugå",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "re rugå",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "ren rugå",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "ret rugå",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "re rugå",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "1sg": {
+            "form": "rugåt-am",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "clămå",
+      "class_source": "I-å",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:clămå",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "to call (class I citation infinitive)",
+        "notes": "",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "clămå",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "tiré",
+      "class_source": "II-é",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:tiré",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "class II model (tiré / cadé / ramaré)",
+        "notes": "Other II: ve, be, ramaré",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "tiré",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        },
+        "nonfinite.gerund": {
+          "?": {
+            "form": "tiránda",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "gerund"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "tiru",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "tíri",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "tíre",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "tirén",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "tiréţ",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "tíru",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "tirúr",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "tirúri",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "tirúre",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "tirúrno",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "tirúret",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "tirúru",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "2sg": {
+            "form": "tirút-ai",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "cadé",
+      "class_source": "II-é",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:cadé",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "class II imperfect model (source table)",
+        "notes": "",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "cadéiam",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "cadéiai",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "cadéia",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "cadéian",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "cadéiat",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "cadéia",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "ramaré",
+      "class_source": "II-é",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:ramaré",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "class II citation infinitive",
+        "notes": "",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "ramaré",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "trage",
+      "class_source": "III-e",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:trage",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "class III model (båte / trage)",
+        "notes": "Other III: årde, pl'erde, zacl'ide",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.gerund": {
+          "?": {
+            "form": "tragánda",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "gerund"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "trazéiam",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "trazéiai",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "trazéia",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "trazéian",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "trazéiat",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "trazéia",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "trasér",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "traséri",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "trasére",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "trasérno",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "traséret",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "traséru",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "3sg": {
+            "form": "tras-a",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "meg",
+      "class_source": "III-e",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:meg",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "class III present model (source table; infinitive not given)",
+        "notes": "",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "meg",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "méži",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "mége",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "mézen",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "mézeţ",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "mégu",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "båte",
+      "class_source": "III-e",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:båte",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "class III citation infinitive",
+        "notes": "",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "båte",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "avzí",
+      "class_source": "IV-í",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:avzí",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "to hear (class IV model)",
+        "notes": "Other IV: durmí, fi, cuperí",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "avzí",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        },
+        "nonfinite.gerund": {
+          "?": {
+            "form": "avzínda",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "gerund"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "åvd",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "åvzi",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "åvde",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "avzín",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "avzíţ",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "åvdu",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "avzíiam",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "avzíiai",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "avzíia",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "avzíian",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "avzíiat",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "avzíia",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "avzír",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "avzíri",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "avzíre",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "avzírno",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "avzíret",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "avzíru",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "1pl": {
+            "form": "avzít-am",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "durmi",
+      "class_source": "IV-í",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:durmi",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "to sleep (class IV citation)",
+        "notes": "",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "durmi",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "cupéi",
+      "class_source": "IV-éi",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:cupéi",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "class IV -éi model",
+        "notes": "Verbix: verbs in -véi and -úi are iterative; -éi may be perfective or imperfective. Also bivéi, movéi, piséi, frustikéi.",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "cupéi",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        },
+        "nonfinite.gerund": {
+          "?": {
+            "form": "copéinda",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "gerund"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "copésc",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "copéšti",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "copéšte",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "copín",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "copíţ",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "copéscu",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "copéir",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "copéiri",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "copéire",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "copéirno",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "copéiret",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "copéiru",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "3pl": {
+            "form": "copéit-a(v)",
+            "phonemes": [],
+            "source_label": "verbix-docs",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "carúi",
+      "class_source": "IV-úi",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Istro-Romanian:carúi",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "provider": "docs.verbix.com",
+        "gloss_en": "class IV -úi example (iterative)",
+        "notes": "Also radúi. Slavic-contact-influenced innovative class.",
+        "citation_note": "Secondary online summary. For formal work cite Neiescu, Kovačec, or Oxford Eastern Romance chapters."
+      },
+      "cells": {
+        "nonfinite.infinitive": {
+          "?": {
+            "form": "carúi",
+            "phonemes": [],
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian",
+            "source_label": "infinitive"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "lect": "gl",
+  "lemma": "ir",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/glg/ir/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=6&T1=ir",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 6,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "vou"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "vais"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "vai"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "imos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "ides"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "van"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "vaia"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "vaias"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "vaia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "vaiamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "vaiades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "vaian"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "ía"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "ías"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "ía"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "iamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "iades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "ían"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "fose"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "foses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "fose"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "fosemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "fosedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "fosen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "fun"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "fuche"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "foi"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "fomos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "fostes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "foron"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "irei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "irás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "irá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "iremos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "iredes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "irán"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "for"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "fores"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "for"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "formos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "fordes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "foren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 0,
+            "form": "iría"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "irías"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "iría"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "iriamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "iriades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 0,
+            "form": "irían"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "vai"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "vaia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "vaiamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 0,
+            "form": "ide"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "vaian"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "eu",
+            "use": 2,
+            "form": "fora"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 2,
+            "form": "foras"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "fora"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "foramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "vós",
+            "use": 2,
+            "form": "forades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eles",
+            "use": 2,
+            "form": "foran"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ir"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "ires"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "ir"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "irmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "irdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "iren"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ir"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "indo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "ido"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": [
+      "- <b>Vamos</b> ! - Veña ! Bulide ! Estades ben? Por onde foi ?",
+      "- E eu? - Ti, Shahed, meu olliño dereito, es a miña guerreira. Amigos, <b>vou</b> ser o primeiro pai da historia",
+      "Remataron ? - Tráenos unha caixa? - Claro. - <b>Vou</b> ao baño. - Vale.",
+      "En serio <b>vas</b> facer isto antes do Nadal ? Son os negocios.",
+      "Non sei que comedes en Pailanalandia, pero se o <b>vas</b> trousar...",
+      "Non quero <b>ir</b>. Que pasa, Alejandro ?",
+      "XOVES 20 SETEMBRO EN TODO TERREO CO CRACK DE MEU PAI Axúdasme coa cea? Claro, poño a camiseta a lavar e <b>vou</b>.",
+      "Se non soñas con <b>ir</b> ás olimpíadas, non es un atleta de verdade.",
+      "pero as outras nais adoraban a miña torta de cabaza e base de améndoa. - E esta vila tamén a <b>vai</b> adorar. - Seguro.",
+      "Por atletismo, 200 pavos. Corres rápido? Quítame o monitor do nocello e verás. Ha, ha, ha. Iso non <b>vai</b> pasar.",
+      "Moi ben. <b>Imos</b> aló. Oe... Volvemos en nada. Si?",
+      "Saíu e meteuse nunha rúa con moito tráfico, con coches pitando e <b>indo</b> en todas direccións.",
+      "Agora é o momento. Non <b>imos</b> esperar á xubilación.",
+      "<b>Vou</b> dar un paseo. Por que ? Pode <b>ir</b> a señora Warren buscar o que precises.",
+      "Ezzat, Nizar é seu curmán. - Non as <b>vai</b> abandonar. - Ti de que lado estás ?"
+    ],
+    "verb": "ir"
+  }
+}

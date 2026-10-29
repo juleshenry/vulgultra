@@ -1,0 +1,707 @@
+{
+  "lect": "it",
+  "lemma": "abbigliarsi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/abbigliarsi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=abbigliarsi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbiglio"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbigli"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbiglia"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbigliamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbigliate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbigliano"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 1,
+            "form": "abbigli"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbigli"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbigli"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbigliamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 1,
+            "form": "abbigliate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbiglino"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbigliavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbigliavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbigliava"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbigliavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbigliavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbigliavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbigliassi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbigliassi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbigliasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbigliassimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbigliaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbigliassero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbigliai"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbigliasti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbigliò"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbigliammo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbigliaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbigliarono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbiglierò"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbiglierai"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbiglierà"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbiglieremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbiglierete"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbiglieranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbiglierei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbiglieresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbiglierebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbiglieremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbigliereste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbiglierebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbigliati"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbigli"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbigliamoci"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbigliatevi"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbiglino"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sono abbigliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sei abbigliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "è abbigliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbigliati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siete abbigliati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sono abbigliati"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sia abbigliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sia abbigliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sia abbigliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbigliati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siate abbigliati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "siano abbigliati"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "ero abbigliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "eri abbigliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "era abbigliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "eravamo abbigliati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "eravate abbigliati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "erano abbigliati"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fossi abbigliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fossi abbigliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fosse abbigliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fossimo abbigliati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbigliati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fossero abbigliati"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fui abbigliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fosti abbigliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fu abbigliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fummo abbigliati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbigliati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "furono abbigliati"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarò abbigliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sarai abbigliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarà abbigliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremo abbigliati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sarete abbigliati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "saranno abbigliati"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarei abbigliato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "saresti abbigliato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbe abbigliato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremmo abbigliati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sareste abbigliati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbero abbigliati"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbigliarsi"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbigliandosi"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 4,
+            "form": "abbigliato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbigliantesi"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere abbigliato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo abbigliato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente abbigliato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "essere"
+    ],
+    "examples": [
+      "[...]  un berrettone di pelle di lepre che gli era assai adatto alla testa e sufficientemente elegante. Così per allora si trovò vestito che non c' era male, e pareva insuperbirsi d' essere presso a poco <b>abbigliato</b> come il suo padrone. Egli è vero che su le prime stava assai male entro a ’ suoi panni: il portar le brache non gli conferiva gran che, e le maniche della casacca gli davano fastidio alle spalle e [...]"
+    ],
+    "verb": "abbigliare"
+  }
+}

@@ -1,0 +1,555 @@
+{
+  "lect": "mwl",
+  "lemma": "haber",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/mwl/haber/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=54&T1=haber",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 54,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "hás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "há"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "hai"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "hemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "heis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "hen"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haba"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "haia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habas"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "haias"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "haba"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "haia"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "hábamos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "háiamos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 0,
+            "form": "hábades"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "háiades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 0,
+            "form": "hában"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "háian"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "habie"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "habies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "habie"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "habiemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 0,
+            "form": "habiedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 0,
+            "form": "habien"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "houbisse"
+          },
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "habisse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "houbisses"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "habisses"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "houbisse"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "habisse"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "houbíssemos"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "habíssemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "houbíssedes"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "habíssedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "houbíssen"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "habíssen"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "hoube"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "houbiste"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "houbo"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "houbimos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "houbistes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "houbírun"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haberei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haberás"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "haberá"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "haberemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 0,
+            "form": "habereis"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 0,
+            "form": "haberan"
+          }
+        ]
+      },
+      "6": {
+        "name": "Subjunctive Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "houbir"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "houbires"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "houbir"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "houbirmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "houbirdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "houbíren"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 0,
+            "form": "haberie"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "haberies"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 0,
+            "form": "haberie"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 0,
+            "form": "haberiemos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 0,
+            "form": "haberiedes"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 0,
+            "form": "haberien"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "há"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 2,
+            "form": "habei"
+          }
+        ]
+      },
+      "9": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "yo",
+            "use": 2,
+            "form": "houbira"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "houbiras"
+          },
+          {
+            "id": 3,
+            "pronoun": "el",
+            "use": 2,
+            "form": "houbira"
+          },
+          {
+            "id": 4,
+            "pronoun": "nós",
+            "use": 2,
+            "form": "houbíramos"
+          },
+          {
+            "id": 5,
+            "pronoun": "bós",
+            "use": 2,
+            "form": "houbírades"
+          },
+          {
+            "id": 6,
+            "pronoun": "eilhes",
+            "use": 2,
+            "form": "houbíran"
+          }
+        ]
+      },
+      "18": {
+        "name": "Personal Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "haberes"
+          },
+          {
+            "id": 3,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber"
+          },
+          {
+            "id": 4,
+            "pronoun": "",
+            "use": 0,
+            "form": "habermos"
+          },
+          {
+            "id": 5,
+            "pronoun": "",
+            "use": 0,
+            "form": "haberdes"
+          },
+          {
+            "id": 6,
+            "pronoun": "",
+            "use": 0,
+            "form": "haberen"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "haber"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "habido"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "haber"
+  }
+}

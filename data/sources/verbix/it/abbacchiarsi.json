@@ -1,0 +1,708 @@
+{
+  "lect": "it",
+  "lemma": "abbacchiarsi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/abbacchiarsi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=abbacchiarsi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacchio"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbacchi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchia"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbacchiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacchiate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchiano"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 1,
+            "form": "abbacchi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbacchi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbacchi"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbacchiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 1,
+            "form": "abbacchiate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbacchino"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacchiavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacchiavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchiava"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacchiavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacchiavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchiavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacchiassi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacchiassi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchiasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacchiassimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacchiaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchiassero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacchiai"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacchiasti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchiò"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacchiammo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacchiaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchiarono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacchierò"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacchierai"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchierà"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacchieremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacchierete"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchieranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbacchierei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacchieresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchierebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbacchieremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacchiereste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbacchierebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbacchiati"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbacchi"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbacchiamoci"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbacchiatevi"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbacchino"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sono abbacchiato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sei abbacchiato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "è abbacchiato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbacchiati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siete abbacchiati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sono abbacchiati"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sia abbacchiato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sia abbacchiato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sia abbacchiato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbacchiati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siate abbacchiati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "siano abbacchiati"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "ero abbacchiato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "eri abbacchiato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "era abbacchiato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "eravamo abbacchiati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "eravate abbacchiati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "erano abbacchiati"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fossi abbacchiato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fossi abbacchiato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fosse abbacchiato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fossimo abbacchiati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbacchiati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fossero abbacchiati"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fui abbacchiato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fosti abbacchiato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fu abbacchiato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fummo abbacchiati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbacchiati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "furono abbacchiati"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarò abbacchiato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sarai abbacchiato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarà abbacchiato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremo abbacchiati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sarete abbacchiati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "saranno abbacchiati"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarei abbacchiato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "saresti abbacchiato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbe abbacchiato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremmo abbacchiati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sareste abbacchiati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbero abbacchiati"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbacchiarsi"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbacchiandosi"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 4,
+            "form": "abbacchiato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbacchiantesi"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere abbacchiato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo abbacchiato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente abbacchiato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "essere"
+    ],
+    "examples": [
+      "Come restare? Abbacchiano le noci ¶ Sulle montagne (<i>How can you remain? On the mountains, they are knocking down the walnuts</i>) [1864, Emilio Praga, “Egloga – A Bernardino Zembrini [Eclogue – To Bernardino Zembrini]”, in Penombre, page 11:]\r",
+      "Amor par vno ſcherzo alle perſone ¶ Quando non vi s’è drento; e vn legato ¶ Da’ ſuo’ vincigli, vinto dalla pena, ¶ Abbacchiato ne va doue’ nel mena. (<i>Love seems like a joke to people when you're not caught in it; one – tied by Its strings and defeated by the sorrow – disheartened, goes where It leads him.</i>) [1612, Michelangelo Buonarroti the Younger, La Tancia, published 1615, Fourth Act, Seventh Scene, page 98:]"
+    ],
+    "verb": "abbacchiare"
+  }
+}

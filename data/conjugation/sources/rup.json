@@ -1,0 +1,5245 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "rup",
+    "purpose": "sourced Kaikki/Wiktextract conjugation harvest",
+    "ending_inventories": {
+      "unknown": {
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "m",
+            "2sg": "i",
+            "3sg": "∅",
+            "1pl": "m",
+            "2pl": "ts",
+            "3pl": "∅"
+          },
+          "support": 3,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 3
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "ã",
+            "3sg": "ã",
+            "1pl": "ãm",
+            "2pl": "ats",
+            "3pl": "ã"
+          },
+          "support": 2,
+          "variants": 2,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 3
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "ai",
+            "2sg": "ash",
+            "3sg": "ã",
+            "1pl": "ãm",
+            "2pl": "at",
+            "3pl": "arã"
+          },
+          "support": 3,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 3
+        }
+      },
+      "-are": {
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "am",
+            "2sg": "ai",
+            "3sg": "a",
+            "1pl": "am",
+            "2pl": "ats",
+            "3pl": "a"
+          },
+          "support": 21,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 21,
+          "rows": 21
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "ã",
+            "3sg": "ã",
+            "1pl": "ãm",
+            "2pl": "ats",
+            "3pl": "ã"
+          },
+          "support": 6,
+          "variants": 5,
+          "stem_mode": "infinitive",
+          "regular_rows": 18,
+          "rows": 21
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "ai",
+            "2sg": "ash",
+            "3sg": "ã",
+            "1pl": "ãm",
+            "2pl": "at",
+            "3pl": "arã"
+          },
+          "support": 21,
+          "variants": 1,
+          "stem_mode": "infinitive",
+          "regular_rows": 21,
+          "rows": 21
+        }
+      }
+    },
+    "lemma_count": 799,
+    "serialized_paradigms": 30,
+    "max_paradigms_per_class": 40,
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "rup",
+      "lemma": "bãnedz",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:bãnedz",
+        "url": "https://en.wiktionary.org/wiki/b%C3%A3nedz",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "bãnedz",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2sg": {
+            "form": "bãnedzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "3sg": {
+            "form": "bãneadzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "1pl": {
+            "form": "bãnãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2pl": {
+            "form": "bãnats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "3pl": {
+            "form": "bãnã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "bãnam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2sg": {
+            "form": "bãnai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "3sg": {
+            "form": "bãna",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "1pl": {
+            "form": "bãnam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2pl": {
+            "form": "bãnats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "3pl": {
+            "form": "bãna",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "bãnai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2sg": {
+            "form": "bãnash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "3sg": {
+            "form": "bãnã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "1pl": {
+            "form": "bãnãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2pl": {
+            "form": "bãnat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "3pl": {
+            "form": "bãnarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "bãnarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2sg": {
+            "form": "bãnari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "3sg": {
+            "form": "bãnari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "1pl": {
+            "form": "bãnarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2pl": {
+            "form": "bãnarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "3pl": {
+            "form": "bãnari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "bãnã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          },
+          "2pl": {
+            "form": "bãnats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedz"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "bãnedzu",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:bãnedzu",
+        "url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "bãnedzu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2sg": {
+            "form": "bãnedzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "3sg": {
+            "form": "bãneadzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "1pl": {
+            "form": "bãnãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2pl": {
+            "form": "bãnats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "3pl": {
+            "form": "bãnã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "bãnam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2sg": {
+            "form": "bãnai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "3sg": {
+            "form": "bãna",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "1pl": {
+            "form": "bãnam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2pl": {
+            "form": "bãnats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "3pl": {
+            "form": "bãna",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "bãnai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2sg": {
+            "form": "bãnash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "3sg": {
+            "form": "bãnã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "1pl": {
+            "form": "bãnãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2pl": {
+            "form": "bãnat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "3pl": {
+            "form": "bãnarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "bãnarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2sg": {
+            "form": "bãnari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "3sg": {
+            "form": "bãnari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "1pl": {
+            "form": "bãnarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2pl": {
+            "form": "bãnarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "3pl": {
+            "form": "bãnari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "bãnã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          },
+          "2pl": {
+            "form": "bãnats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/b%C3%A3nedzu"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "bishinedz",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:bishinedz",
+        "url": "https://en.wiktionary.org/wiki/bishinedz",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "bishinedz",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2sg": {
+            "form": "bishinedzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "3sg": {
+            "form": "bishineadzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "1pl": {
+            "form": "bishinãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2pl": {
+            "form": "bishinats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "3pl": {
+            "form": "bishinã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "bishinam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2sg": {
+            "form": "bishinai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "3sg": {
+            "form": "bishina",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "1pl": {
+            "form": "bishinam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2pl": {
+            "form": "bishinats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "3pl": {
+            "form": "bishina",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "bishinai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2sg": {
+            "form": "bishinash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "3sg": {
+            "form": "bishinã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "1pl": {
+            "form": "bishinãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2pl": {
+            "form": "bishinat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "3pl": {
+            "form": "bishinarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "bishinarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2sg": {
+            "form": "bishinari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "3sg": {
+            "form": "bishinari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "1pl": {
+            "form": "bishinarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2pl": {
+            "form": "bishinarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "3pl": {
+            "form": "bishinari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "bishinã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          },
+          "2pl": {
+            "form": "bishinats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/bishinedz"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "hiu",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:hiu",
+        "url": "https://en.wiktionary.org/wiki/hiu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "easti",
+            "phonemes": [],
+            "source_label": "first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/hiu"
+          },
+          "2sg": {
+            "form": "easte",
+            "phonemes": [],
+            "source_label": "present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/hiu"
+          },
+          "3sg": {
+            "form": "easci",
+            "phonemes": [],
+            "source_label": "present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/hiu"
+          },
+          "1pl": {
+            "form": "him",
+            "phonemes": [],
+            "source_label": "first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/hiu"
+          },
+          "2pl": {
+            "form": "himu",
+            "phonemes": [],
+            "source_label": "plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/hiu"
+          },
+          "3pl": {
+            "form": "hits",
+            "phonemes": [],
+            "source_label": "plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/hiu"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "escu",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:escu",
+        "url": "https://en.wiktionary.org/wiki/escu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "escu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/escu"
+          },
+          "2sg": {
+            "form": "eshti",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/escu"
+          },
+          "3sg": {
+            "form": "easti",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/escu"
+          },
+          "1pl": {
+            "form": "him",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/escu"
+          },
+          "2pl": {
+            "form": "hits",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/escu"
+          },
+          "3pl": {
+            "form": "suntu",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/escu"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "am",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:am",
+        "url": "https://en.wiktionary.org/wiki/am",
+        "stem": null
+      },
+      "cells": {
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "avea",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          },
+          "2sg": {
+            "form": "avia",
+            "phonemes": [],
+            "source_label": "imperfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          },
+          "1pl": {
+            "form": "aveam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          },
+          "2pl": {
+            "form": "aveatsi",
+            "phonemes": [],
+            "source_label": "imperfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          },
+          "3pl": {
+            "form": "avea",
+            "phonemes": [],
+            "source_label": "imperfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "ari",
+            "phonemes": [],
+            "source_label": "first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          },
+          "2sg": {
+            "form": "are",
+            "phonemes": [],
+            "source_label": "present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          },
+          "1pl": {
+            "form": "avemu",
+            "phonemes": [],
+            "source_label": "first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          },
+          "2pl": {
+            "form": "avem",
+            "phonemes": [],
+            "source_label": "plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          },
+          "3pl": {
+            "form": "avetsi",
+            "phonemes": [],
+            "source_label": "plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/am"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "amu",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:amu",
+        "url": "https://en.wiktionary.org/wiki/amu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ari",
+            "phonemes": [],
+            "source_label": "first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          },
+          "2sg": {
+            "form": "are",
+            "phonemes": [],
+            "source_label": "present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          },
+          "1pl": {
+            "form": "avemu",
+            "phonemes": [],
+            "source_label": "first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          },
+          "2pl": {
+            "form": "avem",
+            "phonemes": [],
+            "source_label": "plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          },
+          "3pl": {
+            "form": "avetsi",
+            "phonemes": [],
+            "source_label": "plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "avea",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          },
+          "2sg": {
+            "form": "avia",
+            "phonemes": [],
+            "source_label": "imperfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          },
+          "1pl": {
+            "form": "aveam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          },
+          "2pl": {
+            "form": "aveatsi",
+            "phonemes": [],
+            "source_label": "imperfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          },
+          "3pl": {
+            "form": "avea",
+            "phonemes": [],
+            "source_label": "imperfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amu"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "est",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:est",
+        "url": "https://en.wiktionary.org/wiki/est",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "esti",
+            "phonemes": [],
+            "source_label": "first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/est"
+          },
+          "1pl": {
+            "form": "him",
+            "phonemes": [],
+            "source_label": "first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/est"
+          },
+          "2pl": {
+            "form": "hits",
+            "phonemes": [],
+            "source_label": "plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/est"
+          },
+          "3pl": {
+            "form": "sent",
+            "phonemes": [],
+            "source_label": "plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/est"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "min",
+      "class_source": "unknown",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:min",
+        "url": "https://en.wiktionary.org/wiki/min",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "3sg": {
+            "form": "minã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/min"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "lucredzu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:lucredzu",
+        "url": "https://en.wiktionary.org/wiki/lucredzu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "lucredz",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2sg": {
+            "form": "lucredzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "3sg": {
+            "form": "lucreadzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "1pl": {
+            "form": "lucrãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2pl": {
+            "form": "lucrats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "3pl": {
+            "form": "lucrã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "lucram",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2sg": {
+            "form": "lucrai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "3sg": {
+            "form": "lucra",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "1pl": {
+            "form": "lucram",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2pl": {
+            "form": "lucrats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "3pl": {
+            "form": "lucra",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "lucrai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2sg": {
+            "form": "lucrash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "3sg": {
+            "form": "lucrã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "1pl": {
+            "form": "lucrãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2pl": {
+            "form": "lucrat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "3pl": {
+            "form": "lucrarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "lucrarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2sg": {
+            "form": "lucrari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "3sg": {
+            "form": "lucrari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "1pl": {
+            "form": "lucrarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2pl": {
+            "form": "lucrarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "3pl": {
+            "form": "lucrari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "lucrã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          },
+          "2pl": {
+            "form": "lucrats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lucredzu"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "lavdu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:lavdu",
+        "url": "https://en.wiktionary.org/wiki/lavdu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "lavdu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2sg": {
+            "form": "lavdzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "3sg": {
+            "form": "lavdzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "1pl": {
+            "form": "lãvdãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2pl": {
+            "form": "lãvdats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "3pl": {
+            "form": "lavdã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "lãvdam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2sg": {
+            "form": "lãvdai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "3sg": {
+            "form": "lãvda",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "1pl": {
+            "form": "lãvdam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2pl": {
+            "form": "lãvdats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "3pl": {
+            "form": "lãvda",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "lãvdai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2sg": {
+            "form": "lãvdash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "3sg": {
+            "form": "lãvdã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "1pl": {
+            "form": "lãvdãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2pl": {
+            "form": "lãvdat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "3pl": {
+            "form": "lãvdarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "lãvdarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2sg": {
+            "form": "lãvdari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "3sg": {
+            "form": "lãvdari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "1pl": {
+            "form": "lãvdarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2pl": {
+            "form": "lãvdarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "3pl": {
+            "form": "lãvdari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "lavdã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          },
+          "2pl": {
+            "form": "lãvdats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/lavdu",
+            "ipa": "[ˈlav.du]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "discãntu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:discãntu",
+        "url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "discãntu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2sg": {
+            "form": "discãntsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "3sg": {
+            "form": "discãntã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "1pl": {
+            "form": "discãntãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "discãntats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "3pl": {
+            "form": "discãntã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "discãntam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2sg": {
+            "form": "discãntai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "3sg": {
+            "form": "discãnta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "1pl": {
+            "form": "discãntam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "discãntats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "3pl": {
+            "form": "discãnta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "discãntai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2sg": {
+            "form": "discãntash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "3sg": {
+            "form": "discãntã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "1pl": {
+            "form": "discãntãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "discãntat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "3pl": {
+            "form": "discãntarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "discãntarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2sg": {
+            "form": "discãntari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "3sg": {
+            "form": "discãntari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "1pl": {
+            "form": "discãntarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "discãntarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "3pl": {
+            "form": "discãntari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "discãntã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "discãntats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/disc%C3%A3ntu",
+            "ipa": "[disˈkɨn.tu]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "cãntu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:cãntu",
+        "url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "cãntu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2sg": {
+            "form": "cãntsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "3sg": {
+            "form": "cãntã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "1pl": {
+            "form": "cãntãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "cãntats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "3pl": {
+            "form": "cãntã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "cãntam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2sg": {
+            "form": "cãntai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "3sg": {
+            "form": "cãnta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "1pl": {
+            "form": "cãntam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "cãntats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "3pl": {
+            "form": "cãnta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "cãntai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2sg": {
+            "form": "cãntash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "3sg": {
+            "form": "cãntã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "1pl": {
+            "form": "cãntãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "cãntat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "3pl": {
+            "form": "cãntarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "cãntarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2sg": {
+            "form": "cãntari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "3sg": {
+            "form": "cãntari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "1pl": {
+            "form": "cãntarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "cãntarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "3pl": {
+            "form": "cãntari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "cãntã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          },
+          "2pl": {
+            "form": "cãntats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/c%C3%A3ntu",
+            "ipa": "[ˈkɨn.tu]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "arucu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:arucu",
+        "url": "https://en.wiktionary.org/wiki/arucu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "arucu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2sg": {
+            "form": "arutsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "3sg": {
+            "form": "arutsã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "1pl": {
+            "form": "arucãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2pl": {
+            "form": "arucats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "3pl": {
+            "form": "arucã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "arucam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2sg": {
+            "form": "arucai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "3sg": {
+            "form": "aruca",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "1pl": {
+            "form": "arucam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2pl": {
+            "form": "arucats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "3pl": {
+            "form": "aruca",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "arucai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2sg": {
+            "form": "arucash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "3sg": {
+            "form": "arucã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "1pl": {
+            "form": "arucãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2pl": {
+            "form": "arucat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "3pl": {
+            "form": "arucarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "arucarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2sg": {
+            "form": "arucari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "3sg": {
+            "form": "arucari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "1pl": {
+            "form": "arucarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2pl": {
+            "form": "arucarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "3pl": {
+            "form": "arucari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "arucã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          },
+          "2pl": {
+            "form": "arucats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arucu",
+            "ipa": "[aˈrukʷ]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "aruc",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:aruc",
+        "url": "https://en.wiktionary.org/wiki/aruc",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "aruc",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2sg": {
+            "form": "arutsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "3sg": {
+            "form": "arucã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "1pl": {
+            "form": "arucãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2pl": {
+            "form": "arucats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "3pl": {
+            "form": "arucã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "arucam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2sg": {
+            "form": "arucai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "3sg": {
+            "form": "aruca",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "1pl": {
+            "form": "arucam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2pl": {
+            "form": "arucats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "3pl": {
+            "form": "aruca",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "arucai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2sg": {
+            "form": "arucash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "3sg": {
+            "form": "arucã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "1pl": {
+            "form": "arucãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2pl": {
+            "form": "arucat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "3pl": {
+            "form": "arucarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "arucarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2sg": {
+            "form": "arucari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "3sg": {
+            "form": "arucari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "1pl": {
+            "form": "arucarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2pl": {
+            "form": "arucarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "3pl": {
+            "form": "arucari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "arucã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          },
+          "2pl": {
+            "form": "arucats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/aruc",
+            "ipa": "[aˈruk]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "alumtu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:alumtu",
+        "url": "https://en.wiktionary.org/wiki/alumtu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "alumtu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2sg": {
+            "form": "alumtsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "3sg": {
+            "form": "alumtã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "1pl": {
+            "form": "alumtãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2pl": {
+            "form": "alumtats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "3pl": {
+            "form": "alumtã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "alumtam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2sg": {
+            "form": "alumtai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "3sg": {
+            "form": "alumta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "1pl": {
+            "form": "alumtam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2pl": {
+            "form": "alumtats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "3pl": {
+            "form": "alumta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "alumtai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2sg": {
+            "form": "alumtash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "3sg": {
+            "form": "alumtã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "1pl": {
+            "form": "alumtãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2pl": {
+            "form": "alumtat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "3pl": {
+            "form": "alumtarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "alumtarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2sg": {
+            "form": "alumtari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "3sg": {
+            "form": "alumtari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "1pl": {
+            "form": "alumtarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2pl": {
+            "form": "alumtarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "3pl": {
+            "form": "alumtari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "alumtã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          },
+          "2pl": {
+            "form": "alumtats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alumtu",
+            "ipa": "[aˈlum.tu]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "alavdu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:alavdu",
+        "url": "https://en.wiktionary.org/wiki/alavdu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "alavdu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2sg": {
+            "form": "alavdzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "3sg": {
+            "form": "alavdzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "1pl": {
+            "form": "alãvdãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2pl": {
+            "form": "alãvdats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "3pl": {
+            "form": "alavdã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "alãvdam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2sg": {
+            "form": "alãvdai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "3sg": {
+            "form": "alãvda",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "1pl": {
+            "form": "alãvdam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2pl": {
+            "form": "alãvdats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "3pl": {
+            "form": "alãvda",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "alãvdai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2sg": {
+            "form": "alãvdash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "3sg": {
+            "form": "alãvdã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "1pl": {
+            "form": "alãvdãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2pl": {
+            "form": "alãvdat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "3pl": {
+            "form": "alãvdarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "alãvdarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2sg": {
+            "form": "alãvdari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "3sg": {
+            "form": "alãvdari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "1pl": {
+            "form": "alãvdarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2pl": {
+            "form": "alãvdarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "3pl": {
+            "form": "alãvdari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "alavdã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          },
+          "2pl": {
+            "form": "alãvdats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/alavdu",
+            "ipa": "[aˈlav.du]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "acatsu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:acatsu",
+        "url": "https://en.wiktionary.org/wiki/acatsu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "acatsu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2sg": {
+            "form": "acatsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "3sg": {
+            "form": "acatsã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "1pl": {
+            "form": "acãtsãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2pl": {
+            "form": "acãtsats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "3pl": {
+            "form": "acatsã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "acãtsam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2sg": {
+            "form": "acãtsai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "3sg": {
+            "form": "acãtsa",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "1pl": {
+            "form": "acãtsam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2pl": {
+            "form": "acãtsats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "3pl": {
+            "form": "acãtsa",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "acãtsai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2sg": {
+            "form": "acãtsash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "3sg": {
+            "form": "acãtsã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "1pl": {
+            "form": "acãtsãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2pl": {
+            "form": "acãtsat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "3pl": {
+            "form": "acãtsarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "acãtsarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2sg": {
+            "form": "acãtsari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "3sg": {
+            "form": "acãtsari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "1pl": {
+            "form": "acãtsarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2pl": {
+            "form": "acãtsarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "3pl": {
+            "form": "acãtsari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "acatsã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          },
+          "2pl": {
+            "form": "acãtsats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acatsu",
+            "ipa": "[aˈkat͡sʷ]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "acats",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:acats",
+        "url": "https://en.wiktionary.org/wiki/acats",
+        "stem": null
+      },
+      "cells": {
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "acãtsam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2sg": {
+            "form": "acãtsai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "3sg": {
+            "form": "acãtsa",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "1pl": {
+            "form": "acãtsam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2pl": {
+            "form": "acãtsats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "3pl": {
+            "form": "acãtsa",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "acats",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2sg": {
+            "form": "acatsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "3sg": {
+            "form": "acatsã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "1pl": {
+            "form": "acãtsãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2pl": {
+            "form": "acãtsats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "3pl": {
+            "form": "acatsã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "acãtsai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2sg": {
+            "form": "acãtsash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "3sg": {
+            "form": "acãtsã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "1pl": {
+            "form": "acãtsãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2pl": {
+            "form": "acãtsat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "3pl": {
+            "form": "acãtsarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "acãtsarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2sg": {
+            "form": "acãtsari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "3sg": {
+            "form": "acãtsare",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "1pl": {
+            "form": "acãtsarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2pl": {
+            "form": "acãtsarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "3pl": {
+            "form": "acãtsare",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "acatsã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          },
+          "2pl": {
+            "form": "acãtsats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/acats",
+            "ipa": "[aˈkat͡s(ŭ)]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "njiridzu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:njiridzu",
+        "url": "https://en.wiktionary.org/wiki/njiridzu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "njiridzu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2sg": {
+            "form": "njiridzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "3sg": {
+            "form": "njiridzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "1pl": {
+            "form": "njiridzãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "njiridzats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "3pl": {
+            "form": "njiridzã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "njiridzam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2sg": {
+            "form": "njiridzai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "3sg": {
+            "form": "njiridza",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "1pl": {
+            "form": "njiridzam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "njiridzats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "3pl": {
+            "form": "njiridza",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "njiridzai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2sg": {
+            "form": "njiridzash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "3sg": {
+            "form": "njiridzã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "1pl": {
+            "form": "njiridzãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "njiridzat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "3pl": {
+            "form": "njiridzarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "njiridzarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2sg": {
+            "form": "njiridzari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "3sg": {
+            "form": "njiridzari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "1pl": {
+            "form": "njiridzarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "njiridzarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "3pl": {
+            "form": "njiridzari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "njiridzã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "njiridzats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/njiridzu",
+            "ipa": "[ɲirˈid͡zʷ]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "ncruntu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:ncruntu",
+        "url": "https://en.wiktionary.org/wiki/ncruntu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ncruntu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2sg": {
+            "form": "ncruntsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "3sg": {
+            "form": "ncruntã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "1pl": {
+            "form": "ncruntãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2pl": {
+            "form": "ncruntats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "3pl": {
+            "form": "ncruntã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ncruntam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2sg": {
+            "form": "ncruntai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "3sg": {
+            "form": "ncrunta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "1pl": {
+            "form": "ncruntam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2pl": {
+            "form": "ncruntats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "3pl": {
+            "form": "ncrunta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ncruntai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2sg": {
+            "form": "ncruntash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "3sg": {
+            "form": "ncruntã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "1pl": {
+            "form": "ncruntãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2pl": {
+            "form": "ncruntat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "3pl": {
+            "form": "ncruntarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "ncruntarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2sg": {
+            "form": "ncruntari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "3sg": {
+            "form": "ncruntari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "1pl": {
+            "form": "ncruntarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2pl": {
+            "form": "ncruntarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "3pl": {
+            "form": "ncruntari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "ncruntã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          },
+          "2pl": {
+            "form": "ncruntats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ncruntu"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "mirizedz",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:mirizedz",
+        "url": "https://en.wiktionary.org/wiki/mirizedz",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "mirizedz",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2sg": {
+            "form": "mirizedzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "3sg": {
+            "form": "mirizeadzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "1pl": {
+            "form": "mirizãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2pl": {
+            "form": "mirizats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "3pl": {
+            "form": "mirizã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "mirizam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2sg": {
+            "form": "mirizai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "3sg": {
+            "form": "miriza",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "1pl": {
+            "form": "mirizam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2pl": {
+            "form": "mirizats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "3pl": {
+            "form": "miriza",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "mirizai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2sg": {
+            "form": "mirizash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "3sg": {
+            "form": "mirizã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "1pl": {
+            "form": "mirizãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2pl": {
+            "form": "mirizat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "3pl": {
+            "form": "mirizarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "mirizarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2sg": {
+            "form": "mirizari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "3sg": {
+            "form": "mirizari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "1pl": {
+            "form": "mirizarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2pl": {
+            "form": "mirizarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "3pl": {
+            "form": "mirizari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "mirizã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          },
+          "2pl": {
+            "form": "mirizats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/mirizedz",
+            "ipa": "[mirˈiz.ed͡z]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "chicu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:chicu",
+        "url": "https://en.wiktionary.org/wiki/chicu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "chicu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2sg": {
+            "form": "chitsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "3sg": {
+            "form": "chicã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "1pl": {
+            "form": "chicãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2pl": {
+            "form": "chicats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "3pl": {
+            "form": "chicã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "chicam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2sg": {
+            "form": "chicai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "3sg": {
+            "form": "chica",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "1pl": {
+            "form": "chicam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2pl": {
+            "form": "chicats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "3pl": {
+            "form": "chica",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "chicai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2sg": {
+            "form": "chicash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "3sg": {
+            "form": "chicã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "1pl": {
+            "form": "chicãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2pl": {
+            "form": "chicat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "3pl": {
+            "form": "chicarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "chicarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2sg": {
+            "form": "chicari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "3sg": {
+            "form": "chicari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "1pl": {
+            "form": "chicarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2pl": {
+            "form": "chicarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "3pl": {
+            "form": "chicari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "chicã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          },
+          "2pl": {
+            "form": "chicats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/chicu",
+            "ipa": "[kikʷ]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "arnedz",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:arnedz",
+        "url": "https://en.wiktionary.org/wiki/arnedz",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "arnedz",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2sg": {
+            "form": "arnedzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "3sg": {
+            "form": "arneadzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "1pl": {
+            "form": "arnãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2pl": {
+            "form": "arnats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "3pl": {
+            "form": "arnã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "arnam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2sg": {
+            "form": "arnai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "3sg": {
+            "form": "arna",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "1pl": {
+            "form": "arnam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2pl": {
+            "form": "arnats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "3pl": {
+            "form": "arna",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "arnai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2sg": {
+            "form": "arnash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "3sg": {
+            "form": "arnã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "1pl": {
+            "form": "arnãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2pl": {
+            "form": "arnat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "3pl": {
+            "form": "arnarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "arnarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2sg": {
+            "form": "arnari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "3sg": {
+            "form": "arnari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "1pl": {
+            "form": "arnarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2pl": {
+            "form": "arnarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "3pl": {
+            "form": "arnari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "arnã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          },
+          "2pl": {
+            "form": "arnats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/arnedz",
+            "ipa": "[arˈned͡z]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "amiridzu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:amiridzu",
+        "url": "https://en.wiktionary.org/wiki/amiridzu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "amiridzu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2sg": {
+            "form": "amiridzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "3sg": {
+            "form": "amiridzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "1pl": {
+            "form": "amiridzãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "amiridzats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "3pl": {
+            "form": "amiridzã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "amiridzam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2sg": {
+            "form": "amiridzai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "3sg": {
+            "form": "amiridza",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "1pl": {
+            "form": "amiridzam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "amiridzats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "3pl": {
+            "form": "amiridza",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "amiridzai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2sg": {
+            "form": "amiridzash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "3sg": {
+            "form": "amiridzã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "1pl": {
+            "form": "amiridzãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "amiridzat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "3pl": {
+            "form": "amiridzarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "amiridzarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2sg": {
+            "form": "amiridzari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "3sg": {
+            "form": "amiridzari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "1pl": {
+            "form": "amiridzarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "amiridzarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "3pl": {
+            "form": "amiridzari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "amiridzã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          },
+          "2pl": {
+            "form": "amiridzats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amiridzu",
+            "ipa": "[a.mirˈid͡zʷ]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "amintu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:amintu",
+        "url": "https://en.wiktionary.org/wiki/amintu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "amintu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2sg": {
+            "form": "amintsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "3sg": {
+            "form": "amintã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "1pl": {
+            "form": "amintãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2pl": {
+            "form": "amintats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "3pl": {
+            "form": "amintã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "amintam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2sg": {
+            "form": "amintai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "3sg": {
+            "form": "aminta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "1pl": {
+            "form": "amintam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2pl": {
+            "form": "amintats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "3pl": {
+            "form": "aminta",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "amintai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2sg": {
+            "form": "amintash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "3sg": {
+            "form": "amintã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "1pl": {
+            "form": "amintãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2pl": {
+            "form": "amintat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "3pl": {
+            "form": "amintarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "amintarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2sg": {
+            "form": "amintari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "3sg": {
+            "form": "amintari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "1pl": {
+            "form": "amintarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2pl": {
+            "form": "amintarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "3pl": {
+            "form": "amintari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "amintã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          },
+          "2pl": {
+            "form": "amintats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/amintu",
+            "ipa": "[aˈmin.tu]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "ambrãtsitedz",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:ambrãtsitedz",
+        "url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ambrãtsitedz",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2sg": {
+            "form": "ambrãtsitedzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "3sg": {
+            "form": "ambrãtsiteadzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "1pl": {
+            "form": "ambrãtsitãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsitats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "3pl": {
+            "form": "ambrãtsitã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ambrãtsitam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2sg": {
+            "form": "ambrãtsitai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "3sg": {
+            "form": "ambrãtsita",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "1pl": {
+            "form": "ambrãtsitam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsitats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "3pl": {
+            "form": "ambrãtsita",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ambrãtsitai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2sg": {
+            "form": "ambrãtsitash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "3sg": {
+            "form": "ambrãtsitã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "1pl": {
+            "form": "ambrãtsitãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsitat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "3pl": {
+            "form": "ambrãtsitarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "ambrãtsitarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2sg": {
+            "form": "ambrãtsitari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "3sg": {
+            "form": "ambrãtsitari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "1pl": {
+            "form": "ambrãtsitarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsitarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "3pl": {
+            "form": "ambrãtsitari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "ambrãtsitã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsitats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsitedz",
+            "ipa": "[am.brɨ.t͡siˈted͡z]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "ambrãtsishedz",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:ambrãtsishedz",
+        "url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ambrãtsishedz",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2sg": {
+            "form": "ambrãtsishedzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "3sg": {
+            "form": "ambrãtsisheadzã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "1pl": {
+            "form": "ambrãtsishãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsishats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "3pl": {
+            "form": "ambrãtsishã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ambrãtsisham",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2sg": {
+            "form": "ambrãtsishai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "3sg": {
+            "form": "ambrãtsisha",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "1pl": {
+            "form": "ambrãtsisham",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsishats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "3pl": {
+            "form": "ambrãtsisha",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ambrãtsishai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2sg": {
+            "form": "ambrãtsishash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "3sg": {
+            "form": "ambrãtsishã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "1pl": {
+            "form": "ambrãtsishãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsishat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "3pl": {
+            "form": "ambrãtsisharã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "ambrãtsisharim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2sg": {
+            "form": "ambrãtsishari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "3sg": {
+            "form": "ambrãtsishari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "1pl": {
+            "form": "ambrãtsisharim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsisharit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "3pl": {
+            "form": "ambrãtsishari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "ambrãtsishã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          },
+          "2pl": {
+            "form": "ambrãtsishats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambr%C3%A3tsishedz",
+            "ipa": "[am.brɨ.t͡siˈʃed͡z]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "ambratsu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:ambratsu",
+        "url": "https://en.wiktionary.org/wiki/ambratsu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ambratsu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2sg": {
+            "form": "ambratsã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "3sg": {
+            "form": "ambratsã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "1pl": {
+            "form": "ambratsãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2pl": {
+            "form": "ambratsats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "3pl": {
+            "form": "ambratsã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ambratsam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2sg": {
+            "form": "ambratsai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "3sg": {
+            "form": "ambratsa",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "1pl": {
+            "form": "ambratsam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2pl": {
+            "form": "ambratsats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "3pl": {
+            "form": "ambratsa",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ambratsai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2sg": {
+            "form": "ambratsash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "3sg": {
+            "form": "ambratsã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "1pl": {
+            "form": "ambratsãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2pl": {
+            "form": "ambratsat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "3pl": {
+            "form": "ambratsarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "ambratsarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2sg": {
+            "form": "ambratsari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "3sg": {
+            "form": "ambratsari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "1pl": {
+            "form": "ambratsarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2pl": {
+            "form": "ambratsarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "3pl": {
+            "form": "ambratsari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "ambratsã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          },
+          "2pl": {
+            "form": "ambratsats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/ambratsu",
+            "ipa": "[amˈbra.t͡sʷ]"
+          }
+        }
+      }
+    },
+    {
+      "lect": "rup",
+      "lemma": "afundu",
+      "class_source": "-are",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:afundu",
+        "url": "https://en.wiktionary.org/wiki/afundu",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "afundu",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2sg": {
+            "form": "afundzã",
+            "phonemes": [],
+            "source_label": "indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "3sg": {
+            "form": "afundã",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "1pl": {
+            "form": "afundãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2pl": {
+            "form": "afundats",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "3pl": {
+            "form": "afundã",
+            "phonemes": [],
+            "source_label": "indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "afundam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2sg": {
+            "form": "afundai",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "3sg": {
+            "form": "afunda",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "1pl": {
+            "form": "afundam",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,indicative,plural",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2pl": {
+            "form": "afundats",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "3pl": {
+            "form": "afunda",
+            "phonemes": [],
+            "source_label": "imperfect,indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "afundai",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2sg": {
+            "form": "afundash",
+            "phonemes": [],
+            "source_label": "indicative,perfect,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "3sg": {
+            "form": "afundã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "1pl": {
+            "form": "afundãm",
+            "phonemes": [],
+            "source_label": "first-person,indicative,perfect,plural",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2pl": {
+            "form": "afundat",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "3pl": {
+            "form": "afundarã",
+            "phonemes": [],
+            "source_label": "indicative,perfect,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          }
+        },
+        "conditional.present": {
+          "1sg": {
+            "form": "afundarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2sg": {
+            "form": "afundari",
+            "phonemes": [],
+            "source_label": "conditional,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "3sg": {
+            "form": "afundari",
+            "phonemes": [],
+            "source_label": "conditional,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "1pl": {
+            "form": "afundarim",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2pl": {
+            "form": "afundarit",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "3pl": {
+            "form": "afundari",
+            "phonemes": [],
+            "source_label": "conditional,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          }
+        },
+        "imperative.present": {
+          "2sg": {
+            "form": "afundã",
+            "phonemes": [],
+            "source_label": "imperative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          },
+          "2pl": {
+            "form": "afundats",
+            "phonemes": [],
+            "source_label": "imperative,plural,present,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/afundu",
+            "ipa": "/aˈfundu/"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+{
+  "lect": "it",
+  "lemma": "essere",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/essere/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=essere",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "sono"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sei"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "è"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "siamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "siete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "sono"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "sia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sia"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "sia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "siamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "siate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "siano"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "ero"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "eri"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "era"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "eravamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "eravate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "erano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "fossi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fossi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "fosse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "fossimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "foste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "fossero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "fui"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fosti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "fu"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "fummo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "foste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "furono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "sarò"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sarai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "sarà"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "saremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "sarete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "saranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "sarei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "saresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "sarebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "saremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "sareste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "sarebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sii"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "sia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "siamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "siate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "siano"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sono stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sei stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "è stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "siamo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "siete stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "sono stati"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sia stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sia stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sia stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "siamo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "siate stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "siano stati"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ero stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "eri stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "era stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "eravamo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "eravate stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "erano stati"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "fossi stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fossi stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "fosse stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fossimo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "foste stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "fossero stati"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "fui stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "fosti stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "fu stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "fummo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "foste stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "furono stati"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sarò stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "sarai stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sarà stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "saremo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "sarete stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "saranno stati"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "sarei stato"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "saresti stato"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "sarebbe stato"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "saremmo stati"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "sareste stati"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "sarebbero stati"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "stato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere stato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo stato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente stato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "essere"
+    ],
+    "examples": [
+      "[...]  occhi suoi una semplice e precisa misura del tempo, dietro di che, siccome studiava in medicina, trovò modo di misurare la frequenza del polso, cosa che recò meraviglia a ’ medici di que ’ tempi, e <b>fu</b> avuta assai cara da tutti.",
+      "Il veneziano in Varsavia <b>fu</b> molto bene accolto. Il principe Adamo Czartoryski, cui si presentò con una valida comendatizia, il presentò al principe palatino di Russia suo padre, al principe zio gran cancelliere di Lituania e [...]",
+      "[...]  al principe palatino di Russia suo padre, al principe zio gran cancelliere di Lituania e dottissimo giureconsulto, ed a tutti que ' grandi del regno che trovavansi allora alla corte. Egli non <b>fu</b> presentato con altro nome che con quello che trasse dall' umile sua nascita, né potea <b>esser</b> ignota a ' polacchi la di lui condizione, poiché da una gran parte di que ' grandi <b>era</b> [...]",
+      "[...]  dottissimo giureconsulto, ed a tutti que ' grandi del regno che trovavansi allora alla corte. Egli non <b>fu</b> presentato con altro nome che con quello che trasse dall' umile sua nascita, né potea <b>esser</b> ignota a ' polacchi la di lui condizione, poiché da una gran parte di que ' grandi <b>era</b> <b>stato</b> veduto a Dresda quattordici anni prima, dove avea servito con la sua penna il re Augusto [...]",
+      "[...]  non <b>fu</b> presentato con altro nome che con quello che trasse dall' umile sua nascita, né potea <b>esser</b> ignota a ' polacchi la di lui condizione, poiché da una gran parte di que ' grandi <b>era</b> <b>stato</b> veduto a Dresda quattordici anni prima, dove avea servito con la sua penna il re Augusto III, e dove avea madre, fratelli, cognati e nipoti. Abbiano pazienza i signori mendacissimi [...]",
+      "[...]  presentato con altro nome che con quello che trasse dall' umile sua nascita, né potea <b>esser</b> ignota a ' polacchi la di lui condizione, poiché da una gran parte di que ' grandi <b>era</b> <b>stato</b> veduto a Dresda quattordici anni prima, dove avea servito con la sua penna il re Augusto III, e dove avea madre, fratelli, cognati e nipoti. Abbiano pazienza i signori mendacissimi gazzettieri; [...]",
+      "[...]  veduto a Dresda quattordici anni prima, dove avea servito con la sua penna il re Augusto III, e dove avea madre, fratelli, cognati e nipoti. Abbiano pazienza i signori mendacissimi gazzettieri; <b>sono</b> però i poverini degni di compatimento, poiché gli articoli falsi, principalmente quando <b>sono</b> maledici, mettono in voga le loro gazzette molto più dei veri. Il solo aggiunto straniero, che [...]",
+      "[...]  dove avea madre, fratelli, cognati e nipoti. Abbiano pazienza i signori mendacissimi gazzettieri; <b>sono</b> però i poverini degni di compatimento, poiché gli articoli falsi, principalmente quando <b>sono</b> maledici, mettono in voga le loro gazzette molto più dei veri. Il solo aggiunto straniero, che decorava l' esteriore della non mal piantata persona del veneziano, <b>era</b> il troppo strapazzato [...]",
+      "[...]  principalmente quando <b>sono</b> maledici, mettono in voga le loro gazzette molto più dei veri. Il solo aggiunto straniero, che decorava l' esteriore della non mal piantata persona del veneziano, <b>era</b> il troppo strapazzato ordine della cavalleria romana, che appeso ad un brillante vermiglio nastro egli portava al collo <i>en sautoir</i>, cioè come i monsignori portano la croce. Egli aveva avuto [...]",
+      "[...]  croce. Egli aveva avuto quell'ordine dal papa Rezzonico, di felice ricordazione, quando ebbe la bella sorte di baciargli in Roma il sacro piede nell' anno 1760. Un ordine di cavalleria, qualunque ei <b>sia</b>, quando <b>è</b> brillante, <b>è</b> molto giovevole ad un uomo che, viaggiando, ha occasione di comparir nuovo in varie città quasi ogni mese: egli <b>è</b> un ornamento, una rispettabile [...]",
+      "<b>È</b> in partenza dal quarto binario il diretto per Pisa. Ugo, cosa fai ? Che ti <b>è</b> successo ? Il treno parte.",
+      "Salve, <b>sono</b> Frank. Che succede ?",
+      "♪ Come Nas so che il sonno <b>È</b> il cugino della morte ♪",
+      "<b>Era</b> il 2010, il periodo migliore della mia vita. La vita può <b>essere</b> meravigliosa.",
+      "Io non... Non riesco a crederci. <b>È</b> un sì ?"
+    ],
+    "verb": "essere"
+  }
+}

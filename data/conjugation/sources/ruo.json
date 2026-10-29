@@ -1,0 +1,928 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "ruo",
+    "purpose": "sourced Kaikki/Wiktextract conjugation harvest",
+    "ending_inventories": {
+      "II-é": {
+        "indicative.future": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "i",
+            "3sg": "e",
+            "1pl": "no",
+            "2pl": "et",
+            "3pl": "u"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "m",
+            "2sg": "i",
+            "3sg": "∅",
+            "1pl": "n",
+            "2pl": "t",
+            "3pl": "∅"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "iru",
+            "2sg": "íri",
+            "3sg": "íre",
+            "1pl": "irén",
+            "2pl": "iréţ",
+            "3pl": "íru"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "III-e": {
+        "indicative.future": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "i",
+            "3sg": "e",
+            "1pl": "no",
+            "2pl": "et",
+            "3pl": "u"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "m",
+            "2sg": "i",
+            "3sg": "∅",
+            "1pl": "n",
+            "2pl": "t",
+            "3pl": "∅"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "eg",
+            "2sg": "éži",
+            "3sg": "ége",
+            "1pl": "ézen",
+            "2pl": "ézeţ",
+            "3pl": "égu"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "I-å": {
+        "indicative.future": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "i",
+            "3sg": "e",
+            "1pl": "no",
+            "2pl": "et",
+            "3pl": "u"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "m",
+            "2sg": "i",
+            "3sg": "∅",
+            "1pl": "n",
+            "2pl": "t",
+            "3pl": "∅"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "og",
+            "2sg": "óži",
+            "3sg": "óga",
+            "1pl": "ugån",
+            "2pl": "ugåţ",
+            "3pl": "ógu"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "IV-éi": {
+        "indicative.future": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "i",
+            "3sg": "e",
+            "1pl": "no",
+            "2pl": "et",
+            "3pl": "u"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "ti",
+            "3sg": "te",
+            "1pl": "ín",
+            "2pl": "íţ",
+            "3pl": "u"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "IV-í": {
+        "indicative.future": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "i",
+            "3sg": "e",
+            "1pl": "no",
+            "2pl": "et",
+            "3pl": "u"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "m",
+            "2sg": "i",
+            "3sg": "∅",
+            "1pl": "n",
+            "2pl": "t",
+            "3pl": "∅"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      }
+    },
+    "lemma_count": 7,
+    "serialized_paradigms": 7,
+    "max_paradigms_per_class": 40,
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "ruo",
+      "lemma": "tiré",
+      "class_source": "II-é",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:tiré",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "tiru",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "tíri",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "tíre",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "tirén",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "tiréţ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "tíru",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "tirúr",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "tirúri",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "tirúre",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "tirúrno",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "tirúret",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "tirúru",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "2sg": {
+            "form": "tirút-ai",
+            "phonemes": [],
+            "source_label": "indicative, perfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "cadé",
+      "class_source": "II-é",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:cadé",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "stem": null
+      },
+      "cells": {
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "cadéiam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "cadéiai",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "cadéia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "cadéian",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "cadéiat",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "cadéia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "trage",
+      "class_source": "III-e",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:trage",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "stem": null
+      },
+      "cells": {
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "trazéiam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "trazéiai",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "trazéia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "trazéian",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "trazéiat",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "trazéia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "trasér",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "traséri",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "trasére",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "trasérno",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "traséret",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "traséru",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "3sg": {
+            "form": "tras-a",
+            "phonemes": [],
+            "source_label": "indicative, perfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "meg",
+      "class_source": "III-e",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:meg",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "meg",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "méži",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "mége",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "mézen",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "mézeţ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "mégu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "rugå",
+      "class_source": "I-å",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:rugå",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "rog",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "róži",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "róga",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "rugån",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "rugåţ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "rógu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "rugåiam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "rugåiai",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "rugåia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "rugåian",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "rugåiat",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "rugåia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "rugår",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "rugåri",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "rugåre",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "rugårno",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "rugåret",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "rugåru",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "res rugå",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "rei rugå",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "re rugå",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "ren rugå",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "ret rugå",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "re rugå",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "1sg": {
+            "form": "rugåt-am",
+            "phonemes": [],
+            "source_label": "indicative, perfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "cupéi",
+      "class_source": "IV-éi",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:cupéi",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "copésc",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "copéšti",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "copéšte",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "copín",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "copíţ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "copéscu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "copéir",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "copéiri",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "copéire",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "copéirno",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "copéiret",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "copéiru",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "3pl": {
+            "form": "copéit-a(v)",
+            "phonemes": [],
+            "source_label": "indicative, perfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruo",
+      "lemma": "avzí",
+      "class_source": "IV-í",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:avzí",
+        "url": "https://docs.verbix.com/Languages/Istroromanian",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "åvd",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "åvzi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "åvde",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "avzín",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "avzíţ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "åvdu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "avzíiam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "avzíiai",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "avzíia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "avzíian",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "avzíiat",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "avzíia",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "avzír",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2sg": {
+            "form": "avzíri",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3sg": {
+            "form": "avzíre",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "1pl": {
+            "form": "avzírno",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "2pl": {
+            "form": "avzíret",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          },
+          "3pl": {
+            "form": "avzíru",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        },
+        "indicative.perfect": {
+          "1pl": {
+            "form": "avzít-am",
+            "phonemes": [],
+            "source_label": "indicative, perfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istroromanian"
+          }
+        }
+      }
+    }
+  ]
+}

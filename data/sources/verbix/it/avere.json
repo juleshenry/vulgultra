@@ -1,0 +1,721 @@
+{
+  "lect": "it",
+  "lemma": "avere",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/avere/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=avere",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "ho"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "hai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "ha"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "abbiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "avete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "hanno"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "abbia"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abbia"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "abbia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "abbiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "abbiate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "abbiano"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avevo"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avevi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "aveva"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avevamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avevate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avevano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avessi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avessi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avesse"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avessimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avessero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "ebbi"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avesti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "ebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avemmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "ebbero"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "avrò"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "avrai"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "avrà"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "avremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "avrete"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "avranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 2,
+            "form": "avrei"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "avresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "avrebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "avremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "avreste"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "avrebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "abbi"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 2,
+            "form": "abbia"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 2,
+            "form": "abbiamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 2,
+            "form": "abbiate"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 2,
+            "form": "abbiano"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ho avuto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "hai avuto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ha avuto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo avuto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avete avuto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "hanno avuto"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "abbia avuto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "abbia avuto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "abbia avuto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "abbiamo avuto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "abbiate avuto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "abbiano avuto"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avevo avuto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avevi avuto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "aveva avuto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avevamo avuto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avevate avuto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avevano avuto"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avessi avuto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avessi avuto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avesse avuto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avessimo avuto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste avuto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avessero avuto"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "ebbi avuto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avesti avuto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "ebbe avuto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avemmo avuto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "aveste avuto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "ebbero avuto"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrò avuto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avrai avuto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrà avuto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremo avuto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avrete avuto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avranno avuto"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "io",
+            "use": 0,
+            "form": "avrei avuto"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "avresti avuto"
+          },
+          {
+            "id": 3,
+            "pronoun": "lui",
+            "use": 0,
+            "form": "avrebbe avuto"
+          },
+          {
+            "id": 4,
+            "pronoun": "noi",
+            "use": 0,
+            "form": "avremmo avuto"
+          },
+          {
+            "id": 5,
+            "pronoun": "voi",
+            "use": 0,
+            "form": "avreste avuto"
+          },
+          {
+            "id": 6,
+            "pronoun": "loro",
+            "use": 0,
+            "form": "avrebbero avuto"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avere"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avendo"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avuto"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avente"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avere avuto"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avendo avuto"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "avente avuto"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avere"
+    ],
+    "examples": [
+      "CAPITOLO PRIMO.  LA PARATA.  Entrando il marzo del 1340, i Gonzaga signori di Mantova <b>avevano</b> aperta una corte bandita nella loro città, con tavole disposte a chiunque venisse, con musici, saltambanchi, buffoni, fontane che sprizzavano vino, tutta insomma la pompa colla quale i tirannelli, [...]",
+      "[...]  suoi una semplice e precisa misura del tempo, dietro di che, siccome studiava in medicina, trovò modo di misurare la frequenza del polso, cosa che recò meraviglia a ’ medici di que ’ tempi, e fu <b>avuta</b> assai cara da tutti.",
+      "[...]  quello che trasse dall' umile sua nascita, né potea esser ignota a ' polacchi la di lui condizione, poiché da una gran parte di que ' grandi era stato veduto a Dresda quattordici anni prima, dove <b>avea</b> servito con la sua penna il re Augusto III, e dove <b>avea</b> madre, fratelli, cognati e nipoti. <b>Abbiano</b> pazienza i signori mendacissimi gazzettieri; sono però i poverini degni di [...]",
+      "[...]  a ' polacchi la di lui condizione, poiché da una gran parte di que ' grandi era stato veduto a Dresda quattordici anni prima, dove <b>avea</b> servito con la sua penna il re Augusto III, e dove <b>avea</b> madre, fratelli, cognati e nipoti. <b>Abbiano</b> pazienza i signori mendacissimi gazzettieri; sono però i poverini degni di compatimento, poiché gli articoli falsi, principalmente quando sono [...]",
+      "[...]  da una gran parte di que ' grandi era stato veduto a Dresda quattordici anni prima, dove <b>avea</b> servito con la sua penna il re Augusto III, e dove <b>avea</b> madre, fratelli, cognati e nipoti. <b>Abbiano</b> pazienza i signori mendacissimi gazzettieri; sono però i poverini degni di compatimento, poiché gli articoli falsi, principalmente quando sono maledici, mettono in voga le loro gazzette molto più [...]",
+      "[...]  era il troppo strapazzato ordine della cavalleria romana, che appeso ad un brillante vermiglio nastro egli portava al collo <i>en sautoir</i>, cioè come i monsignori portano la croce. Egli <b>aveva</b> <b>avuto</b> quell'ordine dal papa Rezzonico, di felice ricordazione, quando <b>ebbe</b> la bella sorte di baciargli in Roma il sacro piede nell' anno 1760. Un ordine di cavalleria, qualunque ei [...]",
+      "[...]  il troppo strapazzato ordine della cavalleria romana, che appeso ad un brillante vermiglio nastro egli portava al collo <i>en sautoir</i>, cioè come i monsignori portano la croce. Egli <b>aveva</b> <b>avuto</b> quell'ordine dal papa Rezzonico, di felice ricordazione, quando <b>ebbe</b> la bella sorte di baciargli in Roma il sacro piede nell' anno 1760. Un ordine di cavalleria, qualunque ei sia, quando è [...]",
+      "[...]  vermiglio nastro egli portava al collo <i>en sautoir</i>, cioè come i monsignori portano la croce. Egli <b>aveva</b> <b>avuto</b> quell'ordine dal papa Rezzonico, di felice ricordazione, quando <b>ebbe</b> la bella sorte di baciargli in Roma il sacro piede nell' anno 1760. Un ordine di cavalleria, qualunque ei sia, quando è brillante, è molto giovevole ad un uomo che, viaggiando, <b>ha</b> occasione [...]",
+      "[...]  quando <b>ebbe</b> la bella sorte di baciargli in Roma il sacro piede nell' anno 1760. Un ordine di cavalleria, qualunque ei sia, quando è brillante, è molto giovevole ad un uomo che, viaggiando, <b>ha</b> occasione di comparir nuovo in varie città quasi ogni mese: egli è un ornamento, una rispettabile decorazione che impone a ' sciocchi; ond'è necessario, poiché di sciocchi il mondo è pieno, ed [...]",
+      "[...]  anno 1770 a Pisa dove, trovatosi in bisogno di denaro, vendette la sua croce, ch'era adorna di brillanti e di rubini: era egli d' essa già da molto tempo disgustato, poiché decorati della medesima <b>avea</b> veduto varj ciarlatani.",
+      "Ma che cazzo dici, Gianluca ? Allora <b>ha</b> ragione tuo padre che sei stronzo !",
+      "<b>Hai</b> vinto tutte quelle corse in America, no ? Roba seria !",
+      "Buona fortuna. Vai anche tu con lei. Mamma. Signor Gustafson, <b>ha</b> già deciso che cosa suoneremo ?",
+      "Oh, ma dai! Vi <b>ho</b> detto di non provarci.",
+      "Guarda, <b>hai</b> un telefono ? Il mio è morto."
+    ],
+    "verb": "avere"
+  }
+}

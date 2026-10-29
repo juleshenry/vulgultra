@@ -1,0 +1,665 @@
+{
+  "lect": "fr",
+  "lemma": "être",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/fra/%C3%AAtre/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=3&T1=%C3%AAtre",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 3,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "suis"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "es"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "est"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "sommes"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "êtes"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "sont"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "sois"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sois"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "soit"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "soyons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "soyez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "soient"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 0,
+            "form": "étais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 0,
+            "form": "étais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 0,
+            "form": "était"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 0,
+            "form": "étions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 0,
+            "form": "étiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 0,
+            "form": "étaient"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "fusse"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fusses"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "fût"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "fussions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "fussiez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "fussent"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "fus"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "fus"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "fut"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "fûmes"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "fûtes"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "furent"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "serai"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "seras"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "sera"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "serons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "serez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "seront"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "je",
+            "use": 2,
+            "form": "serais"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "serais"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "serait"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "serions"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "seriez"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "seraient"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "sois"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "soyons"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "soyez"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "ai été"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "as été"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "a été"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "avons été"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "avez été"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "ont été"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "aie été"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "aies été"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "ait été"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "ayons été"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "ayez été"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "aient été"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "avais été"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "avais été"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "avait été"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "avions été"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "aviez  été"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "avaient été"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "eusse été"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "eusses été"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "eût été"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "eussions été"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "eussiez été"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "eussent été"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "eus été"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "eus été"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "eut été"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "eûmes été"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "eûtes été"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "eurent été"
+          }
+        ]
+      },
+      "15": {
+        "name": "Indicative Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "aurai été"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "auras été"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "aura été"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "aurons été"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "aurez été"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "auront été"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "j'",
+            "use": 2,
+            "form": "aurais été"
+          },
+          {
+            "id": 2,
+            "pronoun": "tu",
+            "use": 2,
+            "form": "aurais été"
+          },
+          {
+            "id": 3,
+            "pronoun": "il;elle;on",
+            "use": 2,
+            "form": "aurait été"
+          },
+          {
+            "id": 4,
+            "pronoun": "nous",
+            "use": 2,
+            "form": "aurions été"
+          },
+          {
+            "id": 5,
+            "pronoun": "vous",
+            "use": 2,
+            "form": "auriez été"
+          },
+          {
+            "id": 6,
+            "pronoun": "ils;elles",
+            "use": 2,
+            "form": "auraient été"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "être"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 2,
+            "form": "été"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "étant"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "avoir"
+    ],
+    "examples": [
+      "[...]  sombres, le navire avait plongé, le nez en avant, à travers les masses d' eau verte crêtelées d' écume.  Le ciel noir semblait se rapprocher de l' Océan, même au-dessus de nos têtes; l' horizon seul <b>était</b> entouré d' une marque livide, et nous errions sur le pont comme des ombres.  Des fanaux pendaient à chaque vergue, et le long de leurs verres suintaient perpétuellement les gouttes de pluie, si bien [...]",
+      "[...]  livide, et nous errions sur le pont comme des ombres.  Des fanaux pendaient à chaque vergue, et le long de leurs verres suintaient perpétuellement les gouttes de pluie, si bien que la lumière en <b>était</b> incertaine.  À l' arrière, les hublots de l' habitacle du timonier luisaient d' un rouge transparent et humide.  Les hunes <b>étaient</b> des demi-cercles d' obscurité; de la noirceur supérieure, [...]",
+      "[...]  les gouttes de pluie, si bien que la lumière en <b>était</b> incertaine.  À l' arrière, les hublots de l' habitacle du timonier luisaient d' un rouge transparent et humide.  Les hunes <b>étaient</b> des demi-cercles d' obscurité; de la noirceur supérieure, dans les sautes de vent, émergeaient les voiles blêmes.  Quelquefois les lanternes, en se balançant, faisaient se refléter des lueurs de [...]",
+      "[...]  pénétrante et la plus attentive, par des intelligences supérieures aux intelligences humaines et cependant mortelles comme elles; que tandis que les hommes s' absorbaient dans leurs occupations, ils <b>étaient</b> examinés et étudiés d' aussi près peut-être qu' un savant peut étudier avec un microscope les créatures transitoires qui pullulent et se multiplient dans une goutte d' eau. Avec une suffisance [...]",
+      "[...]  dans une goutte d' eau. Avec une suffisance infinie, les hommes allaient de ci de là par le monde, vaquant à leurs petites affaires, dans la sereine sécurité de leur empire sur la matière. Il <b>est</b> possible que, sous le microscope, les infusoires fassent de même. Personne ne donnait une pensée aux mondes plus anciens de l' espace comme sources de danger pour l' existence terrestre, ni ne [...]",
+      "[...]  aux mondes plus anciens de l' espace comme sources de danger pour l' existence terrestre, ni ne songeait seulement à eux pour écarter l' idée de vie à leur surface comme impossible ou improbable. Il <b>est</b> curieux de se rappeler maintenant les habitudes mentales de ces jours lointains. Tout au plus les habitants de la Terre s' imaginaient -ils qu' il pouvait y avoir sur la planète Mars des êtres [...]",
+      "[...]  y avoir sur la planète Mars des êtres probablement inférieurs à eux, et disposés à faire bon accueil à une expédition missionnaire. Cependant, par delà le gouffre de l' espace, des esprits qui <b>sont</b> à nos esprits ce que les nôtres <b>sont</b> à ceux des bêtes qui périssent, des intellects vastes, calmes et impitoyables, considéraient cette terre avec des yeux envieux, dressaient lentement et [...]",
+      "[...]  probablement inférieurs à eux, et disposés à faire bon accueil à une expédition missionnaire. Cependant, par delà le gouffre de l' espace, des esprits qui <b>sont</b> à nos esprits ce que les nôtres <b>sont</b> à ceux des bêtes qui périssent, des intellects vastes, calmes et impitoyables, considéraient cette terre avec des yeux envieux, dressaient lentement et sûrement leurs plans pour la conquête de notre [...]",
+      " Cet ouragan sinistre nous avait ôté le courage de déblayer.  Nous attendions le jour pour reconnaître nos compagnons, et les coudre dans leurs sacs; et le vaisseau de prise <b>était</b> chargé de rhum.  Plusieurs barriques avaient <b>été</b> amarrées, tant au pied du mât de misaine qu' au mât d' artimon; et beaucoup d' entre nous, cramponnés autour, tendaient leurs gobelets ou [...]",
+      "[...]  ôté le courage de déblayer.  Nous attendions le jour pour reconnaître nos compagnons, et les coudre dans leurs sacs; et le vaisseau de prise <b>était</b> chargé de rhum.  Plusieurs barriques avaient <b>été</b> amarrées, tant au pied du mât de misaine qu' au mât d' artimon; et beaucoup d' entre nous, cramponnés autour, tendaient leurs gobelets ou leurs bouches aux jets bruns que chaque coup de tangage [...]",
+      "Merci ! C' <b>est</b> très bien. Cher Maxime, comment ça va. toi ? Je <b>suis</b> tellement heureux. te voir !",
+      "Il <b>est</b> insupportable, son clebs. - C' <b>est</b> juste... - La ferme !",
+      "Vous <b>êtes</b> incroyables ! Faut que je vous dise la vérité.",
+      "-Rien pour le moment. -Ce meurtre <b>est</b> -il révélateur d'une guerre entre les gangs de Chinatown ?",
+      "On dirait que je <b>suis</b> jamais venu."
+    ],
+    "verb": "être"
+  }
+}

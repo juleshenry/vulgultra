@@ -1,0 +1,3849 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "ruq",
+    "purpose": "sourced Kaikki/Wiktextract conjugation harvest",
+    "ending_inventories": {
+      "III": {
+        "indicative.present": {
+          "endings": {
+            "1sg": "t",
+            "2sg": "ʦ",
+            "3sg": "ti",
+            "1pl": "tim",
+            "2pl": "tiʦ",
+            "3pl": "t"
+          },
+          "support": 1,
+          "variants": 3,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 3
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i̯",
+            "2sg": "ʃ",
+            "3sg": "∅",
+            "1pl": "m",
+            "2pl": "t",
+            "3pl": "rə"
+          },
+          "support": 1,
+          "variants": 3,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 3
+        }
+      },
+      "I": {
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "m",
+            "2sg": "i̯",
+            "3sg": "∅",
+            "1pl": "m",
+            "2pl": "ʦ",
+            "3pl": "u̯"
+          },
+          "support": 3,
+          "variants": 3,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 5
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "au̯",
+            "2sg": "ai̯",
+            "3sg": "a",
+            "1pl": "ɔm",
+            "2pl": "aʦ",
+            "3pl": "au̯"
+          },
+          "support": 2,
+          "variants": 4,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 5
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "ai̯",
+            "2sg": "aʃ",
+            "3sg": "ɔ",
+            "1pl": "ɔm",
+            "2pl": "aʦ",
+            "3pl": "arə"
+          },
+          "support": 3,
+          "variants": 3,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 5
+        }
+      },
+      "other": {
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "m",
+            "2sg": "i̯",
+            "3sg": "∅",
+            "1pl": "m",
+            "2pl": "ʦ",
+            "3pl": "u̯"
+          },
+          "support": 2,
+          "variants": 2,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 3
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "∅",
+            "3sg": "ə",
+            "1pl": "ɔm",
+            "2pl": "aʦ",
+            "3pl": "ə"
+          },
+          "support": 1,
+          "variants": 4,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 4
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "ai̯",
+            "2sg": "aʃ",
+            "3sg": "ɔ",
+            "1pl": "ɔm",
+            "2pl": "ats",
+            "3pl": "arə"
+          },
+          "support": 1,
+          "variants": 4,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 4
+        }
+      },
+      "II": {
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "m",
+            "2sg": "i̯",
+            "3sg": "∅",
+            "1pl": "m",
+            "2pl": "ʦ",
+            "3pl": "u̯"
+          },
+          "support": 2,
+          "variants": 3,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 4
+        },
+        "indicative.present": {
+          "endings": {
+            "1sg": "ad",
+            "2sg": "az",
+            "3sg": "adi",
+            "1pl": "ədem",
+            "2pl": "ədeʦ",
+            "3pl": "ad"
+          },
+          "support": 1,
+          "variants": 3,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 3
+        },
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i̯",
+            "2sg": "ʃ",
+            "3sg": "∅",
+            "1pl": "m",
+            "2pl": "ʦ",
+            "3pl": "rə"
+          },
+          "support": 3,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 3
+        }
+      },
+      "I-ez": {
+        "indicative.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "∅",
+            "3sg": "ə",
+            "1pl": "ɔm",
+            "2pl": "aʦ",
+            "3pl": "ə"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "∅",
+            "2sg": "∅",
+            "3sg": "ə",
+            "1pl": "ɔm",
+            "2pl": "aʦ",
+            "3pl": "ə"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "IV-esc": {
+        "indicative.present": {
+          "endings": {
+            "1sg": "es",
+            "2sg": "eʃ",
+            "3sg": "e̯aʃti",
+            "1pl": "im",
+            "2pl": "iʦ",
+            "3pl": "es"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "es",
+            "2sg": "eʃ",
+            "3sg": "e̯askə",
+            "1pl": "im",
+            "2pl": "iʦ",
+            "3pl": "e̯askə"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "fi": {
+        "indicative.preterite": {
+          "endings": {
+            "1sg": "i̯",
+            "2sg": "ʃ",
+            "3sg": "∅",
+            "1pl": "m",
+            "2pl": "ʦ",
+            "3pl": "rə"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      }
+    },
+    "lemma_count": 37,
+    "serialized_paradigms": 37,
+    "max_paradigms_per_class": 40,
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "ruq",
+      "lemma": "bátiri",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:bátiri",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "bat",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "baʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "bati",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "batim",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "batiʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "bat",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "bəte̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "bəte̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "bəte̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "bəte̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "bəte̯aʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "bəte̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "bətui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "bətuʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "bətu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "bətum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "bətut",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "bəturə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "bat",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "baʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "batə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "batim",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "batiʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "batə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "bati",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "batim",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "batiʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "bibere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:bibere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "be̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "be̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "be̯a",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "bem",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "bi̯əʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "be̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "be̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "be̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "be̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "be̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "be̯ats",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "be̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "bi̯ui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "bi̯uʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "bi̯u",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "bi̯um",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "bi̯uʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "bi̯urə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "mergere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:mergere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "merg",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "merʣ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "me̯arʣi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "me̯arʣim",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "me̯arʣiʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "merg",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "merʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "rumpere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:rumpere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "rup",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "rupʃu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "rupʦiʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "rupʦi",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "rupʦim",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "rupʦiʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "rupʦirə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "sugere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:sugere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "sug",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "suptʃu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "supʦiʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "supʦi",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "facere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:facere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "imperative": {
+          "2sg": {
+            "form": "fɔ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "fak",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "feʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "trahere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:trahere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "trag",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "traʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "tondere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:tondere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "tund",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "tunʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "plangere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:plangere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "plɔng",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "plɔnʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "intelligere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:intelligere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ɐnʦileg",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ɐnʦilepʃu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "dicere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:dicere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "zik",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ziʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "coquere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:coquere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "kok",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "kopʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "ardere",
+      "class_source": "III",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:ardere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ard",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "arʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "căntári",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:căntári",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "kɔnt",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "kɔnʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "kɔntə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kəntɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "kɔntə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "kəntam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "kəntai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "kənta",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kəntam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "kəntau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "kəntai̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "kəntaʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "kəntɔ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kəntɔm",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "kəntarə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "kɔnt",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "kɔnʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "kɔntə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kəntɔm",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "kɔntə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "kɔntə",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kəntəm",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kəntaʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "leuare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:leuare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "imperative": {
+          "2sg": {
+            "form": "le̯a",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "lɔm",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "laʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "le̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "le̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "le̯a",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "lɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "laʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "le̯au",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ləjam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "ləjai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "ləja",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "ləjam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "ləjaʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "ləjau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "lai̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "laʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "lɔ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "lɔm",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "laʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "larə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "dare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:dare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "imperative": {
+          "2sg": {
+            "form": "dɔ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "dɔm",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "daʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "dau̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "dai̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "da",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "dɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "daʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "dau̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "dəde̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "dəde̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "dəde̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "dəde̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "dəde̯aʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "dədeau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ded",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "de̯adiʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "de̯adi",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "de̯adim",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "de̯adiʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "de̯adirə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "adunare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:adunare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "imperative": {
+          "2sg": {
+            "form": "dunə",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "dunɔm",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "dunaʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "dun",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "duɲ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "dunə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "dunɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "dunaʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "dunə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "dun",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "duɲ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "dunə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "dunɔm",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "dunaʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "dunə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "dunai̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "dunaʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "dunɔ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "dunɔm",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "dunaʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "dunarə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "stare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:stare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "imperative": {
+          "2sg": {
+            "form": "stoi̯",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "stau̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "stai̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "sta",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "stɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "staʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "stau̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "stəte̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "stəte̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "stəte̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "stəte̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "stəte̯aʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "stəte̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "stətui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "stətuʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "stətu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "stətum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "stətuʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "stəturə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "ambulare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:ambulare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "imperative": {
+          "2sg": {
+            "form": "amnə",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "amnu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "amɲi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "amnə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "ɐmnɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "ɐmnats",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "amnə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ɐmnam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ɐmnai̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "intrare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:intrare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "antru",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "antri",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "antrə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "ɐntrɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "ɐntraʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "antrə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ɐntram",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ɐntrai̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "afflare",
+      "class_source": "I",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:afflare",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "aflu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "afli",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "aflu",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "afli",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "flam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "flai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "fla",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "flam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "flaʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "flau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "feruere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:feruere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "jerb",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "jerb",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "jarbi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "jarbim",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "jarbiʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "jerb",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "irbe̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "irbe̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "irbe̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "irbe̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "irbe̯aʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "irbe̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "jerʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "jarsiʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "jarsi",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "jarsim",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "jarsiʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "jarsirə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "expauere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:expauere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "spar",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "spar",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "sparə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "spərɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "spərɔʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "spar",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "spəram",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "spərai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "spəra",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "spəram",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "spəraʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "spərau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "spərui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "spəruʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "spəru",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "spərum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "spəruʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "spərurə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "conspuere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:conspuere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "skup",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "skup",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "skupə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "skupɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "skupaʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "skupə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "skupe̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "skupe̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "skupe̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "skupe̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "skupe̯aʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "skupeau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "skupai̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "skupaʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "skupɔ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "skupɔm",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "skupats",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "skuparə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "uenire",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:uenire",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "vin",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "viɲ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "vini",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "vinim",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "viniʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "vin",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "implere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:implere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "ampʎu",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "ampʎə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "ɐmpʎɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "ampʎu",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "ampʎi",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ɐmpʎai̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "ɐmpʎaʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "ɐmpʎɔ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "ɐmpʎɔm",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "ɐmpʎaʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "ɐmpʎarə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "remanere",
+      "class_source": "other",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:remanere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.preterite": {
+          "1sg": {
+            "form": "rəmaʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "cădeári",
+      "class_source": "II",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:cădeári",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "kad",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "kaz",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "kadi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kədem",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kədeʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "kad",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "kəde̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "kəde̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "kəde̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kəde̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kəde̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "kəde̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "kəzui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "kəzuʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "kəzu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kəzum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kəzuʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "kəzurə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "kad",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "kaz",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "kadə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kədem",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kədeʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "kadə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "kad",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "kədem",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "kədeʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "habere",
+      "class_source": "II",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:habere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "am",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "ai̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "ari",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "vem",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "veʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "au̯u",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "am",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "ai̯",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "ai̯bə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "vem",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "veʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "ai̯bə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ve̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "ve̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "ve̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "ve̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "ve̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "ve̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "vui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "vuʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "vu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "vum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "vuʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "vurə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "posse",
+      "class_source": "II",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:posse",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "pot",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "poʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "po̯ati",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "putem",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "puteʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "pot",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "pute̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "pute̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "pute̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "pute̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "pute̯aʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "pute̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "putui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "putuʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "putu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "putum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "putuʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "puturə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "sedere",
+      "class_source": "II",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:sedere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "imperative": {
+          "2sg": {
+            "form": "ʃɔz",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.present": {
+          "1sg": {
+            "form": "ʃɔd",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "ʃɔz",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "ʃadi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "ʃədem",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "ʃədeʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "ʃɔd",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "ʃəde̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "ʃəde̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "ʃəde̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "ʃəde̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "ʃəde̯aʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "ʃəde̯au̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "ʃəzui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "durmíri",
+      "class_source": "IV",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:durmíri",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "dorm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "dorm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "do̯armi",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "durmim",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "durmiʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "dorm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "durme̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "durme̯ai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "durme̯a",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "durme̯am",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "durme̯aʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "durmeau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "durmii̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "durmiʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "durmi",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "durmim",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "durmiʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "durmirə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "să dórm",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "să dárm",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "să do̯ármă",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "să durmím",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "să durmíț",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "să do̯ármă",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "dorm",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "durmim",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "durmiʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "subire",
+      "class_source": "IV",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:subire",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "sui̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "sui̯",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "sujə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "sujəm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "sujaʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "sujə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "sujam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "sujai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "suja",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "sujam",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "sujaʦ",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "sujau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "sujai̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2sg": {
+            "form": "sujaʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3sg": {
+            "form": "sujə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "1pl": {
+            "form": "sujəm",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "2pl": {
+            "form": "sujaʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          },
+          "3pl": {
+            "form": "sujarə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "fugere",
+      "class_source": "IV",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:fugere",
+        "url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset",
+        "stem": null
+      },
+      "cells": {
+        "imperative": {
+          "2sg": {
+            "form": "fui̯",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://gitlab.com/sbeniamine/Romance_Verbal_Inflection_Dataset"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "lucrári",
+      "class_source": "I-ez",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:lucrári",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "lukrez",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "lukrez",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "lukre̯azə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "lukrɔm",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "lukraʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "lukre̯azə",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "lukrez",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "lukrez",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "lukre̯azə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "lukrɔm",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "lukraʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "lukre̯azə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "lukre̯azə",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "lukrɔm",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "lukraʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "sirbíri",
+      "class_source": "IV-esc",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:sirbíri",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "sirbes",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "sirbeʃ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "sirbe̯aʃti",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "sirbim",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "sirbiʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "sirbes",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "sirbes",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "sirbeʃ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "sirbe̯askə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "sirbim",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "sirbiʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "sirbe̯askə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "sirbe̯a",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "sirbim",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "sirbiʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ruq",
+      "lemma": "iri / sam",
+      "class_source": "fi",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:iri / sam",
+        "url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "sam",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "jeʃ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "jasti",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "im",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "iʦ",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "sa",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "̯ram",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "rai̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "ra",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "̯ram",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "rats",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "̯rau̯",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "indicative.preterite": {
+          "1sg": {
+            "form": "fui̯",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "fuʃ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "fu",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "fum",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "fuʦ",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "furə",
+            "phonemes": [],
+            "source_label": "indicative, preterite,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "sɔm",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2sg": {
+            "form": "jeʃ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3sg": {
+            "form": "ijə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "1pl": {
+            "form": "im",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "iʦ",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "3pl": {
+            "form": "ijə",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "iri",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          },
+          "2pl": {
+            "form": "ireʦ",
+            "phonemes": [],
+            "source_label": "imperative,diseux",
+            "source_url": "https://ro.wikisource.org/wiki/Meglenorom%C3%A2nii/Volumul_I"
+          }
+        }
+      }
+    }
+  ]
+}

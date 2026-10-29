@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SCHEMAVERSION="alto_bnf-v2_0" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v3# http://bibnum.bnf.fr/schema/alto_bnf-v2_0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<sourceImageInformation>
+<fileName>00000172.jp2</fileName>
+<fileIdentifier>ark:/12148/bd6t5346572x/f172</fileIdentifier>
+<documentIdentifier documentIdentifierLocation="NUM">100346572</documentIdentifier>
+</sourceImageInformation>
+<OCRProcessing ID="OCR_1">
+<ocrProcessingStep>
+<processingDateTime>2023-08-16</processingDateTime>
+<processingStepDescription>[001_OCR_BRUT]OCR BRUT 52.5 %</processingStepDescription>
+<processingStepDescription>[002_CHARS]{17}</processingStepDescription>
+<processingStepDescription>[007_STRINGS]{7}</processingStepDescription>
+<processingSoftware>
+<softwareCreator>ABBYY</softwareCreator>
+<softwareName>ABBYY FineReader Engine</softwareName>
+<softwareVersion>12</softwareVersion>
+</processingSoftware>
+</ocrProcessingStep>
+</OCRProcessing>
+</Description>
+<Styles>
+<TextStyle FONTFAMILY="Default Metrics Font" FONTSIZE="7" ID="TXT_1"/>
+<TextStyle FONTFAMILY="Default Metrics Font" FONTSIZE="8" ID="TXT_2"/>
+</Styles>
+<Layout>
+<Page ACCURACY="52.5" HEIGHT="3631" ID="PAG_00000172" PHYSICAL_IMG_NR="172" QUALITY="OK" WIDTH="2715">
+<TopMargin HEIGHT="1945" HPOS="0" ID="PAG_00000172_TopMargin" VPOS="0" WIDTH="2715">
+</TopMargin>
+<LeftMargin HEIGHT="754" HPOS="0" ID="PAG_00000172_LeftMargin" VPOS="1945" WIDTH="2634">
+</LeftMargin>
+<BottomMargin HEIGHT="932" HPOS="0" ID="PAG_00000172_BottomMargin" VPOS="2699" WIDTH="2715">
+</BottomMargin>
+<PrintSpace HEIGHT="754" HPOS="2634" ID="PAG_00000172_PrintSpace" VPOS="1945" WIDTH="81">
+<TextBlock HEIGHT="698" HPOS="2634" ID="PAG_00000172_TB000001" STYLEREFS="TXT_2" VPOS="1968" WIDTH="81" language="fr">
+<TextLine HEIGHT="36" HPOS="2647" ID="PAG_00000172_TL000001" VPOS="1980" WIDTH="68">
+<String CONTENT="noi" HEIGHT="36" HPOS="2647" ID="PAG_00000172_ST000001" VPOS="1980" WC="0.73666667938232422" WIDTH="68"/>
+</TextLine>
+<TextLine HEIGHT="36" HPOS="2647" ID="PAG_00000172_TL000002" VPOS="2089" WIDTH="68">
+<String CONTENT="cm" HEIGHT="36" HPOS="2647" ID="PAG_00000172_ST000002" STYLE="italics smallcaps" STYLEREFS="TXT_1" VPOS="2089" WC="0.30000001192092896" WIDTH="68"/>
+</TextLine>
+<TextLine HEIGHT="53" HPOS="2649" ID="PAG_00000172_TL000003" VPOS="2194" WIDTH="61">
+<String CONTENT="que" HEIGHT="53" HPOS="2649" ID="PAG_00000172_ST000003" VPOS="2194" WC="1" WIDTH="61"/>
+</TextLine>
+<TextLine HEIGHT="55" HPOS="2648" ID="PAG_00000172_TL000004" VPOS="2280" WIDTH="67">
+<String CONTENT="lan" HEIGHT="55" HPOS="2648" ID="PAG_00000172_ST000004" VPOS="2280" WC="0.74000000953674316" WIDTH="67"/>
+</TextLine>
+<TextLine HEIGHT="41" HPOS="2651" ID="PAG_00000172_TL000005" VPOS="2400" WIDTH="57">
+<String CONTENT="va" HEIGHT="41" HPOS="2651" ID="PAG_00000172_ST000005" VPOS="2400" WC="0.31499999761581421" WIDTH="57"/>
+</TextLine>
+<TextLine HEIGHT="58" HPOS="2653" ID="PAG_00000172_TL000006" VPOS="2488" WIDTH="28">
+<String CONTENT="d‘" HEIGHT="58" HPOS="2653" ID="PAG_00000172_ST000006" VPOS="2488" WC="1" WIDTH="28"/>
+</TextLine>
+<TextLine HEIGHT="42" HPOS="2653" ID="PAG_00000172_TL000007" VPOS="2612" WIDTH="58">
+<String CONTENT="us" HEIGHT="42" HPOS="2653" ID="PAG_00000172_ST000007" VPOS="2612" WC="0.25999999046325684" WIDTH="58"/>
+</TextLine>
+</TextBlock>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

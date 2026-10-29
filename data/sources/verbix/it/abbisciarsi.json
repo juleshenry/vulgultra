@@ -1,0 +1,705 @@
+{
+  "lect": "it",
+  "lemma": "abbisciarsi",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/ita/abbisciarsi/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=4&T1=abbisciarsi",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 4,
+    "tenses": {
+      "0": {
+        "name": "Indicative Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbiscio"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbisci"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbiscia"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbisciamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbisciate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbisciano"
+          }
+        ]
+      },
+      "1": {
+        "name": "Subjunctive Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 1,
+            "form": "abbisci"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbisci"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbisci"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbisciamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 1,
+            "form": "abbisciate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbiscino"
+          }
+        ]
+      },
+      "2": {
+        "name": "Indicative Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbisciavo"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbisciavi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbisciava"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbisciavamo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbisciavate"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbisciavano"
+          }
+        ]
+      },
+      "3": {
+        "name": "Subjunctive Past",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbisciassi"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbisciassi"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbisciasse"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbisciassimo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbisciaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbisciassero"
+          }
+        ]
+      },
+      "4": {
+        "name": "Indicative Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "abbisciai"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbisciasti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbisciò"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "abbisciammo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbisciaste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "abbisciarono"
+          }
+        ]
+      },
+      "5": {
+        "name": "Indicative Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 1,
+            "form": "abbiscerò"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbiscerai"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbiscerà"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbisceremo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 1,
+            "form": "abbiscerete"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbisceranno"
+          }
+        ]
+      },
+      "7": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 1,
+            "form": "abbiscerei"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 1,
+            "form": "abbisceresti"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbiscerebbe"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbisceremmo"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 1,
+            "form": "abbiscereste"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbiscerebbero"
+          }
+        ]
+      },
+      "8": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "abbisciati"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbisci"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 1,
+            "form": "abbisciamoci"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "abbisciatevi"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 1,
+            "form": "abbiscino"
+          }
+        ]
+      },
+      "10": {
+        "name": "Indicative Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sono abbisciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sei abbisciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "è abbisciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbisciati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siete abbisciati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sono abbisciati"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subjunctive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sia abbisciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sia abbisciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sia abbisciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "siamo abbisciati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "siate abbisciati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "siano abbisciati"
+          }
+        ]
+      },
+      "12": {
+        "name": "Indicative Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "ero abbisciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "eri abbisciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "era abbisciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "eravamo abbisciati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "eravate abbisciati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "erano abbisciati"
+          }
+        ]
+      },
+      "13": {
+        "name": "Subjunctive Pluperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fossi abbisciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fossi abbisciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fosse abbisciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fossimo abbisciati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbisciati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fossero abbisciati"
+          }
+        ]
+      },
+      "14": {
+        "name": "Preterite Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "fui abbisciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "fosti abbisciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "fu abbisciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "fummo abbisciati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "foste abbisciati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "furono abbisciati"
+          }
+        ]
+      },
+      "15": {
+        "name": "Future Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarò abbisciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "sarai abbisciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarà abbisciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremo abbisciati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sarete abbisciati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "saranno abbisciati"
+          }
+        ]
+      },
+      "17": {
+        "name": "Conditional Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "mi",
+            "use": 0,
+            "form": "sarei abbisciato"
+          },
+          {
+            "id": 2,
+            "pronoun": "ti",
+            "use": 0,
+            "form": "saresti abbisciato"
+          },
+          {
+            "id": 3,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbe abbisciato"
+          },
+          {
+            "id": 4,
+            "pronoun": "ci",
+            "use": 0,
+            "form": "saremmo abbisciati"
+          },
+          {
+            "id": 5,
+            "pronoun": "vi",
+            "use": 0,
+            "form": "sareste abbisciati"
+          },
+          {
+            "id": 6,
+            "pronoun": "si",
+            "use": 0,
+            "form": "sarebbero abbisciati"
+          }
+        ]
+      },
+      "20": {
+        "name": "Infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbisciarsi"
+          }
+        ]
+      },
+      "21": {
+        "name": "Gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbisciandosi"
+          }
+        ]
+      },
+      "22": {
+        "name": "Past Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 4,
+            "form": "abbisciato"
+          }
+        ]
+      },
+      "23": {
+        "name": "Present Participle",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "abbisciantesi"
+          }
+        ]
+      },
+      "30": {
+        "name": "Infinitive Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essere abbisciato"
+          }
+        ]
+      },
+      "31": {
+        "name": "Gerund Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essendo abbisciato"
+          }
+        ]
+      },
+      "33": {
+        "name": "Participle Perfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "essente abbisciato"
+          }
+        ]
+      }
+    },
+    "auxiliaries": [
+      "essere"
+    ],
+    "examples": null,
+    "verb": "abbisciare"
+  }
+}

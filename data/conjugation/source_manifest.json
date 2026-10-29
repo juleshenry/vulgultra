@@ -1,0 +1,194 @@
+{
+  "schema": "vulgultra.conjugation-source-manifest.v1",
+  "purpose": "Track source collection for the 36 Romance lect conjugation EDA",
+  "optimizer_involved": false,
+  "source_policy": {
+    "require_provenance": true,
+    "require_explicit_ipa_segmentation": true,
+    "copy_sister_lect_forms": false,
+    "missing_cells": "remain missing"
+  },
+  "lects": [
+    {
+      "lect": "es",
+      "status": "harvested",
+      "source": "data/conjugation/sources/es.json"
+    },
+    {
+      "lect": "pt",
+      "status": "harvested",
+      "source": "data/conjugation/sources/pt.json"
+    },
+    {
+      "lect": "gl",
+      "status": "harvested",
+      "source": "data/conjugation/sources/gl.json"
+    },
+    {
+      "lect": "an",
+      "status": "harvested",
+      "source": "data/conjugation/sources/an.json",
+      "notes": "Kaikki + Verbix CC BY-NC fill for 2pl"
+    },
+    {
+      "lect": "ast",
+      "status": "harvested",
+      "source": "data/conjugation/sources/ast.json"
+    },
+    {
+      "lect": "ext",
+      "status": "harvested",
+      "source": "data/conjugation/sources/ext.json"
+    },
+    {
+      "lect": "lad",
+      "status": "harvested",
+      "source": "data/conjugation/sources/lad.json"
+    },
+    {
+      "lect": "mwl",
+      "status": "harvested",
+      "source": "data/conjugation/sources/mwl.json"
+    },
+    {
+      "lect": "oc",
+      "status": "harvested",
+      "source": "data/conjugation/sources/oc.json"
+    },
+    {
+      "lect": "ca",
+      "status": "harvested",
+      "source": "data/conjugation/sources/ca.json"
+    },
+    {
+      "lect": "gsc",
+      "status": "harvested",
+      "source": "data/conjugation/sources/gsc.json"
+    },
+    {
+      "lect": "fr",
+      "status": "harvested",
+      "source": "data/conjugation/sources/fr.json"
+    },
+    {
+      "lect": "wa",
+      "status": "harvested",
+      "source": "data/conjugation/sources/wa.json"
+    },
+    {
+      "lect": "pcd",
+      "status": "harvested",
+      "source": "data/conjugation/sources/pcd.json"
+    },
+    {
+      "lect": "nrf",
+      "status": "harvested",
+      "source": "data/conjugation/sources/nrf.json"
+    },
+    {
+      "lect": "gallo",
+      "status": "harvested",
+      "source": "data/conjugation/sources/gallo.json"
+    },
+    {
+      "lect": "frp",
+      "status": "harvested",
+      "source": "data/conjugation/sources/frp.json"
+    },
+    {
+      "lect": "lmo",
+      "status": "harvested",
+      "source": "data/conjugation/sources/lmo.json"
+    },
+    {
+      "lect": "pms",
+      "status": "harvested",
+      "source": "data/conjugation/sources/pms.json"
+    },
+    {
+      "lect": "lij",
+      "status": "harvested",
+      "source": "data/conjugation/sources/lij.json"
+    },
+    {
+      "lect": "eml",
+      "status": "harvested",
+      "source": "data/conjugation/sources/eml.json"
+    },
+    {
+      "lect": "rgn",
+      "status": "harvested",
+      "source": "data/conjugation/sources/rgn.json"
+    },
+    {
+      "lect": "it",
+      "status": "harvested",
+      "source": "data/conjugation/sources/it.json"
+    },
+    {
+      "lect": "scn",
+      "status": "harvested",
+      "source": "data/conjugation/sources/scn.json"
+    },
+    {
+      "lect": "vec",
+      "status": "harvested",
+      "source": "data/conjugation/sources/vec.json"
+    },
+    {
+      "lect": "co",
+      "status": "harvested",
+      "source": "data/conjugation/sources/co.json"
+    },
+    {
+      "lect": "ist",
+      "status": "harvested",
+      "source": "data/conjugation/sources/ist.json"
+    },
+    {
+      "lect": "dlm",
+      "status": "harvested",
+      "source": "data/conjugation/sources/dlm.json"
+    },
+    {
+      "lect": "rm",
+      "status": "harvested",
+      "source": "data/conjugation/sources/rm.json"
+    },
+    {
+      "lect": "fur",
+      "status": "harvested",
+      "source": "data/conjugation/sources/fur.json"
+    },
+    {
+      "lect": "lld",
+      "status": "harvested",
+      "source": "data/conjugation/sources/lld.json"
+    },
+    {
+      "lect": "sc",
+      "status": "harvested",
+      "source": "data/conjugation/sources/sc.json"
+    },
+    {
+      "lect": "ro",
+      "status": "harvested",
+      "source": "data/conjugation/sources/ro.json"
+    },
+    {
+      "lect": "rup",
+      "status": "harvested",
+      "source": "data/conjugation/sources/rup.json"
+    },
+    {
+      "lect": "ruo",
+      "status": "harvested",
+      "source": "data/conjugation/sources/ruo.json"
+    },
+    {
+      "lect": "ruq",
+      "status": "harvested",
+      "source": "data/conjugation/sources/ruq.json"
+    }
+  ]
+}

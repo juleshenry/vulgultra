@@ -1,0 +1,140 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "dlm",
+    "purpose": "Dalmatian kantúr sample from Verbix docs",
+    "provider": "docs.verbix.com",
+    "attribution": "Verbix Dalmatian docs (https://docs.verbix.com/Languages/Dalmatian)",
+    "ending_inventories": {},
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "dlm",
+      "lemma": "kantúr",
+      "class_source": "-ur",
+      "regularity": "model",
+      "source": {
+        "attested": true,
+        "title": "Verbix Dalmatian:kantúr",
+        "url": "https://docs.verbix.com/Languages/Dalmatian",
+        "provider": "docs.verbix.com",
+        "citation_note": "One-page Verbix docs sample. 3sg/3pl syncretic in the source table."
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "kantaja",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "2sg": {
+            "form": "kantaja",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "3sg": {
+            "form": "kantaja",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "1pl": {
+            "form": "kantuóme",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "2pl": {
+            "form": "kantuóte",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "3pl": {
+            "form": "kantája",
+            "phonemes": [],
+            "source_label": "indicative.present",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "kantúa",
+            "phonemes": [],
+            "source_label": "indicative.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "3sg": {
+            "form": "kantúa",
+            "phonemes": [],
+            "source_label": "indicative.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "kantuóra",
+            "phonemes": [],
+            "source_label": "indicative.future",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "kantás",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "2sg": {
+            "form": "kantúre",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "3sg": {
+            "form": "kantás",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "1pl": {
+            "form": "kantesáime",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "2pl": {
+            "form": "kantesáite",
+            "phonemes": [],
+            "source_label": "subjunctive.imperfect",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "kantája",
+            "phonemes": [],
+            "source_label": "imperative",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "1pl": {
+            "form": "kantuóme",
+            "phonemes": [],
+            "source_label": "imperative",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          },
+          "2pl": {
+            "form": "kantuóte",
+            "phonemes": [],
+            "source_label": "imperative",
+            "source_url": "https://docs.verbix.com/Languages/Dalmatian"
+          }
+        }
+      }
+    }
+  ]
+}

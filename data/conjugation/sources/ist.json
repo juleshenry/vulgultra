@@ -1,0 +1,690 @@
+{
+  "schema": "vulgultra.conjugation.v1",
+  "metadata": {
+    "lect": "ist",
+    "purpose": "sourced Kaikki/Wiktextract conjugation harvest",
+    "ending_inventories": {
+      "avì": {
+        "conditional": {
+          "endings": {
+            "1sg": "àvi",
+            "2sg": "àvi",
+            "3sg": "àvo",
+            "1pl": "iènsi",
+            "2pl": "ìsi",
+            "3pl": "àvo"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.future": {
+          "endings": {
+            "1sg": "iè",
+            "2sg": "iè",
+            "3sg": "uò",
+            "1pl": "èmo",
+            "2pl": "ì(de)",
+            "3pl": "uò"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "indicative.imperfect": {
+          "endings": {
+            "1sg": "ìvo",
+            "2sg": "ìvi",
+            "3sg": "ìva",
+            "1pl": "ièmi",
+            "2pl": "ì(de)",
+            "3pl": "ìva"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        },
+        "subjunctive.imperfect": {
+          "endings": {
+            "1sg": "o",
+            "2sg": "i",
+            "3sg": "o",
+            "1pl": "imo",
+            "2pl": "i",
+            "3pl": "o"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      },
+      "ièsi": {
+        "subjunctive.present": {
+          "endings": {
+            "1sg": "eîo",
+            "2sg": "eîî",
+            "3sg": "eîo",
+            "1pl": "ièmo",
+            "2pl": "eîî",
+            "3pl": "eîo"
+          },
+          "support": 1,
+          "variants": 1,
+          "stem_mode": "lcp",
+          "regular_rows": 0,
+          "rows": 1
+        }
+      }
+    },
+    "lemma_count": 25,
+    "serialized_paradigms": 9,
+    "max_paradigms_per_class": 40,
+    "optimizer_involved": false
+  },
+  "paradigms": [
+    {
+      "lect": "ist",
+      "lemma": "portà",
+      "class_source": "-à",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:portà",
+        "url": "https://en.wiktionary.org/wiki/port%C3%A0",
+        "stem": null
+      },
+      "cells": {
+        "indicative": {
+          "3sg": {
+            "form": "puorta",
+            "phonemes": [],
+            "source_label": "indicative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/port%C3%A0"
+          },
+          "3pl": {
+            "form": "porta",
+            "phonemes": [],
+            "source_label": "indicative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/port%C3%A0"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ist",
+      "lemma": "racurdà",
+      "class_source": "-à",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:racurdà",
+        "url": "https://en.wiktionary.org/wiki/racurd%C3%A0",
+        "stem": null
+      },
+      "cells": {
+        "indicative": {
+          "2sg": {
+            "form": "racuordi",
+            "phonemes": [],
+            "source_label": "indicative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/racurd%C3%A0"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ist",
+      "lemma": "piurà",
+      "class_source": "-à",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:piurà",
+        "url": "https://en.wiktionary.org/wiki/piur%C3%A0",
+        "stem": null
+      },
+      "cells": {
+        "indicative": {
+          "1sg": {
+            "form": "piuri",
+            "phonemes": [],
+            "source_label": "first-person,indicative,singular",
+            "source_url": "https://en.wiktionary.org/wiki/piur%C3%A0"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ist",
+      "lemma": "vidi",
+      "class_source": "-i",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:vidi",
+        "url": "https://en.wiktionary.org/wiki/vidi",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "3sg": {
+            "form": "vido",
+            "phonemes": [],
+            "source_label": "present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/vidi"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ist",
+      "lemma": "screîvi",
+      "class_source": "-i",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:screîvi",
+        "url": "https://en.wiktionary.org/wiki/scre%C3%AEvi",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "3sg": {
+            "form": "screîvo",
+            "phonemes": [],
+            "source_label": "indicative,present,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/scre%C3%AEvi"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ist",
+      "lemma": "crìssi",
+      "class_source": "-i",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:crìssi",
+        "url": "https://en.wiktionary.org/wiki/cr%C3%ACssi",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1pl": {
+            "form": "crissemo",
+            "phonemes": [],
+            "source_label": "first-person,indicative,plural,present",
+            "source_url": "https://en.wiktionary.org/wiki/cr%C3%ACssi"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ist",
+      "lemma": "vignì",
+      "class_source": "-ì",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:vignì",
+        "url": "https://en.wiktionary.org/wiki/vign%C3%AC",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "vegno",
+            "phonemes": [],
+            "source_label": "first-person,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/vign%C3%AC"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ist",
+      "lemma": "avì",
+      "class_source": "avì",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:avì",
+        "url": "https://en.wiktionary.org/wiki/av%C3%AC",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "iè",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "iè",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "uò",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "vèmo",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "vì(de)",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "uò",
+            "phonemes": [],
+            "source_label": "indicative, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "indicative.imperfect": {
+          "1sg": {
+            "form": "vìvo",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "vìvi",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "vìva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "vièmi",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "vì(de)",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "vìva",
+            "phonemes": [],
+            "source_label": "indicative, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "ièbio",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "ièbi",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "ièbio",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "vèmo",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "vì(de)",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "ièbio",
+            "phonemes": [],
+            "source_label": "subjunctive, present,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "vìso",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "vìsi",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "vìso",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "vìsimo",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "vìsi",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "vìso",
+            "phonemes": [],
+            "source_label": "subjunctive, imperfect,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "varàvi",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "varàvi",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "varàvo",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "variènsi",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "varìsi",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "varàvo",
+            "phonemes": [],
+            "source_label": "conditional,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "variè",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2sg": {
+            "form": "variè",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3sg": {
+            "form": "varuò",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "1pl": {
+            "form": "varèmo",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "2pl": {
+            "form": "varì(de)",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          },
+          "3pl": {
+            "form": "varuò",
+            "phonemes": [],
+            "source_label": "indicative, future,diseux",
+            "source_url": "https://docs.verbix.com/Languages/Istriot"
+          }
+        }
+      }
+    },
+    {
+      "lect": "ist",
+      "lemma": "ièsi",
+      "class_source": "ièsi",
+      "regularity": "unknown",
+      "source": {
+        "attested": true,
+        "title": "Wiktionary:ièsi",
+        "url": "https://en.wiktionary.org/wiki/i%C3%A8si",
+        "stem": null
+      },
+      "cells": {
+        "indicative.present": {
+          "1sg": {
+            "form": "son",
+            "phonemes": [],
+            "source_label": "first-person,form-of,indicative,present,singular",
+            "source_url": "https://en.wiktionary.org/wiki/son"
+          },
+          "2sg": {
+            "form": "son",
+            "phonemes": [],
+            "source_label": "form-of,indicative,present,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/son"
+          },
+          "3pl": {
+            "form": "zì",
+            "phonemes": [],
+            "source_label": "form-of,indicative,plural,present,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/z%C3%AC"
+          }
+        },
+        "subjunctive.present": {
+          "1sg": {
+            "form": "seîo",
+            "phonemes": [],
+            "source_label": "first-person,present,singular,subjunctive",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "2sg": {
+            "form": "seîî",
+            "phonemes": [],
+            "source_label": "present,second-person,singular,subjunctive",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3sg": {
+            "form": "seîo",
+            "phonemes": [],
+            "source_label": "present,singular,subjunctive,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "1pl": {
+            "form": "sièmo",
+            "phonemes": [],
+            "source_label": "first-person,plural,present,subjunctive",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "2pl": {
+            "form": "seîî",
+            "phonemes": [],
+            "source_label": "plural,present,second-person,subjunctive",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3pl": {
+            "form": "seîo",
+            "phonemes": [],
+            "source_label": "plural,present,subjunctive,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          }
+        },
+        "subjunctive.imperfect": {
+          "1sg": {
+            "form": "fùsi",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,singular,subjunctive",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3sg": {
+            "form": "fùso",
+            "phonemes": [],
+            "source_label": "imperfect,singular,subjunctive,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "1pl": {
+            "form": "fùsimo",
+            "phonemes": [],
+            "source_label": "first-person,imperfect,plural,subjunctive",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "2pl": {
+            "form": "fùsi",
+            "phonemes": [],
+            "source_label": "imperfect,plural,second-person,subjunctive",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3pl": {
+            "form": "fùso",
+            "phonemes": [],
+            "source_label": "imperfect,plural,subjunctive,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          }
+        },
+        "conditional": {
+          "1sg": {
+            "form": "saravi",
+            "phonemes": [],
+            "source_label": "conditional,first-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3sg": {
+            "form": "saravo",
+            "phonemes": [],
+            "source_label": "conditional,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "1pl": {
+            "form": "sarièmo",
+            "phonemes": [],
+            "source_label": "conditional,first-person,plural",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "2pl": {
+            "form": "sarìssi",
+            "phonemes": [],
+            "source_label": "conditional,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3pl": {
+            "form": "saravo",
+            "phonemes": [],
+            "source_label": "conditional,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          }
+        },
+        "indicative.future": {
+          "1sg": {
+            "form": "sariè",
+            "phonemes": [],
+            "source_label": "first-person,future,singular",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3sg": {
+            "form": "saruò",
+            "phonemes": [],
+            "source_label": "future,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "1pl": {
+            "form": "sarèmo",
+            "phonemes": [],
+            "source_label": "first-person,future,plural",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "2pl": {
+            "form": "sarì",
+            "phonemes": [],
+            "source_label": "future,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3pl": {
+            "form": "sarìde",
+            "phonemes": [],
+            "source_label": "future,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          }
+        },
+        "imperative": {
+          "2sg": {
+            "form": "seîi",
+            "phonemes": [],
+            "source_label": "imperative,second-person,singular",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3sg": {
+            "form": "seîo",
+            "phonemes": [],
+            "source_label": "imperative,singular,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "2pl": {
+            "form": "seiî",
+            "phonemes": [],
+            "source_label": "imperative,plural,second-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          },
+          "3pl": {
+            "form": "seîo",
+            "phonemes": [],
+            "source_label": "imperative,plural,third-person",
+            "source_url": "https://en.wiktionary.org/wiki/i%C3%A8si"
+          }
+        }
+      }
+    }
+  ]
+}

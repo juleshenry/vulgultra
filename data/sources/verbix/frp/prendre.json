@@ -1,0 +1,401 @@
+{
+  "lect": "frp",
+  "lemma": "prendre",
+  "fetched_from": "https://api.verbix.com/conjugator/iv1/{VERBIX_API_KEY}/frp/prendre/json",
+  "page_url": "https://www.verbix.com/webverbix/go.php?D1=261&T1=prendre",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Verbix (https://www.verbix.com)",
+  "raw": {
+    "exists": true,
+    "langid": 261,
+    "tenses": {
+      "0": {
+        "name": "Glossary lookup",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "prendre"
+          }
+        ]
+      },
+      "2": {
+        "name": "infinitive",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "prendre"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "aveir  preis"
+          }
+        ]
+      },
+      "3": {
+        "name": "gerund",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "",
+            "use": 0,
+            "form": "prenent"
+          },
+          {
+            "id": 2,
+            "pronoun": "",
+            "use": 0,
+            "form": "ayent  preis"
+          }
+        ]
+      },
+      "4": {
+        "name": "Participles",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "Sg.m",
+            "use": 0,
+            "form": "preis"
+          },
+          {
+            "id": 2,
+            "pronoun": "Sg.f",
+            "use": 0,
+            "form": "preisi"
+          },
+          {
+            "id": 3,
+            "pronoun": "Pl.m",
+            "use": 0,
+            "form": "preis"
+          },
+          {
+            "id": 4,
+            "pronoun": "Pl.f",
+            "use": 0,
+            "form": "preises"
+          }
+        ]
+      },
+      "5": {
+        "name": "Present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "prenno"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "prends"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "prend"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "prenems"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "prentes"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "prennont"
+          }
+        ]
+      },
+      "6": {
+        "name": "Imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "prenèvo"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "prenèves"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "prenève"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "prenévams"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "prenévaz"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "prenèvant"
+          }
+        ]
+      },
+      "7": {
+        "name": "Preterite",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "preisi"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "preisis"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "preisit"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "preisîmos"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "preisîtes"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "preisiront"
+          }
+        ]
+      },
+      "8": {
+        "name": "Future",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "prendrai"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "prendrés"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "prendra"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "prendrems"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "prendreiz"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "prendrant"
+          }
+        ]
+      },
+      "9": {
+        "name": "Conditional",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "prendrim"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "prendriés"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "prendriet"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "prendriams"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "prendriaz"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "prendríontprendríant"
+          }
+        ]
+      },
+      "10": {
+        "name": "Subj.present",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "preigno"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "preignes"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "preigne"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "prenams"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "prenaz"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "preignant"
+          }
+        ]
+      },
+      "11": {
+        "name": "Subj.imperfect",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "1st sing.",
+            "use": 0,
+            "form": "preisisso"
+          },
+          {
+            "id": 2,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "preisisses"
+          },
+          {
+            "id": 3,
+            "pronoun": "3rd sing.",
+            "use": 0,
+            "form": "preisît"
+          },
+          {
+            "id": 4,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "preisissams"
+          },
+          {
+            "id": 5,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "preisissaz"
+          },
+          {
+            "id": 6,
+            "pronoun": "3rd plur.",
+            "use": 0,
+            "form": "preisissant"
+          }
+        ]
+      },
+      "12": {
+        "name": "Imperative",
+        "forms": [
+          {
+            "id": 1,
+            "pronoun": "2nd sing.",
+            "use": 0,
+            "form": "prends"
+          },
+          {
+            "id": 2,
+            "pronoun": "1st plur.",
+            "use": 0,
+            "form": "prenems"
+          },
+          {
+            "id": 3,
+            "pronoun": "2nd plur.",
+            "use": 0,
+            "form": "prentes"
+          }
+        ]
+      }
+    },
+    "auxiliaries": null,
+    "examples": null,
+    "verb": "prendre"
+  }
+}
