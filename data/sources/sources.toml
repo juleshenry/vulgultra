@@ -1,0 +1,1476 @@
+# Source files the repository uses but does not carry in git.
+#
+#   .venv/bin/python3 scripts/fetch_sources.py status    # what is here, what is missing
+#   .venv/bin/python3 scripts/fetch_sources.py fetch     # download it
+#
+# Everything else under data/sources/, data/bible/, data/conjugation/ and
+# data/words/ is in git. After editing this file run `scripts/fetch_sources.py gitignore`, which
+# rewrites the generated block of .gitignore so that git ignores exactly the
+# paths listed here. CONTRIBUTING.md says when a file goes here and when in git.
+#
+# [[file]]     one download. `url` is pinned (a dated dump, a commit, an
+#              archive.org file); `fallback` is tried when it has gone.
+#              `unpack` names the compression of the download; `size` and
+#              `sha256` are of the file on disk, after unpacking.
+# [[pages]]    page images archive.org renders one at a time: `n` lists the pages.
+# [[git]]      a checkout at a pinned commit.
+# [[derived]]  rebuilt by `command`, not downloaded.
+# [[local]]    may not be published; `obtain` says where it came from.
+#
+# `licence` is the rights basis as the source states it; the SOURCES notes
+# beside each folder give the detail.
+
+
+# ---- Wikimedia dumps
+
+[[file]]
+path = "data/sources/wikipedia/lawiki-latest-langlinks.sql.gz"
+url = "https://dumps.wikimedia.org/lawiki/20261001/lawiki-20261001-langlinks.sql.gz"
+fallback = "https://dumps.wikimedia.org/lawiki/latest/lawiki-latest-langlinks.sql.gz"
+size = 72854842
+sha256 = "14051cb825d9d0144c7ebb7c668b9e7df137b79b0f4e127ebac60d2e1584ccef"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "lawiki dump of 2026-10-01"
+
+[[file]]
+path = "data/sources/wikipedia/lawiki-latest-page.sql.gz"
+url = "https://dumps.wikimedia.org/lawiki/20261001/lawiki-20261001-page.sql.gz"
+fallback = "https://dumps.wikimedia.org/lawiki/latest/lawiki-latest-page.sql.gz"
+size = 9513649
+sha256 = "95a02aa8a4d1122d14f3ee0d9344253559acdb0a0ee291f7fc2473f25676a3cb"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "lawiki dump of 2026-10-01"
+
+[[file]]
+path = "data/sources/wikipedia/mwlwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/mwlwiki/20261001/mwlwiki-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/mwlwiki/latest/mwlwiki-latest-pages-articles.xml.bz2"
+size = 9870063
+sha256 = "d317e8cdbdecc73777692808d77ea97d144ef34a722c1824556e915034c1cf69"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "mwlwiki dump of 2026-10-01"
+
+[[file]]
+path = "data/sources/wikipedia/pcdwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/pcdwiki/20261001/pcdwiki-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/pcdwiki/latest/pcdwiki-latest-pages-articles.xml.bz2"
+size = 6627246
+sha256 = "fcf4f21f58e63d0c86a6799f3a0fe0b77918e0c459ac20f30b3972d3753b6f7d"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "pcdwiki dump of 2026-10-01"
+
+[[file]]
+path = "data/sources/wikipedia/wawiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/wawiki/20261001/wawiki-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/wawiki/latest/wawiki-latest-pages-articles.xml.bz2"
+size = 8519470
+sha256 = "8a8c67050cd68c2325ebce36ad7a349048880a57edb42a4c49c7448bc9268ff8"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "wawiki dump of 2026-10-01"
+
+[[file]]
+path = "data/sources/wiktionary/wawiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/wawiktionary/20261001/wawiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/wawiktionary/latest/wawiktionary-latest-pages-articles.xml.bz2"
+size = 12692401
+sha256 = "e21ab4cb668136cd057cca735c182012bfe0672e7349eadde44e342df6c78403"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "wawiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/anwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/anwiktionary/20260901/anwiktionary-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/anwiktionary/latest/anwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 5488845
+sha256 = "5f33a4cfa41d3534fc947b952b7ebb33149dc8ce2c98ed453324406d114ddc18"
+sha1_packed = "e29e733ca921e8800068f5058c06be6a2b2588db"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "anwiktionary dump of 2026-09-01"
+
+[[file]]
+path = "xmls/arwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/arwiktionary/20261001/arwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/arwiktionary/latest/arwiktionary-latest-pages-articles.xml.bz2"
+size = 20929608
+sha256 = "6310c9c836312b7fd5f4f6bb1e2e0acb8584994e02bb3453b9c713a0589244d8"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "arwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/astwiktionary-latest-stub-articles.xml"
+url = "https://dumps.wikimedia.org/astwiktionary/20250601/astwiktionary-20250601-stub-articles.xml.gz"
+fallback = "https://dumps.wikimedia.org/astwiktionary/latest/astwiktionary-latest-stub-articles.xml.gz"
+unpack = "gz"
+size = 57641200
+sha256 = "e892ff1dc9ddee699095ad644054e9374c03e17bcb7d0ee4bcf6c68d72eb1bfd"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "astwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/bgwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/bgwiktionary/20261001/bgwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/bgwiktionary/latest/bgwiktionary-latest-pages-articles.xml.bz2"
+size = 38803380
+sha256 = "54e6f472f97b1786e221f4d3233a79e48a16d7784b831b2daa266736d53bde64"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "bgwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/cawiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/cawiktionary/20250601/cawiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/cawiktionary/latest/cawiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 533765847
+sha256 = "a3b971493292578ee1e409427423b67029825f35be5a28f0e89179e25f8d933c"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "cawiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/dawiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/dawiktionary/20261001/dawiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/dawiktionary/latest/dawiktionary-latest-pages-articles.xml.bz2"
+size = 7443411
+sha256 = "fb762841cecd3025028e380ae2e421c9a5ba636228919cbe3a411f748f9de741"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "dawiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/eswiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/eswiktionary/20250601/eswiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/eswiktionary/latest/eswiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 1014408313
+sha256 = "f739676d726872b0da2bf0b728c66ef5960e396aa4c354edab939d0e289cd8ba"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "eswiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/etwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/etwiktionary/20261001/etwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/etwiktionary/latest/etwiktionary-latest-pages-articles.xml.bz2"
+size = 21623614
+sha256 = "0116ea40ab0feb462b9c57d942da85c2aad5886ab2db60fbc3f0149157f997b1"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "etwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/euwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/euwiktionary/20261001/euwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/euwiktionary/latest/euwiktionary-latest-pages-articles.xml.bz2"
+size = 6615241
+sha256 = "f3fbeacca01d460441464603a3cae7fd66029e10be772cfcebde3d10ea9d76c1"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "euwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/extwiki-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/extwiki/20260901/extwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/extwiki/latest/extwiki-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 25244444
+sha256 = "534a7e0977490ed4de2f9d28cf689da281b089a3ffc734bbbfb494a2f48b4540"
+sha1_packed = "a948b6dd907481eb13e0fff9160060f599465d2b"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "extwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/fiwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/fiwiktionary/20261001/fiwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/fiwiktionary/latest/fiwiktionary-latest-pages-articles.xml.bz2"
+size = 83373567
+sha256 = "0fb021d7c2fca4578c295fd08eddf2bc1d6ed37797d63aa29b3b6610edcc46cf"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "fiwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/frwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/frwiktionary/20250601/frwiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/frwiktionary/latest/frwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 7808271944
+sha256 = "bceb5f76899420e110f65b5c2cc744ec8e6ae08f18fb7650b3ee5ce22b5fbbc8"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "frwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/glwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/glwiktionary/20250601/glwiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/glwiktionary/latest/glwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 114137893
+sha256 = "569f63a28d07398f0acfbdd531dfebc0b8c8d0a30b24c8be5a215120b871c0db"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "glwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/huwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/huwiktionary/20261001/huwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/huwiktionary/latest/huwiktionary-latest-pages-articles.xml.bz2"
+size = 96636447
+sha256 = "926ebdf3c482cb0d991152c3c1261c769ff5710a9b1bca4892b3fa999a1e5541"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "huwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/incubatorwiki-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/incubatorwiki/20260901/incubatorwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/incubatorwiki/latest/incubatorwiki-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 1308589180
+sha256 = "7f93a755b5087733da17b672dd0938b131fcfcc1d6fe9b913b18ff4d5761e62a"
+sha1_packed = "a9934cdb7bddf0df6d65cf7b1ae0846636f8c3e9"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "incubatorwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/itwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/itwiktionary/20250601/itwiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/itwiktionary/latest/itwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 640611701
+sha256 = "b229575f0e50d69a84b84724f67d82c1e4c9aa4033e9611cdb4186d35e40a4e8"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "itwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/lawiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/lawiktionary/20260901/lawiktionary-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/lawiktionary/latest/lawiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 72259028
+sha256 = "0fe52b1a5f9af4041f0f4f04eebb29ee25560c8dcb6c1eb5e96ad24e223def7c"
+sha1_packed = "628ef733504c489c893e26342d3c6371ad95770d"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "lawiktionary dump of 2026-09-01"
+
+[[file]]
+path = "xmls/lmowiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/lmowiktionary/20250601/lmowiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/lmowiktionary/latest/lmowiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 66615304
+sha256 = "37d6bf80d4a4f713b33aae26da3bec5ec38e911df0b25ed16e0f6793f479fcbd"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "lmowiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/ltwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/ltwiktionary/20261001/ltwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/ltwiktionary/latest/ltwiktionary-latest-pages-articles.xml.bz2"
+size = 45840654
+sha256 = "5b1334b2e9370d006b81e80027f754e62b8b69e2d2e25e8de0600d5a39c3b855"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "ltwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/lvwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/lvwiktionary/20261001/lvwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/lvwiktionary/latest/lvwiktionary-latest-pages-articles.xml.bz2"
+size = 1721329
+sha256 = "47e9746650acf9413ab102dd03430839643ab434ad1db5523c45057d2278cc2d"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "lvwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/ocwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/ocwiktionary/20250601/ocwiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/ocwiktionary/latest/ocwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 107710565
+sha256 = "113014c5324bb872968153a737e1c6bebe2b548de66faba28ce2ab3ba95c623b"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "ocwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/ptwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/ptwiktionary/20250601/ptwiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/ptwiktionary/latest/ptwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 588617714
+sha256 = "79d259a7fb981d13b3f80d46e2f4a80a867f851f19872bbe7579a6c1d1cf43a7"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "ptwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/rmwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/rmwiktionary/20250601/rmwiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/rmwiktionary/latest/rmwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 72356
+sha256 = "9be6235dbd8fba6e5987038ec282a268ad0d8072096e180751ec0dc5d2b9db64"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "rmwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/roa_rupwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/roa_rupwiktionary/20260901/roa_rupwiktionary-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/roa_rupwiktionary/latest/roa_rupwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 1640321
+sha256 = "4dfff252d443f6ecd46c42fcc1b06fc07f5231108b0c8ffb1d60d643be278153"
+sha1_packed = "87d97e86a2f4c495f24addc7853b31dec00457c3"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "roa_rupwiktionary dump of 2026-09-01"
+
+[[file]]
+path = "xmls/rowiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/rowiktionary/20250601/rowiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/rowiktionary/latest/rowiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 226560991
+sha256 = "2504c482194c79463351bf8e1e489cc4505c27e2aad6625875d10e0fdd191525"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "rowiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/scnwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/scnwiktionary/20260901/scnwiktionary-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/scnwiktionary/latest/scnwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 31741117
+sha256 = "29d9c905614a1657a6b6ca3974619693be8365479c1914304c797bbebffe11d0"
+sha1_packed = "b730a8d01acf5139ea4a60a4581cf0aa8f4c765c"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "scnwiktionary dump of 2026-09-01"
+
+[[file]]
+path = "xmls/scwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/scwiktionary/20250601/scwiktionary-20250601-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/scwiktionary/latest/scwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 49987
+sha256 = "e531cd75c568f30fc1c17d8a109966aa0de34194a68d72d1fffe7bdf933ab1eb"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "scwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+
+[[file]]
+path = "xmls/sqwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/sqwiktionary/20261001/sqwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/sqwiktionary/latest/sqwiktionary-latest-pages-articles.xml.bz2"
+size = 7600360
+sha256 = "2d15ea274dd9ce175b2f9a0c1e25874f6c0846e6d9722ea187d7e02f7afe9b50"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "sqwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/svwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/svwiktionary/20261001/svwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/svwiktionary/latest/svwiktionary-latest-pages-articles.xml.bz2"
+size = 93593196
+sha256 = "bdcb60e8f4c0b1276af342f4b7212b84281a5d2c115e1cec988c63db21b21379"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "svwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/tawiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/tawiktionary/20261001/tawiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/tawiktionary/latest/tawiktionary-latest-pages-articles.xml.bz2"
+size = 39774229
+sha256 = "5c4a744dd125843572468a64754e6b4e992289defba87ad6da982bb4cfd0cfc4"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "tawiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/ukwiktionary-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/ukwiktionary/20261001/ukwiktionary-20261001-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/ukwiktionary/latest/ukwiktionary-latest-pages-articles.xml.bz2"
+size = 16594047
+sha256 = "d7f1ca8acaa84ebe4ed0e3afdbbf2675b8069a47d6da8421e729fe1858961113"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "ukwiktionary dump of 2026-10-01"
+
+[[file]]
+path = "xmls/vecwiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/vecwiktionary/20260901/vecwiktionary-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/vecwiktionary/latest/vecwiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 9652956
+sha256 = "fb3e3cf32b14bc6a2462cd2b8ce16d8d980df8a9703434aaf1d7381540944773"
+sha1_packed = "341a469996d43ed31aec1c6b7fd9217f0a127ea3"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "vecwiktionary dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wawiktionary-latest-pages-articles.xml"
+url = "https://dumps.wikimedia.org/wawiktionary/20260901/wawiktionary-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/wawiktionary/latest/wawiktionary-latest-pages-articles.xml.bz2"
+unpack = "bz2"
+size = 69339786
+sha256 = "bece3cdd9d98226474ae937e325ad8ac1d41fb0ec7b161d3ed7575d2a662db5e"
+sha1_packed = "783f52e767b5627c28cee557262edb7fa2402783"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "wawiktionary dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/anwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/anwiki/20260901/anwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/anwiki/latest/anwiki-latest-pages-articles.xml.bz2"
+size = 57203443
+sha256 = "0b32b028f1b6c4787d2fe6b3285f113c90c4a8cac411230645e56acf6c203d59"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "anwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/cowiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/cowiki/20260901/cowiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/cowiki/latest/cowiki-latest-pages-articles.xml.bz2"
+size = 7233989
+sha256 = "bf8626fb00811aabab9f5dfe2276a45b18670118fb0c6a38308beac1677a986a"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "cowiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/emlwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/emlwiki/20260901/emlwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/emlwiki/latest/emlwiki-latest-pages-articles.xml.bz2"
+size = 11212470
+sha256 = "bf1499b1a3dc7619c89e2a365f8697f153c0963de1d55dc66686e9ea2f34726c"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "emlwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/frpwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/frpwiki/20260901/frpwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/frpwiki/latest/frpwiki-latest-pages-articles.xml.bz2"
+size = 4885557
+sha256 = "c6dfcfa492a95f4e888c58ab03f26d7b569e9d8e2e191585d29dd94bf918e448"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "frpwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/furwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/furwiki/20260901/furwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/furwiki/latest/furwiki-latest-pages-articles.xml.bz2"
+size = 4316315
+sha256 = "5a5a06e138470a1766fb4f32bbc2cbb4bbcb27d05fbf86732bbd943294a15b74"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "furwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/ladwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/ladwiki/20260901/ladwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/ladwiki/latest/ladwiki-latest-pages-articles.xml.bz2"
+size = 4004776
+sha256 = "5a0a54e8fed3298f69966b22f750c064633cc3d54060024eab1401a28a5734e1"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "ladwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/lijwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/lijwiki/20260901/lijwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/lijwiki/latest/lijwiki-latest-pages-articles.xml.bz2"
+size = 9936378
+sha256 = "b5b2627227ff932d5a5134c6b0ce235cce476acab1954924b20bd795a026379f"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "lijwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/lldwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/lldwiki/20260901/lldwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/lldwiki/latest/lldwiki-latest-pages-articles.xml.bz2"
+size = 22901715
+sha256 = "370d332b7568f992114702139af5e25db4058c6c2ad1451189313ba00d78bfde"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "lldwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/mwlwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/mwlwiki/20260901/mwlwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/mwlwiki/latest/mwlwiki-latest-pages-articles.xml.bz2"
+size = 9862920
+sha256 = "19df87939c5c2bfdb6751a515af6f8ca7500dd333cee2125d21593b2a6ed0255"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "mwlwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/napwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/napwiki/20260901/napwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/napwiki/latest/napwiki-latest-pages-articles.xml.bz2"
+size = 5691865
+sha256 = "05fdb4e8fd5e276f069b907d55d845ff5578099116089c4ded6f20d0c993966c"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "napwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/pcdwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/pcdwiki/20260901/pcdwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/pcdwiki/latest/pcdwiki-latest-pages-articles.xml.bz2"
+size = 6615895
+sha256 = "7cea8eca954b5ce774305ce62beffebf5e2006c04b78f5b42f29ba259e1a61b1"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "pcdwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/pmswiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/pmswiki/20260901/pmswiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/pmswiki/latest/pmswiki-latest-pages-articles.xml.bz2"
+size = 15860567
+sha256 = "35b17f4f3e53d5ade3f1576cf1bb1a951c977e2a03a0aadfd500419d4b8d6a3e"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "pmswiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/rmwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/rmwiki/20260901/rmwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/rmwiki/latest/rmwiki-latest-pages-articles.xml.bz2"
+size = 7842204
+sha256 = "15a7329516e72ad0fbc023b6c73d7dbf5326704471e94937eb5908aa50e86101"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "rmwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/roa_rupwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/roa_rupwiki/20260901/roa_rupwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/roa_rupwiki/latest/roa_rupwiki-latest-pages-articles.xml.bz2"
+size = 1582316
+sha256 = "a91f1fb257b01adcb50e6aad3d355eae6eb2b0eb14f5bad2fda1f867a01e58ce"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "roa_rupwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/scwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/scwiki/20260901/scwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/scwiki/latest/scwiki-latest-pages-articles.xml.bz2"
+size = 8307920
+sha256 = "4cbb382f0416fe8460c22d807d3957d09fd4d7a0a050f0322985a88e29ef85a9"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "scwiki dump of 2026-09-01"
+
+[[file]]
+path = "xmls/wiki/vecwiki-latest-pages-articles.xml.bz2"
+url = "https://dumps.wikimedia.org/vecwiki/20260901/vecwiki-20260901-pages-articles.xml.bz2"
+fallback = "https://dumps.wikimedia.org/vecwiki/latest/vecwiki-latest-pages-articles.xml.bz2"
+size = 27460611
+sha256 = "591673fc1c10df307a1374e4ba595ced915d67b267758e77b3da72ae3f764479"
+licence = "CC BY-SA 4.0 (Wikimedia)"
+note = "vecwiki dump of 2026-09-01"
+
+
+# ---- archive.org scans and OCR
+
+[[file]]
+path = "data/bible/lects/raw/italy/rejected/lasanctabibliaqu00colo_djvu.txt"
+url = "https://archive.org/download/lasanctabibliaqu00colo/lasanctabibliaqu00colo_djvu.txt"
+size = 5757694
+sha256 = "14a02bba86f4cea6b0a5db70ba665bdbe21be95c279113f78e2f351f63c9492e"
+licence = "published 1870; no rights statement on archive.org"
+note = "La Sancta Biblia, quai ais la Sancta Scrittüra del Vegl e Nouv Testamaint tradüt in lingua ladina d'Engiadina bassa"
+
+[[file]]
+path = "data/sources/glossaries/dlm/raw/bartoli_1906_das_dalmatische.pdf"
+url = "https://archive.org/download/das-dalmatische/Das_dalmatische.pdf"
+size = 41467779
+sha256 = "fb747d174d4c01403718f30fa4bac644566e33de74b73d3cf10c17c37007de68"
+licence = "published 1906-01-01; https://creativecommons.org/publicdomain/mark/1.0/"
+note = "Matteo Bartoli, Das Dalmatische"
+
+[[file]]
+path = "data/sources/glossaries/dlm/raw/ive_1886_antico_dialetto_di_veglia_jp2.zip"
+url = "https://archive.org/download/iveanticodialettodiveglia/IveAnticoDialettoDiVeglia_jp2.zip"
+size = 44353959
+sha256 = "7a9dacc43532a1f9a035f024a63faafe9ee044eb10b7ecc1412be6f53b0eb76f"
+licence = "published 1886; no rights statement on archive.org"
+note = "Ive, Antonio, L Antico Dialetto Di Veglia"
+
+[[file]]
+path = "data/sources/glossaries/gallo/raw/dictionnairedesl00couluoft.pdf"
+url = "https://archive.org/download/dictionnairedesl00couluoft/dictionnairedesl00couluoft.pdf"
+size = 12877413
+sha256 = "cb70ac2a2428131cacadafbba5c94bc6b1e06ca1d2bb6b3cd93e472b8b813441"
+licence = "published 1891; NOT_IN_COPYRIGHT"
+note = "Coulabin, H, Dictionnaire des locutions populaires du bon pays de Rennes-en-Bretagne"
+
+[[file]]
+path = "data/sources/glossaries/gallo/raw/dictionnairedesl00couluoft_chocr.html.gz"
+url = "https://archive.org/download/dictionnairedesl00couluoft/dictionnairedesl00couluoft_chocr.html.gz"
+size = 6165268
+sha256 = "0ff45428d21e635fa9c4b3c7153718900278a33c5fae1240e8bb9c541a286a6e"
+licence = "published 1891; NOT_IN_COPYRIGHT"
+note = "Coulabin, H, Dictionnaire des locutions populaires du bon pays de Rennes-en-Bretagne"
+
+[[file]]
+path = "data/sources/glossaries/gallo/raw/glossaire_patois_ille_vilaine.pdf"
+url = "https://archive.org/download/GlossairePatoisDuDpartementDille-et-vilaine/glossaire_patois_ille_vilaine.pdf"
+size = 5250553
+sha256 = "4fc8341de2765a504fb7b44cff1fb226c0783ef52e9bc4d7c3015c9e1d5d831a"
+licence = "date not given; no rights statement on archive.org"
+note = "Adolphe Orain, Glossaire du patois du département d'Ille-et-Vilaine"
+
+[[file]]
+path = "data/sources/glossaries/gsc/raw/dictionnaireba01lesp.pdf"
+url = "https://archive.org/download/dictionnaireba01lesp/dictionnaireba01lesp.pdf"
+size = 38359383
+sha256 = "71556104a53edf4ef40f931a44dfc522f3efe2dac571b78f0a66dfaec914d573"
+licence = "published 1887; no rights statement on archive.org"
+note = "Lespy, Jean Désiré, dit Vastin, 1817-1897; Raymond, Paul Lechien, dit, 1833-1878, Dictionnaire béarnais ancien et moderne"
+
+[[file]]
+path = "data/sources/glossaries/gsc/raw/dictionnaireba01lesp_chocr.html.gz"
+url = "https://archive.org/download/dictionnaireba01lesp/dictionnaireba01lesp_chocr.html.gz"
+size = 23867817
+sha256 = "c05252e2303148ed40b9777d08781e654dbe043c309d5af3dff7e3d5c4353c9c"
+licence = "published 1887; no rights statement on archive.org"
+note = "Lespy, Jean Désiré, dit Vastin, 1817-1897; Raymond, Paul Lechien, dit, 1833-1878, Dictionnaire béarnais ancien et moderne"
+
+[[file]]
+path = "data/sources/glossaries/gsc/raw/dictionnaireba02lesp.pdf"
+url = "https://archive.org/download/dictionnaireba02lesp/dictionnaireba02lesp.pdf"
+size = 38745890
+sha256 = "eb1aaa96aa2d1576f457fc3f4b9cdacc5defdbce1bcfd593406f779c6cbf213b"
+licence = "published 1887; no rights statement on archive.org"
+note = "Lespy, Jean Désiré, dit Vastin, 1817-1897; Raymond, Paul Lechien, dit, 1833-1878, Dictionnaire béarnais ancien et moderne"
+
+[[file]]
+path = "data/sources/glossaries/gsc/raw/dictionnaireba02lesp_chocr.html.gz"
+url = "https://archive.org/download/dictionnaireba02lesp/dictionnaireba02lesp_chocr.html.gz"
+size = 24295755
+sha256 = "6c7b6ef7c5aefae2730234929586e188e13a7e9495a835ea57cff06720c09b39"
+licence = "published 1887; no rights statement on archive.org"
+note = "Lespy, Jean Désiré, dit Vastin, 1817-1897; Raymond, Paul Lechien, dit, 1833-1878, Dictionnaire béarnais ancien et moderne"
+
+[[file]]
+path = "data/sources/glossaries/ist/raw/dallazonca_1978_RovignoAtti-02_djvu.txt"
+url = "https://archive.org/download/RovignoAtti-02-1978/RovignoAtti-02-1978_djvu.txt"
+size = 1265050
+sha256 = "631a780554e2a4f2cb646848c2cca47d90652aea1069373af27712dd80285905"
+licence = "archive.org's OCR of the 1978 volume, whose editor's matter is in copyright; not republished"
+note = "Dalla Zonca, Vocabolario dignanese-italiano, ed. Debeljuh, 1978"
+
+[[file]]
+path = "data/sources/glossaries/ist/raw/dallazonca_1978_RovignoAtti-02_jp2.zip"
+url = "https://archive.org/download/RovignoAtti-02-1978/RovignoAtti-02-1978_jp2.zip"
+size = 136531864
+sha256 = "aebc94106c8658f8bcc301b21076e26f116535df0d32c52783e7662de1a087f8"
+licence = "published 1978; no rights statement on archive.org"
+note = "G.A. Dalla Zonca , Vocabolario dignese-italiano"
+
+[[file]]
+path = "data/sources/glossaries/lij/raw/dizionariogenove00casauoft.pdf"
+url = "https://archive.org/download/dizionariogenove00casauoft/dizionariogenove00casauoft.pdf"
+size = 118467350
+sha256 = "051abce48e089102159d18b87e21b196ce18d4686dcbfa1afb82231e0995a14c"
+licence = "published 1876; no rights statement on archive.org"
+note = "Casaccia, Giovanni, Dizionario genovese-italiano"
+
+[[file]]
+path = "data/sources/glossaries/lld/raw/videsott_2020_vll1_978-88-6046-168-1.pdf"
+url = "https://archive.org/download/oapen-20.500.12657-22501/978-88-6046-168-1.pdf"
+size = 16080541
+sha256 = "2543fd44b40a7b9f7c5033ff23505e88430eaf46589ab34865f299d123a6033f"
+licence = "published 2020; no rights statement on archive.org"
+note = "Vocabolar dl ladin leterar 1/Vocabolario del ladino letterario1/Wörterbuch des literarischen Ladinisch 1 - Lessich documenté dant 1879/Lessico documentato prima del 1879/Vor 1879 belegter Wortschatz"
+
+[[file]]
+path = "data/sources/glossaries/nrf/raw/Dictionnaire_franco_normand.pdf"
+url = "https://archive.org/download/DictionnaireFranco-normand/Dictionnaire_franco_normand.pdf"
+size = 16867941
+sha256 = "315d70e91271b8fbf95f10ab825ae2ac95cb8f91374bc90194d37aab990af6a0"
+licence = "date not given; no rights statement on archive.org"
+note = "Georges Métivier, Dictionnaire franco-normand"
+
+[[file]]
+path = "data/sources/glossaries/nrf/raw/essaisurlepatois00joreuoft.pdf"
+url = "https://archive.org/download/essaisurlepatois00joreuoft/essaisurlepatois00joreuoft.pdf"
+size = 15829597
+sha256 = "e37570d66253cd2f2a154f812a7aa7eee497ca86a6a8f38c5e1f58b013075a7b"
+licence = "published 1881; NOT_IN_COPYRIGHT"
+note = "Joret, Charles, 1839-1914, Essai sur le patois Normand du Bessin; suivi d'un dictionnaire étymologique"
+
+[[file]]
+path = "data/sources/glossaries/nrf/raw/essisurlepatoisn00fleuuoft.pdf"
+url = "https://archive.org/download/essisurlepatoisn00fleuuoft/essisurlepatoisn00fleuuoft.pdf"
+size = 15781803
+sha256 = "ea595bc6e185f0c37e05699ba0a4b71d0964b63aa5a132992996072d91898f0a"
+licence = "published 1886; NOT_IN_COPYRIGHT"
+note = "Fleury, Jean François Bonaventure, 1816-1894, Essi sur le patois normand de La Hague"
+
+[[file]]
+path = "data/sources/glossaries/nrf/raw/normand_centre.pdf"
+url = "https://archive.org/download/normand_moisy/normand_centre.pdf"
+size = 57010403
+sha256 = "aaed5204fb1aee2e48e02b769b71c0a41be798f72d48008d6517597bd5ff48a5"
+licence = "date not given; no rights statement on archive.org"
+note = "Henri Moisy, Dictionnaire de patois normand"
+
+[[file]]
+path = "data/sources/glossaries/pms/raw/bub_gb_1QKH9Ow6SXkC.pdf"
+url = "https://archive.org/download/bub_gb_1QKH9Ow6SXkC/bub_gb_1QKH9Ow6SXkC.pdf"
+size = 366206763
+sha256 = "37a32e8b28d9c4003f8662217f734692f46421ab8b2ef82751a0ddcd7f3b53c3"
+licence = "published 1859; http://creativecommons.org/publicdomain/mark/1.0/"
+note = "Sant' Albino, Vittorio di, Gran dizionario piemontese-italiano, compilato dal cavaliere Vittorio di Sant' Albino"
+
+[[file]]
+path = "data/sources/glossaries/pms/raw/bub_gb_1QKH9Ow6SXkC_djvu.txt"
+url = "https://archive.org/download/bub_gb_1QKH9Ow6SXkC/bub_gb_1QKH9Ow6SXkC_djvu.txt"
+size = 8742536
+sha256 = "34572cc99d52a74490bdf6e43a6826df808058b5ad5bc63ade8e30c414f2e38a"
+licence = "published 1859; http://creativecommons.org/publicdomain/mark/1.0/"
+note = "Sant' Albino, Vittorio di, Gran dizionario piemontese-italiano, compilato dal cavaliere Vittorio di Sant' Albino"
+
+[[file]]
+path = "data/sources/glossaries/pms/raw/grandizionariopi00sant.pdf"
+url = "https://archive.org/download/grandizionariopi00sant/grandizionariopi00sant.pdf"
+size = 202032739
+sha256 = "58fe454928b0a9b6eb8e4674823809f9556fb69483ce70702530802e4a907551"
+licence = "published 1859; no rights statement on archive.org"
+note = "Sant 'Albino, Vittorio Righini di, 1787-1865; Cavagna Sangiuliani di Gualdana, Antonio, conte, 1843-1913, former owner. IU-R, Gran dizionario piemontese-italiano"
+
+[[file]]
+path = "data/sources/glossaries/pms/raw/grandizionariopi00sant_djvu.txt"
+url = "https://archive.org/download/grandizionariopi00sant/grandizionariopi00sant_djvu.txt"
+size = 8651992
+sha256 = "eb56f8d9e6ecf0275622bf87d2aa36c8cd19f5e9893db22fbe17e6394e3c84dd"
+licence = "published 1859; no rights statement on archive.org"
+note = "Sant 'Albino, Vittorio Righini di, 1787-1865; Cavagna Sangiuliani di Gualdana, Antonio, conte, 1843-1913, former owner. IU-R, Gran dizionario piemontese-italiano"
+
+[[file]]
+path = "data/sources/glossaries/rgn/raw/vocabolarioroma01mattgoog_abbyy.gz"
+url = "https://archive.org/download/vocabolarioroma01mattgoog/vocabolarioroma01mattgoog_abbyy.gz"
+size = 70448365
+sha256 = "0be0f1fde9287a0690e4e8dbd4a232a28fb2a80cf10761b988a0d306ca6f7a6c"
+licence = "published 1879; NOT_IN_COPYRIGHT"
+note = "Mattioli, Antonio, Vocabolario romagnolo-italiano. Con appendice"
+
+[[file]]
+path = "data/sources/glossaries/rgn/raw/vocabolarioromag00morruoft_djvu.txt"
+url = "https://archive.org/download/vocabolarioromag00morruoft/vocabolarioromag00morruoft_djvu.txt"
+size = 5312100
+sha256 = "29889604d60b53c22ae6661ef015b2768a13a5a7fdfd18d2ed8a4c362e01d9a0"
+licence = "published 1840; NOT_IN_COPYRIGHT"
+note = "Morri, Antonio, Vocabolario romagnolo-italiano"
+
+[[file]]
+path = "data/sources/glossaries/ruo/raw/byhan_1899_jahresbericht-6.pdf"
+url = "https://archive.org/download/jahresberichtde24unkngoog/jahresberichtde24unkngoog.pdf"
+size = 10512996
+sha256 = "7b333a2c32cc9d115d1514b2078f2db5be4ac9c8d3699ba9b32596cde3f849dc"
+licence = "published 1894; NOT_IN_COPYRIGHT"
+note = "Universität Leipzig (1409-1953). Institut für Rumänische Sprache, Jahresbericht des Instituts für Rumänische Sprache (Rumänisches Seminar) zu Leipzig"
+
+[[file]]
+path = "data/sources/glossaries/ruo/raw/maiorescu_1900_itinerar-in-istria.pdf"
+url = "https://archive.org/download/ioan-maiorescu-itinerar-in-istria-1900/Ioan%20Maiorescu%20-%20Itinerar%20in%20Istria%20-%201900.pdf"
+size = 14137992
+sha256 = "fdbcb287fe824788ace579539e219972f3c2fac033a610dbbc98a5befec8b861"
+licence = "date not given; no rights statement on archive.org"
+note = "Ioan Maiorescu Itinerar In Istria 1900"
+
+[[file]]
+path = "data/sources/glossaries/ruo/raw/popovici_1909_dialectele-romane-din-istria-2.pdf"
+url = "https://archive.org/download/josif-popovici-dialectele-romane-in-istria-partea-1-1909/Josif%20Popovici%20-%20Dialectele%20romane%20in%20Istria%20partea%201%20-%201909.pdf"
+size = 18934473
+sha256 = "fa51b63d1a82726cb47de81aefd7555266781f1aec4ae56fcfd93ad7260117fa"
+licence = "date not given; no rights statement on archive.org"
+note = "Josif Popovici Dialectele Romane In Istria Partea 1 si 2, 1909"
+
+[[file]]
+path = "data/sources/glossaries/ruo/raw/puscariu_1929_studii-istroromane-3.pdf"
+url = "https://archive.org/download/sextil-puscariu-studii-istroromane-vol.-3-1929/Sextil%20Puscariu%20-%20Studii%20istroromane%20vol.%203%20-%201929.pdf"
+size = 39895140
+sha256 = "10a204c0230c950ced29b20713748b15fa5a2e72337680d1cbb2b1b932d56533"
+licence = "date not given; no rights statement on archive.org"
+note = "Sextil Puscariu Studii Istroromane Vol. 3 1929"
+
+[[file]]
+path = "data/sources/glossaries/rup/raw/cunia_dictsiunar_2008.pdf"
+url = "https://archive.org/download/DictsiunarArmanescuDec2008/DictsiunarArmanescu_Dec2008.pdf"
+size = 32920979
+sha256 = "d9bed901e4afc72110a4e86ff38ccf06df71fac26b16b48ccc8bfab8e0c4702c"
+licence = "published 2008-12; http://creativecommons.org/publicdomain/zero/1.0/"
+note = "Tiberius Cunia, Dictsiunar a Limbãljei Armãneascã"
+
+[[file]]
+path = "data/sources/glossaries/rup/raw/dalametra_1906_dicionarmacedor00unkngoog.pdf"
+url = "https://archive.org/download/dicionarmacedor00unkngoog/dicionarmacedor00unkngoog.pdf"
+size = 8735134
+sha256 = "8e2ce763da8e881edb95c7d34a4006eb58456a15317976fb982edd70222dc6c0"
+licence = "published 1906; NOT_IN_COPYRIGHT"
+note = "I. Dalametra, Ștefan Mihăileanu, Academia Română, Academia Română, Dicționar macedo-român"
+
+[[file]]
+path = "data/sources/glossaries/rup/raw/papahagi_1905_basmearomneiglo00papagoog.pdf"
+url = "https://archive.org/download/basmearomneiglo00papagoog/basmearomneiglo00papagoog.pdf"
+size = 23518530
+sha256 = "9ce563ec12127df7c0e4bb7b6eda11eaa05fc9d23da7e12332c6e800dae4ae9d"
+licence = "published 1905; NOT_IN_COPYRIGHT"
+note = "Papahagi, Pericle, Basme aromâne și glosar"
+
+[[file]]
+path = "data/sources/glossaries/ruq/raw/capidan_1935_archiveorg_chocr.html.gz"
+url = "https://archive.org/download/capidan-theodor-dictionar-meglenoroman-scan_202508/Capidan%2C%20Theodor%20-%20Dictionar%20meglenoroman%20-%20scan_chocr.html.gz"
+size = 11748378
+sha256 = "244807551ee0013cacff18008e9cd41af3cdd4be821115574218626c4c89991e"
+licence = "published 1983-12-13; no rights statement on archive.org"
+note = "Capidan, Theodor Dictionar Meglenoroman Scan"
+
+[[file]]
+path = "data/sources/glossaries/ruq/raw/capidan_1935_archiveorg_scan.pdf"
+url = "https://archive.org/download/capidan-theodor-dictionar-meglenoroman-scan_202508/Capidan%2C%20Theodor%20-%20Dictionar%20meglenoroman%20-%20scan.pdf"
+size = 14692837
+sha256 = "5988d8ed00ed3ecb6f9ddfa0b9ad50b742ec51b43914b7e42411b230c5917204"
+licence = "published 1983-12-13; no rights statement on archive.org"
+note = "Capidan, Theodor Dictionar Meglenoroman Scan"
+
+[[file]]
+path = "data/sources/glossaries/sc/raw/vocabolariosardo00spanuoft_djvu.txt"
+url = "https://archive.org/download/vocabolariosardo00spanuoft/vocabolariosardo00spanuoft_djvu.txt"
+size = 5112234
+sha256 = "788ce299529e9eb34300ba0cbdb8e2e57337d35274579868f858f9a7056322a7"
+licence = "published 1851-52; NOT_IN_COPYRIGHT"
+note = "Spano, Giovanni, 1813-1878, Vocabolario sardo-italiano e italiano-sardo"
+
+[[file]]
+path = "data/sources/pdf/ricaud_mon_canepin_de_galo.pdf"
+url = "https://archive.org/download/galocanepin/galo%20canepin.pdf"
+size = 1813118
+sha256 = "c957acb9f33afd19eaee6b42edf915400f9eadcce1d88a56123745192b5cf4d9"
+licence = "no licence; uploaded to archive.org by a third party; not republished"
+note = "Ricaud, Mon canepin de galo, v3.2, 2011"
+
+[[file]]
+path = "data/sources/pdf/tiot_diqchionnaire_chti.pdf"
+url = "https://web.archive.org/web/2012id_/http://www.paroledechti.com/dico.pdf"
+size = 4703421
+sha256 = "d8c384b8cd0c4cca78ee4fb4c35461204e29f24914ba440a570ec64c35b605cd"
+licence = "no licence stated; not republished"
+note = "Tiot diqchionnaire chti, paroledechti.com, 2003, via the Wayback Machine"
+
+
+# ---- Kaikki extracts: they change every week
+
+[[file]]
+path = "data/words/kaikki-ast.jsonl"
+url = "https://kaikki.org/dictionary/Asturian/kaikki.org-dictionary-Asturian.jsonl"
+stable = false
+size = 47602875
+sha256 = "7d821fbf5963d278958ab043789a564f2845a162047079e7adb7244d24495f31"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Asturian entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+[[file]]
+path = "data/words/kaikki-egl.jsonl"
+url = "https://kaikki.org/dictionary/Emilian/kaikki.org-dictionary-Emilian.jsonl"
+stable = false
+size = 5674735
+sha256 = "e4a67f7ac23f33d8d0c4322532b76a7a24950afa399eae62a603d000172c2e50"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Emilian entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+[[file]]
+path = "data/words/kaikki-gallo.jsonl"
+url = "https://kaikki.org/dictionary/Gallo/kaikki.org-dictionary-Gallo.jsonl"
+stable = false
+size = 11357811
+sha256 = "6086eaef95c1224c73b1a49b631e82e2c4920d8aaa3c284bcf87a8033ccd5009"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Gallo entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+[[file]]
+path = "data/words/kaikki-lld.jsonl"
+url = "https://kaikki.org/dictionary/Ladin/kaikki.org-dictionary-Ladin.jsonl"
+stable = false
+size = 7258549
+sha256 = "4844d79a486ab564e5c1b5c12015e09951cedb0c6f9daaab026ae3da0c6ef2bd"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Ladin entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+[[file]]
+path = "data/words/kaikki-nrf.jsonl"
+url = "https://kaikki.org/dictionary/Norman/kaikki.org-dictionary-Norman.jsonl"
+stable = false
+size = 15466134
+sha256 = "ef49fba2c3cd7f3d707c6333407058640f88ecfa4d7465e3521fe1988f211242"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Norman entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+[[file]]
+path = "data/words/kaikki-oc.jsonl"
+url = "https://kaikki.org/dictionary/Occitan/kaikki.org-dictionary-Occitan.jsonl"
+stable = false
+size = 31652206
+sha256 = "1c319beef4e2478311d96acaab4d6d122d336e9a976c867ac7a71431a3037e12"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Occitan entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+[[file]]
+path = "data/words/kaikki-rup.jsonl"
+url = "https://kaikki.org/dictionary/Aromanian/kaikki.org-dictionary-Aromanian.jsonl"
+stable = false
+size = 6123652
+sha256 = "867cca0d563ed212ea107a63de9114f985d59f817d7d7a04c7cd5031268b4ea6"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Aromanian entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+[[file]]
+path = "data/words/kaikki-scn.jsonl"
+url = "https://kaikki.org/dictionary/Sicilian/kaikki.org-dictionary-Sicilian.jsonl"
+stable = false
+size = 6244191
+sha256 = "dafc5521e47dfe89387dee8dfcc23f6d7c2247808df69d21c91b47961641f6d5"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Sicilian entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+[[file]]
+path = "data/words/kaikki-vec.jsonl"
+url = "https://kaikki.org/dictionary/Venetan/kaikki.org-dictionary-Venetan.jsonl"
+stable = false
+size = 7886104
+sha256 = "ea5a8196144b6ef8be2f994274f1f4c734a8f8f168b0815553a2f577a63dd512"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+note = "Kaikki extract of the Venetan entries of the English Wiktionary; Kaikki rebuilds it every week"
+
+
+# ---- Other downloads, pinned
+
+[[file]]
+path = "data/bible/lects/raw/cieldoc_libr0066_mistral_genesi.pdf"
+url = "https://biblio.cieldoc.com/libre/integral/libr0066.pdf"
+size = 359961
+sha256 = "36d8f990f03798507dc1514ec6f32cbb533b8abd8fae7fe20bca27167ea71034"
+licence = "CIEL d'Oc e-text: 'Tous droits réservés'; not republished"
+note = "Mistral, Genèsi (1910), CIEL d'Oc typed e-text"
+
+[[file]]
+path = "data/bible/lects/raw/commons_El_Evangelio_segun_San_Mateo_traducido_al_dialecto_gallego.pdf"
+url = "https://upload.wikimedia.org/wikipedia/commons/a/a6/El_Evangelio_segun_San_Mateo_traducido_al_dialecto_gallego.pdf"
+size = 16061824
+sha256 = "518929815e9e7421895e7b89a472ee8fb62b2297aa57a960eb48ee40e5dd2a72"
+licence = "public domain (Wikimedia Commons)"
+note = "Galician Matthew, London 1861"
+
+[[file]]
+path = "data/bible/lects/raw/commons_Revista_de_educacao_e_ensino_Vol_9.pdf"
+url = "https://upload.wikimedia.org/wikipedia/commons/f/f8/Revista_de_educa%C3%A7%C3%A3o_e_ensino_%28Vol._9%29.pdf"
+size = 33062327
+sha256 = "45dc8d4888254db7f6374560824af212e3c4356768998a7844d522062284a5ea"
+licence = "public domain (Wikimedia Commons)"
+note = "Revista de Educação e Ensino, vol. 9 (1894)"
+
+[[file]]
+path = "data/bible/lects/raw/tessdata/por.traineddata"
+url = "https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/e12c65a915945e4c28e237a9b52bc4a8f39a0cec/por.traineddata"
+size = 8159939
+sha256 = "711de9dbb8052067bd42f16b9119967f30bada80d57e2ef24f65d09f531adb04"
+licence = "Apache-2.0 (Tesseract)"
+note = "Tesseract model, tessdata_best"
+
+[[file]]
+path = "data/sources/glossaries/gsc/raw/apertium-oci-fra.oci-fra.dix"
+url = "https://raw.githubusercontent.com/apertium/apertium-oci-fra/139f53fc31a7f919b97e0bae96c204d3f5a94b77/apertium-oci-fra.oci-fra.dix"
+size = 12917268
+sha256 = "f436ad9673f780437a3e6b455c2dbfd362ff0b288419cbf3102c9ec28e435886"
+licence = "GPL-3.0 (Apertium)"
+note = "Apertium Occitan-French bilingual dictionary"
+
+[[file]]
+path = "data/sources/glossaries/gsc/raw/apertium-oci.oci.metadix"
+url = "https://raw.githubusercontent.com/apertium/apertium-oci/196df61131076aac05adf872ea2ff2d9cbae954c/apertium-oci.oci.metadix"
+size = 22836661
+sha256 = "cb29a7974581fbe02dd007351fc52ba744bfc8aff9e15aa59c87baaf9a9f1b0c"
+licence = "GPL-3.0 (Apertium)"
+note = "Apertium Occitan monolingual dictionary"
+
+[[file]]
+path = "data/sources/glossaries/north-italy-tools/tessdata/ita.traineddata"
+url = "https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/e12c65a915945e4c28e237a9b52bc4a8f39a0cec/ita.traineddata"
+size = 8863635
+sha256 = "8df9c89176fb93f56bf4b2d4ede04c01c1f31d4b7697fbd76cc336df700f3f38"
+licence = "Apache-2.0 (Tesseract)"
+note = "Tesseract model, tessdata_best"
+
+[[file]]
+path = "data/sources/glossaries/nrf/pending-licence/raw/vocab.txt"
+url = "https://members.societe-jersiaise.org/sdllj/vocab.txt"
+stable = false
+size = 158284
+sha256 = "486f20c9aeaa7186f82a0bfc7b562c15ce771b8d3ae1bdfac05840eb8a9ef27e"
+licence = "Société Jersiaise: no licence stated; not republished"
+note = "Vocabulaithe Jèrriais-Angliais, Section de la langue jèrriaise"
+
+[[file]]
+path = "data/sources/glossaries/sc/raw/apertium-cat-srd.cat-srd.dix"
+url = "https://raw.githubusercontent.com/apertium/apertium-cat-srd/e2cf0f1059eef82fc86b561635722f89f6c7ed40/apertium-cat-srd.cat-srd.dix"
+size = 6858103
+sha256 = "5a48a43ceeb9beccf57c21c40c803eee24a9771228839399c78c6ea0bab27f7d"
+licence = "GPL-3.0 (Apertium)"
+note = "Apertium Catalan-Sardinian bilingual dictionary"
+
+[[file]]
+path = "data/sources/glossaries/sc/raw/apertium-srd-ita.srd-ita.dix"
+url = "https://raw.githubusercontent.com/apertium/apertium-srd-ita/376bdb521081bc5157d58a50d6225af6c7df877b/apertium-srd-ita.srd-ita.dix"
+size = 7943879
+sha256 = "3dc187daf6869872aa3ebff3ddc3ef7831258a440c92a2dd91277815e27403bf"
+licence = "GPL-3.0 (Apertium)"
+note = "Apertium Sardinian-Italian bilingual dictionary"
+
+[[file]]
+path = "data/sources/pdf/CCF00762009_00085.pdf"
+url = "https://content.verbix.com/scanned/CCF00762009_00085.pdf"
+size = 4940777
+sha256 = "f002723b928831b4d6450564edc7ea726f9a06eb04458488ef6b26ff09642add"
+licence = "photocopied pages of books in copyright, hosted by Verbix; not republished"
+note = "scanned pages Verbix cites for Istro-Romanian"
+
+[[file]]
+path = "data/sources/pdf/CCF00762009_00086.pdf"
+url = "https://content.verbix.com/scanned/CCF00762009_00086.pdf"
+size = 19731303
+sha256 = "bbf4b079ee387e58fc8076feffc2f41ddc8e22bb84f9aba50314432c604c0cf2"
+licence = "photocopied pages of books in copyright, hosted by Verbix; not republished"
+note = "scanned pages Verbix cites for Istro-Romanian"
+
+[[file]]
+path = "data/sources/pdf/oscec-diccionario-castellano-extremec3b1o-ismael-carmona-garcc3ada.pdf"
+url = "https://oscecestremaura.wordpress.com/wp-content/uploads/2018/03/oscec-diccionario-castellano-extremec3b1o-ismael-carmona-garcc3ada.pdf"
+size = 3776279
+sha256 = "52488cda50d375eb8b54052a42603e41a07a8f074dadd1bb3706608756996c2f"
+licence = "all rights reserved (Ismael Carmona García); fetched from OSCEC, not republished"
+note = "Carmona García, Diccionario de equivalencias castellano-estremeñu, 2017"
+
+[[file]]
+path = "data/sources/pdf/stich_2001_these_francoprovencal.pdf"
+url = "https://www.arpitania.eu/aca/documents/These_Stich_2001.pdf"
+size = 5647820
+sha256 = "8c257c8669e19600695262b169c65b8443b8d84c94b967fbe7596e6e2c0ceb70"
+licence = "no licence stated; fetched from the author's site, not republished"
+note = "Stich, Francoprovençal: proposition d'une orthographe supra-dialectale standardisée, thèse Paris V, 2001"
+
+[[file]]
+path = "data/sources/ruo_verbix/CCF00762009_00085.pdf"
+url = "https://content.verbix.com/scanned/CCF00762009_00085.pdf"
+size = 4940777
+sha256 = "f002723b928831b4d6450564edc7ea726f9a06eb04458488ef6b26ff09642add"
+licence = "photocopied pages of books in copyright, hosted by Verbix; not republished"
+note = "scanned pages Verbix cites for Istro-Romanian"
+
+[[file]]
+path = "data/sources/ruo_verbix/CCF00762009_00086.pdf"
+url = "https://content.verbix.com/scanned/CCF00762009_00086.pdf"
+size = 19731303
+sha256 = "bbf4b079ee387e58fc8076feffc2f41ddc8e22bb84f9aba50314432c604c0cf2"
+licence = "photocopied pages of books in copyright, hosted by Verbix; not republished"
+note = "scanned pages Verbix cites for Istro-Romanian"
+
+
+# ---- Page images archive.org renders one by one
+
+[[pages]]
+dir = "data/bible/lects/raw/ia_paraboledelenfan00favr_pages"
+name = "leaf_{n}.jpg"
+url = "https://archive.org/download/paraboledelenfan00favr/page/n{n}.jpg"
+n = [81, 82, 83, 157, 158, 159]
+licence = "public domain (19th-century print)"
+
+[[pages]]
+dir = "data/sources/glossaries/co/raw/filippi-1906-lexique-pages"
+name = "n{n}.jpg"
+url = "https://archive.org/download/recueildesentenc00filiuoft/page/n{n}.jpg"
+n = [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 60]
+licence = "public domain (published 1906)"
+
+[[pages]]
+dir = "data/sources/glossaries/mwl/raw/leite-1901-vol2-vocabulary-pages"
+name = "n{n}.jpg"
+url = "https://archive.org/download/estudosdephilolo02vascuoft/page/n{n}.jpg"
+n = [158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226]
+licence = "public domain (Leite de Vasconcellos, 1901; d. 1941)"
+
+[[pages]]
+dir = "data/sources/glossaries/pms/raw/bub_gb_1QKH9Ow6SXkC_pages"
+name = "{n:04d}.jpg"
+url = "https://archive.org/download/bub_gb_1QKH9Ow6SXkC/page/n{n}.jpg"
+n = [40, 70, 100, 130, 160, 190, 220, 250, 280, 310, 340, 370, 400, 430, 460, 490, 520, 550, 580, 610, 640, 670, 700, 730, 760, 790, 820, 850, 880, 910, 940, 970, 1000, 1030, 1060, 1090, 1120, 1150, 1180, 1210]
+licence = "public domain (19th-century print, Google Books scan)"
+
+
+# ---- Git checkouts
+
+[[git]]
+path = "data/sources/glossaries/lad/raw/kantoniko-ladino-diksionaryo-data"
+url = "https://github.com/kantoniko/ladino-diksionaryo-data.git"
+rev = "671c94835ba4507ad21dc054f718bb6acb7e1801"
+licence = "CC BY-SA 4.0"
+
+[[git]]
+path = "vendor/apertium-arg"
+url = "https://github.com/apertium/apertium-arg.git"
+rev = "84c79d40d558fc1e200899b8660ba159016cc484"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/apertium-ast"
+url = "https://github.com/apertium/apertium-ast.git"
+rev = "7731b213f45e914a977089ffcc7b169d3b61f936"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/apertium-fra-cat"
+url = "https://github.com/apertium/apertium-fra-cat.git"
+rev = "b0a2f93037983d487b064542c08aef96450d4bb3"
+licence = "GPL-2.0"
+
+[[git]]
+path = "vendor/apertium-glg"
+url = "https://github.com/apertium/apertium-glg.git"
+rev = "1b7b55b732d849d66af02330cabe782cf2eaf610"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/apertium-ita-srd"
+url = "https://github.com/apertium/apertium-ita-srd.git"
+rev = "b4310c341e97ee4bff8e119bc7fc0a35af0f26da"
+licence = "no licence file (Apertium)"
+
+[[git]]
+path = "vendor/apertium-mwl"
+url = "https://github.com/apertium/apertium-mwl.git"
+rev = "8188b909dc05869f28a0aa9054f08ea7ce112c04"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/apertium-nap"
+url = "https://github.com/apertium/apertium-nap.git"
+rev = "a61b89d2f4e6b087c706f2a3b46d7a49aebe2d51"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/apertium-oci"
+url = "https://github.com/apertium/apertium-oci.git"
+rev = "196df61131076aac05adf872ea2ff2d9cbae954c"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/apertium-oci-spa"
+url = "https://github.com/apertium/apertium-oci-spa.git"
+rev = "8c4fa3a36b97041c5d5b27729f6cdb066a64e267"
+licence = "GPL-2.0"
+
+[[git]]
+path = "vendor/apertium-scn"
+url = "https://github.com/apertium/apertium-scn.git"
+rev = "b64207bc42e0e7e7d5fbc5abe53ed6d88c8baeae"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/apertium-spa-arg"
+url = "https://github.com/apertium/apertium-spa-arg.git"
+rev = "d0ac7d372b5e6b7edc352686e280acdbbdd587a6"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/apertium-spa-ast"
+url = "https://github.com/apertium/apertium-spa-ast.git"
+rev = "d729e5d604e56a06b3cfe2303a6c92be5b5327cd"
+licence = "no licence file (Apertium)"
+
+[[git]]
+path = "vendor/apertium-srd"
+url = "https://github.com/apertium/apertium-srd.git"
+rev = "255e988c80a74d9ec2c9c3c18b3c1b09a9e958cc"
+licence = "GPL-3.0"
+
+[[git]]
+path = "vendor/dicziunari"
+url = "https://github.com/farscrl/dicziunari.git"
+rev = "7f0fd8c1646a0096f200f3833fdaac91f0632069"
+licence = "MIT (app code); dictionary data from Pledari Grond"
+
+[[git]]
+path = "vendor/recursos_es-ext"
+url = "https://github.com/juanro49/recursos_es-ext.git"
+rev = "57082335f75f5aefc690caa72dde4035d87ac801"
+licence = "CC0-1.0"
+
+
+# ---- Rebuilt by a script
+
+[[derived]]
+path = "data/bible/lects/oc-provencal.tsv"
+size = 209605
+command = ".venv/bin/python3 scripts/bible_lects/fetch_west_balkan.py oc-provencal"
+licence = "Mistral 1910 is public domain, but this is the CIEL d'Oc e-text, 'Tous droits réservés'; not republished"
+
+[[derived]]
+path = "data/sources/glossaries/nrf/pending-licence/sdllj-vocabulaithe-jerriais.tsv"
+size = 189018
+command = ".venv/bin/python3 data/sources/glossaries/nrf/pending-licence/parse_sdllj-vocabulaithe-jerriais.py"
+licence = "Société Jersiaise: no licence stated; not republished"
+
+[[derived]]
+path = "data/sources/kaikki_full/ca.jsonl"
+size = 8132651
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py ca"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/es.jsonl"
+size = 26110163
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py es"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/es_forms.tsv"
+size = 40123491
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py --forms es"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/fr.jsonl"
+size = 17553511
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py fr"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/fr_forms.tsv"
+size = 14589638
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py --forms fr"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/it.jsonl"
+size = 24872065
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py it"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/it_forms.tsv"
+size = 43159707
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py --forms it"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/pt.jsonl"
+size = 17703094
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py pt"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/pt_forms.tsv"
+size = 16290598
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py --forms pt"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/ro.jsonl"
+size = 47588168
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py ro"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/kaikki_full/ro_forms.tsv"
+size = 15283921
+command = ".venv/bin/python3 scripts/fetch_kaikki_full.py --forms ro"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/sources/picard_diseux/"
+command = ".venv/bin/python3 scripts/audit_grid_sources.py fetch"
+licence = "Chés Diseux d'Achteure word list: no licence stated; not republished"
+
+[[derived]]
+path = "data/words/ext_words.json"
+size = 3269711
+command = ".venv/bin/python3 scripts/build_ext_corpus.py"
+licence = "two thirds of its entries come from the OSCEC dictionary (Carmona García 2017), all rights reserved; not republished"
+
+[[derived]]
+path = "data/words/kaikki-ca.jsonl"
+size = 40751053
+command = ".venv/bin/python3 scripts/fetch_kaikki_verbs.py ca"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/words/kaikki-es.jsonl"
+size = 267017491
+command = ".venv/bin/python3 scripts/fetch_kaikki_verbs.py es"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/words/kaikki-fr.jsonl"
+size = 100195458
+command = ".venv/bin/python3 scripts/fetch_kaikki_verbs.py fr"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/words/kaikki-gl.jsonl"
+size = 51443609
+command = ".venv/bin/python3 scripts/fetch_kaikki_verbs.py gl"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/words/kaikki-it.jsonl"
+size = 185837703
+command = ".venv/bin/python3 scripts/fetch_kaikki_verbs.py it"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/words/kaikki-pt.jsonl"
+size = 84336420
+command = ".venv/bin/python3 scripts/fetch_kaikki_verbs.py pt"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "data/words/kaikki-ro.jsonl"
+size = 43352708
+command = ".venv/bin/python3 scripts/fetch_kaikki_verbs.py ro"
+licence = "CC BY-SA 4.0 (Wiktionary via Kaikki)"
+
+[[derived]]
+path = "xmls/incubator/eglwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/emlwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/frpwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/furwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/ladwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/lijwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/mwlwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/nrfwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/nrmwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/pcdwiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+[[derived]]
+path = "xmls/incubator/pmswiktionary-incubator-pages-articles.xml"
+command = ".venv/bin/python3 scripts/extract_incubator_wt.py"
+licence = "CC BY-SA 4.0 (Wikimedia Incubator)"
+
+
+# ---- Not published: kept by whoever has them
+
+[[local]]
+path = "data/bible/lects/raw/occitanica_214_mistral_genesi_1910.pdf"
+reason = "86 MB of page images with no stable download URL recorded (Licence Ouverte)"
+obtain = "https://www.occitanica.eu/items/show/214"
+
+[[local]]
+path = "data/sources/apprendeneolatino/"
+reason = "apprendeneolatino.com pages: all rights with their authors"
+obtain = ".venv/bin/python3 scripts/scrape_apprendeneolatino.py fetches them again."
+
+[[local]]
+path = "data/sources/chumetiv/"
+reason = "a saved ChuMétiv search page; Chubri forbids reproduction without written permission"
+obtain = "Not read by any script; https://www.chubri-galo.bzh/"
+
+[[local]]
+path = "data/sources/glossaries/ist/raw/before_rerun/dallazonca_1978_reocr_ita_words.tsv.gz"
+reason = "an earlier run of the word-level OCR of the whole 1978 volume, the editor's matter included"
+obtain = "data/sources/glossaries/ist/ocr_dallazonca.py"
+
+[[local]]
+path = "data/sources/glossaries/ist/raw/dallazonca_1978_reocr_ita_words.tsv.gz"
+reason = "word-level OCR of the whole 1978 volume, including the editor's introduction and notes, which are in copyright"
+obtain = "data/sources/glossaries/ist/ocr_dallazonca.py rebuilds it from the archive.org scan."
+
+[[local]]
+path = "data/sources/glossaries/rup/cunia-2008-fr.tsv"
+reason = "French glosses Cunia copied from T. Papahagi's dictionary (Papahagi d. 1977, in copyright to 2047)"
+obtain = "data/sources/glossaries/rup/parse_cunia-2008.py rebuilds it from the archive.org PDF."
+
+[[local]]
+path = "data/sources/glossaries/rup/cunia-2008-ro.tsv"
+reason = "Romanian glosses Cunia copied from T. Papahagi's dictionary (Papahagi d. 1977, in copyright to 2047)"
+obtain = "data/sources/glossaries/rup/parse_cunia-2008.py rebuilds it from the archive.org PDF."
+
+[[local]]
+path = "data/sources/glossaries/rup/cunia-2008.doubtful.tsv"
+reason = "mixes in Romanian and French glosses Cunia copied from T. Papahagi's dictionary (in copyright to 2047)"
+obtain = "data/sources/glossaries/rup/parse_cunia-2008.py rebuilds it from the archive.org PDF."
+
+[[local]]
+path = "data/sources/pdf/Cantemir_Thesis_Final_Draft-converted.pdf"
+reason = "Maria Cantemir, Ohio State undergraduate thesis, 2020: no licence stated"
+obtain = "http://hdl.handle.net/1811/92144"
+
+[[local]]
+path = "data/sources/pdf/Il Dalmatico.pdf"
+reason = "Aldo Duro's Italian translation of Bartoli 1906 (2000) is in copyright; the archive.org Public Domain Mark was set by the uploader"
+obtain = "Not read by any script; archive.org item il-dalmatico_202207."
+
+[[local]]
+path = "data/sources/pdf/dawson_smirnova_2020_dffp_extract.pdf"
+reason = "Agence régionale de la langue picarde, 2020: all rights reserved"
+obtain = "Dawson and Smirnova, Dictionnaire fondamental français-picard (ARLP, 2020)."
+
+[[local]]
+path = "data/sources/pdf/dawson_smirnova_2020_dffp_extract.txt"
+reason = "text of the file above: all rights reserved"
+obtain = "pdftotext of the PDF."
+
+[[local]]
+path = "data/sources/pdf/ferreira_2004_dicionario_mirandes_portugues.pdf"
+reason = "A. Ferreira and J. P. Cardona Ferreira, edition 0.1, 2004: no licence stated"
+obtain = "No public URL found."
+
+[[local]]
+path = "data/sources/pdf/ferreira_2004_dicionario_mirandes_portugues.txt"
+reason = "text of the file above: no licence stated"
+obtain = "pdftotext of the PDF."
+
+[[local]]
+path = "data/sources/pdf/motier_galo_francaez_2019.pdf"
+reason = "Atelier de gallo, Résidence La Perrière, Héric, 2019: no licence, only 'Offert par l'Atelier de Gallo'"
+obtain = "Web version: https://web.archive.org/web/2024/https://maisonderetraiteheric.fr/animations/dictionnaire-motier-2/"
+
+[[local]]
+path = "data/sources/pdf/motier_galo_francaez_2019.txt"
+reason = "text of the file above: no licence"
+obtain = "pdftotext of the PDF."
+
+[[local]]
+path = "data/sources/pdf/ricaud_mon_canepin_de_galo.txt"
+reason = "text of Ricaud's Mon canepin de galo (2011): no licence; compiled partly from dictionaries in copyright"
+obtain = "pdftotext of the PDF, which sources.toml fetches from archive.org."
+
+[[local]]
+path = "data/sources/pdf/stich_2001_these_francoprovencal.txt"
+reason = "text of Stich's 2001 thesis: no licence stated"
+obtain = "pdftotext of the PDF, which sources.toml fetches from arpitania.eu."
+
+[[local]]
+path = "data/sources/pdf/tiot_diqchionnaire_chti.raw.txt"
+reason = "text of the Tiot diqchionnaire chti (paroledechti.com, 2003): no licence stated"
+obtain = "pdftotext of the PDF, which sources.toml fetches from the Wayback Machine."
+
+[[local]]
+path = "data/sources/pdf/tiot_diqchionnaire_chti.txt"
+reason = "text of the Tiot diqchionnaire chti (paroledechti.com, 2003): no licence stated"
+obtain = "pdftotext -layout of the PDF."

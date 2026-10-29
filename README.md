@@ -19,9 +19,12 @@ Python prep (G2P + repair)  →  JSON candidates  →  Rust SA  →  JSON lexico
 ```
 
 The Python concern boundaries are documented in
-[`docs/architecture.md`](docs/architecture.md). Local PDFs and raw source
-snapshots are catalogued in [`docs/sources_manifest.md`](docs/sources_manifest.md)
-under `data/sources/`; generated word tables remain separate.
+[`docs/architecture.md`](docs/architecture.md). The sources are in git under
+`data/sources/` and catalogued in [`docs/sources_manifest.md`](docs/sources_manifest.md);
+the dumps and scans that are not are pinned in
+[`data/sources/sources.toml`](data/sources/sources.toml) and downloaded by
+`scripts/fetch_sources.py`. [`CONTRIBUTING.md`](CONTRIBUTING.md) says how to
+set up and how to add a source.
 
 Python segments IPA with PanPhon and **repairs before scoring** (glide
 formation on both sides of a vowel, so `ai`/`eu` are 1σ; identical-vowel
@@ -36,6 +39,7 @@ is a hard shortlist, so Rust SA cannot buy a shorter word with extra sounds.
 ## Quick Start
 
 ```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python3 scripts/run_vulgultra.py --iterations 2000000
 ```
 
@@ -137,7 +141,8 @@ site/                  lesson site skeleton; built by scripts/build_site.py (sit
 docs/grammar/grammar.tex
 docs/eval/romance_scorecard.md      # generated; run is |L| daughters
 data/words/             per-lect corpora
-xmls/                   Wiktionary / Wikipedia dumps (gitignored)
+data/sources/           glossaries, OCR, extracts, notes; sources.toml pins the downloads
+xmls/                   Wiktionary / Wikipedia dumps (downloaded: scripts/fetch_sources.py)
 ```
 
 ## Source lects

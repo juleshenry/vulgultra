@@ -1,8 +1,12 @@
-# Local source manifest
+# Source manifest
 
-Large local inputs live under `data/sources/` rather than the repository root.
-They are ignored binary/snapshot inputs, while the derived word tables retain
-source tags and the scripts below make the transformations reproducible.
+Source inputs live under `data/sources/`, and most of them are in git. A file
+that is too large, can be downloaded again from a pinned URL, or may not be
+republished is listed instead in [`data/sources/sources.toml`](../data/sources/sources.toml),
+with its URL, checksum and licence; `scripts/fetch_sources.py fetch` brings it
+back. [`data/sources/LICENSES.md`](../data/sources/LICENSES.md) gives the
+licence of each folder. The derived word tables retain source tags and the
+scripts below make the transformations reproducible.
 
 | Path | Role | Consumer | Provenance |
 |---|---|---|---|

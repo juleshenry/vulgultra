@@ -1,0 +1,9 @@
+# Python packages the pipeline and the source scripts import.
+#   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# Also used, outside Python: Tesseract 5 and Poppler's pdftotext for the OCR
+# scripts, and a Rust toolchain for vulgultra-cli/.
+epitran==1.35.2
+numpy==2.5.3
+ortools==9.15.6755
+panphon==0.22.2
+PyYAML==6.0.3
