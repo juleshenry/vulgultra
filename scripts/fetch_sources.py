@@ -216,7 +216,7 @@ def status(manifest: dict, patterns: list[str], verify: bool) -> None:
             note("present" if (ROOT / entry["path"]).exists() else "by hand", entry["path"])
     print("\n".join(missing))
     print(", ".join(f"{n} {state}" for state, n in sorted(counts.items())),
-          f"({human(missing_size)} to download)" if missing_size else "")
+          f"({human(missing_size)} on disk once fetched and unpacked)" if missing_size else "")
 
 
 def fetch(manifest: dict, patterns: list[str], verify: bool) -> int:
