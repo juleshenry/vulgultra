@@ -13,6 +13,7 @@ labelled gascon.
 
 from __future__ import annotations
 
+import bz2
 import collections
 import html
 import json
@@ -20,7 +21,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DUMP = ROOT / "xmls" / "frwiktionary-latest-pages-articles.xml"
+DUMP = ROOT / "xmls" / "frwiktionary-latest-pages-articles.xml.bz2"
 OUT = ROOT / "data" / "sources" / "frwikt_blocks"
 LECTS = {"pcd": "pcd", "frp": "frp", "ext": "ext", "ruo": "ruo", "ruq": "ruq", "oc": "gsc"}  # the wiki's code → ours
 POS = {
@@ -42,7 +43,7 @@ def main() -> None:
     rows: dict[str, dict[tuple[str, str], dict]] = collections.defaultdict(dict)
     title = code = pos = None
     gascon = False
-    with DUMP.open(encoding="utf-8", errors="replace") as stream:
+    with bz2.open(DUMP, "rt", encoding="utf-8", errors="replace") as stream:
         for line in stream:
             if "<title>" in line:
                 match = re.search(r"<title>(.*?)</title>", line)

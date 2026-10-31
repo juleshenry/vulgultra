@@ -19,6 +19,7 @@ not anchors, and the Latin rows, as `data/sources/wikt_translations/{wiki}.tsv`
 from __future__ import annotations
 
 import argparse
+import bz2
 import collections
 import re
 import unicodedata
@@ -71,10 +72,13 @@ def clean(form: str) -> str:
 
 def extract(wiki: str) -> collections.Counter:
     dump = DUMPS / f"{wiki}wiktionary-latest-pages-articles.xml"
+    if not dump.exists():  # the French dump is kept compressed
+        dump = dump.with_name(dump.name + ".bz2")
+    opener = bz2.open if dump.suffix == ".bz2" else open
     kept: collections.Counter = collections.Counter()
     OUT.mkdir(parents=True, exist_ok=True)
     title, table = "", 0
-    with dump.open(encoding="utf-8", errors="replace") as stream, (OUT / f"{wiki}.tsv").open("w", encoding="utf-8") as out:
+    with opener(dump, "rt", encoding="utf-8", errors="replace") as stream, (OUT / f"{wiki}.tsv").open("w", encoding="utf-8") as out:
         out.write("headword\ttable\tcode\tform\n")
         for line in stream:
             if "<title>" in line:

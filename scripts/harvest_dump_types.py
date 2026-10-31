@@ -87,6 +87,7 @@ def harvest_wiki(path: Path, max_pages: int | None = None) -> tuple[set[str], se
 def find_wikt(code: str) -> Path | None:
     candidates = [
         XMLS / f"{code}wiktionary-latest-pages-articles.xml",
+        XMLS / f"{code}wiktionary-latest-pages-articles.xml.bz2",
         XMLS / f"roa_{code}wiktionary-latest-pages-articles.xml",
         XMLS / f"roa-{code}wiktionary-latest-pages-articles.xml",
         INC / f"{code}wiktionary-incubator-pages-articles.xml",

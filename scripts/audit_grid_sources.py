@@ -412,12 +412,15 @@ def extract(dumps: Path) -> None:
     out: dict[str, dict[str, dict[str, list[str]]]] = {}
     for wiki, codes in sorted(wanted.items()):
         dump = dumps / f"{wiki}wiktionary-latest-pages-articles.xml"
+        if not dump.is_file():  # the French dump is kept compressed
+            dump = dump.with_name(dump.name + ".bz2")
         if not dump.is_file():
             continue
+        opener = bz2.open if dump.suffix == ".bz2" else open
         section, definition = re.compile(WIKI_SECTION[wiki]), re.compile(WIKI_DEFINITION[wiki])
         found: dict[str, dict[str, list[str]]] = {}
         title = lang = None
-        with dump.open(encoding="utf-8", errors="replace") as stream:
+        with opener(dump, "rt", encoding="utf-8", errors="replace") as stream:
             for line in stream:
                 if "<title>" in line:
                     match = re.search(r"<title>(.*?)</title>", line)

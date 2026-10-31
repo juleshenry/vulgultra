@@ -184,14 +184,13 @@ licence = "CC BY-SA 4.0 (Wikimedia)"
 note = "fiwiktionary dump of 2026-10-01"
 
 [[file]]
-path = "xmls/frwiktionary-latest-pages-articles.xml"
+path = "xmls/frwiktionary-latest-pages-articles.xml.bz2"
 url = "https://dumps.wikimedia.org/frwiktionary/20250601/frwiktionary-20250601-pages-articles.xml.bz2"
 fallback = "https://dumps.wikimedia.org/frwiktionary/latest/frwiktionary-latest-pages-articles.xml.bz2"
-unpack = "bz2"
-size = 7808271944
-sha256 = "bceb5f76899420e110f65b5c2cc744ec8e6ae08f18fb7650b3ee5ce22b5fbbc8"
+size = 812422222
+sha256 = "941b8c87b34312a4ab87d30cd3ee24e0afb5bcc4092e0e64654fea0547c4e071"
 licence = "CC BY-SA 4.0 (Wikimedia)"
-note = "frwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump"
+note = "frwiktionary dump of 2025-06-01; no longer on dumps.wikimedia.org, so a fetch takes the latest dump. Kept compressed (7.8 GB unpacked): size and sha256 are of our pbzip2 copy, whose unpacked XML hashes to bceb5f76899420e110f65b5c2cc744ec8e6ae08f18fb7650b3ee5ce22b5fbbc8"
 
 [[file]]
 path = "xmls/glwiktionary-latest-pages-articles.xml"
