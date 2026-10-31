@@ -19,6 +19,13 @@
 #
 # `licence` is the rights basis as the source states it; the SOURCES notes
 # beside each folder give the detail.
+#
+# What cannot be fetched again as it was (the dumps whose dated URL has gone,
+# the [[local]] files, and git-ignored data this file does not list) is in the
+# 2026-10-30 release of the private repository juleshenry/vulgultra-backup:
+# https://github.com/juleshenry/vulgultra-backup/releases/tag/2026-10-30
+# Download an archive's pieces, then in the repository's root run
+# `cat NAME.tar.zst.* | zstd -d | tar -xf -`; manifest.tsv gives each piece's SHA-256.
 
 
 # ---- Wikimedia dumps
